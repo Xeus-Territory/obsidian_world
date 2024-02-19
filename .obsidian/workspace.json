@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/DevSecOps & System/Researching/NGINX and everything about it.md",
+                "file": "Elasticsearch/API/Popular usage.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/DevSecOps & System/Researching/NGINX and everything about it.md",
+                "file": "Elasticsearch/API/Popular usage.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/DevSecOps & System/Researching/NGINX and everything about it.md",
+                "file": "Elasticsearch/API/Popular usage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/DevSecOps & System/Researching/NGINX and everything about it.md"
+                "file": "Elasticsearch/API/Popular usage.md"
               }
             }
           },
@@ -159,10 +159,37 @@
   },
   "active": "92211aaafbff6e29",
   "lastOpenFiles": [
+    "Cyber & Info Security/Research/Security Things/Subdomain Enumeration.md",
+    "Cyber & Info Security/Research/Security Things/Server Site Template Injection (SSTI).md",
+    "Cyber & Info Security/Research/Security Things/Insecure Direct Object Reference (IDOR).md",
+    "Cyber & Info Security/Research/Security Things/Content Discovery.md",
+    "Cyber & Info Security/Research/Security Things/AuthenticationBypass.md",
+    "Cyber & Info Security/Research/Basic Knowledge/Web fundamentals.md",
+    "Projects/DevSecOps & System/Researching/NGINX and everything about it.md",
+    "Cyber & Info Security/Research/Security Things/Walking An Application.md",
+    "Cyber & Info Security/Research/Security Things/Top 10 OWASP.md",
+    "Cyber & Info Security/Research/Security Things",
+    "Cyber & Info Security/Research/Basic Knowledge",
+    "Cyber & Info Security/Research",
+    "Cyber & Info Security/CTF & Write Ups/Common Vulnerable/SSTI/SSTI (ImaginaryCTF).md",
+    "Cyber & Info Security/CTF & Write Ups/Common Vulnerable/IDOR/IDOR PortSwigger.md",
+    "Cyber & Info Security/CTF & Write Ups/Common Vulnerable/SSTI",
+    "Cyber & Info Security/CTF & Write Ups/Common Vulnerable/IDOR",
+    "Cyber & Info Security/CTF & Write Ups/Common Vulnerable",
+    "Cyber & Info Security/CTF & Write Ups",
+    "Assets/Images/Pasted image 20240219150239.png",
+    "Assets/Images/Pasted image 20240219150226.png",
+    "Assets/Images/Pasted image 20240219150200.png",
+    "Assets/Images/Pasted image 20240219150108.png",
+    "Assets/Images/Pasted image 20240219150018.png",
+    "Assets/Images/Pasted image 20240219145617.png",
+    "Assets/Images/Pasted image 20240219145612.png",
+    "Assets/Images/Pasted image 20240219145516.png",
+    "Assets/Images/Pasted image 20240219144225.png",
+    "Assets/Images/Pasted image 20240219144218.png",
     "Projects/DevSecOps & System/Researching/Monitoring with Portainer.md",
     "Scripts/Ansible/Tasks/general-tasks.yaml.md",
     "Scripts/Ansible/Tasks/portainer-setup.yaml.md",
-    "Projects/DevSecOps & System/Researching/NGINX and everything about it.md",
     "Scripts/Shell bash/config_portainer.sh.md",
     "Scripts/Ansible/Templates/Nginx/monitoring.conf.j2.md",
     "Scripts/Shell bash/automation_cd.sh.md",
@@ -171,41 +198,16 @@
     "Scripts/Ansible/Templates/Nginx",
     "Scripts/Ansible/Templates",
     "ansible/templates/nginx/monitoring.conf.j2.md",
-    "Scripts/Ansible",
-    "ansible/templates/nginx",
-    "ansible/templates",
-    "ansible",
     "script/config_portainer.sh.md",
-    "script",
-    "Untitled",
     "Projects/DevSecOps & System/Creatures & Solutions with Scripting/Zero Downtime when deploying.md",
-    "Projects/DevSecOps & System/Researching",
     "Untitled.md",
     "Elasticsearch/API/Popular usage.md",
     "script/automation_cd.sh.md",
     "Linux Cheatsheets/Notebooks (Experience)/Redirect Output and Error.md",
     "Developer/HTML Snippet.md",
-    "Assets/Images/Pasted image 20240218150404.png",
-    "Assets/Images/Pasted image 20240218143855.png",
-    "Assets/Images/Pasted image 20240218140458.png",
-    "Assets/Images/Drawing 2024-02-18 14.22.10.excalidraw.png",
-    "Cyber & Info Security/Payload/GraphQL.md",
-    "Pasted Image 20240218143713_214.png",
-    "Pasted image 20240218143627.png",
-    "Drawing 2024-02-18 14.36.40.excalidraw.md",
-    "Linux Cheatsheets/Notebooks (Experience)/Comment note in Shell Bash.md",
-    "Linux Cheatsheets/Notebooks (Experience)/Reconfiguration for template output.md",
-    "Assets/Images/Pasted image 20240218142142.png",
-    "Assets/Images/Drawing 2024-02-18 14.22.10.excalidraw.md",
-    "Pasted Image 20240218142222_695.png",
-    "Projects/AI/Scan Documentations (OCR - Text Extractor).md",
-    "Projects/DevOps Tutorials (Roadmap)/1. Introducing.md",
-    "Projects/DevOps Tutorials (Roadmap)/2. Resources.md",
     "Projects/Untitled.canvas",
     "Untitled.canvas",
     "Untitled 2.canvas",
-    "Untitled 1.canvas",
-    "Cyber & Info Security/Payload/SQL Injections.md",
-    "Cyber & Info Security/Payload/Cross Site Scripting ( XSS ).md"
+    "Untitled 1.canvas"
   ]
 }
