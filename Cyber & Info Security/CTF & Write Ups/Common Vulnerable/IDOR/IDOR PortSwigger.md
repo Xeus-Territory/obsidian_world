@@ -1,9 +1,10 @@
 **Level: APPRENTICE**
+
 *[Lab: Insecure direct object references](https://portswigger.net/web-security/access-control/lab-insecure-direct-object-references)*
 
 *Description: This lab stores user chat logs directly on the server's file system, and retrieves them using static URLs. This lab stores user chat logs directly on the server's file system, and retrieves them using static URLs.*
 ![[Pasted image 20240219143843.png]]
-## :BoBxsCoffee: So try best and we can take the flag LOL
+## [[:BoBxsCoffee:]] So try best and we can take the flag LOL
 
 *Access the lab with button and it will automatically generate the web, we got this* 😊
 

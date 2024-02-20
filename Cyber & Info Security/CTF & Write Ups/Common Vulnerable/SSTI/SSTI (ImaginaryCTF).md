@@ -1,7 +1,9 @@
 
-## ALMOST SSTI [imaginaryctf](https://imaginaryctf.org/Challenges) (50 Pts)
+## ALMOST SSTI 
 
-Thông tin và mở rộng cho SSTI :BoBxsRightArrow::BoBxsRightArrow: [SSTI fundamentals](obsidian://open?vault=wiki_tech_obsidian_vault&file=Cyber%20%26%20Info%20Security%2FResearch%2FSecurity%20Things%2FServer%20Site%20Template%20Injection%20(SSTI))
+Challenge: [imaginaryctf](https://imaginaryctf.org/Challenges) (50 Pts)
+
+Thông tin và mở rộng cho SSTI [[Server Site Template Injection (SSTI)]]
 ## I. Cấu trúc câu hỏi:
 ![[Pasted image 20240219145516.png]]
 *Lời dẫn (tạm dịch): Nó bảo là nó có thể ngăn SSTI trên web nó bằng cách nó hạn chế nhập thông tin vào của người dùng, nó đảm bảo rằng sẽ có bug nào trên web nó cả*
