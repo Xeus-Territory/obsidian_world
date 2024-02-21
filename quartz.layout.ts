@@ -8,11 +8,12 @@ export const sharedPageComponents: SharedLayout = {
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/Xeus-Territory",
+      "Spiderum": "https://spiderum.com/nguoi-dung/Xeus0810",
       "HackMD": "https://hackmd.io/@xeusnguyen",
       "Viblo": "https://viblo.asia/u/Xeus-Territory",
-      "Youtube Channel": "https://www.youtube.com/channel/UC-Tw_Q-bLxFSJotpvB2RpMg",
       "Medium": "https://medium.com/@XeusNguyen",
-      "X - Twitter": "https://twitter.com/XeusNguyen"
+      "Youtube Channel": "https://www.youtube.com/channel/UC-Tw_Q-bLxFSJotpvB2RpMg",
+      "Twitter": "https://twitter.com/XeusNguyen"
     },
   }),
 }
