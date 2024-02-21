@@ -1,0 +1,213 @@
+{
+  "main": {
+    "id": "b981f8ef59c7503f",
+    "type": "split",
+    "children": [
+      {
+        "id": "d442271c4bcbd0a7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "92211aaafbff6e29",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "68968affb1860264",
+    "type": "split",
+    "children": [
+      {
+        "id": "ebe8cab4b12a0851",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3656a4559906901a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "83448bb12c0379e3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:configuration-file",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e3954369e3083cf9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ec105aef228d19f1",
+    "type": "split",
+    "children": [
+      {
+        "id": "aeccff97727f7672",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "936c37723809f4f0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4fd63262600706ca",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0c1ac84db43a1ca8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "8d8b6e778bae99d2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "index.md"
+              }
+            }
+          },
+          {
+            "id": "d8be49e3e723581d",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "92211aaafbff6e29",
+  "lastOpenFiles": [
+    "Developer/HTML Snippet.md",
+    "index.md",
+    "xeusnguyen.png",
+    "Pasted image 20240221134635.png",
+    "Tech Collections/Github/VPN Selfhosted.md",
+    "Tech Collections/External Websites/Monitoring PostgreSQL Performance.md",
+    "Scripts/Templates/Terminal Profiles/zsh-profile.md",
+    "Scripts/Templates/Terminal Profiles/powershell-profile.md",
+    "Scripts/Templates/Grafana Dashboards/Azure PostgreSQL Queries Performance.md",
+    "Scripts/Templates/CICD/GitlabCI.md",
+    "Scripts/Shell bash/work_with_s3.md",
+    "Scripts/Shell bash/synchronize_gitlab.sh.md",
+    "Scripts/Shell bash/install_nvm.sh.md",
+    "Scripts/Shell bash/config_portainer.sh.md",
+    "Scripts/Shell bash/automation_cd.sh.md",
+    "Scripts/Powershell/dotnet_azure_agent.ps1.md",
+    "Scripts/Ansible/Templates/PostgreSQL/postgresql.conf.j2.md",
+    "Scripts/Ansible/Templates/PostgreSQL/pg_hba.conf.j2.md",
+    "Scripts/Ansible/Templates/Nginx/monitoring.conf.j2.md",
+    "Scripts/Ansible/Tasks/postgres_itself_tasks.yaml.md",
+    "Scripts/Ansible/Tasks/postgres_docker_tasks.yaml.md",
+    "Scripts/Ansible/Tasks/portainer-setup.yaml.md",
+    "Scripts/Ansible/Tasks/general-tasks.yaml.md",
+    "Projects/DevSecOps & System/Researching/Create Free SSL with Let's Encrypt and Certbot.md",
+    "Projects/DevSecOps & System/Researching/Monitoring with Portainer.md",
+    "Projects/DevSecOps & System/Researching/NGINX and everything about it.md",
+    "Projects/DevSecOps & System/Researching/Setup PostgreSQL with Ansible.md",
+    "ansible/templates",
+    "ansible",
+    "Scripts/Ansible/Templates/PostgreSQL",
+    "Scripts/Templates/Terminal Profiles",
+    "Scripts/Templates/Nginx",
+    "Tech Collections/External Websites",
+    "Tech Collections/Github",
+    "Tech Collections",
+    "Scripts/Templates/Grafana Dashboards",
+    "Scripts/Templates/CICD",
+    "Assets/Images/Pasted image 20240219150239.png",
+    "Assets/Images/Pasted image 20240219150226.png",
+    "Assets/Images/Pasted image 20240219150200.png",
+    "Assets/Images/Pasted image 20240219150108.png",
+    "Assets/Images/Pasted image 20240219150018.png",
+    "Assets/Images/Pasted image 20240219145617.png",
+    "Assets/Images/Pasted image 20240219145612.png",
+    "Assets/Images/Pasted image 20240219145516.png",
+    "Projects/Untitled.canvas",
+    "Untitled.canvas",
+    "Untitled 2.canvas",
+    "Untitled 1.canvas"
+  ]
+}
