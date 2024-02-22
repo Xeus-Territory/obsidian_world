@@ -37,7 +37,7 @@ jobs:
           path: public
  
   deploy:
-    if: github.head_ref == 'main'
+    if: github.ref == 'main'
     needs: build
     environment:
       name: github-pages
