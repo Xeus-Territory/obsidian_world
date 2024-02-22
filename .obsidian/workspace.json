@@ -1,0 +1,190 @@
+{
+  "main": {
+    "id": "fc9d538ee19c9b43",
+    "type": "split",
+    "children": [
+      {
+        "id": "6c385a2b701e71c3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f16a62d5f388ac7c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "716ff521ca2444ee",
+    "type": "split",
+    "children": [
+      {
+        "id": "7fac458401b82404",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f1d77e3ef2cbf009",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "964ce990f4e5ee96",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0beff6e85ada13ba",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8ce67bba85fc650f",
+    "type": "split",
+    "children": [
+      {
+        "id": "c7fb87bfa5f5b70e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3653039383a51688",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1ecd937940bfd3ff",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2b9fb7da6b840684",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "3f2a24e48d7c9127",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "f1d77e3ef2cbf009",
+  "lastOpenFiles": [
+    "content/index.md",
+    "public/404.html",
+    "public/static/og-image.png",
+    "public/static/icon.png",
+    "public/static/contentIndex.json",
+    "public/static",
+    "public/index.xml",
+    "public/sitemap.xml",
+    "public/tags/index.html",
+    "public/tags/myself.html",
+    "public/tags/collections.html",
+    "public/tags/zsh.html",
+    "public/tags/helpful.html",
+    "public/Tech-Second-Brain/Assets/Images/Pasted-image-20240219150239.png",
+    "public/Tech-Second-Brain/Assets/Images/Pasted-image-20240219150226.png",
+    "public/Tech-Second-Brain/Assets/Images/Pasted-image-20240219150200.png",
+    "public/Tech-Second-Brain/Assets/Images/Pasted-image-20240219150108.png",
+    "public/Tech-Second-Brain/Assets/Images/Pasted-image-20240219150018.png",
+    "public/Tech-Second-Brain/Assets/Images/Pasted-image-20240219145617.png",
+    "public/Tech-Second-Brain/Assets/Images/Pasted-image-20240219145612.png",
+    "public/Tech-Second-Brain/Assets/Images/Pasted-image-20240219145516.png",
+    "content/Projects/DevSecOps & System/Researching/Create Free SSL with Let's Encrypt and Certbot.md",
+    "content/Tech Second Brain/Tech Collections/Github/VPN Selfhosted.md",
+    "content/Tech Second Brain/Tech Collections/External Websites/Monitoring PostgreSQL Performance.md",
+    "content/Tech Second Brain/Projects/Do Some Scripting/Ansible/Templates/PostgreSQL/PostgreSQL Host Template for Ansible.md",
+    "content/Tech Second Brain/Projects/Do Some Scripting/Ansible/Templates/PostgreSQL/PostgreSQL Configuration Template for Ansible.md",
+    "content/Tech Second Brain/Projects/Do Some Scripting/Ansible/Templates/Nginx/Nginx Template Portainer for Ansible.md",
+    "content/Tech Second Brain/Projects/Do Some Scripting/Templates/Terminal Profiles/Zsh Profile.md",
+    "content/Tech Second Brain/Projects/Do Some Scripting/Templates/Terminal Profiles/Powershell Profile.md",
+    "content/Tech Second Brain/Projects/Do Some Scripting/Templates/Grafana Dashboards/Azure PostgreSQL Queries Performance.md",
+    "content/Tech Second Brain/Projects/Do Some Scripting/Templates/CICD/GitlabCI.md",
+    "content/Tech Second Brain/Projects/Do Some Scripting/Ansible/Tasks/Setup General VM with Ansible.md",
+    "content/Tech Second Brain/Projects/Do Some Scripting/Ansible/Tasks/PostgreSQL Self-hosted in VM by Ansible.md",
+    "content/Tech Second Brain/Projects/Do Some Scripting/Ansible/Tasks/PostgreSQL Self-hosted in Docker by Ansible.md",
+    "content/Tech Second Brain/Projects/Do Some Scripting/Ansible/Tasks/Portainer Self-hosted in Docker by Ansible.md",
+    "content/Tech Second Brain/Projects/Do Some Scripting/Shell bash/Sync Repo file in Gitlab.md",
+    "content/Tech Second Brain/Projects/Do Some Scripting/Shell bash/Shell Script for config Docker Portainer.md",
+    "content/Tech Second Brain/Projects/Do Some Scripting/Shell bash/Shell Script about Automation CD with Zero Downtime.md",
+    "content/Tech Second Brain/Projects/Do Some Scripting/Shell bash/Install NVM in Zsh or Bash.md",
+    "content/Tech Second Brain/Projects/Do Some Scripting/Shell bash/How can work with S3.md",
+    "content/Tech Second Brain/Projects/Do Some Scripting/Powershell/Build Azure Agent with .NET Core by Powershell.md",
+    "content/Tech Second Brain/Projects/DevSecOps & System/Researching/Setup PostgreSQL with Ansible.md",
+    "content/Tech Second Brain/Projects/DevSecOps & System/Researching/NGINX and everything about it.md",
+    "content/Tech Second Brain/Projects/DevSecOps & System/Researching/Monitoring with Portainer.md",
+    "content/Tech Second Brain/Projects/DevSecOps & System/Researching/Create Free SSL with Let's Encrypt and Certbot.md",
+    "content/Tech Second Brain/Projects/DevSecOps & System/Creatures & Solutions with Scripting/Zero Downtime when deploying.md"
+  ]
+}
