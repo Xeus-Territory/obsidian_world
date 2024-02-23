@@ -138,8 +138,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f1d77e3ef2cbf009",
+  "active": "f16a62d5f388ac7c",
   "lastOpenFiles": [
+    "content/Tech Second Brain/Researching/Play with Makefile.md",
+    "content/Tech Second Brain/Research/Play with Makefile.md",
+    "content/Tech Second Brain/Research",
+    "content/Tech Second Brain/Assets/Images/Pasted image 20240223104857.png",
+    "content/Tech Second Brain/Researching",
     "content/Tech Second Brain/Tech Collections/Github/VPN Selfhosted.md",
     "content/Tech Second Brain/Tech Collections/External Websites/Monitoring PostgreSQL Performance.md",
     "content/Tech Second Brain/Tech Collections/Github",
@@ -167,15 +172,11 @@
     "content/Tech Second Brain/Projects/Do Some Scripting/Shell bash/Install NVM in Zsh or Bash.md",
     "content/Tech Second Brain/Projects/Do Some Scripting/Shell bash/How can work with S3.md",
     "content/Tech Second Brain/Projects/Do Some Scripting/Powershell/Build Azure Agent with .NET Core by Powershell.md",
-    "content/Tech Second Brain/Projects/Do Some Scripting/Ansible/Templates",
-    "content/Tech Second Brain/Projects/Do Some Scripting/Ansible/Tasks",
     "content/Tech Second Brain/Projects/DevSecOps & System/Researching/Setup PostgreSQL with Ansible.md",
     "content/Tech Second Brain/Projects/DevSecOps & System/Researching/NGINX and everything about it.md",
     "content/Tech Second Brain/Projects/DevSecOps & System/Researching/Monitoring with Portainer.md",
     "content/Tech Second Brain/Projects/DevSecOps & System/Researching/Create Free SSL with Let's Encrypt and Certbot.md",
     "content/Tech Second Brain/Projects/DevSecOps & System/Creatures & Solutions with Scripting/Zero Downtime when deploying.md",
-    "content/Tech Second Brain/Projects/DevOps Tutorials (Roadmap)/2. Resources.md",
-    "content/Tech Second Brain/Projects/DevOps Tutorials (Roadmap)/1. Introducing.md",
     "content/Tech Second Brain/Assets/Images/Pasted image 20240219150239.png",
     "content/Tech Second Brain/Assets/Images/Pasted image 20240219150226.png",
     "content/Tech Second Brain/Assets/Images/Pasted image 20240219150200.png",
@@ -184,7 +185,6 @@
     "content/Tech Second Brain/Assets/Images/Pasted image 20240219145617.png",
     "content/Tech Second Brain/Assets/Images/Pasted image 20240219145612.png",
     "content/Tech Second Brain/Assets/Images/Pasted image 20240219145516.png",
-    "content/Tech Second Brain/Assets/Images/Pasted image 20240219144225.png",
-    "content/Tech Second Brain/Assets/Images/Pasted image 20240219144218.png"
+    "content/Tech Second Brain/Assets/Images/Pasted image 20240219144225.png"
   ]
 }
