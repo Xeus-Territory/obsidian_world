@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "Tech Second Brain/Research/Play with Makefile.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "Tech Second Brain/Research/Play with Makefile.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "Tech Second Brain/Research/Play with Makefile.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "Tech Second Brain/Research/Play with Makefile.md"
               }
             }
           },
@@ -138,7 +138,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -153,15 +153,20 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false
     }
   },
   "active": "92211aaafbff6e29",
   "lastOpenFiles": [
-    "Developer/HTML Snippet.md",
+    "[.md",
+    "Tech Second Brain/Research/Play with Makefile.md",
+    "().md",
     "index.md",
+    "Tech Second Brain/Research",
+    "Tech Second Brain/Assets/Images/Pasted image 20240223104857.png",
+    "Developer/HTML Snippet.md",
     "xeusnguyen.png",
     "Pasted image 20240221134635.png",
     "Tech Collections/Github/VPN Selfhosted.md",
@@ -185,8 +190,6 @@
     "Scripts/Ansible/Tasks/general-tasks.yaml.md",
     "Projects/DevSecOps & System/Researching/Create Free SSL with Let's Encrypt and Certbot.md",
     "Projects/DevSecOps & System/Researching/Monitoring with Portainer.md",
-    "Projects/DevSecOps & System/Researching/NGINX and everything about it.md",
-    "Projects/DevSecOps & System/Researching/Setup PostgreSQL with Ansible.md",
     "ansible/templates",
     "ansible",
     "Scripts/Ansible/Templates/PostgreSQL",
@@ -196,7 +199,6 @@
     "Tech Collections/Github",
     "Tech Collections",
     "Scripts/Templates/Grafana Dashboards",
-    "Scripts/Templates/CICD",
     "Assets/Images/Pasted image 20240219150239.png",
     "Assets/Images/Pasted image 20240219150226.png",
     "Assets/Images/Pasted image 20240219150200.png",
@@ -204,7 +206,6 @@
     "Assets/Images/Pasted image 20240219150018.png",
     "Assets/Images/Pasted image 20240219145617.png",
     "Assets/Images/Pasted image 20240219145612.png",
-    "Assets/Images/Pasted image 20240219145516.png",
     "Projects/Untitled.canvas",
     "Untitled.canvas",
     "Untitled 2.canvas",
