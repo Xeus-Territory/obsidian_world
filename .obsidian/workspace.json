@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "6c385a2b701e71c3",
+        "id": "0461e2ac3f925287",
         "type": "tabs",
         "children": [
           {
-            "id": "f16a62d5f388ac7c",
+            "id": "f3cca365acf8f565",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "content/Tech Second Brain/Research/Play with Makefile.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "content/Tech Second Brain/Research/Play with Makefile.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "content/Tech Second Brain/Research/Play with Makefile.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "content/Tech Second Brain/Research/Play with Makefile.md"
+              }
             }
           }
         ]
@@ -138,10 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f16a62d5f388ac7c",
+  "active": "f3cca365acf8f565",
   "lastOpenFiles": [
-    "content/Tech Second Brain/Researching/Play with Makefile.md",
+    "content/Tech Second Brain/Research/Compile GRPC with Makefile.md",
+    "content/Tech Second Brain/Blog/All Blogs.md",
+    "content/index.md",
+    "content/Tech Second Brain/Kubernetes/Helpful Article.md",
     "content/Tech Second Brain/Research/Play with Makefile.md",
+    "content/Tech Second Brain/Projects/All Projects.md",
+    "content/Tech Second Brain/Projects/DevOps Tutorials (Roadmap)/2. Resources.md",
+    "content/Tech Second Brain/Projects/DevOps Tutorials (Roadmap)/1. Introducing.md",
+    "content/Tech Second Brain/Researching/Play with Makefile.md",
     "content/Tech Second Brain/Research",
     "content/Tech Second Brain/Assets/Images/Pasted image 20240223104857.png",
     "content/Tech Second Brain/Researching",
@@ -170,13 +185,6 @@
     "content/Tech Second Brain/Projects/Do Some Scripting/Shell bash/Shell Script for config Docker Portainer.md",
     "content/Tech Second Brain/Projects/Do Some Scripting/Shell bash/Shell Script about Automation CD with Zero Downtime.md",
     "content/Tech Second Brain/Projects/Do Some Scripting/Shell bash/Install NVM in Zsh or Bash.md",
-    "content/Tech Second Brain/Projects/Do Some Scripting/Shell bash/How can work with S3.md",
-    "content/Tech Second Brain/Projects/Do Some Scripting/Powershell/Build Azure Agent with .NET Core by Powershell.md",
-    "content/Tech Second Brain/Projects/DevSecOps & System/Researching/Setup PostgreSQL with Ansible.md",
-    "content/Tech Second Brain/Projects/DevSecOps & System/Researching/NGINX and everything about it.md",
-    "content/Tech Second Brain/Projects/DevSecOps & System/Researching/Monitoring with Portainer.md",
-    "content/Tech Second Brain/Projects/DevSecOps & System/Researching/Create Free SSL with Let's Encrypt and Certbot.md",
-    "content/Tech Second Brain/Projects/DevSecOps & System/Creatures & Solutions with Scripting/Zero Downtime when deploying.md",
     "content/Tech Second Brain/Assets/Images/Pasted image 20240219150239.png",
     "content/Tech Second Brain/Assets/Images/Pasted image 20240219150226.png",
     "content/Tech Second Brain/Assets/Images/Pasted image 20240219150200.png",
