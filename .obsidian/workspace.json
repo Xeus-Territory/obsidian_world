@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Tech Second Brain/Research/Play with Makefile.md",
+                "file": "content/Tech Second Brain/Projects/All Projects.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/Tech Second Brain/Research/Play with Makefile.md",
+                "file": "content/Tech Second Brain/Projects/All Projects.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/Tech Second Brain/Research/Play with Makefile.md",
+                "file": "content/Tech Second Brain/Projects/All Projects.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/Tech Second Brain/Research/Play with Makefile.md"
+                "file": "content/Tech Second Brain/Projects/All Projects.md"
               }
             }
           }
@@ -148,23 +148,38 @@
   },
   "active": "f3cca365acf8f565",
   "lastOpenFiles": [
-    "content/Tech Second Brain/Research/Compile GRPC with Makefile.md",
+    "public/404.html",
+    "public/Tech-Second-Brain/Assets/Images/Pasted-image-20240223104857.png",
+    "public/Tech-Second-Brain/Assets/Images/Pasted-image-20240219150239.png",
+    "public/Tech-Second-Brain/Assets/Images/Pasted-image-20240219150226.png",
+    "public/Tech-Second-Brain/Assets/Images/Pasted-image-20240219150200.png",
+    "public/Tech-Second-Brain/Assets/Images/Pasted-image-20240219150108.png",
+    "public/Tech-Second-Brain/Assets/Images/Pasted-image-20240219150018.png",
+    "public/Tech-Second-Brain/Assets/Images/Pasted-image-20240219145617.png",
+    "public/Tech-Second-Brain/Assets/Images/Pasted-image-20240219145612.png",
+    "public/Tech-Second-Brain/Assets/Images/Pasted-image-20240219145516.png",
+    "public/Tech-Second-Brain/Assets/Images/Pasted-image-20240219144225.png",
+    "public/Tech-Second-Brain/Assets/Images",
+    "public/Tech-Second-Brain/Assets",
+    "public/static/contentIndex.json",
+    "public/static",
+    "public/index.xml",
+    "public/sitemap.xml",
+    "public/tags/index.html",
+    "public/tags/collections.html",
+    "public/tags/makefile.html",
+    "public/tags/zsh.html",
     "content/Tech Second Brain/Blog/All Blogs.md",
     "content/index.md",
-    "content/Tech Second Brain/Kubernetes/Helpful Article.md",
     "content/Tech Second Brain/Research/Play with Makefile.md",
+    "content/Tech Second Brain/Research/Compile GRPC with Makefile.md",
+    "content/Tech Second Brain/Kubernetes/Helpful Article.md",
     "content/Tech Second Brain/Projects/All Projects.md",
     "content/Tech Second Brain/Projects/DevOps Tutorials (Roadmap)/2. Resources.md",
     "content/Tech Second Brain/Projects/DevOps Tutorials (Roadmap)/1. Introducing.md",
     "content/Tech Second Brain/Researching/Play with Makefile.md",
-    "content/Tech Second Brain/Research",
-    "content/Tech Second Brain/Assets/Images/Pasted image 20240223104857.png",
-    "content/Tech Second Brain/Researching",
     "content/Tech Second Brain/Tech Collections/Github/VPN Selfhosted.md",
     "content/Tech Second Brain/Tech Collections/External Websites/Monitoring PostgreSQL Performance.md",
-    "content/Tech Second Brain/Tech Collections/Github",
-    "content/Tech Second Brain/Tech Collections/External Websites",
-    "content/Tech Second Brain/Tech Collections",
     "content/Tech Second Brain/Projects/Do Some Scripting/Ansible/Templates/PostgreSQL/PostgreSQL Host Template for Ansible.md",
     "content/Tech Second Brain/Projects/Do Some Scripting/Ansible/Templates/PostgreSQL/PostgreSQL Configuration Template for Ansible.md",
     "content/Tech Second Brain/Projects/Do Some Scripting/Ansible/Templates/Nginx/Nginx Template Portainer for Ansible.md",
@@ -172,27 +187,12 @@
     "content/Tech Second Brain/Projects/Do Some Scripting/Templates/Terminal Profiles/Powershell Profile.md",
     "content/Tech Second Brain/Projects/Do Some Scripting/Templates/CICD/GitlabCI.md",
     "content/Tech Second Brain/Projects/Do Some Scripting/Templates/Grafana Dashboards/Azure PostgreSQL Queries Performance.md",
-    "content/Tech Second Brain/Projects/Do Some Scripting/Ansible/Templates/PostgreSQL",
-    "content/Tech Second Brain/Projects/Do Some Scripting/Ansible/Templates/Nginx",
     "content/Tech Second Brain/Projects/Do Some Scripting/Ansible/Tasks/Setup General VM with Ansible.md",
     "content/Tech Second Brain/Projects/Do Some Scripting/Ansible/Tasks/PostgreSQL Self-hosted in VM by Ansible.md",
     "content/Tech Second Brain/Projects/Do Some Scripting/Ansible/Tasks/PostgreSQL Self-hosted in Docker by Ansible.md",
     "content/Tech Second Brain/Projects/Do Some Scripting/Ansible/Tasks/Portainer Self-hosted in Docker by Ansible.md",
-    "content/Tech Second Brain/Projects/Do Some Scripting/Templates/Terminal Profiles",
-    "content/Tech Second Brain/Projects/Do Some Scripting/Templates/Grafana Dashboards",
-    "content/Tech Second Brain/Projects/Do Some Scripting/Templates/CICD",
     "content/Tech Second Brain/Projects/Do Some Scripting/Shell bash/Sync Repo file in Gitlab.md",
     "content/Tech Second Brain/Projects/Do Some Scripting/Shell bash/Shell Script for config Docker Portainer.md",
-    "content/Tech Second Brain/Projects/Do Some Scripting/Shell bash/Shell Script about Automation CD with Zero Downtime.md",
-    "content/Tech Second Brain/Projects/Do Some Scripting/Shell bash/Install NVM in Zsh or Bash.md",
-    "content/Tech Second Brain/Assets/Images/Pasted image 20240219150239.png",
-    "content/Tech Second Brain/Assets/Images/Pasted image 20240219150226.png",
-    "content/Tech Second Brain/Assets/Images/Pasted image 20240219150200.png",
-    "content/Tech Second Brain/Assets/Images/Pasted image 20240219150108.png",
-    "content/Tech Second Brain/Assets/Images/Pasted image 20240219150018.png",
-    "content/Tech Second Brain/Assets/Images/Pasted image 20240219145617.png",
-    "content/Tech Second Brain/Assets/Images/Pasted image 20240219145612.png",
-    "content/Tech Second Brain/Assets/Images/Pasted image 20240219145516.png",
-    "content/Tech Second Brain/Assets/Images/Pasted image 20240219144225.png"
+    "content/Tech Second Brain/Projects/Do Some Scripting/Shell bash/Shell Script about Automation CD with Zero Downtime.md"
   ]
 }

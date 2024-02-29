@@ -9,7 +9,7 @@ tags:
 # Hackwekend
 
 >[!info]
-This session is about me and you who sit and learn new things security in the weekend. Try best and have fun !!!
+>This session is about me and you who sit and learn new things security in the weekend. Try best and have fun !!!
 
 - [Hackwekend Session 0 - QRCode Vulnerabilities (Malicious QRCode gain access to reverse shell level)](https://hackmd.io/@XeusNguyen/BJJvZHOMj) *- About the vulnerable with QRCode, How we can gain access to victim machine and bypass QRCode*
 - [Hackwekend - Session 1 (Pentester web - Security Lab)](https://hackmd.io/@XeusNguyen/S1udpmwro) - *About the vulnerable machine is take a look and gain access to collecting flag (CTF)*
