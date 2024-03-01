@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0461e2ac3f925287",
+        "id": "15d0651052b9b992",
         "type": "tabs",
         "children": [
           {
-            "id": "f3cca365acf8f565",
+            "id": "6f77fbebf5103fe6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Tech Second Brain/Projects/All Projects.md",
+                "file": "content/Tech Second Brain/Research/Compile gRPC for 1st time.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/Tech Second Brain/Projects/All Projects.md",
+                "file": "content/Tech Second Brain/Research/Compile gRPC for 1st time.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/Tech Second Brain/Projects/All Projects.md",
+                "file": "content/Tech Second Brain/Research/Compile gRPC for 1st time.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/Tech Second Brain/Projects/All Projects.md"
+                "file": "content/Tech Second Brain/Research/Compile gRPC for 1st time.md"
               }
             }
           }
@@ -146,8 +146,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f3cca365acf8f565",
+  "active": "6f77fbebf5103fe6",
   "lastOpenFiles": [
+    "content/Tech Second Brain/Assets/Images/Pasted image 20240301152142.png",
+    "content/Tech Second Brain/Research/Play with Makefile.md",
+    "content/Tech Second Brain/OS Cheatsheets/Helpful Article.md",
+    "content/Tech Second Brain/Kubernetes/Helpful Article.md",
+    "content/Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Comment note in Shell Bash.md",
+    "content/Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Reconfiguration for curl template output.md",
+    "content/Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Redirect Output and Error.md",
+    "content/Tech Second Brain/Research/Compile gRPC for 1st time.md",
+    "content/Tech Second Brain/Assets/Images/Pasted image 20240301133750.png",
+    "content/Tech Second Brain/Assets/Images/Pasted image 20240301132741.png",
+    "content/Tech Second Brain/Projects/All Projects.md",
     "public/404.html",
     "public/Tech-Second-Brain/Assets/Images/Pasted-image-20240223104857.png",
     "public/Tech-Second-Brain/Assets/Images/Pasted-image-20240219150239.png",
@@ -157,8 +168,6 @@
     "public/Tech-Second-Brain/Assets/Images/Pasted-image-20240219150018.png",
     "public/Tech-Second-Brain/Assets/Images/Pasted-image-20240219145617.png",
     "public/Tech-Second-Brain/Assets/Images/Pasted-image-20240219145612.png",
-    "public/Tech-Second-Brain/Assets/Images/Pasted-image-20240219145516.png",
-    "public/Tech-Second-Brain/Assets/Images/Pasted-image-20240219144225.png",
     "public/Tech-Second-Brain/Assets/Images",
     "public/Tech-Second-Brain/Assets",
     "public/static/contentIndex.json",
@@ -168,13 +177,8 @@
     "public/tags/index.html",
     "public/tags/collections.html",
     "public/tags/makefile.html",
-    "public/tags/zsh.html",
     "content/Tech Second Brain/Blog/All Blogs.md",
     "content/index.md",
-    "content/Tech Second Brain/Research/Play with Makefile.md",
-    "content/Tech Second Brain/Research/Compile GRPC with Makefile.md",
-    "content/Tech Second Brain/Kubernetes/Helpful Article.md",
-    "content/Tech Second Brain/Projects/All Projects.md",
     "content/Tech Second Brain/Projects/DevOps Tutorials (Roadmap)/2. Resources.md",
     "content/Tech Second Brain/Projects/DevOps Tutorials (Roadmap)/1. Introducing.md",
     "content/Tech Second Brain/Researching/Play with Makefile.md",
@@ -189,10 +193,6 @@
     "content/Tech Second Brain/Projects/Do Some Scripting/Templates/Grafana Dashboards/Azure PostgreSQL Queries Performance.md",
     "content/Tech Second Brain/Projects/Do Some Scripting/Ansible/Tasks/Setup General VM with Ansible.md",
     "content/Tech Second Brain/Projects/Do Some Scripting/Ansible/Tasks/PostgreSQL Self-hosted in VM by Ansible.md",
-    "content/Tech Second Brain/Projects/Do Some Scripting/Ansible/Tasks/PostgreSQL Self-hosted in Docker by Ansible.md",
-    "content/Tech Second Brain/Projects/Do Some Scripting/Ansible/Tasks/Portainer Self-hosted in Docker by Ansible.md",
-    "content/Tech Second Brain/Projects/Do Some Scripting/Shell bash/Sync Repo file in Gitlab.md",
-    "content/Tech Second Brain/Projects/Do Some Scripting/Shell bash/Shell Script for config Docker Portainer.md",
-    "content/Tech Second Brain/Projects/Do Some Scripting/Shell bash/Shell Script about Automation CD with Zero Downtime.md"
+    "content/Tech Second Brain/Projects/Do Some Scripting/Ansible/Tasks/PostgreSQL Self-hosted in Docker by Ansible.md"
   ]
 }

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tech Second Brain/Research/Play with Makefile.md",
+                "file": "Tech Second Brain/Research/Compile gRPC for 1st time.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tech Second Brain/Research/Play with Makefile.md",
+                "file": "Tech Second Brain/Research/Compile gRPC for 1st time.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tech Second Brain/Research/Play with Makefile.md",
+                "file": "Tech Second Brain/Research/Compile gRPC for 1st time.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tech Second Brain/Research/Play with Makefile.md"
+                "file": "Tech Second Brain/Research/Compile gRPC for 1st time.md"
               }
             }
           },
@@ -160,8 +160,21 @@
   },
   "active": "92211aaafbff6e29",
   "lastOpenFiles": [
-    "[.md",
+    "Tech Second Brain/Assets/Images/Pasted image 20240303091823.png",
     "Tech Second Brain/Research/Play with Makefile.md",
+    "Tech Second Brain/Research/Compile GRPC with Makefile.md",
+    "Tech Second Brain/Research/Compile gRPC for 1st time.md",
+    "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Redirect Output and Error.md",
+    "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Reconfiguration for curl template output.md",
+    "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Comment note in Shell Bash.md",
+    "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)",
+    "Tech Second Brain/OS Cheatsheets/Helpful Article.md",
+    "Tech Second Brain/OS Cheatsheets",
+    "Tech Second Brain/Kubernetes/Helpful Article.md",
+    "Tech Second Brain/Assets/Images/Pasted image 20240301152142.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240301133750.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240301132741.png",
+    "[.md",
     "().md",
     "index.md",
     "Tech Second Brain/Research",
@@ -182,14 +195,6 @@
     "Scripts/Shell bash/automation_cd.sh.md",
     "Scripts/Powershell/dotnet_azure_agent.ps1.md",
     "Scripts/Ansible/Templates/PostgreSQL/postgresql.conf.j2.md",
-    "Scripts/Ansible/Templates/PostgreSQL/pg_hba.conf.j2.md",
-    "Scripts/Ansible/Templates/Nginx/monitoring.conf.j2.md",
-    "Scripts/Ansible/Tasks/postgres_itself_tasks.yaml.md",
-    "Scripts/Ansible/Tasks/postgres_docker_tasks.yaml.md",
-    "Scripts/Ansible/Tasks/portainer-setup.yaml.md",
-    "Scripts/Ansible/Tasks/general-tasks.yaml.md",
-    "Projects/DevSecOps & System/Researching/Create Free SSL with Let's Encrypt and Certbot.md",
-    "Projects/DevSecOps & System/Researching/Monitoring with Portainer.md",
     "ansible/templates",
     "ansible",
     "Scripts/Ansible/Templates/PostgreSQL",
@@ -197,15 +202,10 @@
     "Scripts/Templates/Nginx",
     "Tech Collections/External Websites",
     "Tech Collections/Github",
-    "Tech Collections",
-    "Scripts/Templates/Grafana Dashboards",
     "Assets/Images/Pasted image 20240219150239.png",
     "Assets/Images/Pasted image 20240219150226.png",
     "Assets/Images/Pasted image 20240219150200.png",
     "Assets/Images/Pasted image 20240219150108.png",
-    "Assets/Images/Pasted image 20240219150018.png",
-    "Assets/Images/Pasted image 20240219145617.png",
-    "Assets/Images/Pasted image 20240219145612.png",
     "Projects/Untitled.canvas",
     "Untitled.canvas",
     "Untitled 2.canvas",
