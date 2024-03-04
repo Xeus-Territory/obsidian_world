@@ -11,10 +11,15 @@ tags:
 
 
 # Hardware, CPU and Memory Usage
+
 - [StackOverFlow - Why AKS nodes shows less amount of memory as allocatable where its actual memory is still available](https://stackoverflow.com/questions/68521392/why-aks-nodes-shows-less-amount-of-memory-as-allocatable-where-its-actual-memory)
 - [Azure - Core Kubernetes concepts for Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/aks/concepts-clusters-workloads)
 - [Azure - Best practices for basic scheduler features in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/operator-best-practices-scheduler)
 
+# Troubleshoot error status of workloads
+
+- [StackOverFlow - Constantly getting Crashloopbackoff error in Kubernetes PODS generally in MongoDB pods](https://stackoverflow.com/questions/63142792/constantly-getting-crashloopbackoff-error-in-kubernetes-pods-generally-in-mongod)
 # Awesome Article
+
 - [Medium - 7 Underrated Kubernetes Projects: Elevate Your Lab Playground!](https://medium.com/@ebenamor/7-underrated-kubernetes-projects-elevate-your-lab-playground-ac7f47cba347)
 - [Medium - Why does my 2vCPU application run faster in a VM than in a container?](https://hwchiu.medium.com/why-does-my-2vcpu-application-run-faster-in-a-vm-than-in-a-container-6438ffaba245)
