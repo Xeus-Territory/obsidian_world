@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tech Second Brain/Cyber & Info Security/Research/Basic Knowledge/Web fundamentals.md",
+                "file": "Tech Second Brain/Kubernetes/Notebooks (Experience)/Restart & Delete workload in K8s.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tech Second Brain/Cyber & Info Security/Research/Basic Knowledge/Web fundamentals.md",
+                "file": "Tech Second Brain/Kubernetes/Notebooks (Experience)/Restart & Delete workload in K8s.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tech Second Brain/Cyber & Info Security/Research/Basic Knowledge/Web fundamentals.md",
+                "file": "Tech Second Brain/Kubernetes/Notebooks (Experience)/Restart & Delete workload in K8s.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tech Second Brain/Cyber & Info Security/Research/Basic Knowledge/Web fundamentals.md"
+                "file": "Tech Second Brain/Kubernetes/Notebooks (Experience)/Restart & Delete workload in K8s.md"
               }
             }
           },
@@ -160,12 +160,16 @@
   },
   "active": "92211aaafbff6e29",
   "lastOpenFiles": [
+    "Tech Second Brain/Kubernetes/Helpful Article.md",
+    "Tech Second Brain/Kubernetes/Notebooks (Experience)/Can use volume with cronjobs.md",
+    "Tech Second Brain/Kubernetes/Notebooks (Experience)/Restart & Delete workload in K8s.md",
+    "Tech Second Brain/OS Cheatsheets/Helpful Article.md",
     "Tech Second Brain/Research/Compile gRPC for 1st time.md",
+    "Tech Second Brain/Cyber & Info Security/Research/Basic Knowledge/Web fundamentals.md",
     "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Redirect Output and Error.md",
     "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Reconfiguration for curl template output.md",
     "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Comment note in Shell Bash.md",
     "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)",
-    "Tech Second Brain/OS Cheatsheets/Helpful Article.md",
     "Tech Second Brain/OS Cheatsheets",
     "Tech Second Brain/Assets/Images/Pasted image 20240303091823.png",
     "Tech Second Brain/Assets/Images/Pasted image 20240301152142.png",
@@ -178,7 +182,6 @@
     "Tech Second Brain/Linux Cheatsheets/Notebooks (Experience)",
     "Tech Second Brain/Linux Cheatsheets",
     "Tech Second Brain/Research/Play with Makefile.md",
-    "Tech Second Brain/Kubernetes/Helpful Article.md",
     "[.md",
     "().md",
     "index.md",
@@ -195,8 +198,6 @@
     "Scripts/Templates/CICD/GitlabCI.md",
     "Scripts/Shell bash/work_with_s3.md",
     "Scripts/Shell bash/synchronize_gitlab.sh.md",
-    "Scripts/Shell bash/install_nvm.sh.md",
-    "Scripts/Shell bash/config_portainer.sh.md",
     "ansible/templates",
     "ansible",
     "Scripts/Ansible/Templates/PostgreSQL",
