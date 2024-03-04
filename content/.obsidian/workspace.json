@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tech Second Brain/Kubernetes/Notebooks (Experience)/Restart & Delete workload in K8s.md",
+                "file": "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Comment note in Shell Bash.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tech Second Brain/Kubernetes/Notebooks (Experience)/Restart & Delete workload in K8s.md",
+                "file": "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Comment note in Shell Bash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tech Second Brain/Kubernetes/Notebooks (Experience)/Restart & Delete workload in K8s.md",
+                "file": "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Comment note in Shell Bash.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tech Second Brain/Kubernetes/Notebooks (Experience)/Restart & Delete workload in K8s.md"
+                "file": "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Comment note in Shell Bash.md"
               }
             }
           },
@@ -160,44 +160,44 @@
   },
   "active": "92211aaafbff6e29",
   "lastOpenFiles": [
-    "Tech Second Brain/Kubernetes/Helpful Article.md",
-    "Tech Second Brain/Kubernetes/Notebooks (Experience)/Can use volume with cronjobs.md",
-    "Tech Second Brain/Kubernetes/Notebooks (Experience)/Restart & Delete workload in K8s.md",
-    "Tech Second Brain/OS Cheatsheets/Helpful Article.md",
-    "Tech Second Brain/Research/Compile gRPC for 1st time.md",
-    "Tech Second Brain/Cyber & Info Security/Research/Basic Knowledge/Web fundamentals.md",
-    "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Redirect Output and Error.md",
     "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Reconfiguration for curl template output.md",
+    "index.md",
+    "Tech Second Brain/Developer/HTML Snippet.md",
+    "Tech Second Brain/Cyber & Info Security/Research/Security Things/Subdomain Enumeration.md",
+    "Tech Second Brain/Cyber & Info Security/Research/Security Things/Top 10 OWASP.md",
+    "Tech Second Brain/Cyber & Info Security/Research/Security Things/Walking An Application.md",
+    "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Redirect Output and Error.md",
     "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Comment note in Shell Bash.md",
+    "Tech Second Brain/Kubernetes/Notebooks (Experience)/Restart & Delete workload in K8s.md",
+    "Tech Second Brain/Kubernetes/Notebooks (Experience)/Can use volume with cronjobs.md",
+    "Tech Second Brain/Projects/DevSecOps & System/Researching/Monitoring with Portainer.md",
+    "Tech Second Brain/Projects/DevSecOps & System/Researching/Create Free SSL with Let's Encrypt and Certbot.md",
+    "Tech Second Brain/Projects/DevSecOps & System/Researching/NGINX and everything about it.md",
+    "Tech Second Brain/Projects/DevSecOps & System/Researching/Setup PostgreSQL with Ansible.md",
+    "Tech Second Brain/Projects/All Projects.md",
+    "Tech Second Brain/Projects/Do Some Scripting/Shell bash/Sync Repo file in Gitlab.md",
+    "Tech Second Brain/Projects/Do Some Scripting/Shell bash/Shell Script for config Docker Portainer.md",
+    "Tech Second Brain/Projects/Do Some Scripting/Shell bash/Shell Script about Automation CD with Zero Downtime.md",
+    "Tech Second Brain/Projects/Do Some Scripting/Shell bash/Install NVM in Zsh or Bash.md",
+    "Tech Second Brain/Projects/Do Some Scripting/Shell bash/How can work with S3.md",
+    "Tech Second Brain/Projects/Do Some Scripting/Powershell/Build Azure Agent with .NET Core by Powershell.md",
+    "Tech Second Brain/Projects/Do Some Scripting/Ansible/Templates/PostgreSQL/PostgreSQL Host Template for Ansible.md",
+    "Tech Second Brain/Projects/Do Some Scripting/Ansible/Templates/PostgreSQL/PostgreSQL Configuration Template for Ansible.md",
+    "Tech Second Brain/Projects/Do Some Scripting/Ansible/Templates/Nginx/Nginx Template Portainer for Ansible.md",
+    "Tech Second Brain/Projects/Do Some Scripting/Ansible/Tasks/Setup General VM with Ansible.md",
+    "Tech Second Brain/Projects/Do Some Scripting/Ansible/Tasks/PostgreSQL Self-hosted in VM by Ansible.md",
     "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)",
     "Tech Second Brain/OS Cheatsheets",
     "Tech Second Brain/Assets/Images/Pasted image 20240303091823.png",
     "Tech Second Brain/Assets/Images/Pasted image 20240301152142.png",
     "Tech Second Brain/Assets/Images/Pasted image 20240301133750.png",
     "Tech Second Brain/Assets/Images/Pasted image 20240301132741.png",
-    "Tech Second Brain/Research/Compile GRPC with Makefile.md",
-    "Tech Second Brain/Linux Cheatsheets/Notebooks (Experience)/Redirect Output and Error.md",
-    "Tech Second Brain/Linux Cheatsheets/Notebooks (Experience)/Reconfiguration for curl template output.md",
-    "Tech Second Brain/Linux Cheatsheets/Notebooks (Experience)/Comment note in Shell Bash.md",
     "Tech Second Brain/Linux Cheatsheets/Notebooks (Experience)",
     "Tech Second Brain/Linux Cheatsheets",
-    "Tech Second Brain/Research/Play with Makefile.md",
-    "[.md",
-    "().md",
-    "index.md",
     "Tech Second Brain/Research",
     "Tech Second Brain/Assets/Images/Pasted image 20240223104857.png",
-    "Developer/HTML Snippet.md",
     "xeusnguyen.png",
     "Pasted image 20240221134635.png",
-    "Tech Collections/Github/VPN Selfhosted.md",
-    "Tech Collections/External Websites/Monitoring PostgreSQL Performance.md",
-    "Scripts/Templates/Terminal Profiles/zsh-profile.md",
-    "Scripts/Templates/Terminal Profiles/powershell-profile.md",
-    "Scripts/Templates/Grafana Dashboards/Azure PostgreSQL Queries Performance.md",
-    "Scripts/Templates/CICD/GitlabCI.md",
-    "Scripts/Shell bash/work_with_s3.md",
-    "Scripts/Shell bash/synchronize_gitlab.sh.md",
     "ansible/templates",
     "ansible",
     "Scripts/Ansible/Templates/PostgreSQL",

@@ -21,6 +21,6 @@ tags:
 > 6. In love with Quantum Computing.
  
  **You can find me on** 
-1. 🏢[[All Projects]] - *"This will include all projects about currently work on or archives"*
-2. 🎆[[All Blogs]]  - *"This will tell about all blog which i have and sharing to community"*
-3. 🔱[DevSecOps - CV](https://drive.google.com/file/d/1pa8X7JaO3fL3YT5n-7cGPh-2Ns7zGo4S/view?usp=sharing) - *"This is my currently DevSecOps - CV"*
+1. 🏢[[All Projects]] - *"All projects currently work on or archives"*
+2. 🎆[[All Blogs]]  - *"All blog which I have and share to community"*
+3. 🔱[DevSecOps - CV](https://drive.google.com/file/d/1pa8X7JaO3fL3YT5n-7cGPh-2Ns7zGo4S/view?usp=sharing) - *"Currently Job - DevSecOps"*

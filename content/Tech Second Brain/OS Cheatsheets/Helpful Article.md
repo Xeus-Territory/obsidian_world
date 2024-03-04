@@ -8,7 +8,11 @@ tags:
   - helpful
   - research
 ---
-
 # Env Variables
+
 - [Environment Variables in Windows/macOS/Linux PATH, CLASSPATH, JAVA_HOME](https://www3.ntu.edu.sg/home/ehchua/programming/howto/Environment_Variables.html)
 - [How to Set an Environment Variable in Linux](https://www.freecodecamp.org/news/how-to-set-an-environment-variable-in-linux/)
+
+# Output in shell
+
+- [Format output of xargs](https://unix.stackexchange.com/questions/89130/format-output-of-xargs) 
