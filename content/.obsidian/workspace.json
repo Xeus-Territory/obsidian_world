@@ -11,12 +11,8 @@
             "id": "afa6b4b3bc1ce68c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tech Second Brain/Projects/DevSecOps & System/Researching/Profiling applications with Pyroscope.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tech Second Brain/Projects/DevSecOps & System/Researching/Profiling applications with Pyroscope.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tech Second Brain/Projects/DevSecOps & System/Researching/Profiling applications with Pyroscope.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Tech Second Brain/Projects/DevSecOps & System/Researching/Profiling applications with Pyroscope.md"
-              }
+              "state": {}
             }
           },
           {
@@ -160,21 +152,20 @@
   },
   "active": "afa6b4b3bc1ce68c",
   "lastOpenFiles": [
-    "Tech Second Brain/Assets/Images/Pasted image 20240305113033.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240305140430.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240305134713.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240305133340.png",
+    "Tech Second Brain/Projects/Do Some Scripting/Templates/CICD/Github Action.md",
     "Tech Second Brain/Projects/DevSecOps & System/Researching/Profiling applications with Pyroscope.md",
-    "Tech Second Brain/Developer/HTML Snippet.md",
     "Tech Second Brain/Assets/Images/Pasted image 20240305160604.png",
     "Tech Second Brain/Assets/Images/Pasted image 20240305160313.png",
     "Tech Second Brain/Assets/Images/Pasted image 20240305154248.png",
-    "Tech Second Brain/Blog/All Blogs.md",
     "Tech Second Brain/Assets/Images/Pasted image 20240305152739.png",
     "Tech Second Brain/Assets/Images/Pasted image 20240305151825.png",
     "Tech Second Brain/Assets/Images/Pasted image 20240305150120.png",
     "Tech Second Brain/Assets/Images/Pasted image 20240305145608.png",
-    "Tech Second Brain/Projects/Do Some Scripting/Templates/CICD/Github Action.md",
+    "Tech Second Brain/Assets/Images/Pasted image 20240305144214.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240305144055.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240305142924.png",
+    "Tech Second Brain/Developer/HTML Snippet.md",
+    "Tech Second Brain/Blog/All Blogs.md",
     "Tech Second Brain/Projects/Do Some Scripting/Templates/CICD/GitlabCI.md",
     "Tech Second Brain/Projects/Do Some Scripting/Templates/Grafana Dashboards/Azure PostgreSQL Queries Performance.md",
     "Tech Second Brain/Projects/Do Some Scripting/Templates/Terminal Profiles/Zsh Profile.md",
