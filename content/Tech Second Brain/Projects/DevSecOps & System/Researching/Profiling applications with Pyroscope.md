@@ -90,8 +90,9 @@ First of all, You need to checkout some links down-below to understand ==Pyrosco
 <div align="center">
     <strong><em><p style="text-align: center;">Step work on by Pyroscope</p></em></strong>
 </div>
-![Diagram shows pyroscope agents -> profiles -> pyroscope server](https://www.cncf.io/wp-content/uploads/2022/07/unnamed-3.png)
+
 <div align="center">
+	 <img src="https://www.cncf.io/wp-content/uploads/2022/07/unnamed-3.png">
     <strong><em><p style="text-align: center;">SDK or Pyroscope Agent</p></em></strong>
 </div>
 # How can we setup Pyroscope and continuous profiling
