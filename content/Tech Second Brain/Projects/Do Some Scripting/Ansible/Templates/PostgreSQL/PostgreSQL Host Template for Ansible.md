@@ -6,6 +6,9 @@ tags:
   - configuration-file
   - default
 ---
+>[!summary]
+>Default configuration file about hosting config of PostgreSQL
+
 ```bash
 # pg_hba.conf.j2
 

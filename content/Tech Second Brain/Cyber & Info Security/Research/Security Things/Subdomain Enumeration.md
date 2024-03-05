@@ -4,7 +4,6 @@ tags:
   - fundamentals
   - infosec
 ---
-
 ## About the subdomain 
 - Subdomain enumeration is the process of dinding valid subdomain for a domain ==> Do this because it expand our attack surface to try and discover more potential points of vulnerability
 - 3 method to subdomain enumeration such as Bruteforce, OSINT and Virtual Host. [This link](https://0xffsec.com/handbook/information-gathering/subdomain-enumeration/) and [this link](https://zweilosec.gitbook.io/hackers-rest/web/web-notes/subdomain-virtual-host-enumeration) contain lots of cool stuff about the subdomain enumeration. Yeah try the best ☕ ☕ 

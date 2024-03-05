@@ -11,12 +11,14 @@ tags:
   - usage
   - postgresql
 ---
-*This progress will setup the postgresql, configure for postgresql for remote access on docker image*
+>[!summary]
+>This progress will setup the `postgresql`, configure for `postgresql` for remote access on docker image
 
-For running to set up postgresql in VM. Go for it with commands
+For running to set up `postgresql` in VM. Go for it with commands
+
 **Notice:**
 
-- Upgrading your specify hosts from `hosts` file and verify ssh-key with your ssh-agent
+- Upgrading your specify hosts from `hosts` file and verify `ssh-key` with your `ssh-agent`
 
 ```bash
 #!/bin/bash

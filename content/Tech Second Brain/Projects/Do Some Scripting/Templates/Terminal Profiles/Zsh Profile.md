@@ -6,7 +6,8 @@ tags:
   - linux
   - zsh
 ---
-*This is about some configuration to make your effective when work with linux shell, `Oh-My-Zsh`. This will collection from multiple source, I will update ASAP* 
+>[!sumarry]
+>This is about some configuration to make your effective when work with linux shell, `Oh-My-Zsh`. It will collection from multiple source, I will update ASAP
 
 ```bash
 #!/bin/bash

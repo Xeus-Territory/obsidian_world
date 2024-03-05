@@ -93,6 +93,23 @@ tags:
 >
 >🔗🔗🔗 [Link to project](https://github.com/Xeus-Territory/devops-tutorials)
 
+# Zero Downtime Deployment with NGINX
+
+>[!info]
+>Position: DevOps, L&D
+>
+>Language: Bash
+>
+>Technologies: Nginx, Bash scripting and Docker
+>
+>*Oct 2023*
+>
+>🔗🔗🔗 [[Zero Downtime when deploying]]
+
+
+
+
+
 
 
 

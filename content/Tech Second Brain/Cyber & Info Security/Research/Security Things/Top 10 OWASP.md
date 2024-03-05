@@ -4,7 +4,6 @@ tags:
   - fundamentals
   - infosec
 ---
-
 ## OSWAP Top 10 
 
 ![[Pasted image 20240219122648.png]]

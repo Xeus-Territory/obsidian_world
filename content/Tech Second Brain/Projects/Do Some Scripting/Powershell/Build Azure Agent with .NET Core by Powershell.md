@@ -6,7 +6,9 @@ tags:
   - runners
 title: Build Azure Agent with .NET Core by Powershell
 ---
-*This article will tell you how to use powershell script below, why it creates and release. Go check it in article ▶️ ▶️ [Setup the virtual machine Linux and Windows for Agents and Azure-Pipelines](https://hackmd.io/@XeusNguyen/S1BrSRPW6)*
+>[!summary]
+>This article will tell you how to use powershell script below, why it creates and release. Go check it in article ▶️ ▶️ [Setup the virtual machine Linux and Windows for Agents and Azure-Pipelines](https://hackmd.io/@XeusNguyen/S1BrSRPW6)
+
 ```powershell
 # dotnet_azure_agent.ps1
 

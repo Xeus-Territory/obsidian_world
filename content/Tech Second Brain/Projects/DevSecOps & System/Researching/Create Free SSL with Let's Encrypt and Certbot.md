@@ -9,10 +9,12 @@ tags:
   - DIY
   - usage
 ---
+>[!info]
+>So with SSL, you will have multiple choices with technology but for optimizing your price to operating anything system. Your `Static IP` which had is best optional for combine with Let's Encrypt, certbot of python3 with your domain. For more information, you can go to see [Let's Encrypt Documentation](https://letsencrypt.org/docs/) and [Certbot Documentation](https://certbot.eff.org/) for more information*
+>
+>Following [this document - Update: Using Free Let’s Encrypt SSL/TLS Certificates with NGINX](https://www.nginx.com/blog/using-free-ssltls-certificates-from-lets-encrypt-with-nginx/) for customize your own SSL. Therefore, in our situation, nginx running inside docker it will make anything become strange than running in own host, so give more time to finding away to try best of it inside container
 
-*So with SSL, you will have multiple choices with technology but for optimizing your price to operating anything system. Your static ip which had is best optional for combine with Let's Encrypt, certbot of python3 with your domain. For more information, you can go to see [Let's Encrypt Documentation](https://letsencrypt.org/docs/) and [Certbot Documentation](https://certbot.eff.org/) for more information*
-
->[!info]*Following this document for customize your own SSL: [https://www.nginx.com/blog/using-free-ssltls-certificates-from-lets-encrypt-with-nginx/](https://www.nginx.com/blog/using-free-ssltls-certificates-from-lets-encrypt-with-nginx/), so in our situation, nginx running inside docker it will make anything become strange than running in own host, so give more time to finding away to try best of it inside container*
+# Setup Free SSL with Certbot
 
 1. First of all, you need to add some of the configuration to mount /etc/letsencrypt from local inside the docker. For this purpose, if Nginx dies when restarting that one , the SSL will exist and be continuously used.
 
@@ -37,7 +39,7 @@ certbot --nginx -d <your_domain> --agree-tos -m <your_email> # Read and deny the
 ## Notification will announce if it is done succeed. Your cert and inomation of register is created inside the folder /etc/letsencrypt/*fr
 ```
 
-3. After that your conf of nginx, the certbot will automatically reconfigure your nginx conf file with SSL. Your application will change from HTTP to HTTPS (`# managed by Certbot`) is added. You can move this configuration for another route and it will help you reuse your SSL for another subdomain. I think this SSL is `wildcard certificate` and you can use it for multiple subdomains with just one certificate.
+3. After setting your conf of nginx, the certbot will automatically reconfigure your nginx conf file with SSL. Your application will change from HTTP to HTTPS (`# managed by Certbot`) is added. You can move this configuration for another route and it will help you reuse your SSL for another subdomain. I think this SSL is `wildcard certificate` and you can use it for multiple subdomains with just one certificate.
 
 4. So reapplied for configuration Nginx by this command
    
@@ -48,9 +50,9 @@ nginx -t # This command will check your syntax is okay or not
 nginx -s reload # It will reload the new configuration for nginx
 ```
 
-The result is your SSL applied to your domain, go and check it via browser. If 
+The result is your SSL applied to your domain, go and check it via browser
+# Renew SSL Certificate
 
-### Renew SSL Certificate
 - Let's encrypt is not supported by long-term SSL, so you need to manually renew or create a job to renew it.
 - With my plan, I will renew it on the first day of the month to keep the certificate always available, that to executing this command and pushes that for crontab to take care of it.
 

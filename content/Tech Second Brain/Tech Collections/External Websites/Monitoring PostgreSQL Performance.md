@@ -8,9 +8,9 @@ tags:
 ---
 *Thanks for [Dmitry Romanoff](https://dev.to/dm8ry) who posted this article, which help me optimize the effort to find out the way to doing statistic jobs for PostgreSQL queries and make it to dashboard for monitoring for whole database  ▶️ ▶️  [Main Article: Proactive PostgreSQL Database(s) Performance Scanner](https://dev.to/dm8ry/proactive-postgresql-databases-performance-scanner-4cd9)* 
 
-Beside the main scripting, i have make some research about MySQL and PostgreSQL in Azure Services and find out how to monitoring and doing statistic for queries. You can go and check it  ▶️ ▶️  [Integration Performance Query for MySQL or PostgreSQL](https://hackmd.io/@XeusNguyen/ry_nbYBxh)
+Beside the main scripting, I have make some research about MySQL and PostgreSQL in Azure Services and find out how to monitoring and doing statistic for queries. You can go and check it  ▶️ ▶️  [Integration Performance Query for MySQL or PostgreSQL](https://hackmd.io/@XeusNguyen/ry_nbYBxh)
 
-Down below is about script which contributed by Dmitry about tunning performance and monitoring queries with PostgreSQL
+Down below is about script which contributed by Dmitry about tuning performance and monitoring queries with PostgreSQL
 
 ```bash
 #!/bin/bash

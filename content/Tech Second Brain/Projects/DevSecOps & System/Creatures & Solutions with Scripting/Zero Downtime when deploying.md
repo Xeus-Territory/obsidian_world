@@ -8,14 +8,12 @@ tags:
   - usage
   - docker
 ---
-
 *Solution*: Choose for temporary Blue and Green deployment. More detail can be found in this [ Custom Blue Green Deployment With Nginx And Gitlab Ci](https://www.kimsereylam.com/gitlab/nginx/dotnetcore/ubuntu/2019/01/04/custom-blue-green-deployment-with-nginx-and-gitlab-ci.html)
 
 ![[Pasted image 20240218150404.png]]
 <div align="center">
     <strong><em><p style="text-align: center;">Blue and Green deployment strategy</p></em></strong>
 </div>
-
 ## **Nginx with bash scripting**
 - With the bash script is registered via cronjob, we need to consider about two things:
 	1. Nginx need to be setup for `reverse proxy` and `route traffic` when **downtime** occur 

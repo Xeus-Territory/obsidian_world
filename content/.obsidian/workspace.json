@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d442271c4bcbd0a7",
+        "id": "c0a10200f9c8221b",
         "type": "tabs",
         "children": [
           {
-            "id": "92211aaafbff6e29",
+            "id": "afa6b4b3bc1ce68c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Comment note in Shell Bash.md",
+                "file": "Tech Second Brain/Projects/DevSecOps & System/Researching/Profiling applications with Pyroscope.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Comment note in Shell Bash.md",
+                "file": "Tech Second Brain/Projects/DevSecOps & System/Researching/Profiling applications with Pyroscope.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Comment note in Shell Bash.md",
+                "file": "Tech Second Brain/Projects/DevSecOps & System/Researching/Profiling applications with Pyroscope.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Comment note in Shell Bash.md"
+                "file": "Tech Second Brain/Projects/DevSecOps & System/Researching/Profiling applications with Pyroscope.md"
               }
             }
           },
@@ -158,54 +158,54 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "92211aaafbff6e29",
+  "active": "afa6b4b3bc1ce68c",
   "lastOpenFiles": [
-    "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Reconfiguration for curl template output.md",
-    "index.md",
+    "Tech Second Brain/Assets/Images/Pasted image 20240305113033.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240305140430.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240305134713.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240305133340.png",
+    "Tech Second Brain/Projects/DevSecOps & System/Researching/Profiling applications with Pyroscope.md",
     "Tech Second Brain/Developer/HTML Snippet.md",
+    "Tech Second Brain/Assets/Images/Pasted image 20240305160604.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240305160313.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240305154248.png",
+    "Tech Second Brain/Blog/All Blogs.md",
+    "Tech Second Brain/Assets/Images/Pasted image 20240305152739.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240305151825.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240305150120.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240305145608.png",
+    "Tech Second Brain/Projects/Do Some Scripting/Templates/CICD/Github Action.md",
+    "Tech Second Brain/Projects/Do Some Scripting/Templates/CICD/GitlabCI.md",
+    "Tech Second Brain/Projects/Do Some Scripting/Templates/Grafana Dashboards/Azure PostgreSQL Queries Performance.md",
+    "Tech Second Brain/Projects/Do Some Scripting/Templates/Terminal Profiles/Zsh Profile.md",
+    "Tech Second Brain/Projects/Do Some Scripting/Templates/Terminal Profiles/Powershell Profile.md",
+    "Tech Second Brain/Projects/DevSecOps & System/Researching/Setup PostgreSQL with Ansible.md",
+    "().md",
+    "Tech Second Brain/Tech Collections/Github/VPN Selfhosted.md",
+    "Tech Second Brain/Cyber & Info Security/Research/Security Things/Authentication Bypass.md",
+    "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Redirect Output and Error.md",
+    "Tech Second Brain/Projects/DevSecOps & System/Creatures & Solutions with Scripting/Zero Downtime when deploying.md",
+    "Tech Second Brain/Projects/DevSecOps & System/Researching/Create Free SSL with Let's Encrypt and Certbot.md",
+    "Tech Second Brain/Projects/DevSecOps & System/Researching/Monitoring with Portainer.md",
+    "Tech Second Brain/Cyber & Info Security/Research/Security Things/Insecure Direct Object Reference (IDOR).md",
+    "Tech Second Brain/Cyber & Info Security/Research/Security Things/Server Site Template Injection (SSTI).md",
     "Tech Second Brain/Cyber & Info Security/Research/Security Things/Subdomain Enumeration.md",
     "Tech Second Brain/Cyber & Info Security/Research/Security Things/Top 10 OWASP.md",
     "Tech Second Brain/Cyber & Info Security/Research/Security Things/Walking An Application.md",
-    "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Redirect Output and Error.md",
-    "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Comment note in Shell Bash.md",
-    "Tech Second Brain/Kubernetes/Notebooks (Experience)/Restart & Delete workload in K8s.md",
-    "Tech Second Brain/Kubernetes/Notebooks (Experience)/Can use volume with cronjobs.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Researching/Monitoring with Portainer.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Researching/Create Free SSL with Let's Encrypt and Certbot.md",
     "Tech Second Brain/Projects/DevSecOps & System/Researching/NGINX and everything about it.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Researching/Setup PostgreSQL with Ansible.md",
-    "Tech Second Brain/Projects/All Projects.md",
-    "Tech Second Brain/Projects/Do Some Scripting/Shell bash/Sync Repo file in Gitlab.md",
-    "Tech Second Brain/Projects/Do Some Scripting/Shell bash/Shell Script for config Docker Portainer.md",
-    "Tech Second Brain/Projects/Do Some Scripting/Shell bash/Shell Script about Automation CD with Zero Downtime.md",
-    "Tech Second Brain/Projects/Do Some Scripting/Shell bash/Install NVM in Zsh or Bash.md",
-    "Tech Second Brain/Projects/Do Some Scripting/Shell bash/How can work with S3.md",
-    "Tech Second Brain/Projects/Do Some Scripting/Powershell/Build Azure Agent with .NET Core by Powershell.md",
-    "Tech Second Brain/Projects/Do Some Scripting/Ansible/Templates/PostgreSQL/PostgreSQL Host Template for Ansible.md",
-    "Tech Second Brain/Projects/Do Some Scripting/Ansible/Templates/PostgreSQL/PostgreSQL Configuration Template for Ansible.md",
-    "Tech Second Brain/Projects/Do Some Scripting/Ansible/Templates/Nginx/Nginx Template Portainer for Ansible.md",
-    "Tech Second Brain/Projects/Do Some Scripting/Ansible/Tasks/Setup General VM with Ansible.md",
     "Tech Second Brain/Projects/Do Some Scripting/Ansible/Tasks/PostgreSQL Self-hosted in VM by Ansible.md",
+    "Tech Second Brain/Projects/Do Some Scripting/Ansible/Tasks/Setup General VM with Ansible.md",
+    "Tech Second Brain/Projects/Do Some Scripting/Ansible/Templates/PostgreSQL/PostgreSQL Host Template for Ansible.md",
     "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)",
     "Tech Second Brain/OS Cheatsheets",
-    "Tech Second Brain/Assets/Images/Pasted image 20240303091823.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240301152142.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240301133750.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240301132741.png",
     "Tech Second Brain/Linux Cheatsheets/Notebooks (Experience)",
     "Tech Second Brain/Linux Cheatsheets",
     "Tech Second Brain/Research",
-    "Tech Second Brain/Assets/Images/Pasted image 20240223104857.png",
-    "xeusnguyen.png",
-    "Pasted image 20240221134635.png",
     "ansible/templates",
     "ansible",
     "Scripts/Ansible/Templates/PostgreSQL",
     "Scripts/Templates/Terminal Profiles",
     "Scripts/Templates/Nginx",
-    "Assets/Images/Pasted image 20240219150239.png",
-    "Assets/Images/Pasted image 20240219150226.png",
-    "Assets/Images/Pasted image 20240219150200.png",
     "Projects/Untitled.canvas",
     "Untitled.canvas",
     "Untitled 2.canvas",

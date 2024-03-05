@@ -4,13 +4,17 @@ tags:
   - gitlab
   - cicd
   - basic-templates
+  - automation
 ---
-*This template which store short `yaml` to show how can work with `GitlabCI` and note some specify for use case*
+>[!summary]
+>This template which store short `yaml` to show how can work with `GitlabCI` and note some specify for use case
+>
+>*More information about GLAB CI/CD and GLAB VARIABLES. Go check:*
+>1. [GITLAB CI/CD](https://docs.gitlab.com/ee/ci/yaml/)
+>2. [GITLAB VARIABLES](https://docs.gitlab.com/ee/ci/variables/) & [GITLAB_PREDEFINED_VAR](https://docs.gitlab.com/ee/ci/variables/predefined_variables.html)
+>3. [GITLAB_DOC](https://docs.gitlab.com/ee/user/)
 
-*More information about GLAB CI/CD and GLAB VARIABLES. Go check:*
-1. [GITLAB CI/CD](https://docs.gitlab.com/ee/ci/yaml/)
-2. [GITLAB VARIABLES](https://docs.gitlab.com/ee/ci/variables/) & [GITLAB_PREDEFINED_VAR](https://docs.gitlab.com/ee/ci/variables/predefined_variables.html)
-3. [GITLAB_DOC](https://docs.gitlab.com/ee/user/)
+## Example
 
 ```yaml
 # .gitlab-ci.yml
