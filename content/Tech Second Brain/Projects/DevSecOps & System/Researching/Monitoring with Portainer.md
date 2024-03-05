@@ -11,9 +11,11 @@ tags:
 ---
 
 <div align="center">
-    <img src="https://cloudcraft.info/wp-content/uploads/2021/11/portainer_7.jpg">
+    <img src="https://content.gitbook.com/content/tLcRoAdw9BYwwpba4ZAD/blobs/lpaZLqkbhSEZgNgumgN7/portainer-architecture-detailed.png">
     <strong><em><p style="text-align: center;">Portainer - Monitoring tools for K8s and Docker</p></em></strong>
 </div>
+
+# Config Portainer with Shell Scripting
 
 - So for easily managing and reading logs, metrics, and exec console of containers, you will need monitoring tools, and `portainer` is exactly what you want, go to [documentation](https://www.portainer.io/) for more detail.
 
@@ -30,7 +32,10 @@ chmod +x config_portainer.sh
 ./config_portainer.sh --deploy-agent-portainer
 ```
 
+# Config Portainer with Ansible for remote host
+
 *If you want to setup `portainer` with ansible. You can perform this command. You need choose one of task in [monitoring-task](Portainer%20Self-hosted%20in%20Docker%20by%20Ansible.md)*
+
   - **config_master**: *Configuration master portainer*
   - **config_ssl_master**: *Configuration master portainer with SSL cert domain*
   - **config_agent**: *Configuration agent portainer*

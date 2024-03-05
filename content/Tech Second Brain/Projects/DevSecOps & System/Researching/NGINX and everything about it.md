@@ -10,6 +10,7 @@ tags:
   - solutions
 ---
 ## Default nginx configuration
+
 ```nginx
 # nginx.conf
 user nginx;
@@ -99,7 +100,8 @@ server {
 ```
 
 ## Nginx configuration for work with upstream - load balancer
-*This nginx configuration will contain something like*
+
+*This `nginx` configuration will contain something like*
 1. upstream block: this block will hold the bunch of containers for making load balancer with multiple style
 2. server block: This server block will handle your request and response. This server block will cause redirect from (HTTP) 80 to (HTTPS) 443 
 ```nginx
@@ -167,6 +169,7 @@ server {
 }
 ```
 ## Zero Downtime Basic Upstream SSL
+
 *This block will help you handling blue-green deployment concept which can force traffic from blue to green with zero downtime and auto reload to backup container*
 ```nginx
 # LB for backend containers
@@ -226,6 +229,7 @@ server {
 }
 ```
 ## Nginx configuration for work with websocket
+
 - As you can see the backend have create some connections via `websocket` protocol and anything requested via `nginx-server`, so it need to be configured for resolved this one connection
 - All configuration can reference via article: [NGINX as a WebSocket Proxy](https://www.nginx.com/blog/websocket-nginx/). So we can sum up the configuration for adding to nginx including
  

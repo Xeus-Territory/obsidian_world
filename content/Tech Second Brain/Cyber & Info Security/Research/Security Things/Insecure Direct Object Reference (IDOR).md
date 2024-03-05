@@ -4,7 +4,6 @@ tags:
   - fundamentals
   - infosec
 ---
-
 *There many thing web you can refer to this stuff*
 1. [Insecure Direct Object Reference – IDOR Vulnerability](https://crashtest-security.com/insecure-direct-object-reference-idor/)
 2. [Tìm kiếm các lỗi IDOR, chưa bao giờ lại dễ đến thế với extension Autorize](https://viblo.asia/p/tim-kiem-cac-loi-idor-chua-bao-gio-lai-de-den-the-voi-extension-autorize-gDVK2z02KLj)
@@ -59,7 +58,6 @@ Sometimes endpoints could have an unreferenced parameter that may have been of s
 
 ### How to find an IDOR in a Bug Bounty Program
 The first rule in testing for an IDOR vulnerability is to catch all the requests your browser sends to the web server. Many times you will find those type of issues in URL parameters values, headers values or cookies. You will likely find encoded or hashed values and you have to decode them. For example the following link:
-
 
     https://example.com/profiles.php?id=e4da3b7fbbce2345d7772b0674a318d5
 

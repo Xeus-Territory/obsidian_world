@@ -7,7 +7,10 @@ tags:
   - usage
   - devops
 ---
-*This script will be helped you for retrieving the file from your S3 bucket*
+# Retrieve file data from S3
+
+>[!summary]
+>This script will be helped you for retrieving the file from your S3 bucket
 
 ```bash
 #!/bin/bash
@@ -30,7 +33,10 @@ echo -n "$(curl  -H "Host: ${bucket}.s3.amazonaws.com" \
      https://${bucket}.s3.amazonaws.com/${amzFile} -o "$outputFile")"
 ```
 
-*This script will help you upload a new file into S3 bucket*
+# Upload file to S3
+
+>[!summary]
+>This script will help you upload a new file to S3 bucket
 
 ```bash
 #!/bin/bash

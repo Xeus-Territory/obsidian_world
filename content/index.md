@@ -12,7 +12,7 @@ tags:
 
 > [!quote] *So hi @all, I am Xeus Nguyen and I work, learn and growth up myself on technologies field. Therefore, always keep my mind and make a good things and new creatures - Shortest way for reaching to legacy*
 > 
-> **Just having some experience about** 
+> **Having some experience about** 
 > 1. Capture The Flag
 > 2. Web Pentester
 > 3. Technologies Researcher

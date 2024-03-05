@@ -6,6 +6,9 @@ tags:
   - configuration-file
   - default
 ---
+>[!summary]
+>Default configuration file about total config of PostgreSQL
+
 ```bash
 # postgresql.conf.j2
 

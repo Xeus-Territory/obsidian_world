@@ -8,45 +8,20 @@ tags:
   - architecture
   - devops
 ---
+>[!summary]
+>Zero Downtime and Automation CD for raw machine with Nginx configuration (Using the combination with GLAB for example - Add another if you do customize)
+>
+>Purpose: Create a platform specific the non't downtime when deploying. Specifically with Blue and Green Deployments Methods, Maybe have Yellow Intergration its for make sure it can perform CD
+> 
+> Provide the output in the format:
+> 
+> Date: Oct 2023
+> Author: Xeus Nguyen
 
 ```bash
 # automation_cd.sh
 
 #!/bin/bash
-
-##################################################################################
-
-#
-
-#    Zero Downtime and Automation CD for raw machine with Nginx configuration
-
-# (Using the combination with GLAB for example - Add another if you do customize)
-
-#
-
-# Purpose: Create a platform specific the non't downtime when deploying
-
-#          Specifically with Blue and Green Deployments Methods, Maybe have Yellow
-
-#          Intergration its for make sure it can perform CD
-
-#
-
-# Provide the output in the format:
-
-#
-
-# Date: Oct 2023
-
-#
-
-# Author: Xeus Nguyen
-
-#
-
-##################################################################################
-
-  
 
 # Read the input parameter and check missing parameters
 
