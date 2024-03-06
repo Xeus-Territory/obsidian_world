@@ -20,7 +20,7 @@ curl --insecure -X GET "https://<es-username>:<es-password>@<es-domain>:<es-port
 curl -X DELETE --insecure "https://<es-username>:<es-password>@<es-domain>:<es-port>/_snapshot/<repository>/<name-snapshot>
 ```
 
-3. List first 50 snapshot, add `colon` to easily create the removing strings
+3. List first 50 snapshot, add `comma` to easily create the removing strings
 
 ```bash
 curl --insecure -X GET "https://<es-username>:<es-password>@<es-domain>:<es-port>/_cat/snapshots/azure" | awk '{print $1}' | head -n 50 | xargs -I{} echo -n "{}," | rev | cut -c2- | rev | xargs
