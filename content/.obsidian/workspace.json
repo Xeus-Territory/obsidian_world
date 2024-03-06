@@ -11,8 +11,12 @@
             "id": "afa6b4b3bc1ce68c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Tech Second Brain/Blog/All Blogs.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Tech Second Brain/Blog/All Blogs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Tech Second Brain/Blog/All Blogs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Tech Second Brain/Blog/All Blogs.md"
+              }
             }
           },
           {
@@ -152,8 +160,10 @@
   },
   "active": "afa6b4b3bc1ce68c",
   "lastOpenFiles": [
-    "Tech Second Brain/Projects/Do Some Scripting/Templates/CICD/Github Action.md",
+    "Tech Second Brain/Elasticsearch/API/Popular usage.md",
+    "Tech Second Brain/Projects/All Projects.md",
     "Tech Second Brain/Projects/DevSecOps & System/Researching/Profiling applications with Pyroscope.md",
+    "Tech Second Brain/Projects/Do Some Scripting/Templates/CICD/Github Action.md",
     "Tech Second Brain/Assets/Images/Pasted image 20240305160604.png",
     "Tech Second Brain/Assets/Images/Pasted image 20240305160313.png",
     "Tech Second Brain/Assets/Images/Pasted image 20240305154248.png",
@@ -186,7 +196,6 @@
     "Tech Second Brain/Projects/DevSecOps & System/Researching/NGINX and everything about it.md",
     "Tech Second Brain/Projects/Do Some Scripting/Ansible/Tasks/PostgreSQL Self-hosted in VM by Ansible.md",
     "Tech Second Brain/Projects/Do Some Scripting/Ansible/Tasks/Setup General VM with Ansible.md",
-    "Tech Second Brain/Projects/Do Some Scripting/Ansible/Templates/PostgreSQL/PostgreSQL Host Template for Ansible.md",
     "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)",
     "Tech Second Brain/OS Cheatsheets",
     "Tech Second Brain/Linux Cheatsheets/Notebooks (Experience)",

@@ -95,7 +95,9 @@ First of all, You need to checkout some links down-below to understand ==Pyrosco
 	 <img src="https://www.cncf.io/wp-content/uploads/2022/07/unnamed-3.png">
     <strong><em><p style="text-align: center;">SDK or Pyroscope Agent</p></em></strong>
 </div>
+
 # How can we setup Pyroscope and continuous profiling
+
 
 ## Setup Pyroscope Server
 
@@ -172,7 +174,7 @@ As you know, Pyroscope is produced for monitoring stack trace of programing with
  - [Rust](https://grafana.com/docs/pyroscope/latest/configure-client/language-sdks/rust/)
  - [NodeJS](https://grafana.com/docs/pyroscope/latest/configure-client/language-sdks/nodejs/)
 
-I will reach to example of Python and figure out what we need to do when try Pyroscope with Python. Thanks for detailing the example from Pyroscope ▶️ ▶️ ▶️ https://github.com/grafana/pyroscope/tree/release/v1.4/examples/python
+I will reach to example of Python and figure out what we need to do when try Pyroscope with Python. Thanks for detailing the example from Pyroscope ▶️ ▶️ ▶️ [Example Python](https://github.com/grafana/pyroscope/tree/release/v1.4/examples/python)
 
 <div align="center">
 	 <img src="https://user-images.githubusercontent.com/23323466/135728737-0c5e54ca-1e78-4c6d-933c-145f441c96a9.gif">
@@ -322,6 +324,7 @@ After that all things is connected, you can reach to the browser `http://localho
 <div align="center">
     <strong><em><p style="text-align: center;">Grafana Dashboard</p></em></strong>
 </div>
+
 >[!example]
 >This is quite simple application, but if you want more to understand and configuration. You can try with another example with python by multiple web-hosting framework of python like `flask` `django` `fastapi`
 >
@@ -375,7 +378,7 @@ Some specify type you can notice
     <strong><em><p style="text-align: center;">How is a flamegraph created?</p></em></strong>
 </div>
 
-When use read flamegraph, you must to read from ==head to bottom === with corresponding to each stacktrace. Flamegraph above will show us how many CPU cycle use when run `server.py 10`. It will include `slow_function work 8` represent  `work param(80000)` and same as with `fast_function work 2`
+When use read flamegraph, you must to read from ==head to bottom== with corresponding to each stacktrace. Flamegraph above will show us how many CPU cycle use when run `server.py 10`. It will include `slow_function work 8` represent  `work param(80000)` and same as with `fast_function work 2`
 
 >[!info]
 >Horizontally, the flamegraph represents 100% of the time that this application was running. The width of each node represents the amount of time spent in that function. The wider the node, the more time spent in that function. The narrower the node, the less time spent in that function.

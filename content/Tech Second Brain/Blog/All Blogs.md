@@ -5,6 +5,7 @@ tags:
   - community
   - myself
   - DIY
+  - ctf
 ---
 # Hackwekend
 
