@@ -5,8 +5,10 @@ tags:
   - ansible-templates
   - nginx
 ---
-```nginx
-# monitoring.conf.j2
+>[!summary]
+>Ansible Playbooks Template is used config for Nginx work with Portainer
+
+```nginx title="monitoring.conf.j2"
 
 # This block server for purpose route traffic to monitoring route
 server {

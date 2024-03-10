@@ -7,8 +7,10 @@ tags:
   - basic-knowledge
   - devops
 ---
-```bash
-# config_portainer.sh
+>[!summary]
+> Simple script is used for working with Portainer
+
+```bash title="config_portainer.sh"
 
 #!/bin/bash
 

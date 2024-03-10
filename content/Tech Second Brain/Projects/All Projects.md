@@ -83,7 +83,7 @@ tags:
 
 >[!info]
 >
->**Position: DevOps, L&D**
+>**Position: DevOps, R&D**
 >
 >**Language: HCL, Powershell, Bash, YAML, ...**
 >
@@ -96,11 +96,11 @@ tags:
 # Zero Downtime Deployment with NGINX
 
 >[!info]
->Position: DevOps, L&D
+>**Position: DevOps, R&D**
 >
->Language: Bash
+>**Language: Bash**
 >
->Technologies: Nginx, Bash scripting and Docker
+>**Technologies: Nginx, Bash scripting and Docker**
 >
 >*Oct 2023*
 >

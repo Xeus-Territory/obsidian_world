@@ -6,8 +6,10 @@ tags:
   - self-hosted
   - postgresql
 ---
-```yaml
-# postgresql-selfhost.yaml
+>[!summary]
+>Ansible Playbooks for self-hosted PostgreSQL on VM
+
+```yaml title="postgresql-selfhost.yaml"
 ---
 - name: Install postgresql-server
   hosts: "{{ host_name }}"

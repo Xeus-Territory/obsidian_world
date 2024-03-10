@@ -7,9 +7,10 @@ tags:
   - linux
   - nodejs
 ---
+>[!summary]
+>Simple Script is used to instaling NVM for your Linux host
 
-```bash
-# install_nvm.sh
+```bash title="install_nvm.sh"
 
 #!/bin/bash
 

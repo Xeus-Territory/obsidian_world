@@ -1,10 +1,11 @@
 ---
-title: Play with Makefile
+title: Play with Makefile for 1st time
 tags:
   - research
   - makefile
+  - for-1st-time
 ---
-*On this topic, It just put a couple things to finding out how we can use `Makefile`. It just a brief tutorials from [Learn Makefiles With the tastiest examples](https://makefiletutorial.com/), Just learn and figure out why want to play with this one and C, C++*
+ *On this topic, It just put a couple things to finding out how we can use `Makefile`. It just a brief tutorials from [Learn Makefiles With the tastiest examples](https://makefiletutorial.com/), Just learn and figure out why want to play with this one and C, C++*
 
 Reference Documentation
 - [Official GNU Make](https://www.gnu.org/software/make/)

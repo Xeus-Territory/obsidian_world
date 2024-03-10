@@ -5,9 +5,10 @@ tags:
   - terminal-profile
   - helpful
 ---
-*This is about some configuration to make your effective when work with powershell. This will collection from multiple source, I will update ASAP*
+>[!summary]
+>This is about some configuration to make your effective when work with powershell. This will collection from multiple source, I will update ASAP
 
-```powershell
+```powershell title="Microsoft.PowerShell_profile.ps1"
 ## To running this script - need to bypass restricted
 ## RUN THIS COMMAND VIA ADMINSTRATOR PWSH: Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 

@@ -18,8 +18,7 @@ tags:
 > Date: Oct 2023
 > Author: Xeus Nguyen
 
-```bash
-# automation_cd.sh
+```bash title="automation_cd.sh"
 
 #!/bin/bash
 
