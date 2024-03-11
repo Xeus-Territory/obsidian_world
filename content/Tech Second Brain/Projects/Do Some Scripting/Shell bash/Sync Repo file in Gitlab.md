@@ -8,8 +8,7 @@ tags:
 >[!summary]
 >This script is used to synchronize the files inside 2 different directories which come from 2 repo gitlab
 
-```bash
-# synchronize_gitlab.sh
+```bash title="synchronize_gitlab.sh"
 
 #! /bin/bash
 

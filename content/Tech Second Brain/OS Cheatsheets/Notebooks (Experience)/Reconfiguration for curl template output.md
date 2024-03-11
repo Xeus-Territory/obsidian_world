@@ -9,8 +9,7 @@ tags:
 
 ## Templates format to output via `curl` command
 
-```bash 
-# curl-formatter.txt (save this into file)
+```bash title="curl-formatter.txt"
 time_namelookup:  %{time_namelookup}s\n
 time_connect:  %{time_connect}s\n
 time_appconnect:  %{time_appconnect}s\n

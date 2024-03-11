@@ -9,7 +9,7 @@ tags:
 >[!sumarry]
 >This is about some configuration to make your effective when work with linux shell, `Oh-My-Zsh`. It will collection from multiple source, I will update ASAP
 
-```bash
+```bash title=".zshrc"
 #!/bin/bash
 
 # If you come from bash you might have to change your $PATH.

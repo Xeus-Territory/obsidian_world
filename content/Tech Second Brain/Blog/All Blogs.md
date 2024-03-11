@@ -79,4 +79,5 @@ tags:
 - [Different btw CMD vs Entrypoint vs RUN in Docker](https://hackmd.io/M0wKTWi1Rw-T6ybpWM7tSQ)
 - [[Compile gRPC for 1st time]]
 - [[Profiling applications with Pyroscope]]
+- [[Build your wiki for 1st time]]
 

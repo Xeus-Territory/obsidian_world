@@ -6,7 +6,7 @@ tags:
   - devops
   - solutions
 ---
-# Restart `Statefulset`
+# Restart `Statefulset` workload
 
 ## Reference
 - [Delete a StatefulSet](https://kubernetes.io/docs/tasks/run-application/delete-stateful-set/)

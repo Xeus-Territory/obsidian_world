@@ -18,8 +18,7 @@ tags:
 
 1. First of all, you need to add some of the configuration to mount /etc/letsencrypt from local inside the docker. For this purpose, if Nginx dies when restarting that one , the SSL will exist and be continuously used.
 
-```yaml
-# docker-compose.yaml
+```yaml title="docker-compose.yaml"
 proxy:
   <some_another_configuration>
   volumes:

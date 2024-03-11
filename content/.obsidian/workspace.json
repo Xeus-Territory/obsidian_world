@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "c0a10200f9c8221b",
+        "id": "64d05fdd575884e2",
         "type": "tabs",
         "children": [
           {
-            "id": "afa6b4b3bc1ce68c",
+            "id": "ee51541eb01e64e4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tech Second Brain/Blog/All Blogs.md",
+                "file": "Tech Second Brain/Research/Project for 1st time/Build your wiki for 1st time.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tech Second Brain/Blog/All Blogs.md",
+                "file": "Tech Second Brain/Research/Project for 1st time/Build your wiki for 1st time.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tech Second Brain/Blog/All Blogs.md",
+                "file": "Tech Second Brain/Research/Project for 1st time/Build your wiki for 1st time.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tech Second Brain/Blog/All Blogs.md"
+                "file": "Tech Second Brain/Research/Project for 1st time/Build your wiki for 1st time.md"
               }
             }
           },
@@ -138,7 +138,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -153,49 +153,49 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
       "templater-obsidian:Templater": false
     }
   },
-  "active": "afa6b4b3bc1ce68c",
+  "active": "ee51541eb01e64e4",
   "lastOpenFiles": [
-    "Tech Second Brain/Elasticsearch/API/Popular usage.md",
-    "Tech Second Brain/Projects/All Projects.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Researching/Profiling applications with Pyroscope.md",
-    "Tech Second Brain/Projects/Do Some Scripting/Templates/CICD/Github Action.md",
-    "Tech Second Brain/Assets/Images/Pasted image 20240305160604.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240305160313.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240305154248.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240305152739.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240305151825.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240305150120.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240305145608.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240305144214.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240305144055.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240305142924.png",
-    "Tech Second Brain/Developer/HTML Snippet.md",
     "Tech Second Brain/Blog/All Blogs.md",
-    "Tech Second Brain/Projects/Do Some Scripting/Templates/CICD/GitlabCI.md",
-    "Tech Second Brain/Projects/Do Some Scripting/Templates/Grafana Dashboards/Azure PostgreSQL Queries Performance.md",
-    "Tech Second Brain/Projects/Do Some Scripting/Templates/Terminal Profiles/Zsh Profile.md",
-    "Tech Second Brain/Projects/Do Some Scripting/Templates/Terminal Profiles/Powershell Profile.md",
+    "Tech Second Brain/Research/Project for 1st time/Build your wiki for 1st time.md",
+    "Tech Second Brain/Developer/HTML Snippet.md",
+    "Tech Second Brain/Assets/Images/Pasted image 20240311134748.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240311171857.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240311171025.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240311165047.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240311165019.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240311164850.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240311164553.png",
+    "Tech Second Brain/Research/Project for 1st time/Play with Makefile for 1st time.md",
+    "Tech Second Brain/Research/Project for 1st time/Compile gRPC for 1st time.md",
+    "Tech Second Brain/Assets/Images/Pasted image 20240311161807.png",
+    "Pasted image 20240311161836.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240311151946.png",
+    "Tech Second Brain/Research/Play with Makefile fof 1st time.md",
+    "Tech Second Brain/Research/Compile gRPC for 1st time.md",
+    "Tech Second Brain/Research/Project for 1st time",
+    "Tech Second Brain/Projects/All Projects.md",
     "Tech Second Brain/Projects/DevSecOps & System/Researching/Setup PostgreSQL with Ansible.md",
-    "().md",
-    "Tech Second Brain/Tech Collections/Github/VPN Selfhosted.md",
-    "Tech Second Brain/Cyber & Info Security/Research/Security Things/Authentication Bypass.md",
-    "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Redirect Output and Error.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Creatures & Solutions with Scripting/Zero Downtime when deploying.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Researching/Create Free SSL with Let's Encrypt and Certbot.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Researching/Monitoring with Portainer.md",
-    "Tech Second Brain/Cyber & Info Security/Research/Security Things/Insecure Direct Object Reference (IDOR).md",
-    "Tech Second Brain/Cyber & Info Security/Research/Security Things/Server Site Template Injection (SSTI).md",
-    "Tech Second Brain/Cyber & Info Security/Research/Security Things/Subdomain Enumeration.md",
-    "Tech Second Brain/Cyber & Info Security/Research/Security Things/Top 10 OWASP.md",
-    "Tech Second Brain/Cyber & Info Security/Research/Security Things/Walking An Application.md",
+    "Tech Second Brain/Projects/DevSecOps & System/Researching/Profiling applications with Pyroscope.md",
     "Tech Second Brain/Projects/DevSecOps & System/Researching/NGINX and everything about it.md",
-    "Tech Second Brain/Projects/Do Some Scripting/Ansible/Tasks/PostgreSQL Self-hosted in VM by Ansible.md",
-    "Tech Second Brain/Projects/Do Some Scripting/Ansible/Tasks/Setup General VM with Ansible.md",
+    "Tech Second Brain/Projects/DevSecOps & System/Researching/Monitoring with Portainer.md",
+    "Tech Second Brain/Projects/DevSecOps & System/Researching/Create Free SSL with Let's Encrypt and Certbot.md",
+    "Tech Second Brain/Projects/DevOps Tutorials (Roadmap)/1. Introducing.md",
+    "Tech Second Brain/Projects/DevOps Tutorials (Roadmap)/2. Resources.md",
+    "Tech Second Brain/Projects/AI/Scan Documentations (OCR - Text Extractor).md",
+    "Tech Second Brain/OS Cheatsheets/Helpful Article.md",
+    "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Redirect Output and Error.md",
+    "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Reconfiguration for curl template output.md",
+    "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Comment note in Shell Bash.md",
+    "Tech Second Brain/Kubernetes/Helpful Article.md",
+    "Tech Second Brain/Kubernetes/Notebooks (Experience)/Can use volume with cronjobs.md",
+    "Tech Second Brain/Kubernetes/Notebooks (Experience)/Restart & Delete workload in K8s.md",
+    "Tech Second Brain/Elasticsearch/API/Popular usage.md",
+    "Tech Second Brain/Projects/Do Some Scripting/Templates/CICD/Github Action.md",
     "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)",
     "Tech Second Brain/OS Cheatsheets",
     "Tech Second Brain/Linux Cheatsheets/Notebooks (Experience)",
@@ -205,7 +205,6 @@
     "ansible",
     "Scripts/Ansible/Templates/PostgreSQL",
     "Scripts/Templates/Terminal Profiles",
-    "Scripts/Templates/Nginx",
     "Projects/Untitled.canvas",
     "Untitled.canvas",
     "Untitled 2.canvas",

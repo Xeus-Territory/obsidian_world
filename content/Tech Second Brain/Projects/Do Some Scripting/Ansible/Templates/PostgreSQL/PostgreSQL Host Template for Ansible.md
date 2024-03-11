@@ -9,8 +9,7 @@ tags:
 >[!summary]
 >Default configuration file about hosting config of PostgreSQL
 
-```bash
-# pg_hba.conf.j2
+```bash title="pg_hba.conf.j2"
 
 # PostgreSQL Client Authentication Configuration File
 # ===================================================

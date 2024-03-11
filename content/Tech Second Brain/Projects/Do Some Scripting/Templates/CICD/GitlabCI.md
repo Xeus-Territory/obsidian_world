@@ -16,8 +16,7 @@ tags:
 
 ## Example
 
-```yaml
-# .gitlab-ci.yml
+```yaml title=".gitlab-ci.yml"
 
 stages:
   - 'synchronize-code'

@@ -11,8 +11,7 @@ tags:
 ---
 ## Default nginx configuration
 
-```nginx
-# nginx.conf
+```nginx title="nginx.conf"
 user nginx;
 worker_processes auto;
 
@@ -50,9 +49,7 @@ http {
 }
 ```
 
-```nginx
-# default.conf
-
+```nginx title="conf.d/default.conf"
 server {
     listen       80;
     listen  [::]:80;
@@ -103,9 +100,9 @@ server {
 
 *This `nginx` configuration will contain something like*
 1. upstream block: this block will hold the bunch of containers for making load balancer with multiple style
-2. server block: This server block will handle your request and response. This server block will cause redirect from (HTTP) 80 to (HTTPS) 443 
-```nginx
-# upstream.conf
+2. server block: This server block will handle your request and response. This server block will cause redirect from (HTTP) 80 to (HTTPS) 443
+
+```nginx title="conf.d/upstream.conf"
 # LB for backend containers
 upstream backend {
     server {{ be.name_origin_replica_backend }}:{{ be.port_origin_replica_backend }};
@@ -171,7 +168,8 @@ server {
 ## Zero Downtime Basic Upstream SSL
 
 *This block will help you handling blue-green deployment concept which can force traffic from blue to green with zero downtime and auto reload to backup container*
-```nginx
+
+```nginx title="conf.d/upstream-0downtime.conf"
 # LB for backend containers
 upstream backend {
     server {{ be.name_origin_replica_backend }}:{{ be.port_origin_replica_backend }} max_fails=2 fail_timeout=3;

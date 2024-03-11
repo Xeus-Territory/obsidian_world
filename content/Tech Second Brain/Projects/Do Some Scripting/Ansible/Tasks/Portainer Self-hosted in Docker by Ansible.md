@@ -5,9 +5,10 @@ tags:
   - ansible
   - monitoring
 ---
+>[!summary]
+>Ansible Playbooks for self-hosted Portainer with Docker
 
-```yaml
-# portainer-setup.yaml
+```yaml title="portainer-setup.yaml"
 ---
 - name: Deploy portainer master and agent
   hosts: "{{ host_name }}"

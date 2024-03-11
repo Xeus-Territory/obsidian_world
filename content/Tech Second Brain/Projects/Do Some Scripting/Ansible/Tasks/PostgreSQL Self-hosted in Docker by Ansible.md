@@ -7,8 +7,10 @@ tags:
   - docker
   - postgresql
 ---
-```yaml
-# postgresql-docker.yaml
+>[!summary]
+>Ansible Playbooks for self-hosted PostgreSQL with Docker
+
+```yaml title="postgresql-docker.yaml"
 ---
 - name: Setup postgres for remote machines via Docker
   hosts: "{{ name_machine }}"

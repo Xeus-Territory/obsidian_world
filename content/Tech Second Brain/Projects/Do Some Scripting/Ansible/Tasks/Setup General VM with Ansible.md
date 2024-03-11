@@ -7,9 +7,10 @@ tags:
   - bash
   - linux
 ---
+>[!summary]
+>Ansible Playbooks for general config VM
 
-```yaml
-# general-setup.yaml
+```yaml title="general-setup.yaml"
 ---
 - name: Update and install packages from apt repository
   become: true
