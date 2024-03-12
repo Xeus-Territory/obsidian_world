@@ -10,21 +10,21 @@ tags:
   - blog
 ---
 *Hi @all, Today I and you will learn how way to making your first landing page, automation update and release that with `github-actions`. This will fast, stable, fun and easily managing what you want to release, have a sit and we will start !!!* 😄😄😄
-
 # Find out the target - Reason why you need this
-
 ## TLDR
 
 >[!quote]
 >Probably, you are same as me, If you figure out a new things, for example: New Technologies. You will have the spirit to learn and experience more than ever, but on the lastly, you just throw and skip to next things, Too waste and not make a memorable for yourself. Therefore, This is reason why you need make new chance, on the start, with a little bit and go up to huge things with your repeat actions - Learn, write and review. I promise It will the best experience for yourself 😏😏😏
 
-LOL, That is long too much, skip it. However, I should tell the true and figure out why we need keep the research for you, maybe It's good for us to growth up. **Take Note, Important actions**, will help you make new practice, bookmark for you searching and keep ever what you read. And another reason, If you want contribute, share and make your knowledge reach to others people.
+LOL, That is long too much, skip it. However, I should tell the true and figure out why we need keep the research for you, maybe It's good for us to growth up. **Take Note - Important actions**, will help you make new practice, bookmark for you searching and keep ever what you read. And another reason, If you want contribute, share and make your knowledge reach to others people.
 
 <div align="center">
 	<img src="https://i.pinimg.com/originals/2e/e2/7d/2ee27d49fc7ea71ec8e80c7417248598.gif">
     <strong><em><p style="text-align: center;">Problems, many problems</p></em></strong>
 </div>
-Although, you want to keep the blog but not having motivation, with many things `note` tools is releasing nowadays that will make you confusing for choosing the right for yourself and meets the set criteria like as
+
+Although, you want to keep the blog but not having motivation, with many things `note-tools` is releasing nowadays that will make you confusing for choosing the right for yourself and meets the set criteria like as
+
 - Free, Keep forever
 - Easily managing and using
 - Beauty and helpful
@@ -34,7 +34,7 @@ But brief again, you need to understand how to internet actually work, maybe fro
 ![[Pasted image 20240311134748.png]]
 ## But how we can
 
-Like I talk about, `NOTE` tools is many releasing nowadays, you will have many options for your choice. Huge name, which you need to notice like
+Like I talk about, `note-tools` is releasing more ever nowadays, you will have many options for your choice. Huge name, which you need to notice like
 
 ![[Pasted image 20240311135046.png]]
 <div align="center">
@@ -50,7 +50,7 @@ Like I talk about, `NOTE` tools is many releasing nowadays, you will have many o
 |     [Obsidian](https://zapier.com/blog/best-note-taking-apps/#obsidian)     | Tinkerers and power note-takers            | Internal bi-directional linking between notes                         | Free for personal use                              |
 |       [Joplin](https://zapier.com/blog/best-note-taking-apps/#joplin)       | Anyone looking for an Evernote alternative | Open source                                                           | Free                                               |
 
-I don't have much experience for use Note-taking applications but Notion - To Popular and the best choice. With some pros and cons like
+I don't have much experience for use  with more `note-taking` applications but [**Notion**](https://www.notion.so/) - The most popular & choice with some pros and cons like
 
 ![[Pasted image 20240311140112.png]]
 
@@ -62,16 +62,16 @@ I don't have much experience for use Note-taking applications but Notion - To Po
 >**Notion cons:**
 >- If you're looking for a personal note-taking app, it can be a bit over the top
 
-But with me, It has some problems, If you have not fast and stable internet, It will be hard to control what you write, maybe It's not writable. Poor things !!! 🤭.
+But with me, It has some problems. If you have not fast and stable internet, It will be hard to control what you write, maybe It's not writable. Poor things !!! 🤭.
 
-When you published things to Internet, Simply you push the HTML to browser and your browser need to serve them and with specify things like language, `Markdown`, you can easily resolve the problems. With `Markdown` you can handle write the text with syntax and can converted into HTML, like bold, italic, align, ... Mark down will support that, with me, I trust and lovely two platform
+When you published things to Internet, simply you push the HTML to browser and your browser need to serve them and with specify things like language, `Markdown`, you can easily resolve the problems. With `Markdown` you can handle write the text with syntax and can converted into HTML, like bold, italic, align, ... Mark down will support that, with me, I trust and lovely two platform
 
 - [HackMD - Website](https://hackmd.io/)
 - [Obsidian - Locally](https://obsidian.md/)
 
-So I will compare the difference between them but not today. Maybe, on the first time you will need a little bit time to understanding and use fluently `markdown` syntax, but trust me, when you suitable using that, you will not skip them, 💯
+So I will compare the difference between them but not today. Maybe, on the first time you will need a little bit time to understanding and use fluently `markdown` syntax, but trust me, when you suitable using that, you will not skip them 💯💯💯 for sure
 
-But reason why of topic is not talking about `note-taking` applications, I want to share about the how delivery the your note to internet. On the anothers, I will publish about talk with `note-talking` app.
+But reason why of topic is not talking about `note-taking` applications, I want to share about the how delivery the your note to internet. On the others, I will publish about talk with `note-talking` app
 
 # Delivery your note to Internet
 
@@ -110,7 +110,7 @@ Quartz with many feature and work progressing for Obsidian, so recommendation us
 And the end of kinds, you just need to find out place where you can free public your post. [Github Pages](https://pages.github.com/), the best choice for self-hosted first website.
 
 <div align="center">
-	<img src="https://pages.github.com/images/slideshow/microsoft.png">
+	<img src="https://i.ytimg.com/vi/ogkbC0uxWTE/maxresdefault.jpg">
     <strong><em><p style="text-align: center;">Websites for you and your projects.</p></em></strong>
 </div>
 
@@ -138,13 +138,16 @@ The default branch `v4` when you clone from source, here is some example
 
 ![[Pasted image 20240311151000.png|1000x50]]
 
-**Strategy of quartz will build all MD in content folders to public contents and web-server like npx will serve this public**. Therefore, you shouldn't push this public to your repository from now to future, Ignoring the conflict :luc_moon::luc_moon::luc_moon:. So please remember, add `.gitignore` to preventing thing problems. 
+>[!info]
+>**Strategy of quartz will build all MD in content folders to public contents and web-server will serve this public folders, kind basic right 🤭🤭**
 
-Download Obsidian and open `contents` folder with Obsidian
+Therefore, you shouldn't push this public to your repository from now to future, Ignoring the conflict 😃. So please remember, add `.gitignore` to preventing thing problems. 
+
+Download Obsidian and open `content` folder with Obsidian
 
 ![[Pasted image 20240311151946.png]]
 
-With Obsidian, I will recommend you install some plugin when you work with Obsidian by choosing `Settings` :obs_right_arrow_with_tail: `Community plugins` :obs_right_arrow_with_tail: `Turn on community plugins` :obs_right_arrow_with_tail: `Browse` and find some plugins which helpful for you like
+With Obsidian, I will recommend you install some plugin when you work with Obsidian by choosing `Settings` 👉  `Community plugins` 👉 `Turn on community plugins` 👉 `Browse` and find some plugins which helpful for you like
 - **[Excalidraw](https://excalidraw.com/)** - Drawing tools in Obsidian like Draw.io but simple and flexible
 - **Advanced Tables** - Add improved navigation, formatting, and manipulation to markdown tables in Obsidian
 - **Templater** - Defines a templating language for your note
@@ -204,7 +207,7 @@ Access `http://localhost:8080` and you will have the page on locally
 
 ### Release your blog to github-pages
 
-With the release, Quartz will published via `Github-Actions`, you just need to understand a little bit of CI and use this with example from [GitHub Pages Hostings](https://quartz.jzhao.xyz/hosting#github-pages). Let analysis a little bit to understanding more
+With the release, Quartz will published via `github-actions`, you just need to understand a little bit of CI and use this with example from [GitHub Pages Hostings](https://quartz.jzhao.xyz/hosting#github-pages). Let analysis a little bit to understanding more
 
 ```yaml title="~/quartz/.github/workflows/deploy.yml"
 name: Deploy Quartz site to GitHub Pages
@@ -264,18 +267,19 @@ Something you need to concert when using this CI
 That all about CI with this `workflow`. By default, The CI is including on `~/quartz/.github/workflows` but `ci.yaml` is not suitable, so please save the above script into this folder with `deploy.yml`
 
 Create a new repo project and configure settings for releasing project into github-page
-1. Create a new repo
+
+1. **Create a new repo**
 
 ![[Pasted image 20240311164553.png]]
 
-2. Setting the `pages`
+2. **Setting the `pages`**
 
 You need to access `Settings` and go to `pages`, change source from `Deploy from a branch` to `Github Actions`
 
 ![[Pasted image 20240311164850.png]]
 ![[Pasted image 20240311165047.png]]
 
-3. Commit and push your pages
+3. **Commit and push your pages**
 
 > [!warning]
 > **Remember, Enable github-action to forsure branch is push and run the workflow on `Actions` tab. Check [this link](https://docs.github.com/en/actions/using-workflows/disabling-and-enabling-a-workflow)**
@@ -308,11 +312,13 @@ npx quartz sync
 
 ![[Pasted image 20240311171025.png]]
 
-Some workflow will be trigger, the task in currently is waiting to runners completely all jobs. And the result will be published on your github-pages
+Some workflow will be trigger, the task in currently is waiting to runners completely all jobs. And the result will be published on your github-pages, with me access `<github-page>/<repository-name>`
 
-![[Pasted image 20240311171857.png]]
-
+![[Pasted image 20240312093824.png]]
 # Conclusion
+
+>[!summary]
+>With Quartz, you will have completely tool for self-hosting own blog, wiki, bookmark or what ever you want. `Github-Pages` and `Github-Actions` will take care automation and place for you deployment, easily. If you want change and apply more for your site, you need to learn them inside via [Obsidian](https://help.obsidian.md/Home) and [Official Site - Quartz 4.0](https://quartz.jzhao.xyz/)
 
 >[!quote]
 >That all for today, I hope you can self-hosted your page, promote and contribute more ever topics with cool stuff and helpful for community. Best thanks and graceful for [Jacky Zhao](https://github.com/jackyzha0) with contributing the template and helpful solution for obsidian gang. 
