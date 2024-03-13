@@ -11,8 +11,12 @@
             "id": "c3af237122b66939",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Tech Second Brain/OS Cheatsheets/Helpful Article.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tech Second Brain/Assets/Images/Pasted image 20240312093824.png",
+                "file": "Tech Second Brain/OS Cheatsheets/Helpful Article.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tech Second Brain/Assets/Images/Pasted image 20240312093824.png",
+                "file": "Tech Second Brain/OS Cheatsheets/Helpful Article.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tech Second Brain/Assets/Images/Pasted image 20240312093824.png"
+                "file": "Tech Second Brain/OS Cheatsheets/Helpful Article.md"
               }
             }
           },
@@ -154,8 +158,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "3656a4559906901a",
+  "active": "c3af237122b66939",
   "lastOpenFiles": [
+    "Tech Second Brain/Kubernetes & Docker/Notebooks (Experience)/Can use volume with cronjobs.md",
+    "Tech Second Brain/Kubernetes & Docker/Notebooks (Experience)/Restart & Delete workload in K8s.md",
+    "Tech Second Brain/Kubernetes & Docker/Helpful Article.md",
+    "Tech Second Brain/Projects/DevSecOps & System/Creatures & Solutions with Scripting/Zero Downtime when deploying.md",
     "Tech Second Brain/Research/Project for 1st time/Build your wiki for 1st time.md",
     "Tech Second Brain/Assets/Images/Pasted image 20240312093824.png",
     "Tech Second Brain/Assets/Images/Pasted image 20240311171857.png",
@@ -182,16 +190,12 @@
     "Tech Second Brain/Tech Collections/Github/VPN Selfhosted.md",
     "Tech Second Brain/Cyber & Info Security/Research/Security Things/Authentication Bypass.md",
     "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Redirect Output and Error.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Creatures & Solutions with Scripting/Zero Downtime when deploying.md",
     "Tech Second Brain/Projects/DevSecOps & System/Researching/Create Free SSL with Let's Encrypt and Certbot.md",
     "Tech Second Brain/Projects/DevSecOps & System/Researching/Monitoring with Portainer.md",
     "Tech Second Brain/Cyber & Info Security/Research/Security Things/Insecure Direct Object Reference (IDOR).md",
     "Tech Second Brain/Cyber & Info Security/Research/Security Things/Server Site Template Injection (SSTI).md",
     "Tech Second Brain/Cyber & Info Security/Research/Security Things/Subdomain Enumeration.md",
     "Tech Second Brain/Cyber & Info Security/Research/Security Things/Top 10 OWASP.md",
-    "Tech Second Brain/Cyber & Info Security/Research/Security Things/Walking An Application.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Researching/NGINX and everything about it.md",
-    "Tech Second Brain/Projects/Do Some Scripting/Ansible/Tasks/PostgreSQL Self-hosted in VM by Ansible.md",
     "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)",
     "Tech Second Brain/OS Cheatsheets",
     "Tech Second Brain/Linux Cheatsheets/Notebooks (Experience)",
