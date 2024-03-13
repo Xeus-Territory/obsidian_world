@@ -1,5 +1,5 @@
 ---
-title: "Kubernetes: Tips and Helpful Article"
+title: "Kubernetes & Docker: Tips and Helpful Article"
 tags:
   - k8s
   - research
@@ -15,6 +15,10 @@ tags:
 - [Azure - Core Kubernetes concepts for Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/aks/concepts-clusters-workloads)
 - [Azure - Best practices for basic scheduler features in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/operator-best-practices-scheduler)
 - [Azure - Supported Kubernetes versions in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/supported-kubernetes-versions?tabs=azure-cli)
+
+# Tips, Tricks with Container Runtime
+
+- [StackOverFlow - How can I keep a container running on Kubernetes?](https://stackoverflow.com/questions/31870222/how-can-i-keep-a-container-running-on-kubernetes)
 
 # Troubleshoot error status of workloads
 
