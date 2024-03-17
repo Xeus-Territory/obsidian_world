@@ -10,7 +10,8 @@ tags:
     <em><p style="text-align: center;">"Keep learn, live and enjoyable !!!"</p></em>
 </div>
 
-> [!quote] *So hi @all, I am Xeus Nguyen and I work, learn and growth up myself on technologies field. Therefore, always keep my mind and make a good things and new creatures - Shortest way for reaching to legacy*
+> [!quote] 
+> *So hi @all, I am Xeus Nguyen and I work on, learn and growth up myself with technologies field. Therefore, I always keep my mind and make a good and create more new things. Be stay humble and enthusiastic that is shortest way to reaching legacy*
 > 
 > **Having some experience about** 
 > 1. Capture The Flag
