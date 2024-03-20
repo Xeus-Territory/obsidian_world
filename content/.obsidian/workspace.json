@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "24e8a7bfabc399ab",
+        "id": "114cca54a67ee091",
         "type": "tabs",
         "children": [
           {
-            "id": "c3af237122b66939",
+            "id": "12f51326b1c6b356",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tech Second Brain/Databases/Helpful Articles.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tech Second Brain/Databases/Helpful Articles.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tech Second Brain/Databases/Helpful Articles.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tech Second Brain/Databases/Helpful Articles.md"
+                "file": "index.md"
               }
             }
           },
@@ -158,15 +158,23 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "c3af237122b66939",
+  "active": "12f51326b1c6b356",
   "lastOpenFiles": [
+    "Untitled.md",
+    "index.md",
+    "Tech Second Brain/Azure Fundamentals/Azure tutorials.md",
+    "Tech Second Brain/Azure Fundamentals/Azure Certificates",
+    "Tech Second Brain/Azure Fundamentals/Azure Resources",
+    "Tech Second Brain/Azure Fundamentals",
+    "Tech Second Brain/Projects/DevOps Tutorials (Roadmap)/2. Resources.md",
+    "Tech Second Brain/Projects/DevOps Tutorials (Roadmap)/1. Introducing.md",
     "Tech Second Brain/Databases/PostgreSQL/Monitoring PostgreSQL Performance.md",
     "Tech Second Brain/Databases/PostgreSQL/Awesome article.md",
-    "Tech Second Brain/Databases/Helpful Articles.md",
+    "Tech Second Brain/Developer/Snippets/HTML.md",
     "Tech Second Brain/Developer/Helpful Articles.md",
     "Tech Second Brain/Kubernetes & Docker/Helpful Articles.md",
+    "Tech Second Brain/Databases/Helpful Articles.md",
     "Tech Second Brain/OS Cheatsheets/Helpful Articles.md",
-    "index.md",
     "Tech Second Brain/Research/Tech Collections/External Websites/Research papers about ML, AI or CS.md",
     "Tech Second Brain/Developer/Snippets",
     "Tech Second Brain/Databases/PostgreSQL",
@@ -189,23 +197,15 @@
     "Tech Second Brain/Projects/All Projects.md",
     "Tech Second Brain/Projects/DevSecOps & System/Researching/Profiling applications with Pyroscope.md",
     "Tech Second Brain/Projects/Do Some Scripting/Templates/CICD/Github Action.md",
-    "Tech Second Brain/Developer/Snippets/HTML.md",
     "Tech Second Brain/Blog/All Blogs.md",
     "Tech Second Brain/Projects/Do Some Scripting/Templates/CICD/GitlabCI.md",
     "Tech Second Brain/Projects/Do Some Scripting/Templates/Grafana Dashboards/Azure PostgreSQL Queries Performance.md",
     "Tech Second Brain/Projects/Do Some Scripting/Templates/Terminal Profiles/Zsh Profile.md",
     "Tech Second Brain/Projects/Do Some Scripting/Templates/Terminal Profiles/Powershell Profile.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Researching/Setup PostgreSQL with Ansible.md",
-    "().md",
-    "Tech Second Brain/Research/Tech Collections/Github/VPN Selfhosted.md",
-    "Tech Second Brain/Cyber & Info Security/Research/Security Things/Authentication Bypass.md",
     "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)",
     "Tech Second Brain/OS Cheatsheets",
     "Tech Second Brain/Linux Cheatsheets/Notebooks (Experience)",
     "Tech Second Brain/Linux Cheatsheets",
-    "Tech Second Brain/Research",
-    "ansible/templates",
-    "ansible",
     "Projects/Untitled.canvas",
     "Untitled.canvas",
     "Untitled 2.canvas",
