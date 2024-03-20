@@ -12,7 +12,7 @@ export const sharedPageComponents: SharedLayout = {
       "HackMD": "https://hackmd.io/@xeusnguyen",
       "Viblo": "https://viblo.asia/u/Xeus-Territory",
       "Medium": "https://medium.com/@XeusNguyen",
-      "Youtube Channel": "https://www.youtube.com/channel/UC-Tw_Q-bLxFSJotpvB2RpMg",
+      "Youtube": "https://www.youtube.com/@xeusnguyen",
       "Twitter": "https://twitter.com/XeusNguyen"
     },
   }),
