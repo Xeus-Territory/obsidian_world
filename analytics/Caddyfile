@@ -1,0 +1,3 @@
+https://$DOMAIN:9999 {
+        reverse_proxy umami:3000
+}

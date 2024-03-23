@@ -7,7 +7,9 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
+      provider: "umami",
+      host: "https://analytics.xeusnguyen.xyz:9999",
+      websiteId: "99cbd603-4727-45e5-b82d-4963f8c27981",
     },
     locale: "en-US",
     baseUrl: "wiki.xeusnguyen.xyz",
