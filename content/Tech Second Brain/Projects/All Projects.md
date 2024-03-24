@@ -104,7 +104,7 @@ tags:
 >
 >*Oct 2023*
 >
->🔗🔗🔗 [[Zero Downtime when deploying]]
+>🔗🔗🔗 [[0-downtime with Blue-Green Deployment]]
 
 
 

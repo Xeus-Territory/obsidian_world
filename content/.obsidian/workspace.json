@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "114cca54a67ee091",
+        "id": "4ec2d81758da6d7d",
         "type": "tabs",
         "children": [
           {
-            "id": "12f51326b1c6b356",
+            "id": "dcab77716e539a92",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "Tech Second Brain/Projects/DevSecOps & System/Solutions/0-downtime with Blue-Green Deployment.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "Tech Second Brain/Projects/DevSecOps & System/Solutions/0-downtime with Blue-Green Deployment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "Tech Second Brain/Projects/DevSecOps & System/Solutions/0-downtime with Blue-Green Deployment.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "Tech Second Brain/Projects/DevSecOps & System/Solutions/0-downtime with Blue-Green Deployment.md"
               }
             }
           },
@@ -158,19 +158,39 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "12f51326b1c6b356",
+  "active": "dcab77716e539a92",
   "lastOpenFiles": [
-    "Untitled.md",
+    "Tech Second Brain/Blog/All Blogs.md",
+    "Tech Second Brain/Projects/DevSecOps & System/Research/Caddy Server and Umami analytics platform.md",
+    "Tech Second Brain/Developer/Snippets/HTML.md",
+    "Tech Second Brain/Assets/Images/Pasted image 20240324111622.png",
     "index.md",
-    "Tech Second Brain/Azure Fundamentals/Azure tutorials.md",
-    "Tech Second Brain/Azure Fundamentals/Azure Certificates",
-    "Tech Second Brain/Azure Fundamentals/Azure Resources",
-    "Tech Second Brain/Azure Fundamentals",
+    "Tech Second Brain/Assets/Images/Pasted image 20240324222432.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240324220803.png",
+    "Tech Second Brain/Cyber & Info Security/Research/Basic Knowledge/Web fundamentals.md",
+    "Tech Second Brain/Assets/Images/Pasted image 20240324213109.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240324212324.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240324175506.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240324171221.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240324165440.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240324165021.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240324164816.png",
+    "Tech Second Brain/Projects/DevSecOps & System/Research/Create Free SSL with Let's Encrypt and Certbot.md",
+    "Tech Second Brain/Projects/DevSecOps & System/Research/Profiling applications with Pyroscope.md",
+    "Tech Second Brain/Research/Project for 1st time/Build your wiki for 1st time.md",
+    "Tech Second Brain/Research/Project for 1st time/Untitled.md",
+    "Tech Second Brain/Projects/DevSecOps & System/Solutions/NTMA for anomalies detection and autoscaling.md",
+    "Tech Second Brain/Projects/DevSecOps & System/Solutions/0-downtime with Blue-Green Deployment.md",
+    "Tech Second Brain/Projects/All Projects.md",
+    "Tech Second Brain/Azure/Why Azure, first chosen or not.md",
+    "Untitled.md",
+    "Tech Second Brain/Azure/Certificates",
+    "Tech Second Brain/Azure/Resources & Services",
+    "Tech Second Brain/Azure",
     "Tech Second Brain/Projects/DevOps Tutorials (Roadmap)/2. Resources.md",
     "Tech Second Brain/Projects/DevOps Tutorials (Roadmap)/1. Introducing.md",
     "Tech Second Brain/Databases/PostgreSQL/Monitoring PostgreSQL Performance.md",
     "Tech Second Brain/Databases/PostgreSQL/Awesome article.md",
-    "Tech Second Brain/Developer/Snippets/HTML.md",
     "Tech Second Brain/Developer/Helpful Articles.md",
     "Tech Second Brain/Kubernetes & Docker/Helpful Articles.md",
     "Tech Second Brain/Databases/Helpful Articles.md",
@@ -181,27 +201,6 @@
     "Tech Second Brain/Databases",
     "Tech Second Brain/Kubernetes & Docker/Notebooks (Experience)/Can use volume with cronjobs.md",
     "Tech Second Brain/Kubernetes & Docker/Notebooks (Experience)/Restart & Delete workload in K8s.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Creatures & Solutions with Scripting/Zero Downtime when deploying.md",
-    "Tech Second Brain/Research/Project for 1st time/Build your wiki for 1st time.md",
-    "Tech Second Brain/Assets/Images/Pasted image 20240312093824.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240311171857.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240311171025.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240311165047.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240311165019.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240311164850.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240311164553.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240311161807.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240311151946.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240311151000.png",
-    "Tech Second Brain/Elasticsearch/API/Popular usage.md",
-    "Tech Second Brain/Projects/All Projects.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Researching/Profiling applications with Pyroscope.md",
-    "Tech Second Brain/Projects/Do Some Scripting/Templates/CICD/Github Action.md",
-    "Tech Second Brain/Blog/All Blogs.md",
-    "Tech Second Brain/Projects/Do Some Scripting/Templates/CICD/GitlabCI.md",
-    "Tech Second Brain/Projects/Do Some Scripting/Templates/Grafana Dashboards/Azure PostgreSQL Queries Performance.md",
-    "Tech Second Brain/Projects/Do Some Scripting/Templates/Terminal Profiles/Zsh Profile.md",
-    "Tech Second Brain/Projects/Do Some Scripting/Templates/Terminal Profiles/Powershell Profile.md",
     "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)",
     "Tech Second Brain/OS Cheatsheets",
     "Tech Second Brain/Linux Cheatsheets/Notebooks (Experience)",
