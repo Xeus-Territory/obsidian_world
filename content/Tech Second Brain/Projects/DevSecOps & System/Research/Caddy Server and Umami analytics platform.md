@@ -185,16 +185,16 @@ Like I talk about, you may need `VPS` for working in situation or maybe your `44
 
 On my situation, I will use Azure VM with `Ubuntu OS` . For make sure anything work, you need at least VM stats like
 
-- 1 or 2 vCPU
-- 1 - 2 GB ram
-- >= 5 GB Storage
+- `1 - 2` vCPU
+- `1 ~ 2 GB` Memory
+- `>= 5 GB` Storage
 
 Next, you need configure the firewall of cloud like `Security Group` with `AWS` or `Network Security Group` with `Azure` for port open, including
 
 - 80 (HTTP)
 - 443 (HTTPS)
 - 22 (SSH)
-- 6996 (Wild Port) - This purpose if you want domain is set on this port
+- 6996 (Wild Port) - This purpose if you want your domain that set on this port
 
 After book your VPS, next step you need run this script for setting up environment for run compose
 
