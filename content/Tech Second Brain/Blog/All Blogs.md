@@ -80,4 +80,4 @@ tags:
 - [[Compile gRPC for 1st time]]
 - [[Profiling applications with Pyroscope]]
 - [[Build your wiki for 1st time]]
-
+- [[Caddy Server and Umami analytics platform|Do self-hosted analytics platforms for you website with automatically SSL domain]]
