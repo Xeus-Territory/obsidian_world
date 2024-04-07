@@ -1,5 +1,5 @@
 ---
-title: Do self-hosted analytics platforms for you website with automatically SSL domain
+title: Do self-hosted analytics platforms for your website with automatically SSL domain
 tags:
   - devops
   - analytics
@@ -177,7 +177,7 @@ If you run the command above, hit your browser with `localhost` to see what `Cad
 ![[Pasted image 20240324213109.png]]
 
 >[!question]
->This part, I will show you how we can connect `Umami` and `Caddy` to each othes for making the secure analytics platforms. Probably, you just pleasure when put the `password` or `credentials` in `SSL` site instead not site 😅 
+>This part, I will show you how we can connect `Umami` and `Caddy` to each othes for making the secure analytics platforms. Probably, you just pleasure when put the `password` or `credentials` in `SSL` site instead not secure site 😅 
 
 ## Prepare server or VPS
 

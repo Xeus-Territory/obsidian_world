@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "4ec2d81758da6d7d",
+        "id": "24e8a7bfabc399ab",
         "type": "tabs",
         "children": [
           {
-            "id": "dcab77716e539a92",
+            "id": "3fbb25d4383f0c02",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tech Second Brain/Projects/DevSecOps & System/Research/Caddy Server and Umami analytics platform.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tech Second Brain/Projects/DevSecOps & System/Research/Caddy Server and Umami analytics platform.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tech Second Brain/Projects/DevSecOps & System/Research/Caddy Server and Umami analytics platform.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tech Second Brain/Projects/DevSecOps & System/Research/Caddy Server and Umami analytics platform.md"
+                "file": "index.md"
               }
             }
           },
@@ -153,25 +153,41 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false
     }
   },
-  "active": "dcab77716e539a92",
+  "active": "3fbb25d4383f0c02",
   "lastOpenFiles": [
-    "Tech Second Brain/Blog/All Blogs.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Solutions/NTMA for anomalies detection and autoscaling.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Solutions/0-downtime with Blue-Green Deployment.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Solutions",
-    "Tech Second Brain/Projects/DevSecOps & System/Research/Setup PostgreSQL with Ansible.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Research/Profiling applications with Pyroscope.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Research/Monitoring with Portainer.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Research/NGINX and everything about it.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Research/Create Free SSL with Let's Encrypt and Certbot.md",
+    "Tech Second Brain/Research/Tech Collections/Github/VPN Selfhosted.md",
+    "Tech Second Brain/Research/Tech Collections/External Websites/Awesome article about tech.md",
+    "Tech Second Brain/Research/Tech Collections/External Websites/Research papers about ML, AI or CS.md",
+    "Tech Second Brain/Projects/All Projects.md",
+    "index.md",
+    "Tech Second Brain/Databases/Elasticsearch/Popular API usage.md",
+    "Tech Second Brain/Databases/Helpful Articles.md",
+    "Tech Second Brain/Developer/Helpful Articles.md",
+    "Tech Second Brain/Cyber & Info Security/Research/Helpful Articles.md",
+    "Tech Second Brain/Cyber & Info Security/CTF & Write Ups/Own Challenges.md",
     "Tech Second Brain/Projects/DevSecOps & System/Research/Caddy Server and Umami analytics platform.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Research",
+    "Tech Second Brain/OS Cheatsheets/Helpful Articles.md",
+    "Tech Second Brain/Kubernetes & Docker/Helpful Articles.md",
+    "Tech Second Brain/Kubernetes & Docker/Untitled",
+    "Tech Second Brain/Research/Project for 1st time/Play with Makefile for 1st time.md",
+    "Tech Second Brain/Research/Project for 1st time/Compile gRPC for 1st time.md",
+    "Tech Second Brain/Research/Project for 1st time/Build your wiki for 1st time.md",
+    "Tech Second Brain/Databases/PostgreSQL/Awesome article.md",
+    "Tech Second Brain/Cyber & Info Security/Payload/GraphQL.md",
+    "Tech Second Brain/Cyber & Info Security/Payload/Cross Site Scripting ( XSS ).md",
+    "Tech Second Brain/Cyber & Info Security/Research/Security Things/Content Discovery.md",
     "Tech Second Brain/Azure/Why Azure, first chosen or not.md",
+    "Tech Second Brain/Research/Tech Collections/Github",
+    "Tech Second Brain/Research/Tech Collections/External Websites",
+    "Tech Second Brain/Research/Tech Collections",
+    "Tech Second Brain/Databases/PostgreSQL/Monitoring PostgreSQL Performance.md",
+    "Tech Second Brain/Databases/PostgreSQL",
+    "Tech Second Brain/Databases",
     "Tech Second Brain/Azure/Resources & Services",
     "Tech Second Brain/Azure/Certificates",
     "Tech Second Brain/Azure",
@@ -185,26 +201,11 @@
     "Tech Second Brain/Assets/Images/Pasted image 20240324165021.png",
     "Tech Second Brain/Assets/Images/Pasted image 20240324164816.png",
     "Tech Second Brain/Assets/Images/Pasted image 20240324162111.png",
-    "Tech Second Brain/Projects/DevSecOps & System/Researching/Setup PostgreSQL with Ansible.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Researching/NGINX and everything about it.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Researching/Profiling applications with Pyroscope.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Researching/Monitoring with Portainer.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Researching/Create Free SSL with Let's Encrypt and Certbot.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Researching",
-    "Tech Second Brain/Projects/DevSecOps & System/Creatures & Solutions with Scripting/Zero Downtime when deploying.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Creatures & Solutions with Scripting",
-    "Tech Second Brain/Developer/Snippets/HTML.md",
-    "index.md",
-    "Tech Second Brain/Cyber & Info Security/Research/Basic Knowledge/Web fundamentals.md",
-    "Tech Second Brain/Research/Project for 1st time/Build your wiki for 1st time.md",
-    "Tech Second Brain/Research/Project for 1st time/Untitled.md",
-    "Tech Second Brain/Projects/All Projects.md",
-    "Untitled.md",
-    "Tech Second Brain/Projects/DevOps Tutorials (Roadmap)/2. Resources.md",
-    "Tech Second Brain/Projects/DevOps Tutorials (Roadmap)/1. Introducing.md",
-    "Tech Second Brain/Developer/Snippets",
-    "Tech Second Brain/Databases/PostgreSQL",
-    "Tech Second Brain/Databases",
+    "Tech Second Brain/Tech Collections/Github/VPN Selfhosted.md",
+    "Tech Second Brain/Tech Collections/External Websites/Monitoring PostgreSQL Performance.md",
+    "Tech Second Brain/Tech Collections/Github",
+    "Tech Second Brain/OS Cheatsheets/Helpful Article.md",
+    "Tech Second Brain/Kubernetes & Docker/Helpful Article.md",
     "Projects/Untitled.canvas",
     "Untitled.canvas",
     "Untitled 2.canvas",

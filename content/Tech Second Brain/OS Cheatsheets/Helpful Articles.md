@@ -8,6 +8,10 @@ tags:
   - helpful
   - research
 ---
+# Powershell
+
+- [PowerShell Aliases: A Beginner’s Guide](https://www.sharepointdiary.com/2021/08/powershell-alias-beginners-guide.html)
+
 # Env Variables
 
 - [NTU Edu - Environment Variables in Windows/macOS/Linux PATH, CLASSPATH, JAVA_HOME](https://www3.ntu.edu.sg/home/ehchua/programming/howto/Environment_Variables.html)
