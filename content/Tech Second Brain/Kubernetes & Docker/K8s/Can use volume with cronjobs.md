@@ -10,6 +10,7 @@ tags:
 >This note will content the thing which finding on working progress with K8s. Just take note and link for resolving the problem. Find out detail if it has unique directory
 
 `Cronjobs --> Create Jobs (Trigger by scheduled) --> Pod` : In this situation, Pod in K8s can used the volume and mount succeed when the script running. But if you applied it with pods, it will not, your `command` will run faster than mount progress. [Checked it in this link](https://stackoverflow.com/questions/46578331/kubernetes-is-it-possible-to-mount-volumes-to-a-container-running-as-a-cronjob) 
+
 ```yaml
 apiVersion: batch/v1beta1
 kind: CronJob

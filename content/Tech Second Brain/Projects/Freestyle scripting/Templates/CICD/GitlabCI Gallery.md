@@ -1,5 +1,5 @@
 ---
-title: GitlabCI
+title: GitlabCI Gallery
 tags:
   - gitlab
   - cicd
@@ -14,24 +14,27 @@ tags:
 >2. [GITLAB VARIABLES](https://docs.gitlab.com/ee/ci/variables/) & [GITLAB_PREDEFINED_VAR](https://docs.gitlab.com/ee/ci/variables/predefined_variables.html)
 >3. [GITLAB_DOC](https://docs.gitlab.com/ee/user/)
 
-## Example
+# Example
 
 ```yaml title=".gitlab-ci.yml"
-
+# Define stage for running job inside
 stages:
   - 'synchronize-code'
   - 'test'
   - 'build-code'
   - 'build-image'
 
+# Choose the default image if not set, it will use it
 default:
   image:
     name: node:18-bullseye
 
+# Default, run script before you run the script on job
 before_script:
   - npm i -g yarn --force
   - yarn install
 
+# Job is define with rule, another before_script and script
 synchronize-code-job:
   stage: synchronize-code
   retry: 1
@@ -58,6 +61,7 @@ build-code-job:
   script:
     - yarn build
     - cp -a dist/. public/
+# Upload artifact to gitlab, on path and keep on time
   artifacts:
     untracked: false
     when: on_success
@@ -66,6 +70,8 @@ build-code-job:
       - "./public"
   allow_failure: false
 
+# For some reason, Docker in Docker was tough suggestion with need to manipulated agent run. So alternative for that is using kaniko
+# Read on: https://docs.gitlab.com/ee/ci/docker/using_kaniko.html
 build-image-job:
   stage: build-image
   retry: 1
