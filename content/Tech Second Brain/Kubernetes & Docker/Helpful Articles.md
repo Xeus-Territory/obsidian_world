@@ -48,6 +48,9 @@ tags:
 - [Medium - Kubernetes Scheduling: Understanding the Math Behind the Magic](https://romanglushach.medium.com/kubernetes-scheduling-understanding-the-math-behind-the-magic-2305b57d45b1)
 - [Medium - Kubernetes Networking: Load Balancing Techniques and Algorithms](https://romanglushach.medium.com/kubernetes-networking-load-balancing-techniques-and-algorithms-5da85c5c7253)
 - [Medium - Exploring local Kubernetes development tools and solutions](https://medium.com/@seifeddinerajhi/exploring-local-kubernetes-development-tools-and-solutions-e25f0b8f1b86)
+- [Medium - HomeLab Kubernetes Cluster Setup](https://cavecafe.medium.com/setup-homelab-kubernetes-cluster-cfc3acd4dca5)
+- [Medium - 15 Best Kubernetes Cost Optimization Tools for 2024](https://overcast.blog/15-best-kubernetes-cost-optimization-tools-for-2024-2e131a7cbe7a)
+
 # Certificate & Practice
 
 - [kube4sure - The Kubernetes Exam Simulator](https://www.kube4sure.com/)

@@ -6,6 +6,7 @@ tags:
 ---
 
 1. Central the text in the box below the image when used with markdown can use this snipped
+
 ```html
 <div align="center">
 	<img src=#>

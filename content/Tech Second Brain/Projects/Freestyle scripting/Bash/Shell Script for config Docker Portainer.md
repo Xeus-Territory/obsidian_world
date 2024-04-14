@@ -11,7 +11,6 @@ tags:
 > Simple script is used for working with Portainer
 
 ```bash title="config_portainer.sh"
-
 #!/bin/bash
 
 # This script is used to configure the portainer which monitoring and control for your Kubernetes cluster or Docker Service

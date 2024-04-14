@@ -11,7 +11,6 @@ tags:
 >Simple Script is used to instaling NVM for your Linux host
 
 ```bash title="install_nvm.sh"
-
 #!/bin/bash
 
 ## Install
