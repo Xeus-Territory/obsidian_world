@@ -3,6 +3,7 @@ title: Command injection
 tags:
   - payload
   - infosec
+  - injections
 ---
 
 1. With **webhook**

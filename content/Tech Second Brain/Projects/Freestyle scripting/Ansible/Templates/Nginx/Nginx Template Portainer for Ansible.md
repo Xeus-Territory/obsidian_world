@@ -9,7 +9,6 @@ tags:
 >Ansible Playbooks Template is used config for Nginx work with Portainer
 
 ```nginx title="monitoring.conf.j2"
-
 # This block server for purpose route traffic to monitoring route
 server {
     listen 443 ssl; # managed by Certbot
