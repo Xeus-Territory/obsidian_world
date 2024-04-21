@@ -17,7 +17,9 @@ tags:
 - [Vietnamese - Stateless là gì? Sự khác biệt giữa Stateless và Stateful](https://vietnix.vn/stateless-la-gi/)
 - [Komodor for resolving OOMkilled on Kubernetes](https://komodor.com/learn/how-to-fix-oomkilled-exit-code-137/)
 
-## DevOps Youtube Channel
+# DevOps Youtube Channel
+
+![[youtube.png]]
 
 - [Thetips4you](https://www.youtube.com/c/Thetips4you/videos): share hands on experience on new age Technology
 - [Docker and Kubernetes Complete Tutorial](https://www.youtube.com/playlist?list=PL0hSJrxggIQoKLETBSmgbbvE4FO_eEgoB)
@@ -47,7 +49,7 @@ tags:
 
 - [MDPI - An Overview of WebAssembly for IoT: Background, Tools, State-of-the-Art, Challenges, and Future Directions](https://www.mdpi.com/1999-5903/15/8/275)
 
-# Research
+# Research Sheet
 
 - [Visualizing Network Topologies: Zero to Hero in Two Days](https://habr.com/en/articles/534716/)
 - [HTTP/3 From A To Z: Core Concepts — Smashing Magazine](https://www.smashingmagazine.com/2021/08/http3-core-concepts-part1/)
@@ -58,18 +60,12 @@ tags:
 # Self Hosted
 
 - [Noted - Self Hosted App and Product Reviews](https://noted.lol/)
-
-# Forums, Blog
+# Forums, Blog pages
 
 - [XDA Forums](https://forum.xda-developers.com/)
 - [Opensource.com | Opensource.com](https://opensource.com/)
 - [How-To Geek - We Explain Technology](https://www.howtogeek.com/)
 - [Blackvoid - Synology, Docker and open source tech blog](https://www.blackvoid.club/)
-
-# Youtube Channel
-
-- [Thomas Sanladerer](https://www.youtube.com/channel/UCb8Rde3uRL1ohROUVg46h1A): Everything about 3D Printing and Making'
-
 # Documentations and Papers
 
 - [ScienceDaily: Your source for the latest research news](https://www.sciencedaily.com/)

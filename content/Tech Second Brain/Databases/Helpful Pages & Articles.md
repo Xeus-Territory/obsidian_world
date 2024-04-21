@@ -6,6 +6,8 @@ tags:
   - research
   - database
 ---
+>[!info]
+>Purpose to share what I learn and figure out when work with multiple Database like solutions, managing and helpful guideline for next people. Enjoy 😅😅😅
 # PostgreSQL
 
 - [How To Kill All Connections to a Database in PostgreSQL](https://www.dbvis.com/thetable/how-to-kill-all-connections-to-a-database-in-postgresql/)

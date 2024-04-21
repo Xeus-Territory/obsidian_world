@@ -4,47 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "24e8a7bfabc399ab",
+        "id": "70af70259e7f9af4",
         "type": "tabs",
         "children": [
           {
-            "id": "3fbb25d4383f0c02",
+            "id": "de5c76f38f05c6bd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tech Second Brain/Cyber & Info Security/CTF & Write Ups/Self Challenges + Writeup.md",
+                "file": "Tech Second Brain/Research & Archive/All Blogs.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "6ea684fa1497c2f5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tech Second Brain/Research & Archive/Tech Collections/Softwares & Tools.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "507ab793da97c598",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tech Second Brain/AI & ML & Data Science/Helpful Pages & Articles.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d6836749d52cea91",
+            "id": "81a9ed2ab930f799",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -56,7 +32,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -122,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tech Second Brain/AI & ML & Data Science/Helpful Pages & Articles.md",
+                "file": "Tech Second Brain/OS Cheatsheets/Helpful Pages & Articles.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tech Second Brain/AI & ML & Data Science/Helpful Pages & Articles.md",
+                "file": "Tech Second Brain/OS Cheatsheets/Helpful Pages & Articles.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tech Second Brain/AI & ML & Data Science/Helpful Pages & Articles.md"
+                "file": "Tech Second Brain/OS Cheatsheets/Helpful Pages & Articles.md"
               }
             }
           },
@@ -195,54 +171,53 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "507ab793da97c598",
+  "active": "81a9ed2ab930f799",
   "lastOpenFiles": [
-    "Tech Second Brain/Research & Archive/Tech Collections/Tech Contents & Articles.md",
-    "Tech Second Brain/Research & Archive/Tech Collections/Softwares & Tools.md",
-    "Tech Second Brain/Containerization & Orchestration/Helpful Pages & Articles.md",
-    "Tech Second Brain/Projects/DevSecOps & System/Research/NGINX and everything about it.md",
+    "Tech Second Brain/Projects/All Projects.md",
+    "Tech Second Brain/Databases/PostgreSQL/Backup and Restore Methodology.md",
     "Tech Second Brain/Research & Archive/All Blogs.md",
-    "Tech Second Brain/AI & ML & Data Science/Helpful Pages & Articles.md",
-    "Tech Second Brain/Developer/Helpful Pages & Articles.md",
-    "Tech Second Brain/AI & ML & Data Science",
-    "Tech Second Brain/DevOps",
-    "Untitled",
-    "Tech Second Brain/OS Cheatsheets/Helpful Pages & Articles.md",
+    "Tech Second Brain/Research & Archive/Tech Collections/Tech Contents & Articles.md",
+    "Tech Second Brain/Databases/Helpful Pages & Articles.md",
     "Tech Second Brain/Cyber & Info Security/Helpful Pages & Articles.md",
     "Tech Second Brain/Cyber & Info Security/CTF & Write Ups/Self Challenges + Writeup.md",
-    "Tech Second Brain/Databases/Helpful Pages & Articles.md",
-    "Tech Second Brain/Assets/Images/ctf_flag_logo.gif",
-    "Tech Second Brain/Assets/Images/ctf_flag_logo.gif.crdownload",
-    "The Archive of Mine",
-    "index.md",
+    "Tech Second Brain/AI & ML & Data Science/Helpful Pages & Articles.md",
     "Tech Second Brain/Cloud/Azure/Why Azure, first chosen or not.md",
-    "The Art of Mine",
-    "Tech Second Brain/Research & Archive/For 1st time/Build your wiki for 1st time.md",
-    "Tech Second Brain/Research & Archive/For 1st time/Compile gRPC for 1st time.md",
+    "Tech Second Brain/Research & Archive/Tech Collections/Softwares & Tools.md",
+    "Tech Second Brain/Developer/Helpful Pages & Articles.md",
+    "Tech Second Brain/OS Cheatsheets/Helpful Pages & Articles.md",
     "Tech Second Brain/Research & Archive/For 1st time/Play with Makefile for 1st time.md",
-    "Tech Second Brain/Databases/PostgreSQL/Backup and Restore Methodology.md",
+    "Tech Second Brain/Assets/Images/youtube.png",
+    "index.md",
+    "Tech Second Brain/Containerization & Orchestration/Helpful Pages & Articles.md",
+    "Pasted image 20240421162654.png",
+    "Pasted image 20240421162653.png",
+    "Tech Second Brain/Cyber & Info Security/CTF & Write Ups/Vulnerables/SSTI/SSTI (ImaginaryCTF).md",
+    "Tech Second Brain/Cyber & Info Security/CTF & Write Ups/Vulnerables/IDOR/IDOR PortSwigger.md",
+    "Tech Second Brain/Cyber & Info Security/CTF & Write Ups/Vulnerables/SSTI",
+    "Tech Second Brain/Cyber & Info Security/CTF & Write Ups/Vulnerables/IDOR",
+    "Tech Second Brain/Cyber & Info Security/CTF & Write Ups/Vulnerables",
+    "Tech Second Brain/Containerization & Orchestration/Kubernetes/Restart & Delete workload in K8s.md",
+    "Tech Second Brain/Containerization & Orchestration/Kubernetes/Can use volume with cronjobs.md",
+    "Tech Second Brain/Containerization & Orchestration/Kubernetes",
+    "Tech Second Brain/Containerization & Orchestration",
+    "The Art of Mine",
+    "The Archive of Mine",
+    "Tech Second Brain/Research & Archive/For 1st time/Compile gRPC for 1st time.md",
+    "Tech Second Brain/Research & Archive/For 1st time/Build your wiki for 1st time.md",
+    "Tech Second Brain/Research & Archive/Tech Collections",
+    "Tech Second Brain/Research & Archive/For 1st time",
+    "Tech Second Brain/Research & Archive",
+    "Tech Second Brain/OS Cheatsheets/Linux (Debian Core)/Redirect Output and Error.md",
+    "Tech Second Brain/OS Cheatsheets/Linux (Debian Core)/Comment note in Shell Bash.md",
+    "Tech Second Brain/OS Cheatsheets/Linux (Debian Core)/Reconfiguration for curl template output.md",
     "Tech Second Brain/Databases/PostgreSQL/Deploy and setup.md",
-    "Tech Second Brain/Databases/PostgreSQL/PostgreSQL Host Template for Ansible.md",
-    "Tech Second Brain/Databases/PostgreSQL/PostgreSQL Configuration Template for Ansible.md",
-    "Tech Second Brain/Databases/PostgreSQL/Monitoring PostgreSQL Performance.md",
-    "Tech Second Brain/Developer/Snippets/HTML.md",
-    "Tech Second Brain/Databases/Elasticsearch/Popular API usage.md",
-    "Tech Second Brain/Cyber & Info Security/Research/Payload/GraphQL.md",
-    "Tech Second Brain/Cyber & Info Security/Research/Payload/SQL Injections.md",
-    "Tech Second Brain/Cyber & Info Security/Research/Payload/Command injection.md",
+    "Tech Second Brain/Assets/Images/ctf_flag_logo.gif",
     "Tech Second Brain/Assets/Images/Pasted image 20240417161544.png",
     "Tech Second Brain/Assets/Images/Pasted image 20240417161450.png",
     "Tech Second Brain/Assets/Images/Pasted image 20240417161158.png",
     "Tech Second Brain/Assets/Images/Pasted image 20240417155733.png",
     "Tech Second Brain/Assets/Images/Pasted image 20240417152607.png",
     "Tech Second Brain/Assets/Images/Pasted image 20240417151721.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240417151123.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240417150509.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240417143433.png",
-    "Tech Second Brain/Cloud/Azure/Resources & Services/Untitled",
-    "Tech Second Brain/Cloud",
-    "Tech Second Brain/Cyber & Info Security/Research/Payload",
-    "Tech Second Brain/Containerization & Orchestration/Kubernetes",
     "Projects/Untitled.canvas",
     "Untitled.canvas",
     "Untitled 2.canvas",
