@@ -6,6 +6,9 @@ tags:
   - cheatsheet
   - research
 ---
+>[!info]
+>Some cheatsheet and helpful things when you and me work on developer positions. Enjoy 🤝🤝
+
 # Software architecture design & pattern
 
 - [Medium - Most Common Software Architecture Styles](https://medium.com/@techworldwithmilan/most-common-software-architecture-styles-86881d779683)
@@ -15,6 +18,12 @@ tags:
 
 - [programmerCave](https://programmercave.com/) : Algorithm, Tech and more about reliable usage of this technic
 - [HTML Code Snippet](https://www.w3schools.com/howto/default_page6.asp) : HTML Snippet from W3school
+
+# Developer online tools
+
+- [10015.io](https://10015.io/) : A “free all-in-one toolbox” solution created to ease your life by preventing bookmark mess.
+- [Free Online Developer Tools - AppDevTools](https://appdevtools.com/)
+- [regex101: build, test, and debug regex](https://regex101.com/)
 
 # Compiler online
 

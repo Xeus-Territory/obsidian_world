@@ -50,7 +50,9 @@ tags:
 - [kube4sure - The Kubernetes Exam Simulator](https://www.kube4sure.com/)
 - [killer.sh - Linux Foundation Exam Simulators](https://killer.sh/)
 
-# Technologies
+# Awesome items for Kubernetes
 
-- [Welcome - Ingress-Nginx Controller](https://kubernetes.github.io/ingress-nginx/) : Nginx ingress which use for delivery IN/OUT traffic for Kubernetes Cluster
-- 
+- [Ingress-Nginx Controller](https://kubernetes.github.io/ingress-nginx/) : Documentation about Nginx ingress which use for delivery IN/OUT traffic for Kubernetes Cluster
+- [OperatorHub](https://operatorhub.io/):  Home for the Kubernetes community to share Operators
+- [Artifacthub](https://artifacthub.io/) : Find, install and publish Cloud Native packages for Kubernetes
+

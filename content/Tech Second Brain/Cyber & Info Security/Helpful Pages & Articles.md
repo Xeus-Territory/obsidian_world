@@ -8,6 +8,9 @@ tags:
   - command
   - hacking
 ---
+>[!info]
+>This page for purpose share the idea, community, skillset, technical about Cyber Security and Information Security. How we can improve the skillset via LAB and CTF contest
+
 # General
 
 - [Youtube - 60 Hacking Commands You NEED to Know](https://www.youtube.com/watch?v=gL4j-a-g9pA&ab_channel=NetworkChuck)
@@ -55,11 +58,10 @@ tags:
 - [x86 and amd64 instruction reference](https://www.felixcloutier.com/x86/index.html)
 - [GTFOBins](https://gtfobins.github.io/)
 
-## Research
+## InfoSec Research (Protocol, Malware, Vulnerables, ...)
 
 - [Ping Power — ICMP Tunnel. An attacker is often required to face a… | by Nir Chako | InfoSec Write-ups](https://medium.com/bugbountywriteup/ping-power-icmp-tunnel-31e2abb2aaea)
 - [Different types of Computer Viruses - Computer Virus Classification](https://www.omnisecu.com/security/types-of-computer-viruses.php#:~:text=An%20Armored%20Virus%20may%20also,it%20more%20difficult%20to%20disinfect.&text=Stealth%20viruses%3A%20Stealth%20viruses%20have,file%20sizes%20or%20directory%20structure.)
-- 
 
 ## Attacking + Defend skill
 
@@ -249,6 +251,8 @@ tags:
 
 # Hacking/InfoSec Youtube Channel
 
+![[youtube.png]]
+
 - [13Cubed](https://www.youtube.com/@13Cubed/featured):  Digital Forensics. Hacking. Home Labs.
 - [Motasem Hamdan](https://www.youtube.com/@MotasemHamdan/featured): HTB and THM resolution, creative guy who will guide you about security
 - [John Hammond ](https://www.youtube.com/c/JohnHammond010/videos) : Super dope and cool guy who teach you helpful things, cool stuff about hacking, cyber security
@@ -274,4 +278,3 @@ tags:
 - [DAY0](https://www.youtube.com/c/dayzerosec/featured): Previous `DAY[0]` podcasts as well as other reverse engineering / exploit development-related media
 - [Cristi Vlad](https://www.youtube.com/c/CristiVladZ)
 - [LTN Labs](https://www.youtube.com/@ltnlabs/videos)
-- 

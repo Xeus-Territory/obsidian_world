@@ -8,6 +8,9 @@ tags:
   - helpful
   - research
 ---
+>[!info]
+>All eyes for OS with Linux, Windows and moreover. Practice and learn new thing 🤭🤭🤭
+
 # Powershell
 
 - [PowerShell Aliases: A Beginner’s Guide](https://www.sharepointdiary.com/2021/08/powershell-alias-beginners-guide.html)
@@ -36,7 +39,6 @@ tags:
 
 - [Windows Server Security documentation](https://learn.microsoft.com/en-us/windows-server/security/security-and-assurance)
 - [The $Windows.~BT Folder: What It Is and How to Delete It](https://www.lifewire.com/what-is-windows-bt-folder-how-to-delete-it-4775736)
-- 
 
 # OS, Server
 
