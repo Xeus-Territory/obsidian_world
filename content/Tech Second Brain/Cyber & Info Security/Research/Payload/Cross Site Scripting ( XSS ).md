@@ -3,6 +3,7 @@ title: Cross Site Scripting ( XSS )
 tags:
   - payload
   - infosec
+  - xss
 ---
 1. Unique scripts which used to bypass specify situations
 ```javascript

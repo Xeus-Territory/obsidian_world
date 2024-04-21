@@ -3,6 +3,7 @@ title: SQL Injections
 tags:
   - payload
   - infosec
+  - injections
 ---
 ## MariaDB (MySQL)
 

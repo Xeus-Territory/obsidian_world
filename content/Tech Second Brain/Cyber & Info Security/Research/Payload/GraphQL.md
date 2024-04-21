@@ -3,10 +3,11 @@ title: GraphQL
 tags:
   - payload
   - infosec
+  - graphql
 ---
-
-
-*Some helpful reference you can reach out, all of thems is put on this article* ▶️ ▶️  [Hackwekend - Session 3 Attack and Exploit GraphQL](https://hackmd.io/@XeusNguyen/rJ0j0WR-p) 
+>[!info]
+>*Some helpful reference you can reach out, all of thems is put on this article* 
+>▶️ ▶️  [Hackwekend - Session 3 Attack and Exploit GraphQL](https://hackmd.io/@XeusNguyen/rJ0j0WR-p) 
 
 1. GraphQL with get full introspection
 ```graphql

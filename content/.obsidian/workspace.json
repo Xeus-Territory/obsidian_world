@@ -13,13 +13,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tech Second Brain/Projects/Freestyle scripting/Templates/CICD/Github Action Gallery.md",
+                "file": "Tech Second Brain/Cyber & Info Security/CTF & Write Ups/Self Challenges + Writeup.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6ea684fa1497c2f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tech Second Brain/Research & Archive/Tech Collections/Softwares & Tools.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "507ab793da97c598",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tech Second Brain/AI & ML & Data Science/Helpful Pages & Articles.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d6836749d52cea91",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tech Second Brain/OS Cheatsheets/Helpful Pages & Articles.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -48,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:configuration-file",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "ec105aef228d19f1",
@@ -85,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tech Second Brain/Projects/Freestyle scripting/Templates/CICD/Github Action Gallery.md",
+                "file": "Tech Second Brain/AI & ML & Data Science/Helpful Pages & Articles.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tech Second Brain/Projects/Freestyle scripting/Templates/CICD/Github Action Gallery.md",
+                "file": "Tech Second Brain/AI & ML & Data Science/Helpful Pages & Articles.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tech Second Brain/Projects/Freestyle scripting/Templates/CICD/Github Action Gallery.md"
+                "file": "Tech Second Brain/AI & ML & Data Science/Helpful Pages & Articles.md"
               }
             }
           },
@@ -158,54 +195,54 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "3fbb25d4383f0c02",
+  "active": "507ab793da97c598",
   "lastOpenFiles": [
-    "Tech Second Brain/Research/Tech Collections/External Websites/Research papers about ML, AI or CS.md",
-    "Tech Second Brain/Research/Tech Collections/External Websites/Awesome article about tech.md",
-    "Tech Second Brain/Research/Tech Collections/Tools collection with multiple purpose.md",
-    "Tech Second Brain/Research/Tech Collections/Github/VPN Selfhosted.md",
-    "Tech Second Brain/Developer/Snippets/HTML.md",
-    "Tech Second Brain/Developer/Helpful Articles.md",
-    "Tech Second Brain/Databases/Helpful Articles.md",
-    "Tech Second Brain/Kubernetes & Docker/Helpful Articles.md",
-    "Tech Second Brain/Kubernetes & Docker/K8s/Restart & Delete workload in K8s.md",
-    "Tech Second Brain/Kubernetes & Docker/K8s/Can use volume with cronjobs.md",
-    "Tech Second Brain/Databases/Elasticsearch/Popular API usage.md",
-    "Tech Second Brain/Databases/PostgreSQL/PostgreSQL Configuration Template for Ansible.md",
+    "Tech Second Brain/Research & Archive/Tech Collections/Tech Contents & Articles.md",
+    "Tech Second Brain/Research & Archive/Tech Collections/Softwares & Tools.md",
+    "Tech Second Brain/Containerization & Orchestration/Helpful Pages & Articles.md",
+    "Tech Second Brain/Projects/DevSecOps & System/Research/NGINX and everything about it.md",
+    "Tech Second Brain/Research & Archive/All Blogs.md",
+    "Tech Second Brain/AI & ML & Data Science/Helpful Pages & Articles.md",
+    "Tech Second Brain/Developer/Helpful Pages & Articles.md",
+    "Tech Second Brain/AI & ML & Data Science",
+    "Tech Second Brain/DevOps",
+    "Untitled",
+    "Tech Second Brain/OS Cheatsheets/Helpful Pages & Articles.md",
+    "Tech Second Brain/Cyber & Info Security/Helpful Pages & Articles.md",
+    "Tech Second Brain/Cyber & Info Security/CTF & Write Ups/Self Challenges + Writeup.md",
+    "Tech Second Brain/Databases/Helpful Pages & Articles.md",
+    "Tech Second Brain/Assets/Images/ctf_flag_logo.gif",
+    "Tech Second Brain/Assets/Images/ctf_flag_logo.gif.crdownload",
+    "The Archive of Mine",
+    "index.md",
+    "Tech Second Brain/Cloud/Azure/Why Azure, first chosen or not.md",
+    "The Art of Mine",
+    "Tech Second Brain/Research & Archive/For 1st time/Build your wiki for 1st time.md",
+    "Tech Second Brain/Research & Archive/For 1st time/Compile gRPC for 1st time.md",
+    "Tech Second Brain/Research & Archive/For 1st time/Play with Makefile for 1st time.md",
+    "Tech Second Brain/Databases/PostgreSQL/Backup and Restore Methodology.md",
+    "Tech Second Brain/Databases/PostgreSQL/Deploy and setup.md",
     "Tech Second Brain/Databases/PostgreSQL/PostgreSQL Host Template for Ansible.md",
-    "Tech Second Brain/Projects/Freestyle scripting/Templates/Terminal Profiles/Zsh Profile.md",
-    "Tech Second Brain/Projects/Freestyle scripting/Templates/Terminal Profiles/Powershell Profile.md",
-    "Tech Second Brain/Projects/Freestyle scripting/Templates/Grafana Dashboards/Azure PostgreSQL Queries Performance.md",
-    "Tech Second Brain/Projects/Freestyle scripting/Templates/CICD/Github Action Gallery.md",
-    "Tech Second Brain/Projects/Freestyle scripting/Templates/CICD/GitlabCI Gallery.md",
-    "Tech Second Brain/Projects/Freestyle scripting/Powershell/Build Azure Agent with .NET Core by Powershell.md",
-    "Tech Second Brain/Projects/Freestyle scripting/Bash/Shell Script about Automation CD with Zero Downtime.md",
-    "Tech Second Brain/Projects/Freestyle scripting/Bash/Shell Script for config Docker Portainer.md",
-    "Tech Second Brain/Projects/Freestyle scripting/Bash/Sync Repo file in Gitlab.md",
-    "Tech Second Brain/OS Cheatsheets/Notebooks (Experience)/Redirect Output and Error.md",
-    "Tech Second Brain/Projects/Freestyle scripting/Bash/How can work with S3.md",
-    "Tech Second Brain/Projects/Freestyle scripting/Bash/Install NVM in Zsh or Bash.md",
-    "Tech Second Brain/Projects/Freestyle scripting/Ansible/Tasks/Portainer Self-hosted in Docker by Ansible.md",
+    "Tech Second Brain/Databases/PostgreSQL/PostgreSQL Configuration Template for Ansible.md",
+    "Tech Second Brain/Databases/PostgreSQL/Monitoring PostgreSQL Performance.md",
+    "Tech Second Brain/Developer/Snippets/HTML.md",
+    "Tech Second Brain/Databases/Elasticsearch/Popular API usage.md",
+    "Tech Second Brain/Cyber & Info Security/Research/Payload/GraphQL.md",
+    "Tech Second Brain/Cyber & Info Security/Research/Payload/SQL Injections.md",
+    "Tech Second Brain/Cyber & Info Security/Research/Payload/Command injection.md",
+    "Tech Second Brain/Assets/Images/Pasted image 20240417161544.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240417161450.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240417161158.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240417155733.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240417152607.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240417151721.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240417151123.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240417150509.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240417143433.png",
+    "Tech Second Brain/Cloud/Azure/Resources & Services/Untitled",
+    "Tech Second Brain/Cloud",
     "Tech Second Brain/Cyber & Info Security/Research/Payload",
-    "Tech Second Brain/Kubernetes & Docker/K8s",
-    "Tech Second Brain/Databases/Elasticsearch",
-    "Tech Second Brain/Kubernetes & Docker/Notebooks (Experience)",
-    "Tech Second Brain/Elasticsearch/API",
-    "Tech Second Brain/Elasticsearch",
-    "Tech Second Brain/Kubernetes & Docker/Untitled",
-    "Tech Second Brain/Research/Tech Collections/Github",
-    "Tech Second Brain/Research/Tech Collections/External Websites",
-    "Tech Second Brain/Research/Tech Collections",
-    "Tech Second Brain/Assets/Images/Pasted image 20240324222432.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240324220803.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240324213109.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240324212324.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240324175506.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240324171221.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240324165440.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240324165021.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240324164816.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240324162111.png",
+    "Tech Second Brain/Containerization & Orchestration/Kubernetes",
     "Projects/Untitled.canvas",
     "Untitled.canvas",
     "Untitled 2.canvas",

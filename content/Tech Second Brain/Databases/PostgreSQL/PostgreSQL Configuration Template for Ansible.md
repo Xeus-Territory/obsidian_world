@@ -9,7 +9,7 @@ tags:
 >[!summary]
 >Default configuration file about total config of PostgreSQL
 
-```bash title="postgresql.conf.j2"
+```bash title="postgresql.cong"
 
 # PostgreSQL Client Authentication Configuration File
 # ===================================================

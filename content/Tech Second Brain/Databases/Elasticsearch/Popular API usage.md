@@ -4,6 +4,8 @@ tags:
   - cheatsheet
   - api
   - usage
+  - database
+  - elasticsearch
 ---
 *Purpose: This note content the basic, popular command of `elasticsearch` and case it can use*
 
