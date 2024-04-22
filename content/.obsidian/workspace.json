@@ -23,11 +23,9 @@
             "id": "81a9ed2ab930f799",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Tech Second Brain/OS Cheatsheets/Helpful Pages & Articles.md",
-                "mode": "source",
-                "source": false
+                "file": "Tech Second Brain/Assets/Images/Pasted image 20240422091155.png"
               }
             }
           }
@@ -98,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tech Second Brain/OS Cheatsheets/Helpful Pages & Articles.md",
+                "file": "Tech Second Brain/Assets/Images/Pasted image 20240422091155.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tech Second Brain/OS Cheatsheets/Helpful Pages & Articles.md",
+                "file": "Tech Second Brain/Assets/Images/Pasted image 20240422091155.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tech Second Brain/OS Cheatsheets/Helpful Pages & Articles.md"
+                "file": "Tech Second Brain/Assets/Images/Pasted image 20240422091155.png"
               }
             }
           },
@@ -151,7 +149,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -171,12 +169,21 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "3656a4559906901a",
+  "active": "81a9ed2ab930f799",
   "lastOpenFiles": [
+    "Tech Second Brain/Cloud/Azure/Resources & Services/RBAC.md",
+    "Tech Second Brain/Cloud/Azure/Resources & Services/Policy.md",
+    "Tech Second Brain/Cloud/Azure/Resources & Services/Entra ID.md",
+    "Tech Second Brain/Cloud/Azure/Resources & Services/Storage.md",
+    "Tech Second Brain/Cloud/Azure/Resources & Services/Subscription.md",
+    "Tech Second Brain/Cloud/Azure/Resources & Services/Users and Groups.md",
+    "Tech Second Brain/Assets/Images/Pasted image 20240422091226.png",
+    "Tech Second Brain/Assets/Images/Pasted image 20240422091155.png",
+    "Tech Second Brain/Research & Archive/For 1st time/Build your wiki for 1st time.md",
+    "Tech Second Brain/Research & Archive/All Blogs.md",
     "Tech Second Brain/Assets/Images/youtube.png",
     "Tech Second Brain/Projects/All Projects.md",
     "Tech Second Brain/Databases/PostgreSQL/Backup and Restore Methodology.md",
-    "Tech Second Brain/Research & Archive/All Blogs.md",
     "Tech Second Brain/Research & Archive/Tech Collections/Tech Contents & Articles.md",
     "Tech Second Brain/Databases/Helpful Pages & Articles.md",
     "Tech Second Brain/Cyber & Info Security/Helpful Pages & Articles.md",
@@ -197,27 +204,18 @@
     "Tech Second Brain/Cyber & Info Security/CTF & Write Ups/Vulnerables/IDOR",
     "Tech Second Brain/Cyber & Info Security/CTF & Write Ups/Vulnerables",
     "Tech Second Brain/Docker & Kubernetes/Kubernetes/Restart & Delete workload in K8s.md",
-    "Tech Second Brain/Docker & Kubernetes/Kubernetes/Can use volume with cronjobs.md",
     "Tech Second Brain/Docker & Kubernetes/Kubernetes",
     "Tech Second Brain/Docker & Kubernetes",
     "The Art of Mine",
     "The Archive of Mine",
-    "Tech Second Brain/Research & Archive/For 1st time/Compile gRPC for 1st time.md",
-    "Tech Second Brain/Research & Archive/For 1st time/Build your wiki for 1st time.md",
     "Tech Second Brain/Research & Archive/Tech Collections",
     "Tech Second Brain/Research & Archive/For 1st time",
     "Tech Second Brain/Research & Archive",
-    "Tech Second Brain/OS Cheatsheets/Linux (Debian Core)/Redirect Output and Error.md",
-    "Tech Second Brain/OS Cheatsheets/Linux (Debian Core)/Comment note in Shell Bash.md",
-    "Tech Second Brain/OS Cheatsheets/Linux (Debian Core)/Reconfiguration for curl template output.md",
-    "Tech Second Brain/Databases/PostgreSQL/Deploy and setup.md",
     "Tech Second Brain/Assets/Images/ctf_flag_logo.gif",
     "Tech Second Brain/Assets/Images/Pasted image 20240417161544.png",
     "Tech Second Brain/Assets/Images/Pasted image 20240417161450.png",
     "Tech Second Brain/Assets/Images/Pasted image 20240417161158.png",
     "Tech Second Brain/Assets/Images/Pasted image 20240417155733.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240417152607.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240417151721.png",
     "Projects/Untitled.canvas",
     "Untitled.canvas",
     "Untitled 2.canvas",
