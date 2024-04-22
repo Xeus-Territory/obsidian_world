@@ -32,11 +32,28 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Search(),
     Component.Darkmode(),
     Component.DesktopOnly(
-      Component.Explorer()
+      Component.Explorer({
+        mapFn: (node) => {
+          if (node.depth > 0)
+            {
+              if (node.file) {
+                if (node.displayName.length > 16)  {
+                  node.displayName = "📄 " + node.displayName.substring(0, 15) + "..."
+                }
+                else {
+                  node.displayName = "📄 " + node.displayName
+                }
+              }
+              else {
+                node.displayName = "📁 " + node.displayName
+              }
+            }
+        }
+      })
     ),
     Component.DesktopOnly(
       Component.RecentNotes({
-        limit: 3
+        limit: 2
       })
     )
   ],

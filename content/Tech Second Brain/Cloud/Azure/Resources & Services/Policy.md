@@ -12,7 +12,6 @@ Documentations:
 
 - [Implement Azure policies](https://learn.microsoft.com/vi-vn/training/modules/configure-azure-policy/3-implement-azure-policies)
 - [Create Azure Policies](https://learn.microsoft.com/vi-vn/training/modules/configure-azure-policy/4-create-azure-policies)
-- [Create policy definitions]()
 
 
 ![[Pasted image 20240416144454.png]]

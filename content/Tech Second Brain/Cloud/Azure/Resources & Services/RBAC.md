@@ -8,7 +8,7 @@ tags:
 ---
 # RBAC
 
-Documentation: 
+Documentation:
 
 - [Implement role-based access control](https://learn.microsoft.com/vi-vn/training/modules/configure-role-based-access-control/2-implement)
 - [Create a role definition](https://learn.microsoft.com/vi-vn/training/modules/configure-role-based-access-control/3-create-role-definition)
