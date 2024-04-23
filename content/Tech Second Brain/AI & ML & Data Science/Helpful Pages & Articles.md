@@ -6,6 +6,10 @@ tags:
   - papers
   - research
 ---
+# Awesome Repository
+
+- **[awesome-local-ai](https://github.com/janhq/awesome-local-ai)** : An awesome repository of local AI tools
+
 # Youtube Channel
 
 ![[youtube.png]]

@@ -43,5 +43,4 @@ Documentation:
 ![[Pasted image 20240416152504.png]]
 
 - **Microsoft Entra admin roles** are used to manage resources in Microsoft Entra ID, such as users, groups, and domains. These roles are defined for the Microsoft Entra tenant at the root level of the configuration.
-    
 - **Azure RBAC roles** provide more granular access management for Azure resources. These roles are defined for a requestor or resource and can be applied at multiple levels: the root, management groups, subscriptions, resource groups, or resources.

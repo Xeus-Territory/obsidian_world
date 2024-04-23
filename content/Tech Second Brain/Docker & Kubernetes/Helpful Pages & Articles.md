@@ -17,6 +17,7 @@ tags:
 - [Azure - Supported Kubernetes versions in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/supported-kubernetes-versions?tabs=azure-cli)
 - [StackOverFlow - Constantly getting Crashloopbackoff error in Kubernetes PODS generally in MongoDB pods](https://stackoverflow.com/questions/63142792/constantly-getting-crashloopbackoff-error-in-kubernetes-pods-generally-in-mongod)
 - [Suneeta Mall - WTH! Who killed my pod - Whodunit?](https://suneeta-mall.github.io/2021/03/14/wth-who-killed-my-pod.html)
+- [Medium - Understanding Common exit codes and error messages in Containers & Kubernetes 🎑](https://medium.com/@seifeddinerajhi/understanding-common-exit-codes-and-error-messages-in-containers-kubernetes-fb8d053e759e)
 
 # Docker & Containerization
 
@@ -24,6 +25,7 @@ tags:
 - [StackOverFlow - How can I keep a container running on Kubernetes?](https://stackoverflow.com/questions/31870222/how-can-i-keep-a-container-running-on-kubernetes)
 - [Medium - 24 Kubernetes Masters’ Configurations](https://overcast.blog/24-kubernetes-mastersconfigurations-29235c65b337)
 - [Medium - 13 Docker Cost Optimizations You Should Know](https://medium.com/overcast-blog/13-docker-cost-optimizations-you-should-know-1f78c0accb45)
+- [Mediun - 11 Ways to Troubleshoot Docker Faster](https://medium.com/gitconnected/11-ways-to-troubleshoot-docker-faster-8f9ab55dd419)
 
 # Kubernetes package manager
 
@@ -55,4 +57,5 @@ tags:
 - [Ingress-Nginx Controller](https://kubernetes.github.io/ingress-nginx/) : Documentation about Nginx ingress which use for delivery IN/OUT traffic for Kubernetes Cluster
 - [OperatorHub](https://operatorhub.io/):  Home for the Kubernetes community to share Operators
 - [Artifacthub](https://artifacthub.io/) : Find, install and publish Cloud Native packages for Kubernetes
+- [YAML Multiline Strings](https://yaml-multiline.info/) : Find the right syntax for YAML file
 

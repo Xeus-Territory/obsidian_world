@@ -17,6 +17,7 @@ tags:
 - [Hackwekend Session 2 - Information Security, Team and Phishing Attack](https://hackmd.io/@XeusNguyen/ryHkhL-e2) - *The session talk about what and why we have InfoSec and work like a team. Additional, Talk about Phishing Attack, Questions and how to reproduce*
 - [Hackwekend - Session 3 Attack and Exploit GraphQL ?](https://hackmd.io/@XeusNguyen/rJ0j0WR-p) - *Session is about GraphQL, Dangerous with technologies and some challenge to find flag with CTF style*
 - [Hackwekend Session 4 - Cloud Security (AWS EKS)](https://hackmd.io/@XeusNguyen/H1sUc3CB6) *- Session is about AWS EKS Security, Vulnerable in K8s Cluster and Play CTF to figuring out what should need protected (Prod by Wiz.io)*
+- [Hackwekend Session 5 - Cloud Security (AWS IAM Policy)](https://hackmd.io/@XeusNguyen/HkjGUFw-C) - *Session is about AWS IAM, How to authentication or bypass methodology to read and list contents inside the S3 bucket, learn more about `sns`, `sqs`, `cognito` services of AWS Cloud (Prod by Wiz.io)*
 
 # DevOps - Tutorials from zero to hero
 

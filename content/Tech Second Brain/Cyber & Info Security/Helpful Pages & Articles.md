@@ -48,11 +48,23 @@ tags:
 
 # Technical, Technologies, and tools base on category
 
+## Awesome repository
+
+- [awesome-pentest](https://github.com/enaqx/awesome-pentest) : A collection of awesome penetration testing resources, tools and other shiny things
+- [awesome-infosec](https://github.com/onlurking/awesome-infosec) : A curated list of awesome `infosec` courses and training resources.
+- [the-book-of-secret-knowledge](https://github.com/trimstray/the-book-of-secret-knowledge) : A collection of inspiring lists, manuals, cheat-sheets, blogs, hacks, one-liners, cli/web tools and more.
+- [Awesome-Hacking](https://github.com/Hack-with-Github/Awesome-Hacking) : A collection of various awesome lists for hackers, pentesters and security researchers
+- [awesome-hacker-search-engines](https://github.com/edoardottt/awesome-hacker-search-engines) : A curated list of awesome search engines useful during Penetration testing, Vulnerability assessments, Red/Blue Team operations, Bug Bounty and more
+- [h4cker](https://github.com/The-Art-of-Hacking/h4cker) : About ethical hacking, bug bounties, digital forensics and incident response (DFIR), artificial intelligence security, vulnerability research, exploit development, reverse engineering, and more.
 ## Browser Search
 
 - [GoogleDorking.md](https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06)
 - [Download Google Search Operators Cheat Sheet PDF for Quick References](https://hackr.io/blog/google-search-operators-cheat-sheet)
 
+## Container
+
+- [dive](https://github.com/wagoodman/dive) : A tool for exploring each layer in a docker image
+- [crane](https://github.com/google/go-containerregistry/tree/main/cmd/crane): A tool for interacting with remote images and registries
 ## OS and Computer architecture
 
 - [x86 and amd64 instruction reference](https://www.felixcloutier.com/x86/index.html)
@@ -63,7 +75,7 @@ tags:
 - [Ping Power — ICMP Tunnel. An attacker is often required to face a… | by Nir Chako | InfoSec Write-ups](https://medium.com/bugbountywriteup/ping-power-icmp-tunnel-31e2abb2aaea)
 - [Different types of Computer Viruses - Computer Virus Classification](https://www.omnisecu.com/security/types-of-computer-viruses.php#:~:text=An%20Armored%20Virus%20may%20also,it%20more%20difficult%20to%20disinfect.&text=Stealth%20viruses%3A%20Stealth%20viruses%20have,file%20sizes%20or%20directory%20structure.)
 
-## Attacking + Defend skill
+## General Attacking + Defend skill
 
 - [MITRE ATT&CK®](https://attack.mitre.org/#) : Globally-accessible knowledge base of adversary tactics and techniques based on real-world observations.
 - [Defend MITRE](https://d3fend.mitre.org/):  Defend skillset base on real-world secenarios
@@ -82,12 +94,19 @@ tags:
 - [blaCCkHatHacEEkr/PENTESTING-BIBLE: Learn ethical hacking.Learn about reconnaissance,windows/linux hacking,attacking web technologies,and pen testing wireless networks.Resources for learning malware analysis and reverse engineering.](https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE)
 - [AD-Attack-Defense](https://github.com/infosecn1nja/AD-Attack-Defense)
 
+## Privilege Escalation (RCE)
+
+- [PEASS-ng](https://github.com/peass-ng/PEASS-ng) : PEASS - Privilege Escalation Awesome Scripts SUITE
+- [GTFOBLookup](https://github.com/nccgroup/GTFOBLookup) : GTFO Lookup
+
 ## Networking
 
 - [Subnet Calculator](https://www.subnet-calculator.com/)
 - [Reverse IP Lookup - All Names Hosted at an IP - DomainTools](https://reverseip.domaintools.com/)
 - [DNSdumpster.com - dns recon and research, find and lookup dns records](https://dnsdumpster.com/)
 - [Shodan Search Engine](https://www.shodan.io/)
+- [Google Public DNS](https://dns.google/)
+- [Network Tools by YouGetSignal.com](https://www.yougetsignal.com/)
 
 ## Cryptography
 
@@ -121,25 +140,28 @@ tags:
 - [Steghide - An Easy way to Hide Confidential Data Inside Images and Sound Objects in Linux | 2DayGeek](https://www.2daygeek.com/easy-way-hide-information-inside-image-and-sound-objects/#:~:text=Steghide%20is%20a%20steganography%20program,key%20size%20is%20128%20bits.)
 - [Information hiding](https://www.petitcolas.net/steganography/index.html)
 - [Modifying Embedded Filesystems in ARM Linux zImages | jamchamb’s blog](https://jamchamb.net/2022/01/02/modify-vmlinuz-arm.html)
-
 ## Web (Recon, Exploit)
 
 - [SecLists](https://github.com/danielmiessler/SecLists) : Wordlist for attacking
 - [Online - Reverse Shell Generator](https://www.revshells.com/)
-- [Webhook.site - Test, process and transform emails and HTTP requests](https://webhook.site/#!/a1aea7ca-35d8-4bdb-b04c-a2b54ae4ed75)
 - [Snyk](https://docs.snyk.io/)
 - [crt.sh | Certificate Search](https://crt.sh/)
 - [JSON Web Tokens - jwt.io](https://jwt.io/)
+
+## Webhook
+
+- [Webhook.site](https://webhook.site/) : *Generates free, unique URLs and e-mail addresses and lets you see everything that’s sent there instantly. (Usage: Steal cookies, bypass authorized, ...)*
+- [Mockoon](https://mockoon.com/): Locally mock API
+- [Beeceptor](https://beeceptor.com/) : API Mocking
 ## Reverse Engineer (RE)
 
 - [CPUlator Computer System Simulator](https://cpulator.01xz.net/)
 - [Compiler Explorer](https://godbolt.org/)
 - [Decompiler Explorer](https://dogbolt.org/)
-
+- [Valgrind](https://valgrind.org/) -  An instrumentation framework for building dynamic analysis tools and use to detect memory leaking
 ## Code Search
 
 - [grep.app | code search](https://grep.app/) : Search specify code block on github community
-
 ## Vulnerables Search Engine
 
 - [Search Engine for Security Intelligence | Vulners](https://vulners.com/)
@@ -151,6 +173,12 @@ tags:
 - [NVD NIST](https://nvd.nist.gov/)
 - [CVE Trends](https://cvetrends.com/)
 - [Vulmon - Vulnerability Intelligence Search Engine](https://vulmon.com/)
+## VPN
+
+>[!info] *Give applause for Nyr for contributing a wonderful setup, with those script, you just need 1 minutes for creating your own VPN and safely connected remotely with your network*
+
+- [openvpn-install.sh](https://github.com/Nyr/openvpn-install/blob/master/openvpn-install.sh): *Setting up `openvpn` for your host (Author: [Nyr](https://github.com/Nyr))*
+- [wireguard-install.sh](https://github.com/Nyr/wireguard-install/blob/master/wireguard-install.sh): *Setting up `wireguardvpn` for your host (Author: [Nyr](https://github.com/Nyr))*
 
 # Training page (LAB)
 
@@ -237,8 +265,18 @@ tags:
 
 # Cloud
 
+>[!info]
+>Cloud computing security or, more simply, cloud security, refers to a broad set of policies, technologies, applications, and controls utilized to protect virtualized IP, data, applications, services, and the associated infrastructure of cloud computing. It is a sub-domain of computer security, network security, and, more broadly, information security.
+>Source: [Wikipedia](https://en.wikipedia.org/wiki/Cloud_computing_security)
+
+## Awesome pages
+
 - [T Wiki](https://wiki.teamssix.com/) : Chinese page who talk about Security Cloud with multiple provider like Azure, AWS, GCP, ...
 - [Hacking the Cloud](https://hackingthe.cloud/): An encyclopedia of the attacks/tactics/techniques that offensive security professionals can use on their next cloud exploitation adventure.
+
+## Articles
+
+- [Creating unintentional ways to bypass AWS IAM policies when using the “ForAllValues” operator](https://awstip.com/creating-unintentional-ways-to-bypass-aws-iam-policies-when-using-the-forallvalues-operator-3516a7f17ed0)
 # Bug Bounty
 
 >[!info]

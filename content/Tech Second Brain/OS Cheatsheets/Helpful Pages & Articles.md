@@ -19,7 +19,6 @@ tags:
 
 - [NTU Edu - Environment Variables in Windows/macOS/Linux PATH, CLASSPATH, JAVA_HOME](https://www3.ntu.edu.sg/home/ehchua/programming/howto/Environment_Variables.html)
 - [FreeCodeCamp - How to Set an Environment Variable in Linux](https://www.freecodecamp.org/news/how-to-set-an-environment-variable-in-linux/)
-
 # Linux Tips and Tricks
 
 - [Unix & Linux Stack Exchange - Format output of xargs](https://unix.stackexchange.com/questions/89130/format-output-of-xargs) 
@@ -35,6 +34,10 @@ tags:
 - [If Statements - Bash Scripting Tutorial](https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php)
 - [How To Forward Ports through a Linux Gateway with Iptables | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-forward-ports-through-a-linux-gateway-with-iptables)
 - [Chmod Calculator | Chmod Generator | Chmod Command](https://chmodcommand.com/)
+- [Systemd](https://systemd.io/): System and Service Manager
+- [Bash-Oneliner](https://github.com/onceupon/Bash-Oneliner: A collection of handy Bash One-Liners and terminal tricks for data processing and Linux system maintenance.
+- [tldr pages](https://tldr.inbrowser.app/) : Simplified and community-driven man pages
+- [Manned.org](https://manned.org/) : The archive for man pages
 # Window Server
 
 - [Windows Server Security documentation](https://learn.microsoft.com/en-us/windows-server/security/security-and-assurance)
@@ -49,3 +52,5 @@ tags:
 
 - [SS64 Command line reference](https://ss64.com/)
 - [Linux - Man Page](https://linux.die.net/man/)
+- [Nano cheatsheet](https://www.nano-editor.org/dist/latest/cheatsheet.html) : Overview of nano's shortcuts
+- [Cheatsheet.wtf](https://www.cheatsheet.wtf/) : Bash Cheatsheet
