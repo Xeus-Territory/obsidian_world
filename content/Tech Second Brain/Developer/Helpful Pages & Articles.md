@@ -24,6 +24,22 @@ tags:
 - [10015.io](https://10015.io/) : A “free all-in-one toolbox” solution created to ease your life by preventing bookmark mess.
 - [Free Online Developer Tools - AppDevTools](https://appdevtools.com/)
 - [regex101: build, test, and debug regex](https://regex101.com/)
+- [DevDocs](https://devdocs.io/): *DevDocs combines multiple API documentations in a fast, organized, and searchable interface.*
+
+
+# Language
+
+## Python
+
+**[awesome-python](https://github.com/vinta/awesome-python)** : An opinionated list of awesome Python frameworks, libraries, software and resources.
+
+## Rust
+
+- **[awesome-rust](https://github.com/rust-unofficial/awesome-rust)** : A curated list of Rust code and resources.
+
+## Golang
+
+- **[awesome-go](https://github.com/avelino/awesome-go)** : A curated list of awesome Go frameworks, libraries and software
 
 # Compiler online
 

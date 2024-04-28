@@ -7,6 +7,17 @@ tags:
   - research
   - solutions
 ---
+# Awesome Repository
+
+- **[awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted)** : About A list of Free Software network services and web applications which can be hosted on your own servers
+- **[awesome-scalability](https://github.com/binhnguyennus/awesome-scalability)** : The Patterns of Scalable, Reliable, and Performant Large-Scale Systems
+- **[awesome-docker](https://github.com/veggiemonk/awesome-docker)** : 🐳 A curated list of Docker resources and projects
+- **[awesome-devops](https://github.com/wmariuss/awesome-devops)** : A curated list of awesome DevOps platforms, tools, practices and resources
+- **[awesome](https://github.com/sindresorhus/awesome)**: 😎 Awesome lists about all kinds of interesting topics
+- **[awesome-for-beginners](https://github.com/MunGell/awesome-for-beginners)** : A list of awesome beginners-friendly projects.
+- **[system-design-primer](https://github.com/donnemartin/system-design-primer)**: Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.
+- **[awesome-design](https://github.com/gztchan/awesome-design)**: Curated design resources from all over the world.
+
 # DevOps Design & Architecture
 
 - [Prometheus Architecture: Complete Breakdown of Key Components](https://devopscube.com/prometheus-architecture/)

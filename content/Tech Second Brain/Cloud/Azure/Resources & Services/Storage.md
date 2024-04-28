@@ -186,7 +186,6 @@ For secure, you can apply some method for protect your storage account like Fire
 - You can configure the service to allow access to one or more public IP ranges.
 - Subnets and virtual networks must exist in the same Azure region or region pair as your storage account.
 
-
 ## Security strategies
 
 Documentation:
