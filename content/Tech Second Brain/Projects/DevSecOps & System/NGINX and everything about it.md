@@ -9,6 +9,9 @@ tags:
   - tech
   - solutions
 ---
+# Awesome Repository
+
+- **[awesome-nginx](https://github.com/agile6v/awesome-nginx)** : A curated list of awesome Nginx distributions, 3rd party modules, Active developers, etc.
 ## Default nginx configuration
 
 ```nginx title="nginx.conf"

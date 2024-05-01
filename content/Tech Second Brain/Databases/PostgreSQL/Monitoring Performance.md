@@ -1,5 +1,5 @@
 ---
-title: Monitoring PostgreSQL Performance
+title: Monitoring Performance
 tags:
   - collections
   - postgresql

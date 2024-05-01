@@ -8,7 +8,7 @@ tags:
 ---
 # Awesome Repository
 
-- **[awesome-local-ai](https://github.com/janhq/awesome-local-ai)** : An awesome repository of local AI tools
+- [awesome-local-ai](https://github.com/janhq/awesome-local-ai) : An awesome repository of local AI tools
 
 # Youtube Channel
 
@@ -17,7 +17,7 @@ tags:
 - [NeuralNine](https://www.youtube.com/c/NeuralNine/featured) : Educational brand focusing on programming, machine learning and computer science
 - [sentdex](https://www.youtube.com/c/sentdex/featured) : Funny guy who teach you about build cool stuff with python like AI
 
-# Community, Forums
+# Community and forums
 
 >[!info]
 >This is community where learn, share and do more experimental about AI, Machine learning, Deep Learning and Data Science
@@ -33,7 +33,7 @@ tags:
 - [Machine Learning Blog | ML@CMU | Carnegie Mellon University](https://blog.ml.cmu.edu/)
 - [Analytics India Magazine | Artificial Intelligence, Data Science, Machine Learning](https://analyticsindiamag.com/)
 - [Hugging Face](https://huggingface.co/)
-# Research
+# Research Topics
 
 - [Tesseract OCR in Python with Pytesseract & OpenCV](https://nanonets.com/blog/ocr-with-tesseract/)
 

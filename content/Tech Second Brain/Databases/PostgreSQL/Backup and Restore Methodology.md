@@ -1,5 +1,5 @@
 ---
-title: "PostgreSQL: Backup and Restore Methodology"
+title: Backup and Restore Methodology
 tags:
   - postgresql
   - database

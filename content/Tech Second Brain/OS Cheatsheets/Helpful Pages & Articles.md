@@ -33,11 +33,7 @@ tags:
 - [Basics | Cheat sheets | Linux Command Library](https://linuxcommandlibrary.com/)
 - [If Statements - Bash Scripting Tutorial](https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php)
 - [How To Forward Ports through a Linux Gateway with Iptables | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-forward-ports-through-a-linux-gateway-with-iptables)
-- [Chmod Calculator | Chmod Generator | Chmod Command](https://chmodcommand.com/)
-- [Systemd](https://systemd.io/): System and Service Manager
-- [Bash-Oneliner](https://github.com/onceupon/Bash-Oneliner: A collection of handy Bash One-Liners and terminal tricks for data processing and Linux system maintenance.
-- [tldr pages](https://tldr.inbrowser.app/) : Simplified and community-driven man pages
-- [Manned.org](https://manned.org/) : The archive for man pages
+- [StackOverFlow - How does "cat << EOF" work in bash?](https://stackoverflow.com/questions/2500436/how-does-cat-eof-work-in-bash)
 # Window Server
 
 - [Windows Server Security documentation](https://learn.microsoft.com/en-us/windows-server/security/security-and-assurance)
@@ -48,9 +44,14 @@ tags:
 - [DistroWatch.com: Put the fun back into computing. Use Linux, BSD.](https://distrowatch.com/)
 - [Server World - Build Network Server](https://www.server-world.info/en/)
 
-# Command Manual
+# Command Manual and Tools
 
 - [SS64 Command line reference](https://ss64.com/)
 - [Linux - Man Page](https://linux.die.net/man/)
 - [Nano cheatsheet](https://www.nano-editor.org/dist/latest/cheatsheet.html) : Overview of nano's shortcuts
 - [Cheatsheet.wtf](https://www.cheatsheet.wtf/) : Bash Cheatsheet
+- [Chmod Calculator | Chmod Generator | Chmod Command](https://chmodcommand.com/)
+- [Systemd](https://systemd.io/): System and Service Manager
+- [Bash-Oneliner](https://github.com/onceupon/Bash-Oneliner: A collection of handy Bash One-Liners and terminal tricks for data processing and Linux system maintenance.
+- [tldr pages](https://tldr.inbrowser.app/) : Simplified and community-driven man pages
+- [Manned.org](https://manned.org/) : The archive for man pages

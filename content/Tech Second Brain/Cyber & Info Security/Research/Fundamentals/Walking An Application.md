@@ -5,7 +5,8 @@ tags:
 draft: "false"
 ---
 
-*Basic skill to hacking web is manual review a web application for security issues such as view page source, using dev-tools to inspect, debugger or network issues*
+>[!quote]
+>*Basic skill to hacking web is manual review a web application for security issues such as view page source, using dev-tools to inspect, debugger or network issues*
 ## Walking an application (Methods)
 Here is a short breakdown of the in-built browser tools you will use for this manual review
 

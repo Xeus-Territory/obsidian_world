@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL Configuration Template for Ansible
+title: Default Configuration Template
 tags:
   - database
   - postgresql

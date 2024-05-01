@@ -5,9 +5,8 @@ tags:
   - fundamentals
   - infosec
 ---
-
-
-*This is about what should we need to getting before go to security. Find out it on some topic below and grasp for yourself something news*
+>[!info]
+>*This is about what should we need to getting before go to security. Find out it on some topic below and grasp for yourself something news*
 
 ## Website basic things
 <img src = "https://assets.tryhackme.com/additional/how-websites-work/client%20server.png">
