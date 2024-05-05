@@ -1,5 +1,5 @@
 ---
-title: Restart & Delete workloads in Kubernetes
+title: Restart & Delete workloads
 tags:
   - k8s
   - troubleshoot

@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL Host Template for Ansible
+title: Default Host Template
 tags:
   - database
   - postgresql

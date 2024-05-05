@@ -4,7 +4,8 @@ tags:
   - fundamentals
   - infosec
 ---
-*What SSTI ? How does it work ? What hacker can do with it? How to prevent it?*
+>[!question]
+>*What SSTI ? How does it work ? What hacker can do with it? How to prevent it?*
 ## Language
 1. English
 2. Tiếng Việt (Có tiếng việt ở dưới ☕ ☕ ☕ )

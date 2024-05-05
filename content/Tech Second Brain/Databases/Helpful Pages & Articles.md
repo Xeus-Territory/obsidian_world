@@ -19,9 +19,11 @@ tags:
 # MongoDB
 
 - [Medium - Solving curious case of excess memory consumption by MongoDB](https://tech.oyorooms.com/mongodb-out-of-memory-kill-process-mongodb-using-too-much-memory-solved-44e9ae577bed)
+- [mongodb-kubernetes-operator](https://github.com/mongodb/mongodb-kubernetes-operator) : MongoDB Community Kubernetes Operator
 # Elasticsearch
 
 - [Opster - Elasticsearch Heap Size Usage and JVM Garbage Collection](https://opster.com/guides/elasticsearch/capacity-planning/elasticsearch-heap-size-usage/)
+- [Orchestrating Elastic Stack applications](https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-orchestrating-elastic-stack-applications.html)
   
 # SQL Server
 

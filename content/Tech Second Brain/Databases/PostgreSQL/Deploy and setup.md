@@ -1,5 +1,5 @@
 ---
-title: "PostgreSQL: Tips and note when setup and operating"
+title: Tips and note when setup and operating
 tags:
   - database
   - postgresql

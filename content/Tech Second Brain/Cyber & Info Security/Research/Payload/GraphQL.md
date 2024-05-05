@@ -10,7 +10,7 @@ tags:
 >▶️ ▶️  [Hackwekend - Session 3 Attack and Exploit GraphQL](https://hackmd.io/@XeusNguyen/rJ0j0WR-p) 
 
 1. GraphQL with get full introspection
-```graphql
+```json
 query IntrospectionQuery {
     __schema {
       queryType { name }

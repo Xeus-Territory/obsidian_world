@@ -9,6 +9,12 @@ tags:
 >[!purpose]
 >This session is created for purpose store and relate to helpful articles, make a some reference link when you can check and understand more about K8s (Kubernetes) and awesome things with this orchestration
 
+# Awesome Repository
+
+- **[awesome-kubernetes](https://github.com/ramitsurana/awesome-kubernetes)** : A curated list for awesome kubernetes sources 🚢🎉
+- **[awesome-docker](https://github.com/veggiemonk/awesome-docker)** : 🐳 A curated list of Docker resources and projects
+- **[awesome-krew-plugin](https://krew.sigs.k8s.io/plugins/)**: A list of Plugin which used by kubectl
+
 # Hardware, CPU and Memory Usage. Trouble shoot error
 
 - [StackOverFlow - Why AKS nodes shows less amount of memory as allocatable where its actual memory is still available](https://stackoverflow.com/questions/68521392/why-aks-nodes-shows-less-amount-of-memory-as-allocatable-where-its-actual-memory)
@@ -46,11 +52,12 @@ tags:
 - [Medium - 15 Best Kubernetes Cost Optimization Tools for 2024](https://overcast.blog/15-best-kubernetes-cost-optimization-tools-for-2024-2e131a7cbe7a)
 - [Azure - Scaling options for applications in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/concepts-scale)
 - [Medium - Database in Kubernetes: Is that a good idea?](https://medium.com/@fengruohang/database-in-kubernetes-is-that-a-good-idea-daf5775b5c1f)
-
+- [Medium - Creating a Custom Scheduler in Kubernetes: A Practical Guide](https://overcast.blog/creating-a-custom-scheduler-in-kubernetes-a-practical-guide-2d9f9254f3b5)
 # Certificate & Practice
 
 - [kube4sure - The Kubernetes Exam Simulator](https://www.kube4sure.com/)
 - [killer.sh - Linux Foundation Exam Simulators](https://killer.sh/)
+- [learnk8s - Kubernetes training for engineer](https://learnk8s.io/)
 
 # Awesome items for Kubernetes
 
@@ -58,4 +65,5 @@ tags:
 - [OperatorHub](https://operatorhub.io/):  Home for the Kubernetes community to share Operators
 - [Artifacthub](https://artifacthub.io/) : Find, install and publish Cloud Native packages for Kubernetes
 - [YAML Multiline Strings](https://yaml-multiline.info/) : Find the right syntax for YAML file
+- [Instance calculator](https://learnk8s.io/kubernetes-instance-calculator) : Estimate and find the number of max workload can apply for instance
 

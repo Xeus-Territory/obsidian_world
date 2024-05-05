@@ -31,15 +31,15 @@ tags:
 
 ## Python
 
-**[awesome-python](https://github.com/vinta/awesome-python)** : An opinionated list of awesome Python frameworks, libraries, software and resources.
+- [awesome-python](https://github.com/vinta/awesome-python) : An opinionated list of awesome Python frameworks, libraries, software and resources.
 
 ## Rust
 
-- **[awesome-rust](https://github.com/rust-unofficial/awesome-rust)** : A curated list of Rust code and resources.
+- [awesome-rust](https://github.com/rust-unofficial/awesome-rust) : A curated list of Rust code and resources.
 
 ## Golang
 
-- **[awesome-go](https://github.com/avelino/awesome-go)** : A curated list of awesome Go frameworks, libraries and software
+- [awesome-go](https://github.com/avelino/awesome-go) : A curated list of awesome Go frameworks, libraries and software
 
 # Compiler online
 
