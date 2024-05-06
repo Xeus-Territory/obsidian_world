@@ -13,7 +13,6 @@ tags:
 - [PNG Recovery](https://github.com/Xeus-Territory/ctf_zone/tree/main/Forensics/PNG_Recovery)
 - [Write up - Hacktheboo 2023 Forensics](https://github.com/Xeus-Territory/ctf_zone/tree/main/HackTheBoo_2023/Forensics)
 - [Write up - GraphQL Hackwekend](https://hackmd.io/@XeusNguyen/rJ0j0WR-p)
-- [Cloud Security - EKS Cluster Games](https://hackmd.io/@XeusNguyen/H1sUc3CB6)
 # Self Challenges
 
 - [Challenge - Em0t3t CTF Web & Forensics](https://github.com/Xeus-Territory/ctf_zone/tree/main/Em0t3t_Challenges)

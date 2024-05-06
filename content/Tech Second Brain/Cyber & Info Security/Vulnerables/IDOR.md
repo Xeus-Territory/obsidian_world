@@ -1,9 +1,11 @@
 ---
-title: IDOR PortSwigger Challenge
+title: IDOR
 tags:
   - ctf
   - challenge
 ---
+# Portswigger LAB
+
 **Level: APPRENTICE**
 
 *[Lab: Insecure direct object references](https://portswigger.net/web-security/access-control/lab-insecure-direct-object-references)*
@@ -11,7 +13,8 @@ tags:
 >[!info] *Description: This lab stores user chat logs directly on the server's file system, and retrieves them using static URLs.*
 
 ![[Pasted image 20240219143843.png]]
-##  ☕☕ So try best and we can take the flag LOL
+
+☕☕ So try best and we can take the flag LOL
 
 *Access the lab with button and it will automatically generate the web, we got this* 😊
 

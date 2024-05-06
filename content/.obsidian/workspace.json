@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "70af70259e7f9af4",
+        "id": "e29cdd467191e164",
         "type": "tabs",
         "children": [
           {
-            "id": "de5c76f38f05c6bd",
+            "id": "c08bebf37378cc24",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tech Second Brain/Research & Archive/All Blogs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bb684cd75fa31240",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tech Second Brain/Projects/DevSecOps & System/0-downtime with Blue-Green Deployment.md",
+                "file": "Tech Second Brain/Cyber & Info Security/Self Challenges + Writeup.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "awesome tunnelling",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tech Second Brain/Research & Archive/All Blogs.md",
+                "file": "Tech Second Brain/Cyber & Info Security/Self Challenges + Writeup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tech Second Brain/Research & Archive/All Blogs.md",
+                "file": "Tech Second Brain/Cyber & Info Security/Self Challenges + Writeup.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tech Second Brain/Research & Archive/All Blogs.md"
+                "file": "Tech Second Brain/Cyber & Info Security/Self Challenges + Writeup.md"
               }
             }
           },
@@ -169,34 +157,31 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "de5c76f38f05c6bd",
+  "active": "c08bebf37378cc24",
   "lastOpenFiles": [
     "Tech Second Brain/Cyber & Info Security/Helpful Pages & Articles.md",
-    "Tech Second Brain/OS Cheatsheets/Linux (Debian Core)/Reconfiguration for curl template output.md",
-    "Tech Second Brain/OS Cheatsheets/Helpful Pages & Articles.md",
-    "Tech Second Brain/Docker & Kubernetes/Helpful Pages & Articles.md",
-    "Tech Second Brain/Databases/Helpful Pages & Articles.md",
+    "Tech Second Brain/Cyber & Info Security/Self Challenges + Writeup.md",
+    "Tech Second Brain/Cyber & Info Security/Research/Authentication Bypass.md",
+    "Tech Second Brain/Cyber & Info Security/Vulnerables/Cross Site Scripting ( XSS ).md",
+    "Tech Second Brain/Cyber & Info Security/Vulnerables/Command injection.md",
+    "Tech Second Brain/Cyber & Info Security/Research/Content Discovery.md",
+    "Tech Second Brain/Cyber & Info Security/Vulnerables/IDOR.md",
+    "Tech Second Brain/Cyber & Info Security/Vulnerables/SSTI.md",
+    "Tech Second Brain/Cyber & Info Security/Vulnerables/SQL Injections.md",
+    "Tech Second Brain/Cyber & Info Security/Vulnerables/GraphQL.md",
+    "Tech Second Brain/Research & Archive/All Blogs.md",
     "Tech Second Brain/Cloud/Azure/Why Azure, first chosen or not.md",
-    "Tech Second Brain/AI & ML & Data Science/Helpful Pages & Articles.md",
-    "Tech Second Brain/Developer/Helpful Pages & Articles.md",
-    "Tech Second Brain/Research & Archive/Tech Collections/Tech Contents & Articles.md",
-    "Tech Second Brain/Research & Archive/Tech Collections/Softwares & Tools.md",
-    "Tech Second Brain/Research & Archive/For 1st time/Build your wiki for 1st time.md",
-    "Tech Second Brain/Research & Archive/For 1st time/Compile gRPC for 1st time.md",
-    "Tech Second Brain/Research & Archive/For 1st time/Play with Makefile for 1st time.md",
-    "Tech Second Brain/OS Cheatsheets/Linux (Debian Core)/Comment note in Shell Bash.md",
-    "Tech Second Brain/OS Cheatsheets/Linux (Debian Core)/Redirect Output and Error.md",
+    "Tech Second Brain/Projects/Pending or Ideally.md",
+    "Tech Second Brain/Projects/Designs/gRPC Implementation.excalidraw.md",
+    "Tech Second Brain/Projects/Designs/Sidecar Injection.excalidraw.md",
+    "Tech Second Brain/Projects/Designs",
     "Tech Second Brain/Docker & Kubernetes/Kubernetes/Restart & Delete workload.md",
     "Tech Second Brain/Docker & Kubernetes/Kubernetes/Kubectl snippet.md",
-    "Tech Second Brain/Docker & Kubernetes/Kubernetes/Can use volume with cronjobs.md",
     "Tech Second Brain/Databases/PostgreSQL/Monitoring Performance.md",
     "Tech Second Brain/Databases/PostgreSQL/Default Host Template.md",
     "Tech Second Brain/Databases/PostgreSQL/Default Configuration Template.md",
-    "Tech Second Brain/Databases/PostgreSQL/Backup and Restore Methodology.md",
-    "Tech Second Brain/Databases/PostgreSQL/Deploy and setup.md",
-    "Tech Second Brain/Databases/Elasticsearch/Popular API usage.md",
-    "Tech Second Brain/Cyber & Info Security/Research/Payload/Command injection.md",
-    "Tech Second Brain/Cyber & Info Security/Research/Payload/Cross Site Scripting ( XSS ).md",
+    "Tech Second Brain/Cyber & Info Security/Research/Web fundamentals.md",
+    "Tech Second Brain/Assets/Images/Pasted image 20240502101316.png",
     "Tech Second Brain/Assets/Images/Pasted Image 20240307143146_295.png",
     "Tech Second Brain/Assets/Images/Pasted Image 20240307142822_281.png",
     "Tech Second Brain/Assets/Images/Pasted Image 20240307142752_274.png",
@@ -204,19 +189,22 @@
     "Tech Second Brain/Assets/Images/Pasted Image 20240307142001_239.png",
     "Tech Second Brain/Assets/Images/Pasted Image 20240307141251_208.png",
     "Tech Second Brain/Assets/Images/Pasted Image 20240307141150_206.png",
-    "Tech Second Brain/Assets/Images/Pasted image 20240502101316.png",
-    "Tech Second Brain/Projects/Designs",
+    "Tech Second Brain/Docker & Kubernetes/Kubernetes/Restart & Delete workload in K8s.md",
+    "Tech Second Brain/Databases/PostgreSQL/PostgreSQL Host Template for Ansible.md",
+    "Tech Second Brain/Databases/PostgreSQL/PostgreSQL Configuration Template for Ansible.md",
+    "Tech Second Brain/Databases/PostgreSQL/Monitoring PostgreSQL Performance.md",
+    "Tech Second Brain/Cyber & Info Security/Research/Basic Knowledge/Web fundamentals.md",
+    "Tech Second Brain/Cyber & Info Security/Research/Basic Knowledge",
     "Tech Second Brain/Assets/Images/Pasted image 20240423145142.png",
     "Tech Second Brain/Assets/Images/Pasted image 20240423144913.png",
     "Tech Second Brain/Cloud/Azure/Resources & Services/Untitled",
     "Excalidraw",
     "Tech Second Brain/Cyber & Info Security/CTF & Write Ups/Vulnerables/SSTI",
     "Tech Second Brain/Cyber & Info Security/CTF & Write Ups/Vulnerables/IDOR",
-    "Tech Second Brain/Cyber & Info Security/CTF & Write Ups/Vulnerables",
+    "Tech Second Brain/Cyber & Info Security/Vulnerables",
     "Tech Second Brain/Docker & Kubernetes/Kubernetes",
     "Tech Second Brain/Docker & Kubernetes",
     "The Art of Mine",
-    "The Archive of Mine",
     "Projects/Untitled.canvas",
     "Untitled.canvas",
     "Untitled 2.canvas",
