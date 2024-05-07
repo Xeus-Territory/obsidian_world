@@ -181,6 +181,10 @@ tags:
 - [awesome-tunneling](https://github.com/anderspitman/awesome-tunneling) : List of ngrok/Cloudflare Tunnel alternatives and other tunneling software and services. Focus on self-hosting.
 - [wstunnel](https://github.com/erebe/wstunnel) : Tunnel all your traffic over Websocket or HTTP2 - Bypass firewalls/DPI - Static binary available
 
+## IPS / IDS
+
+- [Medium - Using Suricata Intrusion Prevention System To Monitor Network Traffic](https://medium.com/aws-tip/using-suricata-intrusion-prevention-system-to-manage-network-traffic-fa865fad197f)
+
 # Training page (LAB)
 
 >[!info]

@@ -43,6 +43,7 @@ tags:
 
 - [DistroWatch.com: Put the fun back into computing. Use Linux, BSD.](https://distrowatch.com/)
 - [Server World - Build Network Server](https://www.server-world.info/en/)
+- [Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) : A Windows and Office activator using HWID / Ohook / KMS38 / Online KMS activation methods, with a focus on open-source code and fewer antivirus detections.
 
 # Command Manual and Tools
 

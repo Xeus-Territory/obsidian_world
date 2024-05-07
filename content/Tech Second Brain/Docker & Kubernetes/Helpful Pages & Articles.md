@@ -66,4 +66,5 @@ tags:
 - [Artifacthub](https://artifacthub.io/) : Find, install and publish Cloud Native packages for Kubernetes
 - [YAML Multiline Strings](https://yaml-multiline.info/) : Find the right syntax for YAML file
 - [Instance calculator](https://learnk8s.io/kubernetes-instance-calculator) : Estimate and find the number of max workload can apply for instance
+- [botkube](https://github.com/kubeshop/botkube): An app that helps you monitor your Kubernetes cluster, debug critical deployments & gives recommendations for standard practices
 
