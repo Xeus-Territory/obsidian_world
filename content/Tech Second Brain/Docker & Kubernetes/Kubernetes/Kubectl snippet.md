@@ -3,6 +3,8 @@ title: Kubectl snippet
 tags:
   - k8s
   - devops
+  - helpful
+  - usage
 ---
 # Helpful command
 

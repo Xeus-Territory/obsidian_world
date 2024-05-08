@@ -265,3 +265,132 @@ Consider when using application security groups
 >[!question]
 >1. Which of the security rules defined by the infrastructure team takes precedence? The deny rule takes precedence.
 >2. What happens to network traffic that doesn't match any NSG rules?  It's denied by default.
+
+# Network peering
+
+## About
+
+Reference resources
+
+- [Determine Azure Virtual Network peering uses](https://learn.microsoft.com/en-us/training/modules/configure-vnet-peering/2-determine-uses)
+
+>[!info]
+>Azure Virtual Network peering lets you connect virtual networks in the same or different regions. Azure Virtual Network peering provides secure communication between resources in the peered networks.
+
+![[Pasted image 20240509110913.png]]
+
+Some prominent characteristics of Azure Virtual Network peering
+
+- Two type peering: `Regional` and `Global`
+- `Regional` peering connect exist network same region
+- `Global` peering connect exist network in different regions
+- Can create a `regional` and `global` on totally region which supported by Azure
+- Manage virtual network will normal after you create virtual network
+- Global peering isn't permitted  in different Azure Government cloud
+
+Benefits of peering
+
+![[Pasted image 20240509112436.png]]
+
+## Implementation
+
+Reference resource
+
+- [Create virtual network peering]()
+
+You need to follow some points yo create the peering
+
+- Permission need assign to `Network Contributor` or `Classic Network Contributor`, if not you need provide custom rule which allow peering actions
+- Need 2 VNet to create peering
+- Second VNet in peering was called `remote network`
+
+## More about Peering
+
+- [Extend peering with user-defined routes and service chaining](https://learn.microsoft.com/en-us/training/modules/configure-vnet-peering/5-determine-service-chaining-uses)
+![[Pasted image 20240509125843.png]]
+
+>[!question]
+>When virtual networks are successfully peered, what's the peering status for both virtual networks in the peering? Connected
+# VPN Gateway
+
+![[Pasted image 20240509125017.png]]
+
+Reference resource
+
+- [Gateway transit and connectivity](https://learn.microsoft.com/en-us/training/modules/configure-vnet-peering/3-determine-gateway-transit-connectivity)
+
+>[!hint]
+>When virtual networks are peered, you can configure Azure VPN Gateway in the peered virtual network as a _transit point_. In this scenario, a peered virtual network uses the remote VPN gateway to gain access to other resources.
+
+How Azure VPN Gateway is implemented
+
+- A virtual network can have **only one** VPN gateway.
+- Gateway transit support both `region` and `global` peering
+- When you allow VPN gateway transit, the virtual network can communicate to resources outside the peering. Some case you can use VPN, such as
+
+    - Use a site-to-site VPN to connect to an on-premises network.
+    - Use a vnet-to-vnet connection to another virtual network.
+    - Use a point-to-site VPN to connect to a client.
+
+- Gateway transit allows peered virtual networks to share the gateway and get access to resources. You not need VPN Gateway if implement your network like this stuff
+- You can apply network security groups in a virtual network to block or allow access to other virtual networks or subnets. When you configure virtual network peering, you can choose to open or close the network security group rules between the virtual networks.
+
+# Routes and endpoints
+
+Reference resource
+
+- [Review system routes](https://learn.microsoft.com/en-us/training/modules/configure-network-routing-endpoints/2-review-system-routes)
+- [Identify user-defined routes](https://learn.microsoft.com/en-us/training/modules/configure-network-routing-endpoints/3-identify-user-defined-routes)
+- [Determine service endpoint uses](https://learn.microsoft.com/en-us/training/modules/configure-network-routing-endpoints/4-determine-service-endpoint-uses)
+- [Determine service endpoint services](https://learn.microsoft.com/en-us/training/modules/configure-network-routing-endpoints/5-determine-service-endpoint-services)
+
+>[!info]
+>Azure uses _system routes_ to direct network traffic between virtual machines, on-premises networks, and the internet. Information about the system routes is recorded in a _route table_.
+
+>[!info]
+>Azure automatically handles all network traffic routing, but in some cases, a custom configuration is preferable. In these situations, you can configure user-defined routes (UDRs) and next hop targets.
+
+>[!info]
+>A virtual network service endpoint provides the identity of your virtual network to the Azure service. After service endpoints are enabled in your virtual network, you can secure Azure service resources to your virtual network by adding a virtual network rule to the resources.
+## Private Links
+
+>[!info]
+>Azure Private Link provides private connectivity from a virtual network to Azure platform as a service (PaaS), customer-owned, or Microsoft partner services. It simplifies the network architecture and secures the connection between endpoints in Azure by eliminating data exposure to the public internet.
+
+ Characteristics of Azure Private Link
+
+- Keeps all traffic on the Microsoft global network. There's no public internet access.
+- Global and there are no regional restrictions, can run in other Azure regions
+- Services delivered on Azure can be brought into your private virtual network by mapping your network to a private endpoint.
+- Private Link can privately deliver your own services in your customer's virtual networks.
+- All traffic to the service can be routed through the private endpoint. No gateways, NAT devices, Azure ExpressRoute or VPN connections, or public IP addresses are required.
+
+![[Pasted image 20240509132940.png]]
+
+>[!question]
+>Real Scenario, and learn more about Routes traffic in network, following this [knowledge check](https://learn.microsoft.com/en-us/training/modules/configure-network-routing-endpoints/8-knowledge-check)
+
+ Valid next hop type can be
+
+- Virtual appliance
+- Virtual network gateway
+- Virtual network
+- Internet
+- None, when meet this hop, traffic will be dropped
+
+![[Pasted image 20240509162939.png]]
+
+More information, technicals and papers about network routing in :  https://learn.microsoft.com/en-us/training/modules/configure-network-routing-endpoints/9-summary-resources
+
+# Extend contents
+
+- [Connect services by using virtual network peering](https://learn.microsoft.com/en-us/training/modules/integrate-vnets-with-vnet-peering/2-connect-services-using-vnet-peering): About Reciprocal connection, cross-subscription VNet peering, Transitivity, Transit, Overlap, ExpressRoute, VPN
+- [Lab - Prepare virtual networks for peering by using Azure CLI commands](https://learn.microsoft.com/en-us/training/modules/integrate-vnets-with-vnet-peering/3-exercise-prepare-vnets-for-peering-using-azure-cli-commands)
+- [Lab - Configure virtual network peering connections by using Azure CLI commands](https://learn.microsoft.com/en-us/training/modules/integrate-vnets-with-vnet-peering/4-exercise-configure-vnet-peering-connections-using-azure-cli-commands)
+- [Lab - Verify virtual network peering by using SSH between Azure virtual machines](https://learn.microsoft.com/en-us/training/modules/integrate-vnets-with-vnet-peering/5-exercise-verify-vnet-peering)
+- [Identify routing capabilities of an Azure virtual network](https://learn.microsoft.com/en-us/training/modules/control-network-traffic-flow-with-routes/2-azure-virtual-network-route)
+- [Lab - Create custom routes](https://learn.microsoft.com/en-us/training/modules/control-network-traffic-flow-with-routes/3-exercise-create-custom-routes)
+- [What is an NVA?](https://learn.microsoft.com/en-us/training/modules/control-network-traffic-flow-with-routes/4-network-virtual-appliances)
+- [Lab - Create an NVA and virtual machines](https://learn.microsoft.com/en-us/training/modules/control-network-traffic-flow-with-routes/5-exercise-create-nva-vm)
+- [Lab - Route traffic through the NVA](https://learn.microsoft.com/en-us/training/modules/control-network-traffic-flow-with-routes/6-exercise-route-traffic-through-nva)
+

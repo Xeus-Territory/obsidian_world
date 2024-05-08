@@ -9,6 +9,7 @@ tags:
 # Awesome Repository
 
 - [awesome-local-ai](https://github.com/janhq/awesome-local-ai) : An awesome repository of local AI tools
+- [awesome-deep-learning](https://github.com/ChristosChristofidis/awesome-deep-learning) : A curated list of awesome Deep Learning tutorials, projects and communities.
 
 # Youtube Channel
 

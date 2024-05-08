@@ -14,7 +14,6 @@ tags:
 # General
 
 - [Youtube - 60 Hacking Commands You NEED to Know](https://www.youtube.com/watch?v=gL4j-a-g9pA&ab_channel=NetworkChuck)
-- [Vsociety - CVE Org analysis](https://www.vicarius.io/vsociety/)
 - [Cybersecurity Conferences](https://infosec-conferences.com/)
 - [OWASP](https://wiki.owasp.org/index.php/Main_Page)
 - [The Hacker News - Cybersecurity News and Analysis](https://thehackernews.com/)
@@ -29,6 +28,19 @@ tags:
 - [tl;dr sec](https://tldrsec.com/)
 - [Escape - The API Security Blog](https://escape.tech/blog/)
 - [Top Cybersecurity And Information Security Guides - HackersOnlineClub](https://hackersonlineclub.com/)
+- [With Secure Publications](https://labs.withsecure.com/publications)
+- [Wiz.blog](https://www.wiz.io/blog)
+- [Vsociety - CVE Org analysis](https://www.vicarius.io/vsociety/) : CVE analysis and publish CVE
+- [AttackerKB](https://attackerkb.com/) : CVE analysis
+- [Intigriti Blog](https://blog.intigriti.com/)
+- [HTB Blog](https://www.hackthebox.com/blog)
+- [THM Blog](https://tryhackme.com/r/resources/blog)
+- [Hackerone Blog](https://www.hackerone.com/hackerone-community-blog)
+- [Medium - System Weakness](https://systemweakness.com/)
+- [Medium - Infosec Writeups](https://infosecwriteups.com/)
+- [Medium - S12 H4CK](https://medium.com/@s12deff)
+- [Medium - Coded Conversations 🔐💬](https://medium.com/@codedconversations)
+- [LRTV Blog](https://blog.lrvt.de/)
 
 # Technical and Technologies for hacking
 

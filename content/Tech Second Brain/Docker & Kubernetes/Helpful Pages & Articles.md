@@ -14,6 +14,9 @@ tags:
 - **[awesome-kubernetes](https://github.com/ramitsurana/awesome-kubernetes)** : A curated list for awesome kubernetes sources 🚢🎉
 - **[awesome-docker](https://github.com/veggiemonk/awesome-docker)** : 🐳 A curated list of Docker resources and projects
 - **[awesome-krew-plugin](https://krew.sigs.k8s.io/plugins/)**: A list of Plugin which used by kubectl
+- **[awesome-compose](https://github.com/docker/awesome-compose)** : Awesome Docker Compose samples
+- **[Compose-Examples](https://github.com/Haxxnet/Compose-Examples)** : Various Docker Compose examples of selfhosted FOSS and proprietary projects.
+- **[boilerplates](https://github.com/ChristianLempa/boilerplates)** : Cool Repo from [Christian - Youtuber](https://www.youtube.com/@christianlempa/videos) 
 
 # Hardware, CPU and Memory Usage. Trouble shoot error
 
@@ -27,11 +30,15 @@ tags:
 
 # Docker & Containerization
 
-- [Powerful Docker Alternatives to Revolutionize Containerization in 2024](https://medium.com/gitconnected/powerful-docker-alternatives-to-revolutionize-containerization-in-2024-99249ba6d059)
+- [Docker Documentation](https://docs.docker.com/)
+- [Medium - Powerful Docker Alternatives to Revolutionize Containerization in 2024](https://medium.com/gitconnected/powerful-docker-alternatives-to-revolutionize-containerization-in-2024-99249ba6d059)
 - [StackOverFlow - How can I keep a container running on Kubernetes?](https://stackoverflow.com/questions/31870222/how-can-i-keep-a-container-running-on-kubernetes)
 - [Medium - 24 Kubernetes Masters’ Configurations](https://overcast.blog/24-kubernetes-mastersconfigurations-29235c65b337)
 - [Medium - 13 Docker Cost Optimizations You Should Know](https://medium.com/overcast-blog/13-docker-cost-optimizations-you-should-know-1f78c0accb45)
-- [Mediun - 11 Ways to Troubleshoot Docker Faster](https://medium.com/gitconnected/11-ways-to-troubleshoot-docker-faster-8f9ab55dd419)
+- [Medium - 11 Ways to Troubleshoot Docker Faster](https://medium.com/gitconnected/11-ways-to-troubleshoot-docker-faster-8f9ab55dd419)
+- [Medium - Docker Commands You Never Heard Of!](https://medium.com/@arton.demaku/docker-commands-you-never-heard-of-4b25da3dd738)
+- [Container Engines: How They Work and Top 7 Options](https://www.aquasec.com/cloud-native-academy/container-platforms/container-engines/)
+- [Docker networking - NetworkChuck](https://www.youtube.com/watch?v=bKFMS5C4CG0&ab_channel=NetworkChuck)
 
 # Kubernetes package manager
 

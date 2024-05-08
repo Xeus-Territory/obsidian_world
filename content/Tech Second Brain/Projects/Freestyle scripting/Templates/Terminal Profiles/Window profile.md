@@ -1,5 +1,5 @@
 ---
-title: Powershell Profile
+title: Window profile
 tags:
   - powershell
   - terminal-profile
