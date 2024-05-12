@@ -10,3 +10,11 @@ title: Softwares, Tools which collection for multiple purpose
 # Opensource Download
 
 - [Compare, Download & Develop Open Source & Business Software - SourceForge](https://sourceforge.net/)
+
+# Torrent site
+
+- [Download music, movies, games, software! The Pirate Bay - The galaxy's most resilient BitTorrent site](https://thepiratebay.org/index.html)
+- [isoHunt - BitTorrent & P2P torrent search engine](https://isohunts.to/)
+- [Internet Archive: Digital Library of Free & Borrowable Books, Movies, Music & Wayback Machine](https://archive.org/)
+- [KAT - Kickass Torrents](https://kick4ss.com/)
+

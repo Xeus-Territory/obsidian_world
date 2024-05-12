@@ -41,3 +41,5 @@ tags:
 - [Vietnamese - Slide Presentation](https://docs.google.com/presentation/d/1I-RfgcjXt-FyBgX3MHNZblPM7KOjNpbMN8yBxFS9Vak/edit?usp=sharing)
 - [Vietnamese - Final Thesis Documentation](https://drive.google.com/file/d/1_0djB08AyeABBi4z7rPoeQSEwUgHxP3H/view?usp=sharing)
 - [Github Repo](https://github.com/Xeus-Territory/wouops/tree/main/ntma_anomaly)
+- [A Systematic Review on Anomaly Detection for Cloud Computing Environments](https://dl.acm.org/doi/fullHtml/10.1145/3442536.3442550)
+- [Lessons Learned from Scaling Up Cloudflare’s Anomaly Detection Platform](https://blog.cloudflare.com/lessons-learned-from-scaling-up-cloudflare-anomaly-detection-platform/)

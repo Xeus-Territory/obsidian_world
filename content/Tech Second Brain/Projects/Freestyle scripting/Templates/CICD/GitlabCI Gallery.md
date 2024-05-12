@@ -9,12 +9,12 @@ tags:
 >[!summary]
 >This template which store short `yaml` to show how can work with `GitlabCI` and note some specify for use case
 >
->*More information about GLAB CI/CD and GLAB VARIABLES. Go check:*
->1. [GITLAB CI/CD](https://docs.gitlab.com/ee/ci/yaml/)
->2. [GITLAB VARIABLES](https://docs.gitlab.com/ee/ci/variables/) & [GITLAB_PREDEFINED_VAR](https://docs.gitlab.com/ee/ci/variables/predefined_variables.html)
->3. [GITLAB_DOC](https://docs.gitlab.com/ee/user/)
+>*More information about Gitlab CI/CD and Variables. Go check:*
+>1. [Gitlab CI/CD](https://docs.gitlab.com/ee/ci/yaml/)
+>2. [Variables](https://docs.gitlab.com/ee/ci/variables/) & [Predefine variables](https://docs.gitlab.com/ee/ci/variables/predefined_variables.html)
+>3. [Documentation](https://docs.gitlab.com/ee/user/)
 
-# Example
+# React build app, test and build Image for container services
 
 ```yaml title=".gitlab-ci.yml"
 # Define stage for running job inside

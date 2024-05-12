@@ -1,6 +1,8 @@
-# Wiki Tech Obsidian Vault 
+# Xeus's Obsidian world
 
-*Give a applause for [him - jackyzha0](https://github.com/jackyzha0), this template is used from his project. I feel appriciate with your contribution, cut off lot of effort and make something cool stuff*
+> Archive my knowledge, make more efficient and share to others
+
+*Give a applause for [him - jackyzha0](https://github.com/jackyzha0), this template is used from his project. I feel appriciate with your contribution, help me to cut off effort for implement UI/UX, and can make something cool stuff like Obsidian World*
 
 # Quartz v4
 

@@ -25,19 +25,21 @@ tags:
 - [Free Online Developer Tools - AppDevTools](https://appdevtools.com/)
 - [regex101: build, test, and debug regex](https://regex101.com/)
 - [DevDocs](https://devdocs.io/): *DevDocs combines multiple API documentations in a fast, organized, and searchable interface.*
+- [TrueDevTools](https://truedevtools.com/): *True Devtools is a free collection of 45+ carefully crafted tools useful for development*
 
+# JS
 
-# Language
+- [awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs): Delightful Node.js packages and resources
 
-## Python
+# Python
 
 - [awesome-python](https://github.com/vinta/awesome-python) : An opinionated list of awesome Python frameworks, libraries, software and resources.
 
-## Rust
+# Rust
 
 - [awesome-rust](https://github.com/rust-unofficial/awesome-rust) : A curated list of Rust code and resources.
 
-## Golang
+# Golang
 
 - [awesome-go](https://github.com/avelino/awesome-go) : A curated list of awesome Go frameworks, libraries and software
 

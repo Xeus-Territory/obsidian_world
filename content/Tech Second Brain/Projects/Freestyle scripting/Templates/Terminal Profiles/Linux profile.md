@@ -1,5 +1,5 @@
 ---
-title: Zsh Profile
+title: Linux profile
 tags:
   - terminal-profile
   - helpful
@@ -7,7 +7,139 @@ tags:
   - zsh
 ---
 >[!sumarry]
->This is about some configuration to make your effective when work with linux shell, `Oh-My-Zsh`. It will collection from multiple source, I will update ASAP
+>This is about some configuration to make your effective when work with linux shell, `Oh-My-Zsh`. It will collection from multiple source, and process will describe on the following page, check it 😄
+
+First of all, you need to install `ZSH` and `Oh-my-zsh` for your shell
+
+- [Vietnamese - Cách cài đặt zsh và zsh-autosuggestions trên Ubuntu](https://viblo.asia/p/cach-cai-dat-zsh-va-zsh-autosuggestions-tren-ubuntu-LzD5ddDO5jY)
+- [How to Install Zsh in Ubuntu 22.04](https://itslinuxfoss.com/how-to-install-zsh-in-ubuntu-22-04/)
+- [Gist - Setup ZSH extension](https://gist.github.com/n1snt/454b879b8f0b7995740ae04c5fb5b7df)
+- [Install bamboo for Vietnamese Keyboard](https://github.com/BambooEngine/ibus-bamboo?tab=readme-ov-file#ubuntu-v%C3%A0-c%C3%A1c-distro-t%C6%B0%C6%A1ng-t%E1%BB%B1)
+- [Extension - Clipboard](https://extensions.gnome.org/extension/779/clipboard-indicator/)
+- [Extension - Transparent Top Bar](https://extensions.gnome.org/extension/1708/transparent-top-bar/)
+- [Extension - Blur My Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/)
+
+I just brief step, and combine all into one bash file, you run it
+
+```bash title="oh-my-zsh-setup.sh"
+#!/bin/bash
+
+# Step 1: Update package repository and install zsh
+sudo apt update
+sudo apt install zsh -y
+
+# Step 2: Install oh-my-zsh from script
+# It will ask you change your default shell to zsh, select yes (y)
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# Or if you want to select again, you can do command downbelow
+# sudo chsh -s $(which zsh)
+
+# Currently, your default shell will turn to zsh. But for setup and work with .zshrc, you need install some extension and profile
+
+# Install zsh-autosuggestion
+# Github: https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+# Install zsh-autocomplete
+# Github: https://github.com/marlonrichert/zsh-autocomplete
+git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZSH_CUSTOM/plugins/zsh-autocomplete
+
+# Intall zsh-syntax-highlighting
+# Github: https://github.com/zsh-users/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+
+# Install az completion (config if you want)
+# echo -n "source /etc/bash_completion.d/azure-cli" >> ~/.zshrc
+
+# Install Fira Code Font
+wget https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip
+unzip Fira_Code_v6.2.zip -d firacode
+mkdir -p ~/.local/share/fonts
+cp -r firacode/ttf/* ~/.local/share/fonts
+rm -rf firacode Fira_Code_v6.2.zip
+```
+
+Install some tool, which actually need
+
+```bash title="common-tools.sh"
+#!/bin/bash
+
+# Update
+sudo apt update
+
+# Install linux tool, docker and some common tools
+sudo apt install -y docker.io docker-compose
+sudo usermod -aG docker $USER
+sudo systemctl enable docker
+sudo chmod 666 /var/run/docker.sock
+
+sudo apt install -y jq \
+	curl \
+	git \
+	wget \
+	net-tools \
+	htop \
+	procps \
+	gnome-shell-extensions \
+	terminator
+	
+# Install kubectl
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+sudo chmod +x kubectl
+sudo mv kubectl /usr/local/bin
+
+# # Install Powershell (If you need)
+# ###################################
+# # Prerequisites
+
+# # Update the list of packages
+# sudo apt-get update
+
+# # Install pre-requisite packages.
+# sudo apt-get install -y wget apt-transport-https software-properties-common
+
+# # Get the version of Ubuntu
+# source /etc/os-release
+
+# # Download the Microsoft repository keys
+# wget -q https://packages.microsoft.com/config/ubuntu/$VERSION_ID/packages-microsoft-prod.deb
+
+# # Register the Microsoft repository keys
+# sudo dpkg -i packages-microsoft-prod.deb
+
+# # Delete the Microsoft repository keys file
+# rm packages-microsoft-prod.deb
+
+# # Update the list of packages after we added packages.microsoft.com
+# sudo apt-get update
+
+# ###################################
+# # Install PowerShell
+# sudo apt-get install -y powershell
+
+# # Start PowerShell
+# pwsh
+
+# Intall az
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+
+# Install aws
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+rm -rf aws awscliv2.zip
+
+# Install terraform
+wget https://releases.hashicorp.com/terraform/1.8.3/terraform_1.8.3_linux_amd64.zip -O terraform.zip
+unzip ./terraform.zip -d terraform
+sudo mv ./terraform/terraform /usr/local/bin 
+rm -rf terraform terraform.zip
+
+# Install NVM
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+
+Lately, you can apply the `.zshrc` profile down below for configuration your terminal
 
 ```bash title=".zshrc"
 #!/bin/bash
@@ -85,7 +217,7 @@ ZSH_THEME="amuse"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git kubectl zsh-autosuggestions zsh-syntax-highlighting docker \
-        docker-compose podman zsh-autocomplete)
+        docker-compose podman zsh-autocomplete az)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -118,15 +250,15 @@ source $ZSH/oh-my-zsh.sh
 # Alias tools
 alias stegsolve="java -jar $HOME/.stego_tools/stegsolve/stegsolve.jar"
 
-# PythonPath (Usea Tool of Python with command)
+# Python Path/GCC PATH (Use tool of Python with command)
 export PATH="$PATH:~/.local/bin"
 
 # Kubectl completion and alias
 export KUBE_EDITOR="nano" # Kube edit will use nano for default editor
 
-source <(kubectl completion zsh)
-alias k="kubectl"
-alias kgp="kubectl get pods"
+# source <(kubectl completion zsh)
+# alias k="kubectl"
+# alias kgp="kubectl get pods"
 alias kn="kubectl config set-context --current --namespace"
 alias kaf="kubectl apply -f "
 alias kr="kubectl run --dry-run=client -o yaml "
