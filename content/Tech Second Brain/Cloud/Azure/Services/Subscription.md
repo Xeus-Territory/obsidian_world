@@ -1,5 +1,5 @@
 ---
-title: Azure Subscription
+title: Subscription
 tags:
   - azure
   - admin
@@ -46,3 +46,21 @@ Prominent characteristics of paired regions:
 - **Data residency**
 
 You can find the regions, choose the right position for your project with [Azure geographies](https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/#overview)
+
+
+# Questions
+
+1. What can you add Admin1 as a co-administrator?
+
+	To add Admin1 as a co-administrator to Sub1:
+	
+	In the Azure portal, navigate to Sub1.
+	Click Access control (IAM).
+	Click Assign role.
+	Select the Co-Administrator role.
+	Select Admin1 in the Select drop-down list.
+	Click Assign.
+	Once the role has been assigned, Admin1 will have full access to all resources in Sub1.
+	
+	Note: **Co-administrators** can only be assigned at the subscription scope. You cannot assign co-administrators to resource groups, management groups, or virtual machines.
+

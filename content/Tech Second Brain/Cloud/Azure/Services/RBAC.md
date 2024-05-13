@@ -1,5 +1,5 @@
 ---
-title: Azure RBAC
+title: RBAC
 tags:
   - admin
   - devops

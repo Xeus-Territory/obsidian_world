@@ -1,5 +1,5 @@
 ---
-title: Azure Virtual Machine
+title: Virtual Machine
 tags:
   - devops
   - admin
@@ -39,6 +39,8 @@ For more detail, you can take a look on [Plan virtual machines](https://learn.mi
 >- [Virtual Machine series](https://azure.microsoft.com/en-us/pricing/details/virtual-machines/series/)
 >- [Virtual Machines Pricing](https://azure.microsoft.com/en-us/pricing/details/virtual-machines/linux/)
 
+![[Pasted image 20240513131127.png]]
+
 About the storage, Azure is supporting some storage style, and disks can be most used by Virtual machine but it has another type
 
 >[!info]
@@ -60,7 +62,6 @@ You can take a look this instruction to figure out what you need to do when impl
  <iframe width="600" height="315"
 src="https://www.youtube.com/embed/QOv_-xBXkpo">
 </iframe> 
-
 # Connect to virtual machine
 
 Reference resource
@@ -89,5 +90,136 @@ With Window, you can connect it with `RDP` and open on port `3389`. With Linux m
 >2. For the security requirements, how can you connect to Azure Linux virtual machines and install software? **Configure Azure Bastion.**
 >3. What effect do the default network security settings have on a new virtual machine? **Outbound requests are allowed. Inbound traffic is allowed only from within the virtual network.**
 
+Training: [Create a Windows virtual machine in Azure](https://learn.microsoft.com/en-us/training/modules/create-windows-virtual-machine-in-azure/)
+
+# Backup and restore
+
+Reference resource
+
+- [Explore options to protect virtual machine data](https://learn.microsoft.com/en-us/training/modules/configure-virtual-machine-backups/2-protect-data)
+- [Create virtual machine snapshots in Azure Backup](https://learn.microsoft.com/en-us/training/modules/configure-virtual-machine-backups/3-create-snapshots)
+- [Set up Azure Recovery Services vault backup options](https://learn.microsoft.com/en-us/training/modules/configure-virtual-machine-backups/4-setup-recovery-services-vault-backup-options)
+
+>[!info]
+>Azure Backup provides independent and isolated backups to guard against unintended destruction of the data on your virtual machines. Administrators can implement Azure services to support their backup requirements, including the Microsoft Azure Recovery Services (MARS) agent for Azure Backup, the Microsoft Azure Backup Server (MABS), Azure managed disks snapshots, and Azure Site Recovery.
+
+Backup options for virtual machines
+
+|**Azure backup option**|**Configuration scenarios**|**Description**|
+|---|---|---|
+|**Azure Backup**|_Back up Azure virtual machines running production workloads_  <br>  <br>_Create application-consistent backups for both Windows and Linux virtual machines_|Azure Backup takes a snapshot of your virtual machine and stores the data as recovery points in geo-redundant recovery vaults. When you restore from a recovery point, you can restore your entire virtual machine or specific files only.|
+|**Azure Site Recovery**|_Quickly and easily recover specific applications_  <br>  <br>_Replicate to the Azure region of your choice_|Azure Site Recovery protects your virtual machines from a major disaster scenario when a whole region experiences an outage due to a major natural disaster or widespread service interruption.|
+|**Azure managed disks - snapshot**|_Quickly and easily back up your virtual machines that use Azure managed disks at any point in time_  <br>  <br>_Support development and test environments_|An Azure managed disks snapshot is a read-only full copy of a managed disk that's stored as a standard managed disk by default. A snapshot exists independent of the source disk and can be used to create new managed disks. Each snapshot is billed based on the actual size used. If you create a snapshot of a managed disk with a capacity of 64 GB that's used only 10 GB, you're billed for 10 GB.|
+|**Azure managed disks - image**|_Create an image from your custom VHD in an Azure storage account or directly from a generalized (via Sysprep) virtual machine_  <br>  <br>_Create hundreds of virtual machines by using your custom image without copying or managing any storage account_|Azure managed disks also support creating a managed custom image. This process captures a single image that contains all managed disks associated with a virtual machine, including both the operating system and data disks.|
+
+![[Pasted image 20240513152138.png]]
+
+An Azure Backup job creates a snapshot for your virtual machine in two phases:
+
+- Phase 1: Take a snapshot of the virtual machine data
+- Phase 2: Transfer the snapshot to an Azure Recovery Services vault
+
+Characteristics of snapshots and recovery points in Azure Backup
+
+- By default, Azure Backup keeps snapshots for two days to reduce backup and restore times, local retention reduces the time required to transform and copy data back
+- You can set the default snapshot retention value from one and five days.
+- Incremental snapshots are stored as Azure page blobs (Azure Disks).
+- Recovery points for a virtual machine snapshot are available only after both phases of the Azure Backup job are complete.
+- Recovery points are listed for the virtual machine snapshot in the Azure portal and are labeled with a _recovery point type_.
+- After a snapshot is first taken, the recovery points are identified with the **snapshot** recovery point type.
+- After the snapshot is transferred to an Azure Recovery Services vault, the recovery point type changes to **snapshot and vault**.
+
+You can follow the instruction for [Back up your virtual machines](https://learn.microsoft.com/en-us/training/modules/configure-virtual-machine-backups/5-backup-virtual-machines), and [Restore your virtual machines](https://learn.microsoft.com/en-us/training/modules/configure-virtual-machine-backups/6-restore-virtual-machines), [Implement soft delete for your virtual machines](https://learn.microsoft.com/en-us/training/modules/configure-virtual-machine-backups/9-manage-soft-delete)
+
+![[Pasted image 20240513153322.png]]
+
+<div align="center">
+    <strong><em><p style="text-align: center;">Soft delete option for Azure Blob objects</p></em></strong>
+</div>
+
+>[!note]
+>- Apply soft-delete state will keep data retained for 14 days
+>- What is the retention period of virtual machine backups in the default backup policy?  30 days 
+
+>[!question]
+>What's the best backup method for the company's production virtual machines?  **Azure Backup**
+
+Summary about VM backup, you can follow [this article](https://learn.microsoft.com/en-us/training/modules/configure-virtual-machine-backups/13-summary-resources)
+
+Virtual Machine type which supported by Azure Backup
+
+Documentation: [Support matrix for Azure VM backups](https://learn.microsoft.com/en-us/azure/backup/backup-support-matrix-iaas)
+
+![[Pasted image 20240515142354.png]]
+
+![[Pasted image 20240515142523.png]]
+# Monitoring
+
+Reference resource
+
+- [Monitoring for Azure VMs](https://learn.microsoft.com/en-us/training/modules/monitor-azure-vm-using-diagnostic-data/2-monitor-vm-health)
+- [Monitor VM host data](https://learn.microsoft.com/en-us/training/modules/monitor-azure-vm-using-diagnostic-data/3-exercise-create-virtual-machine)
+- [Use Metrics Explorer to view detailed host metrics](https://learn.microsoft.com/en-us/training/modules/monitor-azure-vm-using-diagnostic-data/4-view-host-metrics)
+- [Collect client performance counters by using VM insights](https://learn.microsoft.com/en-us/training/modules/monitor-azure-vm-using-diagnostic-data/5-enable-vm-insights)
+- [Collect VM client event logs](https://learn.microsoft.com/en-us/training/modules/monitor-azure-vm-using-diagnostic-data/6-collect-log-data)
+
+Azure VMs have several layers that require monitoring. Each of the following layers has a distinct set of telemetry and monitoring requirements.
+
+- Host VM
+- Guest operating system (OS)
+- Client workloads
+- Applications that run on the VM
+
+![[Pasted image 20240513173221.png]]
+
+## Understand Metrics Explorer
+
+To open Metrics Explorer, you can:
+
+- Select **Metrics** from the VM's left navigation menu under **Monitoring**.
+- Select the **See all Metrics** link next to **Platform metrics** on the **Monitoring** tab of the VM's **Overview** page.
+- Select **Metrics** from the left navigation menu on the Azure Monitor **Overview** page.
+
+![[Pasted image 20240513173621.png]]
+
+In Metrics Explorer, you can select the following values from the dropdown fields:
+
+- **Scope:** If you open Metrics Explorer from a VM, this field is prepopulated with the VM name. You can add more items with the same resource type (VMs) and location.
+- **Metric Namespace**: Most resource types have only one namespace, but for some types, you must pick a namespace. For example, storage accounts have separate namespaces for files, tables, blobs, and queues.
+- **Metric**: Each metrics namespace has many metrics available to choose from.
+- **Aggregation**: For each metric, Metrics Explorer applies a default aggregation. You can use a different aggregation to get different information about the metric.
+
+You can apply the following aggregation functions to metrics:
+
+- **Count**: Counts the number of data points.
+- **Average (Avg)**: Calculates the arithmetic mean of values.
+- **Maximum (Max)**: Identifies the highest value.
+- **Minimum (Min)**: Identifies the lowest value.
+- **Sum**: Adds up all the values.
+
+>[!question]
+>Which of these parameters isn't included in the dropdown fields when you define a Metrics Explorer graph? **Time range**
+>
+>What's a quick way to install the Azure Monitor Agent to collect guest OS metrics?  **Select the Azure Monitor Agent when you enable VM insights.**
+>
+>What capabilities does enabling VM insights provide?  **Prebuilt client performance workbooks and guest OS metrics.**
+## Create a DCR to collect log data
+
+In the Azure portal, search for and select _monitor_ to go to the Azure Monitor **Overview** page.
+
+![[Pasted image 20240513174302.png]]
 
 
+>[!question]
+> How can you view log data collected by a DCR? **By using a KQL query in your Log Analytics workspace.**
+
+
+Summary: https://learn.microsoft.com/en-us/training/modules/monitor-azure-vm-using-diagnostic-data/7-summary
+
+# Questions
+
+1. Your company also has an on-premises Hyper-V server that hosts a VM, named VM1, which must be replicated to Azure. How can be achieve this goal
+
+	For physical servers - Storage Account - Azure Recovery Services Vault - Replication policy https://docs.microsoft.com/en-us/azure/site-recovery/physical-azure-disaster-recovery For Hyper-v server - Hyper-V site - Azure Recovery Services Vault - Replication policy https://docs.microsoft.com/en-nz/azure/site-recovery/hyper-v-prepare-on-premises-tutorial
+
+2. 

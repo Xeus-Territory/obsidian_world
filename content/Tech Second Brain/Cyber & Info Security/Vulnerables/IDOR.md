@@ -6,6 +6,8 @@ tags:
 ---
 # Portswigger LAB
 
+You can read more about IDOR from another my blog, here is it [[Insecure Direct Object Reference (IDOR)]] 😄
+
 **Level: APPRENTICE**
 
 *[Lab: Insecure direct object references](https://portswigger.net/web-security/access-control/lab-insecure-direct-object-references)*

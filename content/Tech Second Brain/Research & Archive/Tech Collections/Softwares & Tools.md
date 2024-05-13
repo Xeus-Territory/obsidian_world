@@ -1,7 +1,12 @@
 ---
-tags: 
+tags:
+  - collections
+  - helpful
+  - awesome
 title: Softwares, Tools which collection for multiple purpose
 ---
+>[!info]
+>The place where I keep and share about helpful tools, more about the comparison alternative tools
 # Useful online page and tools
 
 - [Wallpaperflare - Beautiful HD wallpapers free download](https://www.wallpaperflare.com/)
@@ -10,7 +15,7 @@ title: Softwares, Tools which collection for multiple purpose
 # Opensource Download
 
 - [Compare, Download & Develop Open Source & Business Software - SourceForge](https://sourceforge.net/)
-
+- [AlternativeTo - Opensource Compare Alternatives](https://alternativeto.net/)
 # Torrent site
 
 - [Download music, movies, games, software! The Pirate Bay - The galaxy's most resilient BitTorrent site](https://thepiratebay.org/index.html)

@@ -1,5 +1,5 @@
 ---
-title: Azure DNS
+title: DNS
 tags:
   - azure
   - "#cloud-services"

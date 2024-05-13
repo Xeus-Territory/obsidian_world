@@ -25,6 +25,15 @@ tags:
 
 	Official install instruction: https://docs.docker.com/engine/install/ubuntu/
 
+```bash
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh ./get-docker.sh --dry-run
+
+# OR
+
+curl -fsSL https://get.docker.com | sudo bash -
+```
+
 - Basic `run` command, but with helpful flag
 
 	Documentation: [docker run](https://docs.docker.com/reference/cli/docker/container/run/)
@@ -36,14 +45,14 @@ tags:
 	This `run` command will include some very helpful and common flag, such as
 	
 	1. `-d` or `--detact` : Run container in background and print container ID
-	2. `-it` or `-i`  `-t` : Keep STDIN open even if not attached with allocate a pseudo-TTY, common use with : `docker exec` or `docker run -it` with some default container like `debian`, `busybox` or `curl`
+	2. `-it` or `-i`  `-t` : Keep STDIN open even if not attached with allocate a pseudo-TTY, common use with : `docker exec` or `docker run -itd` with some default container like `debian`, `busybox` or `curl`
 	3. `--name` : Assign a name to the container
 	4. `--env` or `-e` :  Set environment variables (can you multiple time)
 	5. `--env-file`:  Read in a file of environment variables
 	6. `--restart` : Set restart policy for container, Read more at [Restart policies (--restart)](https://docs.docker.com/reference/cli/docker/container/run/#restart)
 	7. `--user` or `-u` : Username or UID which run in container
 	8. `--volume` : Bind mount a volume, use `mount` instead if you want support most
-	9. `-p` : Publish port of container (Can you multiple time and set a range) 
+	9. `-p` : Publish port of container (Can you multiple time and set a range)
 
 - Basic `build` command
 
@@ -64,7 +73,7 @@ tags:
 	
 	# With buildx
 	
-	docker buildx -t buildcontainer:latest -f Dockerfile .
+	docker buildx build -t buildcontainer:latest -f Dockerfile .
 	
 	# With URL
 	docker build github.com/creack/docker-firefox

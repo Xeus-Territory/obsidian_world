@@ -1,5 +1,5 @@
 ---
-title: Azure Cloud Shell
+title: Cloud Shell
 tags:
   - admin
   - devops

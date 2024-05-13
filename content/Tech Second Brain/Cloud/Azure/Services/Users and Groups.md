@@ -1,9 +1,10 @@
 ---
-title: Account identity, Users and Groups with Azure
+title: Account identity, Users and Groups
 tags:
   - devops
   - azure
   - admin
+  - cloud-services
 ---
 # User accounts
 

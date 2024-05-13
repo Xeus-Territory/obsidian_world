@@ -5,7 +5,6 @@ tags:
   - devops
   - basic-knowledge
 ---
-
 >[!purpose]
 >This note will content the thing which finding on working progress with K8s. Just take note and link for resolving the problem. Find out detail if it has unique directory
 

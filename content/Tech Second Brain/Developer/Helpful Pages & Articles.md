@@ -9,16 +9,16 @@ tags:
 >[!info]
 >Some cheatsheet and helpful things when you and me work on developer positions. Enjoy 🤝🤝
 
-# Software architecture design & pattern
+# Awesome Articles
 
 - [Medium - Most Common Software Architecture Styles](https://medium.com/@techworldwithmilan/most-common-software-architecture-styles-86881d779683)
 - [Medium - Top 10 Microservice Anti-Patterns](https://blog.bitsrc.io/10-microservice-anti-patterns-278bcb7f385d)
+- [Medium - 10 Common Software Architectural Patterns in a nutshell](https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013)
 
-# Blog page
+# Blog
 
 - [programmerCave](https://programmercave.com/) : Algorithm, Tech and more about reliable usage of this technic
-- [HTML Code Snippet](https://www.w3schools.com/howto/default_page6.asp) : HTML Snippet from W3school
-
+- [Dev Genius](https://blog.devgenius.io/) : Coding, Tutorials, News, UX, UI and much more related to development
 # Developer online tools
 
 - [10015.io](https://10015.io/) : A “free all-in-one toolbox” solution created to ease your life by preventing bookmark mess.
@@ -26,29 +26,37 @@ tags:
 - [regex101: build, test, and debug regex](https://regex101.com/)
 - [DevDocs](https://devdocs.io/): *DevDocs combines multiple API documentations in a fast, organized, and searchable interface.*
 - [TrueDevTools](https://truedevtools.com/): *True Devtools is a free collection of 45+ carefully crafted tools useful for development*
+- [IT - Tools](https://it-tools.tech/) : Handy tools for developers
 
-# JS
+
+# Language Programing Collection
+## HTML
+
+- [HTML Code Snippet](https://www.w3schools.com/howto/default_page6.asp) : HTML Snippet from W3school
+## JS
 
 - [awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs): Delightful Node.js packages and resources
 
-# Python
+## Python
 
 - [awesome-python](https://github.com/vinta/awesome-python) : An opinionated list of awesome Python frameworks, libraries, software and resources.
 
-# Rust
+## Rust
 
 - [awesome-rust](https://github.com/rust-unofficial/awesome-rust) : A curated list of Rust code and resources.
 
-# Golang
+## Golang
 
 - [awesome-go](https://github.com/avelino/awesome-go) : A curated list of awesome Go frameworks, libraries and software
 
-# Compiler online
+## Compiler online
 
 - [replit](https://replit.com/) : Python, NodeJS, ...
 - [dotnetfiddle](https://dotnetfiddle.net/):  C# and .NET framework
 - [onlineGDB](https://www.onlinegdb.com/): C++, C, Pascal, ...
 # Youtube Channel
+
+![[youtube.png]]
 
 - [Simplilearn](https://www.youtube.com/c/SimplilearnOfficial): Anything about Dev from project, algorithm, technologies by multiple language and framework
 - [Net Ninja](https://www.youtube.com/@NetNinja/videos): Web development skills

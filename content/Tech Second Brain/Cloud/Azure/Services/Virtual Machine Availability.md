@@ -1,5 +1,5 @@
 ---
-title: Azure Virtual Machine Availability
+title: Virtual Machine Availability
 tags:
   - devops
   - admin

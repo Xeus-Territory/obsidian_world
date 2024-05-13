@@ -158,20 +158,22 @@ U can find more the anything else about the request in [HTTP Header](https://dev
 
 Example Response:
 
-    HTTP/1.1 200 OK
-    Server: nginx/1.15.8
-    Date: Fri, 09 Apr 2021 13:34:03 GMT
-    Content-Type: text/html
-    Content-Length: 98
+```bash
+HTTP/1.1 200 OK
+Server: nginx/1.15.8
+Date: Fri, 09 Apr 2021 13:34:03 GMT
+Content-Type: text/html
+Content-Length: 98
 
-    <html>
-    <head>
-        <title>TryHackMe</title>
-    </head>
-    <body>
-        Welcome To TryHackMe.com
-    </body>
-    </html>
+<html>
+<head>
+	<title>TryHackMe</title>
+</head>
+<body>
+	Welcome To TryHackMe.com
+</body>
+</html>
+```
 
 To breakdown each line of the response:
 
@@ -191,6 +193,7 @@ Lines 7-14: The information that has been requested, in this instance the homepa
  
 ### HTTP Method
 4 Most Request to create API (REST-CRUD): GET - POST - PUT - DELETE
+
 - GET Request: This is used for getting information from a web server.
 - POST Request: This is used for submitting data to the web server and potentially creating new records
 - PUT Request: This is used for submitting data to a web server to update information
@@ -219,6 +222,7 @@ Common HTTP Response Codes
 	 <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--b9G6DenD--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.imgur.com/xOdVIPZ.png">
     <strong><em><p style="text-align: center;"><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fdev.to%2Fblake%2Fdns-explained-hierarchy-and-architecture-18pj&psig=AOvVaw1djiJyDgb531mhnJU8-Z6Y&ust=1708398415738000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCKjqr5e2toQDFQAAAAAdAAAAABAR">DNS Explained. Hierarchy and Architecture - DEV Community</a></p></em></strong>
 </div>
+
 - **TLD (Top-Level Domain)**: A TLD is the most righthand part of a domain name (.com .vn .net). There are two types of TLD, gTLD (Generic Top Level) and ccTLD (Country Code Top Level Domain). And the TLD considerate about the purpose of each domain (.com: commercial, .org: organisation, etc or ccTLD .vn: vietnam). You can get a list of domains in [link](https://data.iana.org/TLD/tlds-alpha-by-domain.txt)
 - **Second-Level Domain**: Taking tryhackme.com as an example, the .com part is the TLD, and tryhackme is the Second Level Domain. When registering a domain name, the second-level domain is limited to 63 characters + the TLD and can only use a-z 0-9 and hyphens (cannot start or end with hyphens or have consecutive hyphens)
 - **Subdomain**:  A subdomain sits on the left-hand side of the Second-Level Domain using a period to separate it. Example you can see in lab [dnsindetail](https://tryhackme.com/room/dnsindetail)
@@ -245,6 +249,7 @@ Common HTTP Response Codes
 	 <img src="https://miro.medium.com/v2/resize:fit:1400/1*u_AlfgDpaYdJvwoJvdGnvQ.png">
     <strong><em><p style="text-align: center;"><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcclements3150.medium.com%2Fwhat-happens-when-you-visit-a-web-page-e407a38db95f&psig=AOvVaw3r85usutoXRLQjihNRi4hP&ust=1708399094981000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCMizvtu4toQDFQAAAAAdAAAAABAa">What happens when you visit a web page. | by Carter C | Medium</a></p></em></strong>
 </div>
+
 - When you request a domain name, your computer first checks its local cache to see if you've previously looked up the address recently; if not, a request to your Recursive DNS Server will be made.
 - A Recursive DNS Server is usually provided by your ISP, but you can also choose your own. This server also has a local cache of recently looked up domain names. If a result is found locally, this is sent back to your computer, and your request ends here (this is common for popular and heavily requested services such as Google, Facebook, Twitter). If the request cannot be found locally, a journey begins to find the correct answer, starting with the internet's root DNS servers.
 - The root servers act as the DNS backbone of the internet; their job is to redirect you to the correct Top Level Domain Server, depending on your request. If, for example, you request www.tryhackme.com, the root server will recognise the Top Level Domain of .com and refer you to the correct TLD server that deals with .com addresses.
@@ -252,6 +257,7 @@ Common HTTP Response Codes
 - An authoritative DNS server is the server that is responsible for storing the DNS records for a particular domain name and where any updates to your domain name DNS records would be made. Depending on the record type, the DNS record is then sent back to the Recursive DNS Server, where a local copy will be cached for future requests and then relayed back to the original client that made the request. DNS records all come with a TTL (Time To Live) value. This value is a number represented in seconds that the response should be saved for locally until you have to look it up again. Caching saves on having to make a DNS request every time you communicate with a server.
 
 ## What cookies 
+
 - They're just a small piece of data that is stored on your computer.
 - Cookies are saved when you receive a "Set-Cookie" header from a web server.
 - Then every further request you make, you'll send the cookie data back to the web server. Because HTTP is stateless (doesn't keep track of your previous requests), cookies can be used to remind the web server who you are, some personal settings for the website or whether you've been to the website before.
@@ -260,5 +266,6 @@ Common HTTP Response Codes
 **Cookies can be used for many purposes but are most commonly used for website authentication. The cookie value won't usually be a clear-text string where you can see the password, but a token (unique secret code that isn't easily humanly guessable).**
 
 ### Viewing Your Cookies
+
 - You can easily view what cookies your browser is sending to a website by using the developer tools, in your browser. If you're not sure how to get to the developer tools in your browser, click on the "View Site" button at the top of this task for a how-to guide.
 - Once you have developer tools open, click on the "Network" tab. This tab will show you a list of all the resources your browser has requested. You can click on each one to receive a detailed breakdown of the request and response. If your browser sent a cookie, you will see these on the "Cookies" tab of the request.
