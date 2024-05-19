@@ -1,5 +1,5 @@
 ---
-title: Azure Application Gateway
+title: Application Gateway
 tags:
   - azure
   - cloud-services

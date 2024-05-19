@@ -1,5 +1,5 @@
 ---
-title: Azure Networking
+title: Networking
 tags:
   - admin
   - cloud-services

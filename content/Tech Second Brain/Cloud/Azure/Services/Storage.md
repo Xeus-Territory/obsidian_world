@@ -1,5 +1,5 @@
 ---
-title: Azure Storage
+title: Storage
 tags:
   - azure
   - cloud-services
@@ -245,3 +245,6 @@ More about security for Azure Storage
 - [Determine Azure Storage encryption](https://learn.microsoft.com/en-us/training/modules/configure-storage-security/5-determine-storage-service-encryption)
 - [Create customer-managed keys](https://learn.microsoft.com/en-us/training/modules/configure-storage-security/6-create-customer-managed-keys)
 - [Apply Azure Storage security best practices](https://learn.microsoft.com/en-us/training/modules/configure-storage-security/7-apply-best-practices)
+
+>[!note]
+>The lifecycle management feature is available in all Azure regions for general purpose v2 (GPv2) accounts, blob storage accounts, premium block blobs storage accounts, and Azure Data Lake Storage Gen2 accounts.

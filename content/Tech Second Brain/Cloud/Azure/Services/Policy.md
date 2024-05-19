@@ -1,5 +1,5 @@
 ---
-title: Azure Policy
+title: Policy
 tags:
   - admin
   - azure

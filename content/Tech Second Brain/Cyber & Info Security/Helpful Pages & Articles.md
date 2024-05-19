@@ -19,6 +19,7 @@ tags:
 - [The Hacker News - Cybersecurity News and Analysis](https://thehackernews.com/)
 - [HACKING roadmap](https://docfate111.github.io/cybersecclub/roadmap.html)
 - [bugbounty-cheatsheet/books.md at master · EdOverflow/bugbounty-cheatsheet](https://github.com/EdOverflow/bugbounty-cheatsheet/blob/master/cheatsheets/books.md)
+- [Bill's Security Site](https://asecuritysite.com/)
 
 # InfoSec Blog page
 
@@ -41,6 +42,12 @@ tags:
 - [Medium - S12 H4CK](https://medium.com/@s12deff)
 - [Medium - Coded Conversations 🔐💬](https://medium.com/@codedconversations)
 - [LRTV Blog](https://blog.lrvt.de/)
+- [Hacking Articles - Raj Chandel's Blog](https://www.hackingarticles.in/)
+- [Sun* Cyber Security Team - Vietnamese](https://viblo.asia/o/sun-cyber)
+- [Cloudflare Blog](https://blog.cloudflare.com/)
+- [Cloudflare Learning](https://www.cloudflare.com/learning/)
+- [ElNiak Blog](https://medium.com/@elniak)
+- [Prof Bill Buchanan OBE FRSE](https://billatnapier.medium.com/) : Professor of Cryptography
 
 # Technical and Technologies for hacking
 
@@ -53,6 +60,9 @@ tags:
 - [awesome-hacker-search-engines](https://github.com/edoardottt/awesome-hacker-search-engines) : A curated list of awesome search engines useful during Penetration testing, Vulnerability assessments, Red/Blue Team operations, Bug Bounty and more
 - [h4cker](https://github.com/The-Art-of-Hacking/h4cker) : About ethical hacking, bug bounties, digital forensics and incident response (DFIR), artificial intelligence security, vulnerability research, exploit development, reverse engineering, and more.
 - [GO Simple Tunnel](https://gost.run/en/): A simple security tunnel written in golang
+- [awesome-ctf](https://github.com/apsdehal/awesome-ctf) : A curated list of CTF frameworks, libraries, resources and softwares
+- [Awesome-Cybersecurity-Handbooks](https://github.com/0xsyr0/Awesome-Cybersecurity-Handbooks) : A huge chunk of my personal notes since I started playing CTFs and working as a Red Teamer.
+- [awesome-privilege-escalation](https://github.com/m0nad/awesome-privilege-escalation) : A curated list of awesome privilege escalation
 ## Browser Search
 
 - [GoogleDorking.md](https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06)
@@ -82,6 +92,7 @@ tags:
 
 - [Ping Power — ICMP Tunnel. An attacker is often required to face a… | by Nir Chako | InfoSec Write-ups](https://medium.com/bugbountywriteup/ping-power-icmp-tunnel-31e2abb2aaea)
 - [Different types of Computer Viruses - Computer Virus Classification](https://www.omnisecu.com/security/types-of-computer-viruses.php#:~:text=An%20Armored%20Virus%20may%20also,it%20more%20difficult%20to%20disinfect.&text=Stealth%20viruses%3A%20Stealth%20viruses%20have,file%20sizes%20or%20directory%20structure.)
+- [Linux Privilege Escalation - Vietnamese](https://viblo.asia/s/linux-privilege-escalation-Wj53OQgw56m)
 ## General Attacking + Defend skill
 
 - [MITRE ATT&CK®](https://attack.mitre.org/#) : Globally-accessible knowledge base of adversary tactics and techniques based on real-world observations.
@@ -107,23 +118,14 @@ tags:
 - [PEASS-ng](https://github.com/peass-ng/PEASS-ng) : PEASS - Privilege Escalation Awesome Scripts SUITE
 - [GTFOBLookup](https://github.com/nccgroup/GTFOBLookup) : GTFO Lookup
 
-## Networking
-
-- [Subnet Calculator](https://www.subnet-calculator.com/)
-- [Reverse IP Lookup - All Names Hosted at an IP - DomainTools](https://reverseip.domaintools.com/)
-- [DNSdumpster.com - dns recon and research, find and lookup dns records](https://dnsdumpster.com/)
-- [Shodan Search Engine](https://www.shodan.io/)
-- [Google Public DNS](https://dns.google/)
-- [Network Tools by YouGetSignal.com](https://www.yougetsignal.com/)
-
 ## Cryptography
 
 - [dCode - Solveurs, Crypto, Maths, Codes, Outils en Ligne](https://www.dcode.fr/)
 - [Online Calculators & Tools - RapidTables.com](https://www.rapidtables.com/)
 - [Cipher Identifier (online tool) | Boxentriq](https://www.boxentriq.com/code-breaking/cipher-identifier)
 - [Morse Code World](https://morsecode.world/)
-- [CrackStation - Online Password Hash Cracking - MD5, SHA1, Linux, Rainbow Tables, etc.](https://crackstation.net/)
-- [CyberChef](https://gchq.github.io/CyberChef/)
+- [CrackStation - Online Password Hash Cracking](https://crackstation.net/)
+- [CyberChef - The bunch of cyber tools](https://gchq.github.io/CyberChef/)
 - [Modular conversion, encoding and encryption online — cryptii](https://cryptii.com/)
 - [CrypTool](https://www.cryptool.org/en/)
 - [Practical Cryptography](http://practicalcryptography.com/) :  Talk about Cryptography but explain more about them
@@ -155,7 +157,6 @@ tags:
 - [Snyk](https://docs.snyk.io/)
 - [crt.sh | Certificate Search](https://crt.sh/)
 - [JSON Web Tokens - jwt.io](https://jwt.io/)
-
 ## Webhook
 
 - [Webhook.site](https://webhook.site/) : *Generates free, unique URLs and e-mail addresses and lets you see everything that’s sent there instantly. (Usage: Steal cookies, bypass authorized, ...)*
@@ -181,22 +182,46 @@ tags:
 - [NVD NIST](https://nvd.nist.gov/)
 - [CVE Trends](https://cvetrends.com/)
 - [Vulmon - Vulnerability Intelligence Search Engine](https://vulmon.com/)
-## VPN
+
+## Networking
+
+- [Subnet Calculator](https://www.subnet-calculator.com/)
+- [Reverse IP Lookup - All Names Hosted at an IP - DomainTools](https://reverseip.domaintools.com/)
+- [DNSdumpster.com - dns recon and research, find and lookup dns records](https://dnsdumpster.com/)
+- [Shodan Search Engine](https://www.shodan.io/)
+- [Google Public DNS](https://dns.google/)
+- [Network Tools by YouGetSignal.com](https://www.yougetsignal.com/)
+
+### VPN
 
 >[!info] *Give applause for Nyr for contributing a wonderful setup, with those script, you just need 1 minutes for creating your own VPN and safely connected remotely with your network*
 
 - [openvpn-install.sh](https://github.com/Nyr/openvpn-install/blob/master/openvpn-install.sh): *Setting up `openvpn` for your host (Author: [Nyr](https://github.com/Nyr))*
 - [wireguard-install.sh](https://github.com/Nyr/wireguard-install/blob/master/wireguard-install.sh): *Setting up `wireguardvpn` for your host (Author: [Nyr](https://github.com/Nyr))*
 
-## Tunnelling
+### Tunnelling
 
 - [awesome-tunneling](https://github.com/anderspitman/awesome-tunneling) : List of ngrok/Cloudflare Tunnel alternatives and other tunneling software and services. Focus on self-hosting.
 - [wstunnel](https://github.com/erebe/wstunnel) : Tunnel all your traffic over Websocket or HTTP2 - Bypass firewalls/DPI - Static binary available
 
-## IPS / IDS
+### IPS / IDS
 
 - [Medium - Using Suricata Intrusion Prevention System To Monitor Network Traffic](https://medium.com/aws-tip/using-suricata-intrusion-prevention-system-to-manage-network-traffic-fa865fad197f)
 
+### Virtual Private LAN Service
+
+- [Kết nối private LAN qua Cloudflare Tunnels sử dụng Wireguard](https://viblo.asia/p/ket-noi-private-lan-qua-cloudflare-tunnels-su-dung-wireguard-zXRJ8mrZLGq)
+- [Cisco - Configuring Virtual Private LAN Service (VPLS)](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9400/software/release/16-12/configuration_guide/mpls/b_1612_mpls_9400_cg/configuring_virtual_private_lan_service__vpls_.pdf)
+- [What is multiprotocol label switching (MPLS)?](https://www.cloudflare.com/learning/network-layer/what-is-mpls/)
+
+### Zero Trust Network Access (ZTNA)
+
+- [Zero Trust Network Access (ZTNA) vs VPNs](https://konghq.com/blog/engineering/ztna-vs-vpns)
+
+### Zero Trust Mesh
+
+- [Medium - How to Use ZTM to Access Home/Private Networks](https://medium.com/flomesh/how-to-use-ztm-to-access-home-private-networks-8848efb1f935)
+- [ztm](https://github.com/flomesh-io/ztm)
 # Training page (LAB)
 
 >[!info]
@@ -207,6 +232,7 @@ tags:
 - [List of hacking websites | RazviOverflow](https://razvioverflow.github.io/starthacking)
 - [HackTricks - HackTricks](https://book.hacktricks.xyz/welcome/readme) : Wikipedia of Hacking
 - [Payloads All The Things](https://swisskyrepo.github.io/PayloadsAllTheThings/): Useful payloads and bypasses for Web Application Security
+- [Web-CTF-Cheatsheet](https://github.com/w181496/Web-CTF-Cheatsheet)
 
 ## RE (Reverse Engineer)
 
@@ -232,11 +258,11 @@ tags:
 
 - [Malware-Traffic-Analysis.net - Traffic Analysis Exercises](https://www.malware-traffic-analysis.net/training-exercises.html) : Labs of Networking where you can gain the knowledge on analysis network traffic
 - [JPEG FIF](https://www.w3.org/Graphics/JPEG/jfif3.pdf) : Detail explanation about JPEG File Interchange Format
+- [MemLabs](https://github.com/stuxnet999/MemLabs) : Educational, CTF-styled labs for individuals interested in Memory Forensics
 
 ## HacktheBox/CTF solution, hacking technical and OSCP
 
 - [0xdf hacks stuff | CTF solutions, malware analysis, home lab development](https://0xdf.gitlab.io/)
-- [Hacking Articles - Raj Chandel's Blog](https://www.hackingarticles.in/)
 - [@TJ_Null’s OSCP Prep - YouTube](https://www.youtube.com/playlist?list=PLidcsTyj9JXK-fnabFLVEvHinQ14Jy5tf)
 - [OSCP Room Prep - NetSecFocus Trophy Room](https://docs.google.com/spreadsheets/u/1/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/htmlview)
 - [Roadmap to OSCP 2023. Crack OSCP in 6 months, starting from… | by Usman Shah | Medium](https://medium.com/@ushah.789012/roadmap-to-oscp-2023-c38c5b4e713a)

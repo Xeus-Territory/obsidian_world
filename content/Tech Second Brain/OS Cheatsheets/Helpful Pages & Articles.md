@@ -30,6 +30,7 @@ tags:
 - [StackOverFlow - How does "cat << EOF" work in bash?](https://stackoverflow.com/questions/2500436/how-does-cat-eof-work-in-bash)
 - [Medium - Creating a Linux service with systemd](https://medium.com/@benmorel/creating-a-linux-service-with-systemd-611b5c8b91d6) or [How to create a systemd service in Linux](https://linuxhandbook.com/create-systemd-services/)
 - [FreeCodeCamp - How to Set an Environment Variable in Linux](https://www.freecodecamp.org/news/how-to-set-an-environment-variable-in-linux/)
+- [Linux permissions: SUID, SGID, and sticky bit](https://www.redhat.com/sysadmin/suid-sgid-sticky-bit)
 # Window
 
 - [Windows Server Security documentation](https://learn.microsoft.com/en-us/windows-server/security/security-and-assurance)
@@ -49,7 +50,7 @@ tags:
 - [Linux - Man Page](https://linux.die.net/man/)
 - [Nano cheatsheet](https://www.nano-editor.org/dist/latest/cheatsheet.html) : Overview of nano's shortcuts
 - [Cheatsheet.wtf](https://www.cheatsheet.wtf/) : Bash Cheatsheet
-- [Chmod Calculator | Chmod Generator | Chmod Command](https://chmodcommand.com/)
+- [Chmod Calculator | Chmod Generator | Chmod Command](https://chmodcalculator.org/)
 - [Systemd](https://systemd.io/): System and Service Manager
 - [Bash-Oneliner](https://github.com/onceupon/Bash-Oneliner): A collection of handy Bash One-Liners and terminal tricks for data processing and Linux system maintenance.
 - [tldr pages](https://tldr.inbrowser.app/) : Simplified and community-driven man pages

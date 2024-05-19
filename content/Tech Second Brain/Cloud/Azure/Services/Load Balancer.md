@@ -1,5 +1,5 @@
 ---
-title: Azure Load Balancer
+title: Load Balancer
 tags:
   - admin
   - azure

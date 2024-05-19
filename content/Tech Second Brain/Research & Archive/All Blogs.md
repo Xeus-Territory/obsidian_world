@@ -20,6 +20,14 @@ tags:
 - [Hackwekend Session 5 - Cloud Security (AWS IAM Policy)](https://hackmd.io/@XeusNguyen/HkjGUFw-C) - *Session is about AWS IAM, How to authentication or bypass methodology to read and list contents inside the S3 bucket, learn more about `sns`, `sqs`, `cognito` services of AWS Cloud (Big IAM prod by Wiz.io)*
 - [Hackwekend Session 6 - Cloud Security (Network and Red Team)](https://hackmd.io/@XeusNguyen/ByLqkK1zC) *- Session is about more than cloud security, but more approach to networking and red team methodology to recon, attack the target with unique way like `lateral movement`, `nfs`, `tcpdump`, `dnscan` and `istio`, `kyverno` on `kubernetes` ( K8slan prod by Wiz.io)*
 
+# For 1st time
+
+>[!info]
+>This session which talk about the experience when you work and approach new technics or technologies for first time. Learn from the scratch, and do interesting things. ✋✋✋
+
+- [[Compile gRPC for 1st time]]
+- [[Build your wiki for 1st time]]
+- [[Play with Makefile for 1st time]]
 # DevOps - Tutorials from zero to hero
 
 >[!info]
@@ -50,6 +58,8 @@ tags:
 - [Hack The Boo (Hackthebox-Forensic-2022)](https://hackmd.io/tWwSU5OaRmOCQk0eEPOY8w)
 - [ICTF August 2022](https://hackmd.io/Cw35V_FuRJ-VEoTI-lweWA)
 - [Image Editing - CTFLearn (Crypto/Hard)](https://hackmd.io/Bsx_FNxXT7KZMB0wM1uekA)
+- [[IDOR|Write up about IDOR]]
+- [[SSTI|Write up about SSTI]]
 
 # Vulnerable Research
 
@@ -61,26 +71,92 @@ tags:
 - [SQL Injection - Part 2 (Practical on PortSwigger)](https://hackmd.io/DTz2gHXuQ3Cv2QKAu-h7zA)
 - [SQL Injection - Part 3 (Practical PortSwigger)](https://hackmd.io/ewHKt4CLTXuYeDKW4RKJSg)
 - [Cross-site scripting (Practice on PortSwigger)](https://hackmd.io/ERuycw7XSGy1gANoCI3j9w)
-
+- [Research about Top 10 OWASP](https://hackmd.io/dEd2BUyvSFOMU13reILWsw)
+- [Snyk vs Sonarqube - Securing your code](https://hackmd.io/ah5nLeS9RUuebOD7FXWegw)
+- [[Insecure Direct Object Reference (IDOR)]]
+- [[Server Site Template Injection (SSTI)]]
+- [[Authentication Bypass]]
+- [[Content Discovery]]
+- [[Subdomain Enumeration]]
+- [[Walking An Application]]
+- [[Top 10 OWASP]]
+- [[Web fundamentals]]
+- [[Cross Site Scripting ( XSS )]]
+- [[SQL Injections]]
+- [[GraphQL]]
+- [[Command injection]]
 # Research
 
 >[!info]
 >In this session, About the shared  research for community which i make and find out how to play with it, setup and make usage or tutorial for doing something
 >
 
-- [Robust Scanner - Vulnerable Scanning](https://hackmd.io/BflJwJ4WR56HptJBgJCo-g)
-- [Research about Top 10 OWASP](https://hackmd.io/dEd2BUyvSFOMU13reILWsw)
-- [Snyk vs Sonarqube - Securing your code](https://hackmd.io/ah5nLeS9RUuebOD7FXWegw)
+- [NGINX vs Apache ? How does it work? Why is NGINX compared to Apache –> How is it stronger and weaker?](https://hackmd.io/70BZ3lRkQb6xr4HQbAoWaw)
+- [Different btw CMD vs Entrypoint vs RUN in Docker](https://hackmd.io/M0wKTWi1Rw-T6ybpWM7tSQ)
+- [[Backup and Restore Methodology|Backup and Restore methodology for PostgreSQL]]
+- [[Comment note in Shell Bash]]
+- [[Reconfiguration for curl template output]]
+- [[Redirect Output and Error]]
+- [[Update the alternative version]]
+
+# DIY
+
+>[!info]
+>The session which bring the experience when I try to self hosted or making a cool things by myself. It can be deliver for people which need to figure out something 🌍🌍🌍
+
 - [Selfhosted NAS with Raspberry Pi 4](https://hackmd.io/0DcB_LauTvWxHvOlRw7DLQ)
 - [Setup the virtual machine Linux and Windows for Agents and Azure-Pipelines](https://hackmd.io/0JXwPaGjQRiS6WiwnyZC6g)
 - [Deploy your alert with Grafana by Terraform and some common error with K8s](https://hackmd.io/lM91wPdrSyyf8tO4Sqgv1Q)
 - [Integration Performance Query for MySQL or PostgreSQL](https://hackmd.io/w-fyy8BQTEGDPHJipNLC3w)
 - [Setup MySQL with Wordpress in k8s - Easy migrate or not !!](https://hackmd.io/EHlfDP0vRqeN8li7-CtFRA)
 - [Ansible, Terraform and your first infrastructure](https://hackmd.io/2_tUc4W7S3K8s3aOiwgGyg)
-- [NGINX vs Apache ? How does it work? Why is NGINX compared to Apache –> How is it stronger and weaker?](https://hackmd.io/70BZ3lRkQb6xr4HQbAoWaw)
-- [Different btw CMD vs Entrypoint vs RUN in Docker](https://hackmd.io/M0wKTWi1Rw-T6ybpWM7tSQ)
-- [[Compile gRPC for 1st time]]
 - [[Profiling applications with Pyroscope]]
-- [[Build your wiki for 1st time]]
 - [[Caddy Server and Umami analytics platform|Do self-hosted analytics platforms for you website with automatically SSL domain]]
-- [[Backup and Restore Methodology|Backup and Restore methodology for PostgreSQL]]
+- [[Setup Environment for build android]]
+- [[Linux profile|Setup Linux Profile]]
+- [[Window profile|Setup Window Profile]]
+- [[NGINX and everything about it]]
+- [[NTMA for anomalies detection and autoscaling]]
+- [[Setup PostgreSQL with Ansible]]
+- [[Monitoring with Portainer]]
+- [[Create Free SSL with Let's Encrypt and Certbot]]
+- [[0-downtime with Blue-Green Deployment]]
+- [Robust Scanner - Vulnerable Scanning](https://hackmd.io/BflJwJ4WR56HptJBgJCo-g)
+# CI/CD Gallery
+
+>[!info]
+>More talk about CI/CD with multiple purpose, try to approach and gain the experience on multiple platform. Still update when have new things LOL 😃
+
+- [[Github Action Gallery]]
+- [[Azure DevOps|Azure DevOps Gallery]]
+- [[GitlabCI Gallery]]
+
+# Helpful Collections
+
+>[!info]
+>More about my collection which talk about multiple topics, and technologies in multiple field like AI, ML, DevOps, Security and moreover
+
+- [[Tech Second Brain/OS Cheatsheets/Helpful Pages & Articles|OS helpful Pages & Articles]]
+- [[Tech Second Brain/Docker & Kubernetes/Helpful Pages & Articles|Docker and Kubernetes helpful Pages & Articles]]
+- [[Tech Second Brain/Developer/Helpful Pages & Articles|Developer Helpful Pages & Articles]]
+- [[Tech Second Brain/Databases/Helpful Pages & Articles|Database Helpful Pages & Articles]]
+- [[Tech Second Brain/Cyber & Info Security/Helpful Pages & Articles|Cyber & Info Security Helpful Pages & Articles]]
+- [[Tech Second Brain/AI & ML & Data Science/Helpful Pages & Articles|AI & ML Helpful Pages & Articles]]
+- [[DevOps & System |DevOps & System Helpful Pages & Articles]]
+- [[Softwares & Tools|Softwares & Tools Helpful Pages & Articles]]
+- [[Tech Contents & Articles]]
+
+# Command Snippets
+
+>[!info]
+>The snippets which most of useful tool that I have tried 👍👍👍
+
+- [[Docker snippet]]
+- [[Docker compose]]
+- [[Kubectl snippet]]
+- [[Git|Git snippet]]
+- [[HTML|HTML snippet]]
+- [[Azure CLI|Azure CLI snippet]]
+- [[Powershell Snippets]]
+- [[Shell command|Shell command snippets]]
+- [[Popular API usage|Elasticsearch Snippets]]

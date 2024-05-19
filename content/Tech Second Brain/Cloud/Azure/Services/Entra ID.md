@@ -1,5 +1,5 @@
 ---
-title: Microsoft Entra and Entra ID
+title: Entra and Entra ID
 tags:
   - azure
   - devops
@@ -97,3 +97,32 @@ Requirements of `SSPR` feature
 - Require Global Administrator privileges account to manage `SSPR` options (NOTE: Always reset own passwords, no matter what)
 - Uses `Security Group (SG)` to limit the users who have privileges
 - Must have a valid license to use `SSPR`
+
+
+# Question
+
+1. With Entra which have policy to require members of the Global Administrators group to use Multi-Factor Authentication and an Azure AD-joined device when they connect to Azure AD from untrusted locations.
+	- You access the Azure portal to alter the grant control of the Azure AD conditional access policy.
+	- You can't access MFA page to alter the user settings, or portals to alter the session control of the Azure AD
+
+
+2. Your company makes use of Multi-Factor Authentication for when users are not in the office. The Per Authentication option has been configured as the usage model. After the acquisition of a smaller business and the addition of the new staff to Azure Active Directory (Azure AD) obtains a different company and adding the new employees to Azure Active Directory (Azure AD), you are informed that these employees should also make use of Multi-Factor Authentication. To achieve this, the Per Enabled User setting must be set for the usage model.
+
+	- You can't reconfigure the existing usage model by Portal, AZ CLI, but you need to create a new one and reactive your existing server with activation credentials from new provider
+
+3. You now need to replicate the user information to Azure AD immediately.
+
+	- You run the `Start-ADSyncSyncCycle -PolicyType Delta` Initial PowerShell cmdlet.
+	- You can't use Active Directory Sites and Services to force replication of the Global Catalog on a domain controller. On a server with Azure AD Connect installed, navigate to the Start menu and select AD Connect, then Synchronization Service.
+
+		1. Go to CONNECTORS tab.
+		2. Select RUN on the ACTIONS pane.
+
+4. Create a guest user on your AD, use command `New-AzureADMSInvitation` instead of `New-AzureADUser` which create a user in AD
+	- "Bulk Create" or  `New-MgUser` is for new Azure AD Users.
+	- Use "Bulk invite users" to prepare a comma-separated value (.csv) file with the user information and invitation preferences
+	- You create a PowerShell script that runs the `New-MgInvitation` cmdlet for each external user.
+
+5. Under Limitations and known issues: *"Group-based licensing currently does not support groups that contain other groups (nested groups). If you apply a license to a nested group, only the immediate first-level user members of the group have the licenses applied."*
+
+

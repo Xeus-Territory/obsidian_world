@@ -9,7 +9,8 @@ tags:
 
 ==> Do some research on this session 🚄🚄🚄
 
-## Username Enumeration
+# Username Enumeration
+
 - A helpful exercise to complete when trying to find authentication vulnerabilities is creating a list of valid usernames.
 - Website error messages are great resources for collating this information to build our list of valid usernames.
 - U should think this method like brute force to authentication bypass and yeah it cool stuff we find the alert the form return to user if they pass the username and password and username is really exist or not exist, **it is the first thing web dev need to take care about to coding this stuff** because the hacker can use this alert to confirm the valid username really exists on your website and more specific is really existing in the database. So we use ffuf tool (Virtual Host) to do this stuff and we do this with the username wordlists. Let's go 😄
@@ -18,6 +19,7 @@ ffuf -w /usr/share/wordlists/SecLists/Usernames/Names/names.txt -X POST -d "user
 ```
 
 Let analyses this 🥶 command: 
+
 - **-w** : argument selects the file's location on the computer that contains the list of usernames that we're going to check exists.
 - **-X** : argument specifies the request method, this will be a GET request by default, but it is a POST request in our example.
 - **-d** : argument specifies the data that we are going to send. In our example, we have the fields username, email, password and cpassword. We've set the value of the username to **FUZZ**. In the ffuf tool, the FUZZ keyword signifies where the contents from our wordlist will be inserted in the request.
@@ -27,7 +29,8 @@ Let analyses this 🥶 command:
 
  > [!quote]
  > **JUST** do this stuff and you can solve problem in tryhackme and yeah i will do this in real-web on hacking write-up 🚀🚀🚀
-## Brute Force
+# Brute Force
+
 - Refer to previous task we find some useful username and yeah let next step to brute force to access login form 
 - A brute force attack is an automated process that tries a list of commonly used passwords against either a single username or, like in our case, a list of usernames.
 
@@ -44,7 +47,7 @@ Let analyses this 🥶 command:
 Yeah look the result 🚀🚀🚀
 ![[Pasted image 20240219140233 1.png]]
 
-## Logic FLaw
+# Logic FLaw
 What is a Logic Flaw?: A logic flaw is when the typical logical path of an application is either bypassed, circumvented or manipulated by a hacker. Logic flaws can exist in any area of a website. Look the pictures and we will discuss this under this picture
 <div align="center">
 	 <img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5efe36fb68daf465530ca761/room-content/58e63d7810ac4b23051e1dd4a24ef792.png">
@@ -89,10 +92,10 @@ So i must see some stuff on youtube and i see it very cool PWN to website by sen
 
 ![[Pasted image 20240219140738 1.png]]
 
-## Cookie Tampering
+# Cookie Tampering
 Examining and editing the cookies set by the web server during your online session can have multiple outcomes, such as unauthenticated access, access to another user's account, or elevated privileges.
 
-### Plaintext
+## Plaintext
 The contents of some cookies can be in plain text, and it is obvious what they do. Take, for example, if these were the cookie set after a successful login:
 
 ```bash
@@ -111,7 +114,7 @@ curl -H "Cookie: logged_in=true; admin=false" http://10.10.206.157/cookie-test
 # We can see : Logged In As An Admin
 curl -H "Cookie: logged_in=true; admin=true" http://10.10.206.157/cookie-test 
 ```
-### Hashing
+## Hashing
 Sometimes cookie values can look like a long string of random characters; these are called hashes which are an irreversible representation of the original text. Here are some examples that you may come across:
 
 |   Original String	|   Hash Method	|   Output	|
@@ -122,12 +125,13 @@ Sometimes cookie values can look like a long string of random characters; these 
 |   1	|   sha1	|   356a192b7913b04c54574d18c28d46e6395428ab	|
 
 You can do this stuff by anything encrypt and decrypt about the hash like this [web](https://crackstation.net/)
-### Encoding
+## Encoding
 - Encoding is similar to hashing in that it creates what would seem to be a random string of text, but in fact, the encoding is reversible. So it begs the question, what is the point in encoding? Encoding allows us to convert binary data into human-readable text that can be easily and safely transmitted over mediums that only support plain text ASCII characters.
 
 - Common encoding types are base32 which converts binary data to the characters A-Z and 2-7, and base64 which converts using the characters a-z, A-Z, 0-9,+, / and the equals sign for padding.
 
-- Example: 
+- Example:
+
 ```http
 Set-Cookie: session=eyJpZCI6MSwiYWRtaW4iOmZhbHNlfQ==; Max-Age=3600; Path=/
 ```

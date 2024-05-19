@@ -7,11 +7,13 @@ tags:
   - research
   - solutions
 ---
+>[!info]
+>Place to archive the multiple things with purpose, and just for reuse when need. Hope you find it !
 # Browser & Internet
 
 - [The Past and Present of Browser Architecture](https://levelup.gitconnected.com/the-past-and-present-of-browser-architecture-522c65d1c2cd)
 - [RFC Editor](https://www.rfc-editor.org/) : The RFC Series (ISSN 2070-1721) contains technical and organizational documents about the Internet
-- [Hackaday.io | The world's largest collaborative hardware development community.](https://hackaday.io/)
+- [Hackaday.io](https://hackaday.io/)
 - [Trang chủ » AnonyViet](https://anonyviet.com/)
 - [Hackaday | Fresh Hacks Every Day](https://hackaday.com/)
 
@@ -32,7 +34,6 @@ tags:
 - [XDA Forums](https://forum.xda-developers.com/)
 - [Opensource.com | Opensource.com](https://opensource.com/)
 - [How-To Geek - We Explain Technology](https://www.howtogeek.com/)
-- [Blackvoid - Synology, Docker and open source tech blog](https://www.blackvoid.club/)
 # Documentations and Papers
 
 - [ScienceDaily: Your source for the latest research news](https://www.sciencedaily.com/)

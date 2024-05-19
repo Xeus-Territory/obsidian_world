@@ -28,16 +28,24 @@ tags:
 - [HelloGitHub](https://github.com/521xueweihan/HelloGitHub) : 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.
 - [Self-Hosting-Guide](https://github.com/mikeroyal/Self-Hosting-Guide) : Learn all about locally hosting
 - [Awesome Software Architecture](https://awesome-architecture.com/) : Curated list of awesome articles and resources to learn and practice software architecture, patterns and principles. this repository will be updated continuously, keep yourself up to date.
+- [Milan Newsletter](https://newsletter.techworld-with-milan.com/) : Guy will teach you more about infrastructure, architecture, ...
+- [ByteByteGo Blog](blog.bytebytego.com) : About the system design, and moreover technologies
 
 # DevOps Articles
 
 - [Prometheus Architecture: Complete Breakdown of Key Components](https://devopscube.com/prometheus-architecture/)
-- [Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)
+- [Azure - Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)
+- [Popular Deployment Strategies & Pattern](https://www.devopsschool.com/blog/list-of-popular-deployment-strategies/)
+- [Medium - What Are Deployment Patterns?](https://blog.devgenius.io/entering-into-devops-32-golden-images02-9f8a9bfa52cd)
 - [Entering into DevOps-32 Golden Images02](https://blog.devgenius.io/entering-into-devops-32-golden-images02-9f8a9bfa52cd)
 - [Medium - Top Technology Trends to Watch Out for in 2024 for Platform Engineering and SRE](https://medium.com/@seifeddinerajhi/top-technology-trends-to-watch-out-for-in-2024-for-platform-engineering-and-sre-e267130c7e22)
 - [Medium - High-Level System Architecture of Booking.com](https://medium.com/@sahintalha1/high-level-system-architecture-of-booking-com-06c199003d94)
 - [Vietnamese - Stateless là gì? Sự khác biệt giữa Stateless và Stateful](https://vietnix.vn/stateless-la-gi/)
 - [Komodor for resolving OOMkilled on Kubernetes](https://komodor.com/learn/how-to-fix-oomkilled-exit-code-137/)
+- [Event-driven architecture patterns and when to use them](https://ably.com/topic/event-driven-architecture-patterns)
+- [Medium - The Complete Guide to Event-Driven Architecture](https://medium.com/@seetharamugn/the-complete-guide-to-event-driven-architecture-b25226594227)
+- [Medium - What is Clean Architecture?](https://medium.com/@techworldwithmilan/what-is-clean-architecture-456d2d3cb0bc)
+- [How to build and deploy React Native applications with Fastlane](https://tech.sparkfabrik.com/en/blog/fastlane_build/)
 
 # DevOps Youtube Channel
 
@@ -50,6 +58,10 @@ tags:
 - [Viet Tran](https://www.youtube.com/@Viet100/videos)
 - [TechWorld with Nana](https://www.youtube.com/c/TechWorldwithNana/featured)
 - [Tony Teaches Tech ](https://www.youtube.com/c/TonyTeachesTech/featured)
+- [Christian Lempa](https://www.youtube.com/@christianlempa)
+- [John Savill](https://www.youtube.com/@NTFAQGuy)
+- [DevOps Journey](https://www.youtube.com/@DevOpsJourney/videos)
+- [KodeKloud](https://www.youtube.com/@KodeKloud/videos)
 
 # DevOps Community and Contents
 
@@ -69,3 +81,8 @@ tags:
 - [Pulumi Registry](https://www.pulumi.com/registry/): Package, SDK of Pulumi (Example: AWS, Azure, GCP)
 - [Terraform Documentation](https://developer.hashicorp.com/terraform/docs): An infrastructure as code tool that lets you build, change, and version infrastructure safely and efficiently
 - [Terraform Registry](https://registry.terraform.io/): Terraform providers that power all of Terraform’s resource types, or find modules for quickly deploying common infrastructure configurations.
+
+
+## Generated Configuration
+
+- [moz://a SSL Configuration Generator](https://ssl-config.mozilla.org/) : SSL Generation for multiple webserver
