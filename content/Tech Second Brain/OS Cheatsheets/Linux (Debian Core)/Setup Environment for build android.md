@@ -476,7 +476,7 @@ When you build the android, you need to put the file inside the `app` folder, ca
 
 On my circumstance, `DevOps` is not define these,  you know all of these will prepare and just actually run the command, on the `package.json` and related command for execution the build process. Therefore, expectation I will find the way to perform build and assemble to `apk` file
 
-Usually use can use `gradlew warper` with option `assembleRelease` to bundle build and compression anything else, and output for us the `.apk` file.
+Usually use can use `gradlew wraper` with option `assembleRelease` to bundle build and compression anything else, and output for us the `.apk` file.
 
 ```bash title="build.gradle"
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
@@ -500,15 +500,24 @@ buildscript {
     }
 }
 ```
+
+When you perform command, usually the `apk` file can compress and locate in `/app/build/intermediates/apk/debug/<name>.apk` or on the other route base on your version of `gradle` and `gradlew`. You can follow the articles for more understand: [Build your app from the command line](https://developer.android.com/build/building-cmdline)
+
+```bash
+./gradlew assembleRelease
+```
+
 # Conclusion
 
 >[!info]
 >That all for today, I hope this blog can help you something on setup and prepare the environment for build the android project. You can combine all these task with just one file and click, and anything will completely ready.
 
 >[!quote]
->When you learn a new thing like android, the new cool experience with me. `Gradle` and `Gradlew` that such a cool things. Maybe I don't familiar much with `Gradle` or `Maven` but on the another session, I and you will explore more about that. So farewell guy, stay self, hacking and learn more incredible thingsvê
+>When you learn a new thing like android, the new cool experience with me. `Gradle` and `Gradlew` that such a cool things. Maybe I don't familiar much with `Gradle` or `Maven` but on the another session, I and you will explore more about that. So farewell @all, stay self, hacking and learn more incredible things
 
 Reference documentation
 
 - [Installing Android SDK Tools](https://guides.codepath.com/android/Installing-Android-SDK-Tools)
 - [Install Android SDK in the Ubuntu 20.04 LTS — Without Android Studio](https://medium.com/@barcelos.ds/install-android-sdk-in-the-ubuntu-20-04-lts-without-android-studio-1b629924d6c5)
+- [Android - Configure your build](https://developer.android.com/build)
+- [Generating Android signed release APK file in ReactNative](https://waihein.medium.com/generating-android-signed-release-apk-file-in-reaactnative-2b885ce65ef5)
