@@ -128,7 +128,7 @@ tags:
 >More talk about CI/CD with multiple purpose, try to approach and gain the experience on multiple platform. Still update when have new things LOL 😃
 
 - [[Github Action Gallery]]
-- [[Azure DevOps|Azure DevOps Gallery]]
+- [[Azure DevOps Gallery|Azure DevOps Gallery]]
 - [[GitlabCI Gallery]]
 
 # Helpful Collections

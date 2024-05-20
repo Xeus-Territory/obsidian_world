@@ -1,0 +1,308 @@
+---
+title: Azure Pipelines Gallery
+tags:
+  - cicd
+  - automation
+  - azure
+  - basic-templates
+---
+>[!info]
+>The Gallery of some `Azure DevOps` pipeline. Manual down below
+>- [What is Azure Pipelines?](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops)
+>- [YAML schema reference for Azure Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/?view=azure-pipelines)
+>- [Predefine variables](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml)
+>- [Azure Pipelines task reference](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/?view=azure-pipelines&viewFallbackFrom=azure-devops)
+>- [Specify conditions](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/conditions?view=azure-devops&tabs=yaml%2Cstages) - **(NOTE : Vice versa `eq`, you can use `ne` but reference little bit on documentation)**
+>- [Expressions](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/expressions?view=azure-devops)
+# Deploy React application to  Azure SWA
+
+>[!summary]
+>Pipelines will help you deploy and release react application to `swa` of Azure Cloud
+>
+>Plugins:
+>- [UseNode@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/use-node-v1?view=azure-pipelines)
+>- [PublishBuildArtifacts@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1?view=azure-pipelines)
+>- [DownloadBuildArtifacts@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/download-build-artifacts-v0?view=azure-pipelines)
+>  
+>  Tools:
+>  - [swa-cli](https://azure.github.io/static-web-apps-cli/)
+
+First of all, you need to provide this `json` file for purpose set up `swa-cli` what use to provide configuration and deploy your application
+
+```json title="swa-cli.config.json"
+{
+    "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
+    "configurations": {
+      "wiki": {
+        "appLocation": ".",
+        "outputLocation": "public",
+        "appBuildCommand": "npm run build",
+        "run": "npm run start",
+        "appDevserverUrl": "http://localhost:8080",
+        "env": "production"
+      }
+    }
+}
+```
+
+```yaml title="azure-pipelines.yaml"
+trigger: none
+pool: $(PoolName)
+
+stages:
+  - stage: build_publish_artifacts
+    displayName: Build and publish
+    jobs:
+      - job: setup_environment_and_publish_artifacts
+        displayName: Setup environemnts, build and publish artifacts
+        steps:
+          - task: UseNode@1
+            displayName: Setup Node
+            inputs:
+              version: '18.14'
+          
+          - script: |
+              npm ci
+              npx quartz build
+            workingDirectory: "./src"
+            displayName: Install dependencies and build
+
+          - task: PublishBuildArtifacts@1
+            inputs:
+              ArtifactName: public
+              PathtoPublish: "./src/public"
+
+  - stage: deploy_to_swa
+    displayName: Deploy Page
+    jobs:
+      - job: pull_and_deploy_web
+        displayName: Deploy the web page
+        steps:
+          - task: DownloadBuildArtifacts@0
+            inputs:
+              artifactName: public
+              downloadPath: "./src/"
+            displayName: Download build artifacts
+
+          - task: UseNode@1
+            displayName: Setup Node
+            inputs:
+              version: '18.14'
+
+          - script: |
+              npm install -g @azure/static-web-apps-cli
+              swa --version
+              swa deploy --deployment-token=$(token_release)
+            workingDirectory: $(System.DefaultWorkingDirectory)/src
+            displayName: Install swa and deploy application
+          
+```
+
+Just create a pipeline on `Azure DevOps` and trigger the pipeline by manually, and provide some require environment variables for pipeline, like `token_release` (Token of Azure SWA) and `PoolName` (Name of agent to perform pipeline)
+
+![[Pasted image 20240507142757.png]]
+
+Click `Run` to trigger pipeline, last state will announce your deployment completely with your web application domain
+
+# Setup CI/CD for React Native
+
+**Status: Not completely now 😢😢😢 . Waiting for next release**
+
+>[!info]
+>Setup CI for setup environment, build tools for test and build `APK` and `IPA` file for both `Android` and `IOS`. Let digest !!! 
+>
+>Plugins:
+>- [UseNode@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/use-node-v1?view=azure-pipelines)
+>- [PublishTestResults@2 ](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/publish-test-results-v2?view=azure-pipelines&tabs=trx%2Ctrxattachments%2Cyaml)
+>
+>Tools:
+>- [jest-junit](https://www.npmjs.com/package/jest-junit)
+>- [jest](https://jestjs.io/docs/getting-started)
+
+```yaml title="react-native.yaml"
+trigger: none
+
+stages:
+  - stage: setup_and_test
+    displayName: Setup environment and test
+    pool:
+      vmImage: 'ubuntu-latest'
+    jobs:
+      - job: setup_and_test 
+        displayName: Setup environment
+        steps:
+          - task: UseNode@1
+            displayName: Setup Node
+            inputs:
+              version: '16.20'
+          
+          - script: |
+              npm i -g yarn
+              yarn install
+            displayName: Install Package
+            workingDirectory: "./app"
+
+          - script: |
+              yarn lint
+            displayName: Syntax Check ESlint
+            workingDirectory: "./app"
+
+          - script: |
+              yarn add -D jest-junit
+              yarn test --ci --reporters=jest-junit --reporters=default
+            displayName: Unit test jest
+            workingDirectory: "./app"
+
+          - task: PublishTestResults@2
+            displayName: Publish Test Result
+            inputs:
+              testResultsFormat: 'JUnit'
+              testResultsFiles: '**/junit.xml'
+              searchFolder: "./app"
+```
+
+# Setup CICD for build Container Applications
+
+>[!summary]
+>You can use this pipeline for deploy application [Azure Container Application](https://learn.microsoft.com/en-us/azure/container-apps/overview) with self-hosted VM via `systemassign` identity
+>
+>Plugins:
+>- [UseDotNet@2](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/use-dotnet-v2?view=azure-pipelines) **(NOTE: For .NET Core application, change for whatever you want)**
+>- [DotNetCoreCLI@2](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2?view=azure-pipelines)
+>- [PublishBuildArtifacts@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1?view=azure-pipelines)
+>- [Docker@2](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/docker-v2?view=azure-pipelines&tabs=yaml)
+>
+>Tools (Require install to VM)
+>- [[Docker snippet#Installing|Docker Installing]]
+>- [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
+>- [Azure VM Authentication](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/qs-configure-portal-windows-vm)
+>- [VM authentication with Service Principle](https://learn.microsoft.com/en-us/azure/developer/java/sdk/identity-service-principal-auth)
+>- [Authenticate to Azure using Azure CLI](https://learn.microsoft.com/en-us/cli/azure/authenticate-azure-cli)
+>- [Create Service Principle](https://learn.microsoft.com/en-us/entra/identity-platform/howto-create-service-principal-portal)
+
+```bash
+# Non trigger automation trigger, but base on policy
+trigger: none
+
+# Trigger when open PR to main
+pr:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+  - stage: test_and_build
+    displayName: Test and Build Applications
+    condition: ne(variables['Build.SourceBranchName'], 'main')
+    variables:
+      buildConfiguration: 'Release'
+    jobs:
+      - job: test_and_build
+        displayName: Test and Build Applications
+        steps:
+          - task: UseDotNet@2
+            displayName: 'Install .NET Core SDK'
+            inputs:
+              version: 8.0.300
+
+          - task: DotNetCoreCLI@2
+            displayName: 'Restore Dependencies'
+            inputs:
+              command: 'restore'
+			  projects: '**/*.csproj'
+
+          - task: DotNetCoreCLI@2
+            displayName: "Build Project"
+            inputs:
+              command: 'build'
+              arguments: '-c $buildConfiguration -o ./build'
+              modifyOutputPath: true
+              workingDirectory: './src'
+
+          - task: DotNetCoreCLI@2
+            displayName: "Published Project"
+            inputs:
+              command: 'publish'
+              arguments: '-c $buildConfiguration -o ./publish'
+			  zipAfterPublish: false
+			  workingDirectory: './src'
+
+          - task: PublishBuildArtifacts@1
+            displayName: 'Published Artifact'
+            inputs:
+              PathtoPublish: './src/publish'
+              ArtifactName: public-artifact  - stage: build_image
+
+  - stage: build_image
+    displayName: Build Docker Image
+    # Run when merge code into main
+    condition: eq(variables['build.sourceBranch'], 'refs/heads/main')
+    jobs:
+      - job: build_image
+        displayName: Build Docker Image and Push to registry
+        steps:
+          - task: Docker@2
+            displayName: Login to ACR
+            inputs:
+              command: login
+              # Manage service connections
+              # Documentation: https://learn.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml
+              containerRegistry: "Dockerserviceconnection"
+
+          - task: Docker@2
+            displayName: Build and Push Image
+            inputs:
+              command: buildAndPush
+              Dockerfile: ./src/Dockerfile
+              repository: app-dev
+              buildContext: ./src/
+              tags: |
+                latest
+                $(Build.SourceVersion)
+
+  - stage: deploy
+    displayName: Deploy Applications
+    dependsOn: build_image
+    condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/main'))
+    jobs:
+      - deployment: deploy
+	    # Set rule to permit running this job or pending
+	    # Documentation: https://learn.microsoft.com/en-us/azure/devops/pipelines/process/environments?view=azure-devops
+        environment: $(environmentDeployment)
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+              - script: |
+                  az login --identity
+                  az containerapp update --name mindfull-app-$(environmentDeployment) \
+                    --resource-group rg-$(environmentDeployment) \
+                    --image example.azurecr.io/app-$(environmentDeployment):$(Build.SourceVersion) \
+                    --set-env-vars "ASPNETCORE_ENVIRONMENT=$(environmentApplication)" \
+                    "ConnectionStrings__Default=secretref:ConnectionStrings"
+                displayName: Deploy Applications to Container App
+```
+
+To help PR event occur trigger CI automation, you need to configure  `Policy` for branch, for example
+
+![[Pasted image 20240524160443.png]]
+
+You want trigger for `main` branch, so you need choose `Branch polices` option, It will bring you to another page for setup `policy`
+
+![[Pasted image 20240524160939.png]]
+
+On the `Build Validation`, you can choose `+` button for adding build validation with trigger automation your pipeline
+
+![[Pasted image 20240524161037.png]]
+
+For example, I have `react-native` pipeline, It will automation trigger this one when I create PR. 
+- You can choose **Manual** for instead but if you want, 
+- Others optional, you can clarify **Required** or **Optional** to accept build `failed` pipeline, that cause block
+- Choose the Build expiration to set time line of Build events to validate
+
+![[Pasted image 20240524161635.png]]
+
+When trigger, your pipeline will set `PR automated for` instead of `Individual CI`

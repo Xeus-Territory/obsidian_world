@@ -150,6 +150,9 @@ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 )
 echo "export PATH=\"${KREW_ROOT:-$HOME/.krew}/bin:$PATH\"" >> ~/.zshrc
 source ~/.zshrc
+
+# Install Vscode Stable Version
+wget https://code.visualstudio.com/sha/download\?build\=stable\&os\=linux-deb-x64 -O vscode.deb && sudo dpkg -i vscode.deb && rm -rf vscode.deb
 ```
 
 Install `language` compiler for your shell
@@ -187,6 +190,14 @@ sudo apt install openjdk-11-jdk –y
 
 # Install nodejs
 nvm install 18.20
+
+# Install .NET
+wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
+chmod +x ./dotnet-install.sh
+./dotnet-install.sh --version latest
+
+echo "export DOTNET_ROOT=$HOME/.dotnet" >> ~/.zshrc
+echo "export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools" >> /zshrc
 ```
 
 Lately, you can apply the `.zshrc` profile down below for configuration your terminal
@@ -267,7 +278,7 @@ ZSH_THEME="amuse"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git kubectl zsh-autosuggestions zsh-syntax-highlighting docker \
-        docker-compose podman zsh-autocomplete az)
+        docker-compose podman zsh-autocomplete azure terraform aws dotnet)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -333,5 +344,7 @@ export GOPATH="$HOME/.go"
 export PATH="$PATH:$HOME/.cargo/bin"
 
 # Include PATH for g++ (Used when you have some install lib for c++)
-export CPLUS_INCLUDE_PATH="$HOME/.local/include"
+export CPLUS_INCLUDE_PATH="$HOME/.local/include:$CPLUS_INCLUDE_PATH"
+export LD_LIBRARY_PATH="/usr/local/lib:/usr/local/lib64:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:/usr/local/lib64/pkgconfig:$HOME/.local/lib/pkgconfig:$PKG_CONFIG_PATH"
 ```
