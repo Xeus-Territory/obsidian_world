@@ -11,7 +11,9 @@ tags:
 *Related link*
 
 - [Delete a StatefulSet](https://kubernetes.io/docs/tasks/run-application/delete-stateful-set/)
-## Notice
+- [Force Delete StatefulSet Pods](https://kubernetes.io/docs/tasks/run-application/force-delete-stateful-set-pod/)
+
+**Notice**
 
 1. Do not removing `statefulset` workload, it will scale down to 0 and not bring up anymore. Instead of just removing pods, It will help the pods restart base on `statefulset` strategy
 2. Rollout `statefulset` is not work when status of `statefulset` is `completed`
@@ -32,9 +34,3 @@ kubectl delete statefulset -l app.kubernetes.io/name=MyApp
 sleep $grace
 kubectl delete pvc -l app.kubernetes.io/name=MyApp
 ```
-
-# Force Delete `StatefulSet` Pods
-
-*Related link*
-
-- [Force Delete StatefulSet Pods](https://kubernetes.io/docs/tasks/run-application/force-delete-stateful-set-pod/)

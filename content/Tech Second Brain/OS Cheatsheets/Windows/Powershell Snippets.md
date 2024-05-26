@@ -129,3 +129,11 @@ Start-Process powershell -Verb runAs
 
 But on the currently, Windows just ready to release `sudo` command for help you doing super user command can do without open terminal with Administrator. Read more at: [Sudo for Windows](https://learn.microsoft.com/en-us/windows/sudo/)
 
+# Reload `$PROFILE`
+
+When you want to reload or apply plugin which you put on your `$PROFILE`, you can make it straightway with command
+
+```powershell
+. $PROFILE
+```
+

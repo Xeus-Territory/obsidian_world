@@ -21,16 +21,16 @@ tags:
 - [Medium - Advanced Bash Scripting: Part 2 🔥](https://medium.com/@bin3xish477/advanced-bash-scripting-part-2-7b9b488adf4f)
 - [Medium - Advanced Bash Scripting: Part 3 🔥](https://medium.com/@bin3xish477/advanced-bash-scripting-part-3-4acbe32b1f15)
 - [Mendel Cooper - Advanced Bash-Scripting Guide](https://tldp.org/LDP/abs/html/index.html)
-- [BASH/Linux Interview Question for DevOps Engineers](https://medium.com/@okpreetam/bash-linux-interview-question-for-devops-engineers-7e22928a1486)
-- [Bash Test Operators Cheat Sheet - Kapeli](https://kapeli.com/cheat_sheets/Bash_Test_Operators.docset/Contents/Resources/Documents/index)
-- [Linux Shell Scripting Tutorial - Bash Linux Shell Scripting Wiki](https://bash.cyberciti.biz/guide/Main_Page)
-- [Basics | Cheat sheets | Linux Command Library](https://linuxcommandlibrary.com/)
+- [Medium - BASH/Linux Interview Question for DevOps Engineers](https://medium.com/@okpreetam/bash-linux-interview-question-for-devops-engineers-7e22928a1486)
+- [Bash Conditional Statement Operators Cheat Sheet - Kapeli](https://kapeli.com/cheat_sheets/Bash_Test_Operators.docset/Contents/Resources/Documents/index)
 - [If Statements - Bash Scripting Tutorial](https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php)
+- [Linux Shell Scripting Tutorial - Bash Linux Shell Scripting Wiki](https://bash.cyberciti.biz/guide/Main_Page)
 - [How To Forward Ports through a Linux Gateway with Iptables | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-forward-ports-through-a-linux-gateway-with-iptables)
 - [StackOverFlow - How does "cat << EOF" work in bash?](https://stackoverflow.com/questions/2500436/how-does-cat-eof-work-in-bash)
 - [Medium - Creating a Linux service with systemd](https://medium.com/@benmorel/creating-a-linux-service-with-systemd-611b5c8b91d6) or [How to create a systemd service in Linux](https://linuxhandbook.com/create-systemd-services/)
 - [FreeCodeCamp - How to Set an Environment Variable in Linux](https://www.freecodecamp.org/news/how-to-set-an-environment-variable-in-linux/)
 - [Linux permissions: SUID, SGID, and sticky bit](https://www.redhat.com/sysadmin/suid-sgid-sticky-bit)
+- [Medium - 10 Troubleshooting Commands for Linux Systems](https://medium.com/@cstoppgmr/10-troubleshooting-commands-for-linux-systems-4fa8c3a1a466)
 # Window
 
 - [Windows Server Security documentation](https://learn.microsoft.com/en-us/windows-server/security/security-and-assurance)
@@ -56,3 +56,4 @@ tags:
 - [tldr pages](https://tldr.inbrowser.app/) : Simplified and community-driven man pages
 - [Manned.org](https://manned.org/) : The archive for man pages
 - [Linux Hint](https://linuxhint.com/): Linux contents and command to resolve your problems
+- [Basics | Cheat sheets | Linux Command Library](https://linuxcommandlibrary.com/)

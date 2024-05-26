@@ -6,7 +6,7 @@ tags:
   - devops
   - usage
 ---
-# Helpful command
+# Installing
 
 - Install and set up docker on your host with rapidly, by
 
@@ -25,14 +25,16 @@ tags:
 
 	Official install instruction: https://docs.docker.com/engine/install/ubuntu/
 
-```bash
-curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh ./get-docker.sh --dry-run
+	```bash
+	curl -fsSL https://get.docker.com -o get-docker.sh
+	sudo sh ./get-docker.sh --dry-run
+	
+	# OR
+	
+	curl -fsSL https://get.docker.com | sudo bash -
+	```
 
-# OR
-
-curl -fsSL https://get.docker.com | sudo bash -
-```
+# Helpful command
 
 - Basic `run` command, but with helpful flag
 

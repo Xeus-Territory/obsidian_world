@@ -233,6 +233,8 @@ tags:
 - [HackTricks - HackTricks](https://book.hacktricks.xyz/welcome/readme) : Wikipedia of Hacking
 - [Payloads All The Things](https://swisskyrepo.github.io/PayloadsAllTheThings/): Useful payloads and bypasses for Web Application Security
 - [Web-CTF-Cheatsheet](https://github.com/w181496/Web-CTF-Cheatsheet)
+- [Internal All The Things](https://swisskyrepo.github.io/InternalAllTheThings/) : Active Directory and Internal Pentest Cheatsheets
+- [Hardware All The Things](https://swisskyrepo.github.io/HardwareAllTheThings/):  A curated collection of valuable payloads and bypass techniques tailored for Hardware and IoT Security
 
 ## RE (Reverse Engineer)
 
