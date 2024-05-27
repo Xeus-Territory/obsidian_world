@@ -41,6 +41,8 @@ Common options often use with `compose`, like
 
 - Use host network to use driver of local interface, you when you want to call via `DNS` on different network with your `eth` interface
 
+	Documentation: [Accessing Host Services from Docker Containers](https://dev.to/mjnaderi/accessing-host-services-from-docker-containers-1a97)
+
 ```yaml {3-4}
 services:
 	application:

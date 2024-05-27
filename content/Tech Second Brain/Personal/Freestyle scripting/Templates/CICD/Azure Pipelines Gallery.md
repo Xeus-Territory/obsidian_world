@@ -106,7 +106,9 @@ Click `Run` to trigger pipeline, last state will announce your deployment comple
 
 # Setup CI/CD for React Native
 
-**Status: Not completely now 😢😢😢 . Waiting for next release**
+Read more about React Native build with fastlane on CI/CD at [[Build mobile with fastlane (Part 1)#Define `fastlane` android project configuration|Build mobile with fastlane]]
+
+**Status: Does not completely, continuous integrate next step build android 😢 😢 😢** 
 
 >[!info]
 >Setup CI for setup environment, build tools for test and build `APK` and `IPA` file for both `Android` and `IOS`. Let digest !!! 
@@ -134,7 +136,7 @@ stages:
           - task: UseNode@1
             displayName: Setup Node
             inputs:
-              version: '16.20'
+              version: '18.20'
           
           - script: |
               npm i -g yarn
@@ -159,7 +161,39 @@ stages:
               testResultsFormat: 'JUnit'
               testResultsFiles: '**/junit.xml'
               searchFolder: "./app"
+
+  - stage: build_android
+    displayName: Build Android Applications
+    jobs:
+      - job: build_android
+        displayName: Build Android Jobs
+        steps:
+          - task: UseNode@1
+            displayName: Setup Node Environment
+            inputs:
+              version: "18.20"
+          
+          - script: |
+              npm i -g yarn
+              yarn install
+            displayName: Install node package for project
+
+          - script: |
+              cd ./android || exit 1
+              fastlane build
+            displayName: Build the APK for Android Project
+          
+          - task: PublishBuildArtifacts@1
+            displayName: Publish APK file to Repository
+            inputs:
+              ArtifactName: APK Package
+              PathtoPublish: ./android/app/build/outputs/apk/release
 ```
+
+## Troubleshoot
+
+>[!warning]
+>When you set up the azure-agent for running job, remember set `.env` variables for specify agent because it will not read Linux `$PROFILE`, just read only environment in `runsvc.sh`. Read more at: [StackOverFlow - ANDROID_HOME not set (VSTS agent running as service on OS X)](https://stackoverflow.com/questions/37890362/android-home-not-set-vsts-agent-running-as-service-on-os-x)
 
 # Setup CICD for build Container Applications
 
@@ -173,7 +207,7 @@ stages:
 >- [Docker@2](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/docker-v2?view=azure-pipelines&tabs=yaml)
 >
 >Tools (Require install to VM)
->- [[Docker snippet#Installing|Docker Installing]]
+>- [[Docker#Installing|Docker Installing]]
 >- [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
 >- [Azure VM Authentication](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/qs-configure-portal-windows-vm)
 >- [VM authentication with Service Principle](https://learn.microsoft.com/en-us/azure/developer/java/sdk/identity-service-principal-auth)
@@ -227,8 +261,8 @@ stages:
             inputs:
               command: 'publish'
               arguments: '-c $buildConfiguration -o ./publish'
-			  zipAfterPublish: false
-			  workingDirectory: './src'
+              zipAfterPublish: false
+              workingDirectory: './src'
 
           - task: PublishBuildArtifacts@1
             displayName: 'Published Artifact'
@@ -266,7 +300,7 @@ stages:
   - stage: deploy
     displayName: Deploy Applications
     dependsOn: build_image
-    condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/main'))
+    condition: and(succeeded('build_image'), eq(variables['build.sourceBranch'], 'refs/heads/main'))
     jobs:
       - deployment: deploy
 	    # Set rule to permit running this job or pending
@@ -285,6 +319,8 @@ stages:
                     "ConnectionStrings__Default=secretref:ConnectionStrings"
                 displayName: Deploy Applications to Container App
 ```
+
+## Optional
 
 To help PR event occur trigger CI automation, you need to configure  `Policy` for branch, for example
 
@@ -306,3 +342,8 @@ For example, I have `react-native` pipeline, It will automation trigger this one
 ![[Pasted image 20240524161635.png]]
 
 When trigger, your pipeline will set `PR automated for` instead of `Individual CI`
+
+## Troubleshoot
+
+>[!warning]
+>When you use `succeeded()` expression, remember import name branch you need to check on on the single quote bracket like `succeeded('build')`, it mean this task will read-only the status state of `build` stage, if not it will read all values of **stage** or **job** in pipeline, and make a decision

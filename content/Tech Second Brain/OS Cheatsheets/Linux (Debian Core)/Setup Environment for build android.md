@@ -105,8 +105,8 @@ Lastly, you need to export `PATH` for both `ANDROID_HOME` and `bin` of `sdk` whi
 
 ```bash
 # .bashrc: Shell bash or .zshrc: Shell ZSH
-echo "export ANDROID_HOME=\"$HOME/.android-sdk\"" >> ~/.zshrc
-echo "export PATH=\"$PATH:$ANDROID_HOME/cmdline-tools/bin\"" >> ~/.zshrc
+echo "export ANDROID_HOME=\"\$HOME/.android-sdk\"" >> ~/.zshrc
+echo "export PATH=\"\$PATH:\$ANDROID_HOME/cmdline-tools/latest/bin\"" >> ~/.zshrc
 
 # Reload profile
 source ~/.zshrc
@@ -501,11 +501,12 @@ buildscript {
 }
 ```
 
-When you perform command, usually the `apk` file can compress and locate in `/app/build/intermediates/apk/debug/<name>.apk` or on the other route base on your version of `gradle` and `gradlew`. You can follow the articles for more understand: [Build your app from the command line](https://developer.android.com/build/building-cmdline)
-
 ```bash
 ./gradlew assembleRelease
 ```
+
+>[!done]
+>When you perform command, usually the `apk` file can compress and locate in `/app/build/intermediates/apk/debug/<name>.apk` (With `gradlew`) or `app/build/outputs/apk/release` (With `fastlane`) or maybe on the other route base on your version of `gradle` and `gradlew`. You can follow the articles for more understand: [Build your app from the command line](https://developer.android.com/build/building-cmdline)
 
 # Conclusion
 
@@ -513,7 +514,7 @@ When you perform command, usually the `apk` file can compress and locate in `/ap
 >That all for today, I hope this blog can help you something on setup and prepare the environment for build the android project. You can combine all these task with just one file and click, and anything will completely ready.
 
 >[!quote]
->When you learn a new thing like android, the new cool experience with me. `Gradle` and `Gradlew` that such a cool things. Maybe I don't familiar much with `Gradle` or `Maven` but on the another session, I and you will explore more about that. So farewell @all, stay self, hacking and learn more incredible things
+>When you learn a new thing like android, the new cool experience with me. `Gradle` and `Gradlew` that such a cool things. Maybe I don't familiar much with `Gradle` or `Maven` but on the another session, I and you will explore more about that. So farewell @all, stay safe, hacking and learn more incredible things
 
 Reference documentation
 
