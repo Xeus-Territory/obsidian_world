@@ -1,5 +1,5 @@
 ---
-title: Common Docker command and usage
+title: Docker snippet
 tags:
   - docker
   - helpful
@@ -101,9 +101,9 @@ tags:
 
 - `history` command: Use when you want show the history of an image, helpful if you want to detect what contents in each layer or change in image. You can use [dive](https://github.com/wagoodman/dive) instead for exploring each layer in a docker image
 
-```bash
-docker history yourimage
-```
+	```bash
+	docker history yourimage
+	```
 
 - `exec` command: Use when you want to execution command or attach the STDIN container to your shell
 
@@ -179,3 +179,37 @@ docker history yourimage
 	```
 
 - `login` and `logout` : Use to login or logout your docker from private repository or registry, you can found the credentials in `~/.docker/config.json`
+
+	Login with submitting the password on shell
+
+	```bash
+	docker login -u="${DOCKER_USERNAME}" -p="${DOCKER_PASSWORD}"
+	```
+
+	Login with password from `STDIN` from pipe command or get from another website
+
+	```bash
+	# Pass in with direct password to string
+	docker login --username=<user> --password-stdin <<<'password'
+
+	# Read from file and use pipe to pass string
+	cat /vars/docker/secrets.txt | docker login --username=<user> --password-stdin
+	```
+
+# Cheat commands
+
+- Filter untagged images, with use `dangling` property
+
+	```bash
+	docker images --filter "dangling=true"
+	```
+
+- For filter image base on time, we can consider to using `before` `since` label with `--filter` flag
+
+	```bash
+	# Before: List previous image target
+	docker images --filter "before=image1"
+	
+	# Since: List behind image target
+	docker images --filter "since=image3"
+	```

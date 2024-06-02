@@ -112,7 +112,6 @@ tags:
 - [Ansible, Terraform and your first infrastructure](https://hackmd.io/2_tUc4W7S3K8s3aOiwgGyg)
 - [[Profiling applications with Pyroscope]]
 - [[Caddy Server and Umami analytics platform|Do self-hosted analytics platforms for you website with automatically SSL domain]]
-- [[Setup Environment for build android]]
 - [[Linux profile|Setup Linux Profile]]
 - [[Window profile|Setup Window Profile]]
 - [[NGINX and everything about it]]
@@ -122,13 +121,15 @@ tags:
 - [[Create Free SSL with Let's Encrypt and Certbot]]
 - [[0-downtime with Blue-Green Deployment]]
 - [Robust Scanner - Vulnerable Scanning](https://hackmd.io/BflJwJ4WR56HptJBgJCo-g)
+- [[Setup Environment for build android]]
+- [[Build mobile with fastlane (Part 1)]]
 # CI/CD Gallery
 
 >[!info]
 >More talk about CI/CD with multiple purpose, try to approach and gain the experience on multiple platform. Still update when have new things LOL 😃
 
 - [[Github Action Gallery]]
-- [[Azure DevOps Gallery|Azure DevOps Gallery]]
+- [[Azure Pipelines Gallery|Azure Pipelines Gallery]]
 - [[GitlabCI Gallery]]
 
 # Helpful Collections
@@ -151,12 +152,12 @@ tags:
 >[!info]
 >The snippets which most of useful tool that I have tried 👍👍👍
 
-- [[Docker snippet]]
+- [[Docker]]
 - [[Docker compose]]
 - [[Kubectl snippet]]
 - [[Git|Git snippet]]
 - [[HTML|HTML snippet]]
 - [[Azure CLI|Azure CLI snippet]]
 - [[Powershell Snippets]]
-- [[Shell command|Shell command snippets]]
+- [[Shell command snippets|Shell command snippets]]
 - [[Popular API usage|Elasticsearch Snippets]]

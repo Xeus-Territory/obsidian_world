@@ -25,4 +25,4 @@ tags:
 1. 🏢 [[All Projects]] - *"All projects currently work on or archives"*
 2. 🎆 [[All Blogs]]  - *"All blog which I have and share to community"*
 3. 🔱 [DevSecOps - CV](https://drive.google.com/file/d/1pa8X7JaO3fL3YT5n-7cGPh-2Ns7zGo4S/view?usp=sharing) - *"Currently Job - DevSecOps"*
-4. 📨 Contact Email: kobikiu810@gmail.com or xeusnguyen@gmail.com
+4. 📨 kobikiu810@gmail.com or xeusnguyen@gmail.com - *"You can write a email for contact me"*

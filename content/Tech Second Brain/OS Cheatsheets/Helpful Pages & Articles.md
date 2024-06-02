@@ -31,6 +31,12 @@ tags:
 - [FreeCodeCamp - How to Set an Environment Variable in Linux](https://www.freecodecamp.org/news/how-to-set-an-environment-variable-in-linux/)
 - [Linux permissions: SUID, SGID, and sticky bit](https://www.redhat.com/sysadmin/suid-sgid-sticky-bit)
 - [Medium - 10 Troubleshooting Commands for Linux Systems](https://medium.com/@cstoppgmr/10-troubleshooting-commands-for-linux-systems-4fa8c3a1a466)
+- [How To Use Journalctl to View and Manipulate Systemd Logs](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs)
+- [StackOverFlow - How to read from a file or standard input in Bash](https://stackoverflow.com/questions/6980090/how-to-read-from-a-file-or-standard-input-in-bash)
+- [Medium - Essential Linux Terminal Hacks for Efficiency](https://medium.com/faun/essential-linux-terminal-hacks-for-efficiency-1ea5f5bac437)
+- [Medium - Essential Linux Terminal Hacks for efficiency — Part 2](https://medium.com/@sagarkpanda/essential-linux-terminal-hacks-for-efficiency-part-2-84c1036d8258)
+- [How to Run Linux Commands in Background](https://phoenixnap.com/kb/linux-run-command-background)
+- [Medium - How To Evaluate the Network Performance of a Linux System](https://medium.com/devops-dev/how-to-evaluate-the-network-performance-of-a-linux-system-69db89cae0ed)
 # Window
 
 - [Windows Server Security documentation](https://learn.microsoft.com/en-us/windows-server/security/security-and-assurance)
@@ -43,6 +49,7 @@ tags:
 - [DistroWatch.com: Put the fun back into computing. Use Linux, BSD.](https://distrowatch.com/)
 - [Server World - Build Network Server](https://www.server-world.info/en/)
 - [Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) : A Windows and Office activator using HWID / Ohook / KMS38 / Online KMS activation methods, with a focus on open-source code and fewer antivirus detections.
+- [Linux Journal](https://www.linuxjournal.com/)
 
 # Command Manual and Tools
 

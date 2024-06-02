@@ -166,7 +166,7 @@ Install `language` compiler for your shell
 wget "https://dl.google.com/go/$(curl https://go.dev/VERSION?m=text | grep -o 'go.*').linux-amd64.tar.gz"
 tar -xzf $(curl https://go.dev/VERSION?m=text | grep -o 'go.*').linux-amd64.tar.gz
 sudo mv go /usr/local/
-echo "export (PATH)=\"$PATH:/usr/local/go/bin\"" >> ~/.zshrc
+echo "export PATH=\"\$PATH:/usr/local/go/bin\"" >> ~/.zshrc
 source ~/.zshrc
 go version
 rm -rf $(curl https://go.dev/VERSION?m=text | grep -o 'go.*').linux-amd64.tar.gz
@@ -176,7 +176,7 @@ sudo apt install -y ruby-full
 
 # Install rust (https://www.rust-lang.org/tools/install)
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh # Press enter
-echo "export PATH=\"$PATH:~/.cargo/bin\"" >> ~/.zshrc
+echo "export PATH=\"\$PATH:~/.cargo/bin\"" >> ~/.zshrc
 source ~/.zshrc
 
 # Install pip3 and python3
@@ -197,7 +197,7 @@ chmod +x ./dotnet-install.sh
 ./dotnet-install.sh --version latest
 
 echo "export DOTNET_ROOT=$HOME/.dotnet" >> ~/.zshrc
-echo "export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools" >> /zshrc
+echo "export PATH=\"\$PATH:\$DOTNET_ROOT:\$DOTNET_ROOT/tools\"" >> /.zshrc
 ```
 
 Lately, you can apply the `.zshrc` profile down below for configuration your terminal

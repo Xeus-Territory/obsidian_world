@@ -42,6 +42,7 @@ tags:
 - [Docker networking - NetworkChuck](https://www.youtube.com/watch?v=bKFMS5C4CG0&ab_channel=NetworkChuck)
 - [3 Best Ways to Run Docker in Docker Container](https://kodekloud.com/blog/run-docker-in-docker-container/)
 - [Blackvoid - Synology, Docker and open source tech blog](https://www.blackvoid.club/)
+- [Medium - Accessing the host’s localhost from inside a Docker container](https://medium.com/@gladevise/accessing-the-hosts-localhost-from-inside-a-docker-container-c5935e275953)
 # Kubernetes
 
 - [Medium - 7 Underrated Kubernetes Projects: Elevate Your Lab Playground!](https://medium.com/@ebenamor/7-underrated-kubernetes-projects-elevate-your-lab-playground-ac7f47cba347)

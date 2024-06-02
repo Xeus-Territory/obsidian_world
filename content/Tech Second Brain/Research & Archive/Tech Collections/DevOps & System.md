@@ -30,6 +30,7 @@ tags:
 - [Awesome Software Architecture](https://awesome-architecture.com/) : Curated list of awesome articles and resources to learn and practice software architecture, patterns and principles. this repository will be updated continuously, keep yourself up to date.
 - [Milan Newsletter](https://newsletter.techworld-with-milan.com/) : Guy will teach you more about infrastructure, architecture, ...
 - [ByteByteGo Blog](blog.bytebytego.com) : About the system design, and moreover technologies
+- [StackExchange](https://stackexchange.com/sites) : StackOverFlow Ecosystem
 
 # DevOps Articles
 
@@ -47,6 +48,7 @@ tags:
 - [Medium - What is Clean Architecture?](https://medium.com/@techworldwithmilan/what-is-clean-architecture-456d2d3cb0bc)
 - [How to build and deploy React Native applications with Fastlane](https://tech.sparkfabrik.com/en/blog/fastlane_build/)
 - [Data Engineering Best Practices: How Big Tech & FAANG Firms Manage and Optimize Apache Kafka](https://acceldataio.medium.com/data-engineering-best-practices-how-big-tech-faang-firms-manage-and-optimize-apache-kafka-95d520db60bb)
+- [The four levels of logs](https://fiberplane.com/blog/the-four-levels-of-log-collections)
 
 # DevOps Youtube Channel
 
@@ -72,6 +74,7 @@ tags:
 - [DevOps Việt Nam - DevOpsify](https://devopsify.co/)
 - [The Cloud Native Wiki | Aqua](https://www.aquasec.com/cloud-native-academy/)
 - [Noted - Self Hosted App and Product Reviews](https://noted.lol/)
+- [Digital Ocean](https://www.digitalocean.com/community)
 
 
 # DevOps Tools
@@ -82,8 +85,10 @@ tags:
 - [Pulumi Registry](https://www.pulumi.com/registry/): Package, SDK of Pulumi (Example: AWS, Azure, GCP)
 - [Terraform Documentation](https://developer.hashicorp.com/terraform/docs): An infrastructure as code tool that lets you build, change, and version infrastructure safely and efficiently
 - [Terraform Registry](https://registry.terraform.io/): Terraform providers that power all of Terraform’s resource types, or find modules for quickly deploying common infrastructure configurations.
-
-
 ## Generated Configuration
 
 - [moz://a SSL Configuration Generator](https://ssl-config.mozilla.org/) : SSL Generation for multiple webserver
+
+## Self-hosted
+
+- [LocalStack - AWS local](https://hub.docker.com/r/localstack/localstack) : A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline. Read more: [Documentation](https://docs.localstack.cloud/getting-started/). You can do more access and management via [LocalStack Web Application](https://app.localstack.cloud/sign-in)

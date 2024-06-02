@@ -48,6 +48,7 @@ tags:
 - [Cloudflare Learning](https://www.cloudflare.com/learning/)
 - [ElNiak Blog](https://medium.com/@elniak)
 - [Prof Bill Buchanan OBE FRSE](https://billatnapier.medium.com/) : Professor of Cryptography
+- [Medium - n00🔑](https://medium.com/@pswalia2u)
 
 # Technical and Technologies for hacking
 
@@ -192,6 +193,10 @@ tags:
 - [Google Public DNS](https://dns.google/)
 - [Network Tools by YouGetSignal.com](https://www.yougetsignal.com/)
 
+## Articles
+
+- [Medium - VPN is dead? Long live the Jump Host?](https://medium.com/itnext/vpn-is-dead-long-live-the-jump-host-bf3683cc684d)
+
 ### VPN
 
 >[!info] *Give applause for Nyr for contributing a wonderful setup, with those script, you just need 1 minutes for creating your own VPN and safely connected remotely with your network*
@@ -308,6 +313,7 @@ tags:
 - [（●´3｀●）Goooood](https://4n6nk8s.tech/2022/09/12/Writeups/csaw2022/)
 - [CSAW CTF](https://hissing-pancake-c2f.notion.site/CSAW-CTF-b5581430e2bf4113bb2cf3730675257b)
 - [TFC CTF 2022 Writeup - よっちんのブログ](https://yocchin.hatenablog.com/entry/2022/08/01/114900)
+- [KMA - HTB Business CTF 2024: The Vault Of Hope Write Up](https://kcsc.edu.vn/htb-business-ctf-2024-the-vault-of-hope-write-up)
 
 # Cloud
 
