@@ -29,15 +29,20 @@ tags:
 - [Self-Hosting-Guide](https://github.com/mikeroyal/Self-Hosting-Guide) : Learn all about locally hosting
 - [Awesome Software Architecture](https://awesome-architecture.com/) : Curated list of awesome articles and resources to learn and practice software architecture, patterns and principles. this repository will be updated continuously, keep yourself up to date.
 - [Milan Newsletter](https://newsletter.techworld-with-milan.com/) : Guy will teach you more about infrastructure, architecture, ...
-- [ByteByteGo Blog](blog.bytebytego.com) : About the system design, and moreover technologies
+- [ByteByteGo Blog](https://blog.bytebytego.com) : About the system design, and moreover technologies
 - [StackExchange](https://stackexchange.com/sites) : StackOverFlow Ecosystem
+- [Medium - David Mosyan](https://medium.com/@dmosyan) : Systems Architecture / Cloud / DevOps / Cybersecurity
+- [Medium - Sagar #OpenToWork](https://sagarkpanda.medium.com/)
+- [Medium - Seifeddine Rajhi](https://medium.com/@seifeddinerajhi) : Super cool stuff about opensource and cloud platform
+- [Medium - The kube guy](https://thekubeguy.com/) : About Kubernetes with resolve multiple problems around and minimal efforts
+- [Medium - ByteCook](https://medium.com/@cstoppgmr) : Unique contents cover multi-range in technical fields
 
 # DevOps Articles
 
 - [Prometheus Architecture: Complete Breakdown of Key Components](https://devopscube.com/prometheus-architecture/)
 - [Azure - Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)
 - [Popular Deployment Strategies & Pattern](https://www.devopsschool.com/blog/list-of-popular-deployment-strategies/)
-- [Medium - What Are Deployment Patterns?](https://blog.devgenius.io/entering-into-devops-32-golden-images02-9f8a9bfa52cd)
+- [Medium - What Are Deployment Patterns?](https://medium.com/@techworldwithmilan/what-are-deployment-patterns-876057c15987)
 - [Entering into DevOps-32 Golden Images02](https://blog.devgenius.io/entering-into-devops-32-golden-images02-9f8a9bfa52cd)
 - [Medium - Top Technology Trends to Watch Out for in 2024 for Platform Engineering and SRE](https://medium.com/@seifeddinerajhi/top-technology-trends-to-watch-out-for-in-2024-for-platform-engineering-and-sre-e267130c7e22)
 - [Medium - High-Level System Architecture of Booking.com](https://medium.com/@sahintalha1/high-level-system-architecture-of-booking-com-06c199003d94)
@@ -47,6 +52,7 @@ tags:
 - [Medium - The Complete Guide to Event-Driven Architecture](https://medium.com/@seetharamugn/the-complete-guide-to-event-driven-architecture-b25226594227)
 - [Medium - What is Clean Architecture?](https://medium.com/@techworldwithmilan/what-is-clean-architecture-456d2d3cb0bc)
 - [How to build and deploy React Native applications with Fastlane](https://tech.sparkfabrik.com/en/blog/fastlane_build/)
+- [Dev.io - Automating mobile application deployments using Fastlane and CI/CD tools](https://dev.to/jei/automating-mobile-application-deployments-using-fastlane-and-ci-cd-tools-2iae)
 - [Data Engineering Best Practices: How Big Tech & FAANG Firms Manage and Optimize Apache Kafka](https://acceldataio.medium.com/data-engineering-best-practices-how-big-tech-faang-firms-manage-and-optimize-apache-kafka-95d520db60bb)
 - [The four levels of logs](https://fiberplane.com/blog/the-four-levels-of-log-collections)
 
@@ -92,3 +98,8 @@ tags:
 ## Self-hosted
 
 - [LocalStack - AWS local](https://hub.docker.com/r/localstack/localstack) : A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline. Read more: [Documentation](https://docs.localstack.cloud/getting-started/). You can do more access and management via [LocalStack Web Application](https://app.localstack.cloud/sign-in)
+
+## Secrets management
+
+- [dotenvx](https://dotenvx.com/) : Loads environment variables from .env for nodejs projects.
+- [dotenv](https://www.dotenv.org/docs/) : The secrets manager for .env files – from the same people that pioneered dotenv. 

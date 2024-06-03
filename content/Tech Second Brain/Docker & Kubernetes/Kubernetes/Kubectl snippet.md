@@ -45,6 +45,6 @@ You need to consider when apply scaling down can not working because *"cannot sc
 - Delete `pods` with not on state `Running`
 
 ```bash
-k delete pods -n monitoring --field-selector=status.phase!=Running
+k delete pods -n <name-space> --field-selector=status.phase!=Running
 ```
 

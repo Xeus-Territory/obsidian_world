@@ -43,6 +43,7 @@ tags:
 - [3 Best Ways to Run Docker in Docker Container](https://kodekloud.com/blog/run-docker-in-docker-container/)
 - [Blackvoid - Synology, Docker and open source tech blog](https://www.blackvoid.club/)
 - [Medium - Accessing the host’s localhost from inside a Docker container](https://medium.com/@gladevise/accessing-the-hosts-localhost-from-inside-a-docker-container-c5935e275953)
+- [Medium - Deep Dive into Docker Containers | Architecture and Features](https://medium.com/@dmosyan/deep-dive-into-docker-containers-architecture-and-features-530a937f4c87)
 # Kubernetes
 
 - [Medium - 7 Underrated Kubernetes Projects: Elevate Your Lab Playground!](https://medium.com/@ebenamor/7-underrated-kubernetes-projects-elevate-your-lab-playground-ac7f47cba347)

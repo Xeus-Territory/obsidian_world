@@ -347,3 +347,61 @@ When trigger, your pipeline will set `PR automated for` instead of `Individual C
 
 >[!warning]
 >When you use `succeeded()` expression, remember import name branch you need to check on on the single quote bracket like `succeeded('build')`, it mean this task will read-only the status state of `build` stage, if not it will read all values of **stage** or **job** in pipeline, and make a decision
+
+# Setup agent
+
+## The SSL connection could not be established, and No usable version of libssl was found
+
+With the sentence `No usable version of libssl was found`, usually meet on Ubuntu 22.04, you can fix by install `openssl`
+
+Ubuntu: [Ubuntu Package](http://security.ubuntu.com/ubuntu/)
+Issue: [Github](https://github.com/microsoft/azure-pipelines-agent/issues/3599)
+
+```bash
+wget -c http://security.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+
+sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+```
+
+After that, you can run `./config.sh`, but next sentence will problems `The SSL connection could not be established`. You can resolve that one with `ENV AZP` variables
+
+First export to environment variable `AZP_AGENT_USE_LEGACY_HTTP` and run `./config.sh`
+
+```bash
+export AZP_AGENT_USE_LEGACY_HTTP=true
+
+./config.sh
+```
+
+After that, you need set to environment to agent to bypass the SSL issue in `runsvc.sh` file
+
+```bash title="runsvc.sh"
+#!/bin/bash
+
+# convert SIGTERM signal to SIGINT
+# for more info on how to propagate SIGTERM to a child process see: http://veithen.github.io/2014/11/16/sigterm-propagation.html
+trap 'kill -INT $PID' TERM INT
+
+if [ -f ".path" ]; then
+    # configure
+    export PATH=`cat .path`
+    echo ".path=${PATH}"
+fi
+
+# insert anything to setup env when running as a service
+export AZP_AGENT_USE_LEGACY_HTTP=true
+
+# run the host process which keep the listener alive
+./externals/node10/bin/node ./bin/AgentService.js &
+PID=$!
+wait $PID
+trap - TERM INT
+wait $PID
+```
+
+And that all, trigger `svc.sh` file to setup and connect the agent to pool
+
+```bash
+sudo ./svc.sh install
+sudo ./svc.sh start
+```

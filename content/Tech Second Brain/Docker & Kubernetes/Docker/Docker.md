@@ -213,3 +213,16 @@ tags:
 	# Since: List behind image target
 	docker images --filter "since=image3"
 	```
+
+- Clean build cache of docker engine
+
+	```bash
+	# Use for old version
+	docker builder prune
+
+	# use for buildx version
+	docker buildx prune
+	```
+
+	It will ask you prompt yes or no, if you want to bypass this, add `-f` flag for force prune
+

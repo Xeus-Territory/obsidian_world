@@ -36,6 +36,7 @@ tags:
 ## JS
 
 - [awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs): Delightful Node.js packages and resources
+- [dotenv-vault](https://www.dotenv.org/docs) : Library for store and securing .env file with encrypt version, and help us build secrets version
 
 ## Python
 
