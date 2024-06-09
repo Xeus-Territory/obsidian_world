@@ -85,6 +85,7 @@ tags:
 - [[SQL Injections]]
 - [[GraphQL]]
 - [[Command injection]]
+- [[CVE-2023-34092 - Path Equivalence in Vite]]
 # Research
 
 >[!info]
@@ -121,8 +122,10 @@ tags:
 - [[Create Free SSL with Let's Encrypt and Certbot]]
 - [[0-downtime with Blue-Green Deployment]]
 - [Robust Scanner - Vulnerable Scanning](https://hackmd.io/BflJwJ4WR56HptJBgJCo-g)
+- [[How can protect React secrets|How can protect React secrets?]]
 - [[Setup Environment for build android]]
 - [[Build mobile with fastlane (Part 1)]]
+- [[Build mobile with fastlane (Part 2)]]
 # CI/CD Gallery
 
 >[!info]
@@ -145,7 +148,7 @@ tags:
 - [[Tech Second Brain/AI & ML & Data Science/Helpful Pages & Articles|AI & ML Helpful Pages & Articles]]
 - [[DevOps & System |DevOps & System Helpful Pages & Articles]]
 - [[Softwares & Tools|Softwares & Tools Helpful Pages & Articles]]
-- [[Tech Contents & Articles]]
+- [[Tech Articles & Papers]]
 
 # Command Snippets
 
