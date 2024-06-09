@@ -500,9 +500,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.mindfull"
+    namespace "com.example"
     defaultConfig {
-        applicationId "com.mindfull"
+        applicationId "com.example.fun"
         // minSdkVersion rootProject.ext.minSdkVersion
         minSdkVersion 23
         targetSdkVersion rootProject.ext.targetSdkVersion
