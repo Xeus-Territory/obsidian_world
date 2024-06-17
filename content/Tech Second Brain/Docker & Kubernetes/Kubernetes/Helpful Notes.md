@@ -14,4 +14,8 @@ Reference article: [Do Kubernetes Pods Really Get Evicted Due to CPU Pressure?](
 >
 >While high CPU usage by a pod can indirectly contribute to resource pressure and potentially lead to eviction due to memory or other resource shortages, CPU throttling is the primary mechanism used to manage CPU-intensive workloads.
 
+# Popular Kubernetes Operators
 
+- [Elasticsearch (ECK) Operator](https://operatorhub.io/operator/elastic-cloud-eck), you can figure out configuration via [Customize Pods](https://www.elastic.co/guide/en/cloud-on-k8s/master/k8s-customize-pods.html#)
+- [MongoDB Community Kubernetes Operator](https://github.com/mongodb/mongodb-kubernetes-operator), you can take the look some `crd`, and configuration with `github` link like [CRD](https://github.com/mongodb/mongodb-kubernetes-operator/blob/master/config/crd/bases/mongodbcommunity.mongodb.com_mongodbcommunity.yaml) and [Samples](https://github.com/mongodb/mongodb-kubernetes-operator/tree/master/config/samples)
+- [RabbitMQ-cluster-operator](https://operatorhub.io/operator/rabbitmq-cluster-operator), read more about that via [source code](https://github.com/rabbitmq/cluster-operator)

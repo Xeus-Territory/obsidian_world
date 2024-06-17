@@ -153,6 +153,13 @@ source ~/.zshrc
 
 # Install Vscode Stable Version
 wget https://code.visualstudio.com/sha/download\?build\=stable\&os\=linux-deb-x64 -O vscode.deb && sudo dpkg -i vscode.deb && rm -rf vscode.deb
+
+# Install digital ocean CLI
+# Doc: https://docs.digitalocean.com/reference/doctl/how-to/install/
+wget https://github.com/digitalocean/doctl/releases/download/v1.104.0/doctl-1.104.0-linux-amd64.tar.gz
+tar xf doctl-1.104.0-linux-amd64.tar.gz
+sudo mv doctl /usr/local/bin
+rm -rf doctl-1.104.0-linux-amd64.tar.gz
 ```
 
 Install `language` compiler for your shell

@@ -48,3 +48,8 @@ You need to consider when apply scaling down can not working because *"cannot sc
 k delete pods -n <name-space> --field-selector=status.phase!=Running
 ```
 
+- Create the generic secrets from file, for example `binary` file with auto convert to `base64` format
+
+```bash
+kubectl create secret generic accounts-identityserver-certificate --from-file=certificate.pfx --dry-run=client -o yaml > certificate_sec.yaml 
+```
