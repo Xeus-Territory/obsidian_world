@@ -1,5 +1,5 @@
 ---
-title: Helpful community, articles, papers about AI, ML, Data Science
+title: "AI, ML, Data Science: Helpful pages, articles and papers"
 tags:
   - intelligence
   - machine-learning
@@ -10,6 +10,8 @@ tags:
 
 - [awesome-local-ai](https://github.com/janhq/awesome-local-ai) : An awesome repository of local AI tools
 - [awesome-deep-learning](https://github.com/ChristosChristofidis/awesome-deep-learning) : A curated list of awesome Deep Learning tutorials, projects and communities.
+- [LF AI & DATA Projects](https://lfaidata.foundation/projects/): Linux Foundation project about Open Source Innovation in Artificial Intelligence and Data
+- [Hugging Face](https://huggingface.co/) : The Opensource AI community 
 
 # Youtube Channel
 
@@ -33,7 +35,6 @@ tags:
 - [The latest in Machine Learning | Papers With Code](https://paperswithcode.com/)
 - [Machine Learning Blog | ML@CMU | Carnegie Mellon University](https://blog.ml.cmu.edu/)
 - [Analytics India Magazine | Artificial Intelligence, Data Science, Machine Learning](https://analyticsindiamag.com/)
-- [Hugging Face](https://huggingface.co/)
 # Research Topics
 
 - [Tesseract OCR in Python with Pytesseract & OpenCV](https://nanonets.com/blog/ocr-with-tesseract/)

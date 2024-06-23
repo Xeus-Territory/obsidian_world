@@ -21,7 +21,8 @@ Method 1: `rebase` with `-i` flag
 git rebase -i <hash-id-you-want-to-squash>
 ```
 
-Change the secondary commit from `pick` to `squash`, save and continue for set new message for commit
+>[!important]
+>Change the secondary commit from `pick` to `squash`, save and continue for set new message for commit
 
 ![[Pasted image 20240513095544.png]]
 

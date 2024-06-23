@@ -36,6 +36,8 @@ tags:
 - [Medium - Seifeddine Rajhi](https://medium.com/@seifeddinerajhi) : Super cool stuff about opensource and cloud platform
 - [Medium - The kube guy](https://thekubeguy.com/) : About Kubernetes with resolve multiple problems around and minimal efforts
 - [Medium - ByteCook](https://medium.com/@cstoppgmr) : Unique contents cover multi-range in technical fields
+- [Medium - HungWei Chiu](https://medium.com/@hwchiu) : Guy with super dope contents around system and kubernetes
+- [Ansible Galaxy](https://galaxy.ansible.com/ui/)
 
 # DevOps Articles
 

@@ -14,6 +14,7 @@ tags:
 # General
 
 - [NTU Edu - Environment Variables in Windows/macOS/Linux PATH, CLASSPATH, JAVA_HOME](https://www3.ntu.edu.sg/home/ehchua/programming/howto/Environment_Variables.html)
+- [Linux Hint](https://linuxhint.com/): Linux contents and command to resolve your problems
 # Linux Tips and Tricks
 
 - [Unix & Linux Stack Exchange - Format output of xargs](https://unix.stackexchange.com/questions/89130/format-output-of-xargs) 
@@ -37,6 +38,9 @@ tags:
 - [Medium - Essential Linux Terminal Hacks for efficiency — Part 2](https://medium.com/@sagarkpanda/essential-linux-terminal-hacks-for-efficiency-part-2-84c1036d8258)
 - [How to Run Linux Commands in Background](https://phoenixnap.com/kb/linux-run-command-background)
 - [Medium - How To Evaluate the Network Performance of a Linux System](https://medium.com/devops-dev/how-to-evaluate-the-network-performance-of-a-linux-system-69db89cae0ed)
+- [Linux commands for managing, partitioning, troubleshooting](https://www.networkworld.com/article/964235/linux-commands-for-managing-partitioning-troubleshooting.html)
+- [How To Mount and Unmount Drives on Linux](https://devconnected.com/how-to-mount-and-unmount-drives-on-linux/)
+- [How To Use chmod on Linux](https://chmodcalculator.org/)
 # Window
 
 - [Windows Server Security documentation](https://learn.microsoft.com/en-us/windows-server/security/security-and-assurance)
@@ -53,14 +57,15 @@ tags:
 
 # Command Manual and Tools
 
-- [SS64 Command line reference](https://ss64.com/)
-- [Linux - Man Page](https://linux.die.net/man/)
+- [SS64](https://ss64.com/): Command line reference
+- [Linux - Man Page](https://linux.die.net/man/): Manual page for Linux OS 
 - [Nano cheatsheet](https://www.nano-editor.org/dist/latest/cheatsheet.html) : Overview of nano's shortcuts
 - [Cheatsheet.wtf](https://www.cheatsheet.wtf/) : Bash Cheatsheet
-- [Chmod Calculator | Chmod Generator | Chmod Command](https://chmodcalculator.org/)
 - [Systemd](https://systemd.io/): System and Service Manager
-- [Bash-Oneliner](https://github.com/onceupon/Bash-Oneliner): A collection of handy Bash One-Liners and terminal tricks for data processing and Linux system maintenance.
+- [Bash-Oneliner](https://onceupon.github.io/Bash-Oneliner/): A collection of handy Bash One-Liners and terminal tricks for data processing and Linux system maintenance.
 - [tldr pages](https://tldr.inbrowser.app/) : Simplified and community-driven man pages
 - [Manned.org](https://manned.org/) : The archive for man pages
-- [Linux Hint](https://linuxhint.com/): Linux contents and command to resolve your problems
-- [Basics | Cheat sheets | Linux Command Library](https://linuxcommandlibrary.com/)
+- [Linux Command Library](https://linuxcommandlibrary.com/)
+- [Packages for Linux and Unix](https://pkgs.org/) : Find and retrieve the official package base on your os, linux or unix, fix your case when missing or dependencies package
+- [Vim cheatsheet](https://devhints.io/vim): Vim Cheat Sheet
+- [Tmux cheatsheet](https://tmuxcheatsheet.com/): Tmux Cheat Sheet & Quick Reference

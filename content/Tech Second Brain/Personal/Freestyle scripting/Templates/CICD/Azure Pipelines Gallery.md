@@ -14,6 +14,7 @@ tags:
 >- [Azure Pipelines task reference](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/?view=azure-pipelines&viewFallbackFrom=azure-devops)
 >- [Specify conditions](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/conditions?view=azure-devops&tabs=yaml%2Cstages) - **(NOTE : Vice versa `eq`, you can use `ne` but reference little bit on documentation)**
 >- [Expressions](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/expressions?view=azure-devops)
+>- [Create and target an environment](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/environments?view=azure-devops)
 # Deploy React application to  Azure SWA
 
 >[!summary]
@@ -320,6 +321,24 @@ stages:
                 displayName: Deploy Applications to Container App
 ```
 
+>[!note]
+>Policy on auto trigger, just work with `main` branch. So if you work with another branch, like `production`,`develop`, ... Thus we need, change `trigger` value to your specify branch. Issue: [StackOverFlow - Using CI triggers and PR build validation together: Prevent that build runs twice](https://stackoverflow.com/questions/61737516/using-ci-triggers-and-pr-build-validation-together-prevent-that-build-runs-twic)
+
+```yaml {5-8,10-13}
+# Just work with main, if you push the pr
+trigger: none
+
+# If you want to use both pr and trigger (For another branch)
+trigger:
+  branches:
+    include:
+      - develop
+
+pr:
+  branches:
+    include:
+      - develop
+```
 ## Optional
 
 To help PR event occur trigger CI automation, you need to configure  `Policy` for branch, for example
