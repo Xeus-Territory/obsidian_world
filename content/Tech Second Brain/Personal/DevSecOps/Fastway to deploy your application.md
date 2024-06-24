@@ -32,8 +32,9 @@ Like you know, I am DevOps engineer and Azure is main cloud I am working and hav
 		<img src="https://learn.microsoft.com/en-us/azure/container-apps/media/overview/azure-container-apps-example-scenarios.png">
 	    <strong><em><p style="text-align: center;">Azure Container Apps</p></em></strong>
 </div>
+
 >[!info]
->[Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/overview) is a serverless platform that allows you to maintain less infrastructure and save costs while running containerized applications
+>[Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/overview) is a `serverless` platform that allows you to maintain less infrastructure and save costs while running containerized applications
 
 Just gave you more about information in my article on progress learn `Az104` [[Container Apps|Azure Container App]]
 
@@ -101,6 +102,7 @@ I just not work to much with `AWS` but I can introduce some of them for your pur
 <div align="center">
 	<strong><em><p style="text-align: center;">AWS ECS</p></em></strong>
 </div>
+
 >[!info]
 >[Amazon Elastic Container Service (Amazon ECS)](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html) is a fully managed container orchestration service that helps you easily deploy, manage, and scale containerized applications
 
@@ -142,6 +144,7 @@ On the high layer, that client side with provide you multiple way to create and 
 <div align="center">
 	<strong><em><p style="text-align: center;">AWS Fargate</p></em></strong>
 </div>
+
 >[!info]
 >[AWS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html) is a technology that you can use with Amazon ECS to run [containers](https://aws.amazon.com/what-are-containers) without having to manage servers or clusters of Amazon EC2 instances. With AWS Fargate, you no longer have to provision, configure, or scale clusters of virtual machines to run containers. This removes the need to choose server types, decide when to scale your clusters, or optimize cluster packing.
 
@@ -225,7 +228,6 @@ Before reach to detail, some technologies with in-use for provisioning and creat
 
 - Terraform (IaC)
 - Azure DevOps Pipelines
-
 ## Completely Architecture
 
 ![[Pasted image 20240623154334.png]]
