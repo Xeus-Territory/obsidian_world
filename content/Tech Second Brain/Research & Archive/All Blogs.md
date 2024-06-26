@@ -126,6 +126,7 @@ tags:
 - [[Setup Environment for build android]]
 - [[Build mobile with fastlane (Part 1)]]
 - [[Build mobile with fastlane (Part 2)]]
+- [[Fastway to deploy your application]]
 # CI/CD Gallery
 
 >[!info]

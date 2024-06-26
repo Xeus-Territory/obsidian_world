@@ -13,7 +13,8 @@ tags:
 
 - [devhints.io](https://devhints.io/) : Rico's cheatsheets
 - [DevDocs](https://devdocs.io/): *DevDocs combines multiple API documentations in a fast, organized, and searchable interface.*
-
+- [Refactoring.Guru](https://refactoring.guru/) : Making it easy for you to discover everything you need to know about refactoring, design patterns, SOLID principles, and other smart programming topics.
+- [Webflow University](https://university.webflow.com/) : Learn how to design & build pro websites — visually.
 
 # Blog and articles
 
@@ -22,6 +23,8 @@ tags:
 - [Medium - Most Common Software Architecture Styles](https://medium.com/@techworldwithmilan/most-common-software-architecture-styles-86881d779683)
 - [Medium - Top 10 Microservice Anti-Patterns](https://blog.bitsrc.io/10-microservice-anti-patterns-278bcb7f385d)
 - [Medium - 10 Common Software Architectural Patterns in a nutshell](https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013)
+- [Medium - Why Rust Emerges as the Premier Choice for System Programming](https://medium.com/python-in-plain-english/why-rust-emerges-as-the-premier-choice-for-system-programming-d63cd7c920c8)
+- [Medium - Most Common 10 RabbitMQ Mistakes and How to Avoid Them](https://blog.devgenius.io/most-common-10-rabbitmq-mistakes-and-how-to-avoid-them-f4b74af5885d)
 # Developer online tools
 
 - [10015.io](https://10015.io/) : A “free all-in-one toolbox” solution created to ease your life by preventing bookmark mess.

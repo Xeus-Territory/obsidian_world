@@ -6,12 +6,13 @@ tags:
   - papers
   - research
 ---
-# Awesome Repository
+# Awesome Repositories
 
 - [awesome-local-ai](https://github.com/janhq/awesome-local-ai) : An awesome repository of local AI tools
 - [awesome-deep-learning](https://github.com/ChristosChristofidis/awesome-deep-learning) : A curated list of awesome Deep Learning tutorials, projects and communities.
 - [LF AI & DATA Projects](https://lfaidata.foundation/projects/): Linux Foundation project about Open Source Innovation in Artificial Intelligence and Data
-- [Hugging Face](https://huggingface.co/) : The Opensource AI community 
+- [Hugging Face](https://huggingface.co/) : The Opensource AI community
+- [awesome-datascience](https://github.com/academic/awesome-datascience): 📝 An awesome Data Science repository to learn and apply for real world problems. 
 
 # Youtube Channel
 
@@ -20,7 +21,7 @@ tags:
 - [NeuralNine](https://www.youtube.com/c/NeuralNine/featured) : Educational brand focusing on programming, machine learning and computer science
 - [sentdex](https://www.youtube.com/c/sentdex/featured) : Funny guy who teach you about build cool stuff with python like AI
 
-# Community and forums
+# Community and forum
 
 >[!info]
 >This is community where learn, share and do more experimental about AI, Machine learning, Deep Learning and Data Science
@@ -38,4 +39,4 @@ tags:
 # Research Topics
 
 - [Tesseract OCR in Python with Pytesseract & OpenCV](https://nanonets.com/blog/ocr-with-tesseract/)
-
+- [milvus - vector database](https://milvus.io/docs)
