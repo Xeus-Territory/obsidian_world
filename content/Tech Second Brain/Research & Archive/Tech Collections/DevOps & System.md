@@ -37,7 +37,9 @@ tags:
 - [Medium - The kube guy](https://thekubeguy.com/) : About Kubernetes with resolve multiple problems around and minimal efforts
 - [Medium - ByteCook](https://medium.com/@cstoppgmr) : Unique contents cover multi-range in technical fields
 - [Medium - HungWei Chiu](https://medium.com/@hwchiu) : Guy with super dope contents around system and kubernetes
-- [Ansible Galaxy](https://galaxy.ansible.com/ui/)
+- [Ansible Galaxy](https://galaxy.ansible.com/ui/) : Ansible template and external playbook
+- [Linux Foundation Project](https://www.linuxfoundation.org/projects) : Opensource Ambassador for projects from multiple users
+- [free-for-dev](https://github.com/ripienaar/free-for-dev) : A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev
 
 # DevOps Articles
 
@@ -57,7 +59,9 @@ tags:
 - [Dev.io - Automating mobile application deployments using Fastlane and CI/CD tools](https://dev.to/jei/automating-mobile-application-deployments-using-fastlane-and-ci-cd-tools-2iae)
 - [Data Engineering Best Practices: How Big Tech & FAANG Firms Manage and Optimize Apache Kafka](https://acceldataio.medium.com/data-engineering-best-practices-how-big-tech-faang-firms-manage-and-optimize-apache-kafka-95d520db60bb)
 - [The four levels of logs](https://fiberplane.com/blog/the-four-levels-of-log-collections)
-
+- [Medium - GitOps with Kubernetes, Terraform, Gitlab and FluxCD](https://medium.com/@prag-matic/gitops-with-kubernetes-terraform-gitlab-and-fluxcd-2875d1010dac)
+- [Medium - Master Command Orchestration](https://medium.com/itnext/master-command-orchestration-16f4a117ce05)
+- [Medium - Configure CI/CD pipeline: GitlabCI, ArgoCD, HelmCharts & SOPS](https://medium.com/@golaneduard1/configure-ci-cd-pipeline-gitlabci-argocd-helmcharts-sops-3cbf94f300ed)
 # DevOps Youtube Channel
 
 ![[youtube.png]]
@@ -73,7 +77,10 @@ tags:
 - [John Savill](https://www.youtube.com/@NTFAQGuy)
 - [DevOps Journey](https://www.youtube.com/@DevOpsJourney/videos)
 - [KodeKloud](https://www.youtube.com/@KodeKloud/videos)
-
+- [That DevOps Guy](https://www.youtube.com/@MarcelDempers/videos)
+- [DevOps Shack](https://www.youtube.com/@devopsshack/videos)
+- [DevOps Toolkit](https://www.youtube.com/@DevOpsToolkit/videos)
+- [Techno Tim](https://www.youtube.com/@TechnoTim/videos)
 # DevOps Community and Contents
 
 - [DevOps VN](https://devopsvn.tech/)
@@ -84,8 +91,11 @@ tags:
 - [Noted - Self Hosted App and Product Reviews](https://noted.lol/)
 - [Digital Ocean](https://www.digitalocean.com/community)
 
-
 # DevOps Tools
+
+## Cloud Infrastructure Designer
+
+- [Brainboard](https://www.brainboard.co/) : An AI driven platform to visually design, generate terraform code and manage cloud infrastructure, collaboratively.
 
 ## Infrastructure as Code
 
@@ -100,8 +110,20 @@ tags:
 ## Self-hosted
 
 - [LocalStack - AWS local](https://hub.docker.com/r/localstack/localstack) : A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline. Read more: [Documentation](https://docs.localstack.cloud/getting-started/). You can do more access and management via [LocalStack Web Application](https://app.localstack.cloud/sign-in)
+- [Atlantis - Terraform Pull Request Automation](https://www.runatlantis.io/): Running Terraform Workflows with Ease
 
 ## Secrets management
 
 - [dotenvx](https://dotenvx.com/) : Loads environment variables from .env for nodejs projects.
 - [dotenv](https://www.dotenv.org/docs/) : The secrets manager for .env files – from the same people that pioneered dotenv. 
+- [sops](https://getsops.io/) : Simple and flexible tool for managing secrets
+
+## Policy Controller Kubernetes
+
+- [OPA Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/)
+- [Kyverno](https://kyverno.io/)
+- [Datree](https://hub.datree.io/)
+
+## Threat Intelligence
+
+- [Falco](https://falco.org/): Detect security threats in real time

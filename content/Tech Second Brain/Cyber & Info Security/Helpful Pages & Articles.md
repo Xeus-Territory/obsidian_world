@@ -64,6 +64,8 @@ tags:
 - [awesome-ctf](https://github.com/apsdehal/awesome-ctf) : A curated list of CTF frameworks, libraries, resources and softwares
 - [Awesome-Cybersecurity-Handbooks](https://github.com/0xsyr0/Awesome-Cybersecurity-Handbooks) : A huge chunk of my personal notes since I started playing CTFs and working as a Red Teamer.
 - [awesome-privilege-escalation](https://github.com/m0nad/awesome-privilege-escalation) : A curated list of awesome privilege escalation
+- [NetExec](https://github.com/Pennyw0rth/NetExec) : The Network Execution Tool
+- [CheatSheetSeries](https://github.com/OWASP/CheatSheetSeries) : The OWASP Cheat Sheet Series was created to provide a concise collection of high value information on specific application security topics.
 ## Browser Search
 
 - [GoogleDorking.md](https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06)
@@ -118,6 +120,11 @@ tags:
 
 - [PEASS-ng](https://github.com/peass-ng/PEASS-ng) : PEASS - Privilege Escalation Awesome Scripts SUITE
 - [GTFOBLookup](https://github.com/nccgroup/GTFOBLookup) : GTFO Lookup
+- [chisel](https://github.com/jpillora/chisel) : A fast TCP/UDP tunnel over HTTP
+- [nishang](https://github.com/samratashok/nishang) : Nishang - Offensive PowerShell for red team, penetration testing and offensive security.
+- [Online - Reverse Shell Generator](https://www.revshells.com/)
+
+### Topics
 
 ## Cryptography
 
@@ -154,7 +161,6 @@ tags:
 ## Web (Recon, Exploit)
 
 - [SecLists](https://github.com/danielmiessler/SecLists) : Wordlist for attacking
-- [Online - Reverse Shell Generator](https://www.revshells.com/)
 - [Snyk](https://docs.snyk.io/)
 - [crt.sh | Certificate Search](https://crt.sh/)
 - [JSON Web Tokens - jwt.io](https://jwt.io/)
