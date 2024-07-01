@@ -41,6 +41,8 @@ tags:
 - [Linux commands for managing, partitioning, troubleshooting](https://www.networkworld.com/article/964235/linux-commands-for-managing-partitioning-troubleshooting.html)
 - [How To Mount and Unmount Drives on Linux](https://devconnected.com/how-to-mount-and-unmount-drives-on-linux/)
 - [How To Use chmod on Linux](https://chmodcalculator.org/)
+- [Practical Shell Patterns I Actually Use](https://zwischenzugs.com/2022/01/04/practical-shell-patterns-i-actually-use/)
+- [grep Flags – The Good Stuff](https://zwischenzugs.com/2022/02/02/grep-flags-the-good-stuff/)
 # Window
 
 - [Windows Server Security documentation](https://learn.microsoft.com/en-us/windows-server/security/security-and-assurance)
@@ -69,3 +71,4 @@ tags:
 - [Packages for Linux and Unix](https://pkgs.org/) : Find and retrieve the official package base on your os, linux or unix, fix your case when missing or dependencies package
 - [Vim cheatsheet](https://devhints.io/vim): Vim Cheat Sheet
 - [Tmux cheatsheet](https://tmuxcheatsheet.com/): Tmux Cheat Sheet & Quick Reference
+- [Bash Senpai](https://bashsenpai.com/resources/cheatsheets) : Prompt to get command for suitable situations

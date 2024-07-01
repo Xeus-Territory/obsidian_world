@@ -285,7 +285,8 @@ ZSH_THEME="amuse"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git kubectl zsh-autosuggestions zsh-syntax-highlighting docker \
-        docker-compose podman zsh-autocomplete azure terraform aws dotnet)
+	docker-compose podman zsh-autocomplete terraform aws azure dotnet \
+	doctl fluxcd golang kind)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -330,6 +331,8 @@ export KUBE_EDITOR="nano" # Kube edit will use nano for default editor
 alias kn="kubectl config set-context --current --namespace"
 alias kaf="kubectl apply -f "
 alias kr="kubectl run --dry-run=client -o yaml "
+alias krcp="k resource-capacity -p --util"
+alias krca="k resource-capacity -a"
 
 # krew and kubectl pluggins
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
@@ -354,4 +357,7 @@ export PATH="$PATH:$HOME/.cargo/bin"
 export CPLUS_INCLUDE_PATH="$HOME/.local/include:$CPLUS_INCLUDE_PATH"
 export LD_LIBRARY_PATH="/usr/local/lib:/usr/local/lib64:$LD_LIBRARY_PATH"
 export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:/usr/local/lib64/pkgconfig:$HOME/.local/lib/pkgconfig:$PKG_CONFIG_PATH"
+
+# Alias command to get Public IP
+alias pubip="curl -4 icanhazip.com"
 ```
