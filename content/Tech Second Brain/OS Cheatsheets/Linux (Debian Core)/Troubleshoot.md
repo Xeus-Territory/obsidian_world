@@ -54,3 +54,28 @@ wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubun
 # Install the lib debian file which you download
 sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2_amd64.deb
 ```
+
+# Problem with `ssh`
+
+When you see the situation about your key for authentication a destination host have changing because your action or hacker, from your side you can resolve when exection `ssh` by flushing the old key like
+
+```bash
+ssh-keygen -f "/home/user/.ssh/known_hosts" -R "[127.0.0.1]:6996"
+```
+
+>[!done]
+>It will help you update your known_hosts, and give you permission to authentication remote host with new cred
+
+If you meet situation about, `cannot auth ssh via password`. It means, usually your host will protect your `VM` with no enable `PasswordAuthentication` in `/etc/ssh/sshd_conf`. If you want to enable, you need to perform
+
+```bash
+# Change content sshd_config
+sudo sed -i 's/#PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
+
+# Restart ssh vervice
+sudo systemctl restart sshd
+
+# OR
+sudo /etc/init.d/ssh force-reload
+sudo /etc/init.d/ssh restart
+```

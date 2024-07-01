@@ -99,6 +99,7 @@ tags:
 - [[Reconfiguration for curl template output]]
 - [[Redirect Output and Error]]
 - [[Update the alternative version]]
+- [[What is Wrapper Pattern|What is Wrapper Pattern ?]]
 
 # DIY
 

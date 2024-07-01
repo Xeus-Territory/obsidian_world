@@ -69,3 +69,4 @@ tags:
 - [Packages for Linux and Unix](https://pkgs.org/) : Find and retrieve the official package base on your os, linux or unix, fix your case when missing or dependencies package
 - [Vim cheatsheet](https://devhints.io/vim): Vim Cheat Sheet
 - [Tmux cheatsheet](https://tmuxcheatsheet.com/): Tmux Cheat Sheet & Quick Reference
+- [Bash Senpai](https://bashsenpai.com/resources/cheatsheets) : Prompt to get command for suitable situations
