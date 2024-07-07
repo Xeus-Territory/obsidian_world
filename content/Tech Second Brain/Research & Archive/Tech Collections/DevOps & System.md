@@ -40,7 +40,9 @@ tags:
 - [Ansible Galaxy](https://galaxy.ansible.com/ui/) : Ansible template and external playbook
 - [Linux Foundation Project](https://www.linuxfoundation.org/projects) : Opensource Ambassador for projects from multiple users
 - [free-for-dev](https://github.com/ripienaar/free-for-dev) : A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev
-
+- [Awesome webserver in one line](https://gist.github.com/willurd/5720255) : Each of these commands will run an ad hoc http static server in your current (or specified) directory
+- [Collection about kind of YAML](https://yaml.org/) : Collection about yaml in wide technologies
+- [Collection about tag CNI](https://github.com/topics/cni) : Container Network Interface - networking for Linux containers
 # DevOps Articles
 
 - [Prometheus Architecture: Complete Breakdown of Key Components](https://devopscube.com/prometheus-architecture/)
@@ -62,6 +64,11 @@ tags:
 - [Medium - GitOps with Kubernetes, Terraform, Gitlab and FluxCD](https://medium.com/@prag-matic/gitops-with-kubernetes-terraform-gitlab-and-fluxcd-2875d1010dac)
 - [Medium - Master Command Orchestration](https://medium.com/itnext/master-command-orchestration-16f4a117ce05)
 - [Medium - Configure CI/CD pipeline: GitlabCI, ArgoCD, HelmCharts & SOPS](https://medium.com/@golaneduard1/configure-ci-cd-pipeline-gitlabci-argocd-helmcharts-sops-3cbf94f300ed)
+- [Medium - Infrastructure as Code Landscape Overview 2024](https://medium.com/itnext/infrastructure-as-code-landscape-overview-2024-a066124e5989)
+- [Medium - Procella — The query engine at YouTube](https://medium.com/@vutrinh274/procella-the-query-engine-at-youtube-e83b0c322e5e)
+- [Medium - Six Rules of Thumb for Scaling Software Architectures](https://medium.com/@i.gorton/six-rules-of-thumb-for-scaling-software-architectures-a831960414f9)
+- [Container Network Interface (CNI) Providers](https://ranchermanager.docs.rancher.com/faq/container-network-interface-providers)
+- [Medium - MQTT Market Trends for 2024: Cloud, Unified Namespace, Sparkplug, Kafka Integration](https://medium.com/@kai-waehner/mqtt-market-trends-for-2024-cloud-unified-namespace-sparkplug-kafka-integration-1428d0c3c773)
 # DevOps Youtube Channel
 
 ![[youtube.png]]
@@ -81,6 +88,7 @@ tags:
 - [DevOps Shack](https://www.youtube.com/@devopsshack/videos)
 - [DevOps Toolkit](https://www.youtube.com/@DevOpsToolkit/videos)
 - [Techno Tim](https://www.youtube.com/@TechnoTim/videos)
+- [Travis Media](https://www.youtube.com/@TravisMedia/videos)
 # DevOps Community and Contents
 
 - [DevOps VN](https://devopsvn.tech/)
@@ -89,15 +97,27 @@ tags:
 - [DevOps Việt Nam - DevOpsify](https://devopsify.co/)
 - [The Cloud Native Wiki | Aqua](https://www.aquasec.com/cloud-native-academy/)
 - [Noted - Self Hosted App and Product Reviews](https://noted.lol/)
-- [Digital Ocean](https://www.digitalocean.com/community)
+- [Digital Ocean Community](https://www.digitalocean.com/community)
 
 # DevOps Tools
 
+## Local K8s Self-hosted
+
+- [Kind](https://kind.sigs.k8s.io/) : [kind](https://sigs.k8s.io/kind) is a tool for running local Kubernetes clusters using Docker container “nodes”.
+- [MicroK8s](https://microk8s.io/docs): MicroK8s is a low-ops, minimal production Kubernetes.
+- [K3s](https://docs.k3s.io/): Lightweight Kubernetes. Easy to install, half the memory, all in a binary of less than 100 MB.
+- [Kubernetes Official solution](https://kubernetes.io/docs/setup/production-environment/tools/) : Installing Kubernetes with deployment tools
+- [minikube](https://minikube.sigs.k8s.io/docs/) : minikube quickly sets up a local Kubernetes cluster on macOS, Linux, and Windows
 ## Cloud Infrastructure Designer
 
 - [Brainboard](https://www.brainboard.co/) : An AI driven platform to visually design, generate terraform code and manage cloud infrastructure, collaboratively.
 
-## Infrastructure as Code
+## Infrastructure as Code (Machine + Configuration)
+
+- [Vagrant](https://developer.hashicorp.com/vagrant/docs) : Vagrant is the command line utility for managing the lifecycle of virtual machines.
+- [Ansible](https://docs.ansible.com/ansible/latest/index.html) : Ansible provides open-source automation that reduces complexity and runs everywhere, especially `VM`
+
+## Infrastructure as Code (Cloud)
 
 - [Pulumi Documentations](https://www.pulumi.com/docs/) : An open source infrastructure as code tool for creating, deploying, and managing cloud infrastructure.
 - [Pulumi Registry](https://www.pulumi.com/registry/): Package, SDK of Pulumi (Example: AWS, Azure, GCP)
@@ -127,3 +147,24 @@ tags:
 ## Threat Intelligence
 
 - [Falco](https://falco.org/): Detect security threats in real time
+
+## API Gateway
+
+- [traefik hub](https://doc.traefik.io/traefik-hub/) : Traefik Hub is the industry’s first Kubernetes-native API Management solution for publishing, securing, and managing APIs.
+- [Kong](https://docs.konghq.com/gateway/latest/): API gateway built for hybrid and multi-cloud, optimized for microservices and distributed architectures
+- [Emissary-Ingress](https://www.getambassador.io/products/api-gateway): An Envoy-powered Open Source API Gateway
+
+## Web server
+
+- [traefik proxy](https://doc.traefik.io/traefik/) : Traefik is an [open-source](https://github.com/traefik/traefik) _Edge Router_ that makes publishing your services a fun and easy experience
+- [Caddy server](https://caddyserver.com/docs/): Caddy is a powerful, extensible platform to serve your sites, services, and apps, written in Go
+- [HAProxy](https://docs.haproxy.org/) : HAProxy is a free, very fast and reliable reverse-proxy offering [high availability](http://en.wikipedia.org/wiki/High_availability), [load balancing](http://en.wikipedia.org/wiki/Load_balancer), and proxying for TCP and HTTP-based applications
+- [httpd - Apache2](https://httpd.apache.org/) : The Apache HTTP Server Project is an effort to develop and maintain an open-source HTTP server for modern operating systems including UNIX and Windows.
+- [IIS](https://learn.microsoft.com/en-us/iis/): Window webserver
+- [Nginx](https://nginx.org/en/docs/): nginx is an HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server. (Most powerful)
+
+## CNI
+
+- [CNI](https://github.com/containernetworking/cni) : Container Network Interface - networking for Linux containers. [Website](https://www.cni.dev/docs/)
+- [Cilium](https://cilium.io/) : Cilium is an open source, cloud native solution for providing, securing, and observing network connectivity between workloads, fueled by the revolutionary Kernel technology eBPF
+- [Calico](https://www.tigera.io/project-calico/): Calico is a networking and security solution that enables Kubernetes workloads and non-Kubernetes/legacy workloads to communicate seamlessly and securely.

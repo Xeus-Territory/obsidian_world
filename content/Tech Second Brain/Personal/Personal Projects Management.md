@@ -1,5 +1,5 @@
 ---
-title: "Project with DIY purpose: Pending or Ideally"
+title: Personal DIY Projects Management
 tags:
   - devops
   - research
@@ -17,21 +17,29 @@ tags:
 >[!quote]
 >*Most of those topics which i consider for contributing and find out the best way to apply this functionality, if you find the same mindset or want to collaboration, feel free meet me. Always wait with some reason* 😄😄😄
 
+>[!note]
+>The icon to telling you about what task is on progress or pending 😄
+>
+>- ✍ : On progressing, usually attach with `github` and blog, find in [[All Blogs|all blogs page]]
+>- 🚧 : Pending, just stop like a note, and idea to doing something around that. Waiting for new information LOL
 # Kubewekend
-## Setup Self Kubernetes Cluster locally or cloud
+## Setup Self Kubernetes Cluster in locally ✍
+
+Github: [kubewekend](https://github.com/Xeus-Territory/kubewekend)
 
 >[!summary]
 >Use the instant technologies for setting up Kubernetes cluster, with
->- Vargrant - Template the kubernetes cluster with HyperV, VMware, VMbox
->- Ansible - To setup and run script and bring up kubernetes cluster on locally
->- Use Kubeadm to expand, manage kubernetes nodes
->- Use Cilium or Calico to setup ebpf for observe, networkng or Apply service mesh in cluster
->- Use extend CSI for volume in kubernetes
->- Setup etcd in kubernetes
->- Cusmtomize default scheduled in kubernetes cluster
->- Setup the monitoring cluster inside the cluster
+>- Use `Vargrant` to configuration the VM with provider in `VirtualBox`
+>- Ansible - To setup and run script and bring up kubernetes cluster on locally, Use `kind`
+>- Use `kind` and `kubeadm` to expand, manage kubernetes nodes
+>- Setup `etcd` in kubernetes
+>- Use `cilium` to setup `ebpf` for observe, networking, service mesh in kubernetes
+>- Use extend CSI for volume in kubernetes and define kubernetes storage class with `Ceph`
+>- Cusmtomize default scheduled in kubernetes cluster with `kube-scheduler`
+>- Setup the monitoring cluster inside the kubernetes with `node-exporter`, `cadvisor`, `prometheus` and `grafana`
+>- Setup tracing, logging, profiling with `sidecar` or use `cilium-ebpf`
 
-## Customize script for manipulation scheduled Kubernetes
+## Customize script for manipulation scheduled Kubernetes 🚧
 
 >[!summary]
 >Create a customize script for optimize and manipulation scheduled instead of default for Kubernetes, with feature like
@@ -41,27 +49,29 @@ tags:
 
 # Hackwekend
 
-## HTTP Tunneling for secure connection
+## HTTP Tunneling for secure connection 🚧
 
 >[!summary]
 >Tunneling the request to internet to HTTP and return response to currently browser like VPN but alternative
 
 Reference technics : `ZTM (Zero Trust Mesh)` , `wstunnel`
 
-## Lateral Movement Attack
+## Lateral Movement Attack 🚧
 
 >[!summary]
 >Find the way to perform LM, how affect of them, provisioning lab and find the way to patching it.
 
 # wouops
-## Sidecar for remote profiling applications
+## Sidecar for remote profiling applications 🚧
 
 >[!summary]
 >Make a container can distribute and mental monitoring, profiling application with remotely by Sidecar pattern
 
 ![[Pasted image 20240502101316.png]]
 
-## Pre-hook framework
+## Pre-hook framework ✍
+
+Github: **[distribute-git-hook](https://github.com/wouops/distribute-git-hook)**
 
 >[!summary]
 >Create a framework on light weight and isolation components for check commit and push event in currently source code to repositories, with features like
@@ -74,7 +84,8 @@ Reference technics : `ZTM (Zero Trust Mesh)` , `wstunnel`
 >[!info]
 >About the methodology which can apply for release or deploy the application which no down time, rapidly and more efficience work with script, DevOps circle
 
-## Blue Green Deployment (Explain more)
+## Blue Green Deployment 🚧
 
-Reference link : [[0-downtime with Blue-Green Deployment]]
-## Canary Deployment
+>[!note]
+>Feel free to read about small article about operating 👉 [[0-downtime with Blue-Green Deployment]]
+## Canary Deployment 🚧
