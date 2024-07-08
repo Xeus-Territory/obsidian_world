@@ -20,6 +20,14 @@ tags:
 - [Hackwekend Session 5 - Cloud Security (AWS IAM Policy)](https://hackmd.io/@XeusNguyen/HkjGUFw-C) - *Session is about AWS IAM, How to authentication or bypass methodology to read and list contents inside the S3 bucket, learn more about `sns`, `sqs`, `cognito` services of AWS Cloud (Big IAM prod by Wiz.io)*
 - [Hackwekend Session 6 - Cloud Security (Network and Red Team)](https://hackmd.io/@XeusNguyen/ByLqkK1zC) *- Session is about more than cloud security, but more approach to networking and red team methodology to recon, attack the target with unique way like `lateral movement`, `nfs`, `tcpdump`, `dnscan` and `istio`, `kyverno` on `kubernetes` ( K8slan prod by Wiz.io)*
 
+# Kubewekend
+
+>[!info]
+>Brand new series about `kubernetes`, and it will release at least one time a week on the weekend. On this session, I will share about `kubernetes`, `networking`, `devsecops` and moreover, It will give you idea, and practice environment to understand many new technologies. Try best and have fun with me 🙌🙌🙌
+
+- [[Kubewekend Session 1|Kubewekend Session 1: Build up your host with Vagrant]] - *This lab is take the topic around play and practice with `vagrant` - the software can help you provide the virtual machine in your host. First step way to setup `kubernetes` cluster inside your machine, and play with on next session*
+- [[Kubewekend Session 2|Kubewekend Session 2: Setup Kind cluster with Ansible]] - *This lab is practice with `ansible` the configuration for setup `kind` cluster inside machine on the previous session*
+- [[Kubewekend Session 3|Kubewekend Session 3: Basically about Kubernetes architecture]] - *This session talk about basically architecture and learn more fundamental components inside `kubernetes`, and what the structure of them inside clusters.*
 # For 1st time
 
 >[!info]

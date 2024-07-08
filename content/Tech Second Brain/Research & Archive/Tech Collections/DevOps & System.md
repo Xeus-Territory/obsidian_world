@@ -69,6 +69,7 @@ tags:
 - [Medium - Six Rules of Thumb for Scaling Software Architectures](https://medium.com/@i.gorton/six-rules-of-thumb-for-scaling-software-architectures-a831960414f9)
 - [Container Network Interface (CNI) Providers](https://ranchermanager.docs.rancher.com/faq/container-network-interface-providers)
 - [Medium - MQTT Market Trends for 2024: Cloud, Unified Namespace, Sparkplug, Kafka Integration](https://medium.com/@kai-waehner/mqtt-market-trends-for-2024-cloud-unified-namespace-sparkplug-kafka-integration-1428d0c3c773)
+- [Medium - Most-Used Distributed System Design Patterns](https://medium.com/javarevisited/most-used-distributed-system-patterns-d5d90ffedf33)
 # DevOps Youtube Channel
 
 ![[youtube.png]]
@@ -101,6 +102,19 @@ tags:
 
 # DevOps Tools
 
+## Awesome items for Kubernetes
+
+- [Ingress-Nginx Controller](https://kubernetes.github.io/ingress-nginx/) : Documentation about Nginx ingress which use for delivery IN/OUT traffic for Kubernetes Cluster
+- [OperatorHub](https://operatorhub.io/):  Home for the Kubernetes community to share Operators
+- [Artifacthub](https://artifacthub.io/) : Find, install and publish Cloud Native packages for Kubernetes
+- [Instance calculator](https://learnk8s.io/kubernetes-instance-calculator) : Estimate and find the number of max workload can apply for instance
+- [botkube](https://github.com/kubeshop/botkube): An app that helps you monitor your Kubernetes cluster, debug critical deployments & gives recommendations for standard practices
+- [Debugging Helm Templates](https://helm.sh/docs/chart_template_guide/debugging/) : Way to debugging the `helm` template with command
+- [Kubernetes IDE - K8Studio](https://k8studio.io/) : Visualizer component and workload inside kubernetes in UI, easily to deploy and manage kubernetes cluster
+- [Elasticsearch (ECK) Operator](https://operatorhub.io/operator/elastic-cloud-eck), you can figure out configuration via [Customize Pods](https://www.elastic.co/guide/en/cloud-on-k8s/master/k8s-customize-pods.html#)
+- [MongoDB Community Kubernetes Operator](https://github.com/mongodb/mongodb-kubernetes-operator), you can take the look some `crd`, and configuration with `github` link like [CRD](https://github.com/mongodb/mongodb-kubernetes-operator/blob/master/config/crd/bases/mongodbcommunity.mongodb.com_mongodbcommunity.yaml) and [Samples](https://github.com/mongodb/mongodb-kubernetes-operator/tree/master/config/samples)
+- [RabbitMQ-cluster-operator](https://operatorhub.io/operator/rabbitmq-cluster-operator), read more about that via [source code](https://github.com/rabbitmq/cluster-operator)
+
 ## Local K8s Self-hosted
 
 - [Kind](https://kind.sigs.k8s.io/) : [kind](https://sigs.k8s.io/kind) is a tool for running local Kubernetes clusters using Docker container “nodes”.
@@ -123,9 +137,10 @@ tags:
 - [Pulumi Registry](https://www.pulumi.com/registry/): Package, SDK of Pulumi (Example: AWS, Azure, GCP)
 - [Terraform Documentation](https://developer.hashicorp.com/terraform/docs): An infrastructure as code tool that lets you build, change, and version infrastructure safely and efficiently
 - [Terraform Registry](https://registry.terraform.io/): Terraform providers that power all of Terraform’s resource types, or find modules for quickly deploying common infrastructure configurations.
-## Generated Configuration
+## Generated + Validate Configuration
 
 - [moz://a SSL Configuration Generator](https://ssl-config.mozilla.org/) : SSL Generation for multiple webserver
+- [YAML Multiline Strings](https://yaml-multiline.info/) : Find the right syntax for YAML file
 
 ## Self-hosted
 

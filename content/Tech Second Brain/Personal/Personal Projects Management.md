@@ -31,13 +31,14 @@ Github: [kubewekend](https://github.com/Xeus-Territory/kubewekend)
 >Use the instant technologies for setting up Kubernetes cluster, with
 >- Use `Vargrant` to configuration the VM with provider in `VirtualBox`
 >- Ansible - To setup and run script and bring up kubernetes cluster on locally, Use `kind`
->- Use `kind` and `kubeadm` to expand, manage kubernetes nodes
->- Setup `etcd` in kubernetes
->- Use `cilium` to setup `ebpf` for observe, networking, service mesh in kubernetes
->- Use extend CSI for volume in kubernetes and define kubernetes storage class with `Ceph`
->- Cusmtomize default scheduled in kubernetes cluster with `kube-scheduler`
->- Setup the monitoring cluster inside the kubernetes with `node-exporter`, `cadvisor`, `prometheus` and `grafana`
+>- Exploring, understanding and provisioning require components inside the `kind` cluster
+>- `cilium` and `ebpf` - The powerful kernal service of `kubewekend` cluster
+>- Use extend `CSI` for volume in `kubernetes` and define `kubernetes` storage class with `Ceph`
+>- Setup new `app`, use `cilium` to route traffic into cluster via gateway
+>- Setup the monitoring cluster inside the `kubernetes` with `node-exporter`, `cadvisor`, `prometheus` and `grafana`
 >- Setup tracing, logging, profiling with `sidecar` or use `cilium-ebpf`
+>- Use `kind` and `kubeadm` to expand, manage kubernetes nodes to create HA (High Available) Node
+>- Cusmtomize default scheduled in kubernetes cluster with `kube-scheduler`
 
 ## Customize script for manipulation scheduled Kubernetes 🚧
 
@@ -79,7 +80,7 @@ Github: **[distribute-git-hook](https://github.com/wouops/distribute-git-hook)**
 >- Handling prehook for pentesting surface application on whitebox like secret leak, CVE, misconfiguration
 >- Offer the announcement location, can be grafana or report with dashboard about your commit
 
-# DeDepl 
+# fast_deployment
 
 >[!info]
 >About the methodology which can apply for release or deploy the application which no down time, rapidly and more efficience work with script, DevOps circle

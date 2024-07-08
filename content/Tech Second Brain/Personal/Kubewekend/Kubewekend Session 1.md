@@ -10,6 +10,11 @@ tags:
 >[!quote]
 >Hi @all, How are you going, great huh 👐. Graceful and especially to announcing about `kubewekend` - new series of mine, which one to give me and you opportunities to learn about new technologies, the way to bring you near `kubernetes` and more a lot of things pick a up around `devops`, `networking`, `devsecops`,`pipelines` and moreover. And today, the first session, let dive deeper into way for setup the VM on your host, I mean how can we automate provisioning to create your machine with `vagrant`, that is factor to doing a lot of stuff when you want to operate something in your host, especially `kubernetes`. Not wait to long, let's digest 😄
 
+List of topics in series
+
+- **[[Kubewekend Session 1]]**
+- [[Kubewekend Session 2]]
+- [[Kubewekend Session 3]]
 # What is vagrant ? Why I use it ?
 
 Like usual, before start a lab, we will figure out what things we do interact, and how we can handle and understand about useful that tools can bring up for us. And `vagrant` is special target, much powerful and easily to hang out when you want to work in `vm` with `virtualbox`, `hyper-v` and `vmware`

@@ -18,8 +18,11 @@ tags:
 - [Compose-Examples](https://github.com/Haxxnet/Compose-Examples) : Various Docker Compose examples of selfhosted FOSS and proprietary projects.
 - [boilerplates](https://github.com/ChristianLempa/boilerplates) : Cool Repo from [Christian - Youtuber](https://www.youtube.com/@christianlempa/videos) 
 - [Bitnami containers](https://github.com/bitnami/containers) : Bitnami container images
-- [k8s-deployment-strategies](https://github.com/ContainerSolutions/k8s-deployment-strategies) : Kubernetes deployment strategies explained 
-# Hardware, CPU and Memory Usage. Trouble shoot error
+- [k8s-deployment-strategies](https://github.com/ContainerSolutions/k8s-deployment-strategies) : Kubernetes deployment strategies explained
+- [Kubernetes Cluster API](https://cluster-api.sigs.k8s.io/) : Cluster API is a Kubernetes sub-project focused on providing declarative APIs and tooling to simplify provisioning, upgrading, and operating multiple Kubernetes clusters.
+- [Kubernetes community](https://github.com/kubernetes/community) : Kubernetes community content
+- [awesome-k8s-resources](https://github.com/tomhuang12/awesome-k8s-resources) : A curated list of awesome Kubernetes tools and resources.
+# Troubleshoot
 
 - [StackOverFlow - Why AKS nodes shows less amount of memory as allocatable where its actual memory is still available](https://stackoverflow.com/questions/68521392/why-aks-nodes-shows-less-amount-of-memory-as-allocatable-where-its-actual-memory)
 - [Azure - Core Kubernetes concepts for Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/aks/concepts-clusters-workloads)
@@ -65,21 +68,14 @@ tags:
 - [Medium - Do Kubernetes Pods Really Get Evicted Due to CPU Pressure?](https://medium.com/overcast-blog/do-pods-really-get-evicted-due-to-cpu-pressure-2b27274a670c)
 - [Top 10 must-know Kubernetes design patterns](https://developers.redhat.com/blog/2020/05/11/top-10-must-know-kubernetes-design-patterns#)
 - [8 Kubernetes Deployment Strategies: Roll Out Like the Pros](https://spot.io/resources/kubernetes-autoscaling/5-kubernetes-deployment-strategies-roll-out-like-the-pros/)
+- [etcd in Kubernetes](https://www.armosec.io/glossary/etcd-kubernetes/)
+- [Understanding Helm upgrade flags](https://shipmight.com/blog/understanding-helm-upgrade-reset-reuse-values)
+- [Medium - 10 Essential Kubernetes Tools You Didn’t Know You Needed](https://medium.com/itnext/10-essential-kubernetes-tools-you-didnt-know-you-needed-06954251d845)
 # Certificate & Practice
 
 - [kube4sure - The Kubernetes Exam Simulator](https://www.kube4sure.com/)
 - [killer.sh - Linux Foundation Exam Simulators](https://killer.sh/)
 - [learnk8s - Kubernetes training for engineer](https://learnk8s.io/)
-
-# Awesome items for Kubernetes
-
-- [Ingress-Nginx Controller](https://kubernetes.github.io/ingress-nginx/) : Documentation about Nginx ingress which use for delivery IN/OUT traffic for Kubernetes Cluster
-- [OperatorHub](https://operatorhub.io/):  Home for the Kubernetes community to share Operators
-- [Artifacthub](https://artifacthub.io/) : Find, install and publish Cloud Native packages for Kubernetes
-- [YAML Multiline Strings](https://yaml-multiline.info/) : Find the right syntax for YAML file
-- [Instance calculator](https://learnk8s.io/kubernetes-instance-calculator) : Estimate and find the number of max workload can apply for instance
-- [botkube](https://github.com/kubeshop/botkube): An app that helps you monitor your Kubernetes cluster, debug critical deployments & gives recommendations for standard practices
-- [Understanding Helm upgrade flags](https://shipmight.com/blog/understanding-helm-upgrade-reset-reuse-values) : Understand priority for run `helm upgrade` with value predefine or overwrite it
-- [Debugging Helm Templates](https://helm.sh/docs/chart_template_guide/debugging/) : Way to debugging the `helm` template with command
-- [Kubernetes IDE - K8Studio](https://k8studio.io/) : Visualizer component and workload inside kubernetes in UI, easily to deploy and manage kubernetes cluster
+- [certified-kubernetes-administrator-course](https://github.com/kodekloudhub/certified-kubernetes-administrator-course) : Kodecloud Certified Kubernetes Administrator - CKA Course
+- [certified-kubernetes-security-specialist-cks-course](https://github.com/kodekloudhub/certified-kubernetes-security-specialist-cks-course) : Kodecloud Notes from the Certified Kubernetes Security Specialist Course on KodeKloud
 
