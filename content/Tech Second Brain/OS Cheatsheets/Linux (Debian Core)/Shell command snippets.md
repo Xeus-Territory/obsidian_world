@@ -201,3 +201,9 @@ If you have problems when `vagrant` can't authentication for `ssh`. You will nee
 config.ssh.forward_agent = true
 ```
 
+## Swap mode in Ubuntu
+
+You can swap mode in Ubuntu from desktop mode to server mode, by use key combining
+
+- Ctrl + Alt + F1 : To use desktop mode
+- Ctrl + Alt + F3: To use shell or server mode
