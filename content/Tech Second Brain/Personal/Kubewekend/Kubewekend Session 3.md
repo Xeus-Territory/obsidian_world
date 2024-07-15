@@ -194,7 +194,7 @@ A Kubernetes cluster consists of a set of worker machines, called [nodes](https
 
 The worker node(s) host the [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) that are the components of the application workload. The [control plane](https://kubernetes.io/docs/reference/glossary/?all=true#term-control-plane) manages the worker nodes and the Pods in the cluster
 
-Simple you can understand, there is two type of part inside cluster as reference in [[Kubewekend Session 2#Definition configuration for `kind`|Kubewekend Session 2 -> Definition configuration for `kind`]]
+Simple you can understand, there is two type of part inside cluster as reference in [[Kubewekend Session 2]]
 
 - Master Node (Control plane)
 - Worker Node
@@ -517,7 +517,9 @@ With `kind`, we actually use `docker` runtime because to operating `kubernetes` 
 
 ### Another components
 
-So with `kind` configuration of mine, we don't setup any container network interface, so on next session we will talk around this one, spoil to you `cilium` will target of us
+![[Pasted image 20240715092952.png]]
+
+So with `kind` configuration of mine, we don't setup any container network interface, so on next session we will talk around this one, spoil to you about `cilium` will be the target `cni` of mine on this series
 
 Not only `cni`, `kind` cluster actually provide us about kube-dns is `coredns`, that is `dns` service which offer from `kubernetes`, mostly use for `dns` and `service discovery` purpose
 
@@ -526,6 +528,8 @@ kubectl describe deployments coredns
 ```
 
 As you can see, `coredns` will use configuration from `configmap` to operate and start with image `registry.k8s.io/coredns/coredns:v1.10.1`, that will help your service understand, give dns inside cluster to give route for service can commnuncate with each others
+
+![[Pasted image 20240715093118.png]]
 
 The config is quite new for me, but that kind of clearly to understanding what that want to definition
 
@@ -574,6 +578,11 @@ The config is quite new for me, but that kind of clearly to understanding what t
     }
 ```
 
+So with that configuration, you can image about the operation of `coredns` like
+
+![[Pasted image 20240715093334.png]]
+
+But as soon as, we will refer to `cilium` that can help you have more tool to apply `dns` inside `kubernetes` cluster
 ## How are actually Kubernetes workflow
 
 
@@ -590,6 +599,11 @@ The general workflow:
 - The Scheduler watches pod creation events and detects an unbound Pod. It schedules and updates the Pod's Node binding.
 - `Kubelet`, running on the node, detects a new Pod scheduling and executes it using the Container runtime (for example, cri-o).
 - `Kubelet` retrieves the Pod status through the Container runtime and updates it to the API Server. General Deployment create events are available with the `kubectl get event -n namespace` command.
+
+You can explore more about how the workflow inside `kubernetes` via some cool articles
+
+- [Kubernetes Workflow for Absolute Beginners](https://technos.medium.com/kubernetes-workflow-bad346c54962)
+- [Communication between Nodes and the Control Plane](https://kubernetes.io/docs/concepts/architecture/control-plane-node-communication/)
 
 # Conclusion
 
