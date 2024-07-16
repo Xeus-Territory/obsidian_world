@@ -49,6 +49,7 @@ tags:
 - [ElNiak Blog](https://medium.com/@elniak)
 - [Prof Bill Buchanan OBE FRSE](https://billatnapier.medium.com/) : Professor of Cryptography
 - [Medium - n00🔑](https://medium.com/@pswalia2u)
+- [SSH Academy](https://www.ssh.com/academy)
 
 # Technical and Technologies for hacking
 
@@ -90,8 +91,7 @@ tags:
 
 - [x86 and amd64 instruction reference](https://www.felixcloutier.com/x86/index.html)
 - [GTFOBins](https://gtfobins.github.io/)
-
-## InfoSec Research (Protocol, Malware, Vulnerables, ...)
+## InfoSec Research
 
 - [Ping Power — ICMP Tunnel. An attacker is often required to face a… | by Nir Chako | InfoSec Write-ups](https://medium.com/bugbountywriteup/ping-power-icmp-tunnel-31e2abb2aaea)
 - [Different types of Computer Viruses - Computer Virus Classification](https://www.omnisecu.com/security/types-of-computer-viruses.php#:~:text=An%20Armored%20Virus%20may%20also,it%20more%20difficult%20to%20disinfect.&text=Stealth%20viruses%3A%20Stealth%20viruses%20have,file%20sizes%20or%20directory%20structure.)

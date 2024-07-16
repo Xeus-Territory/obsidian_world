@@ -12,7 +12,7 @@ tags:
 # Awesome Repository
 
 - **[awesome-nginx](https://github.com/agile6v/awesome-nginx)** : A curated list of awesome Nginx distributions, 3rd party modules, Active developers, etc.
-## Default nginx configuration
+# Default nginx configuration
 
 ```nginx title="nginx.conf"
 user nginx;
@@ -99,7 +99,7 @@ server {
 }
 ```
 
-## Nginx configuration for work with upstream - load balancer
+# Nginx configuration for work with upstream - load balancer
 
 *This `nginx` configuration will contain something like*
 1. upstream block: this block will hold the bunch of containers for making load balancer with multiple style
@@ -168,7 +168,7 @@ server {
     }
 }
 ```
-## Zero Downtime Basic Upstream SSL
+# Zero Downtime Basic Upstream SSL
 
 *This block will help you handling blue-green deployment concept which can force traffic from blue to green with zero downtime and auto reload to backup container*
 
@@ -229,7 +229,7 @@ server {
     }
 }
 ```
-## Nginx configuration for work with websocket
+# Nginx configuration for work with websocket
 
 - As you can see the backend have create some connections via `websocket` protocol and anything requested via `nginx-server`, so it need to be configured for resolved this one connection
 - All configuration can reference via article: [NGINX as a WebSocket Proxy](https://www.nginx.com/blog/websocket-nginx/). So we can sum up the configuration for adding to nginx including
@@ -253,5 +253,42 @@ http{
         }
 	  }
   }
+}
+```
+
+# Nginx Template Portainer for Ansible
+
+>[!summary]
+>Ansible Playbooks Template is used config for Nginx work with Portainer
+
+```nginx title="monitoring.conf.j2"
+# This block server for purpose route traffic to monitoring route
+server {
+    listen 443 ssl; # managed by Certbot
+    server_name {{ ssl.monitoring_server_name }};
+
+    ssl_certificate /etc/letsencrypt/live/{{ ssl.monitoring_server_name }}/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/{{ ssl.monitoring_server_name }}/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
+   location / {
+        proxy_set_header X-Real-IP $remote_addr;
+        
+        if ($host != {{ ssl.monitoring_server_name }}) {
+            return 444;
+        }
+
+	    proxy_pass https://{{ monitoring.name_origin_replica_monitoring }}:{{ monitoring.port_origin_replica_monitoring }};
+    }
+
+# This part can help you access container via nginx with websocket
+    location /api/websocket/ {
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_http_version 1.1;
+        proxy_pass https://{{ monitoring.name_origin_replica_monitoring }}:{{ monitoring.port_origin_replica_monitoring }}/api/websocket/;
+    }
 }
 ```

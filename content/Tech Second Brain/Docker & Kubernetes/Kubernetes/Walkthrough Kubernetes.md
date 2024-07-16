@@ -75,3 +75,272 @@ kubectl delete statefulset -l app.kubernetes.io/name=MyApp
 sleep $grace
 kubectl delete pvc -l app.kubernetes.io/name=MyApp
 ```
+
+# Create troubleshoot pods
+
+You can create `stateless` pods with no deployments for purpose
+
+- Check and validate the networking in node, cluster like DNS resolve, health check
+- Restore and Backup DB
+- Debug or access service internal
+
+For doing that, you need to use `kubectl`
+
+1. Use `kubectl` for create manifest of pod
+
+```bash
+k run <name-pod> --image=debian:11.7 --dry-run=client -o yaml > pods.yaml
+
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: <name-pod>
+  name: <name-pod>
+spec:
+  containers:
+  - image: debian:11.7
+    name: <name-pod>
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
+```
+
+2. Customize your pods, for keep alive, you should set command of pod to `tail -f /dev/null`
+
+3. Run `apply` command with manifest
+
+```bash
+k apply -f pods.yaml
+```
+
+4. Wait few second, exec to the pods with command
+
+```bash
+k exec --tty --stdin pods/xxxx -- /bin/bash
+```
+
+5. Once you’ve finished testing, you can press Ctrl+D to escape the terminal session in the Pod. Pod will continue running afterwards. You can keep try with command step 4 or delete.
+
+```bash
+kubectl delete pod xxxx
+```
+
+NOTE: Usually, `curlimages/curl` is regular used. Try to create new pod with fast as possible
+
+```bash
+kubectl run mycurlpod --image=curlimages/curl -i --tty -- sh
+```
+
+## Stop or run the Cronjob with `patch`
+
+You can see, `cronjob` is scheduled workload of `Kubernetes` which trigger on set-time for executing specify job. But sometimes, on during work time, your test job shouldn't work, therefore you will concert about **suspend** state of jobs. You can update state with command
+
+```bash
+k patch -n <namespace> cronjobs.batch <cronjobs-name> -p '{"spec": {"suspend": true}}'
+```
+
+Enable again by change `true` --> `false`
+
+```bash
+k patch -n <namespace> cronjobs.batch <cronjobs-name> -p '{"spec": {"suspend": false}}'
+```
+
+Furthermore, you can use `patch` for multiple purpose
+
+- Update a container's image
+- Partially update a node
+- Disable a deployment livenessProbe using json patch
+- Update a deployment's replica count
+
+## Updating resources
+
+You can handle graceful restart, rollback version with `roolout` command
+
+```
+# Graceful restart deployments, statefulset and deamonset
+k rollout restart -n <namespace> <type-workload>/<name>
+
+# Rollback version
+kubectl rollout undo <type-workload>/<name>
+kubectl rollout undo <type-workload>/<name> --to-revision=2
+
+# Check the rollout status
+kubectl rollout status -w <type-workload>/<name>
+```
+
+Kubernetes has some values with help to distinguish service with each others, specify identifying attributes of objects, attach arbitrary non-identifying metadata to objects, ...
+
+- Label
+- Annotations
+
+And you can update that with `kubectl` via `label` and `anotation` command
+
+```bash
+# Add a Label
+kubectl label pods my-pod new-label=awesome
+# Remove a label
+kubectl label pods my-pod new-label-  
+# Overwrite an existing value
+kubectl label pods my-pod new-label=new-value --overwrite  
+# Add an annotation
+kubectl annotate pods my-pod icon-url=http://goo.gl/XXBTWq     
+# Remove annotation
+kubectl annotate pods my-pod icon-url-                          
+```
+
+Next, you can update autoscale for deployment by command `autoscale`
+
+```bash
+kubectl autoscale deployment foo --min=2 --max=10
+```
+
+## Edit YAML manifest
+
+`kubectl` can help you directly change manifest on your shell. If you `Linux` or `macos` user, you can use `nano` or `vim` to use feature
+
+```bash
+# Edit the service named docker-registry
+kubectl edit svc/docker-registry                      
+# Use an alternative editor
+KUBE_EDITOR="nano" kubectl edit svc/docker-registry   
+```
+
+When you hit to complete button, your workload or resource will change immediately
+
+## Delete resource
+
+Use the `delete` command for executing
+
+```bash
+# Delete a pod using the type and name specified in pod.json
+kubectl delete -f ./pod.json
+# Delete a pod with no grace period
+kubectl delete pod unwanted --now
+kubectl delete pods <pod> --grace-period=0
+# Delete pods and services with same names "baz" and "foo"
+kubectl delete pod,service baz foo 
+```
+
+## Health check and interact with cluster, node and workload
+
+Use the `events` command for detect what happen occur on `cluster node`
+
+```bash
+# List Events sorted by timestamp
+kubectl get events --sort-by=.metadata.creationTimestamp
+
+# List all warning events
+kubectl events --types=Warning
+```
+
+If the status of workload are not `available` or `running`, you can use `describe` for verbose check workload
+
+```bash
+# Describe commands with verbose output
+kubectl describe nodes my-node
+kubectl describe pods my-pod
+```
+
+When the problem does not come up from workload, you can check `log` for extract more information
+
+```bash
+# dump pod logs (stdout)
+kubectl logs my-pod
+
+# dump pod logs (stdout) for a previous instantiation of a container. Usually use for crashloopback
+kubectl logs my-pod --previous
+
+# dump pod container logs (stdout, multi-container case) for a previous instantiation of a container
+kubectl logs my-pod -c my-container --previous
+
+# stream pod logs (stdout) 
+kubectl logs -f my-pod 
+```
+
+If you check any situation on workload, especially pods, container without results, you can return to check resources usage on cluster. Before doing that, make sure you install [[Note about AKS#Install requirement tools|requirements tools]] for available to use
+
+```bash
+# Show metrics for all nodes
+kubectl top node    
+# Show metrics for a given node
+kubectl top node my-node
+# For total overview, you resource-capacity plugin
+# print information includes quantity available instead of percentage used
+kubectl resource-capacity -a
+# print information includes resource utilization, pods in output
+kubectl resource-capacity --until -p
+```
+
+`kubectl` can help you disable or manipulation node with command
+
+```bash
+# Mark my-node as unschedulable
+kubectl cordon my-node
+# Drain my-node in preparation for maintenance
+kubectl drain my-node
+# Mark my-node as schedulable
+kubectl uncordon my-node                                              
+```
+
+
+>[!tips]
+>For explore more, you can do lots of things with `kubectl`. To read and understand command, you should use **manual** with `--help` flag
+
+# Setup metrics-server
+
+Metrics server will part if you self-hosted your `kubernetes`, It means you need learn how setup `metrics-server` , and this quite very easily. Read more about `metrics-server` at **[metrics-server](https://github.com/kubernetes-sigs/metrics-server)**
+
+Via `kubectl` you can applied manifest
+
+```bash
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+```
+
+Or you can use `helm` to release `metrics-server` chart at [helm](https://artifacthub.io/packages/helm/metrics-server/metrics-server)
+
+```bash
+# Add repo to your cluster
+helm repo add metrics-server https://kubernetes-sigs.github.io/metrics-server/
+
+# Create the metrics with find the helm-template inside repo
+helm upgrade --install metrics-server metrics-server/metrics-server
+```
+
+>[!warning]
+>Your `metrics-server` will stuck, because it meet problem to not authentication `tls` inside them with `kube-apiserver`
+
+But don't worry about it,  you can bypass this via some trick. Read more about solution at
+
+- [metrics-service in kubernetes not working](https://stackoverflow.com/questions/68648198/metrics-service-in-kubernetes-not-working)
+- [metrics-server unable to authenticate to apiserver](https://github.com/kubernetes-sigs/metrics-server/issues/278)
+
+So solution about using `edit` command of `kubectl` to edit manifest of deployments `kube-server`, you can do like this
+
+```bash
+# First of all, you can configure your editor to nano (Optional), you can't do this step if you prefer vim
+export KUBE_EDITOR="nano"
+
+# Use edit to change manifest of deployment
+kubectl edit deployments -n kube-system metrics-server
+```
+
+Now scroll to `args` of container `metrics-server`, you can change them into
+
+```bash
+      - args:
+        - --cert-dir=/tmp
+        - --secure-port=10250
+        - --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+        - --kubelet-use-node-status-port
+        - --metric-resolution=15s
+        - --kubelet-insecure-tls=true # This will help you bypass authentication
+```
+
+And now your `metrics-server` will restart and running after 30s
+
+![[Pasted image 20240718112540.png]]
+
+Learn more about `kubernetes` metrics, read the article [Kubernetes' Native Metrics and States](https://dev.to/otomato_io/kubernetes-native-metrics-and-states-2p68)

@@ -30,8 +30,8 @@ ansible <YOUR_HOSTS> -i inventories/hosts -m ping (200 Succeed - Moving to next 
 - Deprecated: Configuration your [pg_hba.conf](Default%20Host%20Template.md) and [postgresql.conf](Default%20Configuration%20Template.md) on templates folder --> Changing into use `PostgreSQL` database inside container but this `pg_hba` & `postgresql.conf` still work if you find the right path to mounting.
 - Running the ansible for setup postgresql and configure your postgresql. This configuration will put inside `YAML` style and refer with this article to deployment via `ansible`
 
-	1. [Deploy PostgreSQL via Docker and Ansible](PostgreSQL%20Self-hosted%20in%20Docker%20by%20Ansible.md)
-	2. [Deploy PostgreSQL in Host with Ansible](PostgreSQL%20Self-hosted%20in%20VM%20by%20Ansible.md)
+	1. [Deploy PostgreSQL via Docker and Ansible](PostgreSQL%20in%20Docker.md)
+	2. [Deploy PostgreSQL in Host with Ansible](PostgreSQL%20in%20VM.md)
 
 ```bash
 #!/bin/bash

@@ -10,9 +10,10 @@
   "omnisearch:show-modal-infile": [
     {
       "modifiers": [
-        "Mod"
+        "Mod",
+        "Shift"
       ],
-      "key": "-"
+      "key": "0"
     }
   ]
 }

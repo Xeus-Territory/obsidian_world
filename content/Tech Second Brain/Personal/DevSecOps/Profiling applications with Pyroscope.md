@@ -37,7 +37,7 @@ Although, We have three of powerful technologies which purpose continuous monito
 ### Candidate and powerful tools for profiling application
 
 In the github or many article, I have look some more interesting and It will helpful when you research with profiling application, like:
-- [Sysinternals Process Utilities](https://learn.microsoft.com/en-us/sysinternals/downloads/process-utilities) - [ProdDump](https://learn.microsoft.com/en-us/sysinternals/downloads/procdump)is impressed talent (Support for both Linux and Windows)
+- [Sysinternals Process Utilities](https://learn.microsoft.com/en-us/sysinternals/downloads/process-utilities) - [ProdDump](https://learn.microsoft.com/en-us/sysinternals/downloads/procdump) is impressed talent (Support for both Linux and Windows)
 - [Flame Graphs](https://www.brendangregg.com/flamegraphs.html)- The template dashboard which can most refer to view result when do profiling application
 - [perf-script](https://man7.org/linux/man-pages/man1/perf-script.1.html)- Read `perf.data` (created by perf record) and display trace output
 - [kubectl flame - Profiling on Kubernetes](https://medium.com/swlh/introducing-kubectl-flame-effortless-profiling-on-kubernetes-4b80fc181852)
