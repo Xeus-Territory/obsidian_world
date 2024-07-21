@@ -34,7 +34,7 @@ chmod +x config_portainer.sh
 
 # Config Portainer with Ansible for remote host
 
-*If you want to setup `portainer` with ansible. You can perform this command. You need choose one of task in [monitoring-task](Portainer%20Self-hosted%20in%20Docker%20by%20Ansible.md)*
+*If you want to setup `portainer` with ansible. You can perform this command. You need choose one of task in [monitoring-task](Portainer%20in%20Docker.md)*
 
   - **config_master**: *Configuration master portainer*
   - **config_ssl_master**: *Configuration master portainer with SSL cert domain*
