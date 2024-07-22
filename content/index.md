@@ -7,7 +7,7 @@ tags:
 <div align="center">
 	<h1>Welcome to wiki of xeusnguyen</h1><br>
 	<img src="https://avatars.githubusercontent.com/u/74602538?s=400&v=4">
-    <em><p style="text-align: center;">"Sill living young, wild and free !!!"</p></em>
+    <em><p style="text-align: center;">"Still living young, wild and free !!!"</p></em>
 </div>
 
 > [!quote] 
@@ -23,7 +23,11 @@ tags:
 >
 >*"And in another way, I am currently work as Tech Blogger in [Medium](https://medium.com/@XeusNguyen) and [HackMD](https://hackmd.io/@xeusnguyen), hope so bring more efficiency for community, at least for people who reach to my wiki page, from my bottom of hearth I want to give huge respect"*
 
-![[Pasted image 20240720145956.png]]
+
+![[Pasted image 20240720145956.png| center | 400]]
+<div align="center">
+	<em><p style="text-align: center;">"Try, do, failure and again"</p></em>
+</div>
 
 >[!quote]
 ><h3>Favorite Quotes</h3>
