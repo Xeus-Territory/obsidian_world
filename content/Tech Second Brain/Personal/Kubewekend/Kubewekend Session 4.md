@@ -16,7 +16,7 @@ Before start this week, I want to give appreciation and shout out for many commu
 - [Isovalent](https://isovalent.com/) -  Community stand behind the `cilium` and sub-projects of `cilium`
 - [Cilium](https://cilium.io/) - *an open source, cloud native solution for providing, securing, and observing network connectivity between workloads, fueled by the revolutionary Kernel technology eBPF*
 - [Hubble](https://github.com/cilium/hubble), [Tetragon](https://tetragon.io/) - *Ambassador and integration sub-projects of `cilium`*
-- [eCHO - eBPF & Cilium Office Hours](https://www.youtube.com/playlist?list=PLDg_GiBbAx-mY3VFLPbLHcxo6wUjejAOC) - Find and learn more about `eBPF` and `cilium` on livestream every week
+- [eCHO - eBPF & Cilium Office Hours](https://www.youtube.com/playlist?list=PLDg_GiBbAx-mY3VFLPbLHcxo6wUjejAOC) - Youtube series where we can find and learn more about `eBPF` and `cilium` via live stream every week
 
  And don't forget to checkout the super cool previous sessions of `kubewekend` down below
 
@@ -188,7 +188,7 @@ But we can understand more about `eBPF` in this series `kubewekend` through oper
 
 Let's take some example
 
-	![[Pasted image 20240721134616.png]]
+![[Pasted image 20240721134616.png]]
 
 - *"When you have tough case inside your application, and dunno any reason why your application become slowly"* - now you can use `eBPF` for observability tools like [Pyroscope](https://pyroscope.io/) to check what is going on with your application, memory leaks, pressure CPU and moreover
 
