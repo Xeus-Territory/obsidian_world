@@ -88,3 +88,56 @@ To understand more about `powershell`, come and take a look on
 
 - [[Powershell Snippets]]
 - [[Tech Second Brain/Operation System/Helpful Pages & Articles#Window|Windows Helpful Pages & Articles]]
+
+Usually, In windows I use `vmware_workstation` instead of `vmbox`. If you prefer any version, link down below
+
+- [VMware workstation 16](https://drive.google.com/file/d/1omAQygsVLS9d_g4C52I46Ol5RLTxvU0M/view?usp=sharing)
+- [VMware workstation 17](https://www.mikeroysoft.com/post/download-fusion-ws/)
+
+With version 16, use need license key to providing to use unlimited for your `vmware`, so get use it via
+
+```bash
+ZF3R0-FHED2-M80TY-8QYGC-NPKYF
+YF390-0HF8P-M81RQ-2DXQE-M2UT6 # Check-mate
+ZF71R-DMX85-08DQY-8YMNC-PPHV8
+FC11K-00DE0-0800Z-04Z5E-MC8T6
+```
+
+Why we relate `vmware`, because if you want to provide the machine by automation via [Vagrant](https://developer.hashicorp.com/vagrant/docs) in this platform, use can perform this powershell command, and helpful article can useful
+
+- [How to Install and Uninstall MSI Packages using Powershell](https://www.advancedinstaller.com/install-msi-files-with-powershell.html)
+- [msiexec - docs](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/msiexec)
+- [How to uninstall the MSI package using PowerShell?](https://www.tutorialspoint.com/how-to-uninstall-the-msi-package-using-powershell)
+
+```bash
+# Download vagrant from hashicorp repo
+Invoke-WebRequest -Uri "https://releases.hashicorp.com/vagrant/2.4.1/vagrant_2.4.1_windows_amd64.msi" -Outfile ~\Downloads\vagrant_2.4.1_windows_amd64.msi
+
+# Install MSI but we can't bypass approve, you will be interact in this step
+cd ~\Downloads; Start-Process 'msiexec.exe' -ArgumentList '/I vagrant_2.4.1_windows_amd64.msi' -Wait
+
+# Install vagrant utility for vmware
+Invoke-WebRequest -Uri "https://releases.hashicorp.com/vagrant-vmware-utility/1.0.22/vagrant-vmware-utility_1.0.22_windows_amd64.msi" -Outfile ~\Downloads\vagrant-vmware-utility_1.0.22_windows_amd64.msi
+
+# Step will same as install vagrant, need to approve
+cd ~\Downloads; Start-Process 'msiexec.exe' -ArgumentList '/I vagrant-vmware-utility_1.0.22_windows_amd64.msi' -Wait
+
+# Check all vagrant app name via win32
+Get-WmiObject -Class Win32_Product | Where-Object { $_.Name -match "vagrant" }
+
+# Restart your windows to applied changed
+Restart-Computer
+```
+
+After you succeed on installing `vagrant`, we need to install plugin for `vagrant` to use provider `vmware_workstation`
+
+```powershell
+# Install plugin for vmware workstation
+vagrant plugin install vagrant-vmware-desktop
+
+# Check about plugin actually install
+vagrant plugin list
+```
+
+Done, you can use `vagrant` inside your machine and connect directly `vmware_workstation`, create `Vagranfile` and enjoy !!
+

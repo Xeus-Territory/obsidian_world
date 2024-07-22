@@ -184,6 +184,58 @@ set +o allexport
 set -o allexport && source dot/env/file && set +o allexport
 
 ```
+
+## Update Ubuntu new version
+
+You can use integration tool inside `ubuntu` to update new version, that will pull and update packages inside host, do that easily with command
+
+```bash
+# Check the linux version
+lsb_release -a
+
+# Use command to update new version ubuntu
+do-release-upgrade
+```
+
+>[!warning]
+>In this situation you update `ubuntu`, it will update your kernel so please remember make a big-changes can gain different harden to control, so do know before you doing
+
+Follow some methodology to upgrade new version of kernel, such as
+
+- [How to Update Linux Kernel In Ubuntu](https://phoenixnap.com/kb/how-to-update-kernel-ubuntu)
+- [Cập nhật Linux Kernel trên Ubuntu 20.04](https://thuanbui.me/cap-nhat-linux-kernel-tren-ubuntu-20-04/) (Vietnamese)
+- [How to Update/Upgrade Linux Kernel in Ubuntu](https://www.dedicatedcore.com/blog/update-linux-kernel-ubuntu/)
+- [Ubuntu Linux Upgrade Linux Kernel Command](https://www.cyberciti.biz/faq/howto-upgrading-the-ubuntu-linux-kernel/)
+
+Depend on those articles, you can update `kernel` of Ubuntu via
+
+- Update OS version (e.g. 20.04 --> 22.04)
+- Update package of OS dependencies
+- Manually Update
+
+When you choose manually update, you can use some following tools
+
+- [Mainline](https://github.com/bkw777/mainline)
+- [ubuntu-mainline-kernel.sh](https://github.com/pimlie/ubuntu-mainline-kernel.sh)
+- Directly download use `curl` or `wget` and installing from [pkgs.org](https://pkgs.org/)
+
+If you see this one from via `kubewekend` series, I prefer to use update Ubuntu version or use secondly optional via `apt` like
+
+```bash
+# check your kernel version, via uname
+uname -r
+
+# find the supportive from apt repositories, via apt search
+sudo apt search linux-image
+
+# figure out the compatible version, if you come from kubewekend you can use version 5.15.0-116-generic, so we install via
+sudo apt install linux-virtual-hwe-20.04 -y
+
+# Reboot to receive the new update
+sudo reboot # OR use sudo shutdown -r now
+```
+
+![[Pasted image 20240724103806.png]]
 # External Commands
 ## Caddy server
 

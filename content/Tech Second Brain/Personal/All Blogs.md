@@ -29,6 +29,7 @@ tags:
 - [[Kubewekend Session 2|Kubewekend Session 2: Setup Kind cluster with Ansible]] - *This lab is practice with `ansible` the configuration for setup `kind` cluster inside machine on the previous session*
 - [[Kubewekend Session 3|Kubewekend Session 3: Basically about Kubernetes architecture]] - *This session talk about basically architecture and learn more fundamental components inside `kubernetes`, and what the structure of them inside clusters.*
 - [[Kubewekend Session 4|Kubewekend Session 4: Learn about ebpf with hubble and cilium]] - *This session will talk and learn about `eBPF` and the especially representation of `eBPF` are `cilium` and `hubble` to become main CNI of Kubewekend and talk about Observability of them*
+- [[Kubewekend Session 5|Kubewekend Session 5: Build HA Cluster]] - This session is really pleasant when we talk about how can create HA cluster with `kubewekend`, learn more the components inside `kubernetes` and try figure out about `network`, `security`, `configuration`, `container runtime` and `system` via this session
 # For 1st time Series
 
 >[!info]

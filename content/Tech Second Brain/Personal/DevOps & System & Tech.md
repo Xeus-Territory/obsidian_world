@@ -35,6 +35,8 @@ tags:
 - [homelab](https://github.com/khuedoan/homelab) : Fully automated homelab from empty disk to running services with a single command - Repo belong A. Khue Doan
 - [awesome-ebpf](https://github.com/zoidyzoidzoid/awesome-ebpf) : A curated list of awesome projects related to eBPF.
 - [StackExchange](https://stackexchange.com/sites) : StackOverFlow Ecosystem
+- [Nubenetes](https://nubenetes.com/) : Awesome Kubernetes & Cloud
+- [Rootless Containers](https://rootlesscontaine.rs/): Rootless containers refers to the ability for an unprivileged user to create, run and otherwise manage containers.
 
 # Blog DevOps and Tech
 

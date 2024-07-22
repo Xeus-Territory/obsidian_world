@@ -25,6 +25,7 @@ tags:
 - [kubernetes-sigs](https://github.com/kubernetes-sigs) : Org for Kubernetes SIG-related work
 - [Kubernetes/enhancements](https://github.com/kubernetes/enhancements) : Enhancements tracking repo for Kubernetes
 - [Kubernetes/community](https://github.com/kubernetes/community) : Kubernetes community content
+- [Kubernetes Blog](https://kubernetes.io/blog/) : Collection of blog from community for upgrade and feature in each version of kubernetes and stories around.
 # Troubleshoot
 
 - [StackOverFlow - Why AKS nodes shows less amount of memory as allocatable where its actual memory is still available](https://stackoverflow.com/questions/68521392/why-aks-nodes-shows-less-amount-of-memory-as-allocatable-where-its-actual-memory)
@@ -34,6 +35,7 @@ tags:
 - [StackOverFlow - Constantly getting Crashloopbackoff error in Kubernetes PODS generally in MongoDB pods](https://stackoverflow.com/questions/63142792/constantly-getting-crashloopbackoff-error-in-kubernetes-pods-generally-in-mongod)
 - [Suneeta Mall - WTH! Who killed my pod - Whodunit?](https://suneeta-mall.github.io/2021/03/14/wth-who-killed-my-pod.html)
 - [Medium - Understanding Common exit codes and error messages in Containers & Kubernetes 🎑](https://medium.com/@seifeddinerajhi/understanding-common-exit-codes-and-error-messages-in-containers-kubernetes-fb8d053e759e)
+- [Validate node setup](https://kubernetes.io/docs/setup/best-practices/node-conformance/)
 
 # Docker & Containerization
 
