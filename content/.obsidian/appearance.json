@@ -1,5 +1,8 @@
 {
   "accentColor": "",
   "cssTheme": "AnuPpuccin",
-  "theme": "system"
+  "theme": "system",
+  "enabledCssSnippets": [
+    "layout"
+  ]
 }
