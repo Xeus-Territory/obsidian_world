@@ -7,7 +7,7 @@ tags:
   - kubewekend
 ---
 >[!quote]
->Hi @all, do you have a great week, huh ? This weekend will become more interested in learning with `ebpf`, practice with `cilium` and `hubble`, one of most huge platforms to control and managing whole progress inside network of `Kubernetes` clusters. Are you ready, mate, let's digest !!
+>Hi @all, do you have a great week, huh ? This weekend will become more interested in learning with `eBPF`, practice with `cilium` and `hubble`, one of most huge platforms to control and managing whole progress inside network of `Kubernetes` clusters. Are you ready, mate, let's digest !!
 
 Before start this week, I want to give appreciation and shout out for many communities, for powerful technologies who came up from
 
@@ -27,20 +27,20 @@ Before start this week, I want to give appreciation and shout out for many commu
 
 # What is `eBPF` ?
 
-![[Pasted image 20240719104018.png]]
+![[Pasted image 20240719104018.png|center]]
 
-Like I promising on the article about [[Profiling applications with Pyroscope]], today we will learn and do research about `ebpf` - the technologies stand behind `pyroscope`
+Like I promising on the article about [[Profiling applications with Pyroscope]], today we will learn and do research about `eBPF` - the technologies stand behind `pyroscope`
 
 >[!question]
->Anyone in here are knowing about `ebpf` or `bpf`? This will be pleasant about question to the most powerful technology inside nowaday `kubernetes`
+>Anyone in here are knowing about `eBPF` or `BPF`? This will be pleasant about question to the most powerful technology inside nowaday `kubernetes`
 >
 
-We have used `bpf` but you don't ever known about that, probably I really surprise and suspicious about this one on first time hearing them 😄. No joke dude, listening in [eCHO episode 1: Introduction to Cilium](https://www.youtube.com/watch?v=80OYrzS1dCA&ab_channel=eBPF%26CiliumCommunity)
+We have used `BPF` but you don't ever known about that, probably I really surprise and suspicious about this one on first time hearing them 😄. No joke dude, listening in [eCHO episode 1: Introduction to Cilium](https://www.youtube.com/watch?v=80OYrzS1dCA&ab_channel=eBPF%26CiliumCommunity)
 
-You can use `bpf` via tools, such as `tcpdump`, `bpftool`, `perf`, `wireshark` - actually not much information but classic `bpf` build up `libpcap`  and more network libraries. Read more about `bpf` at: [Berkeley Packet Filter](https://en.wikipedia.org/wiki/Berkeley_Packet_Filter). If you have enough time and patience, read the source code from of them to see how the `bpf` work, no cap bruh 😅
+You can use `BPF` via tools, such as `tcpdump`, `bpftool`, `perf`, `wireshark` - actually not much information but classic `BPF` build up `libpcap`  and more network libraries. Read more about `BPF` at: [Berkeley Packet Filter](https://en.wikipedia.org/wiki/Berkeley_Packet_Filter). If you have enough time and patience, read the source code from of them to see how the `BPF` work, no cap bruh 😅
 
 >[!note]
->Since version 3.18, the Linux kernel includes an extended BPF virtual machine with ten 64-bit registers, now `ebpf` is coming up with the evolution of `bpf` and bring for us many advantage characteristics from them
+>Since version 3.18, the Linux kernel includes an extended `BPF` virtual machine with ten 64-bit registers, now `eBPF` is coming up with the evolution of `BPF` and bring for us many advantage characteristics from them
 
 ## Introduce
 
@@ -113,7 +113,7 @@ To flexible in finding compatible version of kernel and programs, `ebpf` can mak
 
 `eBPF` is work with concept called `tail and function` call - It means function can be definition and calling functions of `eBPF` program and tail can call and execute another `eBPF` program and replace the execution context
 
-![[Pasted image 20240721092516.png]]
+![[Pasted image 20240721092516.png|center]]
 
 >[!quote]
 >*"With great power there must also come great responsibility"* 🙌
@@ -190,18 +190,19 @@ Let's take some example
 
 ![[Pasted image 20240721134616.png]]
 
-- *"When you have tough case inside your application, and dunno any reason why your application become slowly"* - now you can use `eBPF` for observability tools like [Pyroscope](https://pyroscope.io/) to check what is going on with your application, memory leaks, pressure CPU and moreover
+*"When you have tough case inside your application, and dunno any reason why your application become slowly"* - now you can use `eBPF` for observability tools like [Pyroscope](https://pyroscope.io/) to check what is going on with your application, memory leaks, pressure CPU and moreover
 
-	![[Pasted image 20240721134552.png]]
-- "*When you want to control, understand traffic inside your native cloud platform such as Kubernetes*" - now you can use `eBPF` for networking monitoring with [Cilium](https://cilium.io/) and [Hubble](https://github.com/cilium/hubble) to understand Network, Service & Security inside Kubernetes Clusters
+![[Pasted image 20240721134552.png]]
 
-	![[Pasted image 20240721134826.png]]
+"*When you want to control, understand traffic inside your native cloud platform such as Kubernetes*" - now you can use `eBPF` for networking monitoring with [Cilium](https://cilium.io/) and [Hubble](https://github.com/cilium/hubble) to understand Network, Service & Security inside Kubernetes Clusters
 
-- "*When you want to enables powerful realtime, eBPF-based Security Observability and Runtime Enforcement, detects and is able to react to security-significant events*" - now you can use [Tetragon](https://tetragon.io/) and [Falco](https://falco.org/) to handling that stuff
+![[Pasted image 20240721134826.png]]
 
-	![[Pasted image 20240721135007.png]]
+"*When you want to enables powerful realtime, eBPF-based Security Observability and Runtime Enforcement, detects and is able to react to security-significant events*" - now you can use [Tetragon](https://tetragon.io/) and [Falco](https://falco.org/) to handling that stuff
 
-- "*You want to create and handle huge performance load balancer*" - now you can use [Cilium](https://cilium.io/) to control what happen behind the scene of Load Balancer
+![[Pasted image 20240721135007.png]]
+
+"*You want to create and handle huge performance load balancer*" - now you can use [Cilium](https://cilium.io/) to control what happen behind the scene of Load Balancer
 
 You can explore more about `eBPF` technically and compatible platform for your native cloud services of your
 
@@ -243,7 +244,7 @@ By leveraging Linux eBPF, `Cilium` retains the ability to doing some interesting
 
 - **[Secure service to service communication based on identities](https://docs.cilium.io/en/stable/overview/intro/#secure-service-to-service-communication-based-on-identities)** - *Assigns a security identity to groups of application containers, provide the methodology to validate the identity at the receiving node for them*. (Use key-value store)
 
-- **[Secure access to and from external services](### Secure access to and from external services)** - *Allows to limit access to and from application containers to particular IP ranges.*
+- **[Secure access to and from external services](https://docs.cilium.io/en/stable/overview/intro/#secure-access-to-and-from-external-services)** - *Allows to limit access to and from application containers to particular IP ranges.*
 
 - **[Simple Networking](https://docs.cilium.io/en/stable/overview/intro/#simple-networking)** - *Easily to IP allocation without any coordination between hosts, supported for **Overlay** - Encapsulation-based virtual network spanning all hosts or **Native Routing:** Use of the regular routing table of the Linux host.*
 
@@ -255,10 +256,10 @@ By leveraging Linux eBPF, `Cilium` retains the ability to doing some interesting
 
 ## How to Install ?
 
-![[Pasted image 20240721143940.png]]
+![[Pasted image 20240721143940.png|center]]
 
 >[!quote]
->Back to previous session, on the session 2, we are successful build and operate our cluster, but if you concern about when  you try `kubectl` get nodes, the state of `kubewekend` cluster is on not ready. It means we don't enable any CNI (Container Network Interface) inside cluster, check that on [[Kubewekend Session 2#Definition configuration for `kind`]]. Therefore, we wait to in currently to operate and install `cilium` to `kubewekend` cluster
+>Back to previous session, on the session 2, we are successful build and operate our cluster, but if you concern about when  you try `kubectl` get nodes, the state of `kubewekend` cluster is on not ready. It means we don't enable any CNI (Container Network Interface) inside cluster, check that on [[Kubewekend Session 2#Definition configuration for `kind`|Kind Configuration at Session 2]]. Therefore, we wait to in currently to operate and install `cilium` to `kubewekend` cluster
 
 For start this lab, you can explore step at [Github - Kubewekend](https://github.com/Xeus-Territory/kubewekend?tab=readme-ov-file#cilium-and-ebpf---the-powerful-kernal-service-of-kubewekend-cluster)
 
@@ -277,7 +278,7 @@ sudo mv cilium /usr/local/bin/
 
 And now you have `cilium-cli` on your host
 
-![[Pasted image 20240721144055.png]]
+![[Pasted image 20240721144055.png|center]]
 
 You can install `cilium` to your cluster via this CLI
 
@@ -672,7 +673,7 @@ Now we are reaching to `web-ui` part, which one can make `hubble` become special
 cilium hubble enable --ui
 ```
 
-Wait for minite, and use `status` command with `cilium` to view your `ui` is enabling
+Wait for a minute, and use `status` command with `cilium` to view your `ui` is enabling
 
 ![[Pasted image 20240721160406.png]]
 
