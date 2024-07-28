@@ -30,9 +30,10 @@ Github: [kubewekend](https://github.com/Xeus-Territory/kubewekend)
 >[!summary]
 >Use the instant technologies for setting up Kubernetes cluster, with
 >- Use `Vargrant` to configuration the VM with provider in `VirtualBox`
->- Ansible - To setup and run script and bring up kubernetes cluster on locally, Use `kind`
+>- Ansible - To setup and run script and bring up `kubernetes` cluster on locally, Use `kind`
 >- Exploring, understanding and provisioning require components inside the `kind` cluster
->- `cilium` and `ebpf` - The powerful kernal service of `kubewekend` cluster
+>- `cilium` and `ebpf` - The powerful kernel service of `kubewekend` cluster
+>- How to build the High Availability (HA) Cluster. 
 >- Use extend `CSI` for volume in `kubernetes` and define `kubernetes` storage class with `Ceph`
 >- Setup new `app`, use `cilium` to route traffic into cluster via gateway
 >- Setup the monitoring cluster inside the `kubernetes` with `node-exporter`, `cadvisor`, `prometheus` and `grafana`
