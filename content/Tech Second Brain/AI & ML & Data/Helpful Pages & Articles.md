@@ -1,5 +1,5 @@
 ---
-title: "AI, ML, Data Science: Helpful pages, articles and papers"
+title: The collection of AI, ML, Data Science topics
 tags:
   - intelligence
   - machine-learning
@@ -20,7 +20,7 @@ tags:
 
 - [NeuralNine](https://www.youtube.com/c/NeuralNine/featured) : Educational brand focusing on programming, machine learning and computer science
 - [sentdex](https://www.youtube.com/c/sentdex/featured) : Funny guy who teach you about build cool stuff with python like AI
-
+- [MLOps.community](https://www.youtube.com/@MLOps/videos) : The MLOps Community fills the swiftly growing need to share real-world Machine Learning Operations best practices from engineers in the field
 # Community and forum
 
 >[!info]

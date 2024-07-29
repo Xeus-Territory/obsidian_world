@@ -9,8 +9,6 @@ tags:
 # FL Studio
 
 - [FL Studio Online Manual - FL Studio](https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/)
-
-
 # VST Plugin
 
 - [The 248 Best Free VST Plugins](https://blog.landr.com/best-free-vst-plugins/)
