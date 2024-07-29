@@ -22,6 +22,8 @@ When you need to setup those things, you need to be consider for install some th
 - [Windows Terminal](https://github.com/microsoft/terminal)
 - [Chocolatey](https://chocolatey.org/install) 
 
+# Install and setup powershell profile
+
 For install `Chocolatey`, you can use one-line command with `Administrator` of your `powershell`
 
 ```powershell
@@ -88,6 +90,8 @@ To understand more about `powershell`, come and take a look on
 
 - [[Powershell Snippets]]
 - [[Tech Second Brain/Operation System/Helpful Pages & Articles#Window|Windows Helpful Pages & Articles]]
+
+# Install VMware Workstation
 
 Usually, In windows I use `vmware_workstation` instead of `vmbox`. If you prefer any version, link down below
 

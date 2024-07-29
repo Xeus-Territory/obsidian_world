@@ -1,5 +1,5 @@
 ---
-title: Hacking, Security and anything about malicious
+title: The collections of hacking, security and anything about malicious
 tags:
   - research
   - infosec
@@ -51,7 +51,7 @@ tags:
 - [Medium - n00🔑](https://medium.com/@pswalia2u)
 - [SSH Academy](https://www.ssh.com/academy)
 
-# Technical and Technologies for hacking
+# Tools and Techniques
 
 ## Awesome repository
 
@@ -67,6 +67,8 @@ tags:
 - [awesome-privilege-escalation](https://github.com/m0nad/awesome-privilege-escalation) : A curated list of awesome privilege escalation
 - [NetExec](https://github.com/Pennyw0rth/NetExec) : The Network Execution Tool
 - [CheatSheetSeries](https://github.com/OWASP/CheatSheetSeries) : The OWASP Cheat Sheet Series was created to provide a concise collection of high value information on specific application security topics.
+- [HackTricks - HackTricks](https://book.hacktricks.xyz/welcome/readme) : Wikipedia of Hacking
+- [Cloud - HackTricks](https://cloud.hacktricks.xyz/) : Wikipedia of Hacking Cloud
 ## Browser Search
 
 - [GoogleDorking.md](https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06)
@@ -96,7 +98,7 @@ tags:
 - [Ping Power — ICMP Tunnel. An attacker is often required to face a… | by Nir Chako | InfoSec Write-ups](https://medium.com/bugbountywriteup/ping-power-icmp-tunnel-31e2abb2aaea)
 - [Different types of Computer Viruses - Computer Virus Classification](https://www.omnisecu.com/security/types-of-computer-viruses.php#:~:text=An%20Armored%20Virus%20may%20also,it%20more%20difficult%20to%20disinfect.&text=Stealth%20viruses%3A%20Stealth%20viruses%20have,file%20sizes%20or%20directory%20structure.)
 - [Linux Privilege Escalation - Vietnamese](https://viblo.asia/s/linux-privilege-escalation-Wj53OQgw56m)
-## General Attacking + Defend skill
+## Collections about Attack and Defend
 
 - [MITRE ATT&CK®](https://attack.mitre.org/#) : Globally-accessible knowledge base of adversary tactics and techniques based on real-world observations.
 - [Defend MITRE](https://d3fend.mitre.org/):  Defend skillset base on real-world secenarios
@@ -167,6 +169,13 @@ tags:
 - [Webhook.site](https://webhook.site/) : *Generates free, unique URLs and e-mail addresses and lets you see everything that’s sent there instantly. (Usage: Steal cookies, bypass authorized, ...)*
 - [Mockoon](https://mockoon.com/): Locally mock API
 - [Beeceptor](https://beeceptor.com/) : API Mocking
+
+## Web Application Firewall
+
+- [ModSecurity](https://github.com/owasp-modsecurity/ModSecurity) :  An open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx.
+- [naxsi](https://github.com/nbs-system/naxsi) : An open-source, high performance, low rules maintenance WAF for NGINX
+- [lua-resty-waf](https://github.com/p0pr0ck5/lua-resty-waf) : High-performance WAF built on the OpenResty stack
+- [Nginx-Lua-Anti-DDoS](https://github.com/C0nw0nk/Nginx-Lua-Anti-DDoS) : A Anti-DDoS script to protect Nginx web servers using Lua with a HTML Javascript
 ## Reverse Engineer (RE)
 
 - [CPUlator Computer System Simulator](https://cpulator.01xz.net/)
@@ -188,7 +197,7 @@ tags:
 - [CVE Trends](https://cvetrends.com/)
 - [Vulmon - Vulnerability Intelligence Search Engine](https://vulmon.com/)
 
-## Networking
+## General Networking
 
 - [Subnet Calculator](https://www.subnet-calculator.com/)
 - [Reverse IP Lookup - All Names Hosted at an IP - DomainTools](https://reverseip.domaintools.com/)
@@ -196,45 +205,42 @@ tags:
 - [Shodan Search Engine](https://www.shodan.io/)
 - [Google Public DNS](https://dns.google/)
 - [Network Tools by YouGetSignal.com](https://www.yougetsignal.com/)
-
-## Articles
-
-- [Medium - VPN is dead? Long live the Jump Host?](https://medium.com/itnext/vpn-is-dead-long-live-the-jump-host-bf3683cc684d)
-
-### VPN
+## VPN
 
 >[!info] *Give applause for Nyr for contributing a wonderful setup, with those script, you just need 1 minutes for creating your own VPN and safely connected remotely with your network*
 
 - [openvpn-install.sh](https://github.com/Nyr/openvpn-install/blob/master/openvpn-install.sh): *Setting up `openvpn` for your host (Author: [Nyr](https://github.com/Nyr))*
 - [wireguard-install.sh](https://github.com/Nyr/wireguard-install/blob/master/wireguard-install.sh): *Setting up `wireguardvpn` for your host (Author: [Nyr](https://github.com/Nyr))*
+- [Medium - VPN is dead? Long live the Jump Host?](https://medium.com/itnext/vpn-is-dead-long-live-the-jump-host-bf3683cc684d)
 
-### Tunnelling
+## Tunnelling
 
 - [awesome-tunneling](https://github.com/anderspitman/awesome-tunneling) : List of ngrok/Cloudflare Tunnel alternatives and other tunneling software and services. Focus on self-hosting.
 - [wstunnel](https://github.com/erebe/wstunnel) : Tunnel all your traffic over Websocket or HTTP2 - Bypass firewalls/DPI - Static binary available
 
-### IPS / IDS
+## IPS / IDS
 
 - [Medium - Using Suricata Intrusion Prevention System To Monitor Network Traffic](https://medium.com/aws-tip/using-suricata-intrusion-prevention-system-to-manage-network-traffic-fa865fad197f)
 
-### Virtual Private LAN Service
+## Virtual Private LAN Service
 
 - [Kết nối private LAN qua Cloudflare Tunnels sử dụng Wireguard](https://viblo.asia/p/ket-noi-private-lan-qua-cloudflare-tunnels-su-dung-wireguard-zXRJ8mrZLGq)
 - [Cisco - Configuring Virtual Private LAN Service (VPLS)](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9400/software/release/16-12/configuration_guide/mpls/b_1612_mpls_9400_cg/configuring_virtual_private_lan_service__vpls_.pdf)
 - [What is multiprotocol label switching (MPLS)?](https://www.cloudflare.com/learning/network-layer/what-is-mpls/)
 
-### Zero Trust Network Access (ZTNA)
+## Zero Trust Network Access (ZTNA)
 
 - [Zero Trust Network Access (ZTNA) vs VPNs](https://konghq.com/blog/engineering/ztna-vs-vpns)
 
-### Zero Trust Mesh
+## Zero Trust Mesh
 
 - [Medium - How to Use ZTM to Access Home/Private Networks](https://medium.com/flomesh/how-to-use-ztm-to-access-home-private-networks-8848efb1f935)
 - [ztm](https://github.com/flomesh-io/ztm)
 
-### Firewall
+## Firewall
 
 - [10 Useful Open Source Security Firewalls for Linux Systems](https://www.tecmint.com/open-source-security-firewalls-for-linux-systems/)
+- [VultureOS](https://vultureproject.github.io/vulture-doc/) :  An operating system based on [HardenedBSD](https://hardenedbsd.org/). It has been design to deliverer cybersecurity services for the Advens SOC.
 # Training page (LAB)
 
 >[!info]
@@ -248,6 +254,7 @@ tags:
 - [Web-CTF-Cheatsheet](https://github.com/w181496/Web-CTF-Cheatsheet)
 - [Internal All The Things](https://swisskyrepo.github.io/InternalAllTheThings/) : Active Directory and Internal Pentest Cheatsheets
 - [Hardware All The Things](https://swisskyrepo.github.io/HardwareAllTheThings/):  A curated collection of valuable payloads and bypass techniques tailored for Hardware and IoT Security
+- [Hacktrick Training](https://training.hacktricks.xyz/): Learn Cloud Hacking & Become HackTricks Training Certified
 
 ## RE (Reverse Engineer)
 
@@ -340,12 +347,15 @@ tags:
 # Bug Bounty
 
 >[!info]
->A **bug bounty program** is a deal offered by many websites, organizations, and software developers by which individuals can receive recognition and compensation for reporting [bugs](https://en.wikipedia.org/wiki/Software_bug "Software bug"), especially those pertaining to [security](https://en.wikipedia.org/wiki/Security_bug "Security bug") [exploits](https://en.wikipedia.org/wiki/Exploit_(computer_security) "Exploit (computer security)") and [vulnerabilities](https://en.wikipedia.org/wiki/Vulnerability_(computing) "Vulnerability (computing)"). You can become participant of Bounty program via
->-  [Bugcrowd](https://www.bugcrowd.com/)
->- [HackerOne](https://www.hackerone.com/)
->- [Synack](https://www.synack.com/)
->- [Intigriti](https://www.intigriti.com/)
->- [FireBounty](https://firebounty.com/)
+>A **bug bounty program** is a deal offered by many websites, organizations, and software developers by which individuals can receive recognition and compensation for reporting [bugs](https://en.wikipedia.org/wiki/Software_bug "Software bug"), especially those pertaining to [security](https://en.wikipedia.org/wiki/Security_bug "Security bug") [exploits](https://en.wikipedia.org/wiki/Exploit_(computer_security) "Exploit (computer security)") and [vulnerabilities](https://en.wikipedia.org/wiki/Vulnerability_(computing) "Vulnerability (computing)")
+
+You can become participant of Bounty program via
+
+- [Bugcrowd](https://www.bugcrowd.com/)
+- [HackerOne](https://www.hackerone.com/)
+- [Synack](https://www.synack.com/)
+- [Intigriti](https://www.intigriti.com/)
+- [FireBounty](https://firebounty.com/)
 
 # Hacking/InfoSec Youtube Channel
 

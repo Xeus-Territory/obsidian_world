@@ -21,6 +21,8 @@ First of all, you need to install `ZSH` and `Oh-my-zsh` for your shell
 
 I just brief step, and combine all into one bash file, you run it
 
+# Setup oh-my-zsh 
+
 ```bash title="oh-my-zsh-setup.sh"
 #!/bin/bash
 
@@ -58,6 +60,8 @@ mkdir -p ~/.local/share/fonts
 cp -r firacode/ttf/* ~/.local/share/fonts
 rm -rf firacode Fira_Code_v6.2.zip
 ```
+
+# Install helpful tools for ZSH
 
 Install some tool, which actually need
 
@@ -167,6 +171,8 @@ sudo apt update
 sudo apt install gimp -y
 ```
 
+# Install programming language for ZSH
+
 Install `language` compiler for your shell
 
 ```bash
@@ -211,6 +217,8 @@ chmod +x ./dotnet-install.sh
 echo "export DOTNET_ROOT=$HOME/.dotnet" >> ~/.zshrc
 echo "export PATH=\"\$PATH:\$DOTNET_ROOT:\$DOTNET_ROOT/tools\"" >> /.zshrc
 ```
+
+# Oh-my-zsh profile
 
 Lately, you can apply the `.zshrc` profile down below for configuration your terminal
 
@@ -365,4 +373,30 @@ export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:/usr/local/lib64/pkgconfig:$HOM
 
 # Alias command to get Public IP
 alias pubip="curl -4 icanhazip.com"
+```
+
+# Custom plugins for Oh-my-zsh
+
+For create custom oh-my-zsh, you can follow this step to add-on plugins for your shell
+
+```bash
+# For example, azcopy support completion for zsh
+# To validate
+azcopy completion zsh
+
+# Create folder plugins
+mkdir -p ~/.oh-my-zsh/custom/plugins/azcopy
+
+# Add completion zsh to folder with prefix
+azcopy completion zsh > ~/.oh-my-zsh/custom/plugins/azcopy/azcopy.plugin.zsh
+
+# Change plugins in .zshrc
+nano ~/.zshrc
+```
+
+![[Pasted image 20240729105225.png]]
+Save and reload your zsh profile, enjoy completion
+
+```bash
+source ~/.zshrc
 ```

@@ -29,6 +29,8 @@ What you can find out and figure out about Azure, Cloud Computing, Documentation
 - [Azure - Browse Azure Architectures](https://learn.microsoft.com/en-us/azure/architecture/browse/)
 - [Azure - Register Account](https://azure.microsoft.com/en-us/free)
 - [Azure - Community](https://techcommunity.microsoft.com/t5/azure/ct-p/Azure)
+- [Azure CLI - User Guide](https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest)
+- [Azure Price Calculator](https://azure.microsoft.com/en-gb/pricing/calculator/)
 
 # Azure CLI
 
@@ -84,7 +86,22 @@ You can check about that via [Azure Article - Use the portal to attach a data di
 >[!info]
 >In my situation, when mount to `/` instead of `/root`, It makes some change and gave you new definition for your current route, mean `/dev/sdc1` will replace default disk and can be cause the problem, I think 😄. Just `umount` and repeat `mount` again
 
+After that you can be make some mistake but if you want grant permission, you can continue for your progress in down below
 
+```bash
+# Change ownership of your drive
+sudo chown <your-username> /dev/sda3
+
+# Change mount write permission
+# NOTE: Umount before to do
+sudo umount /dev/sda3
+sudo mount -o /dev/sda3 /my-drive-locate
+
+# Change permission of your file inside to user
+sudo chown -R <user>:<group> /my-drive-locate
+```
+
+And now you can use it like usual disk
 # Azure Kubernetes Service
 ## Security patch for OS (AKS)
 
