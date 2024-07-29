@@ -25,22 +25,25 @@ The command will extract the `translators-main.zip` file in current folder
 
 You can use `--shutdown` flag to restart the `wsl` machine or you can setup `.wslconfig` on PATH `$env:USERPROFILE`, read more: [Advanced settings configuration in WSL](https://learn.microsoft.com/en-us/windows/wsl/wsl-config). More about scenarios you can read in [StackOverFlow - How can I reduce the consumption of the `vmmem` process?](https://superuser.com/questions/1559170/how-can-i-reduce-the-consumption-of-the-vmmem-process)
 
-## First method
+>[!note]
+>Shutdown to reclaim resource
 
 ```powershell
+# Shutdown WSL to reclaim resource
 wsl --shutdown
 ```
 
-## Second method
+>[!info]
+>Set new configuration
 
 ```powershell title=".wslconfig"
+# Update new info for wsl2
 [wsl2]
 memory=3GB # Set the limit memory can give for wsl
 ```
 
-After create `.wslconfig`
-
 ```powershell
+# Try shutdown after change configuration
 wsl --shutdown
 ```
 
@@ -48,37 +51,37 @@ wsl --shutdown
 
 Official documentation: [Basic commands for WSL](https://learn.microsoft.com/en-us/windows/wsl/basic-commands)
 
-1. Update `wsl`
+## Update `wsl`
 
 ```powershell 
 wsl --update
 ```
 
-2. Check the list subsystem running
+## Check the list subsystem running
 
 ```powershell
 wsl --list --running
 ```
 
-3. Set default linux distribution
+## Set default linux distribution
 
 ```powershell
 wsl --set-default <Distribution Name>
 ```
 
-4. Shutdown the `wsl`
+## Shutdown the `wsl`
 
 ```powershell
 wsl --shutdown
 ```
 
-5. Terminate linux distribution
+## Terminate linux distribution
 
 ```powershell
 wsl --terminate <Distribution Name>
 ```
 
-6. List distribution you have on Window machine
+## List distribution you have on Window machine
 
 ```powershell
 wsl --list

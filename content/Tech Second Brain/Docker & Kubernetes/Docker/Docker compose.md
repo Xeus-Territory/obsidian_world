@@ -39,9 +39,11 @@ Common options often use with `compose`, like
 
 # Note special Key in compose
 
-- Use host network to use driver of local interface, you when you want to call via `DNS` on different network with your `eth` interface
+## Use host network to use driver of local interface,
 
-	Documentation: [Accessing Host Services from Docker Containers](https://dev.to/mjnaderi/accessing-host-services-from-docker-containers-1a97)
+Use when you want to call via `DNS` on different network with your `eth` interface
+
+Documentation: [Accessing Host Services from Docker Containers](https://dev.to/mjnaderi/accessing-host-services-from-docker-containers-1a97)
 
 ```yaml {3-4}
 services:
@@ -50,7 +52,7 @@ services:
 			- "host.docker.internal:host-gateway"
 ```
 
-- Select network which you create not automatic generate, with `external`
+## Select your network with `external`
 
 ```yaml {4}
 networks:

@@ -6,13 +6,14 @@ tags:
   - entertainment
   - art
 ---
-# Vietnamese Pages
+![[Pasted image 20240729233732.png|center]]
+
+# Vietnamese
 
 - [DTV eBook - Thư Viện Sách Truyện Tiểu Thuyết Văn Học Miễn Phí Tải PRC/PDF/EPUB/AZW3](https://www.dtv-ebook.com/)
 - [THƯ VIỆN EBOOK (TVE-4U)](http://tve-4u.org/)
 
-
-# Foreign Pages
+# Foreign
 
 - [Goodread](https://www.goodreads.com/)
 - [IT eBooks](https://it-ebooks.info/)

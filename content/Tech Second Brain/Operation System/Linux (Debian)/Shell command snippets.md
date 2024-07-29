@@ -236,6 +236,231 @@ sudo reboot # OR use sudo shutdown -r now
 ```
 
 ![[Pasted image 20240724103806.png]]
+
+## Update alternative version
+
+>[!quote]
+>When you have multiple version of tools, package or moreover, like `python` `java jdk` `shell`, you need to switch between of them  that why you need the topic
+
+For change and update the configuration between different of tools, `debian` core offer us the command call `update-alternatives`. Let digest to its
+
+You can find the manual of the command with `--help` flag
+
+```bash
+$ update-alternatives --help
+Usage: update-alternatives [<option> ...] <command>
+
+Commands:
+  --install <link> <name> <path> <priority>
+    [--slave <link> <name> <path>] ...
+                           add a group of alternatives to the system.
+  --remove <name> <path>   remove <path> from the <name> group alternative.
+  --remove-all <name>      remove <name> group from the alternatives system.
+  --auto <name>            switch the master link <name> to automatic mode.
+  --display <name>         display information about the <name> group.
+  --query <name>           machine parseable version of --display <name>.
+  --list <name>            display all targets of the <name> group.
+  --get-selections         list master alternative names and their status.
+  --set-selections         read alternative status from standard input.
+  --config <name>          show alternatives for the <name> group and ask the
+                           user to select which one to use.
+  --set <name> <path>      set <path> as alternative for <name>.
+  --all                    call --config on all alternatives.
+
+<link> is the symlink pointing to /etc/alternatives/<name>.
+  (e.g. /usr/bin/pager)
+<name> is the master name for this link group.
+  (e.g. pager)
+<path> is the location of one of the alternative target files.
+  (e.g. /usr/bin/less)
+<priority> is an integer; options with higher numbers have higher priority in
+  automatic mode.
+
+Options:
+  --altdir <directory>     change the alternatives directory
+                             (default is /etc/alternatives).
+  --admindir <directory>   change the administrative directory
+                             (default is /var/lib/dpkg/alternatives).
+  --instdir <directory>    change the installation directory.
+  --root <directory>       change the filesystem root directory.
+  --log <file>             change the log file.
+  --force                  allow replacing files with alternative links.
+  --skip-auto              skip prompt for alternatives correctly configured
+                           in automatic mode (relevant for --config only)
+  --quiet                  quiet operation, minimal output.
+  --verbose                verbose operation, more output.
+  --debug                  debug output, way more output.
+  --help                   show this help message.
+  --version                show the version.
+```
+
+When you want to take a look how the version we have, such as `java` you can call with `--list` flag and name, example
+
+```bash
+$ update-alternatives --list java
+/usr/lib/jvm/java-11-openjdk-amd64/bin/java
+/usr/lib/jvm/java-18-openjdk-amd64/bin/java
+```
+
+And  when you have decision, on my situation `java` on my machine on `11` but I want to switch to `18`, you can perform this command
+
+```bash
+# Check version java
+$ java --version
+openjdk 11.0.22 2024-01-16
+OpenJDK Runtime Environment (build 11.0.22+7-post-Ubuntu-0ubuntu222.04.1)
+OpenJDK 64-Bit Server VM (build 11.0.22+7-post-Ubuntu-0ubuntu222.04.1, mixed mode, sharing)
+
+# Change version to 18
+$ sudo update-alternatives --config java
+There are 2 choices for the alternative java (providing /usr/bin/java).
+
+  Selection    Path                                         Priority   Status
+------------------------------------------------------------
+  0            /usr/lib/jvm/java-18-openjdk-amd64/bin/java   1811      auto mode
+* 1            /usr/lib/jvm/java-11-openjdk-amd64/bin/java   1111      manual mode
+  2            /usr/lib/jvm/java-18-openjdk-amd64/bin/java   1811      manual mode
+
+Press <enter> to keep the current choice[*], or type selection number: 0
+update-alternatives: using /usr/lib/jvm/java-18-openjdk-amd64/bin/java to provide /usr/bin/java (java) in auto mode
+
+# Check the version java again
+$ java --version
+openjdk 18.0.2-ea 2022-07-19
+OpenJDK Runtime Environment (build 18.0.2-ea+9-Ubuntu-222.04)
+OpenJDK 64-Bit Server VM (build 18.0.2-ea+9-Ubuntu-222.04, mixed mode, sharing)
+```
+
+Relate documentation
+
+- [Switch between multiple java versions](https://askubuntu.com/questions/740757/switch-between-multiple-java-versions)
+- [What exactly does `update-alternatives` do?](https://askubuntu.com/questions/233190/what-exactly-does-update-alternatives-do)
+- [The update-alternatives Command in Linux](https://www.baeldung.com/linux/update-alternatives-command)
+
+## Comment note in Shell Bash
+
+>[!info]
+>2 ways for writing the comment to shell bash.
+>
+>Example and troubleshooting via  [Link to details](https://ioflood.com/blog/bash-comment/)
+
+### Using the `#` character for comment
+
+>[!info]
+>In Bash, a comment starts with the hash symbol (#). Anything after # on that line is considered a comment and is ignored by the Bash interpreter
+
+```bash
+# This is a comment in Bash
+
+# Output:
+# (No output, as comments are not executed)
+```
+
+### Using the doctype `Here Document` for comment multiple line
+
+>[!info]
+>Bash doesn’t have a specific syntax for multi-line comments like some other languages, but you can use a trick with the : command and a ‘here document’ to achieve the same effect.
+
+```bash
+: << 'END_COMMENT'
+This is a
+multi-line comment
+in Bash
+END_COMMENT
+
+# Output:
+# (No output, as comments are not executed)
+```
+
+## Reconfiguration for curl template output
+
+>[!note]
+>**Reference: [Timing Page Responses With Curl](https://www.hashbangcode.com/article/timing-page-responses-curl)**
+### Templates format to output via `curl` command
+
+```bash title="curl-formatter.txt"
+time_namelookup:  %{time_namelookup}s\n
+time_connect:  %{time_connect}s\n
+time_appconnect:  %{time_appconnect}s\n
+time_pretransfer:  %{time_pretransfer}s\n
+time_redirect:  %{time_redirect}s\n
+time_starttransfer:  %{time_starttransfer}s\n
+				 ----------\n
+	  time_total:  %{time_total}s\n
+```
+
+*To reference the documentation for the time based variables is as follows.*
+
+- **time_appconnect** - The time, in seconds, it took from the start until the SSL/SSH/etc connect/handshake to the remote host was completed.
+- **time_connect** - The time, in seconds, it took from the start until the TCP connect to the remote host (or proxy) was completed.
+- **time_namelookup** - The time, in seconds, it took from the start until the name resolving was completed.
+- **time_pretransfer** - The time, in seconds, it took from the start until the file transfer was just about to begin. This includes all pre-transfer commands and negotiations that are specific to the particular protocol(s) involved.
+- **time_redirect** - The time, in seconds, it took for all redirection steps including name lookup, connect, pretransfer and transfer before the final transaction was started. time_redirect shows the complete execution time for multiple redirections.
+- **time_starttransfer** - The time, in seconds, it took from the start until the first byte was just about to be transferred. This includes time_pretransfer and also the time the server needed to calculate the result.
+- **time_total** -  The total time, in seconds, that the full operation lasted.
+
+### How to use
+
+Find the PATH which including the `curl-formatter.txt` file with `cd` or `pwd`, Use this with `curl` command
+
+```bash
+curl -w "@<file-formatter-above>" -o /dev/null -sL <url>
+```
+
+![[Pasted image 20240218140458.png]]
+
+## Redirect Output and Error
+
+>[!note]
+>Reference ▶️ ▶️ ▶️  [How to Redirect Output and Error to /dev/null in Linux](https://linuxhandbook.com/redirect-dev-null/)
+### Some thing about the output of linux
+
+- In the linux machine,  `/dev/null` that will location where you can return null for your shell like `command 2>&1 /dev/null`
+- There will have 3 three type of output which linux has
+	- Standard input (stdin) is designated with 0
+	- Standard output (stdout) is designated with 1
+	- Standard error (stderr) is designated with 2
+### Redirect output to /dev/null in Linux
+   
+*For example*: You run `apt install curl` but you want your shell not return anything you can redirect `output` into `/dev/null`. It will be like 
+
+```bash
+sudo apt install curl 1>/dev/null
+```
+
+![[Drawing 2024-02-18 14.22.10.excalidraw.png]]
+
+*Usage: Used it when you don't want `stdout` go to your shell, just removing the odd things and keep the important output*
+
+### Redirect error to /dev/null in Linux
+   
+*For example*: You run `find /` but you run with non root, so somecase you will have some permission error output to your shell. You can use `/dev/null` for removing this messing stuff
+
+```bash
+find / 2> /dev/null
+```
+
+![[Pasted image 20240218143855.png]]
+
+### Combine `stdout` and `stderror` into one with this character `&`
+   
+```bash
+1. Long version
+find / 2> /dev/null 1>/dev/null
+
+2. Short version
+find / 2>&1 /dev/null (Send error to output and send them to /dev/null)
+
+3. Some other case
+find / > /dev/null 2>&1
+```
+
+>[!attention] Sometime you can use version `2` of combining
+>	
+>The `2>&1` part means "redirect the error stream into the output stream", so when you redirect the output stream, error stream gets redirected as well. Even if your program writes to `stderr` now, that output would be discarded as well. ([Sergey Kalinichenko](https://stackoverflow.com/users/335858/sergey-kalinichenko))
+
+**Find this problem ▶️ ▶️  [What is /dev/null 2>&1?](https://stackoverflow.com/questions/10508843/what-is-dev-null-21)**
+
 # External Commands
 ## Caddy server
 

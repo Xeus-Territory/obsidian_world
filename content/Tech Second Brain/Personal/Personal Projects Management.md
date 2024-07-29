@@ -29,17 +29,16 @@ Github: [kubewekend](https://github.com/Xeus-Territory/kubewekend)
 
 >[!summary]
 >Use the instant technologies for setting up Kubernetes cluster, with
->- Use `Vargrant` to configuration the VM with provider in `VirtualBox`
->- Ansible - To setup and run script and bring up `kubernetes` cluster on locally, Use `kind`
->- Exploring, understanding and provisioning require components inside the `kind` cluster
->- `cilium` and `ebpf` - The powerful kernel service of `kubewekend` cluster
->- How to build the High Availability (HA) Cluster. 
->- Use extend `CSI` for volume in `kubernetes` and define `kubernetes` storage class with `Ceph`
->- Setup new `app`, use `cilium` to route traffic into cluster via gateway
->- Setup the monitoring cluster inside the `kubernetes` with `node-exporter`, `cadvisor`, `prometheus` and `grafana`
->- Setup tracing, logging, profiling with `sidecar` or use `cilium-ebpf`
->- Use `kind` and `kubeadm` to expand, manage kubernetes nodes to create HA (High Available) Node
->- Cusmtomize default scheduled in kubernetes cluster with `kube-scheduler`
+>- Use `Vargrant` to configuration the VM with provider in `VirtualBox` ✅
+>- Ansible - To setup and run script and bring up `kubernetes` cluster on locally, Use `kind` ✅
+>- Exploring, understanding and provisioning require components inside the `kind` cluster ✅
+>- `cilium` and `ebpf` - The powerful kernel service of `kubewekend` cluster ✅
+>- How to build the High Availability (HA) Cluster.  ✅
+>- Use extend `CSI` for volume and storage class with `Ceph` ⌛
+>- Setup new `app`, use `cilium` to route traffic into cluster via gateway ⌛
+>- Setup the monitoring cluster inside the `kubernetes` with `node-exporter`, `cadvisor`, `prometheus` and `grafana` ⌛
+>- Setup tracing, logging, profiling components in `kubewekend` cluster ⌛
+>- Customize default scheduled in `kubernetes` cluster with `kube-scheduler` ⌛
 
 ## Customize script for manipulation scheduled Kubernetes 🚧
 
@@ -71,7 +70,7 @@ Reference technics : `ZTM (Zero Trust Mesh)` , `wstunnel`
 
 ![[Pasted image 20240502101316.png]]
 
-## Pre-hook framework ✍
+## Pre-hook framework 🚧
 
 Github: **[distribute-git-hook](https://github.com/wouops/distribute-git-hook)**
 
@@ -91,3 +90,13 @@ Github: **[distribute-git-hook](https://github.com/wouops/distribute-git-hook)**
 >[!note]
 >Feel free to read about small article about operating 👉 [[0-downtime with Blue-Green Deployment]]
 ## Canary Deployment 🚧
+
+# AIOps and MLOps 🚧
+
+## Milvus Cluster 🚧
+
+Documentation: https://milvus.io/docs
+
+>[!info]
+>Try to learn and explore vector database of Linux Foundation Opensource, and try to practical with feature and grasp the infrastructure of `milvus` with `kubewekend` cluster
+

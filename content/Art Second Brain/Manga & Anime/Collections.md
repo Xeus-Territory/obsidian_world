@@ -7,6 +7,13 @@ tags:
   - entertainment
   - collections
 ---
+![[Pasted image 20240729233644.png]]
+
+# Manga Reader
+
+- [MangaDex](https://mangadex.org/)
+- [Rawkuma – Read Raw Manga Online Hiqh Quality](https://rawkuma.com/)
+- [MangaPlus](https://mangaplus.shueisha.co.jp/updates)
 # Community
 
 - [MyAnimeList.net - Panel](https://myanimelist.net/)

@@ -43,7 +43,7 @@ git commit -m "New message represent for twice or N commit"
 
 ![[Pasted image 20240513100055.png]]
 
-# Delete remote branch
+# Delete branch
 
 Follow the article to understand how we can remove the branch in local and remote, use `-d` flag at: [Git Delete Remote Branch – How to Remove a Remote Branch in Git](https://www.freecodecamp.org/news/git-delete-remote-branch/)
 

@@ -66,6 +66,7 @@ tags:
 >*September 2022 - December 2022*
 >
 >🔗🔗🔗 [Github](https://github.com/Xeus-Territory/robust_scanner)
+>
 >🔗🔗🔗 [Article](https://hackmd.io/BflJwJ4WR56HptJBgJCo-g)
 
 # NTMA Anomaly
@@ -84,6 +85,7 @@ tags:
 > *April 2023 - July 2023*
 > 
 > 🔗🔗🔗 [Github](https://github.com/Xeus-Territory/ntma_anomaly)
+> 
 > 🔗🔗🔗 [[NTMA for anomalies detection and autoscaling|Article]]
 
 # AWS Infrastructure with Ansible and Terraform
@@ -102,6 +104,7 @@ tags:
 >*June 2023 - September 2023*
 >
 >🔗🔗🔗 [Github](https://github.com/Xeus-Territory/aws-ansible-infrastructure)
+>
 >🔗🔗🔗 [Article](https://hackmd.io/2_tUc4W7S3K8s3aOiwgGyg)
 
 # DevOps Tutorial - Zero to Hero
@@ -120,6 +123,7 @@ tags:
 >*Jan 2023 - Current*
 >
 >🔗🔗🔗 [Github](https://github.com/Xeus-Territory/devops-tutorials)
+>
 >🔗🔗🔗 [[All Blogs#DevOps - Tutorials from zero to hero]]
 
 # Zero Downtime Deployment with NGINX
@@ -138,6 +142,7 @@ tags:
 >*Oct 2023*
 >
 >🔗🔗🔗 [[Shell Script about Automation CD with Zero Downtime|Source Code]]
+>
 >🔗🔗🔗 [[0-downtime with Blue-Green Deployment|Article]]
 
 
@@ -148,12 +153,15 @@ tags:
 >
 >**Position: DevOps, R&D**
 >
+>**Team size: 1**
+>
 >**Technologies: Ansible, Vagrant, Kubernetes and Open Source for operating Kubernetes**
 >
 >*July 2024 - Present*
 >
 >🔗🔗🔗 [Source Code](https://github.com/Xeus-Territory/kubewekend)
->🔗🔗🔗 [[All Blogs#Kubewekend]]
+>
+>🔗🔗🔗 [[All Blogs#Kubewekend Series]]
 
 
 
