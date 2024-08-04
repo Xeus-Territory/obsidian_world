@@ -7,7 +7,7 @@ tags:
   - awesome
   - ansible
 ---
-# Awesome Tech Repository
+cd# Awesome Tech Repository
 
 >[!info]
 >Include repository, blog about technologies, self-hosted, devops, design and system design, ...
@@ -99,6 +99,7 @@ tags:
 - [Medium - Most-Used Distributed System Design Patterns](https://medium.com/javarevisited/most-used-distributed-system-patterns-d5d90ffedf33)
 - [Medium - eBPF Maps State Synchronization across Multi-Node Kubernetes Cluster](https://medium.com/gitconnected/ebpf-maps-state-synchronization-across-multi-node-kubernetes-cluster-d0c075810fa7)
 - [KodeKloud - eBPF Essentials for DevOps Professionals](https://kodekloud.com/blog/ebpf-essentials-devops/)
+- [9 Powerful Atlantis Alternatives to Enhance Terraform Efficiency](https://zeet.co/blog/atlantis-alternatives)
 # DevOps Youtube Channel
 
 ![[youtube.png]]
@@ -209,12 +210,11 @@ tags:
 
 - [moz://a SSL Configuration Generator](https://ssl-config.mozilla.org/) : SSL Generation for multiple webserver
 - [YAML Multiline Strings](https://yaml-multiline.info/) : Find the right syntax for YAML file
+- [terraform-docs](https://terraform-docs.io/user-guide/introduction/) : A utility to generate documentation from Terraform modules in various output formats.
 
 ## Self-hosted
 
 - [LocalStack - AWS local](https://hub.docker.com/r/localstack/localstack) : A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline. Read more: [Documentation](https://docs.localstack.cloud/getting-started/). You can do more access and management via [LocalStack Web Application](https://app.localstack.cloud/sign-in)
-- [Atlantis - Terraform Pull Request Automation](https://www.runatlantis.io/): Running Terraform Workflows with Ease
-
 ## Secrets management
 
 - [dotenvx](https://dotenvx.com/) : Loads environment variables from .env for nodejs projects.
@@ -223,13 +223,14 @@ tags:
 
 ## Policy Controller Kubernetes
 
-- [OPA Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/)
-- [Kyverno](https://kyverno.io/)
-- [Datree](https://hub.datree.io/)
+- [OPA Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/) : A customizable cloud native policy controller that helps enforce policies and strengthen governance
+- [Kyverno](https://kyverno.io/) : Kubernetes Native Policy Management
+- [Datree](https://hub.datree.io/) : Datree secures your Kubernetes by blocking the deployment of misconfigured resources.
 
 ## Threat Intelligence
 
 - [Falco](https://falco.org/): Detect security threats in real time
+- [Tetragon](https://tetragon.io/docs/) : Cilium Tetragon component enables powerful realtime, eBPF-based Security Observability and Runtime Enforcement.
 
 ## API Gateway
 
@@ -250,14 +251,15 @@ tags:
 
 - [CNI](https://github.com/containernetworking/cni) : Container Network Interface - networking for Linux containers. [Website](https://www.cni.dev/docs/)
 - [Cilium](https://cilium.io/) : Cilium is an open source, cloud native solution for providing, securing, and observing network connectivity between workloads, fueled by the revolutionary Kernel technology eBPF
-- [Calico](https://www.tigera.io/project-calico/): Calico is a networking and security solution that enables Kubernetes workloads and non-Kubernetes/legacy workloads to communicate seamlessly and securely.
+- [Calico](https://www.tigera.io/project-calico/): Calico is a networking and security solution that enables `Kubernetes` workloads and non-Kubernetes/legacy workloads to communicate seamlessly and securely.
+- [flannel](https://github.com/flannel-io/flannel) : A network fabric for containers, designed for `Kubernetes`
+- [weave](https://github.com/weaveworks/weave) : Simple, resilient multi-host containers networking and more.
 
 ## Terraform workflow automation
 
-- [Atlantis](https://www.runatlantis.io/) : Running Terraform Workflows with Ease
+- [Atlantis - Terraform Pull Request Automation](https://www.runatlantis.io/) : Running Terraform Workflows with Ease
 - [scalr](https://docs.scalr.io/docs/introduction) :  Remote operations backend for Terraform and OpenTofu (OTF)
 - [digger](https://docs.digger.dev/readme/introduction) : open-source CI/CD orchestrator for Terraform
-
 ## Gitops
 
 - [bytebase](https://github.com/bytebase/bytebase) : The GitHub/GitLab for database DevOps.

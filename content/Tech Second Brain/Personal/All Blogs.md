@@ -160,6 +160,7 @@ tags:
 - [[Play with Makefile for 1st time]]
 - [[Compile gRPC for 1st time]]
 - [[Build your wiki for 1st time]]
+- [[Atlantis with ECS for automatic provisioning]]
 # CI/CD Gallery
 
 >[!info]
@@ -189,6 +190,8 @@ tags:
 - [[Tech Second Brain/AI & ML & Data/Helpful Pages & Articles|Artificial intelligence, Machine Learning and Data Science]]
 - [[DevOps & System & Tech|DevOps, Systems and Technologies]]
 - [[Utilities Site|Softwares & Tools Helpful Pages & Articles]]
+- [[Tech Second Brain/Cloud/Azure/Cheatsheet and Troubleshoot|Azure Cheatsheet and Troubleshoot]]
+- [[Tech Second Brain/Cloud/AWS/Cheatsheet and Troubleshoot|AWS Cheatsheet and Troubleshoot]]
 
 # OS Profile
 
@@ -211,13 +214,13 @@ tags:
 
 ## 2024
 
+- [[Tech Second Brain/Cloud/Azure/Cheatsheet and Troubleshoot#Azure CLI|Azure]]
+- [[Tech Second Brain/Cloud/AWS/Cheatsheet and Troubleshoot#AWS CLI|AWS]]
 - [[Docker]]
 - [[Docker compose]]
+- [[Popular API usage|Elasticsearch]]
 - [[Kubectl snippet|Kubectl]]
 - [[Git|Git]]
 - [[HTML|HTML]]
-- [[Azure CLI|Azure CLI]]
-- [[AWS CLI]]
 - [[Powershell Snippets|Powershell]]
 - [[Shell command snippets|Shell Bash]]
-- [[Popular API usage|Elasticsearch]]

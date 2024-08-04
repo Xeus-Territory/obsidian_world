@@ -43,7 +43,7 @@ tags:
 >[!quote]
 ><h3>Music of week 🙌🙌</h3>
 >
-><iframe width="560" height="315" src="https://www.youtube.com/embed/GwI5ixcgR5o?si=80nSqxDevb9Ou_c3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+><iframe width="560" height="315" src="https://www.youtube.com/embed/rFJ9vRufYzc?si=ZibAyXIMDK_jPYmD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
  <h2>Find me on</h2> 
 

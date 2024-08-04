@@ -1,15 +1,20 @@
 ---
-title: Music Produce Collections
+title: Music Collections
 tags:
   - art
   - music
   - entertainment
   - collections
 ---
-# FL Studio
+![[Pasted image 20240804122346.png]]
+# Producing
+
+>[!info]
+>The collections about manual and plugin for purpose produce the music in `flstudio` or `audacity` applications
+## FL Studio
 
 - [FL Studio Online Manual - FL Studio](https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/)
-# VST Plugin
+## VST Plugin
 
 - [The 248 Best Free VST Plugins](https://blog.landr.com/best-free-vst-plugins/)
 - [PLUGINS 4 FREE - Free Instrument Audio Plugins Archive](https://plugins4free.com/instruments/)
