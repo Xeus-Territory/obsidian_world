@@ -24,6 +24,8 @@ You can figure what you need to do for start with `aws` via some website and art
 - [AWS CLI - Command Guide](https://awscli.amazonaws.com/v2/documentation/api/latest/index.html)
 - [AWS Create Account Guide](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html)
 - [AWS Price Calculator](https://calculator.aws/#/)
+- [AWS Architecture Blog](https://aws.amazon.com/vi/blogs/architecture/)
+- [AWS Blog](https://aws.amazon.com/blogs)
 
 You can manage `aws` as organization via the tree and sub-organization inside root account
 
@@ -211,7 +213,80 @@ export AWS_DEFAULT_PROFILE=<profile-name>
 export AWS_PROFILE=<profile-name>
 ```
 
+# Cheatsheet and Script
+
+## S3
+
+### Retrieve file data from S3
+
+>[!summary]
+>This script will be helped you for retrieving the file from your S3 bucket
+
+```bash
+#!/bin/bash
+
+bucket="$1"
+amzFile="$2"
+outputFile="$3"
+resource="/${bucket}/${amzFile}"
+contentType="application/x-compressed-tar"
+dateValue=$(date -R)
+stringToSign="GET\n\n${contentType}\n${dateValue}\n${resource}"
+AWS_ACCESS_KEY_ID="$4"
+AWS_SECRET_ACCESS_KEY="$5"
+signature=$(echo -en "${stringToSign}" | openssl sha1 -hmac ${AWS_SECRET_ACCESS_KEY} -binary | base64)
+
+echo -n "$(curl  -H "Host: ${bucket}.s3.amazonaws.com" \
+     -H "Date: ${dateValue}" \
+     -H "Content-Type: ${contentType}" \
+     -H "Authorization: AWS ${AWS_ACCESS_KEY_ID}:${signature}" \
+     https://${bucket}.s3.amazonaws.com/${amzFile} -o "$outputFile")"
+```
+
+### Upload file to S3
+
+>[!summary]
+>This script will help you upload a new file to S3 bucket
+
+```bash
+#!/bin/bash
+
+file="FILEPATH"
+bucket="BUCKET_NAME"
+folder="FOLDER_IN_BUCKET"
+resource="/${bucket}/${folder}/${file}"
+contentType="text/plain"
+dateValue=$(date -R)
+s3Key="S3KEY"
+s3Secret="S3SECRET"
+
+# Check if the file exists on S3
+httpResponseCode=$(curl -I -s -o /dev/null -w "%{http_code}" -X HEAD -H "Host: ${bucket}.s3.amazonaws.com" "https://${bucket}.s3.amazonaws.com/${folder}/${file}")
+
+if [ $httpResponseCode -eq 200 ]; then
+  # If the file exists, delete it
+  deleteDateValue=$(date -R)
+  deleteResource="/${bucket}/${folder}/${file}"
+  deleteStringToSign="DELETE\n\n\n${deleteDateValue}\n${deleteResource}"
+  deleteSignature=$(echo -en "${deleteStringToSign}" | openssl sha1 -hmac "${s3Secret}" -binary | base64)
+
+  # Send the DELETE request
+  curl -X DELETE -H "Host: ${bucket}.s3.amazonaws.com" -H "Date: ${deleteDateValue}" -H "Authorization: AWS ${s3Key}:${deleteSignature}" "https://${bucket}.s3.amazonaws.com/${folder}/${file}"
+  echo ">>>>>>>>>>>>>>>>>>> An existing file was deleted successfully!"
+fi
+
+# Now, upload the new file
+stringToSign="PUT\n\n${contentType}\n${dateValue}\n${resource}"
+signature=$(echo -en "${stringToSign}" | openssl sha1 -hmac "${s3Secret}" -binary | base64)
+
+# Send the PUT request to upload the new file
+curl -L -X PUT -T "${file}" -H "Host: ${bucket}.s3.amazonaws.com" -H "Date: ${dateValue}" -H "Content-Type: ${contentType}" -H "Authorization: AWS ${s3Key}:${signature}" "https://${bucket}.s3.amazonaws.com/${folder}/${file}"
+echo ">>>>>>>>>>>>>> A new file was uploaded successfully!"
+```
+
 # Helpful articles
 
 - [Medium - ECS (Fargate) with ALB Deployment Using Terraform — Part 3](https://medium.com/the-cloud-journal/ecs-fargate-with-alb-deployment-using-terraform-part-3-eb52309fdd8f)
 - [Medium - Creating SSL Certificates using AWS Certificate Manager (ACM)](https://medium.com/@sonynwoye/creating-ssl-certificates-using-aws-certificate-manager-acm-1c359e70ce4d)
+- [Medium - Configuring Production-Ready EKS Clusters with Terraform and GitHub Actions](https://medium.com/stackademic/configuring-production-ready-eks-clusters-with-terraform-and-github-actions-c046e8d44865)
+

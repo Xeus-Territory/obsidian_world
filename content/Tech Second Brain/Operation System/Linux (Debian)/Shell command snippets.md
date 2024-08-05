@@ -141,6 +141,20 @@ Use tunneling mode of `ssh` to reverse shell from remote to your local host
 ```bash
 ssh -N -L 8080:127.0.0.1:8080 -i /path/to/your/private_key <user>@<remote-host> -p <port-ssh> # Default ssh via port 22, use -p if you need to specific
 ```
+
+## `jq` command
+
+You can use `jq` to select multiple variable
+
+```bash
+cat app.json | jq -r '.expo | .name, .version' 
+```
+
+You can use `jq` to select multiple variable and concat that to one string
+
+```bash
+cat app.json | jq -r '(.expo.name + "." + .expo.version)'
+```
 # Cheatsheet
 ## Re run the previous command
 

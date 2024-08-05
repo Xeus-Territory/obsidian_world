@@ -1,11 +1,13 @@
 ---
+title: Powershell script collection
 tags:
+  - command
   - powershell
   - DIY
-  - azure-devops
-  - runners
-title: Build Azure Agent with .NET Core by Powershell
+  - devops
 ---
+# Build Azure Agent with .NET Core by Powershell
+
 >[!summary]
 >This article will tell you how to use powershell script below, why it creates and release. Go check it in article ▶️ ▶️ [Setup the virtual machine Linux and Windows for Agents and Azure-Pipelines](https://hackmd.io/@XeusNguyen/S1BrSRPW6)
 

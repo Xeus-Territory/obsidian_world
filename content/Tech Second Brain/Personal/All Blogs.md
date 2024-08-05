@@ -161,6 +161,7 @@ tags:
 - [[Compile gRPC for 1st time]]
 - [[Build your wiki for 1st time]]
 - [[Atlantis with ECS for automatic provisioning]]
+- [[Create SSL Cert with ACM and Route53 for AWS Services]]
 # CI/CD Gallery
 
 >[!info]
@@ -169,9 +170,9 @@ tags:
 **Timeline: 2024 - Current**
 ## 2024
 
-- [[Github Action Gallery|Github Action]]
-- [[Azure Pipelines Gallery|Azure Pipelines]]
-- [[GitlabCI Gallery|Gitlab CI]]
+- [[Github Action|Github Action]]
+- [[Azure Pipelines|Azure Pipelines]]
+- [[GitlabCI|Gitlab CI]]
 
 # Helpful Collections
 

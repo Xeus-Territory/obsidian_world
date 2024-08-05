@@ -291,7 +291,7 @@ As you can see, the code will create inside VPC to **6 subnet**, half of them sp
 - Attach zone and create 3 subnet for private and 3 subnet for public, It will
 
 	- Public subnet: `10.0.3.0/24` `10.0.4.0/24` and `10.0.5.0/24` in `ap-southeast-1a` to `ap-southeast-1c`
-	- Private subnet: `10.0.0.0/24` `10.0.1.0/24` and `10.0.2.0/24` in `ap-southeast-1a` to `ap-southeast-1c
+	- Private subnet: `10.0.0.0/24` `10.0.1.0/24` and `10.0.2.0/24` in `ap-southeast-1a` to `ap-southeast-1c`
 
 - Create Nat Gateway and Internet Gateway, and two Route Table to create connection between subnet with these Gateway
 - Create the association between `Nat Gateway` with `Private Network` at range `0.0.0.0/0` and `Internet Gateway` with `Public Network` at range `0.0.0.0/0`
@@ -472,7 +472,7 @@ Now we update `webhook` configuration in URL to your actually URL of `Atlantis`,
 
 When you create `PR`, you can see your bot or user which you set up in **Server Configuration** of `Atlantis` will response `plan` like this
 
-![[Pasted image 20240804183358.png]]
+![[Pasted-image-20240804183358.png]]
 
 As you can see, `Atlantis` run `plan` in `root` directory, it means that find right path base on algorithm which I want
 

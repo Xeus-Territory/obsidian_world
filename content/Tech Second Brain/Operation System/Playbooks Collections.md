@@ -1,12 +1,12 @@
 ---
-title: Setup General in VM
+title: OS Playbooks Collections
 tags:
-  - ansible-playbooks
   - ansible
-  - basic-knowledge
-  - bash
+  - ansible-playbooks
   - linux
 ---
+# Setup General VM
+
 >[!summary]
 >Ansible Playbooks for general config VM
 
@@ -42,4 +42,3 @@ tags:
           - postgresql-client
         state: present
 ```
-

@@ -67,6 +67,7 @@ cd# Awesome Tech Repository
 - [How-To Geek](https://www.howtogeek.com/) - *Community who explain Technologies*
 - [Hackaday.io](https://hackaday.io/) - *The world's largest collaborative hardware development community.*
 - [Hackaday](https://hackaday.com/) - *Fresh Hacks Every Day*
+- [Medium - ByteByteGo System Design Alliance](https://medium.com/bytebytego-system-design-alliance) - *Explain complex systems with simple term*.
 # DevOps Articles
 
 >[!note]
@@ -211,6 +212,7 @@ cd# Awesome Tech Repository
 - [moz://a SSL Configuration Generator](https://ssl-config.mozilla.org/) : SSL Generation for multiple webserver
 - [YAML Multiline Strings](https://yaml-multiline.info/) : Find the right syntax for YAML file
 - [terraform-docs](https://terraform-docs.io/user-guide/introduction/) : A utility to generate documentation from Terraform modules in various output formats.
+- [.gitignore.io](https://www.toptal.com/developers/gitignore): Create useful .gitignore files for your project
 
 ## Self-hosted
 
@@ -271,4 +273,6 @@ cd# Awesome Tech Repository
 - [Qovery](https://hub.qovery.com/docs/getting-started/what-is-qovery/) : the **Internal Developer Platform (IDP)** that cuts noise for developers with paved paths to production
 - [Kusion](https://www.kusionstack.io/docs/) : An intent-driven [Platform Orchestrator](https://internaldeveloperplatform.org/platform-orchestrators/), which sits at the core of an [Internal Developer Platform (IDP)](https://internaldeveloperplatform.org/what-is-an-internal-developer-platform/)
 
+## Build Tool
 
+- [Expo](https://docs.expo.dev/): Expo is a framework that makes developing Android and iOS apps easier. Our framework provides file-based routing, a standard library of native modules, and much more

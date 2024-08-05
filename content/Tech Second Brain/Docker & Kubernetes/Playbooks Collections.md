@@ -1,10 +1,13 @@
 ---
-title: Portainer in Docker
+title: Playbooks Collections
 tags:
-  - ansible-playbooks
   - ansible
+  - ansible-playbooks
+  - docker
   - monitoring
 ---
+# Portainer in Docker
+
 >[!summary]
 >Ansible Playbooks for self-hosted Portainer with Docker
 
