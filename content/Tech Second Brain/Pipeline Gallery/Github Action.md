@@ -1,5 +1,5 @@
 ---
-title: Github Actions Gallery
+title: Github Actions
 tags:
   - cicd
   - automation
@@ -11,6 +11,8 @@ tags:
 >- [GitHub Actions documentation](https://docs.github.com/en/actions)
 >- [Github Actions Contexts](https://docs.github.com/en/actions/learn-github-actions/contexts)
 >- [Github Action Variables](https://docs.github.com/en/actions/learn-github-actions/variables)
+>- [Github Action syntax](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions)
+>- [Github Action reuse workflows](https://docs.github.com/en/actions/using-workflows/reusing-workflows)
 
 # Deploy React application to Github Page
 
@@ -124,4 +126,114 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           action: "close"
+```
+
+# Build Mobile with Expo
+
+You need to use `eas.json` to configuration how can `expo-cli` talk with your source code
+
+```json title="eas.json"
+{
+  "cli": {
+    "version": ">= 10.2.1"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk",
+        "env": {
+          "EXPO_PUBLIC_API_URL" : "https://xeusnguyen.xyz/"
+        }
+      }
+    },
+    "bundle": {
+      "android": {
+        "buildType": "app-bundle",
+        "gradleCommand": "app:bundleRelease",
+        "env": {
+          "EXPO_PUBLIC_API_URL" : "https://xeusnguyen.xyz/"
+        }
+      }
+    },
+    "production": {}
+  },
+  "submit": {
+    "production": {}
+  }
+}
+
+```
+
+After define that you will have permission to use `expo` inside your github-actions
+
+```yaml
+# Define name of Actions
+name: Build and Release Applications
+# Trigger of Actions by manually
+# Read on: https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#workflow_dispatch
+on: workflow_dispatch
+  
+# Define job in a workflow
+# Read on: https://docs.github.com/en/actions/using-jobs/using-jobs-in-a-workflow
+jobs:
+  build_android:
+    runs-on: ubuntu-latest
+    env:
+      EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Fetch all history for git info
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18.20
+
+      - name: Install Dependencies
+        run: |
+          npm install -g eas-cli
+          npx eas --version
+
+      - name: Build Android Application
+        run: npx eas build -p android --profile preview --non-interactive
+
+      - name: Download Artifact from Expo
+        run: |
+          artifactURL=$(npx eas build:view --json | jq -r ".artifacts.buildUrl")
+          mkdir -p ./android
+          wget -q $artifactURL -O ./android/$(cat app.json | jq -r '(.expo.name + "." + .expo.version)').apk
+      
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          path: android
+          retention-days: 30
+
+  ################################################
+  ## Use for production, need account to permit ##
+  ## Doc: https://docs.expo.dev/submit/android/ ##
+  ################################################
+
+  # release-android:
+  #   runs-on: ubuntu-latest
+  #   needs: build_android
+  #   env:
+  #     EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+  #   steps:
+  #     - name: Bundle Application
+  #       run: |
+  #         npx eas build -p android --profile bundle --non-interactive
+
+  #     - name: Release app to Google Play
+  #       run: |
+  #         # Current not have account, We will provide after
+  #         # Doc: https://docs.expo.dev/tutorial/eas/android-production-build/
+  #         echo "Release aab to Google Play"
+
+
 ```

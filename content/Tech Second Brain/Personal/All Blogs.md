@@ -169,9 +169,9 @@ tags:
 **Timeline: 2024 - Current**
 ## 2024
 
-- [[Github Action Gallery|Github Action]]
-- [[Azure Pipelines Gallery|Azure Pipelines]]
-- [[GitlabCI Gallery|Gitlab CI]]
+- [[Github Action|Github Action]]
+- [[Azure Pipelines|Azure Pipelines]]
+- [[GitlabCI|Gitlab CI]]
 
 # Helpful Collections
 

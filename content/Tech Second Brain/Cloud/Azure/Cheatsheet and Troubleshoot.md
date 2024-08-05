@@ -34,7 +34,9 @@ What you can find out and figure out about Azure, Cloud Computing, Documentation
 
 # Azure CLI
 
-## Create virtual machine
+## az vm
+
+### Create virtual machine
 
 Documentation: [az vm create](https://learn.microsoft.com/en-us/cli/azure/vm?view=azure-cli-latest#az-vm-create)
 
@@ -42,6 +44,29 @@ Documentation: [az vm create](https://learn.microsoft.com/en-us/cli/azure/vm?vie
 az vm create -n MyVm -g MyResourceGroup --image Ubuntu2204
 ```
 
+## az acr
+
+### Login to your acr
+
+Documentation: [Authenticate with an Azure container registry](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-authentication?tabs=azure-cli) and [az acr login](https://learn.microsoft.com/en-us/cli/azure/acr?view=azure-cli-latest#az-acr-login)
+
+```bash
+az acr login --name acrname
+```
+
+## az containerapp
+
+### Update new information for containerapp
+
+Documentation: [az containerapp update](https://learn.microsoft.com/en-us/cli/azure/containerapp?view=azure-cli-latest#az-containerapp-update)
+
+```bash
+# Use two env first is your selection, second is get from secrets
+az containerapp update --name containerappName \
+--resource-group rg --image img_locate \
+--set-env-vars "ASPNETCORE_ENVIRONMENT=$(environmentApplication)" \
+"ConnectionStrings__Default=secretref:db-connection-string"
+```
 # Azure Virtual Machine
 
 ## Add a new disk for your `linux` virtual machine

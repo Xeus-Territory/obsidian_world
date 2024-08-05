@@ -491,9 +491,9 @@ Therefore, to not waste your time, you can use `UI` for instead, not cover much 
    
 	   ![[Pasted image 20240725151934.png]]
    
-	3. On the network, in part `attached to` change from `NAT` --> `NAT Network` and select your network which you create
+3. On the network, in part `attached to` change from `NAT` --> `NAT Network` and select your network which you create
    
-		   ![[Pasted image 20240726092754.png]]
+	   ![[Pasted image 20240726092754.png]]
    
 4. Approve and recheck inside the machine with provide new IP Address via DHCP, but at currently you can access host via `vagrant`, use `VMBoxManage` to retrieve info of machine. [Documentation](https://www.virtualbox.org/manual/ch08.html#vboxmanage-guestproperty)
    
@@ -798,7 +798,7 @@ And yup nothing execute 😃
 So I try to add `-v=5` to debug my command
 
 ```bash
-kubeadm join 10.0.69.15:6996 --token xxxxxx --discovery-token-ca-cert-hash sha256:xxxx --skip-phases=preflight
+kubeadm join 10.0.69.15:6996 --token xxxxxx --discovery-token-ca-cert-hash sha256:xxxx --skip-phases=preflight -v=5
 ```
 
 And now problem will show for us 
@@ -1081,7 +1081,12 @@ It can be accept all route and try connect to endpoint `10.0.96.15:6996` in mode
 And so try again and continue error again, but retrieve `cluster-info` is pass and that proven we are right path to configuration
 
 ```bash
-}root@k8s-worker:/#kubeadm join 10.0.69.15:6996 --token h6b5vo.u1x063vo5xu4bj27 --discovery-token-ca-cert-hash sha256:4194bb0d3eb3cbca344e4b50df8347356bdb487aa39deb7f83839a543ce819d4 --skip-phases=preflight -v=5
+kubeadm join 10.0.69.15:6996 --token h6b5vo.u1x063vo5xu4bj27 \
+--discovery-token-ca-cert-hash sha256:4194bb0d3eb3cbca344e4b50df8347356bdb487aa39deb7f83839a543ce819d4 \
+--skip-phases=preflight -v=5
+```
+
+```bash
 I0728 14:44:51.849874     332 join.go:412] [preflight] found NodeName empty; using OS hostname as NodeName
 I0728 14:44:51.852058     332 initconfiguration.go:117] detected and using CRI socket: unix:///var/run/containerd/containerd.sock
 I0728 14:44:51.853734     332 controlplaneprepare.go:225] [download-certs] Skipping certs download
@@ -1100,7 +1105,7 @@ Get "https://kubewekend-control-plane:6443/api/v1/namespaces/kube-system/configm
 
 Now the we met on the configuration for `kubeadm-config`, and actually that have issue can be resolve via article [kubeadm join failed: unable to fetch the kubeadm-config ConfigMap](https://github.com/kubernetes/kubeadm/issues/1596)
 
-Issue ask me about to reconfiguration both `kubeadm.yaml` (Done) but configmap of `clust er-info` is not upgrade, so we need to update that, but first retrieve that with command
+Issue ask me about to reconfiguration both `kubeadm.yaml` (Done) but configmap of `cluster-info` is not upgrade, so we need to update that, but first retrieve that with command
 
 ```bash
 kubectl get cm cluster-info -o yaml -n kube-public

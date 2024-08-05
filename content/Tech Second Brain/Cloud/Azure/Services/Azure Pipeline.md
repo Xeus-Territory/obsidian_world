@@ -179,5 +179,5 @@ Check about security in [Azure Pipeline Environment Security](https://learn.micr
 
 If you want to explore more about how to write and structure `yaml` of Azure Pipelines, you can check at
 
-- [[Azure Pipelines Gallery]]
+- [[Azure Pipelines]]
 - [[Fastway to deploy your application]]

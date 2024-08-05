@@ -6,7 +6,7 @@ tags:
   - entertainment
   - collections
 ---
-![[Pasted image 20240804122346.png]]
+![[Pasted image 20240804122346.png|center|400]]
 # Producing
 
 >[!info]
