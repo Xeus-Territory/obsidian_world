@@ -193,6 +193,10 @@ tags:
 - [[Utilities Site|Softwares & Tools Helpful Pages & Articles]]
 - [[Tech Second Brain/Cloud/Azure/Cheatsheet and Troubleshoot|Azure Cheatsheet and Troubleshoot]]
 - [[Tech Second Brain/Cloud/AWS/Cheatsheet and Troubleshoot|AWS Cheatsheet and Troubleshoot]]
+- [[Shell script collections|Shell Scripting]]
+- [[Tech Second Brain/Databases/Playbooks Collections|Database Playbooks Collections]]
+- [[Tech Second Brain/Docker & Kubernetes/Playbooks Collections|Docker and Kubernetes Playbooks Collections]]
+- [[Tech Second Brain/Operation System/Playbooks Collections|OS Playbooks Collections]]
 
 # OS Profile
 
