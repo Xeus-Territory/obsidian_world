@@ -1,5 +1,5 @@
 ---
-title: Azure Pipelines Gallery
+title: Azure Pipelines
 tags:
   - cicd
   - automation
@@ -15,6 +15,7 @@ tags:
 >- [Specify conditions](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/conditions?view=azure-devops&tabs=yaml%2Cstages) - **(NOTE : Vice versa `eq`, you can use `ne` but reference little bit on documentation)**
 >- [Expressions](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/expressions?view=azure-devops)
 >- [Create and target an environment](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/environments?view=azure-devops)
+>- [Template usage reference](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/templates?view=azure-devops&pivots=templates-includes)
 # Deploy React application to  Azure SWA
 
 >[!summary]

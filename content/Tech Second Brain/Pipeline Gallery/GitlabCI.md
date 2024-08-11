@@ -1,5 +1,5 @@
 ---
-title: GitlabCI Gallery
+title: GitlabCI
 tags:
   - gitlab
   - cicd
@@ -12,7 +12,9 @@ tags:
 >*More information about Gitlab CI/CD and Variables. Go check:*
 >1. [Gitlab CI/CD](https://docs.gitlab.com/ee/ci/yaml/)
 >2. [Variables](https://docs.gitlab.com/ee/ci/variables/) & [Predefine variables](https://docs.gitlab.com/ee/ci/variables/predefined_variables.html)
->3. [Documentation](https://docs.gitlab.com/ee/user/)
+>3. [GitLab Documentation](https://docs.gitlab.com/ee/user/)
+>4. [GitlabCI Services](https://docs.gitlab.com/ee/ci/services/)
+>5. [Run your CI/CD jobs in Docker containers](https://docs.gitlab.com/ee/ci/docker/using_docker_images.html#use-statically-defined-credentials)
 
 # React build app, test and build Image for container services
 
