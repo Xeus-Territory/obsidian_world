@@ -28,7 +28,9 @@ tags:
 - Have `sleep` command between them, so it will change to default when the service becomes stable
 
 # Docker
+
 With Docker strategy, it will perform some this task like
+
 1. When have new image on container registry, it will perform pull new image on that time. Update the `.env` file from `S3`           
 2. After that, it will scale up the service with 2 new containers, first once for routing traffic from old to new and rename new to original version. Proxy will be return to original version for process a new job
 3. This strategy will be occur quickly and carefully by having the health checking of container on each progress. 
@@ -37,13 +39,16 @@ With Docker strategy, it will perform some this task like
 # How to running this script manually
 
 ## Required tools to perform this script
+
 - This script is created for only `Debian` distro (Ubuntu, Kali, Raspian, Debian, ...) not support for (RedHat, Centos, ...). Need to consideration when installing
-- Bash Script will need into some tools on below list: 
+- Bash Script will need into some tools on below list
+
 	- Docker: `docker-compose, docker.io`
 	- Download Tools: `curl, wget`
 	- `JSON` processing: `jq`
 
 ## Manually run this script
+
 - Parameter is obligated to pass for your command (Please input with right position with numeric):
 	1. Name of the `gitlab` account (This account needs to be work with Token Generated - Token need put into ~/.credentials/gitlab) `(E.x: Xeus-DevOps)`
 	2. Path to env file for whole container (This `.env` file is same as `.env` file provide for docker-compose) `(E.x: /some_platform/.env)` 
@@ -60,5 +65,5 @@ bash -c "<your_script> <username_gitlab> <path_env> <path_nginx_config> <contain
 ./<your_script> <username_gitlab> <path_env> <path_nginx_config> <containers_numberic> # Opt 2
 ```
 
-The contents of script can find out ▶️ ▶️ [Blue Green Deployment Docker for Zero Downtime](Blue%20Green%20Deployment%20Docker%20for%20Zero%20Downtime.md)
+The contents of script can find out ▶️ ▶️ [[Shell script collections#Blue Green Deployment Docker for Zero Downtime|Blue Green Deployment Docker for Zero Downtime]]
 
