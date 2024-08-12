@@ -32,7 +32,7 @@ tags:
 - [regex101: build, test, and debug regex](https://regex101.com/)
 - [TrueDevTools](https://truedevtools.com/): *True Devtools is a free collection of 45+ carefully crafted tools useful for development*
 - [IT - Tools](https://it-tools.tech/) : Handy tools for developers
-
+- [Devtoys.app](https://devtoys.app/): A Swiss Army knife for developers.
 
 # Language Programing Collection
 ## HTML

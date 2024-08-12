@@ -20,7 +20,6 @@ Expand-Archive .\translators-main.zip -DestinationPath .
 
 The command will extract the `translators-main.zip` file in current folder
 
-
 # Restart `wsl` to claim memory
 
 You can use `--shutdown` flag to restart the `wsl` machine or you can setup `.wslconfig` on PATH `$env:USERPROFILE`, read more: [Advanced settings configuration in WSL](https://learn.microsoft.com/en-us/windows/wsl/wsl-config). More about scenarios you can read in [StackOverFlow - How can I reduce the consumption of the `vmmem` process?](https://superuser.com/questions/1559170/how-can-i-reduce-the-consumption-of-the-vmmem-process)
@@ -140,3 +139,61 @@ When you want to reload or apply plugin which you put on your `$PROFILE`, you ca
 . $PROFILE
 ```
 
+# Enable Hyper-V service
+
+>[!info]
+>Information about Issue [StackOverFlow - How to disable Hyper-V in command line?](https://stackoverflow.com/questions/30496116/how-to-disable-hyper-v-in-command-line)]
+
+## Command Prompt (CMD)
+
+In an _elevated_ Command Prompt write this
+
+```powershell
+# To disable
+bcdedit /set hypervisorlaunchtype off
+# To enable
+bcdedit /set hypervisorlaunchtype auto 
+```
+
+Restart to take effect or you can do it with command
+
+```powershell
+shutdown /r
+```
+
+## Powershell
+
+Run in administrator before execute this
+
+To disable
+
+```powershell
+# To disable
+Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All
+
+# To enable
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All
+
+```
+
+And restart or use command
+
+```powershell
+shutdown /r
+```
+
+# Get execute policy
+
+Try to list all permission of `powershell` of currently user
+
+```powershell
+Get-ExecutionPolicy -List
+```
+
+# View all permission of user
+
+Use `whoami` command to view
+
+```powershell
+whoami /all
+```

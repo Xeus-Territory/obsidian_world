@@ -61,3 +61,17 @@ For remote, use `-d` with command push
 # e.g: you want to delete release-v1 branch, but not locally, but remotely
 git push origin -d release-v1
 ```
+
+# Change commit contents
+
+You can change author for commit with flag `--author` with commit command
+
+```bash
+git commit --amend --author="Author Name <email@address.com>" --no-edit
+```
+
+And you can take it with new message with flag `--message` or `-m` with commit amend
+
+```bash
+git commit --amend --message "Hello_world"
+```

@@ -7,11 +7,10 @@ tags:
   - awesome
   - ansible
 ---
-cd# Awesome Tech Repository
+# Awesome Tech Repository
 
 >[!info]
 >Include repository, blog about technologies, self-hosted, devops, design and system design, ...
-
 
 - [awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) : About A list of Free Software network services and web applications which can be hosted on your own servers
 - [awesome-scalability](https://github.com/binhnguyennus/awesome-scalability) : The Patterns of Scalable, Reliable, and Performant Large-Scale Systems
@@ -37,6 +36,8 @@ cd# Awesome Tech Repository
 - [StackExchange](https://stackexchange.com/sites) : StackOverFlow Ecosystem
 - [Nubenetes](https://nubenetes.com/) : Awesome Kubernetes & Cloud
 - [Rootless Containers](https://rootlesscontaine.rs/): Rootless containers refers to the ability for an unprivileged user to create, run and otherwise manage containers.
+- [Cloud Native Glossary](https://glossary.cncf.io/): The Cloud Native Glossary aims to make the cloud native space
+- [Red Hat Developer](https://github.com/redhat-developer): Github home of the Red Hat Developer program.
 
 # Blog DevOps and Tech
 
@@ -45,7 +46,7 @@ cd# Awesome Tech Repository
 
 - [DevOps VN](https://devopsvn.tech/) - *Vietnamese Community and Blog page about DevOps and Technologies*
 - [DevOps Việt Nam - DevOpsify](https://devopsify.co/) - *Vietnamese Community about DevOps*
-- [Trang chủ » AnonyViet](https://anonyviet.com/) - *Vietnamese Community who teaching multiple technics on Computer*
+- [Trang chủ » AnonyViet](https://anonyviet.com/) - *Vietnamese Community who teaching multiple techniques on Computer*
 - [4sysops](https://4sysops.com/) -  *The online community for SysAdmins and DevOps*
 - [The Cloud Native Wiki | Aqua](https://www.aquasec.com/cloud-native-academy/) - *The resource center for everything cloud native*
 - [Noted](https://noted.lol/) - *Self Hosted App and Product Reviews*
@@ -68,6 +69,7 @@ cd# Awesome Tech Repository
 - [Hackaday.io](https://hackaday.io/) - *The world's largest collaborative hardware development community.*
 - [Hackaday](https://hackaday.com/) - *Fresh Hacks Every Day*
 - [Medium - ByteByteGo System Design Alliance](https://medium.com/bytebytego-system-design-alliance) - *Explain complex systems with simple term*.
+- [3os Project](https://3os.org/) - *Collocation of technical documentation and guides for devops, developers, pentesters, systems administrators and other IT professionals.*
 # DevOps Articles
 
 >[!note]
@@ -101,6 +103,8 @@ cd# Awesome Tech Repository
 - [Medium - eBPF Maps State Synchronization across Multi-Node Kubernetes Cluster](https://medium.com/gitconnected/ebpf-maps-state-synchronization-across-multi-node-kubernetes-cluster-d0c075810fa7)
 - [KodeKloud - eBPF Essentials for DevOps Professionals](https://kodekloud.com/blog/ebpf-essentials-devops/)
 - [9 Powerful Atlantis Alternatives to Enhance Terraform Efficiency](https://zeet.co/blog/atlantis-alternatives)
+- [5 ways for GitLab CI runners to get AWS credentials](https://dev.to/edmundkwok/5-ways-for-gitlab-ci-runners-to-get-aws-credentials-11hp)
+- [Authenticating your GitLab CI runner to an AWS ECR registry using Amazon ECR Docker Credential Helper 🔑](https://dev.to/aws-builders/authenticating-your-gitlab-ci-runner-to-an-aws-ecr-registry-using-amazon-ecr-docker-credential-helper-3ba)
 # DevOps Youtube Channel
 
 ![[youtube.png]]
@@ -167,7 +171,7 @@ cd# Awesome Tech Repository
 - [ScienceDirect.com | Science, health and medical journals, full text articles and books.](https://www.sciencedirect.com/)
 - [RFC Editor](https://www.rfc-editor.org/) : The RFC Series (ISSN 2070-1721) contains technical and organizational documents about the Internet
 
-# DevOps Tools
+# DevOps & Useful Tools
 
 >[!note]
 >Collections a supper cool and powerful tools for multiple purpose attaching with DevOps
@@ -213,6 +217,9 @@ cd# Awesome Tech Repository
 - [YAML Multiline Strings](https://yaml-multiline.info/) : Find the right syntax for YAML file
 - [terraform-docs](https://terraform-docs.io/user-guide/introduction/) : A utility to generate documentation from Terraform modules in various output formats.
 - [.gitignore.io](https://www.toptal.com/developers/gitignore): Create useful .gitignore files for your project
+- [diagrams](https://github.com/mingrammer/diagrams): 🎨 Diagram as Code for prototyping cloud system architectures
+- [crontab guru](https://crontab.guru/): The quick and simple editor for cron schedule expressions by Cronitor (SHELL/Pipeline)
+- [crontab spring](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/scheduling/support/CronExpression.html) : Representation of a [crontab expression](https://www.manpagez.com/man/5/crontab/) that can calculate the next time it matches (Java/AWS)
 
 ## Self-hosted
 
@@ -239,6 +246,7 @@ cd# Awesome Tech Repository
 - [traefik hub](https://doc.traefik.io/traefik-hub/) : Traefik Hub is the industry’s first Kubernetes-native API Management solution for publishing, securing, and managing APIs.
 - [Kong](https://docs.konghq.com/gateway/latest/): API gateway built for hybrid and multi-cloud, optimized for microservices and distributed architectures
 - [Emissary-Ingress](https://www.getambassador.io/products/api-gateway): An Envoy-powered Open Source API Gateway
+- [gateway-api](https://gateway-api.sigs.k8s.io/): Gateway API is an official Kubernetes project focused on L4 and L7 routing in Kubernetes
 
 ## Web server
 
@@ -256,6 +264,18 @@ cd# Awesome Tech Repository
 - [Calico](https://www.tigera.io/project-calico/): Calico is a networking and security solution that enables `Kubernetes` workloads and non-Kubernetes/legacy workloads to communicate seamlessly and securely.
 - [flannel](https://github.com/flannel-io/flannel) : A network fabric for containers, designed for `Kubernetes`
 - [weave](https://github.com/weaveworks/weave) : Simple, resilient multi-host containers networking and more.
+
+## Service Mesh
+
+- [Istio](https://istio.io/): Service Mesh. Simplified. Easily build cloud native workloads securely and reliably with `Istio`, with or without sidecars.
+- [linkerd](https://linkerd.io/2.15/overview/): Linkerd is a _service mesh_ for Kubernetes. It makes running services easier and safer by giving you runtime debugging, observability, reliability, and security—all without requiring any changes to your code.
+- [consul](https://developer.hashicorp.com/consul/docs?product_intent=consul): Consul is a multi-networking tool that offers a fully-featured service mesh solution. It solves the networking and security challenges of operating microservices and cloud infrastructure in multi-cloud and hybrid cloud environments
+
+## Service Proxy
+
+- [envoy](https://www.envoyproxy.io/docs/envoy/v1.31.0/) : Envoy is an L7 proxy and communication bus designed for large modern service oriented architectures
+- [traefik proxy](https://doc.traefik.io/traefik/) : Traefik is an [open-source](https://github.com/traefik/traefik) _Edge Router_ that makes publishing your services a fun and easy experience
+- [HAProxy](https://docs.haproxy.org/) : HAProxy is a free, very fast and reliable reverse-proxy offering [high availability](http://en.wikipedia.org/wiki/High_availability), [load balancing](http://en.wikipedia.org/wiki/Load_balancer), and proxying for TCP and HTTP-based applications
 
 ## Terraform workflow automation
 
@@ -276,3 +296,23 @@ cd# Awesome Tech Repository
 ## Build Tool
 
 - [Expo](https://docs.expo.dev/): Expo is a framework that makes developing Android and iOS apps easier. Our framework provides file-based routing, a standard library of native modules, and much more
+
+## Utilities Terminal Tools
+
+- [tldr](https://github.com/tldr-pages/tldr): 📚 Collaborative cheatsheets for console commands
+- [bat](https://github.com/sharkdp/bat): A cat(1) clone with wings.
+- [warp](https://www.warp.dev/): The terminal reimagined with AI and collaborative tools for better productivity.
+- [fzf](https://github.com/junegunn/fzf): 🌸 A command-line fuzzy finder
+- [bpytop](https://github.com/aristocratos/bpytop): Linux/OSX/FreeBSD resource monitor
+- [entr](https://github.com/eradman/entr): Run arbitrary commands when files change
+- [pet](https://github.com/knqyf263/pet): Simple command-line snippet manager
+- [bcal](https://github.com/jarun/bcal): 🔢 Bits, bytes and address calculator
+- [fd](https://github.com/sharkdp/fd) : A simple, fast and user-friendly alternative to 'find'
+- [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh): Framework for managing your zsh configuration
+- [duf](https://github.com/muesli/duf): Disk Usage/Free Utility - a better 'df' alternative
+- [dust](https://github.com/bootandy/dust) : A more intuitive version of du in rust
+- [thefuck](https://github.com/nvbn/thefuck) : Magnificent app which corrects your previous console command.
+- [ripgrep](https://github.com/BurntSushi/ripgrep) : ripgrep recursively searches directories for a regex pattern while respecting your gitignore
+- [exa](https://github.com/ogham/exa): A modern replacement for ‘ls’.
+- [skopeo](https://github.com/containers/skopeo): Work with remote images registries - retrieving information, images, signing content
+

@@ -10,7 +10,7 @@ title: Utilities Site for multiple purpose
 >[!info]
 >Finding the utilities for your desktop and work
 
-- [Wallpaperflare](https://www.wallpaperflare.com/) - *Beautiful HD wallpapers free download*
+- [Pinterest](https://www.pinterest.com/) - *Free Image HD*
 - [Slidesgo](https://slidesgo.com/) - *Free Google Slides themes and Powerpoint templates*
 - [1001 Fonts](https://www.1001fonts.com/) - *Free Fonts*
 # Torrent site

@@ -26,6 +26,16 @@ tags:
 - [Kubernetes/enhancements](https://github.com/kubernetes/enhancements) : Enhancements tracking repo for Kubernetes
 - [Kubernetes/community](https://github.com/kubernetes/community) : Kubernetes community content
 - [Kubernetes Blog](https://kubernetes.io/blog/) : Collection of blog from community for upgrade and feature in each version of kubernetes and stories around.
+# Awesome Docker Registry
+
+- [DockerHub](https://hub.docker.com/)
+- [Amazon ECR Public Gallery](https://gallery.ecr.aws/)
+- [Microsoft Artifact Registry](https://mcr.microsoft.com/)
+
+# Awesome Docker Image
+
+- [docker](https://hub.docker.com/_/docker): Docker in Docker!
+- [amazon/aws-cli](https://hub.docker.com/r/amazon/aws-cli): Universal Command Line Interface for Amazon Web Services
 # Troubleshoot
 
 - [StackOverFlow - Why AKS nodes shows less amount of memory as allocatable where its actual memory is still available](https://stackoverflow.com/questions/68521392/why-aks-nodes-shows-less-amount-of-memory-as-allocatable-where-its-actual-memory)
@@ -53,6 +63,7 @@ tags:
 - [Medium - Accessing the host’s localhost from inside a Docker container](https://medium.com/@gladevise/accessing-the-hosts-localhost-from-inside-a-docker-container-c5935e275953)
 - [Medium - Deep Dive into Docker Containers | Architecture and Features](https://medium.com/@dmosyan/deep-dive-into-docker-containers-architecture-and-features-530a937f4c87)
 - [Medium - Docker Beginner to Expert Tutorial](https://levelup.gitconnected.com/docker-beginner-to-expert-tutorial-68555aa3e544)
+
 # Kubernetes
 
 - [Medium - 7 Underrated Kubernetes Projects: Elevate Your Lab Playground!](https://medium.com/@ebenamor/7-underrated-kubernetes-projects-elevate-your-lab-playground-ac7f47cba347)
@@ -77,6 +88,7 @@ tags:
 - [Understanding Helm upgrade flags](https://shipmight.com/blog/understanding-helm-upgrade-reset-reuse-values)
 - [Medium - 10 Essential Kubernetes Tools You Didn’t Know You Needed](https://medium.com/itnext/10-essential-kubernetes-tools-you-didnt-know-you-needed-06954251d845)
 - [Alibaba - Kubernetes CNIs and CNI Plug-ins](https://www.alibabacloud.com/blog/getting-started-with-kubernetes-%7C-kubernetes-cnis-and-cni-plug-ins_596330)
+- [Medium - My Top 50 Kubernetes Notes for DevOps Engineers — Detailed Q&A](https://medium.com/@thecloudarchitect/my-top-50-kubernetes-notes-for-devops-engineers-detailed-q-a-9d9c375c0076)
 # Certificate & Practice
 
 - [kube4sure - The Kubernetes Exam Simulator](https://www.kube4sure.com/)

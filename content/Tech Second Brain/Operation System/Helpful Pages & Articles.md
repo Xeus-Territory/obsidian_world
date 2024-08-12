@@ -51,7 +51,13 @@ tags:
 - [The $Windows.~BT Folder: What It Is and How to Delete It](https://www.lifewire.com/what-is-windows-bt-folder-how-to-delete-it-4775736)
 - [Awesome Windows](https://github.com/Awesome-Windows/Awesome) : 💻 🎉 An awesome & curated list of best applications and tools for Windows.
 - [PowerShell Aliases: A Beginner’s Guide](https://www.sharepointdiary.com/2021/08/powershell-alias-beginners-guide.html)
-
+- [PowerShell Commands Every Developer Should Know](https://stackify.com/powershell-commands-every-developer-should-know/)
+- [Powershell Documentation](https://learn.microsoft.com/en-us/powershell/scripting/how-to-use-docs?view=powershell-7.4): Official Documentation from Microsoft
+- [PowerShell Scripts Collection](https://github.com/fleschutz/PowerShell) : 500+ PowerShell scripts (.ps1) for every system!
+- [PowerShell-collection](https://github.com/jhochwald/PowerShell-collection): PowerShell Scripts, Tools, and Modules
+- [Microsoft Activation Scripts (MAS)](https://massgrave.dev/): A Windows and Office activator using HWID / Ohook / KMS38 / Online KMS activation methods, with a focus on open-source code and fewer antivirus detections.
+- [nvm-windows](https://github.com/coreybutler/nvm-windows)
+- [DISM Overview](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/what-is-dism?view=windows-11)
 # OS, Server
 
 - [DistroWatch.com: Put the fun back into computing. Use Linux, BSD.](https://distrowatch.com/)

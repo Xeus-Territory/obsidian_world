@@ -344,3 +344,115 @@ And now your `metrics-server` will restart and running after 30s
 ![[Pasted image 20240718112540.png]]
 
 Learn more about `kubernetes` metrics, read the article [Kubernetes' Native Metrics and States](https://dev.to/otomato_io/kubernetes-native-metrics-and-states-2p68)
+
+# Configure Liveness, Readiness and Startup Probes
+
+Kubernetes implement multiple probles type for health check your applications. See more at [Liveness, Readiness and Startup Probes](https://kubernetes.io/docs/concepts/configuration/liveness-readiness-startup-probes)
+
+If you want to learn about configuration, use [this documentation](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)
+
+>[!tip]
+>[Probes](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.30/#probe-v1-core) have a number of fields that you can use to more precisely control the behavior of startup, liveness and readiness checks
+## Liveness
+
+>[!info]
+>Liveness probes determine when to restart a container. For example, liveness probes could catch a deadlock, when an application is running, but unable to make progress.
+
+If a container fails its liveness probe repeatedly, the kubelet restarts the container.
+
+You can set up `liveness` probe with command configuration
+
+```yaml {15-21}
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    test: liveness
+  name: liveness-exec
+spec:
+  containers:
+  - name: liveness
+    image: registry.k8s.io/busybox
+    args:
+    - /bin/sh
+    - -c
+    - touch /tmp/healthy; sleep 30; rm -f /tmp/healthy; sleep 600
+    livenessProbe:
+      exec:
+        command:
+        - cat
+        - /tmp/healthy
+      initialDelaySeconds: 5
+      periodSeconds: 5
+```
+
+Or use can use `liveness` probe with HTTP request configuration
+
+```yaml {3-11}
+spec:
+containers:
+    livenessProbe:
+      httpGet:
+        path: /healthz
+        port: 8080
+        httpHeaders:
+        - name: Custom-Header
+          value: Awesome
+      initialDelaySeconds: 3
+      periodSeconds: 3
+```
+
+You can use another protocol with `liveness`, such as
+
+- [TCP](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#define-a-tcp-liveness-probe)
+- [gRPC](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#define-a-grpc-liveness-probe)
+
+## Readiness
+
+>[!info]
+>Readiness probes determine when a container is ready to start accepting traffic. This is useful when waiting for an application to perform time-consuming initial tasks, such as establishing network connections, loading files, and warming caches.
+
+If the readiness probe returns a failed state, Kubernetes removes the pod from all matching service endpoints.
+
+You can try configure `readiness` proble with
+
+```yaml
+readinessProbe:
+  exec:
+    command:
+    - cat
+    - /tmp/healthy
+  initialDelaySeconds: 5
+  periodSeconds: 5
+```
+
+Configuration for HTTP and TCP readiness probes also remains identical to liveness probes.
+
+>[!info]
+>Readiness and liveness probes can be used in parallel for the same container. Using both can ensure that traffic does not reach a container that is not ready for it, and that containers are restarted when they fail.
+
+>[!note]
+>Readiness probes runs on the container during its whole lifecycle.
+
+## Startup
+
+>[!info]
+>A startup probe verifies whether the application within a container is started. This can be used to adopt liveness checks on slow starting containers, avoiding them getting killed by the kubelet before they are up and running.
+
+If such a probe is configured, it disables liveness and readiness checks until it succeeds.
+
+You can configure for you pod with configuration
+
+```yaml
+livenessProbe:
+  httpGet:
+    path: /healthz
+    port: liveness-port
+  failureThreshold: 1
+  periodSeconds: 10
+```
+
+And mostly startup for helping kubernetes to [protect slow starting containers](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#define-startup-probes)
+
+>[!note]
+>This type of probe is only executed at startup, unlike readiness probes, which are run periodically
