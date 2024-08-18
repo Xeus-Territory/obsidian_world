@@ -155,6 +155,19 @@ You can use `jq` to select multiple variable and concat that to one string
 ```bash
 cat app.json | jq -r '(.expo.name + "." + .expo.version)'
 ```
+
+## `du` command 
+
+You can use `du` command for list all size inside your directory
+
+```bash
+# List folder only
+du -csh xeusnguyen.xyz
+
+# List file inside
+du -csh xeusnguyen.xyz/*
+```
+
 # Cheatsheet
 ## Re run the previous command
 

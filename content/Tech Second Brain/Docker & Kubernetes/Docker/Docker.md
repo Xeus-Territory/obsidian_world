@@ -253,3 +253,46 @@ docker system prune
 
 It will ask you prompt yes or no, if you want to bypass this, add `-f` flag for force prune
 
+
+# Troubleshoot
+
+## Run container in the privilege mode
+
+In some situations, you must to use `privilege` for running some container require that one, such as `docker:dind`, `kind` and more
+
+If you run in root mode, you meet this stuck, and that tough
+
+```bash
+Certificate request self-signature ok
+subject=CN=docker:dind server
+/certs/server/cert.pem: OK
+Certificate request self-signature ok
+subject=CN=docker:dind client
+/certs/client/cert.pem: OK
+cat: can't open '/proc/net/ip6_tables_names': No such file or directory
+cat: can't open '/proc/net/arp_tables_names': No such file or directory
+ip: can't find device 'nf_tables'
+nf_tables             372736 708 nft_chain_nat,nft_limit,nft_compat
+nfnetlink              20480  4 nf_conntrack_netlink,nft_compat,nf_tables
+libcrc32c              12288  4 nf_nat,nf_conntrack,nf_tables,raid456
+modprobe: can't change directory to '/lib/modules': No such file or directory
+ip: can't find device 'ip_tables'
+ip_tables              36864  0 
+x_tables               69632 13 xt_MASQUERADE,ip6t_REJECT,xt_hl,ip6t_rt,ipt_REJECT,xt_LOG,xt_multiport,xt_limit,xt_addrtype,xt_tcpudp,xt_conntrack,nft_compat,ip_tables
+modprobe: can't change directory to '/lib/modules': No such file or directory
+ip: can't find device 'ip6_tables'
+modprobe: can't change directory to '/lib/modules': No such file or directory
+iptables v1.8.10 (nf_tables)
+mount: permission denied (are you root?)
+Could not mount /sys/kernel/security.
+AppArmor detection and --privileged mode might break.
+mount: permission denied (are you root?)
+```
+
+Error inside `iptables`, `apparmor` and `network` and it gonna not be easy for yourself. But nowadays, docker provide the option with `--privileged` which solve all problem with container require the `root` permission
+
+```bash
+docker run -d --privileged docker:dind
+```
+
+And your problem will be resolve, container will start with no interrupt at all 🙌

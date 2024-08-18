@@ -29,9 +29,14 @@ What you can find out and figure out about Azure, Cloud Computing, Documentation
 - [Azure - Browse Azure Architectures](https://learn.microsoft.com/en-us/azure/architecture/browse/)
 - [Azure - Register Account](https://azure.microsoft.com/en-us/free)
 - [Azure - Community](https://techcommunity.microsoft.com/t5/azure/ct-p/Azure)
+- [Azure - Tech Community](https://techcommunity.microsoft.com/)
+- [Azure - Architecture Blog](https://techcommunity.microsoft.com/t5/azure-architecture-blog/bg-p/AzureArchitectureBlog)
 - [Azure CLI - User Guide](https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest)
 - [Azure Price Calculator](https://azure.microsoft.com/en-gb/pricing/calculator/)
-
+- [Azure - Blog](https://azure.microsoft.com/en-us/blog/)
+- [awesome-azure-architecture](https://github.com/lukemurraynz/awesome-azure-architecture)
+- [Github - Microsoft Azure](https://github.com/Azure) - APIs, SDKs and open source projects from Microsoft Azure
+- [azure-quickstart-templates](https://github.com/Azure/azure-quickstart-templates) - Azure Quickstart Templates about `azure-arm` or `bicep`
 # Azure CLI
 
 ## az vm
@@ -67,6 +72,25 @@ az containerapp update --name containerappName \
 --set-env-vars "ASPNETCORE_ENVIRONMENT=$(environmentApplication)" \
 "ConnectionStrings__Default=secretref:db-connection-string"
 ```
+
+### Exec to container app
+
+Documentation: [az containerapp exec](https://learn.microsoft.com/en-us/cli/azure/containerapp?view=azure-cli-latest#az-containerapp-exec)
+
+>[!note]
+>Execution when you have only one container and one revision
+
+```bash
+az containerapp exec -n my-containerapp -g MyResourceGroup --command bash
+```
+
+>[!note]
+>Execution when you have specified one container and one revision in one of those
+
+```bash
+az containerapp exec -n my-containerapp -g MyResourceGroup --replica MyReplica --revision MyRevision
+```
+
 # Azure Virtual Machine
 
 ## Add a new disk for your `linux` virtual machine

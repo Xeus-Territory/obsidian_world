@@ -22,10 +22,13 @@ You can figure what you need to do for start with `aws` via some website and art
 - [AWS Architecture Center](https://aws.amazon.com/architecture/)
 - [AWS CLI - Installation Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) 
 - [AWS CLI - Command Guide](https://awscli.amazonaws.com/v2/documentation/api/latest/index.html)
+- [Configure the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
 - [AWS Create Account Guide](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html)
 - [AWS Price Calculator](https://calculator.aws/#/)
 - [AWS Architecture Blog](https://aws.amazon.com/vi/blogs/architecture/)
 - [AWS Blog](https://aws.amazon.com/blogs)
+- [Github - Amazon Web Services](https://github.com/aws)
+- [Github - AWS Samples](https://github.com/aws-samples)
 
 You can manage `aws` as organization via the tree and sub-organization inside root account
 

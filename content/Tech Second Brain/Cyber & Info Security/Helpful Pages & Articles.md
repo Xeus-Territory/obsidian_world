@@ -20,6 +20,7 @@ tags:
 - [HACKING roadmap](https://docfate111.github.io/cybersecclub/roadmap.html)
 - [bugbounty-cheatsheet/books.md at master · EdOverflow/bugbounty-cheatsheet](https://github.com/EdOverflow/bugbounty-cheatsheet/blob/master/cheatsheets/books.md)
 - [Bill's Security Site](https://asecuritysite.com/)
+- [OWASP Penetration Testing Check List](https://owasp.org/www-project-web-security-testing-guide/assets/archive/OWASP_Web_Application_Penetration_Checklist_v1_1.pdf)
 
 # InfoSec Blog page
 
@@ -50,6 +51,7 @@ tags:
 - [Prof Bill Buchanan OBE FRSE](https://billatnapier.medium.com/) : Professor of Cryptography
 - [Medium - n00🔑](https://medium.com/@pswalia2u)
 - [SSH Academy](https://www.ssh.com/academy)
+- [HighOn.Coffee](https://highon.coffee/) - Penetration Testing && Security Research
 
 # Tools and Techniques
 
@@ -58,6 +60,7 @@ tags:
 - [awesome-pentest](https://github.com/enaqx/awesome-pentest) : A collection of awesome penetration testing resources, tools and other shiny things
 - [awesome-infosec](https://github.com/onlurking/awesome-infosec) : A curated list of awesome `infosec` courses and training resources.
 - [the-book-of-secret-knowledge](https://github.com/trimstray/the-book-of-secret-knowledge) : A collection of inspiring lists, manuals, cheat-sheets, blogs, hacks, one-liners, cli/web tools and more.
+- [awesome-api-security](https://github.com/arainho/awesome-api-security): A collection of awesome API Security tools and resources. The focus goes to open-source tools and resources that benefit all the community.
 - [Awesome-Hacking](https://github.com/Hack-with-Github/Awesome-Hacking) : A collection of various awesome lists for hackers, pentesters and security researchers
 - [awesome-hacker-search-engines](https://github.com/edoardottt/awesome-hacker-search-engines) : A curated list of awesome search engines useful during Penetration testing, Vulnerability assessments, Red/Blue Team operations, Bug Bounty and more
 - [h4cker](https://github.com/The-Art-of-Hacking/h4cker) : About ethical hacking, bug bounties, digital forensics and incident response (DFIR), artificial intelligence security, vulnerability research, exploit development, reverse engineering, and more.
@@ -69,6 +72,9 @@ tags:
 - [CheatSheetSeries](https://github.com/OWASP/CheatSheetSeries) : The OWASP Cheat Sheet Series was created to provide a concise collection of high value information on specific application security topics.
 - [HackTricks - HackTricks](https://book.hacktricks.xyz/welcome/readme) : Wikipedia of Hacking
 - [Cloud - HackTricks](https://cloud.hacktricks.xyz/) : Wikipedia of Hacking Cloud
+- [pentest-book](https://pentestbook.six2dez.com/): This book contains a bunch of info, scripts and knowledge used during pentests.
+- [public-pentesting-reports](https://github.com/juliocesarfort/public-pentesting-reports): A list of public penetration test reports published by several consulting firms and academic security groups.
+- [The Hacker Recipes](https://www.thehacker.recipes/): providing technical guides on various hacking topics
 ## Browser Search
 
 - [GoogleDorking.md](https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06)
@@ -117,6 +123,7 @@ tags:
 - [blaCCkHatHacEEkr/PENTESTING-BIBLE: Learn ethical hacking.Learn about reconnaissance,windows/linux hacking,attacking web technologies,and pen testing wireless networks.Resources for learning malware analysis and reverse engineering.](https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE)
 - [AD-Attack-Defense](https://github.com/infosecn1nja/AD-Attack-Defense)
 - [Hive](https://7h3w4lk3rs-organization.gitbook.io/the-hive): a public repository for red/blue team stuff.
+- [MAAD Attack Framework](https://maad-af.com/) - An attack tool for simple, fast & effective security testing of M365 & Entra ID (Azure AD).
 
 ## Privilege Escalation (RCE)
 
@@ -164,6 +171,11 @@ tags:
 - [Snyk](https://docs.snyk.io/)
 - [crt.sh | Certificate Search](https://crt.sh/)
 - [JSON Web Tokens - jwt.io](https://jwt.io/)
+- [Medium - How to find subdomain takeover using httpx + dig](https://medium.com/@DrakenKun/how-to-find-subdomain-takeover-using-httpx-dig-5c2351d380b4)
+- [digwebinterface](https://www.digwebinterface.com/)
+- [censys](https://search.censys.io/)
+- [shodan](https://www.shodan.io/)
+- [dns.google](https://dns.google/)
 ## Webhook
 
 - [Webhook.site](https://webhook.site/) : *Generates free, unique URLs and e-mail addresses and lets you see everything that’s sent there instantly. (Usage: Steal cookies, bypass authorized, ...)*
