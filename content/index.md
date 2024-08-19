@@ -48,5 +48,5 @@ tags:
 1. 🏢 [[All Projects]] - *"All projects currently work on or archives"*
 2. 🎆 [[All Blogs]]  - *"All blog which I have and share to community"*
 3. ⚔️ [[Personal Projects Management|Idea and Projects]] - "*All project and idea are in progress or contribute on next time*"
-4. 🔱 [DevSecOps - XeusNguyen's CV](https://drive.google.com/file/d/1X_-BGYRRupiJWoxtcs7SiYhp7wwfllot/view?usp=sharing)
+4. 🔱 [DevSecOps - XeusNguyen's CV](https://drive.google.com/file/d/1_VjovP8OIixHRynk978ht2Inl02v15xu/view?usp=sharing)
 5. 📨 kobikiu810@gmail.com or xeusnguyen@gmail.com - *"For contacting with me"*
