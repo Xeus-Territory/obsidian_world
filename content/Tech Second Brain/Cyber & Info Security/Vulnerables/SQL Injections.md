@@ -5,16 +5,8 @@ tags:
   - infosec
   - injections
 ---
-## MariaDB (MySQL)
+# MariaDB (MySQL)
 
 ```sql
 ' UNION SELECT NULL,NULL# (Note: End of mariaDB is #)
 ```
-
-## PostgreSQL
-
-## Oracle SQL
-
-## SQL Server
-
-## SQL Lite

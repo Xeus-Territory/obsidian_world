@@ -102,7 +102,7 @@ stages:
 
 Just create a pipeline on `Azure DevOps` and trigger the pipeline by manually, and provide some require environment variables for pipeline, like `token_release` (Token of Azure SWA) and `PoolName` (Name of agent to perform pipeline)
 
-![[Pasted image 20240507142757.png]]
+![[Pasted image 20240507142757.png|center]]
 
 Click `Run` to trigger pipeline, last state will announce your deployment completely with your web application domain
 
@@ -352,7 +352,7 @@ You want trigger for `main` branch, so you need choose `Branch polices` option, 
 
 On the `Build Validation`, you can choose `+` button for adding build validation with trigger automation your pipeline
 
-![[Pasted image 20240524161037.png]]
+![[Pasted image 20240524161037.png|center]]
 
 For example, I have `react-native` pipeline, It will automation trigger this one when I create PR. 
 - You can choose **Manual** for instead but if you want, 

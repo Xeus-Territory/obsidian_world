@@ -57,3 +57,15 @@ k delete pods -n <name-space> --field-selector=status.phase!=Running
 ```bash
 kubectl create secret generic accounts-identityserver-certificate --from-file=certificate.pfx --dry-run=client -o yaml > certificate_sec.yaml 
 ```
+
+## Check currently config context 
+
+```bash
+kubectl config view --minify
+```
+
+# Change default storage class for your node
+
+```bash
+kubectl patch storageclass <sc-specific> -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
+```

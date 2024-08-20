@@ -52,6 +52,7 @@ tags:
 - [Medium - n00🔑](https://medium.com/@pswalia2u)
 - [SSH Academy](https://www.ssh.com/academy)
 - [HighOn.Coffee](https://highon.coffee/) - Penetration Testing && Security Research
+- [Troy Hunt](https://www.troyhunt.com/)
 
 # Tools and Techniques
 
@@ -75,6 +76,8 @@ tags:
 - [pentest-book](https://pentestbook.six2dez.com/): This book contains a bunch of info, scripts and knowledge used during pentests.
 - [public-pentesting-reports](https://github.com/juliocesarfort/public-pentesting-reports): A list of public penetration test reports published by several consulting firms and academic security groups.
 - [The Hacker Recipes](https://www.thehacker.recipes/): providing technical guides on various hacking topics
+- [MobileApp-Pentest-Cheatsheet](https://github.com/tanprathan/MobileApp-Pentest-Cheatsheet) : Arsenal for mobile application attack
+- [nuclei](https://github.com/projectdiscovery/nuclei) : Fast and customizable vulnerability scanner based on simple YAML based DSL. [Doc](https://docs.projectdiscovery.io/tools/nuclei/overview) and [Cloud Platform](https://cloud.projectdiscovery.io/)
 ## Browser Search
 
 - [GoogleDorking.md](https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06)
@@ -247,12 +250,17 @@ tags:
 ## Zero Trust Mesh
 
 - [Medium - How to Use ZTM to Access Home/Private Networks](https://medium.com/flomesh/how-to-use-ztm-to-access-home-private-networks-8848efb1f935)
-- [ztm](https://github.com/flomesh-io/ztm)
+- [ZTM](https://github.com/flomesh-io/ztm) :  A privacy-first open-source decentralized network software based on HTTP/2 tunnels.
 
 ## Firewall
 
 - [10 Useful Open Source Security Firewalls for Linux Systems](https://www.tecmint.com/open-source-security-firewalls-for-linux-systems/)
 - [VultureOS](https://vultureproject.github.io/vulture-doc/) :  An operating system based on [HardenedBSD](https://hardenedbsd.org/). It has been design to deliverer cybersecurity services for the Advens SOC.
+
+## Mobile
+
+- [Apktool](https://apktool.org/): A tool for reverse engineering Android apk files
+- [mobile-nuclei-templates](https://github.com/optiv/mobile-nuclei-templates)
 # Training page (LAB)
 
 >[!info]
