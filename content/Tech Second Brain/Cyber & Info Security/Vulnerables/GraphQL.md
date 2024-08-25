@@ -9,7 +9,8 @@ tags:
 >*Some helpful reference you can reach out, all of thems is put on this article* 
 >▶️ ▶️  [Hackwekend - Session 3 Attack and Exploit GraphQL](https://hackmd.io/@XeusNguyen/rJ0j0WR-p) 
 
-1. GraphQL with get full introspection
+# GraphQL with get full introspection
+
 ```json
 query IntrospectionQuery {
     __schema {

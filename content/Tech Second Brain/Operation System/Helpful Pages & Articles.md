@@ -45,6 +45,7 @@ tags:
 - [grep Flags – The Good Stuff](https://zwischenzugs.com/2022/02/02/grep-flags-the-good-stuff/)
 - [StackOverFlow -Assigning default values to shell variables with a single command in bash](https://stackoverflow.com/questions/2013547/assigning-default-values-to-shell-variables-with-a-single-command-in-bash)
 - [How to Change Permissions on Mounted Drive in Linux](https://linuxsimply.com/linux-change-permissions-on-mounted-drive/)
+- [How to merge partitions?](https://askubuntu.com/questions/66000/how-to-merge-partitions)
 # Window
 
 - [Windows Server Security documentation](https://learn.microsoft.com/en-us/windows-server/security/security-and-assurance)

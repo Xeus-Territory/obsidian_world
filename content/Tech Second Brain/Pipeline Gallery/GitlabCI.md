@@ -293,7 +293,15 @@ authentication:
   script:
     - apk add curl jq
     - DOCKER_AUTH_CONFIG=$(echo "{\"auths\":{\"private.container.registry.com\":{\"auth\":\"$(printf "%s" "$AUTH_CONFIG")\"}}}")
-    - 'curl -XPOST --header "PRIVATE-TOKEN: $GITLAB_AUTH_TOKEN" "https://gitlab.com/api/v4/projects/$CI_PROJECT_ID/variables" --form "key=DOCKER_AUTH_CONFIG" --form "value=$DOCKER_AUTH_CONFIG" --form "raw=true" > /dev/null 2>&1 || curl -XPUT --header "PRIVATE-TOKEN: $GITLAB_AUTH_TOKEN" "https://gitlab.com/api/v4/projects/$CI_PROJECT_ID/variables/DOCKER_AUTH_CONFIG" --form "value=$DOCKER_AUTH_CONFIG" --form "raw=true" > /dev/null 2>&1'
+    - 'UPDATE_CONDITION=$(curl -XGET --header "PRIVATE-TOKEN: $GITLAB_AUTH_TOKEN" "https://gitlab.com/api/v4/projects/$CI_PROJECT_ID/variables/DOCKER_AUTH_CONFIG")'
+    - >
+      if [ "$UPDATE_CONDITION" == "{\"message\":\"404 Variable Not Found\"}" ]; then
+        echo "Add new DOCKER_AUTH_CONFIG variable"
+        curl -XPOST --header "PRIVATE-TOKEN: $GITLAB_AUTH_TOKEN" "https://gitlab.com/api/v4/projects/$CI_PROJECT_ID/variables" --form "key=DOCKER_AUTH_CONFIG" --form "value=$DOCKER_AUTH_CONFIG" --form "raw=true"  > /dev/null 2>&1
+      else
+        echo "Update DOCKER_AUTH_CONFIG variable"
+        curl -XPUT --header "PRIVATE-TOKEN: $GITLAB_AUTH_TOKEN" "https://gitlab.com/api/v4/projects/$CI_PROJECT_ID/variables/DOCKER_AUTH_CONFIG" --form "value=$DOCKER_AUTH_CONFIG" --form "raw=true"  > /dev/null 2>&1
+      fi
 
 # Job for check successfull authentication ECR
 recheck:
@@ -312,3 +320,62 @@ recheck:
 
 	![[Pasted image 20240818144644.png]]
 
+## For optimize pipeline, and easily reuse by other repo
+
+With idea cut off the effort for user who want to implement pipeline, you just change job from execute to hidden with `.` form with become template for reuse by remote repositories, like these
+
+```yaml title="ecr_auth.gitlab-ci.yml" {9-28}
+.ecr_auth:
+  before_script: &ecr_auth
+    - export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
+    - export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
+    - export AWS_ACCOUNT=$AWS_ACCOUNT
+    - apk add aws-cli
+    - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
+
+.ecr_remote_auth:
+  stage: test
+  image: alpine:3
+  needs:
+    - project: "gitlab/upstream/project"
+      job: private_auth # same name with job expose token
+      ref: "main" # branch you want to receive the artifact
+      artifacts: true
+  script:
+    - apk add curl jq
+    - DOCKER_AUTH_CONFIG=$(echo "{\"auths\":{\"private.container.registry.com\":{\"auth\":\"$(printf "%s" "$AUTH_CONFIG")\"}}}")
+    - 'UPDATE_CONDITION=$(curl -XGET --header "PRIVATE-TOKEN: $GITLAB_AUTH_TOKEN" "https://gitlab.com/api/v4/projects/$CI_PROJECT_ID/variables/DOCKER_AUTH_CONFIG")'
+    - >
+      if [ "$UPDATE_CONDITION" == "{\"message\":\"404 Variable Not Found\"}" ]; then
+        echo "Add new DOCKER_AUTH_CONFIG variable"
+        curl -XPOST --header "PRIVATE-TOKEN: $GITLAB_AUTH_TOKEN" "https://gitlab.com/api/v4/projects/$CI_PROJECT_ID/variables" --form "key=DOCKER_AUTH_CONFIG" --form "value=$DOCKER_AUTH_CONFIG" --form "raw=true"  > /dev/null 2>&1
+      else
+        echo "Update DOCKER_AUTH_CONFIG variable"
+        curl -XPUT --header "PRIVATE-TOKEN: $GITLAB_AUTH_TOKEN" "https://gitlab.com/api/v4/projects/$CI_PROJECT_ID/variables/DOCKER_AUTH_CONFIG" --form "value=$DOCKER_AUTH_CONFIG" --form "raw=true"  > /dev/null 2>&1
+      fi
+```
+
+And from remote, you can use both `include` and `extends` keywords for retrieve this template, super easy 😄
+
+```yaml title=".gitlab-ci.yml"
+# Downstream use need to receive artiface type
+stages:
+  - auth
+  - ci-stuff
+
+include:
+  - project: "gitlab/upstream/project"
+    file: "/templates/ci/ecr-auth.gitlab-ci.yml"
+    ref: "main"
+
+authentication:
+  # Easily reuse with no one understand syntax inside user gitlab
+  extends: .ecr_remote_auth
+
+# Job for check successfull authentication ECR
+recheck:
+  stage: ci-stuff
+  image: private.container.registry.com/image:latest
+  script:
+    - echo "I am in private container !!! bruh"
+```

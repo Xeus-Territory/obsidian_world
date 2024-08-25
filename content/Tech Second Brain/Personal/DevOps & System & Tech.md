@@ -35,10 +35,11 @@ tags:
 - [awesome-ebpf](https://github.com/zoidyzoidzoid/awesome-ebpf) : A curated list of awesome projects related to eBPF.
 - [StackExchange](https://stackexchange.com/sites) : StackOverFlow Ecosystem
 - [Nubenetes](https://nubenetes.com/) : Awesome Kubernetes & Cloud
-- [Rootless Containers](https://rootlesscontaine.rs/): Rootless containers refers to the ability for an unprivileged user to create, run and otherwise manage containers.
 - [Cloud Native Glossary](https://glossary.cncf.io/): The Cloud Native Glossary aims to make the cloud native space
 - [Red Hat Developer](https://github.com/redhat-developer): Github home of the Red Hat Developer program.
-
+- [GoogleContainerTools](https://github.com/GoogleContainerTools) : Tools in-house of Google about Container
+- [Package manager](https://github.com/topics/package-manager) : A set of tools that automates and manages computer software. They deal with packages, or collections, of bundled files. Package managers make it easy to install, upgrade, or remove software for a computer's operating system.
+- [Container Storage Interface](https://github.com/container-storage-interface) : Container Storage Interface (CSI) Specification.
 # Blog DevOps and Tech
 
 >[!note]
@@ -109,7 +110,7 @@ tags:
 
 ![[youtube.png]]
 
-- [Thetips4you](https://www.youtube.com/c/Thetips4you/videos): share hands on experience on new age Technology
+- [Thetips4you](https://www.youtube.com/c/Thetips4you/videos): Share hands on experience on new age Technology
 - [Docker and Kubernetes Complete Tutorial](https://www.youtube.com/playlist?list=PL0hSJrxggIQoKLETBSmgbbvE4FO_eEgoB)
 - [Anton Putra](https://www.youtube.com/@AntonPutra/featured) 
 - [ByteByteGo](https://www.youtube.com/@ByteByteGo/featured)
@@ -148,6 +149,7 @@ tags:
 - [SourceForge](https://sourceforge.net/) - *Compare, Download & Develop Open Source & Business Software*
 - [AlternativeTo](https://alternativeto.net/) - *Opensource Compare Alternatives*
 - [ProductHunt](https://www.producthunt.com/) - *The best new products in tech*
+- [G2](https://www.g2.com/) - *Find the right software and services*
 
 # Documentations and Papers
 
@@ -170,7 +172,6 @@ tags:
 - [arXiv.org e-Print archive](https://arxiv.org/)
 - [ScienceDirect.com | Science, health and medical journals, full text articles and books.](https://www.sciencedirect.com/)
 - [RFC Editor](https://www.rfc-editor.org/) : The RFC Series (ISSN 2070-1721) contains technical and organizational documents about the Internet
-
 # DevOps & Useful Tools
 
 >[!note]
@@ -188,7 +189,7 @@ tags:
 - [Elasticsearch (ECK) Operator](https://operatorhub.io/operator/elastic-cloud-eck), you can figure out configuration via [Customize Pods](https://www.elastic.co/guide/en/cloud-on-k8s/master/k8s-customize-pods.html#)
 - [MongoDB Community Kubernetes Operator](https://github.com/mongodb/mongodb-kubernetes-operator), you can take the look some `crd`, and configuration with `github` link like [CRD](https://github.com/mongodb/mongodb-kubernetes-operator/blob/master/config/crd/bases/mongodbcommunity.mongodb.com_mongodbcommunity.yaml) and [Samples](https://github.com/mongodb/mongodb-kubernetes-operator/tree/master/config/samples)
 - [RabbitMQ-cluster-operator](https://operatorhub.io/operator/rabbitmq-cluster-operator), read more about that via [source code](https://github.com/rabbitmq/cluster-operator)
-
+- [GlassKube](https://glasskube.dev/docs/) : An open-source Kubernetes package manager that simplifies package management for Kubernetes
 ## Local K8s Self-hosted
 
 - [Kind](https://kind.sigs.k8s.io/) : [kind](https://sigs.k8s.io/kind) is a tool for running local Kubernetes clusters using Docker container “nodes”.
@@ -196,6 +197,7 @@ tags:
 - [K3s](https://docs.k3s.io/): Lightweight Kubernetes. Easy to install, half the memory, all in a binary of less than 100 MB.
 - [Kubernetes Official solution](https://kubernetes.io/docs/setup/production-environment/tools/) : Installing Kubernetes with deployment tools
 - [minikube](https://minikube.sigs.k8s.io/docs/) : minikube quickly sets up a local Kubernetes cluster on macOS, Linux, and Windows
+- [Talos Linux](https://www.talos.dev/) : The Kubernetes Operating System
 ## Cloud Infrastructure Designer
 
 - [Brainboard](https://www.brainboard.co/) : An AI driven platform to visually design, generate terraform code and manage cloud infrastructure, collaboratively.
@@ -220,8 +222,7 @@ tags:
 - [diagrams](https://github.com/mingrammer/diagrams): 🎨 Diagram as Code for prototyping cloud system architectures
 - [crontab guru](https://crontab.guru/): The quick and simple editor for cron schedule expressions by Cronitor (SHELL/Pipeline)
 - [crontab spring](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/scheduling/support/CronExpression.html) : Representation of a [crontab expression](https://www.manpagez.com/man/5/crontab/) that can calculate the next time it matches (Java/AWS)
-
-## Self-hosted
+## Local Cloud 
 
 - [LocalStack - AWS local](https://hub.docker.com/r/localstack/localstack) : A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline. Read more: [Documentation](https://docs.localstack.cloud/getting-started/). You can do more access and management via [LocalStack Web Application](https://app.localstack.cloud/sign-in)
 ## Secrets management
@@ -229,6 +230,8 @@ tags:
 - [dotenvx](https://dotenvx.com/) : Loads environment variables from .env for nodejs projects.
 - [dotenv](https://www.dotenv.org/docs/) : The secrets manager for .env files – from the same people that pioneered dotenv. 
 - [sops](https://getsops.io/) : Simple and flexible tool for managing secrets
+- [Hashicorp Vault](https://developer.hashicorp.com/vault/docs?product_intent=vault): Vault is an identity-based secret and encryption management system. This documentation covers the main concepts of Vault, what problems it can solve, and contains a quick start for using Vault.
+- [Ansible Vault](https://docs.ansible.com/ansible/2.9/user_guide/vault.html): Ansible Vault is a feature of ansible that allows you to keep sensitive data such as passwords or keys in encrypted files, rather than as plaintext in playbooks or roles. These vault files can then be distributed or placed in source control.
 
 ## Policy Controller Kubernetes
 
@@ -256,14 +259,46 @@ tags:
 - [httpd - Apache2](https://httpd.apache.org/) : The Apache HTTP Server Project is an effort to develop and maintain an open-source HTTP server for modern operating systems including UNIX and Windows.
 - [IIS](https://learn.microsoft.com/en-us/iis/): Window webserver
 - [Nginx](https://nginx.org/en/docs/): nginx is an HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server. (Most powerful)
+## Object Storage
 
-## CNI
+- [MinIO](https://min.io/docs/minio/linux/index.html): MinIO is an object storage solution that provides an Amazon Web Services S3-compatible API and supports all core S3 features.
+- [Ceph](https://docs.ceph.com/en/reef/start/): Ceph can be used to provide [Ceph Object Storage](https://docs.ceph.com/en/reef/glossary/#term-Ceph-Object-Storage) to [Cloud Platforms](https://docs.ceph.com/en/reef/glossary/#term-Cloud-Platforms) and Ceph can be used to provide [Ceph Block Device](https://docs.ceph.com/en/reef/glossary/#term-Ceph-Block-Device) services to [Cloud Platforms](https://docs.ceph.com/en/reef/glossary/#term-Cloud-Platforms). Ceph can be used to deploy a [Ceph File System](https://docs.ceph.com/en/reef/glossary/#term-Ceph-File-System). All [Ceph Storage Cluster](https://docs.ceph.com/en/reef/glossary/#term-Ceph-Storage-Cluster) deployments begin with setting up each [Ceph Node](https://docs.ceph.com/en/reef/glossary/#term-Ceph-Node) and then setting up the network.
+- [seaweedfs](https://github.com/seaweedfs/seaweedfs) : a fast distributed storage system for blobs, objects, files, and data lake, for billions of files! Blob store has O(1) disk seek, cloud tiering.
+- [CubeFS](https://cubefs.io/docs/master/overview/introduction.html) : A next-generation cloud-native storage product that is currently an incubating open-source project hosted by the [Cloud Native Computing Foundationopen in new window](https://www.cncf.io/projects/cubefs/) (CNCF).
+
+## CRI (Container Runtime Interface)
+
+![[Pasted image 20240724135156.png]]
+
+### Runtime
+
+- [containerd](https://github.com/containerd/containerd) : An open and reliable container runtime. [Getting started](https://github.com/containerd/containerd/blob/main/docs/getting-started.md)
+- [cri-dockerd](https://github.com/Mirantis/cri-dockerd): dockerd as a compliant Container Runtime Interface for Kubernetes (Mirantis OpenSource)
+- [docker](https://docs.docker.com/engine/install/#server) : Docker is one of CRI mostly to used 
+- [Mirantis](https://docs.mirantis.com/mcr/23.0/index.html): Mirantis Container Runtime (MCR) enables you to power your business-critical applications with the industry-leading enterprise container engine
+- [kata-containers](https://github.com/kata-containers/kata-containers) : an open source project and community working to build a standard implementation of lightweight Virtual Machines (VMs) that feel and perform like containers, but provide the workload isolation and security advantages of VMs.
+### Client
+
+- [cri-tools](https://github.com/kubernetes-sigs/cri-tools) : CLI and validation tools for Kubelet Container Runtime Interface (CRI). [User guide](https://github.com/kubernetes-sigs/cri-tools/blob/master/docs/crictl.md)
+- [kubeletctl](https://github.com/cyberark/kubeletctl): A client for kubelet
+## CNI (Container Network Interface)
 
 - [CNI](https://github.com/containernetworking/cni) : Container Network Interface - networking for Linux containers. [Website](https://www.cni.dev/docs/)
 - [Cilium](https://cilium.io/) : Cilium is an open source, cloud native solution for providing, securing, and observing network connectivity between workloads, fueled by the revolutionary Kernel technology eBPF
 - [Calico](https://www.tigera.io/project-calico/): Calico is a networking and security solution that enables `Kubernetes` workloads and non-Kubernetes/legacy workloads to communicate seamlessly and securely.
 - [flannel](https://github.com/flannel-io/flannel) : A network fabric for containers, designed for `Kubernetes`
 - [weave](https://github.com/weaveworks/weave) : Simple, resilient multi-host containers networking and more.
+
+## OCI (Open Container Initiative)
+
+>[!info]
+>The OCI currently contains three specifications: the Runtime Specification (runtime-spec), the Image Specification (image-spec) and the Distribution Specification (distribution-spec). The Runtime Specification outlines how to run a “filesystem bundle” that is unpacked on disk. At a high-level an OCI implementation would download an OCI Image then unpack that image into an OCI Runtime filesystem bundle. At this point the OCI Runtime Bundle would be run by an OCI Runtime.
+>
+>Official Website: [Link](https://opencontainers.org/)
+
+- [runc](https://github.com/opencontainers/runc) : CLI tool for spawning and running containers according to the OCI specification
+- [podman](https://github.com/containers/podman) : A tool for managing OCI containers and pods.
+- [buildah](https://github.com/containers/buildah) : A tool that facilitates building OCI images.
 
 ## Service Mesh
 
@@ -276,17 +311,17 @@ tags:
 - [envoy](https://www.envoyproxy.io/docs/envoy/v1.31.0/) : Envoy is an L7 proxy and communication bus designed for large modern service oriented architectures
 - [traefik proxy](https://doc.traefik.io/traefik/) : Traefik is an [open-source](https://github.com/traefik/traefik) _Edge Router_ that makes publishing your services a fun and easy experience
 - [HAProxy](https://docs.haproxy.org/) : HAProxy is a free, very fast and reliable reverse-proxy offering [high availability](http://en.wikipedia.org/wiki/High_availability), [load balancing](http://en.wikipedia.org/wiki/Load_balancer), and proxying for TCP and HTTP-based applications
-
-## Terraform workflow automation
+## Gitops
 
 - [Atlantis - Terraform Pull Request Automation](https://www.runatlantis.io/) : Running Terraform Workflows with Ease
 - [scalr](https://docs.scalr.io/docs/introduction) :  Remote operations backend for Terraform and OpenTofu (OTF)
 - [digger](https://docs.digger.dev/readme/introduction) : open-source CI/CD orchestrator for Terraform
-## Gitops
-
+- [env0](https://docs.env0.com/): Automate and manage any Infrastructure-as-Code, from Terraform and OpenTofu to Pulumi, CloudFormation, Terragrunt, Kubernetes, and more.
 - [bytebase](https://github.com/bytebase/bytebase) : The GitHub/GitLab for database DevOps.
 - [argo-cd](https://argo-cd.readthedocs.io/en/stable/) :  A declarative, GitOps continuous delivery tool for Kubernetes.
 - [fluxcd](https://fluxcd.io/flux/) : Tool for keeping Kubernetes clusters in sync with sources of configuration (like Git repositories), and automating updates to configuration when there is new code to deploy.
+- [Semaphore UI](https://semaphoreui.com/) : Elegant web interface for executing Ansible playbooks, Terraform, OpenTofu, Pulumi code and Bash scripts.
+- [act](https://github.com/nektos/act): Run your GitHub Actions locally 🚀
 
 ## Internal Developer Platform (IDP)
 
@@ -296,7 +331,25 @@ tags:
 ## Build Tool
 
 - [Expo](https://docs.expo.dev/): Expo is a framework that makes developing Android and iOS apps easier. Our framework provides file-based routing, a standard library of native modules, and much more
+- [Buildpacks.io](https://buildpacks.io/docs/): Cloud Native Buildpacks (CNBs) transform your application source code into [container images](https://github.com/opencontainers/image-spec/blob/main/spec.md) that can run on any cloud.
+- [lerna](https://github.com/lerna/lerna): 🐉 Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.
+- [nx](https://github.com/nrwl/nx): Smart Monorepos · Fast CI
 
+## Identity Provider + SSO + OAuth + 2FA
+
+- [authentik](https://docs.goauthentik.io/docs/) :  An IdP (Identity Provider) and SSO (single sign on) that is built with security at the forefront of every piece of code, every feature, with an emphasis on flexibility and versatility.
+- [FusionAuth](https://fusionauth.io/docs/get-started/) : FusionAuth is a modern platform for Customer Identity and Access Management (CIAM). FusionAuth provides APIs and a responsive web user interface to support login, registration, localized email, multi-factor authentication, reporting and much more.
+- [Authelia](https://www.authelia.com/): Authelia is an open-source [authentication](https://www.authelia.com/overview/authentication/introduction/) and [authorization](https://www.authelia.com/overview/authorization/access-control/) server and portal fulfilling the identity and access management (IAM) role of information security in providing [multi-factor authentication](https://www.authelia.com/overview/authentication/introduction/) and single sign-on (SSO) for your applications via a web portal. It acts as a companion for [common reverse proxies](https://www.authelia.com/overview/prologue/supported-proxies/).
+- [tailscale](https://tailscale.com/):  The easiest, most secure way to use WireGuard and 2FA.
+- [zitadel](https://zitadel.com/docs/guides/overview): Identity infrastructure, simplified for you.
+## Message Queue
+
+- [AutoMQ](https://docs.automq.com/automq/what-is-automq/overview) : AutoMQ re-engineers Kafka for the cloud by decoupling storage to object storage. While maintaining **100% compatibility** with Apache Kafka®, it offers users up to **10 times cost efficiency** and **100 times elasticity**.
+- [Apache Kafka](https://kafka.apache.org/documentation/): an open-source, distributed event streaming platform with message communication and storage capabilities (**superb**)
+- [RabbitMQ](https://www.rabbitmq.com/): An open-source message broker for asynchronous messaging, queueing and delivery acknowledgement.
+- [Apache ActiveMQ](https://activemq.apache.org/) : An open-source Java-based message queue that can be accessed by clients written in Javascript, C, C++, Python and .NET.
+- [Amazon Simple Queue System (SQS)](https://aws.amazon.com/sqs): A fully managed message queue built for distributed and serverless platforms
+- [Microsoft Azure Service Bus](https://azure.microsoft.com/en-us/products/service-bus): A reliable, fully managed Cloud service for delivering messages via queues or topics.
 ## Utilities Terminal Tools
 
 - [tldr](https://github.com/tldr-pages/tldr): 📚 Collaborative cheatsheets for console commands
@@ -315,4 +368,22 @@ tags:
 - [ripgrep](https://github.com/BurntSushi/ripgrep) : ripgrep recursively searches directories for a regex pattern while respecting your gitignore
 - [exa](https://github.com/ogham/exa): A modern replacement for ‘ls’.
 - [skopeo](https://github.com/containers/skopeo): Work with remote images registries - retrieving information, images, signing content
+## Git Hosting
 
+- [gitea](https://github.com/go-gitea/gitea): Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD. [Doc](https://docs.gitea.com/)
+- [gitlab](https://about.gitlab.com/install/) : Download, install and maintain your own GitLab instance.
+- [gogs](https://github.com/gogs/gogs): a painless self-hosted Git service. [Doc](https://gogs.io/docs)
+
+## Monitoring and observability
+
+- [Netdata](https://github.com/netdata/netdata) : The open-source observability platfrom everyone needs!
+- [ELK](https://www.elastic.co/elastic-stack): Combination from four main components. [Guide](https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elastic-stack-on-ubuntu-22-04), [Helm](https://operatorhub.io/operator/elastic-cloud-eck) and [Docker](https://github.com/deviantony/docker-elk)
+
+	1. [**Elasticsearch**](https://www.elastic.co/products/elasticsearch): a distributed [_RESTful_](https://en.wikipedia.org/wiki/Representational_state_transfer) search engine which stores all of the collected data.
+	2. [**Logstash**](https://www.elastic.co/products/logstash): the data processing component of the Elastic Stack which sends incoming data to Elasticsearch.
+	3. [**Kibana**](https://www.elastic.co/products/kibana): a web interface for searching and visualizing logs.
+	4. [**Beats**](https://www.elastic.co/products/beats): lightweight, single-purpose data shippers that can send data from hundreds or thousands of machines to either Logstash or Elasticsearch.
+
+- [Grafana Stack](https://grafana.com/about/grafana-stack/): Ecosystem of Grafana for providing monitor methodology for your application, container, nodes and moreover. [Helm](https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack), [[Monitoring Stack#Grafana, Prometheus and Exporter|Docker]] and [Guide](https://grafana.com/docs/grafana/latest/getting-started/get-started-grafana-prometheus/)
+- [Zabbix](https://www.zabbix.com/documentation/current/en/manual/introduction/about) : A software that monitors numerous parameters of a network and the health and integrity of servers, virtual machines, applications, services, databases, websites, the cloud and more
+- [Checkmk](https://docs.checkmk.com/latest/en/) : Offers comprehensive and specialized solutions for dealing with the very diverse environments of IT infrastructures.
