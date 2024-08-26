@@ -30,7 +30,7 @@ tags:
 </div>
 
 >[!quote]
-><h3>Favorite Quotes</h3>
+><div align="center"><h3>🖖Favorite Quotes🖖</h3></div>
 >
 >*"If you are born poor, then it is not your fault. But if you die poor, then it is your fault?" - Bill Gates*
 >
@@ -41,9 +41,9 @@ tags:
 >*“A reader lives a thousand lives before he dies. The man who never reads lives only one.” - George R.R. Martin (Authors of Game of Thrones)*
 
 >[!quote]
-><h3>Music of week 🙌🙌</h3>
+><div align="center"><h3>🙌Music of week 🙌</h3></div>
 >
-><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1867357014&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/b-i-uy-n-vy" title="Nanami ( Bùi Uyễn Vy ) Mizuoto" target="_blank" style="color: #cccccc; text-decoration: none;">Nanami ( Bùi Uyễn Vy ) Mizuoto</a> · <a href="https://soundcloud.com/b-i-uy-n-vy/wakamono-no-subete-suis-from-yorushika-cover-by-mizuoto" title="Wakamono no Subete · suis from Yorushika ( cover by Mizuoto )" target="_blank" style="color: #cccccc; text-decoration: none;">Wakamono no Subete · suis from Yorushika ( cover by Mizuoto )</a></div>
+><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/872914162&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-604968763" title="kiệt" target="_blank" style="color: #cccccc; text-decoration: none;">kiệt</a> · <a href="https://soundcloud.com/user-604968763/itsokayitsokayiloveyoump3" title="itsokayitsokayiloveyou.mp3" target="_blank" style="color: #cccccc; text-decoration: none;">itsokayitsokayiloveyou.mp3</a></div>
 
 1. 🏢 [[All Projects]] - *"All projects currently work on or archives"*
 2. 🎆 [[All Blogs]]  - *"All blog which I have and share to community"*

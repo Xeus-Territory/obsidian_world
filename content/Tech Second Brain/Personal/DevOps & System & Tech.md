@@ -40,6 +40,12 @@ tags:
 - [GoogleContainerTools](https://github.com/GoogleContainerTools) : Tools in-house of Google about Container
 - [Package manager](https://github.com/topics/package-manager) : A set of tools that automates and manages computer software. They deal with packages, or collections, of bundled files. Package managers make it easy to install, upgrade, or remove software for a computer's operating system.
 - [Container Storage Interface](https://github.com/container-storage-interface) : Container Storage Interface (CSI) Specification.
+- [awesome-devsecops](https://github.com/JakobTheDev/awesome-devsecops): Curating the best DevSecOps resources and tooling.
+- [static-analysis](https://github.com/analysis-tools-dev/static-analysis): A curated list of static analysis (SAST) tools and linters
+- [dynamic-analysis](https://github.com/analysis-tools-dev/dynamic-analysis): A curated list of dynamic analysis tools and linters
+- [awesome-sysadmin](https://github.com/awesome-foss/awesome-sysadmin): A curated list of amazingly awesome open-source sysadmin resources.
+- [system-design-101](https://github.com/ByteByteGoHq/system-design-101): Explain complex systems using visuals and simple terms. Help you prepare for system design interviews.
+- [startpack](https://github.com/tldr-devops/startpack): Selfhosted tech starter pack for development of new project or startup
 # Blog DevOps and Tech
 
 >[!note]
@@ -177,35 +183,72 @@ tags:
 >[!note]
 >Collections a supper cool and powerful tools for multiple purpose attaching with DevOps
 
-## Awesome items for Kubernetes
+## Kubernetes Items
 
 - [Ingress-Nginx Controller](https://kubernetes.github.io/ingress-nginx/) : Documentation about Nginx ingress which use for delivery IN/OUT traffic for Kubernetes Cluster
 - [OperatorHub](https://operatorhub.io/):  Home for the Kubernetes community to share Operators
 - [Artifacthub](https://artifacthub.io/) : Find, install and publish Cloud Native packages for Kubernetes
 - [Instance calculator](https://learnk8s.io/kubernetes-instance-calculator) : Estimate and find the number of max workload can apply for instance
-- [botkube](https://github.com/kubeshop/botkube): An app that helps you monitor your Kubernetes cluster, debug critical deployments & gives recommendations for standard practices
 - [Debugging Helm Templates](https://helm.sh/docs/chart_template_guide/debugging/) : Way to debugging the `helm` template with command
 - [Kubernetes IDE - K8Studio](https://k8studio.io/) : Visualizer component and workload inside kubernetes in UI, easily to deploy and manage kubernetes cluster
 - [Elasticsearch (ECK) Operator](https://operatorhub.io/operator/elastic-cloud-eck), you can figure out configuration via [Customize Pods](https://www.elastic.co/guide/en/cloud-on-k8s/master/k8s-customize-pods.html#)
 - [MongoDB Community Kubernetes Operator](https://github.com/mongodb/mongodb-kubernetes-operator), you can take the look some `crd`, and configuration with `github` link like [CRD](https://github.com/mongodb/mongodb-kubernetes-operator/blob/master/config/crd/bases/mongodbcommunity.mongodb.com_mongodbcommunity.yaml) and [Samples](https://github.com/mongodb/mongodb-kubernetes-operator/tree/master/config/samples)
 - [RabbitMQ-cluster-operator](https://operatorhub.io/operator/rabbitmq-cluster-operator), read more about that via [source code](https://github.com/rabbitmq/cluster-operator)
 - [GlassKube](https://glasskube.dev/docs/) : An open-source Kubernetes package manager that simplifies package management for Kubernetes
-## Local K8s Self-hosted
+- [kops](https://github.com/kubernetes/kops): Kubernetes Operations (kOps) - Production Grade k8s Installation, Upgrades and Management
+- [botkube](https://github.com/kubeshop/botkube): An app that helps you monitor your Kubernetes cluster, debug critical deployments & gives recommendations for standard practices
+- [coredns](https://github.com/coredns/coredns): CoreDNS is a DNS server that chains plugin
+- [kubebuilder](https://github.com/kubernetes-sigs/kubebuilder): SDK for building Kubernetes APIs using CRDs
+- [kubectl-tree](https://github.com/ahmetb/kubectl-tree): kubectl plugin to browse Kubernetes object hierarchies as a tree 🎄
+- [Crossplane](https://docs.crossplane.io/latest/): An open source Kubernetes extension that transforms your Kubernetes cluster into a **universal control plane**.
+## Local Kubernetes Self-hosted
 
 - [Kind](https://kind.sigs.k8s.io/) : [kind](https://sigs.k8s.io/kind) is a tool for running local Kubernetes clusters using Docker container “nodes”.
 - [MicroK8s](https://microk8s.io/docs): MicroK8s is a low-ops, minimal production Kubernetes.
 - [K3s](https://docs.k3s.io/): Lightweight Kubernetes. Easy to install, half the memory, all in a binary of less than 100 MB.
-- [Kubernetes Official solution](https://kubernetes.io/docs/setup/production-environment/tools/) : Installing Kubernetes with deployment tools
+- [Kubernetes Official solution](https://kubernetes.io/docs/setup/production-environment/tools/) : Installing Kubernetes with deployment tools. Such as: [kubespray](https://github.com/kubernetes-sigs/kubespray), [kubeadm](https://github.com/kubernetes/kubeadm)
 - [minikube](https://minikube.sigs.k8s.io/docs/) : minikube quickly sets up a local Kubernetes cluster on macOS, Linux, and Windows
 - [Talos Linux](https://www.talos.dev/) : The Kubernetes Operating System
+- [K0s](https://docs.k0sproject.io/stable/): k0s is an open source, all-inclusive Kubernetes distribution, which is configured with all of the features needed to build a Kubernetes cluster.
+- [Kubernetes Goat](https://madhuakula.com/kubernetes-goat/docs): An interactive Kubernetes security learning playground
+- [cluster-template](https://github.com/onedr0p/cluster-template): A template for deploying a Talos Kubernetes cluster including Flux for GitOps
+## Automation Build Platforms
+
+- [Expo](https://docs.expo.dev/): Expo is a framework that makes developing Android and iOS apps easier. Our framework provides file-based routing, a standard library of native modules, and much more
+- [Buildpacks.io](https://buildpacks.io/docs/): Cloud Native Buildpacks (CNBs) transform your application source code into [container images](https://github.com/opencontainers/image-spec/blob/main/spec.md) that can run on any cloud.
+- [lerna](https://github.com/lerna/lerna): 🐉 Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.
+- [nx](https://github.com/nrwl/nx): Smart Monorepos · Fast CI
+- [just](https://just.systems/man/en/): a handy way to save and run project-specific commands.
+
+## Automation Deployment Platforms
+
+- [gitpod](https://github.com/gitpod-io/gitpod): The developer platform for on-demand cloud development environments to create software faster and more securely.
+- [prefect](https://github.com/PrefectHQ/prefect): Prefect is a workflow orchestration framework for building resilient data pipelines in Python.
+- [werf](https://github.com/werf/werf): A solution for implementing efficient and consistent software delivery to Kubernetes facilitating best practices.
+- [nelm](https://github.com/werf/nelm): Nelm is a Helm 3 alternative and werf deployment engine
+
+## Kubernetes cluster management
+
+- [Meshery](https://docs.meshery.io/): As a self-service engineering platform, Meshery enables collaborative design and operation of cloud and cloud native infrastructure.
+- [kubeshark](https://github.com/kubeshark/kubeshark): The API traffic analyzer for Kubernetes providing real-time K8s
+- [karpor](https://github.com/KusionStack/karpor): Intelligence for Kubernetes. World's most promising Kubernetes Visualization Tool for Developer and Platform Engineering teams.
 ## Cloud Infrastructure Designer
 
 - [Brainboard](https://www.brainboard.co/) : An AI driven platform to visually design, generate terraform code and manage cloud infrastructure, collaboratively.
 
+## Database Self-hosted
+
+- [postgresql_cluster](https://github.com/vitabaks/postgresql_cluster): PostgreSQL High-Availability Cluster (based on Patroni). Automating with Ansible.
+- [pigsty](https://github.com/Vonng/pigsty): Battery-Included PostgreSQL Distro as a Free & Better RDS Alternative —— Pigsty
+
+## Serverless Self-hosted
+
+- [fn](https://github.com/fnproject/fn): The container native, cloud agnostic serverless platform.
 ## Infrastructure as Code (Machine + Configuration)
 
 - [Vagrant](https://developer.hashicorp.com/vagrant/docs) : Vagrant is the command line utility for managing the lifecycle of virtual machines.
 - [Ansible](https://docs.ansible.com/ansible/latest/index.html) : Ansible provides open-source automation that reduces complexity and runs everywhere, especially `VM`
+- [awx](https://github.com/ansible/awx): AWX provides a web-based user interface, REST API, and task engine built on top of Ansible.
 
 ## Infrastructure as Code (Cloud)
 
@@ -213,6 +256,7 @@ tags:
 - [Pulumi Registry](https://www.pulumi.com/registry/): Package, SDK of Pulumi (Example: AWS, Azure, GCP)
 - [Terraform Documentation](https://developer.hashicorp.com/terraform/docs): An infrastructure as code tool that lets you build, change, and version infrastructure safely and efficiently
 - [Terraform Registry](https://registry.terraform.io/): Terraform providers that power all of Terraform’s resource types, or find modules for quickly deploying common infrastructure configurations.
+- [OpenTofu](https://opentofu.org/docs/): An infrastructure as code tool that lets you define infrastructure resources in human-readable configuration files that you can version, reuse, and share
 ## Generated + Validate Configuration
 
 - [moz://a SSL Configuration Generator](https://ssl-config.mozilla.org/) : SSL Generation for multiple webserver
@@ -222,9 +266,10 @@ tags:
 - [diagrams](https://github.com/mingrammer/diagrams): 🎨 Diagram as Code for prototyping cloud system architectures
 - [crontab guru](https://crontab.guru/): The quick and simple editor for cron schedule expressions by Cronitor (SHELL/Pipeline)
 - [crontab spring](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/scheduling/support/CronExpression.html) : Representation of a [crontab expression](https://www.manpagez.com/man/5/crontab/) that can calculate the next time it matches (Java/AWS)
-## Local Cloud 
+## Local Cloud Self-hosted
 
 - [LocalStack - AWS local](https://hub.docker.com/r/localstack/localstack) : A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline. Read more: [Documentation](https://docs.localstack.cloud/getting-started/). You can do more access and management via [LocalStack Web Application](https://app.localstack.cloud/sign-in)
+- [openstack](https://github.com/openstack/openstack): Repository tracking all OpenStack repositories as submodules. Mirror of code maintained at opendev.org -->  [documentation](https://docs.openstack.org/2024.1/), and minor version [devstack](https://github.com/openstack/devstack) - System for quickly installing an OpenStack cloud
 ## Secrets management
 
 - [dotenvx](https://dotenvx.com/) : Loads environment variables from .env for nodejs projects.
@@ -232,18 +277,21 @@ tags:
 - [sops](https://getsops.io/) : Simple and flexible tool for managing secrets
 - [Hashicorp Vault](https://developer.hashicorp.com/vault/docs?product_intent=vault): Vault is an identity-based secret and encryption management system. This documentation covers the main concepts of Vault, what problems it can solve, and contains a quick start for using Vault.
 - [Ansible Vault](https://docs.ansible.com/ansible/2.9/user_guide/vault.html): Ansible Vault is a feature of ansible that allows you to keep sensitive data such as passwords or keys in encrypted files, rather than as plaintext in playbooks or roles. These vault files can then be distributed or placed in source control.
+- [trufflehog](https://github.com/trufflesecurity/trufflehog): Find, verify, and analyze leaked credentials.
+- [infisical](https://github.com/Infisical/infisical): the open-source secret management platform: Sync secrets across your team/infrastructure, prevent secret leaks, and manage internal PKI
 
 ## Policy Controller Kubernetes
 
 - [OPA Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/) : A customizable cloud native policy controller that helps enforce policies and strengthen governance
 - [Kyverno](https://kyverno.io/) : Kubernetes Native Policy Management
 - [Datree](https://hub.datree.io/) : Datree secures your Kubernetes by blocking the deployment of misconfigured resources.
-
 ## Threat Intelligence
 
 - [Falco](https://falco.org/): Detect security threats in real time
 - [Tetragon](https://tetragon.io/docs/) : Cilium Tetragon component enables powerful realtime, eBPF-based Security Observability and Runtime Enforcement.
-
+- [openappsec](https://github.com/openappsec/openappsec): A machine learning security engine that preemptively and automatically prevents threats against Web Application & APIs.
+- [teleport](https://github.com/gravitational/teleport): The easiest, and most secure way to access and protect all of your infrastructure.
+- [kubescape](https://github.com/kubescape/kubescape): Kubescape is an open-source Kubernetes security platform for your IDE, CI/CD pipelines, and clusters
 ## API Gateway
 
 - [traefik hub](https://doc.traefik.io/traefik-hub/) : Traefik Hub is the industry’s first Kubernetes-native API Management solution for publishing, securing, and managing APIs.
@@ -259,12 +307,19 @@ tags:
 - [httpd - Apache2](https://httpd.apache.org/) : The Apache HTTP Server Project is an effort to develop and maintain an open-source HTTP server for modern operating systems including UNIX and Windows.
 - [IIS](https://learn.microsoft.com/en-us/iis/): Window webserver
 - [Nginx](https://nginx.org/en/docs/): nginx is an HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server. (Most powerful)
-## Object Storage
+## Storage Platforms
 
 - [MinIO](https://min.io/docs/minio/linux/index.html): MinIO is an object storage solution that provides an Amazon Web Services S3-compatible API and supports all core S3 features.
 - [Ceph](https://docs.ceph.com/en/reef/start/): Ceph can be used to provide [Ceph Object Storage](https://docs.ceph.com/en/reef/glossary/#term-Ceph-Object-Storage) to [Cloud Platforms](https://docs.ceph.com/en/reef/glossary/#term-Cloud-Platforms) and Ceph can be used to provide [Ceph Block Device](https://docs.ceph.com/en/reef/glossary/#term-Ceph-Block-Device) services to [Cloud Platforms](https://docs.ceph.com/en/reef/glossary/#term-Cloud-Platforms). Ceph can be used to deploy a [Ceph File System](https://docs.ceph.com/en/reef/glossary/#term-Ceph-File-System). All [Ceph Storage Cluster](https://docs.ceph.com/en/reef/glossary/#term-Ceph-Storage-Cluster) deployments begin with setting up each [Ceph Node](https://docs.ceph.com/en/reef/glossary/#term-Ceph-Node) and then setting up the network.
 - [seaweedfs](https://github.com/seaweedfs/seaweedfs) : a fast distributed storage system for blobs, objects, files, and data lake, for billions of files! Blob store has O(1) disk seek, cloud tiering.
 - [CubeFS](https://cubefs.io/docs/master/overview/introduction.html) : A next-generation cloud-native storage product that is currently an incubating open-source project hosted by the [Cloud Native Computing Foundationopen in new window](https://www.cncf.io/projects/cubefs/) (CNCF).
+- [rclone](https://github.com/rclone/rclone): "rsync for cloud storage" - Google Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Wasabi, Google Cloud Storage, Azure Blob, Azure Files, Yandex Files
+
+## Docker Plugin
+
+- [docker-rollout](https://github.com/Wowu/docker-rollout): Zero Downtime Deployment for Docker Compose
+- [watchtower](https://github.com/containrrr/watchtower): A process for automating Docker container base image updates.
+- [nginx-proxy](https://github.com/nginx-proxy/nginx-proxy): Automated nginx proxy for Docker containers using docker-gen
 
 ## CRI (Container Runtime Interface)
 
@@ -277,6 +332,7 @@ tags:
 - [docker](https://docs.docker.com/engine/install/#server) : Docker is one of CRI mostly to used 
 - [Mirantis](https://docs.mirantis.com/mcr/23.0/index.html): Mirantis Container Runtime (MCR) enables you to power your business-critical applications with the industry-leading enterprise container engine
 - [kata-containers](https://github.com/kata-containers/kata-containers) : an open source project and community working to build a standard implementation of lightweight Virtual Machines (VMs) that feel and perform like containers, but provide the workload isolation and security advantages of VMs.
+- [sysbox](https://github.com/nestybox/sysbox): An open-source, next-generation "runc" that empowers rootless containers to run workloads such as Systemd, Docker, Kubernetes, just like VMs.
 ### Client
 
 - [cri-tools](https://github.com/kubernetes-sigs/cri-tools) : CLI and validation tools for Kubelet Container Runtime Interface (CRI). [User guide](https://github.com/kubernetes-sigs/cri-tools/blob/master/docs/crictl.md)
@@ -300,6 +356,9 @@ tags:
 - [podman](https://github.com/containers/podman) : A tool for managing OCI containers and pods.
 - [buildah](https://github.com/containers/buildah) : A tool that facilitates building OCI images.
 
+## Service Discovery
+
+- [nacos](https://github.com/alibaba/nacos): An easy-to-use dynamic service discovery, configuration and service management platform for building cloud native applications.
 ## Service Mesh
 
 - [Istio](https://istio.io/): Service Mesh. Simplified. Easily build cloud native workloads securely and reliably with `Istio`, with or without sidecars.
@@ -328,13 +387,6 @@ tags:
 - [Qovery](https://hub.qovery.com/docs/getting-started/what-is-qovery/) : the **Internal Developer Platform (IDP)** that cuts noise for developers with paved paths to production
 - [Kusion](https://www.kusionstack.io/docs/) : An intent-driven [Platform Orchestrator](https://internaldeveloperplatform.org/platform-orchestrators/), which sits at the core of an [Internal Developer Platform (IDP)](https://internaldeveloperplatform.org/what-is-an-internal-developer-platform/)
 
-## Build Tool
-
-- [Expo](https://docs.expo.dev/): Expo is a framework that makes developing Android and iOS apps easier. Our framework provides file-based routing, a standard library of native modules, and much more
-- [Buildpacks.io](https://buildpacks.io/docs/): Cloud Native Buildpacks (CNBs) transform your application source code into [container images](https://github.com/opencontainers/image-spec/blob/main/spec.md) that can run on any cloud.
-- [lerna](https://github.com/lerna/lerna): 🐉 Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.
-- [nx](https://github.com/nrwl/nx): Smart Monorepos · Fast CI
-
 ## Identity Provider + SSO + OAuth + 2FA
 
 - [authentik](https://docs.goauthentik.io/docs/) :  An IdP (Identity Provider) and SSO (single sign on) that is built with security at the forefront of every piece of code, every feature, with an emphasis on flexibility and versatility.
@@ -350,6 +402,13 @@ tags:
 - [Apache ActiveMQ](https://activemq.apache.org/) : An open-source Java-based message queue that can be accessed by clients written in Javascript, C, C++, Python and .NET.
 - [Amazon Simple Queue System (SQS)](https://aws.amazon.com/sqs): A fully managed message queue built for distributed and serverless platforms
 - [Microsoft Azure Service Bus](https://azure.microsoft.com/en-us/products/service-bus): A reliable, fully managed Cloud service for delivering messages via queues or topics.
+
+## SSL + DNS Utilities
+
+- [certbot](https://github.com/certbot/certbot): Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server.
+- [acme.sh](https://github.com/acmesh-official/acme.sh): A pure Unix shell script implementing ACME client protocol
+- [kcert](https://github.com/nabsul/kcert): A Simple Let's Encrypt Manager for Kubernetes
+- [ddns-updater](https://github.com/qdm12/ddns-updater): Container to update DNS records periodically with WebUI for many DNS providers
 ## Utilities Terminal Tools
 
 - [tldr](https://github.com/tldr-pages/tldr): 📚 Collaborative cheatsheets for console commands
@@ -368,6 +427,8 @@ tags:
 - [ripgrep](https://github.com/BurntSushi/ripgrep) : ripgrep recursively searches directories for a regex pattern while respecting your gitignore
 - [exa](https://github.com/ogham/exa): A modern replacement for ‘ls’.
 - [skopeo](https://github.com/containers/skopeo): Work with remote images registries - retrieving information, images, signing content
+- [pre-commit](https://github.com/pre-commit/pre-commit): A framework for managing and maintaining multi-language pre-commit hooks.
+- [husky](https://github.com/typicode/husky): Git hooks made easy 🐶 woof!
 ## Git Hosting
 
 - [gitea](https://github.com/go-gitea/gitea): Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD. [Doc](https://docs.gitea.com/)
@@ -387,3 +448,5 @@ tags:
 - [Grafana Stack](https://grafana.com/about/grafana-stack/): Ecosystem of Grafana for providing monitor methodology for your application, container, nodes and moreover. [Helm](https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack), [[Monitoring Stack#Grafana, Prometheus and Exporter|Docker]] and [Guide](https://grafana.com/docs/grafana/latest/getting-started/get-started-grafana-prometheus/)
 - [Zabbix](https://www.zabbix.com/documentation/current/en/manual/introduction/about) : A software that monitors numerous parameters of a network and the health and integrity of servers, virtual machines, applications, services, databases, websites, the cloud and more
 - [Checkmk](https://docs.checkmk.com/latest/en/) : Offers comprehensive and specialized solutions for dealing with the very diverse environments of IT infrastructures.
+- [highlight](https://github.com/highlight/highlight): The open source, full-stack monitoring platform.
+- [gitana](https://github.com/nicolastakashi/gitana): Gitana is a lightweight dashboard sync

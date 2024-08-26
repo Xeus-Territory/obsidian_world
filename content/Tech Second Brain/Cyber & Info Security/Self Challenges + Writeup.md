@@ -6,6 +6,8 @@ tags:
   - fundamentals
   - research
 ---
+>[!info]
+>Place to store the smartlink to my resource about cyber and information security of myself
 # CTF Writeup
 
 - [Write up - Forensic](https://github.com/Xeus-Territory/ctf_zone/tree/main/CTFLearn/Forensic)

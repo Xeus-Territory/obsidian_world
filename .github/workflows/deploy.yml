@@ -7,16 +7,16 @@ on:
   push:
     branches:
       - main
-    
+
 permissions:
   contents: read
   pages: write
   id-token: write
- 
+
 concurrency:
   group: "pages"
   cancel-in-progress: false
- 
+
 jobs:
   build:
     runs-on: self-hosted
@@ -32,10 +32,11 @@ jobs:
       - name: Build Quartz
         run: npx quartz build
       - name: Upload artifact
+        if: github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v2
         with:
           path: public
- 
+
   deploy:
     if: github.ref == 'refs/heads/main'
     needs: build
@@ -47,4 +48,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-  

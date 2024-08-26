@@ -8,7 +8,6 @@ tags:
 ---
 >[!info]
 >This page is place where I store command, configuration and moreover around information security.
-
 # Nuclei
 
 >[!info]

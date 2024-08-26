@@ -24,10 +24,11 @@ git rebase -i <hash-id-you-want-to-squash>
 >[!important]
 >Change the secondary commit from `pick` to `squash`, save and continue for set new message for commit
 
-![[Pasted image 20240513095544.png]]
+![[Pasted image 20240513095544.png|center]]
 
-![[Pasted image 20240513095617.png]]
-![[Pasted image 20240513095700.png]]
+![[Pasted image 20240513095617.png|center]]
+
+![[Pasted image 20240513095700.png|center]]
 
 Method 2: `reset` with `--soft` flag
 
@@ -35,13 +36,13 @@ Method 2: `reset` with `--soft` flag
 git reset --soft <hash-id-you-want-to-squash
 ```
 
-![[Pasted image 20240513095821.png]]
+![[Pasted image 20240513095821.png|center]]
 
 ```bash
 git commit -m "New message represent for twice or N commit"
 ```
 
-![[Pasted image 20240513100055.png]]
+![[Pasted image 20240513100055.png|center]]
 
 # Delete branch
 

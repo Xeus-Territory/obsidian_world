@@ -10,8 +10,10 @@ tags:
 ---
 >[!info]
 >This page for purpose share the idea, community, skillset, technical about Cyber Security and Information Security. How we can improve the skillset via LAB and CTF contest
-
 # General
+
+>[!info]
+>General things will cover a lot of stuff when you want to start with cyber and information security
 
 - [Youtube - 60 Hacking Commands You NEED to Know](https://www.youtube.com/watch?v=gL4j-a-g9pA&ab_channel=NetworkChuck)
 - [Cybersecurity Conferences](https://infosec-conferences.com/)
@@ -21,8 +23,12 @@ tags:
 - [bugbounty-cheatsheet/books.md at master · EdOverflow/bugbounty-cheatsheet](https://github.com/EdOverflow/bugbounty-cheatsheet/blob/master/cheatsheets/books.md)
 - [Bill's Security Site](https://asecuritysite.com/)
 - [OWASP Penetration Testing Check List](https://owasp.org/www-project-web-security-testing-guide/assets/archive/OWASP_Web_Application_Penetration_Checklist_v1_1.pdf)
+- [SecurityZines](https://securityzines.com/) : Visualization Hacking, Architecture and Technical by Image with step by step
 
 # InfoSec Blog page
+
+>[!info]
+>Blog page where provide you more information about techniques, tools and madness things inside information security field
 
 - [Blog | hackers-arise](https://www.hackers-arise.com/)
 - [WhiteHat.vn](https://whitehat.vn/)
@@ -53,10 +59,14 @@ tags:
 - [SSH Academy](https://www.ssh.com/academy)
 - [HighOn.Coffee](https://highon.coffee/) - Penetration Testing && Security Research
 - [Troy Hunt](https://www.troyhunt.com/)
+- [Pentester Land - Offensive InfoSec](https://pentester.land/)
+- [Reddit Hacking](https://old.reddit.com/r/hacking/wiki/index)
+- [KitPloit - PenTest & Hacking Tools](https://www.kitploit.com/?m=0)
 
-# Tools and Techniques
+# Awesome Infomation Security repository
 
-## Awesome repository
+>[!info]
+>The madness and badass repository will provide huge information about Cyber and Information Security
 
 - [awesome-pentest](https://github.com/enaqx/awesome-pentest) : A collection of awesome penetration testing resources, tools and other shiny things
 - [awesome-infosec](https://github.com/onlurking/awesome-infosec) : A curated list of awesome `infosec` courses and training resources.
@@ -77,130 +87,144 @@ tags:
 - [public-pentesting-reports](https://github.com/juliocesarfort/public-pentesting-reports): A list of public penetration test reports published by several consulting firms and academic security groups.
 - [The Hacker Recipes](https://www.thehacker.recipes/): providing technical guides on various hacking topics
 - [MobileApp-Pentest-Cheatsheet](https://github.com/tanprathan/MobileApp-Pentest-Cheatsheet) : Arsenal for mobile application attack
-- [nuclei](https://github.com/projectdiscovery/nuclei) : Fast and customizable vulnerability scanner based on simple YAML based DSL. [Doc](https://docs.projectdiscovery.io/tools/nuclei/overview) and [Cloud Platform](https://cloud.projectdiscovery.io/)
-## Browser Search
+- [OWASP Project](https://owasp.org/projects/) : Collection about OWASP Opensource
+- [OWASP Collection](https://owasp.org/www-community/Free_for_Open_Source_Application_Security_Tools): Free for Open Source Application Security Tools
+
+# Awesome Articles
+
+>[!info]
+>The collection of myself about tool and technique is useful for learning and practicing Cyber and Info Security
+
+- [General - Medium - Rust for Cyber Security and Red Teaming](https://medium.com/bugbountywriteup/rust-for-cyber-security-and-red-teaming-275595d3fdec)
+- [General - Python for DevSecOps and Any Security Engineer](https://devsec-blog.com/2024/03/python-for-devsecops-and-any-security-engineer/)
+- [Pwnable - Wiz.io - CVE-2024-3094 : Backdoor XZ](https://www.wiz.io/blog/cve-2024-3094-critical-rce-vulnerability-found-in-xz-utils)
+- [Pwnable - Medium - Docker and runC Vulnerabilities: A Deep Dive into CVE-2024–21626 and Its Counterparts](https://medium.com/system-weakness/docker-and-runc-vulnerabilities-a-deep-dive-into-cve-2024-21626-and-its-counterparts-4ca24e7d7aa1)
+- [Pwnable - Medium - Breaking Free: 26 Advanced Techniques to Escape Docker Containers](https://medium.com/@elniak/breaking-free-26-advanced-techniques-to-escape-docker-containers-530049816b55)
+- [Pwnable - Medium - Ping Power — ICMP Tunnel](https://medium.com/bugbountywriteup/ping-power-icmp-tunnel-31e2abb2aaea)
+- [Pwnable - Different types of Computer Viruses - Computer Virus Classification](https://www.omnisecu.com/security/types-of-computer-viruses.php)
+- [Pwnable -  Linux Privilege Escalation - Vietnamese](https://viblo.asia/s/linux-privilege-escalation-Wj53OQgw56m)
+- [Pwnable - x86 and amd64 instruction reference](https://www.felixcloutier.com/x86/index.html)
+- [Crypto - Practical Cryptography](http://practicalcryptography.com/) :  Talk about Cryptography but explain more about them
+- [Forensics - Steghide - An Easy way to Hide Confidential Data Inside Images and Sound Objects in Linux](https://www.2daygeek.com/easy-way-hide-information-inside-image-and-sound-objects/)
+- [Forensics - Hiding Information by Manipulating an Image's Height](https://blog.cyberhacktics.com/hiding-information-by-changing-an-images-height/)
+- [Forensics - Information hiding](https://www.petitcolas.net/steganography/index.html)
+- [Forensics - Modifying Embedded Filesystems in ARM Linux zImages](https://jamchamb.net/2022/01/02/modify-vmlinuz-arm.html)
+- [Web - Medium - How to find subdomain takeover using httpx + dig](https://medium.com/@DrakenKun/how-to-find-subdomain-takeover-using-httpx-dig-5c2351d380b4)
+- [Pwnable - Get Reverse-shell via Windows one-liner - Hacking Articles](https://www.hackingarticles.in/get-reverse-shell-via-windows-one-liner/)
+- [Networking - Medium - VPN is dead? Long live the Jump Host?](https://medium.com/itnext/vpn-is-dead-long-live-the-jump-host-bf3683cc684d)
+- [Networking - Medium - Using Suricata Intrusion Prevention System To Monitor Network Traffic](https://medium.com/aws-tip/using-suricata-intrusion-prevention-system-to-manage-network-traffic-fa865fad197f)
+- [Networking - Kết nối private LAN qua Cloudflare Tunnels sử dụng Wireguard](https://viblo.asia/p/ket-noi-private-lan-qua-cloudflare-tunnels-su-dung-wireguard-zXRJ8mrZLGq)
+- [Networking - Cisco - Configuring Virtual Private LAN Service (VPLS)](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9400/software/release/16-12/configuration_guide/mpls/b_1612_mpls_9400_cg/configuring_virtual_private_lan_service__vpls_.pdf)
+- [Networking - What is multiprotocol label switching (MPLS)?](https://www.cloudflare.com/learning/network-layer/what-is-mpls/)
+- [Networking - Zero Trust Network Access (ZTNA) vs VPNs](https://konghq.com/blog/engineering/ztna-vs-vpns)
+- [Networking - 10 Useful Open Source Security Firewalls for Linux Systems](https://www.tecmint.com/open-source-security-firewalls-for-linux-systems/)
+- [Cloud - Creating unintentional ways to bypass AWS IAM policies when using the “ForAllValues” operator](https://awstip.com/creating-unintentional-ways-to-bypass-aws-iam-policies-when-using-the-forallvalues-operator-3516a7f17ed0)
+
+# Tools and Techniques
+
+## Reconnaissance (All categories)
+
+>[!info]
+>In this phase, the tester gathers as much information about the target system as they can, including information about the network topology, operating systems and applications, user accounts, and other relevant information. The goal is to gather as much data as possible so that the tester can plan an effective attack strategy.
+### Browser Search
 
 - [GoogleDorking.md](https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06)
 - [Download Google Search Operators Cheat Sheet PDF for Quick References](https://hackr.io/blog/google-search-operators-cheat-sheet)
+### Container
 
-## Programing Language
-
-- [Medium - Rust for Cyber Security and Red Teaming](https://medium.com/bugbountywriteup/rust-for-cyber-security-and-red-teaming-275595d3fdec)
-- [Python for DevSecOps and Any Security Engineer](https://devsec-blog.com/2024/03/python-for-devsecops-and-any-security-engineer/)
-
-## CVE Exploits Explorer
-
-- [CVE-2024-3094 : Backdoor XZ](https://www.wiz.io/blog/cve-2024-3094-critical-rce-vulnerability-found-in-xz-utils)
-
-## Container
-
-- [Medium - Docker and runC Vulnerabilities: A Deep Dive into CVE-2024–21626 and Its Counterparts](https://medium.com/system-weakness/docker-and-runc-vulnerabilities-a-deep-dive-into-cve-2024-21626-and-its-counterparts-4ca24e7d7aa1)
-- [Medium - Breaking Free: 26 Advanced Techniques to Escape Docker Containers](https://medium.com/@elniak/breaking-free-26-advanced-techniques-to-escape-docker-containers-530049816b55)
 - [dive](https://github.com/wagoodman/dive) : A tool for exploring each layer in a docker image
 - [crane](https://github.com/google/go-containerregistry/tree/main/cmd/crane): A tool for interacting with remote images and registries
-## OS and Computer architecture
+- [trivy](https://github.com/aquasecurity/trivy): Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more
 
-- [x86 and amd64 instruction reference](https://www.felixcloutier.com/x86/index.html)
-- [GTFOBins](https://gtfobins.github.io/)
-## InfoSec Research
+### OSINT
 
-- [Ping Power — ICMP Tunnel. An attacker is often required to face a… | by Nir Chako | InfoSec Write-ups](https://medium.com/bugbountywriteup/ping-power-icmp-tunnel-31e2abb2aaea)
-- [Different types of Computer Viruses - Computer Virus Classification](https://www.omnisecu.com/security/types-of-computer-viruses.php#:~:text=An%20Armored%20Virus%20may%20also,it%20more%20difficult%20to%20disinfect.&text=Stealth%20viruses%3A%20Stealth%20viruses%20have,file%20sizes%20or%20directory%20structure.)
-- [Linux Privilege Escalation - Vietnamese](https://viblo.asia/s/linux-privilege-escalation-Wj53OQgw56m)
-## Collections about Attack and Defend
+- [TinEye Reverse Image Search](https://tineye.com/)
+- [Internet Archive: Wayback Machine](https://archive.org/web/)
+- [GPS coordinates, latitude and longitude with interactive Maps](https://www.gps-coordinates.net/)
+
+### Web
+
+- [SecLists](https://github.com/danielmiessler/SecLists) : Wordlist for attacking
+- [Snyk](https://docs.snyk.io/) : DAST and SAST tools
+- [crt.sh](https://crt.sh/) : Certificate Search
+- [jwt.io](https://jwt.io/) : JSON Web Tokens 
+- [digwebinterface](https://www.digwebinterface.com/) : Dig on browser
+- [Censys Search Engine](https://search.censys.io/) : Web recon tool
+- [Shodan Search Engine](https://www.shodan.io/) : Web recon tool
+- [Google Public DNS](https://dns.google/) : Find and validate dns with Google DNS
+- [DNSdumpster.com](https://dnsdumpster.com/): dns recon and research, find and lookup dns records
+
+## Exploitation
+
+>[!info]
+>In this phase, ethical hacker need to attack to target and try to grasp some thing about weakness of system or applications
+### Collections about Attack and Defend
 
 - [MITRE ATT&CK®](https://attack.mitre.org/#) : Globally-accessible knowledge base of adversary tactics and techniques based on real-world observations.
 - [Defend MITRE](https://d3fend.mitre.org/):  Defend skillset base on real-world secenarios
-- [CAPEC - Common Attack Pattern Enumeration and Classification (CAPEC™)](https://capec.mitre.org/)
-- [Pentester Land - Offensive InfoSec](https://pentester.land/)
-- [Exploit Database - Exploits for Penetration Testers, Researchers, and Ethical Hackers](https://www.exploit-db.com/) : Find PoC and Exploit method
-- [Vulnerability & Exploit Database](https://www.rapid7.com/db/?q=&type=nexpose&page=1)
-- [Application Security Cheat Sheet - Application Security Cheat Sheet](https://0xn3va.gitbook.io/cheat-sheets/)
-- [💀 Sploitus | Exploit & Hacktool Search Engine](https://sploitus.com/)
-- [Reddit Hacking](https://old.reddit.com/r/hacking/wiki/index)
-- [KitPloit - PenTest & Hacking Tools](https://www.kitploit.com/?m=0)
-- [Introduction - OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/index.html)
-- [vitalysim/Awesome-Hacking-Resources: A collection of hacking / penetration testing resources to make you better!](https://github.com/vitalysim/Awesome-Hacking-Resources)
-- [SecurityZines](https://securityzines.com/) : Visualization Hacking, Architecture and Technical by Image with step by step
-- [Get Reverse-shell via Windows one-liner - Hacking Articles](https://www.hackingarticles.in/get-reverse-shell-via-windows-one-liner/)
-- [blaCCkHatHacEEkr/PENTESTING-BIBLE: Learn ethical hacking.Learn about reconnaissance,windows/linux hacking,attacking web technologies,and pen testing wireless networks.Resources for learning malware analysis and reverse engineering.](https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE)
-- [AD-Attack-Defense](https://github.com/infosecn1nja/AD-Attack-Defense)
-- [Hive](https://7h3w4lk3rs-organization.gitbook.io/the-hive): a public repository for red/blue team stuff.
-- [MAAD Attack Framework](https://maad-af.com/) - An attack tool for simple, fast & effective security testing of M365 & Entra ID (Azure AD).
-
-## Privilege Escalation (RCE)
+- [CAPEC](https://capec.mitre.org/) : Common Attack Pattern Enumeration and Classification (CAPEC™)
+- [Application Security Cheat Sheet](https://0xn3va.gitbook.io/cheat-sheets/): Application Security Cheat Sheet
+- [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/index.html) : Provide a concise collection of high value information on specific application security topics
+- [Awesome-Hacking-Resources](https://github.com/vitalysim/Awesome-Hacking-Resources) : A collection of hacking / penetration testing resources to make you better!
+- [PENTESTING-BIBLE](https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE): Attack and Defend articles in PDF 
+- [AD-Attack-Defense](https://github.com/infosecn1nja/AD-Attack-Defense) : Attack and defend active directory using modern post exploitation adversary tradecraft activity
+- [MAAD Attack Framework](https://maad-af.com/) : An attack tool for simple, fast & effective security testing of M365 & Entra ID (Azure AD).
+- [GTFOBins](https://gtfobins.github.io/) : A curated list of Unix binaries that can be used to bypass local security restrictions in misconfigured systems.
+### Privilege Escalation (RCE)
 
 - [PEASS-ng](https://github.com/peass-ng/PEASS-ng) : PEASS - Privilege Escalation Awesome Scripts SUITE
 - [GTFOBLookup](https://github.com/nccgroup/GTFOBLookup) : GTFO Lookup
 - [chisel](https://github.com/jpillora/chisel) : A fast TCP/UDP tunnel over HTTP
 - [nishang](https://github.com/samratashok/nishang) : Nishang - Offensive PowerShell for red team, penetration testing and offensive security.
 - [Online - Reverse Shell Generator](https://www.revshells.com/)
+### Cryptography
 
-## Cryptography
+- [dCode](https://www.dcode.fr/): Solveurs, Crypto, Maths, Codes, Outils en Ligne
+- [RapidTables.com](https://www.rapidtables.com/) : Online Calculators & Tools 
+- [Boxentriq](https://www.boxentriq.com/code-breaking/cipher-identifier) : Cipher Identifier (online tool)
+- [Morse Code World](https://morsecode.world/): Morse Code crypto for encrypt and decrypt
+- [CrackStation](https://crackstation.net/): Online Password Hash Cracking
+- [CyberChef](https://gchq.github.io/CyberChef/): The bunch of cyber tools for crypto and file format
+- [cryptii](https://cryptii.com/): Modular conversion, encoding and encryption online 
+- [CrypTool](https://www.cryptool.org/en/): Try crypto tools, learn cryptography and solve puzzles
+- [Unicode Text Steganography Encoders/Decoders](https://www.irongeek.com/i.php?page=security/unicode-steganography-homoglyph-encoder) : Unicode Text Steganography Encoders/Decoders
+### Forensics
 
-- [dCode - Solveurs, Crypto, Maths, Codes, Outils en Ligne](https://www.dcode.fr/)
-- [Online Calculators & Tools - RapidTables.com](https://www.rapidtables.com/)
-- [Cipher Identifier (online tool) | Boxentriq](https://www.boxentriq.com/code-breaking/cipher-identifier)
-- [Morse Code World](https://morsecode.world/)
-- [CrackStation - Online Password Hash Cracking](https://crackstation.net/)
-- [CyberChef - The bunch of cyber tools](https://gchq.github.io/CyberChef/)
-- [Modular conversion, encoding and encryption online — cryptii](https://cryptii.com/)
-- [CrypTool](https://www.cryptool.org/en/)
-- [Practical Cryptography](http://practicalcryptography.com/) :  Talk about Cryptography but explain more about them
-## OSINT
-
-- [TinEye Reverse Image Search](https://tineye.com/)
-- [Internet Archive: Wayback Machine](https://archive.org/web/)
-- [GPS coordinates, latitude and longitude with interactive Maps](https://www.gps-coordinates.net/)
-
-## Forensics
-
-- [HexEd.it - Browser-based Online and Offline Hex Editing](https://hexed.it/)
+- [HexEd.it](https://hexed.it/) : Browser-based Online and Offline Hex Editing
 - [BertNase's Own - npiet fun!](https://www.bertnase.de/npiet/npiet-execute.php)
-- [Unicode Text Steganography Encoders/Decoders](https://www.irongeek.com/i.php?page=security/unicode-steganography-homoglyph-encoder)
-- [Aperi'Solve](https://www.aperisolve.com/)
-- [Brightness and contrast online](https://pinetools.com/brightness-contrast-image)
-- [FTK Forensic Toolkit](https://www.exterro.com/)
+- [Aperi'Solve](https://www.aperisolve.com/) : Forensic integrate all tool in one platform
+- [Brightness and contrast online](https://pinetools.com/brightness-contrast-image):
+- [FTK Forensic Toolkit](https://www.exterro.com/) : Toolkit for Forensic
 - [Steganographic Comparator](https://futureboy.us/stegano/compinput.html)
-- [Volatility 3 — Volatility 3 2.4.0 documentation](https://volatility3.readthedocs.io/en/latest/)
-- [Top 22 Tools for Solving Steganography Challenges - Yeah Hub](https://www.yeahhub.com/top-steganography-tools-ctf-challenges/)
-- [Hiding Information by Manipulating an Image's Height](https://blog.cyberhacktics.com/hiding-information-by-changing-an-images-height/)
-- [Steghide - An Easy way to Hide Confidential Data Inside Images and Sound Objects in Linux | 2DayGeek](https://www.2daygeek.com/easy-way-hide-information-inside-image-and-sound-objects/#:~:text=Steghide%20is%20a%20steganography%20program,key%20size%20is%20128%20bits.)
-- [Information hiding](https://www.petitcolas.net/steganography/index.html)
-- [Modifying Embedded Filesystems in ARM Linux zImages | jamchamb’s blog](https://jamchamb.net/2022/01/02/modify-vmlinuz-arm.html)
-## Web (Recon, Exploit)
+- [Volatility 3 — Volatility 3 2.4.0 documentation](https://volatility3.readthedocs.io/en/latest/): Arsenal for digital forensics
+### Webhook
 
-- [SecLists](https://github.com/danielmiessler/SecLists) : Wordlist for attacking
-- [Snyk](https://docs.snyk.io/)
-- [crt.sh | Certificate Search](https://crt.sh/)
-- [JSON Web Tokens - jwt.io](https://jwt.io/)
-- [Medium - How to find subdomain takeover using httpx + dig](https://medium.com/@DrakenKun/how-to-find-subdomain-takeover-using-httpx-dig-5c2351d380b4)
-- [digwebinterface](https://www.digwebinterface.com/)
-- [censys](https://search.censys.io/)
-- [shodan](https://www.shodan.io/)
-- [dns.google](https://dns.google/)
-## Webhook
-
-- [Webhook.site](https://webhook.site/) : *Generates free, unique URLs and e-mail addresses and lets you see everything that’s sent there instantly. (Usage: Steal cookies, bypass authorized, ...)*
+- [Webhook.site](https://webhook.site/) : Generates free, unique URLs and e-mail addresses and lets you see everything that’s sent there instantly. (Usage: Steal cookies, bypass authorized, ...)
 - [Mockoon](https://mockoon.com/): Locally mock API
 - [Beeceptor](https://beeceptor.com/) : API Mocking
 
-## Web Application Firewall
-
-- [ModSecurity](https://github.com/owasp-modsecurity/ModSecurity) :  An open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx.
-- [naxsi](https://github.com/nbs-system/naxsi) : An open-source, high performance, low rules maintenance WAF for NGINX
-- [lua-resty-waf](https://github.com/p0pr0ck5/lua-resty-waf) : High-performance WAF built on the OpenResty stack
-- [Nginx-Lua-Anti-DDoS](https://github.com/C0nw0nk/Nginx-Lua-Anti-DDoS) : A Anti-DDoS script to protect Nginx web servers using Lua with a HTML Javascript
-## Reverse Engineer (RE)
+### Reverse Engineer (RE)
 
 - [CPUlator Computer System Simulator](https://cpulator.01xz.net/)
 - [Compiler Explorer](https://godbolt.org/)
 - [Decompiler Explorer](https://dogbolt.org/)
 - [Valgrind](https://valgrind.org/) -  An instrumentation framework for building dynamic analysis tools and use to detect memory leaking
-## Code Search
+
+## External
+
+>[!info]
+>The collection of myself about something are need for prepare for security and explore about how the applications prevent with attack to network, code and moreover
+
+### Web Application Firewall
+
+- [ModSecurity](https://github.com/owasp-modsecurity/ModSecurity) :  An open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx.
+- [naxsi](https://github.com/nbs-system/naxsi) : An open-source, high performance, low rules maintenance WAF for NGINX
+- [lua-resty-waf](https://github.com/p0pr0ck5/lua-resty-waf) : High-performance WAF built on the OpenResty stack
+- [Nginx-Lua-Anti-DDoS](https://github.com/C0nw0nk/Nginx-Lua-Anti-DDoS) : A Anti-DDoS script to protect Nginx web servers using Lua with a HTML Javascript
+### Code Search Engine
 
 - [grep.app | code search](https://grep.app/) : Search specify code block on github community
-## Vulnerables Search Engine
+### Vulnerables Search Engine
 
 - [Search Engine for Security Intelligence | Vulners](https://vulners.com/)
 - [CVE MITRE - CVE](https://cve.mitre.org/)
@@ -211,61 +235,68 @@ tags:
 - [NVD NIST](https://nvd.nist.gov/)
 - [CVE Trends](https://cvetrends.com/)
 - [Vulmon - Vulnerability Intelligence Search Engine](https://vulmon.com/)
+- [Bug Bounty Hunting Search Engine](https://www.bugbountyhunting.com/)
+- [Exploit Database](https://www.exploit-db.com/) : Find PoC and Exploit method for Penetration Testers, Researchers, and Ethical Hackers
+- [Vulnerability & Exploit Database](https://www.rapid7.com/db/?q=&type=nexpose&page=1) : Exploit DB of Rapid7 (Metasploit product)
+- [💀 Sploitus](https://sploitus.com/) : Exploit & Hacktool Search Engine
+### Vulnerability management
 
-## General Networking
+- [faraday](https://github.com/infobyte/faraday): Open Source Vulnerability Management Platform
+- [vuls](https://github.com/future-architect/vuls): Agent-less vulnerability scanner for Linux, FreeBSD, Container, WordPress, Programming language libraries, Network devices
+- [ThreatMapper](https://github.com/deepfence/ThreatMapper): Open Source Cloud Native Application Protection Platform (CNAPP). [Documentation](https://community.deepfence.io/docs/)
+- [django-DefectDojo](https://github.com/DefectDojo/django-DefectDojo) : DevSecOps, ASPM, Vulnerability Management. All on one platform.
 
-- [Subnet Calculator](https://www.subnet-calculator.com/)
-- [Reverse IP Lookup - All Names Hosted at an IP - DomainTools](https://reverseip.domaintools.com/)
-- [DNSdumpster.com - dns recon and research, find and lookup dns records](https://dnsdumpster.com/)
-- [Shodan Search Engine](https://www.shodan.io/)
-- [Google Public DNS](https://dns.google/)
-- [Network Tools by YouGetSignal.com](https://www.yougetsignal.com/)
-## VPN
+### Vulnerability Scanner
+
+- [Nettacker](https://github.com/OWASP/Nettacker) : Automated Penetration Testing Framework - Open-Source Vulnerability Scanner - Vulnerability Management
+- [nuclei](https://github.com/projectdiscovery/nuclei) : Fast and customizable vulnerability scanner based on simple YAML based DSL. [Doc](https://docs.projectdiscovery.io/tools/nuclei/overview) and [Cloud Platform](https://cloud.projectdiscovery.io/)
+- [zaproxy](https://github.com/zaproxy/zaproxy) : The ZAP core project
+
+### SOC Operation system
+
+- [VultureOS](https://vultureproject.github.io/vulture-doc/) :  An operating system based on [HardenedBSD](https://hardenedbsd.org/). It has been design to deliverer cybersecurity services for the Advens SOC.
+### Mobile
+
+- [Apktool](https://apktool.org/): A tool for reverse engineering Android apk files
+- [mobile-nuclei-templates](https://github.com/optiv/mobile-nuclei-templates) : Mobile Template for using with nuclei
+### Burp extension
+
+- [agartha](https://github.com/volkandindar/agartha) : A Burp extension helps identifying injection flaws (LFI, RCE, SQLi), authentication/authorization issues, and HTTP 403 access violations, while also converting HTTP requests to JavaScript for enhanced XSS exploitation.
+## Networking
+
+>[!info]
+>Security techniques take the concept around networking and techniques related
+
+### General knowledge
+
+- [Subnet Calculator](https://www.subnet-calculator.com/): Calculator CIDR concept of subnet
+- [VLSM Calculator](https://subnettingpractice.com/vlsm.html): Calculator VLSM concept of subnet
+- [DomainTools](https://reverseip.domaintools.com/): Reverse IP Lookup - All Names Hosted at an IP
+### VPN
 
 >[!info] *Give applause for Nyr for contributing a wonderful setup, with those script, you just need 1 minutes for creating your own VPN and safely connected remotely with your network*
 
 - [openvpn-install.sh](https://github.com/Nyr/openvpn-install/blob/master/openvpn-install.sh): *Setting up `openvpn` for your host (Author: [Nyr](https://github.com/Nyr))*
 - [wireguard-install.sh](https://github.com/Nyr/wireguard-install/blob/master/wireguard-install.sh): *Setting up `wireguardvpn` for your host (Author: [Nyr](https://github.com/Nyr))*
-- [Medium - VPN is dead? Long live the Jump Host?](https://medium.com/itnext/vpn-is-dead-long-live-the-jump-host-bf3683cc684d)
 
-## Tunnelling
+### External Networking Techniques
 
 - [awesome-tunneling](https://github.com/anderspitman/awesome-tunneling) : List of ngrok/Cloudflare Tunnel alternatives and other tunneling software and services. Focus on self-hosting.
 - [wstunnel](https://github.com/erebe/wstunnel) : Tunnel all your traffic over Websocket or HTTP2 - Bypass firewalls/DPI - Static binary available
-
-## IPS / IDS
-
-- [Medium - Using Suricata Intrusion Prevention System To Monitor Network Traffic](https://medium.com/aws-tip/using-suricata-intrusion-prevention-system-to-manage-network-traffic-fa865fad197f)
-
-## Virtual Private LAN Service
-
-- [Kết nối private LAN qua Cloudflare Tunnels sử dụng Wireguard](https://viblo.asia/p/ket-noi-private-lan-qua-cloudflare-tunnels-su-dung-wireguard-zXRJ8mrZLGq)
-- [Cisco - Configuring Virtual Private LAN Service (VPLS)](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9400/software/release/16-12/configuration_guide/mpls/b_1612_mpls_9400_cg/configuring_virtual_private_lan_service__vpls_.pdf)
-- [What is multiprotocol label switching (MPLS)?](https://www.cloudflare.com/learning/network-layer/what-is-mpls/)
-
-## Zero Trust Network Access (ZTNA)
-
-- [Zero Trust Network Access (ZTNA) vs VPNs](https://konghq.com/blog/engineering/ztna-vs-vpns)
-
-## Zero Trust Mesh
-
-- [Medium - How to Use ZTM to Access Home/Private Networks](https://medium.com/flomesh/how-to-use-ztm-to-access-home-private-networks-8848efb1f935)
 - [ZTM](https://github.com/flomesh-io/ztm) :  A privacy-first open-source decentralized network software based on HTTP/2 tunnels.
 
-## Firewall
+## Cloud
 
-- [10 Useful Open Source Security Firewalls for Linux Systems](https://www.tecmint.com/open-source-security-firewalls-for-linux-systems/)
-- [VultureOS](https://vultureproject.github.io/vulture-doc/) :  An operating system based on [HardenedBSD](https://hardenedbsd.org/). It has been design to deliverer cybersecurity services for the Advens SOC.
+>[!info]
+>Cloud computing security or, more simply, cloud security, refers to a broad set of policies, technologies, applications, and controls utilized to protect virtualized IP, data, applications, services, and the associated infrastructure of cloud computing. It is a sub-domain of computer security, network security, and, more broadly, information security.
+>Source: [Wikipedia](https://en.wikipedia.org/wiki/Cloud_computing_security)
 
-## Mobile
-
-- [Apktool](https://apktool.org/): A tool for reverse engineering Android apk files
-- [mobile-nuclei-templates](https://github.com/optiv/mobile-nuclei-templates)
+- [T Wiki](https://wiki.teamssix.com/) : Chinese page who talk about Security Cloud with multiple provider like Azure, AWS, GCP, ...
+- [Hacking the Cloud](https://hackingthe.cloud/): An encyclopedia of the attacks/tactics/techniques that offensive security professionals can use on their next cloud exploitation adventure.
 # Training page (LAB)
 
 >[!info]
 >The collections of mine about what you need to learn, how to solve problem and figure out what you decide on hacking, doing security and have fun
-
 ## Introduce
 
 - [List of hacking websites | RazviOverflow](https://razvioverflow.github.io/starthacking)
@@ -276,12 +307,15 @@ tags:
 - [Hardware All The Things](https://swisskyrepo.github.io/HardwareAllTheThings/):  A curated collection of valuable payloads and bypass techniques tailored for Hardware and IoT Security
 - [Hacktrick Training](https://training.hacktricks.xyz/): Learn Cloud Hacking & Become HackTricks Training Certified
 
-## RE (Reverse Engineer)
+## Reverse Engineer
 
 - [Crackme](https://crackmes.one/) : Place to improving the RE skill
 - [Nightmare](https://guyinatuxedo.github.io/index.html):  Intro to binary exploitation / reverse engineering course based around ctf challenges
 
-## Misc + Lab Machine
+## Security Lab
+
+>[!info]
+>Misc + Lab Machine
 
 - [Hack The Box: Hacking Training For The Best | Individuals & Companies](https://www.hackthebox.com/) : Lab Machine where  you can put the effort for pwn the machine and learn about red, blue team skillset
 - [TryHackMe | Cyber Security Training](https://tryhackme.com/) : Like HTB but more tutorials
@@ -296,13 +330,19 @@ tags:
 - [Attack-Defense Labs](https://attackdefense.com/) : More Labs you can take and archive your knowledge, bro trust me. 
 - [HackThisSite](https://www.hackthissite.org/) : Legally site where you can make penetration test
 
-## Network + Forensics + Digital Forensics
+## Forensics
+
+>[!info]
+>Network + Forensics + Digital Forensics
 
 - [Malware-Traffic-Analysis.net - Traffic Analysis Exercises](https://www.malware-traffic-analysis.net/training-exercises.html) : Labs of Networking where you can gain the knowledge on analysis network traffic
 - [JPEG FIF](https://www.w3.org/Graphics/JPEG/jfif3.pdf) : Detail explanation about JPEG File Interchange Format
 - [MemLabs](https://github.com/stuxnet999/MemLabs) : Educational, CTF-styled labs for individuals interested in Memory Forensics
 
-## HacktheBox/CTF solution, hacking technical and OSCP
+## Walkthrough
+
+>[!info]
+>HacktheBox/CTF solution, hacking technical and OSCP
 
 - [0xdf hacks stuff | CTF solutions, malware analysis, home lab development](https://0xdf.gitlab.io/)
 - [@TJ_Null’s OSCP Prep - YouTube](https://www.youtube.com/playlist?list=PLidcsTyj9JXK-fnabFLVEvHinQ14Jy5tf)
@@ -314,13 +354,14 @@ tags:
 ![[ctf_flag_logo.gif]]
 
 >[!info]
->**“CTFs are gamified competitive cybersecurity events that are based on different challenges or aspects of information security. They are excellent for both beginners and experienced hackers looking to develop, test, and prove their skills because they gamify hacking concepts. We're big believers in the power of gamification here at Hack The Box! Gamification makes learning about something like a video game. Because gamification is fun and makes you think creatively, it’s one of the most effective ways to learn and develop skills.”**
+>*“CTFs are gamified competitive cybersecurity events that are based on different challenges or aspects of information security. They are excellent for both beginners and experienced hackers looking to develop, test, and prove their skills because they gamify hacking concepts. We're big believers in the power of gamification here at Hack The Box! Gamification makes learning about something like a video game. Because gamification is fun and makes you think creatively, it’s one of the most effective ways to learn and develop skills.”*
 
 ## Introduce
 
 - [Introduction | CTF Resources](http://ctfs.github.io/resources/)
 - [Awesome CTF | awesome-ctf](https://c4pr1c3.github.io/awesome-ctf/#forensics)
 - [Use these cheatsheets to increase your CTF speed. | by Vicky Aryan | Nov, 2023 | InfoSec Write-ups](https://medium.com/bugbountywriteup/use-these-cheatsheets-to-increase-your-ctf-speed-ca12a01d396a)
+- [Top 22 Tools for Solving Steganography Challenges - Yeah Hub](https://www.yeahhub.com/top-steganography-tools-ctf-challenges/)
 ## Youtube Channel
 
 - [Martin Carlisle](https://www.youtube.com/channel/UClAN8Hirvzg6AbZODXSusBw): Super cool and bring you more knowledge about CTF, especially for newbie via PicoCTF
@@ -350,20 +391,6 @@ tags:
 - [TFC CTF 2022 Writeup - よっちんのブログ](https://yocchin.hatenablog.com/entry/2022/08/01/114900)
 - [KMA - HTB Business CTF 2024: The Vault Of Hope Write Up](https://kcsc.edu.vn/htb-business-ctf-2024-the-vault-of-hope-write-up)
 
-# Cloud
-
->[!info]
->Cloud computing security or, more simply, cloud security, refers to a broad set of policies, technologies, applications, and controls utilized to protect virtualized IP, data, applications, services, and the associated infrastructure of cloud computing. It is a sub-domain of computer security, network security, and, more broadly, information security.
->Source: [Wikipedia](https://en.wikipedia.org/wiki/Cloud_computing_security)
-
-## Awesome pages
-
-- [T Wiki](https://wiki.teamssix.com/) : Chinese page who talk about Security Cloud with multiple provider like Azure, AWS, GCP, ...
-- [Hacking the Cloud](https://hackingthe.cloud/): An encyclopedia of the attacks/tactics/techniques that offensive security professionals can use on their next cloud exploitation adventure.
-
-## Articles
-
-- [Creating unintentional ways to bypass AWS IAM policies when using the “ForAllValues” operator](https://awstip.com/creating-unintentional-ways-to-bypass-aws-iam-policies-when-using-the-forallvalues-operator-3516a7f17ed0)
 # Bug Bounty
 
 >[!info]
@@ -377,7 +404,10 @@ You can become participant of Bounty program via
 - [Intigriti](https://www.intigriti.com/)
 - [FireBounty](https://firebounty.com/)
 
-# Hacking/InfoSec Youtube Channel
+# Youtube Channel
+
+>[!info]
+>Hacking/InfoSec Youtube Channel
 
 ![[youtube.png]]
 
