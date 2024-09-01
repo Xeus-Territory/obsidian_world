@@ -20,7 +20,6 @@ First of all, you need to install `ZSH` and `Oh-my-zsh` for your shell
 - [Extension - Blur My Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/)
 
 I just brief step, and combine all into one bash file, you run it
-
 # Setup oh-my-zsh 
 
 ```bash title="oh-my-zsh-setup.sh"

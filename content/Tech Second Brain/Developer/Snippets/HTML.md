@@ -4,7 +4,6 @@ tags:
   - cheatsheet
   - fundamentals
 ---
-
 # Central the text in the box below the image
 
 ```html

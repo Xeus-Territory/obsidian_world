@@ -24,18 +24,42 @@ echo -e "unicode-string"
 
 ## `journalctl` command
 
-You can use `journalctl` for capture and logged full events of service, by `-u` flag
+Documentation: [How To Use Journalctl to View and Manipulate Systemd Logs](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs)
+
+**Capture and logged full events of service**
 
 ```bash
 journalctl -u service-name.service
-	```
+```
 
-Or, to see only log messages for the current boot
+**To see only log messages for the current boot**
 
 ```bash
 journalctl -u service-name.service -b
 ```
 
+**Find your boots in list**
+
+```bash
+journalctl --list-boots
+```
+
+**See the error log with command**
+
+```bash
+journalctl -p err -b 
+```
+
+>[!info]
+>You can exchange -p option with pram
+>- 0: emerg
+>- 1: alert
+>- 2: crit
+>- 3: err
+>- 4: warning
+>- 5: notice
+>- 6: info
+>- 7: debug
 ## `grep` command
 
 Use grep with exclude by `-v` flag
@@ -44,7 +68,10 @@ Use grep with exclude by `-v` flag
 grep -v "dotnet" .
 ```
 
-To grep include multiple word, use `-i` flag to execute that. Especially add with `\|` symbol between two words. Read more at: [How to Grep for Multiple Strings, Patterns or Words](https://phoenixnap.com/kb/grep-multiple-strings), extending with multiple situations (HELPFUL)
+To grep include multiple word
+
+>[!info]
+>Use `-i` flag to execute that. Especially add with `\|` symbol between two words. Read more at: [How to Grep for Multiple Strings, Patterns or Words](https://phoenixnap.com/kb/grep-multiple-strings), extending with multiple situations **(HELPFUL)**
 
 ```bash
 grep -i "Hostname\|Port"
@@ -52,12 +79,17 @@ grep -i "Hostname\|Port"
 
 ## `awk` command
 
-Skip first line, Usually header when you use `awk` to print column variables
+Skip first line Usually header when you use `awk` to print column variables
 
 ```bash
 awk 'NR>1 {print $3}'
 ```
 
+Get the last param when seperate by `/` or any symbol, you can use `F` and `$NF` to get the result
+
+```bash
+awk -F/ '{print $NF}'
+```
 ## `tree` command
 
 Print the sub-directory of folder with configuration level
@@ -66,6 +98,25 @@ Print the sub-directory of folder with configuration level
 tree -d -L 2 .
 ```
 
+## `find` command
+
+Find the folder with find base on the regex format
+
+```bash
+find . -maxdepth 1 -type d -regex '.*/azp/_work/\d+$'
+```
+
+Find directory in current location but expose that in format `ls`
+
+```bash
+find . -type d -ls
+```
+
+Find the file or directory to provide you last in path of file and directory
+
+```bash
+find . -maxdepth 2 -type d | awk -F/ '{print $NF}'
+```
 ## `iptables` command
 
 Learn more about `iptables` commands from links down below
@@ -168,6 +219,94 @@ du -csh xeusnguyen.xyz
 du -csh xeusnguyen.xyz/*
 ```
 
+## `lsblk` command
+
+If you want to take the look with your storage device like HDD or SSD, you can use `lsblk` to see what format of those devices
+
+```bash
+# View information about your disk
+lsblk -o NAME,HCTL,SIZE,MOUNTPOINT
+
+# View output info about filesystems
+lsblk -f
+```
+
+|                 |                         |                                                        |                                             |
+| --------------- | ----------------------- | ------------------------------------------------------ | ------------------------------------------- |
+| **File System** | **Supported File Size** | **Compatibility**                                      | **Ideal Usage**                             |
+| **FAT32**       | up to 4 GB              | Windows, Mac, Linux                                    | For maximum compatibility                   |
+| **NTFS**        | 16 EiB – 1 KB           | Windows, Mac (read-only), most Linux distributions     | For internal drives and Windows system file |
+| **Ext4**        | 16 GiB – 16 TiB         | Windows, Mac, Linux (requires extra drivers to access) | For files larger than 4 GB                  |
+## `mkfs` command
+
+You can use `mkfs` command to formatting your device. Read more at [How to Use the mkfs Command on Linux](https://www.howtogeek.com/443342/how-to-use-the-mkfs-command-on-linux/)
+
+```bash
+mkfs [options] [-t type fs-options] device [size]
+```
+
+## `fdisk` command
+
+Documentation: [What is FDISK and how does it work?](https://www.techtarget.com/whatis/definition/FDISK)
+
+Use `fdisk` when you want to hangout with your hard dkkkkkkkkkkkkkisk drive, like integrate multiple way for formatting or partitioning a [hard disk drive](https://www.techtarget.com/searchstorage/definition/hard-disk-drive), or to delete different portions of it. FDISK is an external utility. It is most commonly used to prepare and [partition](https://www.techtarget.com/searchstorage/definition/partition) a hard drive
+
+```bash
+# to view details of available disk partitions.
+sudo fdisk -l
+# to view the partitions on a specific disk.
+sudo fdisk -l /dev/sda
+# to create a hard disk partition.
+sudo fdisk /dev/sda
+# to view the partition size.
+sudo fdisk -s /dev/sda
+```
+
+And when you want to hit to interaction mode you can try with
+
+```bash
+sudo fdisk /dev/sda
+```
+
+And when you hit keyboard with `m`, you can see the helper
+
+```bash
+Command (m for help): m
+
+Help:
+
+  GPT
+   M   enter protective/hybrid MBR
+
+  Generic
+   d   delete a partition
+   F   list free unpartitioned space
+   l   list known partition types
+   n   add a new partition
+   p   print the partition table
+   t   change a partition type
+   v   verify the partition table
+   i   print information about a partition
+
+  Misc
+   m   print this menu
+   x   extra functionality (experts only)
+
+  Script
+   I   load disk layout from sfdisk script file
+   O   dump disk layout to sfdisk script file
+
+  Save & Exit
+   w   write table to disk and exit
+   q   quit without saving changes
+
+  Create a new label
+   g   create a new empty GPT partition table
+   G   create a new empty SGI (IRIX) partition table
+   o   create a new empty DOS partition table
+   s   create a new empty Sun partition table
+
+```
 # Cheatsheet
 ## Re run the previous command
 

@@ -8,7 +8,6 @@ tags:
 ---
 >[!info]
 >Some cheatsheet and helpful things when you and me work on developer positions. Enjoy 🤝🤝
-
 # Awesome Develop Repositories
 
 - [devhints.io](https://devhints.io/) : Rico's cheatsheets
@@ -50,6 +49,7 @@ tags:
 ## Rust
 
 - [awesome-rust](https://github.com/rust-unofficial/awesome-rust) : A curated list of Rust code and resources.
+- [pingora](https://github.com/cloudflare/pingora): A library for building fast, reliable and evolvable network services.
 
 ## Golang
 

@@ -38,6 +38,7 @@ tags:
 
 - [docker](https://hub.docker.com/_/docker): Docker in Docker!
 - [amazon/aws-cli](https://hub.docker.com/r/amazon/aws-cli): Universal Command Line Interface for Amazon Web Services
+- [docker-android](https://github.com/budtmo/docker-android): Android in docker solution with noVNC supported and video recording
 # Troubleshoot
 
 - [StackOverFlow - Why AKS nodes shows less amount of memory as allocatable where its actual memory is still available](https://stackoverflow.com/questions/68521392/why-aks-nodes-shows-less-amount-of-memory-as-allocatable-where-its-actual-memory)

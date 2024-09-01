@@ -1,12 +1,12 @@
 ---
-title: Networking
+title: Virtual network
 tags:
   - admin
+  - devops
   - cloud-services
   - azure
-  - devops
 ---
-# Virtual networks
+# Azure Virtual network
 
 ![[Pasted image 20240423132235.png]]
 
@@ -20,7 +20,7 @@ Documentation:
 
 *Azure network services offer a range of components with functionalities and capabilities*
 
-![[Pasted image 20240423132454.png]]
+![[Pasted image 20240423132454.png|center]]
 
 Characteristics of virtual networks in Azure.
 
@@ -112,7 +112,7 @@ Consider when creating a public IP address
 
 ## Public IP address
 
-![[Pasted image 20240423134524.png]]
+![[Pasted image 20240423134524.png|center]]
 
 Documentation:
 
@@ -128,7 +128,7 @@ SKU Public IP address
 
 ## Private IP address
 
-![[Pasted image 20240423134923.png]]
+![[Pasted image 20240423134923.png|center]]
 
 Documentation:
 
@@ -240,7 +240,7 @@ Consider when creating effective rules
 
 ## Application Security Group (ASG)
 
-![[Pasted image 20240423145142.png]]
+![[Pasted image 20240423145142.png|center]]
 
 Documentation:
 
@@ -268,7 +268,7 @@ Consider when using application security groups
 
 # Network peering
 
-## About
+## Introduce
 
 Reference resources
 
@@ -313,7 +313,7 @@ You need to follow some points yo create the peering
 >When virtual networks are successfully peered, what's the peering status for both virtual networks in the peering? Connected
 # VPN Gateway
 
-![[Pasted image 20240509125017.png]]
+![[Pasted image 20240509125017.png|center]]
 
 Reference resource
 
@@ -384,7 +384,7 @@ More information, technicals and papers about network routing in :  https://lear
 
 # Extend contents
 
-- [Connect services by using virtual network peering](https://learn.microsoft.com/en-us/training/modules/integrate-vnets-with-vnet-peering/2-connect-services-using-vnet-peering): About Reciprocal connection, cross-subscription VNet peering, Transitivity, Transit, Overlap, ExpressRoute, VPN
+- [Connect services by using virtual network peering](https://learn.microsoft.com/en-us/training/modules/integrate-vnets-with-vnet-peering/2-connect-services-using-vnet-peering)
 - [Lab - Prepare virtual networks for peering by using Azure CLI commands](https://learn.microsoft.com/en-us/training/modules/integrate-vnets-with-vnet-peering/3-exercise-prepare-vnets-for-peering-using-azure-cli-commands)
 - [Lab - Configure virtual network peering connections by using Azure CLI commands](https://learn.microsoft.com/en-us/training/modules/integrate-vnets-with-vnet-peering/4-exercise-configure-vnet-peering-connections-using-azure-cli-commands)
 - [Lab - Verify virtual network peering by using SSH between Azure virtual machines](https://learn.microsoft.com/en-us/training/modules/integrate-vnets-with-vnet-peering/5-exercise-verify-vnet-peering)
@@ -393,4 +393,3 @@ More information, technicals and papers about network routing in :  https://lear
 - [What is an NVA?](https://learn.microsoft.com/en-us/training/modules/control-network-traffic-flow-with-routes/4-network-virtual-appliances)
 - [Lab - Create an NVA and virtual machines](https://learn.microsoft.com/en-us/training/modules/control-network-traffic-flow-with-routes/5-exercise-create-nva-vm)
 - [Lab - Route traffic through the NVA](https://learn.microsoft.com/en-us/training/modules/control-network-traffic-flow-with-routes/6-exercise-route-traffic-through-nva)
-

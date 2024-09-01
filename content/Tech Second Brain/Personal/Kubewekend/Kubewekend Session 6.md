@@ -1,5 +1,5 @@
 ---
-title: "Kubewekend Session 6: CSI and Cept with Kubewekend"
+title: "Kubewekend Session 6: CSI and Ceph with Kubewekend"
 tags:
   - kubewekend
   - series
@@ -865,7 +865,7 @@ spec:
 Through of this manifest, you can see that will provide something with inside namespace include 
 
 - MySQL Deployment with use PVC
-- PVC Use `rook-ceph-block` with request 20GB
+- PVC Use `rook-ceph-block` with request 5GB
 - Service to expose port 3306 of MySQL
 
 And now we apply it with `apply -f` command

@@ -6,7 +6,35 @@ tags:
   - helpful
   - devops
 ---
-# Helpful command
+# Installing
+
+You can try install docker compose in two method, `apt` package managing or manually. Read more at
+
+- [Install the Compose plugin](https://docs.docker.com/compose/install/linux/) (Recommended)
+- [Install Compose standalone](https://docs.docker.com/compose/install/standalone/)
+
+## Use `apt` package
+
+```bash
+sudo apt install docker-compose-plugin -y
+```
+
+## Manually download
+
+1. To download and install the Compose CLI plugin, run
+
+```bash
+DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
+mkdir -p $DOCKER_CONFIG/cli-plugins
+curl -SL https://github.com/docker/compose/releases/download/v2.29.1/docker-compose-linux-x86_64 -o $DOCKER_CONFIG/cli-plugins/docker-compose
+```
+
+2. Apply executable permissions to the binary
+
+```bash
+chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
+```
+# Basic command
 
 >[!info]
 >With `docker-compose`, you can find and explore more about this technicals with documentation in details, such as
@@ -59,4 +87,24 @@ networks:
   wkernet:
     driver: overlay
     external: true
+```
+
+# Update compose
+
+Documentation
+
+- [How to Get Docker-Compose to Always Use the Latest Image](https://www.baeldung.com/ops/docker-compose-latest-image)
+- [docker compose pull](https://docs.docker.com/reference/cli/docker/compose/pull/) and [docker compose up](https://docs.docker.com/reference/cli/docker/compose/up/)
+
+>[!info]
+>You can hand-on with compose via update the container inside stack to new version by trying pull and up again
+
+If you have new version of images inside one of container, you can try to update that via
+
+```bash
+# You can specific services name or pull all of container
+docker compose -f /file/compose -p name-stack pull <services-name>
+
+# Try to restart containers in stack with new image
+docker compose -f /file/compose -p name-stack up -d <services-name>
 ```

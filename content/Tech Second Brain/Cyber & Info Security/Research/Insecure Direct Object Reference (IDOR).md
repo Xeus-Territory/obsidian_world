@@ -4,14 +4,14 @@ tags:
   - fundamentals
   - infosec
 ---
-*There many thing web you can refer to this stuff*
-1. [Insecure Direct Object Reference – IDOR Vulnerability](https://crashtest-security.com/insecure-direct-object-reference-idor/)
-2. [Tìm kiếm các lỗi IDOR, chưa bao giờ lại dễ đến thế với extension Autorize](https://viblo.asia/p/tim-kiem-cac-loi-idor-chua-bao-gio-lai-de-den-the-voi-extension-autorize-gDVK2z02KLj)
-3. [Automating BURP to find IDORs](https://medium.com/cyberverse/automating-burp-to-find-idors-2b3dbe9fa0b8)
-4. [How-To: Find IDOR (Insecure Direct Object Reference) Vulnerabilities for large bounty rewards](https://www.bugcrowd.com/blog/how-to-find-idor-insecure-direct-object-reference-vulnerabilities-for-large-bounty-rewards/)
-5. [What is IDOR Vulnerability, and how does it affect you?](https://infosecwriteups.com/what-is-idor-vulnerability-and-how-does-it-affect-you-85431d10f8fb)
-6. [Insecure Direct Object Reference Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.html)
-
+>[!info]
+>*There many thing web you can refer to this stuff*
+>1. [Insecure Direct Object Reference – IDOR Vulnerability](https://crashtest-security.com/insecure-direct-object-reference-idor/)
+>1. [Tìm kiếm các lỗi IDOR, chưa bao giờ lại dễ đến thế với extension Autorize](https://viblo.asia/p/tim-kiem-cac-loi-idor-chua-bao-gio-lai-de-den-the-voi-extension-autorize-gDVK2z02KLj)
+>2. [Automating BURP to find IDORs](https://medium.com/cyberverse/automating-burp-to-find-idors-2b3dbe9fa0b8)
+>3. [How-To: Find IDOR (Insecure Direct Object Reference) Vulnerabilities for large bounty rewards](https://www.bugcrowd.com/blog/how-to-find-idor-insecure-direct-object-reference-vulnerabilities-for-large-bounty-rewards/)
+>4. [What is IDOR Vulnerability, and how does it affect you?](https://infosecwriteups.com/what-is-idor-vulnerability-and-how-does-it-affect-you-85431d10f8fb)
+>5. [Insecure Direct Object Reference Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.html)
 
 # What is an IDOR? 
 

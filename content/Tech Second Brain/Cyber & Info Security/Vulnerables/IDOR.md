@@ -24,7 +24,7 @@ You can read more about IDOR from another my blog, here is it [[Insecure Direct 
 
 So first look we can see, this web look like the e-commerce website, with the Item web show not have interesting content. So We can notice about the tag to change something, base on solution we can know tag we need to notice about Live Chat.
 
-![[Pasted image 20240219144025.png]]
+![[Pasted image 20240219144025.png|center]]
 
 So go to some tag on website to see cool, first look in F12 to see the route or API this web to return for user. so we get this all tag to change url to make user directly to route. No Interesting content and yeah we click to this tag and see smt. we can see the /chat have something behind it so we type some keywords on that web and send to see what happens next ? 
 
@@ -50,7 +50,7 @@ So when we send something to the server with proxy server and it disconnect serv
 
 So as well we can look GET and yeah we can see the what name or id .txt we download. So we can test IDOR vulnerable on this web by change name or id of text file and look what happens ? Change 2 ==> 1 (One is the best 😄)
 
-![[Pasted image 20240219144218.png]]
-![[Pasted image 20240219144225.png]]
+![[Pasted image 20240219144218.png|center]]
+![[Pasted image 20240219144225.png|center]]
 
 > [!summary] *Yeah we find the password of user so IDOR vulnerable occurs and we exploit something like this so take password and login with username carlos and password: 0gwov41nw2xlfiwf2aga (Dynamically generated so your file have different). Yeah That end IDOR lab on portswigger, quite a bit about IDOR but I'm sure it critical vulnerable if this is payment or something sensity. Happy hacking and careful for this vulnerable* ☕☕☕

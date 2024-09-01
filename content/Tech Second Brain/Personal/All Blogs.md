@@ -39,6 +39,7 @@ tags:
 - [[Kubewekend Session 3|Kubewekend Session 3: Basically about Kubernetes architecture]] - *This session talk about basically architecture and learn more fundamental components inside `kubernetes`, and what the structure of them inside clusters.*
 - [[Kubewekend Session 4|Kubewekend Session 4: Learn about ebpf with hubble and cilium]] - *This session will talk and learn about `eBPF` and the especially representation of `eBPF` are `cilium` and `hubble` to become main CNI of Kubewekend and talk about Observability of them*
 - [[Kubewekend Session 5|Kubewekend Session 5: Build HA Cluster]] - This session is really pleasant when we talk about how can create HA cluster with `kubewekend`, learn more the components inside `kubernetes` and try figure out about `network`, `security`, `configuration`, `container runtime` and `system` via this session
+- [[Kubewekend Session 6|Kubewekend Session 6: CSI and Ceph with Kubewekend]] - This session is covered about topic storage inside `Kubernetes` cluster, how can they work with `CSI` Architecture and why we need to `CSI Driver` for handle this stuff. Furthermore, I try to practice with `Ceph` - one of popular storage opensource for `Kubewekend` cluster
 # DevOps - Tutorials from zero to hero
 
 >[!info]
@@ -223,7 +224,7 @@ tags:
 - [[Tech Second Brain/Cloud/AWS/Cheatsheet and Troubleshoot#AWS CLI|AWS]]
 - [[Docker]]
 - [[Docker compose]]
-- [[Popular API usage|Elasticsearch]]
+- [[API usage|Elasticsearch]]
 - [[Kubectl snippet|Kubectl]]
 - [[Git|Git]]
 - [[HTML|HTML]]
