@@ -48,42 +48,38 @@ wsl --shutdown
 
 # Common `wsl` command
 
-Official documentation: [Basic commands for WSL](https://learn.microsoft.com/en-us/windows/wsl/basic-commands)
+Official documentation: [Basic commands for WSL](https://learn.microsoft.com/en-us/windows/wsl/basic-commands) and [Remove WSL](https://www.makeuseof.com/uninstall-wsl-windows/)
 
-## Update `wsl`
-
-```powershell 
+```powershell
+# Update wsl
 wsl --update
-```
 
-## Check the list subsystem running
-
-```powershell
+# Check the list subsystem running
 wsl --list --running
-```
 
-## Set default linux distribution
-
-```powershell
+# Set default linux distribution
 wsl --set-default <Distribution Name>
-```
 
-## Shutdown the `wsl`
-
-```powershell
+# Shutdown the wsl
 wsl --shutdown
-```
 
-## Terminate linux distribution
-
-```powershell
+# Terminate linux distribution
 wsl --terminate <Distribution Name>
-```
 
-## List distribution you have on Window machine
-
-```powershell
+# List distribution you have on Window machine
 wsl --list
+
+# List available Linux distributions
+wsl --list --online
+
+# Set WSL version to 1 or 2
+wsl --set-version <distribution name> <versionNumber>
+
+# Export a distribution
+wsl --export <Distribution Name> <FileName>
+
+# Import a distribution
+wsl --import <Distribution Name> <InstallLocation> <FileName>
 ```
 
 # `Invoke-WebRequest` alias of `wget` & `curl`
@@ -196,4 +192,207 @@ Use `whoami` command to view
 
 ```powershell
 whoami /all
+```
+
+# Set and change permission of file
+
+Documentation: [How to change file permissions on Windows via powershell / cmd?](https://superuser.com/questions/1539172/how-to-change-file-permissions-on-windows-via-powershell-cmd)
+
+To change and set permission of file or folder in powershell, you can use [Get-Acl](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-acl?view=powershell-7) and [Set-Acl](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-acl?view=powershell-7)
+
+```powershell
+# Copy permission from dog --> cat
+Get-Acl -Path "C:\Dog.txt" | Set-Acl -Path "C:\Cat.txt"
+```
+
+Or we can use [icacls](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/icacls) to handle with same situation. Read more [tutorial](https://theitbros.com/using-icacls-to-list-folder-permissions-and-manage-files/) and [explanation](https://4sysops.com/archives/icacls-list-set-grant-remove-and-deny-permissions/)
+
+```powershell
+#  grant the group FileAdmins 'Delete' and 'Write DAC' permissions to C:\demo\example
+icacls "C:\demo\example" /grant:r FileAdmins:(D,WDAC)
+```
+
+If you want to create `400` permission for your ssh-key or readonly file for currently user, you can use
+
+```powershell
+# Give current user explicit read-permission
+icacls.exe $path /GRANT:R "$($env:USERNAME):(R)"
+# Disable inheritance and remove inherited permissions
+icacls.exe $path /inheritance:r
+```
+# Create new file
+
+Explore more about methodology: [How to Use PowerShell to Create a File?](https://www.sharepointdiary.com/2020/09/powershell-create-file.html)
+
+There is more of stuff way for create new file, and one of popular is use `New-Item`
+
+```powershell
+New-Item -Path "C:\Logs\NewLog.txt" -ItemType File
+```
+
+In another, you can use `Out-File` or `Set-Content`
+
+```powershell
+# Use Out-File
+"Hello World" | Out-File -FilePath "C:\Logs\NewLog.txt"
+
+# Use Set-Content
+Set-Content -Path "C:\Logs\NewLog.txt" -Value "Hello World"
+```
+
+# Find the string in documentation
+
+If you want to find the same idea of `grep` in Powershell, you can try with. Read more at [PowerShell equivalent to grep -f](https://stackoverflow.com/questions/15199321/powershell-equivalent-to-grep-f)
+
+```powershell
+# Use Select-String with regex pattern
+ipconfig --help | Select-String -Pattern "/all"
+
+# Use findstr function.
+# Look the help of function
+findstr /?
+# Try to find include str
+ipconfig --help | findstr /I all
+# Uses specified string as a literal search string.
+ipconfig --help | findstr /C:"/all"
+```
+
+# Command can be used
+
+## `Get-Help`
+
+Use the Get-Help cmdlet to display the syntax of any PowerShell cmdlet
+
+```powershell
+# Basic
+Get-Help Get-Service
+
+# List example
+Get-Help Get-Service -Examples
+
+# Search onl
+Get-Help Get-Service -Online
+```
+
+## `Get-Service`
+
+Helpful to know what services are installed on the system
+
+```powershell
+# Basic
+Get-Service
+
+# Pick display name colume
+Get-Service | select DisplayName
+
+# Find some service with condition
+Get-Service | Where-Object {$_.status -eq "stopped"}
+```
+
+## `Get-EventLog`
+
+Actually use PowerShell to parse your machine’s event logs using the Get-EventLog cmdlet
+
+```powershell
+# View Application event log
+Get-EventLog -Log "Application"
+
+# View Security event log (Admin)
+Get-EventLog -Log "Security"
+```
+
+## `Get-Process`
+
+Getting a list of available services, it’s often useful to be able to get a quick list of all the currently running processes
+
+```powershell
+# Basic
+Get-Process
+
+# Get full process (parrent and child)
+Get-Process -Name chrome
+
+# You can use Get-Process with combine Stop-Process
+Get-Process | Where-Object { $_.Name -eq "myprocess" } | Select-Object -First 1 | Stop-Process
+```
+
+## `Format-Table`
+
+ Used to format any output as a table
+
+```powershell
+# Format list of process with fit-size
+Get-Process | Format-Table -Property Name, CPU, Memory -AutoSize
+```
+
+## `Format-List`
+
+Output properties as a list, each on a new line
+
+```powershell
+# gets services and lists each individually
+Get-Service | Format-List
+```
+
+## `Where-Object`
+
+[Where-Object](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/where-object?view=powershell-7.3) is one of the most important cmdlets to know, as it enables you to take a dataset and pass it further down your pipeline for filtering
+
+```powershell
+Get-Service | Where-Object {$_.status -eq "stopped"}
+```
+
+## `For-Each`
+
+The ForEach-Object cmdlet performs an operation against every item in a specified group of input objects.
+
+```powershell
+Get-Process | ForEach-Object {Write-Host $_.name -foregroundcolor cyan}
+```
+
+## `Compare-Object`
+
+Useful to be able to compare two objects directly
+
+```powershell
+Compare-Object "as" "ax"
+```
+
+## `Select-Object`
+
+The Select-Object cmdlet selects the specified properties of a single object or group of objects.
+
+```powershell
+Get-Process | Sort-Object name -Descending | Select-Object -Index 0,1,2,3,4
+```
+
+## `Get-Member`
+
+One quality that makes PowerShell so versatile is that almost everything in PowerShell is an object consisting of a name, methods, and properties
+
+```powershell
+Get-Service | Get-Member
+```
+
+![[Pasted image 20240905203709.png]]
+
+## `Get-ChildItem`
+
+ [`Get-ChildItem`](https://www.pdq.com/powershell/get-childitem/) returns all the items in one or more containers
+
+```powershell
+# Basic
+ Get-ChildItem .\content\
+
+# Filter and include with folder
+Get-ChildItem C:\Temp\* -Recurse -Include *taco*.txt
+```
+
+
+## `Out-GridView`
+
+ PowerShell output returns to the console window. However, if you need to interact with the output, you can use the [`Out-GridView`](https://www.pdq.com/powershell/out-gridview/) cmdlet
+
+```powershell
+Get-Process | Out-GridView
 ```

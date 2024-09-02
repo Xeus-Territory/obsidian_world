@@ -307,6 +307,51 @@ Help:
    s   create a new empty Sun partition table
 
 ```
+
+## `scp` command
+
+Documentation: [SCP Command in Linux {13 Examples}](https://phoenixnap.com/kb/linux-scp-command)
+
+`scp` is protocol which permit use copy and transfer file from remote and local machine with bi-direction, or cp from remote to remote
+
+```bash
+# From local to remote
+scp /path/file/local user@ip:/path/file/remote
+
+# From remote to local
+scp user@ip:/path/file/remote /path/file/local
+
+# From remote to remote
+scp user1@ip1:/path/file/remote1 user2@ip2:/path/file/remote2
+
+# From remote to remote (but your machine is mediate)
+scp -3 user1@ip1:/path/file/remote1 user2@ip2:/path/file/remote2
+```
+
+In some special case, you can integrate with option with your scp command to specific
+
+**Different Port**: Usually `scp` use SSH (Port 22) to mediate help you secure transfer data through that port, but in other situation SSH not work in Port 22, you can use `-p` to specific
+
+```bash
+scp -p 2222 /path/file/local user@ip:/path/file/remote
+```
+
+**Recursive**: To copy whole folder, usually we use recursive mode and `scp` does have with `-r`
+
+```bash
+scp -r /path/folder/ user@ip:/path/file/remote
+```
+
+## `sed` command
+
+Documentation: [Sed cheatsheet](https://quickref.me/sed.html) and [How to Use Sed to Find and Replace a String in a File](https://phoenixnap.com/kb/sed-replace)
+
+To replace a string in file with `sed`, you can use command with format
+
+```bash
+#Replace in file (Global)
+sed -i 's/OLD/NEW/g' path/file #Replace string inside a file
+```
 # Cheatsheet
 ## Re run the previous command
 
@@ -350,7 +395,6 @@ set +o allexport
 set -o allexport && source dot/env/file && set +o allexport
 
 ```
-
 ## Update Ubuntu new version
 
 You can use integration tool inside `ubuntu` to update new version, that will pull and update packages inside host, do that easily with command
@@ -402,7 +446,6 @@ sudo reboot # OR use sudo shutdown -r now
 ```
 
 ![[Pasted image 20240724103806.png]]
-
 ## Update alternative version
 
 >[!quote]

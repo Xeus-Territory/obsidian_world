@@ -122,8 +122,9 @@ aws ecs update-service \
 And now if you confirm two thing about you can use execution to inject something inside container
 
 ```bash
+# Exam: task-arn-specific = d274e386xxxxxxxxxxx2fd28b5ac
 aws ecs execute-command --cluster <cluster-name> \
---container <name-container> --interactive --task <task-arn> \
+--container <name-container> --interactive --task <task-arn-specific> \
 --command <your/command>
 ```
 

@@ -46,6 +46,7 @@ tags:
 - [awesome-sysadmin](https://github.com/awesome-foss/awesome-sysadmin): A curated list of amazingly awesome open-source sysadmin resources.
 - [system-design-101](https://github.com/ByteByteGoHq/system-design-101): Explain complex systems using visuals and simple terms. Help you prepare for system design interviews.
 - [startpack](https://github.com/tldr-devops/startpack): Selfhosted tech starter pack for development of new project or startup
+- [Platform tooling landscape](https://platformengineering.org/platform-tooling): This landscape distills the best practices in designing Internal Developer Platforms
 # Blog DevOps and Tech
 
 >[!note]
@@ -77,6 +78,8 @@ tags:
 - [Hackaday](https://hackaday.com/) - *Fresh Hacks Every Day*
 - [Medium - ByteByteGo System Design Alliance](https://medium.com/bytebytego-system-design-alliance) - *Explain complex systems with simple term*.
 - [3os Project](https://3os.org/) - *Collocation of technical documentation and guides for devops, developers, pentesters, systems administrators and other IT professionals.*
+- [Platform Engineer Blog](https://platformengineering.org/blog) - *The discipline of designing and building toolchains and workflows that enable self-service capabilities for software engineering organizations in the cloud-native era*.
+- [Terraform Weekly](https://www.weekly.tf/) - *A weekly newsletter about Terraform ecosystem (posts, tools, tips&tricks, open-source) with humble opinions by Anton Babenko*.
 # DevOps Articles
 
 >[!note]
@@ -112,6 +115,8 @@ tags:
 - [9 Powerful Atlantis Alternatives to Enhance Terraform Efficiency](https://zeet.co/blog/atlantis-alternatives)
 - [5 ways for GitLab CI runners to get AWS credentials](https://dev.to/edmundkwok/5-ways-for-gitlab-ci-runners-to-get-aws-credentials-11hp)
 - [Authenticating your GitLab CI runner to an AWS ECR registry using Amazon ECR Docker Credential Helper 🔑](https://dev.to/aws-builders/authenticating-your-gitlab-ci-runner-to-an-aws-ecr-registry-using-amazon-ecr-docker-credential-helper-3ba)
+- [28 Most Powerful Terraform Tools (2024)](https://zeet.co/blog/terraform-tools)
+- [Top Terraform Tools to Know in 2024](https://medium.com/env0/top-terraform-tools-to-know-in-2024-a00a232bb936)
 # DevOps Youtube Channel
 
 ![[youtube.png]]
@@ -219,6 +224,8 @@ tags:
 - [lerna](https://github.com/lerna/lerna): 🐉 Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.
 - [nx](https://github.com/nrwl/nx): Smart Monorepos · Fast CI
 - [just](https://just.systems/man/en/): a handy way to save and run project-specific commands.
+- [electron](https://github.com/electron/electron): Build cross-platform desktop apps with JavaScript, HTML, and CSS
+- [CMake](https://github.com/Kitware/CMake): Mirror of CMake upstream repository. Plus on [Make](https://www.gnu.org/software/make/)
 
 ## Automation Deployment Platforms
 
@@ -256,7 +263,11 @@ tags:
 - [Pulumi Registry](https://www.pulumi.com/registry/): Package, SDK of Pulumi (Example: AWS, Azure, GCP)
 - [Terraform Documentation](https://developer.hashicorp.com/terraform/docs): An infrastructure as code tool that lets you build, change, and version infrastructure safely and efficiently
 - [Terraform Registry](https://registry.terraform.io/): Terraform providers that power all of Terraform’s resource types, or find modules for quickly deploying common infrastructure configurations.
+- [Terraform Best Practices](https://www.terraform-best-practices.com/): An attempt to systematically describe best practices using Terraform and provide recommendations for the most frequent problems Terraform users experience
 - [OpenTofu](https://opentofu.org/docs/): An infrastructure as code tool that lets you define infrastructure resources in human-readable configuration files that you can version, reuse, and share
+- [Spacelift](https://docs.spacelift.io/): Spacelift is a sophisticated, continuous integration and deployment (CI/CD) platform for _infrastructure-as-code_
+- [terraformer](https://github.com/GoogleCloudPlatform/terraformer): CLI tool to generate terraform files from existing infrastructure (reverse Terraform). Infrastructure to Code
+- [inframap](https://github.com/cycloidio/inframap): Read your tfstate or HCL to generate a graph specific for each provider, showing only the resources that are most important/relevant.
 ## Generated + Validate Configuration
 
 - [moz://a SSL Configuration Generator](https://ssl-config.mozilla.org/) : SSL Generation for multiple webserver
@@ -266,6 +277,7 @@ tags:
 - [diagrams](https://github.com/mingrammer/diagrams): 🎨 Diagram as Code for prototyping cloud system architectures
 - [crontab guru](https://crontab.guru/): The quick and simple editor for cron schedule expressions by Cronitor (SHELL/Pipeline)
 - [crontab spring](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/scheduling/support/CronExpression.html) : Representation of a [crontab expression](https://www.manpagez.com/man/5/crontab/) that can calculate the next time it matches (Java/AWS)
+- [checkov](https://github.com/bridgecrewio/checkov): Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as code, container images and open source packages
 ## Local Cloud Self-hosted
 
 - [LocalStack - AWS local](https://hub.docker.com/r/localstack/localstack) : A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline. Read more: [Documentation](https://docs.localstack.cloud/getting-started/). You can do more access and management via [LocalStack Web Application](https://app.localstack.cloud/sign-in)

@@ -163,6 +163,7 @@ tags:
 - [[Build your wiki for 1st time]]
 - [[Atlantis with ECS for automatic provisioning]]
 - [[Create SSL Cert with ACM and Route53 for AWS Services]]
+- [[Build mobile with Expo (Part 1)]]
 # CI/CD Gallery
 
 >[!info]
