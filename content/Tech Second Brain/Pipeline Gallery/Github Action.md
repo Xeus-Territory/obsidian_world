@@ -142,7 +142,7 @@ You need to use `eas.json` to configuration how can `expo-cli` talk with your so
       "developmentClient": true,
       "distribution": "internal"
     },
-    "preview": {
+    "previewAndroid": {
       "distribution": "internal",
       "android": {
         "buildType": "apk",
@@ -160,6 +160,13 @@ You need to use `eas.json` to configuration how can `expo-cli` talk with your so
         }
       }
     },
+    "previewApple": {
+      "ios": {
+        "env": {
+          "EXPO_PUBLIC_API_URL": "https://xeusnguyen.xyz/"
+        }
+      }
+    },
     "production": {}
   },
   "submit": {
@@ -171,13 +178,15 @@ You need to use `eas.json` to configuration how can `expo-cli` talk with your so
 
 After define that you will have permission to use `expo` inside your github-actions
 
+## Android
+
 ```yaml
 # Define name of Actions
-name: Build and Release Applications
+name: Build and Release Android Applications
 # Trigger of Actions by manually
 # Read on: https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#workflow_dispatch
 on: workflow_dispatch
-  
+
 # Define job in a workflow
 # Read on: https://docs.github.com/en/actions/using-jobs/using-jobs-in-a-workflow
 jobs:
@@ -192,22 +201,24 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: 18.20
+          node-version: 18.20.2
 
       - name: Install Dependencies
         run: |
+          npm install
           npm install -g eas-cli
           npx eas --version
+          npx eas whoami
 
       - name: Build Android Application
-        run: npx eas build -p android --profile preview --non-interactive
+        run: npx eas build -p android --profile previewAndroid --non-interactive
 
       - name: Download Artifact from Expo
         run: |
           artifactURL=$(npx eas build:view --json | jq -r ".artifacts.buildUrl")
           mkdir -p ./android
           wget -q $artifactURL -O ./android/$(cat app.json | jq -r '(.expo.name + "." + .expo.version)').apk
-      
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
@@ -234,6 +245,52 @@ jobs:
   #         # Current not have account, We will provide after
   #         # Doc: https://docs.expo.dev/tutorial/eas/android-production-build/
   #         echo "Release aab to Google Play"
+```
 
+## IOS
 
+```yaml
+# Define name of Actions
+name: Build and Release IOS Applications
+# Trigger of Actions by manually
+# Read on: https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#workflow_dispatch
+on: workflow_dispatch
+
+# Define job in a workflow
+# Read on: https://docs.github.com/en/actions/using-jobs/using-jobs-in-a-workflow
+jobs:
+  build_ios:
+    runs-on: ubuntu-latest
+    env:
+      EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Fetch all history for git info
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18.20.2
+
+      - name: Install Dependencies
+        run: |
+          npm install
+          npm install -g eas-cli
+          npx eas --version
+          npx eas whoami
+
+      - name: Build IOS Application
+        run: npx eas build -p ios --profile previewApple --non-interactive
+
+      - name: Download Artifact from Expo
+        run: |
+          artifactURL=$(npx eas build:view --json | jq -r ".artifacts.buildUrl")
+          mkdir -p ./ios
+          wget -q $artifactURL -O ./ios/$(cat app.json | jq -r '(.expo.name + "." + .expo.version)').ipa
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          path: ios
+          retention-days: 30
 ```

@@ -84,6 +84,24 @@ Add-PoshGitToProfile -AllHosts -Force
 ## Set oh-my-posh theme for powershell
 # Install this oh-my-posh from website: https://ohmyposh.dev/ or windows store
 oh-my-posh init pwsh | Invoke-Expression
+
+# Import the Chocolatey Profile that contains the necessary code to enable
+# tab-completions to function for `choco`.
+# Be aware that if you are missing these lines from your profile, tab completion
+# for `choco` will not function.
+# See https://ch0.co/tab-completion for details.
+$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+if (Test-Path($ChocolateyProfile)) {
+  Import-Module "$ChocolateyProfile"
+}
+
+# Change theme of ohmyposh
+# Selection one of these: https://ohmyposh.dev/docs/themes
+oh-my-posh init pwsh --config "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/amro.omp.json" | Invoke-Expression
+
+# Install terminal-icon with admin trust before import-module
+# Install-Module -Name Terminal-Icons -Repository PSGallery
+Import-Module -Name Terminal-Icons
 ```
 
 To understand more about `powershell`, come and take a look on
@@ -144,4 +162,44 @@ vagrant plugin list
 ```
 
 Done, you can use `vagrant` inside your machine and connect directly `vmware_workstation`, create `Vagranfile` and enjoy !!
+
+# Enable SSH-Agent
+
+Documentation: [StackOverFlow - Starting ssh-agent on Windows 10 fails](https://stackoverflow.com/questions/52113738/starting-ssh-agent-on-windows-10-fails-unable-to-start-ssh-agent-service-erro)
+
+In usual, `ssh-agent` feature will become disable in Windows 10 and 11, so you need to make a change in configuration of service tag or use powershell command to handle it
+
+You can check this by running in Windows **PowerShell**
+
+```powershell
+Get-Service ssh-agent
+```
+
+```powershell
+Status   Name               DisplayName
+------   ----               -----------
+Stopped  ssh-agent          OpenSSH Authentication Agent
+```
+
+Result return `stop`, It means your `ssh-agent` is not work in your machine, but let filter with `StartType` is knowing what state of OpenSSH
+
+```powershell
+Get-Service ssh-agent | Select StartType
+```
+
+```powershell
+StartType
+---------
+ Disabled
+```
+
+To enable, you can use powershell or UI to handle
+
+```powershell
+Get-Service -Name ssh-agent | Set-Service -StartupType Manual
+```
+
+![[Pasted image 20240902124924.png|center]]
+
+And now you can use OpenSSH Agent to add your key inside your windows machine
 

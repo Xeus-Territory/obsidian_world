@@ -34,9 +34,15 @@ tags:
 - [Devtoys.app](https://devtoys.app/): A Swiss Army knife for developers.
 
 # Language Programing Collection
+
 ## HTML
 
 - [HTML Code Snippet](https://www.w3schools.com/howto/default_page6.asp) : HTML Snippet from W3school
+
+## C\#
+
+- [awesome-dotnet](https://github.com/quozd/awesome-dotnet): A collection of awesome .NET libraries, tools, frameworks and software
+- [dotnet-architecture](https://github.com/dotnet-architecture): .NET Application Architecture - Reference Apps
 ## JS
 
 - [awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs): Delightful Node.js packages and resources
