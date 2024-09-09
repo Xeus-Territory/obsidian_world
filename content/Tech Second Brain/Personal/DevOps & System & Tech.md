@@ -12,41 +12,69 @@ tags:
 >[!info]
 >Include repository, blog about technologies, self-hosted, devops, design and system design, ...
 
+## Repository
+
+- [awesome](https://github.com/sindresorhus/awesome): 😎 Awesome lists about all kinds of interesting topics. [Website](https://project-awesome.org/)
 - [awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) : About A list of Free Software network services and web applications which can be hosted on your own servers
 - [awesome-scalability](https://github.com/binhnguyennus/awesome-scalability) : The Patterns of Scalable, Reliable, and Performant Large-Scale Systems
 - [awesome-devops](https://github.com/wmariuss/awesome-devops) : A curated list of awesome DevOps platforms, tools, practices and resources
-- [awesome](https://github.com/sindresorhus/awesome): 😎 Awesome lists about all kinds of interesting topics
 - [awesome-for-beginners](https://github.com/MunGell/awesome-for-beginners) : A list of awesome beginners-friendly projects.
 - [system-design-primer](https://github.com/donnemartin/system-design-primer): Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.
+- [awesome-tf](https://github.com/shuaibiyy/awesome-tf): Curated list of resources on HashiCorp's Terraform and OpenTofu
 - [awesome-design](https://github.com/gztchan/awesome-design): Curated design resources from all over the world.
+- [awesome-sysadmin](https://github.com/awesome-foss/awesome-sysadmin): A curated list of amazingly awesome open-source sysadmin resources.
+- [awesome-ebpf](https://github.com/zoidyzoidzoid/awesome-ebpf) : A curated list of awesome projects related to eBPF.
+- [web-servers.md](https://gist.github.com/willurd/5720255) : Each of these commands will run an ad hoc http static server in your current (or specified) directory
+- [awesome-devsecops](https://github.com/JakobTheDev/awesome-devsecops): Curating the best DevSecOps resources and tooling.
+- [Self-Hosting-Guide](https://github.com/mikeroyal/Self-Hosting-Guide) : Learn all about locally hosting
+- [static-analysis](https://github.com/analysis-tools-dev/static-analysis): A curated list of static analysis (SAST) tools and linters
+- [dynamic-analysis](https://github.com/analysis-tools-dev/dynamic-analysis): A curated list of dynamic analysis tools and linters
+- [system-design-101](https://github.com/ByteByteGoHq/system-design-101): Explain complex systems using visuals and simple terms. Help you prepare for system design interviews.
+- [startpack](https://github.com/tldr-devops/startpack): Selfhosted tech starter pack for development of new project or startup
+
+## Page
+
+- [HelloGitHub](https://github.com/521xueweihan/HelloGitHub) : Share interesting, entry-level open source projects on GitHub. [EN](https://hellogithub.com/en)
+- [Awesome Software Architecture](https://awesome-architecture.com/) : Curated list of awesome articles and resources to learn and practice software architecture, patterns and principles. this repository will be updated continuously, keep yourself up to date.
+- [Nubenetes](https://nubenetes.com/) : Awesome Kubernetes & Cloud
+- [StackExchange](https://stackexchange.com/sites) : StackOverFlow Ecosystem
+- [Ansible Galaxy](https://galaxy.ansible.com/ui/) : Ansible template and external playbook
+- [Collection about kind of YAML](https://yaml.org/) : Collection about yaml in wide technologies
+- [free-for-dev](https://github.com/ripienaar/free-for-dev) : A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev. [Web](https://free-for.dev/)
+- [khuedoan's homelab](https://github.com/khuedoan/homelab) : Fully automated homelab from empty disk to running services with a single command - Repo belong A. Khue Doan. [Web Version](https://homelab.khuedoan.com/)
+
+## Topic
+
+- [Collection about tag CNI](https://github.com/topics/cni) : Container Network Interface - networking for Linux containers
+- [Package manager](https://github.com/topics/package-manager) : Package manager topics
+
+## Organization
+
+- [Spotify](https://github.com/spotify): Spotify Github Repositories
+- [Netflix](https://github.com/Netflix): Netflix Open Source Platform
+- [Facebook](https://github.com/facebook): Meta - build community through open source technology.
+- [FacebookResearch](https://github.com/facebookresearch): Meta Research OpenSource Platform
+- [Linkedin](https://github.com/linkedin): linkedin Open Source Platform
+- [Microsoft](https://github.com/microsoft): Open source projects and samples from Microsoft
+- [Alibaba](https://github.com/alibaba): Alibaba Open Source
+- [Apache](https://github.com/apache): The Apache Software Foundation
+- [Red Hat Developer](https://github.com/redhat-developer): Github home of the Red Hat Developer program.
+- [Container Storage Interface](https://github.com/container-storage-interface) : Container Storage Interface (CSI) Specification.
+- [Airbnb](https://github.com/airbnb): Airbnb Open Source Community
+- [Google](https://github.com/google): Google ❤️ Open Source
+- [Tencent](https://github.com/Tencent) : Tencent Open Source Community
+- [Fossasia](https://github.com/fossasia): Open Technologies developed in Asia and Around the Globe
+- [GoogleContainerTools](https://github.com/GoogleContainerTools) : Tools in-house of Google about Container
+
+## Landscape
+
 - [Apache Project Directory](https://projects.apache.org/projects.html) : List all of product of Apache
 - [CNCF Projects](https://contribute.cncf.io/contributors/projects/): All projects of the Cloud Native Computing Foundation
 - [CNCF Landscape](https://landscape.cncf.io/): Collection by category tools and technologies of CNCF
 - [Linux Foundation Project](https://www.linuxfoundation.org/projects) : Opensource Ambassador for projects from multiple users
-- [free-for-dev](https://github.com/ripienaar/free-for-dev) : A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev
-- [HelloGitHub](https://github.com/521xueweihan/HelloGitHub) : Share interesting, entry-level open source projects on GitHub.
-- [Self-Hosting-Guide](https://github.com/mikeroyal/Self-Hosting-Guide) : Learn all about locally hosting
-- [Awesome Software Architecture](https://awesome-architecture.com/) : Curated list of awesome articles and resources to learn and practice software architecture, patterns and principles. this repository will be updated continuously, keep yourself up to date.
-- [Ansible Galaxy](https://galaxy.ansible.com/ui/) : Ansible template and external playbook
-- [Awesome webserver in one line](https://gist.github.com/willurd/5720255) : Each of these commands will run an ad hoc http static server in your current (or specified) directory
-- [Collection about kind of YAML](https://yaml.org/) : Collection about yaml in wide technologies
-- [Collection about tag CNI](https://github.com/topics/cni) : Container Network Interface - networking for Linux containers
-- [homelab](https://github.com/khuedoan/homelab) : Fully automated homelab from empty disk to running services with a single command - Repo belong A. Khue Doan
-- [awesome-ebpf](https://github.com/zoidyzoidzoid/awesome-ebpf) : A curated list of awesome projects related to eBPF.
-- [StackExchange](https://stackexchange.com/sites) : StackOverFlow Ecosystem
-- [Nubenetes](https://nubenetes.com/) : Awesome Kubernetes & Cloud
+- [Platform Engineer landscape](https://platformengineering.org/platform-tooling): Distills the best practices in designing IDP
 - [Cloud Native Glossary](https://glossary.cncf.io/): The Cloud Native Glossary aims to make the cloud native space
-- [Red Hat Developer](https://github.com/redhat-developer): Github home of the Red Hat Developer program.
-- [GoogleContainerTools](https://github.com/GoogleContainerTools) : Tools in-house of Google about Container
-- [Package manager](https://github.com/topics/package-manager) : A set of tools that automates and manages computer software. They deal with packages, or collections, of bundled files. Package managers make it easy to install, upgrade, or remove software for a computer's operating system.
-- [Container Storage Interface](https://github.com/container-storage-interface) : Container Storage Interface (CSI) Specification.
-- [awesome-devsecops](https://github.com/JakobTheDev/awesome-devsecops): Curating the best DevSecOps resources and tooling.
-- [static-analysis](https://github.com/analysis-tools-dev/static-analysis): A curated list of static analysis (SAST) tools and linters
-- [dynamic-analysis](https://github.com/analysis-tools-dev/dynamic-analysis): A curated list of dynamic analysis tools and linters
-- [awesome-sysadmin](https://github.com/awesome-foss/awesome-sysadmin): A curated list of amazingly awesome open-source sysadmin resources.
-- [system-design-101](https://github.com/ByteByteGoHq/system-design-101): Explain complex systems using visuals and simple terms. Help you prepare for system design interviews.
-- [startpack](https://github.com/tldr-devops/startpack): Selfhosted tech starter pack for development of new project or startup
-- [Platform tooling landscape](https://platformengineering.org/platform-tooling): This landscape distills the best practices in designing Internal Developer Platforms
+
 # Blog DevOps and Tech
 
 >[!note]
@@ -80,26 +108,27 @@ tags:
 - [3os Project](https://3os.org/) - *Collocation of technical documentation and guides for devops, developers, pentesters, systems administrators and other IT professionals.*
 - [Platform Engineer Blog](https://platformengineering.org/blog) - *The discipline of designing and building toolchains and workflows that enable self-service capabilities for software engineering organizations in the cloud-native era*.
 - [Terraform Weekly](https://www.weekly.tf/) - *A weekly newsletter about Terraform ecosystem (posts, tools, tips&tricks, open-source) with humble opinions by Anton Babenko*.
+- [Spacelift Blog](https://spacelift.io/blog) - *Blog tech about infrastructure as code, and cloud services*
 # DevOps Articles
 
 >[!note]
 >Collections articles about DevOps, System Design and moreover about technologies and opensource 
 
-- [Prometheus Architecture: Complete Breakdown of Key Components](https://devopscube.com/prometheus-architecture/)
+- [DevOps Cube - Prometheus Architecture: Complete Breakdown of Key Components](https://devopscube.com/prometheus-architecture/)
 - [Azure - Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)
-- [Popular Deployment Strategies & Pattern](https://www.devopsschool.com/blog/list-of-popular-deployment-strategies/)
+- [DevOps School - Popular Deployment Strategies & Pattern](https://www.devopsschool.com/blog/list-of-popular-deployment-strategies/)
 - [Medium - What Are Deployment Patterns?](https://medium.com/@techworldwithmilan/what-are-deployment-patterns-876057c15987)
-- [Entering into DevOps-32 Golden Images02](https://blog.devgenius.io/entering-into-devops-32-golden-images02-9f8a9bfa52cd)
+- [Medium - Entering into DevOps-32 Golden Images02](https://blog.devgenius.io/entering-into-devops-32-golden-images02-9f8a9bfa52cd)
 - [Medium - Top Technology Trends to Watch Out for in 2024 for Platform Engineering and SRE](https://medium.com/@seifeddinerajhi/top-technology-trends-to-watch-out-for-in-2024-for-platform-engineering-and-sre-e267130c7e22)
 - [Medium - High-Level System Architecture of Booking.com](https://medium.com/@sahintalha1/high-level-system-architecture-of-booking-com-06c199003d94)
-- [Vietnamese - Stateless là gì? Sự khác biệt giữa Stateless và Stateful](https://vietnix.vn/stateless-la-gi/)
+- [Vietnix - Vietnamese - Stateless là gì? Sự khác biệt giữa Stateless và Stateful](https://vietnix.vn/stateless-la-gi/)
 - [Komodor for resolving OOMkilled on Kubernetes](https://komodor.com/learn/how-to-fix-oomkilled-exit-code-137/)
 - [Event-driven architecture patterns and when to use them](https://ably.com/topic/event-driven-architecture-patterns)
 - [Medium - The Complete Guide to Event-Driven Architecture](https://medium.com/@seetharamugn/the-complete-guide-to-event-driven-architecture-b25226594227)
 - [Medium - What is Clean Architecture?](https://medium.com/@techworldwithmilan/what-is-clean-architecture-456d2d3cb0bc)
 - [How to build and deploy React Native applications with Fastlane](https://tech.sparkfabrik.com/en/blog/fastlane_build/)
 - [Dev.io - Automating mobile application deployments using Fastlane and CI/CD tools](https://dev.to/jei/automating-mobile-application-deployments-using-fastlane-and-ci-cd-tools-2iae)
-- [Data Engineering Best Practices: How Big Tech & FAANG Firms Manage and Optimize Apache Kafka](https://acceldataio.medium.com/data-engineering-best-practices-how-big-tech-faang-firms-manage-and-optimize-apache-kafka-95d520db60bb)
+- [Medium - Data Engineering Best Practices: How Big Tech & FAANG Firms Manage and Optimize Apache Kafka](https://acceldataio.medium.com/data-engineering-best-practices-how-big-tech-faang-firms-manage-and-optimize-apache-kafka-95d520db60bb)
 - [The four levels of logs](https://fiberplane.com/blog/the-four-levels-of-log-collections)
 - [Medium - GitOps with Kubernetes, Terraform, Gitlab and FluxCD](https://medium.com/@prag-matic/gitops-with-kubernetes-terraform-gitlab-and-fluxcd-2875d1010dac)
 - [Medium - Master Command Orchestration](https://medium.com/itnext/master-command-orchestration-16f4a117ce05)
@@ -112,11 +141,14 @@ tags:
 - [Medium - Most-Used Distributed System Design Patterns](https://medium.com/javarevisited/most-used-distributed-system-patterns-d5d90ffedf33)
 - [Medium - eBPF Maps State Synchronization across Multi-Node Kubernetes Cluster](https://medium.com/gitconnected/ebpf-maps-state-synchronization-across-multi-node-kubernetes-cluster-d0c075810fa7)
 - [KodeKloud - eBPF Essentials for DevOps Professionals](https://kodekloud.com/blog/ebpf-essentials-devops/)
-- [9 Powerful Atlantis Alternatives to Enhance Terraform Efficiency](https://zeet.co/blog/atlantis-alternatives)
-- [5 ways for GitLab CI runners to get AWS credentials](https://dev.to/edmundkwok/5-ways-for-gitlab-ci-runners-to-get-aws-credentials-11hp)
-- [Authenticating your GitLab CI runner to an AWS ECR registry using Amazon ECR Docker Credential Helper 🔑](https://dev.to/aws-builders/authenticating-your-gitlab-ci-runner-to-an-aws-ecr-registry-using-amazon-ecr-docker-credential-helper-3ba)
-- [28 Most Powerful Terraform Tools (2024)](https://zeet.co/blog/terraform-tools)
-- [Top Terraform Tools to Know in 2024](https://medium.com/env0/top-terraform-tools-to-know-in-2024-a00a232bb936)
+- [Zeet - 9 Powerful Atlantis Alternatives to Enhance Terraform Efficiency](https://zeet.co/blog/atlantis-alternatives)
+- [Dev.to - 5 ways for GitLab CI runners to get AWS credentials](https://dev.to/edmundkwok/5-ways-for-gitlab-ci-runners-to-get-aws-credentials-11hp)
+- [Dev.to - Authenticating your GitLab CI runner to an AWS ECR registry using Amazon ECR Docker Credential Helper 🔑](https://dev.to/aws-builders/authenticating-your-gitlab-ci-runner-to-an-aws-ecr-registry-using-amazon-ecr-docker-credential-helper-3ba)
+- [Zeet - 28 Most Powerful Terraform Tools (2024)](https://zeet.co/blog/terraform-tools)
+- [Medium - Top Terraform Tools to Know in 2024](https://medium.com/env0/top-terraform-tools-to-know-in-2024-a00a232bb936)
+- [Medium - Noisy Neighbor Detection with eBPF](https://netflixtechblog.com/noisy-neighbor-detection-with-ebpf-64b1f4b3bbdd)
+- [Medium - VictoriaLogs: an overview, run in Kubernetes, LogsQL, and Grafana](https://itnext.io/victorialogs-an-overview-run-in-kubernetes-logsql-and-grafana-88e0934a5ccd)
+- [Infracloud - 5 Tools to Auto-Generate Terraform Configuration Files](https://www.infracloud.io/blogs/auto-generate-terraform-configuration-files/)
 # DevOps Youtube Channel
 
 ![[youtube.png]]
@@ -151,16 +183,21 @@ tags:
 - [A Simple Entity Component System (ECS) C++ - Austin Morlan](https://austinmorlan.com/posts/entity_component_system/?fbclid=IwAR26jehCQUQEzVmm_shLMhtG1dePD7AYoPQQBtm4GJoUqaNcFrW8JGYDCiY)
 - [Medium - The Past and Present of Browser Architecture](https://levelup.gitconnected.com/the-past-and-present-of-browser-architecture-522c65d1c2cd)
 - [MDPI - An Overview of WebAssembly for IoT: Background, Tools, State-of-the-Art, Challenges, and Future Directions](https://www.mdpi.com/1999-5903/15/8/275)
+- [Medium - Embedding Python in Go](https://poweruser.blog/embedding-python-in-go-338c0399f3d5F)
+- [QKD BB84 protocol simulation using Quantum Simulator (Qiskit)](https://www.quantumblockchains.io/qkd-protocol-simulation-with-qiskit/)
 
 # Opensource
 
 >[!note]
 >Place to finding the cool stuff about Opensource and priorities software around the world
 
-- [SourceForge](https://sourceforge.net/) - *Compare, Download & Develop Open Source & Business Software*
-- [AlternativeTo](https://alternativeto.net/) - *Opensource Compare Alternatives*
-- [ProductHunt](https://www.producthunt.com/) - *The best new products in tech*
-- [G2](https://www.g2.com/) - *Find the right software and services*
+- [SourceForge](https://sourceforge.net/) - Compare, Download & Develop Open Source & Business Software
+- [AlternativeTo](https://alternativeto.net/) - Opensource Compare Alternatives
+- [ProductHunt](https://www.producthunt.com/) - The best new products in tech
+- [G2](https://www.g2.com/) - Find the right software and services
+- [Osssoftware](https://osssoftware.org/open-source-alternatives/) - Best New Open Source Alternatives
+- [hosted-software](https://hostedsoftware.org/) - Self-Hosted Software List
+
 
 # Documentations and Papers
 
@@ -183,6 +220,20 @@ tags:
 - [arXiv.org e-Print archive](https://arxiv.org/)
 - [ScienceDirect.com | Science, health and medical journals, full text articles and books.](https://www.sciencedirect.com/)
 - [RFC Editor](https://www.rfc-editor.org/) : The RFC Series (ISSN 2070-1721) contains technical and organizational documents about the Internet
+- [The Pattern Languages of Programs archives](https://hillside.net/index.php/past-plop-conferences): Hundreds of patterns are generated yearly in conferences alone, not to mention books and software engineering websites.
+
+# Quantum Computing
+
+- [openqasm](https://github.com/openqasm/openqasm): Quantum assembly language for extended quantum circuits
+- [qiskit](https://github.com/Qiskit/qiskit): Qiskit is an open-source SDK for working with quantum computers at the level of extended quantum circuits, operators, and primitives.
+- [QuantumKatas](https://github.com/microsoft/QuantumKatas): Tutorials and programming exercises for learning Q# and quantum computing
+- [pennylane](https://github.com/PennyLaneAI/pennylane): a cross-platform Python library for quantum computing, quantum machine learning, and quantum chemistry. Train a quantum computer the same way as a neural network.
+- [open-quantum-safe](https://github.com/open-quantum-safe): Software for prototyping quantum-resistant cryptography
+
+# New Programming Language
+
+- [zig](https://github.com/ziglang/zig): General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software. [Documentation](https://ziglang.org/)
+- [mojo](https://github.com/modularml/mojo): The Mojo Programming Language. [Documentation](https://docs.modular.com/mojo/manual/)
 # DevOps & Useful Tools
 
 >[!note]
@@ -206,6 +257,8 @@ tags:
 - [kubebuilder](https://github.com/kubernetes-sigs/kubebuilder): SDK for building Kubernetes APIs using CRDs
 - [kubectl-tree](https://github.com/ahmetb/kubectl-tree): kubectl plugin to browse Kubernetes object hierarchies as a tree 🎄
 - [Crossplane](https://docs.crossplane.io/latest/): An open source Kubernetes extension that transforms your Kubernetes cluster into a **universal control plane**.
+- [kcert](https://github.com/nabsul/kcert): KCert: A Simple Let's Encrypt Manager for Kubernetes
+- [lens](https://github.com/lensapp/lens): Lens - The way the world runs Kubernetes
 ## Local Kubernetes Self-hosted
 
 - [Kind](https://kind.sigs.k8s.io/) : [kind](https://sigs.k8s.io/kind) is a tool for running local Kubernetes clusters using Docker container “nodes”.
@@ -242,12 +295,6 @@ tags:
 ## Cloud Infrastructure Designer
 
 - [Brainboard](https://www.brainboard.co/) : An AI driven platform to visually design, generate terraform code and manage cloud infrastructure, collaboratively.
-
-## Database Self-hosted
-
-- [postgresql_cluster](https://github.com/vitabaks/postgresql_cluster): PostgreSQL High-Availability Cluster (based on Patroni). Automating with Ansible.
-- [pigsty](https://github.com/Vonng/pigsty): Battery-Included PostgreSQL Distro as a Free & Better RDS Alternative —— Pigsty
-
 ## Serverless Self-hosted
 
 - [fn](https://github.com/fnproject/fn): The container native, cloud agnostic serverless platform.
@@ -310,7 +357,6 @@ tags:
 - [Kong](https://docs.konghq.com/gateway/latest/): API gateway built for hybrid and multi-cloud, optimized for microservices and distributed architectures
 - [Emissary-Ingress](https://www.getambassador.io/products/api-gateway): An Envoy-powered Open Source API Gateway
 - [gateway-api](https://gateway-api.sigs.k8s.io/): Gateway API is an official Kubernetes project focused on L4 and L7 routing in Kubernetes
-
 ## Web server
 
 - [traefik proxy](https://doc.traefik.io/traefik/) : Traefik is an [open-source](https://github.com/traefik/traefik) _Edge Router_ that makes publishing your services a fun and easy experience
@@ -376,7 +422,6 @@ tags:
 - [Istio](https://istio.io/): Service Mesh. Simplified. Easily build cloud native workloads securely and reliably with `Istio`, with or without sidecars.
 - [linkerd](https://linkerd.io/2.15/overview/): Linkerd is a _service mesh_ for Kubernetes. It makes running services easier and safer by giving you runtime debugging, observability, reliability, and security—all without requiring any changes to your code.
 - [consul](https://developer.hashicorp.com/consul/docs?product_intent=consul): Consul is a multi-networking tool that offers a fully-featured service mesh solution. It solves the networking and security challenges of operating microservices and cloud infrastructure in multi-cloud and hybrid cloud environments
-
 ## Service Proxy
 
 - [envoy](https://www.envoyproxy.io/docs/envoy/v1.31.0/) : Envoy is an L7 proxy and communication bus designed for large modern service oriented architectures
@@ -406,7 +451,8 @@ tags:
 - [Authelia](https://www.authelia.com/): Authelia is an open-source [authentication](https://www.authelia.com/overview/authentication/introduction/) and [authorization](https://www.authelia.com/overview/authorization/access-control/) server and portal fulfilling the identity and access management (IAM) role of information security in providing [multi-factor authentication](https://www.authelia.com/overview/authentication/introduction/) and single sign-on (SSO) for your applications via a web portal. It acts as a companion for [common reverse proxies](https://www.authelia.com/overview/prologue/supported-proxies/).
 - [tailscale](https://tailscale.com/):  The easiest, most secure way to use WireGuard and 2FA.
 - [zitadel](https://zitadel.com/docs/guides/overview): Identity infrastructure, simplified for you.
-## Message Queue
+- [casdoor](https://github.com/casdoor/casdoor): An open-source UI-first Identity and Access Management (IAM) / Single-Sign-On (SSO) platform with web UI supporting
+## Queue Services
 
 - [AutoMQ](https://docs.automq.com/automq/what-is-automq/overview) : AutoMQ re-engineers Kafka for the cloud by decoupling storage to object storage. While maintaining **100% compatibility** with Apache Kafka®, it offers users up to **10 times cost efficiency** and **100 times elasticity**.
 - [Apache Kafka](https://kafka.apache.org/documentation/): an open-source, distributed event streaming platform with message communication and storage capabilities (**superb**)
@@ -414,6 +460,7 @@ tags:
 - [Apache ActiveMQ](https://activemq.apache.org/) : An open-source Java-based message queue that can be accessed by clients written in Javascript, C, C++, Python and .NET.
 - [Amazon Simple Queue System (SQS)](https://aws.amazon.com/sqs): A fully managed message queue built for distributed and serverless platforms
 - [Microsoft Azure Service Bus](https://azure.microsoft.com/en-us/products/service-bus): A reliable, fully managed Cloud service for delivering messages via queues or topics.
+- [Celery](https://docs.celeryq.dev/en/stable/): a simple, flexible, and reliable distributed system to process vast amounts of messages, while providing operations with the tools required to maintain such a system.
 
 ## SSL + DNS Utilities
 
@@ -421,6 +468,8 @@ tags:
 - [acme.sh](https://github.com/acmesh-official/acme.sh): A pure Unix shell script implementing ACME client protocol
 - [kcert](https://github.com/nabsul/kcert): A Simple Let's Encrypt Manager for Kubernetes
 - [ddns-updater](https://github.com/qdm12/ddns-updater): Container to update DNS records periodically with WebUI for many DNS providers
+- [cloudflare-ddns](https://github.com/timothymiller/cloudflare-ddns): 🎉🌩️ Dynamic DNS (DDNS) service based on Cloudflare! Access your home network remotely via a custom domain name without a static IP!
+- [ddns-updater](https://github.com/qdm12/ddns-updater): Container to update DNS records periodically with WebUI for many DNS providers.
 ## Utilities Terminal Tools
 
 - [tldr](https://github.com/tldr-pages/tldr): 📚 Collaborative cheatsheets for console commands
@@ -441,6 +490,16 @@ tags:
 - [skopeo](https://github.com/containers/skopeo): Work with remote images registries - retrieving information, images, signing content
 - [pre-commit](https://github.com/pre-commit/pre-commit): A framework for managing and maintaining multi-language pre-commit hooks.
 - [husky](https://github.com/typicode/husky): Git hooks made easy 🐶 woof!
+- [auto-unlocker](https://github.com/paolo-projects/auto-unlocker): Unlocker for VMWare macOS
+- [darling](https://github.com/darlinghq/darling): Darwin/macOS emulation layer for Linux
+- [httpie](https://github.com/httpie/cli): modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions, downloads, plugins & more. [Documentation](https://httpie.io/docs/cli)
+## Utilities and Fun Tools
+
+- [Melty](https://melty.sh/): The open source AI code editor for 10x engineers
+- [spacedrive](https://github.com/spacedriveapp/spacedrive): Spacedrive is an open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust.
+- [localsend](https://github.com/localsend/localsend): An open-source cross-platform alternative to AirDrop (Local Vietnamese Guy 🖖)
+- [nhost](https://github.com/nhost/nhost): The Open Source Firebase Alternative with GraphQL. [Documentation](https://docs.nhost.io/introduction)
+
 ## Git Hosting
 
 - [gitea](https://github.com/go-gitea/gitea): Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD. [Doc](https://docs.gitea.com/)
@@ -462,3 +521,48 @@ tags:
 - [Checkmk](https://docs.checkmk.com/latest/en/) : Offers comprehensive and specialized solutions for dealing with the very diverse environments of IT infrastructures.
 - [highlight](https://github.com/highlight/highlight): The open source, full-stack monitoring platform.
 - [gitana](https://github.com/nicolastakashi/gitana): Gitana is a lightweight dashboard sync
+- [FlameGraph](https://github.com/brendangregg/FlameGraph): Stack trace visualizer (Use for Pyroscope)
+- [highlight](https://github.com/highlight/highlight): The open source, full-stack monitoring platform. Error monitoring, session replay, logging, distributed tracing, and more.
+- [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics): VictoriaMetrics: fast, cost-effective monitoring solution and time series database. [Documentation](https://docs.victoriametrics.com/)
+
+## Static Site Generator
+
+- [gatsby](https://github.com/gatsbyjs/gatsby): The best React-based framework with performance, scalability and security built in.
+- [quartz](https://github.com/jackyzha0/quartz): 🌱 a fast, batteries-included static-site generator that transforms Markdown content into fully functional websites
+- [hugo](https://github.com/gohugoio/hugo): The world’s fastest framework for building websites.
+
+## Feature Flag
+
+- [flagsmith](https://github.com/Flagsmith/flagsmith): Open Source Feature Flagging and Remote Config Service. Host on-prem or use our hosted version at [https://flagsmith.com/](https://flagsmith.com/)
+- [unleash](https://github.com/Unleash/unleash): Open-source feature management solution built for developers.
+- [flipt](https://github.com/flipt-io/flipt): Enterprise-ready, GitOps enabled, CloudNative feature management solution
+
+## Product Error Analytics and Monitoring
+
+- [openreplay](https://github.com/openreplay/openreplay): Session replay and analytics tool you can self-host. Ideal for reproducing issues, co-browsing with users and optimizing your product.
+- [opentelemetry](https://opentelemetry.io/docs/): OpenTelemetry, also known as OTel, is a vendor-neutral open source [observability](https://opentelemetry.io/docs/concepts/observability-primer/#what-is-observability) framework for instrumenting, generating, collecting, and exporting telemetry data such as [traces](https://opentelemetry.io/docs/concepts/signals/traces/), [metrics](https://opentelemetry.io/docs/concepts/signals/metrics/), and [logs](https://opentelemetry.io/docs/concepts/signals/logs/).
+- [Sentry](https://github.com/getsentry/sentry): Developer-first error tracking and performance monitoring. [Website](https://sentry.io/)
+
+## Orchestration Framework
+
+- [luigi](https://github.com/spotify/luigi): a Python module that helps you build complex pipelines of batch jobs. It handles dependency resolution, workflow management, visualization etc. It also comes with Hadoop support built in.
+- [camunda](https://github.com/camunda/camunda): Process Orchestration Framework. [Website](https://docs.camunda.io/)
+
+## Web Analytics
+
+- [Plausible](https://github.com/plausible/analytics): Simple, open source, lightweight (< 1 KB) and privacy-friendly web analytics alternative to Google Analytics.
+- [umami](https://github.com/umami-software/umami): Umami is a simple, fast, privacy-focused alternative to Google Analytics.
+
+## Data integration platform
+
+- [airbyte](https://github.com/airbytehq/airbyte): The leading data integration platform for ETL / ELT data pipelines from APIs, databases & files to data warehouses, data lakes & data lakehouses. Both self-hosted and Cloud-hosted.
+
+## Web Testing and Automation
+
+- [playwright](https://github.com/microsoft/playwright): Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API. [Documentation](https://playwright.dev/)
+- [selenium](https://github.com/SeleniumHQ/selenium): A browser automation framework and ecosystem. [Documentation](https://selenium.dev/)
+
+## Candidate PaaS 
+
+- [dokku](https://github.com/dokku/dokku): A docker-powered PaaS that helps you build and manage the lifecycle of applications. [Documentation](https://dokku.com/docs/getting-started/installation/)
+- [backstage](https://github.com/backstage/backstage): An open framework for building developer portals. [Documentation](https://backstage.io/docs/overview/what-is-backstage)

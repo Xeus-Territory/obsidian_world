@@ -98,6 +98,22 @@ Print the sub-directory of folder with configuration level
 tree -d -L 2 .
 ```
 
+Print the sub file and folder with filter not include smt with `-I` option. Explore at [StackOverFlow - tree command for multiple includes and excludes](https://unix.stackexchange.com/questions/61074/tree-command-for-multiple-includes-and-excludes)
+
+```bash
+# With only
+tree -a -L 1 -I .git
+
+# With multiple
+tree -a -L 1 -I '.git|.terraform.lock.hcl'
+```
+
+Print tree with combine full path, include and exclude pattern
+
+```bash
+tree -f -I "bin|unitTest" -P "*.[ch]|*.[ch]pp." your_dir/
+```
+
 ## `find` command
 
 Find the folder with find base on the regex format

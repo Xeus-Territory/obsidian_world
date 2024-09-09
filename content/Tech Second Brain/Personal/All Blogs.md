@@ -1,5 +1,5 @@
 ---
-title: All Blogs of Myself
+title: Blogs of Myself
 tags:
   - blog
   - community
@@ -108,7 +108,7 @@ tags:
 - [[GraphQL]]
 - [[Command injection]]
 - [[CVE-2023-34092 - Path Equivalence in Vite]]
-# Tech Research
+# Tech Research (What is)
 
 >[!info]
 >In this session, About the shared  research for community which i make and find out how to play with it, setup and make usage or tutorial for doing something

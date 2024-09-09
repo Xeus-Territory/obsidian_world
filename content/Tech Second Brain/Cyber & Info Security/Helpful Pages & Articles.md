@@ -89,6 +89,7 @@ tags:
 - [MobileApp-Pentest-Cheatsheet](https://github.com/tanprathan/MobileApp-Pentest-Cheatsheet) : Arsenal for mobile application attack
 - [OWASP Project](https://owasp.org/projects/) : Collection about OWASP Opensource
 - [OWASP Collection](https://owasp.org/www-community/Free_for_Open_Source_Application_Security_Tools): Free for Open Source Application Security Tools
+- [sec_profile](https://github.com/tanjiti/sec_profile): Chinese Collection about Security with profile vulnerability and awesome hacking technique
 
 # Awesome Articles
 
@@ -170,6 +171,8 @@ tags:
 - [AD-Attack-Defense](https://github.com/infosecn1nja/AD-Attack-Defense) : Attack and defend active directory using modern post exploitation adversary tradecraft activity
 - [MAAD Attack Framework](https://maad-af.com/) : An attack tool for simple, fast & effective security testing of M365 & Entra ID (Azure AD).
 - [GTFOBins](https://gtfobins.github.io/) : A curated list of Unix binaries that can be used to bypass local security restrictions in misconfigured systems.
+- [Metaspoit](https://docs.metasploit.com/): Metasploit Framework for penetration testing
+- [impacket-examples-windows](https://github.com/maaaaz/impacket-examples-windows): The great impacket example scripts compiled for Windows
 ### Privilege Escalation (RCE)
 
 - [PEASS-ng](https://github.com/peass-ng/PEASS-ng) : PEASS - Privilege Escalation Awesome Scripts SUITE
@@ -262,6 +265,14 @@ tags:
 ### Burp extension
 
 - [agartha](https://github.com/volkandindar/agartha) : A Burp extension helps identifying injection flaws (LFI, RCE, SQLi), authentication/authorization issues, and HTTP 403 access violations, while also converting HTTP requests to JavaScript for enhanced XSS exploitation.
+
+### Code Validate
+
+- [codeql](https://github.com/github/codeql): the libraries and queries that power security researchers around the world, as well as code scanning in GitHub Advanced Security
+
+### IAST (Interactive Application Security Testing)
+
+- [DongTai](https://github.com/HXSecurity/DongTai): (IAST) tool that enables real-time detection of common vulnerabilities in Java applications and third-party components through passive instrumentation.
 ## Networking
 
 >[!info]
@@ -284,6 +295,9 @@ tags:
 - [awesome-tunneling](https://github.com/anderspitman/awesome-tunneling) : List of ngrok/Cloudflare Tunnel alternatives and other tunneling software and services. Focus on self-hosting.
 - [wstunnel](https://github.com/erebe/wstunnel) : Tunnel all your traffic over Websocket or HTTP2 - Bypass firewalls/DPI - Static binary available
 - [ZTM](https://github.com/flomesh-io/ztm) :  A privacy-first open-source decentralized network software based on HTTP/2 tunnels.
+- [Xray-core](https://github.com/XTLS/Xray-core): Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration.
+- [frp](https://github.com/fatedier/frp): A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet.
+- [localtunnel](https://theboroer.github.io/localtunnel-www/): Localtunnel allows you to easily share a web service on your local development machine without messing with DNS and firewall settings.
 
 ## Cloud
 
@@ -351,7 +365,7 @@ tags:
 - [IppSec Achievement](https://ippsec.rocks/?#)
 # CTF (Capture the flag)
 
-![[ctf_flag_logo.gif]]
+![[ctf_flag_logo.gif|center]]
 
 >[!info]
 >*“CTFs are gamified competitive cybersecurity events that are based on different challenges or aspects of information security. They are excellent for both beginners and experienced hackers looking to develop, test, and prove their skills because they gamify hacking concepts. We're big believers in the power of gamification here at Hack The Box! Gamification makes learning about something like a video game. Because gamification is fun and makes you think creatively, it’s one of the most effective ways to learn and develop skills.”*

@@ -10,7 +10,7 @@ tags:
 >[!quote]
 >So hi @all, It's me again and long time no see, just have a quick break for vacation on last week. Back to back, today I will provide you the way to deploy your application, how the fast way the cloud service can help you serve this problems ? Let digest about ☕☕
 
-![[Pasted image 20240623094546.png]]
+![[Pasted image 20240623094546.png|center]]
 
 # Problems and role of Cloud
 
@@ -18,7 +18,7 @@ tags:
 >I know when you want to perform or release your application, sometime you will meet some problems on knowledge when you do not have experience with Virtual machine (Azure), EC2 (AWS), or droplet (Digital Ocean) to setup and operation your application on these one
 >
 
-![[Pasted image 20240623095431.png]]
+![[Pasted image 20240623095431.png|center]]
 
 But don't worry, because of with the growth of containerization technologies, you will easily resolve that with your own application work like container, for example `docker` or `podman`.
 
@@ -222,7 +222,7 @@ Reach to next part, we will actually provide and play with some cool thing to cr
 
 This part will talk about Azure and Digital Ocean, because of I really make and do familiar with that so far that will help you cut off effort to go to the goal. I think `App Platform` will scope of this article, will be **Azure** on next stage
 
-![[Pasted image 20240623150613.png]]
+![[Pasted image 20240623150613.png|center]]
 
 Before reach to detail, some technologies with in-use for provisioning and create ci/cd process to completely, therefore you need to take that key feature to understand what I doing, like
 
@@ -611,7 +611,7 @@ When to create and login TFS, you need to create some `Service Connection` to in
 	- On the left of monitor, you will see `service connections`, choose and you will direct to `Service connections` monitor
 	- On the right head of monitor, you click on `New service connection` and choose `Docker Registry` and provide the requirement information. Click `Save` and you successfully to create `Docker Registry Service Connection`
 
-		![[Pasted image 20240623172322.png]]
+		![[Pasted image 20240623172322.png|center]]
 
 2. To create the environment to Deployment which help you add permission action to approve perform pipeline progress, read step via [Create and target an environment](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/environments?view=azure-devops)
 
@@ -706,11 +706,11 @@ With this pipeline, you just need to perform CI because CD will serve from App P
 
 So that all, you save and put the variable which require your application on the pipeline setting
 
-![[Pasted image 20240623173728.png]]
+![[Pasted image 20240623173728.png|center]]
 
 Click `Save` and you will successful pipeline with ready to release. And result when you perform completely build and push your application to registry
 
-![[Pasted image 20240623173807.png]]
+![[Pasted image 20240623173807.png|center]]
 
 ## Automation Deployment
 
