@@ -37,6 +37,7 @@ What you can find out and figure out about Azure, Cloud Computing, Documentation
 - [awesome-azure-architecture](https://github.com/lukemurraynz/awesome-azure-architecture)
 - [Github - Microsoft Azure](https://github.com/Azure) - APIs, SDKs and open source projects from Microsoft Azure
 - [azure-quickstart-templates](https://github.com/Azure/azure-quickstart-templates) - Azure Quickstart Templates about `azure-arm` or `bicep`
+- [Azure Verified Modules](https://azure.github.io/Azure-Verified-Modules/) - An initiative to consolidate and set the standards for what a good Infrastructure-as-Code module looks like.
 # Azure CLI
 
 ## az vm

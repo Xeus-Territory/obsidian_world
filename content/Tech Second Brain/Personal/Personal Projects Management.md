@@ -34,7 +34,7 @@ Github: [kubewekend](https://github.com/Xeus-Territory/kubewekend)
 >- Exploring, understanding and provisioning require components inside the `kind` cluster ✅
 >- `cilium` and `ebpf` - The powerful kernel service of `kubewekend` cluster ✅
 >- How to build the High Availability (HA) Cluster.  ✅
->- Use extend `CSI` for volume and storage class with `Ceph` ⌛
+>- Use extend `CSI` for volume and storage class with `Ceph` ✅
 >- Setup new `app`, use `cilium` to route traffic into cluster via gateway ⌛
 >- Setup the monitoring cluster inside the `kubernetes` with `node-exporter`, `cadvisor`, `prometheus` and `grafana` ⌛
 >- Setup tracing, logging, profiling components in `kubewekend` cluster ⌛

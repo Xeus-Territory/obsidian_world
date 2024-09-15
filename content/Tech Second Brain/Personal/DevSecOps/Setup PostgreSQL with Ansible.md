@@ -14,6 +14,8 @@ tags:
 >[!summary]
 >This progress will setup the `postgresql`, configure for `postgresql` for remote access on docker image
 
+![[Pasted image 20240911090320.png]]
+
 For running to set up `postgresql` in VM. Go for it with commands
 
 **Notice:**
@@ -30,8 +32,8 @@ ansible <YOUR_HOSTS> -i inventories/hosts -m ping (200 Succeed - Moving to next 
 - Deprecated: Configuration your [pg_hba.conf](Default%20Host%20Template.md) and [postgresql.conf](PostgreSQL%20File%20Configuration.md) on templates folder --> Changing into use `PostgreSQL` database inside container but this `pg_hba` & `postgresql.conf` still work if you find the right path to mounting.
 - Running the ansible for setup postgresql and configure your postgresql. This configuration will put inside `YAML` style and refer with this article to deployment via `ansible`
 
-	1. [Deploy PostgreSQL via Docker and Ansible](PostgreSQL%20in%20Docker.md)
-	2. [Deploy PostgreSQL in Host with Ansible](PostgreSQL%20in%20VM.md)
+	1. [[Tech Second Brain/Databases/Playbooks Collections#PostgreSQL in Docker|PostgreSQL in Docker with Ansible]]
+	2. [[Tech Second Brain/Databases/Playbooks Collections#PostgreSQL in VM|PostgreSQL in host with Ansible|]]
 
 ```bash
 #!/bin/bash

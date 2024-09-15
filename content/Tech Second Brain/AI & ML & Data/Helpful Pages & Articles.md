@@ -12,7 +12,31 @@ tags:
 - [awesome-deep-learning](https://github.com/ChristosChristofidis/awesome-deep-learning) : A curated list of awesome Deep Learning tutorials, projects and communities.
 - [LF AI & DATA Projects](https://lfaidata.foundation/projects/): Linux Foundation project about Open Source Innovation in Artificial Intelligence and Data
 - [Hugging Face](https://huggingface.co/) : The Opensource AI community
-- [awesome-datascience](https://github.com/academic/awesome-datascience): 📝 An awesome Data Science repository to learn and apply for real world problems. 
+- [awesome-datascience](https://github.com/academic/awesome-datascience): 📝 An awesome Data Science repository to learn and apply for real world problems.
+
+# Artificial intelligence & Machine Learning
+
+## OpenSources
+
+- [VALL-E-X](https://github.com/Plachtaa/VALL-E-X): An open source implementation of Microsoft's VALL-E X zero-shot TTS model
+- [ColossalAI](https://github.com/hpcaitech/ColossalAI): Making large AI models cheaper, faster and more accessible
+- [trl](https://github.com/huggingface/trl): Train transformer language models with reinforcement learning. [Hugging Face](https://huggingface.co/docs/trl/index)
+- [opencv](https://github.com/opencv/opencv): Open Source Computer Vision Library. [Website Version](https://opencv.org/)
+- [private-gpt](https://github.com/zylon-ai/private-gpt): Interact with your documents using the power of GPT, 100% privately, no data leaks. [Website](https://privategpt.dev/)
+- [milvus - vector database](https://milvus.io/docs)
+- [triton-inference-server](https://github.com/triton-inference-server): [NVIDIA Triton Inference Server](https://github.com/triton-inference-server/server) provides a cloud and edge inferencing solution optimized for both CPUs and GPUs.
+- [openvino](https://github.com/openvinotoolkit/openvino): OpenVINO™ is an open-source toolkit for optimizing and deploying AI inference
+## Topics
+
+- [Tesseract OCR in Python with Pytesseract & OpenCV](https://nanonets.com/blog/ocr-with-tesseract/)
+
+# Data Science
+
+## Opensources
+
+- [datahub](https://github.com/datahub-project/datahub): The Metadata Platform for your Data Stack
+- [active_workflow](https://github.com/automaticmode/active_workflow): Polyglot workflows without leaving the comfort of your technology stack.
+## Topics
 
 # Youtube Channel
 
@@ -36,7 +60,3 @@ tags:
 - [The latest in Machine Learning | Papers With Code](https://paperswithcode.com/)
 - [Machine Learning Blog | ML@CMU | Carnegie Mellon University](https://blog.ml.cmu.edu/)
 - [Analytics India Magazine | Artificial Intelligence, Data Science, Machine Learning](https://analyticsindiamag.com/)
-# Research Topics
-
-- [Tesseract OCR in Python with Pytesseract & OpenCV](https://nanonets.com/blog/ocr-with-tesseract/)
-- [milvus - vector database](https://milvus.io/docs)

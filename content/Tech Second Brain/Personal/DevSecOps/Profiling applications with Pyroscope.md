@@ -153,11 +153,11 @@ When you want to add datasource, you need to login with `admin` user for having 
 2. If you go to the Data sources tab, Click on the add datasource and find the Pyroscope
 3. It will redirect you into additional tab, `grafana-pyroscope-datasource`. Next, you can config your datasource with `name, url, cookie, auth` (NOTICE: `url` is your DNS of Docker or maybe your localhost - configuration networking, consideration when use - default: `http://<pyroscope-ip>:4040`)
 
-![[Pasted image 20240305145608.png|600]]
+![[Pasted image 20240305145608.png|center|600]]
 
 4. Back to the `Home` tab, find `explore` and select `pyroscope`. Choose the optional in some field, click query button or blue button on edge of right
 
-![[Pasted image 20240305150120.png|600]]
+![[Pasted image 20240305150120.png|center|600]]
 
 ## Continious profiling application with Pyroscope
 

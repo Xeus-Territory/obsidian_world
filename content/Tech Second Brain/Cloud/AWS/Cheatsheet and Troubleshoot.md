@@ -29,6 +29,7 @@ You can figure what you need to do for start with `aws` via some website and art
 - [AWS Blog](https://aws.amazon.com/blogs)
 - [Github - Amazon Web Services](https://github.com/aws)
 - [Github - AWS Samples](https://github.com/aws-samples)
+- [awesome-aws](https://github.com/donnemartin/awesome-aws)
 
 You can manage `aws` as organization via the tree and sub-organization inside root account
 
