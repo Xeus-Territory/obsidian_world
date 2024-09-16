@@ -33,7 +33,7 @@ ansible <YOUR_HOSTS> -i inventories/hosts -m ping (200 Succeed - Moving to next 
 - Running the ansible for setup postgresql and configure your postgresql. This configuration will put inside `YAML` style and refer with this article to deployment via `ansible`
 
 	1. [[Tech Second Brain/Databases/Playbooks Collections#PostgreSQL in Docker|PostgreSQL in Docker with Ansible]]
-	2. [[Tech Second Brain/Databases/Playbooks Collections#PostgreSQL in VM|PostgreSQL in host with Ansible|]]
+	2. [[Tech Second Brain/Databases/Playbooks Collections#PostgreSQL in VM|PostgreSQL in host with Ansible]]
 
 ```bash
 #!/bin/bash
