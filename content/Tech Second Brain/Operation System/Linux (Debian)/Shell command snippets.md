@@ -211,6 +211,13 @@ ssh -N -L 8080:127.0.0.1:8080 -i /path/to/your/private_key <user>@<remote-host> 
 
 ## `jq` command
 
+List of articles relate `jq` with helpful solution
+
+- [5 Useful jq Commands to Parse JSON on the CLI](https://www.fabian-kleiser.de/blog/5-useful-jq-commands-parse-json-cli/)
+- [zendesk  - jq cheatsheet](https://www.fabian-kleiser.de/blog/5-useful-jq-commands-parse-json-cli/)
+- [cheat.sh/jq](https://cheat.sh/jq)
+- [jq 1.7 Manual](https://jqlang.github.io/jq/manual/)
+
 You can use `jq` to select multiple variable
 
 ```bash
@@ -223,6 +230,38 @@ You can use `jq` to select multiple variable and concat that to one string
 cat app.json | jq -r '(.expo.name + "." + .expo.version)'
 ```
 
+You can use `jq` with variable to pass through from command or define to your jq
+
+```bash
+curl -H "PRIVATE-TOKEN: $PRIVATE_GLAB_TOKEN" "https://gitlab.com/api/v4/users/$GLAB_USER_ID/contributed_projects" | jq --arg REPO_CHECKED_NAME "$REPO_CHECKED_NAME" '.[] | select(.name == $REPO_CHECKED_NAME) | .id'
+```
+
+`jq` support for another arg like `json`, you can try to concat object this one with your existence object. Explore more at [Add an object to existing JSON using jq](https://www.petermekhaeil.com/til/jq-append-json/) and [Append JSON Objects using jq](https://stackoverflow.com/questions/51147753/append-json-objects-using-jq)
+
+```bash
+cat ~/config-bk.json | jq -r --argjson addon "$(cat ~/.docker/config.json | jq -r ".auths")" '.auths+=$addon'
+```
+
+Convert json to string for multiple purpose
+
+```bash
+cat file.json | jq -c | jq -R
+```
+
+Get first keys in list object with `jq`
+
+```bash
+cat config-bk.json | jq  'keys[]'
+```
+
+Select the keys if value of a field is "auto". Explore at [Select the keys if value of a field is "auto"](https://unix.stackexchange.com/questions/719877/select-the-keys-if-value-of-a-field-is-auto)
+
+```bash
+# Get the object with value = auto
+jq 'map_values(select(.value == "auto"))' file
+# Get key with same situation
+jq -r 'map_values(select(.value == "auto"))|keys[]' file
+```
 ## `du` command 
 
 You can use `du` command for list all size inside your directory
@@ -367,6 +406,12 @@ To replace a string in file with `sed`, you can use command with format
 ```bash
 #Replace in file (Global)
 sed -i 's/OLD/NEW/g' path/file #Replace string inside a file
+```
+
+To replace in the string, you can control action with
+
+```bash
+echo "[MASKED]" | sed -e "s/\[MASKED\]/123456789/g"
 ```
 # Cheatsheet
 ## Re run the previous command

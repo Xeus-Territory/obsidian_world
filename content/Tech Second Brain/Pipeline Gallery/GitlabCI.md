@@ -25,7 +25,7 @@ tags:
 >13. [Gitlab CI/CD Pass artifacts/variables between pipelines](https://stackoverflow.com/questions/68179565/gitlab-ci-cd-pass-artifacts-variables-between-pipelines) - Methodology for resue artifacts
 >14. [Scripts and job logs](https://docs.gitlab.com/ee/ci/yaml/script.html#multiline-commands-not-preserved-by-folded-yaml-multiline-block-scalar) - Use for format script and log inside job
 >15. [GitLab CI/CD artifacts reports types](https://docs.gitlab.com/ee/ci/yaml/artifacts_reports.html) - Report type of Gitlab Artifact
-
+>16. [GitLab CI/CD Environments and deployments](https://docs.gitlab.com/ee/ci/environments/) - Environments describe where code is deployed.
 # React build app, test and build Image for container services
 
 >[!info]
