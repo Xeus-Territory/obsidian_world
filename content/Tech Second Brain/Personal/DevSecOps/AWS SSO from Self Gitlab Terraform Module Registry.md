@@ -246,7 +246,7 @@ sudo mv terraform-docs /usr/local/bin/
 
 And now definition `.pre-commit` configuration file
 
-```bash
+```yaml
 fail_fast: true
 
 repos:
@@ -271,7 +271,7 @@ pre-commit install
 
 So your `.git` will trigger that command after you try to run `git commit` to your upstream, next we will implement with `*.tf` to figure out what need to setup. Just a simple thing
 
-```ruby title="main.tf"
+```c title="main.tf"
 resource "random_integer" "example" {
   min = 1
   max = 50000
@@ -285,21 +285,21 @@ locals {
 }
 ```
 
-```ruby title="outputs.tf"
+```c title="outputs.tf"
 output "random_num" {
   value       = random_integer.example.result
   description = "Generate integer number from 1 to 50000"
 }
 ```
 
-```ruby title="variables.tf"
+```c title="variables.tf"
 variable "example" {
   description = "Example variable"
   default     = "hello world"
 }
 ```
 
-```ruby title="version.tf"
+```c title="version.tf"
 terraform {
   required_version = ">= 1.5.0"
 
@@ -394,7 +394,7 @@ terraform-gitlab-supply
 
 Let go to detail of each components, keep the same thing with `.pre-commit-config.yaml` file
 
-```ruby title="main.tf"
+```c title="main.tf"
 locals {
   aws_modules = {
     iam-identity-center = "Connects your existing workforce identity source and centrally manage access to AWS"
@@ -416,7 +416,7 @@ Conclusion
 - Provide `repo_name` and `description` into `for_each`
 - Use from module `./modules`
 
-```ruby title="backend.tf"
+```c title="backend.tf"
 terraform {
   # Keep your tfstate in your machine (Individual purpose but if team purpose need to use remote .tfstate)
   backend "local" {
@@ -441,7 +441,7 @@ Conclusion
 
 You need to provide add-on one file `variables.tf` to supply variable for `gitlab` with token
 
-```ruby title="variables.tf"
+```c title="variables.tf"
 variable "GITLAB_TOKEN" {
   description = "Providing for gitlab providers to authentication"
   type        = string
@@ -451,7 +451,7 @@ variable "GITLAB_TOKEN" {
 
 Next we head to provisioning inside `module` directory
 
-```ruby title="modules/gitlab.tf"
+```c title="modules/gitlab.tf"
 locals {
   repo_name           = "${var.provider_name}-${var.repo_name}"
   template_project_id = "xxxxxxx" # project-template-id
@@ -476,7 +476,7 @@ Conclusion
 - Supply `local` to set the name inside `gitlab_project` resource
 - `prevent_destroy` is enable to help you hard to destroy resource
 
-```ruby title="modules/variables.tf"
+```c title="modules/variables.tf"
 variable "repo_name" {
   type = string
 }
@@ -496,7 +496,7 @@ variable "create_repo" {
 }
 ```
 
-```ruby title="modules/versions.tf"
+```c title="modules/versions.tf"
 terraform {
   required_version = ">= 1.5.0"
   required_providers {
@@ -555,7 +555,7 @@ Next, we need add sub-group where you store module because if you miss this stuf
 
 Alright, you modify your `gitlab.tf` and we gonna ready to create repository
 
-```ruby title="module/gitlab.tf"
+```c title="module/gitlab.tf"
 locals {
   repo_name           = "${var.provider_name}-${var.repo_name}"
   template_project_id = "xxxxxxxx" # ID of the template project
@@ -570,7 +570,7 @@ resource "gitlab_project" "this" {
   use_custom_template             = true
   template_project_id             = local.template_project_id
   group_with_project_templates_id = "xxxxxxxx" # Group ID with template in, is subgroup of Namespace Group (not the same as Namespace ID)
-  namespace_id                    = "93347992" # Group ID to create project in
+  namespace_id                    = "xxxxxxxx" # Group ID to create project in
 
   lifecycle {
     prevent_destroy = true
@@ -603,7 +603,7 @@ First of all, the module will take structure like `terraform-module-example`, be
 
 We will move to detail for whole module
 
-```ruby title="main.tf"
+```c title="main.tf"
 # Create a new group sso with dynamic functionality
 resource "aws_identitystore_group" "sso_groups" {
   for_each          = var.sso_groups == null ? {} : var.sso_groups
@@ -703,7 +703,7 @@ resource "aws_ssoadmin_account_assignment" "account_assignment" {
 }
 ```
 
-```ruby title="data.tf"
+```c title="data.tf"
 # Fetch information about the existing SSO Instance
 data "aws_ssoadmin_instances" "instance" {}
 
@@ -744,7 +744,7 @@ data "aws_ssoadmin_permission_set" "existing_permission_sets" {
 }
 ```
 
-```ruby title="local.tf"
+```c title="local.tf"
 # - Users and Groups -
 locals {
   # Create a new local variable by flattening the complex type given in the variable "sso_users"
@@ -826,7 +826,7 @@ locals {
 }
 ```
 
-```ruby title="variables.tf"
+```c title="variables.tf"
 # Groups
 variable "sso_groups" {
   description = "Names of the groups you wish to create in IAM Identity Center."
@@ -1052,7 +1052,7 @@ touch .terraformrc ~/.terraformrc
 
 Now edit that with content
 
-```ruby title=".terraformrc"
+```c title=".terraformrc"
 credentials "gitlab.com" {
   token = "<TOKEN>"
 }
@@ -1060,7 +1060,7 @@ credentials "gitlab.com" {
 
 Alright, now you can reuse this module from your local machine 🥶🥶. Now we try to define it with
 
-```ruby title="main.tf"
+```c title="main.tf"
 module "sso_identity" {
   source = "gitlab.com/awesome_terraform_practice/aws-iam-identity-center/aws"
   version = "0.0.1"
@@ -1228,5 +1228,5 @@ Disable your `AWS SSO` in region by doing with step in [documentation](https://d
 >This is all for this weekend, hope you feel great with adventure to hand on with AWS SSO and provide supply methodology to contribute your `terraform` module for your own. This story can come so long, but so sorry I think it is enough and more things I wonder you need to get from this. But I recommend you try to fail, and get the experience for yourself and AWS SSO is a one of top solution for modern AWS managing 🚬
 
 >[!quote]
-This week is really tough, and gonna say about I don't have  mood to release anything else, but for my savage, I want to continue contribute for my community, you are such a great things to help me stand up and think every day. Therefore, plz stay safe, learn new something and I will see yah next weekend. Bye bye 👋
+>This week is really tough, and gonna say about I don't have  mood to release anything else, but for my savage, I want to continue contribute for my community, you are such a great things to help me stand up and think every day. Therefore, plz stay safe, learn new something and I will see yah next weekend. Bye bye 👋
 
