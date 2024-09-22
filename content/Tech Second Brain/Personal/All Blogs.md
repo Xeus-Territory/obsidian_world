@@ -164,10 +164,12 @@ tags:
 - [[Atlantis with ECS for automatic provisioning]]
 - [[Create SSL Cert with ACM and Route53 for AWS Services]]
 - [[Build mobile with Expo (Part 1)]]
-# CI/CD Gallery
+- [[Build mobile with Expo (Part 2)]]
+- [[Switch Role between AWS Accounts]]
+# CI/CD + OS Profile Gallery
 
 >[!info]
->More talk about CI/CD with multiple purpose, try to approach and gain the experience on multiple platform. Still update when have new things LOL 😃
+>More talk about CI/CD with multiple purpose, try to approach and gain the experience on multiple platform. Still update when have new things LOL 😃. And additional information about OS profile that tell about what things I have inside my host
 
 **Timeline: 2024 - Current**
 ## 2024
@@ -175,11 +177,13 @@ tags:
 - [[Github Action|Github Action]]
 - [[Azure Pipelines|Azure Pipelines]]
 - [[GitlabCI|Gitlab CI]]
+- [[Linux profile]]
+- [[Windows profile]]
 
-# Helpful Collections
+# Helpful Collections + Snippets
 
 >[!info]
->More about my collection which talk about multiple topics, and technologies in multiple field like AI, ML, DevOps, Security and moreover
+>More about my collection which talk about multiple topics, and technologies in multiple field like AI, ML, DevOps, Security and moreover, with a little bit snippet which most of useful tool that I have tried 👍👍👍
 
 **Timeline: 2024 - Current**
 
@@ -199,35 +203,13 @@ tags:
 - [[Tech Second Brain/Databases/Playbooks Collections|Database Playbooks Collections]]
 - [[Tech Second Brain/Docker & Kubernetes/Playbooks Collections|Docker and Kubernetes Playbooks Collections]]
 - [[Tech Second Brain/Operation System/Playbooks Collections|OS Playbooks Collections]]
-
-# OS Profile
-
->[!info]
->The information about OS profile that tell about what things I have inside my host
-
-**Timeline: 2024 - Current**
-
-## 2024
-
-- [[Linux profile]]
-- [[Windows profile]]
-
-# Command and Code Snippets
-
->[!info]
->The snippets which most of useful tool that I have tried 👍👍👍
-
-**Timeline: 2024 - Current**
-
-## 2024
-
-- [[Tech Second Brain/Cloud/Azure/Cheatsheet and Troubleshoot#Azure CLI|Azure]]
-- [[Tech Second Brain/Cloud/AWS/Cheatsheet and Troubleshoot#AWS CLI|AWS]]
-- [[Docker]]
-- [[Docker compose]]
-- [[API usage|Elasticsearch]]
-- [[Kubectl snippet|Kubectl]]
-- [[Git|Git]]
-- [[HTML|HTML]]
-- [[Powershell Snippets|Powershell]]
-- [[Shell command snippets|Shell Bash]]
+- [[Tech Second Brain/Cloud/Azure/Cheatsheet and Troubleshoot#Azure CLI|Azure Cheatsheet and Troubleshoot]]
+- [[Tech Second Brain/Cloud/AWS/Cheatsheet and Troubleshoot#AWS CLI|AWS Cheatsheet and Troubleshoot]]
+- [[Docker|Docker Cheatsheet and Troubleshoot]]
+- [[Docker compose|Docker Compose Cheatsheet and Troubleshoot]]
+- [[API usage|Elasticsearch Cheatsheet and Troubleshoot]]
+- [[Kubectl snippet|Kubectl Cheatsheet and Troubleshoot]]
+- [[Git|Git Cheatsheet and Troubleshoot]]
+- [[HTML|HTML Cheatsheet and Troubleshoot]]
+- [[Powershell Snippets|Powershell Cheatsheet and Troubleshoot]]
+- [[Shell command snippets|Shell Bash Cheatsheet and Troubleshoot]]

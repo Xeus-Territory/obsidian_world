@@ -114,7 +114,7 @@ We have both solution open-source and profit to handle that, explore at [Module 
 
 	![[Pasted image 20240914120142.png]]
 
-- Furthermore, there are candidates stand out there, for free and private registry purpose [tapir](https://github.com/PacoVK/tapir), [Terrareg](https://github.com/matthewjohn/terrareg), ... Read [article](https://medium.com/@DiggerHQ/private-module-registries-for-terraform-a-list-of-available-tooling-options-3e2f798d41b5) and [awesoom-tf](https://github.com/shuaibiyy/awesome-tf#self-hosted-registries) to exploring more
+- Furthermore, there are candidates stand out there, for free and private registry purpose [tapir](https://github.com/PacoVK/tapir), [Terrareg](https://github.com/matthewjohn/terrareg), ... Read [article](https://medium.com/@DiggerHQ/private-module-registries-for-terraform-a-list-of-available-tooling-options-3e2f798d41b5) and [awesome-tf](https://github.com/shuaibiyy/awesome-tf#self-hosted-registries) to exploring more
 
 	![[Pasted image 20240914120751.png]]
 
@@ -1127,7 +1127,7 @@ module "sso_identity" {
 
 ```
 
-```ruby title="providers"
+```c title="providers"
 terraform {
   required_version = ">= 1.5.0"
   required_providers {

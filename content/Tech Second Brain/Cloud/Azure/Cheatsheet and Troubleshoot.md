@@ -34,10 +34,11 @@ What you can find out and figure out about Azure, Cloud Computing, Documentation
 - [Azure CLI - User Guide](https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest)
 - [Azure Price Calculator](https://azure.microsoft.com/en-gb/pricing/calculator/)
 - [Azure - Blog](https://azure.microsoft.com/en-us/blog/)
-- [awesome-azure-architecture](https://github.com/lukemurraynz/awesome-azure-architecture)
+- [Awesome Microsoft Azure Architecture](https://github.com/lukemurraynz/awesome-azure-architecture)
+- [Azure Resource Manager QuickStart Templates](https://github.com/Azure/azure-quickstart-templates) - Azure Quickstart Templates about `azure-arm` or `bicep`
 - [Github - Microsoft Azure](https://github.com/Azure) - APIs, SDKs and open source projects from Microsoft Azure
-- [azure-quickstart-templates](https://github.com/Azure/azure-quickstart-templates) - Azure Quickstart Templates about `azure-arm` or `bicep`
 - [Azure Verified Modules](https://azure.github.io/Azure-Verified-Modules/) - An initiative to consolidate and set the standards for what a good Infrastructure-as-Code module looks like.
+- [Monthly Azure credits for Visual Studio subscribers](https://azure.microsoft.com/en-us/pricing/member-offers/credit-for-visual-studio-subscribers) - Use this link when you have received credit from Visual Studio subscription
 # Azure CLI
 
 ## az vm

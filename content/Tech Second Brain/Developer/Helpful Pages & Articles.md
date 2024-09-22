@@ -33,6 +33,7 @@ tags:
 - [Medium - Most Common 10 RabbitMQ Mistakes and How to Avoid Them](https://blog.devgenius.io/most-common-10-rabbitmq-mistakes-and-how-to-avoid-them-f4b74af5885d)
 - [Medium - Architectural Metapatterns](https://medium.com/itnext/architectural-metapatterns-1834bdbc4221)
 - [Dev.to - 10 Things You Can Learn from Netflix’s Architecture](https://dev.to/somadevtoo/10-things-you-can-learn-from-netflixs-architecture-1bnn)
+- [QAMadness - Your Guide to Automated Integration Testing](https://www.qamadness.com/your-guide-to-automated-integration-testing/)
 # Developer online tools
 
 - [10015.io](https://10015.io/) : A “free all-in-one toolbox” solution created to ease your life by preventing bookmark mess.

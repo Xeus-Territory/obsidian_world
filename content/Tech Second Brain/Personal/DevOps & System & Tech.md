@@ -31,6 +31,7 @@ tags:
 - [dynamic-analysis](https://github.com/analysis-tools-dev/dynamic-analysis): A curated list of dynamic analysis tools and linters
 - [system-design-101](https://github.com/ByteByteGoHq/system-design-101): Explain complex systems using visuals and simple terms. Help you prepare for system design interviews.
 - [startpack](https://github.com/tldr-devops/startpack): Selfhosted tech starter pack for development of new project or startup
+- [awesome-console-services](https://github.com/chubin/awesome-console-services): A curated list of awesome console services (reachable via HTTP, HTTPS and other network protocols) 
 
 ## Page
 
@@ -149,6 +150,10 @@ tags:
 - [Medium - Noisy Neighbor Detection with eBPF](https://netflixtechblog.com/noisy-neighbor-detection-with-ebpf-64b1f4b3bbdd)
 - [Medium - VictoriaLogs: an overview, run in Kubernetes, LogsQL, and Grafana](https://itnext.io/victorialogs-an-overview-run-in-kubernetes-logsql-and-grafana-88e0934a5ccd)
 - [Infracloud - 5 Tools to Auto-Generate Terraform Configuration Files](https://www.infracloud.io/blogs/auto-generate-terraform-configuration-files/)
+- [Medium - 11 Open-Source SaaS Killer — Selfhost With Docker](https://blog.devgenius.io/11-open-source-saas-killer-selfhost-with-docker-034456653568)
+- [Medium - 11 Open-Source SaaS Killer — Selfhost With Docker -2](https://medium.com/@harendra21/11-open-source-saas-killer-selfhost-with-docker-2-5d507de8b68f)
+- [Medium - Pulumi: The Real Infrastructure as Code](https://8grams.medium.com/pulumi-the-real-infrastructure-as-code-f8cf5a5f3071)
+- [Medium - 6 Best Free OnCall Software in 2024, Open-Source and SaaS](https://medium.com/statuspal/6-best-free-oncall-software-in-2024-open-source-and-saas-36f82595e539)
 # DevOps Youtube Channel
 
 ![[youtube.png]]
@@ -542,6 +547,7 @@ tags:
 - [openreplay](https://github.com/openreplay/openreplay): Session replay and analytics tool you can self-host. Ideal for reproducing issues, co-browsing with users and optimizing your product.
 - [opentelemetry](https://opentelemetry.io/docs/): OpenTelemetry, also known as OTel, is a vendor-neutral open source [observability](https://opentelemetry.io/docs/concepts/observability-primer/#what-is-observability) framework for instrumenting, generating, collecting, and exporting telemetry data such as [traces](https://opentelemetry.io/docs/concepts/signals/traces/), [metrics](https://opentelemetry.io/docs/concepts/signals/metrics/), and [logs](https://opentelemetry.io/docs/concepts/signals/logs/).
 - [Sentry](https://github.com/getsentry/sentry): Developer-first error tracking and performance monitoring. [Website](https://sentry.io/)
+- [GlitchTip](https://glitchtip.com/documentation): Simple, open source error tracking
 
 ## Orchestration Framework
 
@@ -561,8 +567,14 @@ tags:
 
 - [playwright](https://github.com/microsoft/playwright): Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API. [Documentation](https://playwright.dev/)
 - [selenium](https://github.com/SeleniumHQ/selenium): A browser automation framework and ecosystem. [Documentation](https://selenium.dev/)
+- [jest](https://jestjs.io/docs/getting-started): A delightful JavaScript Testing Framework with a focus on simplicity.
 
 ## Candidate PaaS 
 
 - [dokku](https://github.com/dokku/dokku): A docker-powered PaaS that helps you build and manage the lifecycle of applications. [Documentation](https://dokku.com/docs/getting-started/installation/)
 - [backstage](https://github.com/backstage/backstage): An open framework for building developer portals. [Documentation](https://backstage.io/docs/overview/what-is-backstage)
+
+
+## eBPF
+
+- [ecapture](https://github.com/gojue/ecapture): Capturing SSL/TLS plaintext without a CA certificate using eBPF. Supported on Linux/Android kernels for amd64/arm64. [Documentation](https://ecapture.cc/guide/introduction.html)

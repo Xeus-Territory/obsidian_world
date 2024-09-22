@@ -33,6 +33,7 @@ tags:
 - [influxdb](https://github.com/influxdata/influxdb): Scalable datastore for metrics, events, and real-time analytics
 - [rocksdb](https://github.com/facebook/rocksdb): A library that provides an embeddable, persistent key-value store for fast storage.
 - [typesense](https://github.com/typesense/typesense): Open Source alternative to Algolia + Pinecone and an Easier-to-Use alternative to ElasticSearch ⚡ 🔍 ✨
+- [druid](https://github.com/apache/druid): A high performance real-time analytics database.
 
 ## Migration
 

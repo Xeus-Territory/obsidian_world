@@ -11,6 +11,10 @@ tags:
 	<img src=#>
 	<strong><em><p style="text-align: center;">Blue and Green deployment strategy</p></em></strong>
 </div>
+
+<div align="center">
+	<p style="text-align: center;">Blue and Green deployment strategy</p>
+</div>
 ```
 
 # Embed video on markdown, or HTML

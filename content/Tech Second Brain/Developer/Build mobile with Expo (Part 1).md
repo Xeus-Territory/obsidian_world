@@ -241,7 +241,7 @@ Current if you take a look, your `app.json` file where define your application w
 }
 ```
 
-Next, **EAS** has file called profile where you define your information for your build, read and explore more about this stuff through [Configure EAS Build with eas.json](https://docs.expo.dev/build/eas-json/). You will create this one for your build
+Next, **EAS** has file called profile where you define your information for your build, read and explore more about this stuff through [Configure EAS Build with eas.json](https://docs.expo.dev/build/eas-json/) and [eas.json](https://docs.expo.dev/eas/json/). You will create this one for your build
 
 ```json title="eas.json"
 {
