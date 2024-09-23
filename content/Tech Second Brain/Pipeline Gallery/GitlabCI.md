@@ -6,27 +6,44 @@ tags:
   - basic-templates
   - automation
 ---
+# Introduce GitlabCI
+
 >[!summary]
 >This template which store short `yaml` to show how can work with `GitlabCI` and note some specify for use case
->
->*More information about Gitlab CI/CD and Variables. Go check:*
->1. [Gitlab CI/CD Syntax](https://docs.gitlab.com/ee/ci/yaml/)
->2. [Variables](https://docs.gitlab.com/ee/ci/variables/) & [Predefine variables](https://docs.gitlab.com/ee/ci/variables/predefined_variables.html) - GitlabCI Variables and Predefine variables
->3. [Gitlab Documentation](https://docs.gitlab.com/ee/user/) - General Documentation about Gitlab
->4. [GitlabCI Services](https://docs.gitlab.com/ee/ci/services/) - Use service keyword GitlabCI
->5. [Run your CI/CD jobs in Docker containers](https://docs.gitlab.com/ee/ci/docker/using_docker_images.html#use-statically-defined-credentials) - Setup GitlabCI in docker+machine
->6. [Use Docker to build Docker images](https://docs.gitlab.com/ee/ci/docker/using_docker_build.html) - Run Dind to build image inside GitlabCI
->7. [GitLab Runner](https://docs.gitlab.com/runner/) - Information about Gitlab Runner and configuration
->8. [DRY development: A cheatsheet on reusability throughout GitLab](https://about.gitlab.com/blog/2023/01/03/keeping-your-development-dry/) - DRY Mindset
->9. [Optimize GitLab CI/CD configuration files](https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html) - Optimize and DRY Mindset
->10. [CI/CD components](https://docs.gitlab.com/ee/ci/components/) - GitlabCI Components
->11. [GitLab CI/CD examples](https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html) - GitlabCI/CD Collections
->12. [Downstream pipelines](https://docs.gitlab.com/ee/ci/pipelines/downstream_pipelines.html?tab=Multi-project+pipeline) - Use Downstream pipelines for trigger
->13. [Gitlab CI/CD Pass artifacts/variables between pipelines](https://stackoverflow.com/questions/68179565/gitlab-ci-cd-pass-artifacts-variables-between-pipelines) - Methodology for resue artifacts
->14. [Scripts and job logs](https://docs.gitlab.com/ee/ci/yaml/script.html#multiline-commands-not-preserved-by-folded-yaml-multiline-block-scalar) - Use for format script and log inside job
->15. [GitLab CI/CD artifacts reports types](https://docs.gitlab.com/ee/ci/yaml/artifacts_reports.html) - Report type of Gitlab Artifact
->16. [GitLab CI/CD Environments and deployments](https://docs.gitlab.com/ee/ci/environments/) - Environments describe where code is deployed.
-# React build app, test and build Image for container services
+
+*More information about Gitlab CI/CD and Variables. Go check*
+
+## General
+
+- [Gitlab Documentation](https://docs.gitlab.com/ee/user/) - General Documentation about Gitlab
+- [GitLab Runner](https://docs.gitlab.com/runner/) - Information about Gitlab Runner and configuration
+- [GitLab CI/CD examples](https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html) - GitlabCI/CD Collections
+
+## Syntax
+
+- [Gitlab CI/CD Syntax](https://docs.gitlab.com/ee/ci/yaml/) - Introduce about Gitlab Syntax and usage
+- [Variables](https://docs.gitlab.com/ee/ci/variables/) & [Predefine variables](https://docs.gitlab.com/ee/ci/variables/predefined_variables.html) - GitlabCI Variables and Predefine variables
+- [Scripts and job logs](https://docs.gitlab.com/ee/ci/yaml/script.html#multiline-commands-not-preserved-by-folded-yaml-multiline-block-scalar) - Use for format script and log inside job
+## Features
+
+- [GitlabCI Services](https://docs.gitlab.com/ee/ci/services/) - Use service keyword GitlabCI
+- [Run your CI/CD jobs in Docker containers](https://docs.gitlab.com/ee/ci/docker/using_docker_images.html#use-statically-defined-credentials) - Setup GitlabCI in docker+machine
+- [Use Docker to build Docker images](https://docs.gitlab.com/ee/ci/docker/using_docker_build.html) - Run Dind to build image inside GitlabCI
+- [DRY development: A cheatsheet on reusability throughout GitLab](https://about.gitlab.com/blog/2023/01/03/keeping-your-development-dry/) - DRY Mindset
+- [Optimize GitLab CI/CD configuration files](https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html) - Optimize and DRY Mindset
+- [CI/CD components](https://docs.gitlab.com/ee/ci/components/) - GitlabCI Components
+- [Downstream pipelines](https://docs.gitlab.com/ee/ci/pipelines/downstream_pipelines.html?tab=Multi-project+pipeline) - Use Downstream pipelines for trigger
+- [Gitlab CI/CD Pass artifacts/variables between pipelines](https://stackoverflow.com/questions/68179565/gitlab-ci-cd-pass-artifacts-variables-between-pipelines) - Methodology for resue artifacts
+- [GitLab CI/CD artifacts reports types](https://docs.gitlab.com/ee/ci/yaml/artifacts_reports.html) - Report type of Gitlab Artifact
+- [GitLab CI/CD Environments and deployments](https://docs.gitlab.com/ee/ci/environments/) - Environments describe where code is deployed.
+- [GitLab container registry](https://docs.gitlab.com/ee/user/packages/container_registry/) - You can use the integrated container registry to store container images for each GitLab project.
+- [How to modify a variable, used as name for docker image](https://forum.gitlab.com/t/how-to-modify-a-variable-used-as-name-for-docker-image/81438/1) - Dynamic image to using for gitlabci
+# Use cases and scenarios
+
+## Case 1: Completely pipeline for Container Services
+
+>[!info]
+>React build app, test and build Image for container services
 
 >[!info]
 >This pipeline definition will cover for me and you with mostly cases when you work with GitlabCI
@@ -114,7 +131,10 @@ build-image-job:
   allow_failure: false
 ```
 
-# Build and push docker image to private ECR with dind (Local Include)
+## Case 2: Build & push docker image to private registry
+
+>[!info]
+>Use private ECR of AWS with dind (Local Include)
 
 Before run and execute the script, you need to expose some variables into CI/CD variables because of AWS authentication, and one more to ensure anything secrets will not expose
 
@@ -167,6 +187,8 @@ include:
   - local: "/templates/ci/ecr-auth.gitlab-ci.yml"
 
 image: docker:27
+# Remember if you use docker:dind from another registry, set alias for service to prevent the error
+# Documentation: https://docs.gitlab.com/ee/ci/services/#available-settings-for-services
 services:
   - docker:dind
 
@@ -192,7 +214,7 @@ build-node-image:
   allow_failure: false
 ```
 
-# Authentication Job with private ECR from remote repo
+## Case 3: Authentication Job with private ECR from remote repository
 
 ![[RepoAuthPrivateECR.png]]
 
@@ -201,6 +223,9 @@ build-node-image:
 
 Following this idea, `Gitlab` offers for us one methodology to help us authentication private CR via CI/CD variables by `DOCKER_AUTH_CONFIG`. Read more at [documentation](https://docs.gitlab.com/ee/ci/docker/using_docker_images.html#configure-a-job)
 
+>[!note]
+>Remember, **DOCKER_AUTH_CONFIG** will only help you authenticate your service for pull image from docker registry, If you want to make interaction with private registry, please use `docker login` or `crane auth login`
+
 1. Create a CI/CD variable `DOCKER_AUTH_CONFIG` with the content of the Docker https://docs.gitlab.com/ee/ci/yaml/script.html#multiline-commands-not-preserved-by-folded-yaml-multiline-block-scalarconfiguration file as the value
 
 	- For protected, general repository will use and wrap authentication, such as `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`, we only authenticate private `ECR` via only general repository. 
@@ -208,7 +233,7 @@ Following this idea, `Gitlab` offers for us one methodology to help us authentic
 
 2. You can now use any private image from private ECR defined in `image` or `services` in your `.gitlab-ci.yml` file
 
-## Create Upstream Pipeline
+### Create Upstream Pipeline
 
 Upstream pipeline where we configure to generate token of ECR or private dockerhub, you can do same with each others
 
@@ -267,7 +292,7 @@ For example, I create `pipeline schedule` with strategy
 - Select branch, I choose `main` branch
 - You can add more custom `variable` when run pipeline
 - Click create and enjoy
-## Create Downstream pipeline
+### Create Downstream pipeline
 
 With downstream pipeline you have two option
 
@@ -320,7 +345,7 @@ recheck:
 
 	![[Pasted image 20240818144644.png]]
 
-## For optimize pipeline, and easily reuse by other repo
+### For optimize pipeline, and easily reuse by other repository
 
 With idea cut off the effort for user who want to implement pipeline, you just change job from execute to hidden with `.` form with become template for reuse by remote repositories, like these
 

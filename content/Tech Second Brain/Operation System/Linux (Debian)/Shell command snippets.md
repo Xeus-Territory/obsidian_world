@@ -731,6 +731,76 @@ find / > /dev/null 2>&1
 
 **Find this problem ▶️ ▶️  [What is /dev/null 2>&1?](https://stackoverflow.com/questions/10508843/what-is-dev-null-21)**
 
+## User Management in Linux
+
+>[!info]
+>With User and Group configuration in Linux become potential to managing, and enhance your security, user connection and moreover. Following some situation to keep some command that be useful for us when manipulate this stuff inside Linux
+
+Some articles can be good for us when practicing with those stuff around
+
+- [Ubuntu Doc - User management](https://ubuntu.com/server/docs/user-management)
+- [User Management in Linux](https://phoenixnap.com/kb/user-management-linux)
+- [How to Manage Users in Linux](https://www.freecodecamp.org/news/how-to-manage-users-in-linux/)
+- [Introduction to usermod command](https://www.golinuxcloud.com/usermod-command-in-linux/)
+### Change Password
+
+If you want to change password of current user, you can use command
+
+```bash
+# For Current User
+passwd
+
+# For Root User
+sudo passwd
+
+# For another user
+passwd <username>
+```
+
+### Add and Delete user
+
+In this situation, you have multiple command to handle it, such as `adduser`, `useradd`, `deluser` and `userdel`. With the graduation introduce by Ubuntu Doc, I will choose `adduser` and `deluser` to handle this case
+
+```bash
+# Add user with no need handle much
+sudo adduser username
+
+# Del user with no need erase through multiple steps
+sudo deluser username
+```
+
+### Add and Delete user out of group
+
+There is many way to handle this work, but I prefer to use it with `usermod` command
+
+```bash
+# Add user to group
+sudo usermod -aG group username
+
+# Remove user out group
+sudo usermod -rG group username
+```
+
+### Helpful `usermod` command
+
+Change your user with new name, but you need do it on another user with kill that shell, because if you access to your old account, I will be attached by process
+
+```bash
+sudo usermod -l old_name new_name
+```
+
+Change the shell of user, you can switch to user to use `chsh` but this can be done remotely
+
+```bash
+sudo usermod --shell /path/to/shell username
+```
+
+Move the content of user's home directory using `usermod` command
+
+```bash
+sudo usermod -d new_dir_path -m user_name
+```
+
 # External Commands
 ## Caddy server
 

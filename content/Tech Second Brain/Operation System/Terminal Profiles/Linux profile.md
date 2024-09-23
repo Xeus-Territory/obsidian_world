@@ -84,6 +84,7 @@ sudo apt install -y jq \
 	htop \
 	procps \
 	gnome-shell-extensions \
+	gnome-shell-extension-manager \
 	terminator
 	
 # Install kubectl
@@ -157,6 +158,9 @@ source ~/.zshrc
 # Install Vscode Stable Version
 wget https://code.visualstudio.com/sha/download\?build\=stable\&os\=linux-deb-x64 -O vscode.deb && sudo dpkg -i vscode.deb && rm -rf vscode.deb
 
+# Install Chrome stable version
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O chrome.deb && sudo dpkg -i chrome.deb && rm -rf chrome.deb
+
 # Install digital ocean CLI
 # Doc: https://docs.digitalocean.com/reference/doctl/how-to/install/
 wget https://github.com/digitalocean/doctl/releases/download/v1.104.0/doctl-1.104.0-linux-amd64.tar.gz
@@ -168,6 +172,14 @@ rm -rf doctl-1.104.0-linux-amd64.tar.gz
 # Doc: https://linuxcapable.com/how-to-install-gimp-on-ubuntu-linux/
 sudo apt update
 sudo apt install gimp -y
+
+# Install bamboo for vietnamese
+sudo add-apt-repository ppa:bamboo-engine/ibus-bamboo
+sudo apt-get update
+sudo apt-get install ibus ibus-bamboo --install-recommends
+ibus restart
+# If failure to connect, It means bamboo daemon not work, you can use 
+# ibus-daemon -d
 ```
 
 # Install programming language for ZSH
@@ -338,7 +350,7 @@ export PATH="$PATH:~/.local/bin"
 export KUBE_EDITOR="nano" # Kube edit will use nano for default editor
 
 # source <(kubectl completion zsh)
-# alias k="kubectl"
+alias k="kubectl"
 # alias kgp="kubectl get pods"
 alias kn="kubectl config set-context --current --namespace"
 alias kaf="kubectl apply -f "

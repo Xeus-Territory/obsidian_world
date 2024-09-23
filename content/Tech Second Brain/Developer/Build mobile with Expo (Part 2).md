@@ -309,7 +309,7 @@ With Expo, **EAS_CLI** actually support you through method to handling both `bui
 eas build --platform "$DEPLOY_PLATFORM" --non-interactive --no-wait --profile production --auto-submit
 ```
 
-Fully CI/CD Pipeline write down in Github Action by [Luca Zani](https://medium.com/devops-dev/ci-cd-on-github-for-expo-projects-288c517ff14a), get the applause for him withj really useful and detail pipeline 🤝
+Fully CI/CD Pipeline write down in Github Action by [Luca Zani](https://medium.com/devops-dev/ci-cd-on-github-for-expo-projects-288c517ff14a), get the applause for him about useful and detailing pipeline 🤝
 
 # Conclusion
 
