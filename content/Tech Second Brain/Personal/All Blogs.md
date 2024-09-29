@@ -165,6 +165,7 @@ tags:
 - [[Create SSL Cert with ACM and Route53 for AWS Services]]
 - [[Build mobile with Expo (Part 1)]]
 - [[Build mobile with Expo (Part 2)]]
+- [[AWS SSO from Self Gitlab Terraform Module Registry]]
 - [[Switch Role between AWS Accounts]]
 # CI/CD + OS Profile Gallery
 
@@ -189,6 +190,8 @@ tags:
 
 ## 2024
 
+### Collections
+
 - [[Tech Second Brain/Operation System/Helpful Pages & Articles|Operation System both of Linux and Windows]]
 - [[Tech Second Brain/Docker & Kubernetes/Helpful Pages & Articles|Docker and Kubernetes]]
 - [[Tech Second Brain/Developer/Helpful Pages & Articles|Developer]]
@@ -196,20 +199,21 @@ tags:
 - [[Tech Second Brain/Cyber & Info Security/Helpful Pages & Articles|Cyber & Info Security]]
 - [[Tech Second Brain/AI & ML & Data/Helpful Pages & Articles|Artificial intelligence, Machine Learning and Data Science]]
 - [[DevOps & System & Tech|DevOps, Systems and Technologies]]
-- [[Utilities Site|Softwares & Tools Helpful Pages & Articles]]
-- [[Tech Second Brain/Cloud/Azure/Cheatsheet and Troubleshoot|Azure Cheatsheet and Troubleshoot]]
-- [[Tech Second Brain/Cloud/AWS/Cheatsheet and Troubleshoot|AWS Cheatsheet and Troubleshoot]]
-- [[Shell script collections|Shell Scripting]]
-- [[Tech Second Brain/Databases/Playbooks Collections|Database Playbooks Collections]]
-- [[Tech Second Brain/Docker & Kubernetes/Playbooks Collections|Docker and Kubernetes Playbooks Collections]]
-- [[Tech Second Brain/Operation System/Playbooks Collections|OS Playbooks Collections]]
-- [[Tech Second Brain/Cloud/Azure/Cheatsheet and Troubleshoot#Azure CLI|Azure Cheatsheet and Troubleshoot]]
-- [[Tech Second Brain/Cloud/AWS/Cheatsheet and Troubleshoot#AWS CLI|AWS Cheatsheet and Troubleshoot]]
-- [[Docker|Docker Cheatsheet and Troubleshoot]]
-- [[Docker compose|Docker Compose Cheatsheet and Troubleshoot]]
-- [[API usage|Elasticsearch Cheatsheet and Troubleshoot]]
-- [[Kubectl snippet|Kubectl Cheatsheet and Troubleshoot]]
-- [[Git|Git Cheatsheet and Troubleshoot]]
-- [[HTML|HTML Cheatsheet and Troubleshoot]]
-- [[Powershell Snippets|Powershell Cheatsheet and Troubleshoot]]
-- [[Shell command snippets|Shell Bash Cheatsheet and Troubleshoot]]
+- [[Utilities Site|Softwares and Tools Helpful Pages]]
+
+### DIY Cheatsheet and Troubleshoot
+
+- [[Tech Second Brain/Cloud/Azure/Cheatsheet and Troubleshoot|Azure Cloud]]
+- [[Tech Second Brain/Cloud/AWS/Cheatsheet and Troubleshoot|AWS Cloud]]
+- [[Shell script collections|DIY Shell Scripting]]
+- [[Tech Second Brain/Databases/Playbooks Collections|DIY Database Ansible Playbooks]]
+- [[Tech Second Brain/Docker & Kubernetes/Playbooks Collections|DIY Docker and Kubernetes Ansible Playbooks]]
+- [[Tech Second Brain/Operation System/Playbooks Collections|DIY OS Ansible Playbooks]]
+- [[Docker]]
+- [[Docker compose|Docker Compose]]
+- [[API usage|Elasticsearch]]
+- [[Kubectl snippet|Kubectl]]
+- [[Git|Git]]
+- [[HTML|HTML]]
+- [[Powershell Snippets|Powershell Commands]]
+- [[Shell command snippets|Shell Bash Commands]]

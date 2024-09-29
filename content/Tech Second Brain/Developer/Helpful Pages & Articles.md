@@ -16,6 +16,7 @@ tags:
 - [Webflow University](https://university.webflow.com/) : Learn how to design & build pro websites — visually.
 - [30-seconds-of-code](https://github.com/Chalarangelo/30-seconds-of-code): Short code snippets for all your development needs. [Website](https://www.30secondsofcode.org/)
 - [project-based-learning](https://github.com/practical-tutorials/project-based-learning): Curated list of project-based tutorials
+- [vietnam-devs](https://github.com/vietnam-devs): Vietnam Developer Group
 
 # Blog Pages
 

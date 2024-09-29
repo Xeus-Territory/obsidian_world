@@ -464,6 +464,25 @@ Now access the URL which bind via `CNAME` of `Route53` and get access to `Atlant
 
 ![[Pasted image 20240804182839.png]]
 
+## Add some specific configuration for Atlantis (Update)
+
+To manipulate your Atlantis can retrieve any module from remote registry, such as GitLab, Terraform Cloud, ... This platform releases for us the method through environment variable, including
+
+- [--tfe-hostname](https://www.runatlantis.io/docs/server-configuration.html#tfe-hostname): Hostname of your Terraform Enterprise installation to be used in conjunction. `e.g: gitlab.com`, but with default:  `app.terraform.io`
+- [--tfe-token](https://www.runatlantis.io/docs/server-configuration.html#tfe-token): A token for Terraform Cloud/Terraform Enterprise integration. `e.g: glpat-xxxxxx` or `secret-manager:xxxxx`
+
+Explore more about this configuration through article [Atlantis - Terraform Cloud/Enterprise](https://www.runatlantis.io/docs/terraform-cloud.html)
+
+>[!info]
+>If you know you know, Terraform offer us some methods to configuration that one, but you need to hand on with manually. Read more at: [CLI Configuration File (.terraformrc or terraform.rc)](https://developer.hashicorp.com/terraform/cli/config/config-file)
+
+For example:
+
+```bash title="~/.terraformrc"
+credentials "gitlab.com" {
+  token = "glpat-xxxxxxxxx"
+}
+```
 # How `Webhook` work with `Atlantis`
 
 Now we update `webhook` configuration in URL to your actually URL of `Atlantis`, try click test and you will see `HTTP 200` and that one really good, now you can use `Atlantis` in your Gitlab

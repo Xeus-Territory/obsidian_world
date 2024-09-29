@@ -11,44 +11,47 @@ tags:
 
 # Awesome Repository
 
+## Repository
+
 - [awesome-kubernetes](https://github.com/ramitsurana/awesome-kubernetes) : A curated list for awesome kubernetes sources 🚢🎉
 - [awesome-docker](https://github.com/veggiemonk/awesome-docker) : 🐳 A curated list of Docker resources and projects
 - [awesome-krew-plugin](https://krew.sigs.k8s.io/plugins/): A list of Plugin which used by kubectl
 - [awesome-compose](https://github.com/docker/awesome-compose) : Awesome Docker Compose samples
 - [Compose-Examples](https://github.com/Haxxnet/Compose-Examples) : Various Docker Compose examples of selfhosted FOSS and proprietary projects.
-- [boilerplates](https://github.com/ChristianLempa/boilerplates) : Cool Repo from [Christian - Youtuber](https://www.youtube.com/@christianlempa/videos) 
-- [Bitnami containers](https://github.com/bitnami/containers) : Bitnami container images
+- [boilerplates](https://github.com/ChristianLempa/boilerplates) : Cool Repo from [Christian - Youtuber](https://www.youtube.com/@christianlempa/videos)
 - [k8s-deployment-strategies](https://github.com/ContainerSolutions/k8s-deployment-strategies) : Kubernetes deployment strategies explained
-- [Kubernetes Cluster API](https://cluster-api.sigs.k8s.io/) : About cluster API
+- [Bitnami containers](https://github.com/bitnami/containers) : Bitnami container images
 - [awesome-k8s-resources](https://github.com/tomhuang12/awesome-k8s-resources) : A curated list of awesome Kubernetes tools and resources.
-- [kubebuilder](https://book.kubebuilder.io/introduction) : Kubebuilder - SDK for building Kubernetes APIs using CRDs
+## Organization
+
+- [Bitnami](https://github.com/bitnami): Organization belong of VMWare to contributing docker image. [Website](https://bitnami.com/)
+- [Docker](https://github.com/docker): Docker helps developers bring their ideas to life by conquering the complexity of app development.
 - [kubernetes-sigs](https://github.com/kubernetes-sigs) : Org for Kubernetes SIG-related work
+- [Kubernetes](https://github.com/kubernetes): Production-Grade Container Scheduling and Management
+- [Containers](https://github.com/containers) : Open Repository for Container Tools
+
+## Topics
+
+- [Kubernetes Cluster API](https://cluster-api.sigs.k8s.io/) : About cluster API
+- [kubebuilder](https://book.kubebuilder.io/introduction) : Kubebuilder - SDK for building Kubernetes APIs using CRDs
 - [Kubernetes/enhancements](https://github.com/kubernetes/enhancements) : Enhancements tracking repo for Kubernetes
 - [Kubernetes/community](https://github.com/kubernetes/community) : Kubernetes community content
 - [Kubernetes Blog](https://kubernetes.io/blog/) : Collection of blog from community for upgrade and feature in each version of kubernetes and stories around.
 - [Kubernetes CSI Drivers](https://kubernetes-csi.github.io/docs/drivers.html) : The following are a set of CSI driver which can be used with Kubernetes
-- [containers](https://github.com/containers) : Open Repository for Container Tools
 - [Rootless Containers](https://rootlesscontaine.rs/): Rootless containers refers to the ability for an unprivileged user to create, run and otherwise manage containers.
-# Awesome Docker Registry
+# Awesome Docker Registry and Image
+
+## Registry
 
 - [DockerHub](https://hub.docker.com/)
 - [Amazon ECR Public Gallery](https://gallery.ecr.aws/)
 - [Microsoft Artifact Registry](https://mcr.microsoft.com/)
-# Awesome Docker Image
+
+## Image
 
 - [docker](https://hub.docker.com/_/docker): Docker in Docker!
 - [amazon/aws-cli](https://hub.docker.com/r/amazon/aws-cli): Universal Command Line Interface for Amazon Web Services
 - [docker-android](https://github.com/budtmo/docker-android): Android in docker solution with noVNC supported and video recording
-# Troubleshoot
-
-- [StackOverFlow - Why AKS nodes shows less amount of memory as allocatable where its actual memory is still available](https://stackoverflow.com/questions/68521392/why-aks-nodes-shows-less-amount-of-memory-as-allocatable-where-its-actual-memory)
-- [Azure - Core Kubernetes concepts for Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/aks/concepts-clusters-workloads)
-- [Azure - Best practices for basic scheduler features in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/operator-best-practices-scheduler)
-- [Azure - Supported Kubernetes versions in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/supported-kubernetes-versions?tabs=azure-cli)
-- [StackOverFlow - Constantly getting Crashloopbackoff error in Kubernetes PODS generally in MongoDB pods](https://stackoverflow.com/questions/63142792/constantly-getting-crashloopbackoff-error-in-kubernetes-pods-generally-in-mongod)
-- [Suneeta Mall - WTH! Who killed my pod - Whodunit?](https://suneeta-mall.github.io/2021/03/14/wth-who-killed-my-pod.html)
-- [Medium - Understanding Common exit codes and error messages in Containers & Kubernetes 🎑](https://medium.com/@seifeddinerajhi/understanding-common-exit-codes-and-error-messages-in-containers-kubernetes-fb8d053e759e)
-- [Validate node setup](https://kubernetes.io/docs/setup/best-practices/node-conformance/)
 
 # Docker & Containerization
 
@@ -69,7 +72,6 @@ tags:
 - [Implementing Container Runtime Shim: runc](https://iximiuz.com/en/posts/implementing-container-runtime-shim/)
 - [Alternative container runtimes](https://docs.docker.com/engine/daemon/alternative-runtimes/)
 - [Most Popular Container Runtimes](https://www.cloudraft.io/blog/container-runtimes)
-
 # Kubernetes
 
 - [Medium - 7 Underrated Kubernetes Projects: Elevate Your Lab Playground!](https://medium.com/@ebenamor/7-underrated-kubernetes-projects-elevate-your-lab-playground-ac7f47cba347)
@@ -97,6 +99,16 @@ tags:
 - [Medium - My Top 50 Kubernetes Notes for DevOps Engineers — Detailed Q&A](https://medium.com/@thecloudarchitect/my-top-50-kubernetes-notes-for-devops-engineers-detailed-q-a-9d9c375c0076)
 - [Debugging Kubernetes nodes with crictl](https://kubernetes.io/docs/tasks/debug/debug-cluster/crictl/#before-you-begin)
 - [Medium - Implementing ROOK Ceph Storage solution on Virtual kubernetes clusters](https://purushothamkdr453.medium.com/implementing-rook-ceph-storage-solution-on-virtual-kubernetes-clusters-f9b7abfbcb56)
+# Troubleshoot
+
+- [StackOverFlow - Why AKS nodes shows less amount of memory as allocatable where its actual memory is still available](https://stackoverflow.com/questions/68521392/why-aks-nodes-shows-less-amount-of-memory-as-allocatable-where-its-actual-memory)
+- [Azure - Core Kubernetes concepts for Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/aks/concepts-clusters-workloads)
+- [Azure - Best practices for basic scheduler features in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/operator-best-practices-scheduler)
+- [Azure - Supported Kubernetes versions in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/supported-kubernetes-versions?tabs=azure-cli)
+- [StackOverFlow - Constantly getting Crashloopbackoff error in Kubernetes PODS generally in MongoDB pods](https://stackoverflow.com/questions/63142792/constantly-getting-crashloopbackoff-error-in-kubernetes-pods-generally-in-mongod)
+- [Suneeta Mall - WTH! Who killed my pod - Whodunit?](https://suneeta-mall.github.io/2021/03/14/wth-who-killed-my-pod.html)
+- [Medium - Understanding Common exit codes and error messages in Containers & Kubernetes 🎑](https://medium.com/@seifeddinerajhi/understanding-common-exit-codes-and-error-messages-in-containers-kubernetes-fb8d053e759e)
+- [Validate node setup](https://kubernetes.io/docs/setup/best-practices/node-conformance/)
 # Certificate & Practice
 
 - [kube4sure - The Kubernetes Exam Simulator](https://www.kube4sure.com/)

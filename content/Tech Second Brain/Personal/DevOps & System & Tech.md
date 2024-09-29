@@ -66,6 +66,7 @@ tags:
 - [Tencent](https://github.com/Tencent) : Tencent Open Source Community
 - [Fossasia](https://github.com/fossasia): Open Technologies developed in Asia and Around the Globe
 - [GoogleContainerTools](https://github.com/GoogleContainerTools) : Tools in-house of Google about Container
+- [Ory](https://github.com/ory): Open Source Identity Platform For Everyone. [Website](https://www.ory.sh/)
 
 ## Landscape
 
@@ -291,6 +292,7 @@ tags:
 - [prefect](https://github.com/PrefectHQ/prefect): Prefect is a workflow orchestration framework for building resilient data pipelines in Python.
 - [werf](https://github.com/werf/werf): A solution for implementing efficient and consistent software delivery to Kubernetes facilitating best practices.
 - [nelm](https://github.com/werf/nelm): Nelm is a Helm 3 alternative and werf deployment engine
+- [dapr](https://github.com/dapr/dapr): Dapr is a portable, event-driven, runtime for building distributed applications across cloud and edge. [Website](https://dapr.io/)
 
 ## Kubernetes cluster management
 
@@ -457,6 +459,7 @@ tags:
 - [tailscale](https://tailscale.com/):  The easiest, most secure way to use WireGuard and 2FA.
 - [zitadel](https://zitadel.com/docs/guides/overview): Identity infrastructure, simplified for you.
 - [casdoor](https://github.com/casdoor/casdoor): An open-source UI-first Identity and Access Management (IAM) / Single-Sign-On (SSO) platform with web UI supporting
+- [keycloak](https://github.com/keycloak/keycloak): Open Source Identity and Access Management For Modern Applications and Services. [Website](https://github.com/keycloak/keycloak)
 ## Queue Services
 
 - [AutoMQ](https://docs.automq.com/automq/what-is-automq/overview) : AutoMQ re-engineers Kafka for the cloud by decoupling storage to object storage. While maintaining **100% compatibility** with Apache Kafka®, it offers users up to **10 times cost efficiency** and **100 times elasticity**.

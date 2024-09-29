@@ -1005,7 +1005,7 @@ git show tag-name
 After check and validate, now you need push your commit with `tag` to remote branch
 
 ```bash
-git push -u origin main --tag 0.0.1
+git push -u origin main --tags 0.0.1
 ```
 
 Go to `gitlab` and see the result, now
@@ -1024,7 +1024,7 @@ git tag -d old            # Delete local tag `old`.
 git push origin new :old  # Push `new` to your remote named "origin", and delete tag `old` on origin (by pushing an empty tag name to it).
 ```
 
-![[Pasted image 20240915132426.png]]\
+![[Pasted image 20240915132426.png]]
 
 >[!info]
 >Because I set `v0.0.1` instead of for `0.0.1` and make fail for module, some situation your release in `gitlab` with not work for module version `v0.0.1`, therefore just fix my mistake
