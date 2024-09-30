@@ -3,6 +3,7 @@ title: Window Server 2019
 tags:
   - packer
   - virtual-machine-image
+  - devops
 ---
 *The packer script which provide and implementation the windows server in Azure Cloud, access via `winrm` and self configuration for `powershell` script*
 
@@ -12,7 +13,7 @@ More information about Packer:
 - [DevOps Training Session 12: Cloud - Packer](https://hackmd.io/0kn1HkeETeSsFOdMdGODhQ)
 - [Azure DevOps Agents Provisioning](https://hackmd.io/@XeusNguyen/S1BrSRPW6#Window)
 
-You can took the script to put on `provisioner`in [[Build Azure Agent with .NET Core by Powershell]]
+You can took the script to put on `provisioner` in [[Powershell script collection#Build Azure Agent with .NET Core by Powershell|Build Azure Agent with .NET Core by Powershell]]
 
 ```json
 packer {

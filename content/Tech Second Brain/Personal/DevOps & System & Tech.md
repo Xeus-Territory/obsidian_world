@@ -131,7 +131,6 @@ tags:
 - [How to build and deploy React Native applications with Fastlane](https://tech.sparkfabrik.com/en/blog/fastlane_build/)
 - [Dev.io - Automating mobile application deployments using Fastlane and CI/CD tools](https://dev.to/jei/automating-mobile-application-deployments-using-fastlane-and-ci-cd-tools-2iae)
 - [Medium - Data Engineering Best Practices: How Big Tech & FAANG Firms Manage and Optimize Apache Kafka](https://acceldataio.medium.com/data-engineering-best-practices-how-big-tech-faang-firms-manage-and-optimize-apache-kafka-95d520db60bb)
-- [The four levels of logs](https://fiberplane.com/blog/the-four-levels-of-log-collections)
 - [Medium - GitOps with Kubernetes, Terraform, Gitlab and FluxCD](https://medium.com/@prag-matic/gitops-with-kubernetes-terraform-gitlab-and-fluxcd-2875d1010dac)
 - [Medium - Master Command Orchestration](https://medium.com/itnext/master-command-orchestration-16f4a117ce05)
 - [Medium - Configure CI/CD pipeline: GitlabCI, ArgoCD, HelmCharts & SOPS](https://medium.com/@golaneduard1/configure-ci-cd-pipeline-gitlabci-argocd-helmcharts-sops-3cbf94f300ed)
@@ -155,6 +154,7 @@ tags:
 - [Medium - 11 Open-Source SaaS Killer — Selfhost With Docker -2](https://medium.com/@harendra21/11-open-source-saas-killer-selfhost-with-docker-2-5d507de8b68f)
 - [Medium - Pulumi: The Real Infrastructure as Code](https://8grams.medium.com/pulumi-the-real-infrastructure-as-code-f8cf5a5f3071)
 - [Medium - 6 Best Free OnCall Software in 2024, Open-Source and SaaS](https://medium.com/statuspal/6-best-free-oncall-software-in-2024-open-source-and-saas-36f82595e539)
+- [Spacelift - Importing Existing Infrastructure Into Terraform – Step by Step](https://spacelift.io/blog/importing-exisiting-infrastructure-into-terraform)
 # DevOps Youtube Channel
 
 ![[youtube.png]]
@@ -265,6 +265,7 @@ tags:
 - [Crossplane](https://docs.crossplane.io/latest/): An open source Kubernetes extension that transforms your Kubernetes cluster into a **universal control plane**.
 - [kcert](https://github.com/nabsul/kcert): KCert: A Simple Let's Encrypt Manager for Kubernetes
 - [lens](https://github.com/lensapp/lens): Lens - The way the world runs Kubernetes
+- [eksctl](https://github.com/eksctl-io/eksctl): The official CLI for Amazon EKS. [Website](https://eksctl.io/)
 ## Local Kubernetes Self-hosted
 
 - [Kind](https://kind.sigs.k8s.io/) : [kind](https://sigs.k8s.io/kind) is a tool for running local Kubernetes clusters using Docker container “nodes”.

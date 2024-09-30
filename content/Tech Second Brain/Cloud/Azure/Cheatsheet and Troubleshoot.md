@@ -21,6 +21,14 @@ tags:
 <div align="center">
     <strong><em><p style="text-align: center;"><a href="https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree">Choose an Azure compute service</a></p></em></strong>
 </div>
+
+![[Pasted image 20241006100847.png|center|500]]
+
+<div align="center">
+	<strong><em><p style="text-align: center;"><a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources">Organize your Azure resources effectively</a></p></em></strong>
+</div>
+
+
 What you can find out and figure out about Azure, Cloud Computing, Documentation, Services and more, Link is down-below 🤝
 
 - [Wikipedia - Microsoft Azure](https://en.wikipedia.org/wiki/Microsoft_Azure)
@@ -34,11 +42,23 @@ What you can find out and figure out about Azure, Cloud Computing, Documentation
 - [Azure CLI - User Guide](https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest)
 - [Azure Price Calculator](https://azure.microsoft.com/en-gb/pricing/calculator/)
 - [Azure - Blog](https://azure.microsoft.com/en-us/blog/)
-- [Awesome Microsoft Azure Architecture](https://github.com/lukemurraynz/awesome-azure-architecture)
+
+>[!info]
+>If you want to receive the credit from VS Subscription, you can direct use via [Monthly Azure credits for Visual Studio subscribers](https://azure.microsoft.com/en-us/pricing/member-offers/credit-for-visual-studio-subscribers)
+
+# Awesome Azure Repository
+
+## Repository
+
+- [Awesome Microsoft Azure Architecture](https://github.com/lukemurraynz/awesome-azure-architecture) - A curated list of AWESOME blogs, videos, tutorials, code, tools, and scripts related to the design and implementation of solutions in Microsoft Azure.
 - [Azure Resource Manager QuickStart Templates](https://github.com/Azure/azure-quickstart-templates) - Azure Quickstart Templates about `azure-arm` or `bicep`
-- [Github - Microsoft Azure](https://github.com/Azure) - APIs, SDKs and open source projects from Microsoft Azure
+## Page
+
 - [Azure Verified Modules](https://azure.github.io/Azure-Verified-Modules/) - An initiative to consolidate and set the standards for what a good Infrastructure-as-Code module looks like.
-- [Monthly Azure credits for Visual Studio subscribers](https://azure.microsoft.com/en-us/pricing/member-offers/credit-for-visual-studio-subscribers) - Use this link when you have received credit from Visual Studio subscription
+## Organization
+
+- [Github - Microsoft Azure](https://github.com/Azure) - APIs, SDKs and open source projects from Microsoft Azure
+
 # Azure CLI
 
 ## az vm
