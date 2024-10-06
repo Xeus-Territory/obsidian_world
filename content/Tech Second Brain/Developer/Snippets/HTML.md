@@ -15,6 +15,16 @@ tags:
 <div align="center">
 	<p style="text-align: center;">Blue and Green deployment strategy</p>
 </div>
+
+<div align="center">
+	<strong>
+		<em>
+			<p style="text-align: center;">
+				<a href="#">Choose an Azure compute service</a>
+			</p>
+		</em>
+	</strong>
+</div>
 ```
 
 # Embed video on markdown, or HTML

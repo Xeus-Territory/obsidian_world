@@ -27,15 +27,31 @@ You can figure what you need to do for start with `aws` via some website and art
 - [AWS Price Calculator](https://calculator.aws/#/)
 - [AWS Architecture Blog](https://aws.amazon.com/vi/blogs/architecture/)
 - [AWS Blog](https://aws.amazon.com/blogs)
-- [Github - Amazon Web Services](https://github.com/aws)
-- [Github - AWS Samples](https://github.com/aws-samples)
-- [awesome-aws](https://github.com/donnemartin/awesome-aws)
 
 You can manage `aws` as organization via the tree and sub-organization inside root account
 
 ![[Pasted image 20240801100407.png]]
 
 So enjoy what you need, inside the article will share about how you CLI, cheatsheet, collection of useful article around `aws`. Externally, In `AWS` , I will share about some others topic, such as **Services**, **Certificates** and more about **Best Practice**
+
+# Awesome AWS Repositories
+
+## Repository
+
+- [awesome-aws](https://github.com/donnemartin/awesome-aws) - A curated list of awesome Amazon Web Services (AWS) libraries, open source repos, guides, blogs, and other resources.
+## Organization
+
+- [Github - Amazon Web Services](https://github.com/aws) - AWS Opensource Community
+- [Github - AWS Samples](https://github.com/aws-samples) - AWS Samples Community
+
+# Helpful articles
+
+- [Medium - ECS (Fargate) with ALB Deployment Using Terraform — Part 3](https://medium.com/the-cloud-journal/ecs-fargate-with-alb-deployment-using-terraform-part-3-eb52309fdd8f)
+- [Medium - Creating SSL Certificates using AWS Certificate Manager (ACM)](https://medium.com/@sonynwoye/creating-ssl-certificates-using-aws-certificate-manager-acm-1c359e70ce4d)
+- [Medium - Configuring Production-Ready EKS Clusters with Terraform and GitHub Actions](https://medium.com/stackademic/configuring-production-ready-eks-clusters-with-terraform-and-github-actions-c046e8d44865)
+- [AWS Docs - Grant IAM users access to Kubernetes with EKS access entries](https://docs.aws.amazon.com/eks/latest/userguide/access-entries.html)
+- [CloudZero - AWS NAT Gateway Pricing: Simple Strategies To Limit Costs](https://www.cloudzero.com/blog/reduce-nat-gateway-costs/)
+- [PacketFabric - A Deep Dive into NAT Gateway Alternatives](https://packetfabric.com/blog/a-deep-dive-into-nat-gateway-alternatives)
 # AWS CLI
 
 >[!question]
@@ -289,10 +305,4 @@ curl -L -X PUT -T "${file}" -H "Host: ${bucket}.s3.amazonaws.com" -H "Date: ${da
 echo ">>>>>>>>>>>>>> A new file was uploaded successfully!"
 ```
 
-# Helpful articles
-
-- [Medium - ECS (Fargate) with ALB Deployment Using Terraform — Part 3](https://medium.com/the-cloud-journal/ecs-fargate-with-alb-deployment-using-terraform-part-3-eb52309fdd8f)
-- [Medium - Creating SSL Certificates using AWS Certificate Manager (ACM)](https://medium.com/@sonynwoye/creating-ssl-certificates-using-aws-certificate-manager-acm-1c359e70ce4d)
-- [Medium - Configuring Production-Ready EKS Clusters with Terraform and GitHub Actions](https://medium.com/stackademic/configuring-production-ready-eks-clusters-with-terraform-and-github-actions-c046e8d44865)
-- [Grant IAM users access to Kubernetes with EKS access entries](https://docs.aws.amazon.com/eks/latest/userguide/access-entries.html)
 

@@ -192,13 +192,13 @@ Install `language` compiler for your shell
 # With zsh profile will .zshrc but with bash you have .bashrc (just replace)
 
 # Install golang (https://go.dev/doc/install)
-wget "https://dl.google.com/go/$(curl https://go.dev/VERSION?m=text | grep -o 'go.*').linux-amd64.tar.gz"
-tar -xzf $(curl https://go.dev/VERSION?m=text | grep -o 'go.*').linux-amd64.tar.gz
+wget "https://go.dev/dl/go1.23.1.linux-amd64.tar.gz"
+tar -xzf go1.23.1.linux-amd64.tar.gz
 sudo mv go /usr/local/
 echo "export PATH=\"\$PATH:/usr/local/go/bin\"" >> ~/.zshrc
 source ~/.zshrc
 go version
-rm -rf $(curl https://go.dev/VERSION?m=text | grep -o 'go.*').linux-amd64.tar.gz
+rm -rf go1.23.1.linux-amd64.tar.gz
 
 # Install ruby (https://www.ruby-lang.org/en/documentation/installation/#apt
 sudo apt install -y ruby-full

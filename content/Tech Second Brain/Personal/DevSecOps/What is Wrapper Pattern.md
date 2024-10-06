@@ -5,6 +5,7 @@ tags:
   - devops
   - developer
   - helpful
+  - whatis
 ---
 >[!quote]
 >Hi @all, how are your weekend ? Stay tune okay, and this week topic will take around `wrapper`, what is this and what we can deal with `warpper` to push efficiency for your work with them. Let digest about that 👍👍👍

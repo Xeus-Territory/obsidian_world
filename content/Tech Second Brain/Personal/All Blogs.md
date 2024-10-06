@@ -125,6 +125,7 @@ tags:
 - [[Backup and Restore Methodology|Backup and Restore methodology for PostgreSQL]]
 - [[What is Wrapper Pattern|What is Wrapper Pattern ?]]
 - [[What is Helm|What is Helm?]]
+- [[What is Milvus|What is Milvus?]]
 
 # DIY + 41st Time (Do it yourself)
 

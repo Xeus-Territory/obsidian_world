@@ -18,6 +18,7 @@ tags:
 - [Gitlab Documentation](https://docs.gitlab.com/ee/user/) - General Documentation about Gitlab
 - [GitLab Runner](https://docs.gitlab.com/runner/) - Information about Gitlab Runner and configuration
 - [GitLab CI/CD examples](https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html) - GitlabCI/CD Collections
+- [Gitlab Permissions and roles](https://docs.gitlab.com/ee/user/permissions.html) - About Role and Permissions of account in GitLab organization
 
 ## Syntax
 

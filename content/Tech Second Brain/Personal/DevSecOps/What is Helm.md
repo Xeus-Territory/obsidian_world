@@ -4,6 +4,7 @@ tags:
   - devops
   - k8s
   - helpful
+  - whatis
 ---
 # Installation
 
