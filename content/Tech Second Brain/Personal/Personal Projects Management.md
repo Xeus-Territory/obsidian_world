@@ -91,9 +91,9 @@ Github: **[distribute-git-hook](https://github.com/wouops/distribute-git-hook)**
 >Feel free to read about small article about operating 👉 [[0-downtime with Blue-Green Deployment]]
 ## Canary Deployment 🚧
 
-# AIOps and MLOps 🚧
+# AIOps and MLOps ✍
 
-## Milvus Cluster 🚧
+## Milvus Cluster ✅
 
 Documentation: https://milvus.io/docs
 

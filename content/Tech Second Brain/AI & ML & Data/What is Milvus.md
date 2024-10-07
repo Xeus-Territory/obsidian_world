@@ -247,6 +247,7 @@ Query nodes are independent from each other in a data query. **Each node** is re
 <div align="center">
 	<p style="text-align: center;">Handoff (Source: Milvus Doc)</p>
 </div>
+
 There are **two types of segments**, **growing segments (for incremental data)**, and **sealed segments (for historical data)**. Query node subscribe to vchannel to receive update as growing segments. When growing segment reach to threshold, Data Coord seals it and index building begins. **Handoff** operation start to turn growing segment to sealed segment, and distribute that will compatible resource (CPU, Memory, Segment Number)
 
 # Conclusion
