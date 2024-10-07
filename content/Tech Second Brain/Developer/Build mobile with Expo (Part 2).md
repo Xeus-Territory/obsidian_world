@@ -4,6 +4,8 @@ tags:
   - devops
   - mobile
   - automation
+  - android
+  - ios
 ---
 >[!quote]
 >Hi @all, how is your week ? are u ready for learn something ? In this session, we will go to next session of expo for building mobile application, but in release stuff like artifacts to App Store and Google Play. Now let digesting, and don't turn around

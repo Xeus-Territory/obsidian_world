@@ -13,10 +13,11 @@ First of all, you need to install `ZSH` and `Oh-my-zsh` for your shell
 
 - [Vietnamese - Cách cài đặt zsh và zsh-autosuggestions trên Ubuntu](https://viblo.asia/p/cach-cai-dat-zsh-va-zsh-autosuggestions-tren-ubuntu-LzD5ddDO5jY)
 - [How to Install Zsh in Ubuntu 22.04](https://itslinuxfoss.com/how-to-install-zsh-in-ubuntu-22-04/)
+- [Ohmyzsh's Wiki](https://github.com/ohmyzsh/ohmyzsh/wiki)
 - [Gist - Setup ZSH extension](https://gist.github.com/n1snt/454b879b8f0b7995740ae04c5fb5b7df)
+- [ZSH Themes](https://github.com/ohmyzsh/ohmyzsh/wiki/themes)
 - [Install bamboo for Vietnamese Keyboard](https://github.com/BambooEngine/ibus-bamboo?tab=readme-ov-file#ubuntu-v%C3%A0-c%C3%A1c-distro-t%C6%B0%C6%A1ng-t%E1%BB%B1)
 - [Extension - Clipboard](https://extensions.gnome.org/extension/779/clipboard-indicator/)
-- [Extension - Transparent Top Bar](https://extensions.gnome.org/extension/1708/transparent-top-bar/)
 - [Extension - Blur My Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/)
 
 I just brief step, and combine all into one bash file, you run it
@@ -199,6 +200,7 @@ echo "export PATH=\"\$PATH:/usr/local/go/bin\"" >> ~/.zshrc
 source ~/.zshrc
 go version
 rm -rf go1.23.1.linux-amd64.tar.gz
+mkdir -p ~/.go # Create for GOHOME, easily download go into that one
 
 # Install ruby (https://www.ruby-lang.org/en/documentation/installation/#apt
 sudo apt install -y ruby-full

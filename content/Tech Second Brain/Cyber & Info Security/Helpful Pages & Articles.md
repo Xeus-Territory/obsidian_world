@@ -79,7 +79,7 @@ tags:
 - [awesome-ctf](https://github.com/apsdehal/awesome-ctf) : A curated list of CTF frameworks, libraries, resources and softwares
 - [Awesome-Cybersecurity-Handbooks](https://github.com/0xsyr0/Awesome-Cybersecurity-Handbooks) : A huge chunk of my personal notes since I started playing CTFs and working as a Red Teamer.
 - [awesome-privilege-escalation](https://github.com/m0nad/awesome-privilege-escalation) : A curated list of awesome privilege escalation
-- [NetExec](https://github.com/Pennyw0rth/NetExec) : The Network Execution Tool
+- [NetExec](https://github.com/Pennyw0rth/NetExec) : The Network Execution Tool. [Website](https://www.netexec.wiki/)
 - [CheatSheetSeries](https://github.com/OWASP/CheatSheetSeries) : The OWASP Cheat Sheet Series was created to provide a concise collection of high value information on specific application security topics.
 - [HackTricks - HackTricks](https://book.hacktricks.xyz/welcome/readme) : Wikipedia of Hacking
 - [Cloud - HackTricks](https://cloud.hacktricks.xyz/) : Wikipedia of Hacking Cloud
@@ -120,6 +120,7 @@ tags:
 - [Networking - Zero Trust Network Access (ZTNA) vs VPNs](https://konghq.com/blog/engineering/ztna-vs-vpns)
 - [Networking - 10 Useful Open Source Security Firewalls for Linux Systems](https://www.tecmint.com/open-source-security-firewalls-for-linux-systems/)
 - [Cloud - Creating unintentional ways to bypass AWS IAM policies when using the “ForAllValues” operator](https://awstip.com/creating-unintentional-ways-to-bypass-aws-iam-policies-when-using-the-forallvalues-operator-3516a7f17ed0)
+- [Networking - Medium - SSH Over Openssl Over Haproxy: Bypassing Blocks](https://medium.com/@talhakhalid101/ssh-over-openssl-over-haproxy-bypassing-blocks-f4b4c276d8dd)
 
 # Tools and Techniques
 
@@ -173,6 +174,7 @@ tags:
 - [GTFOBins](https://gtfobins.github.io/) : A curated list of Unix binaries that can be used to bypass local security restrictions in misconfigured systems.
 - [Metaspoit](https://docs.metasploit.com/): Metasploit Framework for penetration testing
 - [impacket-examples-windows](https://github.com/maaaaz/impacket-examples-windows): The great impacket example scripts compiled for Windows
+- [Active-Directory-Exploitation-Cheat-Sheet](https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet): A cheat sheet that contains common enumeration and attack methods for Windows Active Directory.
 ### Privilege Escalation (RCE)
 
 - [PEASS-ng](https://github.com/peass-ng/PEASS-ng) : PEASS - Privilege Escalation Awesome Scripts SUITE
@@ -343,6 +345,7 @@ tags:
 - [Vulnerable By Design ~ VulnHub](https://vulnhub.com/) : Like HTB and THM, but you need to learn about virtualization to setup the pentest environment
 - [Attack-Defense Labs](https://attackdefense.com/) : More Labs you can take and archive your knowledge, bro trust me. 
 - [HackThisSite](https://www.hackthissite.org/) : Legally site where you can make penetration test
+- [GOAD](https://github.com/Orange-Cyberdefense/GOAD): Game of active directory
 
 ## Forensics
 

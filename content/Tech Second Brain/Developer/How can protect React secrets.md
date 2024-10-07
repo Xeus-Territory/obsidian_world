@@ -16,7 +16,7 @@ tags:
 
 You can use `devtools` to inspect and view `index-xxxx.js`, it can `bundle` file which compress all of module from `node` and your `src` into one file, and expose to client side
 
-![[Pasted image 20240603153725.png]]
+![[Pasted image 20240603153725.png|center]]
 
 So It's not safe, yup it really not and this actually not recommendation when you want to put **anything secrets (such as Private API keys)** to `.env` variables, for example. You can read more at [Adding Custom Environment Variables](https://create-react-app.dev/docs/adding-custom-environment-variables/), to understand why you shouldn't
 
@@ -67,7 +67,7 @@ DB_PASSWORD=foobar
 
 and when you try log to console, the `VITE` prefix variables will expose to **client side** but if not have prefix, your variables will not expose, it mean you can try use this trick to provide hidden way to load environment to your application, bundle it and no exposing anything
 
-![[Pasted image 20240604143353.png]]
+![[Pasted image 20240604143353.png|center]]
 
 If you know you know, any language will exist `dotenv` library which help us provide and get variables from `.env` file into application, `React` with `Vitejs` can do same thing. You can install with command
 
@@ -120,7 +120,7 @@ yarn install
 yarn build
 ```
 
-![[Pasted image 20240604162440.png]]
+![[Pasted image 20240604162440.png|center]]
 
 And lastly, you can preview your application with `preview` mode of `vite`
 
@@ -227,7 +227,7 @@ npx dotenv-vault@latest build
 
 `.env.vault` will sync with the version on the cloud, so you do not need to set `.env`, try get anything with only `vault` file (NOTE: you can push this file to repository, `AES256` 😮‍💨), just use command to get the key to decrypt `.env` base on your decision
 
-![[Pasted image 20240605092403.png]]
+![[Pasted image 20240605092403.png|center]]
 
 Usually, It will exist 4 environments, but you can create `customize` to add your environments
 

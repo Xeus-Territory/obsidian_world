@@ -31,8 +31,10 @@ tags:
 - [dynamic-analysis](https://github.com/analysis-tools-dev/dynamic-analysis): A curated list of dynamic analysis tools and linters
 - [system-design-101](https://github.com/ByteByteGoHq/system-design-101): Explain complex systems using visuals and simple terms. Help you prepare for system design interviews.
 - [startpack](https://github.com/tldr-devops/startpack): Selfhosted tech starter pack for development of new project or startup
-- [awesome-console-services](https://github.com/chubin/awesome-console-services): A curated list of awesome console services (reachable via HTTP, HTTPS and other network protocols) 
-
+- [awesome-console-services](https://github.com/chubin/awesome-console-services): A curated list of awesome console services (reachable via HTTP, HTTPS and other network protocols)
+- [awesome-test-automation](https://github.com/atinfo/awesome-test-automation): A curated list of awesome test automation frameworks, tools, libraries, and software for different programming languages
+- [awesome-embedded](https://github.com/nhivp/Awesome-Embedded): A curated list of awesome embedded programming.
+- [awesome-iam](https://github.com/kdeldycke/awesome-iam): 👤 Identity and Access Management knowledge for cloud platforms
 ## Page
 
 - [HelloGitHub](https://github.com/521xueweihan/HelloGitHub) : Share interesting, entry-level open source projects on GitHub. [EN](https://hellogithub.com/en)
@@ -67,7 +69,13 @@ tags:
 - [Fossasia](https://github.com/fossasia): Open Technologies developed in Asia and Around the Globe
 - [GoogleContainerTools](https://github.com/GoogleContainerTools) : Tools in-house of Google about Container
 - [Ory](https://github.com/ory): Open Source Identity Platform For Everyone. [Website](https://www.ory.sh/)
-
+- [Cloudflare](https://github.com/cloudflare): CloudFlare Open Source Community
+- [Ansible](https://github.com/ansible): The Community whose stand behind Ansible
+- [Ansible Community](https://github.com/ansible-community): Collection of community-driven Ansible repositories
+- [Kong](https://github.com/Kong): The Cloud Connectivity Company. Community Driven & Enterprise Adopted.
+- [Dyne.org](https://github.com/dyne): Think &do tank and free software foundry
+- [Puppet](https://github.com/puppetlabs): Puppet Community
+- [Vox Pupuli](https://github.com/voxpupuli): Modules and tooling maintained by and for the [Puppet](https://www.puppet.com/) community
 ## Landscape
 
 - [Apache Project Directory](https://projects.apache.org/projects.html) : List all of product of Apache
@@ -82,35 +90,37 @@ tags:
 >[!note]
 >Useful page for finding the target and gain more experience in DevOps, System and moreover in technology field
 
-- [DevOps VN](https://devopsvn.tech/) - *Vietnamese Community and Blog page about DevOps and Technologies*
-- [DevOps Việt Nam - DevOpsify](https://devopsify.co/) - *Vietnamese Community about DevOps*
-- [Trang chủ » AnonyViet](https://anonyviet.com/) - *Vietnamese Community who teaching multiple techniques on Computer*
-- [4sysops](https://4sysops.com/) -  *The online community for SysAdmins and DevOps*
-- [The Cloud Native Wiki | Aqua](https://www.aquasec.com/cloud-native-academy/) - *The resource center for everything cloud native*
-- [Noted](https://noted.lol/) - *Self Hosted App and Product Reviews*
-- [Digital Ocean Community](https://www.digitalocean.com/community) - *Community offers thousands of tutorials, videos, and answers to questions on a wide range of topics*
-- [DevOpsCube](https://devopscube.com/) - *Learn DevOps | Software & Platform Reviews*
-- [Milan Newsletter](https://newsletter.techworld-with-milan.com/) - *Guy will teach you more about infrastructure, architecture, ...*
-- [Medium - David Mosyan](https://medium.com/@dmosyan) - *Systems Architecture / Cloud / DevOps / Cybersecurity*
-- [Medium - Sagar #OpenToWork](https://sagarkpanda.medium.com/) - *DevOps Engineer*
-- [Medium - Seifeddine Rajhi](https://medium.com/@seifeddinerajhi) - *Super cool stuff about opensource and cloud platform*
-- [Medium - The kube guy](https://thekubeguy.com/) - *About Kubernetes with resolve multiple problems around and minimal efforts*
-- [Medium - ByteCook](https://medium.com/@cstoppgmr) - *Unique contents cover multi-range in technical fields*
-- [Medium - HungWei Chiu](https://medium.com/@hwchiu) - *Guy with super dope contents around system and kubernetes*
-- [ByteByteGo Blog](https://blog.bytebytego.com) - *About the system design, and moreover technologies*
-- [Brendan Gregg](https://www.brendangregg.com/index.html) - *Cool guy with pleasant contents about ebpf and kernel technologies*
-- [StackExchange](https://stackexchange.com/sites) - *StackOverFlow Ecosystem*
-- [Isovalent Blog](https://isovalent.com/blog/) - *More about ebpf and kernel technologies, especially cilium and sub-projects of cilium*
-- [XDA Forums](https://forum.xda-developers.com/) - *Valuable resource for people who want to make the most of their mobile devices, from customizing the look and feel to adding new functionality.*
-- [Opensource.com | Opensource.com](https://opensource.com/) - *Community talk about Opensource - powered by Red Hat*
-- [How-To Geek](https://www.howtogeek.com/) - *Community who explain Technologies*
-- [Hackaday.io](https://hackaday.io/) - *The world's largest collaborative hardware development community.*
-- [Hackaday](https://hackaday.com/) - *Fresh Hacks Every Day*
-- [Medium - ByteByteGo System Design Alliance](https://medium.com/bytebytego-system-design-alliance) - *Explain complex systems with simple term*.
-- [3os Project](https://3os.org/) - *Collocation of technical documentation and guides for devops, developers, pentesters, systems administrators and other IT professionals.*
-- [Platform Engineer Blog](https://platformengineering.org/blog) - *The discipline of designing and building toolchains and workflows that enable self-service capabilities for software engineering organizations in the cloud-native era*.
-- [Terraform Weekly](https://www.weekly.tf/) - *A weekly newsletter about Terraform ecosystem (posts, tools, tips&tricks, open-source) with humble opinions by Anton Babenko*.
-- [Spacelift Blog](https://spacelift.io/blog) - *Blog tech about infrastructure as code, and cloud services*
+- [DevOps VN](https://devopsvn.tech/) - Vietnamese Community and Blog page about DevOps and Technologies
+- [DevOps Việt Nam - DevOpsify](https://devopsify.co/) - Vietnamese Community about DevOps
+- [Trang chủ » AnonyViet](https://anonyviet.com/) - Vietnamese Community who teaching multiple techniques on Computer
+- [4sysops](https://4sysops.com/) -  The online community for SysAdmins and DevOps
+- [The Cloud Native Wiki | Aqua](https://www.aquasec.com/cloud-native-academy/) - The resource center for everything cloud native
+- [Noted](https://noted.lol/) - Self Hosted App and Product Reviews
+- [Digital Ocean Community](https://www.digitalocean.com/community) - Community offers thousands of tutorials, videos, and answers to questions on a wide range of topics
+- [DevOpsCube](https://devopscube.com/) - Learn DevOps | Software & Platform Reviews
+- [Milan Newsletter](https://newsletter.techworld-with-milan.com/) - Guy will teach you more about infrastructure, architecture, ...
+- [Medium - David Mosyan](https://medium.com/@dmosyan) - Systems Architecture / Cloud / DevOps / Cybersecurity
+- [Medium - Sagar #OpenToWork](https://sagarkpanda.medium.com/) - DevOps Engineer
+- [Medium - Seifeddine Rajhi](https://medium.com/@seifeddinerajhi) - Super cool stuff about opensource and cloud platform
+- [Medium - The kube guy](https://thekubeguy.com/) - About Kubernetes with resolve multiple problems around and minimal efforts
+- [Medium - ByteCook](https://medium.com/@cstoppgmr) - Unique contents cover multi-range in technical fields
+- [Medium - HungWei Chiu](https://medium.com/@hwchiu) - Guy with super dope contents around system and kubernetes
+- [ByteByteGo Blog](https://blog.bytebytego.com) - About the system design, and moreover technologies
+- [Brendan Gregg](https://www.brendangregg.com/index.html) - Cool guy with pleasant contents about ebpf and kernel technologies
+- [StackExchange](https://stackexchange.com/sites) - StackOverFlow Ecosystem
+- [Isovalent Blog](https://isovalent.com/blog/) - More about ebpf and kernel technologies, especially cilium and sub-projects of cilium
+- [XDA Forums](https://forum.xda-developers.com/) - Valuable resource for people who want to make the most of their mobile devices, from customizing the look and feel to adding new functionality.
+- [Opensource.com | Opensource.com](https://opensource.com/) - Community talk about Opensource - powered by Red Hat
+- [How-To Geek](https://www.howtogeek.com/) - Community who explain Technologies
+- [Hackaday.io](https://hackaday.io/) - The world's largest collaborative hardware development community.
+- [Hackaday](https://hackaday.com/) - Fresh Hacks Every Day
+- [Medium - ByteByteGo System Design Alliance](https://medium.com/bytebytego-system-design-alliance) - Explain complex systems with simple term.
+- [3os Project](https://3os.org/) - Collocation of technical documentation and guides for devops, developers, pentesters, systems administrators and other IT professionals.
+- [Platform Engineer Blog](https://platformengineering.org/blog) - The discipline of designing and building toolchains and workflows that enable self-service capabilities for software engineering organizations in the cloud-native era.
+- [Terraform Weekly](https://www.weekly.tf/) - A weekly newsletter about Terraform ecosystem (posts, tools, tips&tricks, open-source) with humble opinions by Anton Babenko.
+- [Spacelift Blog](https://spacelift.io/blog) - Blog tech about infrastructure as code, and cloud services
+- [Medium - Vu Trinh](https://medium.com/@vutrinh274) - Tech blogger who cover a lot information about databases and data engineers
+- [Medium - DevOps.dev](https://blog.devops.dev/) - The community about DevOps Article, Cloud and more over things
 # DevOps Articles
 
 >[!note]
@@ -124,8 +134,7 @@ tags:
 - [Medium - Top Technology Trends to Watch Out for in 2024 for Platform Engineering and SRE](https://medium.com/@seifeddinerajhi/top-technology-trends-to-watch-out-for-in-2024-for-platform-engineering-and-sre-e267130c7e22)
 - [Medium - High-Level System Architecture of Booking.com](https://medium.com/@sahintalha1/high-level-system-architecture-of-booking-com-06c199003d94)
 - [Vietnix - Vietnamese - Stateless là gì? Sự khác biệt giữa Stateless và Stateful](https://vietnix.vn/stateless-la-gi/)
-- [Komodor for resolving OOMkilled on Kubernetes](https://komodor.com/learn/how-to-fix-oomkilled-exit-code-137/)
-- [Event-driven architecture patterns and when to use them](https://ably.com/topic/event-driven-architecture-patterns)
+- [Komodor - Resolving OOMkilled on Kubernetes](https://komodor.com/learn/how-to-fix-oomkilled-exit-code-137/)
 - [Medium - The Complete Guide to Event-Driven Architecture](https://medium.com/@seetharamugn/the-complete-guide-to-event-driven-architecture-b25226594227)
 - [Medium - What is Clean Architecture?](https://medium.com/@techworldwithmilan/what-is-clean-architecture-456d2d3cb0bc)
 - [How to build and deploy React Native applications with Fastlane](https://tech.sparkfabrik.com/en/blog/fastlane_build/)
@@ -155,6 +164,9 @@ tags:
 - [Medium - Pulumi: The Real Infrastructure as Code](https://8grams.medium.com/pulumi-the-real-infrastructure-as-code-f8cf5a5f3071)
 - [Medium - 6 Best Free OnCall Software in 2024, Open-Source and SaaS](https://medium.com/statuspal/6-best-free-oncall-software-in-2024-open-source-and-saas-36f82595e539)
 - [Spacelift - Importing Existing Infrastructure Into Terraform – Step by Step](https://spacelift.io/blog/importing-exisiting-infrastructure-into-terraform)
+- [Medium - Top 20 Network Protocols You Must Know in System Design](https://medium.com/interviewnoodle/top-20-network-protocols-you-must-know-in-system-design-81eaab4b0c36)
+- [Medium - 7 Best Open Source Storage Solutions for Kubernetes](https://blog.devops.dev/7-best-open-source-storage-solutions-for-kubernetes-0da8b51efe8d)
+- [Medium - Use SOPS and Terraform to create encrypt/decrypt files with AWS KMS](https://medium.com/@arunmrp90/use-sops-and-terraform-to-create-encrypted-decrypt-files-with-aws-kms-a38ac793518b)
 # DevOps Youtube Channel
 
 ![[youtube.png]]
@@ -191,7 +203,7 @@ tags:
 - [MDPI - An Overview of WebAssembly for IoT: Background, Tools, State-of-the-Art, Challenges, and Future Directions](https://www.mdpi.com/1999-5903/15/8/275)
 - [Medium - Embedding Python in Go](https://poweruser.blog/embedding-python-in-go-338c0399f3d5F)
 - [QKD BB84 protocol simulation using Quantum Simulator (Qiskit)](https://www.quantumblockchains.io/qkd-protocol-simulation-with-qiskit/)
-
+- [Event-driven architecture patterns and when to use them](https://ably.com/topic/event-driven-architecture-patterns)
 # Opensource
 
 >[!note]
@@ -203,7 +215,7 @@ tags:
 - [G2](https://www.g2.com/) - Find the right software and services
 - [Osssoftware](https://osssoftware.org/open-source-alternatives/) - Best New Open Source Alternatives
 - [hosted-software](https://hostedsoftware.org/) - Self-Hosted Software List
-
+- [openalternative](https://openalternative.co/) - Discover Open Source Alternatives to Popular Software
 
 # Documentations and Papers
 
@@ -286,7 +298,7 @@ tags:
 - [just](https://just.systems/man/en/): a handy way to save and run project-specific commands.
 - [electron](https://github.com/electron/electron): Build cross-platform desktop apps with JavaScript, HTML, and CSS
 - [CMake](https://github.com/Kitware/CMake): Mirror of CMake upstream repository. Plus on [Make](https://www.gnu.org/software/make/)
-
+- [harness](https://github.com/harness/harness): Harness Open Source is an end-to-end developer platform with Source Control Management, CI/CD Pipelines, Hosted Developer Environments, and Artifact Registries.
 ## Automation Deployment Platforms
 
 - [gitpod](https://github.com/gitpod-io/gitpod): The developer platform for on-demand cloud development environments to create software faster and more securely.
@@ -303,9 +315,14 @@ tags:
 ## Cloud Infrastructure Designer
 
 - [Brainboard](https://www.brainboard.co/) : An AI driven platform to visually design, generate terraform code and manage cloud infrastructure, collaboratively.
+- [Cloudairy](https://cloudairy.com/) : **Cloudchart** is a cloud focused diagram tool designed to help you easily map out cloud infrastructures
+- [Excalidraw](https://excalidraw.com/): Hand-drawn look & feel - Collaborative - Secure
 ## Serverless Self-hosted
 
 - [fn](https://github.com/fnproject/fn): The container native, cloud agnostic serverless platform.
+- [knative](https://github.com/knative/docs):  An Open-Source Enterprise-level solution to build Serverless and Event Driven Applications. [Documentation](https://knative.dev/docs/concepts/)
+- [serverless framework](https://github.com/serverless/serverless): ⚡ Serverless Framework – Effortlessly build apps that auto-scale, incur zero costs when idle, and require minimal maintenance using AWS Lambda and other managed cloud services.
+- [faas](https://github.com/openfaas/faas): OpenFaaS - Serverless Functions Made Simple
 ## Infrastructure as Code (Machine + Configuration)
 
 - [Vagrant](https://developer.hashicorp.com/vagrant/docs) : Vagrant is the command line utility for managing the lifecycle of virtual machines.
@@ -346,7 +363,8 @@ tags:
 - [Ansible Vault](https://docs.ansible.com/ansible/2.9/user_guide/vault.html): Ansible Vault is a feature of ansible that allows you to keep sensitive data such as passwords or keys in encrypted files, rather than as plaintext in playbooks or roles. These vault files can then be distributed or placed in source control.
 - [trufflehog](https://github.com/trufflesecurity/trufflehog): Find, verify, and analyze leaked credentials.
 - [infisical](https://github.com/Infisical/infisical): the open-source secret management platform: Sync secrets across your team/infrastructure, prevent secret leaks, and manage internal PKI
-
+- [teller](https://github.com/tellerops/teller): Cloud native secrets management for developers - never leave your command line for secrets.
+- [doppler](https://github.com/DopplerHQ/cli): The official CLI for interacting with your Doppler secrets and configuration. [Documentation](https://docs.doppler.com/)
 ## Policy Controller Kubernetes
 
 - [OPA Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/) : A customizable cloud native policy controller that helps enforce policies and strengthen governance
@@ -577,8 +595,6 @@ tags:
 
 - [dokku](https://github.com/dokku/dokku): A docker-powered PaaS that helps you build and manage the lifecycle of applications. [Documentation](https://dokku.com/docs/getting-started/installation/)
 - [backstage](https://github.com/backstage/backstage): An open framework for building developer portals. [Documentation](https://backstage.io/docs/overview/what-is-backstage)
-
-
 ## eBPF
 
 - [ecapture](https://github.com/gojue/ecapture): Capturing SSL/TLS plaintext without a CA certificate using eBPF. Supported on Linux/Android kernels for amd64/arm64. [Documentation](https://ecapture.cc/guide/introduction.html)

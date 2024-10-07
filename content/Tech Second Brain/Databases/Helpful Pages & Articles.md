@@ -20,7 +20,7 @@ tags:
 
 - [Chat2DB](https://github.com/CodePhiliaX/Chat2DB): 🔥🔥🔥AI-driven database tool and SQL client, The hottest GUI client, supporting MySQL, Oracle, PostgreSQL, DB2, SQL Server, DB2, SQLite, H2, ClickHouse, and more.
 - [dbeaver](https://github.com/dbeaver/dbeaver): Free universal database tool and SQL client. [Website](https://dbeaver.io/)
-
+- [beekeeper-studio](https://github.com/beekeeper-studio/beekeeper-studio): Modern and easy to use SQL client for MySQL, Postgres, SQLite, SQL Server, and more. Linux, MacOS, and Windows. [Website](https://www.beekeeperstudio.io/)
 ## OpenSource Database
 
 - [manticoresearch](https://github.com/manticoresoftware/manticoresearch): Easy to use open source fast database for search | Good alternative to Elasticsearch now | Drop-in replacement for E in the ELK soon

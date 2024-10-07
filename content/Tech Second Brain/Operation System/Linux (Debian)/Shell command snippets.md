@@ -835,3 +835,17 @@ You can swap mode in Ubuntu from desktop mode to server mode, by use key combini
 
 - Ctrl + Alt + F1 : To use desktop mode
 - Ctrl + Alt + F3: To use shell or server mode
+
+## Pip command of Python3
+
+With Python3 from version 3.12, there isn't gonna easy for us to install package, so if you want to force install with `python3-pip`, you can add the optional `--break-system-packages` after the pip command
+
+```bash
+pip3 install numpy --break-system-packages
+```
+
+With read from file, we can do same way
+
+```bash
+pip3 install -r requirements.txt --break-system-packages
+```

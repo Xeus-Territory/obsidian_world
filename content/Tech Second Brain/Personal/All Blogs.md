@@ -168,6 +168,7 @@ tags:
 - [[Build mobile with Expo (Part 2)]]
 - [[AWS SSO from Self Gitlab Terraform Module Registry]]
 - [[Switch Role between AWS Accounts]]
+- [[Protect sensitive data and secret files with sops]]
 # CI/CD + OS Profile Gallery
 
 >[!info]

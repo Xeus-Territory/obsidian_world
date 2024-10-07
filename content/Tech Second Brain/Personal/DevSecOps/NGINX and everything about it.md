@@ -11,7 +11,8 @@ tags:
 ---
 # Awesome Repository
 
-- **[awesome-nginx](https://github.com/agile6v/awesome-nginx)** : A curated list of awesome Nginx distributions, 3rd party modules, Active developers, etc.
+- [awesome-nginx](https://github.com/agile6v/awesome-nginx) : A curated list of awesome Nginx distributions, 3rd party modules, Active developers, etc.
+- [Medium - Nginx Configuration File Explanation and Common Feature Configurations (90% Practical Use Rate)](https://medium.com/@cstoppgmr/nginx-configuration-file-explanation-and-common-feature-configurations-90-practical-use-rate-bc49271f3766)
 # Default nginx configuration
 
 ```nginx title="nginx.conf"
