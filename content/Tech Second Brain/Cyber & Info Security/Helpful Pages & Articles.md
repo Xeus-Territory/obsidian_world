@@ -120,6 +120,7 @@ tags:
 - [Networking - Zero Trust Network Access (ZTNA) vs VPNs](https://konghq.com/blog/engineering/ztna-vs-vpns)
 - [Networking - 10 Useful Open Source Security Firewalls for Linux Systems](https://www.tecmint.com/open-source-security-firewalls-for-linux-systems/)
 - [Cloud - Creating unintentional ways to bypass AWS IAM policies when using the “ForAllValues” operator](https://awstip.com/creating-unintentional-ways-to-bypass-aws-iam-policies-when-using-the-forallvalues-operator-3516a7f17ed0)
+- [Networking - Medium - SSH Over Openssl Over Haproxy: Bypassing Blocks](https://medium.com/@talhakhalid101/ssh-over-openssl-over-haproxy-bypassing-blocks-f4b4c276d8dd)
 
 # Tools and Techniques
 

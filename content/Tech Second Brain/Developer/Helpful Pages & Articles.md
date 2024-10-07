@@ -70,7 +70,8 @@ tags:
 ## Python
 
 - [awesome-python](https://github.com/vinta/awesome-python) : An opinionated list of awesome Python frameworks, libraries, software and resources.
-
+- [pypa](https://github.com/pypa): Python Packaging Authority
+- [pallets](https://github.com/pallets): The Community stands behind [Flask](https://github.com/pallets/flask), [Jinja](https://github.com/pallets/jinja)
 ## Rust
 
 - [awesome-rust](https://github.com/rust-unofficial/awesome-rust): A curated list of Rust code and resources.
@@ -88,6 +89,7 @@ tags:
 ## WASM
 
 - [wasmtime](https://github.com/bytecodealliance/wasmtime): A fast and secure runtime for WebAssembly. [Website](https://wasmtime.dev/)
+- [workerd](https://github.com/cloudflare/workerd): The JavaScript / Wasm runtime that powers Cloudflare Workers
 
 ## Compiler online
 

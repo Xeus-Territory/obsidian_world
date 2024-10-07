@@ -44,6 +44,10 @@ So enjoy what you need, inside the article will share about how you CLI, cheatsh
 - [Github - Amazon Web Services](https://github.com/aws) - AWS Opensource Community
 - [Github - AWS Samples](https://github.com/aws-samples) - AWS Samples Community
 
+# AWS Community
+
+- [Medium - AWS in Plain English](https://aws.plainenglish.io/): New AWS, Cloud, and DevOps content every day.
+
 # Helpful articles
 
 - [Medium - ECS (Fargate) with ALB Deployment Using Terraform — Part 3](https://medium.com/the-cloud-journal/ecs-fargate-with-alb-deployment-using-terraform-part-3-eb52309fdd8f)
@@ -52,6 +56,8 @@ So enjoy what you need, inside the article will share about how you CLI, cheatsh
 - [AWS Docs - Grant IAM users access to Kubernetes with EKS access entries](https://docs.aws.amazon.com/eks/latest/userguide/access-entries.html)
 - [CloudZero - AWS NAT Gateway Pricing: Simple Strategies To Limit Costs](https://www.cloudzero.com/blog/reduce-nat-gateway-costs/)
 - [PacketFabric - A Deep Dive into NAT Gateway Alternatives](https://packetfabric.com/blog/a-deep-dive-into-nat-gateway-alternatives)
+- [Medium - 18 AWS Lambda Microstacks](https://awstip.com/18-aws-lambda-microstacks-bb20776601c0)
+- [Medium - 14 AWS Security Microstacks](https://medium.com/@csjcode/14-aws-security-microstacks-95d120d57089)
 # AWS CLI
 
 >[!question]
@@ -109,6 +115,18 @@ aws sts assume-role-with-web-identity \
 --web-identity-token $TOKEN # mostly token is JWT Format
 ```
 
+### Assume role with one-command
+
+Documentation: [StackOverFlow - AWS sts assume role in one command](https://stackoverflow.com/questions/63241009/aws-sts-assume-role-in-one-command)
+
+```bash
+export $(printf "AWS_ACCESS_KEY_ID=%s AWS_SECRET_ACCESS_KEY=%s AWS_SESSION_TOKEN=%s" \
+$(aws sts assume-role \
+--role-arn arn:aws:iam::123456789012:role/MyAssumedRole \
+--role-session-name MySessionName \
+--query "Credentials.[AccessKeyId,SecretAccessKey,SessionToken]" \
+--output text))
+```
 ## ECS
 
 ### List task inside ECS Cluster
