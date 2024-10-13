@@ -20,8 +20,10 @@ tags:
 >[!note]
 >The icon to telling you about what task is on progress or pending 😄
 >
->- ✍ : On progressing, usually attach with `github` and blog, find in [[All Blogs|all blogs page]]
+>- ✍ : On progressing, It usually attaches with `github` and blog
 >- 🚧 : Pending, just stop like a note, and idea to doing something around that. Waiting for new information LOL
+>- ✅ : Already hand on and release as blog, , find in [[All Blogs|all blogs page]]
+
 # Kubewekend
 ## Setup Self Kubernetes Cluster in locally ✍
 
@@ -85,13 +87,13 @@ Github: **[distribute-git-hook](https://github.com/wouops/distribute-git-hook)**
 >[!info]
 >About the methodology which can apply for release or deploy the application which no down time, rapidly and more efficience work with script, DevOps circle
 
-## Blue Green Deployment 🚧
+## Blue Green 🚧
 
 >[!note]
 >Feel free to read about small article about operating 👉 [[0-downtime with Blue-Green Deployment]]
-## Canary Deployment 🚧
+## Canary 🚧
 
-# AIOps and MLOps ✍
+# AIOps and MLOps
 
 ## Milvus Cluster ✅
 

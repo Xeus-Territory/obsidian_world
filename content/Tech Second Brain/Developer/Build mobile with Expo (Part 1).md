@@ -5,6 +5,8 @@ tags:
   - github-action
   - mobile
   - cicd
+  - android
+  - ios
 ---
 >[!quote]
 >Hi @all, this week is not having special, and I have lot of idea to releasing about multiple topics, but really cool to contributing anything else. Therefore, I try to learn more about mobile, and now we have another way to continue build and distribute mobile application with Expo. Let's digest about that
