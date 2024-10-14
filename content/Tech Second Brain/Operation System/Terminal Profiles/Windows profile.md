@@ -106,7 +106,7 @@ Import-Module -Name Terminal-Icons
 
 To understand more about `powershell`, come and take a look on
 
-- [[Powershell Snippets]]
+- [[Powershell snippets]]
 - [[Tech Second Brain/Operation System/Helpful Pages & Articles#Window|Windows Helpful Pages & Articles]]
 
 # Install VMware Workstation

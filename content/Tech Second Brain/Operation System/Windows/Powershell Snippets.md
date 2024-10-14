@@ -1,5 +1,5 @@
 ---
-title: Powershell Snippets
+title: Powershell snippets
 tags:
   - command
   - powershell
@@ -154,7 +154,14 @@ bcdedit /set hypervisorlaunchtype auto
 Restart to take effect or you can do it with command
 
 ```powershell
+# Restart in one minute left
 shutdown /r
+
+# Restart immediately
+shutdown /r /t 0
+
+# Restart after time
+shutdown /r /t TIME
 ```
 
 ## Powershell
@@ -175,7 +182,14 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All
 And restart or use command
 
 ```powershell
+# Restart in one minute left
 shutdown /r
+
+# Restart immediately
+shutdown /r /t 0
+
+# Restart after time
+shutdown /r /t TIME
 ```
 
 # Get execute policy

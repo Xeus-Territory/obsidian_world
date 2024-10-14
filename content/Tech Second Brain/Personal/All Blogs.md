@@ -126,6 +126,7 @@ tags:
 - [[What is Wrapper Pattern|What is Wrapper Pattern ?]]
 - [[What is Helm|What is Helm?]]
 - [[What is Milvus|What is Milvus?]]
+- [[Increase Quota and Limit of Cloud Services]]
 
 # DIY + 41st Time (Do it yourself)
 
@@ -217,5 +218,5 @@ tags:
 - [[Kubectl snippet|Kubectl]]
 - [[Git|Git]]
 - [[HTML|HTML]]
-- [[Powershell Snippets|Powershell Commands]]
+- [[Powershell snippets|Powershell Commands]]
 - [[Shell command snippets|Shell Bash Commands]]

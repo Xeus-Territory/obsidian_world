@@ -27,6 +27,7 @@ You can figure what you need to do for start with `aws` via some website and art
 - [AWS Price Calculator](https://calculator.aws/#/)
 - [AWS Architecture Blog](https://aws.amazon.com/vi/blogs/architecture/)
 - [AWS Blog](https://aws.amazon.com/blogs)
+- [AWS General Reference](https://docs.aws.amazon.com/general/latest/gr/Welcome.html)
 
 You can manage `aws` as organization via the tree and sub-organization inside root account
 
@@ -43,12 +44,14 @@ So enjoy what you need, inside the article will share about how you CLI, cheatsh
 
 - [Github - Amazon Web Services](https://github.com/aws) - AWS Opensource Community
 - [Github - AWS Samples](https://github.com/aws-samples) - AWS Samples Community
+# Blogs and Articles
 
-# AWS Community
+## Blogs
 
+- [Medium - Chris St. John](https://medium.com/@csjcode)
 - [Medium - AWS in Plain English](https://aws.plainenglish.io/): New AWS, Cloud, and DevOps content every day.
-
-# Helpful articles
+- [Medium - AWStip](https://awstip.com/): Community of passionate AWS builders.
+## Articles
 
 - [Medium - ECS (Fargate) with ALB Deployment Using Terraform — Part 3](https://medium.com/the-cloud-journal/ecs-fargate-with-alb-deployment-using-terraform-part-3-eb52309fdd8f)
 - [Medium - Creating SSL Certificates using AWS Certificate Manager (ACM)](https://medium.com/@sonynwoye/creating-ssl-certificates-using-aws-certificate-manager-acm-1c359e70ce4d)
@@ -185,6 +188,11 @@ aws ecr get-login-password | crane auth login -u AWS --password-stdin <url-ecr>
 aws eks get-token --cluster-name <name>
 ```
 
+## Create kubeconfig file automatically
+
+```bash
+aws eks update-kubeconfig --region region-code --name my-cluster
+```
 ## SQS
 
 ###  Retrieve message from queue
@@ -281,7 +289,6 @@ echo -n "$(curl  -H "Host: ${bucket}.s3.amazonaws.com" \
      -H "Authorization: AWS ${AWS_ACCESS_KEY_ID}:${signature}" \
      https://${bucket}.s3.amazonaws.com/${amzFile} -o "$outputFile")"
 ```
-
 ### Upload file to S3
 
 >[!summary]

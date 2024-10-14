@@ -35,6 +35,7 @@ tags:
 - [awesome-test-automation](https://github.com/atinfo/awesome-test-automation): A curated list of awesome test automation frameworks, tools, libraries, and software for different programming languages
 - [awesome-embedded](https://github.com/nhivp/Awesome-Embedded): A curated list of awesome embedded programming.
 - [awesome-iam](https://github.com/kdeldycke/awesome-iam): 👤 Identity and Access Management knowledge for cloud platforms
+- [GitLab Explore](https://gitlab.com/explore/projects/starred): Find and explore tab of GitLab
 ## Page
 
 - [HelloGitHub](https://github.com/521xueweihan/HelloGitHub) : Share interesting, entry-level open source projects on GitHub. [EN](https://hellogithub.com/en)
@@ -76,6 +77,7 @@ tags:
 - [Dyne.org](https://github.com/dyne): Think &do tank and free software foundry
 - [Puppet](https://github.com/puppetlabs): Puppet Community
 - [Vox Pupuli](https://github.com/voxpupuli): Modules and tooling maintained by and for the [Puppet](https://www.puppet.com/) community
+- [LXC - Linux Containers](https://github.com/lxc): Linux container projects
 ## Landscape
 
 - [Apache Project Directory](https://projects.apache.org/projects.html) : List all of product of Apache
@@ -121,6 +123,7 @@ tags:
 - [Spacelift Blog](https://spacelift.io/blog) - Blog tech about infrastructure as code, and cloud services
 - [Medium - Vu Trinh](https://medium.com/@vutrinh274) - Tech blogger who cover a lot information about databases and data engineers
 - [Medium - DevOps.dev](https://blog.devops.dev/) - The community about DevOps Article, Cloud and more over things
+- [Medium - ITNext](https://itnext.io/) - Community in Medium where talk about lots of technological thing
 # DevOps Articles
 
 >[!note]
@@ -167,6 +170,7 @@ tags:
 - [Medium - Top 20 Network Protocols You Must Know in System Design](https://medium.com/interviewnoodle/top-20-network-protocols-you-must-know-in-system-design-81eaab4b0c36)
 - [Medium - 7 Best Open Source Storage Solutions for Kubernetes](https://blog.devops.dev/7-best-open-source-storage-solutions-for-kubernetes-0da8b51efe8d)
 - [Medium - Use SOPS and Terraform to create encrypt/decrypt files with AWS KMS](https://medium.com/@arunmrp90/use-sops-and-terraform-to-create-encrypted-decrypt-files-with-aws-kms-a38ac793518b)
+- [Medium - Top 10 Kubernetes Pod Concepts That Confuse Beginners](https://medium.com/frontend-canteen/top-10-kubernetes-pod-concepts-that-confuse-beginners-8c0954021f3f)
 # DevOps Youtube Channel
 
 ![[youtube.png]]
@@ -252,6 +256,7 @@ tags:
 
 - [zig](https://github.com/ziglang/zig): General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software. [Documentation](https://ziglang.org/)
 - [mojo](https://github.com/modularml/mojo): The Mojo Programming Language. [Documentation](https://docs.modular.com/mojo/manual/)
+- [cue](https://github.com/cue-lang/cue): An open-source data validation language with its roots in logic programming. [Documentation](https://cuelang.org/docs/)
 # DevOps & Useful Tools
 
 >[!note]
@@ -348,7 +353,6 @@ tags:
 - [.gitignore.io](https://www.toptal.com/developers/gitignore): Create useful .gitignore files for your project
 - [diagrams](https://github.com/mingrammer/diagrams): 🎨 Diagram as Code for prototyping cloud system architectures
 - [crontab guru](https://crontab.guru/): The quick and simple editor for cron schedule expressions by Cronitor (SHELL/Pipeline)
-- [crontab spring](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/scheduling/support/CronExpression.html) : Representation of a [crontab expression](https://www.manpagez.com/man/5/crontab/) that can calculate the next time it matches (Java/AWS)
 - [checkov](https://github.com/bridgecrewio/checkov): Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as code, container images and open source packages
 ## Local Cloud Self-hosted
 
