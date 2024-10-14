@@ -217,5 +217,5 @@ tags:
 - [[Kubectl snippet|Kubectl]]
 - [[Git|Git]]
 - [[HTML|HTML]]
-- [[Powershell Snippets|Powershell Commands]]
+- [[Powershell snippets|Powershell Commands]]
 - [[Shell command snippets|Shell Bash Commands]]

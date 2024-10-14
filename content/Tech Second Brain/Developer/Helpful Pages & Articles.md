@@ -37,6 +37,9 @@ tags:
 - [Morioh](https://morioh.com/): Social Network for Programmers and Developers
 - [Dev](https://dev.to/): DEV Community is a community of 2,027,354 amazing developers
 - [Medium - Denys Poltorak](https://medium.com/@denyspoltorak): Super cool stuff take around developer pattern
+- [Medium - FAUN — Developer Community 🐾](https://faun.pub/): Learn and grow by keeping them up with what matters.
+- [Medium - Level Up Coding](https://levelup.gitconnected.com/): Learn and stitch with new things as Developer
+- [Medium - Toward Dev](https://towardsdev.com/): Where Software Developers Share Programming Ideas, Concepts & Stories.
 # Articles
 
 - [Medium - Most Common Software Architecture Styles](https://medium.com/@techworldwithmilan/most-common-software-architecture-styles-86881d779683)
@@ -47,6 +50,7 @@ tags:
 - [Medium - Architectural Metapatterns](https://medium.com/itnext/architectural-metapatterns-1834bdbc4221)
 - [Dev.to - 10 Things You Can Learn from Netflix’s Architecture](https://dev.to/somadevtoo/10-things-you-can-learn-from-netflixs-architecture-1bnn)
 - [QAMadness - Your Guide to Automated Integration Testing](https://www.qamadness.com/your-guide-to-automated-integration-testing/)
+- [crontab spring](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/scheduling/support/CronExpression.html) : Representation of a [crontab expression](https://www.manpagez.com/man/5/crontab/) that can calculate the next time it matches (Java/AWS)
 # Developer online tools
 
 - [10015.io](https://10015.io/) : A “free all-in-one toolbox” solution created to ease your life by preventing bookmark mess.
@@ -55,7 +59,6 @@ tags:
 - [TrueDevTools](https://truedevtools.com/): *True Devtools is a free collection of 45+ carefully crafted tools useful for development*
 - [IT - Tools](https://it-tools.tech/) : Handy tools for developers
 - [Devtoys.app](https://devtoys.app/): A Swiss Army knife for developers.
-
 # Language Programing Collection
 
 ## C/C++

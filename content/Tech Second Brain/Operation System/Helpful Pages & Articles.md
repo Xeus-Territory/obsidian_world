@@ -28,6 +28,7 @@ tags:
 - [Systemd](https://systemd.io/): System and Service Manager
 - [Mendel Cooper - Advanced Bash-Scripting Guide](https://tldp.org/LDP/abs/html/index.html): An in-depth exploration of the art of shell scripting
 - [Linux Shell Scripting Tutorial - Bash Linux Shell Scripting Wiki](https://bash.cyberciti.biz/guide/Main_Page)
+- [NVIDIA CUDA Installation Guide for Linux](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/#system-requirements)
 ## Articles
 
 - [Unix & Linux Stack Exchange - Format output of xargs](https://unix.stackexchange.com/questions/89130/format-output-of-xargs) 
@@ -56,6 +57,7 @@ tags:
 - [Internet - How to Change Permissions on Mounted Drive in Linux](https://linuxsimply.com/linux-change-permissions-on-mounted-drive/)
 - [Askubuntu - How to merge partitions?](https://askubuntu.com/questions/66000/how-to-merge-partitions)
 - [Tecmint - 10 Commands to Collect System and Hardware Info in Linux](https://www.tecmint.com/commands-to-collect-system-and-hardware-information-in-linux/)
+- [DigitalOcean - How to Set Up a Firewall with UFW on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu)
 # Window
 
 ## Awesome Repositories
@@ -70,15 +72,16 @@ tags:
 
 - [Windows Server Security documentation](https://learn.microsoft.com/en-us/windows-server/security/security-and-assurance): Official Documentation from Microsoft
 - [Powershell Documentation](https://learn.microsoft.com/en-us/powershell/scripting/how-to-use-docs?view=powershell-7.4): Official Documentation from Microsoft
+- [Windows Commands Documentation](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands): Official Documentation from Microsoft
 - [DISM Overview](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/what-is-dism?view=windows-11)
 - [Working across Windows and Linux file systems](https://learn.microsoft.com/en-us/windows/wsl/filesystems)
-
 ## Articles
 
 - [The $Windows.~BT Folder: What It Is and How to Delete It](https://www.lifewire.com/what-is-windows-bt-folder-how-to-delete-it-4775736)
 - [PowerShell Aliases: A Beginner’s Guide](https://www.sharepointdiary.com/2021/08/powershell-alias-beginners-guide.html)
 - [PowerShell Commands: 50+ Every Developer Should Know](https://stackify.com/powershell-commands-every-developer-should-know/)
 - [The Most Helpful PowerShell Cheat Sheet You’ll Ever Find](https://www.stationx.net/powershell-cheat-sheet/)
+- [Windows Centrals - How to use shutdown command tool on Windows 10](https://www.windowscentral.com/how-use-shutdown-command-tool-windows-10#section-how-to-restart-computer-with-shutdown-command)
 
 # Handheld notebook
 

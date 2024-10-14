@@ -47,6 +47,7 @@ So enjoy what you need, inside the article will share about how you CLI, cheatsh
 # AWS Community
 
 - [Medium - AWS in Plain English](https://aws.plainenglish.io/): New AWS, Cloud, and DevOps content every day.
+- [Medium - AWStip](https://awstip.com/): Community of passionate AWS builders.
 
 # Helpful articles
 
