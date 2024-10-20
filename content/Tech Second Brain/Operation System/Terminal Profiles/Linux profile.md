@@ -386,6 +386,10 @@ export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:/usr/local/lib64/pkgconfig:$HOM
 
 # Alias command to get Public IP
 alias pubip="curl -4 icanhazip.com"
+
+# Terragrunt bash complete 
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terragrunt terragrunt
 ```
 
 # Custom plugins for Oh-my-zsh

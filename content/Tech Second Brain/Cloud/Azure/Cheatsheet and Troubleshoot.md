@@ -42,6 +42,7 @@ What you can find out and figure out about Azure, Cloud Computing, Documentation
 - [Azure CLI - User Guide](https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest)
 - [Azure Price Calculator](https://azure.microsoft.com/en-gb/pricing/calculator/)
 - [Azure - Blog](https://azure.microsoft.com/en-us/blog/)
+- [Azure - Subscription and Service Limits, Quotas, and Constraints](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits)
 
 >[!info]
 >If you want to receive the credit from VS Subscription, you can direct use via [Monthly Azure credits for Visual Studio subscribers](https://azure.microsoft.com/en-us/pricing/member-offers/credit-for-visual-studio-subscribers)

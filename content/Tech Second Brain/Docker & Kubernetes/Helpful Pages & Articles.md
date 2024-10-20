@@ -22,6 +22,7 @@ tags:
 - [k8s-deployment-strategies](https://github.com/ContainerSolutions/k8s-deployment-strategies) : Kubernetes deployment strategies explained
 - [Bitnami containers](https://github.com/bitnami/containers) : Bitnami container images
 - [awesome-k8s-resources](https://github.com/tomhuang12/awesome-k8s-resources) : A curated list of awesome Kubernetes tools and resources.
+- [awesome-stacks](https://github.com/ethibox/awesome-stacks): Deploy 120+ open-source web apps with one Docker command. 
 ## Organization
 
 - [Bitnami](https://github.com/bitnami): Organization belong of VMWare to contributing docker image. [Website](https://bitnami.com/)
@@ -29,7 +30,8 @@ tags:
 - [kubernetes-sigs](https://github.com/kubernetes-sigs) : Org for Kubernetes SIG-related work
 - [Kubernetes](https://github.com/kubernetes): Production-Grade Container Scheduling and Management
 - [Containers](https://github.com/containers) : Open Repository for Container Tools
-
+- [LinuxServer.io](https://github.com/linuxserver): Building and maintaining community images
+- [Kubeflow](https://github.com/kubeflow/):  An open, community driven project to make it easy to deploy and manage an ML stack on Kubernetes
 ## Topics
 
 - [Kubernetes Cluster API](https://cluster-api.sigs.k8s.io/) : About cluster API
@@ -46,7 +48,9 @@ tags:
 - [DockerHub](https://hub.docker.com/)
 - [Amazon ECR Public Gallery](https://gallery.ecr.aws/)
 - [Microsoft Artifact Registry](https://mcr.microsoft.com/)
-
+- [Quay Registry](https://quay.io/)
+- [LinuxServer](https://docs.linuxserver.io/) : [Tutorial Manual](https://docs.linuxserver.io/)
+- [Google Artifact Registry Distroless](https://console.cloud.google.com/artifacts/docker/distroless/us/gcr.io)
 ## Image
 
 - [docker](https://hub.docker.com/_/docker): Docker in Docker!
