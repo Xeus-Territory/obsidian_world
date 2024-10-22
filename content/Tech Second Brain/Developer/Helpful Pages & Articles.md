@@ -51,6 +51,8 @@ tags:
 - [Dev.to - 10 Things You Can Learn from Netflix’s Architecture](https://dev.to/somadevtoo/10-things-you-can-learn-from-netflixs-architecture-1bnn)
 - [QAMadness - Your Guide to Automated Integration Testing](https://www.qamadness.com/your-guide-to-automated-integration-testing/)
 - [crontab spring](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/scheduling/support/CronExpression.html) : Representation of a [crontab expression](https://www.manpagez.com/man/5/crontab/) that can calculate the next time it matches (Java/AWS)
+- [AppleForums - APP STORE connect operation error: An error occurred uploading to the App Store](https://forums.developer.apple.com/forums/thread/123649?answerId=389459022#389459022)
+- [Medium - 8 Golang Performance Tips I Discovered After Years of Coding](https://medium.com/deep-golang/8-python-performance-tips-i-discovered-after-years-of-coding-in-golang-764375658d90)
 # Developer online tools
 
 - [10015.io](https://10015.io/) : A “free all-in-one toolbox” solution created to ease your life by preventing bookmark mess.

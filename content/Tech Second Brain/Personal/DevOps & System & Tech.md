@@ -36,6 +36,7 @@ tags:
 - [awesome-embedded](https://github.com/nhivp/Awesome-Embedded): A curated list of awesome embedded programming.
 - [awesome-iam](https://github.com/kdeldycke/awesome-iam): 👤 Identity and Access Management knowledge for cloud platforms
 - [GitLab Explore](https://gitlab.com/explore/projects/starred): Find and explore tab of GitLab
+- [awesome-webhooks](https://github.com/realadeel/awesome-webhooks): A curated list about real-time webhooks.
 ## Page
 
 - [HelloGitHub](https://github.com/521xueweihan/HelloGitHub) : Share interesting, entry-level open source projects on GitHub. [EN](https://hellogithub.com/en)
@@ -171,6 +172,7 @@ tags:
 - [Medium - 7 Best Open Source Storage Solutions for Kubernetes](https://blog.devops.dev/7-best-open-source-storage-solutions-for-kubernetes-0da8b51efe8d)
 - [Medium - Use SOPS and Terraform to create encrypt/decrypt files with AWS KMS](https://medium.com/@arunmrp90/use-sops-and-terraform-to-create-encrypted-decrypt-files-with-aws-kms-a38ac793518b)
 - [Medium - Top 10 Kubernetes Pod Concepts That Confuse Beginners](https://medium.com/frontend-canteen/top-10-kubernetes-pod-concepts-that-confuse-beginners-8c0954021f3f)
+- [Medium - Step by Step guide on generating an IOS certificate, preparing for Test Flight, and releasing ios app on the App Store](https://medium.com/readytowork-org/step-by-step-guide-on-generating-an-ios-certificate-preparing-for-test-flight-and-releasing-ios-99cd2eb11067)
 # DevOps Youtube Channel
 
 ![[youtube.png]]
@@ -520,7 +522,9 @@ tags:
 - [exa](https://github.com/ogham/exa): A modern replacement for ‘ls’.
 - [skopeo](https://github.com/containers/skopeo): Work with remote images registries - retrieving information, images, signing content
 - [pre-commit](https://github.com/pre-commit/pre-commit): A framework for managing and maintaining multi-language pre-commit hooks.
-- [husky](https://github.com/typicode/husky): Git hooks made easy 🐶 woof!
+	- [pre-commit-hooks](https://github.com/pre-commit/pre-commit-hooks): Some out-of-the-box hooks for pre-commitSome out-of-the box hooks for pre-commit
+	- [husky](https://github.com/typicode/husky): Git hooks made easy 🐶 woof!
+
 - [auto-unlocker](https://github.com/paolo-projects/auto-unlocker): Unlocker for VMWare macOS
 - [darling](https://github.com/darlinghq/darling): Darwin/macOS emulation layer for Linux
 - [httpie](https://github.com/httpie/cli): modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions, downloads, plugins & more. [Documentation](https://httpie.io/docs/cli)
