@@ -429,7 +429,7 @@ clear
 Also you can reuse the previous command arguments, for example
 
 ```bash
-$ commad <args>
+$ command <args>
 $ 2nd command !$
 ```
 
@@ -454,7 +454,6 @@ set +o allexport
 
 # One line
 set -o allexport && source dot/env/file && set +o allexport
-
 ```
 ## Update Ubuntu new version
 

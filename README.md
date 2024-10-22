@@ -1,24 +1,20 @@
-# Xeus's Obsidian world
+<div align="center">
+  <h1>XeusNguyen's Obsidian World</h1>
+	<img src="https://avatars.githubusercontent.com/u/74602538?s=400&v=4">
+    <em><p style="text-align: center;">"Still living young, wild and free !!!"</p></em>
+</div>
 
-> Archive my knowledge, make more efficient and share to others
+---
 
-*Give a applause for [him - jackyzha0](https://github.com/jackyzha0), this template is used from his project. I feel appriciate with your contribution, help me to cut off effort for implement UI/UX, and can make something cool stuff like Obsidian World*
+> Archive my knowledge, make more efficient and share to others one
 
-# Quartz v4
+*"Give an applause for [him - jackyzha0](https://github.com/jackyzha0), this template is used from his project. I feel appriciate with your contribution, help me to cut off effort for implement UI/UX, and can make something cool stuff like Obsidian World"*
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+With the assets used by excalidraw of Obsidian world, I want to shout out for those communities which share legally icon to public archiecture design, get one for you
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
+- [AWS Archiecture and Resource Icons](https://aws.amazon.com/architecture/icons/)
+- [Azure Architecture and Resource Icons](https://learn.microsoft.com/en-us/azure/architecture/icons/)
+- [Kubernetes Icons](https://github.com/kubernetes/community/tree/master/icons)
+- [Excalidraw Icon](https://libraries.excalidraw.com/?theme=light&sort=default)
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
-
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
-
-## Sponsors
-
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+Go and check about this template at [quartz](https://github.com/jackyzha0/quartz) and reach [quartz - documentation](https://quartz.jzhao.xyz/) to know how get one for yourself
