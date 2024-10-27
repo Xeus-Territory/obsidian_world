@@ -26,7 +26,7 @@ tags:
 - [awesome-ebpf](https://github.com/zoidyzoidzoid/awesome-ebpf) : A curated list of awesome projects related to eBPF.
 - [web-servers.md](https://gist.github.com/willurd/5720255) : Each of these commands will run an ad hoc http static server in your current (or specified) directory
 - [awesome-devsecops](https://github.com/JakobTheDev/awesome-devsecops): Curating the best DevSecOps resources and tooling.
-- [Self-Hosting-Guide](https://github.com/mikeroyal/Self-Hosting-Guide) : Learn all about locally hosting
+- [self-hosting-guide](https://github.com/mikeroyal/Self-Hosting-Guide) : Learn all about locally hosting
 - [static-analysis](https://github.com/analysis-tools-dev/static-analysis): A curated list of static analysis (SAST) tools and linters
 - [dynamic-analysis](https://github.com/analysis-tools-dev/dynamic-analysis): A curated list of dynamic analysis tools and linters
 - [system-design-101](https://github.com/ByteByteGoHq/system-design-101): Explain complex systems using visuals and simple terms. Help you prepare for system design interviews.
@@ -35,7 +35,8 @@ tags:
 - [awesome-test-automation](https://github.com/atinfo/awesome-test-automation): A curated list of awesome test automation frameworks, tools, libraries, and software for different programming languages
 - [awesome-embedded](https://github.com/nhivp/Awesome-Embedded): A curated list of awesome embedded programming.
 - [awesome-iam](https://github.com/kdeldycke/awesome-iam): 👤 Identity and Access Management knowledge for cloud platforms
-- [GitLab Explore](https://gitlab.com/explore/projects/starred): Find and explore tab of GitLab
+- [gitlab-explore](https://gitlab.com/explore/projects/starred): Find and explore tab of GitLab
+- [awesome-webhooks](https://github.com/realadeel/awesome-webhooks): A curated list about real-time webhooks.
 ## Page
 
 - [HelloGitHub](https://github.com/521xueweihan/HelloGitHub) : Share interesting, entry-level open source projects on GitHub. [EN](https://hellogithub.com/en)
@@ -92,85 +93,109 @@ tags:
 >[!note]
 >Useful page for finding the target and gain more experience in DevOps, System and moreover in technology field
 
-- [DevOps VN](https://devopsvn.tech/) - Vietnamese Community and Blog page about DevOps and Technologies
-- [DevOps Việt Nam - DevOpsify](https://devopsify.co/) - Vietnamese Community about DevOps
+## Tech Blog
+
 - [Trang chủ » AnonyViet](https://anonyviet.com/) - Vietnamese Community who teaching multiple techniques on Computer
-- [4sysops](https://4sysops.com/) -  The online community for SysAdmins and DevOps
-- [The Cloud Native Wiki | Aqua](https://www.aquasec.com/cloud-native-academy/) - The resource center for everything cloud native
-- [Noted](https://noted.lol/) - Self Hosted App and Product Reviews
 - [Digital Ocean Community](https://www.digitalocean.com/community) - Community offers thousands of tutorials, videos, and answers to questions on a wide range of topics
-- [DevOpsCube](https://devopscube.com/) - Learn DevOps | Software & Platform Reviews
-- [Milan Newsletter](https://newsletter.techworld-with-milan.com/) - Guy will teach you more about infrastructure, architecture, ...
-- [Medium - David Mosyan](https://medium.com/@dmosyan) - Systems Architecture / Cloud / DevOps / Cybersecurity
-- [Medium - Sagar #OpenToWork](https://sagarkpanda.medium.com/) - DevOps Engineer
-- [Medium - Seifeddine Rajhi](https://medium.com/@seifeddinerajhi) - Super cool stuff about opensource and cloud platform
-- [Medium - The kube guy](https://thekubeguy.com/) - About Kubernetes with resolve multiple problems around and minimal efforts
-- [Medium - ByteCook](https://medium.com/@cstoppgmr) - Unique contents cover multi-range in technical fields
-- [Medium - HungWei Chiu](https://medium.com/@hwchiu) - Guy with super dope contents around system and kubernetes
-- [ByteByteGo Blog](https://blog.bytebytego.com) - About the system design, and moreover technologies
-- [Brendan Gregg](https://www.brendangregg.com/index.html) - Cool guy with pleasant contents about ebpf and kernel technologies
 - [StackExchange](https://stackexchange.com/sites) - StackOverFlow Ecosystem
-- [Isovalent Blog](https://isovalent.com/blog/) - More about ebpf and kernel technologies, especially cilium and sub-projects of cilium
 - [XDA Forums](https://forum.xda-developers.com/) - Valuable resource for people who want to make the most of their mobile devices, from customizing the look and feel to adding new functionality.
-- [Opensource.com | Opensource.com](https://opensource.com/) - Community talk about Opensource - powered by Red Hat
 - [How-To Geek](https://www.howtogeek.com/) - Community who explain Technologies
 - [Hackaday.io](https://hackaday.io/) - The world's largest collaborative hardware development community.
 - [Hackaday](https://hackaday.com/) - Fresh Hacks Every Day
-- [Medium - ByteByteGo System Design Alliance](https://medium.com/bytebytego-system-design-alliance) - Explain complex systems with simple term.
+- [Opensource.com | Opensource.com](https://opensource.com/) - Community talk about Opensource - powered by Red Hat
 - [3os Project](https://3os.org/) - Collocation of technical documentation and guides for devops, developers, pentesters, systems administrators and other IT professionals.
-- [Platform Engineer Blog](https://platformengineering.org/blog) - The discipline of designing and building toolchains and workflows that enable self-service capabilities for software engineering organizations in the cloud-native era.
-- [Terraform Weekly](https://www.weekly.tf/) - A weekly newsletter about Terraform ecosystem (posts, tools, tips&tricks, open-source) with humble opinions by Anton Babenko.
-- [Spacelift Blog](https://spacelift.io/blog) - Blog tech about infrastructure as code, and cloud services
-- [Medium - Vu Trinh](https://medium.com/@vutrinh274) - Tech blogger who cover a lot information about databases and data engineers
-- [Medium - DevOps.dev](https://blog.devops.dev/) - The community about DevOps Article, Cloud and more over things
 - [Medium - ITNext](https://itnext.io/) - Community in Medium where talk about lots of technological thing
-# DevOps Articles
+## DevOps Blog
+
+- [DevOps VN](https://devopsvn.tech/) - Vietnamese Community and Blog page about DevOps and Technologies
+- [DevOps Việt Nam - DevOpsify](https://devopsify.co/) - Vietnamese Community about DevOps
+- [4sysops](https://4sysops.com/) -  The online community for SysAdmins and DevOps
+- [The Cloud Native Wiki | Aqua](https://www.aquasec.com/cloud-native-academy/) - The resource center for everything cloud native
+- [DevOpsCube](https://devopscube.com/) - Learn DevOps | Software & Platform Reviews
+- [Medium - David Mosyan](https://medium.com/@dmosyan) - Systems Architecture / Cloud / DevOps / Cybersecurity
+- [Medium - Sagar #OpenToWork](https://sagarkpanda.medium.com/) - DevOps Engineer
+- [Medium - The kube guy](https://thekubeguy.com/) - About Kubernetes with resolve multiple problems around and minimal efforts
+- [Medium - ByteCook](https://medium.com/@cstoppgmr) - Unique contents cover multi-range in technical fields
+- [Spacelift Blog](https://spacelift.io/blog) - Blog tech about infrastructure as code, and cloud services
+- [Terraform Weekly](https://www.weekly.tf/) - A weekly newsletter about Terraform ecosystem (posts, tools, tips&tricks, open-source) with humble opinions by Anton Babenko.
+- [Medium - DevOps.dev](https://blog.devops.dev/) - The community about DevOps Article, Cloud and more over things
+## Architecture Blog
+
+- [Noted](https://noted.lol/) - Self Hosted App and Product Reviews
+- [Milan Newsletter](https://newsletter.techworld-with-milan.com/) - Guy will teach you more about infrastructure, architecture, ...
+- [Medium - HungWei Chiu](https://medium.com/@hwchiu) - Guy with super dope contents around system and kubernetes
+- [ByteByteGo Blog](https://blog.bytebytego.com) - About the system design, and moreover technologies
+- [Medium - ByteByteGo System Design Alliance](https://medium.com/bytebytego-system-design-alliance) - Explain complex systems with simple term.
+- [Platform Engineer Blog](https://platformengineering.org/blog) - The discipline of designing and building toolchains and workflows that enable self-service capabilities for software engineering organizations in the cloud-native era.
+- [Medium - Vu Trinh](https://medium.com/@vutrinh274) - Tech blogger who cover a lot information about databases and data engineers
+
+## EBPF Blog
+
+- [Brendan Gregg](https://www.brendangregg.com/index.html) - Cool guy with pleasant contents about ebpf and kernel technologies
+- [Isovalent Blog](https://isovalent.com/blog/) - More about ebpf and kernel technologies, especially cilium and sub-projects of cilium
+
+# Tech Articles
 
 >[!note]
 >Collections articles about DevOps, System Design and moreover about technologies and opensource 
 
-- [DevOps Cube - Prometheus Architecture: Complete Breakdown of Key Components](https://devopscube.com/prometheus-architecture/)
-- [Azure - Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)
-- [DevOps School - Popular Deployment Strategies & Pattern](https://www.devopsschool.com/blog/list-of-popular-deployment-strategies/)
-- [Medium - What Are Deployment Patterns?](https://medium.com/@techworldwithmilan/what-are-deployment-patterns-876057c15987)
-- [Medium - Entering into DevOps-32 Golden Images02](https://blog.devgenius.io/entering-into-devops-32-golden-images02-9f8a9bfa52cd)
-- [Medium - Top Technology Trends to Watch Out for in 2024 for Platform Engineering and SRE](https://medium.com/@seifeddinerajhi/top-technology-trends-to-watch-out-for-in-2024-for-platform-engineering-and-sre-e267130c7e22)
-- [Medium - High-Level System Architecture of Booking.com](https://medium.com/@sahintalha1/high-level-system-architecture-of-booking-com-06c199003d94)
+## General
+
 - [Vietnix - Vietnamese - Stateless là gì? Sự khác biệt giữa Stateless và Stateful](https://vietnix.vn/stateless-la-gi/)
+- [Medium - Top 20 Network Protocols You Must Know in System Design](https://medium.com/interviewnoodle/top-20-network-protocols-you-must-know-in-system-design-81eaab4b0c36)
+- [Katalon - What is Automation Testing? Ultimate Guide & Best Practices](https://katalon.com/resources-center/blog/what-is-automation-testing)
+- [Leapwork - DevOps Test Automation: Strategy Guide](https://www.leapwork.com/blog/devops-test-automation)
+## Debug System Problem
+
 - [Komodor - Resolving OOMkilled on Kubernetes](https://komodor.com/learn/how-to-fix-oomkilled-exit-code-137/)
-- [Medium - The Complete Guide to Event-Driven Architecture](https://medium.com/@seetharamugn/the-complete-guide-to-event-driven-architecture-b25226594227)
-- [Medium - What is Clean Architecture?](https://medium.com/@techworldwithmilan/what-is-clean-architecture-456d2d3cb0bc)
-- [How to build and deploy React Native applications with Fastlane](https://tech.sparkfabrik.com/en/blog/fastlane_build/)
-- [Dev.io - Automating mobile application deployments using Fastlane and CI/CD tools](https://dev.to/jei/automating-mobile-application-deployments-using-fastlane-and-ci-cd-tools-2iae)
-- [Medium - Data Engineering Best Practices: How Big Tech & FAANG Firms Manage and Optimize Apache Kafka](https://acceldataio.medium.com/data-engineering-best-practices-how-big-tech-faang-firms-manage-and-optimize-apache-kafka-95d520db60bb)
+- [Medium - Top 10 Kubernetes Pod Concepts That Confuse Beginners](https://medium.com/frontend-canteen/top-10-kubernetes-pod-concepts-that-confuse-beginners-8c0954021f3f)
+## Technologies
+
+- [DevOps Cube - Prometheus Architecture: Complete Breakdown of Key Components](https://devopscube.com/prometheus-architecture/)
 - [Medium - GitOps with Kubernetes, Terraform, Gitlab and FluxCD](https://medium.com/@prag-matic/gitops-with-kubernetes-terraform-gitlab-and-fluxcd-2875d1010dac)
-- [Medium - Master Command Orchestration](https://medium.com/itnext/master-command-orchestration-16f4a117ce05)
 - [Medium - Configure CI/CD pipeline: GitlabCI, ArgoCD, HelmCharts & SOPS](https://medium.com/@golaneduard1/configure-ci-cd-pipeline-gitlabci-argocd-helmcharts-sops-3cbf94f300ed)
 - [Medium - Infrastructure as Code Landscape Overview 2024](https://medium.com/itnext/infrastructure-as-code-landscape-overview-2024-a066124e5989)
-- [Medium - Procella — The query engine at YouTube](https://medium.com/@vutrinh274/procella-the-query-engine-at-youtube-e83b0c322e5e)
-- [Medium - Six Rules of Thumb for Scaling Software Architectures](https://medium.com/@i.gorton/six-rules-of-thumb-for-scaling-software-architectures-a831960414f9)
-- [Container Network Interface (CNI) Providers](https://ranchermanager.docs.rancher.com/faq/container-network-interface-providers)
+- [Medium - Master Command Orchestration](https://medium.com/itnext/master-command-orchestration-16f4a117ce05)
+- [Ranchers - Container Network Interface (CNI) Providers](https://ranchermanager.docs.rancher.com/faq/container-network-interface-providers)
 - [Medium - MQTT Market Trends for 2024: Cloud, Unified Namespace, Sparkplug, Kafka Integration](https://medium.com/@kai-waehner/mqtt-market-trends-for-2024-cloud-unified-namespace-sparkplug-kafka-integration-1428d0c3c773)
-- [Medium - Most-Used Distributed System Design Patterns](https://medium.com/javarevisited/most-used-distributed-system-patterns-d5d90ffedf33)
-- [Medium - eBPF Maps State Synchronization across Multi-Node Kubernetes Cluster](https://medium.com/gitconnected/ebpf-maps-state-synchronization-across-multi-node-kubernetes-cluster-d0c075810fa7)
 - [KodeKloud - eBPF Essentials for DevOps Professionals](https://kodekloud.com/blog/ebpf-essentials-devops/)
 - [Zeet - 9 Powerful Atlantis Alternatives to Enhance Terraform Efficiency](https://zeet.co/blog/atlantis-alternatives)
-- [Dev.to - 5 ways for GitLab CI runners to get AWS credentials](https://dev.to/edmundkwok/5-ways-for-gitlab-ci-runners-to-get-aws-credentials-11hp)
-- [Dev.to - Authenticating your GitLab CI runner to an AWS ECR registry using Amazon ECR Docker Credential Helper 🔑](https://dev.to/aws-builders/authenticating-your-gitlab-ci-runner-to-an-aws-ecr-registry-using-amazon-ecr-docker-credential-helper-3ba)
 - [Zeet - 28 Most Powerful Terraform Tools (2024)](https://zeet.co/blog/terraform-tools)
 - [Medium - Top Terraform Tools to Know in 2024](https://medium.com/env0/top-terraform-tools-to-know-in-2024-a00a232bb936)
-- [Medium - Noisy Neighbor Detection with eBPF](https://netflixtechblog.com/noisy-neighbor-detection-with-ebpf-64b1f4b3bbdd)
 - [Medium - VictoriaLogs: an overview, run in Kubernetes, LogsQL, and Grafana](https://itnext.io/victorialogs-an-overview-run-in-kubernetes-logsql-and-grafana-88e0934a5ccd)
 - [Infracloud - 5 Tools to Auto-Generate Terraform Configuration Files](https://www.infracloud.io/blogs/auto-generate-terraform-configuration-files/)
 - [Medium - 11 Open-Source SaaS Killer — Selfhost With Docker](https://blog.devgenius.io/11-open-source-saas-killer-selfhost-with-docker-034456653568)
 - [Medium - 11 Open-Source SaaS Killer — Selfhost With Docker -2](https://medium.com/@harendra21/11-open-source-saas-killer-selfhost-with-docker-2-5d507de8b68f)
+- [Medium - 11 Open-Source SaaS Killer — Selfhost With Docker -3](https://medium.com/@harendra21/11-open-source-saas-killer-selfhost-with-docker-3-a707a15cb540)
 - [Medium - Pulumi: The Real Infrastructure as Code](https://8grams.medium.com/pulumi-the-real-infrastructure-as-code-f8cf5a5f3071)
 - [Medium - 6 Best Free OnCall Software in 2024, Open-Source and SaaS](https://medium.com/statuspal/6-best-free-oncall-software-in-2024-open-source-and-saas-36f82595e539)
-- [Spacelift - Importing Existing Infrastructure Into Terraform – Step by Step](https://spacelift.io/blog/importing-exisiting-infrastructure-into-terraform)
-- [Medium - Top 20 Network Protocols You Must Know in System Design](https://medium.com/interviewnoodle/top-20-network-protocols-you-must-know-in-system-design-81eaab4b0c36)
 - [Medium - 7 Best Open Source Storage Solutions for Kubernetes](https://blog.devops.dev/7-best-open-source-storage-solutions-for-kubernetes-0da8b51efe8d)
+- [Katalon - Top 10 Best End-to-End Testing Tools and Frameworks](https://katalon.com/resources-center/blog/end-to-end-e2e-testing-tools-frameworks)
+- [Leapwork - The Top 20 Test Automation Tools of 2024](https://www.leapwork.com/blog/top-20-test-automation-tools)
+## Techniques
+
+- [Internet - How to build and deploy React Native applications with Fastlane](https://tech.sparkfabrik.com/en/blog/fastlane_build/)
+- [Dev.io - Automating mobile application deployments using Fastlane and CI/CD tools](https://dev.to/jei/automating-mobile-application-deployments-using-fastlane-and-ci-cd-tools-2iae)
+- [Medium - eBPF Maps State Synchronization across Multi-Node Kubernetes Cluster](https://medium.com/gitconnected/ebpf-maps-state-synchronization-across-multi-node-kubernetes-cluster-d0c075810fa7)
+- [Medium - Data Engineering Best Practices: How Big Tech & FAANG Firms Manage and Optimize Apache Kafka](https://acceldataio.medium.com/data-engineering-best-practices-how-big-tech-faang-firms-manage-and-optimize-apache-kafka-95d520db60bb)
+- [Dev.to - 5 ways for GitLab CI runners to get AWS credentials](https://dev.to/edmundkwok/5-ways-for-gitlab-ci-runners-to-get-aws-credentials-11hp)
+- [Dev.to - Authenticating your GitLab CI runner to an AWS ECR registry using Amazon ECR Docker Credential Helper 🔑](https://dev.to/aws-builders/authenticating-your-gitlab-ci-runner-to-an-aws-ecr-registry-using-amazon-ecr-docker-credential-helper-3ba)
+- [Medium - Noisy Neighbor Detection with eBPF](https://netflixtechblog.com/noisy-neighbor-detection-with-ebpf-64b1f4b3bbdd)
+- [Spacelift - Importing Existing Infrastructure Into Terraform – Step by Step](https://spacelift.io/blog/importing-exisiting-infrastructure-into-terraform)
 - [Medium - Use SOPS and Terraform to create encrypt/decrypt files with AWS KMS](https://medium.com/@arunmrp90/use-sops-and-terraform-to-create-encrypted-decrypt-files-with-aws-kms-a38ac793518b)
-- [Medium - Top 10 Kubernetes Pod Concepts That Confuse Beginners](https://medium.com/frontend-canteen/top-10-kubernetes-pod-concepts-that-confuse-beginners-8c0954021f3f)
+- [Medium - Step by Step guide on generating an IOS certificate, preparing for Test Flight, and releasing ios app on the App Store](https://medium.com/readytowork-org/step-by-step-guide-on-generating-an-ios-certificate-preparing-for-test-flight-and-releasing-ios-99cd2eb11067)
+## System and Cloud Design
+
+- [Azure - Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)
+- [DevOps School - Popular Deployment Strategies & Pattern](https://www.devopsschool.com/blog/list-of-popular-deployment-strategies/)
+- [Medium - What Are Deployment Patterns?](https://medium.com/@techworldwithmilan/what-are-deployment-patterns-876057c15987)
+- [Medium - Entering into DevOps-32 Golden Images02](https://blog.devgenius.io/entering-into-devops-32-golden-images02-9f8a9bfa52cd)
+- [Medium - High-Level System Architecture of Booking.com](https://medium.com/@sahintalha1/high-level-system-architecture-of-booking-com-06c199003d94)
+- [Medium - The Complete Guide to Event-Driven Architecture](https://medium.com/@seetharamugn/the-complete-guide-to-event-driven-architecture-b25226594227)
+- [Medium - What is Clean Architecture?](https://medium.com/@techworldwithmilan/what-is-clean-architecture-456d2d3cb0bc)
+- [Medium - Procella — The query engine at YouTube](https://medium.com/@vutrinh274/procella-the-query-engine-at-youtube-e83b0c322e5e)
+- [Medium - Six Rules of Thumb for Scaling Software Architectures](https://medium.com/@i.gorton/six-rules-of-thumb-for-scaling-software-architectures-a831960414f9)
+- [Medium - Most-Used Distributed System Design Patterns](https://medium.com/javarevisited/most-used-distributed-system-patterns-d5d90ffedf33)
 # DevOps Youtube Channel
 
 ![[youtube.png]]
@@ -208,7 +233,7 @@ tags:
 - [Medium - Embedding Python in Go](https://poweruser.blog/embedding-python-in-go-338c0399f3d5F)
 - [QKD BB84 protocol simulation using Quantum Simulator (Qiskit)](https://www.quantumblockchains.io/qkd-protocol-simulation-with-qiskit/)
 - [Event-driven architecture patterns and when to use them](https://ably.com/topic/event-driven-architecture-patterns)
-# Opensource
+# Opensource Finder
 
 >[!note]
 >Place to finding the cool stuff about Opensource and priorities software around the world
@@ -218,9 +243,9 @@ tags:
 - [ProductHunt](https://www.producthunt.com/) - The best new products in tech
 - [G2](https://www.g2.com/) - Find the right software and services
 - [Osssoftware](https://osssoftware.org/open-source-alternatives/) - Best New Open Source Alternatives
-- [hosted-software](https://hostedsoftware.org/) - Self-Hosted Software List
-- [openalternative](https://openalternative.co/) - Discover Open Source Alternatives to Popular Software
-
+- [Hosted Software](https://hostedsoftware.org/) - Self-Hosted Software List
+- [OpenAlternative](https://openalternative.co/) - Discover Open Source Alternatives to Popular Software
+- [StackShare](https://stackshare.io/) - See what tech stacks your peers are using
 # Documentations and Papers
 
 >[!note]
@@ -243,7 +268,6 @@ tags:
 - [ScienceDirect.com | Science, health and medical journals, full text articles and books.](https://www.sciencedirect.com/)
 - [RFC Editor](https://www.rfc-editor.org/) : The RFC Series (ISSN 2070-1721) contains technical and organizational documents about the Internet
 - [The Pattern Languages of Programs archives](https://hillside.net/index.php/past-plop-conferences): Hundreds of patterns are generated yearly in conferences alone, not to mention books and software engineering websites.
-
 # Quantum Computing
 
 - [openqasm](https://github.com/openqasm/openqasm): Quantum assembly language for extended quantum circuits
@@ -251,7 +275,6 @@ tags:
 - [QuantumKatas](https://github.com/microsoft/QuantumKatas): Tutorials and programming exercises for learning Q# and quantum computing
 - [pennylane](https://github.com/PennyLaneAI/pennylane): a cross-platform Python library for quantum computing, quantum machine learning, and quantum chemistry. Train a quantum computer the same way as a neural network.
 - [open-quantum-safe](https://github.com/open-quantum-safe): Software for prototyping quantum-resistant cryptography
-
 # New Programming Language
 
 - [zig](https://github.com/ziglang/zig): General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software. [Documentation](https://ziglang.org/)
@@ -520,7 +543,9 @@ tags:
 - [exa](https://github.com/ogham/exa): A modern replacement for ‘ls’.
 - [skopeo](https://github.com/containers/skopeo): Work with remote images registries - retrieving information, images, signing content
 - [pre-commit](https://github.com/pre-commit/pre-commit): A framework for managing and maintaining multi-language pre-commit hooks.
-- [husky](https://github.com/typicode/husky): Git hooks made easy 🐶 woof!
+	- [pre-commit-hooks](https://github.com/pre-commit/pre-commit-hooks): Some out-of-the-box hooks for pre-commitSome out-of-the box hooks for pre-commit
+	- [husky](https://github.com/typicode/husky): Git hooks made easy 🐶 woof!
+
 - [auto-unlocker](https://github.com/paolo-projects/auto-unlocker): Unlocker for VMWare macOS
 - [darling](https://github.com/darlinghq/darling): Darwin/macOS emulation layer for Linux
 - [httpie](https://github.com/httpie/cli): modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions, downloads, plugins & more. [Documentation](https://httpie.io/docs/cli)
@@ -555,6 +580,7 @@ tags:
 - [FlameGraph](https://github.com/brendangregg/FlameGraph): Stack trace visualizer (Use for Pyroscope)
 - [highlight](https://github.com/highlight/highlight): The open source, full-stack monitoring platform. Error monitoring, session replay, logging, distributed tracing, and more.
 - [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics): VictoriaMetrics: fast, cost-effective monitoring solution and time series database. [Documentation](https://docs.victoriametrics.com/)
+- [Log Viewer (Log4j, NLog)](https://sourceforge.net/projects/styort-logviewer/): a high performance realtime log viewer via UDP (Chainsaw/NLogViewer) or text file.
 
 ## Static Site Generator
 

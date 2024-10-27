@@ -101,6 +101,45 @@ aws --endpoint-url=http://localhost:4566 s3 cp file|dir s3://sample-bucket --rec
 aws --endpoint-url=http://localhost:4566 s3 cp s3://sample-bucket/file -
 ```
 
+### Delete a huge bucket with versioning enable
+
+Discovery more about issue at [StackOverFlow - How do I delete a versioned bucket in AWS S3 using the CLI?](https://stackoverflow.com/questions/29809105/how-do-i-delete-a-versioned-bucket-in-aws-s3-using-the-cli)
+
+```bash
+# Use command for deleting
+aws s3api delete-objects \
+    --bucket name-bucket \
+    --delete "$(aws s3api list-object-versions \
+    --bucket "name-bucket" \
+    --output=json --max-items 500 --query='{Objects: Versions[].{Key:Key,VersionId:VersionId}}')"
+```
+
+```bash
+# Use loop for deleting
+NB_OBJECTS=$(aws s3api list-object-versions --bucket ${buckettoempty} --query='length(Versions[*] || `[]` )' | awk '{ print $1 }')
+echo "      '${NB_OBJECTS}' objects to remove"
+if [[ "$NB_OBJECTS" != "0" ]]; then
+  start=$SECONDS
+  while [[ $NB_OBJECTS -gt 0 ]]
+  do
+    aws s3api delete-objects --bucket ${buckettoempty} --delete "$(aws s3api list-object-versions --bucket ${buckettoempty} --max-items 500 --query='{Objects: Versions[0:500].{Key:Key,VersionId:VersionId}}')" --query 'length(Deleted[*] || `[]` )' > /dev/null
+    NB_OBJECTS=$((NB_OBJECTS  > 500 ? NB_OBJECTS - 500 : 0))
+    echo "      Removed batch of Objects... Remaining : $NB_OBJECTS ($(( SECONDS - start ))s)"
+  done
+fi
+
+NB_OBJECTS=$(aws s3api list-object-versions --bucket ${buckettoempty} --query='length(DeleteMarkers[*] || `[]` )' | awk '{ print $1 }')
+echo "      '${NB_OBJECTS}' markers to remove"
+if [[ "$NB_OBJECTS" != "0" ]]; then
+  start=$SECONDS
+  while [[ $NB_OBJECTS -gt 0 ]]
+  do
+    aws s3api delete-objects --bucket ${buckettoempty} --delete "$(aws s3api list-object-versions --bucket ${buckettoempty} --max-items 500 --query='{Objects: DeleteMarkers[0:500].{Key:Key,VersionId:VersionId}}')" --query 'length(Deleted[*] || `[]` )' > /dev/null
+    NB_OBJECTS=$((NB_OBJECTS  > 500 ? NB_OBJECTS - 500 : 0))
+    echo "      Removed batch of Markers... Remaining : $NB_OBJECTS (took $(( SECONDS - start ))s)"
+  done
+fi
+```
 ## STS
 
 ### Get caller identity to detect `whoami` or `role`
