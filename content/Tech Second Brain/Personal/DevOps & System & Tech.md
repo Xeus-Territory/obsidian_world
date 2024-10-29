@@ -37,6 +37,8 @@ tags:
 - [awesome-iam](https://github.com/kdeldycke/awesome-iam): 👤 Identity and Access Management knowledge for cloud platforms
 - [gitlab-explore](https://gitlab.com/explore/projects/starred): Find and explore tab of GitLab
 - [awesome-webhooks](https://github.com/realadeel/awesome-webhooks): A curated list about real-time webhooks.
+- [DevOps-Bash-tools](https://gitlab.com/HariSekhon/DevOps-Bash-tools):  DevOps Bash Scripts Collection
+- [to be continuous...](https://gitlab.com/to-be-continuous): GitLab CI templates
 ## Page
 
 - [HelloGitHub](https://github.com/521xueweihan/HelloGitHub) : Share interesting, entry-level open source projects on GitHub. [EN](https://hellogithub.com/en)
@@ -113,7 +115,7 @@ tags:
 - [The Cloud Native Wiki | Aqua](https://www.aquasec.com/cloud-native-academy/) - The resource center for everything cloud native
 - [DevOpsCube](https://devopscube.com/) - Learn DevOps | Software & Platform Reviews
 - [Medium - David Mosyan](https://medium.com/@dmosyan) - Systems Architecture / Cloud / DevOps / Cybersecurity
-- [Medium - Sagar #OpenToWork](https://sagarkpanda.medium.com/) - DevOps Engineer
+- [Medium - Sagar](https://sagarkpanda.medium.com/) - DevOps Engineer
 - [Medium - The kube guy](https://thekubeguy.com/) - About Kubernetes with resolve multiple problems around and minimal efforts
 - [Medium - ByteCook](https://medium.com/@cstoppgmr) - Unique contents cover multi-range in technical fields
 - [Spacelift Blog](https://spacelift.io/blog) - Blog tech about infrastructure as code, and cloud services
@@ -128,6 +130,7 @@ tags:
 - [Medium - ByteByteGo System Design Alliance](https://medium.com/bytebytego-system-design-alliance) - Explain complex systems with simple term.
 - [Platform Engineer Blog](https://platformengineering.org/blog) - The discipline of designing and building toolchains and workflows that enable self-service capabilities for software engineering organizations in the cloud-native era.
 - [Medium - Vu Trinh](https://medium.com/@vutrinh274) - Tech blogger who cover a lot information about databases and data engineers
+- [Ivan Velichko](https://iximiuz.com/en/) - Guy teach about container things in developer
 
 ## EBPF Blog
 
@@ -145,10 +148,6 @@ tags:
 - [Medium - Top 20 Network Protocols You Must Know in System Design](https://medium.com/interviewnoodle/top-20-network-protocols-you-must-know-in-system-design-81eaab4b0c36)
 - [Katalon - What is Automation Testing? Ultimate Guide & Best Practices](https://katalon.com/resources-center/blog/what-is-automation-testing)
 - [Leapwork - DevOps Test Automation: Strategy Guide](https://www.leapwork.com/blog/devops-test-automation)
-## Debug System Problem
-
-- [Komodor - Resolving OOMkilled on Kubernetes](https://komodor.com/learn/how-to-fix-oomkilled-exit-code-137/)
-- [Medium - Top 10 Kubernetes Pod Concepts That Confuse Beginners](https://medium.com/frontend-canteen/top-10-kubernetes-pod-concepts-that-confuse-beginners-8c0954021f3f)
 ## Technologies
 
 - [DevOps Cube - Prometheus Architecture: Complete Breakdown of Key Components](https://devopscube.com/prometheus-architecture/)
@@ -156,20 +155,14 @@ tags:
 - [Medium - Configure CI/CD pipeline: GitlabCI, ArgoCD, HelmCharts & SOPS](https://medium.com/@golaneduard1/configure-ci-cd-pipeline-gitlabci-argocd-helmcharts-sops-3cbf94f300ed)
 - [Medium - Infrastructure as Code Landscape Overview 2024](https://medium.com/itnext/infrastructure-as-code-landscape-overview-2024-a066124e5989)
 - [Medium - Master Command Orchestration](https://medium.com/itnext/master-command-orchestration-16f4a117ce05)
-- [Ranchers - Container Network Interface (CNI) Providers](https://ranchermanager.docs.rancher.com/faq/container-network-interface-providers)
 - [Medium - MQTT Market Trends for 2024: Cloud, Unified Namespace, Sparkplug, Kafka Integration](https://medium.com/@kai-waehner/mqtt-market-trends-for-2024-cloud-unified-namespace-sparkplug-kafka-integration-1428d0c3c773)
 - [KodeKloud - eBPF Essentials for DevOps Professionals](https://kodekloud.com/blog/ebpf-essentials-devops/)
 - [Zeet - 9 Powerful Atlantis Alternatives to Enhance Terraform Efficiency](https://zeet.co/blog/atlantis-alternatives)
 - [Zeet - 28 Most Powerful Terraform Tools (2024)](https://zeet.co/blog/terraform-tools)
 - [Medium - Top Terraform Tools to Know in 2024](https://medium.com/env0/top-terraform-tools-to-know-in-2024-a00a232bb936)
-- [Medium - VictoriaLogs: an overview, run in Kubernetes, LogsQL, and Grafana](https://itnext.io/victorialogs-an-overview-run-in-kubernetes-logsql-and-grafana-88e0934a5ccd)
 - [Infracloud - 5 Tools to Auto-Generate Terraform Configuration Files](https://www.infracloud.io/blogs/auto-generate-terraform-configuration-files/)
-- [Medium - 11 Open-Source SaaS Killer — Selfhost With Docker](https://blog.devgenius.io/11-open-source-saas-killer-selfhost-with-docker-034456653568)
-- [Medium - 11 Open-Source SaaS Killer — Selfhost With Docker -2](https://medium.com/@harendra21/11-open-source-saas-killer-selfhost-with-docker-2-5d507de8b68f)
-- [Medium - 11 Open-Source SaaS Killer — Selfhost With Docker -3](https://medium.com/@harendra21/11-open-source-saas-killer-selfhost-with-docker-3-a707a15cb540)
 - [Medium - Pulumi: The Real Infrastructure as Code](https://8grams.medium.com/pulumi-the-real-infrastructure-as-code-f8cf5a5f3071)
 - [Medium - 6 Best Free OnCall Software in 2024, Open-Source and SaaS](https://medium.com/statuspal/6-best-free-oncall-software-in-2024-open-source-and-saas-36f82595e539)
-- [Medium - 7 Best Open Source Storage Solutions for Kubernetes](https://blog.devops.dev/7-best-open-source-storage-solutions-for-kubernetes-0da8b51efe8d)
 - [Katalon - Top 10 Best End-to-End Testing Tools and Frameworks](https://katalon.com/resources-center/blog/end-to-end-e2e-testing-tools-frameworks)
 - [Leapwork - The Top 20 Test Automation Tools of 2024](https://www.leapwork.com/blog/top-20-test-automation-tools)
 ## Techniques
@@ -284,39 +277,6 @@ tags:
 
 >[!note]
 >Collections a supper cool and powerful tools for multiple purpose attaching with DevOps
-
-## Kubernetes Items
-
-- [Ingress-Nginx Controller](https://kubernetes.github.io/ingress-nginx/) : Documentation about Nginx ingress which use for delivery IN/OUT traffic for Kubernetes Cluster
-- [OperatorHub](https://operatorhub.io/):  Home for the Kubernetes community to share Operators
-- [Artifacthub](https://artifacthub.io/) : Find, install and publish Cloud Native packages for Kubernetes
-- [Instance calculator](https://learnk8s.io/kubernetes-instance-calculator) : Estimate and find the number of max workload can apply for instance
-- [Debugging Helm Templates](https://helm.sh/docs/chart_template_guide/debugging/) : Way to debugging the `helm` template with command
-- [Kubernetes IDE - K8Studio](https://k8studio.io/) : Visualizer component and workload inside kubernetes in UI, easily to deploy and manage kubernetes cluster
-- [Elasticsearch (ECK) Operator](https://operatorhub.io/operator/elastic-cloud-eck), you can figure out configuration via [Customize Pods](https://www.elastic.co/guide/en/cloud-on-k8s/master/k8s-customize-pods.html#)
-- [MongoDB Community Kubernetes Operator](https://github.com/mongodb/mongodb-kubernetes-operator), you can take the look some `crd`, and configuration with `github` link like [CRD](https://github.com/mongodb/mongodb-kubernetes-operator/blob/master/config/crd/bases/mongodbcommunity.mongodb.com_mongodbcommunity.yaml) and [Samples](https://github.com/mongodb/mongodb-kubernetes-operator/tree/master/config/samples)
-- [RabbitMQ-cluster-operator](https://operatorhub.io/operator/rabbitmq-cluster-operator), read more about that via [source code](https://github.com/rabbitmq/cluster-operator)
-- [GlassKube](https://glasskube.dev/docs/) : An open-source Kubernetes package manager that simplifies package management for Kubernetes
-- [kops](https://github.com/kubernetes/kops): Kubernetes Operations (kOps) - Production Grade k8s Installation, Upgrades and Management
-- [botkube](https://github.com/kubeshop/botkube): An app that helps you monitor your Kubernetes cluster, debug critical deployments & gives recommendations for standard practices
-- [coredns](https://github.com/coredns/coredns): CoreDNS is a DNS server that chains plugin
-- [kubebuilder](https://github.com/kubernetes-sigs/kubebuilder): SDK for building Kubernetes APIs using CRDs
-- [kubectl-tree](https://github.com/ahmetb/kubectl-tree): kubectl plugin to browse Kubernetes object hierarchies as a tree 🎄
-- [Crossplane](https://docs.crossplane.io/latest/): An open source Kubernetes extension that transforms your Kubernetes cluster into a **universal control plane**.
-- [kcert](https://github.com/nabsul/kcert): KCert: A Simple Let's Encrypt Manager for Kubernetes
-- [lens](https://github.com/lensapp/lens): Lens - The way the world runs Kubernetes
-- [eksctl](https://github.com/eksctl-io/eksctl): The official CLI for Amazon EKS. [Website](https://eksctl.io/)
-## Local Kubernetes Self-hosted
-
-- [Kind](https://kind.sigs.k8s.io/) : [kind](https://sigs.k8s.io/kind) is a tool for running local Kubernetes clusters using Docker container “nodes”.
-- [MicroK8s](https://microk8s.io/docs): MicroK8s is a low-ops, minimal production Kubernetes.
-- [K3s](https://docs.k3s.io/): Lightweight Kubernetes. Easy to install, half the memory, all in a binary of less than 100 MB.
-- [Kubernetes Official solution](https://kubernetes.io/docs/setup/production-environment/tools/) : Installing Kubernetes with deployment tools. Such as: [kubespray](https://github.com/kubernetes-sigs/kubespray), [kubeadm](https://github.com/kubernetes/kubeadm)
-- [minikube](https://minikube.sigs.k8s.io/docs/) : minikube quickly sets up a local Kubernetes cluster on macOS, Linux, and Windows
-- [Talos Linux](https://www.talos.dev/) : The Kubernetes Operating System
-- [K0s](https://docs.k0sproject.io/stable/): k0s is an open source, all-inclusive Kubernetes distribution, which is configured with all of the features needed to build a Kubernetes cluster.
-- [Kubernetes Goat](https://madhuakula.com/kubernetes-goat/docs): An interactive Kubernetes security learning playground
-- [cluster-template](https://github.com/onedr0p/cluster-template): A template for deploying a Talos Kubernetes cluster including Flux for GitOps
 ## Automation Build Platforms
 
 - [Expo](https://docs.expo.dev/): Expo is a framework that makes developing Android and iOS apps easier. Our framework provides file-based routing, a standard library of native modules, and much more
@@ -334,12 +294,6 @@ tags:
 - [werf](https://github.com/werf/werf): A solution for implementing efficient and consistent software delivery to Kubernetes facilitating best practices.
 - [nelm](https://github.com/werf/nelm): Nelm is a Helm 3 alternative and werf deployment engine
 - [dapr](https://github.com/dapr/dapr): Dapr is a portable, event-driven, runtime for building distributed applications across cloud and edge. [Website](https://dapr.io/)
-
-## Kubernetes cluster management
-
-- [Meshery](https://docs.meshery.io/): As a self-service engineering platform, Meshery enables collaborative design and operation of cloud and cloud native infrastructure.
-- [kubeshark](https://github.com/kubeshark/kubeshark): The API traffic analyzer for Kubernetes providing real-time K8s
-- [karpor](https://github.com/KusionStack/karpor): Intelligence for Kubernetes. World's most promising Kubernetes Visualization Tool for Developer and Platform Engineering teams.
 ## Cloud Infrastructure Designer
 
 - [Brainboard](https://www.brainboard.co/) : An AI driven platform to visually design, generate terraform code and manage cloud infrastructure, collaboratively.
@@ -356,7 +310,6 @@ tags:
 - [Vagrant](https://developer.hashicorp.com/vagrant/docs) : Vagrant is the command line utility for managing the lifecycle of virtual machines.
 - [Ansible](https://docs.ansible.com/ansible/latest/index.html) : Ansible provides open-source automation that reduces complexity and runs everywhere, especially `VM`
 - [awx](https://github.com/ansible/awx): AWX provides a web-based user interface, REST API, and task engine built on top of Ansible.
-
 ## Infrastructure as Code (Cloud)
 
 - [Pulumi Documentations](https://www.pulumi.com/docs/) : An open source infrastructure as code tool for creating, deploying, and managing cloud infrastructure.
@@ -377,6 +330,7 @@ tags:
 - [diagrams](https://github.com/mingrammer/diagrams): 🎨 Diagram as Code for prototyping cloud system architectures
 - [crontab guru](https://crontab.guru/): The quick and simple editor for cron schedule expressions by Cronitor (SHELL/Pipeline)
 - [checkov](https://github.com/bridgecrewio/checkov): Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as code, container images and open source packages
+- [Enable CORS](https://enable-cors.org/index.html): enable cross-origin resource sharing
 ## Local Cloud Self-hosted
 
 - [LocalStack - AWS local](https://hub.docker.com/r/localstack/localstack) : A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline. Read more: [Documentation](https://docs.localstack.cloud/getting-started/). You can do more access and management via [LocalStack Web Application](https://app.localstack.cloud/sign-in)
@@ -392,24 +346,13 @@ tags:
 - [infisical](https://github.com/Infisical/infisical): the open-source secret management platform: Sync secrets across your team/infrastructure, prevent secret leaks, and manage internal PKI
 - [teller](https://github.com/tellerops/teller): Cloud native secrets management for developers - never leave your command line for secrets.
 - [doppler](https://github.com/DopplerHQ/cli): The official CLI for interacting with your Doppler secrets and configuration. [Documentation](https://docs.doppler.com/)
-## Policy Controller Kubernetes
-
-- [OPA Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/) : A customizable cloud native policy controller that helps enforce policies and strengthen governance
-- [Kyverno](https://kyverno.io/) : Kubernetes Native Policy Management
-- [Datree](https://hub.datree.io/) : Datree secures your Kubernetes by blocking the deployment of misconfigured resources.
 ## Threat Intelligence
 
-- [Falco](https://falco.org/): Detect security threats in real time
-- [Tetragon](https://tetragon.io/docs/) : Cilium Tetragon component enables powerful realtime, eBPF-based Security Observability and Runtime Enforcement.
 - [openappsec](https://github.com/openappsec/openappsec): A machine learning security engine that preemptively and automatically prevents threats against Web Application & APIs.
 - [teleport](https://github.com/gravitational/teleport): The easiest, and most secure way to access and protect all of your infrastructure.
-- [kubescape](https://github.com/kubescape/kubescape): Kubescape is an open-source Kubernetes security platform for your IDE, CI/CD pipelines, and clusters
 ## API Gateway
 
-- [traefik hub](https://doc.traefik.io/traefik-hub/) : Traefik Hub is the industry’s first Kubernetes-native API Management solution for publishing, securing, and managing APIs.
 - [Kong](https://docs.konghq.com/gateway/latest/): API gateway built for hybrid and multi-cloud, optimized for microservices and distributed architectures
-- [Emissary-Ingress](https://www.getambassador.io/products/api-gateway): An Envoy-powered Open Source API Gateway
-- [gateway-api](https://gateway-api.sigs.k8s.io/): Gateway API is an official Kubernetes project focused on L4 and L7 routing in Kubernetes
 ## Web server
 
 - [traefik proxy](https://doc.traefik.io/traefik/) : Traefik is an [open-source](https://github.com/traefik/traefik) _Edge Router_ that makes publishing your services a fun and easy experience
@@ -425,56 +368,10 @@ tags:
 - [seaweedfs](https://github.com/seaweedfs/seaweedfs) : a fast distributed storage system for blobs, objects, files, and data lake, for billions of files! Blob store has O(1) disk seek, cloud tiering.
 - [CubeFS](https://cubefs.io/docs/master/overview/introduction.html) : A next-generation cloud-native storage product that is currently an incubating open-source project hosted by the [Cloud Native Computing Foundationopen in new window](https://www.cncf.io/projects/cubefs/) (CNCF).
 - [rclone](https://github.com/rclone/rclone): "rsync for cloud storage" - Google Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Wasabi, Google Cloud Storage, Azure Blob, Azure Files, Yandex Files
-
-## Docker Plugin
-
-- [docker-rollout](https://github.com/Wowu/docker-rollout): Zero Downtime Deployment for Docker Compose
-- [watchtower](https://github.com/containrrr/watchtower): A process for automating Docker container base image updates.
-- [nginx-proxy](https://github.com/nginx-proxy/nginx-proxy): Automated nginx proxy for Docker containers using docker-gen
-
-## CRI (Container Runtime Interface)
-
-![[Pasted image 20240724135156.png]]
-
-### Runtime
-
-- [containerd](https://github.com/containerd/containerd) : An open and reliable container runtime. [Getting started](https://github.com/containerd/containerd/blob/main/docs/getting-started.md)
-- [cri-dockerd](https://github.com/Mirantis/cri-dockerd): dockerd as a compliant Container Runtime Interface for Kubernetes (Mirantis OpenSource)
-- [docker](https://docs.docker.com/engine/install/#server) : Docker is one of CRI mostly to used 
-- [Mirantis](https://docs.mirantis.com/mcr/23.0/index.html): Mirantis Container Runtime (MCR) enables you to power your business-critical applications with the industry-leading enterprise container engine
-- [kata-containers](https://github.com/kata-containers/kata-containers) : an open source project and community working to build a standard implementation of lightweight Virtual Machines (VMs) that feel and perform like containers, but provide the workload isolation and security advantages of VMs.
-- [sysbox](https://github.com/nestybox/sysbox): An open-source, next-generation "runc" that empowers rootless containers to run workloads such as Systemd, Docker, Kubernetes, just like VMs.
-### Client
-
-- [cri-tools](https://github.com/kubernetes-sigs/cri-tools) : CLI and validation tools for Kubelet Container Runtime Interface (CRI). [User guide](https://github.com/kubernetes-sigs/cri-tools/blob/master/docs/crictl.md)
-- [kubeletctl](https://github.com/cyberark/kubeletctl): A client for kubelet
-## CNI (Container Network Interface)
-
-- [CNI](https://github.com/containernetworking/cni) : Container Network Interface - networking for Linux containers. [Website](https://www.cni.dev/docs/)
-- [Cilium](https://cilium.io/) : Cilium is an open source, cloud native solution for providing, securing, and observing network connectivity between workloads, fueled by the revolutionary Kernel technology eBPF
-- [Calico](https://www.tigera.io/project-calico/): Calico is a networking and security solution that enables `Kubernetes` workloads and non-Kubernetes/legacy workloads to communicate seamlessly and securely.
-- [flannel](https://github.com/flannel-io/flannel) : A network fabric for containers, designed for `Kubernetes`
-- [weave](https://github.com/weaveworks/weave) : Simple, resilient multi-host containers networking and more.
-
-## OCI (Open Container Initiative)
-
->[!info]
->The OCI currently contains three specifications: the Runtime Specification (runtime-spec), the Image Specification (image-spec) and the Distribution Specification (distribution-spec). The Runtime Specification outlines how to run a “filesystem bundle” that is unpacked on disk. At a high-level an OCI implementation would download an OCI Image then unpack that image into an OCI Runtime filesystem bundle. At this point the OCI Runtime Bundle would be run by an OCI Runtime.
->
->Official Website: [Link](https://opencontainers.org/)
-
-- [runc](https://github.com/opencontainers/runc) : CLI tool for spawning and running containers according to the OCI specification
-- [podman](https://github.com/containers/podman) : A tool for managing OCI containers and pods.
-- [buildah](https://github.com/containers/buildah) : A tool that facilitates building OCI images.
-
 ## Service Discovery
 
 - [nacos](https://github.com/alibaba/nacos): An easy-to-use dynamic service discovery, configuration and service management platform for building cloud native applications.
-## Service Mesh
-
-- [Istio](https://istio.io/): Service Mesh. Simplified. Easily build cloud native workloads securely and reliably with `Istio`, with or without sidecars.
-- [linkerd](https://linkerd.io/2.15/overview/): Linkerd is a _service mesh_ for Kubernetes. It makes running services easier and safer by giving you runtime debugging, observability, reliability, and security—all without requiring any changes to your code.
-- [consul](https://developer.hashicorp.com/consul/docs?product_intent=consul): Consul is a multi-networking tool that offers a fully-featured service mesh solution. It solves the networking and security challenges of operating microservices and cloud infrastructure in multi-cloud and hybrid cloud environments
+- [consul](https://developer.hashicorp.com/consul/docs?product_intent=consul): A multi-networking tool that offers a fully-featured service mesh solution
 ## Service Proxy
 
 - [envoy](https://www.envoyproxy.io/docs/envoy/v1.31.0/) : Envoy is an L7 proxy and communication bus designed for large modern service oriented architectures
@@ -491,7 +388,6 @@ tags:
 - [fluxcd](https://fluxcd.io/flux/) : Tool for keeping Kubernetes clusters in sync with sources of configuration (like Git repositories), and automating updates to configuration when there is new code to deploy.
 - [Semaphore UI](https://semaphoreui.com/) : Elegant web interface for executing Ansible playbooks, Terraform, OpenTofu, Pulumi code and Bash scripts.
 - [act](https://github.com/nektos/act): Run your GitHub Actions locally 🚀
-
 ## Internal Developer Platform (IDP)
 
 - [Qovery](https://hub.qovery.com/docs/getting-started/what-is-qovery/) : the **Internal Developer Platform (IDP)** that cuts noise for developers with paved paths to production
@@ -523,7 +419,6 @@ tags:
 - [kcert](https://github.com/nabsul/kcert): A Simple Let's Encrypt Manager for Kubernetes
 - [ddns-updater](https://github.com/qdm12/ddns-updater): Container to update DNS records periodically with WebUI for many DNS providers
 - [cloudflare-ddns](https://github.com/timothymiller/cloudflare-ddns): 🎉🌩️ Dynamic DNS (DDNS) service based on Cloudflare! Access your home network remotely via a custom domain name without a static IP!
-- [ddns-updater](https://github.com/qdm12/ddns-updater): Container to update DNS records periodically with WebUI for many DNS providers.
 ## Utilities Terminal Tools
 
 - [tldr](https://github.com/tldr-pages/tldr): 📚 Collaborative cheatsheets for console commands
@@ -555,13 +450,11 @@ tags:
 - [spacedrive](https://github.com/spacedriveapp/spacedrive): Spacedrive is an open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust.
 - [localsend](https://github.com/localsend/localsend): An open-source cross-platform alternative to AirDrop (Local Vietnamese Guy 🖖)
 - [nhost](https://github.com/nhost/nhost): The Open Source Firebase Alternative with GraphQL. [Documentation](https://docs.nhost.io/introduction)
-
 ## Git Hosting
 
 - [gitea](https://github.com/go-gitea/gitea): Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD. [Doc](https://docs.gitea.com/)
 - [gitlab](https://about.gitlab.com/install/) : Download, install and maintain your own GitLab instance.
 - [gogs](https://github.com/gogs/gogs): a painless self-hosted Git service. [Doc](https://gogs.io/docs)
-
 ## Monitoring and observability
 
 - [Netdata](https://github.com/netdata/netdata) : The open-source observability platfrom everyone needs!
@@ -575,52 +468,43 @@ tags:
 - [Grafana Stack](https://grafana.com/about/grafana-stack/): Ecosystem of Grafana for providing monitor methodology for your application, container, nodes and moreover. [Helm](https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack), [[Monitoring Stack#Grafana, Prometheus and Exporter|Docker]] and [Guide](https://grafana.com/docs/grafana/latest/getting-started/get-started-grafana-prometheus/)
 - [Zabbix](https://www.zabbix.com/documentation/current/en/manual/introduction/about) : A software that monitors numerous parameters of a network and the health and integrity of servers, virtual machines, applications, services, databases, websites, the cloud and more
 - [Checkmk](https://docs.checkmk.com/latest/en/) : Offers comprehensive and specialized solutions for dealing with the very diverse environments of IT infrastructures.
-- [highlight](https://github.com/highlight/highlight): The open source, full-stack monitoring platform.
 - [gitana](https://github.com/nicolastakashi/gitana): Gitana is a lightweight dashboard sync
 - [FlameGraph](https://github.com/brendangregg/FlameGraph): Stack trace visualizer (Use for Pyroscope)
 - [highlight](https://github.com/highlight/highlight): The open source, full-stack monitoring platform. Error monitoring, session replay, logging, distributed tracing, and more.
 - [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics): VictoriaMetrics: fast, cost-effective monitoring solution and time series database. [Documentation](https://docs.victoriametrics.com/)
 - [Log Viewer (Log4j, NLog)](https://sourceforge.net/projects/styort-logviewer/): a high performance realtime log viewer via UDP (Chainsaw/NLogViewer) or text file.
-
 ## Static Site Generator
 
 - [gatsby](https://github.com/gatsbyjs/gatsby): The best React-based framework with performance, scalability and security built in.
 - [quartz](https://github.com/jackyzha0/quartz): 🌱 a fast, batteries-included static-site generator that transforms Markdown content into fully functional websites
 - [hugo](https://github.com/gohugoio/hugo): The world’s fastest framework for building websites.
-
 ## Feature Flag
 
 - [flagsmith](https://github.com/Flagsmith/flagsmith): Open Source Feature Flagging and Remote Config Service. Host on-prem or use our hosted version at [https://flagsmith.com/](https://flagsmith.com/)
 - [unleash](https://github.com/Unleash/unleash): Open-source feature management solution built for developers.
 - [flipt](https://github.com/flipt-io/flipt): Enterprise-ready, GitOps enabled, CloudNative feature management solution
-
 ## Product Error Analytics and Monitoring
 
 - [openreplay](https://github.com/openreplay/openreplay): Session replay and analytics tool you can self-host. Ideal for reproducing issues, co-browsing with users and optimizing your product.
 - [opentelemetry](https://opentelemetry.io/docs/): OpenTelemetry, also known as OTel, is a vendor-neutral open source [observability](https://opentelemetry.io/docs/concepts/observability-primer/#what-is-observability) framework for instrumenting, generating, collecting, and exporting telemetry data such as [traces](https://opentelemetry.io/docs/concepts/signals/traces/), [metrics](https://opentelemetry.io/docs/concepts/signals/metrics/), and [logs](https://opentelemetry.io/docs/concepts/signals/logs/).
 - [Sentry](https://github.com/getsentry/sentry): Developer-first error tracking and performance monitoring. [Website](https://sentry.io/)
 - [GlitchTip](https://glitchtip.com/documentation): Simple, open source error tracking
-
 ## Orchestration Framework
 
 - [luigi](https://github.com/spotify/luigi): a Python module that helps you build complex pipelines of batch jobs. It handles dependency resolution, workflow management, visualization etc. It also comes with Hadoop support built in.
 - [camunda](https://github.com/camunda/camunda): Process Orchestration Framework. [Website](https://docs.camunda.io/)
-
 ## Web Analytics
 
 - [Plausible](https://github.com/plausible/analytics): Simple, open source, lightweight (< 1 KB) and privacy-friendly web analytics alternative to Google Analytics.
 - [umami](https://github.com/umami-software/umami): Umami is a simple, fast, privacy-focused alternative to Google Analytics.
-
 ## Data integration platform
 
 - [airbyte](https://github.com/airbytehq/airbyte): The leading data integration platform for ETL / ELT data pipelines from APIs, databases & files to data warehouses, data lakes & data lakehouses. Both self-hosted and Cloud-hosted.
-
 ## Web Testing and Automation
 
 - [playwright](https://github.com/microsoft/playwright): Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API. [Documentation](https://playwright.dev/)
 - [selenium](https://github.com/SeleniumHQ/selenium): A browser automation framework and ecosystem. [Documentation](https://selenium.dev/)
 - [jest](https://jestjs.io/docs/getting-started): A delightful JavaScript Testing Framework with a focus on simplicity.
-
 ## Candidate PaaS 
 
 - [dokku](https://github.com/dokku/dokku): A docker-powered PaaS that helps you build and manage the lifecycle of applications. [Documentation](https://dokku.com/docs/getting-started/installation/)

@@ -6,14 +6,24 @@ tags:
   - github
   - basic-templates
 ---
->[!info]
->The Gallery of some `github-actions` pipeline. Manual down below
->- [GitHub Actions documentation](https://docs.github.com/en/actions)
->- [Github Actions Contexts](https://docs.github.com/en/actions/learn-github-actions/contexts)
->- [Github Action Variables](https://docs.github.com/en/actions/learn-github-actions/variables)
->- [Github Action syntax](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions)
->- [Github Action reuse workflows](https://docs.github.com/en/actions/using-workflows/reusing-workflows)
+# Introduce About Github Action
 
+>[!summary]
+>The Gallery of github-actions pipelines, All scenarios to approaching and experience when I work on this platform
+
+## Documentation
+
+- [GitHub Actions - Documentation](https://docs.github.com/en/actions)
+- [Github Actions - Contexts](https://docs.github.com/en/actions/learn-github-actions/contexts)
+- [Github Action - Syntax](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions)
+
+## Feature
+
+- [Github Action - Variables](https://docs.github.com/en/actions/learn-github-actions/variables)
+- [Github Action - Reuse workflows](https://docs.github.com/en/actions/using-workflows/reusing-workflows)
+- [Github Actions - Triggering a workflow](https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/triggering-a-workflow)
+- [Github Actions - Controlling permissions for GITHUB_TOKEN](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token)
+- [Github Action - Control the concurrency of workflows and jobs](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/control-the-concurrency-of-workflows-and-jobs)
 # Deploy React application to Github Page
 
 ```yaml title="github-actions.yaml"

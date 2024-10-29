@@ -793,6 +793,37 @@ So on the last of progress, you can find the `.apk` file on route `./android/app
 >[!warning]
 >Maybe, with `android` build not easily like i said, it will include multiple problems from not enough package, version is too old or not compatible with your applications, ... The best solutions are googling and install, and switch couple version to find target version for you project 😄😄😄😄
 
+# Update - Install Platform Tools
+
+If you want to test and run application with your real device through `adb`, I think you can try to absorb that with the script down below 
+
+```bash
+#!/bin/bash
+
+# Download Platform tool and unzip
+wget https://dl.google.com/android/repository/platform-tools-latest-linux.zip && unzip platform-tools-latest-linux.zip
+
+# Copy and spawn the tool into the folder android-sdk
+# NOTE: You need to install sdk-manager, which step you create the ANDROID_HOME
+mv platform-tools $ANDROID_HOME
+
+# Export PATH to use platform-tools
+echo "export PATH=\"\$PATH:\$ANDROID_HOME/platform-tools\"" >> ~/.bashrc
+
+# Remove the zip file
+rm -rf platform-tools-latest-linux.zip
+```
+
+After you complete that one you can try reload profile `.bashrc` or `.zshrc` to receive new update
+
+```bash
+# Use for zsh profile
+source ~/.zshrc
+
+# Use for bash profile
+source ~/.bashrc
+```
+
 # Conclusion
 
 ![[Pasted image 20240601164543.png]]

@@ -181,6 +181,7 @@ tags:
 - [[Github Action|Github Action]]
 - [[Azure Pipelines|Azure Pipelines]]
 - [[GitlabCI|Gitlab CI]]
+- [[BitBucket|BitBucket Pipelines]]
 - [[Linux profile]]
 - [[Windows profile]]
 

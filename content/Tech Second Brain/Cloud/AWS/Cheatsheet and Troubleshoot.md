@@ -28,6 +28,7 @@ You can figure what you need to do for start with `aws` via some website and art
 - [AWS Architecture Blog](https://aws.amazon.com/vi/blogs/architecture/)
 - [AWS Blog](https://aws.amazon.com/blogs)
 - [AWS General Reference](https://docs.aws.amazon.com/general/latest/gr/Welcome.html)
+- [AWS IAM Actions - Generator](https://www.awsiamactions.io/?r=0)
 
 You can manage `aws` as organization via the tree and sub-organization inside root account
 
@@ -40,6 +41,8 @@ So enjoy what you need, inside the article will share about how you CLI, cheatsh
 ## Repository
 
 - [awesome-aws](https://github.com/donnemartin/awesome-aws) - A curated list of awesome Amazon Web Services (AWS) libraries, open source repos, guides, blogs, and other resources.
+- [my-arsenal-of-aws-security-tools](https://github.com/toniblyx/my-arsenal-of-aws-security-tools): List of open source tools for AWS security: defensive, offensive, auditing, DFIR, etc.
+- [all_aws_managed_policies](https://gist.github.com/gene1wood/55b358748be3c314f956): A list of all AWS managed policies and they're policy documents as well as a short script to generate the list
 ## Organization
 
 - [Github - Amazon Web Services](https://github.com/aws) - AWS Opensource Community
@@ -61,6 +64,10 @@ So enjoy what you need, inside the article will share about how you CLI, cheatsh
 - [PacketFabric - A Deep Dive into NAT Gateway Alternatives](https://packetfabric.com/blog/a-deep-dive-into-nat-gateway-alternatives)
 - [Medium - 18 AWS Lambda Microstacks](https://awstip.com/18-aws-lambda-microstacks-bb20776601c0)
 - [Medium - 14 AWS Security Microstacks](https://medium.com/@csjcode/14-aws-security-microstacks-95d120d57089)
+## Issues
+
+- [AWS re:Post - Getting an Access Denied error message when I upload files to my Amazon S3 bucket](https://repost.aws/knowledge-center/s3-access-denied-error-kms)
+- [AWS - Troubleshoot access denied (403 Forbidden) errors in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/troubleshoot-403-errors.html#access-denied-message-examples)
 # AWS CLI
 
 >[!question]

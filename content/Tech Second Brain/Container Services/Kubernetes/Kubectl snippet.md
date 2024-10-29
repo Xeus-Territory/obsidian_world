@@ -6,6 +6,13 @@ tags:
   - helpful
   - usage
 ---
+>[!info]
+>Small script and take a note to interact between `kubectl` and your kubernetes cluster.
+
+You can explore command with `kubectl` in some place, including
+
+- [kubectl Quick Reference](https://kubernetes.io/docs/reference/kubectl/quick-reference/)
+- [kubectl reference](https://kubernetes.io/docs/reference/kubectl/generated/)
 # Helpful command
 
 ## Get base64 decode of secret with no more 3th party
@@ -64,7 +71,7 @@ kubectl create secret generic accounts-identityserver-certificate --from-file=c
 kubectl config view --minify
 ```
 
-# Change default storage class for your node
+## Change default storage class for your node
 
 ```bash
 kubectl patch storageclass <sc-specific> -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
