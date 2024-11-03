@@ -9,7 +9,7 @@ tags:
 >[!quote]
 >Hi @all, it's me again, btw this week is too boring, so i just sit back and continuous write a next session in `kubewekend` series. This session will discuss and give you some information about `kind` cluster, attach with that we will talk about detailing about architecture of `kubernetes`, `kind` for specific and `kubernetes` for general. One more thing, this session will take you long to read, just feel free to read and enjoy, let's digest now.
 
-![[Pasted image 20240714153711.png]]
+![[Pasted image 20240714153711.png|center|500]]
 
 Before we start, first of all, I want to give the thankful for all of community, blogger to inspiring me on writing `kubewekend`, follow them if you want to understand more about `Kubernetes`
 
@@ -31,7 +31,7 @@ List of topics in series
 >If you familiar with docker and containerization, at least you will listen about `kubernetes`, with me this one is solution can help you control and handle multiple container, and give that scenarios for them to working, to operating and to auditing with under much resonance and integration from open source
 
 ## Introduction
-![[Pasted image 20240713191213.png]]
+![[Pasted image 20240713191213.png|center]]
 
 But back to documentation to give the exactly definition about `kubernetes`, you can read at: [Kubernetes Overview](https://kubernetes.io/docs/concepts/overview/)
 
@@ -51,11 +51,11 @@ Now, `kubernetes` becomes the popular concept, give potential to help your proje
 
 Actually, It's really evolving, from basic to advantage, honestly I want to relating about `kubernetes`. So we will go deeper with that architecture, IYKYK about virtualization environments, that tools to delivery the powerful solutions for technologies user and researcher as a revolution, you can list on 3 era
 
-![[Pasted image 20240714102745.png]]
+![[Pasted image 20240714102745.png|center]]
 
 ### Traditional deployment era
 
-![[Pasted image 20240714104114.png]]
+![[Pasted image 20240714104114.png|center]]
 
 - Early on, organizations ran applications on physical servers. 
 - Use currently OS on the systems, and provide tools & dependencies
@@ -68,8 +68,8 @@ Any trouble will come up, down time can be occur and no anyone want to. That rea
 
 ### Virtualized deployment era
 
-![[Pasted image 20240714104605.png]]
-\
+![[Pasted image 20240714104605.png|center]]
+
 To resolve the problem of Traditional, virtualization was introduced. 
 
 - It allows you to run multiple Virtual Machines (VMs) on a single physical server's CPU.
@@ -85,7 +85,7 @@ That reason why Docker container was introduced in 2013 for solving the trouble
 
 ### Container deployment era
 
-![[Pasted image 20240714152851.png]]
+![[Pasted image 20240714152851.png|center]]
 
 And afterward, we actually have powerful breakthrough with incredible evolution, how you think about Container
 

@@ -137,13 +137,11 @@ tags:
 - [dive](https://github.com/wagoodman/dive) : A tool for exploring each layer in a docker image
 - [crane](https://github.com/google/go-containerregistry/tree/main/cmd/crane): A tool for interacting with remote images and registries
 - [trivy](https://github.com/aquasecurity/trivy): Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more
-
 ### OSINT
 
 - [TinEye Reverse Image Search](https://tineye.com/)
 - [Internet Archive: Wayback Machine](https://archive.org/web/)
 - [GPS coordinates, latitude and longitude with interactive Maps](https://www.gps-coordinates.net/)
-
 ### Web
 
 - [SecLists](https://github.com/danielmiessler/SecLists) : Wordlist for attacking
@@ -155,7 +153,6 @@ tags:
 - [Shodan Search Engine](https://www.shodan.io/) : Web recon tool
 - [Google Public DNS](https://dns.google/) : Find and validate dns with Google DNS
 - [DNSdumpster.com](https://dnsdumpster.com/): dns recon and research, find and lookup dns records
-
 ## Exploitation
 
 >[!info]

@@ -58,6 +58,7 @@ tags:
 - [Askubuntu - How to merge partitions?](https://askubuntu.com/questions/66000/how-to-merge-partitions)
 - [Tecmint - 10 Commands to Collect System and Hardware Info in Linux](https://www.tecmint.com/commands-to-collect-system-and-hardware-information-in-linux/)
 - [DigitalOcean - How to Set Up a Firewall with UFW on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu)
+- [Tecmint - How to Increase SSH Connection Timeout in Linux](https://www.tecmint.com/increase-ssh-connection-timeout/)
 # Window
 
 ## Awesome Repositories

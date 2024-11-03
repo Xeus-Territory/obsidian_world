@@ -29,6 +29,7 @@ But before we talk about `Gradle`, you need to know about `Android` project requ
 - [Install Android Command-line tools](https://developer.android.com/studio#:~:text=Command%20line%20tools%20only)
 - [Install Java](https://phoenixnap.com/kb/install-java-ubuntu)
 - [Install Android SDK](https://gist.github.com/EmadAdly/dfd18bf1ed7380fb9754ef798d23ec3b)
+- [Command-line tools](https://developer.android.com/tools)
 
 # Install requirements
 
@@ -181,9 +182,9 @@ Gradle is a widely used and mature tool with an active community and a strong de
 - Gradle is fast, scalable, and can build projects of any size and complexity.
 - Gradle produces dependable results while benefiting from optimizations such as incremental builds, build caching, and parallel execution.
 
-Which those feature and characteristics of Gradle, It suppose the first thing which you want think to build `Android`  `Java`
+Which those feature and characteristics of Gradle, It suppose the first thing which you want think to build `Android` is `Java`
 
-Following [the installation guide](https://docs.gradle.org/current/userguide/installation.html), I will show you how we can install Gradle in your host
+Following [the installation guide](https://docs.gradle.org/current/userguide/installation.html), I will show you how we can install Gradle in your host. If you want to dive depest into `gradle` with Android, you can double check at [Android Documentation - Gradle build overview](https://developer.android.com/build/gradle-build-overview)
 
 ## Install Gradle
 
