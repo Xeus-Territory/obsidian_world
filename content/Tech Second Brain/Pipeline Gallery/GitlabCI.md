@@ -390,7 +390,7 @@ stages:
   - ci-stuff
 
 include:
-  - project: "gitlab/upstream/project"
+  - project: "gitlab/upstream/project" # Not include gitlab.com
     file: "/templates/ci/ecr-auth.gitlab-ci.yml"
     ref: "main"
 

@@ -1,5 +1,5 @@
 ---
-title: Powershell script collection
+title: Powershell Script Collection
 tags:
   - command
   - powershell

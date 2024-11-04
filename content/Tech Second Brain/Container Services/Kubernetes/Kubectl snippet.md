@@ -59,6 +59,12 @@ You need to consider when apply scaling down can not working because *"cannot sc
 k delete pods -n <name-space> --field-selector=status.phase!=Running
 ```
 
+## Delete `all` component inside cluster
+
+```bash
+# For example: Delete all pvc in namespace default
+kubectl delete pvc --all 
+```
 ## Create the generic secrets from file, for example `binary` file with auto convert to `base64` format
 
 ```bash

@@ -234,7 +234,7 @@ aws ecr get-login-password | crane auth login -u AWS --password-stdin <url-ecr>
 aws eks get-token --cluster-name <name>
 ```
 
-## Create kubeconfig file automatically
+### Create kubeconfig file automatically
 
 ```bash
 aws eks update-kubeconfig --region region-code --name my-cluster
