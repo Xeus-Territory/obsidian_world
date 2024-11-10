@@ -1,5 +1,5 @@
 ---
-title: DIY Shell Script  Collections
+title: DIY Shell Script Collections
 tags:
   - linux
   - DIY

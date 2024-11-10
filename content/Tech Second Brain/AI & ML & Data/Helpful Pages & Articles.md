@@ -56,6 +56,7 @@ tags:
 - [Nanonets - Tesseract OCR in Python with Pytesseract & OpenCV](https://nanonets.com/blog/ocr-with-tesseract/)
 - [Neptune.ai - MLOps Landscape in 2024: Top Tools and Platforms](https://neptune.ai/blog/mlops-tools-platforms-landscape)
 - [Milvus - Deploy a Milvus Cluster on EKS](https://milvus.io/docs/eks.md)
+- [Medium - Understanding Milvus: Key Concepts and Potential Applications](https://medium.com/n11-tech/understanding-milvus-key-concepts-and-potential-applications-1fe4dedd7412)
 # Data Science
 
 ## Repository

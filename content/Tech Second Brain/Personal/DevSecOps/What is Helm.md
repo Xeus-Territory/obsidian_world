@@ -20,7 +20,19 @@ tags:
 >
 >Helm is a graduated project in the CNCF and is maintained by the Helm community.
 
-Helm already installing and using on CI/CD, If you want to learn and work with `Helm`, feel free to installing on [Installing Guide](https://helm.sh/docs/intro/install/#helm)
+Helm already installing and using on CI/CD, If you want to learn and work with `helm`, feel free to installing on [Installing Guide](https://helm.sh/docs/intro/install/#helm)
+
+I prefer to use command to get latest version of `helm`
+
+```bash
+# Run whole process
+curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+chmod 700 get_helm.sh
+./get_helm.sh
+
+# Run with one command
+curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+```
 
 # Helm Template
 
@@ -181,6 +193,22 @@ helm upgrade --install xxxx -f ../xxxxx/environments/systemtest-values.yaml  --s
 >With this action, If not wrong anything, your new application will release to K8s Cluster
 
 ## Another command
+
+<h2>helm search</h2>
+
+To search the version of chart from your repo which one you add into cluster, or from hub e.g [ArtifactHub](https://artifacthub.io/) or selfhosted
+
+```bash
+# Search all repo available from helm chart add into cluster
+helm search repo
+
+# (Detail) Search on repo you add into cluster
+helm search repo chart-path --version <version>
+helm search repo chart-path --versions # Get list
+
+# Search from artifacthub or self instance
+helm search hub
+```
 
 <h2>helm install</h2>
 

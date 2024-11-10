@@ -209,7 +209,7 @@ tags:
 
 - [[Tech Second Brain/Cloud/Azure/Cheatsheet and Troubleshoot|Azure Cloud]]
 - [[Tech Second Brain/Cloud/AWS/Cheatsheet and Troubleshoot|AWS Cloud]]
-- [[Shell script collections|DIY Shell Scripting]]
+- [[Shell scripts|DIY Shell Scripting]]
 - [[Tech Second Brain/Databases/Playbooks Collections|DIY Database Ansible Playbooks]]
 - [[Tech Second Brain/Container Services/Playbooks Collections|DIY Docker and Kubernetes Ansible Playbooks]]
 - [[Tech Second Brain/Operation System/Playbooks Collections|DIY OS Ansible Playbooks]]
@@ -219,5 +219,5 @@ tags:
 - [[Kubectl snippet|Kubectl]]
 - [[Git|Git]]
 - [[HTML|HTML]]
-- [[Powershell snippets|Powershell Commands]]
-- [[Shell command snippets|Shell Bash Commands]]
+- [[Powershell commands|Powershell Commands]]
+- [[Shell commands|Shell Bash Commands]]

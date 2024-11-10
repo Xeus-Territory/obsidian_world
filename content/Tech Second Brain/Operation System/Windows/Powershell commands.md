@@ -1,5 +1,5 @@
 ---
-title: Powershell snippets
+title: Powershell Commands Collection
 tags:
   - command
   - powershell

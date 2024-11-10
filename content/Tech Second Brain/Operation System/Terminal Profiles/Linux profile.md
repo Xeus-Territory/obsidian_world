@@ -93,6 +93,9 @@ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stabl
 sudo chmod +x kubectl
 sudo mv kubectl /usr/local/bin
 
+# Install helm
+curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+
 # # Install Powershell (If you need)
 # ###################################
 # # Prerequisites
