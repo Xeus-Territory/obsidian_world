@@ -79,7 +79,7 @@ To resolve the problem of Traditional, virtualization was introduced.
 But it's not perfect at all, some trouble you will directly meet when you operate virtual machine
 
 - You will need more knowledge about system, about hardware, network and especially OS
-- You will hard to delivery your applications with rapidly, and cost much time and resources to handle that problems. But It's just in few cases, i mean nowaday we have multiple tools and extensition can help us, like `ansible` and `vagrant` which reference in [[Kubewekend Session 1]] and [[Kubewekend Session 2]]
+- You will hard to delivery your applications with rapidly, and cost much time and resources to handle that problems. But It's just in few cases, i mean nowadays we have multiple tools and extension can help us, like `ansible` and `vagrant` which reference in [[Kubewekend Session 1]] and [[Kubewekend Session 2]]
 
 That reason why Docker container was introduced in 2013 for solving the trouble
 
@@ -150,8 +150,8 @@ Read more about the disadvantage about Kubernetes: [What Kubernetes is not](http
 
 The answer is yes, a lots of I think, you can google and more keyword can direct send to you, but like I said Kubernetes is potential when you thinks about `container orchestration`, and here are some another
 
-- [Docker Swarm](https://docs.docker.com/engine/swarm/) :  *Swarm mode for natively managing a cluster of Docker Engines called a swarm, integrate inside `docker` command*
-- [Openshift](https://docs.openshift.com/) : *The leading hybrid cloud application platform, bringing together a comprehensive set of tools and services that streamline the entire application lifecycle.*
+- [Docker Swarm](https://docs.docker.com/engine/swarm/) :  Swarm mode for natively managing a cluster of Docker Engines called a swarm, integrate inside `docker` command
+- [Openshift](https://docs.openshift.com/) : The leading hybrid cloud application platform, bringing together a comprehensive set of tools and services that streamline the entire application lifecycle.
 - [Nomad](https://developer.hashicorp.com/nomad/docs) : A highly available, distributed, data-center aware cluster and application scheduler designed to support the modern datacenter with support for long-running services, batch jobs, and much more.
 - [Apache Mesos](https://mesos.apache.org/) : A container orchestration tool that provides easy resource allocation and sharing among multiple distributed frameworks. That is carried out through modern kernel features like Solaris’ Zones and CGroups in Linux.
 - Serverless service with container like [Azure Container App](https://learn.microsoft.com/en-us/azure/container-apps/) , [AWS Elastic Container Service](https://aws.amazon.com/ecs/)

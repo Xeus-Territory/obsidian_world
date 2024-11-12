@@ -64,6 +64,7 @@ So enjoy what you need, inside the article will share about how you CLI, cheatsh
 - [PacketFabric - A Deep Dive into NAT Gateway Alternatives](https://packetfabric.com/blog/a-deep-dive-into-nat-gateway-alternatives)
 - [Medium - 18 AWS Lambda Microstacks](https://awstip.com/18-aws-lambda-microstacks-bb20776601c0)
 - [Medium - 14 AWS Security Microstacks](https://medium.com/@csjcode/14-aws-security-microstacks-95d120d57089)
+- [Medium - 7 Effective Ways to Automate Cloud Infrastructure Auditing with AWS CloudTrail and AWS Config](https://aws.plainenglish.io/7-effective-ways-to-automate-cloud-infrastructure-auditing-with-aws-cloudtrail-and-aws-config-39d983f43d30)
 ## Issues
 
 - [AWS re:Post - Getting an Access Denied error message when I upload files to my Amazon S3 bucket](https://repost.aws/knowledge-center/s3-access-denied-error-kms)

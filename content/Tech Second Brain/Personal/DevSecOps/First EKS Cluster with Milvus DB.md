@@ -269,6 +269,14 @@ After you copy and put that in the file, you can try to apply this manifest into
 kubectl apply -f storageclass.yaml
 ```
 
+With current cluster, `gp2` is default `storageclass`, you need use `kubectl patch` command to change `gp2` into `gp3` for default
+
+```bash
+
+kubectl patch storageclass gp2 -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"false"}}}'
+
+```
+
 ## Setup AWS LoadBalancer Controller
 
 You have multiple way to help your service go live in Kubernetes, such as Ingress, API Gateway and LoadBalancer. With EKS, if you don't want to become frustrated to setup something strange inside cluster, do best practice aws loadbalancer to reduce lot of complex. **(NOTE: Sometime It's truly exist funny error, but it's up to you 😄)**

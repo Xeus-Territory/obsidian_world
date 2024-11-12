@@ -52,9 +52,8 @@ tags:
 
 ## Topic
 
-- [Collection about tag CNI](https://github.com/topics/cni) : Container Network Interface - networking for Linux containers
 - [Package manager](https://github.com/topics/package-manager) : Package manager topics
-
+- [Metrics](https://github.com/topics/metrics)
 ## Organization
 
 - [Spotify](https://github.com/spotify): Spotify Github Repositories
@@ -81,6 +80,8 @@ tags:
 - [Puppet](https://github.com/puppetlabs): Puppet Community
 - [Vox Pupuli](https://github.com/voxpupuli): Modules and tooling maintained by and for the [Puppet](https://www.puppet.com/) community
 - [LXC - Linux Containers](https://github.com/lxc): Linux container projects
+- [Hashicorp](https://github.com/hashicorp): Consistent workflows to provision, secure, connect, and run any infrastructure for any application.
+- [PingCAP](https://github.com/pingcap): The team behind TiDB TiKV, an open source MySQL compatible HTAP database
 ## Landscape
 
 - [Apache Project Directory](https://projects.apache.org/projects.html) : List all of product of Apache
@@ -107,6 +108,8 @@ tags:
 - [Opensource.com | Opensource.com](https://opensource.com/) - Community talk about Opensource - powered by Red Hat
 - [3os Project](https://3os.org/) - Collocation of technical documentation and guides for devops, developers, pentesters, systems administrators and other IT professionals.
 - [Medium - ITNext](https://itnext.io/) - Community in Medium where talk about lots of technological thing
+- [Medium - Mr.PlanB](https://medium.com/@PlanB.) - Write about Kubernetes, Promox, Homelab topics
+- [Medium - Jake Page](https://medium.com/@jake.page91) - Kubernetes Deployment Specialist @ Glasskube
 ## DevOps Blog
 
 - [DevOps VN](https://devopsvn.tech/) - Vietnamese Community and Blog page about DevOps and Technologies
@@ -131,6 +134,7 @@ tags:
 - [Platform Engineer Blog](https://platformengineering.org/blog) - The discipline of designing and building toolchains and workflows that enable self-service capabilities for software engineering organizations in the cloud-native era.
 - [Medium - Vu Trinh](https://medium.com/@vutrinh274) - Tech blogger who cover a lot information about databases and data engineers
 - [Ivan Velichko](https://iximiuz.com/en/) - Guy teach about container things in developer
+- [Medium - Chunting Wu](https://lazypro.medium.com/) - Tech blogger cover about topics relate system design, be and data engineer
 
 ## EBPF Blog
 
@@ -165,6 +169,9 @@ tags:
 - [Medium - 6 Best Free OnCall Software in 2024, Open-Source and SaaS](https://medium.com/statuspal/6-best-free-oncall-software-in-2024-open-source-and-saas-36f82595e539)
 - [Katalon - Top 10 Best End-to-End Testing Tools and Frameworks](https://katalon.com/resources-center/blog/end-to-end-e2e-testing-tools-frameworks)
 - [Leapwork - The Top 20 Test Automation Tools of 2024](https://www.leapwork.com/blog/top-20-test-automation-tools)
+- [Medium - Is there an Alternative to Debezium + Kafka?](https://lazypro.medium.com/is-there-an-alternative-to-debezium-kafka-0ff112db83a9)
+- [Medium - Top 20 Platform Engineering Tools](https://medium.com/spacelift/top-20-platform-engineering-tools-7e9c7289fb94)
+- [Spacelift - How Spacelift Can Improve Your Infrastructure Orchestration](https://spacelift.io/blog/how-specialized-solution-can-improve-your-iac)
 ## Techniques
 
 - [Internet - How to build and deploy React Native applications with Fastlane](https://tech.sparkfabrik.com/en/blog/fastlane_build/)
@@ -177,6 +184,7 @@ tags:
 - [Spacelift - Importing Existing Infrastructure Into Terraform – Step by Step](https://spacelift.io/blog/importing-exisiting-infrastructure-into-terraform)
 - [Medium - Use SOPS and Terraform to create encrypt/decrypt files with AWS KMS](https://medium.com/@arunmrp90/use-sops-and-terraform-to-create-encrypted-decrypt-files-with-aws-kms-a38ac793518b)
 - [Medium - Step by Step guide on generating an IOS certificate, preparing for Test Flight, and releasing ios app on the App Store](https://medium.com/readytowork-org/step-by-step-guide-on-generating-an-ios-certificate-preparing-for-test-flight-and-releasing-ios-99cd2eb11067)
+- [Medium - Establishing an Enterprise-Ready DevSecOps CI/CD Pipeline on GitHub Actions on Google Cloud](https://medium.com/@anshumaansingh10jan/building-an-enterprise-ready-devsecops-ci-cd-pipeline-on-github-actions-for-gcp-6746f6a43187)
 ## System and Cloud Design
 
 - [Azure - Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)
@@ -189,6 +197,7 @@ tags:
 - [Medium - Procella — The query engine at YouTube](https://medium.com/@vutrinh274/procella-the-query-engine-at-youtube-e83b0c322e5e)
 - [Medium - Six Rules of Thumb for Scaling Software Architectures](https://medium.com/@i.gorton/six-rules-of-thumb-for-scaling-software-architectures-a831960414f9)
 - [Medium - Most-Used Distributed System Design Patterns](https://medium.com/javarevisited/most-used-distributed-system-patterns-d5d90ffedf33)
+- [Medium - 10 Fundamental Cloud Native Architecture Patterns](https://medium.com/@azeynalli1990/10-fundamental-cloud-native-architecture-patterns-7e4c2d94861e)
 # DevOps Youtube Channel
 
 ![[youtube.png]]
@@ -277,6 +286,10 @@ tags:
 
 >[!note]
 >Collections a supper cool and powerful tools for multiple purpose attaching with DevOps
+
+## API Gateway
+
+- [Kong](https://docs.konghq.com/gateway/latest/): API gateway built for hybrid and multi-cloud, optimized for microservices and distributed architectures
 ## Automation Build Platforms
 
 - [Expo](https://docs.expo.dev/): Expo is a framework that makes developing Android and iOS apps easier. Our framework provides file-based routing, a standard library of native modules, and much more
@@ -299,12 +312,17 @@ tags:
 - [Brainboard](https://www.brainboard.co/) : An AI driven platform to visually design, generate terraform code and manage cloud infrastructure, collaboratively.
 - [Cloudairy](https://cloudairy.com/) : **Cloudchart** is a cloud focused diagram tool designed to help you easily map out cloud infrastructures
 - [Excalidraw](https://excalidraw.com/): Hand-drawn look & feel - Collaborative - Secure
-## Serverless Self-hosted
+## Data integration platform
 
-- [fn](https://github.com/fnproject/fn): The container native, cloud agnostic serverless platform.
-- [knative](https://github.com/knative/docs):  An Open-Source Enterprise-level solution to build Serverless and Event Driven Applications. [Documentation](https://knative.dev/docs/concepts/)
-- [serverless framework](https://github.com/serverless/serverless): ⚡ Serverless Framework – Effortlessly build apps that auto-scale, incur zero costs when idle, and require minimal maintenance using AWS Lambda and other managed cloud services.
-- [faas](https://github.com/openfaas/faas): OpenFaaS - Serverless Functions Made Simple
+- [airbyte](https://github.com/airbytehq/airbyte): The leading data integration platform for ETL / ELT data pipelines from APIs, databases & files to data warehouses, data lakes & data lakehouses. Both self-hosted and Cloud-hosted.
+## eBPF
+
+- [ecapture](https://github.com/gojue/ecapture): Capturing SSL/TLS plaintext without a CA certificate using eBPF. Supported on Linux/Android kernels for amd64/arm64. [Documentation](https://ecapture.cc/guide/introduction.html)
+## Feature Flag
+
+- [flagsmith](https://github.com/Flagsmith/flagsmith): Open Source Feature Flagging and Remote Config Service. Host on-prem or use our hosted version at [https://flagsmith.com/](https://flagsmith.com/)
+- [unleash](https://github.com/Unleash/unleash): Open-source feature management solution built for developers.
+- [flipt](https://github.com/flipt-io/flipt): Enterprise-ready, GitOps enabled, CloudNative feature management solution
 ## Infrastructure as Code (Machine + Configuration)
 
 - [Vagrant](https://developer.hashicorp.com/vagrant/docs) : Vagrant is the command line utility for managing the lifecycle of virtual machines.
@@ -321,6 +339,27 @@ tags:
 - [Spacelift](https://docs.spacelift.io/): Spacelift is a sophisticated, continuous integration and deployment (CI/CD) platform for _infrastructure-as-code_
 - [terraformer](https://github.com/GoogleCloudPlatform/terraformer): CLI tool to generate terraform files from existing infrastructure (reverse Terraform). Infrastructure to Code
 - [inframap](https://github.com/cycloidio/inframap): Read your tfstate or HCL to generate a graph specific for each provider, showing only the resources that are most important/relevant.
+
+## Internal Developer Platform (IDP)
+
+- [Qovery](https://hub.qovery.com/docs/getting-started/what-is-qovery/) : the **Internal Developer Platform (IDP)** that cuts noise for developers with paved paths to production
+- [Kusion](https://www.kusionstack.io/docs/) : An intent-driven [Platform Orchestrator](https://internaldeveloperplatform.org/platform-orchestrators/), which sits at the core of an [Internal Developer Platform (IDP)](https://internaldeveloperplatform.org/what-is-an-internal-developer-platform/)
+- [backstage](https://github.com/backstage/backstage): An open framework for building developer portals. [Documentation](https://backstage.io/docs/overview/what-is-backstage)
+
+## Identity Provider (SSO, OAuth, MFA, ...)
+
+- [authentik](https://docs.goauthentik.io/docs/) :  An IdP (Identity Provider) and SSO (single sign on) that is built with security at the forefront of every piece of code, every feature, with an emphasis on flexibility and versatility.
+- [FusionAuth](https://fusionauth.io/docs/get-started/) : FusionAuth is a modern platform for Customer Identity and Access Management (CIAM). FusionAuth provides APIs and a responsive web user interface to support login, registration, localized email, multi-factor authentication, reporting and much more.
+- [Authelia](https://www.authelia.com/): Authelia is an open-source [authentication](https://www.authelia.com/overview/authentication/introduction/) and [authorization](https://www.authelia.com/overview/authorization/access-control/) server and portal fulfilling the identity and access management (IAM) role of information security in providing [multi-factor authentication](https://www.authelia.com/overview/authentication/introduction/) and single sign-on (SSO) for your applications via a web portal. It acts as a companion for [common reverse proxies](https://www.authelia.com/overview/prologue/supported-proxies/).
+- [tailscale](https://tailscale.com/):  The easiest, most secure way to use WireGuard and 2FA.
+- [zitadel](https://zitadel.com/docs/guides/overview): Identity infrastructure, simplified for you.
+- [casdoor](https://github.com/casdoor/casdoor): An open-source UI-first Identity and Access Management (IAM) / Single-Sign-On (SSO) platform with web UI supporting
+- [keycloak](https://github.com/keycloak/keycloak): Open Source Identity and Access Management For Modern Applications and Services. [Website](https://github.com/keycloak/keycloak)
+
+## Orchestration Framework
+
+- [luigi](https://github.com/spotify/luigi): a Python module that helps you build complex pipelines of batch jobs. It handles dependency resolution, workflow management, visualization etc. It also comes with Hadoop support built in.
+- [camunda](https://github.com/camunda/camunda): Process Orchestration Framework. [Website](https://docs.camunda.io/)
 ## Generated + Validate Configuration
 
 - [moz://a SSL Configuration Generator](https://ssl-config.mozilla.org/) : SSL Generation for multiple webserver
@@ -331,10 +370,51 @@ tags:
 - [crontab guru](https://crontab.guru/): The quick and simple editor for cron schedule expressions by Cronitor (SHELL/Pipeline)
 - [checkov](https://github.com/bridgecrewio/checkov): Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as code, container images and open source packages
 - [Enable CORS](https://enable-cors.org/index.html): enable cross-origin resource sharing
+## Gitops
+
+- [Atlantis - Terraform Pull Request Automation](https://www.runatlantis.io/) : Running Terraform Workflows with Ease
+- [scalr](https://docs.scalr.io/docs/introduction) :  Remote operations backend for Terraform and OpenTofu (OTF)
+- [digger](https://docs.digger.dev/readme/introduction) : open-source CI/CD orchestrator for Terraform
+- [env0](https://docs.env0.com/): Automate and manage any Infrastructure-as-Code, from Terraform and OpenTofu to Pulumi, CloudFormation, Terragrunt, Kubernetes, and more.
+- [bytebase](https://github.com/bytebase/bytebase) : The GitHub/GitLab for database DevOps.
+- [argo-cd](https://argo-cd.readthedocs.io/en/stable/) :  A declarative, GitOps continuous delivery tool for Kubernetes.
+- [fluxcd](https://fluxcd.io/flux/) : Tool for keeping Kubernetes clusters in sync with sources of configuration (like Git repositories), and automating updates to configuration when there is new code to deploy.
+- [Semaphore UI](https://semaphoreui.com/) : Elegant web interface for executing Ansible playbooks, Terraform, OpenTofu, Pulumi code and Bash scripts.
+- [act](https://github.com/nektos/act): Run your GitHub Actions locally 🚀
+## Git Hosting
+
+- [gitea](https://github.com/go-gitea/gitea): Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD. [Doc](https://docs.gitea.com/)
+- [gitlab](https://about.gitlab.com/install/) : Download, install and maintain your own GitLab instance.
+- [gogs](https://github.com/gogs/gogs): a painless self-hosted Git service. [Doc](https://gogs.io/docs)
 ## Local Cloud Self-hosted
 
 - [LocalStack - AWS local](https://hub.docker.com/r/localstack/localstack) : A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline. Read more: [Documentation](https://docs.localstack.cloud/getting-started/). You can do more access and management via [LocalStack Web Application](https://app.localstack.cloud/sign-in)
 - [openstack](https://github.com/openstack/openstack): Repository tracking all OpenStack repositories as submodules. Mirror of code maintained at opendev.org -->  [documentation](https://docs.openstack.org/2024.1/), and minor version [devstack](https://github.com/openstack/devstack) - System for quickly installing an OpenStack cloud
+## Monitoring and observability
+
+- [Netdata](https://github.com/netdata/netdata) : The open-source observability platfrom everyone needs!
+- [ELK](https://www.elastic.co/elastic-stack): Combination from four main components. [Guide](https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elastic-stack-on-ubuntu-22-04), [Helm](https://operatorhub.io/operator/elastic-cloud-eck) and [Docker](https://github.com/deviantony/docker-elk)
+
+	1. [Elasticsearch](https://www.elastic.co/products/elasticsearch): a distributed [_RESTful_](https://en.wikipedia.org/wiki/Representational_state_transfer) search engine which stores all of the collected data.
+	2. [Logstash](https://www.elastic.co/products/logstash): the data processing component of the Elastic Stack which sends incoming data to Elasticsearch.
+	3. [Kibana](https://www.elastic.co/products/kibana): a web interface for searching and visualizing logs.
+	4. [Beats](https://www.elastic.co/products/beats): lightweight, single-purpose data shippers that can send data from hundreds or thousands of machines to either Logstash or Elasticsearch.
+
+- [Grafana Stack](https://grafana.com/about/grafana-stack/): Ecosystem of Grafana for providing monitor methodology for your application, container, nodes and moreover. [Helm](https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack), [[Monitoring Stack#Grafana, Prometheus and Exporter|Docker]] and [Guide](https://grafana.com/docs/grafana/latest/getting-started/get-started-grafana-prometheus/)
+- [Zabbix](https://www.zabbix.com/documentation/current/en/manual/introduction/about) : A software that monitors numerous parameters of a network and the health and integrity of servers, virtual machines, applications, services, databases, websites, the cloud and more
+- [Checkmk](https://docs.checkmk.com/latest/en/) : Offers comprehensive and specialized solutions for dealing with the very diverse environments of IT infrastructures.
+- [gitana](https://github.com/nicolastakashi/gitana): Gitana is a lightweight dashboard sync
+- [FlameGraph](https://github.com/brendangregg/FlameGraph): Stack trace visualizer (Use for Pyroscope)
+- [highlight](https://github.com/highlight/highlight): The open source, full-stack monitoring platform. Error monitoring, session replay, logging, distributed tracing, and more.
+- [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics): VictoriaMetrics: fast, cost-effective monitoring solution and time series database. [Documentation](https://docs.victoriametrics.com/)
+- [Log Viewer (Log4j, NLog)](https://sourceforge.net/projects/styort-logviewer/): a high performance realtime log viewer via UDP (Chainsaw/NLogViewer) or text file.
+- [vector](https://github.com/vectordotdev/vector): A high-performance observability data pipeline.
+## Serverless Self-hosted
+
+- [fn](https://github.com/fnproject/fn): The container native, cloud agnostic serverless platform.
+- [knative](https://github.com/knative/docs):  An Open-Source Enterprise-level solution to build Serverless and Event Driven Applications. [Documentation](https://knative.dev/docs/concepts/)
+- [serverless framework](https://github.com/serverless/serverless): ⚡ Serverless Framework – Effortlessly build apps that auto-scale, incur zero costs when idle, and require minimal maintenance using AWS Lambda and other managed cloud services.
+- [faas](https://github.com/openfaas/faas): OpenFaaS - Serverless Functions Made Simple
 ## Secrets management
 
 - [dotenvx](https://dotenvx.com/) : Loads environment variables from .env for nodejs projects.
@@ -350,17 +430,6 @@ tags:
 
 - [openappsec](https://github.com/openappsec/openappsec): A machine learning security engine that preemptively and automatically prevents threats against Web Application & APIs.
 - [teleport](https://github.com/gravitational/teleport): The easiest, and most secure way to access and protect all of your infrastructure.
-## API Gateway
-
-- [Kong](https://docs.konghq.com/gateway/latest/): API gateway built for hybrid and multi-cloud, optimized for microservices and distributed architectures
-## Web server
-
-- [traefik proxy](https://doc.traefik.io/traefik/) : Traefik is an [open-source](https://github.com/traefik/traefik) _Edge Router_ that makes publishing your services a fun and easy experience
-- [Caddy server](https://caddyserver.com/docs/): Caddy is a powerful, extensible platform to serve your sites, services, and apps, written in Go
-- [HAProxy](https://docs.haproxy.org/) : HAProxy is a free, very fast and reliable reverse-proxy offering [high availability](http://en.wikipedia.org/wiki/High_availability), [load balancing](http://en.wikipedia.org/wiki/Load_balancer), and proxying for TCP and HTTP-based applications
-- [httpd - Apache2](https://httpd.apache.org/) : The Apache HTTP Server Project is an effort to develop and maintain an open-source HTTP server for modern operating systems including UNIX and Windows.
-- [IIS](https://learn.microsoft.com/en-us/iis/): Window webserver
-- [Nginx](https://nginx.org/en/docs/): nginx is an HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server. (Most powerful)
 ## Storage Platforms
 
 - [MinIO](https://min.io/docs/minio/linux/index.html): MinIO is an object storage solution that provides an Amazon Web Services S3-compatible API and supports all core S3 features.
@@ -377,31 +446,7 @@ tags:
 - [envoy](https://www.envoyproxy.io/docs/envoy/v1.31.0/) : Envoy is an L7 proxy and communication bus designed for large modern service oriented architectures
 - [traefik proxy](https://doc.traefik.io/traefik/) : Traefik is an [open-source](https://github.com/traefik/traefik) _Edge Router_ that makes publishing your services a fun and easy experience
 - [HAProxy](https://docs.haproxy.org/) : HAProxy is a free, very fast and reliable reverse-proxy offering [high availability](http://en.wikipedia.org/wiki/High_availability), [load balancing](http://en.wikipedia.org/wiki/Load_balancer), and proxying for TCP and HTTP-based applications
-## Gitops
 
-- [Atlantis - Terraform Pull Request Automation](https://www.runatlantis.io/) : Running Terraform Workflows with Ease
-- [scalr](https://docs.scalr.io/docs/introduction) :  Remote operations backend for Terraform and OpenTofu (OTF)
-- [digger](https://docs.digger.dev/readme/introduction) : open-source CI/CD orchestrator for Terraform
-- [env0](https://docs.env0.com/): Automate and manage any Infrastructure-as-Code, from Terraform and OpenTofu to Pulumi, CloudFormation, Terragrunt, Kubernetes, and more.
-- [bytebase](https://github.com/bytebase/bytebase) : The GitHub/GitLab for database DevOps.
-- [argo-cd](https://argo-cd.readthedocs.io/en/stable/) :  A declarative, GitOps continuous delivery tool for Kubernetes.
-- [fluxcd](https://fluxcd.io/flux/) : Tool for keeping Kubernetes clusters in sync with sources of configuration (like Git repositories), and automating updates to configuration when there is new code to deploy.
-- [Semaphore UI](https://semaphoreui.com/) : Elegant web interface for executing Ansible playbooks, Terraform, OpenTofu, Pulumi code and Bash scripts.
-- [act](https://github.com/nektos/act): Run your GitHub Actions locally 🚀
-## Internal Developer Platform (IDP)
-
-- [Qovery](https://hub.qovery.com/docs/getting-started/what-is-qovery/) : the **Internal Developer Platform (IDP)** that cuts noise for developers with paved paths to production
-- [Kusion](https://www.kusionstack.io/docs/) : An intent-driven [Platform Orchestrator](https://internaldeveloperplatform.org/platform-orchestrators/), which sits at the core of an [Internal Developer Platform (IDP)](https://internaldeveloperplatform.org/what-is-an-internal-developer-platform/)
-
-## Identity Provider + SSO + OAuth + 2FA
-
-- [authentik](https://docs.goauthentik.io/docs/) :  An IdP (Identity Provider) and SSO (single sign on) that is built with security at the forefront of every piece of code, every feature, with an emphasis on flexibility and versatility.
-- [FusionAuth](https://fusionauth.io/docs/get-started/) : FusionAuth is a modern platform for Customer Identity and Access Management (CIAM). FusionAuth provides APIs and a responsive web user interface to support login, registration, localized email, multi-factor authentication, reporting and much more.
-- [Authelia](https://www.authelia.com/): Authelia is an open-source [authentication](https://www.authelia.com/overview/authentication/introduction/) and [authorization](https://www.authelia.com/overview/authorization/access-control/) server and portal fulfilling the identity and access management (IAM) role of information security in providing [multi-factor authentication](https://www.authelia.com/overview/authentication/introduction/) and single sign-on (SSO) for your applications via a web portal. It acts as a companion for [common reverse proxies](https://www.authelia.com/overview/prologue/supported-proxies/).
-- [tailscale](https://tailscale.com/):  The easiest, most secure way to use WireGuard and 2FA.
-- [zitadel](https://zitadel.com/docs/guides/overview): Identity infrastructure, simplified for you.
-- [casdoor](https://github.com/casdoor/casdoor): An open-source UI-first Identity and Access Management (IAM) / Single-Sign-On (SSO) platform with web UI supporting
-- [keycloak](https://github.com/keycloak/keycloak): Open Source Identity and Access Management For Modern Applications and Services. [Website](https://github.com/keycloak/keycloak)
 ## Queue Services
 
 - [AutoMQ](https://docs.automq.com/automq/what-is-automq/overview) : AutoMQ re-engineers Kafka for the cloud by decoupling storage to object storage. While maintaining **100% compatibility** with Apache Kafka®, it offers users up to **10 times cost efficiency** and **100 times elasticity**.
@@ -450,65 +495,31 @@ tags:
 - [spacedrive](https://github.com/spacedriveapp/spacedrive): Spacedrive is an open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust.
 - [localsend](https://github.com/localsend/localsend): An open-source cross-platform alternative to AirDrop (Local Vietnamese Guy 🖖)
 - [nhost](https://github.com/nhost/nhost): The Open Source Firebase Alternative with GraphQL. [Documentation](https://docs.nhost.io/introduction)
-## Git Hosting
-
-- [gitea](https://github.com/go-gitea/gitea): Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD. [Doc](https://docs.gitea.com/)
-- [gitlab](https://about.gitlab.com/install/) : Download, install and maintain your own GitLab instance.
-- [gogs](https://github.com/gogs/gogs): a painless self-hosted Git service. [Doc](https://gogs.io/docs)
-## Monitoring and observability
-
-- [Netdata](https://github.com/netdata/netdata) : The open-source observability platfrom everyone needs!
-- [ELK](https://www.elastic.co/elastic-stack): Combination from four main components. [Guide](https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elastic-stack-on-ubuntu-22-04), [Helm](https://operatorhub.io/operator/elastic-cloud-eck) and [Docker](https://github.com/deviantony/docker-elk)
-
-	1. [**Elasticsearch**](https://www.elastic.co/products/elasticsearch): a distributed [_RESTful_](https://en.wikipedia.org/wiki/Representational_state_transfer) search engine which stores all of the collected data.
-	2. [**Logstash**](https://www.elastic.co/products/logstash): the data processing component of the Elastic Stack which sends incoming data to Elasticsearch.
-	3. [**Kibana**](https://www.elastic.co/products/kibana): a web interface for searching and visualizing logs.
-	4. [**Beats**](https://www.elastic.co/products/beats): lightweight, single-purpose data shippers that can send data from hundreds or thousands of machines to either Logstash or Elasticsearch.
-
-- [Grafana Stack](https://grafana.com/about/grafana-stack/): Ecosystem of Grafana for providing monitor methodology for your application, container, nodes and moreover. [Helm](https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack), [[Monitoring Stack#Grafana, Prometheus and Exporter|Docker]] and [Guide](https://grafana.com/docs/grafana/latest/getting-started/get-started-grafana-prometheus/)
-- [Zabbix](https://www.zabbix.com/documentation/current/en/manual/introduction/about) : A software that monitors numerous parameters of a network and the health and integrity of servers, virtual machines, applications, services, databases, websites, the cloud and more
-- [Checkmk](https://docs.checkmk.com/latest/en/) : Offers comprehensive and specialized solutions for dealing with the very diverse environments of IT infrastructures.
-- [gitana](https://github.com/nicolastakashi/gitana): Gitana is a lightweight dashboard sync
-- [FlameGraph](https://github.com/brendangregg/FlameGraph): Stack trace visualizer (Use for Pyroscope)
-- [highlight](https://github.com/highlight/highlight): The open source, full-stack monitoring platform. Error monitoring, session replay, logging, distributed tracing, and more.
-- [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics): VictoriaMetrics: fast, cost-effective monitoring solution and time series database. [Documentation](https://docs.victoriametrics.com/)
-- [Log Viewer (Log4j, NLog)](https://sourceforge.net/projects/styort-logviewer/): a high performance realtime log viewer via UDP (Chainsaw/NLogViewer) or text file.
 ## Static Site Generator
 
 - [gatsby](https://github.com/gatsbyjs/gatsby): The best React-based framework with performance, scalability and security built in.
 - [quartz](https://github.com/jackyzha0/quartz): 🌱 a fast, batteries-included static-site generator that transforms Markdown content into fully functional websites
 - [hugo](https://github.com/gohugoio/hugo): The world’s fastest framework for building websites.
-## Feature Flag
-
-- [flagsmith](https://github.com/Flagsmith/flagsmith): Open Source Feature Flagging and Remote Config Service. Host on-prem or use our hosted version at [https://flagsmith.com/](https://flagsmith.com/)
-- [unleash](https://github.com/Unleash/unleash): Open-source feature management solution built for developers.
-- [flipt](https://github.com/flipt-io/flipt): Enterprise-ready, GitOps enabled, CloudNative feature management solution
 ## Product Error Analytics and Monitoring
 
 - [openreplay](https://github.com/openreplay/openreplay): Session replay and analytics tool you can self-host. Ideal for reproducing issues, co-browsing with users and optimizing your product.
 - [opentelemetry](https://opentelemetry.io/docs/): OpenTelemetry, also known as OTel, is a vendor-neutral open source [observability](https://opentelemetry.io/docs/concepts/observability-primer/#what-is-observability) framework for instrumenting, generating, collecting, and exporting telemetry data such as [traces](https://opentelemetry.io/docs/concepts/signals/traces/), [metrics](https://opentelemetry.io/docs/concepts/signals/metrics/), and [logs](https://opentelemetry.io/docs/concepts/signals/logs/).
 - [Sentry](https://github.com/getsentry/sentry): Developer-first error tracking and performance monitoring. [Website](https://sentry.io/)
 - [GlitchTip](https://glitchtip.com/documentation): Simple, open source error tracking
-## Orchestration Framework
+## Web server
 
-- [luigi](https://github.com/spotify/luigi): a Python module that helps you build complex pipelines of batch jobs. It handles dependency resolution, workflow management, visualization etc. It also comes with Hadoop support built in.
-- [camunda](https://github.com/camunda/camunda): Process Orchestration Framework. [Website](https://docs.camunda.io/)
+- [traefik proxy](https://doc.traefik.io/traefik/) : Traefik is an [open-source](https://github.com/traefik/traefik) _Edge Router_ that makes publishing your services a fun and easy experience
+- [Caddy server](https://caddyserver.com/docs/): Caddy is a powerful, extensible platform to serve your sites, services, and apps, written in Go
+- [HAProxy](https://docs.haproxy.org/) : HAProxy is a free, very fast and reliable reverse-proxy offering [high availability](http://en.wikipedia.org/wiki/High_availability), [load balancing](http://en.wikipedia.org/wiki/Load_balancer), and proxying for TCP and HTTP-based applications
+- [httpd - Apache2](https://httpd.apache.org/) : The Apache HTTP Server Project is an effort to develop and maintain an open-source HTTP server for modern operating systems including UNIX and Windows.
+- [IIS](https://learn.microsoft.com/en-us/iis/): Window webserver
+- [Nginx](https://nginx.org/en/docs/): nginx is an HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server. (Most powerful)
 ## Web Analytics
 
 - [Plausible](https://github.com/plausible/analytics): Simple, open source, lightweight (< 1 KB) and privacy-friendly web analytics alternative to Google Analytics.
 - [umami](https://github.com/umami-software/umami): Umami is a simple, fast, privacy-focused alternative to Google Analytics.
-## Data integration platform
-
-- [airbyte](https://github.com/airbytehq/airbyte): The leading data integration platform for ETL / ELT data pipelines from APIs, databases & files to data warehouses, data lakes & data lakehouses. Both self-hosted and Cloud-hosted.
 ## Web Testing and Automation
 
 - [playwright](https://github.com/microsoft/playwright): Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API. [Documentation](https://playwright.dev/)
 - [selenium](https://github.com/SeleniumHQ/selenium): A browser automation framework and ecosystem. [Documentation](https://selenium.dev/)
 - [jest](https://jestjs.io/docs/getting-started): A delightful JavaScript Testing Framework with a focus on simplicity.
-## Candidate PaaS 
-
-- [dokku](https://github.com/dokku/dokku): A docker-powered PaaS that helps you build and manage the lifecycle of applications. [Documentation](https://dokku.com/docs/getting-started/installation/)
-- [backstage](https://github.com/backstage/backstage): An open framework for building developer portals. [Documentation](https://backstage.io/docs/overview/what-is-backstage)
-## eBPF
-
-- [ecapture](https://github.com/gojue/ecapture): Capturing SSL/TLS plaintext without a CA certificate using eBPF. Supported on Linux/Android kernels for amd64/arm64. [Documentation](https://ecapture.cc/guide/introduction.html)

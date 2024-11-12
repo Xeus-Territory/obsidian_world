@@ -121,6 +121,7 @@ tags:
 - [Networking - 10 Useful Open Source Security Firewalls for Linux Systems](https://www.tecmint.com/open-source-security-firewalls-for-linux-systems/)
 - [Cloud - Creating unintentional ways to bypass AWS IAM policies when using the “ForAllValues” operator](https://awstip.com/creating-unintentional-ways-to-bypass-aws-iam-policies-when-using-the-forallvalues-operator-3516a7f17ed0)
 - [Networking - Medium - SSH Over Openssl Over Haproxy: Bypassing Blocks](https://medium.com/@talhakhalid101/ssh-over-openssl-over-haproxy-bypassing-blocks-f4b4c276d8dd)
+- [SOC - Networking - Medium - Building an Effective SOC with Open-Source SIEM Tools: My Master’s Project Journey](https://medium.com/@jhonortega453/building-an-effective-soc-with-open-source-siem-tools-my-masters-project-journey-390e68580230)
 
 # Tools and Techniques
 

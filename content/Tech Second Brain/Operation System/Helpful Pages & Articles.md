@@ -61,6 +61,7 @@ tags:
 - [DigitalOcean - How to Set Up a Firewall with UFW on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu)
 - [Tecmint - How to Increase SSH Connection Timeout in Linux](https://www.tecmint.com/increase-ssh-connection-timeout/)
 - [Tecmint - How to Clear RAM Memory Cache, Buffer and Swap Space on Linux](https://www.tecmint.com/clear-ram-memory-cache-buffer-and-swap-space-on-linux/)
+- [Medium - 6 Ways to Check Remote Port Status in Linux: Highlighting Two New Approaches](https://programming.earthonline.us/6-effective-methods-to-check-remote-port-status-in-linux-which-one-do-you-use-most-83ce6f903d75)
 # Window
 
 ## Awesome Repositories
