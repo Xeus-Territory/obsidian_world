@@ -16,7 +16,7 @@ tags:
 - [applied-ml](https://github.com/eugeneyan/applied-ml): 📚 Papers & tech blogs by companies sharing their work on data science & machine learning in production.
 - [awesome-production-machine-learning](https://github.com/EthicalML/awesome-production-machine-learning): A curated list of awesome open source libraries to deploy, monitor, version and scale your machine learning. [Website](https://ethicalml.github.io/awesome-production-machine-learning/)
 - [awesome-mlops](https://github.com/visenger/awesome-mlops): A curated list of references for MLOps. [Website](https://ml-ops.org/)
-- [awesome-bigdata](https://github.com/oxnr/awesome-bigdata): A curated list of awesome big data frameworks, ressources and other awesomeness. [Website](https://github.com/onurakpolat/awesome-bigdata)
+- [awesome-bigdata](https://github.com/oxnr/awesome-bigdata): A curated list of awesome big data frameworks, ressources and other awesomeness.
 - [data-engineering-roadmap](https://github.com/data-burst/data-engineering-roadmap): A comprehensive roadmap tailored for data engineering professionals at all levels
 ## Page
 
@@ -28,6 +28,7 @@ tags:
 
 - [Data Engineering](https://github.com/topics/data-engineering): Collection about data-engineer topics
 - [Machine learning](https://github.com/topics/machine-learning): Closely related to artificial intelligence and computational statistics.
+- [Stream Processing](https://github.com/topics/stream-processing): Collection about Stream Processing topics
 ## Organization
 
 - [OpenAI](https://github.com/openai): OpenAI Github Community

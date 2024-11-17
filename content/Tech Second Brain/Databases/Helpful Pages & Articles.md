@@ -13,6 +13,7 @@ tags:
 
 - [awesome-db-tools](https://github.com/mgramin/awesome-db-tools) : Everything that makes working with databases easier
 - [database-topic](https://github.com/topics/database): The collection of database
+- [DB-Engines](https://db-engines.com/en/): Knowledge Base of Relational and NoSQL Database Management Systems
 
 # Utilities and Useful Opensource
 
@@ -34,7 +35,8 @@ tags:
 - [rocksdb](https://github.com/facebook/rocksdb): A library that provides an embeddable, persistent key-value store for fast storage.
 - [typesense](https://github.com/typesense/typesense): Open Source alternative to Algolia + Pinecone and an Easier-to-Use alternative to ElasticSearch ⚡ 🔍 ✨
 - [druid](https://github.com/apache/druid): A high performance real-time analytics database.
-
+- [tidb](https://github.com/pingcap/tidb): the open-source, cloud-native, distributed SQL database designed for modern applications.
+- [tikv](https://github.com/tikv/tikv): Distributed transactional key-value database, originally created to complement TiDB
 ## Migration
 
 - [goose](https://github.com/pressly/goose): A database migration tool. Supports SQL migrations and Go functions.

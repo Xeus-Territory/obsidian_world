@@ -293,6 +293,28 @@ fastlane buildRelease && fastlane bundleRelease
 
 And double check on location `app/build/outputs/apk/release` and `app/build/outputs/bundle/release`, your binary of application will still there
 
+## App Signing from Google (Update - Google Play Console)
+
+>[!info]
+>When you try to release app into Google Play, If your application contains service to authenticate Google Account using (Firebase, Google API, ...), you need to focus and find this client information, like SHA1, SHA256 in Google Play Console and submit into Google Cloud in API 
+
+To get that app signing information from Google Play Console, You can try to reach from your **App --> Test and release --> App Integrity --> Settings (Play app sigining)**
+
+You can see the some certificate (key) information inside your application, including
+
+- **App signing key certificate**: Google Play Integrity (Recommendation) will help you to sign your app with this certificate
+- **Upload key certificate**: Match with the key which you use to sign app, and upload into Google Play Console from your Build Progress
+- **Digital Asset Links JSON**:  To associate your app with a website domain.
+
+From this page, you can get fingerprint of certificate in format: MD5, SHA-1, SHA-256. You can add the fingerprint with two way
+
+- Use Firebase Authenticate, you can add directly into **project settings** in your application, in **general** tab, you will see the place to add fingerprint. After you add, you click save and your firebase will automatically create inside Google APIs & Services
+
+- If you don't want to work with firebase, you can add into Google APIs & Services in Google Cloud, you can select **Credentials** to see full authenticate of your application linked. You can choose `Oauth client ID`, and fill information inside and click create and you will linked Google Play App Signing SHA-1 into Google APIs & Services to get user data (NOTE: This one is really important to execute successful Google Authenticate)
+
+![[Pasted image 20241111094338.png|center]]
+
+![[Pasted image 20241111094839.png|center]]
 # Conclusion
 
 >[!info]

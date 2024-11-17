@@ -49,20 +49,20 @@ tags:
 
 ## 2023
 
-- [DevOps Training Session 1: The flag view with DevOps](https://hackmd.io/ED2Mm5ubR8Sa-dgiLNzTeg)
-- [DevOps Training Session 2: Networking](https://hackmd.io/coJC5YMFRzW2lJqQLNsgTw)
-- [DevOps Training Session 3: OS - Scripting with powershell & bash](https://hackmd.io/yxSkgYc0RCC4k-R7au4dAg)
-- [DevOps Training Session 4: Docker](https://hackmd.io/hHUY-1D8T1myGnPfqduyig)
-- [DevOps Training Session 5: NGINX](https://hackmd.io/dyQFuSOSTWWLwJcWxMo5lA)
-- [DevOps Training Session 6: Cloud - Azure](https://hackmd.io/A6__N-_xQhuTUx47-ZAz1A)
-- [DevOps Training Session 7: Terraform](https://hackmd.io/7M0GBhCARJuyWJLxN_vCdQ)
-- [DevOps Training Session 8: Cloud - IAM](https://hackmd.io/4jWH-zevTOCqX_uvXuLzVw)
-- [DevOps Training Session 9 + 10: Cloud - Networking - AutoScaling VM](https://hackmd.io/T7DLU49XRaKVBRa5Oyn1cQ)
-- [DevOps Training Session 11: Cloud - Pipeline (Azure-Pipeline)](https://hackmd.io/QgL26G5NTRKwuZrUdEBhhw)
-- [DevOps Training Session 12: Cloud - Packer](https://hackmd.io/0kn1HkeETeSsFOdMdGODhQ)
-- [DevOps Training Session 13: Cloud - K8s Overview](https://hackmd.io/2egQHy8SRMu_hT7lMpfrKg)
-- [DevOps Training Session 14+15: Cloud - K8s Networking, Configuration, Security && Storage](https://hackmd.io/KjMBguH0T96LJGr-xQ7rtw)
-- [Devops Training Session 16: Setup Grafana and Prometheus (ONM Tools)](https://hackmd.io/X9G7DhaeRxuRcW1UTzSCBg)
+- [DevOps Training Session 1: The flag view with DevOps](https://hackmd.io/@XeusNguyen/S1dEBPpOj)
+- [DevOps Training Session 2: Networking](https://hackmd.io/@XeusNguyen/Hkr-_n0uj)
+- [DevOps Training Session 3: OS - Scripting with powershell & bash](https://hackmd.io/@XeusNguyen/B1P70leYs)
+- [DevOps Training Session 4: Docker](https://hackmd.io/@XeusNguyen/B1vlSR8Ko)
+- [DevOps Training Session 5: NGINX](https://hackmd.io/@XeusNguyen/S1UBR25Fo)
+- [DevOps Training Session 6: Cloud - Azure](https://hackmd.io/@XeusNguyen/r1YzglVcs)
+- [DevOps Training Session 7: Terraform](https://hackmd.io/@XeusNguyen/r1HhSRj9i)
+- [DevOps Training Session 8: Cloud - IAM](https://hackmd.io/@XeusNguyen/rkDR7tQoj)
+- [DevOps Training Session 9 + 10: Cloud - Networking - AutoScaling VM](https://hackmd.io/@XeusNguyen/B1VlijV3o)
+- [DevOps Training Session 11: Cloud - Pipeline (Azure-Pipeline)](https://hackmd.io/@XeusNguyen/rkmMsrdCi)
+- [DevOps Training Session 12: Cloud - Packer](https://hackmd.io/@XeusNguyen/BJtEoB_Ci)
+- [DevOps Training Session 13: Cloud - K8s Overview](https://hackmd.io/@XeusNguyen/BknPsrdAs)
+- [DevOps Training Session 14+15: Cloud - K8s Networking, Configuration, Security && Storage](https://hackmd.io/@XeusNguyen/BknkTr_Rj)
+- [Devops Training Session 16: Setup Grafana and Prometheus (ONM Tools)](https://hackmd.io/@XeusNguyen/rJk0lunAj)
 
 # CTF (Capture the Flag) and write up
 
@@ -72,11 +72,11 @@ tags:
 **Timeline: 2022 - Current**
 ## 2022-2023
 
-- [Flag Hoarding mapleCTF (2022) - (misc/forensic)](https://hackmd.io/NoYQ0jMkS2WGxy6Z_pAo1Q)
-- [Dode ascisCTF (2022) (Misc/Forensics)](https://hackmd.io/4P64263mTyyMEgdkJq8X7w)
-- [Hack The Boo (Hackthebox-Forensic-2022)](https://hackmd.io/tWwSU5OaRmOCQk0eEPOY8w)
-- [ICTF August 2022](https://hackmd.io/Cw35V_FuRJ-VEoTI-lweWA)
-- [Image Editing - CTFLearn (Crypto/Hard)](https://hackmd.io/Bsx_FNxXT7KZMB0wM1uekA)
+- [Flag Hoarding mapleCTF (2022) - (misc/forensic)](https://hackmd.io/@XeusNguyen/ByEYgl5yi)
+- [Dode ascisCTF (2022) (Misc/Forensics)](https://hackmd.io/@XeusNguyen/S1DdU66Zo)
+- [Hack The Boo (Hackthebox-Forensic-2022)](https://hackmd.io/@XeusNguyen/BkwkN8bHi)
+- [ICTF August 2022](https://hackmd.io/@XeusNguyen/BJqXug1gs)
+- [Image Editing - CTFLearn (Crypto/Hard)](https://hackmd.io/@XeusNguyen/HJ_kKdNGi)
 - [[IDOR|Write up about IDOR]]
 - [[SSTI|Write up about SSTI]]
 
@@ -88,13 +88,13 @@ tags:
 **Timeline: 2023 - Current**
 ## 2023
 
-- [Pentest Top 10 OWASP with Juice-Shop-OWASP](https://hackmd.io/Naph1q_zR0We00ocMy_KmA)
-- [SQL Injection - Part 1 (Practical PortSwigger)](https://hackmd.io/h3l_NqBkTVC1IDodeEq75w)
-- [SQL Injection - Part 2 (Practical on PortSwigger)](https://hackmd.io/DTz2gHXuQ3Cv2QKAu-h7zA)
-- [SQL Injection - Part 3 (Practical PortSwigger)](https://hackmd.io/ewHKt4CLTXuYeDKW4RKJSg)
-- [Cross-site scripting (Practice on PortSwigger)](https://hackmd.io/ERuycw7XSGy1gANoCI3j9w)
-- [Research about Top 10 OWASP](https://hackmd.io/dEd2BUyvSFOMU13reILWsw)
-- [Snyk vs Sonarqube - Securing your code](https://hackmd.io/ah5nLeS9RUuebOD7FXWegw)
+- [Pentest Top 10 OWASP with Juice-Shop-OWASP](https://hackmd.io/@XeusNguyen/HJAecr7xs)
+- [SQL Injection - Part 1 (Practical PortSwigger)](https://hackmd.io/@XeusNguyen/SyHN3vdlj)
+- [SQL Injection - Part 2 (Practical on PortSwigger)](https://hackmd.io/@XeusNguyen/SJb_GMnxj)
+- [SQL Injection - Part 3 (Practical PortSwigger)](https://hackmd.io/@XeusNguyen/S1dDCM1bi)
+- [Cross-site scripting (Practice on PortSwigger)](https://hackmd.io/@XeusNguyen/HJkDOHr-i)
+- [Research about Top 10 OWASP](https://hackmd.io/@XeusNguyen/By700eFks)
+- [Snyk vs Sonarqube - Securing your code](https://hackmd.io/@XeusNguyen/B1SujNlgh)
 - [[Insecure Direct Object Reference (IDOR)]]
 - [[Server Site Template Injection (SSTI)]]
 - [[Authentication Bypass]]
@@ -117,8 +117,8 @@ tags:
 **Timeline: 2023 - Current**
 ## 2023
 
-- [NGINX vs Apache ? How does it work? Why is NGINX compared to Apache –> How is it stronger and weaker?](https://hackmd.io/70BZ3lRkQb6xr4HQbAoWaw)
-- [Different btw CMD vs Entrypoint vs RUN in Docker](https://hackmd.io/M0wKTWi1Rw-T6ybpWM7tSQ)
+- [NGINX vs Apache ? How does it work? Why is NGINX compared to Apache –> How is it stronger and weaker?](https://hackmd.io/@XeusNguyen/rkp5AL5Fo)
+- [Different btw CMD vs Entrypoint vs RUN in Docker](https://hackmd.io/@XeusNguyen/HJKlF7-qs)
 
 ## 2024
 
@@ -138,13 +138,13 @@ tags:
 **Timeline: 2023 - Current**
 ## 2023
 
-- [Selfhosted NAS with Raspberry Pi 4](https://hackmd.io/0DcB_LauTvWxHvOlRw7DLQ)
-- [Setup the virtual machine Linux and Windows for Agents and Azure-Pipelines](https://hackmd.io/0JXwPaGjQRiS6WiwnyZC6g)
-- [Integration Performance Query for MySQL or PostgreSQL](https://hackmd.io/w-fyy8BQTEGDPHJipNLC3w)
-- [Setup MySQL with Wordpress in k8s - Easy migrate or not !!](https://hackmd.io/EHlfDP0vRqeN8li7-CtFRA)
-- [Ansible, Terraform and your first infrastructure](https://hackmd.io/2_tUc4W7S3K8s3aOiwgGyg)
-- [Robust Scanner - Vulnerable Scanning](https://hackmd.io/BflJwJ4WR56HptJBgJCo-g)
-- [Deploy your alert with Grafana by Terraform and some common error with K8s](https://hackmd.io/lM91wPdrSyyf8tO4Sqgv1Q)
+- [Selfhosted NAS with Raspberry Pi 4](https://hackmd.io/@XeusNguyen/SkRNNRiBi)
+- [Setup the virtual machine Linux and Windows for Agents and Azure-Pipelines](https://hackmd.io/@XeusNguyen/S1BrSRPW6)
+- [Integration Performance Query for MySQL or PostgreSQL](https://hackmd.io/@XeusNguyen/ry_nbYBxh)
+- [Setup MySQL with Wordpress in k8s - Easy migrate or not !!](https://hackmd.io/@XeusNguyen/Hkd_kP1Hh)
+- [Ansible, Terraform and your first infrastructure](https://hackmd.io/@XeusNguyen/SJBPGfcbp)
+- [Robust Scanner - Vulnerable Scanning](https://hackmd.io/@XeusNguyen/BkHKUKCQj)
+- [Deploy your alert with Grafana by Terraform and some common error with K8s](https://hackmd.io/@XeusNguyen/BJfNdXFWp)
 - [[0-downtime with Blue-Green Deployment]]
 - [[Monitoring with Portainer]]
 - [[Setup PostgreSQL with Ansible]]
@@ -170,6 +170,8 @@ tags:
 - [[AWS SSO from Self Gitlab Terraform Module Registry]]
 - [[Switch Role between AWS Accounts]]
 - [[Protect sensitive data and secret files with sops]]
+- [[First EKS Cluster with Milvus DB]]
+- [[Integration automation test with GitLab CI]]
 # CI/CD + OS Profile Gallery
 
 >[!info]

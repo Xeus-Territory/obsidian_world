@@ -34,6 +34,7 @@ tags:
 - [LinuxServer.io](https://github.com/linuxserver): Building and maintaining community images
 - [Kubeflow](https://github.com/kubeflow/):  An open, community driven project to make it easy to deploy and manage an ML stack on Kubernetes
 - [AliyunContainerService](https://github.com/AliyunContainerService): Aliyun (Alibaba Cloud) Container Service
+- [Kubecost](https://github.com/kubecost): Organization of Kubecost - a monitoring application which provides real-time cost visibility and insights for teams using Kubernetes, helping you continuously reduce your cloud costs
 ## Topics
 
 - [Kubernetes Cluster API](https://cluster-api.sigs.k8s.io/) : About cluster API
@@ -43,6 +44,7 @@ tags:
 - [Kubernetes Blog](https://kubernetes.io/blog/) : Collection of blog from community for upgrade and feature in each version of kubernetes and stories around.
 - [Kubernetes CSI Drivers](https://kubernetes-csi.github.io/docs/drivers.html) : The following are a set of CSI driver which can be used with Kubernetes
 - [Rootless Containers](https://rootlesscontaine.rs/): Rootless containers refers to the ability for an unprivileged user to create, run and otherwise manage containers.
+- [CNI GitHub](https://github.com/topics/cni): Collection of GitHub about CNI (Container Network Interface) Topics
 # Awesome Docker Registry and Image
 
 ## Registry
@@ -58,6 +60,7 @@ tags:
 - [docker](https://hub.docker.com/_/docker): Docker in Docker!
 - [amazon/aws-cli](https://hub.docker.com/r/amazon/aws-cli): Universal Command Line Interface for Amazon Web Services
 - [docker-android](https://github.com/budtmo/docker-android): Android in docker solution with noVNC supported and video recording
+- [windows](https://github.com/dockur/windows): Windows inside a Docker container.
 
 # Docker & Containerization
 
@@ -100,6 +103,7 @@ tags:
 - [Kubernetes - Extending Kubernetes](https://kubernetes.io/docs/concepts/extend-kubernetes/)
 - [Kubernetes - Ingress Controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
 - [Densify - Kubernetes Service Discovery](https://www.densify.com/kubernetes-autoscaling/kubernetes-service-discovery/)
+- [KodeKloud - Kube-Proxy: What Is It and How It Works](https://kodekloud.com/blog/kube-proxy/)
 - [Azure - Core Kubernetes concepts for Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/aks/concepts-clusters-workloads)
 - [Azure - Supported Kubernetes versions in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/supported-kubernetes-versions?tabs=azure-cli)
 - [AWS - Kubernetes concepts for EKS](https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-concepts.html)
@@ -132,11 +136,16 @@ tags:
 - [Medium - VictoriaLogs: an overview, run in Kubernetes, LogsQL, and Grafana](https://itnext.io/victorialogs-an-overview-run-in-kubernetes-logsql-and-grafana-88e0934a5ccd)
 - [Medium - 7 Best Open Source Storage Solutions for Kubernetes](https://blog.devops.dev/7-best-open-source-storage-solutions-for-kubernetes-0da8b51efe8d)
 - [Dev.io - Basic Guide to Kubernetes Service Discovery](https://dev.to/nomzykush/basic-guide-to-kubernetes-service-discovery-dmd)
+- [Medium - Lightweight CI/CD Solutions for Kubernetes: Going Beyond Keel, Flux, and ArgoCD](https://medium.com/@PlanB./lightweight-ci-cd-solutions-for-kubernetes-going-beyond-keel-flux-and-argocd-8b0b923e644c)
+- [Medium - EKS Cluster Network Architecture for Worker Nodes](https://keetmalin.medium.com/eks-cluster-network-architecture-for-worker-nodes-635e067c8c2a)
+- [Medium - 2 Powerful AI and Database Operators to Extend your K8s Cluster](https://onairotich.medium.com/2-powerful-ai-and-database-operators-to-extend-your-k8s-cluster-9c517e83b368)
 ## Tips for configuration
 
 - [Azure - Best practices for basic scheduler features in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/operator-best-practices-scheduler)
 - [Medium - My Top 50 Kubernetes Notes for DevOps Engineers — Detailed Q&A](https://medium.com/@thecloudarchitect/my-top-50-kubernetes-notes-for-devops-engineers-detailed-q-a-9d9c375c0076)
 - [Spot - 8 Kubernetes Deployment Strategies: Roll Out Like the Pros](https://spot.io/resources/kubernetes-autoscaling/5-kubernetes-deployment-strategies-roll-out-like-the-pros/)
+- [Medium - GitOps: How to Manage Dynamic Network Policy Changes at Scale Across 25 Clusters?](https://itnext.io/gitops-how-to-manage-dynamic-network-policy-changes-at-scale-across-25-clusters-0727ce1145e5)
+- [AWS EKS Workshop - Configure Cluster Autoscaler (CA)](https://archive.eksworkshop.com/beginner/080_scaling/deploy_ca/#deploy-the-cluster-autoscaler-ca)
 ## Troubleshoot
 
 - [StackOverFlow - How can I keep a container running on Kubernetes?](https://stackoverflow.com/questions/31870222/how-can-i-keep-a-container-running-on-kubernetes)
@@ -145,9 +154,9 @@ tags:
 - [StackOverFlow - Why AKS nodes shows less amount of memory as allocatable where its actual memory is still available](https://stackoverflow.com/questions/68521392/why-aks-nodes-shows-less-amount-of-memory-as-allocatable-where-its-actual-memory)
 - [StackOverFlow - Constantly getting Crashloopbackoff error in Kubernetes PODS generally in MongoDB pods](https://stackoverflow.com/questions/63142792/constantly-getting-crashloopbackoff-error-in-kubernetes-pods-generally-in-mongod)
 - [Suneeta Mall - WTH! Who killed my pod - Whodunit?](https://suneeta-mall.github.io/2021/03/14/wth-who-killed-my-pod.html)
-- [Medium - Understanding Common exit codes and error messages in Containers & Kubernetes 🎑](https://medium.com/@seifeddinerajhi/understanding-common-exit-codes-and-error-messages-in-containers-kubernetes-fb8d053e759e)
 - [Kubernetes - Validate node setup](https://kubernetes.io/docs/setup/best-practices/node-conformance/)
 - [Komodor - Resolving OOMkilled on Kubernetes](https://komodor.com/learn/how-to-fix-oomkilled-exit-code-137/)
+- [Komodor - Exit Codes in Docker and Kubernetes: The Complete Guide](https://komodor.com/learn/exit-codes-in-containers-and-kubernetes-the-complete-guide/)
 ## Certificate & Practice
 
 - [kube4sure - The Kubernetes Exam Simulator](https://www.kube4sure.com/)
@@ -155,6 +164,12 @@ tags:
 - [learnk8s - Kubernetes training for engineer](https://learnk8s.io/)
 - [certified-kubernetes-administrator-course](https://github.com/kodekloudhub/certified-kubernetes-administrator-course) : Kodecloud Certified Kubernetes Administrator - CKA Course
 - [certified-kubernetes-security-specialist-cks-course](https://github.com/kodekloudhub/certified-kubernetes-security-specialist-cks-course) : Kodecloud Notes from the Certified Kubernetes Security Specialist Course on KodeKloud
+
+## Practicing
+
+- [EKS Workshop - New version](https://www.eksworkshop.com/): Practical exercises to learn about Amazon Elastic Kubernetes Service
+- [EKS Workshop - Old Version](https://archive.eksworkshop.com/): Explore multiple ways to configure VPC, ALB, and EC2 Kubernetes workers, and Amazon Elastic Kubernetes Service.
+- [AKS DevSecOps Workshop](https://azure.github.io/AKS-DevSecOps-Workshop/): Practical exercises to learn about Azure Kubernetes Service
 
 # Docker & Kubernetes Tools
 
@@ -166,11 +181,11 @@ tags:
 - [dive](https://github.com/wagoodman/dive) : A tool for exploring each layer in a docker image
 - [crane](https://github.com/google/go-containerregistry/tree/main/cmd/crane): A tool for interacting with remote images and registries
 - [trivy](https://github.com/aquasecurity/trivy): Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more
+- [dokku](https://github.com/dokku/dokku): A docker-powered PaaS that helps you build and manage the lifecycle of applications. [Documentation](https://dokku.com/docs/getting-started/installation/)
 
 ## CRI (Container Runtime Interface)
 
 ![[Pasted image 20240724135156.png]]
-### Runtime
 
 - [containerd](https://github.com/containerd/containerd) : An open and reliable container runtime. [Getting started](https://github.com/containerd/containerd/blob/main/docs/getting-started.md)
 - [cri-dockerd](https://github.com/Mirantis/cri-dockerd): dockerd as a compliant Container Runtime Interface for Kubernetes (Mirantis OpenSource)
@@ -178,8 +193,6 @@ tags:
 - [Mirantis](https://docs.mirantis.com/mcr/23.0/index.html): Mirantis Container Runtime (MCR) enables you to power your business-critical applications with the industry-leading enterprise container engine
 - [kata-containers](https://github.com/kata-containers/kata-containers) : an open source project and community working to build a standard implementation of lightweight Virtual Machines (VMs) that feel and perform like containers, but provide the workload isolation and security advantages of VMs.
 - [sysbox](https://github.com/nestybox/sysbox): An open-source, next-generation "runc" that empowers rootless containers to run workloads such as Systemd, Docker, Kubernetes, just like VMs.
-### Client
-
 - [cri-tools](https://github.com/kubernetes-sigs/cri-tools) : CLI and validation tools for Kubelet Container Runtime Interface (CRI). [User guide](https://github.com/kubernetes-sigs/cri-tools/blob/master/docs/crictl.md)
 - [kubeletctl](https://github.com/cyberark/kubeletctl): A client for kubelet
 ## CNI (Container Network Interface)
@@ -294,3 +307,18 @@ tags:
 - [werf](https://github.com/werf/werf): A solution for implementing efficient and consistent software delivery to Kubernetes facilitating best practices, with [nelm](https://github.com/werf/nelm) - a Helm 3 alternative and werf deployment engine
 - [helm](https://helm.sh/): The package manager for Kubernetes
 - [harness](https://github.com/harness/harness): Harness Open Source is an end-to-end developer platform with Source Control Management, CI/CD Pipelines, Hosted Developer Environments, and Artifact Registries.
+- [keel](https://github.com/keel-hq/keel): Kubernetes Operator to automate Helm, DaemonSet, StatefulSet & Deployment updates
+- [kustomize](https://github.com/kubernetes-sigs/kustomize): Customization of kubernetes YAML configurations
+- [flagger](https://flagger.app/): Progressive Delivery Operator for Kubernetes. Maintained by Flux
+- [argo-rollouts](https://github.com/argoproj/argo-rollouts): Progressive Delivery for Kubernetes. Maintained by Argo
+- [operator-lifecycle-manager](https://github.com/operator-framework/operator-lifecycle-manager): A management framework for extending Kubernetes with Operators
+## Kubernetes Autoscaling
+
+- [Kubernetes Autoscaler](https://github.com/kubernetes/autoscaler): Autoscaling components for Kubernetes
+- [Karpenter](https://karpenter.sh/docs/): an open-source node lifecycle management project built for Kubernetes.
+- [Keda](https://keda.sh/docs/2.16/): Kubernetes Event-driven Autoscaling
+
+## Kubernetes Chaos
+
+- [chaos-mesh](https://github.com/chaos-mesh/chaos-mesh): A Chaos Engineering Platform for Kubernetes.
+- [litmus](https://github.com/litmuschaos/litmus): Chaos Engineering Framework with cross-cloud support.

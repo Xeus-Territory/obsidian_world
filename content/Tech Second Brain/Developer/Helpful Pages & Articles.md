@@ -25,6 +25,7 @@ tags:
 ## Topic
 
 - [gRPC](https://github.com/topics/grpc): A modern open source high performance RPC framework that can run in any environment.
+- [wrapper](https://github.com/topics/wrapper): Pattern for creating interface and permit conversation between multiple language. Explore at [[What is Wrapper Pattern]]
 ## Organization
 
 - [gRPC Ecosystem](https://github.com/grpc-ecosystem): gRPC Ecosystem that complements gRPC
@@ -53,6 +54,8 @@ tags:
 - [crontab spring](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/scheduling/support/CronExpression.html) : Representation of a [crontab expression](https://www.manpagez.com/man/5/crontab/) that can calculate the next time it matches (Java/AWS)
 - [AppleForums - APP STORE connect operation error: An error occurred uploading to the App Store](https://forums.developer.apple.com/forums/thread/123649?answerId=389459022#389459022)
 - [Medium - 8 Golang Performance Tips I Discovered After Years of Coding](https://medium.com/deep-golang/8-python-performance-tips-i-discovered-after-years-of-coding-in-golang-764375658d90)
+- [Codilime - The importance and benefits of unit testing](https://codilime.com/blog/unit-testing/)
+- [Katalon - 9 Core Benefits of Automation Testing](https://katalon.com/resources-center/blog/benefits-of-automation-testing)
 # Developer online tools
 
 - [10015.io](https://10015.io/) : A “free all-in-one toolbox” solution created to ease your life by preventing bookmark mess.
@@ -101,11 +104,13 @@ tags:
 - [rust-101](https://www.ralfj.de/projects/rust-101/): A tutorial for the Rust language
 - [quick-protobuf](https://github.com/tafia/quick-protobuf): A rust implementation of protobuf parser
 - [crates.io](https://crates.io/): The Rust community’s crate registry
+- [Rust Language Cheat Sheet](https://cheats.rs/): Collection cheatsheet with Rust
 ## Golang
 
 - [awesome-go](https://github.com/avelino/awesome-go): A curated list of awesome Go frameworks, libraries and software
 - [go-patterns](https://github.com/tmrts/go-patterns): Curated list of Go design patterns, recipes and idioms
 - [go-packager](https://pkg.go.dev/): The Go Packager
+- [grocksdb](https://github.com/linxGnu/grocksdb): RocksDB wrapper for Go. Support 9.x, 8.x, 7.x, 6.x, etc
 ## WASM
 
 - [wasmtime](https://github.com/bytecodealliance/wasmtime): A fast and secure runtime for WebAssembly. [Website](https://wasmtime.dev/)
