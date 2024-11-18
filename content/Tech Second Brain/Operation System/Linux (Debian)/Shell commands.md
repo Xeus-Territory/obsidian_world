@@ -414,6 +414,27 @@ To replace in the string, you can control action with
 echo "[MASKED]" | sed -e "s/\[MASKED\]/123456789/g"
 ```
 
+## `systemctl` command
+
+Documentation: [Redhat - Systemd cheat sheet](https://access.redhat.com/node/1199213/40/0/13122931)
+
+Use `systemctl` command to check available service inside your host with state running
+
+```bash
+sudo systemctl list-units --type=service --state=running
+```
+
+Use one of option Disable/Enable/Restart/Stop/Start with service inside host for changing state
+
+```bash
+sudo systemctl disable/enable/restart/stop/start <name_of_service>
+```
+
+Check configure or state of service with `systemctl` command
+
+```bash
+sudo systemctl show/status <name_of_services>
+```
 # External Commands
 ## Caddy server
 

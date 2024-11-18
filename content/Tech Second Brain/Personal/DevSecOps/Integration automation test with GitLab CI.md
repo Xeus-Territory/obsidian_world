@@ -1,5 +1,5 @@
 ---
-title: Integration unit test with GitLab CI
+title: Integration automation test with GitLab CI
 tags:
   - cicd
   - automation

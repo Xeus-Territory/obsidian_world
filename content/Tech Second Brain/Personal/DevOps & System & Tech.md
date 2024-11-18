@@ -82,6 +82,7 @@ tags:
 - [LXC - Linux Containers](https://github.com/lxc): Linux container projects
 - [Hashicorp](https://github.com/hashicorp): Consistent workflows to provision, secure, connect, and run any infrastructure for any application.
 - [PingCAP](https://github.com/pingcap): The team behind TiDB TiKV, an open source MySQL compatible HTAP database
+- [Leaning Technologies](https://github.com/leaningtech): Enterprise-grade WebAssembly solutions
 ## Landscape
 
 - [Apache Project Directory](https://projects.apache.org/projects.html) : List all of product of Apache
@@ -172,6 +173,9 @@ tags:
 - [Medium - Is there an Alternative to Debezium + Kafka?](https://lazypro.medium.com/is-there-an-alternative-to-debezium-kafka-0ff112db83a9)
 - [Medium - Top 20 Platform Engineering Tools](https://medium.com/spacelift/top-20-platform-engineering-tools-7e9c7289fb94)
 - [Spacelift - How Spacelift Can Improve Your Infrastructure Orchestration](https://spacelift.io/blog/how-specialized-solution-can-improve-your-iac)
+- [AWS - What’s the Difference Between Kafka and RabbitMQ?](https://aws.amazon.com/compare/the-difference-between-rabbitmq-and-kafka/?nc1=h_ls)
+- [Viblo - RabbitMQ vs Kafka - Hai Cách Truyền Tải Khác Nhau](https://viblo.asia/p/rabbitmq-vs-kafka-hai-cach-truyen-tai-khac-nhau-pgjLNdYE432)
+- [Confluent - A Comparison of RabbitMQ vs Apache Kafka and When to Use Each](https://www.confluent.io/learn/rabbitmq-vs-apache-kafka/)
 ## Techniques
 
 - [Internet - How to build and deploy React Native applications with Fastlane](https://tech.sparkfabrik.com/en/blog/fastlane_build/)
@@ -235,6 +239,7 @@ tags:
 - [Medium - Embedding Python in Go](https://poweruser.blog/embedding-python-in-go-338c0399f3d5F)
 - [QKD BB84 protocol simulation using Quantum Simulator (Qiskit)](https://www.quantumblockchains.io/qkd-protocol-simulation-with-qiskit/)
 - [Event-driven architecture patterns and when to use them](https://ably.com/topic/event-driven-architecture-patterns)
+- [Worldwide exchange and communication of date and time-related data - ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)
 # Opensource Finder
 
 >[!note]
@@ -355,11 +360,6 @@ tags:
 - [zitadel](https://zitadel.com/docs/guides/overview): Identity infrastructure, simplified for you.
 - [casdoor](https://github.com/casdoor/casdoor): An open-source UI-first Identity and Access Management (IAM) / Single-Sign-On (SSO) platform with web UI supporting
 - [keycloak](https://github.com/keycloak/keycloak): Open Source Identity and Access Management For Modern Applications and Services. [Website](https://github.com/keycloak/keycloak)
-
-## Orchestration Framework
-
-- [luigi](https://github.com/spotify/luigi): a Python module that helps you build complex pipelines of batch jobs. It handles dependency resolution, workflow management, visualization etc. It also comes with Hadoop support built in.
-- [camunda](https://github.com/camunda/camunda): Process Orchestration Framework. [Website](https://docs.camunda.io/)
 ## Generated + Validate Configuration
 
 - [moz://a SSL Configuration Generator](https://ssl-config.mozilla.org/) : SSL Generation for multiple webserver
@@ -409,6 +409,28 @@ tags:
 - [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics): VictoriaMetrics: fast, cost-effective monitoring solution and time series database. [Documentation](https://docs.victoriametrics.com/)
 - [Log Viewer (Log4j, NLog)](https://sourceforge.net/projects/styort-logviewer/): a high performance realtime log viewer via UDP (Chainsaw/NLogViewer) or text file.
 - [vector](https://github.com/vectordotdev/vector): A high-performance observability data pipeline.
+## Orchestration Framework
+
+- [luigi](https://github.com/spotify/luigi): a Python module that helps you build complex pipelines of batch jobs. It handles dependency resolution, workflow management, visualization etc. It also comes with Hadoop support built in.
+- [camunda](https://github.com/camunda/camunda): Process Orchestration Framework. [Website](https://docs.camunda.io/)
+- [prefect](https://github.com/PrefectHQ/prefect): A workflow orchestration framework for building resilient data pipelines in Python.
+## Product Error Analytics and Monitoring
+
+- [openreplay](https://github.com/openreplay/openreplay): Session replay and analytics tool you can self-host. Ideal for reproducing issues, co-browsing with users and optimizing your product.
+- [opentelemetry](https://opentelemetry.io/docs/): OpenTelemetry, also known as OTel, is a vendor-neutral open source [observability](https://opentelemetry.io/docs/concepts/observability-primer/#what-is-observability) framework for instrumenting, generating, collecting, and exporting telemetry data such as [traces](https://opentelemetry.io/docs/concepts/signals/traces/), [metrics](https://opentelemetry.io/docs/concepts/signals/metrics/), and [logs](https://opentelemetry.io/docs/concepts/signals/logs/).
+- [Sentry](https://github.com/getsentry/sentry): Developer-first error tracking and performance monitoring. [Website](https://sentry.io/)
+- [GlitchTip](https://glitchtip.com/documentation): Simple, open source error tracking
+
+## Queue Services
+
+- [AutoMQ](https://docs.automq.com/automq/what-is-automq/overview) : AutoMQ re-engineers Kafka for the cloud by decoupling storage to object storage. While maintaining **100% compatibility** with Apache Kafka®, it offers users up to **10 times cost efficiency** and **100 times elasticity**.
+- [Apache Kafka](https://kafka.apache.org/documentation/): an open-source, distributed event streaming platform with message communication and storage capabilities (**superb**)
+- [RabbitMQ](https://www.rabbitmq.com/): An open-source message broker for asynchronous messaging, queueing and delivery acknowledgement.
+- [Apache ActiveMQ](https://activemq.apache.org/) : An open-source Java-based message queue that can be accessed by clients written in Javascript, C, C++, Python and .NET.
+- [Amazon Simple Queue System (SQS)](https://aws.amazon.com/sqs): A fully managed message queue built for distributed and serverless platforms
+- [Microsoft Azure Service Bus](https://azure.microsoft.com/en-us/products/service-bus): A reliable, fully managed Cloud service for delivering messages via queues or topics.
+- [Celery](https://docs.celeryq.dev/en/stable/): a simple, flexible, and reliable distributed system to process vast amounts of messages, while providing operations with the tools required to maintain such a system.
+
 ## Serverless Self-hosted
 
 - [fn](https://github.com/fnproject/fn): The container native, cloud agnostic serverless platform.
@@ -426,10 +448,6 @@ tags:
 - [infisical](https://github.com/Infisical/infisical): the open-source secret management platform: Sync secrets across your team/infrastructure, prevent secret leaks, and manage internal PKI
 - [teller](https://github.com/tellerops/teller): Cloud native secrets management for developers - never leave your command line for secrets.
 - [doppler](https://github.com/DopplerHQ/cli): The official CLI for interacting with your Doppler secrets and configuration. [Documentation](https://docs.doppler.com/)
-## Threat Intelligence
-
-- [openappsec](https://github.com/openappsec/openappsec): A machine learning security engine that preemptively and automatically prevents threats against Web Application & APIs.
-- [teleport](https://github.com/gravitational/teleport): The easiest, and most secure way to access and protect all of your infrastructure.
 ## Storage Platforms
 
 - [MinIO](https://min.io/docs/minio/linux/index.html): MinIO is an object storage solution that provides an Amazon Web Services S3-compatible API and supports all core S3 features.
@@ -447,16 +465,6 @@ tags:
 - [traefik proxy](https://doc.traefik.io/traefik/) : Traefik is an [open-source](https://github.com/traefik/traefik) _Edge Router_ that makes publishing your services a fun and easy experience
 - [HAProxy](https://docs.haproxy.org/) : HAProxy is a free, very fast and reliable reverse-proxy offering [high availability](http://en.wikipedia.org/wiki/High_availability), [load balancing](http://en.wikipedia.org/wiki/Load_balancer), and proxying for TCP and HTTP-based applications
 
-## Queue Services
-
-- [AutoMQ](https://docs.automq.com/automq/what-is-automq/overview) : AutoMQ re-engineers Kafka for the cloud by decoupling storage to object storage. While maintaining **100% compatibility** with Apache Kafka®, it offers users up to **10 times cost efficiency** and **100 times elasticity**.
-- [Apache Kafka](https://kafka.apache.org/documentation/): an open-source, distributed event streaming platform with message communication and storage capabilities (**superb**)
-- [RabbitMQ](https://www.rabbitmq.com/): An open-source message broker for asynchronous messaging, queueing and delivery acknowledgement.
-- [Apache ActiveMQ](https://activemq.apache.org/) : An open-source Java-based message queue that can be accessed by clients written in Javascript, C, C++, Python and .NET.
-- [Amazon Simple Queue System (SQS)](https://aws.amazon.com/sqs): A fully managed message queue built for distributed and serverless platforms
-- [Microsoft Azure Service Bus](https://azure.microsoft.com/en-us/products/service-bus): A reliable, fully managed Cloud service for delivering messages via queues or topics.
-- [Celery](https://docs.celeryq.dev/en/stable/): a simple, flexible, and reliable distributed system to process vast amounts of messages, while providing operations with the tools required to maintain such a system.
-
 ## SSL + DNS Utilities
 
 - [certbot](https://github.com/certbot/certbot): Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server.
@@ -464,6 +472,11 @@ tags:
 - [kcert](https://github.com/nabsul/kcert): A Simple Let's Encrypt Manager for Kubernetes
 - [ddns-updater](https://github.com/qdm12/ddns-updater): Container to update DNS records periodically with WebUI for many DNS providers
 - [cloudflare-ddns](https://github.com/timothymiller/cloudflare-ddns): 🎉🌩️ Dynamic DNS (DDNS) service based on Cloudflare! Access your home network remotely via a custom domain name without a static IP!
+## Static Site Generator
+
+- [gatsby](https://github.com/gatsbyjs/gatsby): The best React-based framework with performance, scalability and security built in.
+- [quartz](https://github.com/jackyzha0/quartz): 🌱 a fast, batteries-included static-site generator that transforms Markdown content into fully functional websites
+- [hugo](https://github.com/gohugoio/hugo): The world’s fastest framework for building websites.
 ## Utilities Terminal Tools
 
 - [tldr](https://github.com/tldr-pages/tldr): 📚 Collaborative cheatsheets for console commands
@@ -495,17 +508,10 @@ tags:
 - [spacedrive](https://github.com/spacedriveapp/spacedrive): Spacedrive is an open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust.
 - [localsend](https://github.com/localsend/localsend): An open-source cross-platform alternative to AirDrop (Local Vietnamese Guy 🖖)
 - [nhost](https://github.com/nhost/nhost): The Open Source Firebase Alternative with GraphQL. [Documentation](https://docs.nhost.io/introduction)
-## Static Site Generator
 
-- [gatsby](https://github.com/gatsbyjs/gatsby): The best React-based framework with performance, scalability and security built in.
-- [quartz](https://github.com/jackyzha0/quartz): 🌱 a fast, batteries-included static-site generator that transforms Markdown content into fully functional websites
-- [hugo](https://github.com/gohugoio/hugo): The world’s fastest framework for building websites.
-## Product Error Analytics and Monitoring
+## Virtual Machine
 
-- [openreplay](https://github.com/openreplay/openreplay): Session replay and analytics tool you can self-host. Ideal for reproducing issues, co-browsing with users and optimizing your product.
-- [opentelemetry](https://opentelemetry.io/docs/): OpenTelemetry, also known as OTel, is a vendor-neutral open source [observability](https://opentelemetry.io/docs/concepts/observability-primer/#what-is-observability) framework for instrumenting, generating, collecting, and exporting telemetry data such as [traces](https://opentelemetry.io/docs/concepts/signals/traces/), [metrics](https://opentelemetry.io/docs/concepts/signals/metrics/), and [logs](https://opentelemetry.io/docs/concepts/signals/logs/).
-- [Sentry](https://github.com/getsentry/sentry): Developer-first error tracking and performance monitoring. [Website](https://sentry.io/)
-- [GlitchTip](https://glitchtip.com/documentation): Simple, open source error tracking
+- [webvm](https://github.com/leaningtech/webvm): Virtual Machine for the Web
 ## Web server
 
 - [traefik proxy](https://doc.traefik.io/traefik/) : Traefik is an [open-source](https://github.com/traefik/traefik) _Edge Router_ that makes publishing your services a fun and easy experience

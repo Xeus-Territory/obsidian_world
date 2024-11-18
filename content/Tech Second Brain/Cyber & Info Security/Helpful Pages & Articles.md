@@ -273,6 +273,11 @@ tags:
 ### IAST (Interactive Application Security Testing)
 
 - [DongTai](https://github.com/HXSecurity/DongTai): (IAST) tool that enables real-time detection of common vulnerabilities in Java applications and third-party components through passive instrumentation.
+
+## Thread Intelligent
+
+- [openappsec](https://github.com/openappsec/openappsec): A machine learning security engine that preemptively and automatically prevents threats against Web Application & APIs.
+- [teleport](https://github.com/gravitational/teleport): The easiest, and most secure way to access and protect all of your infrastructure.
 ## Networking
 
 >[!info]
@@ -338,7 +343,7 @@ tags:
 - [Online Cyber Security Blue Team Training - CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/): Learn and try to improving the defensive skillset on Blue Team
 - [OverTheWire: Wargames](https://overthewire.org/wargames/) : The level competition which you need to find the key for reach to next level (**HELPFUL - FOR UPGRADE LINUX SKILL**)
 - [UnderTheWire: Wargames](https://underthewire.tech/wargames): Wargames where help you improve hacking skill **(HELPFUL - FOR UPGRADE POWERSHELL SKILL)**
-- [Welcome [Root Me : Hacking and Information Security learning platform]](https://www.root-me.org/?lang=en) : Like HTB and THM but you will have fun things to exploit
+- [Root Me : Hacking and Information Security learning platform](https://www.root-me.org/?lang=en) : Like HTB and THM but you will have fun things to exploit
 - [Application Security Training For Developers | Kontra](https://application.security/) : Vulnerables Site which visual on illustration and take you image what happen when attacking occur
 - [Vulnerable By Design ~ VulnHub](https://vulnhub.com/) : Like HTB and THM, but you need to learn about virtualization to setup the pentest environment
 - [Attack-Defense Labs](https://attackdefense.com/) : More Labs you can take and archive your knowledge, bro trust me. 
@@ -388,7 +393,7 @@ tags:
 
 - [PicoCTF](https://picoctf.org/): Best of way for newbie and starter **(LEGACY PAGE)**
 - [PWNABLE.VN](https://pwnable.vn/) : Vietnamese group whose create a wonderful page for practicing CTF
-- [Bắt đầu với CTF: Tổng hợp các trang WarGame để luyện tập | WhiteHat.vn](https://whitehat.vn/threads/bat-dau-voi-ctf-tong-hop-cac-trang-wargame-de-luyen-tap.11346/?fbclid=IwAR1hgk2EXcP5ozMGGF2Lv9Vg6sxfYuJ3jaf5kVKlO0esg_TF15a4M85XJP0) : Collection of CTF from huge page about security WhiteHat (Vietnamese)
+- [Bắt đầu với CTF: Tổng hợp các trang WarGame để luyện tập | WhiteHat.vn](https://whitehat.vn/threads/bat-dau-voi-ctf-tong-hop-cac-trang-wargame-de-luyen-tap.11346/) : Collection of CTF from huge page about security WhiteHat (Vietnamese)
 - [Home Page - ImaginaryCTF](https://imaginaryctf.org/) : Monthly CTF challenge page, Super cool contents. You will learn a lot from that
 - [CTFLearn](https://ctflearn.com/) : CTF challenge page, you can practice more and level up skillset on multiple category of CTF game
 - [Viblo CTF](https://ctf.viblo.asia/): Like CTFLearn but Vietnamese version

@@ -62,6 +62,7 @@ tags:
 - [Tecmint - How to Increase SSH Connection Timeout in Linux](https://www.tecmint.com/increase-ssh-connection-timeout/)
 - [Tecmint - How to Clear RAM Memory Cache, Buffer and Swap Space on Linux](https://www.tecmint.com/clear-ram-memory-cache-buffer-and-swap-space-on-linux/)
 - [Medium - 6 Ways to Check Remote Port Status in Linux: Highlighting Two New Approaches](https://programming.earthonline.us/6-effective-methods-to-check-remote-port-status-in-linux-which-one-do-you-use-most-83ce6f903d75)
+- [Medium - Top Linux Security Best Practices for DevSecOps Engineers](https://medium.com/devsecops-community/top-10-linux-security-best-practices-a-comprehensive-guide-to-protecting-your-system-908bd96dd2c9)
 # Window
 
 ## Awesome Repositories

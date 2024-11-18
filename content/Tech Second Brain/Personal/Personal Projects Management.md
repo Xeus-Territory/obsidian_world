@@ -23,6 +23,7 @@ tags:
 >- ✍ : On progressing, It usually attaches with `github` and blog
 >- 🚧 : Pending, just stop like a note, and idea to doing something around that. Waiting for new information LOL
 >- ✅ : Already hand on and release as blog, , find in [[All Blogs|all blogs page]]
+>- ⌛ : On my way, just wait for couple weeks
 
 # Kubewekend
 ## Setup Self Kubernetes Cluster in locally ✍
