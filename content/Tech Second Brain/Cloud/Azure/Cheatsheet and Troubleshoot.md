@@ -38,11 +38,13 @@ What you can find out and figure out about Azure, Cloud Computing, Documentation
 - [Azure - Register Account](https://azure.microsoft.com/en-us/free)
 - [Azure - Community](https://techcommunity.microsoft.com/t5/azure/ct-p/Azure)
 - [Azure - Tech Community](https://techcommunity.microsoft.com/)
+- [Azure - Technical documentation](https://learn.microsoft.com/en-us/docs/)
 - [Azure - Architecture Blog](https://techcommunity.microsoft.com/t5/azure-architecture-blog/bg-p/AzureArchitectureBlog)
 - [Azure CLI - User Guide](https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest)
 - [Azure Price Calculator](https://azure.microsoft.com/en-gb/pricing/calculator/)
 - [Azure - Blog](https://azure.microsoft.com/en-us/blog/)
 - [Azure - Subscription and Service Limits, Quotas, and Constraints](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits)
+- [Azure - Sample Code from Microsoft Developer Tools](https://learn.microsoft.com/en-us/samples/browse/)
 
 >[!info]
 >If you want to receive the credit from VS Subscription, you can direct use via [Monthly Azure credits for Visual Studio subscribers](https://azure.microsoft.com/en-us/pricing/member-offers/credit-for-visual-studio-subscribers)
@@ -58,7 +60,8 @@ What you can find out and figure out about Azure, Cloud Computing, Documentation
 - [Azure Verified Modules](https://azure.github.io/Azure-Verified-Modules/) - An initiative to consolidate and set the standards for what a good Infrastructure-as-Code module looks like.
 ## Organization
 
-- [Github - Microsoft Azure](https://github.com/Azure) - APIs, SDKs and open source projects from Microsoft Azure
+- [Microsoft Azure](https://github.com/Azure) - APIs, SDKs and open source projects from Microsoft Azure
+- [Microsoft Docs](https://github.com/MicrosoftDocs) - The modern documentation service for Microsoft
 
 # Azure CLI
 

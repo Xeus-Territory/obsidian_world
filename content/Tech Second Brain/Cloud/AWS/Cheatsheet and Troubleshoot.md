@@ -43,11 +43,12 @@ So enjoy what you need, inside the article will share about how you CLI, cheatsh
 - [awesome-aws](https://github.com/donnemartin/awesome-aws) - A curated list of awesome Amazon Web Services (AWS) libraries, open source repos, guides, blogs, and other resources.
 - [my-arsenal-of-aws-security-tools](https://github.com/toniblyx/my-arsenal-of-aws-security-tools): List of open source tools for AWS security: defensive, offensive, auditing, DFIR, etc.
 - [all_aws_managed_policies](https://gist.github.com/gene1wood/55b358748be3c314f956): A list of all AWS managed policies and they're policy documents as well as a short script to generate the list
+- [grafana-aws-cloudwatch-dashboards](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards): 40+ Grafana dashboards for AWS CloudWatch metrics
 ## Organization
 
 - [Github - Amazon Web Services](https://github.com/aws) - AWS Opensource Community
 - [Github - AWS Samples](https://github.com/aws-samples) - AWS Samples Community
-# Blogs and Articles
+# Blogs, Articles and Videos
 
 ## Blogs
 
@@ -65,10 +66,15 @@ So enjoy what you need, inside the article will share about how you CLI, cheatsh
 - [Medium - 18 AWS Lambda Microstacks](https://awstip.com/18-aws-lambda-microstacks-bb20776601c0)
 - [Medium - 14 AWS Security Microstacks](https://medium.com/@csjcode/14-aws-security-microstacks-95d120d57089)
 - [Medium - 7 Effective Ways to Automate Cloud Infrastructure Auditing with AWS CloudTrail and AWS Config](https://aws.plainenglish.io/7-effective-ways-to-automate-cloud-infrastructure-auditing-with-aws-cloudtrail-and-aws-config-39d983f43d30)
+- [AWS Docs - Configuring IAM Identity Center authentication with the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html)
 ## Issues
 
 - [AWS re:Post - Getting an Access Denied error message when I upload files to my Amazon S3 bucket](https://repost.aws/knowledge-center/s3-access-denied-error-kms)
 - [AWS - Troubleshoot access denied (403 Forbidden) errors in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/troubleshoot-403-errors.html#access-denied-message-examples)
+
+## Videos
+
+- [Youtube  - Amazon S3 - Static Website Hosting with Custom Domain and TLS](https://www.youtube.com/watch?v=X9cdkqBgLbs&ab_channel=BryanKrausen)
 # AWS CLI
 
 >[!question]
