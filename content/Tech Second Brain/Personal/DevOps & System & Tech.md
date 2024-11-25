@@ -136,6 +136,7 @@ tags:
 - [Medium - Vu Trinh](https://medium.com/@vutrinh274) - Tech blogger who cover a lot information about databases and data engineers
 - [Ivan Velichko](https://iximiuz.com/en/) - Guy teach about container things in developer
 - [Medium - Chunting Wu](https://lazypro.medium.com/) - Tech blogger cover about topics relate system design, be and data engineer
+- [Medium - Cloud Architect Review](https://medium.com/cloud-architect-review) - Reviewing the best recent Cloud-engineering articles, videos, podcasts, software, and services
 
 ## EBPF Blog
 
@@ -176,6 +177,7 @@ tags:
 - [AWS - What’s the Difference Between Kafka and RabbitMQ?](https://aws.amazon.com/compare/the-difference-between-rabbitmq-and-kafka/?nc1=h_ls)
 - [Viblo - RabbitMQ vs Kafka - Hai Cách Truyền Tải Khác Nhau](https://viblo.asia/p/rabbitmq-vs-kafka-hai-cach-truyen-tai-khac-nhau-pgjLNdYE432)
 - [Confluent - A Comparison of RabbitMQ vs Apache Kafka and When to Use Each](https://www.confluent.io/learn/rabbitmq-vs-apache-kafka/)
+- [Medium - 11 Automation Scripts for Prometheus Configurations.](https://medium.com/@obaff/11-automation-scripts-for-prometheus-configurations-fde7b3bf4198)
 ## Techniques
 
 - [Internet - How to build and deploy React Native applications with Fastlane](https://tech.sparkfabrik.com/en/blog/fastlane_build/)
@@ -202,6 +204,10 @@ tags:
 - [Medium - Six Rules of Thumb for Scaling Software Architectures](https://medium.com/@i.gorton/six-rules-of-thumb-for-scaling-software-architectures-a831960414f9)
 - [Medium - Most-Used Distributed System Design Patterns](https://medium.com/javarevisited/most-used-distributed-system-patterns-d5d90ffedf33)
 - [Medium - 10 Fundamental Cloud Native Architecture Patterns](https://medium.com/@azeynalli1990/10-fundamental-cloud-native-architecture-patterns-7e4c2d94861e)
+- [Medium - Solution Architect: Different Methodologies](https://blog.stackademic.com/solution-architect-different-methodologies-47fa15fb0b14)
+- [Medium - System Design: Automating Banking Reconciliation with AWS](https://medium.com/aws-in-plain-english/system-design-automating-banking-reconciliation-with-aws-2d2a5344022f)
+- [OWASP - DevSecOps Guideline](https://owasp.org/www-project-devsecops-guideline/latest/)
+- [Medium - 23 Fundamental Principles for Software Architects](https://azeynalli1990.medium.com/23-fundamental-principles-for-software-architects-f42aaae7f740)
 # DevOps Youtube Channel
 
 ![[youtube.png]]

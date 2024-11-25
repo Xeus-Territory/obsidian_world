@@ -26,6 +26,7 @@ You can figure what you need to do for start with `aws` via some website and art
 - [AWS Create Account Guide](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html)
 - [AWS Price Calculator](https://calculator.aws/#/)
 - [AWS Architecture Blog](https://aws.amazon.com/vi/blogs/architecture/)
+- [AWS Solutions Library](https://aws.amazon.com/solutions/ "AWS Solutions Library Homepage")
 - [AWS Blog](https://aws.amazon.com/blogs)
 - [AWS General Reference](https://docs.aws.amazon.com/general/latest/gr/Welcome.html)
 - [AWS IAM Actions - Generator](https://www.awsiamactions.io/?r=0)
@@ -67,6 +68,8 @@ So enjoy what you need, inside the article will share about how you CLI, cheatsh
 - [Medium - 14 AWS Security Microstacks](https://medium.com/@csjcode/14-aws-security-microstacks-95d120d57089)
 - [Medium - 7 Effective Ways to Automate Cloud Infrastructure Auditing with AWS CloudTrail and AWS Config](https://aws.plainenglish.io/7-effective-ways-to-automate-cloud-infrastructure-auditing-with-aws-cloudtrail-and-aws-config-39d983f43d30)
 - [AWS Docs - Configuring IAM Identity Center authentication with the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html)
+- [Medium - 10 Little-Known AWS Services That Could Supercharge Your Cloud Strategy in 2025](https://medium.com/aws-in-plain-english/10-little-known-aws-services-that-could-supercharge-your-cloud-strategy-in-2025-7293912ee28d)
+- [Medium - AWS Console-to-Code Now Generally Available](https://medium.com/@TechStoryLines/aws-console-to-code-now-generally-available-f0f63490ac9b)
 ## Issues
 
 - [AWS re:Post - Getting an Access Denied error message when I upload files to my Amazon S3 bucket](https://repost.aws/knowledge-center/s3-access-denied-error-kms)

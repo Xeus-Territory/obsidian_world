@@ -52,10 +52,10 @@ tags:
 >[!quote]
 ><div align="center"><h3>🙌Song of the week 🙌</h3></div>
 >
-><div align="center"><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/226437354&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/phong-ngu-yen" title="Phong Ngủ Yên" target="_blank" style="color: #cccccc; text-decoration: none;">Phong Ngủ Yên</a> · <a href="https://soundcloud.com/phong-ngu-yen/co-khi-acoustic-phong-ngu-yen" title="Có Khi (Acoustic) - Phong Ngủ Yên" target="_blank" style="color: #cccccc; text-decoration: none;">Có Khi (Acoustic) - Phong Ngủ Yên</a></div></div>
+><div align="center"><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/307515869&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/khoivuofficial" title="Khoi Vu" target="_blank" style="color: #cccccc; text-decoration: none;">Khoi Vu</a> · <a href="https://soundcloud.com/khoivuofficial/em-a-official-version" title="Em À" target="_blank" style="color: #cccccc; text-decoration: none;">Em À</a></div></div>
 
-1. 🏢 [[All Projects]] - *"All projects currently work on or archives"*
-2. 🎆 [[All Blogs]]  - *"All blog which I have and share to community"*
-3. ⚔️ [[Personal Projects Management|Idea and Projects]] - "*All project and idea are in progress or contribute on next time*"
+1. 🏢 [[All Projects]] - All projects currently work on or archives
+2. 🎆 [[All Blogs]]  - All blog which I have and share to community
+3. ⚔️ [[Personal Projects Management|Idea and Projects]] - All project and idea are in progress or contribute on next time
 4. 🔱 [DevSecOps - XeusNguyen's CV](https://drive.google.com/file/d/1QuYvv4prnU-pPR8xMhBcTO8JVBamj7pi/view?usp=sharing)
-5. 📨 kobikiu810@gmail.com or xeusnguyen@gmail.com - *"For contacting with me"*
+5. 📨 kobikiu810@gmail.com or xeusnguyen@gmail.com - For contacting with me

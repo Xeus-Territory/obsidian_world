@@ -41,6 +41,7 @@ tags:
 - [Medium - FAUN — Developer Community 🐾](https://faun.pub/): Learn and grow by keeping them up with what matters.
 - [Medium - Level Up Coding](https://levelup.gitconnected.com/): Learn and stitch with new things as Developer
 - [Medium - Toward Dev](https://towardsdev.com/): Where Software Developers Share Programming Ideas, Concepts & Stories.
+- [Medium - Yang Zhou](https://yangzhou1993.medium.com/): Full Stack developer share about tech article around Python, Javascript
 # Articles
 
 - [Medium - Most Common Software Architecture Styles](https://medium.com/@techworldwithmilan/most-common-software-architecture-styles-86881d779683)

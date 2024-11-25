@@ -57,11 +57,12 @@ tags:
 - [Prof Bill Buchanan OBE FRSE](https://billatnapier.medium.com/) : Professor of Cryptography
 - [Medium - n00🔑](https://medium.com/@pswalia2u)
 - [SSH Academy](https://www.ssh.com/academy)
-- [HighOn.Coffee](https://highon.coffee/) - Penetration Testing && Security Research
+- [HighOn.Coffee](https://highon.coffee/): Penetration Testing && Security Research
 - [Troy Hunt](https://www.troyhunt.com/)
 - [Pentester Land - Offensive InfoSec](https://pentester.land/)
 - [Reddit Hacking](https://old.reddit.com/r/hacking/wiki/index)
 - [KitPloit - PenTest & Hacking Tools](https://www.kitploit.com/?m=0)
+- [Medium - OSINT Team](https://osintteam.blog/): OSINT from multiple perspectives
 
 # Awesome Infomation Security repository
 
@@ -122,6 +123,7 @@ tags:
 - [Cloud - Creating unintentional ways to bypass AWS IAM policies when using the “ForAllValues” operator](https://awstip.com/creating-unintentional-ways-to-bypass-aws-iam-policies-when-using-the-forallvalues-operator-3516a7f17ed0)
 - [Networking - Medium - SSH Over Openssl Over Haproxy: Bypassing Blocks](https://medium.com/@talhakhalid101/ssh-over-openssl-over-haproxy-bypassing-blocks-f4b4c276d8dd)
 - [SOC - Networking - Medium - Building an Effective SOC with Open-Source SIEM Tools: My Master’s Project Journey](https://medium.com/@jhonortega453/building-an-effective-soc-with-open-source-siem-tools-my-masters-project-journey-390e68580230)
+- [Web - Medium - Google Dorking: A Hacker’s Best Friend](https://medium.com/the-first-digit/google-dorking-a-hackers-best-friend-5d08b4254028)
 
 # Tools and Techniques
 

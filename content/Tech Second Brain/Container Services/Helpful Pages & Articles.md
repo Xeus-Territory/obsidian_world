@@ -139,6 +139,9 @@ tags:
 - [Medium - Lightweight CI/CD Solutions for Kubernetes: Going Beyond Keel, Flux, and ArgoCD](https://medium.com/@PlanB./lightweight-ci-cd-solutions-for-kubernetes-going-beyond-keel-flux-and-argocd-8b0b923e644c)
 - [Medium - EKS Cluster Network Architecture for Worker Nodes](https://keetmalin.medium.com/eks-cluster-network-architecture-for-worker-nodes-635e067c8c2a)
 - [Medium - 2 Powerful AI and Database Operators to Extend your K8s Cluster](https://onairotich.medium.com/2-powerful-ai-and-database-operators-to-extend-your-k8s-cluster-9c517e83b368)
+- [Medium - Why NGINX IngressController Isn’t the Best Choice for Production Workloads](https://medium.com/@talhakhalid101/why-nginx-ingresscontroller-isnt-the-best-choice-for-production-workloads-dfc641da3e2c)
+- [Internet - Pain(less?) NGINX Ingress](https://danielfm.me/post/painless-nginx-ingress/)
+- [Medium - Simplify Kubernetes Storage: Mounting EFS to EKS Like a Pro](https://medium.com/kotaicode/simplify-kubernetes-storage-mounting-efs-to-eks-like-a-pro-655e13f72041)
 ## Tips for configuration
 
 - [Azure - Best practices for basic scheduler features in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/operator-best-practices-scheduler)
