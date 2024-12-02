@@ -27,6 +27,7 @@ You can figure what you need to do for start with `aws` via some website and art
 - [AWS Price Calculator](https://calculator.aws/#/)
 - [AWS Architecture Blog](https://aws.amazon.com/vi/blogs/architecture/)
 - [AWS Solutions Library](https://aws.amazon.com/solutions/ "AWS Solutions Library Homepage")
+- [AWS Decision Guides](https://aws.amazon.com/getting-started/decision-guides/)
 - [AWS Blog](https://aws.amazon.com/blogs)
 - [AWS General Reference](https://docs.aws.amazon.com/general/latest/gr/Welcome.html)
 - [AWS IAM Actions - Generator](https://www.awsiamactions.io/?r=0)
@@ -70,6 +71,11 @@ So enjoy what you need, inside the article will share about how you CLI, cheatsh
 - [AWS Docs - Configuring IAM Identity Center authentication with the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html)
 - [Medium - 10 Little-Known AWS Services That Could Supercharge Your Cloud Strategy in 2025](https://medium.com/aws-in-plain-english/10-little-known-aws-services-that-could-supercharge-your-cloud-strategy-in-2025-7293912ee28d)
 - [Medium - AWS Console-to-Code Now Generally Available](https://medium.com/@TechStoryLines/aws-console-to-code-now-generally-available-f0f63490ac9b)
+- [AWS Docs - Understanding Lambda function scaling](https://docs.aws.amazon.com/lambda/latest/dg/lambda-concurrency.html)
+- [AWS Blogs - 7 AWSome ways to use AWS Chatbot](https://aws.amazon.com/blogs/mt/7-awsome-ways-to-use-aws-chatbot/)
+- [AWS Blogs - Monitoring metrics and setting up alarms on your Amazon DocumentDB (with MongoDB compatibility) clusters](https://aws.amazon.com/blogs/database/monitoring-metrics-and-setting-up-alarms-on-your-amazon-documentdb-with-mongodb-compatibility-clusters/)
+- [Medium - Full-stack Observability and Monitoring on AWS](https://kevinkiruri.medium.com/observability-and-monitoring-on-aws-42628f13b569)
+- [AWS Blogs - Viewing Amazon CloudWatch metrics with Amazon Managed Service for Prometheus and Amazon Managed Grafana](https://aws.amazon.com/blogs/mt/viewing-amazon-cloudwatch-metrics-with-amazon-managed-service-for-prometheus-and-amazon-managed-grafana/)
 ## Issues
 
 - [AWS re:Post - Getting an Access Denied error message when I upload files to my Amazon S3 bucket](https://repost.aws/knowledge-center/s3-access-denied-error-kms)
@@ -85,6 +91,7 @@ So enjoy what you need, inside the article will share about how you CLI, cheatsh
 >- AWS_ACCESS_KEY_ID (Obligatory)
 >- AWS_SECRET_ACCESS_KEY (Obligatory)
 >- AWS_SESSION_TOKEN (If you have)
+>- AWS_DEFAULT_REGION (Obligatory)
 ## S3
 
 >[!warning]

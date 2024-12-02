@@ -69,6 +69,11 @@ tags:
 
 - [LakeFS - The State of Data Engineering 2024](https://lakefs.io/blog/the-state-of-data-engineering-2024/)
 - [Practicle Data Engineering - Open Source Data Engineering Landscape 2024](https://practicaldataengineering.substack.com/p/open-source-data-engineering-landscape?r=23jwn&utm_campaign=post&utm_medium=web&triedRedirect=true)
+- [Medium - Data Pipeline Development with MinIO, Iceberg, Nessie, Polars, StarRocks, Mage, and Docker](https://blog.det.life/data-pipeline-development-with-minio-iceberg-nessie-polars-starrocks-mage-and-docker-1c7b4b52d5f4)
+
+## Blog
+
+- [Medium - Data Engineers Things](https://blog.det.life/)
 # Youtube Channel
 
 ![[youtube.png]]

@@ -50,9 +50,9 @@ tags:
 > *I wouldn't have lost a battle, dawg, I woulda lost a bro" - J Cole*
 
 >[!quote]
-><div align="center"><h3>🙌Song of the week 🙌</h3></div>
+><div align="center"><h3>🙌 Song of the week 🙌</h3></div>
 >
-><div align="center"><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/307515869&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/khoivuofficial" title="Khoi Vu" target="_blank" style="color: #cccccc; text-decoration: none;">Khoi Vu</a> · <a href="https://soundcloud.com/khoivuofficial/em-a-official-version" title="Em À" target="_blank" style="color: #cccccc; text-decoration: none;">Em À</a></div></div>
+><div align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/OmmKXB54WH8?si=ysTAqXlf-cro9L5p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 1. 🏢 [[All Projects]] - All projects currently work on or archives
 2. 🎆 [[All Blogs]]  - All blog which I have and share to community
