@@ -36,15 +36,16 @@ What you can find out and figure out about Azure, Cloud Computing, Documentation
 - [Azure - Learning Platform](https://learn.microsoft.com/en-us/training/azure/)
 - [Azure - Browse Azure Architectures](https://learn.microsoft.com/en-us/azure/architecture/browse/)
 - [Azure - Register Account](https://azure.microsoft.com/en-us/free)
-- [Azure - Community](https://techcommunity.microsoft.com/t5/azure/ct-p/Azure)
+- [Azure - Azure Category Community](https://techcommunity.microsoft.com/t5/azure/ct-p/Azure)
 - [Azure - Tech Community](https://techcommunity.microsoft.com/)
 - [Azure - Technical documentation](https://learn.microsoft.com/en-us/docs/)
 - [Azure - Architecture Blog](https://techcommunity.microsoft.com/t5/azure-architecture-blog/bg-p/AzureArchitectureBlog)
 - [Azure CLI - User Guide](https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest)
 - [Azure Price Calculator](https://azure.microsoft.com/en-gb/pricing/calculator/)
 - [Azure - Blog](https://azure.microsoft.com/en-us/blog/)
-- [Azure - Subscription and Service Limits, Quotas, and Constraints](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits)
 - [Azure - Sample Code from Microsoft Developer Tools](https://learn.microsoft.com/en-us/samples/browse/)
+- [Azure - Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/)
+- [Azure - Application architecture fundamentals](https://learn.microsoft.com/en-us/azure/architecture/guide/)
 
 >[!info]
 >If you want to receive the credit from VS Subscription, you can direct use via [Monthly Azure credits for Visual Studio subscribers](https://azure.microsoft.com/en-us/pricing/member-offers/credit-for-visual-studio-subscribers)
@@ -62,6 +63,19 @@ What you can find out and figure out about Azure, Cloud Computing, Documentation
 
 - [Microsoft Azure](https://github.com/Azure) - APIs, SDKs and open source projects from Microsoft Azure
 - [Microsoft Docs](https://github.com/MicrosoftDocs) - The modern documentation service for Microsoft
+- [Azure Samples](https://github.com/Azure-Samples) - Microsoft Azure code samples and examples in .NET, Java, Python, JavaScript, TypeScript, PHP and Ruby
+
+# Blogs, Articles and Videos
+
+## Articles
+
+- [Azure - Technology choices for Azure solutions](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/technology-choices-overview)
+- [Azure - Subscription and Service Limits, Quotas, and Constraints](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits)
+- [Azure - Web applications architecture design](https://learn.microsoft.com/en-us/azure/architecture/web-apps/)
+
+## Blogs
+
+- [Medium - Dave R - Microsoft Azure & AI MVP☁️](https://blog.azinsider.net/)
 
 # Azure CLI
 

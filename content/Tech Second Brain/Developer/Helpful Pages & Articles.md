@@ -31,6 +31,12 @@ tags:
 - [gRPC Ecosystem](https://github.com/grpc-ecosystem): gRPC Ecosystem that complements gRPC
 - [vietnam-devs](https://github.com/vietnam-devs): Vietnam Developer Group
 
+## New Programming Language
+
+- [zig](https://github.com/ziglang/zig): General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software. [Documentation](https://ziglang.org/)
+- [mojo](https://github.com/modularml/mojo): The Mojo Programming Language. [Documentation](https://docs.modular.com/mojo/manual/)
+- [cue](https://github.com/cue-lang/cue): An open-source data validation language with its roots in logic programming. [Documentation](https://cuelang.org/docs/)
+
 # Blog Pages
 
 - [programmerCave](https://programmercave.com/) : Algorithm, Tech and more about reliable usage of this technic
@@ -96,6 +102,7 @@ tags:
 - [pypa](https://github.com/pypa): Python Packaging Authority
 - [pallets](https://github.com/pallets): The Community stands behind [Flask](https://github.com/pallets/flask), [Jinja](https://github.com/pallets/jinja)
 - [pypi](https://pypi.org/): Find, install and publish Python packages with the Python Package Index
+- [Pythonium](https://pythonium.net/) : Tools for Python Developers
 ## Rust
 
 - [awesome-rust](https://github.com/rust-unofficial/awesome-rust): A curated list of Rust code and resources.

@@ -83,6 +83,7 @@ tags:
 - [Hashicorp](https://github.com/hashicorp): Consistent workflows to provision, secure, connect, and run any infrastructure for any application.
 - [PingCAP](https://github.com/pingcap): The team behind TiDB TiKV, an open source MySQL compatible HTAP database
 - [Leaning Technologies](https://github.com/leaningtech): Enterprise-grade WebAssembly solutions
+- [Gruntwork](https://github.com/gruntwork-io): Organization who makes Terragrunt and couple of things related to entire infrastructure
 ## Landscape
 
 - [Apache Project Directory](https://projects.apache.org/projects.html) : List all of product of Apache
@@ -143,6 +144,27 @@ tags:
 - [Brendan Gregg](https://www.brendangregg.com/index.html) - Cool guy with pleasant contents about ebpf and kernel technologies
 - [Isovalent Blog](https://isovalent.com/blog/) - More about ebpf and kernel technologies, especially cilium and sub-projects of cilium
 
+## Youtube Channel
+
+![[youtube.png]]
+
+- [Thetips4you](https://www.youtube.com/c/Thetips4you/videos): Share hands on experience on new age Technology
+- [Docker and Kubernetes Complete Tutorial](https://www.youtube.com/playlist?list=PL0hSJrxggIQoKLETBSmgbbvE4FO_eEgoB)
+- [Anton Putra](https://www.youtube.com/@AntonPutra/featured) 
+- [ByteByteGo](https://www.youtube.com/@ByteByteGo/featured)
+- [Viet Tran](https://www.youtube.com/@Viet100/videos)
+- [TechWorld with Nana](https://www.youtube.com/c/TechWorldwithNana/featured)
+- [Tony Teaches Tech ](https://www.youtube.com/c/TonyTeachesTech/featured)
+- [Christian Lempa](https://www.youtube.com/@christianlempa)
+- [John Savill](https://www.youtube.com/@NTFAQGuy)
+- [DevOps Journey](https://www.youtube.com/@DevOpsJourney/videos)
+- [KodeKloud](https://www.youtube.com/@KodeKloud/videos)
+- [That DevOps Guy](https://www.youtube.com/@MarcelDempers/videos)
+- [DevOps Shack](https://www.youtube.com/@devopsshack/videos)
+- [DevOps Toolkit](https://www.youtube.com/@DevOpsToolkit/videos)
+- [Techno Tim](https://www.youtube.com/@TechnoTim/videos)
+- [Travis Media](https://www.youtube.com/@TravisMedia/videos)
+
 # Tech Articles
 
 >[!note]
@@ -191,6 +213,7 @@ tags:
 - [Medium - Use SOPS and Terraform to create encrypt/decrypt files with AWS KMS](https://medium.com/@arunmrp90/use-sops-and-terraform-to-create-encrypted-decrypt-files-with-aws-kms-a38ac793518b)
 - [Medium - Step by Step guide on generating an IOS certificate, preparing for Test Flight, and releasing ios app on the App Store](https://medium.com/readytowork-org/step-by-step-guide-on-generating-an-ios-certificate-preparing-for-test-flight-and-releasing-ios-99cd2eb11067)
 - [Medium - Establishing an Enterprise-Ready DevSecOps CI/CD Pipeline on GitHub Actions on Google Cloud](https://medium.com/@anshumaansingh10jan/building-an-enterprise-ready-devsecops-ci-cd-pipeline-on-github-actions-for-gcp-6746f6a43187)
+- [Medium - GitHub Actions — Versatile and Easy Serverless CI/CD Pipeline](https://itnext.io/github-actions-versatile-and-easy-serverless-pipeline-53d088a7a77b)
 ## System and Cloud Design
 
 - [Azure - Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)
@@ -208,44 +231,8 @@ tags:
 - [Medium - System Design: Automating Banking Reconciliation with AWS](https://medium.com/aws-in-plain-english/system-design-automating-banking-reconciliation-with-aws-2d2a5344022f)
 - [OWASP - DevSecOps Guideline](https://owasp.org/www-project-devsecops-guideline/latest/)
 - [Medium - 23 Fundamental Principles for Software Architects](https://azeynalli1990.medium.com/23-fundamental-principles-for-software-architects-f42aaae7f740)
-# DevOps Youtube Channel
+- [Medium - Single Point of Failure (SPOF) in System Design](https://levelup.gitconnected.com/single-point-of-failure-spof-in-system-design-c8bbac5af993)
 
-![[youtube.png]]
-
-- [Thetips4you](https://www.youtube.com/c/Thetips4you/videos): Share hands on experience on new age Technology
-- [Docker and Kubernetes Complete Tutorial](https://www.youtube.com/playlist?list=PL0hSJrxggIQoKLETBSmgbbvE4FO_eEgoB)
-- [Anton Putra](https://www.youtube.com/@AntonPutra/featured) 
-- [ByteByteGo](https://www.youtube.com/@ByteByteGo/featured)
-- [Viet Tran](https://www.youtube.com/@Viet100/videos)
-- [TechWorld with Nana](https://www.youtube.com/c/TechWorldwithNana/featured)
-- [Tony Teaches Tech ](https://www.youtube.com/c/TonyTeachesTech/featured)
-- [Christian Lempa](https://www.youtube.com/@christianlempa)
-- [John Savill](https://www.youtube.com/@NTFAQGuy)
-- [DevOps Journey](https://www.youtube.com/@DevOpsJourney/videos)
-- [KodeKloud](https://www.youtube.com/@KodeKloud/videos)
-- [That DevOps Guy](https://www.youtube.com/@MarcelDempers/videos)
-- [DevOps Shack](https://www.youtube.com/@devopsshack/videos)
-- [DevOps Toolkit](https://www.youtube.com/@DevOpsToolkit/videos)
-- [Techno Tim](https://www.youtube.com/@TechnoTim/videos)
-- [Travis Media](https://www.youtube.com/@TravisMedia/videos)
-
-# Research Sheet
-
->[!note]
->Topics which I concern about and do more inspect and research about them to provide knowledge for doing something around them in future
-
-- [Visualizing Network Topologies: Zero to Hero in Two Days](https://habr.com/en/articles/534716/)
-- [HTTP/3 From A To Z: Core Concepts — Smashing Magazine](https://www.smashingmagazine.com/2021/08/http3-core-concepts-part1/)
-- [Using HTTP/3 in gRPC – Unnie Ayilliath](https://unnieayilliath.com/2023/02/19/using-http-3-in-grpc/)
-- [C++ An Entity-Component-System From Scratch — Coding With Thomas](https://www.codingwiththomas.com/blog/an-entity-component-system-from-scratch)
-- [TCMalloc : Thread-Caching Malloc](https://gperftools.github.io/gperftools/tcmalloc.html#runtime)
-- [A Simple Entity Component System (ECS) C++ - Austin Morlan](https://austinmorlan.com/posts/entity_component_system/?fbclid=IwAR26jehCQUQEzVmm_shLMhtG1dePD7AYoPQQBtm4GJoUqaNcFrW8JGYDCiY)
-- [Medium - The Past and Present of Browser Architecture](https://levelup.gitconnected.com/the-past-and-present-of-browser-architecture-522c65d1c2cd)
-- [MDPI - An Overview of WebAssembly for IoT: Background, Tools, State-of-the-Art, Challenges, and Future Directions](https://www.mdpi.com/1999-5903/15/8/275)
-- [Medium - Embedding Python in Go](https://poweruser.blog/embedding-python-in-go-338c0399f3d5F)
-- [QKD BB84 protocol simulation using Quantum Simulator (Qiskit)](https://www.quantumblockchains.io/qkd-protocol-simulation-with-qiskit/)
-- [Event-driven architecture patterns and when to use them](https://ably.com/topic/event-driven-architecture-patterns)
-- [Worldwide exchange and communication of date and time-related data - ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)
 # Opensource Finder
 
 >[!note]
@@ -259,7 +246,10 @@ tags:
 - [Hosted Software](https://hostedsoftware.org/) - Self-Hosted Software List
 - [OpenAlternative](https://openalternative.co/) - Discover Open Source Alternatives to Popular Software
 - [StackShare](https://stackshare.io/) - See what tech stacks your peers are using
-# Documentations and Papers
+
+# Research Sheet
+
+## Documentations and Papers
 
 >[!note]
 >Place where you can find multiple documentation and papers about technologies in multiple topics from DevOps, Tech and AI
@@ -281,18 +271,37 @@ tags:
 - [ScienceDirect.com | Science, health and medical journals, full text articles and books.](https://www.sciencedirect.com/)
 - [RFC Editor](https://www.rfc-editor.org/) : The RFC Series (ISSN 2070-1721) contains technical and organizational documents about the Internet
 - [The Pattern Languages of Programs archives](https://hillside.net/index.php/past-plop-conferences): Hundreds of patterns are generated yearly in conferences alone, not to mention books and software engineering websites.
+
+## Articles
+
+>[!note]
+>Topics which I concern about and do more inspect and research about them to provide knowledge for doing something around them in future
+
+- [Visualizing Network Topologies: Zero to Hero in Two Days](https://habr.com/en/articles/534716/)
+- [HTTP/3 From A To Z: Core Concepts — Smashing Magazine](https://www.smashingmagazine.com/2021/08/http3-core-concepts-part1/)
+- [Using HTTP/3 in gRPC – Unnie Ayilliath](https://unnieayilliath.com/2023/02/19/using-http-3-in-grpc/)
+- [C++ An Entity-Component-System From Scratch — Coding With Thomas](https://www.codingwiththomas.com/blog/an-entity-component-system-from-scratch)
+- [TCMalloc : Thread-Caching Malloc](https://gperftools.github.io/gperftools/tcmalloc.html#runtime)
+- [A Simple Entity Component System (ECS) C++ - Austin Morlan](https://austinmorlan.com/posts/entity_component_system/?fbclid=IwAR26jehCQUQEzVmm_shLMhtG1dePD7AYoPQQBtm4GJoUqaNcFrW8JGYDCiY)
+- [Medium - The Past and Present of Browser Architecture](https://levelup.gitconnected.com/the-past-and-present-of-browser-architecture-522c65d1c2cd)
+- [MDPI - An Overview of WebAssembly for IoT: Background, Tools, State-of-the-Art, Challenges, and Future Directions](https://www.mdpi.com/1999-5903/15/8/275)
+- [Medium - Embedding Python in Go](https://poweruser.blog/embedding-python-in-go-338c0399f3d5F)
+- [Event-driven architecture patterns and when to use them](https://ably.com/topic/event-driven-architecture-patterns)
+- [Worldwide exchange and communication of date and time-related data - ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)
 # Quantum Computing
+
+## Technologies
 
 - [openqasm](https://github.com/openqasm/openqasm): Quantum assembly language for extended quantum circuits
 - [qiskit](https://github.com/Qiskit/qiskit): Qiskit is an open-source SDK for working with quantum computers at the level of extended quantum circuits, operators, and primitives.
 - [QuantumKatas](https://github.com/microsoft/QuantumKatas): Tutorials and programming exercises for learning Q# and quantum computing
 - [pennylane](https://github.com/PennyLaneAI/pennylane): a cross-platform Python library for quantum computing, quantum machine learning, and quantum chemistry. Train a quantum computer the same way as a neural network.
 - [open-quantum-safe](https://github.com/open-quantum-safe): Software for prototyping quantum-resistant cryptography
-# New Programming Language
 
-- [zig](https://github.com/ziglang/zig): General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software. [Documentation](https://ziglang.org/)
-- [mojo](https://github.com/modularml/mojo): The Mojo Programming Language. [Documentation](https://docs.modular.com/mojo/manual/)
-- [cue](https://github.com/cue-lang/cue): An open-source data validation language with its roots in logic programming. [Documentation](https://cuelang.org/docs/)
+## Articles
+
+- [Medium - Quantum Computing and Cybersecurity: Preparing for the Next Digital Arms Race](https://medium.com/bug-zero/quantum-computing-and-cybersecurity-preparing-for-the-next-digital-arms-race-001dfac66766)
+- [Internet - QKD BB84 protocol simulation using Quantum Simulator (Qiskit)](https://www.quantumblockchains.io/qkd-protocol-simulation-with-qiskit/)
 # DevOps & Useful Tools
 
 >[!note]
