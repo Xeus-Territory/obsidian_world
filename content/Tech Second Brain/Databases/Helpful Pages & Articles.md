@@ -37,6 +37,7 @@ tags:
 - [druid](https://github.com/apache/druid): A high performance real-time analytics database.
 - [tidb](https://github.com/pingcap/tidb): the open-source, cloud-native, distributed SQL database designed for modern applications.
 - [tikv](https://github.com/tikv/tikv): Distributed transactional key-value database, originally created to complement TiDB
+- [limbo](https://github.com/tursodatabase/limbo): A work-in-progress, in-process OLTP database management system, compatible with SQLite.
 ## Migration
 
 - [goose](https://github.com/pressly/goose): A database migration tool. Supports SQL migrations and Go functions.

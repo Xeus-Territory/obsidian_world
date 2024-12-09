@@ -35,6 +35,7 @@ tags:
 - [Kubeflow](https://github.com/kubeflow/):  An open, community driven project to make it easy to deploy and manage an ML stack on Kubernetes
 - [AliyunContainerService](https://github.com/AliyunContainerService): Aliyun (Alibaba Cloud) Container Service
 - [Kubecost](https://github.com/kubecost): Organization of Kubecost - a monitoring application which provides real-time cost visibility and insights for teams using Kubernetes, helping you continuously reduce your cloud costs
+- [Devtron Inc](https://github.com/devtron-labs): Software Delivery Workflow For Kubernetes
 ## Topics
 
 - [Kubernetes Cluster API](https://cluster-api.sigs.k8s.io/) : About cluster API
@@ -102,6 +103,7 @@ tags:
 - [Kubernetes - Controllers](https://kubernetes.io/docs/concepts/architecture/controller/)
 - [Kubernetes - Extending Kubernetes](https://kubernetes.io/docs/concepts/extend-kubernetes/)
 - [Kubernetes - Ingress Controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
+- [Kubernetes - Scheduling, Preemption and Eviction](https://kubernetes.io/docs/concepts/scheduling-eviction/)
 - [Densify - Kubernetes Service Discovery](https://www.densify.com/kubernetes-autoscaling/kubernetes-service-discovery/)
 - [KodeKloud - Kube-Proxy: What Is It and How It Works](https://kodekloud.com/blog/kube-proxy/)
 - [Azure - Core Kubernetes concepts for Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/aks/concepts-clusters-workloads)
@@ -145,6 +147,9 @@ tags:
 - [Medium - Simplify Kubernetes Storage: Mounting EFS to EKS Like a Pro](https://medium.com/kotaicode/simplify-kubernetes-storage-mounting-efs-to-eks-like-a-pro-655e13f72041)
 - [Medium - Optimize Your Kubernetes Resources with Azure IAM: Managed vs. Workload Identity](https://itnext.io/simplify-secure-your-azure-resources-managed-identity-vs-workload-identity-fe49d133fc03)
 - [Medium - Kubernetes Storage Performance Comparison Rook Ceph and Piraeus Datastore (LINSTOR)](https://medium.com/@gjanders03/kubernetes-storage-performance-comparison-rook-ceph-and-piraeus-datastore-linstor-e9bc2859a8f0)
+- [Medium - Bringing Amazon EKS Hybrid Nodes to life with Palette](https://medium.com/itnext/bringing-amazon-eks-hybrid-nodes-to-life-with-palette-584734449503)
+- [Medium - 12 Tools that will make Kubernetes management easier in 2024](https://medium.com/faun/12-tools-that-will-make-kubernetes-management-easier-in-2024-b7c349dc0eaa)
+- [Medium - Why AWS EKS Pod Identity is a Better Fit Than IRSA for Your Kubernetes Needs?](https://aws.plainenglish.io/why-aws-eks-pod-identity-is-a-better-fit-than-irsa-for-your-kubernetes-needs-1be05515f970)
 ## Tips for configuration
 
 - [Azure - Best practices for basic scheduler features in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/operator-best-practices-scheduler)
@@ -153,6 +158,8 @@ tags:
 - [Medium - GitOps: How to Manage Dynamic Network Policy Changes at Scale Across 25 Clusters?](https://itnext.io/gitops-how-to-manage-dynamic-network-policy-changes-at-scale-across-25-clusters-0727ce1145e5)
 - [AWS EKS Workshop - Configure Cluster Autoscaler (CA)](https://archive.eksworkshop.com/beginner/080_scaling/deploy_ca/#deploy-the-cluster-autoscaler-ca)
 - [Medium - Mastering Horizontal Pod Autoscaling (HPA) in Amazon EKS Using Helm, Terraform, and ArgoCD: A Complete Guide with CI/CD](https://ramchandra-vadranam.medium.com/mastering-horizontal-pod-autoscaling-hpa-in-amazon-eks-using-helm-terraform-and-argocd-a-2b551720f1ad)
+- [AWS - Learn how EKS Pod Identity grants pods access to AWS services](https://docs.aws.amazon.com/eks/latest/userguide/pod-identities.html)
+- [AWS - IAM roles for service accounts](https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html)
 ## Troubleshoot
 
 - [StackOverFlow - How can I keep a container running on Kubernetes?](https://stackoverflow.com/questions/31870222/how-can-i-keep-a-container-running-on-kubernetes)
@@ -329,3 +336,7 @@ tags:
 
 - [chaos-mesh](https://github.com/chaos-mesh/chaos-mesh): A Chaos Engineering Platform for Kubernetes.
 - [litmus](https://github.com/litmuschaos/litmus): Chaos Engineering Framework with cross-cloud support.
+
+## Kubernetes Resources Orchestrator
+
+- [kro](https://github.com/awslabs/kro): Kube Resource Orchestrator. [Documentation](https://kro.run/docs/overview)

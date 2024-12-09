@@ -124,6 +124,7 @@ tags:
 - [Networking - Medium - SSH Over Openssl Over Haproxy: Bypassing Blocks](https://medium.com/@talhakhalid101/ssh-over-openssl-over-haproxy-bypassing-blocks-f4b4c276d8dd)
 - [SOC - Networking - Medium - Building an Effective SOC with Open-Source SIEM Tools: My Master’s Project Journey](https://medium.com/@jhonortega453/building-an-effective-soc-with-open-source-siem-tools-my-masters-project-journey-390e68580230)
 - [Web - Medium - Google Dorking: A Hacker’s Best Friend](https://medium.com/the-first-digit/google-dorking-a-hackers-best-friend-5d08b4254028)
+- [Networking - Medium - Top 9 VPN Alternative Technologies For Future Remote Access](https://medium.com/plain-golang-tutorial/top-9-vpn-alternative-technologies-for-future-remote-access-50ea00a969bc)
 
 # Tools and Techniques
 

@@ -30,6 +30,7 @@ tags:
 
 - [gRPC Ecosystem](https://github.com/grpc-ecosystem): gRPC Ecosystem that complements gRPC
 - [vietnam-devs](https://github.com/vietnam-devs): Vietnam Developer Group
+- [astral-sh](https://github.com/astral-sh): High-performance developer tools for the Python ecosystem.
 
 ## New Programming Language
 
@@ -48,6 +49,7 @@ tags:
 - [Medium - Level Up Coding](https://levelup.gitconnected.com/): Learn and stitch with new things as Developer
 - [Medium - Toward Dev](https://towardsdev.com/): Where Software Developers Share Programming Ideas, Concepts & Stories.
 - [Medium - Yang Zhou](https://yangzhou1993.medium.com/): Full Stack developer share about tech article around Python, Javascript
+- [Medium - JavaScript in Plain English](https://javascript.plainenglish.io/): New JavaScript and Web Development content every day.
 # Articles
 
 - [Medium - Most Common Software Architecture Styles](https://medium.com/@techworldwithmilan/most-common-software-architecture-styles-86881d779683)
@@ -103,6 +105,7 @@ tags:
 - [pallets](https://github.com/pallets): The Community stands behind [Flask](https://github.com/pallets/flask), [Jinja](https://github.com/pallets/jinja)
 - [pypi](https://pypi.org/): Find, install and publish Python packages with the Python Package Index
 - [Pythonium](https://pythonium.net/) : Tools for Python Developers
+- [uv](https://github.com/astral-sh/uv): An extremely fast Python package and project manager, written in Rust.
 ## Rust
 
 - [awesome-rust](https://github.com/rust-unofficial/awesome-rust): A curated list of Rust code and resources.

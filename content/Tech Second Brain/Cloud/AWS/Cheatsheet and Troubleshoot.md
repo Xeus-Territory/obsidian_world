@@ -26,6 +26,7 @@ You can figure what you need to do for start with `aws` via some website and art
 - [AWS Create Account Guide](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html)
 - [AWS Price Calculator](https://calculator.aws/#/)
 - [AWS Architecture Blog](https://aws.amazon.com/vi/blogs/architecture/)
+- [AWS Whitepapers & Guides](https://aws.amazon.com/whitepapers/)
 - [AWS Solutions Library](https://aws.amazon.com/solutions/ "AWS Solutions Library Homepage")
 - [AWS Decision Guides](https://aws.amazon.com/getting-started/decision-guides/)
 - [AWS Blog](https://aws.amazon.com/blogs)
@@ -80,6 +81,10 @@ So enjoy what you need, inside the article will share about how you CLI, cheatsh
 
 - [AWS re:Post - Getting an Access Denied error message when I upload files to my Amazon S3 bucket](https://repost.aws/knowledge-center/s3-access-denied-error-kms)
 - [AWS - Troubleshoot access denied (403 Forbidden) errors in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/troubleshoot-403-errors.html#access-denied-message-examples)
+
+## Plugins
+
+- [Serverless Better Credentials](https://www.serverless.com/plugins/serverless-better-credentials#serverless-better-credentials): Plugin replaces the existing AWS credential resolution mechanism, support SSO (Single Sign On)
 
 ## Videos
 

@@ -36,3 +36,10 @@ title: Utilities Site for multiple purpose
 - [Internet Archive](https://archive.org/) - Digital Library of Free & Borrowable Books, Movies, Music & Wayback Machine
 - [KAT - Kickass Torrents](https://kick4ss.com/) - The torrent site
 
+# Job Hunting site
+
+>[!note]
+>A couple pages with cool stuff and opportunity to finding job with awesome company about technology
+
+- [Y Combinator](https://www.ycombinator.com/jobs): Community for funding and finding job for the startup company
+

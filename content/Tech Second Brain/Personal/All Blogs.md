@@ -172,6 +172,7 @@ tags:
 - [[Protect sensitive data and secret files with sops]]
 - [[First EKS Cluster with Milvus DB]]
 - [[Integration automation test with GitLab CI]]
+- [[Digging into AWS Monitoring Stack]]
 # CI/CD + OS Profile Gallery
 
 >[!info]
@@ -182,7 +183,7 @@ tags:
 
 - [[Github Action|Github Action]]
 - [[Azure Pipelines|Azure Pipelines]]
-- [[GitlabCI|Gitlab CI]]
+- [[GitLabCI|Gitlab CI]]
 - [[BitBucket|BitBucket Pipelines]]
 - [[Linux profile]]
 - [[Windows profile]]
@@ -223,3 +224,4 @@ tags:
 - [[HTML|HTML]]
 - [[Powershell commands|Powershell Commands]]
 - [[Shell commands|Shell Bash Commands]]
+- [[Configuration CheatSheet|Tool Configuration Collections]]
