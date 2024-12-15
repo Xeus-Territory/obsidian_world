@@ -200,6 +200,7 @@ tags:
 - [Viblo - RabbitMQ vs Kafka - Hai Cách Truyền Tải Khác Nhau](https://viblo.asia/p/rabbitmq-vs-kafka-hai-cach-truyen-tai-khac-nhau-pgjLNdYE432)
 - [Confluent - A Comparison of RabbitMQ vs Apache Kafka and When to Use Each](https://www.confluent.io/learn/rabbitmq-vs-apache-kafka/)
 - [Medium - 11 Automation Scripts for Prometheus Configurations.](https://medium.com/@obaff/11-automation-scripts-for-prometheus-configurations-fde7b3bf4198)
+- [Medium - Why ectd is better than zookeeper and database for HA system](https://medium.com/@lbq999/why-ectd-is-better-than-zookeeper-and-database-for-ha-system-227a45750720)
 ## Techniques
 
 - [Internet - How to build and deploy React Native applications with Fastlane](https://tech.sparkfabrik.com/en/blog/fastlane_build/)
@@ -232,7 +233,6 @@ tags:
 - [OWASP - DevSecOps Guideline](https://owasp.org/www-project-devsecops-guideline/latest/)
 - [Medium - 23 Fundamental Principles for Software Architects](https://azeynalli1990.medium.com/23-fundamental-principles-for-software-architects-f42aaae7f740)
 - [Medium - Single Point of Failure (SPOF) in System Design](https://levelup.gitconnected.com/single-point-of-failure-spof-in-system-design-c8bbac5af993)
-
 # Opensource Finder
 
 >[!note]
@@ -443,14 +443,14 @@ tags:
 - [RabbitMQ](https://www.rabbitmq.com/): An open-source message broker for asynchronous messaging, queueing and delivery acknowledgement.
 - [Apache ActiveMQ](https://activemq.apache.org/) : An open-source Java-based message queue that can be accessed by clients written in Javascript, C, C++, Python and .NET.
 - [Amazon Simple Queue System (SQS)](https://aws.amazon.com/sqs): A fully managed message queue built for distributed and serverless platforms
-- [Microsoft Azure Service Bus](https://azure.microsoft.com/en-us/products/service-bus): A reliable, fully managed Cloud service for delivering messages via queues or topics.
+- [Microsoft Azure Service Bus](https://azure.microsoft.com/en-us/products/service-bus): A reliable, fully managed Cloud service for delivering messages via queues or topics.https://www.serverless.com/framework/docs
 - [Celery](https://docs.celeryq.dev/en/stable/): a simple, flexible, and reliable distributed system to process vast amounts of messages, while providing operations with the tools required to maintain such a system.
 
 ## Serverless Self-hosted
 
 - [fn](https://github.com/fnproject/fn): The container native, cloud agnostic serverless platform.
 - [knative](https://github.com/knative/docs):  An Open-Source Enterprise-level solution to build Serverless and Event Driven Applications. [Documentation](https://knative.dev/docs/concepts/)
-- [serverless framework](https://github.com/serverless/serverless): ⚡ Serverless Framework – Effortlessly build apps that auto-scale, incur zero costs when idle, and require minimal maintenance using AWS Lambda and other managed cloud services.
+- [serverless framework](https://github.com/serverless/serverless): ⚡ Serverless Framework – Effortlessly build apps that auto-scale, incur zero costs when idle, and require minimal maintenance using AWS Lambda and other managed cloud services. [Documentation](https://www.serverless.com/framework/docs)
 - [faas](https://github.com/openfaas/faas): OpenFaaS - Serverless Functions Made Simple
 ## Secrets management
 

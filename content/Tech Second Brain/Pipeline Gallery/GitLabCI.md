@@ -39,6 +39,10 @@ tags:
 - [GitLab CI/CD Environments and deployments](https://docs.gitlab.com/ee/ci/environments/) - Environments describe where code is deployed.
 - [GitLab container registry](https://docs.gitlab.com/ee/user/packages/container_registry/) - You can use the integrated container registry to store container images for each GitLab project.
 - [How to modify a variable, used as name for docker image](https://forum.gitlab.com/t/how-to-modify-a-variable-used-as-name-for-docker-image/81438/1) - Dynamic image to using for gitlabci
+
+## Issues
+
+- [StackOverFlow - Pip install a private repo from Gitlab with Personal Access Token on Gitlab-CI](https://stackoverflow.com/questions/64266246/pip-install-a-private-repo-from-gitlab-with-personal-access-token-on-gitlab-ci)
 # Use cases and scenarios
 
 ## Case 1: Completely pipeline for Container Services
