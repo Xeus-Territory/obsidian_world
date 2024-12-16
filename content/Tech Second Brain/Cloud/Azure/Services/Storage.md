@@ -25,7 +25,6 @@ Types of storage are used in your organization
 - **Unstructured data** : Not have a clear relationship. The format of unstructured data is referred to as *nonrelational*. Includes `Azure Blob Storage` and `Azure Data Lake Storage`,  Blob Storage is a highly scalable, REST-based cloud object store, Data Lake is the Hadoop Distributed File System (HDFS) as a service.
 - **Structured data** : Stored in a relational format that has a shared schema. Includes `Azure Table Storage, Azure Cosmos DB, and Azure SQL Database`
 
-
 Storage tiers
 
 - **Standard** storage accounts are backed by magnetic hard disk drives (HDD). A standard storage account provides the lowest cost per GB.

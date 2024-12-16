@@ -134,7 +134,7 @@ NOTE: Usually, `curlimages/curl` is regular used. Try to create new pod with fas
 kubectl run mycurlpod --image=curlimages/curl -i --tty -- sh
 ```
 
-## Stop or run the Cronjob with `patch`
+# Stop or run the Cronjob with `patch`
 
 You can see, `cronjob` is scheduled workload of `Kubernetes` which trigger on set-time for executing specify job. But sometimes, on during work time, your test job shouldn't work, therefore you will concert about **suspend** state of jobs. You can update state with command
 
@@ -155,11 +155,11 @@ Furthermore, you can use `patch` for multiple purpose
 - Disable a deployment livenessProbe using json patch
 - Update a deployment's replica count
 
-## Updating resources
+# Updating resources
 
 You can handle graceful restart, rollback version with `roolout` command
 
-```
+```bash
 # Graceful restart deployments, statefulset and deamonset
 k rollout restart -n <namespace> <type-workload>/<name>
 
@@ -197,7 +197,7 @@ Next, you can update autoscale for deployment by command `autoscale`
 kubectl autoscale deployment foo --min=2 --max=10
 ```
 
-## Edit YAML manifest
+# Edit YAML manifest
 
 `kubectl` can help you directly change manifest on your shell. If you `Linux` or `macos` user, you can use `nano` or `vim` to use feature
 
@@ -210,7 +210,7 @@ KUBE_EDITOR="nano" kubectl edit svc/docker-registry
 
 When you hit to complete button, your workload or resource will change immediately
 
-## Delete resource
+# Delete resource
 
 Use the `delete` command for executing
 
@@ -224,7 +224,7 @@ kubectl delete pods <pod> --grace-period=0
 kubectl delete pod,service baz foo 
 ```
 
-## Health check and interact with cluster, node and workload
+# Health check and interact with cluster, node and workload
 
 Use the `events` command for detect what happen occur on `cluster node`
 
@@ -344,7 +344,6 @@ And now your `metrics-server` will restart and running after 30s
 ![[Pasted image 20240718112540.png]]
 
 Learn more about `kubernetes` metrics, read the article [Kubernetes' Native Metrics and States](https://dev.to/otomato_io/kubernetes-native-metrics-and-states-2p68)
-
 # Configure Liveness, Readiness and Startup Probes
 
 Kubernetes implement multiple probles type for health check your applications. See more at [Liveness, Readiness and Startup Probes](https://kubernetes.io/docs/concepts/configuration/liveness-readiness-startup-probes)
@@ -452,7 +451,174 @@ livenessProbe:
   periodSeconds: 10
 ```
 
-And mostly startup for helping kubernetes to [protect slow starting containers](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#define-startup-probes)
+And mostly startup for helping Kubernetes to [protect slow starting containers](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#define-startup-probes)
 
 >[!note]
 >This type of probe is only executed at startup, unlike readiness probes, which are run periodically
+
+# Setup SnapShotter for Elasticsearch
+
+Following this documentation about snapshot with `elasticsearch` for Azure Cloud, explore at [# Elastic Cloud on Kubernetes (ECK) Quickstart with Azure Kubernetes Service,Istio and Azure Repository plugin](https://www.linkedin.com/pulse/elastic-cloud-kubernetes-eck-quickstart-azure-repository-ajay-singh/)
+
+You can use `terraform` with `manifest` to apply this configuration
+
+```bash title="elastic_snapshotter.tf"
+# https://www.linkedin.com/pulse/elastic-cloud-kubernetes-eck-quickstart-azure-repository-ajay-singh/
+
+resource "kubernetes_secret" "azure_snapshot_secret" {
+  metadata {
+    name      = "azure-snapshot-secret"
+    namespace = var.namespace
+  }
+  binary_data = {
+    "azure.client.default.account" = base64encode(var.remote_state.backup_storage_account_name)
+    "azure.client.default.key"     = base64encode(var.remote_state.backup_storage_account_key)
+  }
+  depends_on = [
+    helm_release.elastic_operator
+  ]
+}
+
+# Register the Azure snapshot with the Elasticsearch cluster
+resource "kubectl_manifest" "elasticsearch_register_snapshot" {
+  yaml_body  = <<YAML
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: ${var.name}-register-snapshot
+  namespace: ${var.namespace}
+spec:
+  template:
+    spec:
+      containers:
+      - name: register-snapshot
+        image: curlimages/curl:latest
+        volumeMounts:
+          - name: es-basic-auth
+            mountPath: /mnt/elastic/es-basic-auth
+        command:
+        - /bin/sh
+        args:
+#        - -x # Can be used to debug the command, but don't use it in production as it will leak secrets.
+        - -c
+        - |
+          curl  -s -i -k -u "elastic:$(cat /mnt/elastic/es-basic-auth/elastic)" -X PUT \
+          'https://${var.name}-es-http:9200/_snapshot/azure' \
+          --header 'Content-Type: application/json' \
+          --data-raw '{
+            "type": "azure",
+            "settings": {
+              "client": "default"
+            }
+          }' | tee /dev/stderr | grep "200 OK"
+      restartPolicy: Never
+      volumes:
+      - name: es-basic-auth
+        secret:
+          secretName: ${var.name}-es-elastic-user
+YAML
+  depends_on = [kubectl_manifest.elasticsearch]
+}
+
+# Create the snapshotter cronjob.
+resource "kubectl_manifest" "elasticsearch_snapshotter" {
+  yaml_body  = <<YAML
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: ${var.name}-snapshotter
+  namespace: ${var.namespace}
+spec:
+  schedule: "0 16 * * 0"
+  concurrencyPolicy: Forbid
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          nodeSelector:
+            pool: infrapool
+          containers:
+          - name: snapshotter
+            image: curlimages/curl:latest
+            volumeMounts:
+              - name: es-basic-auth
+                mountPath: /mnt/elastic/es-basic-auth
+            command:
+            - /bin/sh
+            args:
+            - -c
+            - 'curl -s -i -k -u "elastic:$(cat /mnt/elastic/es-basic-auth/elastic)" -XPUT "https://${var.name}-es-http:9200/_snapshot/azure/%3Csnapshot-%7Bnow%7Byyyy-MM-dd%7D%7D%3E" | tee /dev/stderr | grep "200 OK"'
+          restartPolicy: OnFailure
+          volumes:
+          - name: es-basic-auth
+            secret:
+              secretName: ${var.name}-es-elastic-user
+YAML
+  depends_on = [kubectl_manifest.elasticsearch_register_snapshot]
+}
+
+resource "kubectl_manifest" "elastic_cleanup_snapshots" {
+  yaml_body = <<YAML
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: ${var.name}-cleanup-snapshotter
+  namespace: ${var.namespace}
+spec:
+  schedule: "@daily"
+  ttlSecondsAfterFinished: 86400 
+  backoffLimit: 3
+  concurrencyPolicy: Forbid
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          nodeSelector:
+            pool: infrapool
+          containers:
+          - name: clean-snapshotter
+            image: debian:11.7
+            imagePullPolicy: IfNotPresent            
+            volumeMounts:
+              - name: es-basic-auth
+                mountPath: /mnt/elastic/es-basic-auth
+            command:
+            - /bin/sh
+            args:
+            - -c
+            - |
+              # Update and install curl package
+              apt update && apt install -y curl
+
+              # Get the date base on decision which mark to deleting
+              deletionDate=$(date -d "$date -${var.retention_date} days" +%Y-%m-%d)
+
+              # Get list elasticsearch snapshot with including in deletion date
+              listElasticSnapshots=$(curl --insecure -X GET "https://elastic:$(cat /mnt/elastic/es-basic-auth/elastic)@${var.name}-es-http:9200/_cat/snapshots/azure" | awk '{print $1}' | grep -e "$deletionDate")
+
+              # Check if list snapshots are null or not
+              if [ "$listElasticSnapshots" = "" ]; then
+                  # Ignore deleted snapshots if no snapshots available
+                  echo "Not existing your deletion date"
+                  exit 0
+              else
+                  # For remove only or multiple snapshot in deletion date 
+                  for snapshot in $listElasticSnapshots;
+                  do 
+                      res=$(curl -X DELETE --insecure "https://elastic:$(cat /mnt/elastic/es-basic-auth/elastic)@${var.name}-es-http:9200/_snapshot/azure/$snapshot" 2> /dev/null || echo "false") 
+                      if [ "$res" != "false" ]; then
+                          echo "Deleted $snapshot"
+                      else
+                          echo "Failed to delete $snapshot"
+                      fi
+                  done
+              fi            
+          restartPolicy: OnFailure
+          volumes:
+          - name: es-basic-auth
+            secret:
+              secretName: ${var.name}-es-elastic-user
+YAML
+  depends_on = [kubectl_manifest.elasticsearch_register_snapshot]
+}
+```

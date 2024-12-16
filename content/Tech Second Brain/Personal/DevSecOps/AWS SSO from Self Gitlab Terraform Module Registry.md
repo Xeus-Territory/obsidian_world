@@ -98,7 +98,7 @@ We have both solution open-source and profit to handle that, explore at [Module 
 
 - [Github](https://developer.hashicorp.com/terraform/language/modules/sources#github) and [BitBucket](https://developer.hashicorp.com/terraform/language/modules/sources#bitbucket) (Free but not good idea for store module)
 
-	```ruby
+```bash
 	# Use github with HTTPS
 	module "consul" {
 	  source = "github.com/hashicorp/example"
@@ -108,7 +108,7 @@ We have both solution open-source and profit to handle that, explore at [Module 
 	module "consul" {
 	  source = "git@github.com:hashicorp/example.git"
 	}
-	```
+```
 
 - [Gitlab](https://docs.gitlab.com/ee/user/packages/terraform_module_registry/) (Super useful and work effective)
 
@@ -271,7 +271,7 @@ pre-commit install
 
 So your `.git` will trigger that command after you try to run `git commit` to your upstream, next we will implement with `*.tf` to figure out what need to setup. Just a simple thing
 
-```c title="main.tf"
+```bash title="main.tf"
 resource "random_integer" "example" {
   min = 1
   max = 50000
@@ -285,21 +285,21 @@ locals {
 }
 ```
 
-```c title="outputs.tf"
+```bash title="outputs.tf"
 output "random_num" {
   value       = random_integer.example.result
   description = "Generate integer number from 1 to 50000"
 }
 ```
 
-```c title="variables.tf"
+```bash title="variables.tf"
 variable "example" {
   description = "Example variable"
   default     = "hello world"
 }
 ```
 
-```c title="version.tf"
+```bash title="version.tf"
 terraform {
   required_version = ">= 1.5.0"
 
@@ -394,7 +394,7 @@ terraform-gitlab-supply
 
 Let go to detail of each components, keep the same thing with `.pre-commit-config.yaml` file
 
-```c title="main.tf"
+```bash title="main.tf"
 locals {
   aws_modules = {
     iam-identity-center = "Connects your existing workforce identity source and centrally manage access to AWS"
@@ -416,7 +416,7 @@ Conclusion
 - Provide `repo_name` and `description` into `for_each`
 - Use from module `./modules`
 
-```c title="backend.tf"
+```bash title="backend.tf"
 terraform {
   # Keep your tfstate in your machine (Individual purpose but if team purpose need to use remote .tfstate)
   backend "local" {
@@ -441,7 +441,7 @@ Conclusion
 
 You need to provide add-on one file `variables.tf` to supply variable for `gitlab` with token
 
-```c title="variables.tf"
+```bash title="variables.tf"
 variable "GITLAB_TOKEN" {
   description = "Providing for gitlab providers to authentication"
   type        = string
@@ -451,7 +451,7 @@ variable "GITLAB_TOKEN" {
 
 Next we head to provisioning inside `module` directory
 
-```c title="modules/gitlab.tf"
+```bash title="modules/gitlab.tf"
 locals {
   repo_name           = "${var.provider_name}-${var.repo_name}"
   template_project_id = "xxxxxxx" # project-template-id
@@ -476,7 +476,7 @@ Conclusion
 - Supply `local` to set the name inside `gitlab_project` resource
 - `prevent_destroy` is enable to help you hard to destroy resource
 
-```c title="modules/variables.tf"
+```bash title="modules/variables.tf"
 variable "repo_name" {
   type = string
 }
@@ -496,7 +496,7 @@ variable "create_repo" {
 }
 ```
 
-```c title="modules/versions.tf"
+```bash title="modules/versions.tf"
 terraform {
   required_version = ">= 1.5.0"
   required_providers {
@@ -555,7 +555,7 @@ Next, we need add sub-group where you store module because if you miss this stuf
 
 Alright, you modify your `gitlab.tf` and we gonna ready to create repository
 
-```c title="module/gitlab.tf"
+```bash title="module/gitlab.tf"
 locals {
   repo_name           = "${var.provider_name}-${var.repo_name}"
   template_project_id = "xxxxxxxx" # ID of the template project
@@ -603,7 +603,7 @@ First of all, the module will take structure like `terraform-module-example`, be
 
 We will move to detail for whole module
 
-```c title="main.tf"
+```bash title="main.tf"
 # Create a new group sso with dynamic functionality
 resource "aws_identitystore_group" "sso_groups" {
   for_each          = var.sso_groups == null ? {} : var.sso_groups
@@ -703,7 +703,7 @@ resource "aws_ssoadmin_account_assignment" "account_assignment" {
 }
 ```
 
-```c title="data.tf"
+```bash title="data.tf"
 # Fetch information about the existing SSO Instance
 data "aws_ssoadmin_instances" "instance" {}
 
@@ -744,7 +744,7 @@ data "aws_ssoadmin_permission_set" "existing_permission_sets" {
 }
 ```
 
-```c title="local.tf"
+```bash title="local.tf"
 # - Users and Groups -
 locals {
   # Create a new local variable by flattening the complex type given in the variable "sso_users"
@@ -826,7 +826,7 @@ locals {
 }
 ```
 
-```c title="variables.tf"
+```bash title="variables.tf"
 # Groups
 variable "sso_groups" {
   description = "Names of the groups you wish to create in IAM Identity Center."
@@ -1060,7 +1060,7 @@ credentials "gitlab.com" {
 
 Alright, now you can reuse this module from your local machine 🥶🥶. Now we try to define it with
 
-```c title="main.tf"
+```bash title="main.tf"
 module "sso_identity" {
   source = "gitlab.com/awesome_terraform_practice/aws-iam-identity-center/aws"
   version = "0.0.1"
@@ -1127,7 +1127,7 @@ module "sso_identity" {
 
 ```
 
-```c title="providers"
+```bash title="providers"
 terraform {
   required_version = ">= 1.5.0"
   required_providers {

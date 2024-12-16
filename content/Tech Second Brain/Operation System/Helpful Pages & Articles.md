@@ -30,6 +30,7 @@ tags:
 - [The Linux Kernel documentation](https://docs.kernel.org/): the top level of the kernel’s documentation tree
 - [Linux Shell Scripting Tutorial - Bash Linux Shell Scripting Wiki](https://bash.cyberciti.biz/guide/Main_Page)
 - [NVIDIA CUDA Installation Guide for Linux](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/#system-requirements)
+- [Curl documentation](https://everything.curl.dev/): an extensive guide for all things curl
 ## Articles
 
 - [Unix & Linux Stack Exchange - Format output of xargs](https://unix.stackexchange.com/questions/89130/format-output-of-xargs) 

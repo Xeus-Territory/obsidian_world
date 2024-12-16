@@ -1,5 +1,5 @@
 ---
-title: "Database: Information, Helpful Articles about the world"
+title: Information, Helpful Articles about the Database World
 tags:
   - cheatsheet
   - helpful
@@ -11,10 +11,15 @@ tags:
 
 # Awesome repositories
 
-- [awesome-db-tools](https://github.com/mgramin/awesome-db-tools) : Everything that makes working with databases easier
-- [database-topic](https://github.com/topics/database): The collection of database
-- [DB-Engines](https://db-engines.com/en/): Knowledge Base of Relational and NoSQL Database Management Systems
+## Repository
 
+- [awesome-db-tools](https://github.com/mgramin/awesome-db-tools) : Everything that makes working with databases easier
+## Topics
+
+- [database-topic](https://github.com/topics/database): The collection of database
+## Pages
+
+- [DB-Engines](https://db-engines.com/en/): Knowledge Base of Relational and NoSQL Database Management Systems
 # Utilities and Useful Opensource
 
 ## Database IDE
@@ -47,12 +52,13 @@ tags:
 - [postgresql_cluster](https://github.com/vitabaks/postgresql_cluster): PostgreSQL High-Availability Cluster (based on Patroni). Automating with Ansible.
 - [pigsty](https://github.com/Vonng/pigsty): Battery-Included PostgreSQL Distro as a Free & Better RDS Alternative —— Pigsty
 
-# Others DB
+# Articles
+
+## OthersDB
 
 - [dev.to - What is RocksDB (and its role in streaming)?](https://dev.to/mrkandreev/what-is-rocksdb-and-its-role-in-streaming-3bla)
 - [Medium - Running SpiceDB with Postgresql using docker-compose](https://akoserwal.medium.com/running-spicedb-with-postgresql-using-docker-compose-cc7ee999da73)
-
-# PostgreSQL
+## PostgreSQL
 
 - [How To Kill All Connections to a Database in PostgreSQL](https://www.dbvis.com/thetable/how-to-kill-all-connections-to-a-database-in-postgresql/)
 - [Medium - Postgres is eating the database world](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)
@@ -60,19 +66,17 @@ tags:
 - [Github Gist - psql-with-gzip-cheatsheet.sh](https://gist.github.com/brock/7a7a70300096632cec30)
 - [Azure PostgreSQL - Backup and Restore](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-backup-restore)
 - [Useful PostgreSQL (psql) queries, commands and snippets](https://codefibershq.com/blog/useful-postgresql-pgsql-queries-commands-and-snippets)
-# MongoDB
+## MongoDB
 
 - [Medium - Solving curious case of excess memory consumption by MongoDB](https://tech.oyorooms.com/mongodb-out-of-memory-kill-process-mongodb-using-too-much-memory-solved-44e9ae577bed)
 - [mongodb-kubernetes-operator](https://github.com/mongodb/mongodb-kubernetes-operator) : MongoDB Community Kubernetes Operator
-# Elasticsearch
+## Elasticsearch
 
 - [Opster - Elasticsearch Heap Size Usage and JVM Garbage Collection](https://opster.com/guides/elasticsearch/capacity-planning/elasticsearch-heap-size-usage/)
 - [Orchestrating Elastic Stack applications](https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-orchestrating-elastic-stack-applications.html)
-  
-# SQL Server
+## SQL Server
 
 - [Azure - Analyze and prevent deadlocks in Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/analyze-prevent-deadlocks?view=azuresql&tabs=ring-buffer)
 - [How to find and fix SQL Server deadlocks](https://www.site24x7.com/learn/resolve-sql-server-deadlocks.html#:~:text=A%20Microsoft%20SQL%20Server%20deadlock,cancel%20one%20of%20the%20processes.)
 - [Performance Troubleshooting | Azure SQL](https://www.youtube.com/playlist?list=PLlrxD0HtieHgDkZ84FfCSDLBcJmUn8ktU)
 - [Azure - Deadlocks guide](https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-deadlocks-guide?view=sql-server-ver16)
-

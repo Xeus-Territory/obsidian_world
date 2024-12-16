@@ -1,11 +1,14 @@
 ---
-title: The collection of AI, ML, Data Science topics
+title: The collection of AI, ML, Data Analysis
 tags:
   - intelligence
   - machine-learning
   - papers
   - research
+  - data-analysis
 ---
+>[!purpose]
+>This place where I store whole things I know, learn and inspect about AI, ML and DA to build up these into consistent collections
 # General Awesome Repositories
 
 ## Repository
@@ -32,46 +35,61 @@ tags:
 ## Organization
 
 - [OpenAI](https://github.com/openai): OpenAI Github Community
-
+- [Triton Inference Server](https://github.com/triton-inference-server): provides a cloud and edge inferencing solution optimized for both CPUs and GPUs.
 ## Landscape
 
-- [LF AI & Data Foundation Interactive Landscape](https://landscape.lfai.foundation/card-mode)
-
-## Articles
-
-- [CNCF - CNCF Cloud Native AI White Paper](https://tag-runtime.cncf.io/wgs/cnaiwg/whitepapers/cloudnativeai/)
+- [LF AI & Data Foundation Interactive Landscape](https://landscape.lfai.foundation/)
+- [The 2024 MAD (Machine Learning, AI and Data) Landscape](https://mad.firstmark.com/ ): Get it in [PDF](https://mattturck.com/landscape/mad2024.pdf)
 # Artificial intelligence & Machine Learning
 
-## Repository
+## Toolkits
+
+- [openvino](https://github.com/openvinotoolkit/openvino): OpenVINO™ is an open-source toolkit for optimizing and deploying AI inference
+- [ray](https://github.com/ray-project/ray): an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads.
+## VectorDB
+
+- [Milvus](https://milvus.io/docs): A high-performance, highly scalable vector database that runs efficiently across a wide range of environments, from a laptop to large-scale distributed systems
+- [Chroma](https://docs.trychroma.com/):  The AI-native open-source vector database (Opensource)
+## LLM
+
+- [private-gpt](https://github.com/zylon-ai/private-gpt): Interact with your documents using the power of GPT, 100% privately, no data leaks. [Website](https://privategpt.dev/)
+
+## Computer Vision
+
+-  [opencv](https://github.com/opencv/opencv): Open Source Computer Vision Library. [Website Version](https://opencv.org/)
+
+## Text To Speech
 
 - [VALL-E-X](https://github.com/Plachtaa/VALL-E-X): An open source implementation of Microsoft's VALL-E X zero-shot TTS model
+
+## Models
+
 - [ColossalAI](https://github.com/hpcaitech/ColossalAI): Making large AI models cheaper, faster and more accessible
 - [trl](https://github.com/huggingface/trl): Train transformer language models with reinforcement learning. [Hugging Face](https://huggingface.co/docs/trl/index)
-- [opencv](https://github.com/opencv/opencv): Open Source Computer Vision Library. [Website Version](https://opencv.org/)
-- [private-gpt](https://github.com/zylon-ai/private-gpt): Interact with your documents using the power of GPT, 100% privately, no data leaks. [Website](https://privategpt.dev/)
-- [milvus - vector database](https://milvus.io/docs)
-- [triton-inference-server](https://github.com/triton-inference-server): [NVIDIA Triton Inference Server](https://github.com/triton-inference-server/server) provides a cloud and edge inferencing solution optimized for both CPUs and GPUs.
-- [openvino](https://github.com/openvinotoolkit/openvino): OpenVINO™ is an open-source toolkit for optimizing and deploying AI inference
 ## Articles
 
 - [Nanonets - Tesseract OCR in Python with Pytesseract & OpenCV](https://nanonets.com/blog/ocr-with-tesseract/)
 - [Neptune.ai - MLOps Landscape in 2024: Top Tools and Platforms](https://neptune.ai/blog/mlops-tools-platforms-landscape)
 - [Milvus - Deploy a Milvus Cluster on EKS](https://milvus.io/docs/eks.md)
 - [Medium - Understanding Milvus: Key Concepts and Potential Applications](https://medium.com/n11-tech/understanding-milvus-key-concepts-and-potential-applications-1fe4dedd7412)
-# Data Science
+- [CNCF - CNCF Cloud Native AI White Paper](https://tag-runtime.cncf.io/wgs/cnaiwg/whitepapers/cloudnativeai/)
+# Data Analysis
 
-## Repository
+## Awesome Repositories
 
-- [datahub](https://github.com/datahub-project/datahub): The Metadata Platform for your Data Stack
-- [active_workflow](https://github.com/automaticmode/active_workflow): Polyglot workflows without leaving the comfort of your technology stack.
 - [Awesome Open Source Data Engineering](https://github.com/pracdata/awesome-open-source-data-engineering)
+## Tools
+
+- [airbyte](https://github.com/airbytehq/airbyte): The leading data integration platform for ETL / ELT data pipelines from APIs, databases & files to data warehouses, data lakes & data lakehouses. Both self-hosted and Cloud-hosted.
+- [airflow](https://github.com/apache/airflow): A platform to programmatically author, schedule, and monitor workflows
+- [active_workflow](https://github.com/automaticmode/active_workflow): Polyglot workflows without leaving the comfort of your technology stack.
+- [datahub](https://github.com/datahub-project/datahub): The Metadata Platform for your Data Stack
 ## Articles
 
 - [LakeFS - The State of Data Engineering 2024](https://lakefs.io/blog/the-state-of-data-engineering-2024/)
 - [Practicle Data Engineering - Open Source Data Engineering Landscape 2024](https://practicaldataengineering.substack.com/p/open-source-data-engineering-landscape?r=23jwn&utm_campaign=post&utm_medium=web&triedRedirect=true)
 - [Medium - Data Pipeline Development with MinIO, Iceberg, Nessie, Polars, StarRocks, Mage, and Docker](https://blog.det.life/data-pipeline-development-with-minio-iceberg-nessie-polars-starrocks-mage-and-docker-1c7b4b52d5f4)
-
-## Blog
+## Blogs
 
 - [Medium - Data Engineers Things](https://blog.det.life/)
 # Youtube Channel
