@@ -24,6 +24,7 @@ tags:
 - [Bill's Security Site](https://asecuritysite.com/)
 - [OWASP Penetration Testing Check List](https://owasp.org/www-project-web-security-testing-guide/assets/archive/OWASP_Web_Application_Penetration_Checklist_v1_1.pdf)
 - [SecurityZines](https://securityzines.com/) : Visualization Hacking, Architecture and Technical by Image with step by step
+- [ISO 27001 vs. 27002 vs. 27003: What’s the Difference?](https://www.strongdm.com/blog/iso-27001-vs-27002-vs-27003)
 
 # InfoSec Blog page
 

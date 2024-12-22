@@ -52,8 +52,9 @@ tags:
 
 ## Topic
 
-- [Package manager](https://github.com/topics/package-manager) : Package manager topics
+- [Package manager](https://github.com/topics/package-manager)
 - [Metrics](https://github.com/topics/metrics)
+- [Api Gateway](https://github.com/topics/api-gateway)
 ## Organization
 
 - [Spotify](https://github.com/spotify): Spotify Github Repositories
@@ -84,6 +85,7 @@ tags:
 - [PingCAP](https://github.com/pingcap): The team behind TiDB TiKV, an open source MySQL compatible HTAP database
 - [Leaning Technologies](https://github.com/leaningtech): Enterprise-grade WebAssembly solutions
 - [Gruntwork](https://github.com/gruntwork-io): Organization who makes Terragrunt and couple of things related to entire infrastructure
+- [Authzed](https://github.com/authzed): Creators of SpiceDB, the open source fine-grained permissions database. YC W21.
 ## Landscape
 
 - [Apache Project Directory](https://projects.apache.org/projects.html) : List all of product of Apache
@@ -201,6 +203,8 @@ tags:
 - [Confluent - A Comparison of RabbitMQ vs Apache Kafka and When to Use Each](https://www.confluent.io/learn/rabbitmq-vs-apache-kafka/)
 - [Medium - 11 Automation Scripts for Prometheus Configurations.](https://medium.com/@obaff/11-automation-scripts-for-prometheus-configurations-fde7b3bf4198)
 - [Medium - Why ectd is better than zookeeper and database for HA system](https://medium.com/@lbq999/why-ectd-is-better-than-zookeeper-and-database-for-ha-system-227a45750720)
+- [Medium - Observability 2.0 with AWS OpenTelemetry Collector](https://medium.com/@usingsystem/observability-2-0-with-aws-opentelemetry-collector-7fef0e0e2c1c)
+- [Blog - Obsidian: the Good, the Bad, & the Ugly](https://www.originalmacguy.com/obsidian-the-good-the-bad-the-ugly/)
 ## Techniques
 
 - [Internet - How to build and deploy React Native applications with Fastlane](https://tech.sparkfabrik.com/en/blog/fastlane_build/)
@@ -233,6 +237,7 @@ tags:
 - [OWASP - DevSecOps Guideline](https://owasp.org/www-project-devsecops-guideline/latest/)
 - [Medium - 23 Fundamental Principles for Software Architects](https://azeynalli1990.medium.com/23-fundamental-principles-for-software-architects-f42aaae7f740)
 - [Medium - Single Point of Failure (SPOF) in System Design](https://levelup.gitconnected.com/single-point-of-failure-spof-in-system-design-c8bbac5af993)
+- [Ably - Event-driven architecture patterns and when to use them](https://ably.com/topic/event-driven-architecture-patterns)
 # Opensource Finder
 
 >[!note]
@@ -286,7 +291,6 @@ tags:
 - [Medium - The Past and Present of Browser Architecture](https://levelup.gitconnected.com/the-past-and-present-of-browser-architecture-522c65d1c2cd)
 - [MDPI - An Overview of WebAssembly for IoT: Background, Tools, State-of-the-Art, Challenges, and Future Directions](https://www.mdpi.com/1999-5903/15/8/275)
 - [Medium - Embedding Python in Go](https://poweruser.blog/embedding-python-in-go-338c0399f3d5F)
-- [Event-driven architecture patterns and when to use them](https://ably.com/topic/event-driven-architecture-patterns)
 - [Worldwide exchange and communication of date and time-related data - ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)
 # Quantum Computing
 
@@ -297,7 +301,6 @@ tags:
 - [QuantumKatas](https://github.com/microsoft/QuantumKatas): Tutorials and programming exercises for learning Q# and quantum computing
 - [pennylane](https://github.com/PennyLaneAI/pennylane): a cross-platform Python library for quantum computing, quantum machine learning, and quantum chemistry. Train a quantum computer the same way as a neural network.
 - [open-quantum-safe](https://github.com/open-quantum-safe): Software for prototyping quantum-resistant cryptography
-
 ## Articles
 
 - [Medium - Quantum Computing and Cybersecurity: Preparing for the Next Digital Arms Race](https://medium.com/bug-zero/quantum-computing-and-cybersecurity-preparing-for-the-next-digital-arms-race-001dfac66766)
@@ -306,10 +309,13 @@ tags:
 
 >[!note]
 >Collections a supper cool and powerful tools for multiple purpose attaching with DevOps
-
 ## API Gateway
 
 - [Kong](https://docs.konghq.com/gateway/latest/): API gateway built for hybrid and multi-cloud, optimized for microservices and distributed architectures
+- [Apache APISIX](https://apisix.apache.org/docs/apisix/getting-started/README/): The Cloud-Native API Gateway
+- [tyk](https://github.com/TykTechnologies/tyk): Open Source API Gateway written in Go, supporting REST, GraphQL, TCP and gRPC protocols
+- [lura](https://github.com/luraproject/lura): Ultra performant API Gateway with middlewares
+- [easegress](https://github.com/easegress-io/easegress): A Cloud Native traffic orchestration system
 ## Automation Build Platforms
 
 - [Expo](https://docs.expo.dev/): Expo is a framework that makes developing Android and iOS apps easier. Our framework provides file-based routing, a standard library of native modules, and much more
@@ -324,17 +330,12 @@ tags:
 
 - [gitpod](https://github.com/gitpod-io/gitpod): The developer platform for on-demand cloud development environments to create software faster and more securely.
 - [prefect](https://github.com/PrefectHQ/prefect): Prefect is a workflow orchestration framework for building resilient data pipelines in Python.
-- [werf](https://github.com/werf/werf): A solution for implementing efficient and consistent software delivery to Kubernetes facilitating best practices.
-- [nelm](https://github.com/werf/nelm): Nelm is a Helm 3 alternative and werf deployment engine
 - [dapr](https://github.com/dapr/dapr): Dapr is a portable, event-driven, runtime for building distributed applications across cloud and edge. [Website](https://dapr.io/)
 ## Cloud Infrastructure Designer
 
 - [Brainboard](https://www.brainboard.co/) : An AI driven platform to visually design, generate terraform code and manage cloud infrastructure, collaboratively.
 - [Cloudairy](https://cloudairy.com/) : **Cloudchart** is a cloud focused diagram tool designed to help you easily map out cloud infrastructures
 - [Excalidraw](https://excalidraw.com/): Hand-drawn look & feel - Collaborative - Secure
-## Data integration platform
-
-- [airbyte](https://github.com/airbytehq/airbyte): The leading data integration platform for ETL / ELT data pipelines from APIs, databases & files to data warehouses, data lakes & data lakehouses. Both self-hosted and Cloud-hosted.
 ## eBPF
 
 - [ecapture](https://github.com/gojue/ecapture): Capturing SSL/TLS plaintext without a CA certificate using eBPF. Supported on Linux/Android kernels for amd64/arm64. [Documentation](https://ecapture.cc/guide/introduction.html)
@@ -359,13 +360,11 @@ tags:
 - [Spacelift](https://docs.spacelift.io/): Spacelift is a sophisticated, continuous integration and deployment (CI/CD) platform for _infrastructure-as-code_
 - [terraformer](https://github.com/GoogleCloudPlatform/terraformer): CLI tool to generate terraform files from existing infrastructure (reverse Terraform). Infrastructure to Code
 - [inframap](https://github.com/cycloidio/inframap): Read your tfstate or HCL to generate a graph specific for each provider, showing only the resources that are most important/relevant.
-
 ## Internal Developer Platform (IDP)
 
 - [Qovery](https://hub.qovery.com/docs/getting-started/what-is-qovery/) : the **Internal Developer Platform (IDP)** that cuts noise for developers with paved paths to production
 - [Kusion](https://www.kusionstack.io/docs/) : An intent-driven [Platform Orchestrator](https://internaldeveloperplatform.org/platform-orchestrators/), which sits at the core of an [Internal Developer Platform (IDP)](https://internaldeveloperplatform.org/what-is-an-internal-developer-platform/)
 - [backstage](https://github.com/backstage/backstage): An open framework for building developer portals. [Documentation](https://backstage.io/docs/overview/what-is-backstage)
-
 ## Identity Provider (SSO, OAuth, MFA, ...)
 
 - [authentik](https://docs.goauthentik.io/docs/) :  An IdP (Identity Provider) and SSO (single sign on) that is built with security at the forefront of every piece of code, every feature, with an emphasis on flexibility and versatility.
@@ -375,6 +374,7 @@ tags:
 - [zitadel](https://zitadel.com/docs/guides/overview): Identity infrastructure, simplified for you.
 - [casdoor](https://github.com/casdoor/casdoor): An open-source UI-first Identity and Access Management (IAM) / Single-Sign-On (SSO) platform with web UI supporting
 - [keycloak](https://github.com/keycloak/keycloak): Open Source Identity and Access Management For Modern Applications and Services. [Website](https://github.com/keycloak/keycloak)
+- [spicedb](https://github.com/authzed/spicedb): Open Source, Google Zanzibar-inspired database for scalably storing and querying fine-grained authorization data. [Documentation](https://authzed.com/docs/spicedb/getting-started/discovering-spicedb)
 ## Generated + Validate Configuration
 
 - [moz://a SSL Configuration Generator](https://ssl-config.mozilla.org/) : SSL Generation for multiple webserver
@@ -392,8 +392,6 @@ tags:
 - [digger](https://docs.digger.dev/readme/introduction) : open-source CI/CD orchestrator for Terraform
 - [env0](https://docs.env0.com/): Automate and manage any Infrastructure-as-Code, from Terraform and OpenTofu to Pulumi, CloudFormation, Terragrunt, Kubernetes, and more.
 - [bytebase](https://github.com/bytebase/bytebase) : The GitHub/GitLab for database DevOps.
-- [argo-cd](https://argo-cd.readthedocs.io/en/stable/) :  A declarative, GitOps continuous delivery tool for Kubernetes.
-- [fluxcd](https://fluxcd.io/flux/) : Tool for keeping Kubernetes clusters in sync with sources of configuration (like Git repositories), and automating updates to configuration when there is new code to deploy.
 - [Semaphore UI](https://semaphoreui.com/) : Elegant web interface for executing Ansible playbooks, Terraform, OpenTofu, Pulumi code and Bash scripts.
 - [act](https://github.com/nektos/act): Run your GitHub Actions locally 🚀
 ## Git Hosting
@@ -435,7 +433,6 @@ tags:
 - [opentelemetry](https://opentelemetry.io/docs/): OpenTelemetry, also known as OTel, is a vendor-neutral open source [observability](https://opentelemetry.io/docs/concepts/observability-primer/#what-is-observability) framework for instrumenting, generating, collecting, and exporting telemetry data such as [traces](https://opentelemetry.io/docs/concepts/signals/traces/), [metrics](https://opentelemetry.io/docs/concepts/signals/metrics/), and [logs](https://opentelemetry.io/docs/concepts/signals/logs/).
 - [Sentry](https://github.com/getsentry/sentry): Developer-first error tracking and performance monitoring. [Website](https://sentry.io/)
 - [GlitchTip](https://glitchtip.com/documentation): Simple, open source error tracking
-
 ## Queue Services
 
 - [AutoMQ](https://docs.automq.com/automq/what-is-automq/overview) : AutoMQ re-engineers Kafka for the cloud by decoupling storage to object storage. While maintaining **100% compatibility** with Apache Kafka®, it offers users up to **10 times cost efficiency** and **100 times elasticity**.
@@ -445,7 +442,6 @@ tags:
 - [Amazon Simple Queue System (SQS)](https://aws.amazon.com/sqs): A fully managed message queue built for distributed and serverless platforms
 - [Microsoft Azure Service Bus](https://azure.microsoft.com/en-us/products/service-bus): A reliable, fully managed Cloud service for delivering messages via queues or topics.https://www.serverless.com/framework/docs
 - [Celery](https://docs.celeryq.dev/en/stable/): a simple, flexible, and reliable distributed system to process vast amounts of messages, while providing operations with the tools required to maintain such a system.
-
 ## Serverless Self-hosted
 
 - [fn](https://github.com/fnproject/fn): The container native, cloud agnostic serverless platform.
@@ -479,12 +475,10 @@ tags:
 - [envoy](https://www.envoyproxy.io/docs/envoy/v1.31.0/) : Envoy is an L7 proxy and communication bus designed for large modern service oriented architectures
 - [traefik proxy](https://doc.traefik.io/traefik/) : Traefik is an [open-source](https://github.com/traefik/traefik) _Edge Router_ that makes publishing your services a fun and easy experience
 - [HAProxy](https://docs.haproxy.org/) : HAProxy is a free, very fast and reliable reverse-proxy offering [high availability](http://en.wikipedia.org/wiki/High_availability), [load balancing](http://en.wikipedia.org/wiki/Load_balancer), and proxying for TCP and HTTP-based applications
-
 ## SSL + DNS Utilities
 
 - [certbot](https://github.com/certbot/certbot): Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server.
 - [acme.sh](https://github.com/acmesh-official/acme.sh): A pure Unix shell script implementing ACME client protocol
-- [kcert](https://github.com/nabsul/kcert): A Simple Let's Encrypt Manager for Kubernetes
 - [ddns-updater](https://github.com/qdm12/ddns-updater): Container to update DNS records periodically with WebUI for many DNS providers
 - [cloudflare-ddns](https://github.com/timothymiller/cloudflare-ddns): 🎉🌩️ Dynamic DNS (DDNS) service based on Cloudflare! Access your home network remotely via a custom domain name without a static IP!
 ## Static Site Generator
@@ -523,7 +517,6 @@ tags:
 - [spacedrive](https://github.com/spacedriveapp/spacedrive): Spacedrive is an open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust.
 - [localsend](https://github.com/localsend/localsend): An open-source cross-platform alternative to AirDrop (Local Vietnamese Guy 🖖)
 - [nhost](https://github.com/nhost/nhost): The Open Source Firebase Alternative with GraphQL. [Documentation](https://docs.nhost.io/introduction)
-
 ## Virtual Machine
 
 - [webvm](https://github.com/leaningtech/webvm): Virtual Machine for the Web

@@ -447,7 +447,354 @@ Run terraform workflow and you will try to connect into Milvus Cluster from brow
 >[!note]
 >Your start user and password with Milvus Cluster is `root:Milvus`
 > **WARNING: NEED TO CHANGE AFTER FIRST LOGIN**
+# Apply Cluster Autoscaler (CA) for Milvus
 
+## Overview
+
+>[!note]
+>You can ensure the availability for Milvus cluster through applying **Cluster Autoscaling**, that is one of method to help your EKS cluster can adapt HA (High Availability) strategy
+
+There is exist many way to autoscale on node level with EKS, such as
+
+- [Cluster Autoscaler](https://docs.aws.amazon.com/eks/latest/best-practices/cas.html)
+- [Karpenter](https://docs.aws.amazon.com/eks/latest/best-practices/karpenter.html)
+- [Keda](https://aws.amazon.com/blogs/mt/proactive-autoscaling-kubernetes-workloads-keda-metrics-ingested-into-aws-amp/)
+
+In my perspective, we should start from standard method Cluster Autoscaler (CA), popular **Cluster Autoscaling** solution maintained by [SIG Autoscaling](https://github.com/kubernetes/community/tree/master/sig-autoscaling).
+
+>[!info]
+>Cluster Autoscaler (CA) is responsible for ensuring that your cluster has enough nodes to schedule your pods **without wasting resources**. It watches for pods that fail to schedule and for nodes that are underutilized. It then simulates the addition or removal of nodes before applying the change to your cluster.
+
+This one is legit method to apply for EKS MilvusDB, cuz that ensure a lot of requirements and leverage how the AWS operate the EKS, like
+
+- **Scalability**
+- **Performance**
+- **Cost**
+- **Node Groups**
+- **EC2 Auto Scaling Groups**
+- **EC2 Managed Node Groups**
+
+There is no doubt to consider to use CA, you can double check more article and source code like README.md to see the mechanism that method used
+
+- [AWS EKS Workshop - Configure Cluster Autoscaler (CA)](https://archive.eksworkshop.com/beginner/080_scaling/deploy_ca/#deploy-the-cluster-autoscaler-ca)
+- [GitHub - Cluster Autoscaler on AWS](https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler/cloudprovider/aws)
+
+To start, you need to create IAM Policies to help this mechanism actual work, cuz you need the workload represent for this implement can have permission to tackle this scaling
+
+You can use `Terraform` or `AWS CLI`, it's up to you, just remember the `policy context` need to create
+
+```json
+{
+    "Version" : "2012-10-17",
+    "Statement" : [
+      {
+        "Effect" : "Allow",
+        "Action" : [
+          "autoscaling:DescribeAutoScalingGroups",
+          "autoscaling:DescribeAutoScalingInstances",
+          "autoscaling:DescribeLaunchConfigurations",
+          "autoscaling:DescribeScalingActivities",
+          "autoscaling:SetDesiredCapacity",
+          "autoscaling:TerminateInstanceInAutoScalingGroup",
+          "ec2:DescribeLaunchTemplateVersions",
+          "eks:DescribeNodegroup"
+        ],
+        "Resource" : "*"
+      }
+    ]
+  }
+```
+
+If you want to double check the advance option, you can read at [🔗Link](https://docs.aws.amazon.com/eks/latest/best-practices/cas.html#_overview)
+
+After created the `IAM Policy`, you can reach to update the autoscaling group, cuz CA will use this definition to scale your node in cluster up or down depend on `DesiredReplicas`
+
+## Apply new spec ASG
+
+First of all, double check what configure your cluster applying
+
+```bash
+aws autoscaling \
+    describe-auto-scaling-groups \
+    --query "AutoScalingGroups[? Tags[? (Key=='eks:cluster-name') && Value=='milvus-cluster']].[AutoScalingGroupName, MinSize, MaxSize,DesiredCapacity]" \
+    --output table \
+    --region ap-southeast-1
+
+```
+
+```bash
+-----------------------------------------------------------------------
+|                      DescribeAutoScalingGroups                      |
++------------------------------------------------------+----+----+----+
+|  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  |  2 |  2 |  2 |
++------------------------------------------------------+----+----+----+
+```
+
+Three number are represented for `min`, `max`, `desire`
+
+Now, you need to increase number node with **MaxSize** with at least 1 more. But you need to get autoscaling group name
+
+```bash
+export ASG_NAME=$(aws autoscaling describe-auto-scaling-groups --query "AutoScalingGroups[? Tags[? (Key=='eks:cluster-name') && Value=='milvus-cluster']].AutoScalingGroupName" --output text --region ap-southeast-1)
+```
+
+Now you need to modify with new spec for Milvus ASG
+
+```bash
+aws autoscaling \
+    update-auto-scaling-group \
+    --auto-scaling-group-name ${ASG_NAME} \
+    --min-size 2 \
+    --desired-capacity 2 \
+    --max-size 3 \
+    --region ap-southeast-1
+```
+
+After that, query the configuration again
+
+```bash
+aws autoscaling \
+    describe-auto-scaling-groups \
+    --query "AutoScalingGroups[? Tags[? (Key=='eks:cluster-name') && Value=='milvus-cluster']].[AutoScalingGroupName, MinSize, MaxSize,DesiredCapacity]" \
+    --output table \
+    --region ap-southeast-1
+```
+
+```bash
+-----------------------------------------------------------------------
+|                      DescribeAutoScalingGroups                      |
++------------------------------------------------------+----+----+----+
+|  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  |  2 |  3 |  2 |
++------------------------------------------------------+----+----+----+
+```
+
+## Create EKS Service Account
+
+To using the `IAM Policy` from AWS, your `EKS` need to ensure about Service Account, it's mechanism to handle and create token to authenticate from your workload with `IAM`.
+
+On the `Overview`, we are already create `IAM Policy` for autoscaling, and now we create `SA` to reuse that
+
+```bash
+# For example: IAM Policy is EKSClusterAutoScaler
+eksctl create iamserviceaccount \
+    --name cluster-autoscaler \
+    --namespace kube-system \
+    --cluster suppor-milvus-cluster-v2 \
+    --attach-policy-arn "arn:aws:iam::xxxxxxx:policy/EKSClusterAutoScaler" \
+    --approve \
+    --override-existing-serviceaccounts \
+    --region ap-southeast-1
+```
+
+After you apply this command, your EKS Milvus will create `serviceaccounts` with name `cluster-autoscaler` in namespace `kube-system`. Check it out with command
+
+```bash
+kubectl get serviceaccounts -n kube-system cluster-autoscaler -o yaml
+```
+
+## Deploy cluster-autoscaler deployment
+
+In the last step, To deploy `cluster-autoscaler`, you need run apply command to approve and deloyments manifest of `cluster-autoscaler` into your host with `auto-discovery` mode. Manifest is write and use from [cluster-autoscaler-autodiscover.yaml](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/cloudprovider/aws/examples/cluster-autoscaler-autodiscover.yaml)
+
+```yaml title="cluster-autoscaler-autodiscover.yaml"
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  labels:
+    k8s-addon: cluster-autoscaler.addons.k8s.io
+    k8s-app: cluster-autoscaler
+  name: cluster-autoscaler
+  namespace: kube-system
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: cluster-autoscaler
+  labels:
+    k8s-addon: cluster-autoscaler.addons.k8s.io
+    k8s-app: cluster-autoscaler
+rules:
+  - apiGroups: [""]
+    resources: ["events", "endpoints"]
+    verbs: ["create", "patch"]
+  - apiGroups: [""]
+    resources: ["pods/eviction"]
+    verbs: ["create"]
+  - apiGroups: [""]
+    resources: ["pods/status"]
+    verbs: ["update"]
+  - apiGroups: [""]
+    resources: ["endpoints"]
+    resourceNames: ["cluster-autoscaler"]
+    verbs: ["get", "update"]
+  - apiGroups: [""]
+    resources: ["nodes"]
+    verbs: ["watch", "list", "get", "update"]
+  - apiGroups: [""]
+    resources:
+      - "namespaces"
+      - "pods"
+      - "services"
+      - "replicationcontrollers"
+      - "persistentvolumeclaims"
+      - "persistentvolumes"
+    verbs: ["watch", "list", "get"]
+  - apiGroups: ["extensions"]
+    resources: ["replicasets", "daemonsets"]
+    verbs: ["watch", "list", "get"]
+  - apiGroups: ["policy"]
+    resources: ["poddisruptionbudgets"]
+    verbs: ["watch", "list"]
+  - apiGroups: ["apps"]
+    resources: ["statefulsets", "replicasets", "daemonsets"]
+    verbs: ["watch", "list", "get"]
+  - apiGroups: ["storage.k8s.io"]
+    resources: ["storageclasses", "csinodes", "csidrivers", "csistoragecapacities"]
+    verbs: ["watch", "list", "get"]
+  - apiGroups: ["batch", "extensions"]
+    resources: ["jobs"]
+    verbs: ["get", "list", "watch", "patch"]
+  - apiGroups: ["coordination.k8s.io"]
+    resources: ["leases"]
+    verbs: ["create"]
+  - apiGroups: ["coordination.k8s.io"]
+    resourceNames: ["cluster-autoscaler"]
+    resources: ["leases"]
+    verbs: ["get", "update"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: cluster-autoscaler
+  namespace: kube-system
+  labels:
+    k8s-addon: cluster-autoscaler.addons.k8s.io
+    k8s-app: cluster-autoscaler
+rules:
+  - apiGroups: [""]
+    resources: ["configmaps"]
+    verbs: ["create", "list", "watch"]
+  - apiGroups: [""]
+    resources: ["configmaps"]
+    resourceNames: ["cluster-autoscaler-status", "cluster-autoscaler-priority-expander"]
+    verbs: ["delete", "get", "update", "watch"]
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: cluster-autoscaler
+  labels:
+    k8s-addon: cluster-autoscaler.addons.k8s.io
+    k8s-app: cluster-autoscaler
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-autoscaler
+subjects:
+  - kind: ServiceAccount
+    name: cluster-autoscaler
+    namespace: kube-system
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: cluster-autoscaler
+  namespace: kube-system
+  labels:
+    k8s-addon: cluster-autoscaler.addons.k8s.io
+    k8s-app: cluster-autoscaler
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: cluster-autoscaler
+subjects:
+  - kind: ServiceAccount
+    name: cluster-autoscaler
+    namespace: kube-system
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cluster-autoscaler
+  namespace: kube-system
+  labels:
+    app: cluster-autoscaler
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cluster-autoscaler
+  template:
+    metadata:
+      labels:
+        app: cluster-autoscaler
+      annotations:
+        prometheus.io/scrape: 'true'
+        prometheus.io/port: '8085'
+    spec:
+      priorityClassName: system-cluster-critical
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 65534
+        fsGroup: 65534
+        seccompProfile:
+          type: RuntimeDefault
+      serviceAccountName: cluster-autoscaler
+      containers:
+        - image: registry.k8s.io/autoscaling/cluster-autoscaler:v1.26.2
+          name: cluster-autoscaler
+          resources:
+            limits:
+              cpu: 100m
+              memory: 600Mi
+            requests:
+              cpu: 100m
+              memory: 600Mi
+          command:
+            - ./cluster-autoscaler
+            - --v=4
+            - --stderrthreshold=info
+            - --cloud-provider=aws
+            - --skip-nodes-with-local-storage=false
+            # `least-waste` will expand the ASG that will waste the least amount of CPU/MEM resources
+            # Doc: https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler/cloudprovider/aws#common-notes-and-gotchas
+            - --expander=least-waste
+            # Note: Change <YOUR CLUSTER NAME> by your cluster name
+            - --node-group-auto-discovery=asg:tag=k8s.io/cluster-autoscaler/enabled,k8s.io/cluster-autoscaler/<YOUR CLUSTER NAME>
+          volumeMounts:
+            - name: ssl-certs
+              mountPath: /etc/ssl/certs/ca-certificates.crt # /etc/ssl/certs/ca-bundle.crt for Amazon Linux Worker Nodes
+              readOnly: true
+          imagePullPolicy: "Always"
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop:
+                - ALL
+            readOnlyRootFilesystem: true
+      volumes:
+        - name: ssl-certs
+          hostPath:
+            path: "/etc/ssl/certs/ca-bundle.crt"
+```
+
+If you replace the cluster name by your cluster name, you can apply this manifest with command
+
+```bash
+kubectl apply -f cluster-autoscaler-autodiscover.yaml
+```
+
+Waiting few second and check your deployment inside `kube-system` namespace with command
+
+```bash
+kubectl get deployments -n kube-system cluster-autoscaler
+```
+
+You can set more annotation and option into `cluster-autoscaler`, explore and read more at [Cluster Autoscaler on AWS](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/cloudprovider/aws/README.md)
 # Conclusion
 
 ![[byebye.png|center|500]]

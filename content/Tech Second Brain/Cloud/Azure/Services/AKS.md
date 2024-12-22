@@ -10,7 +10,7 @@ tags:
 
 ![[Pasted image 20240403155239.png]]
 
-*Documentation: [Doc](https://learn.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#resource-reservations)*
+Documentation: [🔗Click to the link](https://learn.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#resource-reservations)
 
 >[!info]
 >AKS uses node resources to help the node function as part of your cluster. This usage can create a discrepancy between your node's total resources and the allocatable resources in AKS. Remember this information when setting requests and limits for user deployed pods.
@@ -130,7 +130,7 @@ spec:
 
 ## Pods
 
-*Documentation: [doc](https://learn.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#pods)*
+Documentation: [🔗Click to the link](https://learn.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#pods)
 
 >[!info]
 >Kubernetes uses pods to **run** an instance of **your application**. A pod **represents** a **single instance** of your **application**.
@@ -166,7 +166,7 @@ kubectl get -n default deployments <your-deployment> -o wide
 
 ![[Pasted image 20240404153412.png]]
 
-*Documentation: [doc](https://learn.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#deployments-and-yaml-manifests)*
+Documentation: [🔗Click to the link](https://learn.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#deployments-and-yaml-manifests)
 
 >[!info]
 >A deployment represents identical pods managed by the Kubernetes Deployment Controller. A deployment defines the number of pod replicas to create. The Kubernetes Scheduler ensures that additional pods are scheduled on healthy nodes if pods or nodes encounter problems.
@@ -210,7 +210,7 @@ spec:
 
 ## StatefulSets and DaemonSets
 
-*Documentation: [doc](https://learn.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#statefulsets-and-daemonsets)*
+Documentation: [🔗Click to the link](https://learn.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#statefulsets-and-daemonsets)
 
 >[!info]
 >Using the Kubernetes Scheduler, the Deployment Controller runs replicas on any available node with available resources. While this approach may be sufficient for stateless applications, the Deployment Controller isn't ideal for applications that require:
@@ -224,7 +224,7 @@ spec:
 
 ### StatefulSets
 
-*Documentation: [doc](https://learn.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#statefulsets)*
+Documentation: [🔗Click to the link](https://learn.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#statefulsets)
 
 ![[Pasted image 20240404155713.png]]
 
@@ -253,8 +253,8 @@ spec:
 >Like StatefulSets, a DaemonSet is defined as part of a YAML definition using `kind: DaemonSet.`
 ## CronJob & Jobs
 
-*Documentation: [doc](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/)*
-## Definition
+Documentation: [🔗Click to the link](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/)
+### Definition
 
 ![[Pasted image 20240404162837.png]]
 
@@ -332,18 +332,16 @@ resource "azurerm_kubernetes_cluster" "this" {
 }
 ```
 
-*Related articles:*
+Related articles
 
 - [Container Storage Interface (CSI) drivers on Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/csi-storage-drivers)
 - [Kubernetes - Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/)
 - [Kubernetes - Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)
-
-
 # Networking
 
 ![[Pasted image 20240405104406.png]]
 
-**Documentation**
+Documentation
 
 - [Kubernetes concept - Cluster Networking](https://kubernetes.io/docs/concepts/cluster-administration/networking/)
 - [Kubernetes concept - Services, Load Balancing, and Networking](https://kubernetes.io/docs/concepts/services-networking/)
@@ -372,3 +370,69 @@ More information about networking in AKS
 | Feature comparison      | • Recommended for clusters with fewer than 10 nodes, but can support up to 1,000 nodes  <br>• Includes all current AKS features | • Uptime SLA is enabled by default  <br>• Greater cluster reliability and resources  <br>• Can support up to 5,000 nodes in a cluster  <br>• Includes all current AKS features | • Includes all current AKS features from standard tier  <br>• [Microsoft maintenance past community support](https://learn.microsoft.com/en-us/azure/aks/long-term-support)                                                               |
 
 ![[Pasted image 20240405112238.png]]
+## Auto Scaling
+
+For purpose stably infrastructure, AKS can be able to apply
+
+- Apply scale with kind `cluster autoscaler` in Azure Kubernetes Service (AKS). Find more, [Use the cluster autoscaler in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/cluster-autoscaler?tabs=azure-cli)
+- Set another scaling range for your node through couple ways
+
+We can apply that via command
+
+```bash title="Use command"
+az aks update --resource-group myResourceGroup --name myAKSCluster --enable-cluster-autoscaler --min-count 1 --max-count 3
+```
+
+You can also use Azure portal with choose on `Nodes pool` --> Select node pool want update --> choose `Scale Node Pool`
+
+![[Pasted image 20241221204808.png]]
+## Security Patch for OS
+
+For purpose prevent vulnerable, attack for AKS, Security Patch is suggested by Azure. Therefore, All environment is applying this one via command
+
+1. Check the `nodeOsUpgradeChannel` by command `az aks show --resource-group <rg-name> --name <aks-name>  --query autoUpgradeProfile`
+
+	![[Pasted image 20240405113904.png]]
+	It contains two optional: `nodeOsUpgradeChannel` (Have purpose to update the security and bugfixes for Node Container Image) and `upgradeChannel` (Have purpose to update the aks cluster - that not recommendation)
+
+2. If null in first option, go through enable feature flag and add the configuration for this stuff. More detail in this link https://learn.microsoft.com/en-us/azure/aks/auto-upgrade-node-image#register-the-nodeosupgradechannelpreview-feature-flag:~:text=Register%20the%20NodeOsUpgradeChannelPreviewAfter run the command `az feature register --namespace "Microsoft.ContainerService" --name "NodeOsUpgradeChannelPreview"`
+
+	![[Pasted image 20240405113951.png]]
+	The feature flag is registering. And after that run the command for confirm the feature `az provider register --namespace Microsoft.ContainerService`
+
+3. After that use this command to create security patch it will create VHD but the cost is footling `az aks update --resource-group <rg-name> --name <aks-name> --node-os-upgrade-channel SecurityPatch` . So for checking go step 1 to print the result of applies.
+
+	![[Pasted image 20240405114036.png]]
+
+4. All thing is done in this lastly, because the update can make the maintance system so it will do on the weekend every 2 week on 11pm saturday. The command for doing that kind is `az aks maintenanceconfiguration add -g <rg-name> --cluster-name <aks-name> --name aksManagedNodeOSUpgradeSchedule --interval-weeks 2 --day-of-week Saturday --start-time 16:00 --duration 6 --schedule-type Weekly`. For more detail go this link https://learn.microsoft.com/en-us/azure/aks/planned-maintenance
+   ![[Pasted image 20240405114220.png]]
+   That all step to setup mechanism for OS security update. The affect can show on activity log on K8s - Check it for more detail progress update.
+## Versioning of AKS
+
+>[!warning]
+>If you want to updating version, you can use multiple way from `Azure Portal, Command` but for general, please use **Infrastructure as Code** for upgrading version. More about will relate at [[What is Terraform#Example Update the version AKS with Terraform|Update the version AKS with Terraform]]
+
+>[!danger]
+>1. Please **consider when update the big version**, some **features can deprecate or remove**. If you want update, please take your time to understanding what happen on next version.
+>2. On Azure, you **can't leap upgrade over two version**, for example from 1.27.x to 1.29.x. You **must perform all upgrades sequentially** by major version number
+
+Related articles
+
+- [Upgrade an Azure Kubernetes Service (AKS) cluster](https://learn.microsoft.com/en-us/azure/aks/upgrade-aks-cluster?tabs=azure-cli)
+- [Upgrade options for Azure Kubernetes Service (AKS) clusters](https://learn.microsoft.com/en-us/azure/aks/upgrade-cluster)
+- [Azure Kubernetes Service patch and upgrade guidance](https://learn.microsoft.com/en-us/azure/architecture/operator-guides/aks/aks-upgrade-practices)
+- [Supported Kubernetes versions in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/supported-kubernetes-versions?tabs=azure-cli#kubernetes-versions)
+# Conclusion
+
+>[!done]
+>On this session, we discover AKS and Kubernetes technologies like
+>
+>- Tool for manage Kubernetes Cluster
+>- Resource reservation in AKS
+>- Node and Node Selector
+>- Workload and schedule for each type
+>- Networking, Storage of AKS
+>- AKS price and configuration
+
+>[!quote]
+>Kubernetes is **huge technologies stack**, It is **not a finished project** but **in development date by date**. Feel free, research and work more with this one for improving your knowledge

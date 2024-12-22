@@ -6,11 +6,13 @@ tags:
   - helpful
   - whatis
 ---
+>[!quote]
+>Hi @all, as you can see Kubernetes is becoming the potential technology in the world in couple recently year. The knowledge about Kubernetes honestly to say It's really huge, so today we can learn a bit about once of tools to maintain and deploy the workload inside Kubernetes Cluster, Helm. Let's digest
 # Installation
 
-![[Pasted image 20240404100820.png]]
+![[Helm.png]]
 
-*Official Homepage: https://helm.sh/*
+Official Homepage: [🔗Click to the link](https://helm.sh/)
 
 >[!info]
 ><h2>What is Helm ? </h2>
@@ -65,7 +67,7 @@ mychart
 
 # Priority of Value in Helm
 
-![[Pasted image 20240404140117.png]]
+![[Helm Vars Priority.png]]
 
 >[!important]
 >To override values in a chart
@@ -87,7 +89,7 @@ mychart
 
 `Helm` will submit the role for both of CI and CD progress*
 
-![[Pasted image 20240404143727.png]]
+![[Helm workflow.png]]
 ## CI (Continuous Integration)
 
 <h2>helm dependency</h2>
@@ -107,7 +109,7 @@ Just use `update` optional for *update charts/ based on the contents of Chart.ya
 
 Example:
 
-*Documentation: [The ==Chart.yaml== File](https://helm.sh/docs/topics/charts/#the-chartyaml-file)*
+*Documentation: [The Chart.yaml File](https://helm.sh/docs/topics/charts/#the-chartyaml-file)*
 
 ```yaml title="./deploy/xxxxx/xxxx/Chart.yaml"
 apiVersion: v2
@@ -146,7 +148,8 @@ If you can see with `Chart.yaml`, you could understand what meaning of Chart wit
 - `name`: The name of the chart **(required)** - *This one will be effect to your kubernetes service, if name `xxxx`, for example your deployment name will be `xxxx`*
 - `dependencies`: A list of the chart requirements **(optional)** - *Take the `common` with `pre-define` for mapping change `deployments and YAML manifests` for application.*
 
-*NOTICE: Application will use file with relative path, make sure `../../library/common/` exist*
+>[!note]
+>NOTICE: Application will use file with relative path, make sure `../../library/common/` exist
 
 On CI progress, pipeline will trigger the action
 
@@ -162,7 +165,7 @@ helm dependency update ../xxxxx/charts/xxxx/
 
 ## CD (Continuous Delivery)
 
-<h2>helm update </h2>
+<h2>helm upgrade</h2>
 
 *Documentation: [doc](https://helm.sh/docs/helm/helm_upgrade/)*
 
@@ -214,10 +217,15 @@ helm search hub
 
 To install helm chart from self-define or community from [ArtifactHub](https://artifacthub.io/)
 
-```
+```bash
 helm install <name-release> <chart-url>
 ```
 
+If you wanna specific version, you can add additional option flag `--version`
+
+```bash
+helm install <name-release> --version <version> <chart-url>
+```
 <h2>helm list</h2>
 To list releases on namespace
 

@@ -46,7 +46,6 @@ tags:
 >This session which talk about my growth up from zero to hero in DevOps career path when I took a position from intern to official in company. About tutorial and some technologies which need to learn and control to become DevOps
 
 **Timeline: 2023**
-
 ## 2023
 
 - [DevOps Training Session 1: The flag view with DevOps](https://hackmd.io/@XeusNguyen/S1dEBPpOj)
@@ -62,8 +61,7 @@ tags:
 - [DevOps Training Session 12: Cloud - Packer](https://hackmd.io/@XeusNguyen/BJtEoB_Ci)
 - [DevOps Training Session 13: Cloud - K8s Overview](https://hackmd.io/@XeusNguyen/BknPsrdAs)
 - [DevOps Training Session 14+15: Cloud - K8s Networking, Configuration, Security && Storage](https://hackmd.io/@XeusNguyen/BknkTr_Rj)
-- [Devops Training Session 16: Setup Grafana and Prometheus (ONM Tools)](https://hackmd.io/@XeusNguyen/rJk0lunAj)
-
+- [Devops Training Session 16: Setup Observability for Kubernetes](https://hackmd.io/@XeusNguyen/rJk0lunAj)
 # CTF (Capture the Flag) and write up
 
 >[!info]
@@ -119,7 +117,6 @@ tags:
 
 - [NGINX vs Apache ? How does it work? Why is NGINX compared to Apache –> How is it stronger and weaker?](https://hackmd.io/@XeusNguyen/rkp5AL5Fo)
 - [Different btw CMD vs Entrypoint vs RUN in Docker](https://hackmd.io/@XeusNguyen/HJKlF7-qs)
-
 ## 2024
 
 - [[Backup and Restore Methodology|Backup and Restore methodology for PostgreSQL]]
@@ -127,7 +124,7 @@ tags:
 - [[What is Helm|What is Helm?]]
 - [[What is Milvus|What is Milvus?]]
 - [[Increase Quota and Limit of Cloud Services]]
-
+- [[What is Terraform|What is Terraform?]]
 # DIY + 41st Time (Do it yourself)
 
 >[!info]
@@ -173,6 +170,47 @@ tags:
 - [[First EKS Cluster with Milvus DB]]
 - [[Integration automation test with GitLab CI]]
 - [[Digging into AWS Monitoring Stack]]
+- [[Work with EKS and How to monitoring your Cluster]]
+# Azure Clouds Services
+
+>[!info]
+>Couple blogs and note is taken note when dive inside this cloud, learn and practice with these services. Azure is great thing and cool cloud that really impressive anyway.
+
+**Timeline: 2024 - Current**
+## 2024
+
+- [[AKS|Azure AKS]]: Managed Kubernetes Service
+- [[App Service|Azure App Service]]: A set of compute resources for a web application to run
+- [[Application Gateway|Azure Application Gateway]]: A load balancer for web traffic
+- [[Azure Pipeline|Azure pipeline and Azure DevOps]]: A automatically builds and tests code projects 
+- [[Backup|Azure Backup]]: The Azure-based service you can use to back up (or protect) and restore your data in the Microsoft cloud
+- [[Cloud Shell|Azure Cloud Shell]]: Azure Command Line is designed for further use in Azure Portals instead of your machine
+- [[Container Apps|Azure Container Apps]]: A `serverless` platform that allows you to maintain less infrastructure and save costs while running containerized applications
+- [[Container Instances|Azure Container Instances]]: The simplest way to run a container in Azure, without having to manage any virtual machines
+- [[DNS|Azure DNS]]: Enables you to host your DNS domains in Azure and access name resolution for your domains by using Microsoft Azure infrastructure
+- [[Entra ID|Azure Entra]]: A cloud-based identity and access management service that enables your employees access external resources
+- [[Load Balancer|Azure Load Balancer]]: Delivering high availability and network performance to your applications
+- [[Monitor|Azure Monitor]]: A comprehensive solution that collects, analyzes, and responds to telemetry data from both on-premises and cloud environments
+- [[Network watcher|Azure Network Watcher]]: Providing tools to monitor, diagnose, view metrics, and enable or disable logs for resources in an Azure virtual network
+- [[Policy|Azure Policy]]: A service in Azure that enables you to create, assign, and manage policies to control or audit your resources
+- [[RBAC|Azure RBAC]]: A mechanism that can help you manage who can access your Azure resources
+- [[Site Recovery|Azure Site Recovery]]: A service that helps ensure business continuity by replicating workloads from a primary site to a secondary location
+- [[Storage|Azure Storage]]: Microsoft's cloud storage solution for modern data storage scenarios
+- [[Subscription|Azure Subscription]]: Helping you organize access to Azure cloud service resources, and help you control how resource usage is reported, billed, and paid.
+- [[Users and Groups|Azure Users and Groups]]: Account identity, Users and Groups in Azure Cloud
+- [[Virtual Machine|Azure Virtual Machine]]:  The basis of the Azure infrastructure as a service (IaaS) model
+- [[Virtual Machine Availability|Azure Machine Availability]]: Methodology to enhance the availability for Azure Machine
+- [[Virtual network|Azure Virtual Network]]: An essential component for creating private networks in Azure
+# Certificates
+
+>[!info]
+>Talk about the journey to learn and practice to get the certificate in multiple category
+
+**Timeline: 2024 - Current**
+
+## 2024
+
+- [[AZ104|Azure AZ104]]
 # CI/CD + OS Profile Gallery
 
 >[!info]
@@ -187,17 +225,13 @@ tags:
 - [[BitBucket|BitBucket Pipelines]]
 - [[Linux profile]]
 - [[Windows profile]]
-
-# Helpful Collections + Snippets
+# Helpful Collections
 
 >[!info]
 >More about my collection which talk about multiple topics, and technologies in multiple field like AI, ML, DevOps, Security and moreover, with a little bit snippet which most of useful tool that I have tried 👍👍👍
 
 **Timeline: 2024 - Current**
-
 ## 2024
-
-### Collections
 
 - [[Tech Second Brain/Operation System/Helpful Pages & Articles|Operation System both of Linux and Windows]]
 - [[Tech Second Brain/Container Services/Helpful Pages & Articles|Docker and Kubernetes]]
@@ -207,8 +241,14 @@ tags:
 - [[Tech Second Brain/AI & ML & Data/Helpful Pages & Articles|Artificial intelligence, Machine Learning and Data Science]]
 - [[DevOps & System & Tech|DevOps, Systems and Technologies]]
 - [[Utilities Site|Softwares and Tools Helpful Pages]]
+# DIY Cheatsheet and Troubleshoot
 
-### DIY Cheatsheet and Troubleshoot
+>[!info]
+>Collections about Cheatsheet and Troubleshoot in multiple category. Digest and find more information to learn about how to use this tool, clouds and moreover.
+
+**Timeline: 2024 - Current**
+
+## 2024
 
 - [[Tech Second Brain/Cloud/Azure/Cheatsheet and Troubleshoot|Azure Cloud]]
 - [[Tech Second Brain/Cloud/AWS/Cheatsheet and Troubleshoot|AWS Cloud]]

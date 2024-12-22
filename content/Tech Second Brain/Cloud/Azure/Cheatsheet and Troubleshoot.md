@@ -191,26 +191,3 @@ sudo chown -R <user>:<group> /my-drive-locate
 ```
 
 And now you can use it like usual disk
-# Azure Kubernetes Service
-## Security patch for OS (AKS)
-
-For purpose prevent vulnerable, attack for AKS, Security Patch is suggested by Azure. Therefore, All environment is applying this one via command
-
-1. Check the `nodeOsUpgradeChannel` by command `az aks show --resource-group <rg-name> --name <aks-name>  --query autoUpgradeProfile`
-
-	![[Pasted image 20240405113904.png]]
-
-	It contains two optional: `nodeOsUpgradeChannel` (Have purpose to update the security and bugfixes for Node Container Image) and `upgradeChannel` (Have purpose to update the aks cluster - that not recommendation)
-
-2. If null in first option, go through enable feature flag and add the configuration for this stuff. More detail in this link https://learn.microsoft.com/en-us/azure/aks/auto-upgrade-node-image#register-the-nodeosupgradechannelpreview-feature-flag:~:text=Register%20the%20NodeOsUpgradeChannelPreviewAfter run the command `az feature register --namespace "Microsoft.ContainerService" --name "NodeOsUpgradeChannelPreview"`
-
-	![[Pasted image 20240405113951.png]]
-	The feature flag is registering. And after that run the command for confirm the feature `az provider register --namespace Microsoft.ContainerService`
-
-3. After that use this command to create security patch it will create VHD but the cost is footling `az aks update --resource-group <rg-name> --name <aks-name> --node-os-upgrade-channel SecurityPatch` . So for checking go step 1 to print the result of applies.
-
-	![[Pasted image 20240405114036.png]]
-
-4. All thing is done in this lastly, because the update can make the maintance system so it will do on the weekend every 2 week on 11pm saturday. The command for doing that kind is `az aks maintenanceconfiguration add -g <rg-name> --cluster-name <aks-name> --name aksManagedNodeOSUpgradeSchedule --interval-weeks 2 --day-of-week Saturday --start-time 16:00 --duration 6 --schedule-type Weekly`. For more detail go this link https://learn.microsoft.com/en-us/azure/aks/planned-maintenance
-   ![[Pasted image 20240405114220.png]]
-   That all step to setup mechanism for OS security update. The affect can show on activity log on K8s - Check it for more detail progress update.

@@ -25,8 +25,9 @@ You can figure what you need to do for start with `aws` via some website and art
 - [AWS CLI - Configure the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
 - [AWS Create Account Guide](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html)
 - [AWS Price Calculator](https://calculator.aws/#/)
-- [AWS Architecture Blog](https://aws.amazon.com/vi/blogs/architecture/)
+- [AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/)
 - [AWS Whitepapers & Guides](https://aws.amazon.com/whitepapers/)
+- [AWS Prescriptive Guidance](https://aws.amazon.com/prescriptive-guidance/)
 - [AWS Solutions Library](https://aws.amazon.com/solutions/ "AWS Solutions Library Homepage")
 - [AWS Decision Guides](https://aws.amazon.com/getting-started/decision-guides/)
 - [AWS Blog](https://aws.amazon.com/blogs)
@@ -77,11 +78,15 @@ So enjoy what you need, inside the article will share about how you CLI, cheatsh
 - [AWS Blogs - Monitoring metrics and setting up alarms on your Amazon DocumentDB (with MongoDB compatibility) clusters](https://aws.amazon.com/blogs/database/monitoring-metrics-and-setting-up-alarms-on-your-amazon-documentdb-with-mongodb-compatibility-clusters/)
 - [Medium - Full-stack Observability and Monitoring on AWS](https://kevinkiruri.medium.com/observability-and-monitoring-on-aws-42628f13b569)
 - [AWS Blogs - Viewing Amazon CloudWatch metrics with Amazon Managed Service for Prometheus and Amazon Managed Grafana](https://aws.amazon.com/blogs/mt/viewing-amazon-cloudwatch-metrics-with-amazon-managed-service-for-prometheus-and-amazon-managed-grafana/)
+- [AWS Docs - Profiling Amazon DocumentDB operations](https://docs.aws.amazon.com/documentdb/latest/developerguide/profiling.html)
+- [Linkedin - ISO 27001 Compliance in AWS](https://www.linkedin.com/pulse/iso-27001-compliance-aws-valentin-komarovskiy-mba-ketke)
+- [AWS Docs - Configuring and managing a Multi-AZ deployment for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)
+- [AWS Blogs - Proactive autoscaling of Kubernetes workloads with KEDA using metrics ingested into Amazon Managed Service for Prometheus](https://aws.amazon.com/blogs/mt/proactive-autoscaling-kubernetes-workloads-keda-metrics-ingested-into-aws-amp/)
+- [AWS Blogs - A deep dive into simplified Amazon EKS access management controls](https://aws.amazon.com/vi/blogs/containers/a-deep-dive-into-simplified-amazon-eks-access-management-controls/)
 ## Issues
 
 - [AWS re:Post - Getting an Access Denied error message when I upload files to my Amazon S3 bucket](https://repost.aws/knowledge-center/s3-access-denied-error-kms)
 - [AWS - Troubleshoot access denied (403 Forbidden) errors in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/troubleshoot-403-errors.html#access-denied-message-examples)
-
 ## Plugins
 
 - [Serverless Better Credentials](https://www.serverless.com/plugins/serverless-better-credentials#serverless-better-credentials): Plugin replaces the existing AWS credential resolution mechanism, support SSO (Single Sign On)

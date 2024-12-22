@@ -1,5 +1,5 @@
 ---
-title: "Container Services: Tips and Helpful Articles"
+title: The tips and helpful articles collections about Container Services
 tags:
   - k8s
   - research
@@ -157,6 +157,7 @@ tags:
 - [Spot - 8 Kubernetes Deployment Strategies: Roll Out Like the Pros](https://spot.io/resources/kubernetes-autoscaling/5-kubernetes-deployment-strategies-roll-out-like-the-pros/)
 - [Medium - GitOps: How to Manage Dynamic Network Policy Changes at Scale Across 25 Clusters?](https://itnext.io/gitops-how-to-manage-dynamic-network-policy-changes-at-scale-across-25-clusters-0727ce1145e5)
 - [AWS EKS Workshop - Configure Cluster Autoscaler (CA)](https://archive.eksworkshop.com/beginner/080_scaling/deploy_ca/#deploy-the-cluster-autoscaler-ca)
+- [GitHub - Cluster Autoscaler on AWS](https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler/cloudprovider/aws)
 - [Medium - Mastering Horizontal Pod Autoscaling (HPA) in Amazon EKS Using Helm, Terraform, and ArgoCD: A Complete Guide with CI/CD](https://ramchandra-vadranam.medium.com/mastering-horizontal-pod-autoscaling-hpa-in-amazon-eks-using-helm-terraform-and-argocd-a-2b551720f1ad)
 - [AWS - Learn how EKS Pod Identity grants pods access to AWS services](https://docs.aws.amazon.com/eks/latest/userguide/pod-identities.html)
 - [AWS - IAM roles for service accounts](https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html)
@@ -268,7 +269,6 @@ tags:
 - [OPA Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/) : A customizable cloud native policy controller that helps enforce policies and strengthen governance
 - [Kyverno](https://kyverno.io/) : Kubernetes Native Policy Management
 - [Datree](https://hub.datree.io/) : Datree secures your Kubernetes by blocking the deployment of misconfigured resources.
-
 ## Kubernetes Threat Intelligence
 
 - [Falco](https://falco.org/): Detect security threats in real time
@@ -318,7 +318,8 @@ tags:
 
 - [argo-cd](https://argo-cd.readthedocs.io/en/stable/) :  A declarative, GitOps continuous delivery tool for Kubernetes.
 - [fluxcd](https://fluxcd.io/flux/) : Tool for keeping Kubernetes clusters in sync with sources of configuration (like Git repositories), and automating updates to configuration when there is new code to deploy.
-- [werf](https://github.com/werf/werf): A solution for implementing efficient and consistent software delivery to Kubernetes facilitating best practices, with [nelm](https://github.com/werf/nelm) - a Helm 3 alternative and werf deployment engine
+- [werf](https://github.com/werf/werf): A solution for implementing efficient and consistent software delivery to Kubernetes facilitating best practices.
+- [nelm](https://github.com/werf/nelm): Nelm is a Helm 3 alternative and werf deployment engine
 - [helm](https://helm.sh/): The package manager for Kubernetes
 - [harness](https://github.com/harness/harness): Harness Open Source is an end-to-end developer platform with Source Control Management, CI/CD Pipelines, Hosted Developer Environments, and Artifact Registries.
 - [keel](https://github.com/keel-hq/keel): Kubernetes Operator to automate Helm, DaemonSet, StatefulSet & Deployment updates
@@ -340,3 +341,7 @@ tags:
 ## Kubernetes Resources Orchestrator
 
 - [kro](https://github.com/awslabs/kro): Kube Resource Orchestrator. [Documentation](https://kro.run/docs/overview)
+
+## Kubernetes DNS and SSL
+
+- [kcert](https://github.com/nabsul/kcert): A Simple Let's Encrypt Manager for Kubernetes
