@@ -13,7 +13,6 @@ You can explore command with `kubectl` in some place, including
 
 - [kubectl Quick Reference](https://kubernetes.io/docs/reference/kubectl/quick-reference/)
 - [kubectl reference](https://kubernetes.io/docs/reference/kubectl/generated/)
-
 # Get base64 decode of secret with no more 3th party
 
 ```bash

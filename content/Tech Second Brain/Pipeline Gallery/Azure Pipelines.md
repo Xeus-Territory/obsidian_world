@@ -377,7 +377,87 @@ When trigger, your pipeline will set `PR automated for` instead of `Individual C
 >[!warning]
 >When you use `succeeded()` expression, remember import name branch you need to check on on the single quote bracket like `succeeded('build')`, it mean this task will read-only the status state of `build` stage, if not it will read all values of **stage** or **job** in pipeline, and make a decision
 
-# Setup agent
+# Retrieve the artifact cross pipelines
+
+>[!summary]
+>When you wanna apply the methodology to retrieve the artifact cross pipelines in same project, It will help you doing multiple things kinda like **up-down pipeline**, depend on, more
+>
+>Plugins:
+>1. [PublishBuildArtifacts@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1?view=azure-pipelines)
+>2. [DownloadPipelineArtifact@2](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/download-pipeline-artifact-v2?view=azure-pipelines)
+
+You can use `publish` plugin to upload your file into artifact of Azure Pipeline
+
+```yaml title="artifact-hub/azure-pipelines.yml"
+pool:
+  vmImage: 'ubuntu-latest'
+ 
+stages:
+  - stage: build_publish_artifacts
+    displayName: Build and publish
+    jobs:
+      - job: publish_artifacts
+        displayName: publish artifacts
+        steps:
+	      # Write text into the file
+          - script: |
+              echo "artifact-123" > artifact.txt
+            displayName: Publish artifact
+
+		  # Upload that file into artifact in azure pipelines
+          - task: PublishBuildArtifacts@1
+            inputs:
+              ArtifactName: public
+              PathtoPublish: "artifact.txt"
+```
+
+After that in other repository inside project, you can easily retrieve that artifact from your pipeline
+
+```yaml title="retrieve-artifact/azure-pipelines.yml"
+pool:
+  vmImage: "ubuntu-latest"
+
+stages:
+  - stage: download_publish_artifacts
+    displayName: download artifact
+    jobs:
+      - job: download_artifact
+        displayName: download artifacts
+        steps:
+	      # Download artifact from another repo inside same project
+          - task: DownloadPipelineArtifact@2
+            inputs:
+              # Set build type
+              buildType: "specific"
+              # Project name
+              project: "artifact-hub"
+              # Pipeline id where run publish
+              definition: "3"
+              # Download from main artifact
+              buildVersionToDownload: "latest"
+              # Specific artifact name published
+              artifactName: "public"
+              # Output Path
+              targetPath: "$(Pipeline.Workspace)"
+
+		  # Get the content inside the artifact
+          - script: |
+              cat $(Pipeline.Workspace)/artifact.txt
+            displayName: Display artifact.txt
+```
+
+![[Pasted image 20241224101518.png]]
+
+>[!info]
+>This implement already work with multiple repositories inside one project. If you wanna apply with cross project, you should be considered before applying
+
+Related articles and implementation, Explore more at
+
+- [Azure - Publish and download pipeline artifacts](https://learn.microsoft.com/en-us/azure/devops/pipelines/artifacts/pipeline-artifacts?view=azure-devops&tabs=yaml)
+- [Azure - Publish and download build artifacts](https://learn.microsoft.com/en-us/azure/devops/pipelines/artifacts/build-artifacts?view=azure-devops&tabs=yaml)
+- [Youtube - Azure Pipelines Download Latest Successful Artifact From Another Pipeline Automatically](https://www.youtube.com/watch?v=KrVImq0Rdw8&ab_channel=DataEngineeringWithNick)
+- [StackOverFlow - Azure Artifacts - Sharing project-scoped feeds with other projects](https://stackoverflow.com/questions/64821831/azure-artifacts-sharing-project-scoped-feeds-with-other-projects)
+# Error and Troubleshoot
 
 ## The SSL connection could not be established, and No usable version of libssl was found
 

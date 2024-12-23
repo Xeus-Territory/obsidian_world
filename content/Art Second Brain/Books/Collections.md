@@ -6,22 +6,22 @@ tags:
   - entertainment
   - art
 ---
-![[Pasted image 20240729233732.png|center]]
 
+![[book-garden.jpeg]]
 # Vietnamese
 
 >[!info]
 >The location is providing information book and free to downloading by Vietnamese Language
 
-- [DTV eBook - Thư Viện Sách Truyện Tiểu Thuyết Văn Học Miễn Phí Tải PRC/PDF/EPUB/AZW3](https://www.dtv-ebook.com/)
+- [DTV eBook](https://www.dtv-ebook.com/):  Thư Viện Sách Truyện Tiểu Thuyết Văn Học Miễn Phí Tải PRC/PDF/EPUB/AZW3
 - [THƯ VIỆN EBOOK (TVE-4U)](http://tve-4u.org/)
 # Foreign
 
 >[!info]
 >The location is providing information book and free to downloading by English Language
 
-- [Goodread](https://www.goodreads.com/)
-- [IT eBooks](https://it-ebooks.info/)
-- [D-PDF - Download Free Books](https://d-pdf.com/)
-- [Kobo.com United States bookstore](https://www.kobo.com/us/en)
-- [Manybooks](https://manybooks.net/)
+- [Goodread](https://www.goodreads.com/): Community for who love read book and stick together
+- [D-PDF](https://d-pdf.com/): Download Free Books
+- [Kobo.com](https://www.kobo.com/us/en):  United States bookstore
+- [Manybooks](https://manybooks.net/): Download Free Books
+- [PDF Drive](http://www.pdfdrive.com):  Search and download PDF files for free.

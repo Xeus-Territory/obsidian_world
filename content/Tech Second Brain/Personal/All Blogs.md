@@ -1,5 +1,5 @@
 ---
-title: Blogs of Myself
+title: All Blogs of Myself
 tags:
   - blog
   - community
@@ -61,6 +61,9 @@ tags:
 - [DevOps Training Session 12: Cloud - Packer](https://hackmd.io/@XeusNguyen/BJtEoB_Ci)
 - [DevOps Training Session 13: Cloud - K8s Overview](https://hackmd.io/@XeusNguyen/BknPsrdAs)
 - [DevOps Training Session 14+15: Cloud - K8s Networking, Configuration, Security && Storage](https://hackmd.io/@XeusNguyen/BknkTr_Rj)
+
+## 2024
+
 - [Devops Training Session 16: Setup Observability for Kubernetes](https://hackmd.io/@XeusNguyen/rJk0lunAj)
 # CTF (Capture the Flag) and write up
 

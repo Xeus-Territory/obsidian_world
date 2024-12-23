@@ -17,6 +17,7 @@ title: Utilities Site for multiple purpose
 - [Emojipedia](https://emojipedia.org/) - Find and get your emoji in unicode
 - [Convertio](https://convertio.co/) - File Converter
 - [En - Savefrom](https://en1.savefrom.net/2ol/) or [Vi - Savefrom](https://vi.savefrom.net/243/) - Free Online Video Downloader
+- [Emoji Code List](https://hackmd.io/@TANNY/Hy8FoOPtD/https%3A%2F%2Fwww.webfx.com%2Ftools%2Femoji-cheat-sheet%2F) - Easily click to copy and paste emojis into any app or social media platform to make your content stand out!
 # Fun Websites
 
 >[!info]

@@ -52,6 +52,14 @@ So enjoy what you need, inside the article will share about how you CLI, cheatsh
 
 - [Github - Amazon Web Services](https://github.com/aws) - AWS Opensource Community
 - [Github - AWS Samples](https://github.com/aws-samples) - AWS Samples Community
+- [Github - AWS Observability](https://github.com/aws-observability) - AWS Observability Setup
+- [Github - AWS Labs](https://github.com/awslabs) - AWS Labs
+## Tools
+
+- [Serverless Better Credentials](https://www.serverless.com/plugins/serverless-better-credentials#serverless-better-credentials): Plugin replaces the existing AWS credential resolution mechanism, support SSO (Single Sign On)
+## Pages
+
+- [Compose-X Labs](https://labs.compose-x.io/#): Aims to show-case Compose-X projects to deploy on AWS ECS
 # Blogs, Articles and Videos
 
 ## Blogs
@@ -83,14 +91,11 @@ So enjoy what you need, inside the article will share about how you CLI, cheatsh
 - [AWS Docs - Configuring and managing a Multi-AZ deployment for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)
 - [AWS Blogs - Proactive autoscaling of Kubernetes workloads with KEDA using metrics ingested into Amazon Managed Service for Prometheus](https://aws.amazon.com/blogs/mt/proactive-autoscaling-kubernetes-workloads-keda-metrics-ingested-into-aws-amp/)
 - [AWS Blogs - A deep dive into simplified Amazon EKS access management controls](https://aws.amazon.com/vi/blogs/containers/a-deep-dive-into-simplified-amazon-eks-access-management-controls/)
+- [AWS Blogs - AWS Multi-Account Security Reference Architecture](https://medium.com/squareops/aws-multi-account-security-reference-architecture-ac3c31f5e1f9)
 ## Issues
 
 - [AWS re:Post - Getting an Access Denied error message when I upload files to my Amazon S3 bucket](https://repost.aws/knowledge-center/s3-access-denied-error-kms)
 - [AWS - Troubleshoot access denied (403 Forbidden) errors in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/troubleshoot-403-errors.html#access-denied-message-examples)
-## Plugins
-
-- [Serverless Better Credentials](https://www.serverless.com/plugins/serverless-better-credentials#serverless-better-credentials): Plugin replaces the existing AWS credential resolution mechanism, support SSO (Single Sign On)
-
 ## Videos
 
 - [Youtube  - Amazon S3 - Static Website Hosting with Custom Domain and TLS](https://www.youtube.com/watch?v=X9cdkqBgLbs&ab_channel=BryanKrausen)

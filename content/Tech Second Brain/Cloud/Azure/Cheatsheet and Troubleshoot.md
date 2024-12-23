@@ -28,7 +28,6 @@ tags:
 	<strong><em><p style="text-align: center;"><a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources">Organize your Azure resources effectively</a></p></em></strong>
 </div>
 
-
 What you can find out and figure out about Azure, Cloud Computing, Documentation, Services and more, Link is down-below 🤝
 
 - [Wikipedia - Microsoft Azure](https://en.wikipedia.org/wiki/Microsoft_Azure)
@@ -64,7 +63,6 @@ What you can find out and figure out about Azure, Cloud Computing, Documentation
 - [Microsoft Azure](https://github.com/Azure) - APIs, SDKs and open source projects from Microsoft Azure
 - [Microsoft Docs](https://github.com/MicrosoftDocs) - The modern documentation service for Microsoft
 - [Azure Samples](https://github.com/Azure-Samples) - Microsoft Azure code samples and examples in .NET, Java, Python, JavaScript, TypeScript, PHP and Ruby
-
 # Blogs, Articles and Videos
 
 ## Articles

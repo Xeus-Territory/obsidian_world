@@ -2,6 +2,7 @@
 title: HomePage 🏡
 tags:
   - myself
+  - xeusnguyen
 ---
 
 <div align="center">
@@ -11,17 +12,17 @@ tags:
 </div>
 
 > [!quote] 
-> *So hi @all, I am Xeus Nguyen and I work on, learn and growth up myself with technologies field. Therefore, I always keep my mindset and make a good and create more new things. Be stay humble and enthusiastic that is shortest way to reaching legacy*
+> *Yo wassup, hi y'all, I am Xeus Nguyen and I work on, learn and growth up myself with technologies field. Therefore, I always keep my mindset and make a good and create more new things. Be stay humble and enthusiastic that is shortest way to reaching legacy*
 > 
 > **Having some experience about** 
 > 1. Capture The Flag
-> 2. Web Pentester
+> 2. Web Penetration Tester 
 > 3. Technologies Researcher
 > 4. Have passion about Forensic
 > 5. Currently, work as DevOps Engineer
 > 6. In love with Quantum Computing.
 >
->*"And in another way, I am currently work as Tech Blogger in [Medium](https://medium.com/@XeusNguyen) and [HackMD](https://hackmd.io/@xeusnguyen), hope so bring more efficiency for community, at least for people who reach to my wiki page, from my bottom of hearth I want to give huge respect"*
+>*"In another way, I am currently work as Tech Blogger in [Medium](https://medium.com/@XeusNguyen) and [HackMD](https://hackmd.io/@xeusnguyen), hope this can bring more efficiently for community, at least for people who reach to my wiki page, from my bottom of heart I want to give huge respect for y'all guys"*
 
 
 ![[Pasted image 20240720145956.png| center | 400]]
