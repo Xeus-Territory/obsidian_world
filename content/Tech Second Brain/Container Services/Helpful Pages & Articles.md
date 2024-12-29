@@ -150,6 +150,7 @@ tags:
 - [Medium - Bringing Amazon EKS Hybrid Nodes to life with Palette](https://medium.com/itnext/bringing-amazon-eks-hybrid-nodes-to-life-with-palette-584734449503)
 - [Medium - 12 Tools that will make Kubernetes management easier in 2024](https://medium.com/faun/12-tools-that-will-make-kubernetes-management-easier-in-2024-b7c349dc0eaa)
 - [Medium - Why AWS EKS Pod Identity is a Better Fit Than IRSA for Your Kubernetes Needs?](https://aws.plainenglish.io/why-aws-eks-pod-identity-is-a-better-fit-than-irsa-for-your-kubernetes-needs-1be05515f970)
+- [Medium - Why Some Companies are Moving Away from Kubernetes for Development Environments in 2025](https://medium.com/@PlanB./why-some-companies-are-moving-away-from-kubernetes-for-development-environments-in-2025-1f44b4fd4f3f)
 ## Tips for configuration
 
 - [Azure - Best practices for basic scheduler features in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/operator-best-practices-scheduler)
@@ -259,7 +260,7 @@ tags:
 - [K0s](https://docs.k0sproject.io/stable/): k0s is an open source, all-inclusive Kubernetes distribution, which is configured with all of the features needed to build a Kubernetes cluster.
 - [Kubernetes Goat](https://madhuakula.com/kubernetes-goat/docs): An interactive Kubernetes security learning playground
 - [cluster-template](https://github.com/onedr0p/cluster-template): A template for deploying a Talos Kubernetes cluster including Flux for GitOps
-## Kubernetes cluster management
+## Kubernetes Cluster Management
 
 - [Meshery](https://docs.meshery.io/): As a self-service engineering platform, Meshery enables collaborative design and operation of cloud and cloud native infrastructure.
 - [kubeshark](https://github.com/kubeshark/kubeshark): The API traffic analyzer for Kubernetes providing real-time K8s
@@ -276,7 +277,7 @@ tags:
 - [openappsec](https://github.com/openappsec/openappsec): A machine learning security engine that preemptively and automatically prevents threats against Web Application & APIs.
 - [teleport](https://github.com/gravitational/teleport): The easiest, and most secure way to access and protect all of your infrastructure.
 - [kubescape](https://github.com/kubescape/kubescape): Kubescape is an open-source Kubernetes security platform for your IDE, CI/CD pipelines, and clusters
-
+- [sysdig](https://github.com/draios/sysdig): Linux system exploration and troubleshooting tool with first class support for containers
 ## Kubernetes API Gateway
 
 - [gateway-api](https://gateway-api.sigs.k8s.io/): Gateway API is an official Kubernetes project focused on L4 and L7 routing in Kubernetes
@@ -327,6 +328,7 @@ tags:
 - [flagger](https://flagger.app/): Progressive Delivery Operator for Kubernetes. Maintained by Flux
 - [argo-rollouts](https://github.com/argoproj/argo-rollouts): Progressive Delivery for Kubernetes. Maintained by Argo
 - [operator-lifecycle-manager](https://github.com/operator-framework/operator-lifecycle-manager): A management framework for extending Kubernetes with Operators
+- [kargo](https://docs.kargo.io/): A next-generation continuous delivery and application lifecycle orchestration platform for Kubernetes
 ## Kubernetes Autoscaling
 
 - [Kubernetes Autoscaler](https://github.com/kubernetes/autoscaler): Autoscaling components for Kubernetes
@@ -345,3 +347,10 @@ tags:
 ## Kubernetes DNS and SSL
 
 - [kcert](https://github.com/nabsul/kcert): A Simple Let's Encrypt Manager for Kubernetes
+
+## Kubernetes Development Environment
+
+- [devspace](https://github.com/devspace-sh/devspace): The Fastest Developer Tool for Kubernetes
+- [tilt](https://github.com/tilt-dev/tilt): Define your dev environment as code. For microservice apps on Kubernetes.
+- [okteto](https://github.com/okteto/okteto): Develop your applications directly in your Kubernetes Cluster
+- [telepresence](https://github.com/telepresenceio/telepresence): Local development against a remote Kubernetes or OpenShift cluster

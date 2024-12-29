@@ -27,6 +27,8 @@ tags:
 - [LF AI & DATA Projects](https://lfaidata.foundation/projects/): Linux Foundation project about Open Source Innovation in Artificial Intelligence and Data
 - [Made With ML](https://madewithml.com/): Learning how to responsibly deliver value with ML!
 - [TensorFlow Hub](https://www.tensorflow.org/hub): A repository of trained machine learning models.
+- [Papers With Code](https://paperswithcode.com/): The latest in Machine Learning
+- [Kaggle](https://www.kaggle.com/):  Your Machine Learning and Data Science Community
 ## Topic
 
 - [Data Engineering](https://github.com/topics/data-engineering): Collection about data-engineer topics
@@ -46,6 +48,7 @@ tags:
 
 - [openvino](https://github.com/openvinotoolkit/openvino): OpenVINO™ is an open-source toolkit for optimizing and deploying AI inference
 - [ray](https://github.com/ray-project/ray): an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads.
+- [pachyderm](https://github.com/pachyderm/pachyderm): Data-Centric Pipelines and Data Versioning
 ## VectorDB
 
 - [Milvus](https://milvus.io/docs): A high-performance, highly scalable vector database that runs efficiently across a wide range of environments, from a laptop to large-scale distributed systems
@@ -66,6 +69,19 @@ tags:
 
 - [ColossalAI](https://github.com/hpcaitech/ColossalAI): Making large AI models cheaper, faster and more accessible
 - [trl](https://github.com/huggingface/trl): Train transformer language models with reinforcement learning. [Hugging Face](https://huggingface.co/docs/trl/index)
+
+## Blogs
+
+- [Medium - Marvelous MLOps](https://medium.com/marvelous-mlops)
+- [DigitalOcean - AI/ML Topics](https://www.digitalocean.com/community/tags/ai-ml): Articles and Community about AI/ML
+- [Neptune.ai - MLOps Learning Hub](https://neptune.ai/mlops-learn-hub): Strategies, tools, practical insights, and example projects on MLOps
+- [Neptune.ai](https://neptune.ai/blog): Learn from AI/ML engineers, researchers, and folks building foundation models: best practices, tool reviews, and real-world examples.
+- [PyImageSearch](https://pyimagesearch.com/blog/): A brand new Computer Vision, Deep Learning, and OpenCV
+- [MarkTechPost](https://www.marktechpost.com/#): ML and AI Tech News
+- [Mì AI - Học AI theo cách mì ăn liền!](https://miai.vn/): Learn about AI in Vietnamese Community
+- [Machine Learning Mastery](https://machinelearningmastery.com/): The best resources to approaching ML
+- [Machine Learning cơ bản](https://machinelearningcoban.com/): Vietnamese Forum and Community about ML
+- [Machine Learning Blog](https://blog.ml.cmu.edu/): ML@CMU | Carnegie Mellon University
 ## Articles
 
 - [Nanonets - Tesseract OCR in Python with Pytesseract & OpenCV](https://nanonets.com/blog/ocr-with-tesseract/)
@@ -73,6 +89,15 @@ tags:
 - [Milvus - Deploy a Milvus Cluster on EKS](https://milvus.io/docs/eks.md)
 - [Medium - Understanding Milvus: Key Concepts and Potential Applications](https://medium.com/n11-tech/understanding-milvus-key-concepts-and-potential-applications-1fe4dedd7412)
 - [CNCF - CNCF Cloud Native AI White Paper](https://tag-runtime.cncf.io/wgs/cnaiwg/whitepapers/cloudnativeai/)
+- [Medium - Why You Shouldn’t Invest In Vector Databases?](https://medium.com/data-engineer-things/why-you-shouldnt-invest-in-vector-databases-c0cd3f59d23c)
+- [Datacamp - The Top 7 Vector Databases in 2025](https://www.datacamp.com/blog/the-top-5-vector-databases)
+## Youtube Channel
+
+![[youtube.png]]
+
+- [NeuralNine](https://www.youtube.com/c/NeuralNine/featured) : Educational brand focusing on programming, machine learning and computer science
+- [sentdex](https://www.youtube.com/c/sentdex/featured) : Funny guy who teach you about build cool stuff with python like AI
+- [MLOps.community](https://www.youtube.com/@MLOps/videos) : The MLOps Community fills the swiftly growing need to share real-world Machine Learning Operations best practices from engineers in the field
 # Data Analysis
 
 ## Awesome Repositories
@@ -84,37 +109,14 @@ tags:
 - [airflow](https://github.com/apache/airflow): A platform to programmatically author, schedule, and monitor workflows
 - [active_workflow](https://github.com/automaticmode/active_workflow): Polyglot workflows without leaving the comfort of your technology stack.
 - [datahub](https://github.com/datahub-project/datahub): The Metadata Platform for your Data Stack
+## Blogs
+
+- [Medium - Data Engineers Things](https://blog.det.life/)
+- [Datacamp](https://www.datacamp.com/blog)
 ## Articles
 
 - [LakeFS - The State of Data Engineering 2024](https://lakefs.io/blog/the-state-of-data-engineering-2024/)
 - [Practicle Data Engineering - Open Source Data Engineering Landscape 2024](https://practicaldataengineering.substack.com/p/open-source-data-engineering-landscape?r=23jwn&utm_campaign=post&utm_medium=web&triedRedirect=true)
 - [Medium - Data Pipeline Development with MinIO, Iceberg, Nessie, Polars, StarRocks, Mage, and Docker](https://blog.det.life/data-pipeline-development-with-minio-iceberg-nessie-polars-starrocks-mage-and-docker-1c7b4b52d5f4)
-## Blogs
-
-- [Medium - Data Engineers Things](https://blog.det.life/)
-# Youtube Channel
-
-![[youtube.png]]
-
-- [NeuralNine](https://www.youtube.com/c/NeuralNine/featured) : Educational brand focusing on programming, machine learning and computer science
-- [sentdex](https://www.youtube.com/c/sentdex/featured) : Funny guy who teach you about build cool stuff with python like AI
-- [MLOps.community](https://www.youtube.com/@MLOps/videos) : The MLOps Community fills the swiftly growing need to share real-world Machine Learning Operations best practices from engineers in the field
-# Community and forum
-
->[!info]
->This is community where learn, share and do more experimental about AI, Machine learning, Deep Learning and Data Science
-
-- [Kaggle](https://www.kaggle.com/):  Your Machine Learning and Data Science Community
-- [Analytics Insight](https://www.analyticsinsight.net/): Artificial Intelligence, Big Data Analytics and Insight
-- [PyImageSearch](https://pyimagesearch.com/): You can master Computer Vision, Deep Learning, and OpenCV
-- [Homepage - MarkTechPost](https://www.marktechpost.com/#): ML and AI Tech News
-- [Mì AI - Học AI theo cách mì ăn liền!](https://miai.vn/): Learn about AI in Vietnamese Community
-- [Machine Learning Mastery](https://machinelearningmastery.com/): The best resources to approaching ML
-- [Machine Learning cơ bản](https://machinelearningcoban.com/): Vietnamese Forum and Community about ML
-- [Papers With Code](https://paperswithcode.com/): The latest in Machine Learning
-- [Machine Learning Blog](https://blog.ml.cmu.edu/): ML@CMU | Carnegie Mellon University
-- [Analytics India Magazine](https://analyticsindiamag.com/): Artificial Intelligence, Data Science, Machine Learning
-- [Neptune.ai](https://neptune.ai/blog): Learn from AI/ML engineers, researchers, and folks building foundation models: best practices, tool reviews, and real-world examples.
-- [Neptune.ai - MLOps Learning Hub](https://neptune.ai/mlops-learn-hub): Strategies, tools, practical insights, and example projects on MLOps
-- [DigitalOcean - AI/ML Topics](https://www.digitalocean.com/community/tags/ai-ml): Articles and Community about AI/ML
-- [Medium - Marvelous MLOps](https://medium.com/marvelous-mlops)
+- [Medium - ETL and ELT](https://blog.det.life/etl-and-elt-965ca3bc0175)
+- [Medium - ELT with Fabric, Azure and Databricks](https://medium.com/@hugolu87/elt-with-fabric-azure-and-databricks-2b49f148428f)

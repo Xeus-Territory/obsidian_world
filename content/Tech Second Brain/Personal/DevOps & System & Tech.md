@@ -49,12 +49,16 @@ tags:
 - [Collection about kind of YAML](https://yaml.org/) : Collection about yaml in wide technologies
 - [free-for-dev](https://github.com/ripienaar/free-for-dev) : A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev. [Web](https://free-for.dev/)
 - [khuedoan's homelab](https://github.com/khuedoan/homelab) : Fully automated homelab from empty disk to running services with a single command - Repo belong A. Khue Doan. [Web Version](https://homelab.khuedoan.com/)
-
+- [awesome-compilers](https://github.com/aalhour/awesome-compilers): Curated list of awesome resources on Compilers, Interpreters and Runtimes
 ## Topic
 
 - [Package manager](https://github.com/topics/package-manager)
 - [Metrics](https://github.com/topics/metrics)
 - [Api Gateway](https://github.com/topics/api-gateway)
+- [Virtual Machine](https://github.com/topics/virtual-machine)
+- [Compiler](https://github.com/topics/compiler)
+- [Interpreter](https://github.com/topics/interpreter)
+- [Logging](https://github.com/topics/logging)
 ## Organization
 
 - [Spotify](https://github.com/spotify): Spotify Github Repositories
@@ -86,6 +90,8 @@ tags:
 - [Leaning Technologies](https://github.com/leaningtech): Enterprise-grade WebAssembly solutions
 - [Gruntwork](https://github.com/gruntwork-io): Organization who makes Terragrunt and couple of things related to entire infrastructure
 - [Authzed](https://github.com/authzed): Creators of SpiceDB, the open source fine-grained permissions database. YC W21.
+- [Fluent](https://github.com/fluent): a cloud native logging solution to unify data collection and consumption.
+- [GoogleChrome](https://github.com/GoogleChrome): GoogleChrome Extension and couple useful things
 ## Landscape
 
 - [Apache Project Directory](https://projects.apache.org/projects.html) : List all of product of Apache
@@ -114,6 +120,7 @@ tags:
 - [Medium - ITNext](https://itnext.io/) - Community in Medium where talk about lots of technological thing
 - [Medium - Mr.PlanB](https://medium.com/@PlanB.) - Write about Kubernetes, Promox, Homelab topics
 - [Medium - Jake Page](https://medium.com/@jake.page91) - Kubernetes Deployment Specialist @ Glasskube
+- [News Ycombinator](https://news.ycombinator.com/news) - Multiple discussion around tech articles in the internet
 ## DevOps Blog
 
 - [DevOps VN](https://devopsvn.tech/) - Vietnamese Community and Blog page about DevOps and Technologies
@@ -166,12 +173,10 @@ tags:
 - [DevOps Toolkit](https://www.youtube.com/@DevOpsToolkit/videos)
 - [Techno Tim](https://www.youtube.com/@TechnoTim/videos)
 - [Travis Media](https://www.youtube.com/@TravisMedia/videos)
-
 # Tech Articles
 
 >[!note]
 >Collections articles about DevOps, System Design and moreover about technologies and opensource 
-
 ## General
 
 - [Vietnix - Vietnamese - Stateless là gì? Sự khác biệt giữa Stateless và Stateful](https://vietnix.vn/stateless-la-gi/)
@@ -205,6 +210,7 @@ tags:
 - [Medium - Why ectd is better than zookeeper and database for HA system](https://medium.com/@lbq999/why-ectd-is-better-than-zookeeper-and-database-for-ha-system-227a45750720)
 - [Medium - Observability 2.0 with AWS OpenTelemetry Collector](https://medium.com/@usingsystem/observability-2-0-with-aws-opentelemetry-collector-7fef0e0e2c1c)
 - [Blog - Obsidian: the Good, the Bad, & the Ugly](https://www.originalmacguy.com/obsidian-the-good-the-bad-the-ugly/)
+- [Medium - Grafana Alloy & OpenTelemetry](https://medium.com/@magstherdev/grafana-alloy-opentelemetry-59c171d2ebfc)
 ## Techniques
 
 - [Internet - How to build and deploy React Native applications with Fastlane](https://tech.sparkfabrik.com/en/blog/fastlane_build/)
@@ -219,6 +225,8 @@ tags:
 - [Medium - Step by Step guide on generating an IOS certificate, preparing for Test Flight, and releasing ios app on the App Store](https://medium.com/readytowork-org/step-by-step-guide-on-generating-an-ios-certificate-preparing-for-test-flight-and-releasing-ios-99cd2eb11067)
 - [Medium - Establishing an Enterprise-Ready DevSecOps CI/CD Pipeline on GitHub Actions on Google Cloud](https://medium.com/@anshumaansingh10jan/building-an-enterprise-ready-devsecops-ci-cd-pipeline-on-github-actions-for-gcp-6746f6a43187)
 - [Medium - GitHub Actions — Versatile and Easy Serverless CI/CD Pipeline](https://itnext.io/github-actions-versatile-and-easy-serverless-pipeline-53d088a7a77b)
+- [Medium - Observability Series: A Step-by-Step Guide to Logs, Traces, and Metrics](https://medium.com/gitconnected/observability-series-a-step-by-step-guide-to-logs-traces-and-metrics-9860d7c46220)
+- [Medium - End-to-End DevSecOps and GitOps Implementation with Jenkins, Docker, SonarQube, Trivy, Terraform, ArgoCD, and Amazon EKS](https://medium.com/@harsh05/end-to-end-devsecops-and-gitops-implementation-with-jenkins-docker-sonarqube-trivy-terraform-3ae842882b75)
 ## System and Cloud Design
 
 - [Azure - Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)
@@ -252,31 +260,27 @@ tags:
 - [OpenAlternative](https://openalternative.co/) - Discover Open Source Alternatives to Popular Software
 - [StackShare](https://stackshare.io/) - See what tech stacks your peers are using
 
-# Research Sheet
+# Tech Research Sheet
 
-## Documentations and Papers
+## Research pages
 
 >[!note]
 >Place where you can find multiple documentation and papers about technologies in multiple topics from DevOps, Tech and AI
 
-- [ScienceDaily: Your source for the latest research news](https://www.sciencedaily.com/)
-- [Google Scholar](https://scholar.google.com/)
-- [Welcome to CaltechTHESIS - CaltechTHESIS](https://thesis.library.caltech.edu/)
-- [Home Feed | ResearchGate](https://www.researchgate.net/)
-- [OpenStax Homepage - OpenStax](https://openstax.org/)
-- [TED: Ideas worth spreading](https://www.ted.com/)
-- [Taylor & Francis Online: Peer-reviewed Journals](https://www.tandfonline.com/)
-- [Home - Springer](https://link.springer.com/?fbclid=IwAR38901fWIP23qQxPkYRKMLi-aWXehjQzM5D4melGrnDzZsBSdG9n4ZxXYc)
-- [+Bioline International Official Site (site up-dated regularly)](http://www.bioline.org.br/?fbclid=IwAR3ajvI-C8-KYvJ8kfywUqRrbG-2cnc6KtZXrylcIlVYHW0dSiL_aiwBPhU)
-- [RePEc: Research Papers in Economics](http://repec.org/?fbclid=IwAR1zQ9SsSmKqsK8OMaY6Tne5RfPDQerbyPkDJoQhOuQaB94ngnQUHkjSkuw)
-- [Science.gov: USA.gov for Science - Government Science Portal](https://www.science.gov/?fbclid=IwAR0i6Wadzk7BashplAgjo2C38eRzTC_dGUnU3nrnXJtJFm8Iwsj6abKb2gg)
-- [PDF Drive - Search and download PDF files for free.](http://www.pdfdrive.com/?fbclid=IwAR0i6Wadzk7BashplAgjo2C38eRzTC_dGUnU3nrnXJtJFm8Iwsj6abKb2gg)
-- [BASE (Bielefeld Academic Search Engine): Basic Search](https://www.base-search.net/?fbclid=IwAR19TFG3lx0rhxyCu-CgFIlDbBP-ROheDKK78MsuUU0bryOy3zHHtzGn41M)
-- [arXiv.org e-Print archive](https://arxiv.org/)
-- [ScienceDirect.com | Science, health and medical journals, full text articles and books.](https://www.sciencedirect.com/)
+- [Springer](https://link.springer.com/): Search for research articles, academic books and more
+- [IT eBooks](https://it-ebooks.info/): Download IT ebooks for free
+- [arXiv.org](https://arxiv.org/): e-Print archive
+- [ResearchGate](https://www.researchgate.net/search): Papers about researching around the world
+- [MDPI](https://www.mdpi.com/): A pioneer in scholarly, open access publishing, MDPI has supported academic communities
 - [RFC Editor](https://www.rfc-editor.org/) : The RFC Series (ISSN 2070-1721) contains technical and organizational documents about the Internet
 - [The Pattern Languages of Programs archives](https://hillside.net/index.php/past-plop-conferences): Hundreds of patterns are generated yearly in conferences alone, not to mention books and software engineering websites.
+## Documentation
 
+- [YAML Ain’t Markup Language (YAML™) version 1.2](https://yaml.org/spec/1.2.2/): Defines the **YAML 1.2 data language**
+- [Wikipedia - Worldwide exchange and communication of date and time-related data - ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)
+## Papers
+
+- [MDPI - An Overview of WebAssembly for IoT: Background, Tools, State-of-the-Art, Challenges, and Future Directions](https://www.mdpi.com/1999-5903/15/8/275)
 ## Articles
 
 >[!note]
@@ -289,12 +293,10 @@ tags:
 - [TCMalloc : Thread-Caching Malloc](https://gperftools.github.io/gperftools/tcmalloc.html#runtime)
 - [A Simple Entity Component System (ECS) C++ - Austin Morlan](https://austinmorlan.com/posts/entity_component_system/?fbclid=IwAR26jehCQUQEzVmm_shLMhtG1dePD7AYoPQQBtm4GJoUqaNcFrW8JGYDCiY)
 - [Medium - The Past and Present of Browser Architecture](https://levelup.gitconnected.com/the-past-and-present-of-browser-architecture-522c65d1c2cd)
-- [MDPI - An Overview of WebAssembly for IoT: Background, Tools, State-of-the-Art, Challenges, and Future Directions](https://www.mdpi.com/1999-5903/15/8/275)
 - [Medium - Embedding Python in Go](https://poweruser.blog/embedding-python-in-go-338c0399f3d5F)
-- [Worldwide exchange and communication of date and time-related data - ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)
 # Quantum Computing
 
-## Technologies
+## Repository
 
 - [openqasm](https://github.com/openqasm/openqasm): Quantum assembly language for extended quantum circuits
 - [qiskit](https://github.com/Qiskit/qiskit): Qiskit is an open-source SDK for working with quantum computers at the level of extended quantum circuits, operators, and primitives.
@@ -405,21 +407,30 @@ tags:
 - [openstack](https://github.com/openstack/openstack): Repository tracking all OpenStack repositories as submodules. Mirror of code maintained at opendev.org -->  [documentation](https://docs.openstack.org/2024.1/), and minor version [devstack](https://github.com/openstack/devstack) - System for quickly installing an OpenStack cloud
 ## Monitoring and observability
 
-- [Netdata](https://github.com/netdata/netdata) : The open-source observability platfrom everyone needs!
+- [Netdata](https://github.com/netdata/netdata) : The open-source observability platform everyone needs!
 - [ELK](https://www.elastic.co/elastic-stack): Combination from four main components. [Guide](https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elastic-stack-on-ubuntu-22-04), [Helm](https://operatorhub.io/operator/elastic-cloud-eck) and [Docker](https://github.com/deviantony/docker-elk)
 
-	1. [Elasticsearch](https://www.elastic.co/products/elasticsearch): a distributed [_RESTful_](https://en.wikipedia.org/wiki/Representational_state_transfer) search engine which stores all of the collected data.
+	1. [Elasticsearch](https://www.elastic.co/products/elasticsearch): a distributed [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) search engine which stores all of the collected data.
 	2. [Logstash](https://www.elastic.co/products/logstash): the data processing component of the Elastic Stack which sends incoming data to Elasticsearch.
 	3. [Kibana](https://www.elastic.co/products/kibana): a web interface for searching and visualizing logs.
 	4. [Beats](https://www.elastic.co/products/beats): lightweight, single-purpose data shippers that can send data from hundreds or thousands of machines to either Logstash or Elasticsearch.
 
-- [Grafana Stack](https://grafana.com/about/grafana-stack/): Ecosystem of Grafana for providing monitor methodology for your application, container, nodes and moreover. [Helm](https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack), [[Monitoring Stack#Grafana, Prometheus and Exporter|Docker]] and [Guide](https://grafana.com/docs/grafana/latest/getting-started/get-started-grafana-prometheus/)
-- [Zabbix](https://www.zabbix.com/documentation/current/en/manual/introduction/about) : A software that monitors numerous parameters of a network and the health and integrity of servers, virtual machines, applications, services, databases, websites, the cloud and more
-- [Checkmk](https://docs.checkmk.com/latest/en/) : Offers comprehensive and specialized solutions for dealing with the very diverse environments of IT infrastructures.
-- [gitana](https://github.com/nicolastakashi/gitana): Gitana is a lightweight dashboard sync
-- [FlameGraph](https://github.com/brendangregg/FlameGraph): Stack trace visualizer (Use for Pyroscope)
+- [Grafana Stack](https://grafana.com/about/grafana-stack/): Ecosystem of Grafana for providing monitor methodology for your application, container, nodes and moreover.
+
+	- Installer: [Helm](https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack), [[Monitoring Stack#Grafana, Prometheus and Exporter|Docker]] and [Guide](https://grafana.com/docs/grafana/latest/getting-started/get-started-grafana-prometheus/)
+	- Dashboard: [FlameGraph](https://github.com/brendangregg/FlameGraph) - (Pyroscope), [gitana](https://github.com/nicolastakashi/gitana)
+	- Logging: [fluentd](https://github.com/fluent/fluentd), [fluent-bit](https://github.com/fluent/fluent-bit), [loki](https://grafana.com/docs/loki/latest/), [promtail](https://grafana.com/docs/loki/latest/send-data/promtail/)
+	- Metrics: [prometheus](https://prometheus.io/docs/introduction/overview/), [cadvisor](https://github.com/google/cadvisor), [node_exporter](https://github.com/prometheus/node_exporter), [thanos](https://github.com/thanos-io/thanos)
+	- Traces: [jaeger](https://www.jaegertracing.io/docs/2.1/), [OpenTelemetry](https://opentelemetry.io/docs/what-is-opentelemetry/), [tempo](https://grafana.com/docs/tempo/latest/)
+	- Profiling: [pyroscope](https://grafana.com/docs/pyroscope/latest/)
+	- Agent: [alloy](https://grafana.com/docs/alloy/latest/), [agent](https://grafana.com/docs/agent/latest/), [mimir](https://grafana.com/docs/mimir/latest/)
+
+- [Zabbix](https://www.zabbix.com/documentation/current/en/manual/introduction/about): A software that monitors numerous parameters of a network and the health and integrity of servers, virtual machines, applications, services, databases, websites, the cloud and more
+- [Checkmk](https://docs.checkmk.com/latest/en/): Offers comprehensive and specialized solutions for dealing with the very diverse environments of IT infrastructures.
+- [signoz](https://github.com/SigNoz/signoz): An open-source observability platform native to OpenTelemetry with logs, traces and metrics in a single application
+- [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics): fast, cost-effective monitoring solution and time series database. [Documentation](https://docs.victoriametrics.com/), [helm](https://github.com/VictoriaMetrics/helm-charts)
 - [highlight](https://github.com/highlight/highlight): The open source, full-stack monitoring platform. Error monitoring, session replay, logging, distributed tracing, and more.
-- [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics): VictoriaMetrics: fast, cost-effective monitoring solution and time series database. [Documentation](https://docs.victoriametrics.com/)
+- [dcgm](https://developer.nvidia.com/dcgm): Manage and Monitor GPUs in Cluster Environments
 - [Log Viewer (Log4j, NLog)](https://sourceforge.net/projects/styort-logviewer/): a high performance realtime log viewer via UDP (Chainsaw/NLogViewer) or text file.
 - [vector](https://github.com/vectordotdev/vector): A high-performance observability data pipeline.
 ## Orchestration Framework
@@ -520,6 +531,7 @@ tags:
 ## Virtual Machine
 
 - [webvm](https://github.com/leaningtech/webvm): Virtual Machine for the Web
+- [firecracker](https://github.com/firecracker-microvm/firecracker): Secure and fast microVMs for serverless computing.
 ## Web server
 
 - [traefik proxy](https://doc.traefik.io/traefik/) : Traefik is an [open-source](https://github.com/traefik/traefik) _Edge Router_ that makes publishing your services a fun and easy experience

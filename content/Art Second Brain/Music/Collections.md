@@ -6,8 +6,8 @@ tags:
   - entertainment
   - collections
 ---
-![[Pasted image 20240804122346.png|center|400]]
-# Producing
+![[audio-engineer.jpeg]]
+# Music Producer
 
 >[!info]
 >The collections about manual and plugin for purpose produce the music in `flstudio` or `audacity` applications
@@ -15,10 +15,9 @@ tags:
 ## Music Producer Tools
 
 - [Drive - Sharing Tools](https://drive.google.com/drive/folders/1e4NHoW4z8uYJMH2ddncMtuAsP3mL1Vol) - `Flstudio` and `FabFilter` - Pre-active version
-- [Audacity](https://www.audacityteam.org/download/) - The world's most popular audio editing and recording app (OpenSource)
+- [Audacity](https://www.audacityteam.org/download/) - The world's most popular audio editing and recording app (Open Source)
 - [LMMS](https://lmms.io/download#windows) - Let's make music with a free, cross-platform tool for your computer. [LMMS - Sharing Platform](https://lmms.io/lsp/)
 - [Ardour](https://ardour.org/) - Record, Edit, and Mix on Linux, macOS and Windows
-
 ## Sample Collections
 
 - [SampleFocus](https://samplefocus.com/) - The easiest way to find the perfect audio sample

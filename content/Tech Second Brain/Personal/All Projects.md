@@ -1,5 +1,5 @@
 ---
-title: Projects of myself
+title: All Projects of myself
 tags:
   - DIY
   - myself

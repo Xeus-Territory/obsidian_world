@@ -404,7 +404,7 @@ Documentation: [Sed cheatsheet](https://quickref.me/sed.html) and [How to Use Se
 To replace a string in file with `sed`, you can use command with format
 
 ```bash
-#Replace in file (Global)
+# Replace in file (Global)
 sed -i 's/OLD/NEW/g' path/file #Replace string inside a file
 ```
 
@@ -414,6 +414,11 @@ To replace in the string, you can control action with
 echo "[MASKED]" | sed -e "s/\[MASKED\]/123456789/g"
 ```
 
+To replace the string with content return from executing command, you can use
+
+```bash
+sed -i 's/OLD/'$(echo $NEW)'/g' path/file
+```
 ## `systemctl` command
 
 Documentation: [Redhat - Systemd cheat sheet](https://access.redhat.com/node/1199213/40/0/13122931)

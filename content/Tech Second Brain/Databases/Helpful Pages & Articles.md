@@ -1,5 +1,5 @@
 ---
-title: Information, Helpful Articles about the Database World
+title: Information, helpful articles about the database world
 tags:
   - cheatsheet
   - helpful
