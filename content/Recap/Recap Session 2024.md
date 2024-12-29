@@ -138,6 +138,7 @@ Với medium mình cũng dành được rất nhiều sự đón nhận từ c�
 >HackMD không phải là platform chính của mình trong năm ni nhưng nó cũng được đóng nhận rất nhiều và mình cảm thấy thật sự vui khi có thể đóng góp được nhiều bài viết cho công động trên nhiều lĩnh vực và CTF, Security Engineer cũng không phải ngoại lệ mặc dù mình đã rửa tay gác kiếm từ lâu **(Happy to see it's still lit and grow up 😅)**
 
 <h2>GitHub</h2>
+
 ![[Pasted image 20241229152425.png]]
 <div align="center">
 	<p style="text-align: center;">GitHub page</p>
@@ -194,7 +195,7 @@ Oh shit chú 3 thật sự là quá bùng nổ với track cuối cùng trong al
 Không có gì đã bằng quá phê, cảm ơn ekip *"Sao đủ để bao phủ"* đã landing ở Đà Nẵng và shoutout cho tất cả anh em đã có mặt ngày hôm đó vì đó tạo ra một con show quá khủng khiếp và hoành tráng
 
 >[!fact]
->Ngay trước khi show ít tiếng mình bị xe đụng và fuk gãy 1 cái kính và cong cái phanh 😃, một kỵ niệm đáng nhớ không kém
+>Ngay trước khi show ít tiếng mình bị xe đụng và fuk gãy 1 cái kính và cong cái phanh 😃, một kỷ niệm đáng nhớ không kém
 
 Tiếp đến là các album xếp chồng mà mình tâm đắt trong năm ni mà mình sẽ chia album ra thành 2 loại là ở trong nước và ở ngoại nước, cách mình tận hưởng album đó ra làm sao
 
