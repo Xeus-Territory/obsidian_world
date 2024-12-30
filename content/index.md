@@ -25,7 +25,7 @@ tags:
 >*"In another way, I am currently work as Tech Blogger in [Medium](https://medium.com/@XeusNguyen) and [HackMD](https://hackmd.io/@xeusnguyen), hope this can bring more efficiently for community, at least for people who reach to my wiki page, from my bottom of heart I want to give huge respect for y'all guys"*
 
 
-![[Pasted image 20240720145956.png| center | 400]]
+![[thumbnail-young-wild-free.png| center | 400]]
 <div align="center">
 	<em><p style="text-align: center;">"Try, do, failure and again"</p></em>
 </div>

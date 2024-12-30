@@ -36,6 +36,7 @@ tags:
 - [AliyunContainerService](https://github.com/AliyunContainerService): Aliyun (Alibaba Cloud) Container Service
 - [Kubecost](https://github.com/kubecost): Organization of Kubecost - a monitoring application which provides real-time cost visibility and insights for teams using Kubernetes, helping you continuously reduce your cloud costs
 - [Devtron Inc](https://github.com/devtron-labs): Software Delivery Workflow For Kubernetes
+- [KubeWharf](https://github.com/kubewharf): Developer community legit insane tools for Kubernetes 
 ## Topics
 
 - [Kubernetes Cluster API](https://cluster-api.sigs.k8s.io/) : About cluster API
@@ -65,6 +66,7 @@ tags:
 
 # Docker & Containerization
 
+![[thumbnail-vm-and-container.png]]
 ## General & Documentation
 
 - [Docker Documentation](https://docs.docker.com/)
@@ -73,24 +75,29 @@ tags:
 ## Articles
 
 - [Medium - Powerful Docker Alternatives in 2024](https://medium.com/gitconnected/powerful-docker-alternatives-to-revolutionize-containerization-in-2024-99249ba6d059)
-- [Medium - 24 Kubernetes Masters’ Configurations](https://overcast.blog/24-kubernetes-mastersconfigurations-29235c65b337)
-- [Medium - 13 Docker Cost Optimizations You Should Know](https://medium.com/overcast-blog/13-docker-cost-optimizations-you-should-know-1f78c0accb45)
-- [Medium - 11 Ways to Troubleshoot Docker Faster](https://medium.com/gitconnected/11-ways-to-troubleshoot-docker-faster-8f9ab55dd419)
-- [Medium - Docker Commands You Never Heard Of!](https://medium.com/@arton.demaku/docker-commands-you-never-heard-of-4b25da3dd738)
 - [AquaSec - Container Engines: How They Work and Top 7 Options](https://www.aquasec.com/cloud-native-academy/container-platforms/container-engines/)
-- [KodeKloud - 3 Best Ways to Run Docker in Docker Container](https://kodekloud.com/blog/run-docker-in-docker-container/)
 - [Blackvoid - Synology, Docker and open source tech blog](https://www.blackvoid.club/)
-- [Medium - Accessing the host’s localhost from inside a Docker container](https://medium.com/@gladevise/accessing-the-hosts-localhost-from-inside-a-docker-container-c5935e275953)
 - [Medium - Deep Dive into Docker Containers | Architecture and Features](https://medium.com/@dmosyan/deep-dive-into-docker-containers-architecture-and-features-530a937f4c87)
-- [Medium - Docker Beginner to Expert Tutorial](https://levelup.gitconnected.com/docker-beginner-to-expert-tutorial-68555aa3e544)
-- [Ivan Velichko - Implementing Container Runtime Shim: runc](https://iximiuz.com/en/posts/implementing-container-runtime-shim/)
 - [Docker - Alternative container runtimes](https://docs.docker.com/engine/daemon/alternative-runtimes/)
 - [Cloudraft - Most Popular Container Runtimes](https://www.cloudraft.io/blog/container-runtimes)
 - [Medium - 11 Open-Source SaaS Killer — Selfhost With Docker](https://blog.devgenius.io/11-open-source-saas-killer-selfhost-with-docker-034456653568)
 - [Medium - 11 Open-Source SaaS Killer — Selfhost With Docker -2](https://medium.com/@harendra21/11-open-source-saas-killer-selfhost-with-docker-2-5d507de8b68f)
 - [Medium - 11 Open-Source SaaS Killer — Selfhost With Docker -3](https://medium.com/@harendra21/11-open-source-saas-killer-selfhost-with-docker-3-a707a15cb540)
-# Kubernetes
+## Development & Implementation
 
+- [Ivan Velichko - Implementing Container Runtime Shim: runc](https://iximiuz.com/en/posts/implementing-container-runtime-shim/)
+- [KodeKloud - 3 Best Ways to Run Docker in Docker Container](https://kodekloud.com/blog/run-docker-in-docker-container/)
+## Tips for configuration
+
+- [Medium - Accessing the host’s localhost from inside a Docker container](https://medium.com/@gladevise/accessing-the-hosts-localhost-from-inside-a-docker-container-c5935e275953)
+- [Medium - Docker Commands You Never Heard Of!](https://medium.com/@arton.demaku/docker-commands-you-never-heard-of-4b25da3dd738)
+- [Medium - 13 Docker Cost Optimizations You Should Know](https://medium.com/overcast-blog/13-docker-cost-optimizations-you-should-know-1f78c0accb45)
+- [Medium - Docker Beginner to Expert Tutorial](https://levelup.gitconnected.com/docker-beginner-to-expert-tutorial-68555aa3e544)
+## Troubleshoot
+
+- [Medium - 11 Ways to Troubleshoot Docker Faster](https://medium.com/gitconnected/11-ways-to-troubleshoot-docker-faster-8f9ab55dd419)
+# Kubernetes
+![[icon-kubernetes.png|center]]
 ## General & Documentation
 
 - [Kubernetes Documentation](https://kubernetes.io/docs/home/)
@@ -115,6 +122,8 @@ tags:
 - [Redhat - Top 10 must-know Kubernetes design patterns](https://developers.redhat.com/blog/2020/05/11/top-10-must-know-kubernetes-design-patterns)
 - [Medium - Top 10 Kubernetes Pod Concepts That Confuse Beginners](https://medium.com/frontend-canteen/top-10-kubernetes-pod-concepts-that-confuse-beginners-8c0954021f3f)
 - [Medium - Kubernetes Networking in the Simplest Way 🚀](https://aws.plainenglish.io/kubernetes-networking-in-the-simplest-way-d84e3b7ed940)
+- [Dev.io - Basic Guide to Kubernetes Service Discovery](https://dev.to/nomzykush/basic-guide-to-kubernetes-service-discovery-dmd)
+- [Ranchers - Container Network Interface (CNI) Providers](https://ranchermanager.docs.rancher.com/faq/container-network-interface-providers)
 ## Articles
 
 - [Medium - 7 Underrated Kubernetes Projects: Elevate Your Lab Playground!](https://medium.com/@ebenamor/7-underrated-kubernetes-projects-elevate-your-lab-playground-ac7f47cba347)
@@ -123,36 +132,41 @@ tags:
 - [Medium - Deciphering the Kubernetes Networking Maze: Navigating Load-Balance, BGP, IPVS and Beyond](https://medium.com/itnext/deciphering-the-kubernetes-networking-maze-navigating-load-balance-bgp-ipvs-and-beyond-7123ef428572)
 - [Medium - Kubernetes Scheduling: Understanding the Math Behind the Magic](https://romanglushach.medium.com/kubernetes-scheduling-understanding-the-math-behind-the-magic-2305b57d45b1)
 - [Medium - Kubernetes Networking: Load Balancing Techniques and Algorithms](https://romanglushach.medium.com/kubernetes-networking-load-balancing-techniques-and-algorithms-5da85c5c7253)
-- [Medium - Exploring local Kubernetes development tools and solutions](https://medium.com/@seifeddinerajhi/exploring-local-kubernetes-development-tools-and-solutions-e25f0b8f1b86)
-- [Medium - HomeLab Kubernetes Cluster Setup](https://cavecafe.medium.com/setup-homelab-kubernetes-cluster-cfc3acd4dca5)
-- [Medium - Kubernetes, but locally.](https://medium.com/@mosesmbadi/kubernetes-but-locally-aa5fbd671763)
 - [Medium - 15 Best Kubernetes Cost Optimization Tools for 2024](https://overcast.blog/15-best-kubernetes-cost-optimization-tools-for-2024-2e131a7cbe7a)
 - [Azure - Scaling options for applications in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/concepts-scale)
 - [Medium - Database in Kubernetes: Is that a good idea?](https://medium.com/@fengruohang/database-in-kubernetes-is-that-a-good-idea-daf5775b5c1f)
-- [Medium - Creating a Custom Scheduler in Kubernetes: A Practical Guide](https://overcast.blog/creating-a-custom-scheduler-in-kubernetes-a-practical-guide-2d9f9254f3b5)
-- [Medium - The guide to kubectl I never had](https://medium.com/@jake.page91/the-guide-to-kubectl-i-never-had-3874cc6074ff)
 - [Medium - 10 Ways for Kubernetes Declarative Configuration Management](https://medium.com/stackademic/10-ways-for-kubernetes-declarative-configuration-management-3538673fd0b5)
 - [Medium - 10 Essential Kubernetes Tools You Didn’t Know You Needed](https://medium.com/itnext/10-essential-kubernetes-tools-you-didnt-know-you-needed-06954251d845)
-- [Medium - Implementing ROOK Ceph Storage solution on Virtual kubernetes clusters](https://purushothamkdr453.medium.com/implementing-rook-ceph-storage-solution-on-virtual-kubernetes-clusters-f9b7abfbcb56)
 - [Medium - Kubernetes — EKS — Upgrade process best practices (on AWS)](https://medium.com/atmosly/kubernetes-eks-upgrade-process-best-practices-on-aws-aed30e16bac1)
-- [Ranchers - Container Network Interface (CNI) Providers](https://ranchermanager.docs.rancher.com/faq/container-network-interface-providers)
-- [Medium - VictoriaLogs: an overview, run in Kubernetes, LogsQL, and Grafana](https://itnext.io/victorialogs-an-overview-run-in-kubernetes-logsql-and-grafana-88e0934a5ccd)
 - [Medium - 7 Best Open Source Storage Solutions for Kubernetes](https://blog.devops.dev/7-best-open-source-storage-solutions-for-kubernetes-0da8b51efe8d)
-- [Dev.io - Basic Guide to Kubernetes Service Discovery](https://dev.to/nomzykush/basic-guide-to-kubernetes-service-discovery-dmd)
 - [Medium - Lightweight CI/CD Solutions for Kubernetes: Going Beyond Keel, Flux, and ArgoCD](https://medium.com/@PlanB./lightweight-ci-cd-solutions-for-kubernetes-going-beyond-keel-flux-and-argocd-8b0b923e644c)
 - [Medium - EKS Cluster Network Architecture for Worker Nodes](https://keetmalin.medium.com/eks-cluster-network-architecture-for-worker-nodes-635e067c8c2a)
-- [Medium - 2 Powerful AI and Database Operators to Extend your K8s Cluster](https://onairotich.medium.com/2-powerful-ai-and-database-operators-to-extend-your-k8s-cluster-9c517e83b368)
 - [Medium - Why NGINX IngressController Isn’t the Best Choice for Production Workloads](https://medium.com/@talhakhalid101/why-nginx-ingresscontroller-isnt-the-best-choice-for-production-workloads-dfc641da3e2c)
 - [Internet - Pain(less?) NGINX Ingress](https://danielfm.me/post/painless-nginx-ingress/)
-- [Medium - Simplify Kubernetes Storage: Mounting EFS to EKS Like a Pro](https://medium.com/kotaicode/simplify-kubernetes-storage-mounting-efs-to-eks-like-a-pro-655e13f72041)
 - [Medium - Optimize Your Kubernetes Resources with Azure IAM: Managed vs. Workload Identity](https://itnext.io/simplify-secure-your-azure-resources-managed-identity-vs-workload-identity-fe49d133fc03)
-- [Medium - Kubernetes Storage Performance Comparison Rook Ceph and Piraeus Datastore (LINSTOR)](https://medium.com/@gjanders03/kubernetes-storage-performance-comparison-rook-ceph-and-piraeus-datastore-linstor-e9bc2859a8f0)
 - [Medium - Bringing Amazon EKS Hybrid Nodes to life with Palette](https://medium.com/itnext/bringing-amazon-eks-hybrid-nodes-to-life-with-palette-584734449503)
 - [Medium - 12 Tools that will make Kubernetes management easier in 2024](https://medium.com/faun/12-tools-that-will-make-kubernetes-management-easier-in-2024-b7c349dc0eaa)
-- [Medium - Why AWS EKS Pod Identity is a Better Fit Than IRSA for Your Kubernetes Needs?](https://aws.plainenglish.io/why-aws-eks-pod-identity-is-a-better-fit-than-irsa-for-your-kubernetes-needs-1be05515f970)
 - [Medium - Why Some Companies are Moving Away from Kubernetes for Development Environments in 2025](https://medium.com/@PlanB./why-some-companies-are-moving-away-from-kubernetes-for-development-environments-in-2025-1f44b4fd4f3f)
+## DIYs
+
+- [Medium - HomeLab Kubernetes Cluster Setup](https://cavecafe.medium.com/setup-homelab-kubernetes-cluster-cfc3acd4dca5)
+- [Medium - Kubernetes, but locally.](https://medium.com/@mosesmbadi/kubernetes-but-locally-aa5fbd671763)
+- [Medium - End-to-End DevSecOps and GitOps Implementation with Jenkins, Docker, SonarQube, Trivy, Terraform, ArgoCD, and Amazon EKS](https://medium.com/@harsh05/end-to-end-devsecops-and-gitops-implementation-with-jenkins-docker-sonarqube-trivy-terraform-3ae842882b75)
+## Development & Implementation
+
+- [Medium - Kubernetes: a single AWS Load Balancer for different Kubernetes Ingresses](https://itnext.io/kubernetes-a-single-aws-load-balancer-for-different-kubernetes-ingresses-c8f68c75b7d8)
+- [Medium - Implementing ROOK Ceph Storage solution on Virtual kubernetes clusters](https://purushothamkdr453.medium.com/implementing-rook-ceph-storage-solution-on-virtual-kubernetes-clusters-f9b7abfbcb56)
+- [Medium - Kubernetes Storage Performance Comparison Rook Ceph and Piraeus Datastore (LINSTOR)](https://medium.com/@gjanders03/kubernetes-storage-performance-comparison-rook-ceph-and-piraeus-datastore-linstor-e9bc2859a8f0)
+- [Medium - 2 Powerful AI and Database Operators to Extend your K8s Cluster](https://onairotich.medium.com/2-powerful-ai-and-database-operators-to-extend-your-k8s-cluster-9c517e83b368)
+- [Medium - Creating a Custom Scheduler in Kubernetes: A Practical Guide](https://overcast.blog/creating-a-custom-scheduler-in-kubernetes-a-practical-guide-2d9f9254f3b5)
+- [Medium - VictoriaLogs: an overview, run in Kubernetes, LogsQL, and Grafana](https://itnext.io/victorialogs-an-overview-run-in-kubernetes-logsql-and-grafana-88e0934a5ccd)
+- [Medium - Configuring Production-Ready EKS Clusters with Terraform and GitHub Actions](https://medium.com/stackademic/configuring-production-ready-eks-clusters-with-terraform-and-github-actions-c046e8d44865)
+- [Medium - eBPF Maps State Synchronization across Multi-Node Kubernetes Cluster](https://medium.com/gitconnected/ebpf-maps-state-synchronization-across-multi-node-kubernetes-cluster-d0c075810fa7)
+- [Medium - GitOps with Kubernetes, Terraform, Gitlab and FluxCD](https://medium.com/@prag-matic/gitops-with-kubernetes-terraform-gitlab-and-fluxcd-2875d1010dac)
+- [Medium - Configure CI/CD pipeline: GitlabCI, ArgoCD, HelmCharts & SOPS](https://medium.com/@golaneduard1/configure-ci-cd-pipeline-gitlabci-argocd-helmcharts-sops-3cbf94f300ed)
 ## Tips for configuration
 
+- [Medium - 24 Kubernetes Masters’ Configurations](https://overcast.blog/24-kubernetes-mastersconfigurations-29235c65b337)
 - [Azure - Best practices for basic scheduler features in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/operator-best-practices-scheduler)
 - [Medium - My Top 50 Kubernetes Notes for DevOps Engineers — Detailed Q&A](https://medium.com/@thecloudarchitect/my-top-50-kubernetes-notes-for-devops-engineers-detailed-q-a-9d9c375c0076)
 - [Spot - 8 Kubernetes Deployment Strategies: Roll Out Like the Pros](https://spot.io/resources/kubernetes-autoscaling/5-kubernetes-deployment-strategies-roll-out-like-the-pros/)
@@ -162,6 +176,12 @@ tags:
 - [Medium - Mastering Horizontal Pod Autoscaling (HPA) in Amazon EKS Using Helm, Terraform, and ArgoCD: A Complete Guide with CI/CD](https://ramchandra-vadranam.medium.com/mastering-horizontal-pod-autoscaling-hpa-in-amazon-eks-using-helm-terraform-and-argocd-a-2b551720f1ad)
 - [AWS - Learn how EKS Pod Identity grants pods access to AWS services](https://docs.aws.amazon.com/eks/latest/userguide/pod-identities.html)
 - [AWS - IAM roles for service accounts](https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html)
+- [Medium - Why AWS EKS Pod Identity is a Better Fit Than IRSA for Your Kubernetes Needs?](https://aws.plainenglish.io/why-aws-eks-pod-identity-is-a-better-fit-than-irsa-for-your-kubernetes-needs-1be05515f970)
+- [Medium - Simplify Kubernetes Storage: Mounting EFS to EKS Like a Pro](https://medium.com/kotaicode/simplify-kubernetes-storage-mounting-efs-to-eks-like-a-pro-655e13f72041)
+- [Medium - The guide to kubectl I never had](https://medium.com/@jake.page91/the-guide-to-kubectl-i-never-had-3874cc6074ff)
+- [AWS Docs - Grant IAM users access to Kubernetes with EKS access entries](https://docs.aws.amazon.com/eks/latest/userguide/access-entries.html)
+- [AWS Blogs - Proactive autoscaling of Kubernetes workloads with KEDA using metrics ingested into Amazon Managed Service for Prometheus](https://aws.amazon.com/blogs/mt/proactive-autoscaling-kubernetes-workloads-keda-metrics-ingested-into-aws-amp/)
+- [AWS Blogs - A deep dive into simplified Amazon EKS access management controls](https://aws.amazon.com/vi/blogs/containers/a-deep-dive-into-simplified-amazon-eks-access-management-controls/)
 ## Troubleshoot
 
 - [StackOverFlow - How can I keep a container running on Kubernetes?](https://stackoverflow.com/questions/31870222/how-can-i-keep-a-container-running-on-kubernetes)
@@ -180,7 +200,6 @@ tags:
 - [learnk8s - Kubernetes training for engineer](https://learnk8s.io/)
 - [certified-kubernetes-administrator-course](https://github.com/kodekloudhub/certified-kubernetes-administrator-course) : Kodecloud Certified Kubernetes Administrator - CKA Course
 - [certified-kubernetes-security-specialist-cks-course](https://github.com/kodekloudhub/certified-kubernetes-security-specialist-cks-course) : Kodecloud Notes from the Certified Kubernetes Security Specialist Course on KodeKloud
-
 ## Practicing
 
 - [EKS Workshop - New version](https://www.eksworkshop.com/): Practical exercises to learn about Amazon Elastic Kubernetes Service
@@ -201,7 +220,7 @@ tags:
 
 ## CRI (Container Runtime Interface)
 
-![[Pasted image 20240724135156.png]]
+![[thumbnail-container-service-layer.png]]
 
 - [containerd](https://github.com/containerd/containerd) : An open and reliable container runtime. [Getting started](https://github.com/containerd/containerd/blob/main/docs/getting-started.md)
 - [cri-dockerd](https://github.com/Mirantis/cri-dockerd): dockerd as a compliant Container Runtime Interface for Kubernetes (Mirantis OpenSource)
@@ -242,12 +261,17 @@ tags:
 - [kops](https://github.com/kubernetes/kops): Kubernetes Operations (kOps) - Production Grade k8s Installation, Upgrades and Management
 - [botkube](https://github.com/kubeshop/botkube): An app that helps you monitor your Kubernetes cluster, debug critical deployments & gives recommendations for standard practices
 - [kubebuilder](https://github.com/kubernetes-sigs/kubebuilder): SDK for building Kubernetes APIs using CRDs
-- [kubectl-tree](https://github.com/ahmetb/kubectl-tree): kubectl plugin to browse Kubernetes object hierarchies as a tree 🎄
 - [Crossplane](https://docs.crossplane.io/latest/): An open source Kubernetes extension that transforms your Kubernetes cluster into a **universal control plane**.
-- [kcert](https://github.com/nabsul/kcert): KCert: A Simple Let's Encrypt Manager for Kubernetes
 - [lens](https://github.com/lensapp/lens): Lens - The way the world runs Kubernetes
 - [eksctl](https://github.com/eksctl-io/eksctl): The official CLI for Amazon EKS. [Website](https://eksctl.io/)
 - [kaniko](https://github.com/GoogleContainerTools/kaniko): Build Container Images In Kubernetes
+
+## Kubectl Tools Kit
+
+- [krew](https://github.com/kubernetes-sigs/krew): 📦 Find and install kubectl plugins
+- [kubectl-node-shell](https://github.com/kvaps/kubectl-node-shell): Exec into node via kubectl
+- [kubectl-tree](https://github.com/ahmetb/kubectl-tree): kubectl plugin to browse Kubernetes object hierarchies as a tree 🎄
+- [kubectl-trace](https://github.com/iovisor/kubectl-trace):  Schedule bpftrace programs on your kubernetes cluster using the kubectl
 
 ## Local Kubernetes Self-hosted
 
@@ -265,6 +289,7 @@ tags:
 - [Meshery](https://docs.meshery.io/): As a self-service engineering platform, Meshery enables collaborative design and operation of cloud and cloud native infrastructure.
 - [kubeshark](https://github.com/kubeshark/kubeshark): The API traffic analyzer for Kubernetes providing real-time K8s
 - [karpor](https://github.com/KusionStack/karpor): Intelligence for Kubernetes. World's most promising Kubernetes Visualization Tool for Developer and Platform Engineering teams.
+- [Gardener](https://gardener.cloud/): Homogeneous Kubernetes clusters at scale on any infrastructure using hosted control planes.
 ## Kubernetes Policy Controller
 
 - [OPA Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/) : A customizable cloud native policy controller that helps enforce policies and strengthen governance
@@ -334,23 +359,22 @@ tags:
 - [Kubernetes Autoscaler](https://github.com/kubernetes/autoscaler): Autoscaling components for Kubernetes
 - [Karpenter](https://karpenter.sh/docs/): an open-source node lifecycle management project built for Kubernetes.
 - [Keda](https://keda.sh/docs/2.16/): Kubernetes Event-driven Autoscaling
-
 ## Kubernetes Chaos
 
 - [chaos-mesh](https://github.com/chaos-mesh/chaos-mesh): A Chaos Engineering Platform for Kubernetes.
 - [litmus](https://github.com/litmuschaos/litmus): Chaos Engineering Framework with cross-cloud support.
-
 ## Kubernetes Resources Orchestrator
 
 - [kro](https://github.com/awslabs/kro): Kube Resource Orchestrator. [Documentation](https://kro.run/docs/overview)
-
 ## Kubernetes DNS and SSL
 
 - [kcert](https://github.com/nabsul/kcert): A Simple Let's Encrypt Manager for Kubernetes
-
 ## Kubernetes Development Environment
 
 - [devspace](https://github.com/devspace-sh/devspace): The Fastest Developer Tool for Kubernetes
 - [tilt](https://github.com/tilt-dev/tilt): Define your dev environment as code. For microservice apps on Kubernetes.
 - [okteto](https://github.com/okteto/okteto): Develop your applications directly in your Kubernetes Cluster
 - [telepresence](https://github.com/telepresenceio/telepresence): Local development against a remote Kubernetes or OpenShift cluster
+## Kubernetes Development Library
+
+- [kooper](https://github.com/spotahome/kooper): A simple Go library to create Kubernetes operators and controllers.

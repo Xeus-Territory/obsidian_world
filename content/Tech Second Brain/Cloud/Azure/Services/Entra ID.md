@@ -6,7 +6,7 @@ tags:
   - admin
   - cloud-services
 ---
-![[Pasted image 20240416111029.png]]
+![[thumbnail-entra-id.png]]
 
 # What is Entra and Entra ID
 
@@ -26,12 +26,12 @@ Entra ID helps to support user access to resources and applications, such as:
 
 To tell about different, you can take a look on diagram with AD vs Entra ID. On AD, Use Kerberos, NTLM authentication to on-premises application
 
-![[Pasted image 20240416112018.png]]
+![[azure-authen-local-cloud.png]]
 
 
 # Entra Feature and Terminotory
 
-![[Pasted image 20240416113619.png]]
+![[azure-entra-id-governance.png]]
 
 - **SSO** : provides secure single sign-on to web apps **on the cloud** and to **on-premises apps**. **Users can sign in with the same set of credentials to access all their apps.**
 - **Ubiquitous device support** : Support across device, access and launch app by using existing work credentials

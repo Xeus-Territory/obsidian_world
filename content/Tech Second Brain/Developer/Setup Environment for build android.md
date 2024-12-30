@@ -13,7 +13,7 @@ tags:
 
 # What we need when build the android
 
-![[Pasted image 20240517133600.png]]
+![[thumbnail-gradle-android.png]]
 
 >[!quote]
 >As my knowledge, you have multiple way to build and assemble anything of mobile, and last progress, you will have `apk` file and easily to delivery to another platform to test and use. such as
@@ -124,7 +124,7 @@ $ sdkmanager --version
 
 ## Install another Android SDK
 
-![[Pasted image 20240517151759.png]]
+![[meme-overwhems.png]]
 
 Last step, you need to perform to download `build-tools` and `platform-tools` for your shell
 
@@ -167,7 +167,7 @@ sdkmanager --update
 
 # Build with Gradle
 
-![[Pasted image 20240517155147.png]]
+![[thumbnail-gradle.png]]
 
 >[!info]
 >Gradle Build Tool is a fast, dependable, and adaptable open-source build automation tool with an elegant and extensible declarative build language.

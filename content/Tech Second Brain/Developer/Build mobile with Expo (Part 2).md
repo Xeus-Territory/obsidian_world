@@ -17,12 +17,12 @@ But before we start, if you want to know what happen in previous session, take y
 >[!quote]
 >Honestly, I don't release as much application to these platforms, I just have little bit experience to hang out with `Google Play` and `App Store` for particular release to `Testflight` for IOS and `Google Play Internal` for Android, at least for internal testing. The story get your application to one of huge platform, ain't gonna lie really hard in this time
 
-![[Pasted image 20240918005114.png]]
+![[thumbnail-ios-cicd.png]]
 <div align="center">
 	<p style="text-align: center;">IOS CI/CD (Created by: Bitrise)</p>
 </div>
 
-![[Pasted image 20240918005443.png]]
+![[thumbnail-android-cicd.png]]
 <div align="center">
 	<p style="text-align: center;">Android CI/CD (Created by: Bitrise)</p>
 </div>
@@ -56,7 +56,7 @@ I think with helping from tutorial articles of relate topics that can help you t
 
 As you can see, `expo` takes care mostly thing for us when try to release to one of build to  platforms, including `Google Play Store` and `App Store` with zero (0) effort and complexity.
 
-![[Pasted image 20240922104735.png|center]]
+![[meme-right-timming.png|center]]
 
 [EAS Submit](https://docs.expo.dev/submit/introduction/) bring us powerful feature to release your build previous session through `eas.json`, again you need to take care itself  inside profile, and submit it to help `expo` imagine what keys and certificate to help your application go to right place.
 
@@ -268,7 +268,7 @@ After successfully notification in your shell, you can get the result in your ap
 
 # Talk about automation story
 
-![[Pasted image 20240922135526.png]]
+![[thumbnail-feature-branch.png]]
 
 Yeah I know you handle multiple step with `expo` with manually, so how about `automation`. When I try to relate you with some article about, let's take the look again
 
@@ -315,7 +315,7 @@ Fully CI/CD Pipeline write down in Github Action by [Luca Zani](https://medium.c
 
 # Conclusion
 
-![[byebye.png|center|500]]
+![[meme-byebye.png|center|500]]
 
 >[!done]
 >That is @all for blog, hope you have time to take a look about artifact of Expo Build, and give you landscape to imagine step to help you distribute mobile application to Google Store and App Store. Expo is one great choice when I try to adapt pipeline, and automation with this platform, clear and make sense for all steps you need to completely. If you need your help, Expo is ready to listening and supporting inside their [Github](https://github.com/expo/expo), [Discord](https://chat.expo.dev/), [X](https://x.com/expo) and [Reddit](https://www.reddit.com/r/expo)

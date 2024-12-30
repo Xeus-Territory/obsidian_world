@@ -797,7 +797,7 @@ kubectl get deployments -n kube-system cluster-autoscaler
 You can set more annotation and option into `cluster-autoscaler`, explore and read more at [Cluster Autoscaler on AWS](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/cloudprovider/aws/README.md)
 # Conclusion
 
-![[byebye.png|center|500]]
+![[meme-byebye.png|center|500]]
 
 >[!done]
 >That's all thing, I want to share with you when I create first EKS for myself, and it's good experience to have opportunity to do, capture the journey and share to whole of you. I thinks EKS is not hard to setup, quite easily but when you try to leverage AWS Services, you need to make sure you control over of that because if you mess up, your cost will reach to huge number. 

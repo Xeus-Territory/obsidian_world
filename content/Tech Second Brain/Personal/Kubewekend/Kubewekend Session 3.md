@@ -9,7 +9,7 @@ tags:
 >[!quote]
 >Hi @all, it's me again, btw this week is too boring, so i just sit back and continuous write a next session in `kubewekend` series. This session will discuss and give you some information about `kind` cluster, attach with that we will talk about detailing about architecture of `kubernetes`, `kind` for specific and `kubernetes` for general. One more thing, this session will take you long to read, just feel free to read and enjoy, let's digest now.
 
-![[Pasted image 20240714153711.png|center|500]]
+![[meme-tired.png|center|500]]
 
 Before we start, first of all, I want to give the thankful for all of community, blogger to inspiring me on writing `kubewekend`, follow them if you want to understand more about `Kubernetes`
 
@@ -31,7 +31,7 @@ List of topics in series
 >If you familiar with docker and containerization, at least you will listen about `kubernetes`, with me this one is solution can help you control and handle multiple container, and give that scenarios for them to working, to operating and to auditing with under much resonance and integration from open source
 
 ## Introduction
-![[Pasted image 20240713191213.png|center]]
+![[icon-kubernetes.png|center]]
 
 But back to documentation to give the exactly definition about `kubernetes`, you can read at: [Kubernetes Overview](https://kubernetes.io/docs/concepts/overview/)
 
@@ -51,7 +51,7 @@ Now, `kubernetes` becomes the popular concept, give potential to help your proje
 
 Actually, It's really evolving, from basic to advantage, honestly I want to relating about `kubernetes`. So we will go deeper with that architecture, IYKYK about virtualization environments, that tools to delivery the powerful solutions for technologies user and researcher as a revolution, you can list on 3 era
 
-![[Pasted image 20240714102745.png|center]]
+![[thumbnail-deployment-evolution.png|center]]
 
 ### Traditional deployment era
 
@@ -146,7 +146,7 @@ Read more about the disadvantage about Kubernetes: [What Kubernetes is not](http
 
 ## Do we have alternative of Kubernetes ?
 
-![[Pasted image 20240714161618.png]]
+![[meme-winner-everywhere.png]]
 
 The answer is yes, a lots of I think, you can google and more keyword can direct send to you, but like I said Kubernetes is potential when you thinks about `container orchestration`, and here are some another
 
@@ -221,7 +221,7 @@ Now we can spend some time to inspect some component of control plane to more un
 
 ### etcd
 
-![[Pasted image 20240714170035.png]]
+![[icon-etcd.png]]
 
 Actually, that part will hard to describe you about that, but you can understand about `etcd` kind database which become storage for all cluster data like resources inside kubernetes cluster and moreover. `etcd` work as `key-value` database, and `kube-apiserver` will read and write on `etcd` for events or resources
 
@@ -529,7 +529,7 @@ kubectl describe deployments coredns
 
 As you can see, `coredns` will use configuration from `configmap` to operate and start with image `registry.k8s.io/coredns/coredns:v1.10.1`, that will help your service understand, give dns inside cluster to give route for service can commnuncate with each others
 
-![[Pasted image 20240715093118.png]]
+![[icon-core-dns.png]]
 
 The config is quite new for me, but that kind of clearly to understanding what that want to definition
 
@@ -607,7 +607,7 @@ You can explore more about how the workflow inside `kubernetes` via some cool ar
 
 # Conclusion
 
-![[Pasted image 20240714215859.png|500]]
+![[meme-run-k8s.png|500]]
 
 >[!done]
 >That all for this session, I know that is a lot but not enough, i probably for sure 100%. But I am completely the walkthrough about general `kubernetes`, and know about how of each component submit a role and operate. To more understand, you need actually practice and play with `kubernetes` to gain experience and knowledge, that shorten way for learning about `kubernetes`

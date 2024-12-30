@@ -16,7 +16,7 @@ Documentation:
 - [Compare Azure roles to Microsoft Entra roles](https://learn.microsoft.com/vi-vn/training/modules/configure-role-based-access-control/5-compare-azure-roles-to-azure-ad-roles)
 - [Apply role-based access control](https://learn.microsoft.com/vi-vn/training/modules/configure-role-based-access-control/6-apply-authentication)
 
-![[Pasted image 20240416150707.png]]
+![[azure-rbac.png]]
 
 >[!info]
 >Role-based access control (RBAC) is a mechanism that can help you manage who can access your Azure resources. RBAC lets you determine what operations specific users can do on specific resources, and control what areas of a resource each user can access.

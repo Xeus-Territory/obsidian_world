@@ -6,7 +6,7 @@ tags:
 ---
 ## OSWAP Top 10 
 
-![[Pasted image 20240219122648.png]]
+![[icon-owasp.png]]
 ### Definition: 
 - The Open Web Application Security Project (OWASP) is a nonprofit foundation dedicated to improving software security.
 - It operates under an “open community” model, which means that anyone can participate in and contribute to OWASP-related online chats, projects, and more.

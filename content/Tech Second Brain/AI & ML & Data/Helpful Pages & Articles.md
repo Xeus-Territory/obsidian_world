@@ -120,3 +120,4 @@ tags:
 - [Medium - Data Pipeline Development with MinIO, Iceberg, Nessie, Polars, StarRocks, Mage, and Docker](https://blog.det.life/data-pipeline-development-with-minio-iceberg-nessie-polars-starrocks-mage-and-docker-1c7b4b52d5f4)
 - [Medium - ETL and ELT](https://blog.det.life/etl-and-elt-965ca3bc0175)
 - [Medium - ELT with Fabric, Azure and Databricks](https://medium.com/@hugolu87/elt-with-fabric-azure-and-databricks-2b49f148428f)
+- [Medium - Apache Airflow Overview](https://medium.com/@vutrinh274/apache-airflow-overview-61c939abe126)

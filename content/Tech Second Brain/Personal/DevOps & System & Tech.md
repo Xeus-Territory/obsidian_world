@@ -24,6 +24,7 @@ tags:
 - [awesome-design](https://github.com/gztchan/awesome-design): Curated design resources from all over the world.
 - [awesome-sysadmin](https://github.com/awesome-foss/awesome-sysadmin): A curated list of amazingly awesome open-source sysadmin resources.
 - [awesome-ebpf](https://github.com/zoidyzoidzoid/awesome-ebpf) : A curated list of awesome projects related to eBPF.
+- [awesome-cloudnative-trainings](https://github.com/joseadanof/awesome-cloudnative-trainings): Awesome Trainings from Cloud Native Computing Foundation Projects and Kubernetes related software
 - [web-servers.md](https://gist.github.com/willurd/5720255) : Each of these commands will run an ad hoc http static server in your current (or specified) directory
 - [awesome-devsecops](https://github.com/JakobTheDev/awesome-devsecops): Curating the best DevSecOps resources and tooling.
 - [self-hosting-guide](https://github.com/mikeroyal/Self-Hosting-Guide) : Learn all about locally hosting
@@ -39,6 +40,8 @@ tags:
 - [awesome-webhooks](https://github.com/realadeel/awesome-webhooks): A curated list about real-time webhooks.
 - [DevOps-Bash-tools](https://gitlab.com/HariSekhon/DevOps-Bash-tools):  DevOps Bash Scripts Collection
 - [to be continuous...](https://gitlab.com/to-be-continuous): GitLab CI templates
+- [DevOps-Roadmap](https://github.com/milanm/DevOps-Roadmap): DevOps Roadmap with learning resources. contents by Milan **(Legit Recommend)**
+- [devops-exercises](https://github.com/bregman-arie/devops-exercises): For who want to start with DevOps journey
 ## Page
 
 - [HelloGitHub](https://github.com/521xueweihan/HelloGitHub) : Share interesting, entry-level open source projects on GitHub. [EN](https://hellogithub.com/en)
@@ -54,11 +57,18 @@ tags:
 
 - [Package manager](https://github.com/topics/package-manager)
 - [Metrics](https://github.com/topics/metrics)
-- [Api Gateway](https://github.com/topics/api-gateway)
 - [Virtual Machine](https://github.com/topics/virtual-machine)
 - [Compiler](https://github.com/topics/compiler)
 - [Interpreter](https://github.com/topics/interpreter)
 - [Logging](https://github.com/topics/logging)
+- [Toolkit](https://github.com/topics/toolkit)
+- [Library](https://github.com/topics/library)
+- [Orchestration](https://github.com/topics/orchestration)
+- [Configuration Management](https://github.com/topics/configuration-management)
+- [Hacktoberfest](https://github.com/topics/hacktoberfest)
+- [DevOps](https://github.com/topics/devops)
+- [DevSecOps](https://github.com/topics/devsecops)
+- [Kubernetes](https://github.com/topics/kubernetes)
 ## Organization
 
 - [Spotify](https://github.com/spotify): Spotify Github Repositories
@@ -92,6 +102,7 @@ tags:
 - [Authzed](https://github.com/authzed): Creators of SpiceDB, the open source fine-grained permissions database. YC W21.
 - [Fluent](https://github.com/fluent): a cloud native logging solution to unify data collection and consumption.
 - [GoogleChrome](https://github.com/GoogleChrome): GoogleChrome Extension and couple useful things
+- [Bytedance Inc](https://github.com/bytedance): ByteDance's open source projects hub for innovation. [Website](https://opensource.bytedance.com/), Who stand behind [KubeWharf](https://github.com/kubewharf)
 ## Landscape
 
 - [Apache Project Directory](https://projects.apache.org/projects.html) : List all of product of Apache
@@ -100,7 +111,9 @@ tags:
 - [Linux Foundation Project](https://www.linuxfoundation.org/projects) : Opensource Ambassador for projects from multiple users
 - [Platform Engineer landscape](https://platformengineering.org/platform-tooling): Distills the best practices in designing IDP
 - [Cloud Native Glossary](https://glossary.cncf.io/): The Cloud Native Glossary aims to make the cloud native space
+## Innovation
 
+- [LFX](https://lfx.linuxfoundation.org/): a hub for collaboration and sustainability in open source
 # Blog DevOps and Tech
 
 >[!note]
@@ -135,6 +148,7 @@ tags:
 - [Spacelift Blog](https://spacelift.io/blog) - Blog tech about infrastructure as code, and cloud services
 - [Terraform Weekly](https://www.weekly.tf/) - A weekly newsletter about Terraform ecosystem (posts, tools, tips&tricks, open-source) with humble opinions by Anton Babenko.
 - [Medium - DevOps.dev](https://blog.devops.dev/) - The community about DevOps Article, Cloud and more over things
+- [Medium - Puru Tuladhar](https://ptuladhar3.medium.com/) - The guy who write about Solution took around Kubernetes
 ## Architecture Blog
 
 - [Noted](https://noted.lol/) - Self Hosted App and Product Reviews
@@ -186,8 +200,6 @@ tags:
 ## Technologies
 
 - [DevOps Cube - Prometheus Architecture: Complete Breakdown of Key Components](https://devopscube.com/prometheus-architecture/)
-- [Medium - GitOps with Kubernetes, Terraform, Gitlab and FluxCD](https://medium.com/@prag-matic/gitops-with-kubernetes-terraform-gitlab-and-fluxcd-2875d1010dac)
-- [Medium - Configure CI/CD pipeline: GitlabCI, ArgoCD, HelmCharts & SOPS](https://medium.com/@golaneduard1/configure-ci-cd-pipeline-gitlabci-argocd-helmcharts-sops-3cbf94f300ed)
 - [Medium - Infrastructure as Code Landscape Overview 2024](https://medium.com/itnext/infrastructure-as-code-landscape-overview-2024-a066124e5989)
 - [Medium - Master Command Orchestration](https://medium.com/itnext/master-command-orchestration-16f4a117ce05)
 - [Medium - MQTT Market Trends for 2024: Cloud, Unified Namespace, Sparkplug, Kafka Integration](https://medium.com/@kai-waehner/mqtt-market-trends-for-2024-cloud-unified-namespace-sparkplug-kafka-integration-1428d0c3c773)
@@ -211,11 +223,11 @@ tags:
 - [Medium - Observability 2.0 with AWS OpenTelemetry Collector](https://medium.com/@usingsystem/observability-2-0-with-aws-opentelemetry-collector-7fef0e0e2c1c)
 - [Blog - Obsidian: the Good, the Bad, & the Ugly](https://www.originalmacguy.com/obsidian-the-good-the-bad-the-ugly/)
 - [Medium - Grafana Alloy & OpenTelemetry](https://medium.com/@magstherdev/grafana-alloy-opentelemetry-59c171d2ebfc)
+- [Medium - SLOs should be easy, say hi to Sloth](https://medium.com/itnext/slos-should-be-easy-say-hi-to-sloth-9c8a225df0d4)
 ## Techniques
 
 - [Internet - How to build and deploy React Native applications with Fastlane](https://tech.sparkfabrik.com/en/blog/fastlane_build/)
 - [Dev.io - Automating mobile application deployments using Fastlane and CI/CD tools](https://dev.to/jei/automating-mobile-application-deployments-using-fastlane-and-ci-cd-tools-2iae)
-- [Medium - eBPF Maps State Synchronization across Multi-Node Kubernetes Cluster](https://medium.com/gitconnected/ebpf-maps-state-synchronization-across-multi-node-kubernetes-cluster-d0c075810fa7)
 - [Medium - Data Engineering Best Practices: How Big Tech & FAANG Firms Manage and Optimize Apache Kafka](https://acceldataio.medium.com/data-engineering-best-practices-how-big-tech-faang-firms-manage-and-optimize-apache-kafka-95d520db60bb)
 - [Dev.to - 5 ways for GitLab CI runners to get AWS credentials](https://dev.to/edmundkwok/5-ways-for-gitlab-ci-runners-to-get-aws-credentials-11hp)
 - [Dev.to - Authenticating your GitLab CI runner to an AWS ECR registry using Amazon ECR Docker Credential Helper 🔑](https://dev.to/aws-builders/authenticating-your-gitlab-ci-runner-to-an-aws-ecr-registry-using-amazon-ecr-docker-credential-helper-3ba)
@@ -226,7 +238,6 @@ tags:
 - [Medium - Establishing an Enterprise-Ready DevSecOps CI/CD Pipeline on GitHub Actions on Google Cloud](https://medium.com/@anshumaansingh10jan/building-an-enterprise-ready-devsecops-ci-cd-pipeline-on-github-actions-for-gcp-6746f6a43187)
 - [Medium - GitHub Actions — Versatile and Easy Serverless CI/CD Pipeline](https://itnext.io/github-actions-versatile-and-easy-serverless-pipeline-53d088a7a77b)
 - [Medium - Observability Series: A Step-by-Step Guide to Logs, Traces, and Metrics](https://medium.com/gitconnected/observability-series-a-step-by-step-guide-to-logs-traces-and-metrics-9860d7c46220)
-- [Medium - End-to-End DevSecOps and GitOps Implementation with Jenkins, Docker, SonarQube, Trivy, Terraform, ArgoCD, and Amazon EKS](https://medium.com/@harsh05/end-to-end-devsecops-and-gitops-implementation-with-jenkins-docker-sonarqube-trivy-terraform-3ae842882b75)
 ## System and Cloud Design
 
 - [Azure - Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)
@@ -246,6 +257,7 @@ tags:
 - [Medium - 23 Fundamental Principles for Software Architects](https://azeynalli1990.medium.com/23-fundamental-principles-for-software-architects-f42aaae7f740)
 - [Medium - Single Point of Failure (SPOF) in System Design](https://levelup.gitconnected.com/single-point-of-failure-spof-in-system-design-c8bbac5af993)
 - [Ably - Event-driven architecture patterns and when to use them](https://ably.com/topic/event-driven-architecture-patterns)
+- [Medium - Building end-to-end DevSecOps for AWS Migration: Security at Entry Level with open source SCA, SAST and DAST tools](https://medium.com/@akhilmittal510/building-end-to-end-devsecops-for-aws-migration-security-at-entry-level-with-open-source-sca-sast-919480423fc1)
 # Opensource Finder
 
 >[!note]
@@ -311,13 +323,6 @@ tags:
 
 >[!note]
 >Collections a supper cool and powerful tools for multiple purpose attaching with DevOps
-## API Gateway
-
-- [Kong](https://docs.konghq.com/gateway/latest/): API gateway built for hybrid and multi-cloud, optimized for microservices and distributed architectures
-- [Apache APISIX](https://apisix.apache.org/docs/apisix/getting-started/README/): The Cloud-Native API Gateway
-- [tyk](https://github.com/TykTechnologies/tyk): Open Source API Gateway written in Go, supporting REST, GraphQL, TCP and gRPC protocols
-- [lura](https://github.com/luraproject/lura): Ultra performant API Gateway with middlewares
-- [easegress](https://github.com/easegress-io/easegress): A Cloud Native traffic orchestration system
 ## Automation Build Platforms
 
 - [Expo](https://docs.expo.dev/): Expo is a framework that makes developing Android and iOS apps easier. Our framework provides file-based routing, a standard library of native modules, and much more
@@ -338,6 +343,10 @@ tags:
 - [Brainboard](https://www.brainboard.co/) : An AI driven platform to visually design, generate terraform code and manage cloud infrastructure, collaboratively.
 - [Cloudairy](https://cloudairy.com/) : **Cloudchart** is a cloud focused diagram tool designed to help you easily map out cloud infrastructures
 - [Excalidraw](https://excalidraw.com/): Hand-drawn look & feel - Collaborative - Secure
+
+## Configuration as Code
+
+- [Configu](https://github.com/configu/configu): Open-source ConfigOps infrastructure ⚙️
 ## eBPF
 
 - [ecapture](https://github.com/gojue/ecapture): Capturing SSL/TLS plaintext without a CA certificate using eBPF. Supported on Linux/Android kernels for amd64/arm64. [Documentation](https://ecapture.cc/guide/introduction.html)
@@ -433,6 +442,11 @@ tags:
 - [dcgm](https://developer.nvidia.com/dcgm): Manage and Monitor GPUs in Cluster Environments
 - [Log Viewer (Log4j, NLog)](https://sourceforge.net/projects/styort-logviewer/): a high performance realtime log viewer via UDP (Chainsaw/NLogViewer) or text file.
 - [vector](https://github.com/vectordotdev/vector): A high-performance observability data pipeline.
+- [coroot](https://github.com/coroot/coroot): an open-source APM & Observability tool
+- [sloth](https://github.com/slok/sloth): 🦥 Easy and simple Prometheus SLO (service level objectives) generator
+- [OpenSLO](https://github.com/OpenSLO/OpenSLO): Open specification for defining and expressing service level objectives (SLO)
+- [pyrra](https://github.com/pyrra-dev/pyrra): Making SLOs with Prometheus manageable, accessible, and easy to use for everyone!
+- [cloudprober](https://github.com/cloudprober/cloudprober): An active monitoring software to detect failures before your customers do.
 ## Orchestration Framework
 
 - [luigi](https://github.com/spotify/luigi): a Python module that helps you build complex pipelines of batch jobs. It handles dependency resolution, workflow management, visualization etc. It also comes with Hadoop support built in.
@@ -532,14 +546,6 @@ tags:
 
 - [webvm](https://github.com/leaningtech/webvm): Virtual Machine for the Web
 - [firecracker](https://github.com/firecracker-microvm/firecracker): Secure and fast microVMs for serverless computing.
-## Web server
-
-- [traefik proxy](https://doc.traefik.io/traefik/) : Traefik is an [open-source](https://github.com/traefik/traefik) _Edge Router_ that makes publishing your services a fun and easy experience
-- [Caddy server](https://caddyserver.com/docs/): Caddy is a powerful, extensible platform to serve your sites, services, and apps, written in Go
-- [HAProxy](https://docs.haproxy.org/) : HAProxy is a free, very fast and reliable reverse-proxy offering [high availability](http://en.wikipedia.org/wiki/High_availability), [load balancing](http://en.wikipedia.org/wiki/Load_balancer), and proxying for TCP and HTTP-based applications
-- [httpd - Apache2](https://httpd.apache.org/) : The Apache HTTP Server Project is an effort to develop and maintain an open-source HTTP server for modern operating systems including UNIX and Windows.
-- [IIS](https://learn.microsoft.com/en-us/iis/): Window webserver
-- [Nginx](https://nginx.org/en/docs/): nginx is an HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server. (Most powerful)
 ## Web Analytics
 
 - [Plausible](https://github.com/plausible/analytics): Simple, open source, lightweight (< 1 KB) and privacy-friendly web analytics alternative to Google Analytics.

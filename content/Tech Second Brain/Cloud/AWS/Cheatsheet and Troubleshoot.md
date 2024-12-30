@@ -8,7 +8,7 @@ tags:
 ---
 # Which reason do you concern AWS ?
 
-![[Pasted image 20240801094225.png]]
+![[thumbnail-aws.png]]
 
 >[!quote]
 >The big reason why i choose AWS about unique idea of maintainer and developer from AWS company put inside their services. They give me other perspective to create, control and manage service, and that is creating the difference between `aws` and `azure`. Especially, this cloud have some strange service and practice with it help me have more knowledge, and that why I concern to choose `AWS` and one more thing huge community stand behind will help you resolve any problems, for sure.
@@ -69,10 +69,6 @@ So enjoy what you need, inside the article will share about how you CLI, cheatsh
 - [Medium - AWStip](https://awstip.com/): Community of passionate AWS builders.
 ## Articles
 
-- [Medium - ECS (Fargate) with ALB Deployment Using Terraform — Part 3](https://medium.com/the-cloud-journal/ecs-fargate-with-alb-deployment-using-terraform-part-3-eb52309fdd8f)
-- [Medium - Creating SSL Certificates using AWS Certificate Manager (ACM)](https://medium.com/@sonynwoye/creating-ssl-certificates-using-aws-certificate-manager-acm-1c359e70ce4d)
-- [Medium - Configuring Production-Ready EKS Clusters with Terraform and GitHub Actions](https://medium.com/stackademic/configuring-production-ready-eks-clusters-with-terraform-and-github-actions-c046e8d44865)
-- [AWS Docs - Grant IAM users access to Kubernetes with EKS access entries](https://docs.aws.amazon.com/eks/latest/userguide/access-entries.html)
 - [CloudZero - AWS NAT Gateway Pricing: Simple Strategies To Limit Costs](https://www.cloudzero.com/blog/reduce-nat-gateway-costs/)
 - [PacketFabric - A Deep Dive into NAT Gateway Alternatives](https://packetfabric.com/blog/a-deep-dive-into-nat-gateway-alternatives)
 - [Medium - 18 AWS Lambda Microstacks](https://awstip.com/18-aws-lambda-microstacks-bb20776601c0)
@@ -83,16 +79,18 @@ So enjoy what you need, inside the article will share about how you CLI, cheatsh
 - [Medium - AWS Console-to-Code Now Generally Available](https://medium.com/@TechStoryLines/aws-console-to-code-now-generally-available-f0f63490ac9b)
 - [AWS Docs - Understanding Lambda function scaling](https://docs.aws.amazon.com/lambda/latest/dg/lambda-concurrency.html)
 - [AWS Blogs - 7 AWSome ways to use AWS Chatbot](https://aws.amazon.com/blogs/mt/7-awsome-ways-to-use-aws-chatbot/)
-- [AWS Blogs - Monitoring metrics and setting up alarms on your Amazon DocumentDB (with MongoDB compatibility) clusters](https://aws.amazon.com/blogs/database/monitoring-metrics-and-setting-up-alarms-on-your-amazon-documentdb-with-mongodb-compatibility-clusters/)
 - [Medium - Full-stack Observability and Monitoring on AWS](https://kevinkiruri.medium.com/observability-and-monitoring-on-aws-42628f13b569)
-- [AWS Blogs - Viewing Amazon CloudWatch metrics with Amazon Managed Service for Prometheus and Amazon Managed Grafana](https://aws.amazon.com/blogs/mt/viewing-amazon-cloudwatch-metrics-with-amazon-managed-service-for-prometheus-and-amazon-managed-grafana/)
-- [AWS Docs - Profiling Amazon DocumentDB operations](https://docs.aws.amazon.com/documentdb/latest/developerguide/profiling.html)
 - [Linkedin - ISO 27001 Compliance in AWS](https://www.linkedin.com/pulse/iso-27001-compliance-aws-valentin-komarovskiy-mba-ketke)
-- [AWS Docs - Configuring and managing a Multi-AZ deployment for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)
-- [AWS Blogs - Proactive autoscaling of Kubernetes workloads with KEDA using metrics ingested into Amazon Managed Service for Prometheus](https://aws.amazon.com/blogs/mt/proactive-autoscaling-kubernetes-workloads-keda-metrics-ingested-into-aws-amp/)
-- [AWS Blogs - A deep dive into simplified Amazon EKS access management controls](https://aws.amazon.com/vi/blogs/containers/a-deep-dive-into-simplified-amazon-eks-access-management-controls/)
+## Development & Implementation
+
+- [Medium - ECS (Fargate) with ALB Deployment Using Terraform — Part 3](https://medium.com/the-cloud-journal/ecs-fargate-with-alb-deployment-using-terraform-part-3-eb52309fdd8f)
+- [Medium - Creating SSL Certificates using AWS Certificate Manager (ACM)](https://medium.com/@sonynwoye/creating-ssl-certificates-using-aws-certificate-manager-acm-1c359e70ce4d)
 - [AWS Blogs - AWS Multi-Account Security Reference Architecture](https://medium.com/squareops/aws-multi-account-security-reference-architecture-ac3c31f5e1f9)
-## Issues
+- [AWS Docs - Configuring and managing a Multi-AZ deployment for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)
+- [AWS Docs - Profiling Amazon DocumentDB operations](https://docs.aws.amazon.com/documentdb/latest/developerguide/profiling.html)
+- [AWS Blogs - Viewing Amazon CloudWatch metrics with Amazon Managed Service for Prometheus and Amazon Managed Grafana](https://aws.amazon.com/blogs/mt/viewing-amazon-cloudwatch-metrics-with-amazon-managed-service-for-prometheus-and-amazon-managed-grafana/)
+- [AWS Blogs - Monitoring metrics and setting up alarms on your Amazon DocumentDB (with MongoDB compatibility) clusters](https://aws.amazon.com/blogs/database/monitoring-metrics-and-setting-up-alarms-on-your-amazon-documentdb-with-mongodb-compatibility-clusters/)
+## Troubleshoot
 
 - [AWS re:Post - Getting an Access Denied error message when I upload files to my Amazon S3 bucket](https://repost.aws/knowledge-center/s3-access-denied-error-kms)
 - [AWS - Troubleshoot access denied (403 Forbidden) errors in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/troubleshoot-403-errors.html#access-denied-message-examples)

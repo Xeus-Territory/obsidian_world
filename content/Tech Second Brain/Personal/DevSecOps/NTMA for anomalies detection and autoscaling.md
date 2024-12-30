@@ -10,7 +10,7 @@ tags:
 ---
 # Why was it gonna released ?
 
-![[Pasted image 20240324111622.png]]
+![[thumbnail-ntma.png]]
 <div align="center">
     <strong><em><p style="text-align: center;">NTMA - Project Infrastructure</p></em></strong>
 </div>

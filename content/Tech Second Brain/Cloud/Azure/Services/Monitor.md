@@ -8,7 +8,7 @@ tags:
 ---
 # What is Azure Monitor ?
 
-![[Pasted image 20240513154757.png]]
+![[thumbnail-azure-monitoring.png]]
 
 Reference resource
 

@@ -70,6 +70,8 @@ tags:
 >[!info]
 >The madness and badass repository will provide huge information about Cyber and Information Security
 
+## Repository
+
 - [awesome-pentest](https://github.com/enaqx/awesome-pentest) : A collection of awesome penetration testing resources, tools and other shiny things
 - [awesome-infosec](https://github.com/onlurking/awesome-infosec) : A curated list of awesome `infosec` courses and training resources.
 - [the-book-of-secret-knowledge](https://github.com/trimstray/the-book-of-secret-knowledge) : A collection of inspiring lists, manuals, cheat-sheets, blogs, hacks, one-liners, cli/web tools and more.
@@ -92,7 +94,12 @@ tags:
 - [OWASP Project](https://owasp.org/projects/) : Collection about OWASP Opensource
 - [OWASP Collection](https://owasp.org/www-community/Free_for_Open_Source_Application_Security_Tools): Free for Open Source Application Security Tools
 - [sec_profile](https://github.com/tanjiti/sec_profile): Chinese Collection about Security with profile vulnerability and awesome hacking technique
+## Topics
 
+- [Reconnaissance](https://github.com/topics/reconnaissance)
+- [Penetration Testing](https://github.com/topics/penetration-testing)
+- [Pentest](https://github.com/topics/pentest)
+- [Security Tools](https://github.com/topics/security-tools)
 # Awesome Articles
 
 >[!info]
@@ -375,7 +382,7 @@ tags:
 - [IppSec Achievement](https://ippsec.rocks/?#)
 # CTF (Capture the flag)
 
-![[ctf_flag_logo.gif|center]]
+![[icon-ctf-flag.gif|center]]
 
 >[!info]
 >*“CTFs are gamified competitive cybersecurity events that are based on different challenges or aspects of information security. They are excellent for both beginners and experienced hackers looking to develop, test, and prove their skills because they gamify hacking concepts. We're big believers in the power of gamification here at Hack The Box! Gamification makes learning about something like a video game. Because gamification is fun and makes you think creatively, it’s one of the most effective ways to learn and develop skills.”*

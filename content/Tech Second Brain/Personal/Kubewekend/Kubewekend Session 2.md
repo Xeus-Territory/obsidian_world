@@ -23,7 +23,7 @@ List of topics in series
 
 ## `Ansible` and what can we do with one ?
 
-![[Pasted image 20240711101753.png]]
+![[icon-ansible.png]]
 
 IYKYK, I have a topic which write about Ansible, and how I use ansible to provisioning `AWS Cloud`, that like crazy and powerful tools with huge community support. I hope you can find well about that at: [Ansible, Terraform and your first infrastructure](https://hackmd.io/@XeusNguyen/SJBPGfcbp)
 
@@ -43,7 +43,7 @@ Get the official documentation to understand more about `Ansible`, read more at 
 
 Ansible uses simple, human-readable scripts called playbooks to automate your tasks. You declare the desired state of a local or remote system in your playbook. Ansible ensures that the system remains in that state.
 
-![[Pasted image 20240711105244.png]]
+![[thumbnail-ansible-general.png]]
 
 Following the Ansible, Ansible is designed for
 
@@ -78,7 +78,7 @@ You can use `ansible --version` to validate your progress is alright or not, dou
 
 For fun fact, if you search on `kind` in internet like Google, you will not find anything about this tool on the head, for sure but if you find `Kind Cluster` that will help you choose right location of `kind`. Or simply access at [Kind documentation](https://kind.sigs.k8s.io/), LOL 🥲, more pleasant things inside their [github](https://github.com/kubernetes-sigs/kind)
 
-![[Pasted image 20240711105617.png]]
+![[icon-kind.png]]
 
 >[!quote]
 >With me, `kind` is such helpful tool, and easily to management Kubernetes cluster, honestly when you work with `k3s`, `minikube` that cause you a lot trouble when you not follow those documentation. `kind` is easily to run, just need `container runtime` like `docker` and you have completely `kubernetes` in locally to practical, how cool is it !!! 🥶
@@ -117,7 +117,7 @@ So if you setup the `kind`, you will receive features from team project, includi
 
 After you bring up the `kind`, you will have the cluster with include the services like
 
-![[Pasted image 20240711133117.png]]
+![[thumbnail-kind-general.png]]
 
 And if you have `kubectl` inside your host, `kind` will automatically export `kubeconfig` for your purpose to give bride to contact with your cluster, how cool is that 😄
 
@@ -596,7 +596,7 @@ And now you have full accessible to `kind` cluster, and we will talk about deep 
 
 # Conclusion
 
-![[Pasted image 20240712113051.png]]
+![[meme-gg.png]]
 
 >[!done]
 >That is end of session 2, hope you enjoy and learn about new things, include `ansible` and `kind`, and the way we can use that tools to make valuable for yourself. In the end, you will have cluster in locally to practice `kubernetes` that really cool and helpful for learning more about `kubernetes`.

@@ -67,7 +67,7 @@ DB_PASSWORD=foobar
 
 and when you try log to console, the `VITE` prefix variables will expose to **client side** but if not have prefix, your variables will not expose, it mean you can try use this trick to provide hidden way to load environment to your application, bundle it and no exposing anything
 
-![[Pasted image 20240604143353.png|center]]
+![[meme-testing-production.png|center]]
 
 If you know you know, any language will exist `dotenv` library which help us provide and get variables from `.env` file into application, `React` with `Vitejs` can do same thing. You can install with command
 
@@ -130,7 +130,7 @@ yarn preview
 
 Usually access `http://localhost:4173/` on browser 
 
-![[Pasted image 20240604162808.png]]
+![[thumbnail-vite-react.png]]
 
 That's default project of `vite` but reach to source code to inspect does expose anything or not, finding in the chunks `js` file with some context
 
@@ -302,7 +302,7 @@ Therefore, if you integrate `process.env` solutions, I think your secrets will w
 Source code to small demo: [react-bundle-secret](https://github.com/Xeus-Territory/react-bundle-secret)
 # Conclusion
 
-![[Pasted image 20240605100618.png]]
+![[meme-leak-password.png]]
 
 >[!note]
 >That all for today, happy to comeback and learn something about `development` skills. But that need for my `devops` and understand why you need to recommend `dev` not to put anything `apikey` or `secretkey` on Client Side. Make sure you have `middleware` or put responsibility for `backend` to handling that job. Maybe i do trust the way or not know but that is best practice, that need to target 😅😅😅

@@ -6,7 +6,8 @@ tags:
   - monitoring
   - database
 ---
-# PostgreSQL in Docker
+# Postgres
+## In Docker
 
 >[!summary]
 >Ansible Playbooks for self-hosted PostgreSQL with Docker
@@ -86,7 +87,7 @@ tags:
 
 ```
 
-# PostgreSQL in VM
+## In VM
 
 >[!summary]
 >Ansible Playbooks for self-hosted PostgreSQL on VM

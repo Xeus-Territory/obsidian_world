@@ -8,22 +8,21 @@ tags:
 ---
 # Why I am choose Azure ?
 
-![[Pasted image 20240324104139.png]]
+![[icon-azure.png]]
 >[!quote]
 >To be honestly, Although I try some cloud platforms from basic to complicate, Azure has priority when I want use computing. This platform support more services, tools, utility which helpful a lot for uses. Not comparison between multiple Cloud platforms, In this series, I want to contribute why I choose Azure, what helpful services, some top of architecture and infrastructure, role of Azure Cloud with DevOps, Developers, ... and what I archive when doing with Azure
 
-![[Pasted image 20240324104302.png]]
+![[azure-general.png]]
 <div align="center">
     <strong><em><p style="text-align: center;"><a href="https://iamguptarishi.wordpress.com/2019/03/04/a-walkthrough-of-azure-services/">A walkthrough of Azure Services</a></p></em></strong>
 </div>
 
-![[Pasted image 20240324104438.png]]
+![[azure-services-decision.png]]
 <div align="center">
     <strong><em><p style="text-align: center;"><a href="https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree">Choose an Azure compute service</a></p></em></strong>
 </div>
 
-![[Pasted image 20241006100847.png|center|500]]
-
+![[azure-level-management.png|center|500]]
 <div align="center">
 	<strong><em><p style="text-align: center;"><a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources">Organize your Azure resources effectively</a></p></em></strong>
 </div>
@@ -70,11 +69,9 @@ What you can find out and figure out about Azure, Cloud Computing, Documentation
 - [Azure - Technology choices for Azure solutions](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/technology-choices-overview)
 - [Azure - Subscription and Service Limits, Quotas, and Constraints](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits)
 - [Azure - Web applications architecture design](https://learn.microsoft.com/en-us/azure/architecture/web-apps/)
-
 ## Blogs
 
 - [Medium - Dave R - Microsoft Azure & AI MVP☁️](https://blog.azinsider.net/)
-
 # Azure CLI
 
 ## az vm

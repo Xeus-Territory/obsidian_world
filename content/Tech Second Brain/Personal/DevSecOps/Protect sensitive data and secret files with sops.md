@@ -15,7 +15,7 @@ Before starting this week article, I already write about the some method to keep
 
 # The Story
 
-![[short-story-meme.png|center]]
+![[meme-short-story.png|center]]
 
 >[!quote]
 >*"When you work with any programs, web application or infrastructure, you always face and mess up with your sensitive environment variables or secret files, and you need to keep your secret not leaking anywhere. Honestly, This work will not gonna easily, and when you want to transfer those for your coworker, Is it gonna secure if you try to send message via `slack` or `teams`? In my perspective, no and no"*
@@ -32,7 +32,7 @@ Luckily, The opensource communities always don't make you disappoint with tons o
 With me the brightness candidate for us today, we will work, and try to practice with `sops` because it's indeed lightweight and ease to install, setup and integration with wide range automation platforms and languages. Find and explore more about this one on next part 🤔
 # What is sops?
 
-![[sops-image.png]]
+![[sops-repo.png]]
 
 If you have first time to work with `sops`, you will have great experience to involve this tool through
 
@@ -51,7 +51,7 @@ If you have first time to work with `sops`, you will have great experience to in
 
 SOPS brings us the ability to applying with multiple format file, you will ease to integrate to what ever file you want. The enhancement of SOPS will come from the interactive between SOPS and Cloud Platform
 
-![[Pasted image 20241013155100.png]]
+![[sops-roadmap.png]]
 <div align="center">
 	<p style="text-align: center;"><a href="https://twitter.com/sec_r0?ref=blog.gitguardian.com">Source:  @sec_r0</a></p>
 </div>
@@ -102,7 +102,7 @@ You can find out some scenarios attacking to SOPS which referred by maintainers
 >In this practice session, I think we will focus to use `sops` with cloud service, and [AWS KMS](https://aws.amazon.com/kms/?nc1=h_ls) can surely ease to approach with [small price](https://aws.amazon.com/kms/pricing/) around 1$ for pay as you go, and free if you are on `free-tier` of AWS Program
 
 
-![[Pasted image 20241013142937.png]]
+![[sops-workflow.png]]
 <div align="center">
 	<p style="text-align: center;"><a href="https://www.middlewareinventory.com/blog/using-sops-with-aws-kms-encrypt-and-decrypt-files-devops-junction/">Source: Using SOPS with AWS KMS - Encrypt and Decrypt files | Devops Junction</a></p>
 </div>
@@ -382,7 +382,7 @@ It's bring you more value and ease to maintain your Terraform Code
 - No use any more `tfvars` to store your secret
 - Ease to delivery to CI/CD with no more configuration about variables
 
-![[Pasted image 20241013170907.png]]
+![[sops-terraform.png]]
 <div align="center">
 	<p style="text-align: center;"><a href="https://stratusgrid.com/blog/version-your-secrets-in-git-using-sops">Source: SOPS Encryption: How to Manage Your Secrets In Git With SOPS</a></p>
 </div>
@@ -430,7 +430,7 @@ local {
 
 # Conclusion
 
-![[byebye.png|center|500]]
+![[meme-byebye.png|center|500]]
 
 >[!done]
 >That all, I hope you have great journey to learn some more new tools, and more technique to keep your workflow smoothly and secure your workspace. Now you can try to implement SOPS, and try to managing in the good way with sensitive data with SOPS and your cloud platform, such as AWS KMS. I think with good leverage of cloud platform, you will have many and many opportunities to adapt with new workflow to your project, and It make sense with technological nowaday 😃

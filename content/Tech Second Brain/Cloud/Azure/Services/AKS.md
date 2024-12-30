@@ -8,7 +8,7 @@ tags:
 ---
 # Resource reservations
 
-![[Pasted image 20240403155239.png]]
+![[k8s-resource-reservation.png]]
 
 Documentation: [🔗Click to the link](https://learn.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#resource-reservations)
 
@@ -100,7 +100,7 @@ Real Memory Quotas
 
 *Documentation: [Node pools](https://learn.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#node-pools) - [Node selectors](https://learn.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#node-selectors)* 
 
-![[Pasted image 20240403160132.png]]
+![[azure-aks-structure.png]]
 
 >[!info]
 ><h2>What is Node Pools ?</h2>
@@ -135,7 +135,7 @@ Documentation: [🔗Click to the link](https://learn.microsoft.com/en-us/azure/a
 >[!info]
 >Kubernetes uses pods to **run** an instance of **your application**. A pod **represents** a **single instance** of your **application**.
 
-![[Pasted image 20240404093125.png]]
+![[k8s-general.png]]
 
 You can use command to get the pod (application pod)
 
@@ -164,7 +164,7 @@ kubectl get -n default deployments <your-deployment> -o wide
 
 ## Deployments and YAML manifests
 
-![[Pasted image 20240404153412.png]]
+![[k8s-deployment-workload.png]]
 
 Documentation: [🔗Click to the link](https://learn.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#deployments-and-yaml-manifests)
 
@@ -226,7 +226,7 @@ Documentation: [🔗Click to the link](https://learn.microsoft.com/en-us/azure/a
 
 Documentation: [🔗Click to the link](https://learn.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#statefulsets)
 
-![[Pasted image 20240404155713.png]]
+![[k8s-service-pods-volumes.png]]
 
 >[!info]
 >With StatefulSet, you can consider when create
@@ -241,7 +241,7 @@ Documentation: [🔗Click to the link](https://learn.microsoft.com/en-us/azure/a
 >With StatefulSets, the underlying persistent storage remains, even when the StatefulSet is deleted.
 ### DaemonSets
 
-![[Pasted image 20240404161022.png]]
+![[k8s-daemonset-workload.png]]
 
 *Documentation: [doc](https://learn.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#daemonsets)*
 
@@ -256,7 +256,7 @@ Documentation: [🔗Click to the link](https://learn.microsoft.com/en-us/azure/a
 Documentation: [🔗Click to the link](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/)
 ### Definition
 
-![[Pasted image 20240404162837.png]]
+![[k8s-cronjob.png]]
 
 >[!tldr]
 ><h2> What is cronjobs ? </h2>
@@ -301,7 +301,7 @@ Other than the standard syntax, some macros like @monthly can also be used:
 
 # Storage
 
-![[Pasted image 20240404165952.png]]
+![[k8s-storage.png]]
 
 With Kubernetes work on Azure Cloud. Therefore, we need consider what type of storage, cluster can associate
 
@@ -339,7 +339,7 @@ Related articles
 - [Kubernetes - Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)
 # Networking
 
-![[Pasted image 20240405104406.png]]
+![[k8s-ingress.png]]
 
 Documentation
 

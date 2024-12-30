@@ -10,7 +10,7 @@ tags:
 
 Documentation: [Create a Microsoft Customer Agreement subscription](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/create-subscription)
 
-![[Pasted image 20240416141907.png]]
+![[azure-level-management.png]]
 
 >[!info]
 >Subscriptions help you organize access to Azure cloud service resources, and help you control how resource usage is reported, billed, and paid.

@@ -11,7 +11,7 @@ tags:
 
 # Why we need automation test ?
 
-![[short-story-meme.png|center]]
+![[meme-short-story.png|center]]
 
 The story stands behind the automation test that will be a lot and when we need separate into some categories, you will figure out kind general things in those scenarios, such as
 
@@ -44,7 +44,7 @@ I need to say, community already serve us multiple ways to improve the product a
 
 When I try to dig into this field, I figure out you need to pick up only one for your, and I find [`jest` - javascript framework](https://jestjs.io/) - ease to use and pretty cool for integrating that into automation test, so why not?
 
-![[jest.png|center|400]]
+![[icon-jest.png|center|400]]
 
 The first reason why I choose `Jest`, because `Jest` already enough things to create completely things to integrating test inside working pipelines with awesome features, such as
 
@@ -258,7 +258,7 @@ You think how to access HTML as GitLab Page, you can easily to access into artif
 
 # Conclusion
 
-![[byebye.png|center|500]]
+![[meme-byebye.png|center|500]]
 
 >[!done]
 >That @all for this week, I hope you find well with this article and prepare enough for your automation testing integration progress. I think `jest` that truly useful and power framework to testing with Javascript and framework, and with GitLab, This platform is superb and huge to deep dive and you will always surprise with this one, 100% honestly. However, You have chance to absorb anything else and I think write couple thing for automation testing is one of these process

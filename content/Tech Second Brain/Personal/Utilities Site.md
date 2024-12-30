@@ -10,14 +10,26 @@ title: Utilities Site for multiple purpose
 >[!info]
 >Finding the utilities for your desktop and work
 
+## Images
+
 - [Pinterest](https://www.pinterest.com/) - Free Image HD
 - [Unsplash](https://unsplash.com/) - Free Image Download Page
+## Templates
+
 - [Slidesgo](https://slidesgo.com/) - Free Google Slides themes and Powerpoint templates
+## Fonts
+
 - [1001 Fonts](https://www.1001fonts.com/) - Free Fonts
+## Icons
+
 - [Emojipedia](https://emojipedia.org/) - Find and get your emoji in unicode
+- [Emoji Code List](https://hackmd.io/@TANNY/Hy8FoOPtD/https%3A%2F%2Fwww.webfx.com%2Ftools%2Femoji-cheat-sheet%2F) - Easily click to copy and paste emojis into any app or social media platform to make your content stand out!
+- [TechIcons](https://techicons.dev/) - Download, copy and paste tech icons in SVG and PNG format for your projects.
+- [SVGRepo](https://www.svgrepo.com/) - Search, explore and edit the best-fitting free icons or vectors for your projects using a wide variety vector library.
+## File Converter & Downloader
+
 - [Convertio](https://convertio.co/) - File Converter
 - [En - Savefrom](https://en1.savefrom.net/2ol/) or [Vi - Savefrom](https://vi.savefrom.net/243/) - Free Online Video Downloader
-- [Emoji Code List](https://hackmd.io/@TANNY/Hy8FoOPtD/https%3A%2F%2Fwww.webfx.com%2Ftools%2Femoji-cheat-sheet%2F) - Easily click to copy and paste emojis into any app or social media platform to make your content stand out!
 # Fun Websites
 
 >[!info]

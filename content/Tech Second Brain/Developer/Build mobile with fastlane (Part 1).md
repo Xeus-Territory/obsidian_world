@@ -16,7 +16,7 @@ You can follow and take a look other blog of me about [[Setup Environment for bu
 
 ## Introduce
 
-![[Pasted image 20240530105438.png]]
+![[icon-fastlane.png]]
 
 >[!info]
 >**fastlane** is the easiest way to automate beta deployments and releases for your iOS and Android apps. 🚀 It handles all tedious tasks, like generating screenshots, dealing with code signing, and releasing your application.
@@ -33,7 +33,7 @@ Yeah, in my opinion, `fastlane` is simple way to automatically your progress whe
 
 And many more reason and benefit when you can choose this tool for instead of multiple extensions
 
-![[Pasted image 20240530111116.png]]
+![[meme-deploy-production.png]]
 
 ## Install fastlane
 
@@ -305,7 +305,7 @@ It will ask you couple question, for supply the generate you can make decision f
 
 After that, you can `./fastlane` directory and `gemfile` is create, and inside `fastlane` you can see it include two file `Appfile` and `Fastfile`
 
-![[Pasted image 20240530145431.png]]
+![[meme-build-apk-gradle.png]]
 
 I do not familiar with upload application to **Google Play**, but maybe on next time, I will guide you about that. Before that, you can read and do step by step like instruction, `key.json` is result of last progress (Include: secret-key, name for authentication to Google Play Console). Read more at [Documentaion: Setting up supply](https://docs.fastlane.tools/getting-started/android/setup/#:~:text=distribute%20your%20app.-,Setting%20up%20supply,-supply%20is%20a)
 
@@ -336,7 +336,7 @@ When you applied all kind of things, you will have folder `android`, like
 
 # Gradle Configuration (Android)
 
-![[Pasted image 20240530152205.png]]
+![[thumbnail-gradle-vs-kotlin.png]]
 
 When you build android, you need to setup the environments for build and release applications, you can read and check about requirements at [[Setup Environment for build android#Install requirements|Requirements things for build android]]
 
@@ -826,7 +826,7 @@ source ~/.bashrc
 
 # Conclusion
 
-![[Pasted image 20240601164543.png]]
+![[meme-gradle-build.png]]
 
 >[!summary]
 >That all for today, I hope this articles can help you and more others people which struggling on setup android project, introduce `fastlane` which such powerful for automation building mobile application. On the next part, I will deliver you a **way to deployment and upload application to google play for beta test** 🚀🚀🚀

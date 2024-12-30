@@ -10,7 +10,7 @@ tags:
 >Hi @all, as you can see Kubernetes is becoming the potential technology in the world in couple recently year. The knowledge about Kubernetes honestly to say It's really huge, so today we can learn a bit about once of tools to maintain and deploy the workload inside Kubernetes Cluster, Helm. Let's digest
 # Installation
 
-![[Helm.png]]
+![[helm.png]]
 
 Official Homepage: [🔗Click to the link](https://helm.sh/)
 
@@ -67,7 +67,7 @@ mychart
 
 # Priority of Value in Helm
 
-![[Helm Vars Priority.png]]
+![[helm-vars-priority.png]]
 
 >[!important]
 >To override values in a chart
@@ -89,7 +89,7 @@ mychart
 
 `Helm` will submit the role for both of CI and CD progress*
 
-![[Helm workflow.png]]
+![[helm-workflow.png]]
 ## CI (Continuous Integration)
 
 <h2>helm dependency</h2>

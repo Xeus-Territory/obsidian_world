@@ -10,7 +10,7 @@ tags:
 >[!quote]
 >So hi @all, It's me again and long time no see, just have a quick break for vacation on last week. Back to back, today I will provide you the way to deploy your application, how the fast way the cloud service can help you serve this problems ? Let digest about ☕☕
 
-![[Pasted image 20240623094546.png|center]]
+![[meme-long-time-no-see.png|center]]
 
 # Problems and role of Cloud
 
@@ -18,7 +18,7 @@ tags:
 >I know when you want to perform or release your application, sometime you will meet some problems on knowledge when you do not have experience with Virtual machine (Azure), EC2 (AWS), or droplet (Digital Ocean) to setup and operation your application on these one
 >
 
-![[Pasted image 20240623095431.png|center]]
+![[thumbnail-vm-and-container-v2.png|center]]
 
 But don't worry, because of with the growth of containerization technologies, you will easily resolve that with your own application work like container, for example `docker` or `podman`.
 
@@ -54,7 +54,7 @@ But If you want have own instance like VM but not need to provision that, Azure 
 >[!note]
 >Just take a look via my article about this service [[Container Instances|Azure Container Instance]]
 
-![[Pasted image 20240623101459.png]]
+![[thumbnail-azure-container-instance.png]]
 
 >[!info]
 >Azure Container Instances offers the fastest and simplest way to run a container in Azure, without having to manage any virtual machines and without having to adopt a higher-level service.
@@ -82,7 +82,7 @@ In Azure App Service you will have multiple optional to operator your applicatio
 
 Base on your purpose, you will have decide the best service which you want. [Static Web App](https://azure.microsoft.com/en-us/products/app-service/static), service which I use for frontend application like React App, Just build the artifact, and push up to Static web app and others work will taken by Azure with Continuous Deployment
 
-![[Pasted image 20240623104036.png]]
+![[thumbnail-azure-static-webapp.png]]
 
 So with Azure, You have multiple selection to take responsible for operating your application. In the next part, I will share you about way to deploy your application in container with Azure Container App with provisioning progress and CI/CD to reach the goal.
 
@@ -98,7 +98,7 @@ How about AWS ? In my opinion, AWS have service do the jobs like Azure Provide. 
 
 I just not work to much with `AWS` but I can introduce some of them for your purpose, maybe can be wrong but hope so we can learn others from that 😄😄
 
-![[Pasted image 20240623135825.png]]
+![[aws-ecs.png]]
 <div align="center">
 	<strong><em><p style="text-align: center;">AWS ECS</p></em></strong>
 </div>
@@ -114,7 +114,7 @@ There are three layers in Amazon ECS:
 - Controller - Deploy and manage your applications that run on the containers
 - Provisioning - The tools that you can use to interface with the scheduler to deploy and manage your applications and containers
 
-![[Pasted image 20240623140424.png]]
+![[aws-ecs-layers.png]]
 
 With capacity, you have three options to choose when work with `ECS`
 
@@ -140,7 +140,7 @@ On the high layer, that client side with provide you multiple way to create and 
 - **[Copilot](https://github.com/aws/copilot-cli)** -  *Provides an open-source tool for developers to build, release, and operate production ready containerized applications on Amazon ECS*\
 - **[AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/home.html)** - *Provides an open-source software development framework that you can use to model and provision your cloud application resources using familiar programming languages*
 
-![[Pasted image 20240623142018.png]]
+![[aws-fargate.png]]
 <div align="center">
 	<strong><em><p style="text-align: center;">AWS Fargate</p></em></strong>
 </div>
@@ -152,7 +152,7 @@ On the high layer, that client side with provide you multiple way to create and 
 
 If you think about App service, yup `AWS` already have it `Amplify`
 
-![[Pasted image 20240623143045.png]]
+![[aws-amplify.png]]
 
 >[!info]
 >[Amplify Hosting](https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html) provides a Git-based workflow for hosting full-stack serverless web applications with continuous deployment
@@ -175,7 +175,7 @@ So that all about AWS, supper cool and unique services, and I just look around a
 
 ## Digital Ocean
 
-![[Pasted image 20240623144432.png]]
+![[thumbnail-digital-ocean.png]]
 
 Except three big cloud company, Digital Ocean is the best choice when you think about cheap, and fully service like big cloud provided by Digital Ocean. Externally, You can choose the alternative for Digital Ocean such as
 
@@ -188,7 +188,7 @@ But luckily, Digital Ocean is friendly and fastway to create your account, just 
 >[!quote]
 >Go to digital ocean, on the first think, I do not know about app service of them, Just mess up to think about way to create and management application via `Droplet` - VM service of Digital Ocean. But when read Terraform, and I know that really exist `serverless` for container app and app service, It called [App Platform](https://www.digitalocean.com/products/app-platform), that really make me impressed 💯
 
-![[Pasted image 20240623144907.png]]
+![[do-app-platform.png]]
 
 >[!info]
 >Get your apps to market fast with App Platform—a fully managed solution that's super simple to set up with cost-effective pricing so you can grow and scale with ease.
@@ -201,7 +201,7 @@ With app platform you really did awesome things, let me introduce hot feature
 
 Really honestly, App Platform still the best choice when you set it up and do familiar with cloud provider, really convenient and make you more easily to handling and aggressive to operator your application on Cloud environment
 
-![[Pasted image 20240623145846.png]]
+![[do-web-hosting.png]]
 
 App platform can help you hosting both frontend and backend service, such as
 
@@ -222,7 +222,7 @@ Reach to next part, we will actually provide and play with some cool thing to cr
 
 This part will talk about Azure and Digital Ocean, because of I really make and do familiar with that so far that will help you cut off effort to go to the goal. I think `App Platform` will scope of this article, will be **Azure** on next stage
 
-![[Pasted image 20240623150613.png|center]]
+![[meme-feeling-good.png|center]]
 
 Before reach to detail, some technologies with in-use for provisioning and create ci/cd process to completely, therefore you need to take that key feature to understand what I doing, like
 
@@ -230,7 +230,7 @@ Before reach to detail, some technologies with in-use for provisioning and creat
 - Azure DevOps Pipelines
 ## Completely Architecture
 
-![[Pasted image 20240623154334.png]]
+![[design-simple-deployment.png]]
 
 With simple deployment will include 2 way to affect to infrastructure, Dev and DevOps
 

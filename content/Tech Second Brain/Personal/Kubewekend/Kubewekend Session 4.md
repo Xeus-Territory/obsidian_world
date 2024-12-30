@@ -27,7 +27,7 @@ Before start this week, I want to give appreciation and shout out for many commu
 
 # What is `eBPF` ?
 
-![[Pasted image 20240719104018.png|center]]
+![[meme-ebpf.png|center]]
 
 Like I promising on the article about [[Profiling applications with Pyroscope]], today we will learn and do research about `eBPF` - the technologies stand behind `pyroscope`
 
@@ -44,7 +44,7 @@ You can use `BPF` via tools, such as `tcpdump`, `bpftool`, `perf`, `wireshark` -
 
 ## Introduce
 
-![[Pasted image 20240719154007.png]]
+![[thumbnail-ebpf-general.png]]
 >[!info]
 ><h3>eBPF</h3>
 >
@@ -113,7 +113,7 @@ To flexible in finding compatible version of kernel and programs, `ebpf` can mak
 
 `eBPF` is work with concept called `tail and function` call - It means function can be definition and calling functions of `eBPF` program and tail can call and execute another `eBPF` program and replace the execution context
 
-![[Pasted image 20240721092516.png|center]]
+![[meme-great-power-great-responsibility.png|center]]
 
 >[!quote]
 >*"With great power there must also come great responsibility"* 🙌
@@ -188,7 +188,7 @@ But we can understand more about `eBPF` in this series `kubewekend` through oper
 
 Let's take some example
 
-![[Pasted image 20240721134616.png]]
+![[thumbnail-profiling-grafana-pyroscope.png]]
 
 *"When you have tough case inside your application, and dunno any reason why your application become slowly"* - now you can use `eBPF` for observability tools like [Pyroscope](https://pyroscope.io/) to check what is going on with your application, memory leaks, pressure CPU and moreover
 
@@ -218,7 +218,7 @@ You can explore more about `eBPF` technically and compatible platform for your n
 
 # Cilium
 
-![[Pasted image 20240721140155.png]]
+![[thumbnail-cilium-feature.png]]
 
  With me `cilium` is one of most impressed I ever seen, that contain multiple things from networking, service mesh, the methodology how can control and give policy for your connection of pods inside Native Cloud like Kubernetes. It's a unique and maybe huge platform when you take a look on the technics 🤯. So what is `cilium` and why I get excited about it
 
@@ -256,7 +256,7 @@ By leveraging Linux eBPF, `Cilium` retains the ability to doing some interesting
 
 ## How to Install ?
 
-![[Pasted image 20240721143940.png|center]]
+![[meme-technology.png|center]]
 
 >[!quote]
 >Back to previous session, on the session 2, we are successful build and operate our cluster, but if you concern about when  you try `kubectl` get nodes, the state of `kubewekend` cluster is on not ready. It means we don't enable any CNI (Container Network Interface) inside cluster, check that on [[Kubewekend Session 2#Definition configuration for `kind`|Kind Configuration at Session 2]]. Therefore, we wait to in currently to operate and install `cilium` to `kubewekend` cluster

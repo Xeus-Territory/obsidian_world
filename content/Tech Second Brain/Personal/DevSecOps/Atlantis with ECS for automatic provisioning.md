@@ -15,7 +15,7 @@ tags:
 >[!quote]
 >Infrastructure as Code is becoming the importance part of `DevOps` role model, It means `DevOps` engineer can resolve many problem to help am I swallow all technically inside `cloud` and that is possible. `Terraform`, `Pulumi`, `Chef`, `OpenTofu` - Those come up and make this game to become more easier than ever, really tough !!! And we always have next-question about How can we create automation with those ? Does any things can help us ?
 
-![[gitopsvscicd.gif|center]]
+![[thumbnail-gitopsvscicd.gif|center]]
 
 And the answer is yes, and that is a lot solutions to help you attack problem, such as
 
@@ -33,7 +33,7 @@ And I will try with `Infrastructure` as first, and `IaC` is first topic I relate
 
 ## Introduce
 
-![[Pasted image 20240804133052.png]]
+![[thumbnail-atlantis.png]]
 
 You can find more information about `Atlantis` in the [documentation](https://www.runatlantis.io/) and [github](https://github.com/runatlantis/atlantis)
 
@@ -69,7 +69,7 @@ Assemble all of things, `Atlantis` is becoming potential to choosing when you wa
 
 Like I relate above,  `Atlantis` is opensource and you can understand all of concept or strategy inside their [source code](https://github.com/runatlantis/atlantis)
 
-![[Pasted image 20240804144125.png|center]]
+![[meme-decision.png|center]]
 
 You can try self-hosted `Atlantis` in the multiple way, including
 
@@ -83,7 +83,7 @@ If you choose self-hosted locally, ensure your host
 - Install `terraform` or `opentofu` in your host (Binaries)
 - Use `ngrok` or `localtunnel` to expose your `Atlantis` to your repositories, with actual URL. IDK does raw `IP` can be used but ensure use `URL` with SSL to except problems. [Troubleshoot HTTPS, SSL, TLS](https://www.runatlantis.io/docs/troubleshooting-https.html)
 
-![[Pasted image 20240804152206.png]]
+![[atlantis-workflow.png]]
 
 Take a look `Atlantis` workflow, really simple
 
@@ -140,7 +140,7 @@ Now you have all of things to setup `Atlantis` for yourself. Reach to `Terraform
 
 # Provisioning `Atlantis`
 
-![[Pasted image 20240804163111.png]]
+![[meme-over-provision.png]]
 
 >[!info]
 >Following the documentation from `Atlantis`, we can choose `Fargate` of AWS to operating our container `Atlantis`. If you know, `Fargate` is belong to service of AWS called `ECS` (Elastic Container Service) which one use to deploy and operate container via `task` or `docker-compose`, really tough
@@ -154,7 +154,7 @@ Base on `AWS`, ever you hear about `Public Subnet`, that concept is unique becau
 
 When I follow this article [ECS (Fargate) with ALB Deployment Using Terraform](https://registry.terraform.io/modules/terraform-aws-modules/atlantis/aws/latest), I have open view to implement what you need inside `networking` when try create your own in AWS
 
-![[Pasted image 20240804164449.png]]
+![[aws-network-setup.png]]
 
 >[!note]
 >In conclusion, AWS have `NAT gateway` (In Azure it not need to use) but in AWS you need this to go to the Internet, if not your host will work only from `inbound` site and not `egress` your `outbound` 😄, and in the other way you need to use `Internet Gateway` to through `ALB` before hit to your `Application`
@@ -511,7 +511,7 @@ With advantage feature of `Atlantis`, you can do more stuff to attack with custo
 
 # Conclusion
 
-![[byebye.png|center]]
+![[meme-byebye.png|center]]
 
 >[!done]
 >That all for today, hope you find well with `Atlantis` and figure out what you need to do for setup `Atlantis` for yourself. `AWS` is come up with new idea and concept that why I need to catch up and feel free share that for you, happiness to do that. DM me if you meet any problems in setup `Atlantis`, I will feel free to take a seat and response LOL 😄

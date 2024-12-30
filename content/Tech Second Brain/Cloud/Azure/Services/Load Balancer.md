@@ -60,7 +60,7 @@ Support 3 SKU options: **Basic, Standard, and Gateway.**
 
 # Components
 
-![[Pasted image 20240509140503.png]]
+![[thumbnail-loadbalancer-components.png]]
 
 ## Backend pools
 

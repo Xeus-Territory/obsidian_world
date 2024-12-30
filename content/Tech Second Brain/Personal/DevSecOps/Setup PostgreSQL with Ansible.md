@@ -14,7 +14,7 @@ tags:
 >[!summary]
 >This progress will setup the `postgresql`, configure for `postgresql` for remote access on docker image
 
-![[Pasted image 20240911090320.png]]
+![[thumbnail-ansible-postgresql.png]]
 
 For running to set up `postgresql` in VM. Go for it with commands
 

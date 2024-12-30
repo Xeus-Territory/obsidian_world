@@ -19,7 +19,7 @@ With platform when I release this wiki is [Quartz - Jacky Zhao](https://quartz.j
 
 ## Google Analytics
 
-![[Pasted image 20240324160455.png]]
+![[icon-google-analytics.png]]
 
 >[!summary]
 >Google Analytics is a web analytics service that provides statistics and basic analytical tools for search engine optimization (SEO) and marketing purposes. The service is part of the Google Marketing Platform and is available for free to anyone with a Google account.
@@ -39,7 +39,7 @@ I don't have experience with GA, So I have read some about article to find out m
 But like I said, I want to try with new self-hosted and opensource, so maybe GA is not expectation for me. So I am not choosing the platform for analytics site, some feature I will not use and GA look like a kind of complicated
 ## Plausible
 
-![[Pasted image 20240324162024.png]]
+![[icon-plausible.png]]
 
 >[!summary]
 >[Plausible](https://plausible.io/) is intuitive, lightweight and open source web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. Made and hosted in the EU, powered by European-owned cloud infrastructure 🇪🇺
@@ -82,7 +82,7 @@ I meet a failure on the first step and It makes me not satisfied, so I will not 
 
 ## Umami - Last one but like the beast
 
-![[Pasted image 20240324165021.png]]
+![[icon-umami.png]]
 
 >[!info]
 >[Umami](https://umami.is/) is a simple, easy-to-use, open-source web analytics solution. It provides website owners with essential insights about their website traffic in a clean and straightforward way. It can be self-hosted and is a great alternative for those looking for privacy-friendly options.
@@ -101,7 +101,7 @@ Cons:
 - No option for event tracking
 - Limited features compared to full-fledged analytics tools
 
-![[Pasted image 20240324165440.png]]
+![[thumbnail-umami.png]]
 
 On the first sight, I look similar like `Plausible`, color, information is easily to understanding and for sure, Umami is best self-hosted solution for your first analytics site. Some reasonable, I can list like
 
@@ -115,7 +115,7 @@ On the first sight, I look similar like `Plausible`, color, information is easil
 
 ## About the Caddy Server
 
-![[Pasted image 20240324171221.png]]
+![[thumbnail-caddy.png]]
 
 >[!info]
 >[Caddy](https://caddyserver.com/) is an extensible, cross-platform, open-source web server written in Go.
@@ -139,7 +139,7 @@ And now, when first time to work with `Caddy`, I am really impress which helpful
 
 However, With me `Nginx` is best choice but `Caddy` can be others choose for make another suggestion, solution and whatever. Thinks about Caddy can read Nginx config like [adapter](https://caddyserver.com/docs/config-adapters), I mean It's kind crazy interesting.
 
-![[Pasted image 20240324175506.png]]
+![[caddy-config.png]]
 
 Some about interesting article, documentation and blog about web-server technologies which you can find and deliver, `Caddy` is on the way become the huge thing
 - [Caddy feature](https://caddyserver.com/features)
@@ -167,14 +167,14 @@ docker run -d --name caddy --rm -p 80:80 -p 443:443 -p 2019:2019 caddy
 
 If you run the command above, hit your browser with `localhost` to see what `Caddy` response
 
-![[Pasted image 20240324212324.png]]
+![[caddy-landing-page.png]]
 
 >[!info]
 >That is list of things about what you need to do for serve your site over HTTPS with Caddy Server. Give an applause for super friendly from this one !! 😃😃😃
 
 # Combine Caddy with Umami for serve your analytics platform with SSL
 
-![[Pasted image 20240324213109.png]]
+![[meme-https.png]]
 
 >[!question]
 >This part, I will show you how we can connect `Umami` and `Caddy` to each othes for making the secure analytics platforms. Probably, you just pleasure when put the `password` or `credentials` in `SSL` site instead not secure site 😅 
@@ -310,7 +310,7 @@ docker-compose -f docker-compose.yaml -p analytics up -d
 ```
 
 Access your browser with domain `https://havefun.fun4fun.io` and your umami come up 
-![[Pasted image 20240324220803.png]]
+![[umami-login.png]]
 
 Your first start, default account is `admin` and password is`umami`
 
@@ -321,7 +321,7 @@ I am not actually programing my site, I just reuse a template and It offer `umam
 - [Adding self-hosted analytics to your website for free with Umami](https://dev.to/mathewthe2/adding-self-hosted-analytics-to-your-website-for-free-with-umami-37k2)
 
 # Conclusion
-![[Pasted image 20240324222432.png]]
+![[meme-thankful.png]]
 
 >[!summary]
 >That's all for today, I hope you can figure out what things you need to do on making own analytics platform for you project. That project is quite fun and cost minimum time to set up, just couple minutes and you have basic analytics with `SSL`

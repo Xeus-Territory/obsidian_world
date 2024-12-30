@@ -12,7 +12,7 @@ tags:
 
 # How can we work with EKS
 
-![[short-story-meme.png|center]]
+![[meme-short-story.png|center]]
 
 >[!question]
 >When you kick off new EKS, I believe you can messup a bit with how we can setup the authentication to help `kubectl` or `aws` can retrieve the information inside Kubernetes Cluster via `Kubernetes API`. This one is really interesting question
@@ -38,7 +38,7 @@ There is many ways to authenticate, and you can catch up that really exist in tw
 To enable this feature, you can follow in couple of steps in next part
 ## Cluster Authenticated Mode and IAM Identities
 
-![[Pasted image 20241222131937.png]]
+![[aws-eks-authen.png]]
 
 If you choose follow to use **IAM principal (role and user)** to access `Kubernetes`, you need to follow methods to allow your **IAM principal** to access `Kubernetes` object in your cluster, including
 
@@ -114,7 +114,7 @@ And It's work recently, you can retrieve `pods`, `logs` inside your target EKS C
 
 # EKS Cluster Monitoring and Observability
 
-![[monitoring-meme.png|center]]
+![[meme-monitoring.png|center]]
 
 >[!quote]
 >As you can see, when you access Kubernetes, you can use `kubectl` to view both `metrics` and `logs` but you know but in term of developer, that kinda tuff when they first face up with `kubectl` and `kubernetes` so read all of these output inside the shell can be tough. But, AWS always offer another way to monitor and observer the EKS Cluster through **CloudWatch** or **Grafana/Prometheus**, It's up to you to choose one of these to operating for your cluster
@@ -123,7 +123,7 @@ For me, CloudWatch is such a good thing, so we can try follow that implementatio
 
 ## Intercept metrics and logs with Cloudwatch Agents
 
-![[Pasted image 20241222165831.png]]
+![[aws-eks-monitoring.png]]
 
 First of all, I need to figure how we can do, so reach to couple blog and documentation of AWS to explore more information, such as
 
@@ -760,7 +760,7 @@ With logs, `Fluentbit` will send that into `CloudWatch` as log groups in context
 
 # Conclusion
 
-![[byebye.png|center|500]]
+![[meme-byebye.png|center|500]]
 
 >[!done]
 >Well, this is all for this weekend, really cool stuff and I learn a lots when setup the permission and monitoring stack for EKS, maybe this article is last article that write about AWS Cloud and Service, cuz I will move on on the next stage of my career and see what the different zone I can inspect, learn and enjoy a lots, upset to say that but don't worry if anything new about AWS, I will turn back soon. BTW, let's see what next articles on new year bring up the different stuff in my site. Again, that really memorable with Cloud Services and I will remember a lot, now let's celebrate for the last one 🍻

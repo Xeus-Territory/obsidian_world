@@ -55,7 +55,7 @@ To make conversation with Vector Database, there is one technique creation calle
 
 When you work with querying machine learning, you will need to pass whole context to model, and really slow with huge data to processing, It means you cost a lot of money to computing, and this work will repeat again and again.
 
-![[Pasted image 20241006120323.png]]
+![[thumbnail-vector-db.png]]
 <div align="center">
 	<strong>
 		<em>
@@ -83,7 +83,7 @@ Nowadays, you have more potential to get familiar with vector database, some can
 
 # Milvus Database
 
-![[Pasted image 20241006123605.png]]
+![[icon-milvus.png]]
 To find more information about technology, setup, API SDK and more things about Milvus, feel free access at [Milvus Docs](https://milvus.io/docs)
 
 ## Introduce
@@ -117,7 +117,7 @@ You can read about [What Makes Milvus so Fast ?](https://milvus.io/docs/overview
 
 The powerful of Milvus is [Scalable](https://milvus.io/docs/overview.md#What-Makes-Milvus-so-Scalable), that have these components from Storage Object, Message Storage, ... to able perform rapidly scaling, and provide ability to expand current cluster with power of [Cloud Native](https://aws.amazon.com/what-is/cloud-native/#:~:text=The%20term%20cloud%20native%20refers,container%20orchestrators%2C%20and%20auto%20scaling.), and the result is insane 🥶
 
-![[Pasted image 20241006144142.png]]
+![[thumbnail-milvus-architecture.png]]
 <div align="center">
 	<p style="text-align: center;">Milvus Archiecture Diagram (Source: Milvus Doc)</p>
 </div>
@@ -251,7 +251,7 @@ Query nodes are independent from each other in a data query. **Each node** is re
 There are **two types of segments**, **growing segments (for incremental data)**, and **sealed segments (for historical data)**. Query node subscribe to vchannel to receive update as growing segments. When growing segment reach to threshold, Data Coord seals it and index building begins. **Handoff** operation start to turn growing segment to sealed segment, and distribute that will compatible resource (CPU, Memory, Segment Number)
 
 # Conclusion
-![[byebye.png|center|500]]
+![[meme-byebye.png|center|500]]
 
 >[!done]
 >That @all for today, The article about something maybe interesting or not, but if you find something to read and learn more about AI, ML, Data or simple want to learn about Vector Database, I think this one will one of things you can read. But Milvus is look cool and super complicated, to know more you need to handy with Milvus, as least get one for yourself.

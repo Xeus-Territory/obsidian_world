@@ -11,7 +11,7 @@ tags:
 >[!info]
 >*Solution*: Choose for temporary Blue and Green deployment. More detail can be found in this [ Custom Blue Green Deployment With Nginx And Gitlab Ci](https://www.kimsereylam.com/gitlab/nginx/dotnetcore/ubuntu/2019/01/04/custom-blue-green-deployment-with-nginx-and-gitlab-ci.html)
 
-![[Pasted image 20240218150404.png]]
+![[thumbnail-blue-green-deployment.png]]
 <div align="center">
     <strong><em><p style="text-align: center;">Blue and Green deployment strategy</p></em></strong>
 </div>

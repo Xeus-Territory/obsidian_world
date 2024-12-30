@@ -55,13 +55,13 @@ wasm compile ^GETIvObU
 .wasm ^9WXNkUAS
 
 ## Embedded Files
-ceb9297a5c1958e747d5dde0df72b70a356e1454: [[Pasted Image 20240307141150_206.png]]
-1f2c19b547b59d989db689b3e5825b7273e456a0: [[Pasted Image 20240307141251_208.png]]
-a9bfcdbae49720162aa3956244dd4fa7b88040dd: [[Pasted Image 20240307142645_263.png]]
-26560a3c5d6657c50fe55079523d5cd791c6945b: [[Pasted Image 20240307142752_274.png]]
-317254f4fbe0a77b20ad0b0f8ef3162ac432fdc3: [[Pasted Image 20240307142822_281.png]]
-6b3617bb7586e09fd9b8e787a07d7fed41783845: [[Pasted Image 20240307143146_295.png]]
-e4a35288a484c18050d4419c2cbb14f827ebdc86: [[Pasted Image 20240307142001_239.png]]
+ceb9297a5c1958e747d5dde0df72b70a356e1454: [[icon-grpc.png]]
+1f2c19b547b59d989db689b3e5825b7273e456a0: [[icon-database.png]]
+a9bfcdbae49720162aa3956244dd4fa7b88040dd: [[icon-loadbalancer.png]]
+26560a3c5d6657c50fe55079523d5cd791c6945b: [[icon-authen.png]]
+317254f4fbe0a77b20ad0b0f8ef3162ac432fdc3: [[icon-file.png]]
+6b3617bb7586e09fd9b8e787a07d7fed41783845: [[icon-protobuf.png]]
+e4a35288a484c18050d4419c2cbb14f827ebdc86: [[icon-wasm.png]]
 
 %%
 ## Drawing
