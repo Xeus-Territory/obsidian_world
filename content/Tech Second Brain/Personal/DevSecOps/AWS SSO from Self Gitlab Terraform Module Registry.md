@@ -12,7 +12,7 @@ tags:
 
 # AWS SSO
 
-![[Pasted image 20240913103243.png]]
+![[aws-sso-fundamental.png]]
 
 As usual, before starting anything, we need to learn about tech stack, and AWS SSO (IAM Identity Center) is super cool, and really helpful when you think about solution for authorization and authentication for AWS Account and profiles
 
@@ -83,7 +83,7 @@ If you go there, you ensure familiar with `terraform`, you can double check coup
 - [DevOps Training Session 9 + 10: Cloud - Networking - AutoScaling VM](https://hackmd.io/T7DLU49XRaKVBRa5Oyn1cQ)
 - [[Atlantis with ECS for automatic provisioning]]
 
-![[Pasted image 20240913154152.png]]
+![[terraform-strategy.png]]
 
 As you can see, `terraform` is using many block called **module**, It means whole provisioning progress is encapsulating inside the module, and exposing interface to help us call from remote, locally or what ever purpose you want
 
@@ -123,7 +123,7 @@ We have both solution open-source and profit to handle that, explore at [Module 
 
 # Make for you own
 
-![[Pasted image 20240914122053.png|center|500]]
+![[meme-failure.png|center|500]]
 
 >[!question]
 >In this practice session of week, we will try to combine with creating AWS SSO module, building this one becomes public module, releasing with `Gitlab Terraform Registry` and reusing to enhance in your AWS Account.
@@ -912,7 +912,7 @@ And now you have done setup and implement entire the `aws-iam-sso` module with p
 
 ## Create pipeline to generate module in `Gitlab`
 
-![[Pasted image 20240915123000.png|center]]
+![[meme-terraform-modules.png|center]]
 
 As you remember in top of this topic, I just relate about `gitlab` where is a good place to put your module as remotely with same purpose with `terraform registry` and totally free. Therefore, I will guide you to handle that one. Read again documentation at [Terraform Module Registry](https://docs.gitlab.com/ee/user/packages/terraform_module_registry/) and you have multiple method to handle that
 
@@ -1168,14 +1168,14 @@ terraform apply
 
 Back to `IAM Identity Center` in AWS portal, you can see sso user is adding to
 
-![[Pasted image 20240915140819.png]]
+![[aws-sso-0.png]]
 ## Play with AWS SSO
 
 Now first of all you need to retrieve the portal of SSO, you need head to homepage of `IAM identity center` and take the look in `Settings summary` part, you can see `AWS access portal URL` (NOTE: edit if you want)
 
 Now access to AWS SSO Portal, you will have the UI like this
 
-![[Pasted image 20240915141320.png]]
+![[aws-sso-1.png]]
 
 In this time, you need to request `DevOps` or `Root` account in AWS export to your pass to first login into this portal, but remember
 
@@ -1189,13 +1189,13 @@ Now, you are having two plan for reset password for user
 
 After your user login into SSO, you need to add-on authentication method with theses option
 
-![[Pasted image 20240915142031.png]]
+![[aws-sso-2.png]]
 
 With me `Authentication App` is the best option, but if you have multiple device for other option, go for it and receive more protection, 100%
 
 And when you add authentication successfully, you will head on to `AWS access portal` with provide the best option to hand on with AWS Account
 
-![[Pasted image 20240915142303.png]]
+![[aws-sso-4.png]]
 
 >[!info]
 >When you try to click to `*Access`, you will head up to AWS Portal inside this account with permission you give for user, and with `Access keys` that give you dynamically access keys to connect to your AWS Account with no need generate or configure for yourself
@@ -1222,7 +1222,7 @@ Disable your `AWS SSO` in region by doing with step in [documentation](https://d
 
 # Conclusion
 
-![[byebye.png|center|400]]
+![[meme-byebye.png|center|400]]
 
 >[!done]
 >This is all for this weekend, hope you feel great with adventure to hand on with AWS SSO and provide supply methodology to contribute your `terraform` module for your own. This story can come so long, but so sorry I think it is enough and more things I wonder you need to get from this. But I recommend you try to fail, and get the experience for yourself and AWS SSO is a one of top solution for modern AWS managing 🚬

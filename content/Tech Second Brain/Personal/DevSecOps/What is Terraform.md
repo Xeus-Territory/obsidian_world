@@ -13,7 +13,7 @@ tags:
 
 Documentation: [🔗Click to the link](https://developer.hashicorp.com/terraform/intro)
 
-![[Terraform.png]]
+![[terraform.png]]
 
 >[!info]
 ><h2>What is Terraform?</h2>
@@ -28,7 +28,7 @@ Documentation: [🔗Click to the link](https://developer.hashicorp.com/terraform
 >- Plan: Terraform creates an execution plan describing the infrastructure it will create, update, or destroy based on the existing infrastructure and your configuration.
 >- Apply: On approval, Terraform performs the proposed operations in the correct order, respecting any resource dependencies. For example, if you update the properties of a VPC and change the number of virtual machines in that VPC, Terraform will recreate the VPC before scaling the virtual machines.
 
-![[Terraform Workflow.png]]
+![[terraform-workflow.png]]
 
 To installing `Terraform`, just need binary for setting whole thing. Explore more with [installing guide](https://developer.hashicorp.com/terraform/install), for example
 
@@ -62,7 +62,7 @@ is 1.7.5. You can update by downloading from https://www.terraform.io/downloads.
 >- Standardize configurations
 >- Collaborate
 
-![[Pasted image 20241221150655.png]]
+![[terraform-components.png]]
 <div align="center">
 	<p style="text-align: center;">Source: DevOps Mojo</p>
 </div>
@@ -83,7 +83,7 @@ is 1.7.5. You can update by downloading from https://www.terraform.io/downloads.
 
 ## Providers
 
-![[Terraform Providers.png]]
+![[terraform-providers.png]]
 
 >[!info]
 >With `Terraform`, you can have a huge community with tons of providers opensource, cloud, SaaS.
@@ -92,13 +92,13 @@ is 1.7.5. You can update by downloading from https://www.terraform.io/downloads.
 
 ## Documentation
 
-![[Terraform Docs.png]]
+![[terraform-docs.png]]
 
 - Support `terraform-docs` which generate documentation in multiple type like `markdown json xml`. Try this at [terraform-docs-user-guide](https://terraform-docs.io/user-guide/introduction/)
 -  Those *providers documentation* is very powerful, clear and positive for getting started. Checkout what my configuration with `terraform-docs` at [[Configuration CheatSheet#terraform-docs|Configuration CheatSheet > terraform-docs]]
 ## Integration
 
-![[Terraform Integrate.png]]
+![[terraform-integrate.png]]
 
 - Can integrate with multiple platform and plugin like `Code Scanning, CI/CD, Observability/Monitoring, Security, Audit`, ...
 - Tons of opensource can help you work with Terraform, It make this to standard for Infrastructure as Code
@@ -406,7 +406,7 @@ For running this provisioning process, you need do step by step
 
 ## Running Terraform with Azure Pipeline (Automation)
 
-![[Azure Pipeline.png]]
+![[icon-azure-pipelines.png]]
 
 There is a lot of ways to automating your Terraform Workflow, and integrate Terraform into CI/CD tools such as Azure Pipelines, GitHub Actions or GitLab CI that legit useful
 

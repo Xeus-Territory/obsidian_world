@@ -32,12 +32,12 @@ Although, you want to keep the blog but not having motivation, with many things 
 - ...
 
 But brief again, you need to understand how to internet actually work, maybe from your point, End-User just simply published your HTML, your browser will read that and your contents will on internet 👏👏👏
-![[Pasted image 20240311134748.png]]
+![[thumbnail-markdown.png]]
 ## But how we can
 
 Like I talk about, `note-tools` is releasing more ever nowadays, you will have many options for your choice. Huge name, which you need to notice like
 
-![[Pasted image 20240311135046.png]]
+![[thumbnail-takenote-applications.png]]
 <div align="center">
     <strong><em><p style="text-align: center;"><a href="https://zapier.com/blog/best-note-taking-apps/">The 6 best note-taking apps in 2024</a></p></em></strong>
 </div>
@@ -78,7 +78,7 @@ But reason why of topic is not talking about `note-taking` applications, I want 
 
 *Like the page you read now, The result of published note to Internet. It will include some step, you maybe need some skill for use and deploy*
 
-![[Pasted image 20240311141751.png]]
+![[thumbnail-obsidian-feature.png]]
 I am a big fan of `Markdown`, [Obsidian](https://obsidian.md/) which is the best choice of me when thinks about `note-taking` app. With some helpful feature like
 - Free and store locally
 - Published easily (Cost 10$ for months) but have way to make this
@@ -92,7 +92,7 @@ That reason why, I choose Obsidian to note-taking in currently for technologies,
 >[!info]
 >Obsidian is work with markdown syntax and you can find more tools to convert this into HTML, this technical call [static-site-generator](https://github.com/topics/static-site-generator "Topic: static-site-generator"). You can use this one to converting your MD file to HTML with easily and Obsidian is not exception, It work with more tools ever but trust and using template from [Quartz v4 - jackyzha0](https://github.com/jackyzha0/quartz), gracefully to soon as knowing this platform, It's tough and helpful, bridge of everything 🙌🙌🙌🙌🙌
 
-![[Pasted image 20240311143018.png]]
+![[icon-quartz4.png]]
 <div align="center">
     <strong><em><p style="text-align: center;"><a href="https://quartz.jzhao.xyz">Welcome to Quartz 4</a></p></em></strong>
 </div>
@@ -146,7 +146,7 @@ Therefore, you shouldn't push this public to your repository from now to future,
 
 Download Obsidian and open `content` folder with Obsidian
 
-![[Pasted image 20240311151946.png]]
+![[thumbnail-obsidian-uxui.png]]
 
 With Obsidian, I will recommend you install some plugin when you work with Obsidian by choosing `Settings` 👉  `Community plugins` 👉 `Turn on community plugins` 👉 `Browse` and find some plugins which helpful for you like
 - **[Excalidraw](https://excalidraw.com/)** - Drawing tools in Obsidian like Draw.io but simple and flexible

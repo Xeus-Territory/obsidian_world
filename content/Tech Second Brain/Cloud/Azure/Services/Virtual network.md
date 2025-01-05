@@ -38,7 +38,7 @@ Consider when using virtual networks
 
 # Subnet
 
-![[Pasted image 20240423132909.png]]
+![[thumbnail-azure-vpc.png]]
 
 Documentation: 
 
@@ -112,7 +112,7 @@ Consider when creating a public IP address
 
 ## Public IP address
 
-![[Pasted image 20240423134524.png|center]]
+![[meme-ip-addr.png|center]]
 
 Documentation:
 
@@ -128,7 +128,7 @@ SKU Public IP address
 
 ## Private IP address
 
-![[Pasted image 20240423134923.png|center]]
+![[meme-ip-addr-private.png|center]]
 
 Documentation:
 

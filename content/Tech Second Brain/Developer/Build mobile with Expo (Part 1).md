@@ -13,7 +13,7 @@ tags:
 
 # What is Expo ?
 
-![[Pasted image 20240908152827.png|center]]
+![[icon-expo.png|center]]
 
 Follow the documentation, you can explore more about expo, behavior, practicing and moreover with this tool
 
@@ -40,7 +40,7 @@ Some my co-worker relate about some stuff about the difference between bare reac
 - *"Not have many options when you select library to handle your project with expo"*
 - *"Should be learn from bare to understand more about react native because expo is advantage version to build your project"*
 
-![[Pasted image 20240908161354.png]]
+![[thumbnail-expo-reactnative.png]]
 
 But with me - DevOps engineer - I understand about situations when you need to do for help and suggest the good way when start project, and the big difference between bare react native and expo, it come up about build environment
 
@@ -352,7 +352,7 @@ jobs:
 
 # Conclusion
 
-![[byebye.png|center]]
+![[meme-byebye.png|center]]
 
 >[!done]
 >This is all for today, just introduce with you about `expo` and kind stuff of this technology, but more thing you can explore with expo in next session. Hope you find well information to control, build and enjoy your application. Expo is really cool for starting if you want to figure out to build both platform mobile application, with 0 effort 😄

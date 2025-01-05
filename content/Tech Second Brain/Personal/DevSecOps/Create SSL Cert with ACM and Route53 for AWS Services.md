@@ -12,7 +12,7 @@ tags:
 
 # AWS Certificate Manager and Route53
 
-![[Pasted image 20240811103354.png]]
+![[aws-certificate-manager.png]]
 
 With the demand of user of Cloud, for managing consistently everything inside your service from network, virtual machine, domain. Therefore, Cloud platform always  try to integrate at least one service which customer of them can configure and manage their domain from root to subdomain with easily. This reason why we have `route53` and `acm` of AWS
 ## AWS Certificate Manager (ACM)
@@ -70,7 +70,7 @@ Official Documentation:
 - [API Reference](https://docs.aws.amazon.com/Route53/latest/APIReference/index.html)
 - [Extend Guide](https://docs.aws.amazon.com/route53/)
 
-![[Pasted image 20240811110217.png]]
+![[aws-route53.png]]
 
 To help create location where control and create new record for your domain, Route 53 will take responsibility to handle this task
 

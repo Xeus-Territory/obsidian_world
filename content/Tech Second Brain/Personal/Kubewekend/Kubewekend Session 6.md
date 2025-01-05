@@ -11,7 +11,7 @@ tags:
 
 # Storage inside Kubewekend
 
-![[Pasted image 20240824154853.png|center]]
+![[meme-k8s-pv.png|center]]
 
 Start with networking inside `Kubernetes`, as you remember about `cilium`, this one belong the component inside cluster, and community call that **CNI (Container Network Interface)**. And with Storage inside `Kubernetes`, you have same concept and that require you install kind stuff as driver calling **CSI (Container Storage Interface).**
 
@@ -28,7 +28,7 @@ You can go and check the article below to understand more about reason why `kube
 
 And that does why integrate 3rd party inside `kubernetes` core, It is really challenge, if you know about cloud services, you will have multiple solutions and techniques for storage and it doesn't really simple for you put a lot of things inside `kubernetes` that will make cluster explosion. Therefore, really surprise about how they create alternative mechanism to reduce the problem. And Now we are having CSI
 
-![[Pasted image 20240824160120.png]]
+![[meme-blind-choice.png]]
 
 ## About CSI Concept
 
@@ -212,7 +212,7 @@ spec:
 
 ## Conclusion
 
-![[Pasted image 20240825105749.png]]
+![[meme-k8s-me.png]]
 
 >[!quote]
 >Really tough thing, I think so when first meet the concept, anyone work around Kubernetes will stuck in few day and don't figure out what problem. But if you understand and image what next step in provisioning and implement volumes in Kubernetes, this experience will become cool stuff and that can help you hand-on with lots of Kubernetes concept which one provide us
@@ -233,7 +233,7 @@ Check it out when you want to learn more about PVC, PV and Storage Class, I thin
 
 ## About the Ceph ?
 
-![[Pasted image 20240825130854.png|center]]
+![[icon-ceph.png|center]]
 
 >[!info]
 >Ceph delivers **object, block, and file storage in one unified system**. Ceph is highly reliable, easy to manage, and free. The power of Ceph can transform your company’s IT infrastructure and your ability to manage vast amounts of data
@@ -286,14 +286,14 @@ And one question, how we can install `ceph` for our cluster, that will really in
 
 Technically, from [ceph-installing documentation](https://docs.ceph.com/en/reef/install/?highlight=kubernetes#installing-ceph), using [rook](https://rook.io/) is recommending way to run `Ceph` in Kubernetes or to connect an existing Ceph storage cluster to Kubernetes. And I really like that you will except more problems when you miss steps
 
-![[Pasted image 20240825135402.png|center]]
+![[icon-rook.png|center]]
 
 With `Rook`, an open source **cloud-native storage orchestrator**, providing the platform, framework, and support for Ceph storage to natively integrate with cloud-native environments.
 
 >[!info]
 >Rook automates deployment and management of Ceph to provide self-managing, self-scaling, and self-healing storage services. The Rook operator does this by building on Kubernetes resources to deploy, configure, provision, scale, upgrade, and monitor Ceph.
  
-![[Pasted image 20240825135416.png]]
+![[thumbnail-rook-architecture.png]]
 
 Following Rook, this platform will provide us bunch of `CRD`  (Custom resource definition) in `Kubernetes` (Relate you on other session) to help us create interface or API for ease to implement and interact with `Ceph` with `Rook`. But just excited to tell you about that, you can learn more about rook and ceph through
 
@@ -886,7 +886,7 @@ And now you create PVC for mysql, and your result is creating successfully
 
 # Conclusion
 
-![[byebye.png|center]]
+![[meme-byebye.png|center]]
 
 >[!done]
 >Really tough week, I stand with you in late night for complete this session, more thing I learn from this one and try to hand on with volume is new experience for me. CSI is one of things make Kubernetes become pleasant, delivery more solution for community and create opportunities for development and deployment can reach to next level with this techniques. And Ceph and Rook, I can say that really hard to control, learn and hand on with huge architecture stand behind, but like i said `kubewekend` is a change for myself and for my community to learn some thing new, hope you find well with content

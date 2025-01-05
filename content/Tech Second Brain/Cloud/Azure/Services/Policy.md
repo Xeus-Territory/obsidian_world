@@ -14,7 +14,7 @@ Documentations:
 - [Create Azure Policies](https://learn.microsoft.com/vi-vn/training/modules/configure-azure-policy/4-create-azure-policies)
 
 
-![[Pasted image 20240416144454.png]]
+![[icon-azure-policy.png]]
 
 >[!info]
 >[Azure Policy](https://azure.microsoft.com/services/azure-policy/) is a service in Azure that enables you to create, assign, and manage policies to control or audit your resources. These policies enforce different rules over your resource configurations so the configurations stay compliant with corporate standards.
@@ -36,7 +36,7 @@ Step 4: [Determine compliance](https://learn.microsoft.com/vi-vn/training/module
 
 Documentation: [Create management groups](https://learn.microsoft.com/vi-vn/training/modules/configure-azure-policy/2-create-management-groups)
 
-![[Pasted image 20240416144612.png]]
+![[azure-group-sub-level-management.png]]
 
 >[!info]
 >Organizations that use multiple subscriptions need a way to efficiently manage access, policies, and compliance. Azure management groups provide a level of scope and control above your subscriptions. You can use management groups as containers to manage access, policy, and compliance across your subscriptions.

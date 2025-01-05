@@ -17,7 +17,7 @@ When you try to handle with Big Cloud Platform, such as Azure, AWS and GCP is re
 - [Account Structure Comparison between AWS and Azure](https://www.linkedin.com/pulse/account-structure-comparison-between-aws-azure-richard-lenan-zhao)
 - [AWS, Azure, and GCP: The Ultimate IAM Comparison](https://www.zippyops.com/aws-azure-and-gcp-the-ultimate-iam-comparison)
 
-![[Pasted image 20240920135818.png]]
+![[cloud-org-structure.png]]
 
 As you can see, `AWS` and `GCP` look like more simple  than `Azure`, but whole the structure have different level to give the control services and resources in Cloud
 
@@ -33,7 +33,7 @@ As you can see, `AWS` and `GCP` look like more simple  than `Azure`, but whole t
 
 With AWS, they provide us some methodology and look like kind of unique
 
-![[Pasted image 20240921151343.png]]
+![[aws-authen.png]]
 
 - [Assume Role](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) - Assume role to access another resource in different AWS Accounts
 - [AWS Management Console as an IAM user](https://docs.aws.amazon.com/signin/latest/userguide/introduction-to-iam-user-sign-in-tutorial.html) - Use multiple IAM User for each AWS compatible account 
@@ -42,7 +42,7 @@ With AWS, they provide us some methodology and look like kind of unique
 
 With Azure, The story can become more complex but really awesome
 
-![[Pasted image 20240921151646.png]]
+![[azure-authen.png]]
 
 - [Azure AD](https://learn.microsoft.com/en-us/entra/identity/) - Use for control access User and Groups with Azure Cloud, and for with best efficiency Azure have [Tenant](https://learn.microsoft.com/en-us/entra/fundamentals/whatis#:~:text=a%20credit%20card.-,Tenant,-A%20dedicated%20and) to represents a single organization and is intended for managing your employees, business apps, and other internal resources. Read more about [Entra](https://learn.microsoft.com/en-us/entra/fundamentals/what-is-entra) and [Entra ID](https://learn.microsoft.com/en-us/entra/fundamentals/whatis)
 - [App Registration](https://learn.microsoft.com/en-us/security/zero-trust/develop/app-registration) - Represent for methodology to execution from your CLI, your application with secret provider to authentication your environment and try to connect with Azure, Microsoft 365, Microsoft Graph, and more. (NOTE: IYKYK about [Service Principle](https://learn.microsoft.com/en-us/entra/identity-platform/app-objects-and-service-principals?tabs=browser))
@@ -53,7 +53,7 @@ With Azure, The story can become more complex but really awesome
 
 # Assume Role with AWS
 
-![[Pasted image 20240921153121.png]]
+![[aws-sts-assume-role-workflow.png]]
 <div align="center">
 	<p style="text-align: center;">Assume role with AWS</p>
 </div>
@@ -195,7 +195,7 @@ aws sts assume-role --role-arn arn:aws:iam::123456789123:role/myAwesomeRole --ro
 
 In my opinion, you need to try export  `access_key`, `secret_key`, `session_token`  one time again, and this can become really tired. I know we can run it [one line command](https://stackoverflow.com/questions/63241009/aws-sts-assume-role-in-one-command)
 
-![[Pasted image 20240921223349.png]]
+![[terraform-aws-assume-role.png]]
 
 But I can convenient to say `Terraform` take care it for us, really good and easily way
 
@@ -258,7 +258,7 @@ terraform init -backend-config=backend.conf
 Take same but more flexible to help you switch between multiple role-arn in specific case, automation in pipeline or use `Atlantis` to provisioning your AWS, Azure or moreover clouds
 # Conclusion
 
-![[byebye.png|center|500]]
+![[meme-byebye.png|center|500]]
 
 >[!done]
 >This is @all for article, really things of thing when I try to learn and adapt something new for project. `IAM` is such great thing with Cloud Services, any cloud will have different way to getting in. Hope this article bring you good things, more value and efficiency to help you reduce complex and increase flexible in `Terraform` to manage multiple AWS Accounts

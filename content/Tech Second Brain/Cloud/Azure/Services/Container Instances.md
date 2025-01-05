@@ -12,7 +12,7 @@ Reference resource
 
 - [Compare containers to virtual machines](https://learn.microsoft.com/en-us/training/modules/configure-azure-container-instances/2-compare-containers-to-virtual-machines)
 
-![[Pasted image 20240513110826.png]]
+![[thumbnail-vm-and-container.png]]
 
 >[!info]
 >Hardware virtualization has made it possible to run multiple isolated instances of operating systems concurrently on the same physical hardware. Containers represent the next stage in the virtualization of computing resources.
@@ -28,7 +28,7 @@ Benefit when use Containers, including
 
 # Azure Container Instances 
 
-![[Pasted image 20240513111125.png]]
+![[icon-azure-container-instance.png]]
 
 Reference resource
 

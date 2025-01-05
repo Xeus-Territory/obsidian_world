@@ -527,7 +527,7 @@ Yeah 2025 sẽ có nhiều điểm khác nhưng để làm được bản thân 
 
 # Tổng kết
 
-![[byebye.png|center|500]]
+![[meme-byebye.png|center|500]]
 
 >[!quote]
 >Mọi thứ đã đến hồi kết, cảm ơn những ai đã đọc đến đây mong rằng tôi và bạn sẽ tiếp tục phát triển tiếp tục cố gắng trau dồi, hấp thụ những điều tích cực và đẩy lùi tiêu cực, sống vui và sống khỏe để mọi thứ được diễn ra tốt đẹp trong công việc, trong quan hệ và trong cuộc sống. Thế nên 2025 tới, chúc các bạn đọc một năm mới đầy thành công, đầy nghị lực, đầy sức khỏe để sẵn sàng cho những thử thách trên hành trình mới. Bye và hẹn gặp lại ở 2025 💝

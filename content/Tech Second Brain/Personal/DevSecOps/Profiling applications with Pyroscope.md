@@ -20,7 +20,7 @@ tags:
  - [What is continuous profiling?](https://www.cncf.io/blog/2022/05/31/what-is-continuous-profiling/)
  - [Introduction to Continuous Profiling](https://granulate.io/blog/introduction-to-continuous-profiling/)
 
-![[Pasted image 20240305103150.png]]
+![[thumbnail-profiling-history.png]]
 <div align="center">
     <strong><em><p style="text-align: center;">History of Profiling Applications</p></em></strong>
 </div>
@@ -59,7 +59,7 @@ In the github or many article, I have look some more interesting and It will hel
 
 Maybe, we have more candidate to promote, but I have experience work on [Pyroscope - Opensource continuous profiling with high performance](https://pyroscope.io/). Let try so what It got
 
-![[Pasted image 20240305113033.png]]
+![[icon-pyroscope.png]]
 
 First of all, You need to checkout some links down-below to understand ==Pyroscope== and strategy when we use those technology
 - [Grafana Pyroscope documentation](https://grafana.com/docs/pyroscope/latest/?pg=oss-pyroscope&plcmt=hero-btn-3)
@@ -122,7 +122,7 @@ If you want want to more explore the configuration with Pyroscope, you will need
 
 ## Intergration with Grafana
 
-![[Pasted image 20240305142924.png]]
+![[icon-grafana.png]]
 
 >[!info]
 >IDK why but when I tried Grafana version `9.1.4`, It's not enabled and work at all with `pyroscope` datasource. So you try more and find out the suitable version Grafana to supporting pyroscope. In my case, I recommend you to using Grafana version `> 10.x` to receiving the supporting.
@@ -163,7 +163,7 @@ When you want to add datasource, you need to login with `admin` user for having 
 
 As you know, Pyroscope is produced for monitoring stack trace of programing with multiple language support. You can use `SDK` or `Grafana Agent` to directly collect information with continuous from app and deliver to server with least delay. Find more information from [Configure the client to send profiles](https://grafana.com/docs/pyroscope/latest/configure-client/)
 
-![[Pasted image 20240305151825.png]]
+![[thumbnail-profiling-grafana-pyroscope.png]]
 
  In this blog, I will focus on using `SKD` to understand code block and environment variables which need config for app send profile to server. Currently, SDK of Pyroscope support for
  - [Go](https://grafana.com/docs/pyroscope/latest/configure-client/language-sdks/go_push/)

@@ -14,7 +14,7 @@ Documentation:
 - [Implement Azure Storage](https://learn.microsoft.com/en-us/training/modules/configure-storage-accounts/2-implement-azure-storage)
 - [Storage Account Overview](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview)
 
-![[Pasted image 20240417142144.png]]
+![[azure-storage.png]]
 
 >[!info]
 >Azure Storage is Microsoft's cloud storage solution for modern data storage scenarios. Azure Storage offers a massively scalable object store for data objects
@@ -37,7 +37,7 @@ Storage tiers
 
 Documentation: [Explore Azure Storage services](https://learn.microsoft.com/en-us/training/modules/configure-storage-accounts/3-explore-azure-storage-services)
 
-![[Pasted image 20240417143433.png]]
+![[azure-storage-category.png]]
 
 Azure Storage offers four data services by using an Azure storage account:
 

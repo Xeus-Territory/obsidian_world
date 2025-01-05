@@ -22,7 +22,7 @@ tags:
  So don't waste your time, gprc is making some helpful thing compiler with automation generate the completion makefile via CMake. Go quick and check that in official homepage of [CMake](https://cmake.org/)
 # Quick setup gRPC
 ## How can setup grpc ?
-![[Pasted image 20240301133750.png]]
+![[thumbnail-grpc.png]]
 >[!summary]
 >**Why gRPC ?**
 >
@@ -206,7 +206,7 @@ pkg-config --list-all
 # First compiling gRPC with CMake
 ## What is CMake ?
 
-![[Pasted image 20240301152142.png]]
+![[icon-cmake.png]]
 
 >[!info]
 ><h2>CMake: A Powerful Software Build System</h2>

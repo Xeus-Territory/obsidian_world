@@ -8,7 +8,7 @@ tags:
 ---
 # Reason why your VM failures ?
 
-![[Pasted image 20240512134209.png]]
+![[meme-question-reason-why.png]]
 
 With Azure, you must have plan for failure can occur anytime. There are three scenarios that can lead to your VM being impacted. You can explore it, via [Article: Plan for maintenance and downtime](https://learn.microsoft.com/en-us/training/modules/configure-virtual-machine-availability/2-plan-for-maintenance-downtime)
 
@@ -69,7 +69,7 @@ Reference resource
 >[!info]
 >Availability zones are a high-availability offering that protects your applications and data from datacenter failures. An availability zone in an Azure region is a combination of a fault domain and an update domain.
 
-![[Pasted image 20240512142424.png]]
+![[azure-az.png]]
 
 Characteristics of availability zones.
 
@@ -89,7 +89,7 @@ Reference resource
 
 When you think about scaling, that provide two method `horizontal` or `vertical` for expand, scale up and make a high availability for your service. But you need to consider when apply, and know about different between them
 
-![[Pasted image 20240512143017.png]]
+![[thumbnaill-autoscaling.png]]
 
 >[!info]
 >**Vertical scaling**, also known as scale up and scale down, involves increasing or decreasing the virtual machine size in response to a workload. Vertical scaling makes a virtual machine more (scale up) or less (scale down) powerful.

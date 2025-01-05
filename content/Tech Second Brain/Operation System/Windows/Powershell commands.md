@@ -402,11 +402,26 @@ Get-Service | Get-Member
 Get-ChildItem C:\Temp\* -Recurse -Include *taco*.txt
 ```
 
-
 ## `Out-GridView`
 
  PowerShell output returns to the console window. However, if you need to interact with the output, you can use the [`Out-GridView`](https://www.pdq.com/powershell/out-gridview/) cmdlet
 
 ```powershell
 Get-Process | Out-GridView
+```
+
+# Base64 Decode and Encode
+
+You can follow this question at [StackOverFlow - How to decode a Base64 string?](https://stackoverflow.com/questions/15414678/how-to-decode-a-base64-string)
+
+**Convert TO Base64**
+
+```powershell
+[Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes('Motörhead'))
+```
+
+**Convert FROM Base64**
+
+```powershell
+[Text.Encoding]::Utf8.GetString([Convert]::FromBase64String('TW90w7ZyaGVhZA=='))
 ```

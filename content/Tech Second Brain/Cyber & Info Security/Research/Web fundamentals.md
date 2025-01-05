@@ -21,7 +21,7 @@ Websites are primarily created using:
 - JavaScript, implement complex features on pages using interactivity
 ### JavaScript
 
-![[Pasted image 20240219085641.png]]
+![[thumbnail-javascript.png]]
 This part of website will make some cool stuff, with `javascript`, you can handle more thing ever like 
 - Server route
 - Request and Response handler
@@ -60,7 +60,7 @@ To summarise, when you request a website, your computer needs to know the server
 
 **Load Balancers**
 
-![[Pasted image 20240219091219.png]]
+![[thumbnail-reverse-proxy.png]]
 - Easily know to that provide 2 main features to ensure high traffic can handle the load and providing a fail-over if a server becomes unresponsive
 - When you request a website with a `load balancer`, which will receive your request first and then forward it to one of the multiple servers behind it
 - The `load balancer` uses different algorithms to help it decide which server is best to deal with the request. A couple of examples of these algorithms are ***round-robin***, which sends it to each server in turn, or ***weighted***, which checks how many requests a server is currently dealing with and sends it to the least busy server.
@@ -75,13 +75,13 @@ To summarise, when you request a website, your computer needs to know the server
 
 **Databases**
 
-![[Pasted image 20240219091704.png]]
+![[thumbnail-databases.png]]
 - Often websites will need a way of storing information for their users. Web-servers can communicate with databases to store and recall data from them. 
 - Databases can range from just a simple plain text file up to complex clusters of multiple servers providing speed and resilience. You'll come across some common databases: MySQL, MSSQL, MongoDB, SQLite, Postgres, and more; each has its specific features.
 
 **WAF (Web Application Firewall)**
 
-![[Pasted image 20240219091731.png]]
+![[thumbnail-waf.png]]
 - A WAF sits between your web request and the web server; its primary purpose is to protect the web-servers from hacking or denial of service attacks.
 - It analyses the web requests for common attack techniques, whether the request is from a real browser rather than a bot.
 - It also checks if an excessive amount of web requests are being sent by utilising something called rate limiting, which will only allow a certain amount of requests from an IP per second. If a request is deemed a potential attack, it will be dropped and never sent to the web-servers.
@@ -89,12 +89,12 @@ To summarise, when you request a website, your computer needs to know the server
 
 **What is a Web Server?**
 
-![[Pasted image 20240219092042.png]]
+![[thumbnail-web-server.png]]
 - A web server is a software that listens for incoming connections and then utilises the HTTP protocol to deliver web content to its clients. The most common web server software you'll come across is Apache, Nginx, IIS and NodeJS.
 - A Web server delivers files from what's called its root directory, which is defined in the software settings. For example, Nginx and Apache share the same default location of /var/www/html in Linux operating systems, and IIS uses C:\inetpub\wwwroot for the Windows operating systems.
 
 **Virtual Hosts**
-![[Pasted image 20240219092310.png]]
+![[thumbnail-vm.png]]
 - Web servers can host multiple websites with different domain names; to achieve this, they use virtual hosts.
 - The web server software checks the hostname being requested from the HTTP headers and matches that against its virtual hosts (virtual hosts are just text-based configuration files). If it finds a match, the correct website will be provided. If no match is found, the default website will be provided instead.
 - Virtual Hosts can have their root directory mapped to different locations on the hard drive.
@@ -210,7 +210,7 @@ Common HTTP Response Codes
 ## What is DNS ?
 *This below resource are refer with [THM (TryHackMe)](https://tryhackme.com)*
 
-![[Pasted image 20240219100607.png]]
+![[thumbnail-dns-resolver.png]]
 - DNS (Domain Name System) provides a simple way for us to communicate with devices on the internet without remembering complex numbers.
 - Every computer on the internet has its own unique address to communicate with it called an IP address.
 - An IP address looks like the following 104.26.10.229, 4 sets of digits ranging from 0 - 255 separated by a period.

@@ -12,7 +12,7 @@ tags:
 
 # What is wrapper ? Is it a design pattern ?
 
-![[Pasted image 20240630095617.png]]
+![[meme-question-1-10.png]]
 
 >[!quote]
 >So a lot of question when you learn about new things in technologies, that make this game become unique and interested in something, and `wrapper` is not exception
@@ -81,7 +81,7 @@ Like notification, you can see it will make different between multiple method ba
 
 ## Conclusion
 
-![[Pasted image 20240630140320.png]]
+![[meme-confuse-but-curious.png]]
 
  That why you need `wrapper` or `decorator` when you want to expand or change behavior of your class or functionality to different method but keep the same work, it just alternative for `inheritance`. I know you will understand that more than me, let give evident and reason when you need that from `refactoring.guru`, and do not hesitate the example from this website, super cool. Let brief them to some concludes, Okay 🤔🤔
  
@@ -104,7 +104,7 @@ With `wrapper`, base on DevOps culture, it submits a role for
 
 That has different between them, just release to do with specify purpose and just one thing, users can have the simple way to reach goals when use original tools but dynamic way through `wrapper`
 
-![[Pasted image 20240630143226.png]]
+![[meme-not-simply-gradle.png]]
 
 So go with me to specific to give perspective different between of them 🤭
 
@@ -149,7 +149,7 @@ You can do more such superb thing with `gradlew`
 
 ## Terragrunt
 
-![[Pasted image 20240630150529.png]]
+![[design-terragrunt-wrapper-aws.png]]
 
 Terragrunt comes up to solution, a wrapper for Terraform and Opentofu which can help you orchestration infrastructure as Infrastructure as Code
 
@@ -245,7 +245,7 @@ On my position, I work command regularly so that trick and wrapper can help me r
 
 # Conclusion
 
-![[Pasted image 20240630160954.png]]
+![[meme-learn-new-daily.png]]
 
 >[!done]
 >That all for today, Not long and but I have time to learning around new thing, I hope you can do same thing. Wrapper can make a graceful thing, and help a lot for perspective to do great pattern to design your application, API or such as a build or IaC tool, that actually make the game become to interesting and shorten time to handle lots of job to do different purpose in same construction, just dynamic that one 

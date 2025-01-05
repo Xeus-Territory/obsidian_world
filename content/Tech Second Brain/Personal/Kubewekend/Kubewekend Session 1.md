@@ -19,7 +19,7 @@ List of topics in series
 
 Like usual, before start a lab, we will figure out what things we do interact, and how we can handle and understand about useful that tools can bring up for us. And `vagrant` is special target, much powerful and easily to hang out when you want to work in `vm` with `virtualbox`, `hyper-v` and `vmware`
 
-![[Pasted image 20240707153554.png]]
+![[thumbnail-vbox-vagrant.png]]
 
 If this is first time you hear about `vagrant`, then `vagrant` is
 
@@ -97,7 +97,7 @@ Vagrant 2.4.1
 
 ## Vagrant workflow
 
-![[Pasted image 20240707162430.png]]
+![[thumbnail-vagrant-general.png]]
 
 Base on my experience, when work with `vagrant`, you will make sure some stuff already exist and make sure your step can occur smooth and no problems
 
@@ -109,14 +109,14 @@ Base on my experience, when work with `vagrant`, you will make sure some stuff a
 
 ## Conclusion
 
-![[Pasted image 20240707163249.png]]
+![[meme-not-simply-vagrant-windows.png]]
 
 >[!quote]
 >Hope you find well information about `vagrant`, figure out the technology which you work with. Don't worry to ton of information because on the next part, when you do the lab, I think you will actually love `vagrant`, for sure 100% 😄
 
 # Do magical with Vagrant
 
-![[Pasted image 20240707164329.png]]
+![[meme-question-believe-magic.png]]
 
 ## Introduce Lab
 

@@ -6,14 +6,19 @@ tags:
   - devops
   - usage
   - architecture
-  - tech
-  - solutions
+  - webserver
 ---
+
+![[nginx.png]]
 # Awesome Repository
 
 - [awesome-nginx](https://github.com/agile6v/awesome-nginx) : A curated list of awesome Nginx distributions, 3rd party modules, Active developers, etc.
+# Articles
+
 - [Medium - Nginx Configuration File Explanation and Common Feature Configurations (90% Practical Use Rate)](https://medium.com/@cstoppgmr/nginx-configuration-file-explanation-and-common-feature-configurations-90-practical-use-rate-bc49271f3766)
-# Default nginx configuration
+- [[Create Free SSL with Let's Encrypt and Certbot|Myself - Create Free SSL with Let's Encrypt and Certbot]]
+# Nginx Configuration
+## Default
 
 ```nginx title="nginx.conf"
 user nginx;
@@ -100,11 +105,12 @@ server {
 }
 ```
 
-# Nginx configuration for work with upstream - load balancer
+## Upstream for load balancer
 
-*This `nginx` configuration will contain something like*
-1. upstream block: this block will hold the bunch of containers for making load balancer with multiple style
-2. server block: This server block will handle your request and response. This server block will cause redirect from (HTTP) 80 to (HTTPS) 443
+>[!info]
+>*This `nginx` configuration will contain something like*
+>1. upstream block: this block will hold the bunch of containers for making load balancer with multiple style
+>2. server block: This server block will handle your request and response. This server block will cause redirect from (HTTP) 80 to (HTTPS) 443
 
 ```nginx title="conf.d/upstream.conf"
 # LB for backend containers
@@ -169,9 +175,10 @@ server {
     }
 }
 ```
-# Zero Downtime Basic Upstream SSL
+## Zero Downtime Basic Upstream SSL
 
-*This block will help you handling blue-green deployment concept which can force traffic from blue to green with zero downtime and auto reload to backup container*
+>[!info]
+>*This block will help you handling blue-green deployment concept which can force traffic from blue to green with zero downtime and auto reload to backup container*
 
 ```nginx title="conf.d/upstream-0downtime.conf"
 # LB for backend containers
@@ -230,7 +237,7 @@ server {
     }
 }
 ```
-# Nginx configuration for work with websocket
+## Work with websocket
 
 - As you can see the backend have create some connections via `websocket` protocol and anything requested via `nginx-server`, so it need to be configured for resolved this one connection
 - All configuration can reference via article: [NGINX as a WebSocket Proxy](https://www.nginx.com/blog/websocket-nginx/). So we can sum up the configuration for adding to nginx including
@@ -257,7 +264,7 @@ http{
 }
 ```
 
-# Nginx Template Portainer for Ansible
+## Nginx Template Portainer for Ansible
 
 >[!summary]
 >Ansible Playbooks Template is used config for Nginx work with Portainer

@@ -116,6 +116,9 @@ tags:
 - [quick-protobuf](https://github.com/tafia/quick-protobuf): A rust implementation of protobuf parser
 - [crates.io](https://crates.io/): The Rust community’s crate registry
 - [Rust Language Cheat Sheet](https://cheats.rs/): Collection cheatsheet with Rust
+## Ruby
+
+- [The Ruby Toolbox](https://www.ruby-toolbox.com/): Find actively maintained & popular open source software libraries for the Ruby programming language
 ## Golang
 
 - [awesome-go](https://github.com/avelino/awesome-go): A curated list of awesome Go frameworks, libraries and software

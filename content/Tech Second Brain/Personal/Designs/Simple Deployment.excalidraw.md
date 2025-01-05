@@ -94,7 +94,7 @@ l ^sXgoaSwv
 e ^nSKqHMUm
 
 ## Embedded Files
-88a3005f6ce5509f9337eb8d19ff25da07e040b2: [[Pasted Image 20240623151230_850.png]]
+88a3005f6ce5509f9337eb8d19ff25da07e040b2: [[icon-do.png]]
 
 2f0eb0bfb79b59b580a73023f434d63c81003aad: [[10261-icon-service-Azure-DevOps.svg]]
 

@@ -13,7 +13,7 @@ Reference resource
 - [Review Azure Container Apps](https://learn.microsoft.com/en-us/training/modules/configure-azure-container-instances/5-review-docker-platform)
 
 
-![[Pasted image 20240513114027.png]]
+![[thumbnail-azure-containerapp-vs-kubernetes.png]]
 
 >[!info]
 >Azure Container Apps is a serverless platform that allows you to maintain less infrastructure and save costs while running containerized applications

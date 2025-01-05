@@ -11,7 +11,7 @@ tags:
 
 # Dive deeper into Kubelet
 
-![[Pasted image 20240724130822.png]]
+![[meme-k8s-node-autoscale.png]]
 
 >[!quote]
 >Honestly, `kubelet` is one of parts with most complicated and excited inside kubernetes, that make your worker node can be connected with control plane and assume or operate workload and resources inside your worker node, It's  really insane ! How can they work ?
@@ -57,7 +57,7 @@ Back to `kubelet`, this one have some characteristic to concern about
 - Check about config at `/var/lib/kubelet/config.yaml` - *Same as configuration if you have look on session via API*
 - Container runtime inside `image` use via `containerd.sock` - *socket container like `dockerd` but lightweight, usually use both of them, it better together. Read more at: [containerd vs. Docker: Understanding Their Relationship and How They Work Together](https://www.docker.com/blog/containerd-vs-docker/)*
 
-	![[Pasted image 20240724135156.png]]
+	![[thumbnail-container-service-layer.png]]
 
 >[!question]
 >If you want to understand `Container Runtime` with `containerd`, it plays role as interface stand between for helping your container interact with operation system, and `dockerd` is the higher level which provide more feature for developer. That's it 😄, usually inside container just have `containerd` for optimize resources and reduce the complexity

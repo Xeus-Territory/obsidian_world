@@ -15,7 +15,7 @@ tags:
 
 # What is an IDOR? 
 
-![[Pasted image 20240219105216.png]]
+![[thumbnail-idor.png]]
 
 IDOR stands for Insecure Direct Object Reference and is a type of access control vulnerability.
 

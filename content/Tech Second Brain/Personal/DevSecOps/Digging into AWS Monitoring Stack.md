@@ -11,7 +11,7 @@ tags:
 
 # Cloud Monitoring Stack
 
-![[short-story-meme.png|center]]
+![[meme-short-story.png|center]]
 <div align="center">
 	<p style="text-align: center;">Source: Internet</p>
 </div>
@@ -28,7 +28,7 @@ When you try to operate with those internal stacks, It really be able to give yo
 
 If you are not well-off, let's say thinking more about opensource that bring of same quality but more difficult to involve into your whole cloud services.
 
-![[Pasted image 20241208135502.png]]
+![[meme-aws-log-monitoring.png]]
 <div align="center">
 	<p style="text-align: center;">Source: Internet</p>
 </div>
@@ -40,7 +40,7 @@ If you are not well-off, let's say thinking more about opensource that bring of 
 
 Turning back into topics, I will focus on AWS Monitoring and we can leverage into these technologies which implemented by AWS and give us bunch of things to use, practice and play. Honestly, They is super fun but need a time to actually catch up this. Now, we will try figure out among of us.
 
-![[Pasted image 20241208140947.png]]
+![[aws-monitoring.png]]
 <div align="center">
 	<p style="text-align: center;">Source: AWS</p>
 </div>
@@ -86,7 +86,7 @@ With CloudWatch, you gain system-wide visibility into resource utilization, appl
 
 ## Ability of CloudWatch
 
-![[Pasted image 20241208145102.png|center]]
+![[cloudwatch-integrate.png|center]]
 <div align="center">
 	<p style="text-align: center;">Source: Internet</p>
 </div>
@@ -111,7 +111,7 @@ All of these things, It is legit convince AWS CloudWatch is good condition to ha
 
 # Practical Session
 
-![[Pasted image 20241208163932.png]]
+![[design-aws-monitoring-stack-example.png]]
 
 >[!question]
 >In this practical session, we will try to monitoring DocumentDB and RDS through metrics of these platform, send it into dashboard and create the alarm for both email and chatbot used Slack. Now we will gone through each part 
@@ -862,7 +862,7 @@ In the end, run Terraform workflow and you can set up full stack monitoring stac
 
 # Conclusion
 
-![[byebye.png|center|500]]
+![[meme-byebye.png|center|500]]
 
 
 >[!done]

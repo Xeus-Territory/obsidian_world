@@ -174,6 +174,10 @@ tags:
 - [[Integration automation test with GitLab CI]]
 - [[Digging into AWS Monitoring Stack]]
 - [[Work with EKS and How to monitoring your Cluster]]
+
+## 2025
+
+- [[How to serve Java API with Maven and Tomcat]]
 # Azure Clouds Services
 
 >[!info]
@@ -244,6 +248,10 @@ tags:
 - [[Tech Second Brain/AI & ML & Data/Helpful Pages & Articles|Artificial intelligence, Machine Learning and Data Science]]
 - [[DevOps & System & Tech|DevOps, Systems and Technologies]]
 - [[Utilities Site|Softwares and Tools Helpful Pages]]
+
+## 2025
+
+- [[Tech Second Brain/API Gateway & WebServer/Helpful Pages & Articles|API Gateway & WebServer]]
 # DIY Cheatsheet and Troubleshoot
 
 >[!info]
@@ -268,3 +276,5 @@ tags:
 - [[Powershell commands|Powershell Commands]]
 - [[Shell commands|Shell Bash Commands]]
 - [[Configuration CheatSheet|Tool Configuration Collections]]
+
+

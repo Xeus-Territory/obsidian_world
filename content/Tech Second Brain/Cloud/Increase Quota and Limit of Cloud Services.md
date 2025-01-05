@@ -147,7 +147,7 @@ One more way you can create the support ticket, you can come to search bar and f
 
 # Conclusion
 
-![[byebye.png|center|500]]
+![[meme-byebye.png|center|500]]
 
 >[!done]
 >That @all for this weekend, It's not long story but hope so it conveys your valuable knowledge, and you can try to adapt it for your work or personal project with Cloud Services. There are huge things out there need you to find out about cloud, and quota is absorbing topics you need to spot, ain't gonna lie that tuff 🙌

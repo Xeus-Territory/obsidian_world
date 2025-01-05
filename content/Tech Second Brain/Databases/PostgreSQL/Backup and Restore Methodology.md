@@ -125,7 +125,7 @@ pg_restore -j num -d dbname filename
 
 # Conclusion
 
-![[Pasted image 20240416104153.png]]
+![[meme-backup-restore.png]]
 
 >[!quote]
 >Through the post, you will learn some about methodology which use to backup, restore PostgreSQL and how to manipulate compression when huge database come in. Stay safe and feel free to expand more !!! 😄😄😄

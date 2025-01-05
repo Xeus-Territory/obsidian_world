@@ -104,13 +104,13 @@ Threshold ^UiSKzHBL
 Dashboard ^scCJ2BQO
 
 ## Embedded Files
-d96b398db588ea1c661708e73a7f60744770b3a1: [[Pasted Image 20240627103647_945.png]]
+d96b398db588ea1c661708e73a7f60744770b3a1: [[icon-minio.png]]
 
-a7c65e8cf75fba63c292e091d66189a55fd4899a: [[Pasted Image 20240627112445_054.png]]
+a7c65e8cf75fba63c292e091d66189a55fd4899a: [[icon-python.png]]
 
-8d70c7b623c90ba0d60fb3d7da2b5af4be7df4a3: [[Pasted Image 20240627110554_011.png]]
+8d70c7b623c90ba0d60fb3d7da2b5af4be7df4a3: [[icon-kafka.png]]
 
-94b895c7f51b0d8f90726676da698b56e5405736: [[Pasted image 20240305142924.png]]
+94b895c7f51b0d8f90726676da698b56e5405736: [[icon-grafana.png]]
 
 52e12636c0239f35924a11fa4ca4fceeccc43ba5: [[Tech Second Brain/Assets/Kubernetes-Icons/svg/infrastructure_components/labeled/control-plane.svg]]
 

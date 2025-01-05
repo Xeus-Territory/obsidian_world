@@ -13,7 +13,7 @@ Reference Documentation
 # Makefile and anything about that type scripting
 ## Define, Why do we need Makefile ?
 
-![[Pasted image 20240223104857.png]]
+![[thumbnail-make.png]]
 >[!info] Makefiles are used to help decide which parts of a large program need to be recompiled. In the vast majority of cases, C or C++ files are compiled. Other languages typically have their own tools that serve a similar purpose as Make. Make can also be used beyond compilation too, when you need a series of instructions to run depending on what files have changed. 
 
 On my opinion, with `C` or `C++`, multiple file need to compile in one time, although if you think you will run with command, so just go ahead, but I need to said that not easily. You can see how you need `Makefile` instead of type command like example *(IDK but gRPC make nightmare when compile with typing)*

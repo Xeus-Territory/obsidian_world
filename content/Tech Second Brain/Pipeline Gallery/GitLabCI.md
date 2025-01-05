@@ -221,7 +221,7 @@ build-node-image:
 
 ## Case 3: Authentication Job with private ECR from remote repository
 
-![[RepoAuthPrivateECR.png]]
+![[design-repo-auth-private-aws-ecr.png]]
 
 >[!info]
 >Purpose: Create a general template, that help job can authenticate to private ECR from remote repo, following that job will pull and use private docker image for jobs instead of use the public version

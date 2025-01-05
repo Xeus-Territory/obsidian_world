@@ -71,7 +71,7 @@ Reference technics : `ZTM (Zero Trust Mesh)` , `wstunnel`
 >[!summary]
 >Make a container can distribute and mental monitoring, profiling application with remotely by Sidecar pattern
 
-![[Pasted image 20240502101316.png]]
+![[design-sidecar-injection.png]]
 
 ## Pre-hook framework 🚧
 
