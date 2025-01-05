@@ -17,6 +17,8 @@ tags:
 
 - [Medium - Nginx Configuration File Explanation and Common Feature Configurations (90% Practical Use Rate)](https://medium.com/@cstoppgmr/nginx-configuration-file-explanation-and-common-feature-configurations-90-practical-use-rate-bc49271f3766)
 - [[Create Free SSL with Let's Encrypt and Certbot|Myself - Create Free SSL with Let's Encrypt and Certbot]]
+- [Blog - Nginx high availability through Keepalived – Virtual IP](https://www.chakray.com/nginx-high-availability-through-keepalived-virtual-ip/)
+- [Nginx Docs - High Availability Support for NGINX Plus in On-Premises Deployments](https://docs.nginx.com/nginx/admin-guide/high-availability/ha-keepalived/)
 # Nginx Configuration
 ## Default
 
