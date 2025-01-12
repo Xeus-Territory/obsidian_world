@@ -7,30 +7,44 @@ tags:
   - macos
   - helpful
   - research
+  - awesome
 ---
 >[!info]
 >All eyes for OS with Linux, Windows and moreover. Practice and learn new thing 🤭🤭🤭
 
-# General
+![[meme-winner-everywhere.png]]
+# Handheld notebook
+
+## Cheatsheet
+
+- [SS64](https://ss64.com/): Command line reference
+- [Nano cheatsheet](https://www.nano-editor.org/dist/latest/cheatsheet.html) : Overview of nano's shortcuts
+- [Cheatsheet.wtf](https://www.cheatsheet.wtf/) : Bash Cheatsheet
+- [Linux Command Library](https://linuxcommandlibrary.com/): 1M+ downloads Linux reference app with basics, tips and formatted man pages
+- [Vim cheatsheet](https://devhints.io/vim): Vim Cheat Sheet
+- [Tmux cheatsheet](https://tmuxcheatsheet.com/): Tmux Cheat Sheet & Quick Reference
+- [golinuxcloud](https://www.golinuxcloud.com/linux-commands-cheat-sheet/): the linux cheatsheet
+- [Bash Conditional Statement Operators Cheat Sheet - Kapeli](https://kapeli.com/cheat_sheets/Bash_Test_Operators.docset/Contents/Resources/Documents/index)
+## General
 
 - [NTU Edu - Environment Variables in Windows/macOS/Linux PATH, CLASSPATH, JAVA_HOME](https://www3.ntu.edu.sg/home/ehchua/programming/howto/Environment_Variables.html)
 - [Linux Hint](https://linuxhint.com/): Linux contents and command to resolve your problems
 - [DistroWatch.com: Put the fun back into computing. Use Linux, BSD.](https://distrowatch.com/)
 - [Server World - Build Network Server](https://www.server-world.info/en/)
 - [Linux Journal](https://www.linuxjournal.com/)
+
+## Manual
+
+- [Manned.org](https://manned.org/) : The archive for man pages
+- [Linux - Man Page](https://linux.die.net/man/): Manual page for Linux OS
+- [Packages for Linux and Unix](https://pkgs.org/) : Find and retrieve the official package base on your os, linux or unix, fix your case when missing or dependencies package
+## Tools
+
+- [tldr pages](https://tldr.inbrowser.app/) : Simplified and community-driven man pages
+- [Bash Senpai](https://bashsenpai.com/resources/cheatsheets) : Prompt to get command for suitable situations
+- [cheat.sh](https://github.com/chubin/cheat.sh): the only cheat sheet you need . [Website](https://cheat.sh)
 # Linux
 
-## Awesome Repositories
-
-- [Bash-Oneliner](https://onceupon.github.io/Bash-Oneliner/): A collection of handy Bash One-Liners and terminal tricks for data processing and Linux system maintenance.
-## Documentations
-
-- [Systemd](https://systemd.io/): System and Service Manager
-- [Mendel Cooper - Advanced Bash-Scripting Guide](https://tldp.org/LDP/abs/html/index.html): An in-depth exploration of the art of shell scripting
-- [The Linux Kernel documentation](https://docs.kernel.org/): the top level of the kernel’s documentation tree
-- [Linux Shell Scripting Tutorial - Bash Linux Shell Scripting Wiki](https://bash.cyberciti.biz/guide/Main_Page)
-- [NVIDIA CUDA Installation Guide for Linux](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/#system-requirements)
-- [Curl documentation](https://everything.curl.dev/): an extensive guide for all things curl
 ## Articles
 
 - [Unix & Linux Stack Exchange - Format output of xargs](https://unix.stackexchange.com/questions/89130/format-output-of-xargs) 
@@ -65,7 +79,26 @@ tags:
 - [Medium - 6 Ways to Check Remote Port Status in Linux: Highlighting Two New Approaches](https://programming.earthonline.us/6-effective-methods-to-check-remote-port-status-in-linux-which-one-do-you-use-most-83ce6f903d75)
 - [Medium - Top Linux Security Best Practices for DevSecOps Engineers](https://medium.com/devsecops-community/top-10-linux-security-best-practices-a-comprehensive-guide-to-protecting-your-system-908bd96dd2c9)
 - [Cyberciti - How to use sed to find and replace text in files in Linux / Unix shell](https://www.cyberciti.biz/faq/how-to-use-sed-to-find-and-replace-text-in-files-in-linux-unix-shell/)
+## Awesome Repositories
+
+- [Bash-Oneliner](https://onceupon.github.io/Bash-Oneliner/): A collection of handy Bash One-Liners and terminal tricks for data processing and Linux system maintenance.
+## Documentations
+
+- [Systemd](https://systemd.io/): System and Service Manager
+- [Mendel Cooper - Advanced Bash-Scripting Guide](https://tldp.org/LDP/abs/html/index.html): An in-depth exploration of the art of shell scripting
+- [The Linux Kernel documentation](https://docs.kernel.org/): the top level of the kernel’s documentation tree
+- [Linux Shell Scripting Tutorial - Bash Linux Shell Scripting Wiki](https://bash.cyberciti.biz/guide/Main_Page)
+- [NVIDIA CUDA Installation Guide for Linux](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/#system-requirements)
+- [Curl documentation](https://everything.curl.dev/): an extensive guide for all things curl
 # Window
+
+## Articles
+
+- [The $Windows.~BT Folder: What It Is and How to Delete It](https://www.lifewire.com/what-is-windows-bt-folder-how-to-delete-it-4775736)
+- [PowerShell Aliases: A Beginner’s Guide](https://www.sharepointdiary.com/2021/08/powershell-alias-beginners-guide.html)
+- [PowerShell Commands: 50+ Every Developer Should Know](https://stackify.com/powershell-commands-every-developer-should-know/)
+- [The Most Helpful PowerShell Cheat Sheet You’ll Ever Find](https://www.stationx.net/powershell-cheat-sheet/)
+- [Windows Centrals - How to use shutdown command tool on Windows 10](https://www.windowscentral.com/how-use-shutdown-command-tool-windows-10#section-how-to-restart-computer-with-shutdown-command)
 
 ## Awesome Repositories
 
@@ -82,34 +115,3 @@ tags:
 - [Windows Commands Documentation](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands): Official Documentation from Microsoft
 - [DISM Overview](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/what-is-dism?view=windows-11)
 - [Working across Windows and Linux file systems](https://learn.microsoft.com/en-us/windows/wsl/filesystems)
-## Articles
-
-- [The $Windows.~BT Folder: What It Is and How to Delete It](https://www.lifewire.com/what-is-windows-bt-folder-how-to-delete-it-4775736)
-- [PowerShell Aliases: A Beginner’s Guide](https://www.sharepointdiary.com/2021/08/powershell-alias-beginners-guide.html)
-- [PowerShell Commands: 50+ Every Developer Should Know](https://stackify.com/powershell-commands-every-developer-should-know/)
-- [The Most Helpful PowerShell Cheat Sheet You’ll Ever Find](https://www.stationx.net/powershell-cheat-sheet/)
-- [Windows Centrals - How to use shutdown command tool on Windows 10](https://www.windowscentral.com/how-use-shutdown-command-tool-windows-10#section-how-to-restart-computer-with-shutdown-command)
-
-# Handheld notebook
-
-## Manual
-
-- [Manned.org](https://manned.org/) : The archive for man pages
-- [Linux - Man Page](https://linux.die.net/man/): Manual page for Linux OS
-- [Packages for Linux and Unix](https://pkgs.org/) : Find and retrieve the official package base on your os, linux or unix, fix your case when missing or dependencies package
-
-## Cheatsheet
-
-- [SS64](https://ss64.com/): Command line reference
-- [Nano cheatsheet](https://www.nano-editor.org/dist/latest/cheatsheet.html) : Overview of nano's shortcuts
-- [Cheatsheet.wtf](https://www.cheatsheet.wtf/) : Bash Cheatsheet
-- [Linux Command Library](https://linuxcommandlibrary.com/): 1M+ downloads Linux reference app with basics, tips and formatted man pages
-- [Vim cheatsheet](https://devhints.io/vim): Vim Cheat Sheet
-- [Tmux cheatsheet](https://tmuxcheatsheet.com/): Tmux Cheat Sheet & Quick Reference
-- [golinuxcloud](https://www.golinuxcloud.com/linux-commands-cheat-sheet/): the linux cheatsheet
-- [Bash Conditional Statement Operators Cheat Sheet - Kapeli](https://kapeli.com/cheat_sheets/Bash_Test_Operators.docset/Contents/Resources/Documents/index)
-## Tools
-
-- [tldr pages](https://tldr.inbrowser.app/) : Simplified and community-driven man pages
-- [Bash Senpai](https://bashsenpai.com/resources/cheatsheets) : Prompt to get command for suitable situations
-- [cheat.sh](https://github.com/chubin/cheat.sh): the only cheat sheet you need . [Website](https://cheat.sh)

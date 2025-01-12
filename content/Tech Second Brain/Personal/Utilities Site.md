@@ -26,6 +26,7 @@ title: Utilities Site for multiple purpose
 - [Emoji Code List](https://hackmd.io/@TANNY/Hy8FoOPtD/https%3A%2F%2Fwww.webfx.com%2Ftools%2Femoji-cheat-sheet%2F) - Easily click to copy and paste emojis into any app or social media platform to make your content stand out!
 - [TechIcons](https://techicons.dev/) - Download, copy and paste tech icons in SVG and PNG format for your projects.
 - [SVGRepo](https://www.svgrepo.com/) - Search, explore and edit the best-fitting free icons or vectors for your projects using a wide variety vector library.
+- [Simple Icons](https://simpleicons.org/) - Free SVG icons for popular brands
 ## File Converter & Downloader
 
 - [Convertio](https://convertio.co/) - File Converter

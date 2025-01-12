@@ -17,56 +17,56 @@ tags:
 
 You can figure what you need to do for start with `aws` via some website and article
 
-- [AWS Documentation](https://docs.aws.amazon.com/)
-- [AWS Training](https://www.aws.training/)
+- [AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/)
 - [AWS Architecture Center](https://aws.amazon.com/architecture/)
-- [AWS CLI - Installation Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) 
+- [AWS Blog](https://aws.amazon.com/blogs)
 - [AWS CLI - Command Guide](https://awscli.amazonaws.com/v2/documentation/api/latest/index.html)
 - [AWS CLI - Configure the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
+- [AWS CLI - Installation Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) 
 - [AWS Create Account Guide](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html)
-- [AWS Price Calculator](https://calculator.aws/#/)
-- [AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/)
-- [AWS Whitepapers & Guides](https://aws.amazon.com/whitepapers/)
-- [AWS Prescriptive Guidance](https://aws.amazon.com/prescriptive-guidance/)
-- [AWS Solutions Library](https://aws.amazon.com/solutions/ "AWS Solutions Library Homepage")
 - [AWS Decision Guides](https://aws.amazon.com/getting-started/decision-guides/)
-- [AWS Blog](https://aws.amazon.com/blogs)
+- [AWS Documentation](https://docs.aws.amazon.com/)
 - [AWS General Reference](https://docs.aws.amazon.com/general/latest/gr/Welcome.html)
 - [AWS IAM Actions - Generator](https://www.awsiamactions.io/?r=0)
+- [AWS Prescriptive Guidance](https://aws.amazon.com/prescriptive-guidance/)
+- [AWS Price Calculator](https://calculator.aws/#/)
+- [AWS Solutions Library](https://aws.amazon.com/solutions/ "AWS Solutions Library Homepage")
+- [AWS Training](https://www.aws.training/)
+- [AWS Whitepapers & Guides](https://aws.amazon.com/whitepapers/)
 
 You can manage `aws` as organization via the tree and sub-organization inside root account
 
-![[Pasted image 20240801100407.png]]
+![[aws-org-structure.png]]
 
-So enjoy what you need, inside the article will share about how you CLI, cheatsheet, collection of useful article around `aws`. Externally, In `AWS` , I will share about some others topic, such as **Services**, **Certificates** and more about **Best Practice**
+Therefore enjoying what you need, inside each article will share about how you CLI, cheatsheet, collection of useful article around `aws` 
 
+Externally, In `AWS` , I will share about some others topic, such as 
+
+- **Services**
+- **Certificates**
+- **AWS Best Practice**
 # Awesome AWS Repositories
 
-## Repository
-
-- [awesome-aws](https://github.com/donnemartin/awesome-aws) - A curated list of awesome Amazon Web Services (AWS) libraries, open source repos, guides, blogs, and other resources.
-- [my-arsenal-of-aws-security-tools](https://github.com/toniblyx/my-arsenal-of-aws-security-tools): List of open source tools for AWS security: defensive, offensive, auditing, DFIR, etc.
-- [all_aws_managed_policies](https://gist.github.com/gene1wood/55b358748be3c314f956): A list of all AWS managed policies and they're policy documents as well as a short script to generate the list
-- [grafana-aws-cloudwatch-dashboards](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards): 40+ Grafana dashboards for AWS CloudWatch metrics
 ## Organization
 
 - [Github - Amazon Web Services](https://github.com/aws) - AWS Opensource Community
-- [Github - AWS Samples](https://github.com/aws-samples) - AWS Samples Community
-- [Github - AWS Observability](https://github.com/aws-observability) - AWS Observability Setup
 - [Github - AWS Labs](https://github.com/awslabs) - AWS Labs
-## Tools
-
-- [Serverless Better Credentials](https://www.serverless.com/plugins/serverless-better-credentials#serverless-better-credentials): Plugin replaces the existing AWS credential resolution mechanism, support SSO (Single Sign On)
+- [Github - AWS Observability](https://github.com/aws-observability) - AWS Observability Setup
+- [Github - AWS Samples](https://github.com/aws-samples) - AWS Samples Community
 ## Pages
 
 - [Compose-X Labs](https://labs.compose-x.io/#): Aims to show-case Compose-X projects to deploy on AWS ECS
+## Repository
+
+- [all_aws_managed_policies](https://gist.github.com/gene1wood/55b358748be3c314f956): A list of all AWS managed policies and they're policy documents as well as a short script to generate the list
+- [awesome-aws](https://github.com/donnemartin/awesome-aws) - A curated list of awesome Amazon Web Services (AWS) libraries, open source repos, guides, blogs, and other resources.
+- [grafana-aws-cloudwatch-dashboards](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards): 40+ Grafana dashboards for AWS CloudWatch metrics
+- [my-arsenal-of-aws-security-tools](https://github.com/toniblyx/my-arsenal-of-aws-security-tools): List of open source tools for AWS security: defensive, offensive, auditing, DFIR, etc.
+## Tools
+
+- [Serverless Better Credentials](https://www.serverless.com/plugins/serverless-better-credentials#serverless-better-credentials): Plugin replaces the existing AWS credential resolution mechanism, support SSO (Single Sign On)
 # Blogs, Articles and Videos
 
-## Blogs
-
-- [Medium - Chris St. John](https://medium.com/@csjcode)
-- [Medium - AWS in Plain English](https://aws.plainenglish.io/): New AWS, Cloud, and DevOps content every day.
-- [Medium - AWStip](https://awstip.com/): Community of passionate AWS builders.
 ## Articles
 
 - [CloudZero - AWS NAT Gateway Pricing: Simple Strategies To Limit Costs](https://www.cloudzero.com/blog/reduce-nat-gateway-costs/)
@@ -81,6 +81,11 @@ So enjoy what you need, inside the article will share about how you CLI, cheatsh
 - [AWS Blogs - 7 AWSome ways to use AWS Chatbot](https://aws.amazon.com/blogs/mt/7-awsome-ways-to-use-aws-chatbot/)
 - [Medium - Full-stack Observability and Monitoring on AWS](https://kevinkiruri.medium.com/observability-and-monitoring-on-aws-42628f13b569)
 - [Linkedin - ISO 27001 Compliance in AWS](https://www.linkedin.com/pulse/iso-27001-compliance-aws-valentin-komarovskiy-mba-ketke)
+## Blogs
+
+- [Medium - AWS in Plain English](https://aws.plainenglish.io/): New AWS, Cloud, and DevOps content every day.
+- [Medium - AWStip](https://awstip.com/): Community of passionate AWS builders.
+- [Medium - Chris St. John](https://medium.com/@csjcode)
 ## Development & Implementation
 
 - [Medium - ECS (Fargate) with ALB Deployment Using Terraform — Part 3](https://medium.com/the-cloud-journal/ecs-fargate-with-alb-deployment-using-terraform-part-3-eb52309fdd8f)
