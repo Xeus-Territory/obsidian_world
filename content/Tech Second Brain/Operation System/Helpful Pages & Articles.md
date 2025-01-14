@@ -32,7 +32,6 @@ tags:
 - [DistroWatch.com: Put the fun back into computing. Use Linux, BSD.](https://distrowatch.com/)
 - [Server World - Build Network Server](https://www.server-world.info/en/)
 - [Linux Journal](https://www.linuxjournal.com/)
-
 ## Manual
 
 - [Manned.org](https://manned.org/) : The archive for man pages

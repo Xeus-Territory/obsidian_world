@@ -184,6 +184,9 @@ sudo apt-get install ibus ibus-bamboo --install-recommends
 ibus restart
 # If failure to connect, It means bamboo daemon not work, you can use 
 # ibus-daemon -d
+
+# Install fast for testing network connection
+wget https://github.com/ddo/fast/releases/download/v0.0.4/fast_linux_amd64 -O fast && chmod +x fast && sudo mv fast /usr/local/bin
 ```
 
 # Install programming language for ZSH
@@ -393,6 +396,9 @@ alias pubip="curl -4 icanhazip.com"
 # Terragrunt bash complete 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terragrunt terragrunt
+
+# Check the cpu-temp in your machine
+alias cputemp="paste <(cat /sys/class/thermal/thermal_zone*/type) <(cat /sys/class/thermal/thermal_zone*/temp) | column -s $'\t' -t | sed 's/\(.\)..$/.\1°C/'"
 ```
 
 # Custom plugins for Oh-my-zsh

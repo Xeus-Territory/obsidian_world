@@ -98,6 +98,7 @@ tags:
 - [Nubenetes](https://nubenetes.com/) : Awesome Kubernetes & Cloud
 - [NVIDIA Documentation Hub](https://docs.nvidia.com/): Get started by exploring the latest technical information and product documentation
 - [StackExchange](https://stackexchange.com/sites) : StackOverFlow Ecosystem
+- [Terraform Best Practices](https://www.terraform-best-practices.com/): An attempt to systematically describe best practices using Terraform and provide recommendations for the most frequent problems Terraform users experience
 ## Technology
 
 - [awesome-compilers](https://github.com/aalhour/awesome-compilers): Curated list of awesome resources on Compilers, Interpreters and Runtimes
@@ -112,7 +113,7 @@ tags:
 - [gitlab-explore](https://gitlab.com/explore/projects/starred): Find and explore tab of GitLab
 - [static-analysis](https://github.com/analysis-tools-dev/static-analysis): A curated list of static analysis (SAST) tools and linters
 - [web-servers.md](https://gist.github.com/willurd/5720255) : Each of these commands will run an ad hoc http static server in your current (or specified) directory
-## Topic
+## Topics
 
 - [Compiler](https://github.com/topics/compiler)
 - [Configuration Management](https://github.com/topics/configuration-management)
@@ -120,13 +121,14 @@ tags:
 - [DevSecOps](https://github.com/topics/devsecops)
 - [Failover](https://github.com/topics/failover)
 - [Hacktoberfest](https://github.com/topics/hacktoberfest)
+- [Internal Developer Platform (IDP)](https://internaldeveloperplatform.org/what-is-an-internal-developer-platform/)
 - [Interpreter](https://github.com/topics/interpreter)
-- [Kubernetes](https://github.com/topics/kubernetes)
 - [Library](https://github.com/topics/library)
 - [Logging](https://github.com/topics/logging)
 - [Metrics](https://github.com/topics/metrics)
 - [Orchestration](https://github.com/topics/orchestration)
 - [Package manager](https://github.com/topics/package-manager)
+- [Platform Orchestrator](https://internaldeveloperplatform.org/platform-orchestrators/)
 - [Toolkit](https://github.com/topics/toolkit)
 - [Virtualization](https://github.com/topics/virtualization)
 - [Virtual Machine](https://github.com/topics/virtual-machine)
@@ -209,14 +211,9 @@ tags:
 >Collections a supper cool and powerful tools for multiple purpose attaching with DevOps
 ## Automation Build Platforms
 
-- [Buildpacks.io](https://buildpacks.io/docs/): Cloud Native Buildpacks (CNBs) transform your application source code into [container images](https://github.com/opencontainers/image-spec/blob/main/spec.md) that can run on any cloud.
 - [CMake](https://github.com/Kitware/CMake): Mirror of CMake upstream repository. Plus on [Make](https://www.gnu.org/software/make/)
-- [electron](https://github.com/electron/electron): Build cross-platform desktop apps with JavaScript, HTML, and CSS
 - [Expo](https://docs.expo.dev/): Expo is a framework that makes developing Android and iOS apps easier. Our framework provides file-based routing, a standard library of native modules, and much more
-- [harness](https://github.com/harness/harness): Harness Open Source is an end-to-end developer platform with Source Control Management, CI/CD Pipelines, Hosted Developer Environments, and Artifact Registries.
 - [just](https://just.systems/man/en/): a handy way to save and run project-specific commands.
-- [lerna](https://github.com/lerna/lerna): 🐉 Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.
-- [nx](https://github.com/nrwl/nx): Smart Monorepos · Fast CI
 ## Cloud Development Environments
 
 - [dapr](https://github.com/dapr/dapr): Dapr is a portable, event-driven, runtime for building distributed applications across cloud and edge. [Website](https://dapr.io/)
@@ -231,14 +228,13 @@ tags:
 ## Configuration as Code
 
 - [Configu](https://github.com/configu/configu): Open-source ConfigOps infrastructure ⚙️
-## eBPF
+## Documentation Template
 
-- [ecapture](https://github.com/gojue/ecapture): Capturing SSL/TLS plaintext without a CA certificate using eBPF. Supported on Linux/Android kernels for amd64/arm64. [Documentation](https://ecapture.cc/guide/introduction.html)
+- [mintlify](https://github.com/mintlify/starter): The modern standard for documentation
+- [doks](https://github.com/thuliteio/doks): Everything you need to build a stellar documentation website. Fast, accessible, and easy to use.
 ## Feature Flag
 
 - [flagsmith](https://github.com/Flagsmith/flagsmith): Open Source Feature Flagging and Remote Config Service. Host on-prem or use our hosted version at [https://flagsmith.com/](https://flagsmith.com/)
-- [flipt](https://github.com/flipt-io/flipt): Enterprise-ready, GitOps enabled, CloudNative feature management solution
-- [unleash](https://github.com/Unleash/unleash): Open-source feature management solution built for developers.
 ## Generated / Validate Configuration
 
 - [checkov](https://github.com/bridgecrewio/checkov): Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as code, container images and open source packages
@@ -250,48 +246,28 @@ tags:
 - [YAML Multiline Strings](https://yaml-multiline.info/) : Find the right syntax for YAML file
 ## Git Hosting
 
+- [act](https://github.com/nektos/act): Run your GitHub Actions locally 🚀
 - [gitea](https://github.com/go-gitea/gitea): Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD. [Doc](https://docs.gitea.com/)
 - [gitlab](https://about.gitlab.com/install/) : Download, install and maintain your own GitLab instance.
-- [gogs](https://github.com/gogs/gogs): a painless self-hosted Git service. [Doc](https://gogs.io/docs)
-## GitOps
-
-- [act](https://github.com/nektos/act): Run your GitHub Actions locally 🚀
-- [Atlantis - Terraform Pull Request Automation](https://www.runatlantis.io/) : Running Terraform Workflows with Ease
-- [bytebase](https://github.com/bytebase/bytebase) : The GitHub/GitLab for database DevOps.
-- [digger](https://docs.digger.dev/readme/introduction) : open-source CI/CD orchestrator for Terraform
-- [env0](https://docs.env0.com/): Automate and manage any Infrastructure-as-Code, from Terraform and OpenTofu to Pulumi, CloudFormation, Terragrunt, Kubernetes, and more.
-- [scalr](https://docs.scalr.io/docs/introduction) :  Remote operations backend for Terraform and OpenTofu (OTF)
-- [Semaphore UI](https://semaphoreui.com/) : Elegant web interface for executing Ansible playbooks, Terraform, OpenTofu, Pulumi code and Bash scripts.
 ## Identity Provider (SSO, OAuth, MFA, ...)
 
-- [Authelia](https://www.authelia.com/): Authelia is an open-source [authentication](https://www.authelia.com/overview/authentication/introduction/) and [authorization](https://www.authelia.com/overview/authorization/access-control/) server and portal fulfilling the identity and access management (IAM) role of information security in providing [multi-factor authentication](https://www.authelia.com/overview/authentication/introduction/) and single sign-on (SSO) for your applications via a web portal. It acts as a companion for [common reverse proxies](https://www.authelia.com/overview/prologue/supported-proxies/).
 - [authentik](https://docs.goauthentik.io/docs/) :  An IdP (Identity Provider) and SSO (single sign on) that is built with security at the forefront of every piece of code, every feature, with an emphasis on flexibility and versatility.
-- [casdoor](https://github.com/casdoor/casdoor): An open-source UI-first Identity and Access Management (IAM) / Single-Sign-On (SSO) platform with web UI supporting
-- [FusionAuth](https://fusionauth.io/docs/get-started/) : FusionAuth is a modern platform for Customer Identity and Access Management (CIAM). FusionAuth provides APIs and a responsive web user interface to support login, registration, localized email, multi-factor authentication, reporting and much more.
-- [keycloak](https://github.com/keycloak/keycloak): Open Source Identity and Access Management For Modern Applications and Services. [Website](https://github.com/keycloak/keycloak)
 - [spicedb](https://github.com/authzed/spicedb): Open Source, Google Zanzibar-inspired database for scalably storing and querying fine-grained authorization data. [Documentation](https://authzed.com/docs/spicedb/getting-started/discovering-spicedb)
-- [tailscale](https://tailscale.com/):  The easiest, most secure way to use WireGuard and 2FA.
-- [zitadel](https://zitadel.com/docs/guides/overview): Identity infrastructure, simplified for you.
 ## Infrastructure as Code (Cloud Platform)
 
-- [inframap](https://github.com/cycloidio/inframap): Read your tfstate or HCL to generate a graph specific for each provider, showing only the resources that are most important/relevant.
-- [OpenTofu](https://opentofu.org/docs/): An infrastructure as code tool that lets you define infrastructure resources in human-readable configuration files that you can version, reuse, and share
 - [Pulumi Documentations](https://www.pulumi.com/docs/) : An open source infrastructure as code tool for creating, deploying, and managing cloud infrastructure.
 - [Pulumi Registry](https://www.pulumi.com/registry/): Package, SDK of Pulumi (Example: AWS, Azure, GCP)
-- [Spacelift](https://docs.spacelift.io/): Spacelift is a sophisticated, continuous integration and deployment (CI/CD) platform for _infrastructure-as-code_
-- [Terraform Best Practices](https://www.terraform-best-practices.com/): An attempt to systematically describe best practices using Terraform and provide recommendations for the most frequent problems Terraform users experience
 - [Terraform Documentation](https://developer.hashicorp.com/terraform/docs): An infrastructure as code tool that lets you build, change, and version infrastructure safely and efficiently
-- [terraformer](https://github.com/GoogleCloudPlatform/terraformer): CLI tool to generate terraform files from existing infrastructure (reverse Terraform). Infrastructure to Code
 - [Terraform Registry](https://registry.terraform.io/): Terraform providers that power all of Terraform’s resource types, or find modules for quickly deploying common infrastructure configurations.
 ## Infrastructure as Code (VM Configuration)
 
 - [Ansible](https://docs.ansible.com/ansible/latest/index.html) : Ansible provides open-source automation that reduces complexity and runs everywhere, especially **virtual machine**
-	- [awx](https://github.com/ansible/awx): AWX provides a web-based user interface, REST API, and task engine built on top of Ansible.
+- [Packer](https://developer.hashicorp.com/packer/docs?product_intent=packer): Create identical machine images for multiple platforms from a single source configuration
 - [Vagrant](https://developer.hashicorp.com/vagrant/docs) : Vagrant is the command line utility for managing the lifecycle of virtual machines.
 ## Internal Developer Platform (IDP)
 
-- [backstage](https://github.com/backstage/backstage): An open framework for building developer portals. [Documentation](https://backstage.io/docs/overview/what-is-backstage)
-- [Kusion](https://www.kusionstack.io/docs/) : An intent-driven [Platform Orchestrator](https://internaldeveloperplatform.org/platform-orchestrators/), which sits at the core of an [Internal Developer Platform (IDP)](https://internaldeveloperplatform.org/what-is-an-internal-developer-platform/)
+- [backstage](https://github.com/backstage/backstage): An open framework for building developer portals
+- [Kusion](https://www.kusionstack.io/docs/) : An intent-driven **Platform Orchestrator**, which sits at the core of an **Internal Developer Platform (IDP)**
 - [Qovery](https://hub.qovery.com/docs/getting-started/what-is-qovery/) : the **Internal Developer Platform (IDP)** that cuts noise for developers with paved paths to production
 ## Kafka Tools
 
@@ -319,66 +295,52 @@ tags:
 	- Metrics: [prometheus](https://prometheus.io/docs/introduction/overview/), [cadvisor](https://github.com/google/cadvisor), [node_exporter](https://github.com/prometheus/node_exporter), [thanos](https://github.com/thanos-io/thanos)
 	- Profiling: [pyroscope](https://grafana.com/docs/pyroscope/latest/)
 	- Traces: [jaeger](https://www.jaegertracing.io/docs/2.1/), [OpenTelemetry](https://opentelemetry.io/docs/what-is-opentelemetry/), [tempo](https://grafana.com/docs/tempo/latest/)
+	- SLO: [sloth](https://github.com/slok/sloth)
 
-- [Checkmk](https://docs.checkmk.com/latest/en/): Offers comprehensive and specialized solutions for dealing with the very diverse environments of IT infrastructures.
-- [cloudprober](https://github.com/cloudprober/cloudprober): An active monitoring software to detect failures before your customers do.
-- [coroot](https://github.com/coroot/coroot): an open-source APM & Observability tool
+- [VictoriaMetrics Stack](https://github.com/VictoriaMetrics/VictoriaMetrics): New monitoring solution for both metrics and logs
+
+	- VictoriaMetrics is a fast, cost-effective and scalable monitoring solution and time series database
+	- VictoriaLogs is [open source](https://github.com/VictoriaMetrics/VictoriaMetrics/tree/master/app/victoria-logs) user-friendly database for logs from [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics/).
+
 - [dcgm](https://developer.nvidia.com/dcgm): Manage and Monitor GPUs in Cluster Environments
-- [highlight](https://github.com/highlight/highlight): The open source, full-stack monitoring platform. Error monitoring, session replay, logging, distributed tracing, and more.
-- [Log Viewer (Log4j, NLog)](https://sourceforge.net/projects/styort-logviewer/): a high performance realtime log viewer via UDP (Chainsaw/NLogViewer) or text file.
-- [Netdata](https://github.com/netdata/netdata) : The open-source observability platform everyone needs!
-- [OpenSLO](https://github.com/OpenSLO/OpenSLO): Open specification for defining and expressing service level objectives (SLO)
-- [pyrra](https://github.com/pyrra-dev/pyrra): Making SLOs with Prometheus manageable, accessible, and easy to use for everyone!
-- [signoz](https://github.com/SigNoz/signoz): An open-source observability platform native to OpenTelemetry with logs, traces and metrics in a single application
-- [sloth](https://github.com/slok/sloth): 🦥 Easy and simple Prometheus SLO (service level objectives) generator
-- [vector](https://github.com/vectordotdev/vector): A high-performance observability data pipeline.
-- [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics): fast, cost-effective monitoring solution and time series database. [Documentation](https://docs.victoriametrics.com/), [helm](https://github.com/VictoriaMetrics/helm-charts)
-- [Zabbix](https://www.zabbix.com/documentation/current/en/manual/introduction/about): A software that monitors numerous parameters of a network and the health and integrity of servers, virtual machines, applications, services, databases, websites, the cloud and more
+- [zabbix](https://github.com/zabbix/zabbix): Real-time monitoring of IT components and services, such as networks, servers, VMs, applications and the cloud.
 ## Orchestration Framework
 
-- [camunda](https://github.com/camunda/camunda): Process Orchestration Framework. [Website](https://docs.camunda.io/)
 - [kestra](https://github.com/kestra-io/kestra): ⚡ Workflow Automation Platform
-- [luigi](https://github.com/spotify/luigi): a Python module that helps you build complex pipelines of batch jobs. It handles dependency resolution, workflow management, visualization etc. It also comes with Hadoop support built in.
 - [prefect](https://github.com/PrefectHQ/prefect): A workflow orchestration framework for building resilient data pipelines in Python.
+## Precommit
+
+- [pre-commit-hooks](https://github.com/pre-commit/pre-commit-hooks): Some out-of-the-box hooks for pre-commitSome out-of-the box hooks for pre-commit
+- [husky](https://github.com/typicode/husky): Git hooks made easy 🐶 woof!
 ## Product Error Analytics and Monitoring
 
-- [GlitchTip](https://glitchtip.com/documentation): Simple, open source error tracking
 - [openreplay](https://github.com/openreplay/openreplay): Session replay and analytics tool you can self-host. Ideal for reproducing issues, co-browsing with users and optimizing your product.
-- [opentelemetry](https://opentelemetry.io/docs/): OpenTelemetry, also known as OTel, is a vendor-neutral open source [observability](https://opentelemetry.io/docs/concepts/observability-primer/#what-is-observability) framework for instrumenting, generating, collecting, and exporting telemetry data such as [traces](https://opentelemetry.io/docs/concepts/signals/traces/), [metrics](https://opentelemetry.io/docs/concepts/signals/metrics/), and [logs](https://opentelemetry.io/docs/concepts/signals/logs/).
 - [Sentry](https://github.com/getsentry/sentry): Developer-first error tracking and performance monitoring. [Website](https://sentry.io/)
 ## Queue Services
 
-- [Amazon Simple Queue System (SQS)](https://aws.amazon.com/sqs): A fully managed message queue built for distributed and serverless platforms
-- [Apache ActiveMQ](https://activemq.apache.org/) : An open-source Java-based message queue that can be accessed by clients written in Javascript, C, C++, Python and .NET.
 - [Apache Kafka](https://kafka.apache.org/documentation/): an open-source, distributed event streaming platform with message communication and storage capabilities (**superb**)
 - [AutoMQ](https://docs.automq.com/automq/what-is-automq/overview) : AutoMQ re-engineers Kafka for the cloud by decoupling storage to object storage. While maintaining **100% compatibility** with Apache Kafka®, it offers users up to **10 times cost efficiency** and **100 times elasticity**.
-- [Celery](https://docs.celeryq.dev/en/stable/): a simple, flexible, and reliable distributed system to process vast amounts of messages, while providing operations with the tools required to maintain such a system.
-- [Microsoft Azure Service Bus](https://azure.microsoft.com/en-us/products/service-bus): A reliable, fully managed Cloud service for delivering messages via queues or topics.https://www.serverless.com/framework/docs
 - [RabbitMQ](https://www.rabbitmq.com/): An open-source message broker for asynchronous messaging, queueing and delivery acknowledgement.
 ## Secrets management
 
 - [Ansible Vault](https://docs.ansible.com/ansible/2.9/user_guide/vault.html): A feature of ansible that allows you to keep sensitive data such as passwords or keys in encrypted files, rather than as plaintext in playbooks or roles.
-- [doppler](https://github.com/DopplerHQ/cli): The official CLI for interacting with your Doppler secrets and configuration
-- [dotenv](https://www.dotenv.org/docs/) : The secrets manager for .env files – from the same people that pioneered dotenv. 
-- [dotenvx](https://dotenvx.com/) : Loads environment variables from .env for nodejs projects.
 - [Hashicorp Vault](https://developer.hashicorp.com/vault/docs?product_intent=vault): An identity-based secret and encryption management system
 - [infisical](https://github.com/Infisical/infisical): the open-source secret management platform
 - [sops](https://getsops.io/) : Simple and flexible tool for managing secrets
-- [teller](https://github.com/tellerops/teller): Cloud native secrets management for developers
 - [trufflehog](https://github.com/trufflesecurity/trufflehog): Find, verify, and analyze leaked credentials.
 ## Serverless Self-hosted
 
 - [faas](https://github.com/openfaas/faas): OpenFaaS - Serverless Functions Made Simple
-- [fn](https://github.com/fnproject/fn): The container native, cloud agnostic serverless platform.
-- [knative](https://github.com/knative/docs):  An Open-Source Enterprise-level solution to build Serverless and Event Driven Applications. [Documentation](https://knative.dev/docs/concepts/)
 - [serverless framework](https://github.com/serverless/serverless): ⚡ Serverless Framework – Effortlessly build apps that auto-scale, incur zero costs when idle, and require minimal maintenance using AWS Lambda and other managed cloud services. [Documentation](https://www.serverless.com/framework/docs)
 ## Service Discovery / Service Proxy
 
 - [consul](https://developer.hashicorp.com/consul/docs?product_intent=consul): A multi-networking tool that offers a fully-featured service mesh solution
 - [envoy](https://www.envoyproxy.io/docs/envoy/v1.31.0/) : Envoy is an L7 proxy and communication bus designed for large modern service oriented architectures
-- [HAProxy](https://docs.haproxy.org/) : HAProxy is a free, very fast and reliable reverse-proxy offering [high availability](http://en.wikipedia.org/wiki/High_availability), [load balancing](http://en.wikipedia.org/wiki/Load_balancer), and proxying for TCP and HTTP-based applications
-- [nacos](https://github.com/alibaba/nacos): An easy-to-use dynamic service discovery, configuration and service management platform for building cloud native applications.
 - [traefik proxy](https://doc.traefik.io/traefik/) : Traefik is an [open-source](https://github.com/traefik/traefik) _Edge Router_ that makes publishing your services a fun and easy experience
+## SMTP
+
+- [docker-mailserver](https://github.com/docker-mailserver/docker-mailserver): Production-ready fullstack but simple mail server (SMTP, IMAP, LDAP, Antispam, Antivirus, etc.) running inside a container
+- [Mailu](https://github.com/Mailu/Mailu): Insular email distribution - mail server as Docker images
 ## SSL / DNS
 
 - [acme.sh](https://github.com/acmesh-official/acme.sh): A pure Unix shell script implementing ACME client protocol
@@ -395,11 +357,15 @@ tags:
 - [Ceph](https://docs.ceph.com/en/reef/start/): Ceph can be used to provide [Ceph Object Storage](https://docs.ceph.com/en/reef/glossary/#term-Ceph-Object-Storage) to [Cloud Platforms](https://docs.ceph.com/en/reef/glossary/#term-Cloud-Platforms) and Ceph can be used to provide [Ceph Block Device](https://docs.ceph.com/en/reef/glossary/#term-Ceph-Block-Device) services to [Cloud Platforms](https://docs.ceph.com/en/reef/glossary/#term-Cloud-Platforms). Ceph can be used to deploy a [Ceph File System](https://docs.ceph.com/en/reef/glossary/#term-Ceph-File-System). All [Ceph Storage Cluster](https://docs.ceph.com/en/reef/glossary/#term-Ceph-Storage-Cluster) deployments begin with setting up each [Ceph Node](https://docs.ceph.com/en/reef/glossary/#term-Ceph-Node) and then setting up the network.
 - [CubeFS](https://cubefs.io/docs/master/overview/introduction.html) : A next-generation cloud-native storage product that is currently an incubating open-source project hosted by the [Cloud Native Computing Foundationopen in new window](https://www.cncf.io/projects/cubefs/) (CNCF).
 - [MinIO](https://min.io/docs/minio/linux/index.html): MinIO is an object storage solution that provides an Amazon Web Services S3-compatible API and supports all core S3 features.
-- [rclone](https://github.com/rclone/rclone): "rsync for cloud storage" - Google Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Wasabi, Google Cloud Storage, Azure Blob, Azure Files, Yandex Files
-- [seaweedfs](https://github.com/seaweedfs/seaweedfs) : a fast distributed storage system for blobs, objects, files, and data lake, for billions of files! Blob store has O(1) disk seek, cloud tiering.
+## Terraform Tools
+
+- [atlantis](https://www.runatlantis.io/): Running Terraform Workflows with Ease
+- [inframap](https://github.com/cycloidio/inframap): Read your tfstate or HCL to generate a graph specific for each provider, showing only the resources that are most important/relevant.
+- [terraformer](https://github.com/GoogleCloudPlatform/terraformer): CLI tool to generate terraform files from existing infrastructure (reverse Terraform). Infrastructure to Code
 ## Utilities Terminal Tools
 
 - [auto-unlocker](https://github.com/paolo-projects/auto-unlocker): Unlocker for VMWare macOS
+- [awx](https://github.com/ansible/awx): AWX provides a web-based user interface, REST API, and task engine built on top of Ansible.
 - [bat](https://github.com/sharkdp/bat): A cat(1) clone with wings.
 - [bcal](https://github.com/jarun/bcal): 🔢 Bits, bytes and address calculator
 - [bpytop](https://github.com/aristocratos/bpytop): Linux/OSX/FreeBSD resource monitor
@@ -414,8 +380,7 @@ tags:
 - [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh): Framework for managing your zsh configuration
 - [pet](https://github.com/knqyf263/pet): Simple command-line snippet manager
 - [pre-commit](https://github.com/pre-commit/pre-commit): A framework for managing and maintaining multi-language pre-commit hooks.
-	- [pre-commit-hooks](https://github.com/pre-commit/pre-commit-hooks): Some out-of-the-box hooks for pre-commitSome out-of-the box hooks for pre-commit
-	- [husky](https://github.com/typicode/husky): Git hooks made easy 🐶 woof!
+- [rclone](https://github.com/rclone/rclone): "rsync for cloud storage" - Google Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Wasabi, Google Cloud Storage, Azure Blob, Azure Files, Yandex Files
 - [ripgrep](https://github.com/BurntSushi/ripgrep) : ripgrep recursively searches directories for a regex pattern while respecting your gitignore
 - [skopeo](https://github.com/containers/skopeo): Work with remote images registries - retrieving information, images, signing content
 - [thefuck](https://github.com/nvbn/thefuck) : Magnificent app which corrects your previous console command.

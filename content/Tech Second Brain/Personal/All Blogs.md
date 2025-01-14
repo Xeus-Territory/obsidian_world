@@ -232,6 +232,10 @@ tags:
 - [[Kubewekend Session 4|Kubewekend Session 4: Learn about ebpf with hubble and cilium]] - *This session will talk and learn about `eBPF` and the especially representation of `eBPF` are `cilium` and `hubble` to become main CNI of Kubewekend and talk about Observability of them*
 - [[Kubewekend Session 5|Kubewekend Session 5: Build HA Cluster]] - This session is really pleasant when we talk about how can create HA cluster with `kubewekend`, learn more the components inside `kubernetes` and try figure out about `network`, `security`, `configuration`, `container runtime` and `system` via this session
 - [[Kubewekend Session 6|Kubewekend Session 6: CSI and Ceph with Kubewekend]] - This session is covered about topic storage inside `Kubernetes` cluster, how can they work with `CSI` Architecture and why we need to `CSI Driver` for handle this stuff. Furthermore, I try to practice with `Ceph` - one of popular storage opensource for `Kubewekend` cluster
+
+## 2025
+
+- [[Kubewekend Session Extra 1|Kubewekend Session Extra 1: Longhorn and the story about NFS in Kubernetes]] - This lab is try to take you to journey to learn about new CSI for Kubernetes, `Longhorn` and deliver you to new method to handle transfer large file via network by NFS protocol. I also provide more information about `iSCSI`, `nfs-ganesha` and technique `rdma` 
 # Tech Research (What is)
 
 >[!info]
@@ -280,7 +284,7 @@ tags:
 - [[Command injection]]
 - [[CVE-2023-34092 - Path Equivalence in Vite]]
 
-# Do2Weekly Tech
+# DueWeekly Tech
 
 >[!info]
 >The series is the collection of mine about news, tools and articles technologies during two weeks around the world 🌈
