@@ -328,7 +328,7 @@ Now you can run command to provision new `kind` cluster
 kind create cluster --config kind-config.yaml
 ```
 
-Wait 1-2 mins and now you have your cluster in your virtual machine, you need to install `kubectl` or use what ever tool to management cluster, explore at [[Tech Second Brain/Container Services/Helpful Pages & Articles#Cluster Management|Cluster Management Tools]]. For me, I choose `kubectl` for easier and convenience
+Wait 1-2 mins and now you have your cluster in your virtual machine, you need to install `kubectl` or use what ever tool to management cluster, explore at [[Tech Second Brain/Containerization/Helpful Pages & Articles#Cluster Management|Cluster Management Tools]]. For me, I choose `kubectl` for easier and convenience
 
 ```bash
 # Install kubectl
@@ -567,9 +567,9 @@ kubectl get sharemanager -n longhorn-system
 
 ![[Pasted image 20250119130013.png]]
 
-Current state of `share-manager` is mark stopped but if you trigger mount, this one will turn into running. Now we create workload and use this pvc to see how it work. You should prepare `workload-rmx.yaml` to take experiment
+Current state of `share-manager` is mark stopped but if you trigger mount, this one will turn into running. Now we create workload and use this pvc to see how it work. You should prepare `workload-rwx.yaml` to take experiment
 
-```yaml title="workload-rmx.yaml"
+```yaml title="workload-rwx.yaml"
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -663,7 +663,6 @@ apt install cryptsetup -y
 
 After work and checking and redeploy, I just figure out that not work with `kind` cluster, if you try to with another selfhosted like
 
-- Minikube
 - K3s
 - Rancher
 - Kubeadm
@@ -702,7 +701,8 @@ It's on couple of problems like `multipath` and encryption disk, we can consider
 
 ## Experiment in successful environment
 
-If I try to run in the environment with same configuration but compatible for hardware recommendation, we will get the result
+>[!note]
+>If I try to run in the environment with same configuration but compatible for hardware recommendation, we will get the result
 
 When we try to exec into two container, you can see that sync each other and share same directory to send `datetime` message into `index.html`
 

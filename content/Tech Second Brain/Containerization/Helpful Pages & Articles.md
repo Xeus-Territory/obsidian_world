@@ -141,6 +141,8 @@ tags:
 - [Medium - Bringing Amazon EKS Hybrid Nodes to life with Palette](https://medium.com/itnext/bringing-amazon-eks-hybrid-nodes-to-life-with-palette-584734449503)
 - [Medium - 12 Tools that will make Kubernetes management easier in 2024](https://medium.com/faun/12-tools-that-will-make-kubernetes-management-easier-in-2024-b7c349dc0eaa)
 - [Medium - Why Some Companies are Moving Away from Kubernetes for Development Environments in 2025](https://medium.com/@PlanB./why-some-companies-are-moving-away-from-kubernetes-for-development-environments-in-2025-1f44b4fd4f3f)
+- [Cast.ai - Custom Kube-Scheduler: Why And How to Set it Up in Kubernetes](https://cast.ai/blog/custom-kube-scheduler-why-and-how-to-set-it-up-in-kubernetes/)
+- [Blog - Installing the NFS CSI Driver on a Kubernetes cluster to allow for dynamic provisioning of Persistent Volumes](https://rudimartinsen.com/2024/01/09/nfs-csi-driver-kubernetes/)
 ## Awesome repositories
 
 - [awesome-k8s-resources](https://github.com/tomhuang12/awesome-k8s-resources) : A curated list of awesome Kubernetes tools and resources.
@@ -153,6 +155,8 @@ tags:
 - [Kubernetes CSI Drivers](https://kubernetes-csi.github.io/docs/drivers.html): The following are a set of CSI driver which can be used with Kubernetes
 - [Kubernetes/enhancements](https://github.com/kubernetes/enhancements): Enhancements tracking repo for Kubernetes
 - [Kubetools](https://collabnix.github.io/kubetools/): A Curated List of Kubernetes Tools
+- [Kubernetes Schedule Plugins](https://scheduler-plugins.sigs.k8s.io/): Repository for out-of-tree scheduler plugins based on the [scheduler framework](https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/).
+- [Kubernetes examples](https://k8s-examples.container-solutions.com/): A series of YAML references with canonical and as-simple-as-possible demonstrations of kubernetes functionality and features.
 ## Certificate & Practice
 
 - [certified-kubernetes-administrator-course](https://github.com/kodekloudhub/certified-kubernetes-administrator-course) : Kodecloud Certified Kubernetes Administrator - CKA Course
@@ -197,6 +201,7 @@ tags:
 - [Kubernetes - Extending Kubernetes](https://kubernetes.io/docs/concepts/extend-kubernetes/)
 - [Kubernetes - Ingress Controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
 - [Kubernetes - Kubernetes CSI Documentation](https://kubernetes-csi.github.io/docs/)
+- [Kubernetes - Scheduler Configuration](https://kubernetes.io/docs/reference/scheduling/config/)
 - [Kubernetes - Scheduling, Preemption and Eviction](https://kubernetes.io/docs/concepts/scheduling-eviction/)
 - [Kubernetes - The Kubernetes API](https://kubernetes.io/docs/concepts/overview/kubernetes-api/)
 - [[Kubewekend Session 3|Kubewekend Session 3: Basically about Kubernetes architecture]]
@@ -216,6 +221,7 @@ tags:
 - [Kubernetes](https://github.com/kubernetes): Production-Grade Container Scheduling and Management
 - [kubernetes-sigs](https://github.com/kubernetes-sigs) : Org for Kubernetes SIG-related work
 - [KubeWharf](https://github.com/kubewharf): Developer community legit insane tools for Kubernetes
+- [Medik8s](https://github.com/medik8s): Medik8s (pronounced medicates) aims for automatic detection and recovery of unhealthy k8s nodes
 - [Polyaxon](https://github.com/polyaxon): A platform for reproducible and scalable machine learning and deep learning
 - [The Helm Project](https://github.com/helm): The package manager for Kubernetes
 - [VMware Tanzu](https://github.com/vmware-tanzu): Cloud native open source from VMware, almost for Kubernetes, Author of [velero](https://github.com/vmware-tanzu/velero)
@@ -247,6 +253,8 @@ tags:
 - [Ingress Nginx Controller - Basic Authentication](https://kubernetes.github.io/ingress-nginx/examples/auth/basic/)
 - [Medium - How to Setup Dynamic NFS Provisioning in a Kubernetes Cluster](https://hbayraktar.medium.com/how-to-setup-dynamic-nfs-provisioning-in-a-kubernetes-cluster-cbf433b7de29)
 - [GitHub - Deploying NFS Server in Kubernetes](https://github.com/appscode/third-party-tools/blob/master/storage/nfs/README.md)
+- [Technotim - Mirror your Kubernetes configs, secrets, and resources to other namespaces](https://technotim.live/posts/k8s-reflector/)
+- [Medium - Running a “stateless” email server in Kubernetes using Mailu](https://medium.com/gitconnected/running-a-stateless-email-server-in-kubernetes-using-mailu-9c1ebd8003e9)
 ## Topics
 
 - [Helm](https://github.com/topics/helm)
@@ -320,7 +328,6 @@ tags:
 - [fluxcd](https://fluxcd.io/flux/) : Tool for keeping Kubernetes clusters in sync with sources of configuration (like Git repositories), and automating updates to configuration when there is new code to deploy.
 - [helm](https://helm.sh/): The package manager for Kubernetes
 - [kargo](https://docs.kargo.io/): A next-generation continuous delivery and application lifecycle orchestration platform for Kubernetes
-- [kubernetes-reflector](https://github.com/emberstack/kubernetes-reflector): Custom Kubernetes controller that can be used to replicate secrets, configmaps and certificates
 - [kustomize](https://github.com/kubernetes-sigs/kustomize): Customization of kubernetes YAML configurations
 - [operator-lifecycle-manager](https://github.com/operator-framework/operator-lifecycle-manager): A management framework for extending Kubernetes with Operators
 - [werf](https://github.com/werf/werf): A solution for implementing efficient and consistent software delivery to Kubernetes facilitating best practices.
@@ -328,6 +335,15 @@ tags:
 
 - [HAMi](https://github.com/Project-HAMi/HAMi): Heterogeneous AI Computing Virtualization Middleware
 - [NVIDIA GPU Operator](https://github.com/NVIDIA/gpu-operator): NVIDIA GPU Operator creates, configures, and manages GPUs in Kubernetes. [Documentation](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/overview.html)
+
+## Helm Tools Kit
+
+- [helm-compose](https://github.com/seacrew/helm-compose): A helm plugin for managing multiple releases of one or many charts within a single configuration file.
+- [helm-dashboard](https://github.com/komodorio/helm-dashboard): The missing UI for Helm - visualize your releases
+- [helm-secrets](https://github.com/jkroepke/helm-secrets): A helm plugin that help manage secrets with Git workflow and store them anywhere
+## Identity and access management
+
+- [Keycloak](https://github.com/keycloak/keycloak): an open-source identity and access management solution for modern applications and services, built on top of industry security standard protocols.
 ## Kubectl Tools Kit
 
 - [krew](https://github.com/kubernetes-sigs/krew): 📦 Find and install kubectl plugins
@@ -361,6 +377,7 @@ tags:
 - [Artifacthub](https://artifacthub.io/) : Find, install and publish Cloud Native packages for Kubernetes
 - [Elasticsearch (ECK) Operator](https://operatorhub.io/operator/elastic-cloud-eck), you can figure out configuration via [Customize Pods](https://www.elastic.co/guide/en/cloud-on-k8s/master/k8s-customize-pods.html#)
 - [Kubeblocks](https://kubeblocks.io/docs/release-0.9/user_docs/overview/introduction):  an open-source Kubernetes operator for databases (more specifically, for stateful applications, including databases and middleware like message queues), enabling users to run and manage multiple types of databases on Kubernetes.
+- [kubernetes-reflector](https://github.com/emberstack/kubernetes-reflector): Custom Kubernetes controller that can be used to replicate secrets, configmaps and certificates
 - [MongoDB Community Kubernetes Operator](https://github.com/mongodb/mongodb-kubernetes-operator), you can take the look some `crd`, and configuration with `github` link like [CRD](https://github.com/mongodb/mongodb-kubernetes-operator/blob/master/config/crd/bases/mongodbcommunity.mongodb.com_mongodbcommunity.yaml) and [Samples](https://github.com/mongodb/mongodb-kubernetes-operator/tree/master/config/samples)
 - [nfs-subdir-external-provisioner](https://github.com/kubernetes-sigs/nfs-subdir-external-provisioner): Dynamic sub-dir volume provisioner on a remote NFS server.
 - [OperatorHub](https://operatorhub.io/):  Home for the Kubernetes community to share Operators
@@ -394,9 +411,10 @@ tags:
 - [kube-proxy](https://github.com/kubernetes/kube-proxy): The Kubernetes network proxy runs on each node
 ## Storage Platforms
 
+- [csi-driver-nfs](https://github.com/kubernetes-csi/csi-driver-nfs): This driver allows Kubernetes to access NFS server on Linux node
 - [Longhorn](https://longhorn.io/): Cloud native distributed block storage for Kubernetes
 - [MinIO](https://min.io/docs/minio/kubernetes/upstream/index.html): MinIO Object Storage for Kubernetes
-- [Rook](https://rook.io/docs/rook/latest-release/Getting-Started/intro/): An open source cloud-native storage orchestrator, providing the platform, framework, and support for Ceph storage to natively integrate with cloud-native environments.
+- [Rook](https://rook.io/docs/rook/latest-release/Getting-Started/intro/): An open source cloud-native storage orchestrator, providing the platform, framework, and support for Ceph storage to natively integrate with cloud-native environments
 ## Threat Intelligence
 
 - [Falco](https://falco.org/): Detect security threats in real time

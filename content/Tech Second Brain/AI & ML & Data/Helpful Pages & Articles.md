@@ -21,6 +21,7 @@ tags:
 - [mlfoundations](https://github.com/mlfoundations): Community for implementing ML Model
 - [OpenAI](https://github.com/openai): OpenAI Github Community
 - [Triton Inference Server](https://github.com/triton-inference-server): provides a cloud and edge inferencing solution optimized for both CPUs and GPUs.
+- [Machine Learning Tooling](https://github.com/ml-tooling): Provide multiple collections about ML
 ## Page
 
 - [Feature Stores for ML](https://www.featurestore.org/): Collection pages about Feature stores for ML
@@ -31,7 +32,7 @@ tags:
 - [NGC Catalog](https://catalog.ngc.nvidia.com/?filters=&orderBy=weightPopularDESC&query=&page=&pageSize=): NGC Catalog - GPU Accelerated AI models and SDKs that help you infuse AI into your applications at speed of light (NVIDIA)
 - [Papers With Code](https://paperswithcode.com/): The latest in Machine Learning
 - [TensorFlow Hub](https://www.tensorflow.org/hub): A repository of trained machine learning models.
-# Artificial intelligence / Machine Learning
+# Artificial Intelligence / Machine Learning
 
 ![[thumbnail-ai-ml.png]]
 
@@ -50,6 +51,7 @@ tags:
 - [awesome-local-ai](https://github.com/janhq/awesome-local-ai) : An awesome repository of local AI tools
 - [awesome-model-quantization](https://github.com/Efficient-ML/Awesome-Model-Quantization): A list of papers, docs, codes about model quantization
 - [awesome-production-machine-learning](https://github.com/EthicalML/awesome-production-machine-learning): A curated list of awesome open source libraries to deploy, monitor, version and scale your machine learning. [Website](https://ethicalml.github.io/awesome-production-machine-learning/)
+- [best-of-ml-python](https://github.com/ml-tooling/best-of-ml-python): 🏆 A ranked list of awesome machine learning Python libraries. Updated weekly.
 ## Blogs
 
 - [DigitalOcean - AI/ML Topics](https://www.digitalocean.com/community/tags/ai-ml): Articles and Community about AI/ML
@@ -64,7 +66,9 @@ tags:
 ## Topic
 
 - [Artificial Intelligence](https://github.com/topics/artificial-intelligence)
+- [Inference](https://github.com/topics/inference)
 - [Machine Learning](https://github.com/topics/machine-learning)
+- [RAG](https://github.com/topics/rag)
 - [Stream Processing](https://github.com/topics/stream-processing)
 ## Youtube Channel
 
@@ -85,6 +89,7 @@ tags:
 - [Medium - Apache Airflow Overview](https://medium.com/@vutrinh274/apache-airflow-overview-61c939abe126)
 - [Blog - Change Data Capture (CDC)](https://luminousmen.com/post/change-data-capture/)
 - [Blog - Data Lake vs Data Warehouse](https://luminousmen.com/post/data-lake-vs-data-warehouse)
+- [ML4Devs - Scalable Efficient Big Data Pipeline Architecture](https://www.ml4devs.com/en/articles/scalable-efficient-big-data-analytics-machine-learning-pipeline-architecture-on-cloud/)
 ## Awesome Repositories
 
 - [awesome-bigdata](https://github.com/oxnr/awesome-bigdata): A curated list of awesome big data frameworks, ressources and other awesomeness.
@@ -97,7 +102,10 @@ tags:
 - [Datacamp](https://www.datacamp.com/blog)
 ## Topic
 
-- [Data Engineering](https://github.com/topics/data-engineering): Collection about data-engineer topics
+- [Data Engineering](https://github.com/topics/data-engineering)
+- [Dataflow](https://github.com/topics/dataflow)
+- [Data Processing](https://github.com/topics/data-processing)
+- [Data Science](https://github.com/topics/data-science)
 # MLOps
 
 ![[thumbnail-mlops.png]]
@@ -113,45 +121,41 @@ tags:
 
 - [Machine Learning Operations](https://ml-ops.org/): Provide an end-to-end machine learning development process to design, build and manage reproducible, testable, and evolvable ML-powered software.
 - [Neptune.ai - MLOps Learning Hub](https://neptune.ai/mlops-learn-hub): Strategies, tools, practical insights, and example projects on MLOps
+
+## Topics
+
+- [AutoML](https://github.com/topics/automl)
+- [MLOps](https://github.com/topics/mlops)
 # AI/ML/Data/MLOps Tools
 
 ## Computer Vision
 
 -  [opencv](https://github.com/opencv/opencv): Open Source Computer Vision Library. [Website Version](https://opencv.org/)
-## Data Orchestration
+## Data Orchestration Workflow
 
-- [active_workflow](https://github.com/automaticmode/active_workflow): Polyglot workflows without leaving the comfort of your technology stack.
 - [airbyte](https://github.com/airbytehq/airbyte): The leading data integration platform for ETL / ELT data pipelines from APIs, databases & files to data warehouses, data lakes & data lakehouses. Both self-hosted and Cloud-hosted.
 - [airflow](https://github.com/apache/airflow): A platform to programmatically author, schedule, and monitor workflows
-- [datahub](https://github.com/datahub-project/datahub): The Metadata Platform for your Data Stack
 ## Labeling and Annotation
 
 - [Argilla](https://github.com/argilla-io/argilla/): a collaboration tool for AI engineers and domain experts to build high-quality datasets
-- [Label Studio](https://github.com/HumanSignal/label-studio/): a multi-type data labeling and annotation tool with standardized output format
 ## LLM
 
-- [ColossalAI](https://github.com/hpcaitech/ColossalAI): Making large AI models cheaper, faster and more accessible
 - [langfuse](https://github.com/langfuse/langfuse): 🪢 Open source LLM engineering platform: LLM Observability, metrics, evals, prompt management, playground, datasets
 - [litellm](https://github.com/BerriAI/litellm): Proxy Server (LLM Gateway) to call 100+ LLM APIs in OpenAI format
-- [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory): Unified Efficient Fine-Tuning of 100+ LLMs (ACL 2024)
-- [private-gpt](https://github.com/zylon-ai/private-gpt): Interact with your documents using the power of GPT, 100% privately, no data leaks. [Website](https://privategpt.dev/)
 - [TaskingAI](https://github.com/TaskingAI/TaskingAI): The open source platform for AI-native application development.
 ## Models
 
 - [mlflow](https://github.com/mlflow/mlflow): Open source platform for the machine learning lifecycle
+- [ray](https://github.com/ray-project/ray): an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads.
 - [trl](https://github.com/huggingface/trl): Train transformer language models with reinforcement learning. [Hugging Face](https://huggingface.co/docs/trl/index)
 ## Streaming / CDC
 
 - [bytewax](https://github.com/bytewax/bytewax): Python Stream Processing
-- [fluvio](https://github.com/infinyon/fluvio): Lean and mean distributed stream processing system written in rust and web assembly. Alternative to Kafka + Flink in one
-## Text To Speech
-
-- [VALL-E-X](https://github.com/Plachtaa/VALL-E-X): An open source implementation of Microsoft's VALL-E X zero-shot TTS model
+- [debezium](https://github.com/debezium/debezium): Change data capture for a variety of databases
 ## Toolkits
 
 - [openvino](https://github.com/openvinotoolkit/openvino): OpenVINO™ is an open-source toolkit for optimizing and deploying AI inference
 - [pachyderm](https://github.com/pachyderm/pachyderm): Data-Centric Pipelines and Data Versioning
-- [ray](https://github.com/ray-project/ray): an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads.
 ## Training
 
 - [open_flamingo](https://github.com/mlfoundations/open_flamingo): An open-source framework for training large multimodal models.

@@ -184,7 +184,7 @@ git show tag-name
 
 You can double-check couple of documentations before starting
 
-- [Git Doc - git-confoig](https://git-scm.com/docs/git-config)
+- [Git Doc - git-config](https://git-scm.com/docs/git-config)
 - [FreeCodeCamp - How to Use Multiple Git Configs on One Computer](https://www.freecodecamp.org/news/how-to-handle-multiple-git-configurations-in-one-machine/) (Easiest)
 - [StackOverFlow - Is it possible to have different Git configuration for different projects?](https://stackoverflow.com/questions/8801729/is-it-possible-to-have-different-git-configuration-for-different-projects)
 

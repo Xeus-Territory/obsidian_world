@@ -165,7 +165,7 @@ tags:
 - [[Tech Second Brain/Cloud/AWS/Cheatsheet and Troubleshoot|AWS Cloud]]
 - [[Shell scripts|DIY Shell Scripting]]
 - [[Tech Second Brain/Databases/Playbooks Collections|DIY Database Ansible Playbooks]]
-- [[Tech Second Brain/Container Services/Playbooks Collections|DIY Docker and Kubernetes Ansible Playbooks]]
+- [[Tech Second Brain/Containerization/Playbooks Collections|DIY Docker and Kubernetes Ansible Playbooks]]
 - [[Tech Second Brain/Operation System/Playbooks Collections|DIY OS Ansible Playbooks]]
 - [[Docker]]
 - [[Docker compose|Docker Compose]]
@@ -207,7 +207,7 @@ tags:
 ## 2024
 
 - [[Tech Second Brain/Operation System/Helpful Pages & Articles|Operation System both of Linux and Windows]]
-- [[Tech Second Brain/Container Services/Helpful Pages & Articles|Docker and Kubernetes]]
+- [[Tech Second Brain/Containerization/Helpful Pages & Articles|Docker and Kubernetes]]
 - [[Tech Second Brain/Developer/Helpful Pages & Articles|Developer]]
 - [[Tech Second Brain/Databases/Helpful Pages & Articles|Database and Storage]]
 - [[Tech Second Brain/Cyber & Info Security/Helpful Pages & Articles|Cyber & Info Security]]
@@ -294,3 +294,4 @@ tags:
 ## 2025
 
 - [[30-12-2024 to 12-01-2025]]
+- [[13-01-2025 to 26-01-2025]]

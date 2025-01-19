@@ -10,6 +10,9 @@ title: Utilities Site for multiple purpose
 >[!info]
 >Finding the utilities for your desktop and work
 
+## Download
+
+- [GitZip](https://kinolien.github.io/gitzip): It can make sub-folder/sub-directory of github repository as zip and download it.
 ## Images
 
 - [Pinterest](https://www.pinterest.com/) - Free Image HD
