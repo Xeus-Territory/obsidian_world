@@ -440,6 +440,54 @@ Check configure or state of service with `systemctl` command
 ```bash
 sudo systemctl show/status <name_of_services>
 ```
+
+## `modprobe` command
+
+>[!info]
+>The [kernel](https://phoenixnap.com/glossary/what-is-a-kernel) uses **`modprobe`** to request modules. The **`modprobe`** command searches through the standard installed module directories to find the necessary drivers.
+
+Documentation:
+
+- [PhoenixNAP - How To Use The Modprobe Command In Linux](https://phoenixnap.com/kb/modprobe-command)
+- [ModProbe - Linux man page](https://linux.die.net/man/8/modprobe)
+- [Cyberciti.biz - Howto display list of modules or device drivers in the Linux Kernel](https://www.cyberciti.biz/faq/howto-display-list-of-modules-or-device-drivers-in-the-linux-kernel/)
+
+To add module to kernel in linux via command
+
+```bash
+# Default add module
+sudo modprobe <module-name> # e.g: iscsi_tcp
+
+# Add multiple module
+sudo modprobe -all <first module name> <second module name>
+
+# Confirm module or add for first time with --first-time opt
+sudo modprobe <module name> --first-time
+```
+
+To remove module from kernel via command
+
+```bash
+# Remove module
+sudo modprobe -r <module-name> # e.g: iscs_tcp
+
+# Double-check already remove or first time remove
+sudo modprobe -r <module-name> --first-time
+```
+
+To check and find module add into kernel, you can handle with couple of commands
+
+```bash
+# Check via lsmod
+lsmod | grep -e "<module-name>"
+
+# Check via find command
+find /lib/modules/$(uname -r) -type f -name '*.ko*' | grep -e "<module-name>"
+
+# Combine awk and modinfo command (easily output)
+# Source: https://stackoverflow.com/questions/23645595/how-to-find-linux-module-path
+awk '{ print $1 }' /proc/modules | xargs modinfo -n | sort | grep -e "<module_name>"
+```
 # External Commands
 ## Caddy server
 

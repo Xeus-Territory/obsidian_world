@@ -135,6 +135,7 @@ tags:
 - [litellm](https://github.com/BerriAI/litellm): Proxy Server (LLM Gateway) to call 100+ LLM APIs in OpenAI format
 - [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory): Unified Efficient Fine-Tuning of 100+ LLMs (ACL 2024)
 - [private-gpt](https://github.com/zylon-ai/private-gpt): Interact with your documents using the power of GPT, 100% privately, no data leaks. [Website](https://privategpt.dev/)
+- [TaskingAI](https://github.com/TaskingAI/TaskingAI): The open source platform for AI-native application development.
 ## Models
 
 - [mlflow](https://github.com/mlflow/mlflow): Open source platform for the machine learning lifecycle

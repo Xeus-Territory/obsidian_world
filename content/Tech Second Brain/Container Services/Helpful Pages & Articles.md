@@ -69,13 +69,11 @@ tags:
 - [cilium](https://cilium.io/) : Cilium is an open source, cloud native solution for providing, securing, and observing network connectivity between workloads, fueled by the revolutionary Kernel technology eBPF
 - [cni](https://github.com/containernetworking/cni) : Container Network Interface - networking for Linux containers. [Website](https://www.cni.dev/docs/)
 - [flannel](https://github.com/flannel-io/flannel) : A network fabric for containers, designed for `Kubernetes`
-- [weave](https://github.com/weaveworks/weave) : Simple, resilient multi-host containers networking and more.
 ## Containerization Items
 
 - [crane](https://github.com/google/go-containerregistry/tree/main/cmd/crane): A tool for interacting with remote images and registries
 - [dive](https://github.com/wagoodman/dive) : A tool for exploring each layer in a docker image
 - [docker-rollout](https://github.com/Wowu/docker-rollout): Zero Downtime Deployment for Docker Compose
-- [dokku](https://github.com/dokku/dokku): A docker-powered PaaS that helps you build and manage the lifecycle of applications. [Documentation](https://dokku.com/docs/getting-started/installation/)
 - [nginx-proxy](https://github.com/nginx-proxy/nginx-proxy): Automated nginx proxy for Docker containers using docker-gen
 - [trivy](https://github.com/aquasecurity/trivy): Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more
 - [watchtower](https://github.com/containrrr/watchtower): A process for automating Docker container base image updates.
@@ -95,10 +93,7 @@ tags:
 - [cri-dockerd](https://github.com/Mirantis/cri-dockerd): dockerd as a compliant Container Runtime Interface for Kubernetes (Mirantis OpenSource)
 - [cri-tools](https://github.com/kubernetes-sigs/cri-tools) : CLI and validation tools for Kubelet Container Runtime Interface (CRI). [User guide](https://github.com/kubernetes-sigs/cri-tools/blob/master/docs/crictl.md)
 - [docker](https://docs.docker.com/engine/install/#server) : Docker is one of CRI mostly to used 
-- [kata-containers](https://github.com/kata-containers/kata-containers) : an open source project and community working to build a standard implementation of lightweight Virtual Machines (VMs) that feel and perform like containers, but provide the workload isolation and security advantages of VMs.
 - [kubeletctl](https://github.com/cyberark/kubeletctl): A client for kubelet
-- [Mirantis](https://docs.mirantis.com/mcr/23.0/index.html): Mirantis Container Runtime (MCR) enables you to power your business-critical applications with the industry-leading enterprise container engine
-- [sysbox](https://github.com/nestybox/sysbox): An open-source, next-generation "runc" that empowers rootless containers to run workloads such as Systemd, Docker, Kubernetes, just like VMs.
 ## OCI (Open Container Initiative)
 
 >[!info]
@@ -212,13 +207,18 @@ tags:
 ## Organizations
 
 - [ApeCloud](https://github.com/apecloud): The community who focus on designing architecture inside Cloud Platform, especially Kubernetes. Author of [Kubeblocks](https://kubeblocks.io/docs/release-0.9/user_docs/overview/introduction)
+- [AppsCode](https://github.com/appscode): Kubernetes-native Data Platform
+- [Carvel](https://github.com/carvel-dev): a set of reliable, single-purpose, composable tools that aid in your application building, configuration, and deployment to Kubernetes. Author of [ytt](https://github.com/carvel-dev/ytt), [kapp-controller](https://github.com/carvel-dev/kapp-controller)
 - [Devtron Inc](https://github.com/devtron-labs): Software Delivery Workflow For Kubernetes
 - [Kubecost](https://github.com/kubecost): Organization of Kubecost - a monitoring application which provides real-time cost visibility and insights for teams using Kubernetes, helping you continuously reduce your cloud costs
 - [Kubeflow](https://github.com/kubeflow/):  An open, community driven project to make it easy to deploy and manage an ML stack on Kubernetes
+- [Kubernetes CSI](https://github.com/kubernetes-csi): Kubernetes specific Container-Storage-Interface (CSI) components
 - [Kubernetes](https://github.com/kubernetes): Production-Grade Container Scheduling and Management
 - [kubernetes-sigs](https://github.com/kubernetes-sigs) : Org for Kubernetes SIG-related work
 - [KubeWharf](https://github.com/kubewharf): Developer community legit insane tools for Kubernetes
 - [Polyaxon](https://github.com/polyaxon): A platform for reproducible and scalable machine learning and deep learning
+- [The Helm Project](https://github.com/helm): The package manager for Kubernetes
+- [VMware Tanzu](https://github.com/vmware-tanzu): Cloud native open source from VMware, almost for Kubernetes, Author of [velero](https://github.com/vmware-tanzu/velero)
 ## Practicing
 
 - [AKS DevSecOps Workshop](https://azure.github.io/AKS-DevSecOps-Workshop/): Practical exercises to learn about Azure Kubernetes Service
@@ -244,6 +244,14 @@ tags:
 - [AWS Blogs - A deep dive into simplified Amazon EKS access management controls](https://aws.amazon.com/vi/blogs/containers/a-deep-dive-into-simplified-amazon-eks-access-management-controls/)
 - [Kubecost - Monitoring NVIDIA GPU Usage in Kubernetes with Prometheus](https://blog.kubecost.com/blog/nvidia-gpu-usage/)
 - [Last9 - How to Monitor Ephemeral Storage Metrics in Kubernetes](https://last9.io/blog/monitor-ephemeral-storage-metrics-in-kubernetes/)
+- [Ingress Nginx Controller - Basic Authentication](https://kubernetes.github.io/ingress-nginx/examples/auth/basic/)
+- [Medium - How to Setup Dynamic NFS Provisioning in a Kubernetes Cluster](https://hbayraktar.medium.com/how-to-setup-dynamic-nfs-provisioning-in-a-kubernetes-cluster-cbf433b7de29)
+- [GitHub - Deploying NFS Server in Kubernetes](https://github.com/appscode/third-party-tools/blob/master/storage/nfs/README.md)
+## Topics
+
+- [Helm](https://github.com/topics/helm)
+- [K8s](https://github.com/topics/k8s)
+- [Kubernetes](https://github.com/topics/kubernetes)
 ## Troubleshoot
  
 - [StackOverFlow - How can I keep a container running on Kubernetes?](https://stackoverflow.com/questions/31870222/how-can-i-keep-a-container-running-on-kubernetes)
@@ -260,9 +268,66 @@ tags:
 # Kubernetes Tools
 
 ![[k8s-general.png]]
-## Cloud Kubernetes Hosted
+## API Gateway / Ingress Controller / LB
+
+- [AGIC - Application Gateway Ingress Controller](https://azure.github.io/application-gateway-kubernetes-ingress/): Possible for Azure Kubernetes Service (AKS) customers to leverage Azure's native Application Gateway L7 load-balancer to expose cloud software to the Internet. [Azure Article](https://learn.microsoft.com/en-us/azure/application-gateway/ingress-controller-overview)
+- [AWS Load Balancer Controller](https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.10/): AWS Load Balancer Controller is a controller to help manage Elastic Load Balancers for a Kubernetes cluster.
+- [Gateway API](https://gateway-api.sigs.k8s.io/): Gateway API is an official Kubernetes project focused on L4 and L7 routing in Kubernetes
+- [Ingress-Nginx Controller](https://kubernetes.github.io/ingress-nginx/) : Documentation about Nginx ingress which use for delivery IN/OUT traffic for Kubernetes Cluster
+- [Kong Ingress Controller](https://docs.konghq.com/kubernetes-ingress-controller/latest/):  Allows you to run Kong Gateway as a Kubernetes Ingress to handle inbound requests for a Kubernetes cluster.
+- [kube-vip](https://kube-vip.io/): Provides Kubernetes clusters with a virtual IP and load balancer for both the control plane (for building a highly-available cluster) and Kubernetes Services of type `LoadBalancer` without relying on any external hardware or software.
+- [MetalLB](https://metallb.io/): A load-balancer implementation for bare metal [Kubernetes](https://kubernetes.io/) clusters, using standard routing protocols.
+- [Nginx Gateway Fabric](https://github.com/nginx/nginx-gateway-fabric): Provides an implementation for the Gateway API using NGINX as the data plane.
+- [Traefik - ApiGateway](https://doc.traefik.io/traefik-hub/api-gateway/intro): A drop-in replacement for Traefik Proxy, it can do everything Traefik Proxy does, with additional capabilities and support out of the box.
+- [Traefik - Ingress Controller](https://doc.traefik.io/traefik/providers/kubernetes-ingress/): A Kubernetes Ingress controller; that is to say, it manages access to cluster services by supporting the [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) specification.
+## Autoscaling
+
+- [Keda](https://keda.sh/docs/2.16/): Kubernetes Event-driven Autoscaling
+- [Kubernetes Autoscaler](https://github.com/kubernetes/autoscaler): Autoscaling components for Kubernetes
+## Benchmark
+
+- [kube-bench](https://github.com/aquasecurity/kube-bench): Checks whether Kubernetes is deployed according to security best practices as defined in the CIS Kubernetes Benchmark
+## Chaos
+
+- [chaos-mesh](https://github.com/chaos-mesh/chaos-mesh): A Chaos Engineering Platform for Kubernetes.
+- [litmus](https://github.com/litmuschaos/litmus): Chaos Engineering Framework with cross-cloud support.
+## Cloud Hosted
 
 - [eksctl](https://github.com/eksctl-io/eksctl): The official CLI for Amazon EKS. [Website](https://eksctl.io/)
+## Cluster Management
+
+- [Crossplane](https://docs.crossplane.io/latest/): An open source Kubernetes extension that transforms your Kubernetes cluster into a **universal control plane**.
+- [GlassKube](https://glasskube.dev/docs/) : An open-source Kubernetes package manager that simplifies package management for Kubernetes
+- [kubeapps](https://github.com/vmware-tanzu/kubeapps): A web-based UI for deploying and managing applications in Kubernetes clusters
+- [kubeshark](https://github.com/kubeshark/kubeshark): The API traffic analyzer for Kubernetes providing real-time K8s
+- [lens](https://github.com/lensapp/lens): Lens - The way the world runs Kubernetes
+## Development Environment
+
+- [devspace](https://github.com/devspace-sh/devspace): The Fastest Developer Tool for Kubernetes
+## Development Library
+
+- [kooper](https://github.com/spotahome/kooper): A simple Go library to create Kubernetes operators and controllers.
+- [kubebuilder](https://github.com/kubernetes-sigs/kubebuilder): SDK for building Kubernetes APIs using CRDs
+## DNS and SSL
+
+- [cert-manager](https://github.com/cert-manager/cert-manager): Automatically provision and manage TLS certificates in Kubernetes
+- [external-dns](https://github.com/kubernetes-sigs/external-dns): Configure external DNS servers
+## GitOps / Automation Deployment Platforms
+
+- [argo-cd](https://argo-cd.readthedocs.io/en/stable/) :  A declarative, GitOps continuous delivery tool for Kubernetes.
+- [argo-rollouts](https://github.com/argoproj/argo-rollouts): Progressive Delivery for Kubernetes. Maintained by Argo
+- [flagger](https://flagger.app/): Progressive Delivery Operator for Kubernetes. Maintained by Flux
+- [fluxcd](https://fluxcd.io/flux/) : Tool for keeping Kubernetes clusters in sync with sources of configuration (like Git repositories), and automating updates to configuration when there is new code to deploy.
+- [helm](https://helm.sh/): The package manager for Kubernetes
+- [kargo](https://docs.kargo.io/): A next-generation continuous delivery and application lifecycle orchestration platform for Kubernetes
+- [kubernetes-reflector](https://github.com/emberstack/kubernetes-reflector): Custom Kubernetes controller that can be used to replicate secrets, configmaps and certificates
+- [kustomize](https://github.com/kubernetes-sigs/kustomize): Customization of kubernetes YAML configurations
+- [operator-lifecycle-manager](https://github.com/operator-framework/operator-lifecycle-manager): A management framework for extending Kubernetes with Operators
+- [werf](https://github.com/werf/werf): A solution for implementing efficient and consistent software delivery to Kubernetes facilitating best practices.
+## GPU Scheduler
+
+- [HAMi](https://github.com/Project-HAMi/HAMi): Heterogeneous AI Computing Virtualization Middleware
+- [NVIDIA GPU Operator](https://github.com/NVIDIA/gpu-operator): NVIDIA GPU Operator creates, configures, and manages GPUs in Kubernetes. [Documentation](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/overview.html)
 ## Kubectl Tools Kit
 
 - [krew](https://github.com/kubernetes-sigs/krew): 📦 Find and install kubectl plugins
@@ -271,134 +336,6 @@ tags:
 - [kubectl-trace](https://github.com/iovisor/kubectl-trace):  Schedule bpftrace programs on your kubernetes cluster using the kubectl
 - [kubectl-tree](https://github.com/ahmetb/kubectl-tree): kubectl plugin to browse Kubernetes object hierarchies as a tree 🎄
 - [kubectl-view-allocations](https://github.com/davidB/kubectl-view-allocations): kubectl plugin to list allocations (cpu, memory, gpu,... X utilization, requested, limit, allocatable,...)
-## Kubernetes API Gateway / Ingress Controller
-
-- [AGIC - Application Gateway Ingress Controller](https://azure.github.io/application-gateway-kubernetes-ingress/): Possible for Azure Kubernetes Service (AKS) customers to leverage Azure's native Application Gateway L7 load-balancer to expose cloud software to the Internet. [Azure Article](https://learn.microsoft.com/en-us/azure/application-gateway/ingress-controller-overview)
-- [Apache APISIX](https://apisix.apache.org/docs/ingress-controller/getting-started/): A Kubernetes ingress controller using Apache APISIX as the high performance reverse proxy.
-- [AWS Load Balancer Controller](https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.10/): AWS Load Balancer Controller is a controller to help manage Elastic Load Balancers for a Kubernetes cluster.
-- [emissary-apigateway](https://www.getambassador.io/products/api-gateway): An Envoy-powered Open Source API Gateway
-- [gateway-api](https://gateway-api.sigs.k8s.io/): Gateway API is an official Kubernetes project focused on L4 and L7 routing in Kubernetes
-- [HAProxy Kubernetes Ingress Controller](https://www.haproxy.com/documentation/kubernetes-ingress/overview/): An ingress controller implements traffic routing in your Kubernetes cluster by interpreting Ingress rules.
-- [Ingress-Nginx Controller](https://kubernetes.github.io/ingress-nginx/) : Documentation about Nginx ingress which use for delivery IN/OUT traffic for Kubernetes Cluster
-- [Istio - Kubernetes Ingress](https://istio.io/latest/docs/tasks/traffic-management/ingress/kubernetes-ingress/): configure Istio to expose a service outside of the service mesh cluster, using the Kubernetes [Ingress Resource](https://kubernetes.io/docs/concepts/services-networking/ingress/).
-- [Kong Ingress Controller](https://docs.konghq.com/kubernetes-ingress-controller/latest/):  Allows you to run Kong Gateway as a Kubernetes Ingress to handle inbound requests for a Kubernetes cluster.
-- [traefik-apigateway](https://doc.traefik.io/traefik-hub/api-gateway/intro): A drop-in replacement for Traefik Proxy, it can do everything Traefik Proxy does, with additional capabilities and support out of the box.
-- [Traefik - Ingress Controller](https://doc.traefik.io/traefik/providers/kubernetes-ingress/): A Kubernetes Ingress controller; that is to say, it manages access to cluster services by supporting the [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) specification.
-## Kubernetes Autoscaling
-
-- [Karpenter](https://karpenter.sh/docs/): an open-source node lifecycle management project built for Kubernetes.
-- [Keda](https://keda.sh/docs/2.16/): Kubernetes Event-driven Autoscaling
-- [Kubernetes Autoscaler](https://github.com/kubernetes/autoscaler): Autoscaling components for Kubernetes
-## Kubernetes Benchmark
-
-- [kube-bench](https://github.com/aquasecurity/kube-bench): Checks whether Kubernetes is deployed according to security best practices as defined in the CIS Kubernetes Benchmark
-## Kubernetes Chaos
-
-- [chaos-mesh](https://github.com/chaos-mesh/chaos-mesh): A Chaos Engineering Platform for Kubernetes.
-- [litmus](https://github.com/litmuschaos/litmus): Chaos Engineering Framework with cross-cloud support.
-## Kubernetes Cluster Management
-
-- [Crossplane](https://docs.crossplane.io/latest/): An open source Kubernetes extension that transforms your Kubernetes cluster into a **universal control plane**.
-- [Gardener](https://gardener.cloud/): Homogeneous Kubernetes clusters at scale on any infrastructure using hosted control planes.
-- [GlassKube](https://glasskube.dev/docs/) : An open-source Kubernetes package manager that simplifies package management for Kubernetes
-- [karpor](https://github.com/KusionStack/karpor): Intelligence for Kubernetes. World's most promising Kubernetes Visualization Tool for Developer and Platform Engineering teams.
-- [kops](https://github.com/kubernetes/kops): Kubernetes Operations (kOps) - Production Grade k8s Installation, Upgrades and Management
-- [Kubernetes IDE - K8Studio](https://k8studio.io/) : Visualizer component and workload inside kubernetes in UI, easily to deploy and manage kubernetes cluster
-- [kubeshark](https://github.com/kubeshark/kubeshark): The API traffic analyzer for Kubernetes providing real-time K8s
-- [kubesphere](https://github.com/kubesphere/kubesphere): The container platform tailored for Kubernetes multi-cloud, datacenter, and edge management ⎈ 🖥 ☁️
-- [lens](https://github.com/lensapp/lens): Lens - The way the world runs Kubernetes
-- [Meshery](https://docs.meshery.io/): As a self-service engineering platform, Meshery enables collaborative design and operation of cloud and cloud native infrastructure.
-## Kubernetes Development Environment
-
-- [devspace](https://github.com/devspace-sh/devspace): The Fastest Developer Tool for Kubernetes
-- [okteto](https://github.com/okteto/okteto): Develop your applications directly in your Kubernetes Cluster
-- [telepresence](https://github.com/telepresenceio/telepresence): Local development against a remote Kubernetes or OpenShift cluster
-- [tilt](https://github.com/tilt-dev/tilt): Define your dev environment as code. For microservice apps on Kubernetes.
-## Kubernetes Development Library
-
-- [kooper](https://github.com/spotahome/kooper): A simple Go library to create Kubernetes operators and controllers.
-- [kubebuilder](https://github.com/kubernetes-sigs/kubebuilder): SDK for building Kubernetes APIs using CRDs
-## Kubernetes DNS and SSL
-
-- [cert-manager](https://github.com/cert-manager/cert-manager): Automatically provision and manage TLS certificates in Kubernetes
-- [external-dns](https://github.com/kubernetes-sigs/external-dns): Configure external DNS servers
-- [kcert](https://github.com/nabsul/kcert): A Simple Let's Encrypt Manager for Kubernetes
-## Kubernetes GitOps / Automation Deployment Platforms
-
-- [argo-cd](https://argo-cd.readthedocs.io/en/stable/) :  A declarative, GitOps continuous delivery tool for Kubernetes.
-- [argo-rollouts](https://github.com/argoproj/argo-rollouts): Progressive Delivery for Kubernetes. Maintained by Argo
-- [flagger](https://flagger.app/): Progressive Delivery Operator for Kubernetes. Maintained by Flux
-- [fluxcd](https://fluxcd.io/flux/) : Tool for keeping Kubernetes clusters in sync with sources of configuration (like Git repositories), and automating updates to configuration when there is new code to deploy.
-- [harness](https://github.com/harness/harness): Harness Open Source is an end-to-end developer platform with Source Control Management, CI/CD Pipelines, Hosted Developer Environments, and Artifact Registries.
-- [helm](https://helm.sh/): The package manager for Kubernetes
-- [kargo](https://docs.kargo.io/): A next-generation continuous delivery and application lifecycle orchestration platform for Kubernetes
-- [keel](https://github.com/keel-hq/keel): Kubernetes Operator to automate Helm, DaemonSet, StatefulSet & Deployment updates
-- [kubernetes-reflector](https://github.com/emberstack/kubernetes-reflector): Custom Kubernetes controller that can be used to replicate secrets, configmaps and certificates
-- [kustomize](https://github.com/kubernetes-sigs/kustomize): Customization of kubernetes YAML configurations
-- [nelm](https://github.com/werf/nelm): Nelm is a Helm 3 alternative and werf deployment engine
-- [operator-lifecycle-manager](https://github.com/operator-framework/operator-lifecycle-manager): A management framework for extending Kubernetes with Operators
-- [werf](https://github.com/werf/werf): A solution for implementing efficient and consistent software delivery to Kubernetes facilitating best practices.
-## Kubernetes GPU Scheduler
-
-- [HAMi](https://github.com/Project-HAMi/HAMi): Heterogeneous AI Computing Virtualization Middleware
-- [NVIDIA GPU Operator](https://github.com/NVIDIA/gpu-operator): NVIDIA GPU Operator creates, configures, and manages GPUs in Kubernetes. [Documentation](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/overview.html)
-## Kubernetes Metrics
-
-- [kube-state-metrics](https://github.com/kubernetes/kube-state-metrics): Add-on agent to generate and expose cluster-level metrics
-- [metrics-server](https://github.com/kubernetes-sigs/metrics-server): Scalable and efficient source of container resource metrics for Kubernetes built-in autoscaling pipelines.
-## Kubernetes MLOps
-
-- [polyaxon](https://github.com/polyaxon/polyaxon): MLOps Tools For Managing & Orchestrating The Machine Learning LifeCycle
-## Kubernetes Operator & Chart
-
-- [Artifacthub](https://artifacthub.io/) : Find, install and publish Cloud Native packages for Kubernetes
-- [Elasticsearch (ECK) Operator](https://operatorhub.io/operator/elastic-cloud-eck), you can figure out configuration via [Customize Pods](https://www.elastic.co/guide/en/cloud-on-k8s/master/k8s-customize-pods.html#)
-- [Kubeblocks](https://kubeblocks.io/docs/release-0.9/user_docs/overview/introduction):  an open-source Kubernetes operator for databases (more specifically, for stateful applications, including databases and middleware like message queues), enabling users to run and manage multiple types of databases on Kubernetes.
-- [MongoDB Community Kubernetes Operator](https://github.com/mongodb/mongodb-kubernetes-operator), you can take the look some `crd`, and configuration with `github` link like [CRD](https://github.com/mongodb/mongodb-kubernetes-operator/blob/master/config/crd/bases/mongodbcommunity.mongodb.com_mongodbcommunity.yaml) and [Samples](https://github.com/mongodb/mongodb-kubernetes-operator/tree/master/config/samples)
-- [OperatorHub](https://operatorhub.io/):  Home for the Kubernetes community to share Operators
-- [RabbitMQ-cluster-operator](https://operatorhub.io/operator/rabbitmq-cluster-operator), read more about that via [source code](https://github.com/rabbitmq/cluster-operator)
-- [Strimzi](https://strimzi.io/docs/operators/latest/overview): Strimzi simplifies the process of running [Apache Kafka](https://kafka.apache.org/) within a Kubernetes cluster
-## Kubernetes Policy Controller
-
-- [Datree](https://hub.datree.io/) : Datree secures your Kubernetes by blocking the deployment of misconfigured resources.
-- [Kyverno](https://kyverno.io/) : Kubernetes Native Policy Management
-- [OPA Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/) : A customizable cloud native policy controller that helps enforce policies and strengthen governance
-## Kubernetes Resources Orchestrator
-
-- [kro](https://github.com/awslabs/kro): Kube Resource Orchestrator. [Documentation](https://kro.run/docs/overview)
-## Kubernetes Service Discovery
-
-- [consul](https://developer.hashicorp.com/consul/docs?product_intent=consul):  A multi-networking tool that offers a fully-featured service mesh solution
-- [coredns](https://github.com/coredns/coredns): CoreDNS is a DNS server that chains plugin
-## Kubernetes Service Mesh
-
-- [consul](https://developer.hashicorp.com/consul/docs?product_intent=consul):  A multi-networking tool that offers a fully-featured service mesh solution
-- [Istio](https://istio.io/): Service Mesh. Simplified. Easily build cloud native workloads securely and reliably with `Istio`, with or without sidecars.
-- [linkerd](https://linkerd.io/2.15/overview/):  A _service mesh_ for Kubernetes. It makes running services easier and safer by giving you runtime debugging, observability, reliability, and security—all without requiring any changes to your code.
-## Kubernetes Service Proxy
-
-- [envoy](https://www.envoyproxy.io/docs/envoy/v1.31.0/) : Envoy is an L7 proxy and communication bus designed for large modern service oriented architectures
-- [kube-proxy](https://github.com/kubernetes/kube-proxy): The Kubernetes network proxy runs on each node
-## Kubernetes Storage Platforms
-
-- [MinIO](https://min.io/docs/minio/kubernetes/upstream/index.html): MinIO Object Storage for Kubernetes
-- [Rook](https://rook.io/docs/rook/latest-release/Getting-Started/intro/): An open source cloud-native storage orchestrator, providing the platform, framework, and support for Ceph storage to natively integrate with cloud-native environments.
-## Kubernetes Threat Intelligence
-
-- [Falco](https://falco.org/): Detect security threats in real time
-- [kubescape](https://github.com/kubescape/kubescape): Kubescape is an open-source Kubernetes security platform for your IDE, CI/CD pipelines, and clusters
-- [openappsec](https://github.com/openappsec/openappsec): A machine learning security engine that preemptively and automatically prevents threats against Web Application & APIs.
-- [sysdig](https://github.com/draios/sysdig): Linux system exploration and troubleshooting tool with first class support for containers
-- [teleport](https://github.com/gravitational/teleport): The easiest, and most secure way to access and protect all of your infrastructure.
-- [Tetragon](https://tetragon.io/docs/) : Cilium Tetragon component enables powerful realtime, eBPF-based Security Observability and Runtime Enforcement.
-## Kubernetes Utilities
-
-- [Instance calculator](https://learnk8s.io/kubernetes-instance-calculator) : Estimate and find the number of max workload can apply for instance
-- [botkube](https://github.com/kubeshop/botkube): An app that helps you monitor your Kubernetes cluster, debug critical deployments & gives recommendations for standard practices
-- [silver-surfer](https://github.com/devtron-labs/silver-surfer): Kubernetes objects api-version compatibility checker and provides migration path for K8s objects and prepare it for cluster upgrades
-## Kubernetes Validation
-
-- [kubeconform](https://github.com/yannh/kubeconform): A FAST Kubernetes manifests validator, with support for Custom Resources!
 ## Local Kubernetes Self-Hosted
 
 - [K0s](https://docs.k0sproject.io/stable/): k0s is an open source, all-inclusive Kubernetes distribution, which is configured with all of the features needed to build a Kubernetes cluster.
@@ -410,3 +347,73 @@ tags:
 - [minikube](https://minikube.sigs.k8s.io/docs/) : minikube quickly sets up a local Kubernetes cluster on macOS, Linux, and Windows
 - [Talos Linux](https://www.talos.dev/) : The Kubernetes Operating System
 	- [cluster-template](https://github.com/onedr0p/cluster-template): A template for deploying a Talos Kubernetes cluster including Flux for GitOps
+## MLOps
+
+- [polyaxon](https://github.com/polyaxon/polyaxon): MLOps Tools For Managing & Orchestrating The Machine Learning LifeCycle
+## Monitoring
+
+- [kube-state-metrics](https://github.com/kubernetes/kube-state-metrics): Add-on agent to generate and expose cluster-level metrics
+- [metrics-server](https://github.com/kubernetes-sigs/metrics-server): Scalable and efficient source of container resource metrics for Kubernetes built-in autoscaling pipelines.
+- [OpenSLO](https://github.com/OpenSLO/OpenSLO): Open specification for defining and expressing service level objectives (SLO)
+- [prometheus-operator](https://prometheus-operator.dev/docs/getting-started/introduction/): A [Kubernetes Operator](https://github.com/cncf/tag-app-delivery/blob/main/operator-wg/whitepaper/Operator-WhitePaper_v1-0.md#foundation) that provides Kubernetes native deployment and management of [Prometheus](https://prometheus.io/) and related monitoring components.
+## Operator & Chart
+
+- [Artifacthub](https://artifacthub.io/) : Find, install and publish Cloud Native packages for Kubernetes
+- [Elasticsearch (ECK) Operator](https://operatorhub.io/operator/elastic-cloud-eck), you can figure out configuration via [Customize Pods](https://www.elastic.co/guide/en/cloud-on-k8s/master/k8s-customize-pods.html#)
+- [Kubeblocks](https://kubeblocks.io/docs/release-0.9/user_docs/overview/introduction):  an open-source Kubernetes operator for databases (more specifically, for stateful applications, including databases and middleware like message queues), enabling users to run and manage multiple types of databases on Kubernetes.
+- [MongoDB Community Kubernetes Operator](https://github.com/mongodb/mongodb-kubernetes-operator), you can take the look some `crd`, and configuration with `github` link like [CRD](https://github.com/mongodb/mongodb-kubernetes-operator/blob/master/config/crd/bases/mongodbcommunity.mongodb.com_mongodbcommunity.yaml) and [Samples](https://github.com/mongodb/mongodb-kubernetes-operator/tree/master/config/samples)
+- [nfs-subdir-external-provisioner](https://github.com/kubernetes-sigs/nfs-subdir-external-provisioner): Dynamic sub-dir volume provisioner on a remote NFS server.
+- [OperatorHub](https://operatorhub.io/):  Home for the Kubernetes community to share Operators
+- [RabbitMQ-cluster-operator](https://operatorhub.io/operator/rabbitmq-cluster-operator), read more about that via [source code](https://github.com/rabbitmq/cluster-operator)
+- [Strimzi](https://strimzi.io/docs/operators/latest/overview): Strimzi simplifies the process of running [Apache Kafka](https://kafka.apache.org/) within a Kubernetes cluster
+## Policy Controller
+
+- [Kyverno](https://kyverno.io/) : Kubernetes Native Policy Management
+- [OPA Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/) : A customizable cloud native policy controller that helps enforce policies and strengthen governance
+## Resources Orchestrator
+
+- [kro](https://github.com/awslabs/kro): Kube Resource Orchestrator. [Documentation](https://kro.run/docs/overview)
+## Secret Management
+
+- [external-secrets](https://github.com/external-secrets/external-secrets): External Secrets Operator reads information from a third-party service like AWS Secrets Manager and automatically injects the values as Kubernetes Secrets.
+- [vault-secrets-operator](https://github.com/ricoberger/vault-secrets-operator): Create Kubernetes secrets from Vault for a secure GitOps based workflow.
+## Serverless Hosted
+
+- [knative](https://github.com/knative/docs):  An Open-Source Enterprise-level solution to build Serverless and Event Driven Applications. [Documentation](https://knative.dev/docs/concepts/)
+## Service Discovery
+
+- [consul](https://developer.hashicorp.com/consul/docs?product_intent=consul):  A multi-networking tool that offers a fully-featured service mesh solution
+- [coredns](https://github.com/coredns/coredns): CoreDNS is a DNS server that chains plugin
+## Service Mesh
+
+- [Istio](https://istio.io/): Service Mesh. Simplified. Easily build cloud native workloads securely and reliably with `Istio`, with or without sidecars.
+- [linkerd](https://linkerd.io/2.15/overview/):  A _service mesh_ for Kubernetes. It makes running services easier and safer by giving you runtime debugging, observability, reliability, and security—all without requiring any changes to your code.
+## Service Proxy
+
+- [envoy](https://www.envoyproxy.io/docs/envoy/v1.31.0/) : Envoy is an L7 proxy and communication bus designed for large modern service oriented architectures
+- [kube-proxy](https://github.com/kubernetes/kube-proxy): The Kubernetes network proxy runs on each node
+## Storage Platforms
+
+- [Longhorn](https://longhorn.io/): Cloud native distributed block storage for Kubernetes
+- [MinIO](https://min.io/docs/minio/kubernetes/upstream/index.html): MinIO Object Storage for Kubernetes
+- [Rook](https://rook.io/docs/rook/latest-release/Getting-Started/intro/): An open source cloud-native storage orchestrator, providing the platform, framework, and support for Ceph storage to natively integrate with cloud-native environments.
+## Threat Intelligence
+
+- [Falco](https://falco.org/): Detect security threats in real time
+- [kubescape](https://github.com/kubescape/kubescape): Kubescape is an open-source Kubernetes security platform for your IDE, CI/CD pipelines, and clusters
+- [openappsec](https://github.com/openappsec/openappsec): A machine learning security engine that preemptively and automatically prevents threats against Web Application & APIs.
+- [sysdig](https://github.com/draios/sysdig): Linux system exploration and troubleshooting tool with first class support for containers
+- [teleport](https://github.com/gravitational/teleport): The easiest, and most secure way to access and protect all of your infrastructure.
+- [Tetragon](https://tetragon.io/docs/) : Cilium Tetragon component enables powerful realtime, eBPF-based Security Observability and Runtime Enforcement.
+## Utilities
+
+- [Instance calculator](https://learnk8s.io/kubernetes-instance-calculator) : Estimate and find the number of max workload can apply for instance
+- [botkube](https://github.com/kubeshop/botkube): An app that helps you monitor your Kubernetes cluster, debug critical deployments & gives recommendations for standard practices
+- [silver-surfer](https://github.com/devtron-labs/silver-surfer): Kubernetes objects api-version compatibility checker and provides migration path for K8s objects and prepare it for cluster upgrades
+## Validation
+
+- [kubeconform](https://github.com/yannh/kubeconform): A FAST Kubernetes manifests validator, with support for Custom Resources!
+
+## Virtualization
+
+- [kubevirt](https://kubevirt.io/): Provides a unified development platform where developers can build, modify, and deploy applications residing in both Application Containers as well as Virtual Machines in a common, shared environment.

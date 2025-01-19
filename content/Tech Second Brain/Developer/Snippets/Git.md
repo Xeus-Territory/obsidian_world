@@ -176,3 +176,52 @@ git tag --column <always/column/row/dense/...>
 # View detail change in tag
 git show tag-name
 ```
+
+# Set profile for multiple workspace
+
+>[!note]
+>Time to time when you stay in the project with configuration to enforce you to commit your code with same of prefix of organization, that why we need to learn set multiple `git` profile for each project
+
+You can double-check couple of documentations before starting
+
+- [Git Doc - git-confoig](https://git-scm.com/docs/git-config)
+- [FreeCodeCamp - How to Use Multiple Git Configs on One Computer](https://www.freecodecamp.org/news/how-to-handle-multiple-git-configurations-in-one-machine/) (Easiest)
+- [StackOverFlow - Is it possible to have different Git configuration for different projects?](https://stackoverflow.com/questions/8801729/is-it-possible-to-have-different-git-configuration-for-different-projects)
+
+If you are set git profile to global with both of these command
+
+```bash
+git config --global user.name "YOUR_NAME"
+git config --global user.gmail "YOUR_GMAIL"
+```
+
+you can find your global `git` profile at HOME directory at `~/.gitconfig`. So you should be edit this file by replacing with these configurations
+
+```bash title="~/.gitconfig"
+# This will define git should be used personal profile at Personal PATH
+[includeIf "gitdir:~/Personal/**"]
+  path = ~/.gitconfig-personal
+
+# In another case, git should be used work profile at Work PATH
+[includeIf "gitdir:~/Work/**"]
+  path = ~/.gitconfig-work
+```
+
+If you clarify what need to set for both of profile, you should create two profile in home directory one for personal and one for work
+
+```bash title="~/.gitconfig-personal"
+[user]
+name = Xeus Nguyen
+email = personal_email@gmail.com
+```
+
+```bash title="~/.gitconfig-work"
+name = Xeus Nguyen
+email = work_email@gmail.com
+```
+
+Now with each of directory, it will use `git` profile corresponding, you can double check it with command
+
+```bash
+git config --list
+```
