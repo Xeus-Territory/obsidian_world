@@ -14,6 +14,7 @@ tags:
   - architecture
   - k8s
 ---
+
 >[!quote]
 >*Most of those topics which i consider for contributing and find out the best way to apply this functionality, if you find the same mindset or want to collaboration, feel free meet me. Always wait with some reason* 😄😄😄
 
@@ -26,31 +27,31 @@ tags:
 >- ⌛ : On my way, just wait for couple weeks
 
 # Kubewekend
-## Setup Self Kubernetes Cluster in locally ✍
 
 Github: [kubewekend](https://github.com/Xeus-Territory/kubewekend)
 
 >[!summary]
->Use the instant technologies for setting up Kubernetes cluster, with
->- Use `Vargrant` to configuration the VM with provider in `VirtualBox` ✅
->- Ansible - To setup and run script and bring up `kubernetes` cluster on locally, Use `kind` ✅
->- Exploring, understanding and provisioning require components inside the `kind` cluster ✅
->- `cilium` and `ebpf` - The powerful kernel service of `kubewekend` cluster ✅
->- How to build the High Availability (HA) Cluster.  ✅
->- Use extend `CSI` for volume and storage class with `Ceph` ✅
->- Setup new `app`, use `cilium` to route traffic into cluster via gateway ⌛
->- Setup the monitoring cluster inside the `kubernetes` with `node-exporter`, `cadvisor`, `prometheus` and `grafana` ⌛
->- Setup tracing, logging, profiling components in `kubewekend` cluster ⌛
->- Customize default scheduled in `kubernetes` cluster with `kube-scheduler` ⌛
+>Use the interesting and couple of candidate technologies for setting up Kubernetes cluster in locally. Learn and do some incredible thing with self-hosted and we capture that as the adventure to figure out and work with more concept of Kubernetes
+## The major session ✍
 
-## Customize script for manipulation scheduled Kubernetes 🚧
+- Session 1: Use `Vargrant` to configuration the VM with provider in `VirtualBox` ✅
+- Session 2: Ansible - To setup and run script and bring up `kubernetes` cluster on locally, Use `kind` ✅
+- Session 3: Exploring, understanding and provisioning require components inside the `kind` cluster ✅
+- Session 4: `cilium` and `ebpf` - The powerful kernel service of `kubewekend` cluster ✅
+- Session 5: How to build the High Availability (HA) Cluster.  ✅
+- Session 6: Use extend `CSI` for volume and storage class with `Ceph` ✅
+- Session 7: Setup new `app`, use `cilium` to route traffic into cluster via gateway ⌛
+- Session 8: Setup the monitoring cluster inside the `kubernetes` with `node-exporter`, `prometheus` and `grafana` ⌛
+- Session 9: Setup tracing, logging, profiling components in `kubewekend` cluster ⌛
+## The extra session
 
->[!summary]
->Create a customize script for optimize and manipulation scheduled instead of default for Kubernetes, with feature like
->- Determine density of all workloads and nodes to scheduling
->- Be able to overwrite or set priority for nodes, workloads to scheduling
->- Work great with another cluster configuration like AKS, EKS or Kubeadm, ...
-
+- Session Extra 1: Longhorn and the story about NFS in Kubernetes ✅
+- Session Extra 2: Rebuild Cluster with Rancher or K3S
+- Session Extra 3: Combination GitOps with ArgoCD into Kubewekend Cluster
+- Session Extra 4: Learn and use security, network context for Kubernetes
+- Session Extra 5: Customize default scheduled in `kubernetes` cluster with `kube-scheduler` ⌛
+- Session Extra 6: Service mesh inside Kubewekend Cluster
+- Session Extra 7: Learn about virtualization inside Kubewekend with `kubevirt`
 # Hackwekend
 
 ## HTTP Tunneling for secure connection 🚧
@@ -94,7 +95,7 @@ Github: **[distribute-git-hook](https://github.com/wouops/distribute-git-hook)**
 >Feel free to read about small article about operating 👉 [[0-downtime with Blue-Green Deployment]]
 ## Canary 🚧
 
-# AIOps and MLOps
+# DataOps and MLOps
 
 ## Milvus Cluster ✅
 

@@ -64,6 +64,11 @@ tags:
 - [Medium - Yang Zhou](https://yangzhou1993.medium.com/): Full Stack developer share about tech article around Python, Javascript
 - [Morioh](https://morioh.com/): Social Network for Programmers and Developers
 - [programmerCave](https://programmercave.com/) : Algorithm, Tech and more about reliable usage of this technic
+# Compiler online
+
+- [replit](https://replit.com/) : Python, NodeJS, ...
+- [dotnetfiddle](https://dotnetfiddle.net/):  C# and .NET framework
+- [onlineGDB](https://www.onlinegdb.com/): C++, C, Pascal, ...
 # Developer online tools
 
 - [10015.io](https://10015.io/) : A “free all-in-one toolbox” solution created to ease your life by preventing bookmark mess.
@@ -76,22 +81,17 @@ tags:
 
 ## C\#
 
+- [Avalonia](https://github.com/AvaloniaUI/Avalonia): Develop Desktop, Embedded, Mobile and WebAssembly apps with C# and XAML. The most popular .NET UI client technology. [Documentation](https://docs.avaloniaui.net/)
+- [awesome-dotnet-core](https://github.com/thangchung/awesome-dotnet-core): 🐝 A collection of awesome .NET core libraries, tools, frameworks and software
 - [awesome-dotnet](https://github.com/quozd/awesome-dotnet): A collection of awesome .NET libraries, tools, frameworks and software
 - [dotnet-architecture](https://github.com/dotnet-architecture): .NET Application Architecture - Reference Apps
-- [awesome-dotnet-core](https://github.com/thangchung/awesome-dotnet-core): 🐝 A collection of awesome .NET core libraries, tools, frameworks and software
 - [Hangfire](https://github.com/HangfireIO/Hangfire): An easy way to perform background job processing in .NET and .NET Core applications. No Windows Service or separate process required
-- [Avalonia](https://github.com/AvaloniaUI/Avalonia): Develop Desktop, Embedded, Mobile and WebAssembly apps with C# and XAML. The most popular .NET UI client technology. [Documentation](https://docs.avaloniaui.net/)
 ## C/C++
 
 - [awesome-cpp](https://github.com/fffaraz/awesome-cpp) : A curated list of awesome C++ (or C) frameworks, libraries, resources, and shiny things. Inspired by awesome-... stuff. [Web Version](http://fffaraz.github.io/awesome-cpp/)
 - [libuv](https://github.com/libuv/libuv): Cross-platform asynchronous I/O
 - [libvirt](https://github.com/libvirt/libvirt): Libvirt native C API and daemons. [Gitlab](https://gitlab.com/libvirt/libvirt) and [Documentation](https://libvirt.org/index.html)
 - [grpc](https://github.com/grpc/grpc): The C based gRPC (C++, Python, Ruby, Objective-C, PHP, C#)
-## Compiler online
-
-- [replit](https://replit.com/) : Python, NodeJS, ...
-- [dotnetfiddle](https://dotnetfiddle.net/):  C# and .NET framework
-- [onlineGDB](https://www.onlinegdb.com/): C++, C, Pascal, ...
 ## Golang
 
 - [awesome-go](https://github.com/avelino/awesome-go): A curated list of awesome Go frameworks, libraries and software
@@ -112,25 +112,26 @@ tags:
 ## Python
 
 - [awesome-python](https://github.com/vinta/awesome-python) : An opinionated list of awesome Python frameworks, libraries, software and resources.
-- [pypa](https://github.com/pypa): Python Packaging Authority
 - [pallets](https://github.com/pallets): The Community stands behind [Flask](https://github.com/pallets/flask), [Jinja](https://github.com/pallets/jinja)
+- [poetry](https://github.com/python-poetry/poetry): Python packaging and dependency management made easy
+- [pypa](https://github.com/pypa): Python Packaging Authority
 - [pypi](https://pypi.org/): Find, install and publish Python packages with the Python Package Index
 - [Pythonium](https://pythonium.net/): Tools for Python Developers
 - [uv](https://github.com/astral-sh/uv): An extremely fast Python package and project manager, written in Rust
-- [poetry](https://github.com/python-poetry/poetry): Python packaging and dependency management made easy
 ## Ruby
 
 - [The Ruby Toolbox](https://www.ruby-toolbox.com/): Find actively maintained & popular open source software libraries for the Ruby programming language
 ## Rust
 
 - [awesome-rust](https://github.com/rust-unofficial/awesome-rust): A curated list of Rust code and resources.
-- [pingora](https://github.com/cloudflare/pingora): A library for building fast, reliable and evolvable network services.
 - [cargo](https://github.com/rust-lang/cargo): The Rust package manager. [Website](https://doc.rust-lang.org/cargo)
-- [tokio](https://github.com/tokio-rs/tokio): A runtime for writing reliable asynchronous applications with Rust. Provides I/O, networking, scheduling, timers, ... [Website Documentation](https://tokio.rs/)
-- [rust-101](https://www.ralfj.de/projects/rust-101/): A tutorial for the Rust language
-- [quick-protobuf](https://github.com/tafia/quick-protobuf): A rust implementation of protobuf parser
 - [crates.io](https://crates.io/): The Rust community’s crate registry
+- [pingora](https://github.com/cloudflare/pingora): A library for building fast, reliable and evolvable network services.
+- [quick-protobuf](https://github.com/tafia/quick-protobuf): A rust implementation of protobuf parser
+- [rust-101](https://www.ralfj.de/projects/rust-101/): A tutorial for the Rust language
 - [Rust Language Cheat Sheet](https://cheats.rs/): Collection cheatsheet with Rust
+- [The Rust Programming Language](https://web.mit.edu/rust-lang_v1.25/arch/amd64_ubuntu1404/share/doc/rust/html/book/first-edition/getting-started.html): The book will get us going with Rust and its tooling
+- [tokio](https://github.com/tokio-rs/tokio): A runtime for writing reliable asynchronous applications with Rust. Provides I/O, networking, scheduling, timers, ... [Website Documentation](https://tokio.rs/)
 ## WASM
 
 - [wasmtime](https://github.com/bytecodealliance/wasmtime): A fast and secure runtime for WebAssembly. [Website](https://wasmtime.dev/)

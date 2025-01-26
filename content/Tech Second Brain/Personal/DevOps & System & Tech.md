@@ -128,6 +128,7 @@ tags:
 - [Metrics](https://github.com/topics/metrics)
 - [Orchestration](https://github.com/topics/orchestration)
 - [Package manager](https://github.com/topics/package-manager)
+- [Performance]
 - [Platform Orchestrator](https://internaldeveloperplatform.org/platform-orchestrators/)
 - [Toolkit](https://github.com/topics/toolkit)
 - [Virtualization](https://github.com/topics/virtualization)
@@ -213,7 +214,10 @@ tags:
 
 - [CMake](https://github.com/Kitware/CMake): Mirror of CMake upstream repository. Plus on [Make](https://www.gnu.org/software/make/)
 - [Expo](https://docs.expo.dev/): Expo is a framework that makes developing Android and iOS apps easier. Our framework provides file-based routing, a standard library of native modules, and much more
+- [gradle](https://docs.gradle.org/current/userguide/userguide.html): a fast, dependable, and adaptable open-source [build automation](https://en.wikipedia.org/wiki/Build_automation) tool with an elegant and extensible declarative build language.
 - [just](https://just.systems/man/en/): a handy way to save and run project-specific commands.
+- [maven](https://maven.apache.org/ref/3.9.9/): a project development management and comprehension tool for Java
+- [paketo](https://paketo.io/): Buildpacks transform your application source code into container images
 ## Cloud Development Environments
 
 - [dapr](https://github.com/dapr/dapr): Dapr is a portable, event-driven, runtime for building distributed applications across cloud and edge. [Website](https://dapr.io/)
@@ -499,6 +503,7 @@ tags:
 - [Blog - Obsidian: the Good, the Bad, & the Ugly](https://www.originalmacguy.com/obsidian-the-good-the-bad-the-ugly/)
 - [Medium - Grafana Alloy & OpenTelemetry](https://medium.com/@magstherdev/grafana-alloy-opentelemetry-59c171d2ebfc)
 - [Medium - SLOs should be easy, say hi to Sloth](https://medium.com/itnext/slos-should-be-easy-say-hi-to-sloth-9c8a225df0d4)
+- [Medium - 40 Ansible Playbooks You Can’t Live Without in Your CI/CD Pipeline](https://medium.com/@eren.c.uysal/40-ansible-playbooks-you-cant-live-without-in-your-ci-cd-pipeline-460a1b472c38)
 # Tech Research Sheet
 
 ## Articles

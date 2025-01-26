@@ -260,7 +260,7 @@ kubectl logs my-pod -c my-container --previous
 kubectl logs -f my-pod 
 ```
 
-If you check any situation on workload, especially pods, container without results, you can return to check resources usage on cluster. Before doing that, make sure you install [[Note about AKS#Install requirement tools|requirements tools]] for available to use
+If you check any situation on workload, especially pods, container without results, you can return to check resources usage on cluster.
 
 ```bash
 # Show metrics for all nodes
@@ -622,3 +622,26 @@ YAML
   depends_on = [kubectl_manifest.elasticsearch_register_snapshot]
 }
 ```
+
+# Maintain Node in Kubernetes
+
+Following this article [Linkedin - Node Maintenance Commands In Kubernetes](https://www.linkedin.com/pulse/node-maintenance-commands-kubernetes-christopher-adamson-qkbsc/), we can catch up with how to maintain once of node inside your Kubernetes cluster
+
+You will use two command to execute this workflow
+
+- **kubectl drain**: Command safely evicts all the pods from a node before you perform any maintenance operation on it
+- **kubectl cordon**: Command marks a node as unschedulable, which means that no new pods will be scheduled on that node
+
+A workflow would be
+
+1. Run **kubectl cordon node-name** to mark the node as unschedulable.
+2. Run **kubectl cordon node-name** to mark the node as unschedulable.
+3. Perform your maintenance tasks on the node.
+4. Run **kubectl uncordon node-name** to mark the node as schedulable again.
+
+In advantage, you can do some sort of configuration for best practice
+
+- Configure a disruption budget. Explore at [PodDisruptionBudget](https://kubernetes.io/docs/concepts/workloads/pods/disruptions/) and how to  [configure a PodDisruptionBudgets](https://kubernetes.io/docs/tasks/run-application/configure-pdb/)
+- You also use API provider to eviction your workload. Explore at [API-initiated eviction](https://kubernetes.io/docs/concepts/scheduling-eviction/api-eviction/).
+- Learn and do practice in case you want to update your node. Explore at [Upgrading kubeadm clusters](https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/)
+- In fun way, you can use operator inside Kubernetes cluster via API System used CRD. Explore at [node-maintenance-operator](https://github.com/medik8s/node-maintenance-operator)
