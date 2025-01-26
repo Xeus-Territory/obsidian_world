@@ -393,6 +393,7 @@ tags:
 ## Virtual Machine
 
 - [firecracker](https://github.com/firecracker-microvm/firecracker): Secure and fast microVMs for serverless computing.
+- [Roboxes](https://roboxes.org/): Base boxes built by benevolent robots.
 - [webvm](https://github.com/leaningtech/webvm): Virtual Machine for the Web
 ## Web Analytics
 

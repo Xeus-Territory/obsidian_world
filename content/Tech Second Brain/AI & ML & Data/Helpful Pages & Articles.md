@@ -14,6 +14,7 @@ tags:
 
 ## Landscape
 
+- [AI Agent Landscape](https://aiagentslist.com/radar)
 - [LF AI & Data Foundation Interactive Landscape](https://landscape.lfai.foundation/)
 - [The 2024 MAD (Machine Learning, AI and Data) Landscape](https://mad.firstmark.com/ ): Get it in [PDF](https://mattturck.com/landscape/mad2024.pdf)
 ## Organization

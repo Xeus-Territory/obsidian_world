@@ -18,10 +18,13 @@ tags:
 
 - [Opster - Elasticsearch Heap Size Usage and JVM Garbage Collection](https://opster.com/guides/elasticsearch/capacity-planning/elasticsearch-heap-size-usage/)
 - [Orchestrating Elastic Stack applications](https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-orchestrating-elastic-stack-applications.html)
+## General
+
+- [Medium - 15 Databases, 15 Use Cases — The Ultimate Guide That No One Asked For (But Everyone Needs)](https://medium.com/gitconnected/15-databases-15-use-cases-the-ultimate-guide-that-no-one-asked-for-but-everyone-needs-47ca4009be78)
+- [Medium - 11 Data Structures Powering Database](https://medium.com/gitconnected/11-data-structures-powering-database-51fc4691fcf7)
 ## MongoDB
 
 - [Medium - Solving curious case of excess memory consumption by MongoDB](https://tech.oyorooms.com/mongodb-out-of-memory-kill-process-mongodb-using-too-much-memory-solved-44e9ae577bed)
-- [mongodb-kubernetes-operator](https://github.com/mongodb/mongodb-kubernetes-operator) : MongoDB Community Kubernetes Operator
 ## OthersDB
 
 - [dev.to - What is RocksDB (and its role in streaming)?](https://dev.to/mrkandreev/what-is-rocksdb-and-its-role-in-streaming-3bla)
@@ -48,6 +51,7 @@ tags:
 ## Repository
 
 - [awesome-db-tools](https://github.com/mgramin/awesome-db-tools) : Everything that makes working with databases easier
+- [mongodb-kubernetes-operator](https://github.com/mongodb/mongodb-kubernetes-operator) : MongoDB Community Kubernetes Operator
 ## Topics
 
 - [Database](https://github.com/topics/database)
