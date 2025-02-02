@@ -308,7 +308,7 @@ Try one more again about add worker node, and not yet expand resources doesn't h
 >- Risk: Install new kernel inside your `vagrant` host, need to make sure you know are you doing
 >- Safe: Update a new version Ubuntu for `vagrant` host to receive a compatible version of `kernel`
 
-So following the safe option, I choose upgrade Ubuntu to new version 20.04 --> 22.04 and received new version kernel from `5.4.0-189-generic` to `5.15.0-116-generic`. Read more at [[Shell commands#Update Ubuntu new version|Update Ubuntu new version]]
+So following the safe option, I choose upgrade Ubuntu to new version 20.04 --> 22.04 and received new version kernel from `5.4.0-189-generic` to `5.15.0-116-generic`. Read more at [[Linux Shell commands#Update Ubuntu new version|Update Ubuntu new version]]
 
 ![[Pasted image 20240723163838.png]]
 
@@ -320,7 +320,7 @@ So following the safe option, I choose upgrade Ubuntu to new version 20.04 --> 2
 As you can see, you need to use `kernel` over 5.10 version to valid run the `cilium` maybe on latest version, so that why we need upgrade kernel
 
 >[!info]
->Follow the [[Shell commands#Update Ubuntu new version|Update Ubuntu new version]], to understand technique to upgrade your kernel version and `kubewekend` cluster on Ubuntu 20.04
+>Follow the [[Linux Shell commands#Update Ubuntu new version|Update Ubuntu new version]], to understand technique to upgrade your kernel version and `kubewekend` cluster on Ubuntu 20.04
 
 >[!quote]
 >It can be upgrade to kernel `5.15.0-116-generic` with not need to update the version to **Ubuntu 22.04**, but for sure you can test both of methodologies.

@@ -29,21 +29,29 @@ tags:
 
 What you can find out and figure out about Azure, Cloud Computing, Documentation, Services and more, Link is down-below 🤝
 
-- [Wikipedia - Microsoft Azure](https://en.wikipedia.org/wiki/Microsoft_Azure)
-- [Azure - Documentation](https://learn.microsoft.com/en-us/azure/?product=popular)
-- [Azure - Learning Platform](https://learn.microsoft.com/en-us/training/azure/)
+## Architecture
+
 - [Azure - Browse Azure Architectures](https://learn.microsoft.com/en-us/azure/architecture/browse/)
-- [Azure - Register Account](https://azure.microsoft.com/en-us/free)
-- [Azure - Azure Category Community](https://techcommunity.microsoft.com/t5/azure/ct-p/Azure)
-- [Azure - Tech Community](https://techcommunity.microsoft.com/)
-- [Azure - Technical documentation](https://learn.microsoft.com/en-us/docs/)
-- [Azure - Architecture Blog](https://techcommunity.microsoft.com/t5/azure-architecture-blog/bg-p/AzureArchitectureBlog)
-- [Azure CLI - User Guide](https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest)
-- [Azure Price Calculator](https://azure.microsoft.com/en-gb/pricing/calculator/)
-- [Azure - Blog](https://azure.microsoft.com/en-us/blog/)
 - [Azure - Sample Code from Microsoft Developer Tools](https://learn.microsoft.com/en-us/samples/browse/)
 - [Azure - Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/)
 - [Azure - Application architecture fundamentals](https://learn.microsoft.com/en-us/azure/architecture/guide/)
+## Community
+
+- [Azure - Blog](https://azure.microsoft.com/en-us/blog/)
+- [Azure - Tech Community](https://techcommunity.microsoft.com/)
+- [Azure - Azure Category Community](https://techcommunity.microsoft.com/t5/azure/ct-p/Azure)
+- [Azure - Architecture Blog](https://techcommunity.microsoft.com/t5/azure-architecture-blog/bg-p/AzureArchitectureBlog)
+## General
+
+- [Wikipedia - Microsoft Azure](https://en.wikipedia.org/wiki/Microsoft_Azure)
+- [Azure - Documentation](https://learn.microsoft.com/en-us/azure/?product=popular)
+- [Azure - Technical documentation](https://learn.microsoft.com/en-us/docs/)
+- [Azure - Learning Platform](https://learn.microsoft.com/en-us/training/azure/)
+- [Azure - Register Account](https://azure.microsoft.com/en-us/free)
+## Utilities
+
+- [Azure CLI - User Guide](https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest)
+- [Azure Price Calculator](https://azure.microsoft.com/en-gb/pricing/calculator/)
 
 >[!info]
 >If you want to receive the credit from VS Subscription, you can direct use via [Monthly Azure credits for Visual Studio subscribers](https://azure.microsoft.com/en-us/pricing/member-offers/credit-for-visual-studio-subscribers)
@@ -72,6 +80,7 @@ What you can find out and figure out about Azure, Cloud Computing, Documentation
 ## Blogs
 
 - [Medium - Dave R - Microsoft Azure & AI MVP☁️](https://blog.azinsider.net/)
+- [Medium - Jiadong Chen](https://jiadong-chen.medium.com/)
 # Azure CLI
 
 ## az vm

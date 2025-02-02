@@ -17,22 +17,30 @@ tags:
 
 You can figure what you need to do for start with `aws` via some website and article
 
+## Architecture
+
 - [AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/)
 - [AWS Architecture Center](https://aws.amazon.com/architecture/)
-- [AWS Blog](https://aws.amazon.com/blogs)
-- [AWS CLI - Command Guide](https://awscli.amazonaws.com/v2/documentation/api/latest/index.html)
-- [AWS CLI - Configure the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
-- [AWS CLI - Installation Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) 
-- [AWS Create Account Guide](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html)
 - [AWS Decision Guides](https://aws.amazon.com/getting-started/decision-guides/)
+- [AWS Solutions Library](https://aws.amazon.com/solutions/ "AWS Solutions Library Homepage")
+- [AWS Prescriptive Guidance](https://aws.amazon.com/prescriptive-guidance/)
+- [AWS Whitepapers & Guides](https://aws.amazon.com/whitepapers/)
+## Community
+
+- [AWS Blog](https://aws.amazon.com/blogs)
+- [AWS Training](https://www.aws.training/)
+## General
+
+- [AWS Create Account Guide](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html)
 - [AWS Documentation](https://docs.aws.amazon.com/)
 - [AWS General Reference](https://docs.aws.amazon.com/general/latest/gr/Welcome.html)
+- [AWS CLI - Configure the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
+- [AWS CLI - Installation Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) 
+## Utilities
+
+- [AWS CLI - Command Guide](https://awscli.amazonaws.com/v2/documentation/api/latest/index.html)
 - [AWS IAM Actions - Generator](https://www.awsiamactions.io/?r=0)
-- [AWS Prescriptive Guidance](https://aws.amazon.com/prescriptive-guidance/)
 - [AWS Price Calculator](https://calculator.aws/#/)
-- [AWS Solutions Library](https://aws.amazon.com/solutions/ "AWS Solutions Library Homepage")
-- [AWS Training](https://www.aws.training/)
-- [AWS Whitepapers & Guides](https://aws.amazon.com/whitepapers/)
 
 You can manage `aws` as organization via the tree and sub-organization inside root account
 

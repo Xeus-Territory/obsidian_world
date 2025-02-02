@@ -87,6 +87,7 @@ tags:
 - [VMware Archive](https://github.com/vmware-archive): Archive project from VMware
 - [VMware](https://github.com/vmware): Open Source Project from VMware
 - [Vox Pupuli](https://github.com/voxpupuli): Modules and tooling maintained by and for the [Puppet](https://www.puppet.com/) community
+- [Yandex](https://github.com/yandex): Yandex open source projects and technologies
 ## Page
 
 - [Ansible Galaxy](https://galaxy.ansible.com/ui/) : Ansible template and external playbook
@@ -126,10 +127,12 @@ tags:
 - [Library](https://github.com/topics/library)
 - [Logging](https://github.com/topics/logging)
 - [Metrics](https://github.com/topics/metrics)
+- [Monorepo](https://github.com/topics/monorepo)
 - [Orchestration](https://github.com/topics/orchestration)
 - [Package manager](https://github.com/topics/package-manager)
-- [Performance]
+- [Performance](https://github.com/topics/performance)
 - [Platform Orchestrator](https://internaldeveloperplatform.org/platform-orchestrators/)
+- [Profiling](https://github.com/topics/profiling)
 - [Toolkit](https://github.com/topics/toolkit)
 - [Virtualization](https://github.com/topics/virtualization)
 - [Virtual Machine](https://github.com/topics/virtual-machine)
@@ -150,6 +153,7 @@ tags:
 - [Milan Newsletter](https://newsletter.techworld-with-milan.com/) - Guy will teach you more about infrastructure, architecture, ...
 - [Noted](https://noted.lol/) - Self Hosted App and Product Reviews
 - [Platform Engineer Blog](https://platformengineering.org/blog) - The discipline of designing and building toolchains and workflows that enable self-service capabilities for software engineering organizations in the cloud-native era.
+- [Medium - ScalaBrix](https://scalabrix.medium.com/) - System Design & Architecture | Distributed Systems | Tech Blog with clearly explanation and beauty diagram
 ## DevOps Blog
 
 - [4sysops](https://4sysops.com/) -  The online community for SysAdmins and DevOps
@@ -279,6 +283,7 @@ tags:
 - [kafka-ui](https://github.com/provectus/kafka-ui): Open-Source Web UI for Apache Kafka Management
 ## Local Cloud Self-hosted
 
+- [CloudStack](https://cloudstack.apache.org/): An open-source software system designed to deploy and manage large networks of virtual machines, as a highly available, highly scalable Infrastructure as a Service (IaaS) cloud computing platform.
 - [LocalStack - AWS local](https://hub.docker.com/r/localstack/localstack) : A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline. Read more: [Documentation](https://docs.localstack.cloud/getting-started/). You can do more access and management via [LocalStack Web Application](https://app.localstack.cloud/sign-in)
 - [openstack](https://github.com/openstack/openstack): Repository tracking all OpenStack repositories as submodules. Mirror of code maintained at opendev.org -->  [documentation](https://docs.openstack.org/2024.1/), and minor version [devstack](https://github.com/openstack/devstack) - System for quickly installing an OpenStack cloud
 ## Monitoring and observability
@@ -390,11 +395,19 @@ tags:
 - [thefuck](https://github.com/nvbn/thefuck) : Magnificent app which corrects your previous console command.
 - [tldr](https://github.com/tldr-pages/tldr): 📚 Collaborative cheatsheets for console commands
 - [warp](https://www.warp.dev/): The terminal reimagined with AI and collaborative tools for better productivity.
-## Virtual Machine
+## Virtual Machine / Virtualization
 
 - [firecracker](https://github.com/firecracker-microvm/firecracker): Secure and fast microVMs for serverless computing.
+- [KVM](https://linux-kvm.org/page/Main_Page): a full virtualization solution for Linux on x86 hardware containing virtualization extensions
+	- [libvirt](https://github.com/libvirt/libvirt): Provides a portable, long term stable C API for managing the virtualization technologies provided by many operating systems
+	- [QEMU](https://www.qemu.org/): A generic and open source machine emulator and virtualizer
+	- [virt-manager](https://virt-manager.org/):  A desktop user interface for managing virtual machines through libvirt.
+- [LXC](https://linuxcontainers.org/): Container and virtualization tools
+- [Proxmox](https://www.proxmox.com/en/): a complete, open-source server management platform for enterprise virtualization
+	- [ProxmoxVE](https://github.com/community-scripts/ProxmoxVE): Proxmox VE Helper-Scripts (Community Edition)
 - [Roboxes](https://roboxes.org/): Base boxes built by benevolent robots.
 - [webvm](https://github.com/leaningtech/webvm): Virtual Machine for the Web
+- [XCP-ng](https://xcp-ng.org/): A high performance enterprise level virtualization platform with a rich ecosystem
 ## Web Analytics
 
 - [Plausible](https://github.com/plausible/analytics): Simple, open source, lightweight (< 1 KB) and privacy-friendly web analytics alternative to Google Analytics.
@@ -462,6 +475,7 @@ tags:
 - [Medium - Single Point of Failure (SPOF) in System Design](https://levelup.gitconnected.com/single-point-of-failure-spof-in-system-design-c8bbac5af993)
 - [Ably - Event-driven architecture patterns and when to use them](https://ably.com/topic/event-driven-architecture-patterns)
 - [Medium - Building end-to-end DevSecOps for AWS Migration: Security at Entry Level with open source SCA, SAST and DAST tools](https://medium.com/@akhilmittal510/building-end-to-end-devsecops-for-aws-migration-security-at-entry-level-with-open-source-sca-sast-919480423fc1)
+- [Medium - System design concepts: Distributed Task Queue System 🎯](https://levelup.gitconnected.com/system-design-concepts-distributed-task-queue-system-8bc99647a093)
 ## Techniques
 
 - [Internet - How to build and deploy React Native applications with Fastlane](https://tech.sparkfabrik.com/en/blog/fastlane_build/)
