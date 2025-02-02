@@ -87,6 +87,7 @@ tags:
 - [VMware Archive](https://github.com/vmware-archive): Archive project from VMware
 - [VMware](https://github.com/vmware): Open Source Project from VMware
 - [Vox Pupuli](https://github.com/voxpupuli): Modules and tooling maintained by and for the [Puppet](https://www.puppet.com/) community
+- [Yandex](https://github.com/yandex): Yandex open source projects and technologies
 ## Page
 
 - [Ansible Galaxy](https://galaxy.ansible.com/ui/) : Ansible template and external playbook
@@ -128,8 +129,9 @@ tags:
 - [Metrics](https://github.com/topics/metrics)
 - [Orchestration](https://github.com/topics/orchestration)
 - [Package manager](https://github.com/topics/package-manager)
-- [Performance]
+- [Performance](https://github.com/topics/performance)
 - [Platform Orchestrator](https://internaldeveloperplatform.org/platform-orchestrators/)
+- [Profiling](https://github.com/topics/profiling)
 - [Toolkit](https://github.com/topics/toolkit)
 - [Virtualization](https://github.com/topics/virtualization)
 - [Virtual Machine](https://github.com/topics/virtual-machine)
