@@ -625,7 +625,7 @@ If you look into the script, you can figure out
 Now apply it and we will see a bit miracle
 
 ```bash
-kubectl apply -f workload-rmx.yaml
+kubectl apply -f workload-rwx.yaml
 ```
 
 Boom, you will meet the error because you are install and work with version `1.7.x` and it integrates encrypt method into Longhorn core after I try to debug inside `share-manager` node
@@ -723,7 +723,7 @@ One endpoint for `nfs-client` to access via longhorn, it's totally stand for API
 
 ```bash
 # This one will create inside namespace longhorn
-kubectl get sharemanagers.longhorn.io -n longhorn pvc-a0abc7e6-bf77-454a-a302-cc1600143576 -o yaml
+kubectl get sharemanagers.longhorn.io -n longhorn-system pvc-a0abc7e6-bf77-454a-a302-cc1600143576 -o yaml
 ```
 
 ```yaml
@@ -753,16 +753,16 @@ spec:
 status:
   # Endpoint will expose in this path
   endpoint: nfs://172.28.9.86/pvc-a0abc7e6-bf77-454a-a302-cc1600143576
-  ownerID: dev-nlp-worker-6
+  ownerID: xxxxxxxxxxxxxx
   state: running
 ```
 
 To get your host connect, you can try to expose tcp connection via tunnel used `port-forward` command
 
-First of all, you should get service exposed inside namespace `longhorn`, it will exist service expose `pvc` you in port `2409` (NFS Port)
+First of all, you should get service exposed inside namespace `longhorn-system`, it will exist service expose `pvc` you in port `2409` (NFS Port)
 
 ```bash
-kubectl get services -n longhorn pvc-a0abc7e6-bf77-454a-a302-cc1600143576
+kubectl get services -n longhorn-system pvc-a0abc7e6-bf77-454a-a302-cc1600143576
 
 pvc-a0abc7e6-bf77-454a-a302-cc1600143576   ClusterIP   172.28.9.86      <none>        2049/TCP    24m
 ```
@@ -770,7 +770,7 @@ pvc-a0abc7e6-bf77-454a-a302-cc1600143576   ClusterIP   172.28.9.86      <none>  
 Now you can use `port-foward` to nat port outside the cluster
 
 ```bash
-kubectl port-forward -n longhorn service/pvc-a0abc7e6-bf77-454a-a302-cc1600143576 2049:2049
+kubectl port-forward -n longhorn-system service/pvc-a0abc7e6-bf77-454a-a302-cc1600143576 2049:2049
 Forwarding from 127.0.0.1:2049 -> 2049
 Forwarding from [::1]:2049 -> 2049
 ```

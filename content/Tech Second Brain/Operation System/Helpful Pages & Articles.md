@@ -78,6 +78,7 @@ tags:
 - [Medium - 6 Ways to Check Remote Port Status in Linux: Highlighting Two New Approaches](https://programming.earthonline.us/6-effective-methods-to-check-remote-port-status-in-linux-which-one-do-you-use-most-83ce6f903d75)
 - [Medium - Top Linux Security Best Practices for DevSecOps Engineers](https://medium.com/devsecops-community/top-10-linux-security-best-practices-a-comprehensive-guide-to-protecting-your-system-908bd96dd2c9)
 - [Cyberciti - How to use sed to find and replace text in files in Linux / Unix shell](https://www.cyberciti.biz/faq/how-to-use-sed-to-find-and-replace-text-in-files-in-linux-unix-shell/)
+- [Medium - Stop Using systemctl Blindly: Master Advanced Service Management Techniques!](https://medium.com/@howtouselinux/stop-using-systemctl-blindly-master-advanced-service-management-techniques-83dfd0e9c0ab)
 ## Awesome Repositories
 
 - [Bash-Oneliner](https://onceupon.github.io/Bash-Oneliner/): A collection of handy Bash One-Liners and terminal tricks for data processing and Linux system maintenance.
