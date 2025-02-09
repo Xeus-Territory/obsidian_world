@@ -19,10 +19,12 @@ tags:
 - [The 2024 MAD (Machine Learning, AI and Data) Landscape](https://mad.firstmark.com/ ): Get it in [PDF](https://mattturck.com/landscape/mad2024.pdf)
 ## Organization
 
-- [mlfoundations](https://github.com/mlfoundations): Community for implementing ML Model
-- [OpenAI](https://github.com/openai): OpenAI Github Community
-- [Triton Inference Server](https://github.com/triton-inference-server): provides a cloud and edge inferencing solution optimized for both CPUs and GPUs.
+- [DeepSeek](https://github.com/deepseek-ai): LLM Model for Prompting
 - [Machine Learning Tooling](https://github.com/ml-tooling): Provide multiple collections about ML
+- [MLFoundations](https://github.com/mlfoundations): Community for implementing ML Model
+- [OpenAI](https://github.com/openai): OpenAI Github Community
+- [Qwen](https://github.com/QwenLM): Alibaba Cloud's general-purpose AI models
+- [Triton Inference Server](https://github.com/triton-inference-server): provides a cloud and edge inferencing solution optimized for both CPUs and GPUs.
 ## Page
 
 - [Feature Stores for ML](https://www.featurestore.org/): Collection pages about Feature stores for ML

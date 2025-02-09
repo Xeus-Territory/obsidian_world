@@ -399,6 +399,40 @@ complete -o nospace -C /usr/local/bin/terragrunt terragrunt
 
 # Check the cpu-temp in your machine
 alias cputemp="paste <(cat /sys/class/thermal/thermal_zone*/type) <(cat /sys/class/thermal/thermal_zone*/temp) | column -s $'\t' -t | sed 's/\(.\)..$/.\1°C/'"
+
+# URL encode and decode with python
+# Encode
+alias urlencode='python3 -c "import sys, urllib.parse as ul; \
+    print (ul.quote_plus(sys.argv[1]))"'
+# Decode
+alias urldecode='python3 -c "import sys, urllib.parse as ul; \
+    print(ul.unquote_plus(sys.argv[1]))"'
+
+# JWT decode with jq
+# Decode
+jwt_decode(){
+    jq -R 'split(".") | .[1] | @base64d | fromjson' <<< "$1"
+}
+# But you can use advance to get specific header and payload
+# Find that at: https://gist.github.com/thomasdarimont/46358bc8167fce059d83a1ebdb92b0e7
+decode_base64_url() {
+  local len=$((${#1} % 4))
+  local result="$1"
+  if [ $len -eq 2 ]; then result="$1"'=='
+  elif [ $len -eq 3 ]; then result="$1"'=' 
+  fi
+  echo "$result" | tr '_-' '/+' | openssl enc -d -base64
+}
+
+decode_jwt(){
+   decode_base64_url $(echo -n $2 | cut -d "." -f $1) | jq .
+}
+
+# Decode JWT header
+alias jwth="decode_jwt 1"
+
+# Decode JWT Payload
+alias jwtp="decode_jwt 2"
 ```
 
 # Custom plugins for Oh-my-zsh

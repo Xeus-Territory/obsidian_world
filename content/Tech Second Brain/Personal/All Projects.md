@@ -141,7 +141,7 @@ tags:
 >
 >*Oct 2023*
 >
->🔗🔗🔗 [[Shell scripts#Blue Green Deployment Docker for Zero Downtime|Source Code]]
+>🔗🔗🔗 [[Linux Shell scripts#Blue Green Deployment Docker for Zero Downtime|Source Code]]
 >
 >🔗🔗🔗 [[0-downtime with Blue-Green Deployment|Article]]
 

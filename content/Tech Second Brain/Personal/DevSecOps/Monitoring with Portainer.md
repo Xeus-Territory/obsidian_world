@@ -19,7 +19,7 @@ tags:
 
 - So for easily managing and reading logs, metrics, and exec console of containers, you will need monitoring tools, and `portainer` is exactly what you want, go to [documentation](https://www.portainer.io/) for more detail.
 
-- Go for check it [[Shell scripts#Config Portainer in Docker|Config Portainer in Docker]] for understanding what is going on for deployed containers. The script will contain 2 purposes, deploy the container and reset the password. To run this script, try this command
+- Go for check it [[Linux Shell scripts#Config Portainer in Docker|Config Portainer in Docker]] for understanding what is going on for deployed containers. The script will contain 2 purposes, deploy the container and reset the password. To run this script, try this command
 
 ```bash
 #/bin/bash
@@ -35,7 +35,7 @@ chmod +x config_portainer.sh
 # Config Portainer with Ansible for remote host
 
 >[!info]
->If you want to setup `portainer` with ansible. You can perform this command. You need choose one of task in [[Shell scripts#Config Portainer in Docker|Config Portainer in Docker]]
+>If you want to setup `portainer` with ansible. You can perform this command. You need choose one of task in [[Linux Shell scripts#Config Portainer in Docker|Config Portainer in Docker]]
 
   - **config_master**: *Configuration master portainer*
   - **config_ssl_master**: *Configuration master portainer with SSL cert domain*

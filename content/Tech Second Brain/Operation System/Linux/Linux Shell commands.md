@@ -1,5 +1,5 @@
 ---
-title: Shell Command Collections
+title: Linux Shell Command Collections
 tags:
   - awesome
   - linux
@@ -60,6 +60,16 @@ journalctl -p err -b
 >- 5: notice
 >- 6: info
 >- 7: debug
+
+Check the log systemd in catalog and pagination, you can use
+
+```bash
+journalctl -xeu service-name.service
+
+--catalog         -x  -- Show explanatory texts with each log line 
+--pager-end       -e  -- Jump to the end of the journal in the pager
+--unit            -u  -- Show data only from the specified unit
+```
 ## `grep` command
 
 Use grep with exclude by `-v` flag
@@ -261,6 +271,19 @@ Select the keys if value of a field is "auto". Explore at [Select the keys if va
 jq 'map_values(select(.value == "auto"))' file
 # Get key with same situation
 jq -r 'map_values(select(.value == "auto"))|keys[]' file
+```
+
+If you wanna encode URL with `jq`, you can follow this
+
+```bash
+# use for encode
+jq --slurp --raw-input --raw-output @uri <(printf 'http://example.com/E = mc^2')
+```
+
+In the situation, if you want to decode `jwt` token, you can try with `jq`
+
+```bash
+jq -R 'split(".") | .[1] | @base64d | fromjson' <<< "$1"
 ```
 ## `du` command 
 

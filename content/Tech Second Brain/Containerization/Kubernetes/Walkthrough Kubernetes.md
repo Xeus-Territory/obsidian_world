@@ -5,6 +5,11 @@ tags:
   - usage
   - helpful
 ---
+
+To find more information and example, you can double-check a some manifest collection at
+
+- [Kubernetes examples](https://k8s-examples.container-solutions.com/)
+- [kubernetes-manifests](https://github.com/maximemoreillon/kubernetes-manifests)
 # Can use volume with cronjobs
 
 >[!purpose]
@@ -645,3 +650,191 @@ In advantage, you can do some sort of configuration for best practice
 - You also use API provider to eviction your workload. Explore at [API-initiated eviction](https://kubernetes.io/docs/concepts/scheduling-eviction/api-eviction/).
 - Learn and do practice in case you want to update your node. Explore at [Upgrading kubeadm clusters](https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/)
 - In fun way, you can use operator inside Kubernetes cluster via API System used CRD. Explore at [node-maintenance-operator](https://github.com/medik8s/node-maintenance-operator)
+
+# Assign Pods to Nodes
+
+You have multiple ways to configuration to assign pods to specific nodes depend on a couple of conditions and it's make you easier for control cluster, such as
+
+## Use Node Label and pick it up with `nodeSelector`
+
+Explore at: [nodeSelector](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#nodeselector) field matching against [node labels](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#built-in-node-labels)
+
+If you setup couple of tags for your node, you can try to retrieve that with `nodeSelector` for selecting where `pods` be able to spawn into
+
+In the situation, you wanna add more label and supplied it for your deployment, sure you can use `kubectl label` to handle that
+
+```bash
+# Add a Label
+kubectl label pods my-pod new-label=awesome
+
+# Remove a label
+kubectl label pods my-pod new-label-
+
+# Overwrite an existing value
+kubectl label pods my-pod new-label=new-value --overwrite
+```
+
+View that with `get` command
+
+```bash
+kubectl get pods --show-labels
+```
+
+You can modify or set `nodeSelector` for picking node or resource matching with label
+
+```yaml {12-13}
+# Assumes the existence of the label: node-role.kubernetes.io/master, and tries to assign the pod to the labelled node.
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-node-selector-simple
+spec:
+  containers:
+    - command: ["sleep", "3600"]
+      image: busybox
+      name: pod-node-selector-simple-container
+  nodeSelector:
+    node-role.kubernetes.io/master: "" 
+```
+
+## Use `affinity` and `anti-affinity`
+
+Documentation: [Affinity and anti-affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity)
+
+>[!info]
+>`nodeSelector` is the simplest way to constrain Pods to nodes with specific labels. Affinity and anti-affinity expands the types of constraints you can define.
+
+<h3>With Node affinity</h3>
+
+ You will have two types
+
+- `requiredDuringSchedulingIgnoredDuringExecution`: The scheduler can't schedule the Pod unless the rule is met. This functions like `nodeSelector`, but with a more expressive syntax.
+- `preferredDuringSchedulingIgnoredDuringExecution`: The scheduler tries to find a node that meets the rule. If a matching node is not available, the scheduler still schedules the Pod.
+
+You can specify node affinities using the `.spec.affinity.nodeAffinity`
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: with-node-affinity
+spec:
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: topology.kubernetes.io/zone
+            operator: In
+            values:
+            - antarctica-east1
+            - antarctica-west1
+      preferredDuringSchedulingIgnoredDuringExecution:
+      - weight: 1
+        preference:
+          matchExpressions:
+          - key: another-node-label-key
+            operator: In
+            values:
+            - another-node-label-value
+  containers:
+  - name: with-node-affinity
+    image: registry.k8s.io/pause:3.8
+```
+
+>[!info]
+>You can use the `operator` field to specify a logical operator for Kubernetes to use when interpreting the rules. You can use `In`, `NotIn`, `Exists`, `DoesNotExist`, `Gt` and `Lt`. Explore more about it at [Operators](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#operators)
+
+You can explore more about extend things with affinity
+
+- [Node affinity weight](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#node-affinity-weight)
+- [Node affinity per scheduling profile](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#node-affinity-per-scheduling-profile)
+- [Inter-pod affinity and anti-affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity)
+- [matchLabelKeys](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#matchlabelkeys) and [mismatchLabelKeys](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#mismatchlabelkeys)
+- [More practical use-cases](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#more-practical-use-cases)
+
+Learn more with some article
+
+- [Quan Huynh - DevOpsVN - Kubernetes Series - Bài 18 - Advanced scheduling: node affinity and pod affinity](https://viblo.asia/p/kubernetes-series-bai-18-advanced-scheduling-node-affinity-and-pod-affinity-gAm5y7jqZdb)
+- [StackState - Mastering Node Affinity in Kubernetes](https://www.stackstate.com/blog/mastering-node-affinity-in-kubernetes/)
+
+## Use `taint` and `tolerration`
+
+Documentation: [Taints and Tolerations](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/)
+
+One more way to configuration schedule is use `taint` and `tolerration`, opposite with `affnity` because `taint` used for repel a set of pods out of node
+
+But you can use `tolerration` for bypass to schedule workload into pod match with that `taint`
+
+For example, you try to `taint` node like
+
+```bash
+# Add taint
+kubectl taint nodes node1 key1=value1:NoSchedule
+
+# Remove taint
+kubectl taint nodes node1 key1=value1:NoSchedule- 
+```
+
+For deploy your workload into node with `taint`, you can use `tolerration` and set it for matching with `taint` configuration for example
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    env: test
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    imagePullPolicy: IfNotPresent
+# Configuration
+  tolerations:
+  - key: "key1"
+    operator: "Equal"
+    value: "value1"
+    effect: "NoSchedule"
+
+# Another way
+#  tolerations:
+#  - key: "key1"
+#    operator: "Exists"
+#    effect: "NoSchedule"
+```
+
+>[!note]
+>The default value for `operator` is `Equal`.
+
+A toleration "matches" a taint if the keys are the same and the effects are the same, and:
+
+- the `operator` is `Exists` (in which case no `value` should be specified), or
+- the `operator` is `Equal` and the values should be equal.
+
+The allowed values for the `effect` field are:
+
+`NoExecute`
+
+This affects pods that are already running on the node as follows:
+
+`NoSchedule`
+
+No new Pods will be scheduled on the tainted node unless they have a matching toleration. Pods currently running on the node are **not** evicted.
+
+`PreferNoSchedule`
+
+A "preference" or "soft" version of `NoSchedule`. The control plane will _try_ to avoid placing a Pod that does not tolerate the taint on the node, but it is not guaranteed.
+
+>[!warning]
+>You can put multiple taints on the same node and multiple tolerations on the same pod. The way Kubernetes processes multiple taints and tolerations is like a filter: start with all of a node's taints, then ignore the ones for which the pod has a matching toleration; the remaining un-ignored taints have the indicated effects on the pod. In particular,
+>- if there is at least one un-ignored taint with effect `NoSchedule` then Kubernetes will not schedule the pod onto that node
+>- if there is no un-ignored taint with effect `NoSchedule` but there is at least one un-ignored taint with effect `PreferNoSchedule` then Kubernetes will _try_ to not schedule the pod onto the node
+>- if there is at least one un-ignored taint with effect `NoExecute` then the pod will be evicted from the node (if it is already running on the node), and will not be scheduled onto the node (if it is not yet running on the node).
+
+If you want to explore use-case and example, find out with
+
+- [Example Use Cases](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/#example-use-cases)
+- [Taint based Evictions](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/#taint-based-evictions)
+- [Taint Nodes by Condition](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/#taint-nodes-by-condition)

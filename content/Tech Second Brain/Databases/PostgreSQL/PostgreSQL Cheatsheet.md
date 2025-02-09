@@ -15,6 +15,21 @@ You can use command `pg_isready` for healthcheck container before bring up
 pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}
 ```
 
+# PSQL Command
+
+Double-check more `psql` command at [postgres-cheatsheet.md](https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546)
+
+```bash
+# List database
+postgres=# \l
+
+# Turn on mode easier for read
+postgres=# \x on
+
+# List tables from all schemas
+postgres=# \dt
+```
+
 # Helpful SQL for working with PostgreSQL
 
 ## Find the location of configuration for `postgres`
