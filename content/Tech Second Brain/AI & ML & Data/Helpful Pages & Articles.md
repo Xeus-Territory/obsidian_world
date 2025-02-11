@@ -24,6 +24,7 @@ tags:
 - [MLFoundations](https://github.com/mlfoundations): Community for implementing ML Model
 - [OpenAI](https://github.com/openai): OpenAI Github Community
 - [Qwen](https://github.com/QwenLM): Alibaba Cloud's general-purpose AI models
+- [Seldon](https://github.com/SeldonIO): Machine Learning Deployment for Kubernetes
 - [Triton Inference Server](https://github.com/triton-inference-server): provides a cloud and edge inferencing solution optimized for both CPUs and GPUs.
 ## Page
 
@@ -117,6 +118,7 @@ tags:
 - [Neptune.ai - MLOps Landscape in 2024: Top Tools and Platforms](https://neptune.ai/blog/mlops-tools-platforms-landscape)
 - [Neptune.ai - MLOps Principles and How to Implement Them](https://neptune.ai/blog/mlops-principles)
 - [Google Cloud - MLOps: Continuous delivery and automation pipelines in machine learning](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning)
+- [Datacamp - 25 Top MLOps Tools You Need to Know in 2025](https://www.datacamp.com/blog/top-mlops-tools)
 ## Awesome Repositories
 
 - [awesome-mlops](https://github.com/visenger/awesome-mlops): A curated list of references for MLOps
@@ -129,6 +131,7 @@ tags:
 
 - [AutoML](https://github.com/topics/automl)
 - [MLOps](https://github.com/topics/mlops)
+- [Model Serving](https://github.com/topics/model-serving)
 # AI/ML/Data/MLOps Tools
 
 ## Computer Vision
@@ -148,9 +151,14 @@ tags:
 - [TaskingAI](https://github.com/TaskingAI/TaskingAI): The open source platform for AI-native application development.
 ## Models
 
-- [mlflow](https://github.com/mlflow/mlflow): Open source platform for the machine learning lifecycle
-- [ray](https://github.com/ray-project/ray): an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads.
 - [trl](https://github.com/huggingface/trl): Train transformer language models with reinforcement learning. [Hugging Face](https://huggingface.co/docs/trl/index)
+
+## Model Management and Serving
+
+- [KServe](https://kserve.github.io/website/latest/): A standard **Model Inference Platform** on **Kubernetes**, built for **highly scalable** use cases.
+- [mlflow](https://github.com/mlflow/mlflow): Open source platform for the machine learning lifecycle
+- [MLServer](http://mlserver.readthedocs.io/en/latest/index.html): An open source inference server for your machine learning models.
+- [ray](https://github.com/ray-project/ray): an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads.
 ## Streaming / CDC
 
 - [bytewax](https://github.com/bytewax/bytewax): Python Stream Processing

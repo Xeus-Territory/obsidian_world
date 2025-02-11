@@ -26,6 +26,7 @@ tags:
 - [Medium - 8 Golang Performance Tips I Discovered After Years of Coding](https://medium.com/deep-golang/8-python-performance-tips-i-discovered-after-years-of-coding-in-golang-764375658d90)
 - [Codilime - The importance and benefits of unit testing](https://codilime.com/blog/unit-testing/)
 - [Katalon - 9 Core Benefits of Automation Testing](https://katalon.com/resources-center/blog/benefits-of-automation-testing)
+- [Medium - Blazing fast Python Docker builds with Poetry 🏃](https://medium.com/@albertazzir/blazing-fast-python-docker-builds-with-poetry-a78a66f5aed0)
 # Awesome Developer
 
 ## New Programming Language

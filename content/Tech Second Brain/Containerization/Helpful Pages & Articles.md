@@ -24,6 +24,7 @@ tags:
 - [Medium - 11 Open-Source SaaS Killer — Selfhost With Docker](https://blog.devgenius.io/11-open-source-saas-killer-selfhost-with-docker-034456653568)
 - [Medium - 11 Open-Source SaaS Killer — Selfhost With Docker -2](https://medium.com/@harendra21/11-open-source-saas-killer-selfhost-with-docker-2-5d507de8b68f)
 - [Medium - 11 Open-Source SaaS Killer — Selfhost With Docker -3](https://medium.com/@harendra21/11-open-source-saas-killer-selfhost-with-docker-3-a707a15cb540)
+- [Dev.to - Comparison of Alpine, Slim, Stretch, Buster, Jessie, and Bullseye Linux Distributions](https://dev.to/falselight/comparison-of-alpine-slim-stretch-buster-jessie-and-bullseye-linux-distributions-1329)
 ## Awesome Repositories
 
 - [awesome-compose](https://github.com/docker/awesome-compose) : Awesome Docker Compose samples
@@ -255,6 +256,7 @@ tags:
 - [GitHub - Deploying NFS Server in Kubernetes](https://github.com/appscode/third-party-tools/blob/master/storage/nfs/README.md)
 - [Technotim - Mirror your Kubernetes configs, secrets, and resources to other namespaces](https://technotim.live/posts/k8s-reflector/)
 - [Medium - Running a “stateless” email server in Kubernetes using Mailu](https://medium.com/gitconnected/running-a-stateless-email-server-in-kubernetes-using-mailu-9c1ebd8003e9)
+- [Medium - Mastering Ingress Strategies for AWS EKS: ALB vs. Istio vs. NGINX](https://ramchandra-vadranam.medium.com/mastering-ingress-strategies-for-aws-eks-alb-vs-istio-vs-nginx-34a7bd4ce152)
 ## Topics
 
 - [Helm](https://github.com/topics/helm)
@@ -292,9 +294,14 @@ tags:
 
 - [Keda](https://keda.sh/docs/2.16/): Kubernetes Event-driven Autoscaling
 - [Kubernetes Autoscaler](https://github.com/kubernetes/autoscaler): Autoscaling components for Kubernetes
+## Backup
+
+- [velero](https://github.com/vmware-tanzu/velero): Backup and migrate Kubernetes applications and their persistent volumes
+- [trilio](https://docs.trilio.io/kubernetes): A data protection and backup solution specifically designed for Kubernetes environments
 ## Benchmark
 
 - [kube-bench](https://github.com/aquasecurity/kube-bench): Checks whether Kubernetes is deployed according to security best practices as defined in the CIS Kubernetes Benchmark
+
 ## Chaos
 
 - [chaos-mesh](https://github.com/chaos-mesh/chaos-mesh): A Chaos Engineering Platform for Kubernetes.
@@ -309,6 +316,10 @@ tags:
 - [kubeapps](https://github.com/vmware-tanzu/kubeapps): A web-based UI for deploying and managing applications in Kubernetes clusters
 - [kubeshark](https://github.com/kubeshark/kubeshark): The API traffic analyzer for Kubernetes providing real-time K8s
 - [lens](https://github.com/lensapp/lens): Lens - The way the world runs Kubernetes
+
+## Configuration Management
+
+- [Reloader](https://github.com/stakater/Reloader): A Kubernetes controller to watch changes in ConfigMap and Secrets and do rolling upgrades on Pods with their associated Deployment, StatefulSet, DaemonSet and DeploymentConfig
 ## Development Environment
 
 - [devspace](https://github.com/devspace-sh/devspace): The Fastest Developer Tool for Kubernetes
