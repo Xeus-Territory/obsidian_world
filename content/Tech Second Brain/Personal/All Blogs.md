@@ -152,6 +152,7 @@ tags:
 ## 2025
 
 - [[How to serve Java API with Maven and Tomcat]]
+- [[How can I build my homelab with Docker Swarm]]
 # DIY Cheatsheet and Troubleshoot
 
 >[!info]

@@ -37,12 +37,16 @@ tags:
 - [Github Gist - psql-with-gzip-cheatsheet.sh](https://gist.github.com/brock/7a7a70300096632cec30)
 - [Azure PostgreSQL - Backup and Restore](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-backup-restore)
 - [Useful PostgreSQL (psql) queries, commands and snippets](https://codefibershq.com/blog/useful-postgresql-pgsql-queries-commands-and-snippets)
+## Redis
+
+- [What is Valkey?](https://redis.io/blog/what-is-valkey/)
 ## SQL Server
 
 - [Azure - Analyze and prevent deadlocks in Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/analyze-prevent-deadlocks?view=azuresql&tabs=ring-buffer)
 - [How to find and fix SQL Server deadlocks](https://www.site24x7.com/learn/resolve-sql-server-deadlocks.html#:~:text=A%20Microsoft%20SQL%20Server%20deadlock,cancel%20one%20of%20the%20processes.)
 - [Performance Troubleshooting | Azure SQL](https://www.youtube.com/playlist?list=PLlrxD0HtieHgDkZ84FfCSDLBcJmUn8ktU)
 - [Azure - Deadlocks guide](https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-deadlocks-guide?view=sql-server-ver16)
+
 # Awesome repositories
 
 ## Pages
@@ -69,6 +73,7 @@ tags:
 - [redis](https://github.com/redis/redis): An in-memory database that persists on disk.
 - [rocksdb](https://github.com/facebook/rocksdb): A library that provides an embeddable, persistent key-value store for fast storage.
 - [tikv](https://github.com/tikv/tikv): Distributed transactional key-value database, originally created to complement TiDB
+- [valkey](https://github.com/valkey-io/valkey): A flexible distributed key-value datastore that is optimized for caching and other realtime workloads.
 ## No-Code
 
 >[!info]

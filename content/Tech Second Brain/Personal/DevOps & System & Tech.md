@@ -61,6 +61,7 @@ tags:
 - [Bytedance Inc](https://github.com/bytedance): ByteDance's open source projects hub for innovation. [Website](https://opensource.bytedance.com/), Who stand behind [KubeWharf](https://github.com/kubewharf)
 - [Cloudflare](https://github.com/cloudflare): CloudFlare Open Source Community
 - [ClusterLabs](https://github.com/ClusterLabs): The open-source high-availability cluster stack. Who stand behind [pacemaker](https://github.com/ClusterLabs/pacemaker) and [corosync](https://github.com/corosync/corosync)
+- [Confluent Inc.](https://github.com/confluentinc): Real-time streams powered by Apache Kafka®
 - [Container Storage Interface](https://github.com/container-storage-interface) : Container Storage Interface (CSI) Specification.
 - [Dyne.org](https://github.com/dyne): Think &do tank and free software foundry
 - [Facebook](https://github.com/facebook): Meta - build community through open source technology.
@@ -79,6 +80,7 @@ tags:
 - [Microsoft](https://github.com/microsoft): Open source projects and samples from Microsoft
 - [Netflix](https://github.com/Netflix): Netflix Open Source Platform
 - [Ory](https://github.com/ory): Open Source Identity Platform For Everyone. [Website](https://www.ory.sh/)
+## Page
 - [PingCAP](https://github.com/pingcap): The team behind TiDB TiKV, an open source MySQL compatible HTAP database
 - [Puppet](https://github.com/puppetlabs): Puppet Community
 - [Red Hat Developer](https://github.com/redhat-developer): Github home of the Red Hat Developer program.
@@ -88,7 +90,6 @@ tags:
 - [VMware](https://github.com/vmware): Open Source Project from VMware
 - [Vox Pupuli](https://github.com/voxpupuli): Modules and tooling maintained by and for the [Puppet](https://www.puppet.com/) community
 - [Yandex](https://github.com/yandex): Yandex open source projects and technologies
-## Page
 
 - [Ansible Galaxy](https://galaxy.ansible.com/ui/) : Ansible template and external playbook
 - [Awesome Software Architecture](https://awesome-architecture.com/) : Curated list of awesome articles and resources to learn and practice software architecture, patterns and principles. this repository will be updated continuously, keep yourself up to date.
