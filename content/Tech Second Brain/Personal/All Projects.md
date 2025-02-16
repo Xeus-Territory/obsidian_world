@@ -1,5 +1,5 @@
 ---
-title: All Projects of myself
+title: The awesome projects of mine
 tags:
   - DIY
   - myself
@@ -141,10 +141,9 @@ tags:
 >
 >*Oct 2023*
 >
->🔗🔗🔗 [[Linux Shell scripts#Blue Green Deployment Docker for Zero Downtime|Source Code]]
+>🔗🔗🔗 [[Awesome Linux Shell scripts#Blue Green Deployment Docker for Zero Downtime|Source Code]]
 >
 >🔗🔗🔗 [[0-downtime with Blue-Green Deployment|Article]]
-
 
 # Kubewekend
 

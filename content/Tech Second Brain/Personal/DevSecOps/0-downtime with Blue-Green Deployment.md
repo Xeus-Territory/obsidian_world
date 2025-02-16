@@ -24,7 +24,7 @@ tags:
 	2. Docker will have strategy about scale up and down the service for reducing down time
 
 - With `nginx` configuration, it will be possible to reload a new configuration Nginx and except downtime when updating service with `nginx` *(Service will have retries but not return 5xx Error)*
-- On the script, it will flexibly re-change between 2 configurations via [[Linux Shell scripts#Blue Green Deployment Docker for Zero Downtime|Blue Green Deployment Docker for Zero Downtime]]
+- On the script, it will flexibly re-change between 2 configurations via [[Awesome Linux Shell scripts#Blue Green Deployment Docker for Zero Downtime|Blue Green Deployment Docker for Zero Downtime]]
 - Have `sleep` command between them, so it will change to default when the service becomes stable
 
 # Docker
@@ -65,5 +65,5 @@ bash -c "<your_script> <username_gitlab> <path_env> <path_nginx_config> <contain
 ./<your_script> <username_gitlab> <path_env> <path_nginx_config> <containers_numberic> # Opt 2
 ```
 
-The contents of script can find out ▶️ ▶️ [[Linux Shell scripts#Blue Green Deployment Docker for Zero Downtime|Blue Green Deployment Docker for Zero Downtime]]
+The contents of script can find out ▶️ ▶️ [[Awesome Linux Shell scripts#Blue Green Deployment Docker for Zero Downtime|Blue Green Deployment Docker for Zero Downtime]]
 

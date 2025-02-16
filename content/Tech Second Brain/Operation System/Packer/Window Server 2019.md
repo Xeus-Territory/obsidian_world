@@ -13,7 +13,7 @@ More information about Packer:
 - [DevOps Training Session 12: Cloud - Packer](https://hackmd.io/0kn1HkeETeSsFOdMdGODhQ)
 - [Azure DevOps Agents Provisioning](https://hackmd.io/@XeusNguyen/S1BrSRPW6#Window)
 
-You can took the script to put on `provisioner` in [[Powershell scripts#Build Azure Agent with .NET Core by Powershell|Build Azure Agent with .NET Core by Powershell]]
+You can took the script to put on `provisioner` in [[Awesome Powershell scripts#Build Azure Agent with .NET Core by Powershell|Build Azure Agent with .NET Core by Powershell]]
 
 ```json
 packer {

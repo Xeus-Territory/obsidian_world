@@ -328,7 +328,7 @@ Now you can run command to provision new `kind` cluster
 kind create cluster --config kind-config.yaml
 ```
 
-Wait 1-2 mins and now you have your cluster in your virtual machine, you need to install `kubectl` or use what ever tool to management cluster, explore at [[Tech Second Brain/Containerization/Helpful Pages & Articles#Cluster Management|Cluster Management Tools]]. For me, I choose `kubectl` for easier and convenience
+Wait 1-2 mins and now you have your cluster in your virtual machine, you need to install `kubectl` or use what ever tool to management cluster, explore at [[Awesome Container and Kubernetes#Cluster Management|Cluster Management Tools]]. For me, I choose `kubectl` for easier and convenience
 
 ```bash
 # Install kubectl

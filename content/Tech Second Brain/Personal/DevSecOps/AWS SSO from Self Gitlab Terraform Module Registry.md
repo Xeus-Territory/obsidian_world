@@ -932,7 +932,7 @@ variables:
   TERRAFORM_MODULE_SYSTEM: aws
 ```
 
-See, that look is very easily because whole step is writing from `template` of gitlab, you can find out the method to handle that via [[GitLabCI#For optimize pipeline, and easily reuse by other repo|Use template with GitlabCI]] blog. The list of steps write inside these file (Take a look)
+See, that look is very easily because whole step is writing from `template` of gitlab, you can find out the method to handle that via [[Awesome GitLabCI#For optimize pipeline, and easily reuse by other repo|Use template with GitlabCI]] blog. The list of steps write inside these file (Take a look)
 
 - [`Terraform-Module.gitlab-ci.yml`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Terraform-Module.gitlab-ci.yml)
 - [`Terraform/Module-Base.gitlab-ci.yml`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Terraform/Module-Base.gitlab-ci.yml)

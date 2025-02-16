@@ -241,7 +241,7 @@ When use shell wrapper, you have mostly kind of helpful thing, like
 5. Wrappers are perfect when tools or command that require customized environmental variable settings, system controls or job-submission parameter.
 6. Useful in HPC, clustered environment, *nix sysadmin, and scientific research.
 
-On my position, I work command regularly so that trick and wrapper can help me reduce a lot of work when execute command. But do not familiar right now but if have any updated, please follow [[Linux profile]], and I will give update about linux configuration and wrapper on that articles
+On my position, I work command regularly so that trick and wrapper can help me reduce a lot of work when execute command. But do not familiar right now but if have any updated, please follow [[Awesome Linux profile]], and I will give update about linux configuration and wrapper on that articles
 
 # Conclusion
 

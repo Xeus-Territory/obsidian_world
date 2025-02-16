@@ -107,7 +107,7 @@ So before you start, at least to say you need to have at least domain for doing 
 >[!info]
 >You can to use DDNS - for free but I think you will not have permission if you don't pay something for owner domain like enhanced DDNS, ...
 
-If you have your domain let back to AWS, and try to create `ACM` and `Route53` with AWS Portal or you can try with AWS CLI. Read about [[Tech Second Brain/Cloud/AWS/Cheatsheet and Troubleshoot|AWS Cheatsheet and Troubleshoot]] to figure out way to create for own AWS account
+If you have your domain let back to AWS, and try to create `ACM` and `Route53` with AWS Portal or you can try with AWS CLI. Read about [[Awesome AWS Cloud|AWS Cheatsheet and Troubleshoot]] to figure out way to create for own AWS account
 
 Try to search `Certificate Manager`
 
