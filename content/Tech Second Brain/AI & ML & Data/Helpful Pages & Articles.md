@@ -94,6 +94,7 @@ tags:
 - [Blog - Change Data Capture (CDC)](https://luminousmen.com/post/change-data-capture/)
 - [Blog - Data Lake vs Data Warehouse](https://luminousmen.com/post/data-lake-vs-data-warehouse)
 - [ML4Devs - Scalable Efficient Big Data Pipeline Architecture](https://www.ml4devs.com/en/articles/scalable-efficient-big-data-analytics-machine-learning-pipeline-architecture-on-cloud/)
+- [Blog - Open Source Data Engineering Landscape 2025](https://www.pracdata.io/p/open-source-data-engineering-landscape-2025)
 ## Awesome Repositories
 
 - [awesome-bigdata](https://github.com/oxnr/awesome-bigdata): A curated list of awesome big data frameworks, ressources and other awesomeness.
@@ -127,6 +128,9 @@ tags:
 - [Machine Learning Operations](https://ml-ops.org/): Provide an end-to-end machine learning development process to design, build and manage reproducible, testable, and evolvable ML-powered software.
 - [Neptune.ai - MLOps Learning Hub](https://neptune.ai/mlops-learn-hub): Strategies, tools, practical insights, and example projects on MLOps
 
+## Code Example
+
+- [MLflow Model Registry Webhooks REST API Example](https://docs.databricks.com/en/_extras/notebooks/source/mlflow/mlflow-model-registry-webhooks-rest-api-example.html) - Define webhook `MLflow` and trigger `MLflow` engine used Restful API to handle request
 ## Topics
 
 - [AutoML](https://github.com/topics/automl)

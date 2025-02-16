@@ -520,6 +520,7 @@ tags:
 - [Medium - Grafana Alloy & OpenTelemetry](https://medium.com/@magstherdev/grafana-alloy-opentelemetry-59c171d2ebfc)
 - [Medium - SLOs should be easy, say hi to Sloth](https://medium.com/itnext/slos-should-be-easy-say-hi-to-sloth-9c8a225df0d4)
 - [Medium - 40 Ansible Playbooks You Can’t Live Without in Your CI/CD Pipeline](https://medium.com/@eren.c.uysal/40-ansible-playbooks-you-cant-live-without-in-your-ci-cd-pipeline-460a1b472c38)
+- [Pinggy - Top 10 Ngrok alternatives in 2025](https://pinggy.io/blog/best_ngrok_alternatives/)
 # Tech Research Sheet
 
 ## Articles

@@ -216,8 +216,10 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh # Press enter
 echo "export PATH=\"\$PATH:~/.cargo/bin\"" >> ~/.zshrc
 source ~/.zshrc
 
-# Install pip3 and python3
+# Install pip3, python3, poetry, uv
 sudo apt install python3 python3-pip -y # (Default: 3.9)
+curl -sSL https://install.python-poetry.org | python3 - --version 1.8.4
+curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # Install gcc
 sudo apt install build-essential -y

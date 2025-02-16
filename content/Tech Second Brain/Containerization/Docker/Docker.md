@@ -63,7 +63,11 @@ Documentation: [docker build](https://docs.docker.com/reference/cli/docker/image
 With some recommendation, when use `build` is not actually efficiency, you can use `builx` for instead, install instruction: [Linux Packages](https://github.com/docker/buildx?tab=readme-ov-file#linux-packages)
 
 ```bash
+# Install buildx
 sudo apt install docker-buildx -y
+
+# Add buildx into daemon
+docker buildx install
 ```
 
 You can use `build` command , like

@@ -148,7 +148,11 @@ kubectl node-shell <node> -- sh -c 'cat /tmp/passwd; rm -f /tmp/passwd'
 ## Base64 decode of secret with no more 3th party
 
 ```bash
+# Use go-template
 kubectl get secrets -n <namespace> <secret> -o go-template='{{range $k,$v := .data}}{{"### "}}{{$k}}{{"\n"}}{{$v|base64decode}}{{"\n\n"}}{{end}}'
+
+# Use json
+kubectl get secret -n <namespace> <secret> -o jsonpath='{.data.*}' | base64 -d
 ```
 
 ## Get events with filter depend `creationTimestamp`
@@ -171,11 +175,24 @@ kubectl patch storageclass <sc-specific> -p '{"metadata": {"annotations":{"stora
 ```
 
 # Rollout Command
+
+Read more about rollout at: [How do you rollback deployments in Kubernetes?](https://learnk8s.io/kubernetes-rollbacks)
 ## Roll out the previous deployment
 
 ```bash
-kubectl rollout history deployment <deployment-name> -n <namespace>  
+# Check history of version
+# View history tree of your application
+kubectl rollout history deployment <deployment-name> -n <namespace>
+# View detail once of history of your revision
+kubectl rollout history deployment <deployment-name> \
+-n <namespace> --revision <revision_number>
+
+# Rollout to version
+# Rollout your application to 0 (last revision). Default
 kubectl rollout undo deployment <deployment-name> -n <namespace>
+# Rollout your application to specific revision
+kubectl rollout undo deployment <deployment-name> \
+-n <namespace> --to-revision <revision_number>
 ```
 
 # Scale Command
