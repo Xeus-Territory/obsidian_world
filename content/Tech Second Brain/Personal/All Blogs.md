@@ -1,5 +1,5 @@
 ---
-title: All Blogs of Myself
+title: The awesome blogs of mine
 tags:
   - blog
   - community
@@ -47,7 +47,7 @@ tags:
 ## 2024
 
 - [[AZ104|Azure AZ104]]
-# CI/CD + OS Profile Gallery
+# Awesome CI/CD and OS Profile
 
 >[!info]
 >More talk about CI/CD with multiple purpose, try to approach and gain the experience on multiple platform. Still update when have new things LOL 😃. And additional information about OS profile that tell about what things I have inside my host
@@ -55,12 +55,12 @@ tags:
 **Timeline: 2024 - Current**
 ## 2024
 
-- [[Github Action|Github Action]]
-- [[Azure Pipelines|Azure Pipelines]]
-- [[GitLabCI|Gitlab CI]]
-- [[BitBucket|BitBucket Pipelines]]
-- [[Linux profile]]
-- [[Windows profile]]
+- [[Awesome Github Action|Awesome Github Action]]
+- [[Awesome Azure Pipelines|Awesome Azure Pipelines]]
+- [[Awesome GitLabCI|Awesome Gitlab CI]]
+- [[Awesome BitBucket|Awesome BitBucket Pipelines]]
+- [[Awesome Linux profile|Awesome Linux Profile]]
+- [[Awesome Windows profile|Awesome Windows Profile]]
 # CTF (Capture the Flag) and write up
 
 >[!info]
@@ -124,7 +124,7 @@ tags:
 - [[Setup PostgreSQL with Ansible]]
 - [[NTMA for anomalies detection and autoscaling]]
 - [[Create Free SSL with Let's Encrypt and Certbot]]
-- [[NGINX and everything about it]]
+- [[Awesome NGINX]]
 ## 2024
 
 - [[Profiling applications with Pyroscope]]
@@ -153,7 +153,7 @@ tags:
 
 - [[How to serve Java API with Maven and Tomcat]]
 - [[How can I build my homelab with Docker Swarm]]
-# DIY Cheatsheet and Troubleshoot
+# Awesome DIY Cheatsheet and Troubleshoot
 
 >[!info]
 >Collections about Cheatsheet and Troubleshoot in multiple category. Digest and find more information to learn about how to use this tool, clouds and moreover.
@@ -162,23 +162,23 @@ tags:
 
 ## 2024
 
-- [[Tech Second Brain/Cloud/Azure/Cheatsheet and Troubleshoot|Azure Cloud]]
-- [[Tech Second Brain/Cloud/AWS/Cheatsheet and Troubleshoot|AWS Cloud]]
-- [[Linux Shell scripts|DIY Shell Scripting]]
+- [[Awesome AWS Cloud|Awesome AWS Cloud]]
+- [[Awesome Azure Cloud|Awesome Azure Cloud]]
+- [[Awesome Docker compose Snippet]]
+- [[Awesome Docker Snippet]]
+- [[Awesome Elasticsearch]]
+- [[Awesome PostgreSQL]]
+- [[Awesome Git|Awesome Git]]
+- [[Awesome HTML|Awesome HTML]]
+- [[Awesome Kubectl Snippet]]
+- [[Awesome Kubernetes Walkthrough]]
+- [[Awesome Linux Shell commands]]
+- [[Awesome Linux Shell scripts]]
+- [[Awesome Powershell commands]]
+- [[Awesome Configuration CheatSheet|Awesome Tool Configuration Collections]]
 - [[Tech Second Brain/Databases/Playbooks Collections|DIY Database Ansible Playbooks]]
 - [[Tech Second Brain/Containerization/Playbooks Collections|DIY Docker and Kubernetes Ansible Playbooks]]
 - [[Tech Second Brain/Operation System/Playbooks Collections|DIY OS Ansible Playbooks]]
-- [[Docker]]
-- [[Docker compose|Docker Compose]]
-- [[API usage|Elasticsearch]]
-- [[Kubectl snippet|Kubectl]]
-- [[Git|Git]]
-- [[HTML|HTML]]
-- [[Powershell commands|Powershell Commands]]
-- [[Linux Shell commands|Shell Bash Commands]]
-- [[Configuration CheatSheet|Tool Configuration Collections]]
-
-
 
 # Hackwekend Series
 
@@ -199,7 +199,7 @@ tags:
 - [Hackwekend Session 5 - Cloud Security (AWS IAM Policy)](https://hackmd.io/@XeusNguyen/HkjGUFw-C) - *Session is about AWS IAM, How to authentication or bypass methodology to read and list contents inside the S3 bucket, learn more about `sns`, `sqs`, `cognito` services of AWS Cloud (Big IAM prod by Wiz.io)*
 - [Hackwekend Session 6 - Cloud Security (Network and Red Team)](https://hackmd.io/@XeusNguyen/ByLqkK1zC) *- Session is about more than cloud security, but more approach to networking and red team methodology to recon, attack the target with unique way like `lateral movement`, `nfs`, `tcpdump`, `dnscan` and `istio`, `kyverno` on `kubernetes` ( K8slan prod by Wiz.io)*
 
-# Helpful Collections
+# Awesome of Myself
 
 >[!info]
 >More about my collection which talk about multiple topics, and technologies in multiple field like AI, ML, DevOps, Security and moreover, with a little bit snippet which most of useful tool that I have tried 👍👍👍
@@ -207,18 +207,17 @@ tags:
 **Timeline: 2024 - Current**
 ## 2024
 
-- [[Tech Second Brain/Operation System/Helpful Pages & Articles|Operation System both of Linux and Windows]]
-- [[Tech Second Brain/Containerization/Helpful Pages & Articles|Docker and Kubernetes]]
-- [[Tech Second Brain/Developer/Helpful Pages & Articles|Developer]]
-- [[Tech Second Brain/Databases/Helpful Pages & Articles|Database and Storage]]
-- [[Tech Second Brain/Cyber & Info Security/Helpful Pages & Articles|Cyber & Info Security]]
-- [[Tech Second Brain/AI & ML & Data/Helpful Pages & Articles|Artificial intelligence, Machine Learning and Data Science]]
-- [[DevOps & System & Tech|DevOps, Systems and Technologies]]
-- [[Utilities Site|Softwares and Tools Helpful Pages]]
-
+- [[Awesome AI & ML & Data Analysis]]
+- [[Awesome Container and Kubernetes]]
+- [[Awesome Database]]
+- [[Awesome Developer and Programming]]
+- [[Awesome DevOps & System & Tech]]
+- [[Awesome Hacking and Infosec]]
+- [[Awesome OS|Awesome OS Linux and Window]]
+- [[Awesome Utilities Sites]]
 ## 2025
 
-- [[Tech Second Brain/API Gateway & WebServer/Helpful Pages & Articles|API Gateway & WebServer]]
+- [[Awesome API Gateway and Web Server]]
 # Kubewekend Series
 
 >[!info]
@@ -284,7 +283,6 @@ tags:
 - [[GraphQL]]
 - [[Command injection]]
 - [[CVE-2023-34092 - Path Equivalence in Vite]]
-
 # DueWeekly Tech
 
 >[!info]
@@ -294,5 +292,7 @@ tags:
 
 ## 2025
 
-- [[30-12-2024 to 12-01-2025]]
-- [[13-01-2025 to 26-01-2025]]
+- [[30-12-2024 to 12-01-2025|Session 1: 30-12-2024 to 12-01-2025]]
+- [[13-01-2025 to 26-01-2025|Session 2: 13-01-2025 to 26-01-2025]]
+- [[27-01-2025 to 09-02-2025|Session 3: 27-01-2025 to 09-02-2025]]
+- [[10-02-2025 to 23-02-2025|Session 4: 10-02-2025 to 23-02-2025]]

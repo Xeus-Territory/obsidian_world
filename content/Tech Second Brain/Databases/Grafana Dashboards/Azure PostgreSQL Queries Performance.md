@@ -6,7 +6,7 @@ tags:
   - monitoring
 ---
 >[!info]
->This dashboard template which i make for Grafana with purpose monitoring queries in PostgreSQL. To understanding about this, go and check [[PostgreSQL Cheatsheet#Monitoring Performance|Monitoring Performance of PostgreSQL]]
+>This dashboard template which i make for Grafana with purpose monitoring queries in PostgreSQL. To understanding about this, go and check [[Awesome PostgreSQL#Monitoring Performance|Monitoring Performance of PostgreSQL]]
 
 ```json
 {

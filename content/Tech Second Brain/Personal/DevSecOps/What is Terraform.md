@@ -95,7 +95,7 @@ is 1.7.5. You can update by downloading from https://www.terraform.io/downloads.
 ![[terraform-docs.png]]
 
 - Support `terraform-docs` which generate documentation in multiple type like `markdown json xml`. Try this at [terraform-docs-user-guide](https://terraform-docs.io/user-guide/introduction/)
--  Those *providers documentation* is very powerful, clear and positive for getting started. Checkout what my configuration with `terraform-docs` at [[Configuration CheatSheet#terraform-docs|Configuration CheatSheet > terraform-docs]]
+-  Those *providers documentation* is very powerful, clear and positive for getting started. Checkout what my configuration with `terraform-docs` at [[Awesome Configuration CheatSheet#terraform-docs|Configuration CheatSheet > terraform-docs]]
 ## Integration
 
 ![[terraform-integrate.png]]

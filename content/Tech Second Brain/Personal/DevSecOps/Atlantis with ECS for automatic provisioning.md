@@ -29,7 +29,7 @@ It seem like not a big deal, you can choose what ever you want if you feel great
 
 But as you know, I want to try and hand on with another tools, another concept and see what is big difference between of them and figure out what things need to clarify when you choose  `GitOps` or `CI/CD` for your projects
 
-And I will try with `Infrastructure` as first, and `IaC` is first topic I relate to `GitOps`. So with `IaC`, you have multiple platform to hand on and one of most popular is `Atlantis`. You can choose alternative at [[DevOps & System & Tech#Terraform workflow automation|Alternative Atlantis]]
+And I will try with `Infrastructure` as first, and `IaC` is first topic I relate to `GitOps`. So with `IaC`, you have multiple platform to hand on and one of most popular is `Atlantis`. You can choose alternative at [[Awesome DevOps & System & Tech#Terraform workflow automation|Alternative Atlantis]]
 
 ## Introduce
 
