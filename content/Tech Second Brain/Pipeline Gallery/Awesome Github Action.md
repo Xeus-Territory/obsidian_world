@@ -11,6 +11,9 @@ tags:
 >[!summary]
 >The Gallery of github-actions pipelines, All scenarios to approaching and experience when I work on this platform
 
+## Articles
+
+- [Medium - GitHub Actions — Versatile and Easy Serverless CI/CD Pipeline](https://itnext.io/github-actions-versatile-and-easy-serverless-pipeline-53d088a7a77b)
 ## Documentation
 
 - [GitHub Actions - Documentation](https://docs.github.com/en/actions)

@@ -42,6 +42,9 @@ tags:
 # Documentations and Articles
 
 ![[meme-documentation.png]]
+## Cheatsheets
+
+- [web-servers.md](https://gist.github.com/willurd/5720255) : Each of these commands will run an ad hoc http static server in your current (or specified) directory
 ## Documentations
 
 - [ASGI](https://asgi.readthedocs.io/en/latest/): _Asynchronous Server Gateway Interface_ is a spiritual successor to WSGI, intended to provide a standard interface between async-capable Python web servers, frameworks, and applications.

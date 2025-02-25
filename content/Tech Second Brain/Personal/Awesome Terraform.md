@@ -1,24 +1,62 @@
 ---
-title: What is Terraform?
+title: The awesome of Terraform
 tags:
   - devops
   - terraform
   - helpful
   - whatis
 ---
+
 >[!quote]
 >Hi @all, Turn back to work in provisioning Infrastructure. You know about Infrastructure as Code is truly insane, in currently situation, DevOps must be known about once of tools for doing stuff, with me, I totally repeat time to time about Terraform. But todays, I will expose what actual think when I try to work Terraform in daily. Let's digest
-
-# Install and setup environment for Terraform
-
-Documentation: [🔗Click to the link](https://developer.hashicorp.com/terraform/intro)
 
 ![[terraform.png]]
 
 >[!info]
 ><h2>What is Terraform?</h2>
 >
->Terraform is an infrastructure as code tool that lets you build, change, and version infrastructure safely and efficiently. This includes low-level components like compute instances, storage, and networking; and high-level components like DNS entries and SaaS features.
+>[Terraform](https://developer.hashicorp.com/terraform/intro) is an infrastructure as code tool that lets you build, change, and version infrastructure safely and efficiently. This includes low-level components like compute instances, storage, and networking; and high-level components like DNS entries and SaaS features.
+
+# TL;DR
+
+>[!done]
+>On this topic, you can understand about IaC and Terraform with
+>
+>- Install and setup Terraform for your environment
+>- What does Terraform do for your infrastructure ?
+>- Powerful of Terraform
+>- Structure of Terraform
+>- How can you perform provision with Terraform on your machine or pipeline ?
+>- Update your AKS version with Terraform
+>- Use Terraform Docs for generating documentation resources
+
+## Articles
+
+- [Spacelift - Importing Existing Infrastructure Into Terraform – Step by Step](https://spacelift.io/blog/importing-exisiting-infrastructure-into-terraform)
+- [Medium - Use SOPS and Terraform to create encrypt/decrypt files with AWS KMS](https://medium.com/@arunmrp90/use-sops-and-terraform-to-create-encrypted-decrypt-files-with-aws-kms-a38ac793518b)
+- [Zeet - 9 Powerful Atlantis Alternatives to Enhance Terraform Efficiency](https://zeet.co/blog/atlantis-alternatives)
+- [Zeet - 28 Most Powerful Terraform Tools (2024)](https://zeet.co/blog/terraform-tools)
+- [Medium - Top Terraform Tools to Know in 2024](https://medium.com/env0/top-terraform-tools-to-know-in-2024-a00a232bb936)
+- [Infracloud - 5 Tools to Auto-Generate Terraform Configuration Files](https://www.infracloud.io/blogs/auto-generate-terraform-configuration-files/)
+## Blogs
+
+- [Terraform Weekly](https://www.weekly.tf/) - A weekly newsletter about Terraform ecosystem (posts, tools, tips&tricks, open-source) with humble opinions by Anton Babenko.
+## Repositories
+
+- [awesome-tf](https://github.com/shuaibiyy/awesome-tf): Curated list of resources on HashiCorp's Terraform and OpenTofu
+## Pages
+
+- [Terraform Best Practices](https://www.terraform-best-practices.com/): An attempt to systematically describe best practices using Terraform and provide recommendations for the most frequent problems Terraform users experience
+- [Terraform Documentation](https://developer.hashicorp.com/terraform/docs): An infrastructure as code tool that lets you build, change, and version infrastructure safely and efficiently
+- [Terraform Registry](https://registry.terraform.io/): Terraform providers that power all of Terraform’s resource types, or find modules for quickly deploying common infrastructure configurations.
+## Tools
+
+- [atlantis](https://www.runatlantis.io/): Running Terraform Workflows with Ease
+- [inframap](https://github.com/cycloidio/inframap): Read your tfstate or HCL to generate a graph specific for each provider, showing only the resources that are most important/relevant.
+- [terraform-docs](https://terraform-docs.io/user-guide/introduction/) : A utility to generate documentation from Terraform modules in various output formats.
+- [terraformer](https://github.com/GoogleCloudPlatform/terraformer): CLI tool to generate terraform files from existing infrastructure (reverse Terraform). Infrastructure to Code
+
+# Install and setup environment for Terraform
 
 >[!info]
 ><h2>How does Terraform work?</h2>
@@ -533,15 +571,51 @@ variable "k8s_version" {
 3. On the first step, you need to make sure anything will not affected with your change, only `1` change about `aks` version. If not anything happen, you need approve permit to run next step
 4. Validate your cluster version after completely **(Waiting on 10-20 minute)**
 
-# Conclusion
+# Generate documentation Terraform with terraform-docs
 
->[!done]
->On this topic, you can understand about IaC and Terraform with
->
->- Install and setup Terraform for your environment
->- What does Terraform do for your infrastructure ?
->- Powerful of Terraform
->- Structure of Terraform
->- How can you perform provision with Terraform on your machine or pipeline ?
->- Update your AKS version with Terraform
+>[!info]
+>[terraform-docs](https://terraform-docs.io/) is one of tool which used for generating resources and configuration of Infrastructure as Code (Terraform) into Markdown style, e.g: README.md
+
+```yaml title=".terraform-docs.yaml"
+formatter: "markdown table"
+
+output:
+  file: "../README.md"
+  mode: inject
+  template: |-
+    <!-- BEGIN_TF_DOCS -->
+
+    {{ .Content }}
+    
+    <!-- END_TF_DOCS -->
+
+sort:
+  enabled: true
+  by: name
+
+settings:
+  anchor: true
+  color: true
+  default: true
+  description: false
+  escape: true
+  hide-empty: false
+  html: true
+  indent: 3
+  lockfile: true
+  read-comments: true
+  required: true
+  sensitive: true
+  type: true
+```
+
+But in README.md, you need to configure where this docs generated into that by add-on, like
+
+```bash title="README.md"
+<!-- BEGIN_TF_DOCS -->
+
+{{ .Content }}
+
+<!-- END_TF_DOCS -->
+```
 

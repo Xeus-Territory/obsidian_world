@@ -124,7 +124,6 @@ tags:
 - [[Setup PostgreSQL with Ansible]]
 - [[NTMA for anomalies detection and autoscaling]]
 - [[Create Free SSL with Let's Encrypt and Certbot]]
-- [[Awesome NGINX]]
 ## 2024
 
 - [[Profiling applications with Pyroscope]]
@@ -153,32 +152,6 @@ tags:
 
 - [[How to serve Java API with Maven and Tomcat]]
 - [[How can I build my homelab with Docker Swarm]]
-# Awesome DIY Cheatsheet and Troubleshoot
-
->[!info]
->Collections about Cheatsheet and Troubleshoot in multiple category. Digest and find more information to learn about how to use this tool, clouds and moreover.
-
-**Timeline: 2024 - Current**
-
-## 2024
-
-- [[Awesome AWS Cloud|Awesome AWS Cloud]]
-- [[Awesome Azure Cloud|Awesome Azure Cloud]]
-- [[Awesome Docker compose Snippet]]
-- [[Awesome Docker Snippet]]
-- [[Awesome Elasticsearch]]
-- [[Awesome PostgreSQL]]
-- [[Awesome Git|Awesome Git]]
-- [[Awesome HTML|Awesome HTML]]
-- [[Awesome Kubectl Snippet]]
-- [[Awesome Kubernetes Walkthrough]]
-- [[Awesome Linux Shell commands]]
-- [[Awesome Linux Shell scripts]]
-- [[Awesome Powershell commands]]
-- [[Awesome Configuration CheatSheet|Awesome Tool Configuration Collections]]
-- [[Tech Second Brain/Databases/Playbooks Collections|DIY Database Ansible Playbooks]]
-- [[Tech Second Brain/Containerization/Playbooks Collections|DIY Docker and Kubernetes Ansible Playbooks]]
-- [[Tech Second Brain/Operation System/Playbooks Collections|DIY OS Ansible Playbooks]]
 
 # Hackwekend Series
 
@@ -208,16 +181,41 @@ tags:
 ## 2024
 
 - [[Awesome AI & ML & Data Analysis]]
+- [[Awesome AWS Cloud|Awesome AWS Cloud]]
+- [[Awesome Azure Cloud|Awesome Azure Cloud]]
 - [[Awesome Container and Kubernetes]]
 - [[Awesome Database]]
 - [[Awesome Developer and Programming]]
 - [[Awesome DevOps & System & Tech]]
+- [[Awesome Docker compose Snippet]]
+- [[Awesome Docker Snippet]]
+- [[Awesome Elasticsearch]]
+- [[Awesome Git]]
 - [[Awesome Hacking and Infosec]]
+- [[Awesome HTML|Awesome HTML]]
+- [[Awesome Kubectl Snippet]]
+- [[Awesome Kubernetes Walkthrough]]
+- [[Awesome Linux Shell commands]]
+- [[Awesome Linux Shell scripts]]
 - [[Awesome OS|Awesome OS Linux and Window]]
+- [[Awesome PostgreSQL]]
+- [[Awesome Powershell commands]]
 - [[Awesome Utilities Sites]]
+- [[Tech Second Brain/Databases/Playbooks Collections|DIY Database Ansible Playbooks]]
+- [[Tech Second Brain/Containerization/Playbooks Collections|DIY Docker and Kubernetes Ansible Playbooks]]
+- [[Tech Second Brain/Operation System/Playbooks Collections|DIY OS Ansible Playbooks]]
 ## 2025
 
 - [[Awesome API Gateway and Web Server]]
+- [[Awesome Caddy]]
+- [[Awesome CDC]]
+- [[Awesome eBPF]]
+- [[Awesome Helm]]
+- [[Awesome Monitoring & Observability]]
+- [[Awesome NGINX]]
+- [[Awesome Quantum Computing]]
+- [[Awesome System Architecture]]
+- [[Awesome Terraform]]
 # Kubewekend Series
 
 >[!info]
@@ -251,10 +249,9 @@ tags:
 
 - [[Backup and Restore Methodology|Backup and Restore methodology for PostgreSQL]]
 - [[What is Wrapper Pattern|What is Wrapper Pattern ?]]
-- [[What is Helm|What is Helm?]]
+- [[Awesome Helm|What is Helm?]]
 - [[What is Milvus|What is Milvus?]]
 - [[Increase Quota and Limit of Cloud Services]]
-- [[What is Terraform|What is Terraform?]]
 # Vulnerable Research
 
 >[!info]

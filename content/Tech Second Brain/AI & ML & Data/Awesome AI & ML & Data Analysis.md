@@ -90,25 +90,30 @@ tags:
 ## Articles
 
 - [LakeFS - The State of Data Engineering 2024](https://lakefs.io/blog/the-state-of-data-engineering-2024/)
-- [Practicle Data Engineering - Open Source Data Engineering Landscape 2024](https://practicaldataengineering.substack.com/p/open-source-data-engineering-landscape?r=23jwn&utm_campaign=post&utm_medium=web&triedRedirect=true)
 - [Medium - Data Pipeline Development with MinIO, Iceberg, Nessie, Polars, StarRocks, Mage, and Docker](https://blog.det.life/data-pipeline-development-with-minio-iceberg-nessie-polars-starrocks-mage-and-docker-1c7b4b52d5f4)
 - [Medium - ETL and ELT](https://blog.det.life/etl-and-elt-965ca3bc0175)
 - [Medium - ELT with Fabric, Azure and Databricks](https://medium.com/@hugolu87/elt-with-fabric-azure-and-databricks-2b49f148428f)
+- [Medium - The Change Data Capture (CDC) Design Pattern](https://medium.com/@luishrsoares/the-change-data-capture-cdc-design-pattern-fa8d3adc964f)
 - [Medium - Apache Airflow Overview](https://medium.com/@vutrinh274/apache-airflow-overview-61c939abe126)
-- [Blog - Change Data Capture (CDC)](https://luminousmen.com/post/change-data-capture/)
 - [Blog - Data Lake vs Data Warehouse](https://luminousmen.com/post/data-lake-vs-data-warehouse)
 - [ML4Devs - Scalable Efficient Big Data Pipeline Architecture](https://www.ml4devs.com/en/articles/scalable-efficient-big-data-analytics-machine-learning-pipeline-architecture-on-cloud/)
-- [Blog - Open Source Data Engineering Landscape 2025](https://www.pracdata.io/p/open-source-data-engineering-landscape-2025)
+- [Practicle Data Engineering - Open Source Data Engineering Landscape 2024](https://practicaldataengineering.substack.com/p/open-source-data-engineering-landscape?r=23jwn&utm_campaign=post&utm_medium=web&triedRedirect=true)
+- [Practicle Data Engineering - Open Source Data Engineering Landscape 2025](https://www.pracdata.io/p/open-source-data-engineering-landscape-2025)
+- [Portable - 100+ Best ETL Tools List & Software (As Of February 2025)](https://portable.io/learn/best-etl-tools)
+- [MonteCarlo - Data Pipeline Architecture Explained: 6 Diagrams and Best Practices](https://www.montecarlodata.com/blog-data-pipeline-architecture-explained/)
+- [Medium - Data Engineering Best Practices: How Big Tech & FAANG Firms Manage and Optimize Apache Kafka](https://acceldataio.medium.com/data-engineering-best-practices-how-big-tech-faang-firms-manage-and-optimize-apache-kafka-95d520db60bb)
 ## Awesome Repositories
 
 - [awesome-bigdata](https://github.com/oxnr/awesome-bigdata): A curated list of awesome big data frameworks, ressources and other awesomeness.
 - [awesome-datascience](https://github.com/academic/awesome-datascience): 📝 An awesome Data Science repository to learn and apply for real world problems.
-- [awesome-open-source-data-engineering](https://github.com/pracdata/awesome-open-source-data-engineering)
+- [awesome-etl](https://github.com/pawl/awesome-etl): A curated list of awesome ETL frameworks, libraries, and software.
+- [awesome-open-source-data-engineering](https://github.com/pracdata/awesome-open-source-data-engineering): A curated list of open source tools used in analytics platforms and data engineering ecosystem
 - [data-engineering-roadmap](https://github.com/data-burst/data-engineering-roadmap): A comprehensive roadmap tailored for data engineering professionals at all levels
 ## Blogs
 
 - [Medium - Data Engineers Things](https://blog.det.life/)
 - [Datacamp](https://www.datacamp.com/blog)
+- [LakeFS](https://lakefs.io/blog/)
 ## Topic
 
 - [Data Engineering](https://github.com/topics/data-engineering)
@@ -154,32 +159,33 @@ tags:
 - [airflow](https://github.com/apache/airflow): A platform to programmatically author, schedule, and monitor workflows
 
 	- [Astronomer Registry](https://registry.astronomer.io/): Building Blocks for your Apache Airflow Data Pipelines.
+
+- [kestra](https://github.com/kestra-io/kestra): ⚡ Workflow Automation Platform
+- [prefect](https://github.com/PrefectHQ/prefect): A workflow orchestration framework for building resilient data pipelines in Python.
 ## Labeling and Annotation
 
 - [Argilla](https://github.com/argilla-io/argilla/): a collaboration tool for AI engineers and domain experts to build high-quality datasets
-
 ## LLM UI
 
 - [chainlit](https://github.com/Chainlit/chainlit): Build Conversational AI in minutes ⚡️
 - [streamlit](https://github.com/streamlit/streamlit): A faster way to build and share data apps.
 ## LLM
 
-- [langfuse](https://github.com/langfuse/langfuse): 🪢 Open source LLM engineering platform: LLM Observability, metrics, evals, prompt management, playground, datasets
+- [langfuse](https://github.com/langfuse/langfuse): Open source LLM engineering platform: LLM Observability, metrics, evals, prompt management, playground, datasets
 - [litellm](https://github.com/BerriAI/litellm): Proxy Server (LLM Gateway) to call 100+ LLM APIs in OpenAI format
 - [TaskingAI](https://github.com/TaskingAI/TaskingAI): A BaaS (Backend as a Service) platform for **LLM-based Agent Development and Deployment**
-## Models
+## MLOps
 
-- [trl](https://github.com/huggingface/trl): Train transformer language models with reinforcement learning. [Hugging Face](https://huggingface.co/docs/trl/index)
+- [polyaxon](https://github.com/polyaxon/polyaxon): MLOps Tools For Managing & Orchestrating The Machine Learning LifeCycle
 ## Model Management and Serving
 
 - [KServe](https://kserve.github.io/website/latest/): A standard **Model Inference Platform** on **Kubernetes**, built for **highly scalable** use cases.
 - [mlflow](https://github.com/mlflow/mlflow): Open source platform for the machine learning lifecycle
 - [MLServer](http://mlserver.readthedocs.io/en/latest/index.html): An open source inference server for your machine learning models.
 - [ray](https://github.com/ray-project/ray): an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads.
-## Streaming / CDC
+## Models
 
-- [bytewax](https://github.com/bytewax/bytewax): Python Stream Processing
-- [debezium](https://github.com/debezium/debezium): Change data capture for a variety of databases
+- [trl](https://github.com/huggingface/trl): Train transformer language models with reinforcement learning. [Hugging Face](https://huggingface.co/docs/trl/index)
 ## Toolkits
 
 - [openvino](https://github.com/openvinotoolkit/openvino): OpenVINO™ is an open-source toolkit for optimizing and deploying AI inference
