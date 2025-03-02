@@ -158,6 +158,7 @@ tags:
 - [Kubetools](https://collabnix.github.io/kubetools/): A Curated List of Kubernetes Tools
 - [Kubernetes Schedule Plugins](https://scheduler-plugins.sigs.k8s.io/): Repository for out-of-tree scheduler plugins based on the [scheduler framework](https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/).
 - [Kubernetes examples](https://k8s-examples.container-solutions.com/): A series of YAML references with canonical and as-simple-as-possible demonstrations of kubernetes functionality and features.
+- [awesome-argo](https://github.com/akuity/awesome-argo): A curated list of awesome projects and resources related to Argo (a CNCF graduated project)
 ## Certificate & Practice
 
 - [certified-kubernetes-administrator-course](https://github.com/kodekloudhub/certified-kubernetes-administrator-course) : Kodecloud Certified Kubernetes Administrator - CKA Course
@@ -320,6 +321,7 @@ tags:
 ## Configuration Management
 
 - [Reloader](https://github.com/stakater/Reloader): A Kubernetes controller to watch changes in ConfigMap and Secrets and do rolling upgrades on Pods with their associated Deployment, StatefulSet, DaemonSet and DeploymentConfig
+- [vals](https://github.com/helmfile/vals): Helm-like configuration values loader with support for various sources
 ## Development Environment
 
 - [devspace](https://github.com/devspace-sh/devspace): The Fastest Developer Tool for Kubernetes
@@ -334,9 +336,12 @@ tags:
 ## GitOps / Automation Deployment Platforms
 
 - [argo-cd](https://argo-cd.readthedocs.io/en/stable/) :  A declarative, GitOps continuous delivery tool for Kubernetes.
-- [argo-rollouts](https://github.com/argoproj/argo-rollouts): Progressive Delivery for Kubernetes. Maintained by Argo
-- [flagger](https://flagger.app/): Progressive Delivery Operator for Kubernetes. Maintained by Flux
+	- [argo-rollouts](https://github.com/argoproj/argo-rollouts): Progressive Delivery for Kubernetes. Maintained by Argo
+	- [argocd-image-updater](https://github.com/argoproj-labs/argocd-image-updater): Automatic container image update for Argo CD
+
 - [fluxcd](https://fluxcd.io/flux/) : Tool for keeping Kubernetes clusters in sync with sources of configuration (like Git repositories), and automating updates to configuration when there is new code to deploy.
+	- [flagger](https://flagger.app/): Progressive Delivery Operator for Kubernetes. Maintained by Flux
+
 - [helm](https://helm.sh/): The package manager for Kubernetes
 - [kargo](https://docs.kargo.io/): A next-generation continuous delivery and application lifecycle orchestration platform for Kubernetes
 - [kustomize](https://github.com/kubernetes-sigs/kustomize): Customization of kubernetes YAML configurations
@@ -344,14 +349,10 @@ tags:
 - [werf](https://github.com/werf/werf): A solution for implementing efficient and consistent software delivery to Kubernetes facilitating best practices.
 ## GPU Scheduler
 
+- [AMD GPU Operator](https://github.com/ROCm/gpu-operator): Simplifies the deployment and management of AMD Instinct GPU accelerators within Kubernetes clusters. [Documentation](https://instinct.docs.amd.com/projects/gpu-operator/en/latest/)
 - [HAMi](https://github.com/Project-HAMi/HAMi): Heterogeneous AI Computing Virtualization Middleware
+- [Intel GPU Operator](https://intel.github.io/intel-device-plugins-for-kubernetes/cmd/gpu_plugin/README.html): Intel GPU plugin facilitates Kubernetes workload
 - [NVIDIA GPU Operator](https://github.com/NVIDIA/gpu-operator): NVIDIA GPU Operator creates, configures, and manages GPUs in Kubernetes. [Documentation](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/overview.html)
-
-## Helm Tools Kit
-
-- [helm-compose](https://github.com/seacrew/helm-compose): A helm plugin for managing multiple releases of one or many charts within a single configuration file.
-- [helm-dashboard](https://github.com/komodorio/helm-dashboard): The missing UI for Helm - visualize your releases
-- [helm-secrets](https://github.com/jkroepke/helm-secrets): A helm plugin that help manage secrets with Git workflow and store them anywhere
 ## Identity and access management
 
 - [Keycloak](https://github.com/keycloak/keycloak): an open-source identity and access management solution for modern applications and services, built on top of industry security standard protocols.
@@ -374,9 +375,6 @@ tags:
 - [minikube](https://minikube.sigs.k8s.io/docs/) : minikube quickly sets up a local Kubernetes cluster on macOS, Linux, and Windows
 - [Talos Linux](https://www.talos.dev/) : The Kubernetes Operating System
 	- [cluster-template](https://github.com/onedr0p/cluster-template): A template for deploying a Talos Kubernetes cluster including Flux for GitOps
-## MLOps
-
-- [polyaxon](https://github.com/polyaxon/polyaxon): MLOps Tools For Managing & Orchestrating The Machine Learning LifeCycle
 ## Monitoring
 
 - [kube-state-metrics](https://github.com/kubernetes/kube-state-metrics): Add-on agent to generate and expose cluster-level metrics

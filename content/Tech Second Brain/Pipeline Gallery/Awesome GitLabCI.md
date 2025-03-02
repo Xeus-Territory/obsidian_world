@@ -6,6 +6,7 @@ tags:
   - basic-templates
   - automation
 ---
+
 # Introduce GitlabCI
 
 >[!summary]
@@ -13,6 +14,10 @@ tags:
 
 *More information about Gitlab CI/CD and Variables. Go check*
 
+## Articles
+
+- [Dev.to - 5 ways for GitLab CI runners to get AWS credentials](https://dev.to/edmundkwok/5-ways-for-gitlab-ci-runners-to-get-aws-credentials-11hp)
+- [Dev.to - Authenticating your GitLab CI runner to an AWS ECR registry using Amazon ECR Docker Credential Helper 🔑](https://dev.to/aws-builders/authenticating-your-gitlab-ci-runner-to-an-aws-ecr-registry-using-amazon-ecr-docker-credential-helper-3ba)
 ## General
 
 - [Gitlab Documentation](https://docs.gitlab.com/ee/user/) - General Documentation about Gitlab

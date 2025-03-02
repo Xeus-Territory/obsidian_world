@@ -281,7 +281,7 @@ kubectl patch storageclass gp2 -p '{"metadata": {"annotations":{"storageclass.ku
 
 You have multiple way to help your service go live in Kubernetes, such as Ingress, API Gateway and LoadBalancer. With EKS, if you don't want to become frustrated to setup something strange inside cluster, do best practice aws loadbalancer to reduce lot of complex. **(NOTE: Sometime It's truly exist funny error, but it's up to you 😄)**
 
-Easily to setup `aws-load-balancer-controller`, we can use `helm` for easier applying definition to our cluster directly. You can read blog of mine about [[What is Helm]]
+Easily to setup `aws-load-balancer-controller`, we can use `helm` for easier applying definition to our cluster directly. You can read blog of mine about [[Awesome Helm]]
 
 ```bash
 # Add EKS Chart to repo

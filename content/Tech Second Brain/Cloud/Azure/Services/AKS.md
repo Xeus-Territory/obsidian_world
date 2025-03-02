@@ -410,7 +410,7 @@ For purpose prevent vulnerable, attack for AKS, Security Patch is suggested by A
 ## Versioning of AKS
 
 >[!warning]
->If you want to updating version, you can use multiple way from `Azure Portal, Command` but for general, please use **Infrastructure as Code** for upgrading version. More about will relate at [[What is Terraform#Example Update the version AKS with Terraform|Update the version AKS with Terraform]]
+>If you want to updating version, you can use multiple way from `Azure Portal, Command` but for general, please use **Infrastructure as Code** for upgrading version. More about will relate at [[Awesome Terraform#Example Update the version AKS with Terraform|Update the version AKS with Terraform]]
 
 >[!danger]
 >1. Please **consider when update the big version**, some **features can deprecate or remove**. If you want update, please take your time to understanding what happen on next version.

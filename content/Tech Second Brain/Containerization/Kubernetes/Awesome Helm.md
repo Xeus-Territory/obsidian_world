@@ -1,28 +1,57 @@
 ---
-title: What is Helm ?
+title: The awesome of Helm
 tags:
   - devops
   - k8s
   - helpful
   - whatis
 ---
+
 >[!quote]
 >Hi @all, as you can see Kubernetes is becoming the potential technology in the world in couple recently year. The knowledge about Kubernetes honestly to say It's really huge, so today we can learn a bit about once of tools to maintain and deploy the workload inside Kubernetes Cluster, Helm. Let's digest
-# Installation
 
 ![[helm.png]]
 
-Official Homepage: [🔗Click to the link](https://helm.sh/)
-
 >[!info]
 ><h2>What is Helm ? </h2>
->Helm helps you manage Kubernetes applications — Helm Charts help you define, install, and upgrade even the most complex Kubernetes application.
+>
+>[Helm](https://helm.sh/) helps you manage Kubernetes applications — Helm Charts help you define, install, and upgrade even the most complex Kubernetes application.
 >
 >Charts are easy to create, version, share, and publish — so start using Helm and stop the copy-and-paste.
 >
 >Helm is a graduated project in the CNCF and is maintained by the Helm community.
+# TL;DR
 
-Helm already installing and using on CI/CD, If you want to learn and work with `helm`, feel free to installing on [Installing Guide](https://helm.sh/docs/intro/install/#helm)
+>[!done]
+>On this topic, you will learn and understand about helm for
+>- Install `Helm` for your environment, for **debug** or **release**
+>- Understand priority value of helm chart
+>- How to use command with helm ? Integrate Helm into CI/CD
+>- Tools for helping you debug the template before apply for real environment
+
+If you use Helm for managing and deploying Kubernetes applications, you can try to combine `helm` with couple of tools to increasing efficiency for your automation progress
+
+## Articles
+
+- [Helm - Tools You Can Use To Manage Your Helm Releases Declaratively](https://helm.sh/blog/tools-to-manage-helm-declaratively/)
+- [Robusta - Five Helm Tools for Improving Kubernetes Quality of Life](https://home.robusta.dev/blog/top-five-helm-addon-tools-for-kubernetes)
+
+## Helm Extension
+
+- [helm-compose](https://github.com/seacrew/helm-compose): A helm plugin for managing multiple releases of one or many charts within a single configuration file.
+- [helm-dashboard](https://github.com/komodorio/helm-dashboard): The missing UI for Helm - visualize your releases
+- [helm-secrets](https://github.com/jkroepke/helm-secrets): A helm plugin that help manage secrets with Git workflow and store them anywhere
+## Helm Management
+
+- [Terraform: Helm Release](https://registry.terraform.io/providers/hashicorp/helm/latest/docs/resources/release): A Release is an instance of a chart running in a Kubernetes cluster.
+- [ArgoCD](https://argo-cd.readthedocs.io/en/stable/):  A declarative, GitOps continuous delivery tool for Kubernetes
+- [FluxCD](https://fluxcd.io/flux/) : Tool for keeping Kubernetes clusters in sync with sources of configuration (like Git repositories), and automating updates to configuration when there is new code to deploy.
+## Repositories
+
+- [awesome-helm](https://github.com/cdwv/awesome-helm): Collaborative list of awesome helm charts and resources. PRs are welcome!
+# Installation
+
+Helm already able to install and use on CI/CD, If you want to learn and work with `helm`, feel free to installing on [Installing Guide](https://helm.sh/docs/intro/install/#helm)
 
 I prefer to use command to get latest version of `helm`
 
@@ -87,7 +116,8 @@ mychart
 - [Understanding Helm upgrade flags](https://shipmight.com/blog/understanding-helm-upgrade-reset-reuse-values)
 # Command usage
 
-`Helm` will submit the role for both of CI and CD progress*
+>[!info]
+>`Helm` will submit the role for both of CI and CD progress
 
 ![[helm-workflow.png]]
 ## CI (Continuous Integration)
@@ -251,7 +281,6 @@ To uninstall a release
 ```bash
 helm uninstall RELEASE_NAME [...] [flags]
 ```
-
 # Debug Template
 
 *Documentation: [Doc](https://helm.sh/docs/chart_template_guide/debugging/)*
@@ -266,12 +295,4 @@ helm uninstall RELEASE_NAME [...] [flags]
 >- `helm install --dry-run --debug` will also render your chart locally without installing it, but will also check if conflicting resources are already running on the cluster. Setting --dry-run=server will additionally execute any lookup in your chart towards the server.
 >- `helm get manifest`: This is a good way to see what templates are installed on the server.
 
-# Conclusion
-
->[!done]
->On this topic, you will learn and understand about helm for
->- Install `Helm` for your environment, for **debug** or **release**
->- Understand priority value of helm chart
->- How to use command with helm ?
->- Tools for helping you debug the template before apply for real environment
 
