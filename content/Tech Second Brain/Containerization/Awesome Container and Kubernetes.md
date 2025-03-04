@@ -206,6 +206,7 @@ tags:
 - [Kubernetes - Scheduler Configuration](https://kubernetes.io/docs/reference/scheduling/config/)
 - [Kubernetes - Scheduling, Preemption and Eviction](https://kubernetes.io/docs/concepts/scheduling-eviction/)
 - [Kubernetes - The Kubernetes API](https://kubernetes.io/docs/concepts/overview/kubernetes-api/)
+- [Kubernetes - Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
 - [[Kubewekend Session 3|Kubewekend Session 3: Basically about Kubernetes architecture]]
 - [Medium - Kubernetes Networking in the Simplest Way 🚀](https://aws.plainenglish.io/kubernetes-networking-in-the-simplest-way-d84e3b7ed940)
 - [Medium - Top 10 Kubernetes Pod Concepts That Confuse Beginners](https://medium.com/frontend-canteen/top-10-kubernetes-pod-concepts-that-confuse-beginners-8c0954021f3f)
@@ -258,6 +259,8 @@ tags:
 - [Technotim - Mirror your Kubernetes configs, secrets, and resources to other namespaces](https://technotim.live/posts/k8s-reflector/)
 - [Medium - Running a “stateless” email server in Kubernetes using Mailu](https://medium.com/gitconnected/running-a-stateless-email-server-in-kubernetes-using-mailu-9c1ebd8003e9)
 - [Medium - Mastering Ingress Strategies for AWS EKS: ALB vs. Istio vs. NGINX](https://ramchandra-vadranam.medium.com/mastering-ingress-strategies-for-aws-eks-alb-vs-istio-vs-nginx-34a7bd4ce152)
+- [Medium - Configure Hashicorp's Vault for Kubernetes Auth](https://docs.armory.io/continuous-deployment/armory-admin/secrets/vault-k8s-configuration/)
+- [Vault - Kubernetes auth method](https://developer.hashicorp.com/vault/docs/auth/kubernetes#kubernetes-auth-method)
 ## Topics
 
 - [Helm](https://github.com/topics/helm)

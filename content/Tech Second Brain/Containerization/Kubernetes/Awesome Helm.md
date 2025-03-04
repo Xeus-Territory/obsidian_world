@@ -41,6 +41,7 @@ If you use Helm for managing and deploying Kubernetes applications, you can try 
 - [helm-compose](https://github.com/seacrew/helm-compose): A helm plugin for managing multiple releases of one or many charts within a single configuration file.
 - [helm-dashboard](https://github.com/komodorio/helm-dashboard): The missing UI for Helm - visualize your releases
 - [helm-secrets](https://github.com/jkroepke/helm-secrets): A helm plugin that help manage secrets with Git workflow and store them anywhere
+- [helm-hook](https://helm.sh/docs/topics/charts_hooks/): Helm provides a _hook_ mechanism to allow chart developers to intervene at certain points in a release's life cycle
 ## Helm Management
 
 - [Terraform: Helm Release](https://registry.terraform.io/providers/hashicorp/helm/latest/docs/resources/release): A Release is an instance of a chart running in a Kubernetes cluster.

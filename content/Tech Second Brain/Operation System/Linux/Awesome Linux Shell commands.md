@@ -511,6 +511,54 @@ find /lib/modules/$(uname -r) -type f -name '*.ko*' | grep -e "<module-name>"
 # Source: https://stackoverflow.com/questions/23645595/how-to-find-linux-module-path
 awk '{ print $1 }' /proc/modules | xargs modinfo -n | sort | grep -e "<module_name>"
 ```
+
+## `lsof` command
+
+**lsof** is a command for `LiSting Open Files`. Find and explore more at [documentation](https://lsof.readthedocs.io/en/latest/)
+
+To check network connection, you can use
+
+```bash
+lsof -i -P -n
+```
+
+Find files open to a process with known PID, e.g: 1234, you can use
+
+```bash
+lsof -p 1234
+```
+
+## `ps` command
+
+You can use `ps` command to check process inside your machine to identify CPU spike or memory leak or moreover
+
+Find CPU-Intensive Processes - This lists the top 10 processes by CPU usage, showing the percentage, process ID, user, and command.
+
+```bash
+ps -eo pcpu,pid,user,args | sort -r | head -10
+```
+
+Find Memory Leaks - This updates every 5 seconds to show the top memory-consuming processes, helping you identify memory leaks
+
+```bash
+watch -n 5 "ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head"
+```
+
+Check Running Processes - This lists the top 10 processes sorted by CPU usage, helping you quickly identify resource-intensive processes.
+
+```bash
+ps aux --sort=-%cpu | head -10
+```
+
+## `iostat` command
+
+You can use `iostat` for listing and monitoring your input and output of your disk, by this action you can doube-check state and bottleneck inside
+
+Disk I/O Monitoring - This displays disk I/O statistics every 5 seconds, including utilization, queue length, and wait time
+
+```bash
+iostat -xz 5
+```
 # External Commands
 ## Caddy server
 

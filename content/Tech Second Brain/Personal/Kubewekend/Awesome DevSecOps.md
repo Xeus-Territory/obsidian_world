@@ -19,6 +19,7 @@ tags:
 
 - [Deepfactor - Security Scanning Tools Defined: SAST, IaC, SCA, DAST, IAST/RASP, Container Runtime Security and Runtime SCA](https://www.deepfactor.io/security-scanning-tools-defined-sast-iac-sca-dast-iast-rasp-container-runtime-security-and-runtime-sca/)
 - [Outpost24 - What is best for application security testing: SAST, DAST, or SCA](https://outpost24.com/blog/application-security-testing-sast-dast-sca/)
+- [Microsoft - Zero Trust DevSecOps](https://learn.microsoft.com/en-us/security/zero-trust/develop/secure-devops-environments-zero-trust)
 
 ## Technology Articles
 
