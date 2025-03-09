@@ -51,6 +51,7 @@ tags:
 - [Medium - Single Point of Failure (SPOF) in System Design](https://levelup.gitconnected.com/single-point-of-failure-spof-in-system-design-c8bbac5af993)
 - [Ably - Event-driven architecture patterns and when to use them](https://ably.com/topic/event-driven-architecture-patterns)
 - [Medium - System design concepts: Distributed Task Queue System 🎯](https://levelup.gitconnected.com/system-design-concepts-distributed-task-queue-system-8bc99647a093)
+- [Dev.to - The Software Design /System Design Interview Preparation RoadMap (with Resources)](https://dev.to/somadevtoo/the-software-design-system-design-interview-preparation-roadmap-with-resources-1no0)
 ## Repositories
 
 - [awesome-scalability](https://github.com/binhnguyennus/awesome-scalability) : The Patterns of Scalable, Reliable, and Performant Large-Scale Systems
