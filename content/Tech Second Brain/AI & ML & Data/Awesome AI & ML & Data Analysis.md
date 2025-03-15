@@ -102,6 +102,7 @@ tags:
 - [Portable - 100+ Best ETL Tools List & Software (As Of February 2025)](https://portable.io/learn/best-etl-tools)
 - [MonteCarlo - Data Pipeline Architecture Explained: 6 Diagrams and Best Practices](https://www.montecarlodata.com/blog-data-pipeline-architecture-explained/)
 - [Medium - Data Engineering Best Practices: How Big Tech & FAANG Firms Manage and Optimize Apache Kafka](https://acceldataio.medium.com/data-engineering-best-practices-how-big-tech-faang-firms-manage-and-optimize-apache-kafka-95d520db60bb)
+- [Medium - 5 Steps to Build Efficient Data Pipelines with Apache Airflow](https://towardsdatascience.com/5-steps-to-build-efficient-data-pipelines-with-apache-airflow-d0b42576b530/)
 ## Awesome Repositories
 
 - [awesome-bigdata](https://github.com/oxnr/awesome-bigdata): A curated list of awesome big data frameworks, ressources and other awesomeness.

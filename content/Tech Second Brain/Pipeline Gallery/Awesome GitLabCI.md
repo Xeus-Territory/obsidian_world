@@ -44,6 +44,7 @@ tags:
 - [GitLab CI/CD Environments and deployments](https://docs.gitlab.com/ee/ci/environments/) - Environments describe where code is deployed.
 - [GitLab container registry](https://docs.gitlab.com/ee/user/packages/container_registry/) - You can use the integrated container registry to store container images for each GitLab project.
 - [How to modify a variable, used as name for docker image](https://forum.gitlab.com/t/how-to-modify-a-variable-used-as-name-for-docker-image/81438/1) - Dynamic image to using for gitlabci
+- [Caching in GitLab CI/CD](https://docs.gitlab.com/ci/caching/)
 
 ## Issues
 

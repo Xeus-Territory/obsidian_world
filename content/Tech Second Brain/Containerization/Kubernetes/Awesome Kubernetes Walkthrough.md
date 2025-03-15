@@ -663,7 +663,7 @@ You will use two command to execute this workflow
 A workflow would be
 
 1. Run **kubectl cordon node-name** to mark the node as unschedulable.
-2. Run **kubectl cordon node-name** to mark the node as unschedulable.
+2. Run **kubectl drain node-name** to evict all the pods from the node.
 3. Perform your maintenance tasks on the node.
 4. Run **kubectl uncordon node-name** to mark the node as schedulable again.
 
@@ -861,3 +861,95 @@ If you want to explore use-case and example, find out with
 - [Example Use Cases](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/#example-use-cases)
 - [Taint based Evictions](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/#taint-based-evictions)
 - [Taint Nodes by Condition](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/#taint-nodes-by-condition)
+
+# Map external service inside Kubernetes
+
+In some situations, if you wanna use external resource, such as `minio`, you can consider to setup couple method of Kubernetes for permitting us do stuff like [NAT Network](https://www.vmware.com/topics/network-address-translation)
+
+When you inspect `kubectl` command and `kubernetes` concept, you will know about network structure inside Kubernetes, including
+
+![[thumbnail-kubernetes-network.png]]
+
+- [Service](https://kubernetes.io/docs/concepts/services-networking/service/)
+- [Ingress]()
+- [Endpoint](https://kubernetes.io/docs/concepts/services-networking/service/)
+- [EndpointSlieces](https://kubernetes.io/docs/concepts/services-networking/service/#endpointslices)
+
+## Use service without selector
+
+When you work with Kubernetes, you usually meet `Service` and `Ingress` for mapping service but stand behind, It use `Endpoint` for define how the service make conversation with `pod`, so we can use this `endpoint` to define external service. Explore more about at [Service without selectors](https://kubernetes.io/docs/concepts/services-networking/service/#services-without-selectors)
+
+>[!info]
+>Services most commonly abstract access to Kubernetes Pods thanks to the selector, but when used with a corresponding set of [EndpointSlices](https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/) objects and without a selector, the Service can abstract other kinds of backends, including ones that run outside the cluster.
+
+Luckily, I found the solution to create external service and use that inside Kubernetes, [StackOverFlow - How to explicitely define an Endpoint of an Kubernetes Service](https://stackoverflow.com/questions/59412883/how-to-explicitely-define-an-endpoint-of-an-kubernetes-service) and I reuse that for setup my MinIO for example via local connection
+
+```yaml title="service.yaml"
+apiVersion: v1
+kind: Service
+metadata:
+  name: external-minio
+spec:
+  ports:
+    - protocol: TCP
+      port: 9090
+      targetPort: 9090
+```
+
+```yaml title="endpoint.yaml"
+apiVersion: v1
+kind: Endpoints
+metadata:
+  name: external-minio
+subsets:
+  - addresses:
+      - ip: 192.168.96.69
+    ports:
+      - port: 9090
+```
+
+Now you can use `service` to connect directly into your external service via Kubernetes components, you can do with strategies for setup `ingress` and map DNS for your external service via `ingress` controller, such as `nginx`, `haproxy`, ...
+
+```yaml title="ingress.yaml"
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nginx-minio
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: minio.example.xyz
+    http:
+      paths:
+      - backend:
+          service:
+            name: external_minio
+            port:
+              number: 9090
+        path: /
+        pathType: Prefix
+status:
+  loadBalancer: {}
+```
+
+## Use ExternalName Service
+
+If you gracefully update the documentation, you will see Kubernetes that have four service methodology, and one of them is rarely know about it, that's [ExternalName](https://kubernetes.io/docs/concepts/services-networking/service/#externalname)
+
+`ExternalName` permits to map service to DNS name, you can imagine if you have database with FQDN, you can try to map your service as DNS for resolve this location, similarly `CNAME`
+
+You can follow this article to create once for your own [How to use a Kubernetes External Service](https://www.kubecost.com/kubernetes-best-practices/kubernetes-external-service/)
+
+```yaml title="service.yaml" {7-8}
+apiVersion: v1
+kind: Service
+metadata:
+  name: httpbin-service
+  namespace: default
+spec:
+  type: ExternalName
+  externalName: httpbin.org
+```
+
+>[!info]
+> An External Service pointing to [httpbin.org](https://httpbin.org/), a simple HTTP request/response service. It's a valuable tool for testing and debugging as it can simulate various HTTP responses.

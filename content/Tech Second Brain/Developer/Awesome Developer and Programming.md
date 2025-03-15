@@ -14,19 +14,26 @@ tags:
 ![[meme-feeling-good.png|center]]
 # Articles
 
+## Software Architecture
+
 - [Medium - Most Common Software Architecture Styles](https://medium.com/@techworldwithmilan/most-common-software-architecture-styles-86881d779683)
 - [Medium - Top 10 Microservice Anti-Patterns](https://blog.bitsrc.io/10-microservice-anti-patterns-278bcb7f385d)
 - [Medium - 10 Common Software Architectural Patterns in a nutshell](https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013)
-- [Medium - Why Rust Emerges as the Premier Choice for System Programming](https://medium.com/python-in-plain-english/why-rust-emerges-as-the-premier-choice-for-system-programming-d63cd7c920c8)
-- [Medium - Most Common 10 RabbitMQ Mistakes and How to Avoid Them](https://blog.devgenius.io/most-common-10-rabbitmq-mistakes-and-how-to-avoid-them-f4b74af5885d)
 - [Medium - Architectural Metapatterns](https://medium.com/itnext/architectural-metapatterns-1834bdbc4221)
 - [Dev.to - 10 Things You Can Learn from Netflix’s Architecture](https://dev.to/somadevtoo/10-things-you-can-learn-from-netflixs-architecture-1bnn)
+## Developer Tips
+
+- [Medium - Most Common 10 RabbitMQ Mistakes and How to Avoid Them](https://blog.devgenius.io/most-common-10-rabbitmq-mistakes-and-how-to-avoid-them-f4b74af5885d)
 - [QAMadness - Your Guide to Automated Integration Testing](https://www.qamadness.com/your-guide-to-automated-integration-testing/)
 - [crontab spring](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/scheduling/support/CronExpression.html) : Representation of a [crontab expression](https://www.manpagez.com/man/5/crontab/) that can calculate the next time it matches (Java/AWS)
 - [AppleForums - APP STORE connect operation error: An error occurred uploading to the App Store](https://forums.developer.apple.com/forums/thread/123649?answerId=389459022#389459022)
 - [Medium - 8 Golang Performance Tips I Discovered After Years of Coding](https://medium.com/deep-golang/8-python-performance-tips-i-discovered-after-years-of-coding-in-golang-764375658d90)
 - [Codilime - The importance and benefits of unit testing](https://codilime.com/blog/unit-testing/)
 - [Katalon - 9 Core Benefits of Automation Testing](https://katalon.com/resources-center/blog/benefits-of-automation-testing)
+
+## Language
+
+- [Medium - Why Rust Emerges as the Premier Choice for System Programming](https://medium.com/python-in-plain-english/why-rust-emerges-as-the-premier-choice-for-system-programming-d63cd7c920c8)
 - [Medium - Blazing fast Python Docker builds with Poetry 🏃](https://medium.com/@albertazzir/blazing-fast-python-docker-builds-with-poetry-a78a66f5aed0)
 # Awesome Developer
 
@@ -53,8 +60,8 @@ tags:
 ## Topic
 
 - [gRPC](https://github.com/topics/grpc)
-- [web-framework](https://github.com/topics/web-framework)
-- [wrapper](https://github.com/topics/wrapper): Pattern for creating interface and permit conversation between multiple language. Explore at [[What is Wrapper Pattern]]
+- [Web Framework](https://github.com/topics/web-framework)
+- [Wrapper](https://github.com/topics/wrapper)
 # Blog Pages
 
 - [Dev](https://dev.to/): DEV Community is a community of 2,027,354 amazing developers
@@ -67,20 +74,33 @@ tags:
 - [Medium - Yang Zhou](https://yangzhou1993.medium.com/): Full Stack developer share about tech article around Python, Javascript
 - [Morioh](https://morioh.com/): Social Network for Programmers and Developers
 - [programmerCave](https://programmercave.com/) : Algorithm, Tech and more about reliable usage of this technic
-# Compiler online
+# Tools and Utilities
+
+## API Testing
+
+- [httpbin.org](https://httpbin.org/): A simple HTTP Request & Response Service.
+
+## Compiler
 
 - [replit](https://replit.com/) : Python, NodeJS, ...
 - [dotnetfiddle](https://dotnetfiddle.net/):  C# and .NET framework
 - [onlineGDB](https://www.onlinegdb.com/): C++, C, Pascal, ...
-# Developer online tools
+
+## Data Converter
+
+- [GBMB](https://www.gbmb.org/): Online extended **data storage unit conversion calculator**
+## Regex
+
+- [regex101: build, test, and debug regex](https://regex101.com/)
+
+## Toolbox
 
 - [10015.io](https://10015.io/) : A “free all-in-one toolbox” solution created to ease your life by preventing bookmark mess.
-- [Free Online Developer Tools - AppDevTools](https://appdevtools.com/)
-- [regex101: build, test, and debug regex](https://regex101.com/)
+- [AppDevTools](https://appdevtools.com/): A web app providing a number of free online developer tools.
 - [TrueDevTools](https://truedevtools.com/): True Devtools is a free collection of 45+ carefully crafted tools useful for development
 - [IT - Tools](https://it-tools.tech/) : Handy tools for developers
 - [Devtoys.app](https://devtoys.app/): A Swiss Army knife for developers.
-- [GBMB](https://www.gbmb.org/): Online extended **data storage unit conversion calculator**
+
 # Language Programing Collections
 
 ## C\#
