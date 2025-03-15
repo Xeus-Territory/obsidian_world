@@ -7,6 +7,8 @@ tags:
   - DIY
   - ctf
 ---
+
+![[meme-winner-everywhere.png|center]]
 # Azure Clouds Services
 
 >[!info]
@@ -152,7 +154,8 @@ tags:
 
 - [[How to serve Java API with Maven and Tomcat]]
 - [[How can I build my homelab with Docker Swarm]]
-
+- [[DevOps and A Couple of things I learned|DevOps and A Couple of things I learned (Vietnamese Version)]]
+- [[Why you should use dependencies cache for your work]]
 # Hackwekend Series
 
 >[!info]

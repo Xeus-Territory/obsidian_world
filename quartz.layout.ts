@@ -14,7 +14,8 @@ export const sharedPageComponents: SharedLayout = {
       "Viblo": "https://viblo.asia/u/Xeus-Territory",
       "Medium": "https://medium.com/@XeusNguyen",
       "Youtube": "https://www.youtube.com/@xeusnguyen",
-      "Twitter": "https://twitter.com/XeusNguyen"
+      "Twitter": "https://twitter.com/XeusNguyen",
+      "Linkedin": "https://www.linkedin.com/in/xeusnguyen/"
     },
   }),
 }

@@ -91,6 +91,7 @@ tags:
 - [Nubenetes](https://nubenetes.com/) : Awesome Kubernetes & Cloud
 - [NVIDIA Documentation Hub](https://docs.nvidia.com/): Get started by exploring the latest technical information and product documentation
 - [StackExchange](https://stackexchange.com/sites) : StackOverFlow Ecosystem
+- [Operate First](https://www.operate-first.cloud/apps/content/README.html): Serve as a main resource for all Operate First GitHub Org contributors.
 ## Technology
 
 - [awesome-compilers](https://github.com/aalhour/awesome-compilers): Curated list of awesome resources on Compilers, Interpreters and Runtimes
