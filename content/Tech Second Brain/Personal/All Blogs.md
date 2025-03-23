@@ -156,6 +156,7 @@ tags:
 - [[How can I build my homelab with Docker Swarm]]
 - [[DevOps and A Couple of things I learned|DevOps and A Couple of things I learned (Vietnamese Version)]]
 - [[Why you should use dependencies cache for your work]]
+- [[Vault and Keycloak - The combination for rotation Vault Token]]
 # Hackwekend Series
 
 >[!info]
