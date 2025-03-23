@@ -78,6 +78,27 @@ SELECT pg_cancel_backend(procpid);
 SELECT pg_terminate_backend(procpid);
 ```
 
+## Create PostgreSQL User
+
+Explore more methodologies at
+
+- [Medium - Creating user, database and adding access on PostgreSQL](https://medium.com/coding-blocks/creating-user-database-and-adding-access-on-postgresql-8bfcd2f4a91e)
+- [StrongDM - How to Create a Postgres User (Step-by-Step Tutorial)](https://www.strongdm.com/blog/postgres-create-user)
+- [StackOverFlow - Why am I getting a permission denied error for schema public on pgAdmin 4?](https://stackoverflow.com/questions/67276391/why-am-i-getting-a-permission-denied-error-for-schema-public-on-pgadmin-4)
+
+```sql
+# Create user with password
+CREATE USER your_new_username WITH ENCRYPTED PASSWORD 'your_new_password';
+
+# Grant all permission
+GRANT ALL PRIVILEGES ON DATABASE your_database_name TO your_new_username;
+
+# Grant schema permission for user (consider with pg15)
+GRANT ALL ON SCHEMA public TO your_new_username;
+
+# Grant owner database for user (consider with pg15)
+ALTER DATABASE your_database_name OWNER TO your_new_username;
+```
 
 # Monitoring Performance
 

@@ -34,6 +34,17 @@ sudo sh ./get-docker.sh --dry-run
 curl -fsSL https://get.docker.com | sudo bash -
 ```
 
+If you wanna run docker as rootless (means not `sudo`), you can consider use
+
+```bash
+sudo sh -eux <<EOF
+# Install newuidmap & newgidmap binaries
+apt-get install -y uidmap
+EOF
+
+# Run install
+dockerd-rootless-setuptool.sh install
+```
 # Helpful command
 
 ## Basic `run` command, but with helpful flag

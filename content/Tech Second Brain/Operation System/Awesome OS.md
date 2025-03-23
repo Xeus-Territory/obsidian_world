@@ -26,6 +26,8 @@ tags:
 - [Tmux cheatsheet](https://tmuxcheatsheet.com/): Tmux Cheat Sheet & Quick Reference
 - [golinuxcloud](https://www.golinuxcloud.com/linux-commands-cheat-sheet/): the linux cheatsheet
 - [Bash Conditional Statement Operators Cheat Sheet - Kapeli](https://kapeli.com/cheat_sheets/Bash_Test_Operators.docset/Contents/Resources/Documents/index)
+- [GitHub - tmux shortcuts & cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
+- [GitHub - how-to-tmux-background-process.md](https://gist.github.com/davydany/d33f4b5e19eab6b805b045b91d3cf858)
 ## General
 
 - [NTU Edu - Environment Variables in Windows/macOS/Linux PATH, CLASSPATH, JAVA_HOME](https://www3.ntu.edu.sg/home/ehchua/programming/howto/Environment_Variables.html)
@@ -47,40 +49,17 @@ tags:
 
 ## Articles
 
-- [Unix & Linux Stack Exchange - Format output of xargs](https://unix.stackexchange.com/questions/89130/format-output-of-xargs) 
 - [Medium - Advanced Bash Scripting: Part 1 🔥](https://medium.com/@bin3xish477/advanced-bash-scripting-tricks-part-1-aabe92402003)
 - [Medium - Advanced Bash Scripting: Part 2 🔥](https://medium.com/@bin3xish477/advanced-bash-scripting-part-2-7b9b488adf4f)
 - [Medium - Advanced Bash Scripting: Part 3 🔥](https://medium.com/@bin3xish477/advanced-bash-scripting-part-3-4acbe32b1f15)
 - [Medium - BASH/Linux Interview Question for DevOps Engineers](https://medium.com/@okpreetam/bash-linux-interview-question-for-devops-engineers-7e22928a1486)
-- [Internet - If Statements - Bash Scripting Tutorial](https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php)
-- [Baeldung - Differences Between Single and Double Brackets in Bash](https://www.baeldung.com/linux/bash-single-vs-double-brackets)
-- [DigitalOcean - How To Forward Ports through a Linux Gateway with Iptables](https://www.digitalocean.com/community/tutorials/how-to-forward-ports-through-a-linux-gateway-with-iptables)
-- [StackOverFlow - How does "cat << EOF" work in bash?](https://stackoverflow.com/questions/2500436/how-does-cat-eof-work-in-bash)
 - [Medium - Creating a Linux service with systemd](https://medium.com/@benmorel/creating-a-linux-service-with-systemd-611b5c8b91d6) or [How to create a systemd service in Linux](https://linuxhandbook.com/create-systemd-services/)
-- [FreeCodeCamp - How to Set an Environment Variable in Linux](https://www.freecodecamp.org/news/how-to-set-an-environment-variable-in-linux/)
-- [Redhat - Linux permissions: SUID, SGID, and sticky bit](https://www.redhat.com/sysadmin/suid-sgid-sticky-bit)
 - [Medium - 10 Troubleshooting Commands for Linux Systems](https://medium.com/@cstoppgmr/10-troubleshooting-commands-for-linux-systems-4fa8c3a1a466)
-- [DigitalOcean - How To Use Journalctl to View and Manipulate Systemd Logs](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs)
-- [StackOverFlow - How to read from a file or standard input in Bash](https://stackoverflow.com/questions/6980090/how-to-read-from-a-file-or-standard-input-in-bash)
 - [Medium - Essential Linux Terminal Hacks for Efficiency](https://medium.com/faun/essential-linux-terminal-hacks-for-efficiency-1ea5f5bac437)
 - [Medium - Essential Linux Terminal Hacks for efficiency — Part 2](https://medium.com/@sagarkpanda/essential-linux-terminal-hacks-for-efficiency-part-2-84c1036d8258)
-- [Phoenixnap - How to Run Linux Commands in Background](https://phoenixnap.com/kb/linux-run-command-background)
-- [Medium - How To Evaluate the Network Performance of a Linux System](https://medium.com/devops-dev/how-to-evaluate-the-network-performance-of-a-linux-system-69db89cae0ed)
-- [Networkwolrd - Linux commands for managing, partitioning, troubleshooting](https://www.networkworld.com/article/964235/linux-commands-for-managing-partitioning-troubleshooting.html)
-- [Devconnected - How To Mount and Unmount Drives on Linux](https://devconnected.com/how-to-mount-and-unmount-drives-on-linux/)
-- [Internet - Practical Shell Patterns I Actually Use](https://zwischenzugs.com/2022/01/04/practical-shell-patterns-i-actually-use/)
-- [Internet - grep Flags – The Good Stuff](https://zwischenzugs.com/2022/02/02/grep-flags-the-good-stuff/)
-- [StackOverFlow -Assigning default values to shell variables with a single command in bash](https://stackoverflow.com/questions/2013547/assigning-default-values-to-shell-variables-with-a-single-command-in-bash)
-- [Internet - How to Change Permissions on Mounted Drive in Linux](https://linuxsimply.com/linux-change-permissions-on-mounted-drive/)
-- [Askubuntu - How to merge partitions?](https://askubuntu.com/questions/66000/how-to-merge-partitions)
 - [Tecmint - 10 Commands to Collect System and Hardware Info in Linux](https://www.tecmint.com/commands-to-collect-system-and-hardware-information-in-linux/)
-- [DigitalOcean - How to Set Up a Firewall with UFW on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu)
-- [Tecmint - How to Increase SSH Connection Timeout in Linux](https://www.tecmint.com/increase-ssh-connection-timeout/)
-- [Tecmint - How to Clear RAM Memory Cache, Buffer and Swap Space on Linux](https://www.tecmint.com/clear-ram-memory-cache-buffer-and-swap-space-on-linux/)
 - [Medium - 6 Ways to Check Remote Port Status in Linux: Highlighting Two New Approaches](https://programming.earthonline.us/6-effective-methods-to-check-remote-port-status-in-linux-which-one-do-you-use-most-83ce6f903d75)
 - [Medium - Top Linux Security Best Practices for DevSecOps Engineers](https://medium.com/devsecops-community/top-10-linux-security-best-practices-a-comprehensive-guide-to-protecting-your-system-908bd96dd2c9)
-- [Cyberciti - How to use sed to find and replace text in files in Linux / Unix shell](https://www.cyberciti.biz/faq/how-to-use-sed-to-find-and-replace-text-in-files-in-linux-unix-shell/)
-- [Medium - Stop Using systemctl Blindly: Master Advanced Service Management Techniques!](https://medium.com/@howtouselinux/stop-using-systemctl-blindly-master-advanced-service-management-techniques-83dfd0e9c0ab)
 ## Awesome Repositories
 
 - [Bash-Oneliner](https://onceupon.github.io/Bash-Oneliner/): A collection of handy Bash One-Liners and terminal tricks for data processing and Linux system maintenance.

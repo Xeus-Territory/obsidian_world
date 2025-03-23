@@ -10,6 +10,17 @@ tags:
   - architecture
   - automation
 ---
+
+>[!info]
+>This place store script of mine to solve couple of problems, fun stuff and be able to reuse for multiple reason. Double-check if you concern
+
+For more explore, you can read to understand more way to improve shell script
+
+- [Internet - Practical Shell Patterns I Actually Use](https://zwischenzugs.com/2022/01/04/practical-shell-patterns-i-actually-use/)
+- [StackOverFlow -Assigning default values to shell variables with a single command in bash](https://stackoverflow.com/questions/2013547/assigning-default-values-to-shell-variables-with-a-single-command-in-bash)
+- [Blog - Using Nested Default Variable Values in a Shell Script](https://nickjanetakis.com/blog/using-nested-default-variable-values-in-a-shell-script)
+- [Internet - If Statements - Bash Scripting Tutorial](https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php)
+- [Baeldung - Differences Between Single and Double Brackets in Bash](https://www.baeldung.com/linux/bash-single-vs-double-brackets)
 # Blue Green Deployment Docker for Zero Downtime
 
 >[!summary]
