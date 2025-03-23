@@ -152,7 +152,7 @@ You can check about that via [Azure Article - Use the portal to attach a data di
 
 	`sdc` disk actually not mount, that target disk you need to format and attach to your machine
 
-3. Partition the disk when you attach a new one, you can follow instruction about [Create a Partition in Linux - A Step-by-Step Guide](https://www.digitalocean.com/community/tutorials/create-a-partition-in-linux), [Prepare a new empty disk](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/attach-disk-portal#prepare-a-new-empty-disk),  [https://phoenixnap.com/kb/linux-format-disk](https://phoenixnap.com/kb/linux-format-disk) to understand way to handle that
+3. Partition the disk when you attach a new one, you can follow instruction about [Create a Partition in Linux - A Step-by-Step Guide](https://www.digitalocean.com/community/tutorials/create-a-partition-in-linux), [Prepare a new empty disk](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/attach-disk-portal#prepare-a-new-empty-disk),  [How to Format Disk Partitions in Linux](https://phoenixnap.com/kb/linux-format-disk) to understand way to handle that
 
 	```shell
 	sudo parted /dev/sdc --script mklabel gpt mkpart xfspart xfs 0% 100%

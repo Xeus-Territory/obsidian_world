@@ -974,8 +974,11 @@ When you encounter the issue your Node mask `down` state in your `kubernetes` li
 
 It can come from a couple of issue, such as
 
-- [BUG -  Wrong nodeOrDiskEvicted collected in node monitor](https://github.com/longhorn/longhorn/issues/4143#issue-1276280630)
-- [BUG - Unable to delete node: "spec and status of disks on node are being syncing and please retry later"](https://github.com/longhorn/longhorn/issues/4370)
+- [(BUG) Wrong nodeOrDiskEvicted collected in node monitor](https://github.com/longhorn/longhorn/issues/4143#issue-1276280630)
+- [(BUG) Unable to delete node: "spec and status of disks on node are being syncing and please retry later"](https://github.com/longhorn/longhorn/issues/4370)
+- [(BUG) Delete kubernetes node did not remove node.longhorn.io](https://github.com/longhorn/longhorn/issues/7475)
+
+## Completely Solutions
 
 In my experience, I just combine multiple steps from 3 source above and gather this workaround like
 
@@ -1026,3 +1029,63 @@ kubectl taint nodes <node-name> nodetype=storage:NoExecute-
 ```
 
 Follow the `kubectl` and `daemonset` application of longhorn will install again, and your node will be return. If you wanna know about `taint`, you should read at [Kubernetes - Taints and Tolerations](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/)
+
+## Trick Solution
+
+>[!quote]
+>Sometimes, the above stuff will not make you feel comfortable, for example, if your node become huge than ever like (200GB Memory Reserve), 100% for sure you don't wanna touch any in this node for not cause downtime
+
+So that's why I have experience and give a try to retrieve this trick, but first of all, if you stuck on the step delete longhorn nodes because in couple of situations, your node will stuck with the validation of `longhorn-webhook-validator`. So you can follow this solution to ignore that stuck at [(BUG) Wrong nodeOrDiskEvicted collected in node monitor](https://github.com/longhorn/longhorn/issues/4143#issue-1276280630)
+
+![[Pasted image 20250326080709.png]]
+
+- Disable the validator through `longhorn-webhook-validator`, just need to run `edit` command with `kubectl`
+
+```bash
+kubectl edit validatingwebhookconfigurations.admissionregistration.k8s.io longhorn-webhook-validator
+```
+
+- Delete the rule for node validation and save it (usually it is first rule)
+
+```bash
+  - apiGroups:
+    - longhorn.io
+    apiVersions:
+    - v1beta2
+    operations:
+    - UPDATE
+    resources:
+    - nodes
+    scope: Namespaced
+```
+
+- Now, if you lucky, your node will be erase following the rule updated, but not you can use `kubectl` or longhorn-ui to delete disk or not what you want. In my situations, I delete longhorn node stuck with command
+
+```bash
+kubectl delete nodes.longhorn.io <name-node>
+```
+
+- If you wanna turn this node back again, It has trick by deleting pods `longhorn-manager` in that node
+
+```bash
+# Find it via -o wide to see what manager running in that node
+kubectl get pods -o wide | grep -e "longhorn-manager"
+
+# Next if you detected it, you can delete this pod for restarting this
+kubectl delete pods <name-longhorn-managers>
+```
+
+Now your node will one more time addition again, it's will install `instance-manager` for your longhorn node
+
+- Lastly, you should regenerate rule again by deleting pods managed it, via command
+
+```bash
+ kubectl delete pod -l app=longhorn-admission-webhook
+```
+
+Turn back again and you will see your node will be added successfully, if need you should be restart deployment `longhorn-driver-deployer` for reinstalling driver on this node, but carefully
+
+```bash
+kubectl rollout restart deployment/longhorn-driver-deployer
+```
+

@@ -40,6 +40,7 @@ tags:
 - [Papers With Code](https://paperswithcode.com/): The latest in Machine Learning
 - [TensorFlow Hub](https://www.tensorflow.org/hub): A repository of trained machine learning models.
 - [There's An AI For That](https://theresanaiforthat.com/): Update the new about tools and technologies about AI
+- [AI Tools Directory](https://www.aixploria.com/en/): Access the largest list of top-quality AI tools available on the web
 # Artificial Intelligence / Machine Learning
 
 ![[thumbnail-ai-ml.png]]
@@ -60,6 +61,7 @@ tags:
 - [awesome-model-quantization](https://github.com/Efficient-ML/Awesome-Model-Quantization): A list of papers, docs, codes about model quantization
 - [awesome-production-machine-learning](https://github.com/EthicalML/awesome-production-machine-learning): A curated list of awesome open source libraries to deploy, monitor, version and scale your machine learning. [Website](https://ethicalml.github.io/awesome-production-machine-learning/)
 - [best-of-ml-python](https://github.com/ml-tooling/best-of-ml-python): 🏆 A ranked list of awesome machine learning Python libraries. Updated weekly.
+- [Awesome-LLMs-for-Video-Understanding](https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding): 🔥🔥🔥Latest Papers, Codes and Datasets on Vid-LLMs.
 ## Blogs
 
 - [DigitalOcean - AI/ML Topics](https://www.digitalocean.com/community/tags/ai-ml): Articles and Community about AI/ML
@@ -78,6 +80,9 @@ tags:
 - [Machine Learning](https://github.com/topics/machine-learning)
 - [RAG](https://github.com/topics/rag)
 - [Stream Processing](https://github.com/topics/stream-processing)
+- [LLMs](https://github.com/topics/llms)
+- [NLP](https://github.com/topics/nlp)
+- [Computer Vision](https://github.com/topics/computer-vision)
 ## Youtube Channel
 
 ![[youtube.png]]

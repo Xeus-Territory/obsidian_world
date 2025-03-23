@@ -741,7 +741,94 @@ Some cool functionality of `tmux` with hotkey, including
 - [Internet - How to Change Permissions on Mounted Drive in Linux](https://linuxsimply.com/linux-change-permissions-on-mounted-drive/)
 - [Askubuntu - How to merge partitions?](https://askubuntu.com/questions/66000/how-to-merge-partitions)
 
+To mount disk into your host, you should have `sudo` permission for handling that task
+
+First of all, check the disk in your host via
+
+```bash
+lsblk -f
+```
+
+If you see your disk inject into your host, like `nvme0n2` for example, you should check this disk format or not, if does, you should format this one
+
+For partition the disk when you attach a new one, you can follow instruction about [Create a Partition in Linux - A Step-by-Step Guide](https://www.digitalocean.com/community/tutorials/create-a-partition-in-linux), [Prepare a new empty disk](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/attach-disk-portal#prepare-a-new-empty-disk),  [How to Format Disk Partitions in Linux](https://phoenixnap.com/kb/linux-format-disk) to understand way to handle that
+
+```bash
+sudo mkfs -t ext4 /dev/nvme0n2
+```
+
+If you wanna file system format, you can double-check at [File System Comparison: NTFS, FAT32, exFAT, and EXT, Which File System Should I Use](https://www.easeus.com/diskmanager/file-system.html)
+
+|                 |                         |                                                        |                                             |
+| --------------- | ----------------------- | ------------------------------------------------------ | ------------------------------------------- |
+| **File System** | **Supported File Size** | **Compatibility**                                      | **Ideal Usage**                             |
+| **FAT32**       | up to 4 GB              | Windows, Mac, Linux                                    | For maximum compatibility                   |
+| **NTFS**        | 16 EiB – 1 KB           | Windows, Mac (read-only), most Linux distributions     | For internal drives and Windows system file |
+| **Ext4**        | 16 GiB – 16 TiB         | Windows, Mac, Linux (requires extra drivers to access) | For files larger than 4 GB<br>              |
+Double check again with command
+
+```bash
+lsblk -f
+```
+
+Mount your partition disk into the directories of machine via `mount`
+
+```bash
+sudo mount /dev/nvme0n2 /path/to/mount
+```
+
+Check your disk is add to `/etc/fstab`, you can use `blkid` to handle that
+
+```bash
+sudo blkid
+```
+
+After that you can be make some mistake but if you want grant permission, you can continue for your progress in down below
+
+```bash
+# Change ownership of your drive
+sudo chown <your-username> /dev/nvme0n2
+
+# Change mount write permission
+# NOTE: Umount before to do
+sudo umount /dev/nvme0n2
+sudo mount -o /dev/nvme0n2 /my-drive-locate
+
+# Change permission of your file inside to user
+sudo chown -R <user>:<group> /my-drive-locate
+```
+
+If you want `unmount` your disk, you can follow
+
+```bash
+sudo umount /dev/nvme0n2
+```
+
 # Networking Performance with Linux
 
 - [Medium - How To Evaluate the Network Performance of a Linux System](https://medium.com/devops-dev/how-to-evaluate-the-network-performance-of-a-linux-system-69db89cae0ed)
 
+# Resize tmpfs in Linux
+
+>[!question]
+>When you meet some problem related `tmpfs`, it is a file system which keeps all of its files in virtual memory, explore more at: [Kernel - Tmpfs](https://docs.kernel.org/filesystems/tmpfs.html). 
+>
+>So mostly it will use `tmpfs` for `/run` directory and you can `reboot` to free virtual memory, but in some cases, you can't do this operation and it will cause couple annoying
+
+But luckily, I found the techniques for helping us `remount` but not corrupt any data in this location, expand method always good for us. Check it at [Medium - How to resize tmpfs in Linux](https://medium.com/opsops/how-to-resize-tmpfs-in-linux-6fbfbe23b092)
+
+You can use `mount` command with option `remount` to expand the size, it requires `sudo` so you should take this permission
+
+```bash
+sudo mount -o remount,size=new_size /path/to/tmpfs
+
+# e.g expand full disk /run (as tmpfs). Check it with df -h 
+sudo mount -o remount,size=10G /run
+```
+
+It will expand your `/run` immediately, so don't worry corrupt or loss data. If fail, It will pop up the error at mount point
+
+```bash
+mount: /run: mount point not mounted or bad option.
+       dmesg(1) may have more information after failed mount system call.
+```

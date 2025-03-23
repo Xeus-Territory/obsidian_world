@@ -73,7 +73,7 @@ echo -e "unicode-string"
 
 Documentation: [What is FDISK and how does it work?](https://www.techtarget.com/whatis/definition/FDISK)
 
-Use `fdisk` when you want to hangout with your hard dkkkkkkkkkkkkkisk drive, like integrate multiple way for formatting or partitioning a [hard disk drive](https://www.techtarget.com/searchstorage/definition/hard-disk-drive), or to delete different portions of it. FDISK is an external utility. It is most commonly used to prepare and [partition](https://www.techtarget.com/searchstorage/definition/partition) a hard drive
+Use `fdisk` when you want to hangout with your hard disk drive, like integrate multiple way for formatting or partitioning a [hard disk drive](https://www.techtarget.com/searchstorage/definition/hard-disk-drive), or to delete different portions of it. FDISK is an external utility. It is most commonly used to prepare and [partition](https://www.techtarget.com/searchstorage/definition/partition) a hard drive
 
 ```bash
 # to view details of available disk partitions.
@@ -306,7 +306,11 @@ cat app.json | jq -r '(.expo.name + "." + .expo.version)'
 You can use `jq` with variable to pass through from command or define to your jq
 
 ```bash
+# Good way
 curl -H "PRIVATE-TOKEN: $PRIVATE_GLAB_TOKEN" "https://gitlab.com/api/v4/users/$GLAB_USER_ID/contributed_projects" | jq --arg REPO_CHECKED_NAME "$REPO_CHECKED_NAME" '.[] | select(.name == $REPO_CHECKED_NAME) | .id'
+
+# Trick way
+curl -H "PRIVATE-TOKEN: $PRIVATE_GLAB_TOKEN" "https://gitlab.com/api/v4/users/$GLAB_USER_ID/contributed_projects" | jq '.[] | select(.name == "'${REPO_CHECKED_NAME}'") | .id'
 ```
 
 `jq` support for another arg like `json`, you can try to concat object this one with your existence object. Explore more at [Add an object to existing JSON using jq](https://www.petermekhaeil.com/til/jq-append-json/) and [Append JSON Objects using jq](https://stackoverflow.com/questions/51147753/append-json-objects-using-jq)
@@ -347,6 +351,13 @@ In the situation, if you want to decode `jwt` token, you can try with `jq`
 
 ```bash
 jq -R 'split(".") | .[1] | @base64d | fromjson' <<< "$1"
+```
+
+You wanna update the all of key match with your request with new value, you can use `walk` with `jq >= 1.7`. In the end, It will overwrite your current file with new value.
+
+```bash
+jq 'walk(if type == "object" then with_entries( if .key == "KEY_WANT_UPDATE" then .value = "NEW_VALUE" else . end ) else . end)' "/path/json/file" > "/path/json/file.tmp" \
+        && mv "/path/json/file.tmp" "/path/json/file"
 ```
 ## `lsblk` command
 

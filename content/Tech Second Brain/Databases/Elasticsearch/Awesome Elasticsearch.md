@@ -8,6 +8,19 @@ tags:
   - elasticsearch
 ---
 
+# Documentations and Articles
+
+## Setup
+
+- [Elastic - Set up a cluster for high availability](https://www.elastic.co/guide/en/elasticsearch/reference/current/high-availability.html)
+
+## Tips & configuration
+
+- [Opster - Elasticsearch Heap Size Usage and JVM Garbage Collection](https://opster.com/guides/elasticsearch/capacity-planning/elasticsearch-heap-size-usage/)
+- [Elastic - Orchestrating Elastic Stack applications](https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-orchestrating-elastic-stack-applications.html)
+
+# Interaction with Elasticsearch via CURL
+
 >[!summary]
 >This note content the basic, popular command of `elasticsearch` and case it can use
 
