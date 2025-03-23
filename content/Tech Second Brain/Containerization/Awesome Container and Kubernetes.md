@@ -144,6 +144,7 @@ tags:
 - [Medium - Why Some Companies are Moving Away from Kubernetes for Development Environments in 2025](https://medium.com/@PlanB./why-some-companies-are-moving-away-from-kubernetes-for-development-environments-in-2025-1f44b4fd4f3f)
 - [Cast.ai - Custom Kube-Scheduler: Why And How to Set it Up in Kubernetes](https://cast.ai/blog/custom-kube-scheduler-why-and-how-to-set-it-up-in-kubernetes/)
 - [Blog - Installing the NFS CSI Driver on a Kubernetes cluster to allow for dynamic provisioning of Persistent Volumes](https://rudimartinsen.com/2024/01/09/nfs-csi-driver-kubernetes/)
+- [Medium - Kubernetes Traffic Optimization: The Role of Topology-Aware Routing](https://faun.pub/kubernetes-traffic-optimization-the-role-of-topology-aware-routing-c950e25f3bf1)
 ## Awesome repositories
 
 - [awesome-k8s-resources](https://github.com/tomhuang12/awesome-k8s-resources) : A curated list of awesome Kubernetes tools and resources.
@@ -261,6 +262,8 @@ tags:
 - [Medium - Mastering Ingress Strategies for AWS EKS: ALB vs. Istio vs. NGINX](https://ramchandra-vadranam.medium.com/mastering-ingress-strategies-for-aws-eks-alb-vs-istio-vs-nginx-34a7bd4ce152)
 - [Medium - Configure Hashicorp's Vault for Kubernetes Auth](https://docs.armory.io/continuous-deployment/armory-admin/secrets/vault-k8s-configuration/)
 - [Vault - Kubernetes auth method](https://developer.hashicorp.com/vault/docs/auth/kubernetes#kubernetes-auth-method)
+- [DAOCloud - ArgoCD High Availability Solution](https://github.com/DaoCloud/DaoCloud-docs/blob/main/docs/en/docs/amamba/quickstart/argo-cd-HA.md)
+- [ArgoCD - High Availability](https://argo-cd.readthedocs.io/en/stable/operator-manual/high_availability/)
 ## Topics
 
 - [Helm](https://github.com/topics/helm)

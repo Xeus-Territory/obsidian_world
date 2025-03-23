@@ -11,6 +11,53 @@ tags:
 >Place to archive and snapshot the incredible command or pipe command with Linux OS platform such as Debian, Ubuntu, CentOS, ...
 
 # In-house Commands
+## `awk` command
+
+Skip first line Usually header when you use `awk` to print column variables
+
+```bash
+awk 'NR>1 {print $3}'
+```
+
+Get the last param when seperate by `/` or any symbol, you can use `F` and `$NF` to get the result
+
+```bash
+awk -F/ '{print $NF}'
+```
+
+## `cat` command
+
+Explore more about `cat` command and utilities
+
+- [StackOverFlow - How does "cat << EOF" work in bash?](https://stackoverflow.com/questions/2500436/how-does-cat-eof-work-in-bash)
+- [StackOverFlow - How to read from a file or standard input in Bash](https://stackoverflow.com/questions/6980090/how-to-read-from-a-file-or-standard-input-in-bash)
+- [Unix & Linux Stack Exchange - Format output of xargs](https://unix.stackexchange.com/questions/89130/format-output-of-xargs) 
+
+## `chmod` command
+
+Explore more about `chmod` and couples of topics around
+
+- [Redhat - Linux permissions: SUID, SGID, and sticky bit](https://www.redhat.com/sysadmin/suid-sgid-sticky-bit)
+
+```bash
+# Grant full permission for file
+chmod 777 /path/to/file
+
+# Grant execute for file
+chmod +x /path/to/file
+```
+## `du` command 
+
+You can use `du` command for list all size inside your directory
+
+```bash
+# List folder only
+du -csh xeusnguyen.xyz
+
+# List file inside
+du -csh xeusnguyen.xyz/*
+```
+
 ## `echo` command
 
 Decode string with specify unicode-escaped with `-e` flag, read more at: [StackOverFlow - How to convert \uXXXX unicode to UTF-8 using console tools in *nix](https://stackoverflow.com/questions/8795702/how-to-convert-uxxxx-unicode-to-utf-8-using-console-tools-in-nix)
@@ -22,9 +69,174 @@ Decode string with specify unicode-escaped with `-e` flag, read more at: [StackO
 echo -e "unicode-string"
 ```
 
+## `fdisk` command
+
+Documentation: [What is FDISK and how does it work?](https://www.techtarget.com/whatis/definition/FDISK)
+
+Use `fdisk` when you want to hangout with your hard dkkkkkkkkkkkkkisk drive, like integrate multiple way for formatting or partitioning a [hard disk drive](https://www.techtarget.com/searchstorage/definition/hard-disk-drive), or to delete different portions of it. FDISK is an external utility. It is most commonly used to prepare and [partition](https://www.techtarget.com/searchstorage/definition/partition) a hard drive
+
+```bash
+# to view details of available disk partitions.
+sudo fdisk -l
+# to view the partitions on a specific disk.
+sudo fdisk -l /dev/sda
+# to create a hard disk partition.
+sudo fdisk /dev/sda
+# to view the partition size.
+sudo fdisk -s /dev/sda
+```
+
+And when you want to hit to interaction mode you can try with
+
+```bash
+sudo fdisk /dev/sda
+```
+
+And when you hit keyboard with `m`, you can see the helper
+
+```bash
+Command (m for help): m
+
+Help:
+
+  GPT
+   M   enter protective/hybrid MBR
+
+  Generic
+   d   delete a partition
+   F   list free unpartitioned space
+   l   list known partition types
+   n   add a new partition
+   p   print the partition table
+   t   change a partition type
+   v   verify the partition table
+   i   print information about a partition
+
+  Misc
+   m   print this menu
+   x   extra functionality (experts only)
+
+  Script
+   I   load disk layout from sfdisk script file
+   O   dump disk layout to sfdisk script file
+
+  Save & Exit
+   w   write table to disk and exit
+   q   quit without saving changes
+
+  Create a new label
+   g   create a new empty GPT partition table
+   G   create a new empty SGI (IRIX) partition table
+   o   create a new empty DOS partition table
+   s   create a new empty Sun partition table
+
+```
+
+## `find` command
+
+Find the folder with find base on the regex format
+
+```bash
+find . -maxdepth 1 -type d -regex '.*/azp/_work/\d+$'
+```
+
+Find directory in current location but expose that in format `ls`
+
+```bash
+find . -type d -ls
+```
+
+Find the file or directory to provide you last in path of file and directory
+
+```bash
+find . -maxdepth 2 -type d | awk -F/ '{print $NF}'
+```
+## `grep` command
+
+Explore more example with `grep` via
+
+- [Internet - grep Flags – The Good Stuff](https://zwischenzugs.com/2022/02/02/grep-flags-the-good-stuff/)
+
+Use grep with exclude by `-v` flag
+
+```bash
+grep -v "dotnet" .
+```
+
+To grep include multiple word
+
+>[!info]
+>Use `-i` flag to execute that. Especially add with `\|` symbol between two words. Read more at: [How to Grep for Multiple Strings, Patterns or Words](https://phoenixnap.com/kb/grep-multiple-strings), extending with multiple situations **(HELPFUL)**
+
+```bash
+grep -i "Hostname\|Port"
+```
+
+## `iostat` command
+
+You can use `iostat` for listing and monitoring your input and output of your disk, by this action you can doube-check state and bottleneck inside
+
+Disk I/O Monitoring - This displays disk I/O statistics every 5 seconds, including utilization, queue length, and wait time
+
+```bash
+iostat -xz 5
+```
+## `iptables` command
+
+Learn more about `iptables` commands from links down below
+
+- [Github - iptables cheatsheet](https://gist.github.com/davydany/0ad377f6de3c70056d2bd0f1549e1017)
+- [Prompt generate Iptables](https://bashsenpai.com/resources/cheatsheets/iptables)
+- [Hacktricks - Suricata & Iptables cheatsheet](https://book.hacktricks.xyz/generic-methodologies-and-resources/basic-forensic-methodology/pcap-inspection/suricata-and-iptables-cheatsheet)
+- [How to list all iptables rules with line numbers on Linux](https://www.cyberciti.biz/faq/how-to-list-all-iptables-rules-in-linux/)
+- [How can I remove specific rules from iptables?](https://stackoverflow.com/questions/10197405/how-can-i-remove-specific-rules-from-iptables)
+- [DigitalOcean - How To Forward Ports through a Linux Gateway with Iptables](https://www.digitalocean.com/community/tutorials/how-to-forward-ports-through-a-linux-gateway-with-iptables)
+
+Allow only traffic from external IP to host via port
+
+```bash
+sudo iptables -A INPUT -s <source> -p <tcp/udp> --dport <destination-port> -j ACCEPT
+```
+
+Block all traffic to specify port in host
+
+```bash
+sudo iptables -A INPUT -p <tcp/udp> --dport <destination-port> -j DROP
+```
+
+List all rule and table rule
+
+```bash
+# List all rules
+sudo iptables -S
+
+# list all tables rules
+sudo iptables -L -v -n | more
+
+# list all rules for INPUT tables
+sudo iptables -L INPUT -v -n
+```
+
+Delete rule in iptables
+
+```bash
+# Basic command to delete
+sudo iptables -F
+
+# To specify you want
+# Find your rule base on number
+iptables -L INPUT --line-numbers
+# Remove that base on number of line
+iptables -D INPUT <specific-line-number>
+
+# IYKYN, use `-D` flag for same command `-A` to remove that rule
+```
+
 ## `journalctl` command
 
-Documentation: [How To Use Journalctl to View and Manipulate Systemd Logs](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs)
+Documentation:
+
+- [DigitalOcean - How To Use Journalctl to View and Manipulate Systemd Logs](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs)
 
 **Capture and logged full events of service**
 
@@ -70,155 +282,6 @@ journalctl -xeu service-name.service
 --pager-end       -e  -- Jump to the end of the journal in the pager
 --unit            -u  -- Show data only from the specified unit
 ```
-## `grep` command
-
-Use grep with exclude by `-v` flag
-
-```bash
-grep -v "dotnet" .
-```
-
-To grep include multiple word
-
->[!info]
->Use `-i` flag to execute that. Especially add with `\|` symbol between two words. Read more at: [How to Grep for Multiple Strings, Patterns or Words](https://phoenixnap.com/kb/grep-multiple-strings), extending with multiple situations **(HELPFUL)**
-
-```bash
-grep -i "Hostname\|Port"
-```
-
-## `awk` command
-
-Skip first line Usually header when you use `awk` to print column variables
-
-```bash
-awk 'NR>1 {print $3}'
-```
-
-Get the last param when seperate by `/` or any symbol, you can use `F` and `$NF` to get the result
-
-```bash
-awk -F/ '{print $NF}'
-```
-## `tree` command
-
-Print the sub-directory of folder with configuration level
-
-```bash
-tree -d -L 2 .
-```
-
-Print the sub file and folder with filter not include smt with `-I` option. Explore at [StackOverFlow - tree command for multiple includes and excludes](https://unix.stackexchange.com/questions/61074/tree-command-for-multiple-includes-and-excludes)
-
-```bash
-# With only
-tree -a -L 1 -I .git
-
-# With multiple
-tree -a -L 1 -I '.git|.terraform.lock.hcl'
-```
-
-Print tree with combine full path, include and exclude pattern
-
-```bash
-tree -f -I "bin|unitTest" -P "*.[ch]|*.[ch]pp." your_dir/
-```
-
-## `find` command
-
-Find the folder with find base on the regex format
-
-```bash
-find . -maxdepth 1 -type d -regex '.*/azp/_work/\d+$'
-```
-
-Find directory in current location but expose that in format `ls`
-
-```bash
-find . -type d -ls
-```
-
-Find the file or directory to provide you last in path of file and directory
-
-```bash
-find . -maxdepth 2 -type d | awk -F/ '{print $NF}'
-```
-## `iptables` command
-
-Learn more about `iptables` commands from links down below
-
-- [Github - iptables cheatsheet](https://gist.github.com/davydany/0ad377f6de3c70056d2bd0f1549e1017)
-- [Prompt generate Iptables](https://bashsenpai.com/resources/cheatsheets/iptables)
-- [Hacktricks - Suricata & Iptables cheatsheet](https://book.hacktricks.xyz/generic-methodologies-and-resources/basic-forensic-methodology/pcap-inspection/suricata-and-iptables-cheatsheet)
-- [How to list all iptables rules with line numbers on Linux](https://www.cyberciti.biz/faq/how-to-list-all-iptables-rules-in-linux/)
-- [How can I remove specific rules from iptables?](https://stackoverflow.com/questions/10197405/how-can-i-remove-specific-rules-from-iptables)
-
-Allow only traffic from external IP to host via port
-
-```bash
-sudo iptables -A INPUT -s <source> -p <tcp/udp> --dport <destination-port> -j ACCEPT
-```
-
-Block all traffic to specify port in host
-
-```bash
-sudo iptables -A INPUT -p <tcp/udp> --dport <destination-port> -j DROP
-```
-
-List all rule and table rule
-
-```bash
-# List all rules
-sudo iptables -S
-
-# list all tables rules
-sudo iptables -L -v -n | more
-
-# list all rules for INPUT tables
-sudo iptables -L INPUT -v -n
-```
-
-Delete rule in iptables
-
-```bash
-# Basic command to delete
-sudo iptables -F
-
-# To specify you want
-# Find your rule base on number
-iptables -L INPUT --line-numbers
-# Remove that base on number of line
-iptables -D INPUT <specific-line-number>
-
-# IYKYN, use `-D` flag for same command `-A` to remove that rule
-```
-
-## `tr` command
-
-Use `tr` to delete with `-d` flag
-
-```bash
-tr -d "HostName:Port" # If find 2 word, seperate with space
-tr -d "HostNamePort" # If find 2 word, no space add-on
-```
-
-Use `tr` to change space to colon, ` ` --> `:`
-
-```bash
-tr -s "[:blank:]" ":"
-```
-
-## `ssh` command
-
-Use tunneling mode of `ssh` to reverse shell from remote to your local host
-
->[!info]
->Command below to port-forward from port `127.0.0.1:8080` from remote host and send the traffic to port `:8080` inside your host
-
-```bash
-ssh -N -L 8080:127.0.0.1:8080 -i /path/to/your/private_key <user>@<remote-host> -p <port-ssh> # Default ssh via port 22, use -p if you need to specific
-```
-
 ## `jq` command
 
 List of articles relate `jq` with helpful solution
@@ -285,18 +348,6 @@ In the situation, if you want to decode `jwt` token, you can try with `jq`
 ```bash
 jq -R 'split(".") | .[1] | @base64d | fromjson' <<< "$1"
 ```
-## `du` command 
-
-You can use `du` command for list all size inside your directory
-
-```bash
-# List folder only
-du -csh xeusnguyen.xyz
-
-# List file inside
-du -csh xeusnguyen.xyz/*
-```
-
 ## `lsblk` command
 
 If you want to take the look with your storage device like HDD or SSD, you can use `lsblk` to see what format of those devices
@@ -315,153 +366,28 @@ lsblk -f
 | **FAT32**       | up to 4 GB              | Windows, Mac, Linux                                    | For maximum compatibility                   |
 | **NTFS**        | 16 EiB – 1 KB           | Windows, Mac (read-only), most Linux distributions     | For internal drives and Windows system file |
 | **Ext4**        | 16 GiB – 16 TiB         | Windows, Mac, Linux (requires extra drivers to access) | For files larger than 4 GB                  |
+## `lsof` command
+
+**lsof** is a command for `LiSting Open Files`. Find and explore more at [documentation](https://lsof.readthedocs.io/en/latest/)
+
+To check network connection, you can use
+
+```bash
+lsof -i -P -n
+```
+
+Find files open to a process with known PID, e.g: 1234, you can use
+
+```bash
+lsof -p 1234
+```
+
 ## `mkfs` command
 
 You can use `mkfs` command to formatting your device. Read more at [How to Use the mkfs Command on Linux](https://www.howtogeek.com/443342/how-to-use-the-mkfs-command-on-linux/)
 
 ```bash
 mkfs [options] [-t type fs-options] device [size]
-```
-
-## `fdisk` command
-
-Documentation: [What is FDISK and how does it work?](https://www.techtarget.com/whatis/definition/FDISK)
-
-Use `fdisk` when you want to hangout with your hard dkkkkkkkkkkkkkisk drive, like integrate multiple way for formatting or partitioning a [hard disk drive](https://www.techtarget.com/searchstorage/definition/hard-disk-drive), or to delete different portions of it. FDISK is an external utility. It is most commonly used to prepare and [partition](https://www.techtarget.com/searchstorage/definition/partition) a hard drive
-
-```bash
-# to view details of available disk partitions.
-sudo fdisk -l
-# to view the partitions on a specific disk.
-sudo fdisk -l /dev/sda
-# to create a hard disk partition.
-sudo fdisk /dev/sda
-# to view the partition size.
-sudo fdisk -s /dev/sda
-```
-
-And when you want to hit to interaction mode you can try with
-
-```bash
-sudo fdisk /dev/sda
-```
-
-And when you hit keyboard with `m`, you can see the helper
-
-```bash
-Command (m for help): m
-
-Help:
-
-  GPT
-   M   enter protective/hybrid MBR
-
-  Generic
-   d   delete a partition
-   F   list free unpartitioned space
-   l   list known partition types
-   n   add a new partition
-   p   print the partition table
-   t   change a partition type
-   v   verify the partition table
-   i   print information about a partition
-
-  Misc
-   m   print this menu
-   x   extra functionality (experts only)
-
-  Script
-   I   load disk layout from sfdisk script file
-   O   dump disk layout to sfdisk script file
-
-  Save & Exit
-   w   write table to disk and exit
-   q   quit without saving changes
-
-  Create a new label
-   g   create a new empty GPT partition table
-   G   create a new empty SGI (IRIX) partition table
-   o   create a new empty DOS partition table
-   s   create a new empty Sun partition table
-
-```
-
-## `scp` command
-
-Documentation: [SCP Command in Linux {13 Examples}](https://phoenixnap.com/kb/linux-scp-command)
-
-`scp` is protocol which permit use copy and transfer file from remote and local machine with bi-direction, or cp from remote to remote
-
-```bash
-# From local to remote
-scp /path/file/local user@ip:/path/file/remote
-
-# From remote to local
-scp user@ip:/path/file/remote /path/file/local
-
-# From remote to remote
-scp user1@ip1:/path/file/remote1 user2@ip2:/path/file/remote2
-
-# From remote to remote (but your machine is mediate)
-scp -3 user1@ip1:/path/file/remote1 user2@ip2:/path/file/remote2
-```
-
-In some special case, you can integrate with option with your scp command to specific
-
-**Different Port**: Usually `scp` use SSH (Port 22) to mediate help you secure transfer data through that port, but in other situation SSH not work in Port 22, you can use `-p` to specific
-
-```bash
-scp -p 2222 /path/file/local user@ip:/path/file/remote
-```
-
-**Recursive**: To copy whole folder, usually we use recursive mode and `scp` does have with `-r`
-
-```bash
-scp -r /path/folder/ user@ip:/path/file/remote
-```
-
-## `sed` command
-
-Documentation: [Sed cheatsheet](https://quickref.me/sed.html) and [How to Use Sed to Find and Replace a String in a File](https://phoenixnap.com/kb/sed-replace)
-
-To replace a string in file with `sed`, you can use command with format
-
-```bash
-# Replace in file (Global)
-sed -i 's/OLD/NEW/g' path/file #Replace string inside a file
-```
-
-To replace in the string, you can control action with
-
-```bash
-echo "[MASKED]" | sed -e "s/\[MASKED\]/123456789/g"
-```
-
-To replace the string with content return from executing command, you can use
-
-```bash
-sed -i 's/OLD/'$(echo $NEW)'/g' path/file
-```
-## `systemctl` command
-
-Documentation: [Redhat - Systemd cheat sheet](https://access.redhat.com/node/1199213/40/0/13122931)
-
-Use `systemctl` command to check available service inside your host with state running
-
-```bash
-sudo systemctl list-units --type=service --state=running
-```
-
-Use one of option Disable/Enable/Restart/Stop/Start with service inside host for changing state
-
-```bash
-sudo systemctl disable/enable/restart/stop/start <name_of_service>
-```
-
-Check configure or state of service with `systemctl` command
-
-```bash
-sudo systemctl show/status <name_of_services>
 ```
 
 ## `modprobe` command
@@ -512,22 +438,6 @@ find /lib/modules/$(uname -r) -type f -name '*.ko*' | grep -e "<module-name>"
 awk '{ print $1 }' /proc/modules | xargs modinfo -n | sort | grep -e "<module_name>"
 ```
 
-## `lsof` command
-
-**lsof** is a command for `LiSting Open Files`. Find and explore more at [documentation](https://lsof.readthedocs.io/en/latest/)
-
-To check network connection, you can use
-
-```bash
-lsof -i -P -n
-```
-
-Find files open to a process with known PID, e.g: 1234, you can use
-
-```bash
-lsof -p 1234
-```
-
 ## `ps` command
 
 You can use `ps` command to check process inside your machine to identify CPU spike or memory leak or moreover
@@ -550,15 +460,152 @@ Check Running Processes - This lists the top 10 processes sorted by CPU usage, h
 ps aux --sort=-%cpu | head -10
 ```
 
-## `iostat` command
+## `scp` command
 
-You can use `iostat` for listing and monitoring your input and output of your disk, by this action you can doube-check state and bottleneck inside
+Documentation: [SCP Command in Linux {13 Examples}](https://phoenixnap.com/kb/linux-scp-command)
 
-Disk I/O Monitoring - This displays disk I/O statistics every 5 seconds, including utilization, queue length, and wait time
+`scp` is protocol which permit use copy and transfer file from remote and local machine with bi-direction, or cp from remote to remote
 
 ```bash
-iostat -xz 5
+# From local to remote
+scp /path/file/local user@ip:/path/file/remote
+
+# From remote to local
+scp user@ip:/path/file/remote /path/file/local
+
+# From remote to remote
+scp user1@ip1:/path/file/remote1 user2@ip2:/path/file/remote2
+
+# From remote to remote (but your machine is mediate)
+scp -3 user1@ip1:/path/file/remote1 user2@ip2:/path/file/remote2
 ```
+
+In some special case, you can integrate with option with your scp command to specific
+
+**Different Port**: Usually `scp` use SSH (Port 22) to mediate help you secure transfer data through that port, but in other situation SSH not work in Port 22, you can use `-p` to specific
+
+```bash
+scp -p 2222 /path/file/local user@ip:/path/file/remote
+```
+
+**Recursive**: To copy whole folder, usually we use recursive mode and `scp` does have with `-r`
+
+```bash
+scp -r /path/folder/ user@ip:/path/file/remote
+```
+
+## `sed` command
+
+Documentation
+
+- [Sed cheatsheet](https://quickref.me/sed.html)
+- [How to Use Sed to Find and Replace a String in a File](https://phoenixnap.com/kb/sed-replace)
+- [Internet - Practical Shell Patterns I Actually Use](https://zwischenzugs.com/2022/01/04/practical-shell-patterns-i-actually-use/)
+- [Cyberciti - How to use sed to find and replace text in files in Linux / Unix shell](https://www.cyberciti.biz/faq/how-to-use-sed-to-find-and-replace-text-in-files-in-linux-unix-shell/)
+
+To replace a string in file with `sed`, you can use command with format
+
+```bash
+# Replace in file (Global)
+sed -i 's/OLD/NEW/g' path/file #Replace string inside a file
+```
+
+To replace in the string, you can control action with
+
+```bash
+echo "[MASKED]" | sed -e "s/\[MASKED\]/123456789/g"
+```
+
+To replace the string with content return from executing command, you can use
+
+```bash
+sed -i 's/OLD/'$(echo $NEW)'/g' path/file
+```
+## `ssh` command
+
+Documentations and articles
+
+- [Tecmint - How to Increase SSH Connection Timeout in Linux](https://www.tecmint.com/increase-ssh-connection-timeout/)
+
+Use tunneling mode of `ssh` to reverse shell from remote to your local host
+
+>[!info]
+>Command below to port-forward from port `127.0.0.1:8080` from remote host and send the traffic to port `:8080` inside your host
+
+```bash
+ssh -N -L 8080:127.0.0.1:8080 -i /path/to/your/private_key <user>@<remote-host> -p <port-ssh> # Default ssh via port 22, use -p if you need to specific
+```
+
+## `systemctl` command
+
+Documentations and articles
+
+- [Redhat - Systemd cheat sheet](https://access.redhat.com/node/1199213/40/0/13122931)
+- [Medium - Stop Using systemctl Blindly: Master Advanced Service Management Techniques!](https://medium.com/@howtouselinux/stop-using-systemctl-blindly-master-advanced-service-management-techniques-83dfd0e9c0ab)
+
+Use `systemctl` command to check available service inside your host with state running
+
+```bash
+sudo systemctl list-units --type=service --state=running
+```
+
+Use one of option Disable/Enable/Restart/Stop/Start with service inside host for changing state
+
+```bash
+sudo systemctl disable/enable/restart/stop/start <name_of_service>
+```
+
+Check configure or state of service with `systemctl` command
+
+```bash
+sudo systemctl show/status <name_of_services>
+```
+
+## `ufw` command
+
+Documentations and articles
+
+- [DigitalOcean - How to Set Up a Firewall with UFW on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu)
+
+## `tr` command
+
+Use `tr` to delete with `-d` flag
+
+```bash
+tr -d "HostName:Port" # If find 2 word, seperate with space
+tr -d "HostNamePort" # If find 2 word, no space add-on
+```
+
+Use `tr` to change space to colon, ` ` --> `:`
+
+```bash
+tr -s "[:blank:]" ":"
+```
+
+## `tree` command
+
+Print the sub-directory of folder with configuration level
+
+```bash
+tree -d -L 2 .
+```
+
+Print the sub file and folder with filter not include smt with `-I` option. Explore at [StackOverFlow - tree command for multiple includes and excludes](https://unix.stackexchange.com/questions/61074/tree-command-for-multiple-includes-and-excludes)
+
+```bash
+# With only
+tree -a -L 1 -I .git
+
+# With multiple
+tree -a -L 1 -I '.git|.terraform.lock.hcl'
+```
+
+Print tree with combine full path, include and exclude pattern
+
+```bash
+tree -f -I "bin|unitTest" -P "*.[ch]|*.[ch]pp." your_dir/
+```
+
 # External Commands
 ## Caddy server
 

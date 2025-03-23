@@ -667,6 +667,12 @@ A workflow would be
 3. Perform your maintenance tasks on the node.
 4. Run **kubectl uncordon node-name** to mark the node as schedulable again.
 
+The ultimate drain command should use lik
+
+```bash
+kubectl drain nodes <node-name> --ignore-daemonset --delete-emptydir-data --force --grace-period=-1
+```
+
 In advantage, you can do some sort of configuration for best practice
 
 - Configure a disruption budget. Explore at [PodDisruptionBudget](https://kubernetes.io/docs/concepts/workloads/pods/disruptions/) and how to  [configure a PodDisruptionBudgets](https://kubernetes.io/docs/tasks/run-application/configure-pdb/)
@@ -953,3 +959,70 @@ spec:
 
 >[!info]
 > An External Service pointing to [httpbin.org](https://httpbin.org/), a simple HTTP request/response service. It's a valuable tool for testing and debugging as it can simulate various HTTP responses.
+
+# Longhorn maintaining
+
+If you go for double-check `longhorn`, you should consider to double-check couple of contents
+
+- [Harvester - Evicting Replicas From a Disk (the CLI way)](https://harvesterhci.io/kb/evicting-replicas-from-a-disk-the-cli-way/)
+- [Longhorn - Node Maintenance and Kubernetes Upgrade Guide](https://longhorn.io/docs/1.8.1/maintenance/maintenance/)
+- [Longhorn Manual Testcase - Test Node Delete](https://longhorn.github.io/longhorn-tests/manual/release-specific/v1.1.1/delete-node/)
+
+When you encounter the issue your Node mask `down` state in your `kubernetes` like this
+
+![[Pasted image 20250321170118.png]]
+
+It can come from a couple of issue, such as
+
+- [BUG -  Wrong nodeOrDiskEvicted collected in node monitor](https://github.com/longhorn/longhorn/issues/4143#issue-1276280630)
+- [BUG - Unable to delete node: "spec and status of disks on node are being syncing and please retry later"](https://github.com/longhorn/longhorn/issues/4370)
+
+In my experience, I just combine multiple steps from 3 source above and gather this workaround like
+
+>[!warning]
+>This workaround will only spend for state node with no-disk inside, if the node exist disk and replica, you should follow [Harvester - Evicting Replicas From a Disk (the CLI way)](https://harvesterhci.io/kb/evicting-replicas-from-a-disk-the-cli-way/) to evict all replica for preventing mismatch
+
+1. Drain node for maintaining
+
+```bash
+kubectl drain <node-name> --ignore-daemonset --delete-emptydir-data --force --grace-period=-1
+```
+
+Double-check the state of whole pods turn back and terminate on this node
+
+2. Taint node for remove longhorn stuff out of this node
+
+```bash
+kubectl taint nodes <node-name> nodetype=storage:NoExecute
+```
+
+Double-check the state of pod related in daemonset of longhorn kick out of node.
+
+>[!warning]
+>It's will turn down your pod run in this node, so remember `cordon` `drain` and `taint`. It will keep your application to prevent downtime
+
+3. Now we can delete `nodes.longhorn.io` via UI or CLI
+
+Use CLI
+
+```bash
+kubectl delete -n <longhorn-ns> nodes.longhorn.io node-name
+```
+
+Use UI
+
+![[Pasted image 20250321170118.png]]
+
+Click Remove Node and Click Ok. Now your longhorn node will be removed
+
+4. Next we `untaint` node for return longhorn stuff to this node one more time, but should be `uncordon` for preventing stuck
+
+```bash
+kubectl uncordon <node-name>
+```
+
+```bash
+kubectl taint nodes <node-name> nodetype=storage:NoExecute-
+```
+
+Follow the `kubectl` and `daemonset` application of longhorn will install again, and your node will be return. If you wanna know about `taint`, you should read at [Kubernetes - Taints and Tolerations](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/)

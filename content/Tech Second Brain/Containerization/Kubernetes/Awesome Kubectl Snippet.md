@@ -51,10 +51,16 @@ kubectl debug node/my-node -it --image=<img>
 kubectl delete pvc --all 
 ```
 
-## Delete `pods` with not on state `Running`
+## Delete `pods` with not on `Running` state
 
 ```bash
 k delete pods -n <name-space> --field-selector=status.phase!=Running
+```
+
+## Delete `pods` stuck in `Terminatting` state
+
+```bash
+kubectl delete pod <PODNAME> --grace-period=0 --force --namespace <NAMESPACE>
 ```
 
 # External command

@@ -54,7 +54,7 @@ tags:
 - [Github Gist - psql-with-gzip-cheatsheet.sh](https://gist.github.com/brock/7a7a70300096632cec30)
 - [Azure PostgreSQL - Backup and Restore](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-backup-restore)
 - [Internet - Useful PostgreSQL (psql) queries, commands and snippets](https://codefibershq.com/blog/useful-postgresql-pgsql-queries-commands-and-snippets)
-- [StrongDM - How to Create a Postgres User (Step-by-Step Tutorial)](https://www.strongdm.com/blog/postgres-create-user)
+- [Github Gist - PSQL Cheatsheet](https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546)
 ## Redis
 
 - [What is Valkey?](https://redis.io/blog/what-is-valkey/)

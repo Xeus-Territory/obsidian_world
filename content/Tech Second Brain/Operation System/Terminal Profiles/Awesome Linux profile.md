@@ -86,7 +86,8 @@ sudo apt install -y jq \
 	procps \
 	gnome-shell-extensions \
 	gnome-shell-extension-manager \
-	terminator
+	terminator \
+	tmux
 	
 # Install kubectl
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
@@ -187,6 +188,15 @@ ibus restart
 
 # Install fast for testing network connection
 wget https://github.com/ddo/fast/releases/download/v0.0.4/fast_linux_amd64 -O fast && chmod +x fast && sudo mv fast /usr/local/bin
+
+# Install argocd
+VERSION=$(curl -L -s https://raw.githubusercontent.com/argoproj/argo-cd/stable/VERSION)
+curl -sSL -o argocd-linux-amd64 https://github.com/argoproj/argo-cd/releases/download/v$VERSION/argocd-linux-amd64
+sudo install -m 555 argocd-linux-amd64 /usr/local/bin/argocd
+rm argocd-linux-amd64
+
+# Install vault
+wget https://releases.hashicorp.com/vault/1.18.5/vault_1.18.5_linux_amd64.zip && unzip vault_1.18.5_linux_amd64.zip && sudo mv vault /usr/local/bin && rm -rf vault_1.18.5_linux_amd64.zip LICENSE.txt
 ```
 
 # Install programming language for ZSH

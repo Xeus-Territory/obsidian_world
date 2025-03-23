@@ -213,10 +213,12 @@ You can explore and figure out more configuration and memory with linux through 
 
 - [Tecmint - How to Clear RAM Memory Cache, Buffer and Swap Space on Linux](https://www.tecmint.com/clear-ram-memory-cache-buffer-and-swap-space-on-linux/)
 - [Kernal Doc - Memory Management](https://docs.kernel.org/admin-guide/mm/index.html)
-# Use environment variables from `.env` file
+# Set and use environment variables from `.env` file
 
 >[!info]
->Read more about topic in `Stackoverflow` :  [Set environment variables from file of key/value pairs](https://stackoverflow.com/questions/19331497/set-environment-variables-from-file-of-key-value-pairs)
+>Read more about topic at
+>-  [StackOverFlow - Set environment variables from file of key/value pairs](https://stackoverflow.com/questions/19331497/set-environment-variables-from-file-of-key-value-pairs)
+>- [FreeCodeCamp - How to Set an Environment Variable in Linux](https://www.freecodecamp.org/news/how-to-set-an-environment-variable-in-linux/)
 
 Use export with except `#` line in `.env` file
 
@@ -236,6 +238,11 @@ set +o allexport
 set -o allexport && source dot/env/file && set +o allexport
 ```
 
+In some case, you wanna disable a environment in current shell, so you can
+
+```bash
+unset ENVIRONMENT_VARIABLE
+```
 # Update Ubuntu new version
 
 You can use integration tool inside `ubuntu` to update new version, that will pull and update packages inside host, do that easily with command
@@ -599,4 +606,142 @@ Move the content of user's home directory using `usermod` command
 ```bash
 sudo usermod -d new_dir_path -m user_name
 ```
+
+# Run Background Command
+
+>[!info]
+>In some situation, when you want to multitasking on your shell but the task become sophisticated and should run in longtime for initiating or deleting somethings, you should move that into background and run to complete, you can use couple of tools and utilities of Linux to handle this, such as `Ampersand (&)`, `screen`, `tmux`, ...
+
+You can double-check some articles to gather more information
+
+- [Phoenixnap - How to Run Linux Commands in Background](https://phoenixnap.com/kb/linux-run-command-background)
+- [GitHub - tmux shortcuts & cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
+- [GitHub - how-to-tmux-background-process.md](https://gist.github.com/davydany/d33f4b5e19eab6b805b045b91d3cf858)
+- [How to Use Linux's screen Command](https://www.howtogeek.com/662422/how-to-use-linuxs-screen-command/)
+
+## Use Ampersand (&)
+
+This is one of utilities already integrating inside your linux, you just playground with `&` with your command
+
+```bash
+# Run command in background
+[command] &
+
+# e.g
+ping -4 google.com &
+```
+
+This will move this command into background and run to successful, you can check that via `jobs` command
+
+```bash
+# List all jobs background in your host
+jobs
+```
+
+You can use `fg` for turn back command from background to current your shell
+
+```bash
+# Back with command
+fg %<command> # e.g fg %nano
+
+# Back with PID
+fg <pid>
+```
+
+If you wanna suspend command, you can just hotkey `ctrl + z` to move process running into background and if you wanna run again in background, you can use `bg` command
+
+## Use `screen`
+
+This one is one kind of popular method, you can use `screen` command to help you move the command into screen and you can control and manipulate multitask in multiple screen.
+
+To install `screen`, you can use
+
+```bash
+sudo apt install screen -y
+```
+
+Now use `screen` to move your shell into `screen` mode
+
+```bash
+screen
+```
+
+Now, you can operate that one, try run long command such as `ping` and run hotkey `ctrl+a d` to attach this session
+
+List all screen, you can use
+
+```bash
+screen -ls
+```
+
+To turn screen again, you can use with id of screen output from `ls` option or use name of shell
+
+```bash
+# Return by id
+screen -r 2429028
+
+# If you set your screen name like, e.g screen -S curl-command
+# Return by name
+screen -r curl-command
+```
+
+## Use `tmux`
+
+If I have talk about background process, most of my friend will relate `tmux` and I know many `linux` user use `tmux` every single day, so why not learn a bit about that one
+
+For `tmux` installation, you can use
+
+```bash
+sudo apt install tmux -y
+```
+
+Now run `tmux` command for executing new session
+
+```bash
+tmux
+```
+
+You are in `tmux`, so try to run `ping` or `curl` command in longtime and you can use hotkey `ctrl+b d` for detaching your session into background
+
+Now if you wanna turn your `tmux` again, you can use `tmux` with attach option
+
+```bash
+tmux a # or tmux attach
+```
+
+For more specific, you can add name for new session and turn it back with the name for more distinguish between multitasking
+
+```bash
+# specific name
+tmux new -s tmux-first
+
+# turn it back with name
+tmux attach -t tmux-first
+```
+
+For list `tmux`  session, you can use
+
+```bash
+tmux ls
+```
+
+Some cool functionality of `tmux` with hotkey, including
+
+- **Create a new tab:** `[CTRL]+[b], [c]`
+- **Switch to tab number:** `[CTRL]+[b], <number>`
+- **Enable Scrolling up / Page up:** `[CTRL]+[b], [`
+- **Vertical Split**: `[CTRL]+[b], %`
+- **Horizontal Split**: `[CTRL]+[b], "`
+- **Kill tab**: `[CTRL]+[b], x`
+
+# Mount and Unmount Disk in Linux
+
+- [Devconnected - How To Mount and Unmount Drives on Linux](https://devconnected.com/how-to-mount-and-unmount-drives-on-linux/)
+- [Networkwolrd - Linux commands for managing, partitioning, troubleshooting](https://www.networkworld.com/article/964235/linux-commands-for-managing-partitioning-troubleshooting.html)
+- [Internet - How to Change Permissions on Mounted Drive in Linux](https://linuxsimply.com/linux-change-permissions-on-mounted-drive/)
+- [Askubuntu - How to merge partitions?](https://askubuntu.com/questions/66000/how-to-merge-partitions)
+
+# Networking Performance with Linux
+
+- [Medium - How To Evaluate the Network Performance of a Linux System](https://medium.com/devops-dev/how-to-evaluate-the-network-performance-of-a-linux-system-69db89cae0ed)
 
