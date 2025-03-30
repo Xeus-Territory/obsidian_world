@@ -40,6 +40,7 @@ tags:
 - [Papers With Code](https://paperswithcode.com/): The latest in Machine Learning
 - [TensorFlow Hub](https://www.tensorflow.org/hub): A repository of trained machine learning models.
 - [There's An AI For That](https://theresanaiforthat.com/): Update the new about tools and technologies about AI
+- [AI Tools Directory](https://www.aixploria.com/en/): Access the largest list of top-quality AI tools available on the web
 # Artificial Intelligence / Machine Learning
 
 ![[thumbnail-ai-ml.png]]
@@ -56,7 +57,10 @@ tags:
 
 - [applied-ml](https://github.com/eugeneyan/applied-ml): 📚 Papers & tech blogs by companies sharing their work on data science & machine learning in production.
 - [awesome-deep-learning](https://github.com/ChristosChristofidis/awesome-deep-learning) : A curated list of awesome Deep Learning tutorials, projects and communities.
+- [awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps): Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini and opensource models.
+- [Awesome-LLMs-for-Video-Understanding](https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding): 🔥🔥🔥Latest Papers, Codes and Datasets on Vid-LLMs.
 - [awesome-local-ai](https://github.com/janhq/awesome-local-ai) : An awesome repository of local AI tools
+- [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers): A collection of MCP servers.
 - [awesome-model-quantization](https://github.com/Efficient-ML/Awesome-Model-Quantization): A list of papers, docs, codes about model quantization
 - [awesome-production-machine-learning](https://github.com/EthicalML/awesome-production-machine-learning): A curated list of awesome open source libraries to deploy, monitor, version and scale your machine learning. [Website](https://ethicalml.github.io/awesome-production-machine-learning/)
 - [best-of-ml-python](https://github.com/ml-tooling/best-of-ml-python): 🏆 A ranked list of awesome machine learning Python libraries. Updated weekly.
@@ -78,6 +82,9 @@ tags:
 - [Machine Learning](https://github.com/topics/machine-learning)
 - [RAG](https://github.com/topics/rag)
 - [Stream Processing](https://github.com/topics/stream-processing)
+- [LLMs](https://github.com/topics/llms)
+- [NLP](https://github.com/topics/nlp)
+- [Computer Vision](https://github.com/topics/computer-vision)
 ## Youtube Channel
 
 ![[youtube.png]]
@@ -105,6 +112,7 @@ tags:
 - [Medium - 5 Steps to Build Efficient Data Pipelines with Apache Airflow](https://towardsdatascience.com/5-steps-to-build-efficient-data-pipelines-with-apache-airflow-d0b42576b530/)
 ## Awesome Repositories
 
+- [awesome-apache-airflow](https://github.com/jghoman/awesome-apache-airflow): Curated list of resources about Apache Airflow
 - [awesome-bigdata](https://github.com/oxnr/awesome-bigdata): A curated list of awesome big data frameworks, ressources and other awesomeness.
 - [awesome-datascience](https://github.com/academic/awesome-datascience): 📝 An awesome Data Science repository to learn and apply for real world problems.
 - [awesome-etl](https://github.com/pawl/awesome-etl): A curated list of awesome ETL frameworks, libraries, and software.
@@ -117,6 +125,7 @@ tags:
 - [LakeFS](https://lakefs.io/blog/)
 ## Topic
 
+- [Data](https://github.com/topics/data)
 - [Data Engineering](https://github.com/topics/data-engineering)
 - [Dataflow](https://github.com/topics/dataflow)
 - [Data Processing](https://github.com/topics/data-processing)
@@ -160,6 +169,7 @@ tags:
 - [airflow](https://github.com/apache/airflow): A platform to programmatically author, schedule, and monitor workflows
 
 	- [Astronomer Registry](https://registry.astronomer.io/): Building Blocks for your Apache Airflow Data Pipelines.
+	- [Astro](https://www.astronomer.io/docs/astro/astro-architecture): A fully-managed SaaS application for data orchestration that helps teams write and run data pipelines with Apache Airflow
 
 - [kestra](https://github.com/kestra-io/kestra): ⚡ Workflow Automation Platform
 - [prefect](https://github.com/PrefectHQ/prefect): A workflow orchestration framework for building resilient data pipelines in Python.

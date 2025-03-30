@@ -107,7 +107,7 @@ tags:
 - [Awesome List](https://github.com/topics/awesome-list)
 - [Compiler](https://github.com/topics/compiler)
 - [Configuration Management](https://github.com/topics/configuration-management)
-- [Data](https://github.com/topics/data)
+- [Cloud](https://github.com/topics/cloud)
 - [DevOps](https://github.com/topics/devops)
 - [DevSecOps](https://github.com/topics/devsecops)
 - [Failover](https://github.com/topics/failover)
@@ -255,8 +255,11 @@ tags:
 ## Local Cloud Self-hosted
 
 - [CloudStack](https://cloudstack.apache.org/): An open-source software system designed to deploy and manage large networks of virtual machines, as a highly available, highly scalable Infrastructure as a Service (IaaS) cloud computing platform.
-- [LocalStack - AWS local](https://hub.docker.com/r/localstack/localstack) : A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline. Read more: [Documentation](https://docs.localstack.cloud/getting-started/). You can do more access and management via [LocalStack Web Application](https://app.localstack.cloud/sign-in)
+- [LocalStack - AWS local](https://hub.docker.com/r/localstack/localstack) : A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline.
+	- [Documentation](https://docs.localstack.cloud/getting-started/)
+	- [LocalStack Web Application](https://app.localstack.cloud/sign-in): Web UI for managing your LocalStack
 - [openstack](https://github.com/openstack/openstack): Repository tracking all OpenStack repositories as submodules. Mirror of code maintained at opendev.org -->  [documentation](https://docs.openstack.org/2024.1/), and minor version [devstack](https://github.com/openstack/devstack) - System for quickly installing an OpenStack cloud
+- [OpenNebula](https://docs.opennebula.io/6.10/overview/opennebula_concepts/opennebula_overview.html): Open source **Cloud & Edge Computing Platform** bringing real freedom to your Enterprise Cloud 🚀
 ## Precommit
 
 - [pre-commit-hooks](https://github.com/pre-commit/pre-commit-hooks): Some out-of-the-box hooks for pre-commitSome out-of-the box hooks for pre-commit
