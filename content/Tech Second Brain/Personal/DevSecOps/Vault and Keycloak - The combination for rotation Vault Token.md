@@ -170,7 +170,7 @@ You can follow a couple of articles to understand why
 
 ![[Pasted image 20250330143532.png]]
 <div align="center">
-	<p style="text-align: center;"><a href="https://itnext.io/integrating-keycloak-oidc-with-hashicorp-vault-hcp-a-terraform-comprehensive-guide-b41c58ae6ecc">Source: Integrating Keycloak OIDC with HashiCorp Vault HCP: A Terraform Comprehensive Guide 🧑‍💻</p>
+	<p style="text-align: center;"><a href="https://itnext.io/integrating-keycloak-oidc-with-hashicorp-vault-hcp-a-terraform-comprehensive-guide-b41c58ae6ecc">Source: Integrating Keycloak OIDC with HashiCorp Vault HCP: A Terraform Comprehensive Guide 🧑‍💻</a></p>
 </div>
 
 ## Preparation
@@ -181,7 +181,7 @@ First of all, you should install `vault-cli` in your host, you can follow this c
 https://releases.hashicorp.com/vault/1.18.5/vault_1.18.5_linux_amd64.zip && unzip vault_1.18.5_linux_amd64.zip && sudo mv vault /usr/local/bin && rm -rf vault_1.18.5_linux_amd64.zip LICENSE.txt
 ```
 
-Next you need to configuration KeyCloak with a couple of steps to follow or [tutorial](https://developer.hashicorp.com/vault/docs/auth/jwt/oidc-providers/keycloak)
+Next you need to configuration `KeyCloak` with a couple of steps to follow or [tutorial](https://developer.hashicorp.com/vault/docs/auth/jwt/oidc-providers/keycloak)
 
 1. Access into your `keycloak`, I recommend use `master` realms for add another realm into your host
 2. After, you create realms, such as `vault` for example, you can go to `client` and create new one
@@ -346,7 +346,6 @@ To make a code run, you should install couple of library
 
 ```bash
 hvac==2.3.0
-pyppeteer==2.0.0
 requests==2.32.3
 ```
 
@@ -356,15 +355,15 @@ The success optional is one used to render `jwt` token and login into vault via 
 import requests
 import hvac
 
-client = hvac.Client("https://vault-domain.example.xyz")
+client = hvac.Client("https://vault.example.xyz")
 ROLE = 'default'
 
-KEYCLOAK_URL="xxxxx"
-KEYCLOAK_REALM="yyyyy"
-KEYCLOAK_CLIENT_ID="zzzzzzzz"
-KEYCLOAK_CLIENT_SECRET="abcdef"
-KEYCLOAK_USERNAME="qwert"
-KEYCLOAK_PASSWORD="plmiok"
+KEYCLOAK_URL="your-keycloak-url"
+KEYCLOAK_REALM="your-realm"
+KEYCLOAK_CLIENT_ID="your-client-id"
+KEYCLOAK_CLIENT_SECRET="your-client-secret"
+KEYCLOAK_USERNAME="your-keycloak-username"
+KEYCLOAK_PASSWORD="yout-keycloak-password"
 
 token_url = f"{KEYCLOAK_URL}/realms/{KEYCLOAK_REALM}/protocol/openid-connect/token"
 
@@ -540,7 +539,7 @@ if __name__ == '__main__':
 
 This code is not completely, if you have any idea, it should be considered for implementing. Cheer 1 hour of mine exhausted with `gemini` to deal with it
 
-Remember install playwright
+Remember install `playwright` before playing around with above script
 
 ```bash 
 pip install playwright
