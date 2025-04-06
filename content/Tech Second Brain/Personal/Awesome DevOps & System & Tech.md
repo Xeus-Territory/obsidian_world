@@ -53,7 +53,6 @@ tags:
 - [Bytedance Inc](https://github.com/bytedance): ByteDance's open source projects hub for innovation. [Website](https://opensource.bytedance.com/), Who stand behind [KubeWharf](https://github.com/kubewharf)
 - [Cloudflare](https://github.com/cloudflare): CloudFlare Open Source Community
 - [ClusterLabs](https://github.com/ClusterLabs): The open-source high-availability cluster stack. Who stand behind [pacemaker](https://github.com/ClusterLabs/pacemaker) and [corosync](https://github.com/corosync/corosync)
-- [Confluent Inc.](https://github.com/confluentinc): Real-time streams powered by Apache Kafka®
 - [Container Storage Interface](https://github.com/container-storage-interface) : Container Storage Interface (CSI) Specification.
 - [Dyne.org](https://github.com/dyne): Think &do tank and free software foundry
 - [Facebook](https://github.com/facebook): Meta - build community through open source technology.
@@ -248,10 +247,6 @@ tags:
 - [backstage](https://github.com/backstage/backstage): An open framework for building developer portals
 - [Kusion](https://www.kusionstack.io/docs/) : An intent-driven **Platform Orchestrator**, which sits at the core of an **Internal Developer Platform (IDP)**
 - [Qovery](https://hub.qovery.com/docs/getting-started/what-is-qovery/) : the **Internal Developer Platform (IDP)** that cuts noise for developers with paved paths to production
-## Kafka Tools
-
-- [akhq](https://github.com/tchiotludo/akhq): Kafka GUI for Apache Kafka to manage topics, topics data, consumers group, schema registry, connect and more...
-- [kafka-ui](https://github.com/provectus/kafka-ui): Open-Source Web UI for Apache Kafka Management
 ## Local Cloud Self-hosted
 
 - [CloudStack](https://cloudstack.apache.org/): An open-source software system designed to deploy and manage large networks of virtual machines, as a highly available, highly scalable Infrastructure as a Service (IaaS) cloud computing platform.
@@ -264,11 +259,6 @@ tags:
 
 - [pre-commit-hooks](https://github.com/pre-commit/pre-commit-hooks): Some out-of-the-box hooks for pre-commitSome out-of-the box hooks for pre-commit
 - [husky](https://github.com/typicode/husky): Git hooks made easy 🐶 woof!
-## Queue Services
-
-- [Apache Kafka](https://kafka.apache.org/documentation/): an open-source, distributed event streaming platform with message communication and storage capabilities (**superb**)
-- [AutoMQ](https://docs.automq.com/automq/what-is-automq/overview) : AutoMQ re-engineers Kafka for the cloud by decoupling storage to object storage. While maintaining **100% compatibility** with Apache Kafka®, it offers users up to **10 times cost efficiency** and **100 times elasticity**.
-- [RabbitMQ](https://www.rabbitmq.com/): An open-source message broker for asynchronous messaging, queueing and delivery acknowledgement.
 ## Secrets management
 
 - [Ansible Vault](https://docs.ansible.com/ansible/2.9/user_guide/vault.html): A feature of ansible that allows you to keep sensitive data such as passwords or keys in encrypted files, rather than as plaintext in playbooks or roles.

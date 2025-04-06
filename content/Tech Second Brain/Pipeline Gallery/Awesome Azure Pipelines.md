@@ -218,7 +218,7 @@ stages:
 >- [Docker@2](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/docker-v2?view=azure-pipelines&tabs=yaml)
 >
 >Tools (Require install to VM)
->- [[Awesome Docker Snippet#Installing|Docker Installing]]
+>- [[Awesome Docker CLI#Installing|Docker Installing]]
 >- [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
 >- [Azure VM Authentication](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/qs-configure-portal-windows-vm)
 >- [VM authentication with Service Principle](https://learn.microsoft.com/en-us/azure/developer/java/sdk/identity-service-principal-auth)

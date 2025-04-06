@@ -149,7 +149,6 @@ tags:
 - [[Integration automation test with GitLab CI]]
 - [[Digging into AWS Monitoring Stack]]
 - [[Work with EKS and How to monitoring your Cluster]]
-
 ## 2025
 
 - [[How to serve Java API with Maven and Tomcat]]
@@ -157,6 +156,7 @@ tags:
 - [[DevOps and A Couple of things I learned|DevOps and A Couple of things I learned (Vietnamese Version)]]
 - [[Why you should use dependencies cache for your work]]
 - [[Vault and Keycloak - The combination for rotation Vault Token]]
+- [[GitLab Runner and Features of this platform]]
 # Hackwekend Series
 
 >[!info]
@@ -191,8 +191,8 @@ tags:
 - [[Awesome Database]]
 - [[Awesome Developer and Programming]]
 - [[Awesome DevOps & System & Tech]]
-- [[Awesome Docker compose Snippet]]
-- [[Awesome Docker Snippet]]
+- [[Awesome Docker Compose CLI]]
+- [[Awesome Docker CLI]]
 - [[Awesome Elasticsearch]]
 - [[Awesome Git]]
 - [[Awesome Hacking and Infosec]]
@@ -234,7 +234,6 @@ tags:
 - [[Kubewekend Session 4|Kubewekend Session 4: Learn about ebpf with hubble and cilium]] - *This session will talk and learn about `eBPF` and the especially representation of `eBPF` are `cilium` and `hubble` to become main CNI of Kubewekend and talk about Observability of them*
 - [[Kubewekend Session 5|Kubewekend Session 5: Build HA Cluster]] - This session is really pleasant when we talk about how can create HA cluster with `kubewekend`, learn more the components inside `kubernetes` and try figure out about `network`, `security`, `configuration`, `container runtime` and `system` via this session
 - [[Kubewekend Session 6|Kubewekend Session 6: CSI and Ceph with Kubewekend]] - This session is covered about topic storage inside `Kubernetes` cluster, how can they work with `CSI` Architecture and why we need to `CSI Driver` for handle this stuff. Furthermore, I try to practice with `Ceph` - one of popular storage opensource for `Kubewekend` cluster
-
 ## 2025
 
 - [[Kubewekend Session Extra 1|Kubewekend Session Extra 1: Longhorn and the story about NFS in Kubernetes]] - This lab is try to take you to journey to learn about new CSI for Kubernetes, `Longhorn` and deliver you to new method to handle transfer large file via network by NFS protocol. I also provide more information about `iSCSI`, `nfs-ganesha` and technique `rdma` 
@@ -299,3 +298,4 @@ tags:
 - [[10-02-2025 to 23-02-2025|Session 4: 10-02-2025 to 23-02-2025]]
 - [[24-02-2025 to 09-03-2025|Session 5: 24-02-2025 to 09-03-2025]]
 - [[10-03-2025 to 23-03-2025|Session 6: 10-03-2025 to 23-03-2025]]
+- [[24-03-2025 to 06-04-2025|Session 7: 24-03-2025 to 06-04-2025]]

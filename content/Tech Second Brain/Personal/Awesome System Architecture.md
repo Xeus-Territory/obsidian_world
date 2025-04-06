@@ -32,6 +32,14 @@ tags:
 - [Platform Engineer Blog](https://platformengineering.org/blog) - The discipline of designing and building toolchains and workflows that enable self-service capabilities for software engineering organizations in the cloud-native era.
 - [Medium - ScalaBrix](https://scalabrix.medium.com/) - System Design & Architecture | Distributed Systems | Tech Blog with clearly explanation and beauty diagram
 - [Medium - Kai Waehner](https://kai-waehner.medium.com/): echnology Evangelist — [www.kai-waehner.de](http://www.kai-waehner.de/) → Big Data Analytics, Data Streaming, Apache Kafka, Middleware, Microservices
+
+## Developer
+
+- [Medium - Most Common Software Architecture Styles](https://medium.com/@techworldwithmilan/most-common-software-architecture-styles-86881d779683)
+- [Medium - Top 10 Microservice Anti-Patterns](https://blog.bitsrc.io/10-microservice-anti-patterns-278bcb7f385d)
+- [Medium - 10 Common Software Architectural Patterns in a nutshell](https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013)
+- [Medium - Architectural Metapatterns](https://medium.com/itnext/architectural-metapatterns-1834bdbc4221)
+- [Dev.to - 10 Things You Can Learn from Netflix’s Architecture](https://dev.to/somadevtoo/10-things-you-can-learn-from-netflixs-architecture-1bnn)
 ## Design Pattern
 
 - [Azure - Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)

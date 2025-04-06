@@ -26,3 +26,11 @@ tags:
 - [OWASP - DevSecOps Guideline](https://owasp.org/www-project-devsecops-guideline/latest/)
 - [Medium - Building end-to-end DevSecOps for AWS Migration: Security at Entry Level with open source SCA, SAST and DAST tools](https://medium.com/@akhilmittal510/building-end-to-end-devsecops-for-aws-migration-security-at-entry-level-with-open-source-sca-sast-919480423fc1)
 - [Medium - Establishing an Enterprise-Ready DevSecOps CI/CD Pipeline on GitHub Actions on Google Cloud](https://medium.com/@anshumaansingh10jan/building-an-enterprise-ready-devsecops-ci-cd-pipeline-on-github-actions-for-gcp-6746f6a43187)
+
+# Tools
+
+## SAST
+
+- [Sonarqube](https://docs.sonarsource.com/sonarqube-server/latest/): An on-premise analysis tool designed to detect coding issues
+
+	- [Sonar Rule](https://rules.sonarsource.com/): The collections of rule integrate into Sonarqube Server
