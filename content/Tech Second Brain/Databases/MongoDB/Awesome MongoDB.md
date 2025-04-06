@@ -17,7 +17,38 @@ tags:
 ## Tips & Configuration
 
 - [Medium - Solving curious case of excess memory consumption by MongoDB](https://tech.oyorooms.com/mongodb-out-of-memory-kill-process-mongodb-using-too-much-memory-solved-44e9ae577bed)
-# Use MongoDB Connect with DirectConnection
+
+# Install MongoDB Tools
+
+## Mongoshell
+
+You can download and install [mongosh](https://www.mongodb.com/try/download/shell). If you already use `linux`, you can follow my guideline
+
+```bash
+wget https://downloads.mongodb.com/compass/mongodb-mongosh_2.4.2_amd64.deb
+chmod +x  mongodb-mongosh_2.4.2_amd64.deb
+sudo dpkg -i mongodb-mongosh_2.4.2_amd64.deb
+```
+
+After download, you can validate the mongosh by
+
+```bash
+mongosh --version
+```
+
+## Backup and Restore
+
+To backup and restore, we need to use [MongoDB Database Tools](https://www.mongodb.com/docs/database-tools/), such as `mongodump` and `mongorestore`. Following the guideline to install
+
+```bash
+wget https://fastdl.mongodb.org/tools/db/mongodb-database-tools-debian10-x86_64-100.12.0.deb
+chmod +x mongodb-database-tools-debian10-x86_64-100.12.0.deb
+sudo dpkg -i mongodb-database-tools-debian10-x86_64-100.12.0.deb
+```
+
+# Knowledge
+
+## Use MongoDB Connect with DirectConnection
 
 This configuration relate in configuration of MongoDB, when you set `replicaset` mode for your MongoDB, when you double-check the configuration member, you can see this at
 
@@ -79,3 +110,14 @@ mongosh 'mongodb://username:password@server-uri/db?directConnection=true'
 >- The connection string uses the `mongodb+srv://` connection string format.
 >- The connection string contains a seed list with multiple hosts.
 >- The connection string already contains a `directConnection` parameter.
+# MongoDB CLI Usage
+
+## Login into cluster
+
+```bash
+# Connect via parameter
+mongosh --host <host> --port <port> -u <username> -p <password>
+
+# Connect via connection string
+mongosh 'mongodb://<user>:<pass>@<host>:<port>/<collection>'
+```

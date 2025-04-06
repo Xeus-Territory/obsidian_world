@@ -185,6 +185,27 @@ sudo apt-get install ibus ibus-bamboo --install-recommends
 ibus restart
 # If failure to connect, It means bamboo daemon not work, you can use 
 # ibus-daemon -d
+# Set bamboo become default keyboard of your machine
+env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['BambooUs', 'Bamboo']" && gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'Bamboo')]"
+
+# Install extension for your machine
+mkdir -p ~/.local/share/gnome-shell/extensions/
+
+## Install clipboard extension
+git clone https://github.com/Tudmotu/gnome-shell-extension-clipboard-indicator.git ~/.local/share/gnome-shell/extensions/clipboard-indicator@tudmotu.com
+gnome-extensions enable clipboard-indicator@tudmotu.com
+
+## Install blur-my-shell
+wget https://github.com/aunetx/blur-my-shell/releases/download/v68-2/blur-my-shell@aunetx.shell-extension.zip
+gnome-extensions install -f blur-my-shell@aunetx.shell-extension.zip
+gnome-extensions enable blur-my-shell@aunetx
+rm -rf blur-my-shell@aunetx.shell-extension.zip
+
+## Install transparent-top-bar
+git clone https://github.com/zhanghai/gnome-shell-extension-transparent-top-bar.git
+mkdir -p ~/.local/share/gnome-shell/extensions/transparent-top-bar@zhanghai.me
+cp -r gnome-shell-extension-transparent-top-bar/src/* ~/.local/share/gnome-shell/extensions/transparent-top-bar@zhanghai.me
+rm -rf gnome-shell-extension-transparent-top-bar
 
 # Install fast for testing network connection
 wget https://github.com/ddo/fast/releases/download/v0.0.4/fast_linux_amd64 -O fast && chmod +x fast && sudo mv fast /usr/local/bin
@@ -197,6 +218,13 @@ rm argocd-linux-amd64
 
 # Install vault
 wget https://releases.hashicorp.com/vault/1.18.5/vault_1.18.5_linux_amd64.zip && unzip vault_1.18.5_linux_amd64.zip && sudo mv vault /usr/local/bin && rm -rf vault_1.18.5_linux_amd64.zip LICENSE.txt
+
+# Install kafka CLI
+mkdir -p ~/.kafka
+wget https://dlcdn.apache.org/kafka/4.0.0/kafka_2.13-4.0.0.tgz
+tar -xzf kafka_2.13-4.0.0.tgz -C ~/.kafka --strip-components=1
+echo "export PATH=\"\$PATH:\$HOME\.kafka\\\bin\"" >> ~/.zshrc
+source ~/.zshrc
 ```
 
 # Install programming language for ZSH

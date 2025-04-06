@@ -20,35 +20,124 @@ tags:
 - [Dev.to - Authenticating your GitLab CI runner to an AWS ECR registry using Amazon ECR Docker Credential Helper 🔑](https://dev.to/aws-builders/authenticating-your-gitlab-ci-runner-to-an-aws-ecr-registry-using-amazon-ecr-docker-credential-helper-3ba)
 ## General
 
-- [Gitlab Documentation](https://docs.gitlab.com/ee/user/) - General Documentation about Gitlab
-- [GitLab Runner](https://docs.gitlab.com/runner/) - Information about Gitlab Runner and configuration
-- [GitLab CI/CD examples](https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html) - GitlabCI/CD Collections
+- [GitLab CI/CD examples](https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html) - GitLab CI/CD Collections
+- [Gitlab Documentation](https://docs.gitlab.com/ee/user/) - General Documentation about GitLab
 - [Gitlab Permissions and roles](https://docs.gitlab.com/ee/user/permissions.html) - About Role and Permissions of account in GitLab organization
-
+- [GitLab Runner Helm chart](https://docs.gitlab.com/runner/install/kubernetes/) - Self-hosted runner inside Kubernetes
+- [GitLab Runner](https://docs.gitlab.com/runner/) - Information about GitLab Runner and configuration
+- [GitLab Runner Docker executor](https://docs.gitlab.com/runner/executors/docker/) - Uses the Docker executor to run jobs on Docker images.
+- [Run GitLab Runner in a container](https://docs.gitlab.com/runner/install/docker/) - GitLab Runner in a Docker container to execute CI/CD jobs
 ## Syntax
 
-- [Gitlab CI/CD Syntax](https://docs.gitlab.com/ee/ci/yaml/) - Introduce about Gitlab Syntax and usage
-- [Variables](https://docs.gitlab.com/ee/ci/variables/) & [Predefine variables](https://docs.gitlab.com/ee/ci/variables/predefined_variables.html) - GitlabCI Variables and Predefine variables
+- [Gitlab CI/CD Syntax](https://docs.gitlab.com/ee/ci/yaml/) - Introduce about GitLab Syntax and usage
+- [Variables](https://docs.gitlab.com/ee/ci/variables/) & [Predefine variables](https://docs.gitlab.com/ee/ci/variables/predefined_variables.html) - GitLabCI Variables and Predefined variables
 - [Scripts and job logs](https://docs.gitlab.com/ee/ci/yaml/script.html#multiline-commands-not-preserved-by-folded-yaml-multiline-block-scalar) - Use for format script and log inside job
 ## Features
 
-- [GitlabCI Services](https://docs.gitlab.com/ee/ci/services/) - Use service keyword GitlabCI
-- [Run your CI/CD jobs in Docker containers](https://docs.gitlab.com/ee/ci/docker/using_docker_images.html#use-statically-defined-credentials) - Setup GitlabCI in docker+machine
-- [Use Docker to build Docker images](https://docs.gitlab.com/ee/ci/docker/using_docker_build.html) - Run Dind to build image inside GitlabCI
+- [GitlabCI Services](https://docs.gitlab.com/ee/ci/services/) - Use service keyword GitLabCI
+- [Run your CI/CD jobs in Docker containers](https://docs.gitlab.com/ee/ci/docker/using_docker_images.html#use-statically-defined-credentials) - Setup GitLabCI in docker+machine
+- [Use Docker to build Docker images](https://docs.gitlab.com/ee/ci/docker/using_docker_build.html) - Run Dind to build image inside GitLabCI
 - [DRY development: A cheatsheet on reusability throughout GitLab](https://about.gitlab.com/blog/2023/01/03/keeping-your-development-dry/) - DRY Mindset
 - [Optimize GitLab CI/CD configuration files](https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html) - Optimize and DRY Mindset
-- [CI/CD components](https://docs.gitlab.com/ee/ci/components/) - GitlabCI Components
+- [CI/CD components](https://docs.gitlab.com/ee/ci/components/) - GitLabCI Components
 - [Downstream pipelines](https://docs.gitlab.com/ee/ci/pipelines/downstream_pipelines.html?tab=Multi-project+pipeline) - Use Downstream pipelines for trigger
-- [Gitlab CI/CD Pass artifacts/variables between pipelines](https://stackoverflow.com/questions/68179565/gitlab-ci-cd-pass-artifacts-variables-between-pipelines) - Methodology for resue artifacts
-- [GitLab CI/CD artifacts reports types](https://docs.gitlab.com/ee/ci/yaml/artifacts_reports.html) - Report type of Gitlab Artifact
+- [Gitlab CI/CD Pass artifacts/variables between pipelines](https://stackoverflow.com/questions/68179565/gitlab-ci-cd-pass-artifacts-variables-between-pipelines) - Methodology for reuse artifacts
+- [GitLab CI/CD artifacts reports types](https://docs.gitlab.com/ee/ci/yaml/artifacts_reports.html) - Report type of GitLab Artifact
 - [GitLab CI/CD Environments and deployments](https://docs.gitlab.com/ee/ci/environments/) - Environments describe where code is deployed.
 - [GitLab container registry](https://docs.gitlab.com/ee/user/packages/container_registry/) - You can use the integrated container registry to store container images for each GitLab project.
-- [How to modify a variable, used as name for docker image](https://forum.gitlab.com/t/how-to-modify-a-variable-used-as-name-for-docker-image/81438/1) - Dynamic image to using for gitlabci
-- [Caching in GitLab CI/CD](https://docs.gitlab.com/ci/caching/)
-
+- [How to modify a variable, used as name for docker image](https://forum.gitlab.com/t/how-to-modify-a-variable-used-as-name-for-docker-image/81438/1) - Dynamic image to using for GitLabCI
+- [Caching in GitLab CI/CD](https://docs.gitlab.com/ci/caching/)  - Use Cache Strategies for boosting productivity CI/CD
 ## Issues
 
 - [StackOverFlow - Pip install a private repo from Gitlab with Personal Access Token on Gitlab-CI](https://stackoverflow.com/questions/64266246/pip-install-a-private-repo-from-gitlab-with-personal-access-token-on-gitlab-ci)
+
+# Setup GitLab Runner
+
+## Run in Container (Docker Executor)
+
+GitLab Runner is one platform which offers us multiple way for [executor](https://docs.gitlab.com/runner/executors/), we have
+
+- [Shell](https://docs.gitlab.com/runner/executors/shell/)
+- [Docker](https://docs.gitlab.com/runner/executors/docker/)
+- [Kubernetes](https://docs.gitlab.com/runner/executors/kubernetes/)
+
+That why you can choose one of these for your project, and solution has seen most choice is Docker
+
+>[!info]
+>You can use the Docker executor to:
+>- Maintain the same build environment for each job
+>- Use the same image to test commands locally without the requirement of running a job in the CI server.
+>
+>The Docker executor uses [Docker Engine](https://www.docker.com/products/container-runtime/) to run each job in a separate and isolated container. To connect to Docker Engine, the executor uses:
+>- The image and services you define in [`.gitlab-ci.yml`](https://docs.gitlab.com/ci/yaml/).
+>- The configurations you define in [`config.toml`](https://docs.gitlab.com/runner/commands/#configuration-file).
+
+When you setup your `gitlab-runner` inside container, you can double-check two repository for official or trusted image
+
+- [gitlab/gitlab-runner](https://hub.docker.com/r/gitlab/gitlab-runner)
+- [bitami/gitlab-runner](https://hub.docker.com/r/bitnami/gitlab-runner)
+
+First of all, you need to create the `gitlab-runner` via API or UI of gitlab
+
+Next, after first step you will get the `token` for helping you connect your container with `GitLab`. So with the `gitlab-runner` image, It will hit to `entrypoint` with [gitlab-runner command](https://docs.gitlab.com/runner/commands/), so you can attached `args` when your run container.
+
+If you not set `args`, It will default use `run` command with configuration. To let's your `gitlab-runner` pick your job, you should run `register` command, and it will create the` config.toml` at `/srv/gitlab-runner/config`
+
+```bash
+docker run -d --name gitlab-runner \
+-v /srv/gitlab-runner/config:/etc/gitlab-runner \
+-v /var/run/docker.sock:/var/run/docker.sock \
+gitlab/gitlab-runner:v17.4.2 register \
+--non-interactive \
+--url your-gitlab-url \
+--token your-gitlab-runner-token \
+--executor docker \
+--docker-image alpine:latest
+```
+
+```toml title="config.toml"
+concurrent = 1
+
+[[runners]]
+  name = "lintRunner" # Name your runner
+  url = "..." # URL GitLab
+  token = "..." # GitLab Token
+  executor = "docker"
+  [runners.docker]
+    tls_verify = false
+    image = "alpine:latest"
+    privileged = false
+    disable_entrypoint_overwrite = false
+    oom_kill_disable = false
+    disable_cache = false # Should be used if you wanna cache active
+    volumes = [
+      "/cache", # Modify this path for volume when the cache output
+    ]
+    shm_size = 0
+    allowed_pull_policies = ["always", "if-not-present"]
+```
+
+Now run your `gitlab-runner` with command
+
+```bash
+docker run -d --name gitlab-runner \
+-v /srv/gitlab-runner/config:/etc/gitlab-runner \
+-v /var/run/docker.sock:/var/run/docker.sock \
+gitlab/gitlab-runner:v17.4.2
+```
+
+For the situation, you want to reconfiguration, you can modify directly in `config.toml`, your GitLab will dynamically reload after 3s. Explore more about at: [Advanced Configuration](https://docs.gitlab.com/runner/configuration/advanced-configuration/)
+
+If you don't wanna to keep continue gitlab-runner, you can remove that or unregistered that for maintain or do something
+
+```bash
+docker run -d --name gitlab-runner \
+-v /srv/gitlab-runner/config:/etc/gitlab-runner \
+-v /var/run/docker.sock:/var/run/docker.sock \
+gitlab/gitlab-runner:v17.4.2 unregister \
+--url your-gitlab-url \
+--token your-gitlab-runner-token
+```
 # Use cases and scenarios
 
 ## Case 1: Completely pipeline for Container Services

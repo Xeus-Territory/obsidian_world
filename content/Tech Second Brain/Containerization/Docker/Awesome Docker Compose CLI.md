@@ -1,5 +1,5 @@
 ---
-title: The awesome of Docker compose snippet
+title: The awesome of Docker Compose CLI
 tags:
   - docker
   - usage
@@ -107,4 +107,20 @@ docker compose -f /file/compose -p name-stack pull <services-name>
 
 # Try to restart containers in stack with new image
 docker compose -f /file/compose -p name-stack up -d <services-name>
+```
+
+# Troubleshoot
+
+## Not supported URL scheme http+docker
+
+Link issue: [Bug - Breaks with requests 2.32.0: Not supported URL scheme http+docker](https://github.com/docker/docker-py/issues/3256)
+
+If you meet this problem, you can try to reinstall or downgrade version of `requests` package inside your host because `docker-compose` will use `requests` for this URL Scheme
+
+```bash
+# Python < 3.12
+pip install requests==2.31.0
+
+# Python >= 3.12
+pip install requests==2.31.0 --break-system-packages
 ```

@@ -14,13 +14,6 @@ tags:
 ![[meme-feeling-good.png|center]]
 # Articles
 
-## Software Architecture
-
-- [Medium - Most Common Software Architecture Styles](https://medium.com/@techworldwithmilan/most-common-software-architecture-styles-86881d779683)
-- [Medium - Top 10 Microservice Anti-Patterns](https://blog.bitsrc.io/10-microservice-anti-patterns-278bcb7f385d)
-- [Medium - 10 Common Software Architectural Patterns in a nutshell](https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013)
-- [Medium - Architectural Metapatterns](https://medium.com/itnext/architectural-metapatterns-1834bdbc4221)
-- [Dev.to - 10 Things You Can Learn from Netflix’s Architecture](https://dev.to/somadevtoo/10-things-you-can-learn-from-netflixs-architecture-1bnn)
 ## Developer Tips
 
 - [Medium - Most Common 10 RabbitMQ Mistakes and How to Avoid Them](https://blog.devgenius.io/most-common-10-rabbitmq-mistakes-and-how-to-avoid-them-f4b74af5885d)
@@ -30,7 +23,6 @@ tags:
 - [Medium - 8 Golang Performance Tips I Discovered After Years of Coding](https://medium.com/deep-golang/8-python-performance-tips-i-discovered-after-years-of-coding-in-golang-764375658d90)
 - [Codilime - The importance and benefits of unit testing](https://codilime.com/blog/unit-testing/)
 - [Katalon - 9 Core Benefits of Automation Testing](https://katalon.com/resources-center/blog/benefits-of-automation-testing)
-
 ## Language
 
 - [Medium - Why Rust Emerges as the Premier Choice for System Programming](https://medium.com/python-in-plain-english/why-rust-emerges-as-the-premier-choice-for-system-programming-d63cd7c920c8)

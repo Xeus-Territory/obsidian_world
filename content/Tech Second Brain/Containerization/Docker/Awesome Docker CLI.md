@@ -1,5 +1,5 @@
 ---
-title: The awesome of Docker snippet
+title: The awesome of Docker CLI
 tags:
   - docker
   - helpful
@@ -66,7 +66,10 @@ This `run` command will include some very helpful and common flag, such as
 7. `--user` or `-u` : Username or UID which run in container
 8. `--volume` : Bind mount a volume, use `mount` instead if you want support most
 9. `-p` : Publish port of container (Can you multiple time and set a range)
-
+10. `-net` or `--network`: Use for bind network (docker or host) into your container.
+	- e.g: `-net=host` it means bind your `localhost` into your container
+	- e.g: `-net=docker-network` it means connect your docker container with network `docker-network` managed by docker
+11. More advanced via `--add-host` to add directly `host` into your docker container at `/etc/hosts`, Read more at [Add entries to container hosts file (--add-host)](https://docs.docker.com/reference/cli/docker/container/run/#add-host)
 ## Basic `build` command
 
 Documentation: [docker build](https://docs.docker.com/reference/cli/docker/image/build/) or [docker buildx](https://docs.docker.com/reference/cli/docker/buildx/)

@@ -160,6 +160,11 @@ tags:
 - [Model Serving](https://github.com/topics/model-serving)
 # AI/ML/Data/MLOps Tools
 
+## Big Data
+
+- [Spark](https://spark.apache.org/): A multi-language engine for executing data engineering, data science, and machine learning on single-node machines or clusters.
+	- [spark-docker](https://github.com/apache/spark-docker): Official Dockerfile for Apache Spark
+	- [spark-standalone-cluster-on-docker](https://github.com/cluster-apps-on-docker/spark-standalone-cluster-on-docker): Learn Apache Spark in Scala, Python (PySpark) and R (SparkR) by building your own cluster with a JupyterLab interface on Docker. ⚡
 ## Computer Vision
 
 -  [opencv](https://github.com/opencv/opencv): Open Source Computer Vision Library. [Website Version](https://opencv.org/)

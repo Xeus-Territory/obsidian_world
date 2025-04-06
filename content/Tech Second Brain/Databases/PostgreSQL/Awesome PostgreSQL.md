@@ -33,6 +33,20 @@ pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}
 
 # PSQL Command
 
+## Setup PSQL
+
+To download `psql`, we can use command in `ubuntu` or `debian` via `apt`
+
+```bash
+# Download full
+sudo apt install postgresql
+
+# Specific only client
+sudo apt install postgresql-client-16 -y
+```
+
+## Extension PSQL
+
 Double-check more `psql` command at [postgres-cheatsheet.md](https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546)
 
 ```bash
@@ -570,6 +584,4 @@ echo " "
 #
 ######################################
 ```
-
-
 
