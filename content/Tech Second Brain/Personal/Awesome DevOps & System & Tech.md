@@ -146,6 +146,7 @@ tags:
 - [Medium - The kube guy](https://thekubeguy.com/) - About Kubernetes with resolve multiple problems around and minimal efforts
 - [Spacelift Blog](https://spacelift.io/blog) - Blog tech about infrastructure as code, and cloud services
 - [The Cloud Native Wiki | Aqua](https://www.aquasec.com/cloud-native-academy/) - The resource center for everything cloud native
+- [DevOps.com](https://devops.com/) - DevOps.com has established itself as an indispensable resource for DevOps education and community building
 ## Tech Blog
 
 - [3os Project](https://3os.org/) - Collocation of technical documentation and guides for devops, developers, pentesters, systems administrators and other IT professionals.
@@ -156,6 +157,7 @@ tags:
 - [Medium - ITNext](https://itnext.io/) - Community in Medium where talk about lots of technological thing
 - [Medium - Jake Page](https://medium.com/@jake.page91) - Kubernetes Deployment Specialist @ Glasskube
 - [Medium - Mr.PlanB](https://medium.com/@PlanB.) - Write about Kubernetes, Promox, Homelab topics
+- [Medium - Romaric Philogène](https://medium.com/@rphilogene) - Write about IDP, Kubernetes and techs
 - [News Ycombinator](https://news.ycombinator.com/news) - Multiple discussion around tech articles in the internet
 - [Opensource.com](https://opensource.com/) - Community talk about Opensource - powered by Red Hat
 - [StackExchange](https://stackexchange.com/sites) - StackOverFlow Ecosystem

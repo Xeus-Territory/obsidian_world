@@ -35,7 +35,6 @@ If you use Helm for managing and deploying Kubernetes applications, you can try 
 
 - [Helm - Tools You Can Use To Manage Your Helm Releases Declaratively](https://helm.sh/blog/tools-to-manage-helm-declaratively/)
 - [Robusta - Five Helm Tools for Improving Kubernetes Quality of Life](https://home.robusta.dev/blog/top-five-helm-addon-tools-for-kubernetes)
-
 ## Helm Extension
 
 - [helm-compose](https://github.com/seacrew/helm-compose): A helm plugin for managing multiple releases of one or many charts within a single configuration file.
@@ -50,6 +49,7 @@ If you use Helm for managing and deploying Kubernetes applications, you can try 
 ## Repositories
 
 - [awesome-helm](https://github.com/cdwv/awesome-helm): Collaborative list of awesome helm charts and resources. PRs are welcome!
+- [helm-cheatsheet](https://helm.sh/docs/intro/cheatsheet/): Featuring all the necessary commands required to manage an application through Helm.
 # Installation
 
 Helm already able to install and use on CI/CD, If you want to learn and work with `helm`, feel free to installing on [Installing Guide](https://helm.sh/docs/intro/install/#helm)
