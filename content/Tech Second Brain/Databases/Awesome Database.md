@@ -102,7 +102,7 @@ tags:
 
 - [pgbouncer](https://github.com/pgbouncer/pgbouncer): lightweight connection pooler for PostgreSQL
 - [mongobetween](https://github.com/coinbase/mongobetween): a proxying connections for mongodb. It is developed by coinbase.
-
+- [GatewayD](https://docs.gatewayd.io/getting-started/welcome): a free and open-source cloud-native database gateway and framework for building data-driven applications
 ## Database IDE
 
 - [beekeeper-studio](https://github.com/beekeeper-studio/beekeeper-studio): Modern and easy to use SQL client for MySQL, Postgres, SQLite, SQL Server, and more. Linux, MacOS, and Windows. [Website](https://www.beekeeperstudio.io/)

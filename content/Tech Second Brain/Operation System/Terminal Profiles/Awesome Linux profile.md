@@ -225,6 +225,9 @@ wget https://dlcdn.apache.org/kafka/4.0.0/kafka_2.13-4.0.0.tgz
 tar -xzf kafka_2.13-4.0.0.tgz -C ~/.kafka --strip-components=1
 echo "export PATH=\"\$PATH:\$HOME\.kafka\\\bin\"" >> ~/.zshrc
 source ~/.zshrc
+
+# Install duf
+wget https://github.com/muesli/duf/releases/download/v0.8.1/duf_0.8.1_linux_amd64.deb && sudo dpkg -i duf_0.8.1_linux_amd64.deb && rm -rf duf_0.8.1_linux_amd64.deb
 ```
 
 # Install programming language for ZSH

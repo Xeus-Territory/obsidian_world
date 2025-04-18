@@ -53,7 +53,7 @@ tags:
 >[!quote]
 ><div align="center"><h3>🙌 Song of the week 🙌</h3></div>
 >
-><div align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/0InPEm1JpMw?si=vKsh_Ai9qk2kQBzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+><div align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/ealfjTQEI4Q?si=wAcqswF-2iIh3DgS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 1. 🏢 [[All Projects]] - All projects currently work on or archives
 2. 🎆 [[All Blogs]]  - All blog which I have and share to community

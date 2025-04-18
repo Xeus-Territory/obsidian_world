@@ -28,7 +28,7 @@ Mình hiện đang làm DevOps Engineer, đồng thời còn là tech blogger c�
 
 Articles
 
-- [[All Blogs#DevOps - Tutorials from zero to hero|DevOps - Tutorials from zero to hero|]] - Series được viết lại thông qua quá trình khi mình học và tiếp cận Devops
+- [[All Blogs#DevOps - Tutorials from zero to hero|DevOps - Tutorials from zero to hero]] - Series được viết lại thông qua quá trình khi mình học và tiếp cận Devops
 - [devops-exercises](https://github.com/bregman-arie/devops-exercises) - For who want to start with DevOps journey
 - [DevOps-Roadmap](https://github.com/milanm/DevOps-Roadmap): DevOps Roadmap with learning resources. contents by Milan **(Legit Recommend)**
 
