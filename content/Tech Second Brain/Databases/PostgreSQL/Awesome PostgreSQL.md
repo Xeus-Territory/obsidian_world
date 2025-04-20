@@ -13,6 +13,7 @@ tags:
 
 - [Linode - A Comparison of High Availability PostgreSQL Solutions](https://www.linode.com/docs/guides/comparison-of-high-availability-postgresql-solutions/)
 - [Youtube - Techno Tim - PostgreSQL Clustering the Hard Way... High Availability, Scalable, Production Ready Postgres](https://www.youtube.com/watch?v=RHwglGf_z40&t=1529s&ab_channel=TechnoTim)
+- [DevOps.vn - Triển khai PostgreSQL high availability với Patroni trên Ubuntu (Cực kỳ chi tiết)](https://devops.vn/posts/cai-dat-postgresql-high-availability-tren-ubuntu/)
 ## Tips & Configuration
 
 - [Medium - Postgres is eating the database world](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)

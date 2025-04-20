@@ -12,38 +12,8 @@ tags:
 >[!purpose]
 >This place where I store whole things I know, learn and inspect about AI, ML and DA to build up these into consistent collections
 
-![[meme-awesome.png|center]]
-# General Knowledge
-
-## Landscape
-
-- [AI Agent Landscape](https://aiagentslist.com/radar)
-- [LF AI & Data Foundation Interactive Landscape](https://landscape.lfai.foundation/)
-- [The 2024 MAD (Machine Learning, AI and Data) Landscape](https://mad.firstmark.com/ ): Get it in [PDF](https://mattturck.com/landscape/mad2024.pdf)
-## Organization
-
-- [DeepSeek](https://github.com/deepseek-ai): LLM Model for Prompting
-- [Machine Learning Tooling](https://github.com/ml-tooling): Provide multiple collections about ML
-- [MLFoundations](https://github.com/mlfoundations): Community for implementing ML Model
-- [OpenAI](https://github.com/openai): OpenAI Github Community
-- [Qwen](https://github.com/QwenLM): Alibaba Cloud's general-purpose AI models
-- [Seldon](https://github.com/SeldonIO): Machine Learning Deployment for Kubernetes
-- [Triton Inference Server](https://github.com/triton-inference-server): provides a cloud and edge inferencing solution optimized for both CPUs and GPUs.
-## Page
-
-- [Feature Stores for ML](https://www.featurestore.org/): Collection pages about Feature stores for ML
-- [Hugging Face](https://huggingface.co/) : The Opensource AI community
-- [Kaggle](https://www.kaggle.com/):  Your Machine Learning and Data Science Community
-- [LF AI & DATA Projects](https://lfaidata.foundation/projects/): Linux Foundation project about Open Source Innovation in Artificial Intelligence and Data
-- [Made With ML](https://madewithml.com/): Learning how to responsibly deliver value with ML!
-- [NGC Catalog](https://catalog.ngc.nvidia.com/?filters=&orderBy=weightPopularDESC&query=&page=&pageSize=): NGC Catalog - GPU Accelerated AI models and SDKs that help you infuse AI into your applications at speed of light (NVIDIA)
-- [Papers With Code](https://paperswithcode.com/): The latest in Machine Learning
-- [TensorFlow Hub](https://www.tensorflow.org/hub): A repository of trained machine learning models.
-- [There's An AI For That](https://theresanaiforthat.com/): Update the new about tools and technologies about AI
-- [AI Tools Directory](https://www.aixploria.com/en/): Access the largest list of top-quality AI tools available on the web
-# Artificial Intelligence / Machine Learning
-
 ![[thumbnail-ai-ml.png]]
+# Artificial Intelligence / Machine Learning
 
 ## Articles
 
@@ -53,6 +23,7 @@ tags:
 - [CNCF - CNCF Cloud Native AI White Paper](https://tag-runtime.cncf.io/wgs/cnaiwg/whitepapers/cloudnativeai/)
 - [Medium - Why You Shouldn’t Invest In Vector Databases?](https://medium.com/data-engineer-things/why-you-shouldnt-invest-in-vector-databases-c0cd3f59d23c)
 - [Datacamp - The Top 7 Vector Databases in 2025](https://www.datacamp.com/blog/the-top-5-vector-databases)
+- [Medium - 30+ MCP Ideas with Complete Source Code](https://medium.com/devdotcom/30-mcp-ideas-with-complete-source-code-4c8f7eacf3ec)
 ## Awesome Repositories
 
 - [applied-ml](https://github.com/eugeneyan/applied-ml): 📚 Papers & tech blogs by companies sharing their work on data science & machine learning in production.
@@ -75,6 +46,32 @@ tags:
 - [Mì AI - Học AI theo cách mì ăn liền!](https://miai.vn/): Learn about AI in Vietnamese Community
 - [Neptune.ai](https://neptune.ai/blog): Learn from AI/ML engineers, researchers, and folks building foundation models: best practices, tool reviews, and real-world examples.
 - [PyImageSearch](https://pyimagesearch.com/blog/): A brand new Computer Vision, Deep Learning, and OpenCV
+## Landscape
+
+- [AI Agent Landscape](https://aiagentslist.com/radar)
+- [LF AI & Data Foundation Interactive Landscape](https://landscape.lfai.foundation/)
+- [The 2024 MAD (Machine Learning, AI and Data) Landscape](https://mad.firstmark.com/ ): Get it in [PDF](https://mattturck.com/landscape/mad2024.pdf)
+## Organization
+
+- [DeepSeek](https://github.com/deepseek-ai): LLM Model for Prompting
+- [Machine Learning Tooling](https://github.com/ml-tooling): Provide multiple collections about ML
+- [MLFoundations](https://github.com/mlfoundations): Community for implementing ML Model
+- [OpenAI](https://github.com/openai): OpenAI Github Community
+- [Qwen](https://github.com/QwenLM): Alibaba Cloud's general-purpose AI models
+- [Seldon](https://github.com/SeldonIO): Machine Learning Deployment for Kubernetes
+- [Triton Inference Server](https://github.com/triton-inference-server): provides a cloud and edge inferencing solution optimized for both CPUs and GPUs.
+## Page
+
+- [AI Tools Directory](https://www.aixploria.com/en/): Access the largest list of top-quality AI tools available on the web
+- [Feature Stores for ML](https://www.featurestore.org/): Collection pages about Feature stores for ML
+- [Hugging Face](https://huggingface.co/) : The Opensource AI community
+- [Kaggle](https://www.kaggle.com/):  Your Machine Learning and Data Science Community
+- [LF AI & DATA Projects](https://lfaidata.foundation/projects/): Linux Foundation project about Open Source Innovation in Artificial Intelligence and Data
+- [Made With ML](https://madewithml.com/): Learning how to responsibly deliver value with ML!
+- [NGC Catalog](https://catalog.ngc.nvidia.com/?filters=&orderBy=weightPopularDESC&query=&page=&pageSize=): NGC Catalog - GPU Accelerated AI models and SDKs that help you infuse AI into your applications at speed of light (NVIDIA)
+- [Papers With Code](https://paperswithcode.com/): The latest in Machine Learning
+- [TensorFlow Hub](https://www.tensorflow.org/hub): A repository of trained machine learning models.
+- [There's An AI For That](https://theresanaiforthat.com/): Update the new about tools and technologies about AI
 ## Topic
 
 - [Artificial Intelligence](https://github.com/topics/artificial-intelligence)
@@ -92,6 +89,7 @@ tags:
 - [NeuralNine](https://www.youtube.com/c/NeuralNine/featured) : Educational brand focusing on programming, machine learning and computer science
 - [sentdex](https://www.youtube.com/c/sentdex/featured) : Funny guy who teach you about build cool stuff with python like AI
 - [MLOps.community](https://www.youtube.com/@MLOps/videos) : The MLOps Community fills the swiftly growing need to share real-world Machine Learning Operations best practices from engineers in the field
+
 # Data Analysis
 
 ## Articles
@@ -123,6 +121,10 @@ tags:
 - [Medium - Data Engineers Things](https://blog.det.life/)
 - [Datacamp](https://www.datacamp.com/blog)
 - [LakeFS](https://lakefs.io/blog/)
+
+## Organization
+
+- [Big Data Europe](https://github.com/big-data-europe): Integrating Big Data, software & communicaties for addressing Europe's societal challenges
 ## Topic
 
 - [Data](https://github.com/topics/data)
