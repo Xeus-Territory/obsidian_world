@@ -110,6 +110,46 @@ mongosh 'mongodb://username:password@server-uri/db?directConnection=true'
 >- The connection string uses the `mongodb+srv://` connection string format.
 >- The connection string contains a seed list with multiple hosts.
 >- The connection string already contains a `directConnection` parameter.
+
+## Backup Script for MongoDB Cluster
+
+```bash
+#!/bin/bash
+
+# MongoDB connection information
+MONGO_HOST="MONGO_HOST"
+MONGO_PORT="MONGO_PORT"
+MONGO_USER="MONGO_USER"
+MONGO_PASSWORD="MONGO_PASSWORD"
+
+# MinIO connection information
+MINIO_ALIAS="MINIO_ALIAS"
+MINIO_BUCKET="MINIO_BUCKET"
+
+# Get a list of all databases
+DATABASES=$(mongo --host $MONGO_HOST --port $MONGO_PORT -u $MONGO_USER -p $MONGO_PASSWORD --authenticationDatabase admin --quiet --eval "db.adminCommand('listDatabases').databases.map(db => db.name).join(' ')")
+
+# Backup each database
+for DB_NAME in $DATABASES; do
+    BACKUP_DIR="${DB_NAME}_backup"
+    
+    echo "Backing up database: $DB_NAME"
+    mongodump --host $MONGO_HOST --port $MONGO_PORT -u $MONGO_USER -p $MONGO_PASSWORD --authenticationDatabase admin --db $DB_NAME --out $BACKUP_DIR
+    
+    # Create a tar.gz archive of the backup
+    tar -czvf $BACKUP_DIR.tar.gz $BACKUP_DIR
+    
+    # Upload to MinIO
+    echo "Uploading $BACKUP_DIR.tar.gz to MinIO"
+    mc cp $BACKUP_DIR.tar.gz $MINIO_ALIAS/$MINIO_BUCKET/$BACKUP_DIR.tar.gz
+    
+    # Optionally remove the local backup directory and archive
+    rm -rf $BACKUP_DIR
+    rm $BACKUP_DIR.tar.gz
+done
+
+echo "All databases backed up and uploaded to MinIO."
+```
 # MongoDB CLI Usage
 
 ## Login into cluster

@@ -1089,3 +1089,21 @@ Turn back again and you will see your node will be added successfully, if need y
 kubectl rollout restart deployment/longhorn-driver-deployer
 ```
 
+# Debug network with Pods
+
+Honestly to say, Network is one of things hard to learn and control with any system, so to let anything become more easier, we need to prepare a couple of solution to hand on. Following the [Blog - Cách mình troubleshoot network trong Kubernetes bằng một Pod đa năng (Vietnamese)](https://devops.vn/posts/cach-minh-troubleshoot-network-trong-kubernetes-bang-mot-pod-da-nang/), the author lists for us some image to take a hand for this debug
+
+- [`praqma/network-multitool`](https://hub.docker.com/r/praqma/network-multitool) - Include `curl`, `telnet`, `iperf3`, `web server` (Simple Level)
+- [`wbitt/network-multitool`](https://hub.docker.com/r/wbitt/network-multitool) - Include multiple tools, also `tcpdump` or `tcptraceroute` (Immediately Level)
+- [`nicolaka/netshoot`](https://hub.docker.com/r/nicolaka/netshoot) - Wide range tools with superb like `iptable`, `tshark`, ... (Complex Level)
+
+For playground with those one, you just need only spin off one of this pod into Kubernetes Cluster with `kubectl` command
+
+```bash
+# If you want to spin up a throw away container for debugging
+kubectl run tmp-shell --rm -i --tty --image your_req_image -- /bin/bash
+
+# If you want to spin up a container on the host's network namespace.
+kubectl run tmp-shell --rm -i --tty --overrides='{"spec": {"hostNetwork": true}}' --image your_req_image -- /bin/bash
+```
+
