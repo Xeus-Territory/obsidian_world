@@ -10,6 +10,10 @@ tags:
 
 # Documentations and Articles
 
+## Articles
+
+- [MinIO - Fast and Efficient Search with OpenSearch and MinIO](https://blog.min.io/search-with-opensearch-and-minio/)
+- [Dev.to - OpenSearch Snapshots with Min.io](https://dev.to/mikeyglitz/opensearch-snapshots-with-minio-323f)
 ## Setup
 
 - [Elastic - Set up a cluster for high availability](https://www.elastic.co/guide/en/elasticsearch/reference/current/high-availability.html)
@@ -18,6 +22,8 @@ tags:
 
 - [Opster - Elasticsearch Heap Size Usage and JVM Garbage Collection](https://opster.com/guides/elasticsearch/capacity-planning/elasticsearch-heap-size-usage/)
 - [Elastic - Orchestrating Elastic Stack applications](https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-orchestrating-elastic-stack-applications.html)
+- [Elastic - Backup, high availability, and resilience tools](https://www.elastic.co/docs/deploy-manage/tools)
+- [OpenSeach - Take and restore snapshots](https://docs.opensearch.org/docs/latest/tuning-your-cluster/availability-and-recovery/snapshots/snapshot-restore/)
 
 # Interaction with Elasticsearch via CURL
 

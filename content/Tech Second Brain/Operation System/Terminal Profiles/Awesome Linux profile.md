@@ -87,7 +87,16 @@ sudo apt install -y jq \
 	gnome-shell-extensions \
 	gnome-shell-extension-manager \
 	terminator \
-	tmux
+	tmux \
+	nvtop \
+	flameshot
+
+# Flameshot configuration
+# Step 1: Go to custom keyboards > add new with command `flameshot gui`
+# > add shortcut ctrl+shift+s
+# Step 2: Following this issue to uncomment `WaylandEnable=false` in
+# /etc/gdm3/custom.conf. Link: https://github.com/flameshot-org/flameshot/issues/3498#issuecomment-2026731686
+# Step 3: Restart machine and enjoy flameshot with new shortcut
 	
 # Install kubectl
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
@@ -228,6 +237,11 @@ source ~/.zshrc
 
 # Install duf
 wget https://github.com/muesli/duf/releases/download/v0.8.1/duf_0.8.1_linux_amd64.deb && sudo dpkg -i duf_0.8.1_linux_amd64.deb && rm -rf duf_0.8.1_linux_amd64.deb
+
+# Install MinIO
+# If you have golang, install via go
+go install github.com/minio/mc@latest
+# If you download via linux package, double-check at https://min.io/docs/minio/linux/reference/minio-mc.html#install-mc
 ```
 
 # Install programming language for ZSH

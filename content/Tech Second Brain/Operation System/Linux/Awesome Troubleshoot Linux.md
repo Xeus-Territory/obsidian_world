@@ -6,6 +6,8 @@ tags:
   - helpful
   - cheatsheet
 ---
+
+![[thumbnail-linux-troubleshoot-tools.png]]
 # Error when package code needs to be installed, but I can't find an archive for it
 
 Link for resolve: [Reddit](https://www.reddit.com/r/pop_os/comments/s6l82d/trying_to_up_date_the_system_but_keep_getting/)
