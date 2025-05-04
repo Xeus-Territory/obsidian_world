@@ -140,10 +140,10 @@ echo "All databases backed up and uploaded to MinIO."
 On this situation, your backup is raw SQL file. You just use `pgsql` for restoring, but before that removing and create a new database again
 
 ```bash
-pgsql -c "DROP DATABASE <name>;"
-pgsql -c "CREATE DATABSE <name>;"
+psql -c "DROP DATABASE <name>;"
+psql -c "CREATE DATABSE <name>;"
 
-pgsql -d <name> < /var/backup/file
+psql -d <name> < /var/backup/file
 
 # OR you can use pipe for migrate from host1 -> host2
 pg_dump -h host1 dbname | psql -h host2 dbname

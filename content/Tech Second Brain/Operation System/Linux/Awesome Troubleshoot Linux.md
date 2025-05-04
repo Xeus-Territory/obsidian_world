@@ -8,6 +8,7 @@ tags:
 ---
 
 ![[thumbnail-linux-troubleshoot-tools.png]]
+
 # Error when package code needs to be installed, but I can't find an archive for it
 
 Link for resolve: [Reddit](https://www.reddit.com/r/pop_os/comments/s6l82d/trying_to_up_date_the_system_but_keep_getting/)
@@ -806,9 +807,13 @@ If you want `unmount` your disk, you can follow
 sudo umount /dev/nvme0n2
 ```
 
-# Networking Performance with Linux
+# Networking with Linux
+
+Find more the couple of articles below for troubleshooting Linux Networking
 
 - [Medium - How To Evaluate the Network Performance of a Linux System](https://medium.com/devops-dev/how-to-evaluate-the-network-performance-of-a-linux-system-69db89cae0ed)
+- [Ubuntu - Networking](https://documentation.ubuntu.com/server/explanation/networking/)
+- [Netplan - YAML Configuration](https://netplan.readthedocs.io/en/stable/netplan-yaml/)
 
 # Resize tmpfs in Linux
 

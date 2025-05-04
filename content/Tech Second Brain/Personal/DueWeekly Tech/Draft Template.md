@@ -21,6 +21,8 @@ draft: "true"
 
 # Developer
 
+# Linux
+
 # Kubernetes
 
 # Security
