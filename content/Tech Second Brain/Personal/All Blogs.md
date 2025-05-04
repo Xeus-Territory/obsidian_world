@@ -236,7 +236,8 @@ tags:
 - [[Kubewekend Session 6|Kubewekend Session 6: CSI and Ceph with Kubewekend]] - This session is covered about topic storage inside `Kubernetes` cluster, how can they work with `CSI` Architecture and why we need to `CSI Driver` for handle this stuff. Furthermore, I try to practice with `Ceph` - one of popular storage opensource for `Kubewekend` cluster
 ## 2025
 
-- [[Kubewekend Session Extra 1|Kubewekend Session Extra 1: Longhorn and the story about NFS in Kubernetes]] - This lab is try to take you to journey to learn about new CSI for Kubernetes, `Longhorn` and deliver you to new method to handle transfer large file via network by NFS protocol. I also provide more information about `iSCSI`, `nfs-ganesha` and technique `rdma` 
+- [[Kubewekend Session Extra 1|Kubewekend Session Extra 1: Longhorn and the story about NFS in Kubernetes]] - This lab is try to take you to journey to learn about new CSI for Kubernetes, `Longhorn` and deliver you to new method to handle transfer large file via network by NFS protocol. I also provide more information about `iSCSI`, `nfs-ganesha` and technique `rdma`
+- [[Kubewekend Session Extra 2|Kubewekend Session Extra 2: Rebuild Cluster with RKE2 or K3S]] - This article aims to provide you with insights into alternatives for self-hosting a full Kubernetes cluster. Both `K3s` and `RKE2` are strong contenders worth considering to guide your decision. Focusing on the self-hosted approach with `RKE2`, I want to share more about my experiences working with it over the past four months.
 # Tech Research (What is)
 
 >[!info]
@@ -250,7 +251,6 @@ tags:
 - [Different btw CMD vs Entrypoint vs RUN in Docker](https://hackmd.io/@XeusNguyen/HJKlF7-qs)
 ## 2024
 
-- [[Backup and Restore Methodology|Backup and Restore methodology for PostgreSQL]]
 - [[What is Wrapper Pattern|What is Wrapper Pattern ?]]
 - [[Awesome Helm|What is Helm?]]
 - [[What is Milvus|What is Milvus?]]
@@ -300,3 +300,4 @@ tags:
 - [[10-03-2025 to 23-03-2025|Session 6: 10-03-2025 to 23-03-2025]]
 - [[24-03-2025 to 06-04-2025|Session 7: 24-03-2025 to 06-04-2025]]
 - [[07-04-2025 to 20-04-2025|Session 8: 07-04-2025 to 20-04-2025]]
+- [[21-04-2025 to 04-05-2025|Session 9: 21-04-2025 to 04-05-2025]]
