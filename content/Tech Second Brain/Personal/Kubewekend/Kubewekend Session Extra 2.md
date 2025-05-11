@@ -419,16 +419,16 @@ About this problem, I do not pretty well with this case, and It becomes more com
 	- [Ubuntu - NVIDIA drivers installation](https://documentation.ubuntu.com/server/how-to/graphics/install-nvidia-drivers/index.html)
 	- [PhoenixNAP - How to Install Nvidia Drivers on Ubuntu](https://phoenixnap.com/kb/install-nvidia-drivers-ubuntu)
 
-```bash
-#!/bin/bash
-    sudo apt update
-    sudo apt install g++ freeglut3-dev build-essential libx11-dev libxmu-dev libxi-dev libglu1-mesa libglu1-mesa-dev -y
-    sudo add-apt-repository ppa:graphics-drivers/ppa -y
-    sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/3bf863cc.pub
-    echo "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64 /" | sudo tee /etc/apt/sources.list.d/cuda.list
-    sudo apt update
-    sudo apt install libnvidia-common-535 libnvidia-gl-535 nvidia-driver-535 -y
-```
+	```bash
+	#!/bin/bash
+	sudo apt update
+	sudo apt install g++ freeglut3-dev build-essential libx11-dev libxmu-dev libxi-dev libglu1-mesa libglu1-mesa-dev -y
+	sudo add-apt-repository ppa:graphics-drivers/ppa -y
+	sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/3bf863cc.pub
+	echo "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64 /" | sudo tee /etc/apt/sources.list.d/cuda.list
+	sudo apt update
+	sudo apt install libnvidia-common-535 libnvidia-gl-535 nvidia-driver-535 -y
+	```
 
 2. Double-check about your [Nvidia Container Runtime](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/index.html), because I aware RKE2 configure this stuff in kinda strange way but in somehow your Cluster run with not much affordable to edit your GPU node
 
@@ -477,6 +477,79 @@ About this problem, I do not pretty well with this case, and It becomes more com
 	- `nvidia.com/use-gputype` : [HAMi](https://project-hami.io/docs/userguide/NVIDIA-device/specify-device-type-to-use) offer for help scheduler exactly GPU Types
 
 	In some situation, HAMI meet the error when split the GPU, you should restart daemonset running `hami-device-plugin` to let it retry the configuration again in GPU Node. Read more about [Github Issue - HAMI 插件运行中出现显卡注册失败](https://github.com/Project-HAMi/HAMi/issues/441)
+
+>[!error]
+>I have an update on a common GPU problem that I want to share with you and the community. The issue is an Nvidia driver version conflict where the user-space tools (like nvidia-smi) have a different version than the Nvidia kernel module. This typically results in an error message: `Failed to initialize NVML: Driver/library version mismatch`.
+>
+>Crucially, this driver mismatch can prevent Kubernetes (e.g., RKE2) from scheduling new application pods on the affected node, especially if those pods require GPUs. This is a significant operational disturbance."
+
+To resolve the problem, you can double-check in a couple of resolved
+
+- [StackOverFlow - Nvidia NVML Driver/library version mismatch (closed)](https://stackoverflow.com/questions/43022843/nvidia-nvml-driver-library-version-mismatch)
+- [Blog - 解决Driver/library version mismatch](https://comzyh.com/blog/archives/967/)
+- [GPU Mart - Failed to initialize NVML: Driver/library version mismatch - Troubleshooting](https://www.gpu-mart.com/blog/failed-to-initialize-nvml-driver-library-version-mismatch)
+
+The usual behavior to resolve this issue is rebooting system
+
+```bash
+sudo reboot
+```
+
+To ensure version, you can purge and install new `nvidia-driver-*` , `libnvidia-common-*` and `libnvidia-gl-*` for your host
+
+```bash
+# Check mismatch via dmesg
+sudo dmesg | grep -e NVRM
+
+# Check current nvidia package in your host (ubuntu)
+dpkg -l | grep -i nvidia
+
+# Check kernel version
+cat /proc/driver/nvidia/version
+
+# Find compatible (recommended) version
+ubuntu-drivers devices
+
+# Update to new version (e.g. 555 is compatible version)
+sudo apt purge nvidia-* 
+sudo apt purge libnvidia-*
+sudo apt autoremove
+## Manual Update
+sudo apt install libnvidia-common-555 libnvidia-gl-555 nvidia-driver-555 -y
+## Automatic Update to recommended version
+sudo ubuntu-drivers autoinstall
+
+# For anything workwell reboot is obligatory
+sudo reboot
+```
+
+To prevent the sudden upgrade (NOTE: I met issue and dunno the reason why 😰), you have two methods to handle this case but still keep same idea, **blocking sudden update**. Explore more at: [Tecmint - How to Disable Package Updates in Ubuntu, Debian and Mint](https://www.tecmint.com/disable-lock-blacklist-package-updates-ubuntu-debian-apt/)
+
+1.  Use the `apt-hold` function to keep not update related
+
+	```bash
+	sudo apt-mark hold nvidia-dkms-version_number
+	sudo apt-mark hold nvidia-driver-version_number
+	sudo apt-mark hold nvidia-utils-version_number
+	```
+
+2. Make a change in `apt.conf.d` *(Suggest by my colleague)*
+
+	```bash
+	sudo nano /etc/apt/apt.conf.d/50unattended-upgrades
+	
+	Unattended-Upgrade::Package-Blacklist {
+	// The following matches all packages starting with linux-
+	// "linux-";
+	//Added 20230822
+	"linux-generic";
+	"linux-image-generic";
+	"linux-headers-generic";
+	"nvidia-";
+	"libnvidia-";
+	"*nvidia*";
+	};
+	```
 ### Remove Node and Join again
 
 >[!warning]
@@ -605,7 +678,9 @@ sudo systemctl start rke2-server
 >But remember `rke2-killall.sh` will remove all service or process alive than we only stop service and another container keep continue run in this maintain progress
 
 >[!note]
->If you have two in three `master` node really expire certificate, you should hand-on the rotation in two node because `etcd` won't allow for you to renew only one, and it led your `etcd` can't run and your node will stuck in `start`. So remember, if your cluster is HA, you should rotate two on three node in Raft for let `etcd` double check the configuration correctly
+>If two of your three master nodes have expired certificates, you must manually rotate the certificates on those two. etcd requires this for HA clusters to function correctly and avoid nodes getting stuck during startup.
+>
+>Furthermore, if you have issues with `kube-api-server` or `kube-proxy` (like logging or connection problems), try restarting the `rke2-agent` service on the affected node. This won't disrupt running pods.
 
 BTW, you can rotate the individual service by passing the `--service` flag, it means you can rotate certificate for specific things you want (NOTE: That's good behavior for not corrupting the huge cluster). Read more about [RKE2 - Certificate Management](https://docs.rke2.io/security/certificates#rotating-client-and-server-certificates-manually)
 ### Container Services in RKE2
@@ -640,6 +715,159 @@ But if you want to increase more HA, you should configure [KeepAlive](https://do
 - [IBM - Keepalived and HAProxy](https://www.ibm.com/docs/en/solution-assurance?topic=available-keepalived-haproxy)
 - [Kubesphere - Set up an HA Kubernetes Cluster Using Keepalived and HAproxy](https://kubesphere.io/docs/v3.4/installing-on-linux/high-availability-configurations/set-up-ha-cluster-using-keepalived-haproxy/)
 - [Git - Running a load balancer for RKE2 api-server and nginx ingress controller using Keepalived and HAProxy in static pods](https://gist.github.com/mddamato/5b696d202befde53c333761e23dca616)
+### Reboot GPU Machine (New Upgrade)
+
+>[!warning]
+>Resolving issues with RKE2 clusters, particularly concerning the GPU Agent, can be difficult. A frequent problem encountered is the RKE2 Agent initiating successfully yet subsequently retrying multiple times, resulting in operational instability. When faced with this, two primary approaches are available:
+>1. Completely uninstall and then reinstall the components. Although a potential solution, this method carries inherent risks, especially if prior attempts were made without a full understanding of alternative strategies.
+>2. Maintain the existing installation and instead implement specific configuration adjustments to return the cluster to a stable operating condition. Details are provided below.
+
+So I met some troubles with GPU node because `apt` package try to compile a new module of NVIDIA driver for kernel, and it's making disturb for deployment via Kubernetes Layer. That's reason why I should be fix NVIDIA, explore more at my note [[Kubewekend Session Extra 2#GPU Problems|GPU Problems]] above and restart the node is obligatory in this maintenance
+
+What is waiting for me it's truly coming and I guess this problem will be occur because I already use option 1, uninstall an reinstall node in RKE2 Cluster. So in this time, It's production and I don't know what things I faces off when I do it in this environment. Before I read this [GitHub Issue - Following gpu-operator documentation will break RKE2 cluster after reboot](https://github.com/NVIDIA/gpu-operator/issues/992), It gives me some idea when you actually now what RKE2 Actual work
+
+If you read my note about [[Kubewekend Session Extra 2#Container Services in RKE2|Container Services in RKE2]] above and the issue, you will understand RKE2 will separate two process to running container with separate `containerd`, and you can get that distinguish
+
+- `containerd` of RKE2 at `/var/lib/rancher/rke2/bin` and `/var/lib/rancher/rke2/data/v1.xx.xx/bin`, it will contain `containerd`, `kubectl`, ... But you know why it not export into your **$PATH** and If I don't get wrong about it, this only spend for `RKE2` stuff, like `kube-proxy`, `CNI`, `Ingress`, ...
+- `containerd` of host at `/usr/bin` and this one already include in **$PATH**, ... In some case, I will actual remove by `RKE2-agent` after reboot, believe me sometime `runc` and `containerd` actual not found in your host. Explore installation at [Containerd - Getting Started](https://github.com/containerd/containerd/blob/main/docs/getting-started.md). And this one spent for running `containerd` socket
+
+Now you know why, I will try to clarify it into each sentences
+
+- RKE2 relies on the host's `containerd` for initial configuration but uses its own `containerd` instance to run services. This can lead to a conflict during configuration updates. Specifically, when you apply new `containerd` configurations, both `config.toml` and `config.toml.tmpl` are synchronized (as mentioned in the [Configuring containerd](https://docs.rke2.io/advanced#configuring-containerd) documentation). At this point, essential Kubernetes components like `kube-proxy`, the CNI (Container Network Interface), and Ingress are already running without issues. This suggests that two `containerd` processes are involved in managing the deployment.
+
+- Upon reboot, all RKE2 Kubernetes components (including `kube-proxy`, CNI, Ingress, etc.) need to restart. However, the RKE2 `containerd` now depends on `nvidia-container-runtime`. If `kube-proxy` and the CNI haven't started yet (correct me if I'm wrong), the `GPU-Operator` cannot initialize. This lack of essential networking components causes the `GPU-Operator`, which is required for the `nvidia-container-runtime` to function, to crash. (NOTE: Actually )
+
+Here why I pop up the idea to restore anything in set configuration. Let's me try to introduce a walkthrough
+
+You should stop the `rke2-agent` for maintaining, yes it will cause a downtime but if you have well off resources for maintaining, you should `drain` node before doing and prevent to cause anything downtime for your service. But like I told `rke2-agent` stop doesn't mean your service already run stop (But in my case, reboot machine and it cause downtime 😄)
+
+```bash
+sudo systemctl stop rke2-agent
+```
+
+Now you should kill all service, which one running in `rke2-agent` with predefine script `rke2-killall.sh`
+
+```bash
+sudo rke2-killall.sh
+```
+
+This step will ensure, there aren't container running in error `containerd` state
+
+Now you can finish the maintenance by removing `config.toml` and `config.toml.tmpl` to turn your `rke2-agent` and `containerd` into default configuration
+
+```bash
+cd /var/lib/rancher/rke2/agent/etc/containerd
+rm -rf config.toml config.toml.tmpl
+```
+
+Now you can create a default `config.toml` which generated by `rke2`, and copy the code down below
+
+```bash
+nano config.toml
+```
+
+```toml title="containerd/config.toml"
+# File generated by rke2. DO NOT EDIT. Use config.toml.tmpl instead.
+version = 2
+
+[plugins."io.containerd.internal.v1.opt"]
+  path = "/var/lib/rancher/rke2/agent/containerd"
+[plugins."io.containerd.grpc.v1.cri"]
+  stream_server_address = "127.0.0.1"
+  stream_server_port = "10010"
+  enable_selinux = false
+  enable_unprivileged_ports = true
+  enable_unprivileged_icmp = true
+  sandbox_image = "index.docker.io/rancher/mirrored-pause:3.6"
+
+[plugins."io.containerd.grpc.v1.cri".containerd]
+  snapshotter = "overlayfs"
+  disable_snapshot_annotations = true
+  
+
+
+
+[plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc]
+  runtime_type = "io.containerd.runc.v2"
+
+[plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc.options]
+  SystemdCgroup = true
+
+[plugins."io.containerd.grpc.v1.cri".registry]
+  config_path = "/var/lib/rancher/rke2/agent/etc/containerd/certs.d"
+```
+
+Alright, you can start `rke2-agent` for let's it initialize import part of it, like `kube-proxy`, `cni`, ...
+
+```bash
+sudo systemctl start rke2-agent
+```
+
+Validate it after waiting a few sec, ensure you should see `kube-proxy`, `cni` actually run to make the next configuration
+
+```bash
+kubectl get pods -n kube-system
+```
+
+Now, you can do same behavior when you create GPU node with modify `containerd`, so I will create a `config.toml.tmpl` with below file
+
+```bash
+nano config.toml.tmpl
+```
+
+```bash title="containerd/config.toml.tmlp"
+# File generated by rke2. DO NOT EDIT. Use config.toml.tmpl instead.
+version = 2
+
+[plugins."io.containerd.internal.v1.opt"]
+  path = "/var/lib/rancher/rke2/agent/containerd"
+[plugins."io.containerd.grpc.v1.cri"]
+  stream_server_address = "127.0.0.1"
+  stream_server_port = "10010"
+  enable_selinux = false
+  enable_unprivileged_ports = true
+  enable_unprivileged_icmp = true
+  sandbox_image = "index.docker.io/rancher/mirrored-pause:3.6"
+
+[plugins."io.containerd.grpc.v1.cri".containerd]
+  snapshotter = "overlayfs"
+  disable_snapshot_annotations = true
+  default_runtime_name = "nvidia"  
+
+
+
+[plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc]
+  runtime_type = "io.containerd.runc.v2"
+
+[plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc.options]
+  SystemdCgroup = true
+
+[plugins."io.containerd.grpc.v1.cri".registry]
+  config_path = "/var/lib/rancher/rke2/agent/etc/containerd/certs.d"
+
+[plugins."io.containerd.grpc.v1.cri".containerd.runtimes]
+	[plugins."io.containerd.grpc.v1.cri".containerd.runtimes.nvidia]
+		privileged_without_host_devices = false
+		runtime_engine = ""
+		runtime_root = ""
+		runtime_type = "io.containerd.runc.v2"
+		[plugins."io.containerd.grpc.v1.cri".containerd.runtimes.nvidia.options]
+		BinaryName = "/usr/bin/nvidia-container-runtime"
+```
+
+Restart `containerd`
+
+```bash
+sudo systemctl daemon-reload && systemctl restart containerd
+```
+
+Restart `rke2-agent` to sync up again
+
+```bash
+sudo systemctl restart rke2-agent
+```
+
+Your host will run like expectation, I give a try and that work in my case and your case if you meet this problem, RKE2 at version `1.27.11r1`. One upon again, the issue give my idea and I feel really appreciate with RKE2 Community
 # Conclusion
 ![[meme-byebye.png|center|400]]
 

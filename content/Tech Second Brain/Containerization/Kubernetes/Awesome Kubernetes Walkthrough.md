@@ -10,6 +10,9 @@ To find more information and example, you can double-check a some manifest colle
 
 - [Kubernetes examples](https://k8s-examples.container-solutions.com/)
 - [kubernetes-manifests](https://github.com/maximemoreillon/kubernetes-manifests)
+- [k8s-deployment-strategies](https://github.com/ContainerSolutions/k8s-deployment-strategies) : Kubernetes deployment strategies explained. [Article](https://blog.container-solutions.com/kubernetes-deployment-strategies)
+- [Medium - 24 Kubernetes Masters’ Configurations](https://overcast.blog/24-kubernetes-mastersconfigurations-29235c65b337)
+- [Medium - Zero-Downtime Deployments with Kubernetes](https://blog.devgenius.io/zero-downtime-deployments-with-kubernetes-a2d3200d207f)
 # Can use volume with cronjobs
 
 >[!purpose]
