@@ -83,12 +83,12 @@ Github: [kubewekend](https://github.com/Xeus-Territory/kubewekend)
 ## The extra session ✍
 
 - Session Extra 1: Longhorn and the story about NFS in Kubernetes ✅
-- Session Extra 2: Rebuild Cluster with Rancher or K3S
-- Session Extra 3: Combination GitOps with ArgoCD into Kubewekend Cluster
-- Session Extra 4: Learn and use security, network context for Kubernetes
+- Session Extra 2: Rebuild Cluster with Rancher or K3S ✅
+- Session Extra 3: Combination GitOps with ArgoCD into Kubewekend Cluster ⌛
+- Session Extra 4: Learn and use security, network context for Kubernetes ⌛
 - Session Extra 5: Customize default scheduled in `kubernetes` cluster with `kube-scheduler` ⌛
-- Session Extra 6: Service mesh inside Kubewekend Cluster
-- Session Extra 7: Learn about virtualization inside Kubewekend with `kubevirt`
+- Session Extra 6: Service mesh inside Kubewekend Cluster ⌛
+- Session Extra 7: Learn about virtualization inside Kubewekend with `kubevirt` ⌛
 ## The major session ✍
 
 - Session 1: Use `Vargrant` to configuration the VM with provider in `VirtualBox` ✅

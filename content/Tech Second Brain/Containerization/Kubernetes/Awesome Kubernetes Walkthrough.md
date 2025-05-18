@@ -6,14 +6,16 @@ tags:
   - helpful
 ---
 
+![[thumbnail-kubernetes-interfaces.png]]
+
 To find more information and example, you can double-check a some manifest collection at
 
-- [Kubernetes examples](https://k8s-examples.container-solutions.com/)
-- [kubernetes-manifests](https://github.com/maximemoreillon/kubernetes-manifests)
-- [k8s-deployment-strategies](https://github.com/ContainerSolutions/k8s-deployment-strategies) : Kubernetes deployment strategies explained. [Article](https://blog.container-solutions.com/kubernetes-deployment-strategies)
+- [Kubernetes Examples](https://k8s-examples.container-solutions.com/): About whole manifest of any types in Kubernetes
+- [Kubernetes Manifests](https://github.com/maximemoreillon/kubernetes-manifests): A collection of K8s manifests to deploy common applications
+- [K8s Deployment Strategies](https://github.com/ContainerSolutions/k8s-deployment-strategies): About setup deployment strategies of Kubernetes 
 - [Medium - 24 Kubernetes Masters’ Configurations](https://overcast.blog/24-kubernetes-mastersconfigurations-29235c65b337)
 - [Medium - Zero-Downtime Deployments with Kubernetes](https://blog.devgenius.io/zero-downtime-deployments-with-kubernetes-a2d3200d207f)
-# Can use volume with cronjobs
+# Can use volume with cronjobs?
 
 >[!purpose]
 >This note will content the thing which finding on working progress with K8s. Just take note and link for resolving the problem. Find out detail if it has unique directory
@@ -50,14 +52,13 @@ spec:
 
 Reference article: [Do Kubernetes Pods Really Get Evicted Due to CPU Pressure?](https://medium.com/overcast-blog/do-pods-really-get-evicted-due-to-cpu-pressure-2b27274a670c)
 
->[!hint]
->Pods are not directly evicted due to high CPU pressure or usage alone. Instead, Kubernetes relies on CPU throttling mechanisms to manage and limit a pod’s CPU usage, ensuring fair resource sharing among pods on the same node.
->
->While high CPU usage by a pod can indirectly contribute to resource pressure and potentially lead to eviction due to memory or other resource shortages, CPU throttling is the primary mechanism used to manage CPU-intensive workloads
+Pods are **not directly evicted due to high CPU pressure or usage alone**. Instead, Kubernetes **relies on CPU throttling mechanisms** to manage and limit a pod’s CPU usage, ensuring fair resource sharing among pods on the same node.
+
+While high CPU usage by a pod can indirectly contribute to resource pressure and potentially lead to eviction due to memory or other resource shortages, CPU throttling is the primary mechanism used to manage CPU-intensive workloads
 
 # Restart `Statefulset` workload
 
-*Related link*
+For documentations
 
 - [Delete a StatefulSet](https://kubernetes.io/docs/tasks/run-application/delete-stateful-set/)
 - [Force Delete StatefulSet Pods](https://kubernetes.io/docs/tasks/run-application/force-delete-stateful-set-pod/)
@@ -241,7 +242,7 @@ KUBE_EDITOR="nano" kubectl edit svc/docker-registry
 
 When you hit to complete button, your workload or resource will change immediately
 
-# Delete resource
+# Delete resources
 
 Use the `delete` command for executing
 
@@ -320,9 +321,9 @@ kubectl uncordon my-node
 >[!tips]
 >For explore more, you can do lots of things with `kubectl`. To read and understand command, you should use **manual** with `--help` flag
 
-# Setup metrics-server
+# Setup `metrics-server`
 
-Metrics server will part if you self-hosted your `kubernetes`, It means you need learn how setup `metrics-server` , and this quite very easily. Read more about `metrics-server` at **[metrics-server](https://github.com/kubernetes-sigs/metrics-server)**
+Metrics server will part if you self-hosted your `kubernetes`, It means you need learn how setup `metrics-server` , and this quite very easily. Read more about `metrics-server` at **[GitHub](https://github.com/kubernetes-sigs/metrics-server)**
 
 Via `kubectl` you can applied manifest
 
@@ -489,7 +490,7 @@ And mostly startup for helping Kubernetes to [protect slow starting containers]
 
 # Setup SnapShotter for Elasticsearch
 
-Following this documentation about snapshot with `elasticsearch` for Azure Cloud, explore at [# Elastic Cloud on Kubernetes (ECK) Quickstart with Azure Kubernetes Service,Istio and Azure Repository plugin](https://www.linkedin.com/pulse/elastic-cloud-kubernetes-eck-quickstart-azure-repository-ajay-singh/)
+Following this documentation about snapshot with `elasticsearch` for Azure Cloud, explore at [Elastic Cloud on Kubernetes (ECK) Quickstart with Azure Kubernetes Service,Istio and Azure Repository plugin](https://www.linkedin.com/pulse/elastic-cloud-kubernetes-eck-quickstart-azure-repository-ajay-singh/)
 
 You can use `terraform` with `manifest` to apply this configuration
 
@@ -670,7 +671,7 @@ A workflow would be
 3. Perform your maintenance tasks on the node.
 4. Run **kubectl uncordon node-name** to mark the node as schedulable again.
 
-The ultimate drain command should use lik
+The ultimate drain command should use like this
 
 ```bash
 kubectl drain nodes <node-name> --ignore-daemonset --delete-emptydir-data --force --grace-period=-1

@@ -128,10 +128,10 @@ tags:
 - [Azure - Supported Kubernetes versions in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/supported-kubernetes-versions?tabs=azure-cli)
 - [AKS DevSecOps Workshop](https://azure.github.io/AKS-DevSecOps-Workshop/)
 - [Azure - Best practices for basic scheduler features in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/operator-best-practices-scheduler)
-### Container Runtime and CRI
+### Container Runtime (CRI)
 
 - [Kubernetes - Container Runtime Interface (CRI)](https://kubernetes.io/docs/concepts/architecture/cri/)
-### DIYs
+### Do It Yourself (DIYs)
 
 - [Medium - Creating a Custom Scheduler in Kubernetes: A Practical Guide](https://overcast.blog/creating-a-custom-scheduler-in-kubernetes-a-practical-guide-2d9f9254f3b5)
 - [Medium - GitOps with Kubernetes, Terraform, Gitlab and FluxCD](https://medium.com/@prag-matic/gitops-with-kubernetes-terraform-gitlab-and-fluxcd-2875d1010dac)
@@ -147,7 +147,7 @@ tags:
 - [Medium - Running a “stateless” email server in Kubernetes using Mailu](https://medium.com/gitconnected/running-a-stateless-email-server-in-kubernetes-using-mailu-9c1ebd8003e9)
 - [Medium - Configure Hashicorp's Vault for Kubernetes Auth](https://docs.armory.io/continuous-deployment/armory-admin/secrets/vault-k8s-configuration/)
 - [DAOCloud - ArgoCD High Availability Solution](https://github.com/DaoCloud/DaoCloud-docs/blob/main/docs/en/docs/amamba/quickstart/argo-cd-HA.md)
-### EBPF
+### eBPF
 
 - [Medium - eBPF Maps State Synchronization across Multi-Node Kubernetes Cluster](https://medium.com/gitconnected/ebpf-maps-state-synchronization-across-multi-node-kubernetes-cluster-d0c075810fa7)
 
@@ -197,18 +197,19 @@ tags:
 - [Medium - 7 Underrated Kubernetes Projects: Elevate Your Lab Playground!](https://medium.com/@ebenamor/7-underrated-kubernetes-projects-elevate-your-lab-playground-ac7f47cba347)
 - [Kubernetes - Blog](https://kubernetes.io/blog/)
 - [Kubernetes -  Documentation](https://kubernetes.io/docs/home/)
-### Hardware and Resource
+### Hardware and Resources
 
 - [Medium - Why does my 2vCPU application run faster in a VM than in a container? (Content of the year 2024)](https://hwchiu.medium.com/why-does-my-2vcpu-application-run-faster-in-a-vm-than-in-a-container-6438ffaba245)
+- [Medium - Why and Why Not of Enabling Swap in Kubernetes](https://hwchiu.medium.com/why-and-why-not-of-enabling-swap-in-kubernetes-08c094a8d427)
 
-### Networking and CNI
+### Networking (CNI)
 
 - [Medium - Deciphering the Kubernetes Networking Maze: Navigating Load-Balance, BGP, IPVS and Beyond](https://medium.com/itnext/deciphering-the-kubernetes-networking-maze-navigating-load-balance-bgp-ipvs-and-beyond-7123ef428572)
 - [Medium - Kubernetes Traffic Optimization: The Role of Topology-Aware Routing](https://faun.pub/kubernetes-traffic-optimization-the-role-of-topology-aware-routing-c950e25f3bf1)
 - [Alibaba - Kubernetes CNIs and CNI Plug-ins](https://www.alibabacloud.com/blog/getting-started-with-kubernetes-%7C-kubernetes-cnis-and-cni-plug-ins_596330)
 - [Medium - Kubernetes Networking in the Simplest Way 🚀](https://aws.plainenglish.io/kubernetes-networking-in-the-simplest-way-d84e3b7ed940)
 - [Ranchers - Container Network Interface (CNI) Providers](https://ranchermanager.docs.rancher.com/faq/container-network-interface-providers)
-### Storage and CSI
+### Storage (CSI)
 
 - [Medium - 7 Best Open Source Storage Solutions for Kubernetes](https://blog.devops.dev/7-best-open-source-storage-solutions-for-kubernetes-0da8b51efe8d)
 - [Blog - Installing the NFS CSI Driver on a Kubernetes cluster to allow for dynamic provisioning of Persistent Volumes](https://rudimartinsen.com/2024/01/09/nfs-csi-driver-kubernetes/)
@@ -384,6 +385,7 @@ tags:
 - [HAMi](https://github.com/Project-HAMi/HAMi): Heterogeneous AI Computing Virtualization Middleware
 - [Intel GPU Operator](https://github.com/intel/intel-device-plugins-for-kubernetes): Intel GPU plugin facilitates Kubernetes workload. [Documentation](https://intel.github.io/intel-device-plugins-for-kubernetes/cmd/gpu_plugin/README.html)
 - [NVIDIA GPU Operator](https://github.com/NVIDIA/gpu-operator): NVIDIA GPU Operator creates, configures, and manages GPUs in Kubernetes. [Documentation](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/overview.html)
+- [KAI-Scheduler](https://github.com/NVIDIA/KAI-Scheduler): an open source Kubernetes Native scheduler for AI workloads at large scale
 ## Identity and access management
 
 - [Keycloak](https://github.com/keycloak/keycloak): an open-source identity and access management solution for modern applications and services, built on top of industry security standard protocols.
@@ -414,6 +416,7 @@ tags:
 - [metrics-server](https://github.com/kubernetes-sigs/metrics-server): Scalable and efficient source of container resource metrics for Kubernetes built-in autoscaling pipelines.
 - [OpenSLO](https://github.com/OpenSLO/OpenSLO): Open specification for defining and expressing service level objectives (SLO)
 - [prometheus-operator](https://prometheus-operator.dev/docs/getting-started/introduction/): A [Kubernetes Operator](https://github.com/cncf/tag-app-delivery/blob/main/operator-wg/whitepaper/Operator-WhitePaper_v1-0.md#foundation) that provides Kubernetes native deployment and management of [Prometheus](https://prometheus.io/) and related monitoring components.
+- [x509-certificate-exporter](https://github.com/enix/x509-certificate-exporter): A Prometheus exporter to monitor x509 certificates expiration in Kubernetes clusters or standalone
 ## Policy Controller
 
 - [Kyverno](https://kyverno.io/) : Kubernetes Native Policy Management
