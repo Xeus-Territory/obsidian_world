@@ -322,6 +322,11 @@ tags:
 - [thefuck](https://github.com/nvbn/thefuck) : Magnificent app which corrects your previous console command.
 - [tldr](https://github.com/tldr-pages/tldr): 📚 Collaborative cheatsheets for console commands
 - [warp](https://www.warp.dev/): The terminal reimagined with AI and collaborative tools for better productivity.
+
+## Utilities Website Tools
+
+- [GitZip](https://kinolien.github.io/gitzip/): It can make sub-folder/sub-directory of github repository as zip and download it
+
 ## Virtual Machine / Virtualization
 
 - [firecracker](https://github.com/firecracker-microvm/firecracker): Secure and fast microVMs for serverless computing.
