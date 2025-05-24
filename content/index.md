@@ -72,5 +72,5 @@ Check some things in my world down below
 
 <div align="center"><h3>🙌 Song of the week 🙌</h3></div>
 
-<div align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/4mjgUdOUnMg?si=8Iatm9G7aILOBpVn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/Cc06xzK9Yd8?si=0ny3DumE5xdPDQv1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
