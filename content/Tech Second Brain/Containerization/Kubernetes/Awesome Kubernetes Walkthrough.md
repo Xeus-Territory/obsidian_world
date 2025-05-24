@@ -1111,3 +1111,17 @@ kubectl run tmp-shell --rm -i --tty --image your_req_image -- /bin/bash
 kubectl run tmp-shell --rm -i --tty --overrides='{"spec": {"hostNetwork": true}}' --image your_req_image -- /bin/bash
 ```
 
+# Install CRD
+
+When you want to install extension API for `Kubernetes`, in usual `Kubernetes` provides us the standard called [CRD (Custom Resources Definitions)](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/). But in some situations, you apply the `CRD` get over the most bytes able for created and cause the error
+
+```bash
+k apply -f rayjobs-crd.yaml 
+The CustomResourceDefinition "rayjobs.ray.io" is invalid: metadata.annotations: Too long: must have at most 262144 bytes
+```
+
+You can bypass it via applying in **server-side**
+
+```bash
+k apply -f rayjobs-crd.yaml --server-side
+```
