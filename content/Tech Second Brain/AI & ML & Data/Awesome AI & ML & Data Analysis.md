@@ -72,6 +72,10 @@ tags:
 - [Papers With Code](https://paperswithcode.com/): The latest in Machine Learning
 - [TensorFlow Hub](https://www.tensorflow.org/hub): A repository of trained machine learning models.
 - [There's An AI For That](https://theresanaiforthat.com/): Update the new about tools and technologies about AI
+## Papers
+
+- [Advances and Challenges in Foundation Agents](https://arxiv.org/pdf/2504.01990)
+
 ## Topic
 
 - [Artificial Intelligence](https://github.com/topics/artificial-intelligence)
