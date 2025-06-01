@@ -15,6 +15,11 @@ tags:
 
 # General
 
+## Alert / On Call Tools
+
+- [calert](https://github.com/mr-karan/calert): 🔔 Send alert notifications to Google Chat via Prometheus Alertmanager
+- [elastalert2](https://github.com/jertel/elastalert2):  A simple framework for alerting on anomalies, spikes, or other patterns of interest from data in [Elasticsearch](https://www.elastic.co/elasticsearch/) and [OpenSearch](https://opensearch.org/)
+- [versus-incident](https://github.com/VersusControl/versus-incident): An incident management tool supporting multi-channel alerting, customizable messages, and on-call integrations
 ## Monitoring Stacks
 
 - [ELK](https://www.elastic.co/elastic-stack): Combination from four main components. [Guide](https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elastic-stack-on-ubuntu-22-04), [Helm](https://operatorhub.io/operator/elastic-cloud-eck) and [Docker](https://github.com/deviantony/docker-elk)
@@ -27,13 +32,14 @@ tags:
 - [Grafana Stack](https://grafana.com/about/grafana-stack/): Ecosystem of Grafana for providing monitor methodology for your application, container, nodes and moreover.
 
 	- Agent: [alloy](https://grafana.com/docs/alloy/latest/), [agent](https://grafana.com/docs/agent/latest/), [mimir](https://grafana.com/docs/mimir/latest/)
+	- Alert: [AlertManger](https://prometheus.io/docs/alerting/latest/alertmanager/)
 	- Dashboard: [FlameGraph](https://github.com/brendangregg/FlameGraph) - (Pyroscope), [gitana](https://github.com/nicolastakashi/gitana)
 	- Installer: [Helm](https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack), [[Monitoring Stack#Grafana, Prometheus and Exporter|Docker]] and [Guide](https://grafana.com/docs/grafana/latest/getting-started/get-started-grafana-prometheus/)
 	- Logging: [fluentd](https://github.com/fluent/fluentd), [fluent-bit](https://github.com/fluent/fluent-bit), [loki](https://grafana.com/docs/loki/latest/), [promtail](https://grafana.com/docs/loki/latest/send-data/promtail/)
 	- Metrics: [prometheus](https://prometheus.io/docs/introduction/overview/), [cadvisor](https://github.com/google/cadvisor), [node_exporter](https://github.com/prometheus/node_exporter), [thanos](https://github.com/thanos-io/thanos)
 	- Profiling: [pyroscope](https://grafana.com/docs/pyroscope/latest/)
-	- Traces: [jaeger](https://www.jaegertracing.io/docs/2.1/), [OpenTelemetry](https://opentelemetry.io/docs/what-is-opentelemetry/), [tempo](https://grafana.com/docs/tempo/latest/)
 	- SLO: [sloth](https://github.com/slok/sloth)
+	- Traces: [jaeger](https://www.jaegertracing.io/docs/2.1/), [OpenTelemetry](https://opentelemetry.io/docs/what-is-opentelemetry/), [tempo](https://grafana.com/docs/tempo/latest/)
 
 - [VictoriaMetrics Stack](https://github.com/VictoriaMetrics/VictoriaMetrics): New monitoring solution for both metrics and logs
 
@@ -42,7 +48,6 @@ tags:
 
 - [dcgm](https://developer.nvidia.com/dcgm): Manage and Monitor GPUs in Cluster Environments
 - [zabbix](https://github.com/zabbix/zabbix): Real-time monitoring of IT components and services, such as networks, servers, VMs, applications and the cloud.
-
 ## Product Error Analytics
 
 - [openreplay](https://github.com/openreplay/openreplay): Session replay and analytics tool you can self-host. Ideal for reproducing issues, co-browsing with users and optimizing your product.
@@ -51,6 +56,7 @@ tags:
 
 - [awesome-monitoring](https://github.com/Enapiuz/awesome-monitoring): List of tools for monitoring and analyze everything
 - [awesome-observability](https://github.com/adriannovegil/awesome-observability): Awesome observability page
+- [Awesome Prometheus alerts](https://samber.github.io/awesome-prometheus-alerts/): Collection of alerting rules
 ## Technique Articles
 
 - [Medium - Observability Series: A Step-by-Step Guide to Logs, Traces, and Metrics](https://medium.com/gitconnected/observability-series-a-step-by-step-guide-to-logs-traces-and-metrics-9860d7c46220)

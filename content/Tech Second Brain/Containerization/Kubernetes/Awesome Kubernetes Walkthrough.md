@@ -1125,3 +1125,34 @@ You can bypass it via applying in **server-side**
 ```bash
 k apply -f rayjobs-crd.yaml --server-side
 ```
+
+
+# OOM Killed
+
+>[!info]
+>OOM (Out of Memory) is one of popular type of error in Kubernetes Cluster, but you know about how many does this error represent ? Let's take a look below for find more techniques for investigate and resolve your problems
+## In Kernel Layer
+
+After read this article [Medium - Tracking Down “Invisible” OOM Kills in Kubernetes](https://medium.com/@reefland/tracking-down-invisible-oom-kills-in-kubernetes-192a3de33a60), I actually figure out I have something great experience to encounter the problem with OOM in Kernel, It's hard to see if I only work in Cloud
+
+![[Pasted image 20250530105710.png|center]]
+
+When you double-check, you OOM is not executing at Kubernetes Layer, it means your pod will not restart if meet limit **(NOTE: this really's strange, in my case our application run with multiple child process in parent, and it's only killed child instead parent)**
+
+You can use `journalctl` to double-check this OOM killed
+
+```bash
+journalctl --utc -ke
+```
+
+This command allow you use `journalctl` to read information from kernel, and expose it into `utc` time. First of all, it's really easier for debugging than using another tool like `dmesg` (same result)
+
+![[Pasted image 20250530112040.png]]
+
+Now you can see the error about OOM and figure out what happen with your application, if you use `RKE2`, you can double-check your killed process corresponds to what container
+
+```bash
+ctr -a /run/k3s/containerd/containerd.sock -n k8s.io containers ls | grep -e "<id-container>"
+```
+
+
