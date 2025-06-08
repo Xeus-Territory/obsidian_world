@@ -63,6 +63,7 @@ tags:
 ## Page
 
 - [AI Tools Directory](https://www.aixploria.com/en/): Access the largest list of top-quality AI tools available on the web
+- [DeepWiki](https://deepwiki.com/): AI Documentation for any repository
 - [Feature Stores for ML](https://www.featurestore.org/): Collection pages about Feature stores for ML
 - [Hugging Face](https://huggingface.co/) : The Opensource AI community
 - [Kaggle](https://www.kaggle.com/):  Your Machine Learning and Data Science Community
@@ -75,7 +76,6 @@ tags:
 ## Papers
 
 - [Advances and Challenges in Foundation Agents](https://arxiv.org/pdf/2504.01990)
-
 ## Topic
 
 - [Artificial Intelligence](https://github.com/topics/artificial-intelligence)
