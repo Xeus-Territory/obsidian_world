@@ -814,6 +814,7 @@ Find more the couple of articles below for troubleshooting Linux Networking
 - [Medium - How To Evaluate the Network Performance of a Linux System](https://medium.com/devops-dev/how-to-evaluate-the-network-performance-of-a-linux-system-69db89cae0ed)
 - [Ubuntu - Networking](https://documentation.ubuntu.com/server/explanation/networking/)
 - [Netplan - YAML Configuration](https://netplan.readthedocs.io/en/stable/netplan-yaml/)
+- [How to Disable IPv6 on Ubuntu Linux](https://itsfoss.com/disable-ipv6-ubuntu-linux/)
 
 # Resize tmpfs in Linux
 
