@@ -9,11 +9,11 @@ tags:
 
 ![[thumbnail-linux-troubleshoot-tools.png]]
 
-# Error when package code needs to be installed, but I can't find an archive for it
+# Error when install package but you can't
 
 Link for resolve: [Reddit](https://www.reddit.com/r/pop_os/comments/s6l82d/trying_to_up_date_the_system_but_keep_getting/)
 
-If you package problem, for example (`Code`). You need to perform these command
+If you package problem, for example (`Code`). You need to perform these commands
 
 ```bash
 # Location the error or missing package
@@ -83,7 +83,7 @@ sudo /etc/init.d/ssh force-reload
 sudo /etc/init.d/ssh restart
 ```
 
-# Could not load 'vboxdrv' after upgrade to Ubuntu 16.04 (and I want to keep secure boot)
+# Error when setup virtualbox in Ubuntu
 
 >[!info]
 >That issue come from when you install the `virtualbox` in OS with enable secure boot in the `BIOS`, usually come from individual machine, I thinks. Mostly you install `virtualbox` from `apt`, it will not applied when your machine meet that problem. Can explain more 😅
@@ -737,7 +737,26 @@ Some cool functionality of `tmux` with hotkey, including
 - **Horizontal Split**: `[CTRL]+[b], "`
 - **Kill tab**: `[CTRL]+[b], x`
 
-# Mount and Unmount Disk in Linux
+# Networking with Linux
+
+Find more the couple of articles below for troubleshooting Linux Networking
+
+- [Medium - How To Evaluate the Network Performance of a Linux System](https://medium.com/devops-dev/how-to-evaluate-the-network-performance-of-a-linux-system-69db89cae0ed)
+- [Ubuntu - Networking](https://documentation.ubuntu.com/server/explanation/networking/)
+- [Netplan - YAML Configuration](https://netplan.readthedocs.io/en/stable/netplan-yaml/)
+- [How to Disable IPv6 on Ubuntu Linux](https://itsfoss.com/disable-ipv6-ubuntu-linux/)
+# About disk, partition, storage and volume in Linux
+
+>[!note]
+>This implement show us how you can workaround with your storage, disk and partition inside Linux. Learn and leverage these techniques for building a success
+
+![[meme-linux-disk.png|center]]
+
+Before you go into partition (advantaged), you can view another functionality with disk in another my example
+
+- [[Awesome Azure Cloud#Add a new disk for your `linux` virtual machine|Add a new disk for your `linux` virtual machine]]
+- [[Kubewekend Session 6#Prerequisites|Ceph prerequisites with addition disk]]
+## Mount and Unmount Disk in Linux
 
 - [Devconnected - How To Mount and Unmount Drives on Linux](https://devconnected.com/how-to-mount-and-unmount-drives-on-linux/)
 - [Networkwolrd - Linux commands for managing, partitioning, troubleshooting](https://www.networkworld.com/article/964235/linux-commands-for-managing-partitioning-troubleshooting.html)
@@ -807,16 +826,135 @@ If you want `unmount` your disk, you can follow
 sudo umount /dev/nvme0n2
 ```
 
-# Networking with Linux
+## Create a new partition
 
-Find more the couple of articles below for troubleshooting Linux Networking
+You can follow the article "[PhoenixNAP - How to Create Partitions in Linux](https://phoenixnap.com/kb/linux-create-partition)" to create a new partition on your disk. While multiple command-line tools are available for managing partitions, `fdisk` and `parted` are two popular options to consider.
 
-- [Medium - How To Evaluate the Network Performance of a Linux System](https://medium.com/devops-dev/how-to-evaluate-the-network-performance-of-a-linux-system-69db89cae0ed)
-- [Ubuntu - Networking](https://documentation.ubuntu.com/server/explanation/networking/)
-- [Netplan - YAML Configuration](https://netplan.readthedocs.io/en/stable/netplan-yaml/)
-- [How to Disable IPv6 on Ubuntu Linux](https://itsfoss.com/disable-ipv6-ubuntu-linux/)
+>[!warning]
+>To practice **disk partitioning**, you should always use a **brand new volume** or a disk that is **not currently in use and has no existing partitions**. Experimenting on your **boot disk** is extremely risky. You cannot partition or shrink a disk that is actively in use, which is why a fresh or unallocated disk is essential.
 
-# Resize tmpfs in Linux
+I prefer to use `fdisk` with good interaction and transparent what are you doing with your disk
+
+First of all, you can check your disk attached on your machine via command
+
+```bash
+# Check your disk, partion and mountpoint
+lsblk -f # View full your disk existing in your host (file-system)
+lsblk -o NAME,HCTL,SIZE,MOUNTPOINT # expose less information
+
+# Check with the fdisk also return good quality
+fdisk -l # List all information about disk,partion
+fdisk -x # see more information
+```
+
+Next, you can understand what target to part into small piece, you can use `fdisk` to playground with your disk
+
+```bash
+# e.g your disk is /dev/sdb for example
+fdisk /dev/sdb
+```
+
+Now you will be loaded into new command shell, and inhere you can use `m` to view help
+
+![[Pasted image 20250609145227.png|center]]
+
+So we focus to use `n` to help us create a new partition for your disk
+
+![[Pasted image 20250609145857.png|center]]
+
+You can choose `p` to create a primary partition. When prompted, select a partition number (typically from 1 to 4, though it can extend up to 128 depending on the partitioning scheme). Then, define the first and last sectors, specifying the size in units like kilobytes (KB), megabytes (MB), gigabytes (GB), ...
+
+![[Pasted image 20250609150408.png|center]]
+
+Validate your partition before confirm to write it into the partition by `p`
+
+![[Pasted image 20250609150555.png|center]]
+
+Now confirm it with `w` to confirm your partition table and you can confirm your disk will contain a new partition, e.g: `/dev/sdb1`
+
+![[Pasted image 20250609150804.png|center]]
+
+Now you can format your disk and use this as usual to used. Explore more at above: [[Awesome Troubleshoot Linux#Mount and Unmount Disk in Linux|Mount and Unmount Disk in Linux]]
+
+## Delete a partition
+
+Similar to creating partitions, you also have the option to delete them using `fdisk`. You can find more details in the article "[PhoenixNAP - How to Delete Partition in Linux](https://phoenixnap.com/kb/delete-partition-linux)." While `fdisk` allows you to modify (e.g., delete) partitions on your disk, it is strongly recommended that you **unmount (`umount`)** any mounted filesystems and **turn off any swap space (`swapoff`)** on that disk _before_ using `fdisk` to avoid data corruption or loss.
+
+```bash
+# e.g: your disk is /dev/sdb
+fdisk /dev/sdb
+```
+
+Now you are into `fdisk` shell and you can choose `d` option to remove your partition, if you have multiple partition in your disk, it will ask you remove what partition and if not it will remove your only partition in your disk
+
+![[Pasted image 20250609151804.png|center]]
+
+If you decide overwrite and complete after view partition table, you can confirm that with `w` option
+
+![[Pasted image 20250609151927.png]]
+
+>[!warning]
+>If you disk are still using as your mounting, your partition will work on next reboot, it means your partition still there
+
+Now you can view your attach volume with `lsblk -f` command and you can see your partition will disappear
+
+## Resize or extend the partition 
+
+
+>[!question]
+>If you encounter an "out of volume" error for your `/` (root) directory, but have ample unused space on your volume system, you can try extending your current partition. Here are some instructions you can review to handle this configuration.
+
+Explore more information with these articles
+
+- [Medium - How to Resize AWS EBS Volume (NVMe) and Extend Linux Partitions](https://fanio-martin.medium.com/how-to-resize-aws-ebs-volume-nvme-and-extend-linux-partitions-36d610650b38)
+- [AWS Docs - Extend the file system after resizing an Amazon EBS volume](https://docs.aws.amazon.com/ebs/latest/userguide/recognize-expanded-volume-linux.html)
+- [Redhat - What is growpart utility and how to use it ?](https://access.redhat.com/solutions/5540131)
+- [Alibaba - Extend the partitions and file systems of disks on a Linux instance](https://www.alibabacloud.com/help/en/ecs/user-guide/extend-the-partitions-and-file-systems-of-disks-on-a-linux-instance)
+- [Unix & Linux - How do I resize partitions and filesystems on them?](https://unix.stackexchange.com/questions/169395/how-do-i-resize-partitions-and-filesystems-on-them)
+- [TectMint  - 8 Parted Commands to Manage Disk Partitions in Linux](https://www.tecmint.com/parted-command-create-linux-partitions/)
+
+For example, I have disk 10GB and use only first partition 2GB but currently my partition is out of space but we have second partition contain 8GB not use for any tasks. That's why I should extend first partition with second partition to resolve about out of space
+
+![[Pasted image 20250609153519.png]]
+
+Now you need to extend your `sdb1` with `sdb2` with few steps. For resizing task, you can choose `growpart`, `resize2fs` for tools able handle configuration.
+
+>[!info]
+>If your disk is free space but format by `ext4`, you can't extend your partition because current your disk is used all and not able to modify. Why ? `growpart` is for maximal, contiguous extension. It will use all available free space. But if you want to advantage, you should use `parted` command for instead
+
+```bash
+growpart /dev/sdb 1
+```
+
+>[!warning]
+>Remembering you need to aware about space between your directory `/dev/sdb` and number partition for example `sdb 1` to let you extend your partition
+
+![[Pasted image 20250609154930.png]]
+
+That's why you should remove the `sdb2` partition to collect free space for `sdb1` partition with `fdisk` and now you can use `growpart` to extend free space
+
+```bash
+growpart /dev/sdb 1
+```
+
+![[Pasted image 20250609155627.png]]
+
+Now you can double-check with `lsblk` to see how your modification
+
+![[Pasted image 20250609160012.png]]
+>[!info]
+>You can see the your partition is extend to 10GB but current your file-system is still used 1.7GB, so you need one step with `resize2fs` for confirm your resizing
+
+```bash
+resize2fs /dev/sdb1
+```
+
+Now you can use `lsblk -f` of `df -hT` and you can see your disk will be formatted
+
+>[!warning]
+>For more advantaged, you should learn and practical with [parted](https://www.gnu.org/software/parted/manual/parted.html), it's a command-line of gparted GUI which used for shrinking and workaround with your partition, but remembering you should consider for what you doing before applying anything with these tools. Read more at [TectMint  - 8 Parted Commands to Manage Disk Partitions in Linux](https://www.tecmint.com/parted-command-create-linux-partitions/)
+
+## Resize tmpfs in Linux
 
 >[!question]
 >When you meet some problem related `tmpfs`, it is a file system which keeps all of its files in virtual memory, explore more at: [Kernel - Tmpfs](https://docs.kernel.org/filesystems/tmpfs.html). 
