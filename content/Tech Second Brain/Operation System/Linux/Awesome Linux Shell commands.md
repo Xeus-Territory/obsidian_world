@@ -1,5 +1,5 @@
 ---
-title: The awesome of Linux Shell Command
+title: Awesome Linux Shell Commands
 tags:
   - awesome
   - linux
@@ -7,6 +7,8 @@ tags:
   - helpful
   - usage
 ---
+
+![[icon-linux.svg|center|450]]
 >[!info]
 >Place to archive and snapshot the incredible command or pipe command with Linux OS platform such as Debian, Ubuntu, CentOS, ...
 

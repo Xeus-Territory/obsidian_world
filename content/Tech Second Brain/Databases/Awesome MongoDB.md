@@ -1,5 +1,5 @@
 ---
-title: The awesome of MongoDB
+title: Awesome MongoDB
 tags:
   - awesome
   - mongodb
@@ -7,13 +7,15 @@ tags:
   - usage
 ---
 
+![[thumbnail-mongodb.png|center]]
 # Documentations and Articles
 
 ## Setup
 
-- [Medium - High-availability MongoDB Cluster Configuration Solutions](https://alibaba-cloud.medium.com/high-availability-mongodb-cluster-configuration-solutions-465cc82cd0bc)
+- [Medium - High-availability MongoDB Cluster Configuration Solutions](https://alibaba-cloud.medium.com/high-availability-mongodb-cluster-configuration-solutions-465cc82cd0bc) 🌟 **(Recommended)**
 - [Medium - Configure 3 nodes replica set of MongoDB on AWS EC2](https://medium.com/@pnle/configure-3-nodes-replica-set-of-mongodb-on-aws-ec2-be778281ee9a)
-- [MongoDB - Deploy a Self-Managed Replica Set](https://www.mongodb.com/docs/manual/tutorial/deploy-replica-set/)
+- [MongoDB - Deploy a Self-Managed Replica Set](https://www.mongodb.com/docs/manual/tutorial/deploy-replica-set/) 🌟 **(Recommended)**
+- [MongoDB - Ensuring High Availability for MongoDB on Kubernetes](https://www.mongodb.com/developer/products/mongodb/mongodb-with-kubernetes/) 🌟 **(Recommended)**
 ## Tips & Configuration
 
 - [Medium - Solving curious case of excess memory consumption by MongoDB](https://tech.oyorooms.com/mongodb-out-of-memory-kill-process-mongodb-using-too-much-memory-solved-44e9ae577bed)

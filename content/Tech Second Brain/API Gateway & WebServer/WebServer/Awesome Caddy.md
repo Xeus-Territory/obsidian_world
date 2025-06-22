@@ -1,9 +1,10 @@
 ---
-title: The awesome of Caddy
+title: Awesome Caddy
 tags:
   - devops
   - webserver
   - usage
+  - awesome
 ---
 
 ![[thumbnail-caddy.png]]
@@ -21,7 +22,7 @@ tags:
 - [Caddy Server Documentation](https://caddyserver.com/docs/)
 - [Common Caddyfile Patterns](https://caddyserver.com/docs/caddyfile/patterns)
 - [Automatic HTTPS](https://caddyserver.com/docs/automatic-https)
-- [[Caddy Server and Umami analytics platform|Myself - Caddy Server and Umami analytics platform]]
+- [[Caddy Server and Umami analytics platform]]
 # Caddy Configuration
 
 ## Default

@@ -1,10 +1,11 @@
 ---
-title: The awesome of Azure Cloud
+title: Awesome Azure Cloud
 tags:
   - cheatsheet
   - helpful
   - azure
   - cloud-services
+  - awesome
 ---
 # Why I am choose Azure ?
 
@@ -31,22 +32,22 @@ What you can find out and figure out about Azure, Cloud Computing, Documentation
 
 ## Architecture
 
-- [Azure - Browse Azure Architectures](https://learn.microsoft.com/en-us/azure/architecture/browse/)
+- [Azure - Browse Azure Architectures](https://learn.microsoft.com/en-us/azure/architecture/browse/) 🌟 **(Recommended)**
 - [Azure - Sample Code from Microsoft Developer Tools](https://learn.microsoft.com/en-us/samples/browse/)
-- [Azure - Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/)
+- [Azure - Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/) 🌟 **(Recommended)**
 - [Azure - Application architecture fundamentals](https://learn.microsoft.com/en-us/azure/architecture/guide/)
 ## Community
 
-- [Azure - Blog](https://azure.microsoft.com/en-us/blog/)
+- [Azure - Blog](https://azure.microsoft.com/en-us/blog/) 🌟 **(Recommended)**
 - [Azure - Tech Community](https://techcommunity.microsoft.com/)
 - [Azure - Azure Category Community](https://techcommunity.microsoft.com/t5/azure/ct-p/Azure)
-- [Azure - Architecture Blog](https://techcommunity.microsoft.com/t5/azure-architecture-blog/bg-p/AzureArchitectureBlog)
+- [Azure - Architecture Blog ](https://techcommunity.microsoft.com/t5/azure-architecture-blog/bg-p/AzureArchitectureBlog) 🌟 **(Recommended)**
 ## General
 
 - [Wikipedia - Microsoft Azure](https://en.wikipedia.org/wiki/Microsoft_Azure)
 - [Azure - Documentation](https://learn.microsoft.com/en-us/azure/?product=popular)
 - [Azure - Technical documentation](https://learn.microsoft.com/en-us/docs/)
-- [Azure - Learning Platform](https://learn.microsoft.com/en-us/training/azure/)
+- [Azure - Learning Platform](https://learn.microsoft.com/en-us/training/azure/) 🌟 **(Recommended)**
 - [Azure - Register Account](https://azure.microsoft.com/en-us/free)
 ## Utilities
 
@@ -60,14 +61,14 @@ What you can find out and figure out about Azure, Cloud Computing, Documentation
 
 ## Repository
 
-- [Awesome Microsoft Azure Architecture](https://github.com/lukemurraynz/awesome-azure-architecture) - A curated list of AWESOME blogs, videos, tutorials, code, tools, and scripts related to the design and implementation of solutions in Microsoft Azure.
-- [Azure Resource Manager QuickStart Templates](https://github.com/Azure/azure-quickstart-templates) - Azure Quickstart Templates about `azure-arm` or `bicep`
+- [Awesome Microsoft Azure Architecture](https://github.com/lukemurraynz/awesome-azure-architecture) - A curated list of AWESOME blogs, videos, tutorials, code, tools, and scripts related to the design and implementation of solutions in Microsoft Azure. 🌟 **(Recommended)**
+- [Azure Resource Manager QuickStart Templates](https://github.com/Azure/azure-quickstart-templates) - Azure Quickstart Templates about `azure-arm` or `bicep` 🌟 **(Recommended)**
 ## Page
 
 - [Azure Verified Modules](https://azure.github.io/Azure-Verified-Modules/) - An initiative to consolidate and set the standards for what a good Infrastructure-as-Code module looks like.
 ## Organization
 
-- [Microsoft Azure](https://github.com/Azure) - APIs, SDKs and open source projects from Microsoft Azure
+- [Microsoft Azure](https://github.com/Azure) - APIs, SDKs and open source projects from Microsoft Azure 🌟 **(Recommended)**
 - [Microsoft Docs](https://github.com/MicrosoftDocs) - The modern documentation service for Microsoft
 - [Azure Samples](https://github.com/Azure-Samples) - Microsoft Azure code samples and examples in .NET, Java, Python, JavaScript, TypeScript, PHP and Ruby
 # Blogs, Articles and Videos

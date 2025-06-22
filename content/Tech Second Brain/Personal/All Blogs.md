@@ -1,5 +1,5 @@
 ---
-title: The awesome blogs of mine
+title: Awesome My Blogs
 tags:
   - blog
   - community
@@ -9,6 +9,80 @@ tags:
 ---
 
 ![[meme-winner-everywhere.png|center]]
+# Awesome of Myself
+
+>[!info]
+>More about my collection which talk about multiple topics, and technologies in multiple field like AI, ML, DevOps, Security and moreover, with a little bit snippet which most of useful tool that I have tried 👍👍👍
+
+**Timeline: 2024 - Current**
+
+## AI/ML/Data
+
+- [[Awesome AI & ML & Data Engineer]]
+- [[Awesome CDC]]
+## Architecture
+
+- [[Awesome System Architecture]]
+- [[Awesome API Gateway and Web Server]]
+- [[Awesome Kafka]]
+- [[Awesome NGINX]]
+- [[Awesome Caddy]]
+- [[Awesome Selfhosted]]
+## Certificates
+
+- [[AZ104|Azure AZ104]]
+## CI/CD
+
+- [[Awesome Github Action|Awesome GitHub Action]]
+- [[Awesome Azure Pipelines|Awesome Azure Pipelines]]
+- [[Awesome GitLabCI|Awesome GitLab CI]]
+- [[Awesome BitBucket|Awesome BitBucket Pipelines]]
+## Cloud
+
+- [[Awesome AWS Cloud|Awesome AWS Cloud]]
+- [[Awesome Azure Cloud|Awesome Azure Cloud]]
+## Containerization & Kubernetes
+
+- [[Awesome Containerization]]
+- [[Awesome Docker CLI]]
+- [[Awesome Docker Compose CLI]]
+- [[Awesome Helm]]
+- [[Awesome Kubectl Snippets]]
+- [[Awesome Kubernetes]]
+- [[Awesome Kubernetes Walkthrough]]
+## Database
+
+- [[Awesome Database]]
+- [[Awesome Elasticsearch & OpenSearch]]
+- [[Awesome PostgreSQL]]
+- [[Awesome MongoDB]]
+## Developer & DevOps
+
+- [[Awesome Developer]]
+- [[Awesome DevOps & System & Tech]]
+- [[Awesome eBPF]]
+- [[Awesome Git]]
+- [[Awesome GitOps]]
+- [[Awesome HTML & CSS]]
+- [[Awesome Monitoring & Observability]]
+- [[Awesome Terraform]]
+- [[Awesome Ansible]]
+## InfoSec & Hacking
+
+- [[Awesome Hacking and Infosec]]
+- [[Awesome Cheatsheets InfoSec]]
+## Operation System
+
+- [[Awesome Linux profile|Awesome Linux Profile]]
+- [[Awesome Linux Shell commands]]
+- [[Awesome Linux Shell scripts]]
+- [[Awesome OS|Awesome OS Linux and Window]]
+- [[Awesome Powershell commands]]
+- [[Awesome Windows profile|Awesome Windows Profile]]
+## Others
+
+- [[Awesome Utilities Sites]]
+- [[Awesome Quantum Computing]]
 # Azure Clouds Services
 
 >[!info]
@@ -39,46 +113,6 @@ tags:
 - [[Virtual Machine|Azure Virtual Machine]]:  The basis of the Azure infrastructure as a service (IaaS) model
 - [[Virtual Machine Availability|Azure Machine Availability]]: Methodology to enhance the availability for Azure Machine
 - [[Virtual network|Azure Virtual Network]]: An essential component for creating private networks in Azure
-# Certificates
-
->[!info]
->Talk about the journey to learn and practice to get the certificate in multiple category
-
-**Timeline: 2024 - Current**
-
-## 2024
-
-- [[AZ104|Azure AZ104]]
-# Awesome CI/CD and OS Profile
-
->[!info]
->More talk about CI/CD with multiple purpose, try to approach and gain the experience on multiple platform. Still update when have new things LOL 😃. And additional information about OS profile that tell about what things I have inside my host
-
-**Timeline: 2024 - Current**
-## 2024
-
-- [[Awesome Github Action|Awesome Github Action]]
-- [[Awesome Azure Pipelines|Awesome Azure Pipelines]]
-- [[Awesome GitLabCI|Awesome Gitlab CI]]
-- [[Awesome BitBucket|Awesome BitBucket Pipelines]]
-- [[Awesome Linux profile|Awesome Linux Profile]]
-- [[Awesome Windows profile|Awesome Windows Profile]]
-# CTF (Capture the Flag) and write up
-
->[!info]
->Like you know about my profile, I start with in CTF player and Web Pentester. So CTF is field, games and contest which I gain my experience and figure out myself in Security. In this session, It's about the challenge which make me give a time to research and find the flag, cool stuff and not waste your time
-
-**Timeline: 2022 - Current**
-## 2022-2023
-
-- [Flag Hoarding mapleCTF (2022) - (misc/forensic)](https://hackmd.io/@XeusNguyen/ByEYgl5yi)
-- [Dode ascisCTF (2022) (Misc/Forensics)](https://hackmd.io/@XeusNguyen/S1DdU66Zo)
-- [Hack The Boo (Hackthebox-Forensic-2022)](https://hackmd.io/@XeusNguyen/BkwkN8bHi)
-- [ICTF August 2022](https://hackmd.io/@XeusNguyen/BJqXug1gs)
-- [Image Editing - CTFLearn (Crypto/Hard)](https://hackmd.io/@XeusNguyen/HJ_kKdNGi)
-- [[IDOR|Write up about IDOR]]
-- [[SSTI|Write up about SSTI]]
-
 # DevOps - Tutorials from zero to hero
 
 >[!info]
@@ -100,7 +134,6 @@ tags:
 - [DevOps Training Session 12: Cloud - Packer](https://hackmd.io/@XeusNguyen/BJtEoB_Ci)
 - [DevOps Training Session 13: Cloud - K8s Overview](https://hackmd.io/@XeusNguyen/BknPsrdAs)
 - [DevOps Training Session 14+15: Cloud - K8s Networking, Configuration, Security && Storage](https://hackmd.io/@XeusNguyen/BknkTr_Rj)
-
 ## 2024
 
 - [Devops Training Session 16: Setup Observability for Kubernetes](https://hackmd.io/@XeusNguyen/rJk0lunAj)
@@ -157,69 +190,83 @@ tags:
 - [[Why you should use dependencies cache for your work]]
 - [[Vault and Keycloak - The combination for rotation Vault Token]]
 - [[GitLab Runner and Features of this platform]]
-# Hackwekend Series
+# DueWeekly Tech
 
 >[!info]
->This session is about me and you who sit and learn new things security in the weekend. Try best and have fun !!!
+>The series is the collection of mine about news, tools and articles technologies during two weeks around the world 🌈
+
+**Timeline: 2025 - Current**
+## 2025
+
+- [[30-12-2024 to 12-01-2025|Session 1: 30-12-2024 to 12-01-2025]]
+- [[13-01-2025 to 26-01-2025|Session 2: 13-01-2025 to 26-01-2025]]
+- [[27-01-2025 to 09-02-2025|Session 3: 27-01-2025 to 09-02-2025]]
+- [[10-02-2025 to 23-02-2025|Session 4: 10-02-2025 to 23-02-2025]]
+- [[24-02-2025 to 09-03-2025|Session 5: 24-02-2025 to 09-03-2025]]
+- [[10-03-2025 to 23-03-2025|Session 6: 10-03-2025 to 23-03-2025]]
+- [[24-03-2025 to 06-04-2025|Session 7: 24-03-2025 to 06-04-2025]]
+- [[07-04-2025 to 20-04-2025|Session 8: 07-04-2025 to 20-04-2025]]
+- [[21-04-2025 to 04-05-2025|Session 9: 21-04-2025 to 04-05-2025]]
+- [[05-05-2025 to 18-05-2025|Session 10: 05-05-2025 to 18-05-2025]]
+- [[19-05-2025 to 01-06-2025|Session 11: 19-05-2025 to 01-06-2025]]
+- [[02-06-2025 to 15-06-2025|Session 12: 02-06-2025 to 15-06-2025]]
+# InfoSec & Security
+
+## CTF
+
+>[!info]
+>As you know from my profile, I started my journey as a **CTF player and Web Pentester**. CTFs, a field of competitive games and contests, were where I gained invaluable experience and truly found my footing in security. In this session, I'll walk you through a challenge that required significant research to find the flag—it's genuinely interesting and won't waste your time.
 
 **Timeline: 2022 - Current**
-## 2022-2023
+
+- [Flag Hoarding mapleCTF (2022) - (misc/forensic)](https://hackmd.io/@XeusNguyen/ByEYgl5yi)
+- [Dode ascisCTF (2022) (Misc/Forensics)](https://hackmd.io/@XeusNguyen/S1DdU66Zo)
+- [Hack The Boo (Hackthebox-Forensic-2022)](https://hackmd.io/@XeusNguyen/BkwkN8bHi)
+- [ICTF August 2022](https://hackmd.io/@XeusNguyen/BJqXug1gs)
+- [Image Editing - CTFLearn (Crypto/Hard)](https://hackmd.io/@XeusNguyen/HJ_kKdNGi)
+- [[IDOR|Write up about IDOR]]
+- [[SSTI|Write up about SSTI]]
+## Hackwekend Series
+
+>[!info]
+>This session is all about us taking the weekend to **learn new things in security together**. Let's make the most of it and have some fun!
+
+**Timeline: 2022 - Current**
 
 - [Hackwekend Session 0 - QRCode Vulnerabilities (Malicious QRCode gain access to reverse shell level)](https://hackmd.io/@XeusNguyen/BJJvZHOMj) - *About the vulnerable with QRCode, How we can gain access to victim machine and bypass QRCode*
 - [Hackwekend - Session 1 (Pentester web - Security Lab)](https://hackmd.io/@XeusNguyen/S1udpmwro) - *About the vulnerable machine is take a look and gain access to collecting flag (CTF)*
 - [Hackwekend Session 2 - Information Security, Team and Phishing Attack](https://hackmd.io/@XeusNguyen/ryHkhL-e2) - *The session talk about what and why we have InfoSec and work like a team. Additional, Talk about Phishing Attack, Questions and how to reproduce*
 - [Hackwekend - Session 3 Attack and Exploit GraphQL ?](https://hackmd.io/@XeusNguyen/rJ0j0WR-p) - *Session is about GraphQL, Dangerous with technologies and some challenge to find flag with CTF style*
-
-## 2024
-
 - [Hackwekend Session 4 - Cloud Security (AWS EKS)](https://hackmd.io/@XeusNguyen/H1sUc3CB6) *- Session is about AWS EKS Security, Vulnerable in K8s Cluster and Play CTF to figuring out what should need protected (EKS Cluster Game prod by Wiz.io)*
 - [Hackwekend Session 5 - Cloud Security (AWS IAM Policy)](https://hackmd.io/@XeusNguyen/HkjGUFw-C) - *Session is about AWS IAM, How to authentication or bypass methodology to read and list contents inside the S3 bucket, learn more about `sns`, `sqs`, `cognito` services of AWS Cloud (Big IAM prod by Wiz.io)*
 - [Hackwekend Session 6 - Cloud Security (Network and Red Team)](https://hackmd.io/@XeusNguyen/ByLqkK1zC) *- Session is about more than cloud security, but more approach to networking and red team methodology to recon, attack the target with unique way like `lateral movement`, `nfs`, `tcpdump`, `dnscan` and `istio`, `kyverno` on `kubernetes` ( K8slan prod by Wiz.io)*
-
-# Awesome of Myself
+## Vulnerable Research
 
 >[!info]
->More about my collection which talk about multiple topics, and technologies in multiple field like AI, ML, DevOps, Security and moreover, with a little bit snippet which most of useful tool that I have tried 👍👍👍
+>Join me in this session as we explore **web security and vulnerabilities**, learning how to interact with real websites to uncover them.
 
-**Timeline: 2024 - Current**
-## 2024
+**Timeline: 2023 - Current**
 
-- [[Awesome AI & ML & Data Analysis]]
-- [[Awesome AWS Cloud|Awesome AWS Cloud]]
-- [[Awesome Azure Cloud|Awesome Azure Cloud]]
-- [[Awesome Container and Kubernetes]]
-- [[Awesome Database]]
-- [[Awesome Developer and Programming]]
-- [[Awesome DevOps & System & Tech]]
-- [[Awesome Docker Compose CLI]]
-- [[Awesome Docker CLI]]
-- [[Awesome Elasticsearch]]
-- [[Awesome Git]]
-- [[Awesome Hacking and Infosec]]
-- [[Awesome HTML|Awesome HTML]]
-- [[Awesome Kubectl Snippet]]
-- [[Awesome Kubernetes Walkthrough]]
-- [[Awesome Linux Shell commands]]
-- [[Awesome Linux Shell scripts]]
-- [[Awesome OS|Awesome OS Linux and Window]]
-- [[Awesome PostgreSQL]]
-- [[Awesome Powershell commands]]
-- [[Awesome Utilities Sites]]
-- [[Tech Second Brain/Databases/Playbooks Collections|DIY Database Ansible Playbooks]]
-- [[Tech Second Brain/Containerization/Playbooks Collections|DIY Docker and Kubernetes Ansible Playbooks]]
-- [[Tech Second Brain/Operation System/Playbooks Collections|DIY OS Ansible Playbooks]]
-## 2025
-
-- [[Awesome API Gateway and Web Server]]
-- [[Awesome Caddy]]
-- [[Awesome CDC]]
-- [[Awesome eBPF]]
-- [[Awesome Helm]]
-- [[Awesome Monitoring & Observability]]
-- [[Awesome NGINX]]
-- [[Awesome Quantum Computing]]
-- [[Awesome System Architecture]]
-- [[Awesome Terraform]]
+- [Pentest Top 10 OWASP with Juice-Shop-OWASP](https://hackmd.io/@XeusNguyen/HJAecr7xs)
+- [SQL Injection - Part 1 (Practical PortSwigger)](https://hackmd.io/@XeusNguyen/SyHN3vdlj)
+- [SQL Injection - Part 2 (Practical on PortSwigger)](https://hackmd.io/@XeusNguyen/SJb_GMnxj)
+- [SQL Injection - Part 3 (Practical PortSwigger)](https://hackmd.io/@XeusNguyen/S1dDCM1bi)
+- [Cross-site scripting (Practice on PortSwigger)](https://hackmd.io/@XeusNguyen/HJkDOHr-i)
+- [Research about Top 10 OWASP](https://hackmd.io/@XeusNguyen/By700eFks)
+- [Snyk vs Sonarqube - Securing your code](https://hackmd.io/@XeusNguyen/B1SujNlgh)
+- [[Insecure Direct Object Reference (IDOR)]]
+- [[Server Site Template Injection (SSTI)]]
+- [[Authentication Bypass]]
+- [[Content Discovery]]
+- [[Subdomain Enumeration]]
+- [[Walking An Application]]
+- [[Top 10 OWASP]]
+- [[Web fundamentals]]
+- [[Cross Site Scripting ( XSS )]]
+- [[SQL Injections]]
+- [[GraphQL]]
+- [[Command injection]]
+- [[CVE-2023-34092 - Path Equivalence in Vite]]
 # Kubewekend Series
 
 >[!info]
@@ -255,52 +302,3 @@ tags:
 - [[Awesome Helm|What is Helm?]]
 - [[What is Milvus|What is Milvus?]]
 - [[Increase Quota and Limit of Cloud Services]]
-# Vulnerable Research
-
->[!info]
->In this session, I will share and talk about web security and vulnerable which you need to interacted and figuring out how we can find it in real website
-
-**Timeline: 2023 - Current**
-## 2023
-
-- [Pentest Top 10 OWASP with Juice-Shop-OWASP](https://hackmd.io/@XeusNguyen/HJAecr7xs)
-- [SQL Injection - Part 1 (Practical PortSwigger)](https://hackmd.io/@XeusNguyen/SyHN3vdlj)
-- [SQL Injection - Part 2 (Practical on PortSwigger)](https://hackmd.io/@XeusNguyen/SJb_GMnxj)
-- [SQL Injection - Part 3 (Practical PortSwigger)](https://hackmd.io/@XeusNguyen/S1dDCM1bi)
-- [Cross-site scripting (Practice on PortSwigger)](https://hackmd.io/@XeusNguyen/HJkDOHr-i)
-- [Research about Top 10 OWASP](https://hackmd.io/@XeusNguyen/By700eFks)
-- [Snyk vs Sonarqube - Securing your code](https://hackmd.io/@XeusNguyen/B1SujNlgh)
-- [[Insecure Direct Object Reference (IDOR)]]
-- [[Server Site Template Injection (SSTI)]]
-- [[Authentication Bypass]]
-- [[Content Discovery]]
-- [[Subdomain Enumeration]]
-- [[Walking An Application]]
-- [[Top 10 OWASP]]
-- [[Web fundamentals]]
-- [[Cross Site Scripting ( XSS )]]
-- [[SQL Injections]]
-- [[GraphQL]]
-- [[Command injection]]
-- [[CVE-2023-34092 - Path Equivalence in Vite]]
-# DueWeekly Tech
-
->[!info]
->The series is the collection of mine about news, tools and articles technologies during two weeks around the world 🌈
-
-**Timeline: 2025 - Current**
-
-## 2025
-
-- [[30-12-2024 to 12-01-2025|Session 1: 30-12-2024 to 12-01-2025]]
-- [[13-01-2025 to 26-01-2025|Session 2: 13-01-2025 to 26-01-2025]]
-- [[27-01-2025 to 09-02-2025|Session 3: 27-01-2025 to 09-02-2025]]
-- [[10-02-2025 to 23-02-2025|Session 4: 10-02-2025 to 23-02-2025]]
-- [[24-02-2025 to 09-03-2025|Session 5: 24-02-2025 to 09-03-2025]]
-- [[10-03-2025 to 23-03-2025|Session 6: 10-03-2025 to 23-03-2025]]
-- [[24-03-2025 to 06-04-2025|Session 7: 24-03-2025 to 06-04-2025]]
-- [[07-04-2025 to 20-04-2025|Session 8: 07-04-2025 to 20-04-2025]]
-- [[21-04-2025 to 04-05-2025|Session 9: 21-04-2025 to 04-05-2025]]
-- [[05-05-2025 to 18-05-2025|Session 10: 05-05-2025 to 18-05-2025]]
-- [[19-05-2025 to 01-06-2025|Session 11: 19-05-2025 to 01-06-2025]]
-- [[02-06-2025 to 15-06-2025|Session 12: 02-06-2025 to 15-06-2025]]

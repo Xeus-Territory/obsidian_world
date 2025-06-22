@@ -1,5 +1,5 @@
 ---
-title: The awesome of Database World
+title: Awesome Database World
 tags:
   - cheatsheet
   - helpful
@@ -8,42 +8,27 @@ tags:
   - awesome
 ---
 
->[!info]
->Purpose to share what I learn and figure out when work with multiple Database like solutions, managing and helpful guideline for next people. Enjoy 😅😅😅
-# Articles
+# General
 
 ![[meme-documentation.png]]
-## General
+## Articles
 
-- [Medium - 15 Databases, 15 Use Cases — The Ultimate Guide That No One Asked For (But Everyone Needs)](https://medium.com/gitconnected/15-databases-15-use-cases-the-ultimate-guide-that-no-one-asked-for-but-everyone-needs-47ca4009be78)
-- [Medium - 11 Data Structures Powering Database](https://medium.com/gitconnected/11-data-structures-powering-database-51fc4691fcf7)
+- [Medium - 15 Databases, 15 Use Cases — The Ultimate Guide That No One Asked For (But Everyone Needs)](https://medium.com/gitconnected/15-databases-15-use-cases-the-ultimate-guide-that-no-one-asked-for-but-everyone-needs-47ca4009be78) 🌟 **(Recommended)**
+- [Medium - 11 Data Structures Powering Database](https://medium.com/gitconnected/11-data-structures-powering-database-51fc4691fcf7) 🌟 **(Recommended)**
 - [dev.to - What is RocksDB (and its role in streaming)?](https://dev.to/mrkandreev/what-is-rocksdb-and-its-role-in-streaming-3bla)
-- [Medium - Running SpiceDB with Postgresql using docker-compose](https://akoserwal.medium.com/running-spicedb-with-postgresql-using-docker-compose-cc7ee999da73)
-## Redis
-
 - [What is Valkey?](https://redis.io/blog/what-is-valkey/)
-## SQL Server
-
-### Setup
-
 - [SQLShack - Configuring a SQL Server AlwaysOn High Availability Group](https://www.sqlshack.com/configuring-a-sql-server-alwayson-high-availability-group/)
-
-### Tips & Configuration
-
 - [Azure - Analyze and prevent deadlocks in Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/analyze-prevent-deadlocks?view=azuresql&tabs=ring-buffer)
 - [How to find and fix SQL Server deadlocks](https://www.site24x7.com/learn/resolve-sql-server-deadlocks.html#:~:text=A%20Microsoft%20SQL%20Server%20deadlock,cancel%20one%20of%20the%20processes.)
 - [Performance Troubleshooting | Azure SQL](https://www.youtube.com/playlist?list=PLlrxD0HtieHgDkZ84FfCSDLBcJmUn8ktU)
 - [Azure - Deadlocks guide](https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-deadlocks-guide?view=sql-server-ver16)
-
-# Awesome repositories
-
+- [Datacamp - Database Sharding: Examples, Strategies, Tools, and More](https://www.datacamp.com/blog/database-sharding) 🌟 **(Recommended)**
 ## Pages
 
-- [DB-Engines](https://db-engines.com/en/): Knowledge Base of Relational and NoSQL Database Management Systems
+- [DB-Engines](https://db-engines.com/en/): Knowledge Base of Relational and NoSQL Database Management Systems 🌟 **(Recommended)**
 ## Repository
 
-- [awesome-db-tools](https://github.com/mgramin/awesome-db-tools) : Everything that makes working with databases easier
-- [mongodb-kubernetes-operator](https://github.com/mongodb/mongodb-kubernetes-operator) : MongoDB Community Kubernetes Operator
+- [awesome-db-tools](https://github.com/mgramin/awesome-db-tools) : Everything that makes working with databases easier 🌟 **(Recommended)**
 ## Topics
 
 - [Database](https://github.com/topics/database)
@@ -58,11 +43,11 @@ tags:
 >[!info]
 >Key-value stores are probably the simplest form of database management systems. They can only store pairs of keys and values, as well as retrieve values when a key is known.
 
-- [etcd](https://github.com/etcd-io/etcd): Distributed reliable key-value store for the most critical data of a distributed system
-- [redis](https://github.com/redis/redis): An in-memory database that persists on disk.
+- [etcd](https://github.com/etcd-io/etcd): Distributed reliable key-value store for the most critical data of a distributed system 🌟 **(Recommended)**
+- [redis](https://github.com/redis/redis): An in-memory database that persists on disk 🌟 **(Recommended)**
 - [rocksdb](https://github.com/facebook/rocksdb): A library that provides an embeddable, persistent key-value store for fast storage.
 - [tikv](https://github.com/tikv/tikv): Distributed transactional key-value database, originally created to complement TiDB
-- [valkey](https://github.com/valkey-io/valkey): A flexible distributed key-value datastore that is optimized for caching and other realtime workloads.
+- [valkey](https://github.com/valkey-io/valkey): A flexible distributed key-value datastore that is optimized for caching and other realtime workloads 🌟 **(Recommended)**
 ## No-Code
 
 >[!info]
@@ -74,10 +59,10 @@ tags:
 >[!info]
 >A high-performance, column-oriented SQL DBMS for online analytical processing (OLAP) that uses all available system resources to their full potential to process each analytical query as fast as possible. It is available as both an open-source software and a cloud offering.
 
-- [ClickHouse](https://github.com/ClickHouse/ClickHouse): ClickHouse® is a real-time analytics DBMS. [Website](https://clickhouse.com/)
+- [ClickHouse](https://github.com/ClickHouse/ClickHouse): ClickHouse® is a real-time analytics DBMS 🌟 **(Recommended)**
 - [cockroach](https://github.com/cockroachdb/cockroach): the cloud native, distributed SQL database designed for high availability, effortless scale, and control over data placement.
 - [Apache Druid](https://github.com/apache/druid): A high performance real-time analytics database.
-- [duckdb](https://github.com/duckdb/duckdb): An analytical in-process SQL database management system. [Website Documentation](https://duckdb.org/docs/)
+- [duckdb](https://github.com/duckdb/duckdb): An analytical in-process SQL database management system
 - [tidb](https://github.com/pingcap/tidb): the open-source, cloud-native, distributed SQL database designed for modern applications.
 ## Search Engine
 
@@ -89,9 +74,9 @@ tags:
 >- Ranking and grouping of search results
 >- Distributed search for high scalability
 
-- [manticoresearch](https://github.com/manticoresoftware/manticoresearch): Easy to use open source fast database for search | Good alternative to Elasticsearch now | Drop-in replacement for E in the ELK soon
+- [manticoresearch](https://github.com/manticoresoftware/manticoresearch): Easy to use open source fast database for search | Good alternative to Elasticsearch now | Drop-in replacement for E in the ELK soon 🌟 **(Recommended)**
 - [typesense](https://github.com/typesense/typesense): Open Source alternative to Algolia + Pinecone and an Easier-to-Use alternative to ElasticSearch ⚡ 🔍 ✨
-- [OpenSearch](https://github.com/opensearch-project/OpenSearch): 🔎 Open source distributed and RESTful search engine.
+- [OpenSearch](https://github.com/opensearch-project/OpenSearch): 🔎 Open source distributed and RESTful search engine 🌟 **(Recommended)**
 ## Time Series DBMS
 
 >[!info]
@@ -106,9 +91,9 @@ tags:
 - [GatewayD](https://docs.gatewayd.io/getting-started/welcome): a free and open-source cloud-native database gateway and framework for building data-driven applications
 ## Database IDE
 
-- [beekeeper-studio](https://github.com/beekeeper-studio/beekeeper-studio): Modern and easy to use SQL client for MySQL, Postgres, SQLite, SQL Server, and more. Linux, MacOS, and Windows. [Website](https://www.beekeeperstudio.io/)
+- [beekeeper-studio](https://github.com/beekeeper-studio/beekeeper-studio): Modern and easy to use SQL client for MySQL, Postgres, SQLite, SQL Server, and more. Linux, MacOS, and Windows
 - [Chat2DB](https://github.com/CodePhiliaX/Chat2DB): 🔥🔥🔥AI-driven database tool and SQL client, The hottest GUI client, supporting MySQL, Oracle, PostgreSQL, DB2, SQL Server, DB2, SQLite, H2, ClickHouse, and more.
-- [dbeaver](https://github.com/dbeaver/dbeaver): Free universal database tool and SQL client. [Website](https://dbeaver.io/)
+- [dbeaver](https://github.com/dbeaver/dbeaver): Free universal database tool and SQL client
 ## Database Management
 
 - [bytebase](https://github.com/bytebase/bytebase) : The GitHub/GitLab for database DevOps.

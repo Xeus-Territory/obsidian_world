@@ -1,5 +1,5 @@
 ---
-title: The awesome of BitBucket Pipelines
+title: Awesome BitBucket Pipelines
 tags:
   - cicd
   - bitbucket
@@ -11,6 +11,7 @@ tags:
 >[!summary]
 >BitBucket Pipelines is already approached by myself, take a note and sharing about how we can implement with BitBucket Pipelines
 
+![[thumbnail-bitbucket-pipelines.png]]
 ## Documentation
 
 - [BitBucket - Build, test, and deploy with Pipelines (General Document)](https://support.atlassian.com/bitbucket-cloud/docs/build-test-and-deploy-with-pipelines/)

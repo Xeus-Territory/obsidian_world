@@ -1,5 +1,5 @@
 ---
-title: The awesome of Azure Pipelines
+title: Awesome Azure Pipelines
 tags:
   - cicd
   - automation
@@ -11,6 +11,7 @@ tags:
 >[!Summary]
 >The Gallery of Azure DevOps pipelines, where I share experience about some approaching automation in this platform.
 
+![[Pasted image 20240729215324.png]]
 ## Documentation
 
 - [Azure - What is Azure Pipelines?](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops)

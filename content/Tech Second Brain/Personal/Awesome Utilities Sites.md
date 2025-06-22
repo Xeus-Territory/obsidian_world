@@ -1,18 +1,18 @@
 ---
+title: Awesome Utilities Sites
 tags:
   - collections
   - helpful
   - awesome
-title: The awesome of Utilities Site
 ---
-# Utilities site
 
->[!info]
->Finding the utilities for your desktop and work
+![[meme-blind-choice.png|center]]
+
+# Utilities site
 
 ## Download
 
-- [GitZip](https://kinolien.github.io/gitzip): It can make sub-folder/sub-directory of github repository as zip and download it.
+- [GitZip](https://kinolien.github.io/gitzip): It can make sub-folder/sub-directory of github repository as zip and download it. 🌟 **(Recommended)**
 ## Images
 
 - [Pinterest](https://www.pinterest.com/) - Free Image HD
@@ -25,11 +25,11 @@ title: The awesome of Utilities Site
 - [1001 Fonts](https://www.1001fonts.com/) - Free Fonts
 ## Icons
 
-- [Emojipedia](https://emojipedia.org/) - Find and get your emoji in unicode
-- [Emoji Code List](https://hackmd.io/@TANNY/Hy8FoOPtD/https%3A%2F%2Fwww.webfx.com%2Ftools%2Femoji-cheat-sheet%2F) - Easily click to copy and paste emojis into any app or social media platform to make your content stand out!
-- [TechIcons](https://techicons.dev/) - Download, copy and paste tech icons in SVG and PNG format for your projects.
-- [SVGRepo](https://www.svgrepo.com/) - Search, explore and edit the best-fitting free icons or vectors for your projects using a wide variety vector library.
-- [Simple Icons](https://simpleicons.org/) - Free SVG icons for popular brands
+- [IconDucks](https://iconduck.com/): Open source icons & illustrations
+- [Emojipedia](https://emojipedia.org/): Find and get your emoji in unicode
+- [TechIcons](https://techicons.dev/): Download, copy and paste tech icons in SVG and PNG format for your projects.
+- [SVGRepo](https://www.svgrepo.com/):  Search, explore and edit the best-fitting free icons or vectors for your projects using a wide variety vector library.
+- [Simple Icons](https://simpleicons.org/):  Free SVG icons for popular brands
 ## File Converter & Downloader
 
 - [Convertio](https://convertio.co/) - File Converter
@@ -58,5 +58,7 @@ title: The awesome of Utilities Site
 >[!note]
 >A couple pages with cool stuff and opportunity to finding job with awesome company about technology
 
+- [Awesome Job VietNam](https://github.com/awesome-jobs/vietnam): Find Dev job in VietNam
+- [Awesome Remote Job](https://github.com/lukasz-madon/awesome-remote-job?tab=readme-ov-file): A curated list of awesome [remote working](https://en.wikipedia.org/wiki/Telecommuting) resources.
+- [Remote In Tech](https://remoteintech.company/): A list of semi to fully remote-friendly companies in tech
 - [Y Combinator](https://www.ycombinator.com/jobs): Community for funding and finding job for the startup company
-

@@ -1,5 +1,5 @@
 ---
-title: The awesome of Terraform
+title: Awesome Terraform
 tags:
   - devops
   - terraform
@@ -35,7 +35,7 @@ tags:
 - [Spacelift - Importing Existing Infrastructure Into Terraform – Step by Step](https://spacelift.io/blog/importing-exisiting-infrastructure-into-terraform)
 - [Medium - Use SOPS and Terraform to create encrypt/decrypt files with AWS KMS](https://medium.com/@arunmrp90/use-sops-and-terraform-to-create-encrypted-decrypt-files-with-aws-kms-a38ac793518b)
 - [Zeet - 9 Powerful Atlantis Alternatives to Enhance Terraform Efficiency](https://zeet.co/blog/atlantis-alternatives)
-- [Zeet - 28 Most Powerful Terraform Tools (2024)](https://zeet.co/blog/terraform-tools)
+- [Zeet - 28 Most Powerful Terraform Tools (2024)](https://zeet.co/blog/terraform-tools) 🌟 **(Recommended)**
 - [Medium - Top Terraform Tools to Know in 2024](https://medium.com/env0/top-terraform-tools-to-know-in-2024-a00a232bb936)
 - [Infracloud - 5 Tools to Auto-Generate Terraform Configuration Files](https://www.infracloud.io/blogs/auto-generate-terraform-configuration-files/)
 ## Blogs
@@ -46,16 +46,15 @@ tags:
 - [awesome-tf](https://github.com/shuaibiyy/awesome-tf): Curated list of resources on HashiCorp's Terraform and OpenTofu
 ## Pages
 
-- [Terraform Best Practices](https://www.terraform-best-practices.com/): An attempt to systematically describe best practices using Terraform and provide recommendations for the most frequent problems Terraform users experience
+- [Terraform Best Practices](https://www.terraform-best-practices.com/): An attempt to systematically describe best practices using Terraform and provide recommendations for the most frequent problems Terraform users experience 🌟 **(Recommended)**
 - [Terraform Documentation](https://developer.hashicorp.com/terraform/docs): An infrastructure as code tool that lets you build, change, and version infrastructure safely and efficiently
 - [Terraform Registry](https://registry.terraform.io/): Terraform providers that power all of Terraform’s resource types, or find modules for quickly deploying common infrastructure configurations.
 ## Tools
 
-- [atlantis](https://www.runatlantis.io/): Running Terraform Workflows with Ease
+- [atlantis](https://www.runatlantis.io/): Running Terraform Workflows with Ease 🌟 **(Recommended)**
 - [inframap](https://github.com/cycloidio/inframap): Read your tfstate or HCL to generate a graph specific for each provider, showing only the resources that are most important/relevant.
 - [terraform-docs](https://terraform-docs.io/user-guide/introduction/) : A utility to generate documentation from Terraform modules in various output formats.
 - [terraformer](https://github.com/GoogleCloudPlatform/terraformer): CLI tool to generate terraform files from existing infrastructure (reverse Terraform). Infrastructure to Code
-
 # Install and setup environment for Terraform
 
 >[!info]

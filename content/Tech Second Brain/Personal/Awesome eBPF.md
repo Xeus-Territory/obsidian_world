@@ -1,5 +1,5 @@
 ---
-title: The awesome of eBPF
+title: Awesome eBPF
 tags:
   - devops
   - collections
@@ -20,16 +20,16 @@ tags:
 - [[Profiling applications with Pyroscope]]
 - [[Kubewekend Session 4|Kubewekend Session 4: Learn about ebpf with hubble and cilium]]
 - [Medium - Noisy Neighbor Detection with eBPF](https://netflixtechblog.com/noisy-neighbor-detection-with-ebpf-64b1f4b3bbdd)
-- [KodeKloud - eBPF Essentials for DevOps Professionals](https://kodekloud.com/blog/ebpf-essentials-devops/)
+- [KodeKloud - eBPF Essentials for DevOps Professionals](https://kodekloud.com/blog/ebpf-essentials-devops/) 🌟 **(Recommended)**
 ## Blogs
 
-- [Brendan Gregg](https://www.brendangregg.com/index.html) - Cool guy with pleasant contents about ebpf and kernel technologies
-- [Isovalent Blog](https://isovalent.com/blog/) - More about ebpf and kernel technologies, especially cilium and sub-projects of **cilium**
+- [Brendan Gregg](https://www.brendangregg.com/index.html): Cool guy with pleasant contents about ebpf and kernel technologies 🌟 **(Recommended)**
+- [Isovalent Blog](https://isovalent.com/blog/): More about ebpf and kernel technologies, especially cilium and sub-projects of **cilium** 🌟 **(Recommended)**
 ## Repositories
 
 - [awesome-ebpf](https://github.com/zoidyzoidzoid/awesome-ebpf) : A curated list of awesome projects related to eBPF
 ## Tools
 
-- [Cilium](https://cilium.io/): eBPF-based Networking, Observability, Security
-- [Pyroscope](https://github.com/grafana/pyroscope): Continuous Profiling Platform. Debug performance issues down to a single line of code
+- [Cilium](https://cilium.io/): eBPF-based Networking, Observability, Security 🌟 **(Recommended)**
+- [Pyroscope](https://github.com/grafana/pyroscope): Continuous Profiling Platform. Debug performance issues down to a single line of code 🌟 **(Recommended)**
 

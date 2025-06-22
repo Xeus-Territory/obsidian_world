@@ -132,7 +132,7 @@ Before you can do the lab, make sure you do
 - Install [virtualbox](https://www.virtualbox.org/wiki/Downloads)
 - Install [vagrant](https://developer.hashicorp.com/vagrant/docs/installation)
 
-With `Virtualbox`, if you meet the problem to install or unable to start `virtualbox` service, you can reach out to [[Awesome Troubleshoot Linux#Could not load 'vboxdrv' after upgrade to Ubuntu 16.04 (and I want to keep secure boot)|virtualbox troubleshoot]] which can help use to resolve problem (NOTICE: Ubuntu 24.04 can be meet)
+With `Virtualbox`, if you meet the problem to install or unable to start `virtualbox` service, you can reach out to [[Awesome Linux Troubleshoot#Could not load 'vboxdrv' after upgrade to Ubuntu 16.04 (and I want to keep secure boot)|virtualbox troubleshoot]] which can help use to resolve problem (NOTICE: Ubuntu 24.04 can be meet)
 
 If you check all work, `VBoxManage` and `Vagrant`  like this
 

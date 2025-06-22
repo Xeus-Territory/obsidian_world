@@ -1,5 +1,5 @@
 ---
-title: The awesome of PostgreSQL
+title: Awesome PostgreSQL
 tags:
   - database
   - postgresql
@@ -8,22 +8,24 @@ tags:
   - cheatsheet
 ---
 
+![[thumbnail-postgresql.png|center|600]]
 # Documentation and Articles
 ## Setup
 
 - [Linode - A Comparison of High Availability PostgreSQL Solutions](https://www.linode.com/docs/guides/comparison-of-high-availability-postgresql-solutions/)
-- [Youtube - Techno Tim - PostgreSQL Clustering the Hard Way... High Availability, Scalable, Production Ready Postgres](https://www.youtube.com/watch?v=RHwglGf_z40&t=1529s&ab_channel=TechnoTim)
-- [DevOps.vn - Triển khai PostgreSQL high availability với Patroni trên Ubuntu (Cực kỳ chi tiết)](https://devops.vn/posts/cai-dat-postgresql-high-availability-tren-ubuntu/)
+- [Youtube - Techno Tim - PostgreSQL Clustering the Hard Way... High Availability, Scalable, Production Ready Postgres](https://www.youtube.com/watch?v=RHwglGf_z40&t=1529s&ab_channel=TechnoTim) 🌟 **(Recommended)**
+- [DevOps.vn - Triển khai PostgreSQL high availability với Patroni trên Ubuntu (Cực kỳ chi tiết)](https://devops.vn/posts/cai-dat-postgresql-high-availability-tren-ubuntu/) 🌟 **(Recommended)**
 ## Tips & Configuration
 
-- [Medium - Postgres is eating the database world](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)
+- [Medium - Postgres is eating the database world](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4) 🌟 **(Recommended)**
 - [How To Kill All Connections to a Database in PostgreSQL](https://www.dbvis.com/thetable/how-to-kill-all-connections-to-a-database-in-postgresql/)
 - [Medium - Solve PostgreSQL DataFileRead and buffer_io with Parameter Tuning](https://medium.com/@Monika_Yadav/solve-postgresql-datafileread-and-buffer-io-with-parameter-tuning-72c8a3d0c5be)
 - [Github Gist - psql-with-gzip-cheatsheet.sh](https://gist.github.com/brock/7a7a70300096632cec30)
 - [Azure PostgreSQL - Backup and Restore](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-backup-restore)
-- [Internet - Useful PostgreSQL (psql) queries, commands and snippets](https://codefibershq.com/blog/useful-postgresql-pgsql-queries-commands-and-snippets)
+- [Internet - Useful PostgreSQL (psql) queries, commands and snippets](https://codefibershq.com/blog/useful-postgresql-pgsql-queries-commands-and-snippets) 🌟 **(Recommended)**
 - [Github Gist - PSQL Cheatsheet](https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546)
-
+- [Medium - Running SpiceDB with Postgresql using docker-compose](https://akoserwal.medium.com/running-spicedb-with-postgresql-using-docker-compose-cc7ee999da73)
+- [Citus - Citus 12: Schema-based sharding for PostgreSQL](https://www.citusdata.com/blog/2023/07/18/citus-12-schema-based-sharding-for-postgres/) 🌟 **(Recommended)**
 # PostgreSQL Utilities Tools
 
 ## Backup database
@@ -288,6 +290,38 @@ GRANT ALL ON SCHEMA public TO your_new_username;
 ALTER DATABASE your_database_name OWNER TO your_new_username;
 ```
 
+# Setup PosgreSQL with Ansible
+
+>[!summary]
+>This progress will setup the `postgresql`, configure for `postgresql` for remote access on docker image
+
+![[thumbnail-ansible-postgresql.png]]
+
+For running to set up `postgresql` in VM. Go for it with commands
+
+**Notice:**
+
+- Upgrading your specify hosts from `hosts` file and verify `ssh-key` with your `ssh-agent`
+
+```bash
+#!/bin/bash
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/<YOUR_SSH_KEY>
+ansible <YOUR_HOSTS> -i inventories/hosts -m ping (200 Succeed - Moving to next step)
+```
+
+- Deprecated: Configuration your `pg_hba.conf` and `postgresql.conf` on templates folder --> Changing into use `PostgreSQL` database inside container but this `pg_hba` & `postgresql.conf` still work if you find the right path to mounting.
+- Running the ansible for setup postgresql and configure your postgresql. This configuration will put inside `YAML` style and refer with this article to deployment via `ansible`
+
+	1. [[Awesome Ansible#In Docker|PostgreSQL in Docker with Ansible]]
+	2. [[Awesome Ansible#In VM|PostgreSQL in host with Ansible]]
+
+```bash
+#!/bin/bash
+ansible-playbook -i inventories/hosts --extra-vars name_machine=deal_platform --tags update general-tasks.yaml
+ansible-playbook -i inventories/hosts --extra-vars name_machine=deal_platform --tags install general-tasks.yaml
+ansible-playbook -i inventories/hosts --tags install_psql postgres_docker_tasks.yaml
+```
 # Monitoring Performance
 
 >[!quote]

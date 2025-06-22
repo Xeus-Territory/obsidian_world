@@ -1,5 +1,5 @@
 ---
-title: The awesome of DIY Shell Scripts
+title: Awesome DIY Linux Shell Scripts
 tags:
   - linux
   - DIY
@@ -10,6 +10,8 @@ tags:
   - architecture
   - automation
 ---
+
+![[meme-bash-script.png]]
 
 >[!info]
 >This place store script of mine to solve couple of problems, fun stuff and be able to reuse for multiple reason. Double-check if you concern
