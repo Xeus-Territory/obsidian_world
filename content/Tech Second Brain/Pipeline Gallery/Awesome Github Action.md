@@ -1,16 +1,18 @@
 ---
-title: The awesome of Github Actions
+title: Awesome Github Actions
 tags:
   - cicd
   - automation
   - github
   - basic-templates
 ---
+
 # Introduce About Github Action
 
 >[!summary]
 >The Gallery of github-actions pipelines, All scenarios to approaching and experience when I work on this platform
 
+![[thumbnail-gh-action.png]]
 ## Articles
 
 - [Medium - GitHub Actions — Versatile and Easy Serverless CI/CD Pipeline](https://itnext.io/github-actions-versatile-and-easy-serverless-pipeline-53d088a7a77b)
@@ -19,7 +21,6 @@ tags:
 - [GitHub Actions - Documentation](https://docs.github.com/en/actions)
 - [Github Actions - Contexts](https://docs.github.com/en/actions/learn-github-actions/contexts)
 - [Github Action - Syntax](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions)
-
 ## Feature
 
 - [Github Action - Variables](https://docs.github.com/en/actions/learn-github-actions/variables)
@@ -27,6 +28,12 @@ tags:
 - [Github Actions - Triggering a workflow](https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/triggering-a-workflow)
 - [Github Actions - Controlling permissions for GITHUB_TOKEN](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token)
 - [Github Action - Control the concurrency of workflows and jobs](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/control-the-concurrency-of-workflows-and-jobs)
+
+## Repositories
+
+- [Awesome Actions](https://github.com/sdras/awesome-actions): A curated list of awesome actions to use on GitHub
+- [GitHub Actions](https://github.com/actions): Automate your GitHub workflows
+- [GitHub Page Themes](https://github.com/pages-themes): Page themes for your GitHub repositories
 # Deploy React application to Github Page
 
 ```yaml title="github-actions.yaml"

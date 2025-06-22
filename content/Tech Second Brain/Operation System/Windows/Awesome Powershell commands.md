@@ -1,5 +1,5 @@
 ---
-title: The awesome of Powershell Commands
+title: Awesome Powershell Commands
 tags:
   - command
   - powershell
@@ -7,6 +7,8 @@ tags:
   - awesome
   - helpful
 ---
+![[icon-powershell.svg|center|400x400]]
+
 >[!info]
 >Powershell Powershell, bring more helpful and memorable command which can reuse on next time 😅😅😅
 

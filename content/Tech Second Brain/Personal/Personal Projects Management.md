@@ -77,6 +77,7 @@ Reference techniques : `ZTM (Zero Trust Mesh)` , `wstunnel`
 # Kubewekend
 
 Github: [kubewekend](https://github.com/Xeus-Territory/kubewekend)
+Website: [kubewekend.xeusnguyen.xyz](https://kubewekend.xeusnguyen.xyz/)
 
 >[!summary]
 >Use the interesting and couple of candidate technologies for setting up Kubernetes cluster in locally. Learn and do some incredible thing with self-hosted and we capture that as the adventure to figure out and work with more concept of Kubernetes
@@ -84,7 +85,7 @@ Github: [kubewekend](https://github.com/Xeus-Territory/kubewekend)
 
 - Session Extra 1: Longhorn and the story about NFS in Kubernetes ✅
 - Session Extra 2: Rebuild Cluster with Rancher or K3S ✅
-- Session Extra 3: Combination GitOps with ArgoCD into Kubewekend Cluster ⌛
+- Session Extra 3: Combination GitOps with ArgoCD into Kubewekend Cluster ✍
 - Session Extra 4: Learn and use security, network context for Kubernetes ⌛
 - Session Extra 5: Customize default scheduled in `kubernetes` cluster with `kube-scheduler` ⌛
 - Session Extra 6: Service mesh inside Kubewekend Cluster ⌛
@@ -97,9 +98,9 @@ Github: [kubewekend](https://github.com/Xeus-Territory/kubewekend)
 - Session 4: `cilium` and `ebpf` - The powerful kernel service of `kubewekend` cluster ✅
 - Session 5: How to build the High Availability (HA) Cluster.  ✅
 - Session 6: Use extend `CSI` for volume and storage class with `Ceph` ✅
-- Session 7: Setup new `app`, use `cilium` to route traffic into cluster via gateway ⌛
-- Session 8: Setup the monitoring cluster inside the `kubernetes` with `node-exporter`, `prometheus` and `grafana` ⌛
-- Session 9: Setup tracing, logging, profiling components in `kubewekend` cluster ⌛
+- Session 7: Setup new `app`, use `cilium` to route traffic into cluster via gateway ✍
+- Session 8: Setup the monitoring cluster inside the `kubernetes` with `node-exporter`, `prometheus` and `grafana` ✍
+- Session 9: Setup tracing, logging, profiling components in `kubewekend` cluster ✍
 # WouOps
 ## Pre-hook framework 🚧
 

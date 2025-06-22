@@ -1,5 +1,5 @@
 ---
-title: The awesome of CDC
+title: Awesome CDC
 tags:
   - devops
   - research
@@ -29,5 +29,5 @@ tags:
 - [bytewax](https://github.com/bytewax/bytewax): Python Stream Processing
 ## Tools
 
-- [debezium](https://github.com/debezium/debezium): Change data capture for a variety of databases
+- [debezium](https://github.com/debezium/debezium): Change data capture for a variety of databases 🌟 **(Recommended)**
 - [flink-cdc](https://github.com/apache/flink-cdc): Flink CDC is a streaming data integration tool

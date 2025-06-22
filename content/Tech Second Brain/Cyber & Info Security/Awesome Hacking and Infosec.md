@@ -1,5 +1,5 @@
 ---
-title: The awesome of hacking and infosec
+title: Awesome Hacking and InfoSec
 tags:
   - research
   - infosec
@@ -21,7 +21,7 @@ tags:
 >The collection of myself about tool and technique is useful for learning and practicing Cyber and Info Security
 
 - [Cloud - Creating unintentional ways to bypass AWS IAM policies when using the “ForAllValues” operator](https://awstip.com/creating-unintentional-ways-to-bypass-aws-iam-policies-when-using-the-forallvalues-operator-3516a7f17ed0)
-- [Crypto - Practical Cryptography](http://practicalcryptography.com/) :  Talk about Cryptography but explain more about them
+- [Crypto - Practical Cryptography](http://practicalcryptography.com/)
 - [Forensics - Hiding Information by Manipulating an Image's Height](https://blog.cyberhacktics.com/hiding-information-by-changing-an-images-height/)
 - [Forensics - Information hiding](https://www.petitcolas.net/steganography/index.html)
 - [Forensics - Modifying Embedded Filesystems in ARM Linux zImages](https://jamchamb.net/2022/01/02/modify-vmlinuz-arm.html)
@@ -39,14 +39,14 @@ tags:
 - [Networking - Zero Trust Network Access (ZTNA) vs VPNs](https://konghq.com/blog/engineering/ztna-vs-vpns)
 - [Pwnable - Different types of Computer Viruses - Computer Virus Classification](https://www.omnisecu.com/security/types-of-computer-viruses.php)
 - [Pwnable - Get Reverse-shell via Windows one-liner - Hacking Articles](https://www.hackingarticles.in/get-reverse-shell-via-windows-one-liner/)
-- [Pwnable -  Linux Privilege Escalation - Vietnamese](https://viblo.asia/s/linux-privilege-escalation-Wj53OQgw56m)
-- [Pwnable - Medium - Breaking Free: 26 Advanced Techniques to Escape Docker Containers](https://medium.com/@elniak/breaking-free-26-advanced-techniques-to-escape-docker-containers-530049816b55)
+- [Pwnable -  Linux Privilege Escalation - Vietnamese](https://viblo.asia/s/linux-privilege-escalation-Wj53OQgw56m) 🌟 **(Recommended)**
+- [Pwnable - Medium - Breaking Free: 26 Advanced Techniques to Escape Docker Containers](https://medium.com/@elniak/breaking-free-26-advanced-techniques-to-escape-docker-containers-530049816b55) 🌟 **(Recommended)**
 - [Pwnable - Medium - Docker and runC Vulnerabilities: A Deep Dive into CVE-2024–21626 and Its Counterparts](https://medium.com/system-weakness/docker-and-runc-vulnerabilities-a-deep-dive-into-cve-2024-21626-and-its-counterparts-4ca24e7d7aa1)
 - [Pwnable - Medium - Ping Power — ICMP Tunnel](https://medium.com/bugbountywriteup/ping-power-icmp-tunnel-31e2abb2aaea)
 - [Pwnable - Wiz.io - CVE-2024-3094 : Backdoor XZ](https://www.wiz.io/blog/cve-2024-3094-critical-rce-vulnerability-found-in-xz-utils)
 - [Pwnable - x86 and amd64 instruction reference](https://www.felixcloutier.com/x86/index.html)
 - [SOC - Networking - Medium - Building an Effective SOC with Open-Source SIEM Tools: My Master’s Project Journey](https://medium.com/@jhonortega453/building-an-effective-soc-with-open-source-siem-tools-my-masters-project-journey-390e68580230)
-- [Web - Medium - Google Dorking: A Hacker’s Best Friend](https://medium.com/the-first-digit/google-dorking-a-hackers-best-friend-5d08b4254028)
+- [Web - Medium - Google Dorking: A Hacker’s Best Friend](https://medium.com/the-first-digit/google-dorking-a-hackers-best-friend-5d08b4254028) 🌟 **(Recommended)**
 - [Web - Medium - How to find subdomain takeover using httpx + dig](https://medium.com/@DrakenKun/how-to-find-subdomain-takeover-using-httpx-dig-5c2351d380b4)
 
 ## Blogs
@@ -54,40 +54,40 @@ tags:
 >[!info]
 >Blog page where provide you more information about techniques, tools and madness things inside information security field
 
-- [AttackerKB](https://attackerkb.com/) : CVE analysis
-- [Blog | hackers-arise](https://www.hackers-arise.com/)
+- [AttackerKB](https://attackerkb.com/)
+- [Blog | hackers-arise](https://www.hackers-arise.com/) 🌟 **(Recommended)**
 - [Cloudflare Blog](https://blog.cloudflare.com/)
 - [Cloudflare Learning](https://www.cloudflare.com/learning/)
 - [ElNiak Blog](https://medium.com/@elniak)
-- [Escape - The API Security Blog](https://escape.tech/blog/)
-- [Hackerone Blog](https://www.hackerone.com/hackerone-community-blog)
+- [Escape - The API Security Blog](https://escape.tech/blog/) 🌟 **(Recommended)**
+- [Hackerone Blog](https://www.hackerone.com/hackerone-community-blog) 🌟 **(Recommended)**
 - [Hacking Articles - Raj Chandel's Blog](https://www.hackingarticles.in/)
-- [HighOn.Coffee](https://highon.coffee/): Penetration Testing && Security Research
-- [HTB Blog](https://www.hackthebox.com/blog)
-- [Intigriti Blog](https://blog.intigriti.com/)
+- [HighOn.Coffee](https://highon.coffee/)
+- [HTB Blog](https://www.hackthebox.com/blog) 🌟 **(Recommended)**
+- [Intigriti Blog](https://blog.intigriti.com/) 🌟 **(Recommended)**
 - [KitPloit - PenTest & Hacking Tools](https://www.kitploit.com/?m=0)
 - [LRTV Blog](https://blog.lrvt.de/)
 - [Medium - Coded Conversations 🔐💬](https://medium.com/@codedconversations)
 - [Medium - Infosec Writeups](https://infosecwriteups.com/)
 - [Medium - n00🔑](https://medium.com/@pswalia2u)
-- [Medium - OSINT Team](https://osintteam.blog/): OSINT from multiple perspectives
-- [Medium - S12 H4CK](https://medium.com/@s12deff)
-- [Medium - System Weakness](https://systemweakness.com/)
+- [Medium - OSINT Team](https://osintteam.blog/)
+- [Medium - S12 H4CK](https://medium.com/@s12deff) 🌟 **(Recommended)**
+- [Medium - System Weakness](https://systemweakness.com/) 🌟 **(Recommended)**
 - [Pentester Land - Offensive InfoSec](https://pentester.land/)
-- [Prof Bill Buchanan OBE FRSE](https://billatnapier.medium.com/) : Professor of Cryptography
+- [Prof Bill Buchanan OBE FRSE](https://billatnapier.medium.com/)
 - [Reddit Hacking](https://old.reddit.com/r/hacking/wiki/index)
 - [Sebastian Neef - 0day.work](https://0day.work/)
 - [SSH Academy](https://www.ssh.com/academy)
 - [Sun* Cyber Security Team - Vietnamese](https://viblo.asia/o/sun-cyber)
 - [The Hacker News - Cybersecurity News and Analysis](https://thehackernews.com/)
-- [THM Blog](https://tryhackme.com/r/resources/blog)
+- [THM Blog](https://tryhackme.com/r/resources/blog) 🌟 **(Recommended)**
 - [tl;dr sec](https://tldrsec.com/)
 - [Top Cybersecurity And Information Security Guides - HackersOnlineClub](https://hackersonlineclub.com/)
 - [Troy Hunt](https://www.troyhunt.com/)
-- [Vsociety - CVE Org analysis](https://www.vicarius.io/vsociety/) : CVE analysis and publish CVE
-- [WhiteHat.vn](https://whitehat.vn/)
+- [Vsociety - CVE Org analysis](https://www.vicarius.io/vsociety/)
+- [WhiteHat.vn](https://whitehat.vn/) 🌟 **(Recommended)**
 - [With Secure Publications](https://labs.withsecure.com/publications)
-- [Wiz.blog](https://www.wiz.io/blog)
+- [Wiz.blog](https://www.wiz.io/blog) 🌟 **(Recommended)**
 ## General
 
 >[!info]
@@ -98,8 +98,8 @@ tags:
 - [Knowledge - HACKING roadmap](https://docfate111.github.io/cybersecclub/roadmap.html)
 - [Knowledge - ISO 27001 vs. 27002 vs. 27003: What’s the Difference?](https://www.strongdm.com/blog/iso-27001-vs-27002-vs-27003)
 - [Knowledge - OWASP](https://wiki.owasp.org/index.php/Main_Page)
-- [Knowledge - OWASP Penetration Testing Check List](https://owasp.org/www-project-web-security-testing-guide/assets/archive/OWASP_Web_Application_Penetration_Checklist_v1_1.pdf)
-- [Knowledge - SecurityZines](https://securityzines.com/) : Visualization Hacking, Architecture and Technical by Image with step by step
+- [Knowledge - OWASP Penetration Testing Check List](https://owasp.org/www-project-web-security-testing-guide/assets/archive/OWASP_Web_Application_Penetration_Checklist_v1_1.pdf) 🌟 **(Recommended)** 
+- [Knowledge - SecurityZines](https://securityzines.com/) 🌟 **(Recommended)**
 - [TimeStamp - Cybersecurity Conferences](https://infosec-conferences.com/)
 - [Youtube - 60 Hacking Commands You NEED to Know](https://www.youtube.com/watch?v=gL4j-a-g9pA&ab_channel=NetworkChuck)
 # Awesome InfoSec Repository
@@ -108,7 +108,7 @@ tags:
 >The madness and badass repository will provide huge information about Cyber and Information Security
 ## Landscape
 
-- [CyberScape](https://www.shteinsolutions.com/cyberscape/index.html)
+- [CyberScape](https://www.shteinsolutions.com/cyberscape/index.html) 🌟 **(Recommended)**
 ## Repository
 
 - [awesome-api-security](https://github.com/arainho/awesome-api-security): A collection of awesome API Security tools and resources. The focus goes to open-source tools and resources that benefit all the community.
@@ -121,15 +121,15 @@ tags:
 - [awesome-privilege-escalation](https://github.com/m0nad/awesome-privilege-escalation) : A curated list of awesome privilege escalation
 - [CheatSheetSeries](https://github.com/OWASP/CheatSheetSeries) : The OWASP Cheat Sheet Series was created to provide a concise collection of high value information on specific application security topics.
 - [h4cker](https://github.com/The-Art-of-Hacking/h4cker) : About ethical hacking, bug bounties, digital forensics and incident response (DFIR), artificial intelligence security, vulnerability research, exploit development, reverse engineering, and more.
-- [HackTricks - Cloud](https://cloud.hacktricks.xyz/) : Wikipedia of Hacking Cloud
-- [HackTricks - Penatration Testing](https://book.hacktricks.xyz/welcome/readme) : Wikipedia of Hacking
+- [HackTricks - Cloud](https://cloud.hacktricks.xyz/) : Wikipedia of Hacking Cloud 🌟 **(Recommended)**
+- [HackTricks - Penatration Testing](https://book.hacktricks.xyz/welcome/readme) : Wikipedia of Hacking 🌟 **(Recommended)**
 - [MobileApp-Pentest-Cheatsheet](https://github.com/tanprathan/MobileApp-Pentest-Cheatsheet) : Arsenal for mobile application attack
 - [OWASP Collection](https://owasp.org/www-community/Free_for_Open_Source_Application_Security_Tools): Free for Open Source Application Security Tools
-- [OWASP Project](https://owasp.org/projects/) : Collection about OWASP Opensource
+- [OWASP Project](https://owasp.org/projects/) : Collection about OWASP Opensource 🌟 **(Recommended)**
 - [pentest-book](https://pentestbook.six2dez.com/): This book contains a bunch of info, scripts and knowledge used during pentests.
 - [public-pentesting-reports](https://github.com/juliocesarfort/public-pentesting-reports): A list of public penetration test reports published by several consulting firms and academic security groups.
 - [sec_profile](https://github.com/tanjiti/sec_profile): Chinese Collection about Security with profile vulnerability and awesome hacking technique
-- [the-book-of-secret-knowledge](https://github.com/trimstray/the-book-of-secret-knowledge) : A collection of inspiring lists, manuals, cheat-sheets, blogs, hacks, one-liners, cli/web tools and more.
+- [the-book-of-secret-knowledge](https://github.com/trimstray/the-book-of-secret-knowledge) : A collection of inspiring lists, manuals, cheat-sheets, blogs, hacks, one-liners, cli/web tools and more. 🌟 **(Recommended)**
 - [The Hacker Recipes](https://www.thehacker.recipes/): providing technical guides on various hacking topics
 ## Topics
 
@@ -199,7 +199,7 @@ You can become participant of Bounty program via
 >Cloud computing security or, more simply, cloud security, refers to a broad set of policies, technologies, applications, and controls utilized to protect virtualized IP, data, applications, services, and the associated infrastructure of cloud computing. It is a sub-domain of computer security, network security, and, more broadly, information security.
 >Source: [Wikipedia](https://en.wikipedia.org/wiki/Cloud_computing_security)
 
-- [Hacking the Cloud](https://hackingthe.cloud/): An encyclopedia of the attacks/tactics/techniques that offensive security professionals can use on their next cloud exploitation adventure.
+- [Hacking the Cloud](https://hackingthe.cloud/): An encyclopedia of the attacks/tactics/techniques that offensive security professionals can use on their next cloud exploitation adventure. 🌟 **(Recommended)**
 - [T Wiki](https://wiki.teamssix.com/) : Chinese page who talk about Security Cloud with multiple provider like Azure, AWS, GCP, ...
 ## Exploitation
 
@@ -212,13 +212,13 @@ You can become participant of Bounty program via
 - [Application Security Cheat Sheet](https://0xn3va.gitbook.io/cheat-sheets/): Application Security Cheat Sheet
 - [Awesome-Hacking-Resources](https://github.com/vitalysim/Awesome-Hacking-Resources) : A collection of hacking / penetration testing resources to make you better!
 - [CAPEC](https://capec.mitre.org/) : Common Attack Pattern Enumeration and Classification (CAPEC™)
-- [Defend MITRE](https://d3fend.mitre.org/):  Defend skillset base on real-world secenarios
-- [GTFOBins](https://gtfobins.github.io/) : A curated list of Unix binaries that can be used to bypass local security restrictions in misconfigured systems.
+- [Defend MITRE](https://d3fend.mitre.org/):  Defend skillset base on real-world secenarios 🌟 **(Recommended)**
+- [GTFOBins](https://gtfobins.github.io/) : A curated list of Unix binaries that can be used to bypass local security restrictions in misconfigured systems. 🌟 **(Recommended)**
 - [impacket-examples-windows](https://github.com/maaaaz/impacket-examples-windows): The great impacket example scripts compiled for Windows
 - [MAAD Attack Framework](https://maad-af.com/) : An attack tool for simple, fast & effective security testing of M365 & Entra ID (Azure AD).
 - [Metaspoit](https://docs.metasploit.com/): Metasploit Framework for penetration testing
-- [MITRE ATT&CK®](https://attack.mitre.org/#) : Globally-accessible knowledge base of adversary tactics and techniques based on real-world observations.
-- [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/index.html) : Provide a concise collection of high value information on specific application security topics
+- [MITRE ATT&CK®](https://attack.mitre.org/#) : Globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. 🌟 **(Recommended)**
+- [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/index.html) : Provide a concise collection of high value information on specific application security topics 🌟 **(Recommended)**
 - [PENTESTING-BIBLE](https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE): Attack and Defend articles in PDF 
 ### Cryptography
 
@@ -226,14 +226,14 @@ You can become participant of Bounty program via
 - [CrackStation](https://crackstation.net/): Online Password Hash Cracking
 - [cryptii](https://cryptii.com/): Modular conversion, encoding and encryption online 
 - [CrypTool](https://www.cryptool.org/en/): Try crypto tools, learn cryptography and solve puzzles
-- [CyberChef](https://gchq.github.io/CyberChef/): The bunch of cyber tools for crypto and file format
-- [dCode](https://www.dcode.fr/): Solveurs, Crypto, Maths, Codes, Outils en Ligne
+- [CyberChef](https://gchq.github.io/CyberChef/): The bunch of cyber tools for crypto and file format 🌟 **(Recommended)**
+- [dCode](https://www.dcode.fr/): Solveurs, Crypto, Maths, Codes, Outils en Ligne 🌟 **(Recommended)**
 - [Morse Code World](https://morsecode.world/): Morse Code crypto for encrypt and decrypt
 - [RapidTables.com](https://www.rapidtables.com/) : Online Calculators & Tools 
 - [Unicode Text Steganography Encoders/Decoders](https://www.irongeek.com/i.php?page=security/unicode-steganography-homoglyph-encoder) : Unicode Text Steganography Encoders/Decoders
 ### Forensics
 
-- [Aperi'Solve](https://www.aperisolve.com/) : Forensic integrate all tool in one platform
+- [Aperi'Solve](https://www.aperisolve.com/) : Forensic integrate all tool in one platform 🌟 **(Recommended)**
 - [BertNase's Own - npiet fun!](https://www.bertnase.de/npiet/npiet-execute.php)
 - [Brightness and contrast online](https://pinetools.com/brightness-contrast-image):
 - [FTK Forensic Toolkit](https://www.exterro.com/) : Toolkit for Forensic
@@ -243,21 +243,21 @@ You can become participant of Bounty program via
 ### Privilege Escalation (RCE)
 
 - [chisel](https://github.com/jpillora/chisel) : A fast TCP/UDP tunnel over HTTP
-- [GTFOBLookup](https://github.com/nccgroup/GTFOBLookup) : GTFO Lookup
+- [GTFOBLookup](https://github.com/nccgroup/GTFOBLookup) : GTFO Lookup 🌟 **(Recommended)**
 - [nishang](https://github.com/samratashok/nishang) : Nishang - Offensive PowerShell for red team, penetration testing and offensive security.
-- [Online - Reverse Shell Generator](https://www.revshells.com/)
-- [PEASS-ng](https://github.com/peass-ng/PEASS-ng) : PEASS - Privilege Escalation Awesome Scripts SUITE
+- [Online - Reverse Shell Generator](https://www.revshells.com/) 🌟 **(Recommended)**
+- [PEASS-ng](https://github.com/peass-ng/PEASS-ng) : PEASS - Privilege Escalation Awesome Scripts SUITE 🌟 **(Recommended)**
 ### Reverse Engineer (RE)
 
-- [Compiler Explorer](https://godbolt.org/)
+- [Compiler Explorer](https://godbolt.org/) 🌟 **(Recommended)**
 - [CPUlator Computer System Simulator](https://cpulator.01xz.net/)
-- [Decompiler Explorer](https://dogbolt.org/)
+- [Decompiler Explorer](https://dogbolt.org/) 🌟 **(Recommended)**
 - [Valgrind](https://valgrind.org/) -  An instrumentation framework for building dynamic analysis tools and use to detect memory leaking
 ### Webhook
 
-- [Beeceptor](https://beeceptor.com/) : API Mocking
+- [Beeceptor](https://beeceptor.com/) : API Mocking 🌟 **(Recommended)**
 - [Mockoon](https://mockoon.com/): Locally mock API
-- [Webhook.site](https://webhook.site/) : Generates free, unique URLs and e-mail addresses and lets you see everything that’s sent there instantly. (Usage: Steal cookies, bypass authorized, ...)
+- [Webhook.site](https://webhook.site/) : Generates free, unique URLs and e-mail addresses and lets you see everything that’s sent there instantly. (Usage: Steal cookies, bypass authorized, ...) 🌟 **(Recommended)**
 ## External
 
 >[!info]
@@ -277,43 +277,43 @@ You can become participant of Bounty program via
 - [DongTai](https://github.com/HXSecurity/DongTai): (IAST) tool that enables real-time detection of common vulnerabilities in Java applications and third-party components through passive instrumentation.
 ### Mobile
 
-- [Apktool](https://apktool.org/): A tool for reverse engineering Android apk files
+- [Apktool](https://apktool.org/): A tool for reverse engineering Android apk files 🌟 **(Recommended)**
 - [mobile-nuclei-templates](https://github.com/optiv/mobile-nuclei-templates) : Mobile Template for using with nuclei
 ### SOC Operation system
 
 - [VultureOS](https://vultureproject.github.io/vulture-doc/) :  An operating system based on [HardenedBSD](https://hardenedbsd.org/). It has been design to deliverer cybersecurity services for the Advens SOC.
 ### Vulnerability management
 
-- [django-DefectDojo](https://github.com/DefectDojo/django-DefectDojo) : DevSecOps, ASPM, Vulnerability Management. All on one platform.
+- [django-DefectDojo](https://github.com/DefectDojo/django-DefectDojo) : DevSecOps, ASPM, Vulnerability Management. All on one platform. 🌟 **(Recommended)**
 - [faraday](https://github.com/infobyte/faraday): Open Source Vulnerability Management Platform
 - [ThreatMapper](https://github.com/deepfence/ThreatMapper): Open Source Cloud Native Application Protection Platform (CNAPP). [Documentation](https://community.deepfence.io/docs/)
 - [vuls](https://github.com/future-architect/vuls): Agent-less vulnerability scanner for Linux, FreeBSD, Container, WordPress, Programming language libraries, Network devices
 ### Vulnerability Scanner
 
 - [Nettacker](https://github.com/OWASP/Nettacker) : Automated Penetration Testing Framework - Open-Source Vulnerability Scanner - Vulnerability Management
-- [nuclei](https://github.com/projectdiscovery/nuclei) : Fast and customizable vulnerability scanner based on simple YAML based DSL. [Doc](https://docs.projectdiscovery.io/tools/nuclei/overview) and [Cloud Platform](https://cloud.projectdiscovery.io/)
-- [zaproxy](https://github.com/zaproxy/zaproxy) : The ZAP core project
+- [nuclei](https://github.com/projectdiscovery/nuclei) : Fast and customizable vulnerability scanner based on simple YAML based DSL. [Doc](https://docs.projectdiscovery.io/tools/nuclei/overview) and [Cloud Platform](https://cloud.projectdiscovery.io/) 🌟 **(Recommended)**
+- [zaproxy](https://github.com/zaproxy/zaproxy) : The ZAP core project 🌟 **(Recommended)**
 ### Vulnerables Search Engine
 
 - [💀 Sploitus](https://sploitus.com/) : Exploit & Hacktool Search Engine
 - [Bug Bounty Hunting Search Engine](https://www.bugbountyhunting.com/)
-- [CVE MITRE - CVE](https://cve.mitre.org/)
+- [CVE MITRE - CVE](https://www.cve.org/) 🌟 **(Recommended)**
 - [CVE-Search](https://cve.circl.lu/)
 - [CVE security vulnerability database. Security vulnerabilities, exploits, references and more](https://www.cvedetails.com/)
 - [CVE Trends](https://cvetrends.com/)
 - [CWE - Common Weakness Enumeration](https://cwe.mitre.org/)
-- [Exploit Database](https://www.exploit-db.com/) : Find PoC and Exploit method for Penetration Testers, Researchers, and Ethical Hackers
+- [Exploit Database](https://www.exploit-db.com/) : Find PoC and Exploit method for Penetration Testers, Researchers, and Ethical Hackers 🌟 **(Recommended)**
 - [NVD NIST](https://nvd.nist.gov/)
 - [Search Engine for Security Intelligence | Vulners](https://vulners.com/)
 - [Vulmon - Vulnerability Intelligence Search Engine](https://vulmon.com/)
 - [Vulnerability Database 🛡](https://vuldb.com/?)
-- [Vulnerability & Exploit Database](https://www.rapid7.com/db/?q=&type=nexpose&page=1) : Exploit DB of Rapid7 (Metasploit product)
+- [Vulnerability & Exploit Database](https://www.rapid7.com/db/?q=&type=nexpose&page=1) : Exploit DB of Rapid7 (Metasploit product) 🌟 **(Recommended)**
 ### Web Application Firewall (WAF)
 
-- [lua-resty-waf](https://github.com/p0pr0ck5/lua-resty-waf) : High-performance WAF built on the OpenResty stack
-- [ModSecurity](https://github.com/owasp-modsecurity/ModSecurity) :  An open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx.
+- [lua-resty-waf](https://github.com/p0pr0ck5/lua-resty-waf) : High-performance WAF built on the OpenResty stack 🌟 **(Recommended)**
+- [ModSecurity](https://github.com/owasp-modsecurity/ModSecurity) :  An open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. 🌟 **(Recommended)**
 - [naxsi](https://github.com/nbs-system/naxsi) : An open-source, high performance, low rules maintenance WAF for NGINX
-- [Nginx-Lua-Anti-DDoS](https://github.com/C0nw0nk/Nginx-Lua-Anti-DDoS) : A Anti-DDoS script to protect Nginx web servers using Lua with a HTML Javascript
+- [Nginx-Lua-Anti-DDoS](https://github.com/C0nw0nk/Nginx-Lua-Anti-DDoS) : A Anti-DDoS script to protect Nginx web servers using Lua with a HTML Javascript 🌟 **(Recommended)**
 ## Networking
 
 >[!info]
@@ -324,21 +324,21 @@ You can become participant of Bounty program via
 - [awesome-tunneling](https://github.com/anderspitman/awesome-tunneling) : List of ngrok/Cloudflare Tunnel alternatives and other tunneling software and services. Focus on self-hosting.
 - [frp](https://github.com/fatedier/frp): A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet.
 - [GO Simple Tunnel](https://gost.run/en/): A simple security tunnel written in golang
-- [localtunnel](https://theboroer.github.io/localtunnel-www/): Localtunnel allows you to easily share a web service on your local development machine without messing with DNS and firewall settings.
+- [localtunnel](https://theboroer.github.io/localtunnel-www/): Localtunnel allows you to easily share a web service on your local development machine without messing with DNS and firewall settings. 🌟 **(Recommended)**
 - [NetExec](https://github.com/Pennyw0rth/NetExec) : The Network Execution Tool. [Website](https://www.netexec.wiki/)
-- [wstunnel](https://github.com/erebe/wstunnel) : Tunnel all your traffic over Websocket or HTTP2 - Bypass firewalls/DPI - Static binary available
+- [wstunnel](https://github.com/erebe/wstunnel) : Tunnel all your traffic over Websocket or HTTP2 - Bypass firewalls/DPI - Static binary available 🌟 **(Recommended)**
 - [Xray-core](https://github.com/XTLS/Xray-core): Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration.
 - [ZTM](https://github.com/flomesh-io/ztm) :  A privacy-first open-source decentralized network software based on HTTP/2 tunnels.
 ### General knowledge
 
 - [DomainTools](https://reverseip.domaintools.com/): Reverse IP Lookup - All Names Hosted at an IP
-- [Subnet Calculator](https://www.subnet-calculator.com/): Calculator CIDR concept of subnet
-- [VLSM Calculator](https://subnettingpractice.com/vlsm.html): Calculator VLSM concept of subnet
+- [Subnet Calculator](https://www.subnet-calculator.com/): Calculator CIDR concept of subnet 🌟 **(Recommended)**
+- [VLSM Calculator](https://subnettingpractice.com/vlsm.html): Calculator VLSM concept of subnet 🌟 **(Recommended)**
 ### VPN
 
 >[!info] *Give applause for Nyr for contributing a wonderful setup, with those script, you just need 1 minutes for creating your own VPN and safely connected remotely with your network*
 
-- [openvpn-install.sh](https://github.com/Nyr/openvpn-install/blob/master/openvpn-install.sh): *Setting up `openvpn` for your host (Author: [Nyr](https://github.com/Nyr))*
+- [openvpn-install.sh](https://github.com/Nyr/openvpn-install/blob/master/openvpn-install.sh): *Setting up `openvpn` for your host (Author: [Nyr](https://github.com/Nyr))* 🌟 **(Recommended)**
 - [wireguard-install.sh](https://github.com/Nyr/wireguard-install/blob/master/wireguard-install.sh): *Setting up `wireguardvpn` for your host (Author: [Nyr](https://github.com/Nyr))*
 
 ## Reconnaissance (All categories)
@@ -347,13 +347,13 @@ You can become participant of Bounty program via
 >In this phase, the tester gathers as much information about the target system as they can, including information about the network topology, operating systems and applications, user accounts, and other relevant information. The goal is to gather as much data as possible so that the tester can plan an effective attack strategy.
 ### Browser Search
 
-- [Download Google Search Operators Cheat Sheet PDF for Quick References](https://hackr.io/blog/google-search-operators-cheat-sheet)
-- [GoogleDorking.md](https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06)
+- [Download Google Search Operators Cheat Sheet PDF for Quick References](https://hackr.io/blog/google-search-operators-cheat-sheet) 🌟 **(Recommended)**
+- [GoogleDorking.md](https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06) 🌟 **(Recommended)**
 ### Container
 
-- [crane](https://github.com/google/go-containerregistry/tree/main/cmd/crane): A tool for interacting with remote images and registries
-- [dive](https://github.com/wagoodman/dive) : A tool for exploring each layer in a docker image
-- [trivy](https://github.com/aquasecurity/trivy): Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more
+- [crane](https://github.com/google/go-containerregistry/tree/main/cmd/crane): A tool for interacting with remote images and registries 🌟 **(Recommended)**
+- [dive](https://github.com/wagoodman/dive) : A tool for exploring each layer in a docker image 🌟 **(Recommended)**
+- [trivy](https://github.com/aquasecurity/trivy): Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more 🌟 **(Recommended)**
 ### OSINT
 
 - [GPS coordinates, latitude and longitude with interactive Maps](https://www.gps-coordinates.net/)
@@ -361,15 +361,15 @@ You can become participant of Bounty program via
 - [TinEye Reverse Image Search](https://tineye.com/)
 ### Web
 
-- [Censys Search Engine](https://search.censys.io/) : Web recon tool
+- [Censys Search Engine](https://search.censys.io/) : Web recon tool 🌟 **(Recommended)**
 - [crt.sh](https://crt.sh/) : Certificate Search
-- [digwebinterface](https://www.digwebinterface.com/) : Dig on browser
+- [digwebinterface](https://www.digwebinterface.com/) : Dig on browser 🌟 **(Recommended)**
 - [DNSdumpster.com](https://dnsdumpster.com/): dns recon and research, find and lookup dns records
 - [Google Public DNS](https://dns.google/) : Find and validate dns with Google DNS
 - [jwt.io](https://jwt.io/) : JSON Web Tokens 
-- [SecLists](https://github.com/danielmiessler/SecLists) : Wordlist for attacking
+- [SecLists](https://github.com/danielmiessler/SecLists) : Wordlist for attacking 🌟 **(Recommended)**
 - [Shodan Search Engine](https://www.shodan.io/) : Web recon tool
-- [Snyk](https://docs.snyk.io/) : DAST and SAST tools
+- [Snyk](https://docs.snyk.io/) : DAST and SAST tools 🌟 **(Recommended)**
 ## Thread Intelligent
 
 - [openappsec](https://github.com/openappsec/openappsec): A machine learning security engine that preemptively and automatically prevents threats against Web Application & APIs.
@@ -388,7 +388,7 @@ You can become participant of Bounty program via
 - [MemLabs](https://github.com/stuxnet999/MemLabs) : Educational, CTF-styled labs for individuals interested in Memory Forensics
 ## Introduce
 
-- [HackTricks - HackTricks](https://book.hacktricks.xyz/welcome/readme) : Wikipedia of Hacking
+- [HackTricks - HackTricks](https://book.hacktricks.xyz/welcome/readme) : Wikipedia of Hacking 🌟 **(Recommended)**
 - [Hacktrick Training](https://training.hacktricks.xyz/): Learn Cloud Hacking & Become HackTricks Training Certified
 - [Hardware All The Things](https://swisskyrepo.github.io/HardwareAllTheThings/):  A curated collection of valuable payloads and bypass techniques tailored for Hardware and IoT Security
 - [Internal All The Things](https://swisskyrepo.github.io/InternalAllTheThings/) : Active Directory and Internal Pentest Cheatsheets
@@ -397,7 +397,7 @@ You can become participant of Bounty program via
 - [Web-CTF-Cheatsheet](https://github.com/w181496/Web-CTF-Cheatsheet)
 ## Reverse Engineer
 
-- [Crackme](https://crackmes.one/) : Place to improving the RE skill
+- [Crackme](https://crackmes.one/) : Place to improving the RE skill 🌟 **(Recommended)**
 - [Nightmare](https://guyinatuxedo.github.io/index.html):  Intro to binary exploitation / reverse engineering course based around ctf challenges
 ## Security Lab
 
@@ -407,26 +407,26 @@ You can become participant of Bounty program via
 - [Application Security Training For Developers | Kontra](https://application.security/) : Vulnerables Site which visual on illustration and take you image what happen when attacking occur
 - [Attack-Defense Labs](https://attackdefense.com/) : More Labs you can take and archive your knowledge, bro trust me. 
 - [GOAD](https://github.com/Orange-Cyberdefense/GOAD): Game of active directory
-- [Hack The Box: Hacking Training For The Best | Individuals & Companies](https://www.hackthebox.com/) : Lab Machine where  you can put the effort for pwn the machine and learn about red, blue team skillset
+- [Hack The Box: Hacking Training For The Best | Individuals & Companies](https://www.hackthebox.com/) : Lab Machine where  you can put the effort for pwn the machine and learn about red, blue team skillset 🌟 **(Recommended)**
 - [HackThisSite](https://www.hackthissite.org/) : Legally site where you can make penetration test
 - [Online Cyber Security Blue Team Training - CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/): Learn and try to improving the defensive skillset on Blue Team
-- [OverTheWire: Wargames](https://overthewire.org/wargames/) : The level competition which you need to find the key for reach to next level (**HELPFUL - FOR UPGRADE LINUX SKILL**)
+- [OverTheWire: Wargames](https://overthewire.org/wargames/) : The level competition which you need to find the key for reach to next level (**HELPFUL - FOR UPGRADE LINUX SKILL**) 🌟 **(Recommended)**
 - [PentesterLab: Learn Web Penetration Testing: The Right Way](https://pentesterlab.com/): Learn and try practical with Lab via Penetration Test
 - [Root Me : Hacking and Information Security learning platform](https://www.root-me.org/?lang=en) : Like HTB and THM but you will have fun things to exploit
-- [TryHackMe | Cyber Security Training](https://tryhackme.com/) : Like HTB but more tutorials
-- [UnderTheWire: Wargames](https://underthewire.tech/wargames): Wargames where help you improve hacking skill **(HELPFUL - FOR UPGRADE POWERSHELL SKILL)**
-- [Vulnerable By Design ~ VulnHub](https://vulnhub.com/) : Like HTB and THM, but you need to learn about virtualization to setup the pentest environment
+- [TryHackMe | Cyber Security Training](https://tryhackme.com/) : Like HTB but more tutorials 🌟 **(Recommended)**
+- [UnderTheWire: Wargames](https://underthewire.tech/wargames): Wargames where help you improve hacking skill **(HELPFUL - FOR UPGRADE POWERSHELL SKILL)** 🌟 **(Recommended)**
+- [Vulnerable By Design ~ VulnHub](https://vulnhub.com/) : Like HTB and THM, but you need to learn about virtualization to setup the pentest environment 🌟 **(Recommended)**
 - [Web Application Security, Testing, & Scanning - PortSwigger](https://portswigger.net/) : Learn about web hacking fundamentals **(HELPFUL)**
 ## Walkthrough
 
 >[!info]
 >HacktheBox/CTF solution, hacking technical and OSCP
 
-- [0xdf hacks stuff | CTF solutions, malware analysis, home lab development](https://0xdf.gitlab.io/)
-- [IppSec Achievement](https://ippsec.rocks/?#)
+- [0xdf hacks stuff | CTF solutions, malware analysis, home lab development](https://0xdf.gitlab.io/) 🌟 **(Recommended)**
+- [IppSec Achievement](https://ippsec.rocks/?#) 🌟 **(Recommended)**
 - [OSCP Room Prep - NetSecFocus Trophy Room](https://docs.google.com/spreadsheets/u/1/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/htmlview)
 - [Roadmap to OSCP 2023. Crack OSCP in 6 months, starting from… | by Usman Shah | Medium](https://medium.com/@ushah.789012/roadmap-to-oscp-2023-c38c5b4e713a)
-- [@TJ_Null’s OSCP Prep - YouTube](https://www.youtube.com/playlist?list=PLidcsTyj9JXK-fnabFLVEvHinQ14Jy5tf)
+- [@TJ_Null’s OSCP Prep - YouTube](https://www.youtube.com/playlist?list=PLidcsTyj9JXK-fnabFLVEvHinQ14Jy5tf) 🌟 **(Recommended)**
 # Youtube Channel
 
 >[!info]
@@ -437,21 +437,21 @@ You can become participant of Bounty program via
 - [13Cubed](https://www.youtube.com/@13Cubed/featured):  Digital Forensics. Hacking. Home Labs.
 - [Computerphile](https://www.youtube.com/user/Computerphile/featured): All about computers and computer stuff
 - [Cristi Vlad](https://www.youtube.com/c/CristiVladZ)
-- [David Bombal ](https://www.youtube.com/c/DavidBombal/videos) : Networking Guy with hand on in physical network items, hacking conservation and guide you on hacking journey with cool contribute
+- [David Bombal ](https://www.youtube.com/c/DavidBombal/videos) : Networking Guy with hand on in physical network items, hacking conservation and guide you on hacking journey with cool contribute 🌟 **(Recommended)**
 - [DAY0](https://www.youtube.com/c/dayzerosec/featured): Previous `DAY[0]` podcasts as well as other reverse engineering / exploit development-related media
 - [DC CyberSec](https://www.youtube.com/channel/UC3sccPO4v8YqCTn8sezZGTw): Freelance in Cybersecurity Guy
 - [Grant Collins](https://www.youtube.com/@collinsinfosec/featured): Funny guy who guide you about Cybersecurity career, education, and the occasional deeboodah shenanigans.
 - [HackerSploit](https://youtube.com/@HackerSploit/featured) : HackerSploit is the leading provider of free Infosec and cybersecurity training
 - [Hak5](https://www.youtube.com/@hak5/featured)
 - [InsiderPhD](https://youtube.com/@InsiderPhD/featured): She is guiding about bug bounty for starter, cool contents and technics
-- [IppSec](https://www.youtube.com/c/ippsec/videos): Best ever on HTB Solution, Guide you pwn a box and learn about scenarios to reaching them
-- [John Hammond](https://www.youtube.com/c/JohnHammond010/videos) : Super dope and cool guy who teach you helpful things, cool stuff about hacking, cyber security
+- [IppSec](https://www.youtube.com/c/ippsec/videos): Best ever on HTB Solution, Guide you pwn a box and learn about scenarios to reaching them 🌟 **(Recommended)**
+- [John Hammond](https://www.youtube.com/c/JohnHammond010/videos) : Super dope and cool guy who teach you helpful things, cool stuff about hacking, cyber security 🌟 **(Recommended)**
 - [LiveOverflow](https://www.youtube.com/@LiveOverflow/featured):  Binary exploiting guy with guide you about that, more about IT security
-- [Loi Liang Yang](https://www.youtube.com/channel/UC1szFCBUWXY3ESff8dJjjzw): Super cool technic with hacking can explore
+- [Loi Liang Yang](https://www.youtube.com/channel/UC1szFCBUWXY3ESff8dJjjzw): Super cool technic with hacking can explore 🌟 **(Recommended)**
 - [LTN Labs](https://www.youtube.com/@ltnlabs/videos): Empowering others through building engaging educational experiences and communities
 - [Motasem Hamdan](https://www.youtube.com/@MotasemHamdan/featured): HTB and THM resolution, creative guy who will guide you about security
-- [NahamSec](https://www.youtube.com/c/Nahamsec/featured): Bug bounty guy with impressed technics, conversation hacking and moreover
-- [NetworkChuck](https://www.youtube.com/c/NetworkChuck/videos): Very Helpful, super dope and friendly guy with detailing explanation, who can be able to guide you about network, cloud, linux and more about homelab **(Recommendation)**
+- [NahamSec](https://www.youtube.com/c/Nahamsec/featured): Bug bounty guy with impressed technics, conversation hacking and moreover 🌟 **(Recommended)**
+- [NetworkChuck](https://www.youtube.com/c/NetworkChuck/videos): Very Helpful, super dope and friendly guy with detailing explanation, who can be able to guide you about network, cloud, linux and more about homelab 🌟 **(Recommended)**
 - [Null Byte](https://www.youtube.com/@NullByteWHT/featured) :  Aspiring ethical hackers, computer scientists, and the infosec community
 - [SecurityFWD](https://www.youtube.com/@SecurityFWD/featured):  SecurityFWD shows the latest security tools, amazing projects, and keeps you on the edge of what's possible in security today.
 - [Seytonic](https://www.youtube.com/@Seytonic/featured) : Break down and dissect cyber security related tech news

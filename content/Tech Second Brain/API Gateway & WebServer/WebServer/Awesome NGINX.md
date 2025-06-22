@@ -1,5 +1,5 @@
 ---
-title: The awesome of NGINX
+title: Awesome NGINX
 tags:
   - nginx
   - basic-knowledge
@@ -7,6 +7,7 @@ tags:
   - usage
   - architecture
   - webserver
+  - awesome
 ---
 
 ![[nginx.png]]

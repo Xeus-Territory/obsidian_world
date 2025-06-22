@@ -1,5 +1,5 @@
 ---
-title: The awesome of Kafka
+title: Awesome Kafka
 tags:
   - usage
   - devops
@@ -7,13 +7,14 @@ tags:
   - collections
 ---
 
+![[thumbnail-kafka.png]]
 # Documentations and Articles
 
 ## Articles
 
-- [AWS - What’s the Difference Between Kafka and RabbitMQ?](https://aws.amazon.com/compare/the-difference-between-rabbitmq-and-kafka/?nc1=h_ls)
+- [AWS - What’s the Difference Between Kafka and RabbitMQ?](https://aws.amazon.com/compare/the-difference-between-rabbitmq-and-kafka/?nc1=h_ls) 🌟 **(Recommended)**
 - [Viblo - RabbitMQ vs Kafka - Hai Cách Truyền Tải Khác Nhau](https://viblo.asia/p/rabbitmq-vs-kafka-hai-cach-truyen-tai-khac-nhau-pgjLNdYE432)
-- [Confluent - KRaft: Apache Kafka Without ZooKeeper](https://developer.confluent.io/learn/kraft/)
+- [Confluent - KRaft: Apache Kafka Without ZooKeeper](https://developer.confluent.io/learn/kraft/) 🌟 **(Recommended)**
 ## General
 
 - [Confluent - Introduction to Apache Kafka](https://docs.confluent.io/kafka/introduction.html)
@@ -29,7 +30,7 @@ tags:
 - [NetApp - Use Apache Kafka with the Command Line](https://www.instaclustr.com/support/documentation/kafka/using-kafka/use-kafka-with-the-command-line/)
 - [Huawei Cloud - Deleting a Kafka Consumer Group](https://support.huaweicloud.com/intl/en-us/usermanual-kafka/kafka-ug-0012.html)
 - [Confluent - How to run Kafka locally with Docker](https://developer.confluent.io/confluent-tutorials/kafka-on-docker/)
-- [Scaler - Configuring Zookeeper for a Kafka Cluster](https://www.scaler.com/topics/kafka-tutorial/configuring-zookeeper-for-a-kafka-cluster/)
+- [Scaler - Configuring Zookeeper for a Kafka Cluster](https://www.scaler.com/topics/kafka-tutorial/configuring-zookeeper-for-a-kafka-cluster/) 🌟 **(Recommended)**
 - [Strimzi - Migrate your Strimzi-operated cluster from ZooKeeper to KRaft](https://strimzi.io/blog/2024/03/22/strimzi-kraft-migration/)
 # Kafka CLI Usage
 
@@ -97,15 +98,15 @@ kafka-consumer-groups.sh --bootstrap-server <host-kafka>:<port-kafka> --command-
 
 ## Installation
 
-- [Strimzi](https://strimzi.io/docs/operators/latest/overview): Strimzi simplifies the process of running [Apache Kafka](https://kafka.apache.org/) within a Kubernetes cluster
+- [Strimzi](https://strimzi.io/docs/operators/latest/overview): Strimzi simplifies the process of running [Apache Kafka](https://kafka.apache.org/) within a Kubernetes cluster 🌟 **(Recommended)**
 - Docker Images:
 	- [apache/kafka](https://hub.docker.com/r/apache/kafka)
 	- [bitami/kafka](https://hub.docker.com/r/bitnami/kafka)
-## Queue Services (Alternative)
+## Kafka Alternative
 
 - [AutoMQ](https://docs.automq.com/automq/what-is-automq/overview) : AutoMQ re-engineers Kafka for the cloud by decoupling storage to object storage. While maintaining **100% compatibility** with Apache Kafka®, it offers users up to **10 times cost efficiency** and **100 times elasticity**.
 - [RabbitMQ](https://www.rabbitmq.com/): An open-source message broker for asynchronous messaging, queueing and delivery acknowledgement.
 ## UI
 
 - [akhq](https://github.com/tchiotludo/akhq): Kafka GUI for Apache Kafka to manage topics, topics data, consumers group, schema registry, connect and more...
-- [kafka-ui](https://github.com/provectus/kafka-ui): Open-Source Web UI for Apache Kafka Management
+- [kafka-ui](https://github.com/provectus/kafka-ui): Open-Source Web UI for Apache Kafka Management 🌟 **(Recommended)**

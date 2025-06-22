@@ -1,10 +1,11 @@
 ---
-title: The awesome of AWS Cloud
+title: Awesome AWS Cloud
 tags:
   - cheatsheet
   - helpful
   - cloud-services
   - aws
+  - awesome
 ---
 # Which reason do you concern AWS ?
 
@@ -19,10 +20,10 @@ You can figure what you need to do for start with `aws` via some website and art
 
 ## Architecture
 
-- [AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/)
+- [AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/) 🌟 **(Recommended)**
 - [AWS Architecture Center](https://aws.amazon.com/architecture/)
 - [AWS Decision Guides](https://aws.amazon.com/getting-started/decision-guides/)
-- [AWS Solutions Library](https://aws.amazon.com/solutions/ "AWS Solutions Library Homepage")
+- [AWS Solutions Library](https://aws.amazon.com/solutions/ "AWS Solutions Library Homepage") 🌟 **(Recommended)**
 - [AWS Prescriptive Guidance](https://aws.amazon.com/prescriptive-guidance/)
 - [AWS Whitepapers & Guides](https://aws.amazon.com/whitepapers/)
 ## Community
@@ -57,8 +58,8 @@ Externally, In `AWS` , I will share about some others topic, such as
 
 ## Organization
 
-- [Github - Amazon Web Services](https://github.com/aws) - AWS Opensource Community
-- [Github - AWS Labs](https://github.com/awslabs) - AWS Labs
+- [Github - Amazon Web Services](https://github.com/aws) - AWS Opensource Community 🌟 **(Recommended)**
+- [Github - AWS Labs](https://github.com/awslabs) - AWS Labs 🌟 **(Recommended)**
 - [Github - AWS Observability](https://github.com/aws-observability) - AWS Observability Setup
 - [Github - AWS Samples](https://github.com/aws-samples) - AWS Samples Community
 ## Pages
@@ -67,7 +68,7 @@ Externally, In `AWS` , I will share about some others topic, such as
 ## Repository
 
 - [all_aws_managed_policies](https://gist.github.com/gene1wood/55b358748be3c314f956): A list of all AWS managed policies and they're policy documents as well as a short script to generate the list
-- [awesome-aws](https://github.com/donnemartin/awesome-aws) - A curated list of awesome Amazon Web Services (AWS) libraries, open source repos, guides, blogs, and other resources.
+- [awesome-aws](https://github.com/donnemartin/awesome-aws) - A curated list of awesome Amazon Web Services (AWS) libraries, open source repos, guides, blogs, and other resources. 🌟 **(Recommended)**
 - [grafana-aws-cloudwatch-dashboards](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards): 40+ Grafana dashboards for AWS CloudWatch metrics
 - [my-arsenal-of-aws-security-tools](https://github.com/toniblyx/my-arsenal-of-aws-security-tools): List of open source tools for AWS security: defensive, offensive, auditing, DFIR, etc.
 ## Tools
@@ -91,12 +92,12 @@ Externally, In `AWS` , I will share about some others topic, such as
 - [Linkedin - ISO 27001 Compliance in AWS](https://www.linkedin.com/pulse/iso-27001-compliance-aws-valentin-komarovskiy-mba-ketke)
 ## Blogs
 
-- [Medium - AWS in Plain English](https://aws.plainenglish.io/): New AWS, Cloud, and DevOps content every day.
-- [Medium - AWStip](https://awstip.com/): Community of passionate AWS builders.
+- [Medium - AWS in Plain English](https://aws.plainenglish.io/): New AWS, Cloud, and DevOps content every day. 🌟 **(Recommended)**
+- [Medium - AWStip](https://awstip.com/): Community of passionate AWS builders. 🌟 **(Recommended)**
 - [Medium - Chris St. John](https://medium.com/@csjcode)
 ## Development & Implementation
 
-- [Medium - ECS (Fargate) with ALB Deployment Using Terraform — Part 3](https://medium.com/the-cloud-journal/ecs-fargate-with-alb-deployment-using-terraform-part-3-eb52309fdd8f)
+- [Medium - ECS (Fargate) with ALB Deployment Using Terraform — Part 3](https://medium.com/the-cloud-journal/ecs-fargate-with-alb-deployment-using-terraform-part-3-eb52309fdd8f) 🌟 **(Recommended)**
 - [Medium - Creating SSL Certificates using AWS Certificate Manager (ACM)](https://medium.com/@sonynwoye/creating-ssl-certificates-using-aws-certificate-manager-acm-1c359e70ce4d)
 - [AWS Blogs - AWS Multi-Account Security Reference Architecture](https://medium.com/squareops/aws-multi-account-security-reference-architecture-ac3c31f5e1f9)
 - [AWS Docs - Configuring and managing a Multi-AZ deployment for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)

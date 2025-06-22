@@ -1,5 +1,5 @@
 ---
-title: The awesome projects of mine
+title: Awesome My Projects
 tags:
   - DIY
   - myself
@@ -16,7 +16,7 @@ tags:
 > 
 > *April 2021 - June 2021*
 > 
-> 🔗🔗🔗 [Github](https://github.com/Xeus-Territory/website_bookstore)
+> 🔗🔗🔗 [GitHub - Source](https://github.com/Xeus-Territory/website_bookstore)
 
 # Keylogger - Malware
 
@@ -31,7 +31,7 @@ tags:
 >
 >*August 2021 - November 2021*
 >
->🔗🔗🔗 [Github](https://github.com/Xeus-Territory/keylogger_tool)
+>🔗🔗🔗 [GitHub - Source](https://github.com/Xeus-Territory/keylogger_tool)
 
 # Scan Documentation - OCR and SRGAN
 
@@ -48,7 +48,7 @@ tags:
 >
 >*April 2022 - June 2022*
 >
->🔗🔗🔗 [Github](https://github.com/Xeus-Territory/scan_documents)
+>🔗🔗🔗 [GitHub - Source](https://github.com/Xeus-Territory/scan_documents)
 
 # Robust Scanner - Vulnerable Scanner
 
@@ -65,7 +65,7 @@ tags:
 >
 >*September 2022 - December 2022*
 >
->🔗🔗🔗 [Github](https://github.com/Xeus-Territory/robust_scanner)
+>🔗🔗🔗 [GitHub - Source](https://github.com/Xeus-Territory/robust_scanner)
 >
 >🔗🔗🔗 [Article](https://hackmd.io/BflJwJ4WR56HptJBgJCo-g)
 
@@ -84,7 +84,7 @@ tags:
 > 
 > *April 2023 - July 2023*
 > 
-> 🔗🔗🔗 [Github](https://github.com/Xeus-Territory/ntma_anomaly)
+> 🔗🔗🔗 [GitHub - Source](https://github.com/Xeus-Territory/ntma_anomaly)
 > 
 > 🔗🔗🔗 [[NTMA for anomalies detection and autoscaling|Article]]
 
@@ -103,7 +103,7 @@ tags:
 >
 >*June 2023 - September 2023*
 >
->🔗🔗🔗 [Github](https://github.com/Xeus-Territory/aws-ansible-infrastructure)
+>🔗🔗🔗 [GitHub - Source](https://github.com/Xeus-Territory/aws-ansible-infrastructure)
 >
 >🔗🔗🔗 [Article](https://hackmd.io/2_tUc4W7S3K8s3aOiwgGyg)
 
@@ -122,7 +122,7 @@ tags:
 >
 >*Jan 2023 - Current*
 >
->🔗🔗🔗 [Github](https://github.com/Xeus-Territory/devops-tutorials)
+>🔗🔗🔗 [GitHub - Source](https://github.com/Xeus-Territory/devops-tutorials)
 >
 >🔗🔗🔗 [[All Blogs#DevOps - Tutorials from zero to hero]]
 
@@ -141,7 +141,7 @@ tags:
 >
 >*Oct 2023*
 >
->🔗🔗🔗 [[Awesome Linux Shell scripts#Blue Green Deployment Docker for Zero Downtime|Source Code]]
+>🔗🔗🔗 [[Awesome Linux Shell scripts#Blue Green Deployment Docker for Zero Downtime|Source]]
 >
 >🔗🔗🔗 [[0-downtime with Blue-Green Deployment|Article]]
 
@@ -158,9 +158,11 @@ tags:
 >
 >*July 2024 - Present*
 >
->🔗🔗🔗 [Source Code](https://github.com/Xeus-Territory/kubewekend)
+>🔗🔗🔗 [GitHub - Source](https://github.com/Xeus-Territory/kubewekend)
 >
 >🔗🔗🔗 [[All Blogs#Kubewekend Series]]
+>
+>🔗🔗🔗 [Link](https://kubewekend.xeusnguyen.xyz)
 
 
 

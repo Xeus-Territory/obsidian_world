@@ -1,5 +1,5 @@
 ---
-title: The awesome of Powershell Script
+title: Awesome Powershell Scripts
 tags:
   - command
   - powershell

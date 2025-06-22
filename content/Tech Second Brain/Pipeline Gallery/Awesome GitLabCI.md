@@ -1,5 +1,5 @@
 ---
-title: The awesome of GitlabCI
+title: Awesome GitlabCI
 tags:
   - gitlab
   - cicd
@@ -12,6 +12,7 @@ tags:
 >[!summary]
 >This template which store short `yaml` to show how can work with `GitlabCI` and note some specify for use case
 
+![[thumbnail-gitlab-ci.png|center]]
 *More information about Gitlab CI/CD and Variables. Go check*
 
 ## Articles
@@ -51,6 +52,10 @@ tags:
 
 - [StackOverFlow - Pip install a private repo from Gitlab with Personal Access Token on Gitlab-CI](https://stackoverflow.com/questions/64266246/pip-install-a-private-repo-from-gitlab-with-personal-access-token-on-gitlab-ci)
 
+## Templates
+
+- [to be continuous...](https://gitlab.com/to-be-continuous): GitLab CI templates
+- [GitLab Template](https://gitlab.com/gitlab-org/gitlab/-/tree/master/lib/gitlab/ci/templates): Development guide for GitLab CI templates
 # Setup GitLab Runner
 
 ## Run in Container (Docker Executor)
