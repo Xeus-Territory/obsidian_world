@@ -21,6 +21,7 @@ tags:
 - [GitHub Actions - Documentation](https://docs.github.com/en/actions)
 - [Github Actions - Contexts](https://docs.github.com/en/actions/learn-github-actions/contexts)
 - [Github Action - Syntax](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions)
+- [GitHub Action - Events that trigger workflows](https://docs.github.com/en/actions/reference/events-that-trigger-workflows)
 ## Feature
 
 - [Github Action - Variables](https://docs.github.com/en/actions/learn-github-actions/variables)

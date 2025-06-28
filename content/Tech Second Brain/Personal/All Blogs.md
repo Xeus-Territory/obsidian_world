@@ -190,6 +190,7 @@ tags:
 - [[Why you should use dependencies cache for your work]]
 - [[Vault and Keycloak - The combination for rotation Vault Token]]
 - [[GitLab Runner and Features of this platform]]
+- [[Build Helm Repository for yourself]]
 # DueWeekly Tech
 
 >[!info]
@@ -210,6 +211,7 @@ tags:
 - [[05-05-2025 to 18-05-2025|Session 10: 05-05-2025 to 18-05-2025]]
 - [[19-05-2025 to 01-06-2025|Session 11: 19-05-2025 to 01-06-2025]]
 - [[02-06-2025 to 15-06-2025|Session 12: 02-06-2025 to 15-06-2025]]
+- [[16-06-2025 to 29-06-2025|Session 13: 16-06-2025 to 29-06-2025]]
 # InfoSec & Security
 
 ## CTF
