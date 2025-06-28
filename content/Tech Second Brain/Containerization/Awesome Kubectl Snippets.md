@@ -67,6 +67,48 @@ k delete pods -n <name-space> --field-selector=status.phase!=Running
 kubectl delete pod <PODNAME> --grace-period=0 --force --namespace <NAMESPACE>
 ```
 
+## Delete `pod` in state not finalizers
+
+Article: [Medium - Kubernetes Pods That Refused to Die: The Haunting of Our Cluster](https://medium.com/@rudra910203/kubernetes-pods-that-refused-to-die-the-haunting-of-our-cluster-4813fa5226fa) 
+
+In some situation, `delete` command won't let you kill your pod, reason can be like
+
+- Block deletion until a controller does cleanup (e.g., storage detachment)
+- Your controller add a finalizer for handling this action
+- Finalizer can' remove and lead to crash, and your application never delete
+
+To solve this mess, you can workaround with `finalizer` of your `pod`
+
+```bash
+kubectl get pods xxx -o json | jq '.metadata.finalizers'
+```
+
+If it does exist, it means you should shut it down
+
+```bash
+kubectl patch pod xxx --type json \
+--patch='[{"op": "remove", "path": "/metadata/finalizers"}]'
+```
+
+Now you can remove your `custom-controller`. 
+
+>[!tip]
+>From author, you can apply a `webhook` into your cluster to prevent finalizers add into your pods
+
+```yaml
+# ValidatingWebhookConfiguration to block bad finalizers  
+apiVersion: admissionregistration.k8s.io/v1  
+kind: ValidatingWebhookConfiguration  
+metadata:  
+name: block-cursed-finalizers  
+webhooks:  
+- name: finalizer-police.example.com  
+rules:  
+- operations: ["CREATE", "UPDATE"]  
+apiGroups: [""]  
+apiVersions: ["v1"]  
+resources: ["pods"]
+```
 # External command
 ## Check the resource of workload v1
 
