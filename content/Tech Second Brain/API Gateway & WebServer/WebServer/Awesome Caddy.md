@@ -11,23 +11,22 @@ tags:
 
 # Repository
 
-- [Caddy](https://github.com/caddyserver/caddy): Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS
-- [Caddy Org](https://github.com/caddyserver): The ultimate server: enterprise-ready, extensible, open source, and automatic HTTPS with a configuration API
+- [Caddy](https://github.com/caddyserver/caddy): Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS 🌟 **(Recommended)**
 - [dist](https://github.com/caddyserver/dist): Resources for packaging and distributing Caddy
 # Documentations and Articles
 
 >[!note]
 >**Caddy is the first and only web server to use HTTPS automatically _and by default_.**
 
-- [Caddy Server Documentation](https://caddyserver.com/docs/)
-- [Common Caddyfile Patterns](https://caddyserver.com/docs/caddyfile/patterns)
 - [Automatic HTTPS](https://caddyserver.com/docs/automatic-https)
 - [[Caddy Server and Umami analytics platform]]
+- [Caddy Server Documentation](https://caddyserver.com/docs/)
+- [Common Caddyfile Patterns](https://caddyserver.com/docs/caddyfile/patterns)
 # Caddy Configuration
 
 ## Default
 
-```bash
+```bash title="Caddyfile"
 # The Caddyfile is an easy way to configure your Caddy web server.
 #
 # Unless the file starts with a global options block, the first
@@ -55,3 +54,27 @@ tags:
 # Refer to the Caddy docs for more information:
 # https://caddyserver.com/docs/caddyfile
 ```
+
+## Basic Auth
+
+If you want to add a basic-auth for Caddy, you can workaround function integrated inside Caddy. Read more at [Caddy - basic_auth](https://caddyserver.com/docs/caddyfile/directives/basic_auth)
+
+First of all, you need to use CLI of caddy with [`hash-password`](https://caddyserver.com/docs/command-line#caddy-hash-password) to create your credential with your account, because Caddy only apply the hash-password for authenticate, so that's why you need it
+
+```bash
+caddy hash-password <your-username>
+```
+
+Prompting your password and you will receive the hash in the end, copy that and ready to put into `Caddyfile`
+
+```bash title="Caddyfile"
+https://your-domain.needto.ssl {
+	basic_auth {
+		<user-name> <hash-password> # e.g: nash $2a$14$Zkx19XLiW
+	}
+	...
+	<your configure>
+}
+```
+
+More interesting example at [Single Sign-on in Caddy Server Using only the Caddyfile and Basic Authentication](https://josheli.com/knob/2021/02/24/single-sign-on-in-caddy-server-using-only-the-caddyfile-and-basic-authentication/)

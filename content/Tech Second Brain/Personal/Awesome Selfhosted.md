@@ -12,11 +12,16 @@ tags:
 
 ## Repositories
 
-- [awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) : About A list of Free Software network services and web applications which can be hosted on your own servers
+- [awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) : About A list of Free Software network services and web applications which can be hosted on your own servers 🌟 **(Recommended)**
 - [awesome-sysadmin](https://github.com/awesome-foss/awesome-sysadmin): A curated list of amazingly awesome open-source sysadmin resources
 - [self-hosting-guide](https://github.com/mikeroyal/Self-Hosting-Guide) : Learn all about locally hosting
 # Self-hosted by Categories
 
+## Expense Management
+
+- [ExpenseOwl](https://github.com/Tanq16/ExpenseOwl): Extremely simple, self-hosted expense tracker with a beautiful UI 🌟 **(Recommended)**
+- [Firefly-iii](https://github.com/firefly-iii/firefly-iii): A personal finances manager
+- [Wallos](https://github.com/ellite/Wallos): Open-Source Personal Subscription Tracker 🌟 **(Recommended)**
 ## Git Hosting
 
 - [act](https://github.com/nektos/act): Run your GitHub Actions locally 🚀
@@ -57,11 +62,11 @@ tags:
 
 - [firecracker](https://github.com/firecracker-microvm/firecracker): Secure and fast microVMs for serverless computing.
 - [KVM](https://linux-kvm.org/page/Main_Page): a full virtualization solution for Linux on x86 hardware containing virtualization extensions
-	- [libvirt](https://github.com/libvirt/libvirt): Provides a portable, long term stable C API for managing the virtualization technologies provided by many operating systems
+	- [libvirt](https://github.com/libvirt/libvirt): Provides a portable, long term stable C API for managing the virtualization technologies provided by many operating systems 🌟 **(Recommended)**
 	- [QEMU](https://www.qemu.org/): A generic and open source machine emulator and virtualizer
 	- [virt-manager](https://virt-manager.org/):  A desktop user interface for managing virtual machines through libvirt.
 - [LXC](https://linuxcontainers.org/): Container and virtualization tools
-- [Proxmox](https://www.proxmox.com/en/): a complete, open-source server management platform for enterprise virtualization
+- [Proxmox](https://www.proxmox.com/en/): a complete, open-source server management platform for enterprise virtualization 🌟 **(Recommended)**
 	- [ProxmoxVE](https://github.com/community-scripts/ProxmoxVE): Proxmox VE Helper-Scripts (Community Edition)
 - [Roboxes](https://roboxes.org/): Base boxes built by benevolent robots.
 - [webvm](https://github.com/leaningtech/webvm): Virtual Machine for the Web
