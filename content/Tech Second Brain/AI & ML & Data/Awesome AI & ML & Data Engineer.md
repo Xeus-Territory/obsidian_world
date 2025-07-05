@@ -67,7 +67,7 @@ tags:
 - [Kaggle](https://www.kaggle.com/):  Your Machine Learning and Data Science Community 🌟 **(Recommended)**
 - [LF AI & DATA Projects](https://lfaidata.foundation/projects/): Linux Foundation project about Open Source Innovation in Artificial Intelligence and Data 🌟 **(Recommended)**
 - [Made With ML](https://madewithml.com/): Learning how to responsibly deliver value with ML!
-- [NGC Catalog](https://catalog.ngc.nvidia.com/?filters=&orderBy=weightPopularDESC&query=&page=&pageSize=): NGC Catalog - GPU Accelerated AI models and SDKs that help you infuse AI into your applications at speed of light (NVIDIA)
+- [NGC Catalog](https://catalog.ngc.nvidia.com/?filters=&orderBy=weightPopularDESC&query=&page=&pageSize=): NGC Catalog - GPU Accelerated AI models and SDKs that help you infuse AI into your applications at speed of light (NVIDIA) 🌟 **(Recommended)**
 - [Papers With Code](https://paperswithcode.com/): The latest in Machine Learning 🌟 **(Recommended)**
 - [TensorFlow Hub](https://www.tensorflow.org/hub): A repository of trained machine learning models.
 - [There's An AI For That](https://theresanaiforthat.com/): Update the new about tools and technologies about AI
@@ -97,15 +97,18 @@ tags:
 ## Articles
 
 - [Medium - Data Pipeline Development with MinIO, Iceberg, Nessie, Polars, StarRocks, Mage, and Docker](https://blog.det.life/data-pipeline-development-with-minio-iceberg-nessie-polars-starrocks-mage-and-docker-1c7b4b52d5f4)
-- [Medium - ETL and ELT](https://blog.det.life/etl-and-elt-965ca3bc0175)
+- [Medium - ETL and ELT](https://blog.det.life/etl-and-elt-965ca3bc0175) 🌟 **(Recommended)**
 - [Medium - ELT with Fabric, Azure and Databricks](https://medium.com/@hugolu87/elt-with-fabric-azure-and-databricks-2b49f148428f)
-- [Medium - The Change Data Capture (CDC) Design Pattern](https://medium.com/@luishrsoares/the-change-data-capture-cdc-design-pattern-fa8d3adc964f)
+- [Medium - The Change Data Capture (CDC) Design Pattern](https://medium.com/@luishrsoares/the-change-data-capture-cdc-design-pattern-fa8d3adc964f) 🌟 **(Recommended)**
 - [Medium - Apache Airflow Overview](https://medium.com/@vutrinh274/apache-airflow-overview-61c939abe126)
-- [Blog - Data Lake vs Data Warehouse](https://luminousmen.com/post/data-lake-vs-data-warehouse)
+- [Blog - Data Lake vs Data Warehouse](https://luminousmen.com/post/data-lake-vs-data-warehouse) 🌟 **(Recommended)**
 - [ML4Devs - Scalable Efficient Big Data Pipeline Architecture](https://www.ml4devs.com/en/articles/scalable-efficient-big-data-analytics-machine-learning-pipeline-architecture-on-cloud/)
-- [MonteCarlo - Data Pipeline Architecture Explained: 6 Diagrams and Best Practices](https://www.montecarlodata.com/blog-data-pipeline-architecture-explained/)
+- [MonteCarlo - Data Pipeline Architecture Explained: 6 Diagrams and Best Practices](https://www.montecarlodata.com/blog-data-pipeline-architecture-explained/) 🌟 **(Recommended)**
 - [Medium - Data Engineering Best Practices: How Big Tech & FAANG Firms Manage and Optimize Apache Kafka](https://acceldataio.medium.com/data-engineering-best-practices-how-big-tech-faang-firms-manage-and-optimize-apache-kafka-95d520db60bb)
 - [Medium - 5 Steps to Build Efficient Data Pipelines with Apache Airflow](https://towardsdatascience.com/5-steps-to-build-efficient-data-pipelines-with-apache-airflow-d0b42576b530/)
+- [Blog - A Primer on Data Warehouses](https://www.generativevalue.com/p/a-primer-on-data-warehouses) 🌟 **(Recommended)**
+- [Blog - Data Industry Primer](https://www.generativevalue.com/p/data-industry-primer) 🌟 **(Recommended)**
+ 
 ## Awesome Repositories
 
 - [awesome-apache-airflow](https://github.com/jghoman/awesome-apache-airflow): Curated list of resources about Apache Airflow
@@ -115,6 +118,10 @@ tags:
 - [awesome-open-source-data-engineering](https://github.com/pracdata/awesome-open-source-data-engineering): A curated list of open source tools used in analytics platforms and data engineering ecosystem
 - [data-engineering-roadmap](https://github.com/data-burst/data-engineering-roadmap): A comprehensive roadmap tailored for data engineering professionals at all levels
 - [data-engineer-handbook](https://github.com/DataExpert-io/data-engineer-handbook): a repo with links to everything you'd ever want to learn about data engineering
+
+## Books
+
+- [Data Engineers Book Collections - Xeus Nguyen](https://drive.google.com/drive/folders/1PmIc4fibMzcLCVgTFKbr4bo8gwbgP38J?usp=sharing)
 ## Blogs
 
 - [Medium - Vu Trinh](https://medium.com/@vutrinh274): Tech blogger who cover a lot information about databases and data engineers 🌟 **(Recommended)**
@@ -214,18 +221,22 @@ tags:
 
 - [KitOps](https://github.com/kitops-ml/kitops): An open source DevOps tool for packaging and versioning AI/ML models, datasets, code, and configuration into an OCI artifact.
 - [polyaxon](https://github.com/polyaxon/polyaxon): MLOps Tools For Managing & Orchestrating The Machine Learning LifeCycle
-## Model Management and Serving
+## Model Management and Deployment
 
 - [KServe](https://kserve.github.io/website/latest/): A standard **Model Inference Platform** on **Kubernetes**, built for **highly scalable** use cases.
 - [MLFlow](https://github.com/mlflow/mlflow): Open source platform for the machine learning lifecycle 🌟 **(Recommended)**
 - [MLServer](http://mlserver.readthedocs.io/en/latest/index.html): An open source inference server for your machine learning models.
 - [openvino](https://github.com/openvinotoolkit/openvino): OpenVINO™ is an open-source toolkit for optimizing and deploying AI inference
 - [Ray](https://github.com/ray-project/ray): an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads. 🌟 **(Recommended)**
+- [gpustack](https://github.com/gpustack/gpustack): Simple, scalable AI model deployment on GPU clusters
 ## VectorDB
 
 - [Chroma](https://docs.trychroma.com/):  The AI-native open-source vector database (Opensource) 🌟 **(Recommended)**
 - [Milvus](https://milvus.io/docs): A high-performance, highly scalable vector database that runs efficiently across a wide range of environments, from a laptop to large-scale distributed systems 🌟 **(Recommended)**
 
+## Library & Framework
+
+- [PyTorch](https://download.pytorch.org/whl/torch/): Links for searching download torch version, especially follow CUDA version of machine by [CUDA V12.8](https://download.pytorch.org/whl/cu128)
 
 
 
