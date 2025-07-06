@@ -39,8 +39,13 @@ tags:
 
 - [fluxcd](https://fluxcd.io/flux/) : Tool for keeping Kubernetes clusters in sync with sources of configuration (like Git repositories), and automating updates to configuration when there is new code to deploy 🌟 **(Recommended)**
 	- [flagger](https://flagger.app/): Progressive Delivery Operator for Kubernetes. Maintained by Flux
+	- [capacitor](https://github.com/gimlet-io/capacitor):  A general purpose UI for FluxCD
+	- [weave-gitops](https://github.com/weaveworks/weave-gitops): a free and open source GUI for Flux under the [weave-gitops](https://web.archive.org/web/20230314183054/https://docs.gitops.weave.works/docs/intro/) project
 
 - [kargo](https://docs.kargo.io/): A next-generation continuous delivery and application lifecycle orchestration platform for Kubernetes
+- [flipt](https://github.com/flipt-io/flipt): Enterprise-ready, GitOps enabled, CloudNative feature management solution
+- [fleet](https://github.com/rancher/fleet): Deploy workloads from Git to large fleets of Kubernetes clusters
+- [cyclops](https://github.com/cyclops-ui/cyclops): an open-source dev tool that simplifies Kubernetes with an easy-to-use UI, making it less intimidating
 ## State Management (Kubernetes)
 
 - [helm](https://helm.sh/): The package manager for Kubernetes 🌟 **(Recommended)**

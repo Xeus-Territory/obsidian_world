@@ -15,7 +15,7 @@ tags:
 ## Articles
 
 - [Medium - 40 Ansible Playbooks You Can’t Live Without in Your CI/CD Pipeline](https://medium.com/@eren.c.uysal/40-ansible-playbooks-you-cant-live-without-in-your-ci-cd-pipeline-460a1b472c38) 🌟 **(Recommended)**
-- [[Setup PostgreSQL with Ansible]]
+- [Medium - Advanced Ansible Playbooks for CI/CD Efficiency](https://medium.com/@eren.c.uysal/advanced-ansible-playbooks-for-ci-cd-efficiency-804bfc199592)
 ## Documentations
 
 - [Ansible](https://docs.ansible.com/ansible/latest/index.html) : Ansible provides open-source automation that reduces complexity and runs everywhere, especially **virtual machine**

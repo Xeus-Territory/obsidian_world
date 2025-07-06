@@ -219,6 +219,7 @@ services:
 - [PostgreSQL Database](https://grafana.com/grafana/dashboards/9628-postgresql-database/): Detail with useful information about PostgreSQL 🌟 **(Recommended)**
 - [HAMI vGPU](https://grafana.com/grafana/dashboards/21833-hami-vgpu-dashboard/): Use for monitoring vGPU in Kubernetes Cluster 🌟 **(Recommended)**
 - [Certificates Expiration (X509 Certificate Exporter)](https://grafana.com/grafana/dashboards/13922-certificates-expiration-x509-certificate-exporter/): Monitoring time expire of X509 Certificate (Useful for RKE2, K3s, ...) 🌟 **(Recommended)**
+- [Elasticsearch & OpenSearch](https://grafana.com/grafana/dashboards/14191-elasticsearch-overview/): Providing a useful information for your elasticsearch & opensearch 🌟 **(Recommended)**
 ## Azure PostgreSQL Queries Performance
 
 >[!info]

@@ -649,6 +649,8 @@ config.ssh.forward_agent = true
 
 ## Pip3 of Python
 
+### Break system to install
+
 With Python3 from version 3.12, there isn't gonna easy for us to install package, so if you want to force install with `python3-pip`, you can add the optional `--break-system-packages` after the pip command
 
 ```bash
@@ -661,6 +663,13 @@ With read from file, we can do same way
 pip3 install -r requirements.txt --break-system-packages
 ```
 
+## Specific Torch version
+
+In some situations, your environment have higher version CUDA or driver of NVIDIA compare with Torch, you can use this version to bypass and migrate your torch to compatible version with your graphic card. Read more at [Reddit - RTX 5090 Training Issues - PyTorch Doesn't Support Blackwell Architecture Yet?](https://www.reddit.com/r/LocalLLaMA/comments/1law1go/rtx_5090_training_issues_pytorch_doesnt_support/)
+
+```bash
+pip install -U torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+```
 ## Keytool of Java
 
 Explore more about `keytool` through [Common Java Keytool Commands](https://knowledge.digicert.com/de/de/quovadis/ssl-certificates/ssl-general-topics/common-java-keytool-commands)
