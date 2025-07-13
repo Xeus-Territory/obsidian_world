@@ -255,6 +255,10 @@ You can use integration tool inside `ubuntu` to update new version, that will pu
 lsb_release -a
 
 # Use command to update new version ubuntu
+# You should update all package before try this command
+# sudo apt update
+# sudo apt upgrade -y # Upgrade major package
+# sudo apt dist-upgrade -y # Upgrade distribute package
 do-release-upgrade
 ```
 
