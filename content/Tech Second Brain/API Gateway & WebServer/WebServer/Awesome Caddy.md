@@ -9,19 +9,40 @@ tags:
 
 ![[thumbnail-caddy.png]]
 
-# Repository
-
-- [Caddy](https://github.com/caddyserver/caddy): Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS 🌟 **(Recommended)**
-- [dist](https://github.com/caddyserver/dist): Resources for packaging and distributing Caddy
-# Documentations and Articles
+# General
 
 >[!note]
 >**Caddy is the first and only web server to use HTTPS automatically _and by default_.**
+## Repository
+
+- [Caddy](https://github.com/caddyserver/caddy): Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS 🌟 **(Recommended)**
+- [dist](https://github.com/caddyserver/dist): Resources for packaging and distributing Caddy
+## Documentations and Articles
 
 - [Automatic HTTPS](https://caddyserver.com/docs/automatic-https)
 - [[Caddy Server and Umami analytics platform]]
 - [Caddy Server Documentation](https://caddyserver.com/docs/)
 - [Common Caddyfile Patterns](https://caddyserver.com/docs/caddyfile/patterns)
+
+# Caddy Commands
+
+Use the documentation to get valid command to handling [Caddy Server](https://caddyserver.com/docs/command-line#caddy-reload)
+
+To reload configuration use `reload` command. Doc: [caddy reload](https://caddyserver.com/docs/command-line#caddy-reload)
+
+```bash
+caddy reload --config /location/caddy/file
+```
+
+To check and validate configuration from `caddyfile` use `validate` command. Doc: [caddy validate](https://caddyserver.com/docs/command-line#caddy-validate)
+
+```bash
+caddy validate --config /location/caddy/file
+```
+
+>[!note]
+>With `Caddy V2`, mostly `websocket` automatically serve and do not need to configuration like `v1` . Check about that in [Caddy Proxy](https://caddyserver.com/docs/v2-upgrade#proxy)
+
 # Caddy Configuration
 
 ## Default

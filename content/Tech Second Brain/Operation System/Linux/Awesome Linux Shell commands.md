@@ -620,24 +620,6 @@ tree -f -I "bin|unitTest" -P "*.[ch]|*.[ch]pp." your_dir/
 ```
 
 # External Commands
-## Caddy server
-
-Use the documentation to get valid command to handling [Caddy Server](https://caddyserver.com/docs/command-line#caddy-reload)
-
-To reload configuration use `reload` command. Doc: [caddy reload](https://caddyserver.com/docs/command-line#caddy-reload)
-
-```bash
-caddy reload --config /location/caddy/file
-```
-
-To check and validate configuration from `caddyfile` use `validate` command. Doc: [caddy validate](https://caddyserver.com/docs/command-line#caddy-validate)
-
-```bash
-caddy validate --config /location/caddy/file
-```
-
->[!note]
->With `Caddy V2`, mostly `websocket` automatically serve and do not need to configuration like `v1` . Check about that in [Caddy Proxy](https://caddyserver.com/docs/v2-upgrade#proxy)
 
 ## Vagrant
 
@@ -647,7 +629,9 @@ If you have problems when `vagrant` can't authentication for `ssh`. You will nee
 config.ssh.forward_agent = true
 ```
 
-## Pip3 of Python
+## Pip3 (Python)
+
+![[icon-python-pypi.svg|center|300]]
 
 ### Break system to install
 
@@ -663,14 +647,14 @@ With read from file, we can do same way
 pip3 install -r requirements.txt --break-system-packages
 ```
 
-## Specific Torch version
+### Specific Torch version
 
 In some situations, your environment have higher version CUDA or driver of NVIDIA compare with Torch, you can use this version to bypass and migrate your torch to compatible version with your graphic card. Read more at [Reddit - RTX 5090 Training Issues - PyTorch Doesn't Support Blackwell Architecture Yet?](https://www.reddit.com/r/LocalLLaMA/comments/1law1go/rtx_5090_training_issues_pytorch_doesnt_support/)
 
 ```bash
 pip install -U torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
 ```
-## Keytool of Java
+## Keytool (Java)
 
 Explore more about `keytool` through [Common Java Keytool Commands](https://knowledge.digicert.com/de/de/quovadis/ssl-certificates/ssl-general-topics/common-java-keytool-commands)
 ### Get keystroke information

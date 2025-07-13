@@ -212,6 +212,7 @@ tags:
 - [[19-05-2025 to 01-06-2025|Session 11: 19-05-2025 to 01-06-2025]]
 - [[02-06-2025 to 15-06-2025|Session 12: 02-06-2025 to 15-06-2025]]
 - [[16-06-2025 to 29-06-2025|Session 13: 16-06-2025 to 29-06-2025]]
+- [[30-06-2025 to 13-07-2025|Session 14: 30-06-2025 to 13-07-2025]]
 # InfoSec & Security
 
 ## CTF
@@ -287,6 +288,7 @@ tags:
 
 - [[Kubewekend Session Extra 1|Kubewekend Session Extra 1: Longhorn and the story about NFS in Kubernetes]] - This lab is try to take you to journey to learn about new CSI for Kubernetes, `Longhorn` and deliver you to new method to handle transfer large file via network by NFS protocol. I also provide more information about `iSCSI`, `nfs-ganesha` and technique `rdma`
 - [[Kubewekend Session Extra 2|Kubewekend Session Extra 2: Rebuild Cluster with RKE2 or K3S]] - This article aims to provide you with insights into alternatives for self-hosting a full Kubernetes cluster. Both `K3s` and `RKE2` are strong contenders worth considering to guide your decision. Focusing on the self-hosted approach with `RKE2`, I want to share more about my experiences working with it over the past four months.
+- [[Kubewekend Session Extra 3|Kubewekend Session Extra 3: RKE2 and The Nightmare with Network and CoreDNS]] - This article is my story about wrestling with networking in Kubernetes. I'll cover the frustrating problems that arise when your pods can't communicate with services, CoreDNS fails to resolve domains, and the tough issues involving **CNI** and the **ChecksumTX** of network interfaces in Kubernetes.
 # Tech Research (What is)
 
 >[!info]

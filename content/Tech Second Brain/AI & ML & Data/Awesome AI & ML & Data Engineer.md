@@ -23,15 +23,16 @@ tags:
 - [Medium - The Open-Source Stack for AI Agents](https://medium.com/data-science-collective/the-open-source-stack-for-ai-agents-8ab900e33676)
 ## Awesome Repositories
 
-- [applied-ml](https://github.com/eugeneyan/applied-ml): 📚 Papers & tech blogs by companies sharing their work on data science & machine learning in production.
-- [awesome-deep-learning](https://github.com/ChristosChristofidis/awesome-deep-learning) : A curated list of awesome Deep Learning tutorials, projects and communities.
-- [awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps): Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini and opensource models.
-- [Awesome-LLMs-for-Video-Understanding](https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding): 🔥🔥🔥Latest Papers, Codes and Datasets on Vid-LLMs.
+- [applied-ml](https://github.com/eugeneyan/applied-ml): 📚 Papers & tech blogs by companies sharing their work on data science & machine learning in production
+- [awesome-deep-learning](https://github.com/ChristosChristofidis/awesome-deep-learning) : A curated list of awesome Deep Learning tutorials, projects and communities
+- [Awesome-Efficient-LLM](https://github.com/horseee/Awesome-Efficient-LLM): A curated list for Efficient Large Language Models
+- [awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps): Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini and opensource models
+- [Awesome-LLMs-for-Video-Understanding](https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding): 🔥🔥🔥Latest Papers, Codes and Datasets on Vid-LLMs
 - [awesome-local-ai](https://github.com/janhq/awesome-local-ai) : An awesome repository of local AI tools
-- [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers): A collection of MCP servers.
+- [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers): A collection of MCP servers
 - [awesome-model-quantization](https://github.com/Efficient-ML/Awesome-Model-Quantization): A list of papers, docs, codes about model quantization
-- [awesome-production-machine-learning](https://github.com/EthicalML/awesome-production-machine-learning): A curated list of awesome open source libraries to deploy, monitor, version and scale your machine learning. [Website](https://ethicalml.github.io/awesome-production-machine-learning/)
-- [best-of-ml-python](https://github.com/ml-tooling/best-of-ml-python): 🏆 A ranked list of awesome machine learning Python libraries. Updated weekly.
+- [awesome-production-machine-learning](https://github.com/EthicalML/awesome-production-machine-learning): A curated list of awesome open source libraries to deploy, monitor, version and scale your machine learning
+- [best-of-ml-python](https://github.com/ml-tooling/best-of-ml-python): 🏆 A ranked list of awesome machine learning Python libraries. Updated weekly
 ## Blogs
 
 - [DigitalOcean - AI/ML Topics](https://www.digitalocean.com/community/tags/ai-ml): Articles and Community about AI/ML 🌟 **(Recommended)**
@@ -75,6 +76,7 @@ tags:
 
 - [Advances and Challenges in Foundation Agents](https://arxiv.org/pdf/2504.01990)
 - [CNCF - CNCF Cloud Native AI White Paper](https://tag-runtime.cncf.io/wgs/cnaiwg/whitepapers/cloudnativeai/)
+- [SmartQuant: CXL-based AI Model Store in Support of Runtime Configurable Weight Quantization](https://arxiv.org/pdf/2407.15866)
 ## Topic
 
 - [Artificial Intelligence](https://github.com/topics/artificial-intelligence)
@@ -92,7 +94,7 @@ tags:
 - [MLOps.community](https://www.youtube.com/@MLOps/videos) : The MLOps Community fills the swiftly growing need to share real-world Machine Learning Operations best practices from engineers in the field 🌟 **(Recommended)**
 # Data Engineer
 
-![[meme-data-engineer.png|center]]
+![[Tech Second Brain/Assets/Images/meme-data-engineer.png|center]]
 
 ## Articles
 

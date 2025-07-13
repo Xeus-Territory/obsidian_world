@@ -1127,7 +1127,6 @@ You can bypass it via applying in **server-side**
 k apply -f rayjobs-crd.yaml --server-side
 ```
 
-
 # OOM Killed
 
 >[!info]
@@ -1156,4 +1155,101 @@ Now you can see the error about OOM and figure out what happen with your applica
 ctr -a /run/k3s/containerd/containerd.sock -n k8s.io containers ls | grep -e "<id-container>"
 ```
 
+# RKE2 Network DNS Debugging
 
+>[!question]
+>If you've already faced or are currently facing - **Kubernetes DNS issues**, you know they can create incredibly frustrating debugging moments that are far from easy. Consequently, I dedicated two days to learning and resolving the specific problem detailed below. This tutorial outlines precisely how I fixed it. Be sure to take note of this one!
+
+![[Pasted image 20250711145442.png]]
+
+In my experience, when attempting to self-host Kubernetes clusters, specifically on-premise solutions like K3s, RKE2, or other local Kubernetes setups, you're likely to encounter a specific problem. Your pods might spin up, and components like `CoreDNS`, `CNI`, `KubeProxy`, and `Kubelet` appear to be functioning perfectly, yet your pods cannot communicate with services to resolve domains.
+
+This issue then cascades, causing significant problems for `health-checks`, `InitContainers`, `Jobs`, `Prehooking`, and more, leaving you unsure where to even begin troubleshooting. Let's list a couple of potential reasons, and I will separate into three levels, **Rare, Unique and Special** 
+
+- **(Rare)** Your CoreDNS is in wrong configuration and CoreDNS can't resolve your service domain with current configuration. These issues linked to
+
+	- [GitHub RKE2 - Containers can't resolve hostnames](https://github.com/rancher/rke2/discussions/6168)
+	- [Blog - Pod DNS Problems](https://blog.differentpla.net/blog/2022/02/25/pod-dns-problems/)
+
+- **(Special)** The [Checksum TX](https://www.kernel.org/doc/html/next/networking/checksum-offloads.html) is wrong configuration or not able fit with your kernel version in your network Interface, honestly to say if you encounter this problem, that ain't gonna easy for understanding
+
+	- [Medium - Resolving Flannel-Related DNS and Metrics Server Issues in RKE2 Kubernetes on Ubuntu 22.04](https://medium.com/@ozkanpoyrazoglu/resolving-flannel-related-dns-and-metrics-server-issues-in-rke2-kubernetes-on-ubuntu-22-04-7feb5fb21a14)
+	- [GitHub RKE2 - RKE2 Cluster running Calico seemingly losing UDP traffic when transiting through service IP to remotely located pod](https://github.com/rancher/rke2/issues/1541)
+	- [GitHub Calico - bad udp cksum when using vxlan](http://github.com/projectcalico/calico/issues/4865)
+
+- **(Unique)** Firewall is turning on and there are some rules you settle up but make conflict with RKE2 or K3S, including `firewalld`, `ufw` or `iptables`. This one is not simple if you doesn't understand what's going on when turn on, turn off any rules in bunch of this 😄
+
+	- [RKE2 - Firewalld conflicts with default networking](https://docs.rke2.io/known_issues#firewalld-conflicts-with-default-networking)
+	- [K3s - Iptables Legacy Problems](https://docs.k3s.io/known-issues#iptables)
+	- [K3s - UFW should be disabled](https://docs.k3s.io/installation/requirements?os=debian#operating-systems)
+
+- **(Special)** Other situation relate with your kernel version, CNI, Network Policy, IP Exhaustion, Open Port, ...
+
+	- [K3s - Inbound Rules for K3s Nodes](https://docs.k3s.io/installation/requirements#inbound-rules-for-k3s-nodes)
+	- [Rancher Issue - Configure K3s on EC2](https://slack-archive.rancher.com/t/13267212/i-need-urgent-help-please-i-m-trying-to-configure-k3s-on-ec2)
+	- [RKE2 - Known Issues and Limitations](https://docs.rke2.io/known_issues)
+
+That's why you should make the checklist about DNS for your RKE2 or any selfhosted Kubernetes to prevent it
+
+- Always check out firewall because It's really non sense with your RKE2 and K3s, let them do it for yourself
+
+	```bash
+	# Disable Uncomplicated Firewall
+	ufw disable
+	```
+
+- Check your `iptables` rules and, if possible, decline anything related to **UDP/53** traffic. Specifically, if you find an `iptables` rule referencing IP **10.43.0.10 on Port 53**, this could potentially be a risky configuration
+
+	```bash
+	# Check IP table rules
+	sudo iptables -L -n -v --line-numbers
+	
+	# If you seen DROP with 53 and 10.43.0.10, e.g
+	# Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+	# num pkts bytes target prot opt in out source destination 
+	# 1 0 0 DROP udp -- * * 0.0.0.0/0 10.43.0.10 udp dpt:53 
+	# 2 ...
+	# You should delete this rule with 
+	## Delete by Specification
+	sudo iptables -D OUTPUT -p udp --dport 53 -d 10.43.0.10 -j DROP
+	## Delete by line number
+	sudo iptables -D <CHAIN_NAME> <LINE_NUMBER>
+	```
+
+>[!warning]
+>If you use or apply rule with higher firewall, like `firewalld` or `ufw`, you should handle the firewall deletion at there firewall instead `iptables` to prevent conflict
+
+- **(Option - 1 )**, If the firewall doesn't a target, you should care about the configuration of CoreDNS which actually handle the resolve domain, both external and internal
+
+	```bash {7,19}
+	# Edit the configmap of your CoreDNS
+	kubectl edit cm -n kube-system rke2-coredns-rke2-coredns
+	
+	# Enhance the log and change default forward from
+	# /etc/resolv.conf --> 8.8.8.8
+	.:53 {
+		log # Enable log
+	    errors 
+	    health  {
+	        lameduck 5s
+	    }
+	    ready 
+	    kubernetes   cluster.local  cluster.local in-addr.arpa ip6.arpa {
+	        pods insecure
+	        fallthrough in-addr.arpa ip6.arpa
+	        ttl 30
+	    }
+	    prometheus   0.0.0.0:9153
+	    forward   . 8.8.8.8 # Instead for /etc/resolv.conf
+	    cache   30
+	    loop 
+	    reload 
+	    loadbalance 
+	}
+	
+	# Restart your CoreDNS
+	kubectl rollout restart deployment -n kube-system rke2-coredns-rke2-coredns
+	```
+
+- **(Option - 2)**, Re apply your RKE2 with new version `kernel` via APT. Read more at [[Awesome Linux Troubleshoot#Update Ubuntu new version|Update Ubuntu new version]]
+- **(Option - 3)** The Checksum TX is acutally problem, because I really ware this problem related to Ubuntu Server 20.04 with Calico or Flannel CNI, so it's up to you for try and test but the temporary solution because when your machine reboot, it will restore to default configuration. In the best way, you can write the script and apply it as `systemd` in your system like [Medium - Resolving Flannel-Related DNS and Metrics Server Issues in RKE2 Kubernetes on Ubuntu 22.04](https://medium.com/@ozkanpoyrazoglu/resolving-flannel-related-dns-and-metrics-server-issues-in-rke2-kubernetes-on-ubuntu-22-04-7feb5fb21a14)
