@@ -9,80 +9,6 @@ tags:
 
 ![[thumbnail-linux-troubleshoot-tools.png]]
 
-# Error when install package but you can't
-
-Link for resolve: [Reddit](https://www.reddit.com/r/pop_os/comments/s6l82d/trying_to_up_date_the_system_but_keep_getting/)
-
-If you package problem, for example (`Code`). You need to perform these commands
-
-```bash
-# Location the error or missing package
-sudo apt policy code
-
-# Reinstall or purge your package cause error
-sudo dpkg --remove --force-remove-reinstreq code
-sudo apt purge code --autoremove
-sudo apt install --fix-broken
-sudo apt update
-```
-
-# `libssl` error in Ubuntu 22.04
-
->[!info]
->Ubuntu 22.04 has upgraded libssl to 3 and does not propose libssl1.1, so when you install packages that meet the problems, with me when setup `Azure agent`, read at [[Awesome Azure Pipelines#The SSL connection could not be established, and No usable version of libssl was found|The SSL connection could not be established, and No usable version of libssl was found]]. But when you need to revert some other version problem will mess up, you can follow this one and reboot your machine to applied compatible version of `libssl`
-
-Link issue: [StackOverFlow - MongoDB Install Fails on Ubuntu 22.04 - Depends on libssl1.1 but it is not installable](https://askubuntu.com/questions/1403619/mongodb-install-fails-on-ubuntu-22-04-depends-on-libssl1-1-but-it-is-not-insta)
-
-Package: [libssl1.1_1.1.1f-1ubuntu2_amd64.deb](https://ubuntu.pkgs.org/20.04/ubuntu-main-amd64/libssl1.1_1.1.1f-1ubuntu2_amd64.deb.html)
-
-1. Install via source-list when you import the key
-
-```shell
-# Write a source of package into apt, to retrieve the version of package
-echo "deb http://security.ubuntu.com/ubuntu focal-security main" | sudo tee /etc/apt/sources.list.d/focal-security.list
-
-sudo apt-get update
-sudo apt-get install libssl1.1
-
-# Delete the focal-security list file you just created
-sudo rm /etc/apt/sources.list.d/focal-security.list
-```
-
-2. Manually installed
-
-```shell
-# Retrive the package from ubuntu repositories
-wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2_amd64.deb
-
-# Install the lib debian file which you download
-sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2_amd64.deb
-```
-
-# Problem with `ssh`
-
-When you see the situation about your key for authentication a destination host have changing because your action or hacker, from your side you can resolve when exection `ssh` by flushing the old key like
-
-```bash
-ssh-keygen -f "/home/user/.ssh/known_hosts" -R "[127.0.0.1]:6996"
-```
-
->[!done]
->It will help you update your known_hosts, and give you permission to authentication remote host with new cred
-
-If you meet situation about, `cannot auth ssh via password`. It means, usually your host will protect your `VM` with no enable `PasswordAuthentication` in `/etc/ssh/sshd_conf`. If you want to enable, you need to perform
-
-```bash
-# Change content sshd_config
-sudo sed -i 's/#PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
-
-# Restart ssh vervice
-sudo systemctl restart sshd
-
-# OR
-sudo /etc/init.d/ssh force-reload
-sudo /etc/init.d/ssh restart
-```
-
 # Error when setup virtualbox in Ubuntu
 
 >[!info]
@@ -96,7 +22,7 @@ You can find the solution for secure boot at
 >[!quote]
 >That is tough think for new start, I know but you have 2 way to resolve the problem, i dunno make sure you follow what but, this is the same between them but one side is manually generate and other use `deb` with include that step. Follow if you solve the problem
 
-**First method**
+## First method: Manually generate MOK
 
 >[!note]
 >Manually generate, and submit `mok` for authentication secure boot, that new for me and cost me time to understand 😄 but that gradually valuable
@@ -162,7 +88,7 @@ mokutil --export
 sudo mokutil --delete MOK-0002.der
 ```
 
-**Second method**
+## Second method: Automatically generate MOK
 
 >[!note]
 >That will simple, but make sure you do same thing above but the `virtualbox` will give you all step and just need prompt your password, remember for re-typing again in MOK
@@ -182,41 +108,9 @@ sudo shutdown -r now
 
 >[!done]
 >That will help you resolve this case, maybe when you have new version of Ubuntu that can be reason why you had the problems, make sure you control that
+# Setup Environment Variables
 
-# Swap mode in Ubuntu
-
->[!info]
->You can swap mode in Ubuntu from desktop mode to server mode, by use key combining
-
-- **Ctrl + Alt + F1** : To use desktop mode
-- **Ctrl + Alt + F3**: To use shell or server mode
-
-# Clean Swap memory
-
-With architecture of linux, swap memory submit crucial role for operating stuff inside machine, bring back stability and performance. Explore about swap memory at [Phoenix - Swap Space in Linux: What It Is & How It Works](https://phoenixnap.com/kb/swap-space)
-
->[!warning]
->The customization into swap memory need to concern before do because you will touch into part with one making decision for performance main system
-
-But you can gently clean that with few commands to help you collect, and get swap memory back to machine. E.g: When you compile java, if you not configure `jvm` with good behavior, It will use a lot memory and swap is one of those.
-
-To prevent that, you can use command below to disable all swap partition, it will help reclaim memory swap being use
-
-```bash
-sudo swapoff -a
-```
-
-After reclaim, you can turn on it again for reusing to continuous provide swap memory for system
-
-```bash
-sudo swapon -a
-```
-
-You can explore and figure out more configuration and memory with linux through article
-
-- [Tecmint - How to Clear RAM Memory Cache, Buffer and Swap Space on Linux](https://www.tecmint.com/clear-ram-memory-cache-buffer-and-swap-space-on-linux/)
-- [Kernal Doc - Memory Management](https://docs.kernel.org/admin-guide/mm/index.html)
-# Set and use environment variables from `.env` file
+## Set and use environment variables from `.env` file
 
 >[!info]
 >Read more about topic at
@@ -246,7 +140,36 @@ In some case, you wanna disable a environment in current shell, so you can
 ```bash
 unset ENVIRONMENT_VARIABLE
 ```
-# Update Ubuntu new version
+
+## Setup Global environment for multiple users
+
+Following the [StackOverFlow - Setting global environment variable for everyone](https://askubuntu.com/questions/261760/setting-global-environment-variable-for-everyone), you can have possibility to setup the environment in global mode and anyone who inherit will have fully access this environment variables
+
+For example, I want to update my PATH for all use in system, so you need login to root for easier make a change with `/etc/environment`
+
+```bash
+# Go to sudo
+sudo -i
+
+# Make a change with nano or vim
+nano /etc/environent
+
+# e.g: Add a new path /usr/local/nvidia/tooklit
+## export PATH="/usr/bin/:/usr/local/bin:/usr/local/nvidia/toolkit"
+```
+
+Save it file and make login again with another user, you will see your PATH is already update new route, you can use `source` to apply change for this file in current
+
+>[!warning]
+>But it will change for users not for root, so it means you root need to define into `.profile` file or `.bashrc` or `.zshrc` to apply the variables
+
+For more enhancement, you can consider to modify with new script in `/etc/profile.d` where we can store script and trigger for all user who login into shell. Read more at:
+
+- [StackExchange - Setting variable in /etc/environment has no effect](https://superuser.com/questions/1308298/setting-variable-in-etc-environment-has-no-effect)
+- [Ubuntu Community - System-wide environment variables](https://help.ubuntu.com/community/EnvironmentVariables#System-wide_environment_variables)
+# Ubuntu version and Patch Linux/Kernel Package
+
+## Upgrade Ubuntu Version
 
 You can use integration tool inside `ubuntu` to update new version, that will pull and update packages inside host, do that easily with command
 
@@ -264,6 +187,8 @@ do-release-upgrade
 
 >[!warning]
 >In this situation you update `ubuntu`, it will update your kernel so please remember make a big-changes can gain different harden to control, so do know before you doing
+
+## Upgrade your kernel
 
 Follow some methodology to upgrade new version of kernel, such as
 
@@ -301,8 +226,56 @@ sudo reboot # OR use sudo shutdown -r now
 ```
 
 ![[Pasted image 20240724103806.png]]
+## Error when install package but you can't
 
-# Update alternative version
+Link for resolve: [Reddit](https://www.reddit.com/r/pop_os/comments/s6l82d/trying_to_up_date_the_system_but_keep_getting/)
+
+If you package problem, for example (`Code`). You need to perform these commands
+
+```bash
+# Location the error or missing package
+sudo apt policy code
+
+# Reinstall or purge your package cause error
+sudo dpkg --remove --force-remove-reinstreq code
+sudo apt purge code --autoremove
+sudo apt install --fix-broken
+sudo apt update
+```
+
+##  `libssl` error in Ubuntu 22.04
+
+>[!info]
+>Ubuntu 22.04 has upgraded libssl to 3 and does not propose libssl1.1, so when you install packages that meet the problems, with me when setup `Azure agent`, read at [[Awesome Azure Pipelines#The SSL connection could not be established, and No usable version of libssl was found|The SSL connection could not be established, and No usable version of libssl was found]]. But when you need to revert some other version problem will mess up, you can follow this one and reboot your machine to applied compatible version of `libssl`
+
+Link issue: [StackOverFlow - MongoDB Install Fails on Ubuntu 22.04 - Depends on libssl1.1 but it is not installable](https://askubuntu.com/questions/1403619/mongodb-install-fails-on-ubuntu-22-04-depends-on-libssl1-1-but-it-is-not-insta)
+
+Package: [libssl1.1_1.1.1f-1ubuntu2_amd64.deb](https://ubuntu.pkgs.org/20.04/ubuntu-main-amd64/libssl1.1_1.1.1f-1ubuntu2_amd64.deb.html)
+
+1. Install via source-list when you import the key
+
+```shell
+# Write a source of package into apt, to retrieve the version of package
+echo "deb http://security.ubuntu.com/ubuntu focal-security main" | sudo tee /etc/apt/sources.list.d/focal-security.list
+
+sudo apt-get update
+sudo apt-get install libssl1.1
+
+# Delete the focal-security list file you just created
+sudo rm /etc/apt/sources.list.d/focal-security.list
+```
+
+2. Manually installed
+
+```shell
+# Retrive the package from ubuntu repositories
+wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2_amd64.deb
+
+# Install the lib debian file which you download
+sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2_amd64.deb
+```
+
+## Update alternative version
 
 >[!quote]
 >When you have multiple version of tools, package or moreover, like `python` `java jdk` `shell`, you need to switch between of them  that why you need the topic
@@ -402,25 +375,30 @@ Relate documentation
 - [What exactly does `update-alternatives` do?](https://askubuntu.com/questions/233190/what-exactly-does-update-alternatives-do)
 - [The update-alternatives Command in Linux](https://www.baeldung.com/linux/update-alternatives-command)
 
-# Rerun the previous command
+##  `SSH` problems
 
-You can use previous command with `!!` on your shell, for example
-
-```bash
-# First if you use clear screen
-clear
-
-# You can call clear screen again with !!
-!!
-```
-
-Also you can reuse the previous command arguments, for example
+When you see the situation about your key for authentication a destination host have changing because your action or hacker, from your side you can resolve when exection `ssh` by flushing the old key like
 
 ```bash
-$ command <args>
-$ 2nd command !$
+ssh-keygen -f "/home/user/.ssh/known_hosts" -R "[127.0.0.1]:6996"
 ```
 
+>[!done]
+>It will help you update your known_hosts, and give you permission to authentication remote host with new cred
+
+If you meet situation about, `cannot auth ssh via password`. It means, usually your host will protect your `VM` with no enable `PasswordAuthentication` in `/etc/ssh/sshd_conf`. If you want to enable, you need to perform
+
+```bash
+# Change content sshd_config
+sudo sed -i 's/#PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
+
+# Restart ssh vervice
+sudo systemctl restart sshd
+
+# OR
+sudo /etc/init.d/ssh force-reload
+sudo /etc/init.d/ssh restart
+```
 # Comment note in Shell Bash
 
 >[!info]
@@ -982,3 +960,29 @@ It will expand your `/run` immediately, so don't worry corrupt or loss data. If 
 mount: /run: mount point not mounted or bad option.
        dmesg(1) may have more information after failed mount system call.
 ```
+
+## Clean Swap memory
+
+With architecture of linux, swap memory submit crucial role for operating stuff inside machine, bring back stability and performance. Explore about swap memory at [Phoenix - Swap Space in Linux: What It Is & How It Works](https://phoenixnap.com/kb/swap-space)
+
+>[!warning]
+>The customization into swap memory need to concern before do because you will touch into part with one making decision for performance main system
+
+But you can gently clean that with few commands to help you collect, and get swap memory back to machine. E.g: When you compile java, if you not configure `jvm` with good behavior, It will use a lot memory and swap is one of those.
+
+To prevent that, you can use command below to disable all swap partition, it will help reclaim memory swap being use
+
+```bash
+sudo swapoff -a
+```
+
+After reclaim, you can turn on it again for reusing to continuous provide swap memory for system
+
+```bash
+sudo swapon -a
+```
+
+You can explore and figure out more configuration and memory with linux through article
+
+- [Tecmint - How to Clear RAM Memory Cache, Buffer and Swap Space on Linux](https://www.tecmint.com/clear-ram-memory-cache-buffer-and-swap-space-on-linux/)
+- [Kernal Doc - Memory Management](https://docs.kernel.org/admin-guide/mm/index.html)

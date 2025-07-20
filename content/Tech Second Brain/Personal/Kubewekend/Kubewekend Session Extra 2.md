@@ -174,105 +174,107 @@ A couple of useful documentations should be taken care
 - [RKE2 - Configuration Options](https://docs.rke2.io/install/configuration)
 - [RKE2 - Upgrade](https://docs.rke2.io/upgrades/manual_upgrade)
 - [RKE2 - Uninstall](https://docs.rke2.io/install/uninstall)
-
 ## Installation RKE2
 
-Following documentation, we will have two type of selfhosted `RKE2`, including
+Following the documentation, we'll encounter two types of self-hosted RKE2 clusters:
 
-- Normal Cluster - 1 master and multiple workers
-- HA Cluster - 2 or more masters (should be odd number) and multiple workers
+1. **Normal Cluster**: This configuration consists of **one master node** and **multiple worker nodes**.
+2. **High Availability (HA) Cluster**: This setup requires **two or more master nodes** (ideally an odd number for quorum) and **multiple worker nodes**.
 
-You can read [RKE2 - Quick Installation](https://docs.rke2.io/install/quickstart) and hand on following this concept, I will try to describe behavior each step
+Let's delve into normal version, you can read [RKE2 - Quick Installation](https://docs.rke2.io/install/quickstart) and hand on following this concept, I will try to describe behavior each step
 
-1. First of all, you should update and install a couple of things for your host and please make sure your host allow some [RKE2 requirements](https://docs.rke2.io/install/requirements)
+1. To prepare your host for RKE2 installation, you'll need to update and install a few essential components, ensuring your system meets the [RKE2 requirements](https://docs.rke2.io/install/requirements). 
+ 
+	**💡 Note**: I highly recommend using **Ubuntu 22.04** as your operating system for setting up RKE2, as it tends to result in fewer installation errors.
 
-```bash
-sudo apt update
-sudo apt install curl wget nano -y
-```
+	```bash
+	sudo apt update
+	sudo apt install curl wget nano -y
+	```
 
-2. Next, we will `curl` command to interact with script from `RKE2` with couple of variables need to consider
+2. Next, we will use `curl` command to interact with script from `RKE2` to install RKE2 Server or Agent with couple of variables need to consider
 
-```bash
-# Install Server
-curl -sfL https://get.rke2.io | INSTALL_RKE2_VERSION="xxx" sh -
+	```bash
+	# Version used by me, e.g: v1.28.9+rke2r1 or v1.27.11+rke2r1
+	# Install Server
+	curl -sfL https://get.rke2.io | INSTALL_RKE2_VERSION="xxx" sh -
+	
+	# Install Agent
+	curl -sfL https://get.rke2.io | INSTALL_RKE2_TYPE="agent" INSTALL_RKE2_VERSION="xxx" sh -
+	```
 
-# Install Agent
-curl -sfL https://get.rke2.io | INSTALL_RKE2_TYPE="agent" INSTALL_RKE2_VERSION="xxx" sh -
-```
+	If you inspect the script at https://get.rke2.io, you will see some environment for setting this script and you should care about
 
-If you inspect the script at https://get.rke2.io, you will see some environment for setting this script and you should care about
+	- `INSTALL_RKE2_TYPE`: Type of rke2 service. Can be either "server" or "agent" **(Default is "server")**
+	- `INSTALL_RKE2_VERSION`: Version of rke2 to download
+	- `INSTALL_RKE2_CHANNEL`: Channel to use for fetching rke2 download URL **(Defaults to 'stable')**
 
-- `INSTALL_RKE2_TYPE`: Type of rke2 service. Can be either "server" or "agent" **(Default is "server")**
-- `INSTALL_RKE2_VERSION`: Version of rke2 to download
-- `INSTALL_RKE2_CHANNEL`: Channel to use for fetching rke2 download URL **(Defaults to 'stable')**
-
-This step will cover whole step to setup `systemd` for `rke2-server`, `rke2-agent` and prepare manifest, artifact for initialization your `rke2`
+	This step will cover whole step to setup `systemd` for `rke2-server`, `rke2-agent` and prepare manifest, artifact for initialization your `rke2`
 
 3. With the normal cluster, you just need only start `rke2-server` if you set up master node after previous complete
 
-```bash
-sudo systemctl enable rke2-server
-sudo systemctl start rke2-server
-```
+	```bash
+	sudo systemctl enable rke2-server
+	sudo systemctl start rke2-server
+	```
 
-Wait a bit around 30s - 1 Mins, but sometime it takes longer but don't worry, after that you can check status of service, run or not
+	**💡 Note**: **Wait for 30 seconds to 1 minute**; sometimes it might take longer, but don't worry. After this period, you can check the service status to see if it's running
 
-```bash
-# Use systemd
-sudo systemctl status rke2-server
+	```bash
+	# Use systemd
+	sudo systemctl status rke2-server
+	
+	# Use journalctl
+	sudo journalctl -xeu rke2-server -f
+	```
 
-# Use journalctl
-sudo journalctl -xeu rke2-server -f
-```
+	If your `rke2-server` is running and shows no errors in its logs, you can configure the agent to join the cluster. First, you'll need to retrieve the **node-token** from `/var/lib/rancher/rke2/server/node-token`.
 
-If state of `rke2-server` is running and do not log any error, you can configure agent to join for cluster. But first read the node-token at `/var/lib/rancher/rke2/server/node-token`
+	```bash
+	cat /var/lib/rancher/rke2/server/node-token
+	```
 
-```bash
-cat /var/lib/rancher/rke2/server/node-token
-```
+4. Now, you can turn around to step 2 to install the RKE2 agent on your new node. The installation process is similar to the server installation, but you'll run the agent-specific command.
 
-Now prepare the configure for agents node to join cluster
+	```bash
+	# Default Agent will not exist this PATH, you should create
+	mkdir -p /etc/rancher/rke2
+	
+	# Use nano or vim to edit config.yaml in this PATH
+	nano /etc/rancher/rke2/config.yaml
+	```
 
-```bash
-# Default Agent will not exist this PATH, you should create
-mkdir -p /etc/rancher/rke2
+	You should read two of these, [Server Configuration Reference](https://docs.rke2.io/reference/server_config) and [Agent Configuration Reference](https://docs.rke2.io/reference/linux_agent_config)
 
-# Use nano or vim to edit config.yaml in this PATH
-nano /etc/rancher/rke2/config.yaml
-```
+	```yaml title="/etc/rancher/rke2/config.yaml"
+	# Requirements
+	server: master-server # e.g: https://<ip>:9345
+	token: master-token # master token for joining cluster
+	node-ip: ip-server # IP address of agent
+	# Optional
+	node-label:
+		- "env=dev"
+	```
 
-You should read two of these, [Server Configuration Reference](https://docs.rke2.io/reference/server_config) and [Agent Configuration Reference](https://docs.rke2.io/reference/linux_agent_config)
+	Afterward, you can turn on the agent, and you can check the health of your agent with `kubectl` command
 
-```yaml title="/etc/rancher/rke2/config.yaml"
-# Requirements
-server: master-server # e.g: https://<ip>:9345
-token: master-token # master token for joining cluster
-node-ip: ip-server # IP address of agent
-# Optional
-node-label:
-	- "env=dev"
-```
+	```bash
+	# Enable RKE2 Agent Service
+	sudo systemctl enable rke2-agent
+	
+	# Start the RKE2 Agent
+	sudo systemctl start rke2-agent
+	```
 
-Now you can turn on the agent, and you can check the health of your agent with `kubectl` command
+	Like I told, you can check the status, like logs or health of agent via `kubectl` or directly via `journalctl` command
 
-```bash
-# Enable RKE2 Agent Service
-sudo systemctl enable rke2-agent
-
-# Start the RKE2 Agent
-sudo systemctl start rke2-agent
-```
-
-Like I told, you can check the status, like logs or health of agent via `kubectl` or directly via `journalctl` command
-
-```bash
-# Get node for check the state
-kubectl get nodes
-
-# Get log of service
-sudo journalctl -xeu rke2-agent -f
-```
+	```bash
+	# Get node for check the state
+	kubectl get nodes
+	
+	# Get log of service
+	sudo journalctl -xeu rke2-agent -f
+	```
 
 >[!info]
 >This way is kinda simple because I just follow the same behavior with documentation to start normal Cluster. But if you setup HA Cluster, you can double check in next part
@@ -294,37 +296,128 @@ As you can see, `RKE2` build up the HA Solution depend on [Raft Architecture](ht
 >
 >This odd number allows the cluster to tolerate the failure of a minority of nodes without losing its ability to make decisions. For example, in a 3-node cluster, one node can fail. In a 5-node cluster, two can fail. While adding more odd-numbered nodes increases the fault tolerance (more failures can be handled), it also increases the total number of nodes that are potential points of failure.
 
-You can read more about Why Raft Algorithm and How can `etcd` setup articles below
+You can read more about what is Raft algorithm and how can `etcd` setup articles below
 
 - [Dev.to - Understanding etcd's Raft Implementation: A Deep Dive into Raft Log](https://dev.to/justlorain/understanding-etcds-raft-implementation-a-deep-dive-into-raft-log-bdn)
 - [etcd - FAQ](https://etcd.io/docs/v3.5/faq/)
 
-So I will share more about `etcd` in another blogs, but lemme focus on RKE2 HA Setup with some steps, following
+BTW, I will share more about `etcd` in another blogs, but lemme focus on RKE2 HA Setup with some steps, following
 
-1. Configure a fixed registration address
-2. Launch the first server node
-3. Join additional server nodes
-4. Join agent nodes
+1. **Configure a fixed registration address**
+2. **Launch the first server node**
+3. **Join additional server nodes**
+4. **Join agent nodes**
 
 >[!info]
->For consistence environment for Kubernetes, you should have stable endpoint front of server nodes, that why you should have fixed registration address server
+>For a consistent Kubernetes environment, you need a **stable endpoint** in front of your server nodes. This is why you should set up a **fixed registration address** for the servers.
 
-When you turn on the sever with fixed registration, you can use `node-token` to join for both `server` and `agent` into this server to create HA Cluster
+>[!success]
+>When you **already turn on the sever for fixed registration**, you can use `node-token` to join for both `server` and `agent` into this server to create HA Cluster
 
-## Setup GPU Worker
+## Setup GPU Worker 🌟
 
-When you setup worker with GPU, that pretty especial than normal version, because you need create bridge or driver to let your RKE2 Agent can interact with Graphic Card inside Node via Kubernetes Layer. To handle this case, you should double-check about [RKE2 - Deploy NVIDIA operator](https://docs.rke2.io/advanced#deploy-nvidia-operator) and [HAMI - Configure containerd](https://project-hami.io/docs/installation/prequisities#configure-containerd)
+![[thumbnail-k8s-gpu.png]]
+<div align="center">
+	<strong>
+		<em>
+			<p style="text-align: center;">
+				<a href="https://www.alibabacloud.com/blog/getting-started-with-kubernetes-%7C-gpu-management-and-device-plugin-implementation_596306">Source: Getting Started with Kubernetes | GPU Management and Device Plugin Implementation</a>
+			</p>
+		</em>
+	</strong>
+</div>
 
-First of all, you need to install [NVIDIA Operator](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/index.html) to support your node can communicate with your Graphic Card, you can install that via multiple ways
+To set up an RKE2 worker node with a GPU, you'll need to establish the necessary bridge or driver for the RKE2 Agent to interact with the graphics card via the Kubernetes layer. For this, you should double-check the following resources
 
-- [ArtifactHub](https://artifacthub.io/packages/helm/gpu-operator/gpu-operator) and [Helm Chart](https://github.com/NVIDIA/gpu-operator/tree/main/deployments/gpu-operator)
+- [RKE2 - Deploy NVIDIA operator](https://docs.rke2.io/advanced#deploy-nvidia-operator)
+- [HAMI - Installation with Helm](https://project-hami.io/docs/installation/online-installation)
+- [GitHub - KAI-Scheduler - An open source Kubernetes Native scheduler for AI workloads](https://github.com/NVIDIA/KAI-Scheduler)
+
+First of all, you need to install driver of your card in your host, and with Ubuntu, you can directly download from `apt` package or use `ubuntu-drivers` for finding compatible version
+
+```bash
+# CAUTION: THIS CAN'T WORK AT ALL SO ALWAYS REMEMBER
+# You should choose ubuntu 22.04 or 20.04 for stable installation
+
+#!/bin/bash
+
+# Update an install couple of needed packages
+sudo apt update
+sudo apt install g++ freeglut3-dev build-essential libx11-dev libxmu-dev libxi-dev libglu1-mesa libglu1-mesa-dev -y
+
+# Add repository and key for finding the graphic-card driver in APT
+sudo add-apt-repository ppa:graphics-drivers/ppa -y
+sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/3bf863cc.pub
+echo "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64 /" | sudo tee /etc/apt/sources.list.d/cuda.list
+
+# Run update repository endpoint and install nvidia-driver-535
+sudo apt update
+sudo apt install libnvidia-common-535 libnvidia-gl-535 nvidia-driver-535 -y
+```
+
+Remember, you can double-check these source exists or not for your distribution version
+
+- https://nvidia.github.io/libnvidia-container
+- https://developer.download.nvidia.com/compute/cuda/repos/
+
+>[!warning]
+>You'll need to find a **driver compatible** with your specific graphic card and GPU workloads. This driver, along with a **device plugin**, is absolutely crucial for Kubernetes to effectively utilize your GPU within the node.
+
+>[!info]
+>🗯️ Find and get your own the driver at [Nvidia Graphic Card Driver](https://www.nvidia.com/en-in/drivers/)
+
+There are several ways to manage GPUs with RKE2 or Kubernetes in general, but from my perspective, you can choose one of three primary setup methods:
+
+### Use NVIDIA Operator
+
+Setup only [NVIDIA Operator](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/index.html), it's totally contain all what you need to kubernetes work with your GPU via [device-plugin](https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/device-plugins/). You can install that via multiple ways
+
+- [ArtifactHub](https://artifacthub.io/packages/helm/gpu-operator/gpu-operator) and [Helm Chart](https://github.com/NVIDIA/gpu-operator/tree/main/deployments/gpu-operator) --> [Installation Guide](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/getting-started.html)
 - [Manifest](https://docs.rke2.io/advanced#operator-installation) - Defined by `RKE2`
 
-Secondly, you need to install [HAMI Helm Chart](https://project-hami.io/docs/installation/online-installation) (Optionals) for support virtualization GPU inside Kubernetes environment (NOTE: If you want to use GPU efficiency, you need to think about HAMI in your techstack)
+>[!warning]
+>This version is including multiple things in there, so read configuration carefully and install because your Kubernetes can break out by this one with that contain so stuff to change your `Containerd` configure of RKE2
 
-When you configure Worker GPU, HAMI require you configure some `node-label` inside `/etc/rancher/rke2/config.yaml`
+>[!note]
+>Also, this configuration will install `nvidia-container-toolkit` and `nvidia-container-runtime` for their own version at put in PATH `/usr/local/nvidia/toolkit`, maybe you can consider to set couple PATH in your configure to make sense it work in this place
 
-```yaml title="/etc/rancher/rke2/config.yaml"
+You might encounter the [Issue - Failed to initialize NVML: Unknown Error](https://github.com/NVIDIA/gpu-operator/issues/430). This can impact container runtimes using systemd cgroup management, and a missing symlink will cause a **crashloopback**. To fix this, you can add a specific configuration to your `gpu-operator` value file
+
+```yaml
+  validator:
+    # Fix the issue: https://github.com/NVIDIA/gpu-operator/issues/430
+    # This bug impacts container runtimes configured with systemd cgroup management enabled
+    driver:
+      env:
+        - name: DISABLE_DEV_CHAR_SYMLINK_CREATION
+          value: "true"
+```
+
+### HAMI for vGPU
+
+![[thumnail-k8s-hami.png]]
+
+You can Install [HAMI Helm Chart](https://project-hami.io/docs/installation/online-installation) for support virtualization GPU inside Kubernetes environment **(NOTE: If you want to use GPU efficiency, you need to think about HAMI in your techstack)**, HAMI will create own concept to work as `device-plugin` and `scheduler` for Kubernetes communicate with GPU
+
+Before starting installation HAMI with `helm`, you should install some prerequisites of HAMI, such as `nvidia-container-toolkit`
+
+```bash
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+curl -s -L https://nvidia.github.io/libnvidia-container/gpgkey | sudo apt-key add -
+curl -s -L https://nvidia.github.io/libnvidia-container/$distribution/libnvidia-container.list | sudo tee /etc/apt/sources.list.d/libnvidia-container.list
+
+sudo apt-get update && sudo apt-get install -y nvidia-container-toolkit
+```
+
+Next, you need to distinguish `containerd` of HAMI and RKE2, RKE2 will have own `containerd` with integrating inside RKE2 package and when installation, it will use this one to turn up services and for keeping work as expectation, it will require you to install `runc` and `containerd` with `apt` package, but in some situation, this work will not actually needed for except error you can do this stuff. **Read more at: [Getting started with containerd](https://github.com/containerd/containerd/blob/main/docs/getting-started.md)**
+
+```bash
+sudo apt update && sudo apt install runc containerd -y
+```
+
+🚨 When you configure Worker GPU, HAMI require you configure some `node-label` inside `/etc/rancher/rke2/config.yaml`
+
+```yaml title="/etc/rancher/rke2/config.yaml" {10}
 # Requirements
 server: master-server # e.g: https://<ip>:9345
 token: master-token # master token for joining cluster
@@ -351,21 +444,44 @@ cp /var/lib/rancher/rke2/agent/etc/containerd/config.toml /var/lib/rancher/rke2/
 
 Modify add new configuration for `config.toml.tmpl` for configuration `hami`, explore more at [Hami - Prequisities Installation](https://project-hami.io/docs/installation/prequisities)
 
-```toml
+```toml title="/var/lib/rancher/rke2/agent/etc/containerd/config.toml.tmpl" {17,30-37}
+# File generated by rke2. DO NOT EDIT. Use config.toml.tmpl instead.
 version = 2
-[plugins]
-  [plugins."io.containerd.grpc.v1.cri"]
-    [plugins."io.containerd.grpc.v1.cri".containerd]
-      default_runtime_name = "nvidia"
 
-      [plugins."io.containerd.grpc.v1.cri".containerd.runtimes]
-        [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.nvidia]
-          privileged_without_host_devices = false
-          runtime_engine = ""
-          runtime_root = ""
-          runtime_type = "io.containerd.runc.v2"
-          [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.nvidia.options]
-            BinaryName = "/usr/bin/nvidia-container-runtime"
+[plugins."io.containerd.internal.v1.opt"]
+  path = "/var/lib/rancher/rke2/agent/containerd"
+[plugins."io.containerd.grpc.v1.cri"]
+  stream_server_address = "127.0.0.1"
+  stream_server_port = "10010"
+  enable_selinux = false
+  enable_unprivileged_ports = true
+  enable_unprivileged_icmp = true
+  sandbox_image = "index.docker.io/rancher/mirrored-pause:3.6"
+
+[plugins."io.containerd.grpc.v1.cri".containerd]
+  snapshotter = "overlayfs"
+  disable_snapshot_annotations = true
+  default_runtime_name = "nvidia"  
+
+
+
+[plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc]
+  runtime_type = "io.containerd.runc.v2"
+
+[plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc.options]
+  SystemdCgroup = true
+
+[plugins."io.containerd.grpc.v1.cri".registry]
+  config_path = "/var/lib/rancher/rke2/agent/etc/containerd/certs.d"
+
+[plugins."io.containerd.grpc.v1.cri".containerd.runtimes]
+	[plugins."io.containerd.grpc.v1.cri".containerd.runtimes.nvidia]
+		privileged_without_host_devices = false
+		runtime_engine = ""
+		runtime_root = ""
+		runtime_type = "io.containerd.runc.v2"
+		[plugins."io.containerd.grpc.v1.cri".containerd.runtimes.nvidia.options]
+		BinaryName = "/usr/bin/nvidia-container-runtime"
 ```
 
 Restart `containerd`
@@ -380,6 +496,78 @@ Restart `rke2-agent` to sync up again
 sudo systemctl restart rke2-agent
 ```
 
+>[!note]
+>Now you can get and watch the HAMI plugin install as demonset in your machine, if it start with `prehookcalledfail`, don't worry you should delete pod and it will work again
+
+You should choose the HAMI version for compatible with NVIDIA Driver on your host
+
+1. **v2.3.11 --> nvidia-driver-535**
+2. **v2.5.2 - v2.6.0 --> nvidia-driver-570**
+
+Read more about couple of things to successfully setup HAMI
+
+- [HAMI Helm Chart:](https://github.com/Project-HAMi/HAMi/tree/master/charts/hami) Detail from value and template of HAMI
+- [Source Code Walkthrough of the GPU Pod Scheduling Process in HAMI](https://project-hami.io/blog/2024/12/31/post)
+- [Device sharing concept of HAMI](https://project-hami.io/docs/key-features/device-sharing)
+
+### Use both NVIDIA Operator and HAMI
+
+>[!warning]
+>I don't recommend this installation because manything will conflict each others when setup both platform in your Kubernetes Cluster
+
+Both of this platform will use annotation to give signal for `device-plugin` talk with GPU for assign the task, and coincidence it have same annotation `nvidia.com/gpu` by default, it means two `device-plugin` of HAMI and Nvidia will randomly handle scheduling GPU for your workloads
+
+Like I told, Nvidia Operator is such a good friend for setup all things related Nvidia, it will cut off the time to manual install each package but it will try to modify directly `containerd` and in somehow there will become conflict between of them, that's tough and you need to consider to trade off
+
+However, With confirm of [limengxuan](https://github.com/archlitchi) - Maintainer of HAMI in currently, he confirm we can try to modify or ignore `device-plugin` of NVIDIA, Read more at [Issue - Mismatch vGPU Memory actual allocate for K8s Pods](https://github.com/Project-HAMi/HAMi/issues/1093). Therefore, you should modify the values of HAMI and deploy again `device-plugin` if you want to use both of them. Follow modification below
+
+```yaml title="hami/values.yaml" {24-29}
+## @section Global configuration
+## @param global.imageRegistry Global Docker image registry
+## @param global.imagePullSecrets Global Docker image pull secrets
+global:
+  ## @param global.imageRegistry Global Docker image registry
+  imageRegistry: ""
+  ## E.g.
+  ## imagePullSecrets:
+  ##   - myRegistryKeySecretName
+  ## @param global.imagePullSecrets Global Docker image pull secrets
+  imagePullSecrets: []
+  imageTag: "v2.6.0"
+  gpuHookPath: /usr/local
+  labels: {}
+  annotations: {}
+  managedNodeSelectorEnable: false
+  managedNodeSelector:
+    usage: "gpu"
+
+nameOverride: ""
+fullnameOverride: ""
+namespaceOverride: ""
+
+#Nvidia GPU Parameters
+resourceName: "hami.nvidia.com/gpu"
+resourceMem: "hami.nvidia.com/gpumem"
+resourceMemPercentage: "hami.nvidia.com/gpumem-percentage"
+resourceCores: "hami.nvidia.com/gpucores"
+resourcePriority: "hami.nvidia.com/priority"
+```
+
+In your pod, you can modify the resource with new annotation
+
+```yaml title="gpu-app/values.yaml" {4-5}
+resources:
+	limits:
+	  memory: 2Gi
+	  hami.nvidia.com/gpu: '1'
+	  haminvidia.com/gpumem: '3500'
+	requests:
+	  cpu: 200m
+	  memory: 2Gi
+```
+
+>[!note]
+>If you're encountering issues after rebooting a GPU node, particularly when using HAMI and GPU Operator, refer to the [[Kubewekend Session Extra 2#Reboot GPU Machine with HAMi 🌟|"Reboot GPU Machine with HAMi"]] section for solutions. It's highly recommended to perform a **[[Awesome Kubernetes Walkthrough#Maintain Node in Kubernetes|Node Maintenance]]** operation in Kubernetes before rebooting to minimize errors when operating with both HAMI and GPU Operator.
 ## Note of RKE2
 
 ![[meme-awesome.png|center]]
@@ -414,69 +602,69 @@ After you configuration, you will be able to connect your outside machine into K
 
 About this problem, I do not pretty well with this case, and It becomes more complicated if you miss some configuration, but remember and check some situation if you missing or try to bypass when initialize cluster
 
-1. Install driver for graphic card inside your host, especially `libnvidia-ml.so.1`, read more about [RKE2 - Host OS requirements](https://docs.rke2.io/advanced#host-os-requirements). There are some documentation for following
+Install driver for graphic card inside your host, especially `libnvidia-ml.so.1`, read more about [RKE2 - Host OS requirements](https://docs.rke2.io/advanced#host-os-requirements). There are some documentation for following
 
-	- [Ubuntu - NVIDIA drivers installation](https://documentation.ubuntu.com/server/how-to/graphics/install-nvidia-drivers/index.html)
-	- [PhoenixNAP - How to Install Nvidia Drivers on Ubuntu](https://phoenixnap.com/kb/install-nvidia-drivers-ubuntu)
+- [Ubuntu - NVIDIA drivers installation](https://documentation.ubuntu.com/server/how-to/graphics/install-nvidia-drivers/index.html)
+- [PhoenixNAP - How to Install Nvidia Drivers on Ubuntu](https://phoenixnap.com/kb/install-nvidia-drivers-ubuntu)
 
-	```bash
-	#!/bin/bash
-	sudo apt update
-	sudo apt install g++ freeglut3-dev build-essential libx11-dev libxmu-dev libxi-dev libglu1-mesa libglu1-mesa-dev -y
-	sudo add-apt-repository ppa:graphics-drivers/ppa -y
-	sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/3bf863cc.pub
-	echo "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64 /" | sudo tee /etc/apt/sources.list.d/cuda.list
-	sudo apt update
-	sudo apt install libnvidia-common-535 libnvidia-gl-535 nvidia-driver-535 -y
-	```
+```bash
+#!/bin/bash
+sudo apt update
+sudo apt install g++ freeglut3-dev build-essential libx11-dev libxmu-dev libxi-dev libglu1-mesa libglu1-mesa-dev -y
+sudo add-apt-repository ppa:graphics-drivers/ppa -y
+sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/3bf863cc.pub
+echo "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64 /" | sudo tee /etc/apt/sources.list.d/cuda.list
+sudo apt update
+sudo apt install libnvidia-common-535 libnvidia-gl-535 nvidia-driver-535 -y
+```
 
-2. Double-check about your [Nvidia Container Runtime](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/index.html), because I aware RKE2 configure this stuff in kinda strange way but in somehow your Cluster run with not much affordable to edit your GPU node
+Double-check about your [Nvidia Container Runtime](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/index.html), because I aware RKE2 configure this stuff in kinda strange way but in somehow your cluster run with not much affordable to edit your GPU node
 
-	- [Nvidia - Installing the NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
-	- [Nvidia - Troubleshooting NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/troubleshooting.html)
+- [Nvidia - Installing the NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
+- [Nvidia - Troubleshooting NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/troubleshooting.html)
+
+```bash
+# Check the version of nvidia-container-runtime
+nvidia-container-runtime --version
+
+# Check the configuration of nvidia-container-runtime
+cat /etc/nvidia-container-runtime/config.toml
+```
 	
-	```bash
-	# Check the version of nvidia-container-runtime
-	nvidia-container-runtime --version
-	
-	# Check the configuration of nvidia-container-runtime
-	cat /etc/nvidia-container-runtime/config.toml
-	```
-	
-	In some crazy situation, you won't understand why your host miss `runc` in starting but your cluster run stable before node reboot again (Trust me, it really strange 😄)
-	
-	- [Github - RunC](https://github.com/opencontainers/runc)
-	- [Ubuntu - RunC Package](https://launchpad.net/ubuntu/+source/runc)
-	- [How To Install runc on Ubuntu 22.04](https://installati.one/install-runc-ubuntu-22-04/)
-	
-	```bash
-	# Install runc
-	sudo apt update
-	sudo apt install runc -y
-	
-	# Double check runc version
-	runc --version
-	```
+In some crazy situation, you won't understand why your host miss `runc` in starting but your cluster run stable before node reboot again (Trust me, it really strange 😄)
 
-3. Double check and following requirement of [HAMI - Prequisities](https://project-hami.io/docs/installation/prequisities/)
+- [Github - RunC](https://github.com/opencontainers/runc)
+- [Ubuntu - RunC Package](https://launchpad.net/ubuntu/+source/runc)
+- [How To Install runc on Ubuntu 22.04](https://installati.one/install-runc-ubuntu-22-04/)
 
-	- Remember configure container-runtime with expectation of HAMI inside `containerd` configuration at `/var/lib/rancher/rke2/agent/etc/containerd/config.toml.tmpl`
-	- Add label `gpu=on` on `/etc/rancher/rke2/config.yaml` to let your node reboot but without misconfiguration, because usually you will edit directly manifest with `kubectl` command
+```bash
+# Install runc
+sudo apt update
+sudo apt install runc -y
 
-	To use the HAMI, you can following the concept to configure your manifest of Kubernetes like using annotation to configure resource and gpu-types for workload used GPU, mostly AI Services. Supportive reservation resource been through [HAMi](https://project-hami.io/docs)
-	
-	- `nvidia.com/gpu` and `nvidia.com/gpumem` : Default support via GPU Operator
+# Double check runc version
+runc --version
+```
 
-	```yaml
-		  resources:
-			limits:
-			  nvidia.com/gpu: 1 # requesting 1 GPU
-			  nvidia.com/gpumem: 3000 # Each GPU contains 3000m device memory
-	```
+Double check and following requirement of [HAMI - Prequisities](https://project-hami.io/docs/installation/prequisities/)
 
-	- `nvidia.com/use-gputype` : [HAMi](https://project-hami.io/docs/userguide/NVIDIA-device/specify-device-type-to-use) offer for help scheduler exactly GPU Types
+- Remember configure container-runtime with expectation of HAMI inside `containerd` configuration at `/var/lib/rancher/rke2/agent/etc/containerd/config.toml.tmpl`
+- Add label `gpu=on` on `/etc/rancher/rke2/config.yaml` to let your node reboot but without misconfiguration, because usually you will edit directly manifest with `kubectl` command
 
-	In some situation, HAMI meet the error when split the GPU, you should restart daemonset running `hami-device-plugin` to let it retry the configuration again in GPU Node. Read more about [Github Issue - HAMI 插件运行中出现显卡注册失败](https://github.com/Project-HAMi/HAMi/issues/441)
+To use the HAMI, you can following the concept to configure your manifest of Kubernetes like using annotation to configure **resource and gpu-types** for workload used GPU, mostly AI Services. Supportive reservation resource been through [HAMi](https://project-hami.io/docs)
+
+- **`nvidia.com/gpu`** and **`nvidia.com/gpumem`** : Default support via GPU Operator
+
+```yaml title="gpu-app/values.yaml" {3-4}
+resources:
+limits:
+  nvidia.com/gpu: 1 # requesting 1 GPU
+  nvidia.com/gpumem: 3000 # Each GPU contains 3000m device memory
+```
+
+- **`nvidia.com/use-gputype`** : [HAMi](https://project-hami.io/docs/userguide/NVIDIA-device/specify-device-type-to-use) offer for help scheduler exactly GPU Types
+
+In some situation, HAMI meet the error when split the GPU, you should restart daemonset running `hami-device-plugin` to let it retry the configuration again in GPU Node. Read more about [Github Issue - HAMI 插件运行中出现显卡注册失败](https://github.com/Project-HAMi/HAMi/issues/441)
 
 >[!error]
 >I have an update on a common GPU problem that I want to share with you and the community. The issue is an Nvidia driver version conflict where the user-space tools (like nvidia-smi) have a different version than the Nvidia kernel module. This typically results in an error message: `Failed to initialize NVML: Driver/library version mismatch`.
@@ -489,7 +677,7 @@ To resolve the problem, you can double-check in a couple of resolved
 - [Blog - 解决Driver/library version mismatch](https://comzyh.com/blog/archives/967/)
 - [GPU Mart - Failed to initialize NVML: Driver/library version mismatch - Troubleshooting](https://www.gpu-mart.com/blog/failed-to-initialize-nvml-driver-library-version-mismatch)
 
-The usual behavior to resolve this issue is rebooting system
+The usual behavior to resolve this issue is rebooting system 🌟
 
 ```bash
 sudo reboot
@@ -683,6 +871,9 @@ sudo systemctl start rke2-server
 >Furthermore, if you have issues with `kube-api-server` or `kube-proxy` (like logging or connection problems), try restarting the `rke2-agent` service on the affected node. This won't disrupt running pods.
 
 BTW, you can rotate the individual service by passing the `--service` flag, it means you can rotate certificate for specific things you want (NOTE: That's good behavior for not corrupting the huge cluster). Read more about [RKE2 - Certificate Management](https://docs.rke2.io/security/certificates#rotating-client-and-server-certificates-manually)
+
+>[!warning]
+>After rotation, you should check if the activity on your worker is normal. If not, take your time to restart your worker using the `sudo systemctl restart rke2-agent` command to avoid causing errors or corrupting your pods.
 ### Container Services in RKE2
 
 >[!info]
@@ -715,7 +906,7 @@ But if you want to increase more HA, you should configure [KeepAlive](https://do
 - [IBM - Keepalived and HAProxy](https://www.ibm.com/docs/en/solution-assurance?topic=available-keepalived-haproxy)
 - [Kubesphere - Set up an HA Kubernetes Cluster Using Keepalived and HAproxy](https://kubesphere.io/docs/v3.4/installing-on-linux/high-availability-configurations/set-up-ha-cluster-using-keepalived-haproxy/)
 - [Git - Running a load balancer for RKE2 api-server and nginx ingress controller using Keepalived and HAProxy in static pods](https://gist.github.com/mddamato/5b696d202befde53c333761e23dca616)
-### Reboot GPU Machine (New Upgrade)
+### Reboot GPU Machine with HAMi 🌟
 
 >[!warning]
 >Resolving issues with RKE2 clusters, particularly concerning the GPU Agent, can be difficult. A frequent problem encountered is the RKE2 Agent initiating successfully yet subsequently retrying multiple times, resulting in operational instability. When faced with this, two primary approaches are available:
@@ -728,16 +919,15 @@ What is waiting for me it's truly coming and I guess this problem will be occur 
 
 If you read my note about [[Kubewekend Session Extra 2#Container Services in RKE2|Container Services in RKE2]] above and the issue, you will understand RKE2 will separate two process to running container with separate `containerd`, and you can get that distinguish
 
-- `containerd` of RKE2 at `/var/lib/rancher/rke2/bin` and `/var/lib/rancher/rke2/data/v1.xx.xx/bin`, it will contain `containerd`, `kubectl`, ... But you know why it not export into your **$PATH** and If I don't get wrong about it, this only spend for `RKE2` stuff, like `kube-proxy`, `CNI`, `Ingress`, ...
-- `containerd` of host at `/usr/bin` and this one already include in **$PATH**, ... In some case, I will actual remove by `RKE2-agent` after reboot, believe me sometime `runc` and `containerd` actual not found in your host. Explore installation at [Containerd - Getting Started](https://github.com/containerd/containerd/blob/main/docs/getting-started.md). And this one spent for running `containerd` socket
+- RKE2 installs its `containerd` and other binaries (like `kubectl`) in paths such as `/var/lib/rancher/rke2/bin` and `/var/lib/rancher/rke2/data/v1.xx.xx/bin`. These are not exported to your **$PATH** because they're primarily for RKE2's internal components, like `kube-proxy`, CNI, and Ingress, and it uses a specific socket at `/run/k3s/containerd.sock`.
+- **If you opt for the HAMI solution**, you'll install a separate host `containerd` at `/usr/bin`, which _is_ typically included in your **$PATH**. In some cases, `runc` and `containerd` might even disappear from your host after a reboot, especially if RKE2's agent interferes. For installation details, explore [Containerd - Getting Started](https://github.com/containerd/containerd/blob/main/docs/getting-started.md). This host `containerd` uses its socket at `/run/containerd/containerd.sock` and is configured via `/etc/containerd/config.yaml`.
 
 Now you know why, I will try to clarify it into each sentences
 
-- RKE2 relies on the host's `containerd` for initial configuration but uses its own `containerd` instance to run services. This can lead to a conflict during configuration updates. Specifically, when you apply new `containerd` configurations, both `config.toml` and `config.toml.tmpl` are synchronized (as mentioned in the [Configuring containerd](https://docs.rke2.io/advanced#configuring-containerd) documentation). At this point, essential Kubernetes components like `kube-proxy`, the CNI (Container Network Interface), and Ingress are already running without issues. This suggests that two `containerd` processes are involved in managing the deployment.
+- **RKE2** uses the host's `containerd` for initial setup, but then runs its own `containerd` instance for services. This can cause **configuration conflicts** when updates occur. When new `containerd` configurations are applied, `config.toml` and `config.toml.tmpl` are synchronized. Essential Kubernetes components like `kube-proxy`, CNI, and Ingress are typically already running smoothly at this stage, indicating that **two `containerd` processes** are involved in managing the deployment.
+- **Reboot Issues**: Upon reboot, all RKE2 Kubernetes components must restart. However, RKE2's `containerd` then depends on `nvidia-container-runtime`, but the default application won't run with `nvidia-runtime`. This prevents `kube-proxy` and the CNI from starting (if my understanding is correct), which in turn stops the `GPU-Operator` from initializing. This absence of critical networking components causes the `GPU-Operator` (necessary for `nvidia-container-runtime` to function) to crash. (NOTE: You can read and see the config in [[Kubewekend Session Extra 2#GPU Machine with GPU Operator and HAMI 🌟|GPU Machine with GPU Operator and HAMI]] to see what different between of them)
 
-- Upon reboot, all RKE2 Kubernetes components (including `kube-proxy`, CNI, Ingress, etc.) need to restart. However, the RKE2 `containerd` now depends on `nvidia-container-runtime`. If `kube-proxy` and the CNI haven't started yet (correct me if I'm wrong), the `GPU-Operator` cannot initialize. This lack of essential networking components causes the `GPU-Operator`, which is required for the `nvidia-container-runtime` to function, to crash. (NOTE: Actually )
-
-Here why I pop up the idea to restore anything in set configuration. Let's me try to introduce a walkthrough
+Here why I pop up the idea to restore anything in set configuration. Let's me try to introduce the walkthrough
 
 You should stop the `rke2-agent` for maintaining, yes it will cause a downtime but if you have well off resources for maintaining, you should `drain` node before doing and prevent to cause anything downtime for your service. But like I told `rke2-agent` stop doesn't mean your service already run stop (But in my case, reboot machine and it cause downtime 😄)
 
@@ -769,9 +959,6 @@ nano config.toml
 ```toml title="containerd/config.toml"
 # File generated by rke2. DO NOT EDIT. Use config.toml.tmpl instead.
 
-########################
-# VERSION: CPU MACHINE #
-########################
 version = 2
 
 [plugins."io.containerd.internal.v1.opt"]
@@ -801,59 +988,13 @@ version = 2
   config_path = "/var/lib/rancher/rke2/agent/etc/containerd/certs.d"
 ```
 
-```toml title="containerd/config.toml"
-# File generated by rke2. DO NOT EDIT. Use config.toml.tmpl instead.
-
-########################
-# VERSION: GPU MACHINE #
-########################
-version = 2
-
-[plugins."io.containerd.internal.v1.opt"]
-  path = "/var/lib/rancher/rke2/agent/containerd"
-[plugins."io.containerd.grpc.v1.cri"]
-  stream_server_address = "127.0.0.1"
-  stream_server_port = "10010"
-  enable_selinux = false
-  enable_unprivileged_ports = true
-  enable_unprivileged_icmp = true
-  sandbox_image = "index.docker.io/rancher/mirrored-pause:3.6"
-
-[plugins."io.containerd.grpc.v1.cri".containerd]
-  snapshotter = "overlayfs"
-  disable_snapshot_annotations = true
-  
-
-
-
-[plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc]
-  runtime_type = "io.containerd.runc.v2"
-
-[plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc.options]
-  SystemdCgroup = true
-
-[plugins."io.containerd.grpc.v1.cri".registry]
-  config_path = "/var/lib/rancher/rke2/agent/etc/containerd/certs.d"
-
-
-
-
-
-
-[plugins."io.containerd.grpc.v1.cri".containerd.runtimes."nvidia"]
-  runtime_type = "io.containerd.runc.v2"
-[plugins."io.containerd.grpc.v1.cri".containerd.runtimes."nvidia".options]
-  BinaryName = "/usr/local/nvidia/toolkit/nvidia-container-runtime"
-  SystemdCgroup = true
-```
-
-Alright, you can start `rke2-agent` for let's it initialize import part of it, like `kube-proxy`, `cni`, ...
+Alright, you can start `rke2-agent` for let's it initialize import part of it, like `kube-proxy`, `cni`, `ingress`, ...
 
 ```bash
 sudo systemctl start rke2-agent
 ```
 
-Validate it after waiting a few sec, ensure you should see `kube-proxy`, `cni` actually run to make the next configuration
+Validate it after waiting few seconds to minute, ensure you should see `kube-proxy`, `cni` actually run to make the next configuration
 
 ```bash
 kubectl get pods -n kube-system
@@ -865,7 +1006,7 @@ Now, you can do same behavior when you create GPU node with modify `containerd`,
 nano config.toml.tmpl
 ```
 
-```bash title="containerd/config.toml.tmlp"
+```bash title="/var/lib/rancher/rke2/agent/etc/containerd/config.toml.tmlp"
 # File generated by rke2. DO NOT EDIT. Use config.toml.tmpl instead.
 version = 2
 
@@ -919,6 +1060,110 @@ sudo systemctl restart rke2-agent
 
 >[!note]
 >Your host will run like expectation, I give a try and that work in my case and your case if you meet this problem, RKE2 at version `1.27.11r1`. One upon again, the issue give my idea and I feel really appreciate and thankful for RKE2 Community
+
+### GPU Machine with GPU Operator and HAMI 🌟
+
+If you install **GPU Operator with HAMI** in your node, you can see what different between the `config.toml` before and after GPU Operator modifies it
+
+```toml title="/var/lib/rancher/rke2/agent/etc/containerd/config.toml" {36-40}
+# File generated by rke2. DO NOT EDIT. Use config.toml.tmpl instead.
+
+version = 2
+
+[plugins."io.containerd.internal.v1.opt"]
+  path = "/var/lib/rancher/rke2/agent/containerd"
+[plugins."io.containerd.grpc.v1.cri"]
+  stream_server_address = "127.0.0.1"
+  stream_server_port = "10010"
+  enable_selinux = false
+  enable_unprivileged_ports = true
+  enable_unprivileged_icmp = true
+  sandbox_image = "index.docker.io/rancher/mirrored-pause:3.6"
+
+[plugins."io.containerd.grpc.v1.cri".containerd]
+  snapshotter = "overlayfs"
+  disable_snapshot_annotations = true
+  
+
+
+
+[plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc]
+  runtime_type = "io.containerd.runc.v2"
+
+[plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc.options]
+  SystemdCgroup = true
+
+[plugins."io.containerd.grpc.v1.cri".registry]
+  config_path = "/var/lib/rancher/rke2/agent/etc/containerd/certs.d"
+
+
+
+
+
+
+[plugins."io.containerd.grpc.v1.cri".containerd.runtimes."nvidia"]
+  runtime_type = "io.containerd.runc.v2"
+[plugins."io.containerd.grpc.v1.cri".containerd.runtimes."nvidia".options]
+  BinaryName = "/usr/local/nvidia/toolkit/nvidia-container-runtime"
+  SystemdCgroup = true
+```
+
+It changes the run time for `containerd` to `nvidia` with `runc` and use own `nvidia-container-runtime` at PATH `/usr/local/nvidia/toolkit/nvidia-container-runtime`, therefore if you keep your configure that will work perfectly but their something wrong at here
+
+Because this own PATH of GPU Operator not expose in PATH, it means if `rke2` call the `nvidia-container-runtime`, it should be expose to PATH in your user who install `RKE2` if you use external GPU Scheduler like HAMI, and it cause error when your node reboots with conflict of `/etc/containerd/config.toml` and `/var/lib/rancher/rke2/agent/etc/containerd/config.toml` for both `containerd`.
+
+You can also double-check the `/etc/containerd/config.toml` is already modify by something to use `/usr/local/nvidia/toolkit` and I guess GPU Operator do this stuff
+
+```toml title="/etc/containerd/config.toml"
+version = 2
+
+[plugins]
+
+  [plugins."io.containerd.grpc.v1.cri"]
+
+    [plugins."io.containerd.grpc.v1.cri".containerd]
+      default_runtime_name = "nvidia"
+
+      [plugins."io.containerd.grpc.v1.cri".containerd.runtimes]
+
+        [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.nvidia]
+          privileged_without_host_devices = false
+          runtime_engine = ""
+          runtime_root = ""
+          runtime_type = "io.containerd.runc.v2"
+
+          [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.nvidia.options]
+            BinaryName = "/usr/local/nvidia/toolkit/nvidia-container-runtime"
+
+        [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.nvidia-cdi]
+          privileged_without_host_devices = false
+          runtime_engine = ""
+          runtime_root = ""
+          runtime_type = "io.containerd.runc.v2"
+
+          [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.nvidia-cdi.options]
+            BinaryName = "/usr/local/nvidia/toolkit/nvidia-container-runtime.cdi"
+
+        [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.nvidia-experimental]
+          privileged_without_host_devices = false
+          runtime_engine = ""
+          runtime_root = ""
+          runtime_type = "io.containerd.runc.v2"
+
+          [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.nvidia-experimental.options]
+            BinaryName = "/usr/local/nvidia/toolkit/nvidia-container-runtime.experimental"
+
+        [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.nvidia-legacy]
+          privileged_without_host_devices = false
+          runtime_engine = ""
+          runtime_root = ""
+          runtime_type = "io.containerd.runc.v2"
+
+          [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.nvidia-legacy.options]
+            BinaryName = "/usr/local/nvidia/toolkit/nvidia-container-runtime.legacy"
+```
+
+It make sense when it become conflict with runtime `nvidia` but default stuff of `RKE2` won't start with this `runtime`, so turn it back in default is best choice. Also, HAMI will use the `nvidia-container-runtime` and `nvidia-container-toolkit` in PATH, so if you want to prevent the error, export `/usr/local/nvidia/toolkit` to **global $PATH** is one of the important things. Read more at [[Awesome Linux Troubleshoot#Setup Global environment for multiple users|Setup Global environment for multiple users]] and [solution](https://github.com/NVIDIA/gpu-operator/issues/992#issuecomment-2796578769)
 # Conclusion
 ![[meme-byebye.png|center|400]]
 

@@ -619,6 +619,21 @@ Print tree with combine full path, include and exclude pattern
 tree -f -I "bin|unitTest" -P "*.[ch]|*.[ch]pp." your_dir/
 ```
 
+## `nc` command
+
+To check port open or not, you can use `nc` with some options to retrieve information. Explore more at:
+
+- [StackOverFlow - Testing UDP port connectivity](https://serverfault.com/questions/416205/testing-udp-port-connectivity)
+- [StackOverFlow - Test if remote TCP port is open from a shell script](https://stackoverflow.com/questions/4922943/test-if-remote-tcp-port-is-open-from-a-shell-script)
+
+```bash
+# Check port TCP open or not after 5s timeout
+nc -z -v -w5 <host> <port>
+# Check list port tcp from X to Y open or not after 5s timeout
+nc -z -v -w5 <host> <portX>-<portY>
+# Check port UDP or not
+nc -z -u -v <host> <port>
+```
 # External Commands
 
 ## Vagrant
@@ -663,4 +678,23 @@ To view and check information which store inside keystroke, which generate from 
 
 ```bash
 keytool -list -v -keystore /path/to/your/keystore-file.keystore -alias your-key-alias -storepass your-keystore-password -keypass your-key-password
+```
+
+## Rerun the previous command
+
+You can use previous command with `!!` on your shell, for example
+
+```bash
+# First if you use clear screen
+clear
+
+# You can call clear screen again with !!
+!!
+```
+
+Also you can reuse the previous command arguments, for example
+
+```bash
+$ command <args>
+$ 2nd command !$
 ```
