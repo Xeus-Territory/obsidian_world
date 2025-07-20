@@ -43,6 +43,12 @@ caddy validate --config /location/caddy/file
 >[!note]
 >With `Caddy V2`, mostly `websocket` automatically serve and do not need to configuration like `v1` . Check about that in [Caddy Proxy](https://caddyserver.com/docs/v2-upgrade#proxy)
 
+You can format the caddyfile to standard and quality version by command. Doc: [caddy fmt](https://caddyserver.com/docs/command-line#caddy-fmt)
+
+```bash
+caddy fmt --overwrite --config /location/caddy/file
+```
+
 # Caddy Configuration
 
 ## Default
