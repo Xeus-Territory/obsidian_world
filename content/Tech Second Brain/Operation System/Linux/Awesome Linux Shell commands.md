@@ -507,6 +507,29 @@ scp -p 2222 /path/file/local user@ip:/path/file/remote
 scp -r /path/folder/ user@ip:/path/file/remote
 ```
 
+## `ss` command
+
+If you familiar with `netstat` which usually not install from starting with almost Linux Distro, but instead of this one, you can try to use `ss` which integrate into default tool to debug networking
+
+To show listening port in your host, you can use
+
+```bash
+# command will show progress with port openning
+ss -tupl
+```
+
+When you want to add filter socket port number, you can use
+
+```bash
+# Use Port Number
+ss -at '( dport = :22 or sport = :22 )'
+
+# Use Service
+ss -at '( dport = :ssh or sport = :ssh )'
+```
+
+>[!info]
+>If you are not found `ss` command, you can read file `/etc/services` for alternative which show us port and service mapping
 ## `sed` command
 
 Documentation
