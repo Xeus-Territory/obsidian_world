@@ -120,7 +120,7 @@ tags:
 - [awesome-open-source-data-engineering](https://github.com/pracdata/awesome-open-source-data-engineering): A curated list of open source tools used in analytics platforms and data engineering ecosystem
 - [data-engineering-roadmap](https://github.com/data-burst/data-engineering-roadmap): A comprehensive roadmap tailored for data engineering professionals at all levels
 - [data-engineer-handbook](https://github.com/DataExpert-io/data-engineer-handbook): a repo with links to everything you'd ever want to learn about data engineering
-
+- [HelloDATA BE](https://kanton-bern.github.io/hellodata-be/): an **enterprise data platform** built on top of open-source tools based on the modern data stack
 ## Books
 
 - [Data Engineers Book Collections - Xeus Nguyen](https://drive.google.com/drive/folders/1PmIc4fibMzcLCVgTFKbr4bo8gwbgP38J?usp=sharing)

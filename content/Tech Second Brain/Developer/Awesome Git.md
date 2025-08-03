@@ -91,6 +91,13 @@ And you can take it with new message with flag `--message` or `-m` with commit a
 git commit --amend --message "Hello_world"
 ```
 
+## Skip `pre-commit` rule
+
+To skip commit rule, you can add option `--no-verify` or `-n` to bypass `pre-commit` hook
+
+```bash
+git commit --no-verify -m "Hello_world, now I bypass pre-commit"
+```
 # Tagging commit
 
 >[!info]
