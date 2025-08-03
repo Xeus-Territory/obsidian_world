@@ -38,6 +38,7 @@ tags:
 - [Medium - Configure Hashicorp's Vault for Kubernetes Auth](https://docs.armory.io/continuous-deployment/armory-admin/secrets/vault-k8s-configuration/)
 - [DAOCloud - ArgoCD High Availability Solution](https://github.com/DaoCloud/DaoCloud-docs/blob/main/docs/en/docs/amamba/quickstart/argo-cd-HA.md)
 - [DigitalOcean - How To Set Up an Elasticsearch, Fluentd and Kibana (EFK) Logging Stack on Kubernetes](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-elasticsearch-fluentd-and-kibana-efk-logging-stack-on-kubernetes) 🌟 **(Recommended)**
+- [Medium - Self Managed Argo CD — App Of Everything](https://medium.com/devopsturkiye/self-managed-argo-cd-app-of-everything-a226eb100cf0) 🌟 **(Recommended)**
 ### eBPF
 
 - [Medium - eBPF Maps State Synchronization across Multi-Node Kubernetes Cluster](https://medium.com/gitconnected/ebpf-maps-state-synchronization-across-multi-node-kubernetes-cluster-d0c075810fa7)
@@ -116,6 +117,7 @@ tags:
 - [Internet - Pain(less?) NGINX Ingress](https://danielfm.me/post/painless-nginx-ingress/) 🌟 **(Recommended)**
 - [Medium - Why Some Companies are Moving Away from Kubernetes for Development Environments in 2025](https://medium.com/@PlanB./why-some-companies-are-moving-away-from-kubernetes-for-development-environments-in-2025-1f44b4fd4f3f)
 - [Medium - My Top 50 Kubernetes Notes for DevOps Engineers — Detailed Q&A](https://medium.com/@thecloudarchitect/my-top-50-kubernetes-notes-for-devops-engineers-detailed-q-a-9d9c375c0076)
+- [Sysbee - Testing Kubernetes deployments with KIND](https://www.sysbee.net/blog/kind-testing-kubernetes-deployments/) 🌟 **(Recommended)**
 ### Tips for Configuration
 
 - [Medium - 11 Kubernetes Deployment Configs You Should Know in 2024](https://medium.com/overcast-blog/11-kubernetes-deployment-configs-you-should-know-in-2024-1126740926f0)
@@ -164,11 +166,15 @@ tags:
 - [Kubernetes Schedule Plugins](https://scheduler-plugins.sigs.k8s.io/): Repository for out-of-tree scheduler plugins based on the [scheduler framework](https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/) 🌟 **(Recommended)**
 - [KubeSec Diagram](https://kubesec-diagram.github.io/): a diagram made to better understand and get an overview of kubernetes security 🌟 **(Recommended)**
 - [Kubetools](https://collabnix.github.io/kubetools/): A Curated List of Kubernetes Tools 🌟 **(Recommended)**
+- [kubernetes-homelab](https://github.com/lisenet/kubernetes-homelab): Building a multi-master multi-node Kubernetes homelab with kubeadm, Ansible, Helm and Terraform
+- [kubelabs](https://github.com/collabnix/kubelabs): Get Started with Kubernetes 🌟 **(Recommended)**
 ## Blogs
 
 - [Kubernetes - Blog](https://kubernetes.io/blog/) 🌟 **(Recommended)**
 - [Nubenetes](https://nubenetes.com/) : Awesome Kubernetes & Cloud 🌟 **(Recommended)**
 - [Matthew Mattox Personal Tech Blog](https://support.tools/): Really Cool guys write about Kubernetes, especially RKE2 with deeply debug and configuration 🌟 **(Recommended)**
+- [Medium - Artem Lajko](https://medium.com/@artem_lajko): Write about GitOps, Kubernetes and stuff around this architecture 🌟 **(Recommended)**
+- [Medium - HungWei Chiu](https://medium.com/@hwchiu): Guy with super dope contents around system and kubernetes 🌟 **(Recommended)**
 ## Certificate & Practice
 
 - [certified-kubernetes-administrator-course](https://github.com/kodekloudhub/certified-kubernetes-administrator-course) : Kodecloud Certified Kubernetes Administrator - CKA Course
@@ -188,6 +194,7 @@ tags:
 - [OperatorHub](https://operatorhub.io/):  Home for the Kubernetes community to share Operators 🌟 **(Recommended)**
 - [Poly Helm Chart](https://github.com/haonguyen1915/helm-charts): Self-define Helm chart for AI purpose application
 - [Rancher Helm Chart](https://github.com/rancher/partner-charts/tree/main-source): A catalog based on applications from independent software vendors (ISVs). Most of them are SUSE Partners
+- [Stakater Application Helm Chart](https://github.com/stakater/application): Generic helm chart for all kind of applications by [Stakater](https://github.com/stakater) 🌟 **(Recommended)**
 - [Strimzi](https://strimzi.io/docs/operators/latest/overview): Strimzi simplifies the process of running [Apache Kafka](https://kafka.apache.org/) within a Kubernetes cluster
 ## Organizations
 
@@ -300,6 +307,11 @@ tags:
 - [Talos Linux](https://www.talos.dev/) : The Kubernetes Operating System
 	- [cluster-template](https://github.com/onedr0p/cluster-template): A template for deploying a Talos Kubernetes cluster including Flux for GitOps
 - [kubevirt](https://kubevirt.io/): Provides a unified development platform where developers can build, modify, and deploy applications residing in both Application Containers as well as Virtual Machines in a common, shared environment.
+
+## Kubernetes in Kubernetes
+
+- [vCluster](https://github.com/loft-sh/vcluster): Create fully functional virtual Kubernetes clusters - Each vcluster runs inside a namespace of the underlying k8s cluster
+- [k3k](https://github.com/rancher/k3k): Kubernetes in Kubernetes by Rancher
 ## Monitoring
 
 - [kube-state-metrics](https://github.com/kubernetes/kube-state-metrics): Add-on agent to generate and expose cluster-level metrics 🌟 **(Recommended)**

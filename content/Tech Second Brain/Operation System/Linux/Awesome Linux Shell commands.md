@@ -667,7 +667,7 @@ If you have problems when `vagrant` can't authentication for `ssh`. You will nee
 config.ssh.forward_agent = true
 ```
 
-## Pip3 (Python)
+## Pip3 & Python3
 
 ![[icon-python-pypi.svg|center|300]]
 
@@ -692,6 +692,30 @@ In some situations, your environment have higher version CUDA or driver of NVIDI
 ```bash
 pip install -U torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
 ```
+
+### Create virtual environment with `venv`
+
+With `Python3` from **version 3.12**, it require `venv` or use `--break-system-packages` for global environment. But in some situation, you need find out to `conda` or `venv` to make your environment become more convenience to install external package
+
+To setup `venv`, Read more in official documentation [venv — Creation of virtual environments](https://docs.python.org/3/library/venv.html)
+
+First of all, create new environment with command
+
+```bash
+python3 -m venv /path/to/new/venv
+```
+
+Active the environment
+
+```bash
+source /path/to/new/venv/bin/active
+```
+
+When you finish and want to comeback to global environment, in the `venv` shell, you can use command
+
+```bash
+deactivate
+```
 ## Keytool (Java)
 
 Explore more about `keytool` through [Common Java Keytool Commands](https://knowledge.digicert.com/de/de/quovadis/ssl-certificates/ssl-general-topics/common-java-keytool-commands)
@@ -703,6 +727,20 @@ To view and check information which store inside keystroke, which generate from 
 keytool -list -v -keystore /path/to/your/keystore-file.keystore -alias your-key-alias -storepass your-keystore-password -keypass your-key-password
 ```
 
+## OpenVPN
+
+### Generate Client CA
+
+To generate a completely Client CA for connecting to OpenVPN Server, you can use command
+
+```bash
+# Instruction
+./etc/openvpn/server/easy-rsa/easyrsa build-client-full <file_name_base> [ cmd-opts ]
+
+# Example
+./etc/openvpn/server/easy-rsa/easyrsa build-client-full xeusnguyen nopass
+```
+# Trick commands
 ## Rerun the previous command
 
 You can use previous command with `!!` on your shell, for example

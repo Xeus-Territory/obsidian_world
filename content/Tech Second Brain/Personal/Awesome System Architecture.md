@@ -25,12 +25,10 @@ tags:
 - [Medium - ByteByteGo System Design Alliance](https://medium.com/bytebytego-system-design-alliance): Explain complex systems with simple term.
 - [Medium - Chunting Wu](https://lazypro.medium.com/): Tech blogger cover about topics relate system design, be and data engineer
 - [Medium - Cloud Architect Review](https://medium.com/cloud-architect-review): Reviewing the best recent Cloud-engineering articles, videos, podcasts, software, and services
-- [Medium - HungWei Chiu](https://medium.com/@hwchiu): Guy with super dope contents around system and kubernetes 🌟 **(Recommended)**
 - [Milan Newsletter](https://newsletter.techworld-with-milan.com/): Guy will teach you more about infrastructure, architecture, ...
 - [Noted](https://noted.lol/): Self Hosted App and Product Reviews
 - [Platform Engineer Blog](https://platformengineering.org/blog): The discipline of designing and building toolchains and workflows that enable self-service capabilities for software engineering organizations in the cloud-native era.
 - [Medium - ScalaBrix](https://scalabrix.medium.com/): System Design & Architecture | Distributed Systems | Tech Blog with clearly explanation and beauty diagram 🌟 **(Recommended)**
-- [Medium - Artem Lajko](https://medium.com/@artem_lajko): Write about GitOps, Kubernetes and stuff around this architecture 🌟 **(Recommended)**
 ## Developer
 
 - [Medium - Most Common Software Architecture Styles](https://medium.com/@techworldwithmilan/most-common-software-architecture-styles-86881d779683)
