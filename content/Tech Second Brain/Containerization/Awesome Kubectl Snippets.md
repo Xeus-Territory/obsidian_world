@@ -18,6 +18,19 @@ You can explore command with `kubectl` in some place, including
 - [kubectl Quick Reference](https://kubernetes.io/docs/reference/kubectl/quick-reference/)
 - [kubectl reference](https://kubernetes.io/docs/reference/kubectl/generated/)
 
+A couple of aliases for `kubectl` profile
+
+```bash
+export KUBE_EDITOR="nano" # Kube edit will use nano for default editor
+alias k="kubectl"
+alias kgp="kubectl get pods"
+alias kn="kubectl config set-context --current --namespace"
+alias kaf="kubectl apply -f "
+alias kr="kubectl run --dry-run=client -o yaml "
+alias krcp="k resource-capacity -p --util"
+alias krca="k resource-capacity -a"
+```
+
 # Combination
 ## Force terminate the stuck namespace
 

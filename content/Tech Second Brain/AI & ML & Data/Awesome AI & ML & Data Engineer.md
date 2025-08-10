@@ -110,16 +110,17 @@ tags:
 - [Medium - 5 Steps to Build Efficient Data Pipelines with Apache Airflow](https://towardsdatascience.com/5-steps-to-build-efficient-data-pipelines-with-apache-airflow-d0b42576b530/)
 - [Blog - A Primer on Data Warehouses](https://www.generativevalue.com/p/a-primer-on-data-warehouses) 🌟 **(Recommended)**
 - [Blog - Data Industry Primer](https://www.generativevalue.com/p/data-industry-primer) 🌟 **(Recommended)**
- 
+- [Onehouse - Comprehensive Data Catalog Comparison](https://www.onehouse.ai/blog/comprehensive-data-catalog-comparison) 🌟 **(Recommended)**
 ## Awesome Repositories
 
 - [awesome-apache-airflow](https://github.com/jghoman/awesome-apache-airflow): Curated list of resources about Apache Airflow
-- [awesome-bigdata](https://github.com/oxnr/awesome-bigdata): A curated list of awesome big data frameworks, ressources and other awesomeness.
+- [awesome-bigdata](https://github.com/oxnr/awesome-bigdata): A curated list of awesome big data frameworks, resources and other awesomeness.
+- [awesome-data-engineering](https://github.com/igorbarinov/awesome-data-engineering): A curated list of data engineering tools for software developers
 - [awesome-datascience](https://github.com/academic/awesome-datascience): 📝 An awesome Data Science repository to learn and apply for real world problems.
 - [awesome-etl](https://github.com/pawl/awesome-etl): A curated list of awesome ETL frameworks, libraries, and software.
 - [awesome-open-source-data-engineering](https://github.com/pracdata/awesome-open-source-data-engineering): A curated list of open source tools used in analytics platforms and data engineering ecosystem
-- [data-engineering-roadmap](https://github.com/data-burst/data-engineering-roadmap): A comprehensive roadmap tailored for data engineering professionals at all levels
 - [data-engineer-handbook](https://github.com/DataExpert-io/data-engineer-handbook): a repo with links to everything you'd ever want to learn about data engineering
+- [data-engineering-roadmap](https://github.com/data-burst/data-engineering-roadmap): A comprehensive roadmap tailored for data engineering professionals at all levels
 - [HelloDATA BE](https://kanton-bern.github.io/hellodata-be/): an **enterprise data platform** built on top of open-source tools based on the modern data stack
 ## Books
 
@@ -133,6 +134,7 @@ tags:
 - [Practical Data Engineering](https://www.pracdata.io/) 🌟 **(Recommended)**
 - [Medium - Kai Waehner](https://kai-waehner.medium.com/): echnology Evangelist — [www.kai-waehner.de](http://www.kai-waehner.de/) → Big Data Analytics, Data Streaming, Apache Kafka, Middleware, Microservices
 - [r/dataengineering](https://www.reddit.com/r/dataengineering/)
+- [Medium - Alex Merced](https://medium.alexmerced.blog/): A Tech Blogger for involving the great article with datalake, especially with Iceberg and techstack attachment
 ## Organization
 
 - [Big Data Europe](https://github.com/big-data-europe): Integrating Big Data, software & communicaties for addressing Europe's societal challenge

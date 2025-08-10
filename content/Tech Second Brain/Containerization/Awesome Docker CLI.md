@@ -280,7 +280,7 @@ It will ask you prompt yes or no, if you want to bypass this, add `-f` flag for 
 
 In some situations, you must to use `privilege` for running some container require that one, such as `docker:dind`, `kind` and more
 
-If you run in root mode, you meet this stuck, and that tough
+If you don't run in root mode, you meet this stuck, and that tough
 
 ```bash
 Certificate request self-signature ok

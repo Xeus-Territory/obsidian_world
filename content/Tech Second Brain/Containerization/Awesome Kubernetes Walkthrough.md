@@ -11,12 +11,15 @@ tags:
 
 To find more information and example, you can double-check a some manifest collection at
 
-- [Kubernetes Examples](https://k8s-examples.container-solutions.com/): About whole manifest of any types in Kubernetes
+- [Kubernetes Examples](https://k8s-examples.container-solutions.com/): About whole manifest of any types in Kubernetes 🌟 **(Recommended)**
+- [Kubernetes Lab of Collabnix](https://collabnix.github.io/kubelabs/):  Ultimate Hands-on Labs and Tutorials 🌟 **(Recommended)**
 - [Kubernetes Manifests](https://github.com/maximemoreillon/kubernetes-manifests): A collection of K8s manifests to deploy common applications
 - [K8s Deployment Strategies](https://github.com/ContainerSolutions/k8s-deployment-strategies): About setup deployment strategies of Kubernetes 
 - [Medium - 24 Kubernetes Masters’ Configurations](https://overcast.blog/24-kubernetes-mastersconfigurations-29235c65b337)
 - [Medium - Zero-Downtime Deployments with Kubernetes](https://blog.devgenius.io/zero-downtime-deployments-with-kubernetes-a2d3200d207f)
-# Can use volume with cronjobs?
+
+# Kubernetes Q/A Collection 
+## Can use volume with cronjobs?
 
 >[!purpose]
 >This note will content the thing which finding on working progress with K8s. Just take note and link for resolving the problem. Find out detail if it has unique directory
@@ -49,7 +52,7 @@ spec:
               claimName: application-code-pv-claim
 ```
 
-# Do Kubernetes Pods Really Get Evicted Due to CPU Pressure?
+## Do Kubernetes Pods Really Get Evicted Due to CPU Pressure?
 
 Reference article: [Do Kubernetes Pods Really Get Evicted Due to CPU Pressure?](https://medium.com/overcast-blog/do-pods-really-get-evicted-due-to-cpu-pressure-2b27274a670c)
 
@@ -57,193 +60,38 @@ Pods are **not directly evicted due to high CPU pressure or usage alone**. Inste
 
 While high CPU usage by a pod can indirectly contribute to resource pressure and potentially lead to eviction due to memory or other resource shortages, CPU throttling is the primary mechanism used to manage CPU-intensive workloads
 
-# Restart `Statefulset` workload
+# Hand-on `kubectl` with Kubernetes
 
-For documentations
+## Configuration the Private Registry
 
-- [Delete a StatefulSet](https://kubernetes.io/docs/tasks/run-application/delete-stateful-set/)
-- [Force Delete StatefulSet Pods](https://kubernetes.io/docs/tasks/run-application/force-delete-stateful-set-pod/)
+This configuration is pretty simple but truly important for Kubernetes to pull image from private registry - One of best practice in enterprise Kubernetes Platform or container platform. Explore more at [Pull an Image from a Private Registry](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/)
 
-**Notice**
+With `kubectl` you will have two opts to create the **registry-cred**, including
 
-1. Do not removing `statefulset` workload, it will scale down to 0 and not bring up anymore. Instead of just removing pods, It will help the pods restart base on `statefulset` strategy
-2. Rollout `statefulset` is not work when status of `statefulset` is `completed`
-3. Deleting pods in `statefulset` will not remove **associated volume**
-
->[!note]
-> Deleting the PVC after the pods have terminated might trigger deletion of the backing Persistent Volumes depending on the storage class and reclaim policy. You should never assume ability to access a volume after claim deletion.
-> 
-> Note: Use caution when deleting a PVC, as it may lead to data loss.
-
- 4. Complete deletion of a `StatefulSet`
- 
-To delete everything in a `StatefulSet`, including the associated pods, you can run a series of commands similar to the following*
- 
-```bash
-grace=$(kubectl get pods <stateful-set-pod> --template '{{.spec.terminationGracePeriodSeconds}}')
-kubectl delete statefulset -l app.kubernetes.io/name=MyApp
-sleep $grace
-kubectl delete pvc -l app.kubernetes.io/name=MyApp
-```
-
-# Create troubleshoot pods
-
-You can create `stateless` pods with no deployments for purpose
-
-- Check and validate the networking in node, cluster like DNS resolve, health check
-- Restore and Backup DB
-- Debug or access service internal
-
-For doing that, you need to use `kubectl`
-
-1. Use `kubectl` for create manifest of pod
+First of all, you can create from exist file
 
 ```bash
-k run <name-pod> --image=debian:11.7 --dry-run=client -o yaml > pods.yaml
+# You can create the docker-cred, usually at $HOME/.docker/config.json
+# Use command: docker login, now you can cred secret by that file
+kubectl create secret generic <secret-name> \
+    --from-file=.dockerconfigjson=<path/to/.docker/config.json> \
+    --type=kubernetes.io/dockerconfigjson
 
-apiVersion: v1
-kind: Pod
-metadata:
-  creationTimestamp: null
-  labels:
-    run: <name-pod>
-  name: <name-pod>
-spec:
-  containers:
-  - image: debian:11.7
-    name: <name-pod>
-    resources: {}
-  dnsPolicy: ClusterFirst
-  restartPolicy: Always
-status: {}
+# Or use
+kubectl create secret docker-registry <secret-name> \
+	--from-file=.dockerconfigjson=path/to/.docker/config.json
 ```
 
-2. Customize your pods, for keep alive, you should set command of pod to `tail -f /dev/null`
-
-```yaml {13-16}
-apiVersion: v1
-kind: Pod
-metadata:
-  creationTimestamp: null
-  labels:
-    run: <name-pod>
-  name: <name-pod>
-spec:
-  containers:
-  - image: debian:11.7
-    name: <name-pod>
-    resources: {}
-    # Another command: sleep 3600
-	command:
-	  - tail
-	  - -f
-	  - /dev/null
-  dnsPolicy: ClusterFirst
-  restartPolicy: Always
-status: {}
-```
-
-3. Run `apply` command with manifest
+Second, you can use the authorization by own `kubectl`
 
 ```bash
-k apply -f pods.yaml
+kubectl create secret docker-registry <secret-name> \
+	--docker-server=DOCKER_REGISTRY_SERVER \
+	--docker-username=DOCKER_USER \
+	--docker-password=DOCKER_PASSWORD \
+	--docker-email=DOCKER_EMAIL
 ```
-
-4. Wait few second, exec to the pods with command
-
-```bash
-k exec --tty --stdin pods/xxxx -- /bin/bash
-```
-
-5. Once you’ve finished testing, you can press Ctrl+D to escape the terminal session in the Pod. Pod will continue running afterwards. You can keep try with command step 4 or delete.
-
-```bash
-kubectl delete pod xxxx
-```
-
-NOTE: Usually, `curlimages/curl` is regular used. Try to create new pod with fast as possible
-
-```bash
-kubectl run mycurlpod --image=curlimages/curl -i --tty -- sh
-```
-
-# Stop or run the Cronjob with `patch`
-
-You can see, `cronjob` is scheduled workload of `Kubernetes` which trigger on set-time for executing specify job. But sometimes, on during work time, your test job shouldn't work, therefore you will concert about **suspend** state of jobs. You can update state with command
-
-```bash
-k patch -n <namespace> cronjobs.batch <cronjobs-name> -p '{"spec": {"suspend": true}}'
-```
-
-Enable again by change `true` --> `false`
-
-```bash
-k patch -n <namespace> cronjobs.batch <cronjobs-name> -p '{"spec": {"suspend": false}}'
-```
-
-Furthermore, you can use `patch` for multiple purpose
-
-- Update a container's image
-- Partially update a node
-- Disable a deployment livenessProbe using json patch
-- Update a deployment's replica count
-
-# Updating resources
-
-You can handle graceful restart, rollback version with `roolout` command
-
-```bash
-# Graceful restart deployments, statefulset and deamonset
-k rollout restart -n <namespace> <type-workload>/<name>
-
-# Rollback version
-kubectl rollout undo <type-workload>/<name>
-kubectl rollout undo <type-workload>/<name> --to-revision=2
-
-# Check the rollout status
-kubectl rollout status -w <type-workload>/<name>
-```
-
-Kubernetes has some values with help to distinguish service with each others, specify identifying attributes of objects, attach arbitrary non-identifying metadata to objects, ...
-
-- Label
-- Annotations
-
-And you can update that with `kubectl` via `label` and `anotation` command
-
-```bash
-# Add a Label
-kubectl label pods my-pod new-label=awesome
-# Remove a label
-kubectl label pods my-pod new-label-  
-# Overwrite an existing value
-kubectl label pods my-pod new-label=new-value --overwrite  
-# Add an annotation
-kubectl annotate pods my-pod icon-url=http://goo.gl/XXBTWq     
-# Remove annotation
-kubectl annotate pods my-pod icon-url-                          
-```
-
-Next, you can update autoscale for deployment by command `autoscale`
-
-```bash
-kubectl autoscale deployment foo --min=2 --max=10
-```
-
-# Edit YAML manifest
-
-`kubectl` can help you directly change manifest on your shell. If you `Linux` or `macos` user, you can use `nano` or `vim` to use feature
-
-```bash
-# Edit the service named docker-registry
-kubectl edit svc/docker-registry                      
-# Use an alternative editor
-KUBE_EDITOR="nano" kubectl edit svc/docker-registry   
-```
-
-When you hit to complete button, your workload or resource will change immediately
-
-# Delete resources
+## Delete resources
 
 Use the `delete` command for executing
 
@@ -257,7 +105,20 @@ kubectl delete pods <pod> --grace-period=0
 kubectl delete pod,service baz foo 
 ```
 
-# Health check and interact with cluster, node and workload
+## Edit YAML manifest
+
+`kubectl` can help you directly change manifest on your shell. If you `Linux` or `macos` user, you can use `nano` or `vim` to use feature
+
+```bash
+# Edit the service named docker-registry
+kubectl edit svc/docker-registry                      
+# Use an alternative editor
+KUBE_EDITOR="nano" kubectl edit svc/docker-registry   
+```
+
+When you hit to complete button, your workload or resource will change immediately
+
+## Health check and interact with cluster, node and workload
 
 Use the `events` command for detect what happen occur on `cluster node`
 
@@ -322,9 +183,149 @@ kubectl uncordon my-node
 >[!tips]
 >For explore more, you can do lots of things with `kubectl`. To read and understand command, you should use **manual** with `--help` flag
 
+## Install CRD
+
+When you want to install extension API for `Kubernetes`, in usual `Kubernetes` provides us the standard called [CRD (Custom Resources Definitions)](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/). But in some situations, you apply the `CRD` get over the most bytes able for created and cause the error
+
+```bash
+k apply -f rayjobs-crd.yaml 
+The CustomResourceDefinition "rayjobs.ray.io" is invalid: metadata.annotations: Too long: must have at most 262144 bytes
+```
+
+You can bypass it via applying in **server-side**
+
+```bash
+k apply -f rayjobs-crd.yaml --server-side
+```
+## Maintain Node in Kubernetes
+
+Following this article [Linkedin - Node Maintenance Commands In Kubernetes](https://www.linkedin.com/pulse/node-maintenance-commands-kubernetes-christopher-adamson-qkbsc/), we can catch up with how to maintain once of node inside your Kubernetes cluster
+
+You will use two command to execute this workflow
+
+- **kubectl drain**: Command safely evicts all the pods from a node before you perform any maintenance operation on it
+- **kubectl cordon**: Command marks a node as unschedulable, which means that no new pods will be scheduled on that node
+
+A workflow would be
+
+1. Run **kubectl cordon node-name** to mark the node as unschedulable.
+2. Run **kubectl drain node-name** to evict all the pods from the node.
+3. Perform your maintenance tasks on the node.
+4. Run **kubectl uncordon node-name** to mark the node as schedulable again.
+
+The ultimate drain command should use like this
+
+```bash
+kubectl drain nodes <node-name> --ignore-daemonset --delete-emptydir-data --force --grace-period=-1
+```
+
+In advantage, you can do some sort of configuration for best practice
+
+- Configure a disruption budget. Explore at [PodDisruptionBudget](https://kubernetes.io/docs/concepts/workloads/pods/disruptions/) and how to  [configure a PodDisruptionBudgets](https://kubernetes.io/docs/tasks/run-application/configure-pdb/)
+- You also use API provider to eviction your workload. Explore at [API-initiated eviction](https://kubernetes.io/docs/concepts/scheduling-eviction/api-eviction/).
+- Learn and do practice in case you want to update your node. Explore at [Upgrading kubeadm clusters](https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/)
+- In fun way, you can use operator inside Kubernetes cluster via API System used CRD. Explore at [node-maintenance-operator](https://github.com/medik8s/node-maintenance-operator)
+
+## Restart `Statefulset` workload
+
+For documentations
+
+- [Delete a StatefulSet](https://kubernetes.io/docs/tasks/run-application/delete-stateful-set/)
+- [Force Delete StatefulSet Pods](https://kubernetes.io/docs/tasks/run-application/force-delete-stateful-set-pod/)
+
+**Notice**
+
+1. Do not removing `statefulset` workload, it will scale down to 0 and not bring up anymore. Instead of just removing pods, It will help the pods restart base on `statefulset` strategy
+2. Rollout `statefulset` is not work when status of `statefulset` is `completed`
+3. Deleting pods in `statefulset` will not remove **associated volume**
+
+>[!note]
+> Deleting the PVC after the pods have terminated might trigger deletion of the backing Persistent Volumes depending on the storage class and reclaim policy. You should never assume ability to access a volume after claim deletion.
+> 
+> Note: Use caution when deleting a PVC, as it may lead to data loss.
+
+ 4. Complete deletion of a `StatefulSet`
+ 
+To delete everything in a `StatefulSet`, including the associated pods, you can run a series of commands similar to the following*
+ 
+```bash
+grace=$(kubectl get pods <stateful-set-pod> --template '{{.spec.terminationGracePeriodSeconds}}')
+kubectl delete statefulset -l app.kubernetes.io/name=MyApp
+sleep $grace
+kubectl delete pvc -l app.kubernetes.io/name=MyApp
+```
+
+## Stop or run the Cronjob with `patch`
+
+You can see, `cronjob` is scheduled workload of `Kubernetes` which trigger on set-time for executing specify job. But sometimes, on during work time, your test job shouldn't work, therefore you will concert about **suspend** state of jobs. You can update state with command
+
+```bash
+k patch -n <namespace> cronjobs.batch <cronjobs-name> -p '{"spec": {"suspend": true}}'
+```
+
+Enable again by change `true` --> `false`
+
+```bash
+k patch -n <namespace> cronjobs.batch <cronjobs-name> -p '{"spec": {"suspend": false}}'
+```
+
+Furthermore, you can use `patch` for multiple purpose
+
+- Update a container's image
+- Partially update a node
+- Disable a deployment `livenessProbe` using json patch
+- Update a deployment's replica count
+
+## Updating resources
+
+You can handle graceful restart, rollback version with `roolout` command
+
+```bash
+# Graceful restart deployments, statefulset and deamonset
+k rollout restart -n <namespace> <type-workload>/<name>
+
+# Rollback version
+kubectl rollout undo <type-workload>/<name>
+kubectl rollout undo <type-workload>/<name> --to-revision=2
+
+# Check the rollout status
+kubectl rollout status -w <type-workload>/<name>
+```
+
+Kubernetes has some values with help to distinguish service with each others, specify identifying attributes of objects, attach arbitrary non-identifying metadata to objects, ...
+
+- Label
+- Annotations
+
+And you can update that with `kubectl` via `label` and `anotation` command
+
+```bash
+# Add a Label
+kubectl label pods my-pod new-label=awesome
+# Remove a label
+kubectl label pods my-pod new-label-  
+# Overwrite an existing value
+kubectl label pods my-pod new-label=new-value --overwrite  
+# Add an annotation
+kubectl annotate pods my-pod icon-url=http://goo.gl/XXBTWq     
+# Remove annotation
+kubectl annotate pods my-pod icon-url-                          
+```
+
+Next, you can update autoscale for deployment by command `autoscale`
+
+```bash
+kubectl autoscale deployment foo --min=2 --max=10
+```
+
 # Setup `metrics-server`
 
-Metrics server will part if you self-hosted your `kubernetes`, It means you need learn how setup `metrics-server` , and this quite very easily. Read more about `metrics-server` at **[GitHub](https://github.com/kubernetes-sigs/metrics-server)**
+Metrics server will part if you self-hosted your `kubernetes`, It means you need learn how setup `metrics-server` , and this quite very easily. Read more about `metrics-server` at 
+
+- [GitHub - metrics-server](https://github.com/kubernetes-sigs/metrics-server)
+- [Kubernetes' Native Metrics and States](https://dev.to/otomato_io/kubernetes-native-metrics-and-states-2p68)
+
+## Installation
 
 Via `kubectl` you can applied manifest
 
@@ -342,6 +343,8 @@ helm repo add metrics-server https://kubernetes-sigs.github.io/metrics-server/
 helm upgrade --install metrics-server metrics-server/metrics-server
 ```
 
+## Troubleshoot
+
 >[!warning]
 >Your `metrics-server` will stuck, because it meet problem to not authentication `tls` inside them with `kube-apiserver`
 
@@ -350,7 +353,7 @@ But don't worry about it,  you can bypass this via some trick. Read more about s
 - [metrics-service in kubernetes not working](https://stackoverflow.com/questions/68648198/metrics-service-in-kubernetes-not-working)
 - [metrics-server unable to authenticate to apiserver](https://github.com/kubernetes-sigs/metrics-server/issues/278)
 
-So solution about using `edit` command of `kubectl` to edit manifest of deployments `kube-server`, you can do like this
+Therefore, the solution will use `edit` command of `kubectl` to edit manifest of deployments `kube-server`, you can do like this
 
 ```bash
 # First of all, you can configure your editor to nano (Optional), you can't do this step if you prefer vim
@@ -360,7 +363,7 @@ export KUBE_EDITOR="nano"
 kubectl edit deployments -n kube-system metrics-server
 ```
 
-Now scroll to `args` of container `metrics-server`, you can change them into
+Next, you need scroll to `args` of container `metrics-server`, you can change them into
 
 ```bash
       - args:
@@ -372,11 +375,21 @@ Now scroll to `args` of container `metrics-server`, you can change them into
         - --kubelet-insecure-tls=true # This will help you bypass authentication
 ```
 
-And now your `metrics-server` will restart and running after 30s
+At the end, your `metrics-server` will restart and running after 30s
 
 ![[Pasted image 20240718112540.png]]
 
-Learn more about `kubernetes` metrics, read the article [Kubernetes' Native Metrics and States](https://dev.to/otomato_io/kubernetes-native-metrics-and-states-2p68)
+However, if you use `helm` to deploy your `metric-server`, you can easier patch it with add more `--set` option.
+
+>[!note]
+>Because `args` is a list, so you need add the `--set` with **Curly Braces `{}`**, this syntax tells Helm that the value is a list (array)
+
+```bash {2}
+helm install metrics-server metrics-server/metrics-server \
+	--set "args={--kubelet-insecure-tls=true}" \
+	--wait
+```
+
 # Configure Liveness, Readiness and Startup Probes
 
 Kubernetes implement multiple probles type for health check your applications. See more at [Liveness, Readiness and Startup Probes](https://kubernetes.io/docs/concepts/configuration/liveness-readiness-startup-probes)
@@ -655,35 +668,6 @@ YAML
   depends_on = [kubectl_manifest.elasticsearch_register_snapshot]
 }
 ```
-
-# Maintain Node in Kubernetes
-
-Following this article [Linkedin - Node Maintenance Commands In Kubernetes](https://www.linkedin.com/pulse/node-maintenance-commands-kubernetes-christopher-adamson-qkbsc/), we can catch up with how to maintain once of node inside your Kubernetes cluster
-
-You will use two command to execute this workflow
-
-- **kubectl drain**: Command safely evicts all the pods from a node before you perform any maintenance operation on it
-- **kubectl cordon**: Command marks a node as unschedulable, which means that no new pods will be scheduled on that node
-
-A workflow would be
-
-1. Run **kubectl cordon node-name** to mark the node as unschedulable.
-2. Run **kubectl drain node-name** to evict all the pods from the node.
-3. Perform your maintenance tasks on the node.
-4. Run **kubectl uncordon node-name** to mark the node as schedulable again.
-
-The ultimate drain command should use like this
-
-```bash
-kubectl drain nodes <node-name> --ignore-daemonset --delete-emptydir-data --force --grace-period=-1
-```
-
-In advantage, you can do some sort of configuration for best practice
-
-- Configure a disruption budget. Explore at [PodDisruptionBudget](https://kubernetes.io/docs/concepts/workloads/pods/disruptions/) and how to  [configure a PodDisruptionBudgets](https://kubernetes.io/docs/tasks/run-application/configure-pdb/)
-- You also use API provider to eviction your workload. Explore at [API-initiated eviction](https://kubernetes.io/docs/concepts/scheduling-eviction/api-eviction/).
-- Learn and do practice in case you want to update your node. Explore at [Upgrading kubeadm clusters](https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/)
-- In fun way, you can use operator inside Kubernetes cluster via API System used CRD. Explore at [node-maintenance-operator](https://github.com/medik8s/node-maintenance-operator)
 
 # Assign Pods to Nodes
 
@@ -1094,7 +1078,93 @@ Turn back again and you will see your node will be added successfully, if need y
 kubectl rollout restart deployment/longhorn-driver-deployer
 ```
 
-# Debug network with Pods
+# Debug Kubernetes with Pods
+
+## Playground with troubleshoot pods
+
+You can create `stateless` pods with no deployments for purpose
+
+- Check and validate the networking in node, cluster like DNS resolve, health check
+- Restore and Backup DB
+- Debug or access service internal
+
+For doing that, you need to use `kubectl`
+
+1. Use `kubectl` for create manifest of pod
+
+```bash
+k run <name-pod> --image=debian:11.7 --dry-run=client -o yaml > pods.yaml
+
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: <name-pod>
+  name: <name-pod>
+spec:
+  containers:
+  - image: debian:11.7
+    name: <name-pod>
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
+```
+
+2. Customize your pods, for keep alive, you should set command of pod to `tail -f /dev/null`
+
+```yaml {13-16}
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: <name-pod>
+  name: <name-pod>
+spec:
+  containers:
+  - image: debian:11.7
+    name: <name-pod>
+    resources: {}
+    # Another command: sleep 3600
+	command:
+	  - tail
+	  - -f
+	  - /dev/null
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
+```
+
+3. Run `apply` command with manifest
+
+```bash
+k apply -f pods.yaml
+```
+
+4. Wait few second, exec to the pods with command
+
+```bash
+k exec --tty --stdin pods/xxxx -- /bin/bash
+```
+
+5. Once you’ve finished testing, you can press Ctrl+D to escape the terminal session in the Pod. Pod will continue running afterwards. You can keep try with command step 4 or delete.
+
+```bash
+kubectl delete pod xxxx
+```
+
+>[!note]
+>Usually, `curlimages/curl` is regular used. Try to create new pod with fast as possible
+>```bash
+># Normal command
+>kubectl run mycurlpod --image=curlimages/curl -i --tty -- sh
+># Delete pod when finish or exit with `--rm` option
+>kubectl run mycurlpod --image=curlimages/curl -i --tty --rm -- sh
+>```
+
+## Debug networking with pod
 
 Honestly to say, Network is one of things hard to learn and control with any system, so to let anything become more easier, we need to prepare a couple of solution to hand on. Following the [Blog - Cách mình troubleshoot network trong Kubernetes bằng một Pod đa năng (Vietnamese)](https://devops.vn/posts/cach-minh-troubleshoot-network-trong-kubernetes-bang-mot-pod-da-nang/), the author lists for us some image to take a hand for this debug
 
@@ -1110,21 +1180,6 @@ kubectl run tmp-shell --rm -i --tty --image your_req_image -- /bin/bash
 
 # If you want to spin up a container on the host's network namespace.
 kubectl run tmp-shell --rm -i --tty --overrides='{"spec": {"hostNetwork": true}}' --image your_req_image -- /bin/bash
-```
-
-# Install CRD
-
-When you want to install extension API for `Kubernetes`, in usual `Kubernetes` provides us the standard called [CRD (Custom Resources Definitions)](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/). But in some situations, you apply the `CRD` get over the most bytes able for created and cause the error
-
-```bash
-k apply -f rayjobs-crd.yaml 
-The CustomResourceDefinition "rayjobs.ray.io" is invalid: metadata.annotations: Too long: must have at most 262144 bytes
-```
-
-You can bypass it via applying in **server-side**
-
-```bash
-k apply -f rayjobs-crd.yaml --server-side
 ```
 
 # OOM Killed

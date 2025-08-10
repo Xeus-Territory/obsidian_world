@@ -120,7 +120,8 @@ Click `Run` to trigger pipeline, last state will announce your deployment comple
 
 Read more about React Native build with fastlane on CI/CD at [[Build mobile with fastlane (Part 1)#Define `fastlane` android project configuration|Build mobile with fastlane]]
 
-**Status: Does not completely, continuous integrate next step build android 😢 😢 😢** 
+>[!warning]
+>**Status ⌛: Not completely, continuous integrate next step build android 😢 😢 😢** 
 
 >[!info]
 >Setup CI for setup environment, build tools for test and build `APK` and `IPA` file for both `Android` and `IOS`. Let digest !!! 
@@ -207,7 +208,7 @@ stages:
 >[!warning]
 >When you set up the azure-agent for running job, remember set `.env` variables for specify agent because it will not read Linux `$PROFILE`, just read only environment in `runsvc.sh`. Read more at: [StackOverFlow - ANDROID_HOME not set (VSTS agent running as service on OS X)](https://stackoverflow.com/questions/37890362/android-home-not-set-vsts-agent-running-as-service-on-os-x)
 
-# Setup CICD for build Container Applications
+# Setup CICD for Building Container Applications
 
 >[!summary]
 >You can use this pipeline for deploy application [Azure Container Application](https://learn.microsoft.com/en-us/azure/container-apps/overview) with self-hosted VM via `systemassign` identity

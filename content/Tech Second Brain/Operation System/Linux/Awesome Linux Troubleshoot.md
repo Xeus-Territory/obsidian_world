@@ -9,7 +9,9 @@ tags:
 
 ![[thumbnail-linux-troubleshoot-tools.png]]
 
-# Error when setup virtualbox in Ubuntu
+# VirtualBox Error in Ubuntu
+
+## Error when setup virtualbox in Ubuntu
 
 >[!info]
 >That issue come from when you install the `virtualbox` in OS with enable secure boot in the `BIOS`, usually come from individual machine, I thinks. Mostly you install `virtualbox` from `apt`, it will not applied when your machine meet that problem. Can explain more 😅
@@ -22,7 +24,7 @@ You can find the solution for secure boot at
 >[!quote]
 >That is tough think for new start, I know but you have 2 way to resolve the problem, i dunno make sure you follow what but, this is the same between them but one side is manually generate and other use `deb` with include that step. Follow if you solve the problem
 
-## First method: Manually generate MOK
+### First method: Manually generate MOK
 
 >[!note]
 >Manually generate, and submit `mok` for authentication secure boot, that new for me and cost me time to understand 😄 but that gradually valuable
@@ -88,7 +90,7 @@ mokutil --export
 sudo mokutil --delete MOK-0002.der
 ```
 
-## Second method: Automatically generate MOK
+### Second method: Automatically generate MOK
 
 >[!note]
 >That will simple, but make sure you do same thing above but the `virtualbox` will give you all step and just need prompt your password, remember for re-typing again in MOK
@@ -108,6 +110,27 @@ sudo shutdown -r now
 
 >[!done]
 >That will help you resolve this case, maybe when you have new version of Ubuntu that can be reason why you had the problems, make sure you control that
+
+## VMSetError: VirtualBox can't enable the AMD-V extension
+
+Following these discussions
+
+- [StackOverFlow - AMD-V is being used by another hypervisor. (VERR_SVM_IN_USE)](https://askubuntu.com/questions/403591/amd-v-is-being-used-by-another-hypervisor-verr-svm-in-use)
+- [VirtualBox - VMSetError: VirtualBox can't enable the AMD-V extension](https://forums.virtualbox.org/viewtopic.php?t=107117)
+
+It let me know about this error is coming from the conflict between VirtualBox and KVM module in Kernel. To fixing it, you need to remove that conflict from kernel via `rmmod` command or `modprobe` command
+
+```bash
+# remove virtualbox (optional)
+sudo rmmod vboxdrv
+sudo rmmod vboxnetflt
+
+#remove kvm (obligatory) - Fixed
+sudo rmmod kvm
+sudo rmmod kvm_amd
+```
+
+After applying this change, you can use Virtualbox with Vagrant for setup a new virtual machine. But after reboot, it can load into your kernel one again and you can fix it with 100% by adding blacklist into your `grub`, explore more at [StackOverFlow - How to blacklist kernel modules?](https://askubuntu.com/questions/110341/how-to-blacklist-kernel-modules)
 # Setup Environment Variables
 
 ## Set and use environment variables from `.env` file
@@ -727,6 +750,21 @@ Find more the couple of articles below for troubleshooting Linux Networking
 - [Ubuntu - Networking](https://documentation.ubuntu.com/server/explanation/networking/)
 - [Netplan - YAML Configuration](https://netplan.readthedocs.io/en/stable/netplan-yaml/)
 - [How to Disable IPv6 on Ubuntu Linux](https://itsfoss.com/disable-ipv6-ubuntu-linux/)
+
+## Network Lost in Gaming Mainboard
+
+![[Pasted image 20250728113557.png]]
+
+This network is probably weird than any I ever intercept, this comes from feature/bug of Gaming mother board when used it as Linux Machine, e.g: Ubuntu, LinuxMint or Arch. Explore more at
+
+- [LinuxMint - (SOLVED) Internet randomly disconnects: PCIe link lost](https://forums.linuxmint.com/viewtopic.php?t=416924)
+- [Arch - (SOLVED) Network connection dies randomly](https://bbs.archlinux.org/viewtopic.php?id=288371)
+- [Reddit - Network card (Intel Ethernet Controller I225-V, igc) keeps dropping after 1 hour on linux - solved with kernel param](https://www.reddit.com/r/buildapc/comments/xypn1m/network_card_intel_ethernet_controller_i225v_igc/)
+
+Following Reddit Thread, This issue come from `i255` network device and it's really tough things which I don't wonder to touch anytime but it occur frequently in machine, especially with high workload, it's truly disturb and nightmare. So these articles and discussion come from by solution to exchange `kernel` params
+
+In particular, we need to *"**disable power management on the PCIe** entirely with `pcie_port_pm=off`. In the file `/etc/default/grub`, line` GRUB_CMDLINE_LINUX_DEFAULT` we can add `pcie_port_pm=off` and then run `update-grub` to rebuild the boot config"*
+
 # About disk, partition, storage and volume in Linux
 
 >[!note]

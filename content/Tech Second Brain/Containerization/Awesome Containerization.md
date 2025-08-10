@@ -114,3 +114,55 @@ tags:
 - [docker-android](https://github.com/budtmo/docker-android): Android in docker solution with noVNC supported and video recording
 - [docker](https://hub.docker.com/_/docker): Docker in Docker!
 - [windows](https://github.com/dockur/windows): Windows inside a Docker container.
+
+# Awesome Dockerfile
+
+## NextJS
+
+```dockerfile
+# Frontend Build Stage
+FROM node:22.9.0-alpine AS frontend-build
+
+WORKDIR /app
+
+# Add .env for project
+ARG NEXT_PUBLIC_API_ENDPOINT
+RUN echo "NEXT_PUBLIC_API_ENDPOINT=$NEXT_PUBLIC_API_ENDPOINT" > .env
+
+# Copy package files & Install dependencies
+COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* .npmrc* ./
+RUN \
+  if [ -f yarn.lock ]; then yarn --frozen-lockfile; \
+  elif [ -f package-lock.json ]; then npm ci; \
+  elif [ -f pnpm-lock.yaml ]; then corepack enable pnpm && pnpm i; \
+  else echo "Lockfile not found." && exit 1; \
+  fi
+
+# Copy the rest of the frontend code
+COPY . .
+
+# Build the Next.js application
+RUN yarn build
+
+# Final Stage
+FROM node:22.9.0-alpine AS runner
+
+WORKDIR /app
+
+# Copy built frontend
+COPY --from=frontend-build /app/.next /app/.next
+COPY --from=frontend-build /app/public /app/public
+COPY --from=frontend-build /app/node_modules /app/node_modules
+COPY --from=frontend-build /app/next-env.d.ts /app/
+COPY next.config.ts postcss.config.mjs package.json /app/
+
+# Set environment variables
+ENV NODE_ENV=production
+
+# Expose ports for the frontend and backend
+EXPOSE 3000
+
+# run application
+CMD node_modules/.bin/next start -p 3000
+```
+

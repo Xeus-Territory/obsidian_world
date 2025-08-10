@@ -117,7 +117,6 @@ tags:
 - [Internet - Pain(less?) NGINX Ingress](https://danielfm.me/post/painless-nginx-ingress/) 🌟 **(Recommended)**
 - [Medium - Why Some Companies are Moving Away from Kubernetes for Development Environments in 2025](https://medium.com/@PlanB./why-some-companies-are-moving-away-from-kubernetes-for-development-environments-in-2025-1f44b4fd4f3f)
 - [Medium - My Top 50 Kubernetes Notes for DevOps Engineers — Detailed Q&A](https://medium.com/@thecloudarchitect/my-top-50-kubernetes-notes-for-devops-engineers-detailed-q-a-9d9c375c0076)
-- [Sysbee - Testing Kubernetes deployments with KIND](https://www.sysbee.net/blog/kind-testing-kubernetes-deployments/) 🌟 **(Recommended)**
 ### Tips for Configuration
 
 - [Medium - 11 Kubernetes Deployment Configs You Should Know in 2024](https://medium.com/overcast-blog/11-kubernetes-deployment-configs-you-should-know-in-2024-1126740926f0)
@@ -357,6 +356,12 @@ tags:
 - [sysdig](https://github.com/draios/sysdig): Linux system exploration and troubleshooting tool with first class support for containers
 - [teleport](https://github.com/gravitational/teleport): The easiest, and most secure way to access and protect all of your infrastructure.
 - [Tetragon](https://tetragon.io/docs/) : Cilium Tetragon component enables powerful realtime, eBPF-based Security Observability and Runtime Enforcement. 🌟 **(Recommended)**
+
+## Tunneling
+
+- [inlets-operator](https://github.com/inlets/inlets-operator): Get public TCP LoadBalancers for local Kubernetes clusters
+- [ngrok-operator](https://github.com/ngrok/ngrok-operator): Leverage [ngrok](https://ngrok.com/) for your ingress in your Kubernetes cluster 🌟 **(Recommended)**
+- [cloudflare-operator](https://github.com/adyanth/cloudflare-operator): A Kubernetes Operator to create and manage Cloudflare Tunnels and DNS records for (HTTP/TCP/UDP) Service Resources
 ## Utilities Kubernetes
 
 - [kubernetes-reflector](https://github.com/emberstack/kubernetes-reflector): Custom Kubernetes controller that can be used to replicate secrets, configmaps and certificates 🌟 **(Recommended)**
