@@ -657,6 +657,76 @@ nc -z -v -w5 <host> <portX>-<portY>
 # Check port UDP or not
 nc -z -u -v <host> <port>
 ```
+
+## `tar` command
+
+When you want to extract or compress file into `tar.gz` format, you can use `tar` for handle this task
+
+First of all, when you want to extract, you can use command
+
+```bash
+# Use when it have gz (gunzip)
+tar -xzf /file/example.tar.gz
+
+# Use when it has only tar
+tar -xz /file/example.tar
+
+# If you want to strip the folder inside, e.g level 1 or level 2
+tar -xzf /file/example.tar.gz --strip-components <level-number>
+
+# If you want to output your extract to output
+mkdir -p /folder/to/output # make sure folder exist
+tar -xzf /file/example.tar.gz -C /folder/to/output
+```
+
+Next, when you want to compress, you can use
+
+```bash
+# Use with file
+tar -czf /file/to/compress.tar.gz file # Use can use multiple file
+
+# Use to package folder
+tar -czf /file/to/compress.tar.gz folder/*
+```
+
+At the end, when you want to see what inside the compress, you can use
+
+```bash
+tar -tvf /file/to/compress.tar.gz
+```
+
+## `hostnamectl` command
+
+When you think about change your current `hostname` for present your machine in network, ssh connection, you can use `hostnamectl` for hand-on it. Explore more at
+
+- [PhoenixNAP - How to Change Hostname on Ubuntu](https://phoenixnap.com/kb/ubuntu-20-04-change-hostname)
+- [RedHat - Configuring Host Names Using hostnamectl](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/networking_guide/sec_configuring_host_names_using_hostnamectl)
+- [GeeksforGeek - hostnamectl command in Linux with Examples](https://www.geeksforgeeks.org/linux-unix/hostnamectl-command-in-linux-with-examples/)
+
+First of all, you can check your `hostname` information by 
+
+```bash
+# Simple
+hostnamectl
+# Complete command
+hostnamectl status
+```
+
+Next, you can exchange your `hostname` for couple of types with option `set-hostname` (NOTE: required `root` permission), including 
+
+```bash
+# transient - Assigned by mDNS server or DHCP server during run time
+hostnamectl set-hostname new-name --transient
+
+# static - used to initialize the kernel hostname during boot time
+hostnamectl set-hostname new-name --static
+
+# pretty - the hostname presented to the user, not to other computers on a network
+hostnamectl set-hostname new-name --pretty
+
+# combine three types, transient, static and pretty
+hostnamectl set-hostname new-name
+```
 # External Commands
 
 ## Vagrant

@@ -10,6 +10,11 @@ tags:
 
 ![[thumbnail-postgresql.png|center|600]]
 # Documentation and Articles
+
+## Awesome Repositories
+
+- [awesome-postgres](https://github.com/dhamaniasad/awesome-postgres): A curated list of awesome PostgreSQL software, libraries, tools and resources
+- [pigsty](https://github.com/pgsty/pigsty): Free RDS for PostgreSQL — Pigsty
 ## Setup
 
 - [Linode - A Comparison of High Availability PostgreSQL Solutions](https://www.linode.com/docs/guides/comparison-of-high-availability-postgresql-solutions/)
