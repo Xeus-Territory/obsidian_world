@@ -145,7 +145,7 @@ gitlab/gitlab-runner:v17.4.2 unregister \
 ```
 # Use cases and scenarios
 
-## Case 1: Completely pipeline for Container Services
+## Completely pipeline for Container Services
 
 >[!info]
 >React build app, test and build Image for container services
@@ -236,7 +236,7 @@ build-image-job:
   allow_failure: false
 ```
 
-## Case 2: Build & push docker image to private registry
+## Build & push docker image to private registry
 
 >[!info]
 >Use private ECR of AWS with dind (Local Include)
@@ -319,7 +319,7 @@ build-node-image:
   allow_failure: false
 ```
 
-## Case 3: Authentication Job with private ECR from remote repository
+## Authentication Job with private ECR from remote repository
 
 ![[design-repo-auth-private-aws-ecr.png]]
 
@@ -509,3 +509,105 @@ recheck:
   script:
     - echo "I am in private container !!! bruh"
 ```
+
+## Caching with GitLab CI
+
+To rapid and boost your GitLab Job, [Cache](https://docs.gitlab.com/ci/caching/) is one of best solution to adapt in your pipeline, fast and compatible with multiple strategies, repository of each languages, e.g: Python or NodeJS. Explore more information and detail at [[GitLab Runner and Features of this platform#Cache - The efficiency behavior for your GitLab|Cache - The efficiency behavior for your GitLab]]
+
+For best practices, you can apply a couple of configurations for your cache, such as
+
+- Policy for `pull-push` your cache. Explore more at [Use a variable to control a job’s cache policy](https://docs.gitlab.com/ci/caching/#use-a-variable-to-control-a-jobs-cache-policy) 
+- Use fallback key with cache. Explore more at [Use a fallback cache key](https://docs.gitlab.com/ci/caching/#use-a-fallback-cache-key)
+- Configuration `protected` and `unprotected`, in some situations, you need to bypass to help reuse cache from `protected` branch. Explore more at [Use the same cache for all branches](https://docs.gitlab.com/ci/caching/#use-the-same-cache-for-all-branches)
+
+With GitLab Runner already enable Cache, you can add couple of stuff into your GItLab Job with `cache` option
+### NodeJS
+
+With `nodejs`, you need to backup your `node_module` into cache for boost your project, so your pipeline will like this
+
+```yaml title=".gitlab-ci.yml" {28-30}
+# Define stage for running job inside
+stages:
+  - 'build-code'
+
+# Choose the default image if not set, it will use it
+default:
+  image:
+    name: node:18-bullseye
+
+# Default, run script before you run the script on job
+before_script:
+  - npm i -g yarn --force
+  - yarn install
+
+build-code-job:
+  stage: build-code
+  retry: 1
+  script:
+    - yarn build
+    - cp -a dist/. public/
+# Upload artifact to gitlab, on path and keep on time
+  artifacts:
+    untracked: false
+    when: on_success
+    expire_in: "30 days"
+    paths:
+      - "./public"
+  cache:
+    paths:
+      - node_modules
+  allow_failure: false
+  tags:
+   - self-hosted-runner
+```
+
+### Python
+
+With `python`, it will have some different like location to save the cache, it usually inside `~/.cache or /root/.cache` which `cache` can not touch or access because your `job` will only work in source project, therefore you need to modify a bit
+
+```yaml {4-7}
+job-name:
+  ...
+  variables:
+	# Use for poetry project
+    POETRY_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pypoetry"
+    # Use for pip project
+    PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+```
+
+As you can, you can use variables to overwrite where to save the cache for first time, it will save the cache into project directory and allow your job to upload to cache into the pipeline
+
+At the end, this is fully pipeline to help you define the cache for Python Project with combine Policy to `pull-push` with health for your storage 😄
+
+```yaml title=".gitlab-ci.yml"
+lint:
+  stage: lint
+  image: python:3.10.6-slim-bulleye
+  variables:
+    POETRY_VIRTUALENVS_CREATE: false
+  before_script:
+    - poetry self update
+    - pip install --upgrade pkginfo
+  script:
+    - make install
+    - make lint
+  allow_failure: false
+  # Add more rule for cache pull-push which great behavior to keep your cache alway on track
+  rules:
+    - if: $CI_COMMIT_BRANCH == "develop"
+      variables:
+        POLICY: pull-push
+    - if: $CI_COMMIT_BRANCH != $CI_DEFAULT_BRANCH
+      variables:
+        POLICY: pull
+  variables:
+    POETRY_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pypoetry"
+  # Save and you cache at the another location
+  cache:
+    key: $CI_PROJECT_NAME-cache
+    paths:
+      - $POETRY_CACHE_DIR
+    policy: $POLICY
+  tags: [ docker ]
+```
+
