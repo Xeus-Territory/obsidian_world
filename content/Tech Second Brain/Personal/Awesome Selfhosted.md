@@ -40,6 +40,9 @@ tags:
 	- [LocalStack Web Application](https://app.localstack.cloud/sign-in): Web UI for managing your LocalStack
 - [openstack](https://github.com/openstack/openstack): Repository tracking all OpenStack repositories as submodules. Mirror of code maintained at opendev.org -->  [documentation](https://docs.openstack.org/2024.1/), and minor version [devstack](https://github.com/openstack/devstack) - System for quickly installing an OpenStack cloud
 - [OpenNebula](https://docs.opennebula.io/6.10/overview/opennebula_concepts/opennebula_overview.html): Open source **Cloud & Edge Computing Platform** bringing real freedom to your Enterprise Cloud 🚀
+## Managed Cloud
+
+- [ubicloud](https://github.com/ubicloud/ubicloud): an open source cloud that can run anywhere
 ## Secrets management
 
 - [Hashicorp Vault](https://developer.hashicorp.com/vault/docs?product_intent=vault): An identity-based secret and encryption management system 🌟 **(Recommended)**
@@ -58,6 +61,11 @@ tags:
 - [CubeFS](https://cubefs.io/docs/master/overview/introduction.html) : A next-generation cloud-native storage product that is currently an incubating open-source project hosted by the [Cloud Native Computing Foundationopen in new window](https://www.cncf.io/projects/cubefs/) (CNCF).
 - [MinIO](https://min.io/docs/minio/linux/index.html): MinIO is an object storage solution that provides an Amazon Web Services S3-compatible API and supports all core S3 features. 🌟 **(Recommended)**
 - [Zenko Cloudserver](https://github.com/scality/cloudserver): an open-source Node.js implementation of the Amazon S3 protocol.
+
+## Tunneling Server
+
+- [chisel](https://github.com/jpillora/chisel) : A fast TCP/UDP tunnel over HTTP
+- [bore](https://github.com/ekzhang/bore): A simple CLI tool for making tunnels to localhost
 ## Virtual Machine / Virtualization
 
 - [firecracker](https://github.com/firecracker-microvm/firecracker): Secure and fast microVMs for serverless computing.

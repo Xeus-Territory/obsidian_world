@@ -193,12 +193,11 @@ tags:
 
 ## Big Data
 
-- [Spark](https://spark.apache.org/): A multi-language engine for executing data engineering, data science, and machine learning on single-node machines or clusters.
+- [Spark](https://spark.apache.org/): A multi-language engine for executing data engineering, data science, and machine learning on single-node machines or clusters 🌟 **(Recommended)**
 	- [spark-docker](https://github.com/apache/spark-docker): Official Dockerfile for Apache Spark
 	- [spark-standalone-cluster-on-docker](https://github.com/cluster-apps-on-docker/spark-standalone-cluster-on-docker): Learn Apache Spark in Scala, Python (PySpark) and R (SparkR) by building your own cluster with a JupyterLab interface on Docker. ⚡
-## Computer Vision
-
--  [opencv](https://github.com/opencv/opencv): Open Source Computer Vision Library 🌟 **(Recommended)**
+	- [docker-spark-iceberg](https://github.com/databricks/docker-spark-iceberg): Spark + Iceberg Quickstart Image
+- [Trino](https://github.com/trinodb/trino): The distributed SQL query engine for big data, formerly known as PrestoSQL 🌟 **(Recommended)**
 ## Data Orchestration Workflow
 
 - [airbyte](https://github.com/airbytehq/airbyte): The leading data integration platform for ETL / ELT data pipelines from APIs, databases & files to data warehouses, data lakes & data lakehouses. Both self-hosted and Cloud-hosted. 🌟 **(Recommended)**
@@ -212,10 +211,15 @@ tags:
 ## Labeling and Annotation
 
 - [Argilla](https://github.com/argilla-io/argilla/): a collaboration tool for AI engineers and domain experts to build high-quality datasets 🌟 **(Recommended)**
-## UI Builder
+## Datalake / Lakehouse
 
-- [chainlit](https://github.com/Chainlit/chainlit): Build Conversational AI in minutes ⚡️ 🌟 **(Recommended)**
-- [streamlit](https://github.com/streamlit/streamlit): A faster way to build and share data apps 🌟 **(Recommended)**
+- [polaris](https://github.com/apache/polaris):  The interoperable, open source catalog for Apache Iceberg
+- [iceberg](https://github.com/apache/iceberg): a high-performance format for huge analytic tables
+- [openhouse](https://github.com/linkedin/openhouse): An open source control plane designed for efficient management of tables within open data lakehouse deployments
+## Library & Framework
+
+- [OpenCV](https://github.com/opencv/opencv): Open Source Computer Vision Library 🌟 **(Recommended)**
+- [PyTorch](https://download.pytorch.org/whl/torch/): Links for searching download torch version, especially follow CUDA version of machine by [CUDA V12.8](https://download.pytorch.org/whl/cu128)
 ## LLM
 
 - [langfuse](https://github.com/langfuse/langfuse): Open source LLM engineering platform: LLM Observability, metrics, evals, prompt management, playground, datasets 🌟 **(Recommended)**
@@ -233,14 +237,11 @@ tags:
 - [openvino](https://github.com/openvinotoolkit/openvino): OpenVINO™ is an open-source toolkit for optimizing and deploying AI inference
 - [Ray](https://github.com/ray-project/ray): an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads. 🌟 **(Recommended)**
 - [gpustack](https://github.com/gpustack/gpustack): Simple, scalable AI model deployment on GPU clusters
+## UI
+
+- [chainlit](https://github.com/Chainlit/chainlit): Build Conversational AI in minutes ⚡️ 🌟 **(Recommended)**
+- [streamlit](https://github.com/streamlit/streamlit): A faster way to build and share data apps 🌟 **(Recommended)**
 ## VectorDB
 
 - [Chroma](https://docs.trychroma.com/):  The AI-native open-source vector database (Opensource) 🌟 **(Recommended)**
 - [Milvus](https://milvus.io/docs): A high-performance, highly scalable vector database that runs efficiently across a wide range of environments, from a laptop to large-scale distributed systems 🌟 **(Recommended)**
-
-## Library & Framework
-
-- [PyTorch](https://download.pytorch.org/whl/torch/): Links for searching download torch version, especially follow CUDA version of machine by [CUDA V12.8](https://download.pytorch.org/whl/cu128)
-
-
-

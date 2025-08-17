@@ -242,7 +242,6 @@ You can become participant of Bounty program via
 - [Volatility 3 — Volatility 3 2.4.0 documentation](https://volatility3.readthedocs.io/en/latest/): Arsenal for digital forensics
 ### Privilege Escalation (RCE)
 
-- [chisel](https://github.com/jpillora/chisel) : A fast TCP/UDP tunnel over HTTP
 - [GTFOBLookup](https://github.com/nccgroup/GTFOBLookup) : GTFO Lookup 🌟 **(Recommended)**
 - [nishang](https://github.com/samratashok/nishang) : Nishang - Offensive PowerShell for red team, penetration testing and offensive security.
 - [Online - Reverse Shell Generator](https://www.revshells.com/) 🌟 **(Recommended)**

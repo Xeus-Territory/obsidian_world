@@ -217,6 +217,18 @@ tags:
 - [Helm](https://github.com/topics/helm)
 - [K8s](https://github.com/topics/k8s)
 - [Kubernetes](https://github.com/topics/kubernetes)
+
+# Kubernetes Tools (Curious 🔭)
+
+![[meme-confuse-but-curious.png|center]]
+
+## Network Device Plugins
+
+- [k8s-rdma-shared-dev-plugin](https://github.com/Mellanox/k8s-rdma-shared-dev-plugin): A simple rdma device plugin that support IB and RoCE HCA
+
+## K8s Custom Scheduler
+
+- [volcano](https://github.com/volcano-sh/volcano): a Kubernetes-native batch scheduling system, extending and enhancing the capabilities of the standard kube-scheduler **for AI workloads**
 # Kubernetes Tools
 
 ![[k8s-general.png]]

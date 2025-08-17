@@ -10,7 +10,7 @@ tags:
 ![[icon-docker.svg|center|450]]
 # Installing
 
-Install and set up docker on your host with rapidly, by
+## The default installation (via APT)
 
 ```bash
 # Apply with Debian, Ubuntu or Kali
@@ -25,7 +25,11 @@ sudo systemctl enable docker.service
 sudo chmod 666 /var/run/docker.sock
 ```
 
+## The official ways
+
 Official install instruction: https://docs.docker.com/engine/install/ubuntu/
+
+*Get fully setup docker with only one command*
 
 ```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
@@ -47,6 +51,24 @@ EOF
 # Run install
 dockerd-rootless-setuptool.sh install
 ```
+
+## Install only binaries
+
+To install the binaries of Docker and related, you can refer to this instruction and couple of links
+
+- [Docker - Install Docker Engine from binaries](https://docs.docker.com/engine/install/binaries/)
+- [Docker Package Repository](https://download.docker.com/)
+
+```bash
+# NOTE: required wget !!! (For linux x86-64)
+
+export DOCKER_VERSION="20.10.22" && \
+	wget -O docker-$DOCKER_VERSION.tgz \
+	https://download.docker.com/linux/static/stable/x86_64/docker-$DOCKER_VERSION.tgz && \
+	tar -xzf docker-$DOCKER_VERSION.tgz -C /usr/local/bin/ --strip-components 1 && \
+	rm -rf docker-$DOCKER_VERSION.tgz
+```
+
 # Helpful command
 
 ## Basic `run` command, but with helpful flag
