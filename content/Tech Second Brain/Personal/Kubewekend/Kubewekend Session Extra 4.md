@@ -1,5 +1,5 @@
 ---
-title: 
+title: "Kubewekend Session Extra 4: Kind and Sandbox environment for GitLab CI"
 tags:
   - kubewekend
   - devops
