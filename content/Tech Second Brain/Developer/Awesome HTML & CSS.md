@@ -21,13 +21,9 @@ tags:
 </div>
 
 <div align="center">
-	<strong>
-		<em>
-			<p style="text-align: center;">
-				<a href="#">Choose an Azure compute service</a>
-			</p>
-		</em>
-	</strong>
+	<strong><em><p style="text-align: center;">
+		<a href="#">Choose an Azure compute service</a></p>
+	</em></strong>
 </div>
 ```
 

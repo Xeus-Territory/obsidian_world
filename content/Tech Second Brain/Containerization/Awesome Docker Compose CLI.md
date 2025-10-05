@@ -36,12 +36,16 @@ curl -SL https://github.com/docker/compose/releases/download/v2.29.1/docker-comp
 ```bash
 chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
 ```
-# Basic command
+
+# Documentations
 
 >[!info]
->With `docker-compose`, you can find and explore more about this technicals with documentation in details, such as
->- [Compose Documentation](https://docs.docker.com/compose/)
->- [Compose CLI](https://docs.docker.com/compose/reference/)
+>With `docker-compose`, you can find and explore more about this technicals with documentation in details, it's kinda sophisticated, to become more familiar, you should double-check them 
+
+- [Docker - Compose File Reference](https://docs.docker.com/reference/compose-file/)
+- [Docker - Compose Documentation](https://docs.docker.com/compose/)
+- [Docker - Compose CLI](https://docs.docker.com/compose/reference/)
+# Basic command
 
 `up` and `stop` command which commonly use to bring up and down the bunch of container inside compose file
 

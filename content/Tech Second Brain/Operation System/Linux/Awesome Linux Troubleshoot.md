@@ -398,6 +398,7 @@ Relate documentation
 - [What exactly does `update-alternatives` do?](https://askubuntu.com/questions/233190/what-exactly-does-update-alternatives-do)
 - [The update-alternatives Command in Linux](https://www.baeldung.com/linux/update-alternatives-command)
 
+# Linux System and Kernel
 ##  `SSH` problems
 
 When you see the situation about your key for authentication a destination host have changing because your action or hacker, from your side you can resolve when exection `ssh` by flushing the old key like
@@ -422,6 +423,56 @@ sudo systemctl restart sshd
 sudo /etc/init.d/ssh force-reload
 sudo /etc/init.d/ssh restart
 ```
+
+Sometimes, you will encounter the issue `too many authenticate failures`, it means your SSH already brute force by someone and somehow, there are couple things to deal with these situation
+
+1. **Prefer use ssh-key than password**, that's truely wonderful option than you prompt the password **(NOTE: Remember add your public key in `~/.ssh/authorized_keys` for what user you want to access)**
+
+```bash
+ssh -i /path/to/ssh/key user@host
+```
+
+2. If you want continue to authenticate SSH via password, you should add couple of options to bypass the issue above
+
+```bash
+# Add the IdentityOnly (From client side)
+ssh -o IdentityOnly=yes user@host
+
+# Add the preferpassword (From clientside)
+ssh -o PreferredAuthentications=password user@root
+
+# If you already add the ssh but want to use password
+ssh -o PubkeyAuthentication=no user@root
+```
+
+## Control Kernel Parameter
+
+Read more and detail about Kernel with `proc` directory at [RedHat - The proc File System](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/4/html/reference_guide/ch-proc)
+
+At the core of the operating system, the **Linux Kernel** has two primary functions: it controls access to the computer's physical devices and schedules when and how processes interact with those devices.
+
+To provide a window into its current state, the kernel uses the **`/proc`** file system. This hierarchy of special files allows applications and users to peer directly into the kernel's view of the system.
+
+A unique part of this filesystem is the **`/proc/sys/`** directory. Unlike other files in `/proc`, this directory not only provides information but also allows the system administrator to immediately enable or disable specific kernel features.
+
+To easily modify these features, Linux provides the **`sysctl`** command. In some situations, changing a few parameters with `sysctl` can save your life. For example.
+
+- [GitHub - Fluentd in_tail plugin randomly fails with "too many open files"](https://github.com/fluent/fluent-bit/issues/1777#issuecomment-1494952647) 🌟 **(Recommended)**
+- [Kind - Pod errors due to “too many open files”](https://kind.sigs.k8s.io/docs/user/known-issues#pod-errors-due-to-too-many-open-files)
+
+By default, the configuration will update temporary with `sysctl` command
+
+```bash
+sudo sysctl fs.inotify.max_user_watches=524288
+```
+
+However, you want to apply the persistent configuration, you can add your configuration into file `/etc/sysctl.conf`
+
+```bash
+nano /etc/sysctl.conf
+```
+
+Explore more about these configurations at [StackOverFlow - sysctl vs writing directly to /proc/\*](https://serverfault.com/questions/946665/sysctl-vs-writing-directly-to-proc)
 # Comment note in Shell Bash
 
 >[!info]
@@ -592,9 +643,59 @@ There is many way to handle this work, but I prefer to use it with `usermod` com
 sudo usermod -aG group username
 
 # Remove user out group
-sudo usermod -rG group username
+sudo usermod -rG group username # sometime not work
+# use deluser or gpasswd instead
+sudo deluser <group> <user>
+sudo gpasswd --delete user group
 ```
 
+## Add and Delete user out of Sudo (Root) Group
+
+More about add, remove user in group with specific case for `sudo` permission
+
+- [StackOverFlow - add new user with root access in Linux](https://serverfault.com/questions/58378/add-new-user-with-root-access-in-linux)
+- [Digital Ocean - How To Edit the Sudoers File](https://www.digitalocean.com/community/tutorials/how-to-edit-the-sudoers-file)
+
+In more case specific `sudo` permission, technically, that's truly direct affected for security and permission to your user
+
+To grant user to root permission, your account should belong `sudo` group by command
+
+```bash
+# Via usermod
+sudo usermod -aG sudo username
+
+# Via gpasswd
+sudo gpasswd -a username sudo
+
+# via adduser
+adduser existinguser sudo
+```
+
+But if you want to create a new user and add into `sudo` group, you can use
+
+```bash
+useradd newuser -m -G sudo
+passwd newuser
+```
+
+However, this command is work around the file called `sudoers` file, that control the whole `sudo` permission of system for each user, to edit the file (NOTE: before read carefully the configuration below)
+
+![[Pasted image 20250909100301.png]]
+
+```bash
+sudo visudo
+```
+
+To see more your group, id and what user permission, you can work around with file `/etc/passwd`, `/etc/shadow` and `/etc/group` (But carefully that expose your password but in hash version, maybe can be brutefore some how, that why leaking these configuration really dangerous) or you can use 
+
+```bash
+id # too show full uid,gid, group belong to of this account
+```
+
+More about disable root account, and couple of things around `root` for diving into
+
+- [AskUbuntu - Disable root account in Ubuntu?](https://askubuntu.com/questions/20450/disable-root-account-in-ubuntu)
+- [Digital Ocean - How To Disable Root Login on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-disable-root-login-on-ubuntu-20-04)
 ## Helpful `usermod` command
 
 Change your user with new name, but you need do it on another user with kill that shell, because if you access to your old account, I will be attached by process
@@ -612,7 +713,7 @@ sudo usermod --shell /path/to/shell username
 Move the content of user's home directory using `usermod` command
 
 ```bash
-sudo usermod -d new_dir_path -m user_name
+sudo usermod -m -d new_dir_path user_name
 ```
 
 # Run Background Command
@@ -999,6 +1100,8 @@ mount: /run: mount point not mounted or bad option.
        dmesg(1) may have more information after failed mount system call.
 ```
 
+# Linux Memory
+
 ## Clean Swap memory
 
 With architecture of linux, swap memory submit crucial role for operating stuff inside machine, bring back stability and performance. Explore about swap memory at [Phoenix - Swap Space in Linux: What It Is & How It Works](https://phoenixnap.com/kb/swap-space)
@@ -1024,3 +1127,81 @@ You can explore and figure out more configuration and memory with linux through 
 
 - [Tecmint - How to Clear RAM Memory Cache, Buffer and Swap Space on Linux](https://www.tecmint.com/clear-ram-memory-cache-buffer-and-swap-space-on-linux/)
 - [Kernal Doc - Memory Management](https://docs.kernel.org/admin-guide/mm/index.html)
+
+## Clean Cache/Buffer in Linux
+
+![[thumbnail-page-cache-mem.png]]
+
+There are many types of cache in Linux, and you should choose what the cache you work with and clean them if you need but not make any affect for others
+
+But before go to my perspective, you should double-check to understand more what you wait for
+
+- [StackOverFlow - what are pagecache, dentries, inodes?](https://stackoverflow.com/questions/29870068/what-are-pagecache-dentries-inodes)
+- [Baeldung - Empty the Buffer and Cache in Linux](https://www.baeldung.com/linux/empty-buffer-cache)
+- [YugabyteDB - Linux Performance Tuning: Dealing with Memory and Disk IO](https://www.yugabyte.com/blog/linux-performance-tuning-memory-disk-io/)
+- [Baeldung - Restrict Size of the Buffer Cache in Linux](https://www.baeldung.com/linux/restrict-size-buffer-cache)
+- [ucartz - How to clear the buffer/pagecache (disk cache) under Linux](https://www.ucartz.com/clients/knowledgebase/1314/How-to-clear-the-bufferorpagecache-disk-cache-under-Linux.html)
+
+![[Pasted image 20250910091612.png]]
+
+**Paging Cache**
+
+>[!info]
+>**Paging Cache** could contain any memory mappings to blocks on disk. That could conceivably be buffered I/O, memory mapped files, paged areas of executables--anything that the OS could hold in memory from a file.
+
+**Dentries and Inodes**
+
+>[!info]
+>With Memory Caching, it work as directory structure, you can say **Inodes** is a data structure that represents a file, with **Dentries** is a data structure that represents a directory. These structures could be used to build a memory cache that represents the file structure on a disk. ***To get a directly listing, the OS could go to the dentries--if the directory is there--list its contents (a series of inodes). If not there, go to the disk and read it into memory so that it can be used again.***
+
+**Buffer Cache**
+
+>[!info]
+>**Buffer Cache** live in the memory, thus reading and writing to them is much faster compared to disks. For this reason, instead of going to the disk every time, **Linux performs those write operations to those buffer caches**. It then does some bookkeeping so that it knows which piece of data is cached, and **it schedules regular flushes of that data onto the actual disks**.
+
+>[!warning]
+>While using buffer caches can greatly improve the overall performance, **they can sometimes claim a significant part of the main memory.** This can add additional latency when we want to reclaim that memory and is therefore **negatively impacting the running processes**
+
+To clean them you have two way for working that parameter via system variables used `sysctl` or directly in `/proc/sys/vm/drop_caches` file
+
+With `sysctl` 🔦 **(Considering)**
+
+```bash
+# free the pagecache only
+sysctl -w vm.drop_caches=1
+
+# free the inodes and dentries
+sysctl -w vm.drop_caches=2
+
+# free both pagecache and inodes & dentries
+sysctl -w vm.drop_caches=3
+```
+
+![[Pasted image 20250910092336.png]]
+
+About using `/proc/sys/vm/drop_caches`  🌟 **(Recommended)**
+
+**(NOTE: `sync` command used for flush the file system buffer. But it' optional, The sync command allows the kernel write as many dirty cache pages to disk as it can (to maximize the number of data cache pages that can be dropped))**
+
+```bash
+# free the pagecache only
+sudo sync; echo 1 > /proc/sys/vm/drop_caches
+# Or due permission with echo, use
+echo 1 | sudo tee /proc/sys/vm/drop_caches
+
+# free the Dentries and Inodes
+sudo sync; echo 2 > /proc/sys/vm/drop_caches
+# Or due permission with echo, use
+echo 2 | sudo tee /proc/sys/vm/drop_caches
+
+# free both pagecache and inodes & dentries
+sudo sync; echo 3 > /proc/sys/vm/drop_caches
+# Or due permission with echo, use
+echo 3 | sudo tee /proc/sys/vm/drop_caches
+```
+
+Now you can use `free -h` of `vmstat -s -SM` to double-check again your memory
+
+>[!note]
+>One more time to say again, you should read these articles above for knowledge, it's truly useful and provide more information to deal in tuning your memory performance
+

@@ -73,18 +73,7 @@ Check some things in my world down below
 <div align="center"><h3>🙌 Song of the week 🙌</h3></div>
 
 <div align="center">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/FfinzXF64_4?si=wwo8scpP5lxTbmQD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Gs60t6I5CHc?si=Qdo8AO0Obw3F2khw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
-
-
-<div align="center">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/qcv6e8JSh-8?si=Yn3-VhM9-Mk1FoJS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
-
-<div align="center">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/cYpP4kW80K4?si=9xlv3oZj3sHhEDEZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
 
 

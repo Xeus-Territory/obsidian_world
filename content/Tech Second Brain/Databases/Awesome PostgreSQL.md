@@ -14,32 +14,105 @@ tags:
 ## Awesome Repositories
 
 - [awesome-postgres](https://github.com/dhamaniasad/awesome-postgres): A curated list of awesome PostgreSQL software, libraries, tools and resources
-- [pigsty](https://github.com/pgsty/pigsty): Free RDS for PostgreSQL — Pigsty
+- [PostgreSQL Wiki](https://wiki.postgresql.org/wiki/Main_Page): Contains user documentation, how-tos, and tips 'n' tricks related to PostgreSQL
+## Cheatsheet
+
+- [Github Gist - psql-with-gzip-cheatsheet.sh](https://gist.github.com/brock/7a7a70300096632cec30)
+## HA & Scaling
+
+- [Percona - High Availability in PostgreSQL with Patroni](https://docs.percona.com/postgresql/17/solutions/high-availability.html) 🌟 **(Recommended)**
+- [Palark - Migrating a PostgreSQL database cluster managed by Patroni](https://blog.palark.com/migrating-a-postgresql-cluster-managed-by-patroni/) 🌟 **(Recommended)**
+- [From Standalone to High Availability: Convert Your PostgreSQL Database to a Patroni Cluster](https://www.mydbops.com/blog/from-standalone-to-high-availability-convert-your-postgresql-database-to-a-patroni-cluster)
 ## Setup
 
 - [Linode - A Comparison of High Availability PostgreSQL Solutions](https://www.linode.com/docs/guides/comparison-of-high-availability-postgresql-solutions/)
 - [Youtube - Techno Tim - PostgreSQL Clustering the Hard Way... High Availability, Scalable, Production Ready Postgres](https://www.youtube.com/watch?v=RHwglGf_z40&t=1529s&ab_channel=TechnoTim) 🌟 **(Recommended)**
 - [DevOps.vn - Triển khai PostgreSQL high availability với Patroni trên Ubuntu (Cực kỳ chi tiết)](https://devops.vn/posts/cai-dat-postgresql-high-availability-tren-ubuntu/) 🌟 **(Recommended)**
+- [Portworx - Kubernetes Operator for PostgreSQL: How to Choose and Set Up One](https://portworx.com/blog/choosing-a-kubernetes-operator-for-postgresql/)
+
 ## Tips & Configuration
 
 - [Medium - Postgres is eating the database world](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4) 🌟 **(Recommended)**
 - [How To Kill All Connections to a Database in PostgreSQL](https://www.dbvis.com/thetable/how-to-kill-all-connections-to-a-database-in-postgresql/)
 - [Medium - Solve PostgreSQL DataFileRead and buffer_io with Parameter Tuning](https://medium.com/@Monika_Yadav/solve-postgresql-datafileread-and-buffer-io-with-parameter-tuning-72c8a3d0c5be)
-- [Github Gist - psql-with-gzip-cheatsheet.sh](https://gist.github.com/brock/7a7a70300096632cec30)
 - [Azure PostgreSQL - Backup and Restore](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-backup-restore)
 - [Internet - Useful PostgreSQL (psql) queries, commands and snippets](https://codefibershq.com/blog/useful-postgresql-pgsql-queries-commands-and-snippets) 🌟 **(Recommended)**
 - [Github Gist - PSQL Cheatsheet](https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546)
 - [Medium - Running SpiceDB with Postgresql using docker-compose](https://akoserwal.medium.com/running-spicedb-with-postgresql-using-docker-compose-cc7ee999da73)
 - [Citus - Citus 12: Schema-based sharding for PostgreSQL](https://www.citusdata.com/blog/2023/07/18/citus-12-schema-based-sharding-for-postgres/) 🌟 **(Recommended)**
-# PostgreSQL Utilities Tools
+# PostgreSQL Tools
+
+![[meme-technology.png|center]]
+
+## Backup
+
+- [pgBackRest](https://pgbackrest.org/): a reliable backup and restore solution for PostgreSQL that seamlessly scales up to the largest databases and workloads.
+## Driver & Connector
+
+- [pgbouncer](https://github.com/pgbouncer/pgbouncer): lightweight connection pooler for PostgreSQL
+## High Availability
+
+- [Patroni](https://github.com/patroni/patroni): A template for PostgreSQL High Availability with Etcd, Consul, ZooKeeper, or Kubernetes 🌟 **(Recommended)**
+- [Pgpool](https://github.com/pgpool/pgpool2): A middleware that works between PostgreSQL servers and a PostgreSQL database client
+- [cloudnative-pg](https://github.com/cloudnative-pg/cloudnative-pg): a comprehensive platform designed to seamlessly manage PostgreSQL databases within Kubernetes environments
+## Hosting
+
+- [pigsty](https://github.com/Vonng/pigsty): Battery-Included PostgreSQL Distro as a Free & Better RDS Alternative
+- [autobase](https://github.com/vitabaks/autobase): PostgreSQL High-Availability Cluster (based on Patroni). Automating with Ansible
+## Migration
+
+- [pgcopydb](https://github.com/dimitri/pgcopydb): a tool that automates running `pg_dump | pg_restore` between two running Postgres servers
+
+# PostgreSQL Installation
+
+By default, you only download and setup the PostgreSQL following your OS repository, but somehow you need the lower or higher version of current version, you need add the key to let your apt find what version you want to download
+
+You should reach to [Download Page of PostgreSQL (Linux Only)](https://www.postgresql.org/download/linux/) for choose version you want base on your distro, e.g: `Ubuntu`, `Debian` or `SUSE`
+
+For easy case, you only install latest version compatible for your distro by command
+
+```bash
+sudo apt update && sudo apt install postgresql -y
+```
+
+But like I told, you want to more specific and double-check the higher or lower version, you should handle it manual, explore the repositories for helping you figure out what version should choose at [PostgreSQL - Repositories apt of Ubuntu](https://ftp.postgresql.org/pub/repos/apt/)
+
+Now follow the manual step by PostgreSQL recommended, NOTE: Requirement `sudo`
+
+```bash
+# Import the repository signing key
+sudo apt install curl ca-certificates -y
+sudo install -d /usr/share/postgresql-common/pgdg
+sudo curl -o /usr/share/postgresql-common/pgdg/apt.postgresql.org.asc --fail https://ftp.postgresql.org/pub/repos/apt/ACCC4CF8.asc
+
+# Create the repository configuration file
+# NOTE: Recommend use Ubuntu 22.04 or higher, if with 20.04 or lower, it will caution you for not found any package compatible
+. /etc/os-release
+sudo sh -c "echo 'deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] https://apt.postgresql.org/pub/repos/apt $VERSION_CODENAME-pgdg main' > /etc/apt/sources.list.d/pgdg.list"
+
+# Update the package list
+sudo apt update
+
+# Search and find what version you want to installation
+# e.g: POSTGRESQL_VERSION=17
+export POSTGRESQL_VERSION=17 && sudo apt search postgresql-$POSTGRESQL_VERSION
+
+# Install the postgresql you want, but for full version downloaded you should download via `postgres-$VERSION`, e.g: postgresql-17
+export POSTGRESQL_VERSION=17 && sudo apt install postgresql-$POSTGRESQL_VERSION -y
+```
+# PostgreSQL Tools Usage
 
 ## Backup database
 
 >[!info]
 >PostgreSQL offer for us to using multiple way backup database inside, manipulate the output backup, moreover
 
-Documentation: [PostgreSQL official - Chapter 26. Backup and Restore](https://www.postgresql.org/docs/current/backup.html)
+Explore more at
 
+- [PostgreSQL official - Chapter 26. Backup and Restore](https://www.postgresql.org/docs/current/backup.html)
+- [Blog - A better backup with PostgreSQL using pg_dump](https://www.commandprompt.com/blog/a_better_backup_with_postgresql_using_pg_dump/)
+- [Reddit - pg_database_size is much much bigger than pg_dump](https://www.reddit.com/r/PostgreSQL/comments/80yzt1/pg_database_size_is_much_much_bigger_than_pg_dump/)
+- [StackOverFlow - Improve pg dump&restore](https://stackoverflow.com/a/41402728)
 ### Use `pg_dump` for backup the database
 
 1. Basic usage for dumping data with command
@@ -188,31 +261,48 @@ pg_restore -d dbname filename
 pg_restore -j num -d dbname filename
 ```
 
-## Healthcheck for Docker or Kubernetes
+## Health-Check for Docker or Kubernetes
 
-You can use command `pg_isready` for healthcheck container before bring up
+You can use command `pg_isready` for health-check container before bring up
 
 ```bash
 pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}
 ```
 
-# PSQL Command
+## Monitor dump and restore progress
 
-## Setup PSQL
+By default, when you use `pg_dump` for dumping database or `psql`, `pg_restore` for restoring your database, you will become blindly and not know how much time to wait for these processes. Therefore, you have reason for handling it by adding 3rd party tool to intercept how long it becoming success by
 
-To download `psql`, we can use command in `ubuntu` or `debian` via `apt`
+- [Man7 - pv](https://man7.org/linux/man-pages/man1/pv.1.html)
+- [Geekforgeeks - pv command in Linux with Examples](https://www.geeksforgeeks.org/linux-unix/pv-command-in-linux-with-examples/)
+- [Medium - Back and restore of a PostgreSQL database](https://medium.com/@davidfava/back-and-restore-of-a-postgresql-database-7c5e1d34f750)
+- [GitHub - pv_dump.sh](https://gist.github.com/kmatt/2783910)
+
+First of all, you need to install `pv` command
 
 ```bash
-# Download full
-sudo apt install postgresql
-
-# Specific only client
-sudo apt install postgresql-client-16 -y
+sudo apt install pv -y
 ```
 
-## Extension PSQL
+Now you can execution backup and restore with view your process when executing these actions
 
-Double-check more `psql` command at [postgres-cheatsheet.md](https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546)
+```bash
+# backup with pg_dump
+PGPASSWORD="postgrespw" \
+pg_dump -U postgres -h localhost DATABASE |\
+pv -c -s $(psql -h localhost -U postgres -tc "SELECT pg_database_size('DATABASE')") -N dump |\
+gzip > DATABASE.sql.gz
+
+# restore with psql
+pv mydatabase_dump.sql | psql -h localhost -U myuser -d mydatabase
+
+# restore with pg_restore (used for customize format)
+pv mydatabase_dump.dump | pg_restore -h localhost -U myuser -d mydatabase
+```
+
+## `psql` commands cheatsheet
+
+You need to install `postgresql-client` for using `psql` in your host. If you want to explore more, double-check more commands at [postgres-cheatsheet.md](https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546)
 
 ```bash
 # List database
@@ -221,13 +311,77 @@ postgres=# \l
 # Turn on mode easier for read
 postgres=# \x on
 
-# List tables from all schemas
+# List tables and views from current schema
 postgres=# \dt
+
+# List tables and views from specific schemas
+postgres=# \dt <schema_name>.*
+
+# List tables but with pattern
+postgres=# \dt emp* # start with "emp"
+postgres=# \dt *sal* # contain *sal*
+
+# List information in specific table
+postgres=# \d <table_name>
+
+# List extension on database
+postgres=# \dx
+postgres=# \dx+ # more information
+
+# List user on database
+postgres=# \du
+
+# List schema in PostgreSQL
+postgres=# \dn
+postgres=# \dn+ # more information
 ```
 
-# Helpful SQL for working with PostgreSQL
+# Helpful SQL Queries
 
-## Find the location of configuration for `postgres`
+![[meme-awesome.png|center]]
+
+## Create PostgreSQL User
+
+Explore more methodologies at
+
+- [Medium - Creating user, database and adding access on PostgreSQL](https://medium.com/coding-blocks/creating-user-database-and-adding-access-on-postgresql-8bfcd2f4a91e)
+- [StrongDM - How to Create a Postgres User (Step-by-Step Tutorial)](https://www.strongdm.com/blog/postgres-create-user)
+- [StackOverFlow - Why am I getting a permission denied error for schema public on pgAdmin 4?](https://stackoverflow.com/questions/67276391/why-am-i-getting-a-permission-denied-error-for-schema-public-on-pgadmin-4)
+
+```sql
+# Create user with password
+	CREATE USER your_new_username WITH ENCRYPTED PASSWORD 'your_new_password';
+
+# Grant all permission
+GRANT ALL PRIVILEGES ON DATABASE your_database_name TO your_new_username;
+
+# Grant schema permission for user (consider with pg15)
+GRANT ALL ON SCHEMA public TO your_new_username;
+
+# Grant owner database for user (consider with pg15)
+ALTER DATABASE your_database_name OWNER TO your_new_username;
+```
+
+
+## Show all configuration of runtime
+
+```bash
+# Display all current run-time configuration parameter
+SHOW ALL;
+
+# Or but more detail
+SELECT name, setting, unit, category, short_desc, source FROM pg_settings;
+
+# Find the specific one in table pg_settings of postgres datbase
+# E.g
+# To see the log setting
+SELECT name, setting FROM pg_settings WHERE name LIKE 'log%';
+
+# To see the max_connections
+SELECT name, setting FROM pg_settings WHERE name LIKE 'max_connections%';
+```
+
+## Locate the `postgresql` configuration
 
 ```sql
 # Find main configuration of postgresql
@@ -237,9 +391,15 @@ SHOW config_file;
 SHOW hba_files;
 ```
 
+## List the schema in particular database
+
+```sql
+SELECT schema_name FROM information_schema.schemata;
+```
 ## Delete and close all connection for specify database
 
-Use for delete or truncate database
+>[!info]
+>Usual use this one for delete or truncate database
 
 ```sql
 SELECT pg_terminate_backend(pid)
@@ -261,38 +421,14 @@ ORDER BY query_start desc;
 SELECT S.pid, age(clock_timestamp(), query_start), usename, query, L.mode, L.locktype, L.granted FROM pg_stat_activity S inner join pg_locks L on S.pid = L.pid order by L.granted, L.pid DESC;
 ```
 
-## Kill running query
+## Kill query
 
 ```sql
+# Kill running query
 SELECT pg_cancel_backend(procpid);
-```
 
-## Kill idle query
-
-```sql
+# Kill idle query
 SELECT pg_terminate_backend(procpid);
-```
-
-## Create PostgreSQL User
-
-Explore more methodologies at
-
-- [Medium - Creating user, database and adding access on PostgreSQL](https://medium.com/coding-blocks/creating-user-database-and-adding-access-on-postgresql-8bfcd2f4a91e)
-- [StrongDM - How to Create a Postgres User (Step-by-Step Tutorial)](https://www.strongdm.com/blog/postgres-create-user)
-- [StackOverFlow - Why am I getting a permission denied error for schema public on pgAdmin 4?](https://stackoverflow.com/questions/67276391/why-am-i-getting-a-permission-denied-error-for-schema-public-on-pgadmin-4)
-
-```sql
-# Create user with password
-CREATE USER your_new_username WITH ENCRYPTED PASSWORD 'your_new_password';
-
-# Grant all permission
-GRANT ALL PRIVILEGES ON DATABASE your_database_name TO your_new_username;
-
-# Grant schema permission for user (consider with pg15)
-GRANT ALL ON SCHEMA public TO your_new_username;
-
-# Grant owner database for user (consider with pg15)
-ALTER DATABASE your_database_name OWNER TO your_new_username;
 ```
 
 # Setup PosgreSQL with Ansible

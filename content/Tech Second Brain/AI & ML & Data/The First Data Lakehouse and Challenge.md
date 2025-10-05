@@ -153,7 +153,7 @@ Like I related above, I choose techstack, include  **Iceberg + MinIO + Polaris +
 
 
 <div align="center">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/jMFMEk8jFu8?si=ilNgoznWRL8HV1WC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/jMFMEk8jFu8?si=tgFVtOVz75D48QVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 - Third one, this stack is not new and it's totally had many experience engineers write about that, such as
@@ -259,7 +259,7 @@ services:
 
   # Polaris for IceBerg REST Catalog 
   polaris:
-    image: apache/polaris:latest
+    image: apache/polaris:1.1.0-incubating
     hostname: polaris
     ports:
       - "8181:8181" # Polaris REST Catalog API
@@ -636,6 +636,405 @@ With `metadata`, it will save in `json` and `avro` format
 
 ![[Pasted image 20250816223240.png]]
 
+## Deploying Polaris to Kubernetes (Updated 10/2025)
+
+![[meme-k8s-me.png|center]]
+
+Currently, when I write the updated for this blog, you already have the way to operate Polaris to Kubernetes environment. That's pretty useful for system nowadays, and I am not exception. But it's trying to repeat almost step in Docker, but more sophisticated and reduce a lot of workload when you work with them in Kubernetes.
+
+You can find the `helm` chart in any version of Polaris, especially, I recommend you use them in `releast/*` tag because it's already stable than `main` version. Explore them via these links below
+
+- [Polaris Helm - v1.0.1](https://github.com/apache/polaris/tree/release/1.0.x/helm/polaris)
+- [Polaris Helm - v1.1.0](https://github.com/apache/polaris/tree/release/1.1.x/helm/polaris)
+- [Polaris Helm - v1.2.0 (Main Branch)](https://github.com/apache/polaris/tree/main/helm/polaris)
+
+When I try to overview the helm-chart, because this project is written by apache, so the values define truly detail as well, and you can easier to understand, and change them for suitable with your configuration
+
+Like the docker version, I will change couple of configuration following the [Production Operating](https://polaris.apache.org/releases/1.1.0/configuring-polaris-for-production/)
+
+- Use an `rsa-key-pair` for the authentication method, defining your own `public.key` and `private.key`.
+- Do not require a header. We are skipping this feature to simplify the delivery process.
+- Change the metastore configuration from the default `in_memory` setting to `relational-jdbc` with a PostgreSQL Database.
+- To use `relational-jdbc`, you must bootstrap the database to create the necessary `polaris_schema` for metastore storage.
+- Change the `FILE` storage type to support S3 and Azure.
+
+First of all, we need to define the secrets in Kubernetes with great optional for let your `helm` generate the secrets and mapping into Polaris
+
+**Configure OAuth2 for Polaris**
+
+>[!note]
+>By default, Polaris will use `rsa-key-pair` for authentication method, that why if you let polaris generate then by own, it will lead to trouble when you have demands for scaling Polaris
+👉👉 READ MORE AT: [Polaris - Configure OAuth2](https://polaris.apache.org/releases/1.1.0/configuring-polaris-for-production/#configure-oauth2)
+
+1. To generate the key-pair by your own, you can handle by command
+
+```bash
+openssl genpkey -algorithm RSA -out private.key -pkeyopt rsa_keygen_bits:2048
+openssl rsa -in private.key -pubout -out public.key
+```
+
+2. After that, you can create the secret in `Kubernetes` base on them
+
+```bash
+kubectl create secret generic --namespace polaris polaris-auth-secrets \
+    --from-file="public.key=./public.key" \
+    --from-file="private.key=./private.key" \
+    --dry-run=client --output yaml > polaris-auth-secrets.yaml
+```
+
+3. Applying this file to Kubernetes
+
+```bash
+kubectl apply -f polaris-auth-secrets.yaml
+```
+
+**Database Secrets for Polaris**
+
+>[!NOTE]
+>Polaris will use `in-memory` for metastore, it means when Polaris restarts that will be purged whole things, so why we need to change that into `relation-jdbc` with any database. But currently, Polaris supports great for PostgreSQL
+
+1. To create secret, you need to prepare the files, including
+
+>[!warning]
+>Because Polaris use [Quarkus](https://quarkus.io/) framework for setting, that why it support driver to connect DB and when I deploy for first time, it encounter error when doesn't understand the value in secrets. Quarkus only support `jdbcUrl` not wrap in double-quote `""`, that why you need to put only raw `jdbcURL`, so do the same for `username` and `password`
+
+```bash title="db.env"
+username=your-db-username
+password=your-db-password
+jdbcUrl=jdbc:postgresql://your-db-ip:5432/polaris
+```
+
+2. After that, you can create the secret in Kubenetes via `kubectl` command base on them 
+```bash
+kubectl create secret generic --namespace polaris polaris-db-secrets \
+    --from-env-file db.env \
+    --dry-run=client --output yaml > polaris-db-secrets.yaml
+```
+
+3. Applying this file
+```bash
+kubectl apply -f polaris-db-secrets.yaml
+```
+
+**Storage Secrets for Polaris**
+
+>[!note]
+> The critical feature of Polaris is interact and management catalog of IceBerg with object storage, such as S3, GCS, ... For the workspace, I use MinIO for alternative solution of S3 in Local Environment, to let polaris able to connect, you need create secret and mount them to Kubernetes, or you can use S3 but not need to define any alternative endpoint
+
+1. To create secret, you need to prepare the files, including
+```bash title="storage.env"
+awsAccessKeyId="awsAccessKeyId"
+awsSecretAccessKey="awsSecretAccessKey"
+```
+
+2. After that, you can create the secret in Kubenetes via `kubectl` command base on them
+```bash
+kubectl create secret generic --namespace polaris polaris-storage-secrets \
+    --from-file storage.env \
+    --dry-run=client --output yaml > polaris-storage-secrets.yaml
+```
+
+3. Applying this file
+
+```bash
+kubectl apply -f polaris-storage-secrets.yaml
+```
+
+For double-check all of secrets created in `polaris` namespace, you can use `get` command
+
+```bash
+kubectl get secrets -n polaris
+```
+
+Next step, we need to bootstrap PostgreSQL Database
+
+To reduce the complex when setup the polaris tools, I recommend you to use `docker` version for instead of `binary` version by including all of them container when we create with image `apache/polaris-admin-tool:latest`
+
+You should login to postgresql database, and create database for your user to connect to db. But for testing, I prefer use the root user of PostgreSQL
+
+>[!warning]
+>For production environment, I prefer you to create another user with specific permission in `polaris` DB
+
+```bash
+psql -h database-host -U username -d postgres -c "CREATE DATABASE polaris;"
+```
+
+Prompt password and you will create success new empty database `polaris` in PostgreSQL. Next, you can use docker to run the bootstrap
+
+```bash
+docker run -it --name polaris-bootstrap-db \
+    --env POLARIS_PERSISTENCE_TYPE="relational-jdbc" \
+    --env QUARKUS_DATASOURCE_JDBC_URL="jdbc:postgresql://your-db-ip:5432/polaris" \
+    --env QUARKUS_DATASOURCE_USERNAME="your-db-username" \
+    --env QUARKUS_DATASOURCE_PASSWORD="your-db-password" \
+    apache/polaris-admin-tool:latest bootstrap --realm=<realm> --credential='<realm,clientId,clientSecret>'
+```
+
+![[Pasted image 20251002162523.png]]
+
+Now you already prepare enough stuff for Polaris, at the end you need to customize the `values.yaml` of `Polaris` Helm chart. Let go into the detail thing what i change
+
+1. Specific version for Polaris (NOTE: one of important thing for make your service consistent)
+
+```yaml {7}
+image:
+  # -- The image repository to pull from.
+  repository: apache/polaris
+  # -- The image pull policy.
+  pullPolicy: IfNotPresent
+  # -- The image tag.
+  tag: "1.1.0-incubating"
+  # -- The path to the directory where the application.properties file, and other configuration
+  # files, if any, should be mounted.
+  # Note: if you are using EclipseLink, then this value must be at least two folders down to the
+  # root folder, e.g. `/deployments/config` is OK, whereas `/deployments` is not.
+  configDir: /deployments/config
+```
+
+2. Update the resources for Polaris
+
+```yaml {2-6}
+resources:
+  limits:
+    memory: 1Gi
+  requests:
+    cpu: 100m
+    memory: 1Gi
+```
+
+3. Add advanced config for `polaris.features.DROP_WITH_PURGE_ENABLED`
+
+```yaml {2}
+advancedConfig:
+  polaris.features.DROP_WITH_PURGE_ENABLED: true
+```
+
+4. Next add extraEnv for bucket information, especially if you use MinIO for S3 features
+
+```yaml {2-9}
+extraEnv:
+  - name: AWS_REGION
+    value: us-east-1
+  - name: AWS_ENDPOINT_URL_S3
+    value: https://s3.example.com
+  - name: AWS_ENDPOINT_URL_STS
+    value: https://s3.example.com
+  - name: quarkus.datasource.db-kind
+    value: postgresql
+```
+
+5. Change the default realmContext for matching with bootstrap in DB (POLARIS --> polaris)
+
+```yaml {9}
+# -- Realm context resolver configuration.
+realmContext:
+  # -- The type of realm context resolver to use. Two built-in types are supported: default and test;
+  # test is not recommended for production as it does not perform any realm validation.
+  type: default
+  # -- List of valid realms, for use with the default realm context resolver. The first realm in
+  # the list is the default realm. Realms not in this list will be rejected.
+  realms:
+    - polaris
+```
+
+6. Disable `FILE` storage type to `S3` only at features
+
+```yaml {4}
+# -- Polaris features configuration.
+features:
+  SUPPORTED_CATALOG_STORAGE_TYPES:
+    - S3
+  realmOverrides: {}
+```
+
+7. Set the secrets for metastore saving with `postgresql`, it should match with key you create in secrets `polaris-db-secrets`
+
+```yaml {5,9-17}
+# -- Polaris persistence configuration.
+persistence:
+  # -- The type of persistence to use. Two built-in types are supported: in-memory and relational-jdbc.
+  # The eclipse-link type is also supported but is deprecated.
+  type: relational-jdbc  # relational-jdbc
+  # -- The configuration for the relational-jdbc persistence manager.
+  relationalJdbc:
+    # -- The secret name to pull the database connection properties from.
+    secret:
+      # -- The secret name to pull database connection properties from
+      name: polaris-db-secrets
+      # -- The secret key holding the database username for authentication
+      username: username
+      # -- The secret key holding the database password for authentication
+      password: password
+      # -- The secret key holding the database JDBC connection URL
+      jdbcUrl: jdbcUrl
+```
+
+8. Set the secrets for storage type, following we use `MinIO` will be matched with AWS
+
+```yaml {7,9,11}
+# -- Storage credentials for the server. If the following properties are unset, default
+# credentials will be used, in which case the pod must have the necessary permissions to access the storage.
+storage:
+  # -- The secret to pull storage credentials from.
+  secret:
+    # -- The name of the secret to pull storage credentials from.
+    name: polaris-storage-secrets
+    # -- The key in the secret to pull the AWS access key ID from. Only required when using AWS.
+    awsAccessKeyId: awsAccessKeyId
+    # -- The key in the secret to pull the AWS secret access key from. Only required when using AWS.
+    awsSecretAccessKey: awsSecretAccessKey
+    # -- The key in the secret to pull the GCP token from. Only required when using GCP.
+    gcpToken: ~
+    # -- The key in the secret to pull the GCP token expiration time from. Only required when using GCP. Must be a valid ISO 8601 duration. The default is PT1H (1 hour).
+    gcpTokenLifespan: ~
+```
+
+9. Lastly, set the secrets for OIDC authentication with `rsa-key-pair` value
+
+```yaml {22,35,37}
+# -- Polaris authentication configuration.
+authentication:
+  # -- The type of authentication to use. Three built-in types are supported: internal, external, and mixed.
+  type: internal
+  # -- The `Authenticator` implementation to use. Only one built-in type is supported: default.
+  authenticator:
+    type: default
+  # -- The token service (`IcebergRestOAuth2ApiService`) implementation to use. Two built-in types are supported: default and disabled.
+  # Only relevant when using internal (or mixed) authentication. When using external authentication, the token service is always disabled.
+  tokenService:
+    type: default
+  # -- The `TokenBroker` implementation to use. Two built-in types are supported: rsa-key-pair and symmetric-key.
+  # Only relevant when using internal (or mixed) authentication. When using external authentication, the token broker is not used.
+  tokenBroker:
+    type: rsa-key-pair  # symmetric-key
+    # -- Maximum token generation duration (e.g., PT1H for 1 hour).
+    maxTokenGeneration: PT1H
+    # -- The secret name to pull the public and private keys, or the symmetric key secret from.
+    secret:
+      # -- The name of the secret to pull the keys from. If not provided, a key pair will be generated.
+      # This is not recommended for production.
+      name: polaris-auth-secrets
+      # -- DEPRECATED: Use `authentication.tokenBroker.secret.rsaKeyPair.publicKey` instead.
+      # Key name inside the secret for the public key
+      publicKey: public.pem
+      # -- DEPRECATED: Use `authentication.tokenBroker.secret.rsaKeyPair.privateKey` instead.
+      # Key name inside the secret for the private key
+      privateKey: private.pem
+      # -- DEPRECATED: Use `authentication.tokenBroker.secret.symmetricKey.secretKey` instead.
+      # Key name inside the secret for the symmetric key
+      secretKey: symmetric.pem
+      # -- Optional: configuration specific to RSA key pair secret.
+      rsaKeyPair:
+        # -- Key name inside the secret for the public key
+        publicKey: public.key
+        # -- Key name inside the secret for the private key
+        privateKey: private.key
+      # -- Optional: configuration specific to symmetric key secret.
+      symmetricKey:
+        # -- Key name inside the secret for the symmetric key
+        secretKey: symmetric.key
+  # -- Authentication configuration overrides per realm.
+  realmOverrides: {}
+    # my-realm:
+    #   type: external
+    #   authenticator:
+    #     type: custom
+```
+
+Alright, you already to deploy the `polaris` to namespace. Because this one is not publish the helm as web-service for check `index.yaml`, so why you need to download this helm by [GitZip](https://kinolien.github.io/gitzip/) - a great tools for download subfolder
+
+Now navigate to helm polaris, and you can build `install.yaml` with definition template and customize value file
+
+```bash
+helm template polaris -f values-customize.yaml ./ --debug > install.yaml
+```
+
+Now you can apply this file with command `kubectl`
+
+``` bash
+kubectl apply -f install.yaml
+```
+
+
+>[!warning]
+>**(BONUS)** When I work to deploy the `Polaris` with ArgoCD, you will encounter the error below to let you render the template in ArgoCD
+
+```bash
+template: polaris/templates/deployment.yaml:130:12: executing "polaris/templates/deployment.yaml" at <include "polaris.configVolume" .>: error calling include: template: polaris/templates/_helpers.tpl:179:10: executing "polaris.configVolume" at <include "polaris.configVolumeAuthenticationOptions" (list "" .Values.authentication)>: error calling include: template: polaris/templates/_helpers.tpl:348:29: executing "polaris.configVolumeAuthenticationOptions" at <.>: wrong type for value; expected chartutil.Values; got []interface {} Use --debug flag to render out invalid YAML
+```
+
+This error relate when calling the template via `include` and parsing the context (dot or `.` )
+
+![[Pasted image 20251002172338.png]]
+
+Therefore, I try to edit these template files to fix in `_helpers.tpl` , following below
+
+First we edit the template `polaris.configVolumeAuthenticationOptions` for setting another definition `rootContext`
+
+>[!info]
+>The inner template should be modified to extract the needed variables _and_ the root context (`.`) from the dictionary (or list) passed to it.
+
+```yaml title="_helpers.tpl" {7,15,22,24,30}
+{{/*
+Sets authentication options for a given realm in the projected config volume.
+*/}}
+{{- define "polaris.configVolumeAuthenticationOptions" -}}
+{{- $realm := index . 0 -}}
+{{- $auth := index . 1 -}}
+{{- $rootContext := index . 2 -}} # <--- Add this to capture the root context
+{{- $authType := coalesce $auth.type "internal" -}}
+{{- if (or (eq $authType "mixed") (eq $authType "internal")) }}
+{{- $secretName := dig "tokenBroker" "secret" "name" "" $auth -}}
+{{- if $secretName -}}
+{{- $tokenBrokerType := dig "tokenBroker" "type" "rsa-key-pair" $auth -}}
+{{- $subpath := empty $realm | ternary "" (printf "%s/" (urlquery $realm)) -}}
+- secret:
+    name: {{ tpl $secretName $rootContext }} # <--- Use $rootContext here
+    items:
+    {{- if eq $tokenBrokerType "rsa-key-pair" }}
+      {{- /* Backward compatibility for publicKey: new takes precedence */ -}}
+      {{- $publicKey := coalesce (dig "tokenBroker" "secret" "rsaKeyPair" "publicKey" "" $auth) (dig "tokenBroker" "secret" "publicKey" "public.pem" $auth) }}
+      {{- /* Backward compatibility for privateKey: new takes precedence */ -}}
+      {{- $privateKey := coalesce (dig "tokenBroker" "secret" "rsaKeyPair" "privateKey" "" $auth) (dig "tokenBroker" "secret" "privateKey" "private.pem" $auth) }}
+      - key: {{ tpl $publicKey $rootContext }} # <--- Use $rootContext here
+        path: {{ $subpath }}public.pem
+      - key: {{ tpl $privateKey $rootContext }} # <--- Use $rootContext here
+        path: {{ $subpath }}private.pem
+    {{- end }}
+    {{- if eq $tokenBrokerType "symmetric-key" }}
+      {{- /* Backward compatibility for symmetricKey: new takes precedence */ -}}
+      {{- $secretKey := coalesce (dig "tokenBroker" "secret" "symmetricKey" "secretKey" "" $auth) (dig "tokenBroker" "secret" "secretKey" "symmetric.key" $auth) }}
+      - key: {{ tpl $secretKey $rootContext }} # <--- Use $rootContext here
+        path: {{ $subpath }}symmetric.key
+    {{- end }}
+{{- end }}
+{{- end }}
+{{- end -}}
+```
+
+Next we update the `include` which call template above in `polaris.configVolume` with third element of the list
+
+```yaml title="_helpers.tpl" {13, 15}
+{{/*
+Prints the config volume definition for deployments and jobs.
+*/}}
+{{- define "polaris.configVolume" -}}
+- name: config-volume
+  projected:
+    sources:
+      - configMap:
+          name: {{ include "polaris.fullname" . }}
+          items:
+            - key: application.properties
+              path: application.properties
+      {{- include "polaris.configVolumeAuthenticationOptions" (list "" .Values.authentication .) | nindent 6 }} # <--- Pass the root context (.)
+      {{- range $realm, $auth := .Values.authentication.realmOverrides -}}
+      {{- include "polaris.configVolumeAuthenticationOptions" (list $realm $auth .) | nindent 6 }} # <--- Pass the root context (.)
+      {{- end -}}
+{{- end -}}
+```
+
+By passing the root context (`.`) as the third element in the list and using it explicitly for the `tpl` function, you ensure that `tpl` receives the expected `chartutil.Values` map, resolving the `wrong type for value` error
 # Conclusion
 
 ![[meme-technology.png|center]]

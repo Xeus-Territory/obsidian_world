@@ -90,6 +90,7 @@ tags:
 - [ProductHunt](https://www.producthunt.com/): The best new products in tech 🌟 **(Recommended)**
 - [SourceForge](https://sourceforge.net/): Compare, Download & Develop Open Source & Business Software
 - [StackShare](https://stackshare.io/): See what tech stacks your peers are using 🌟 **(Recommended)**
+- [LibHunt](https://www.libhunt.com/): Discover awesome open-source projects and their alternatives 🌟 **(Recommended)**
 # Blog DevOps and Tech
 
 >[!note]
@@ -112,6 +113,7 @@ tags:
 ## Tech Blog
 
 - [3os Project](https://3os.org/) - Collocation of technical documentation and guides for devops, developers, pentesters, systems administrators and other IT professionals.
+- [Alibaba Cloud](https://www.alibabacloud.com/blog/): The blog page of Alibaba that provides a great insightful, diverse topics and great articles to approach 🌟 **(Recommended)**
 - [Digital Ocean Community](https://www.digitalocean.com/community) - Community offers thousands of tutorials, videos, and answers to questions on a wide range of topics
 - [Hackaday](https://hackaday.com/) - Fresh Hacks Every Day
 - [Hackaday.io](https://hackaday.io/) - The world's largest collaborative hardware development community.

@@ -33,6 +33,7 @@ tags:
 - [awesome-model-quantization](https://github.com/Efficient-ML/Awesome-Model-Quantization): A list of papers, docs, codes about model quantization
 - [awesome-production-machine-learning](https://github.com/EthicalML/awesome-production-machine-learning): A curated list of awesome open source libraries to deploy, monitor, version and scale your machine learning
 - [best-of-ml-python](https://github.com/ml-tooling/best-of-ml-python): 🏆 A ranked list of awesome machine learning Python libraries. Updated weekly
+- [system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks): Collection of extracted System Prompts from popular chatbots like ChatGPT, Claude & Gemini
 ## Blogs
 
 - [DigitalOcean - AI/ML Topics](https://www.digitalocean.com/community/tags/ai-ml): Articles and Community about AI/ML 🌟 **(Recommended)**
@@ -45,6 +46,7 @@ tags:
 - [PyImageSearch](https://pyimagesearch.com/blog/): A brand new Computer Vision, Deep Learning, and OpenCV
 - [Medium - Gao Dalie (高達烈)](https://medium.com/@GaoDalie_AI): Learn AI Agent, LLMs, RAG & Generative AI 🌟 **(Recommended)**
 - [Medium - Samar Singh](https://medium.com/@samarrana407): Build Scalable AI Solutions 🚀 🌟 **(Recommended)**
+- [Medium - Fareed Khan](https://medium.com/@fareedkhandev): The guy write about tutorial for building AI, and this's pretty insane 🌟 **(Recommended)**
 ## Landscape
 
 - [LF AI & Data Foundation Interactive Landscape](https://landscape.lfai.foundation/) 🌟 **(Recommended)**

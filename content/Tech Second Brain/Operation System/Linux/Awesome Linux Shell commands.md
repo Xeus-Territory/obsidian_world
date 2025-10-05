@@ -729,14 +729,6 @@ hostnamectl set-hostname new-name
 ```
 # External Commands
 
-## Vagrant
-
-If you have problems when `vagrant` can't authentication for `ssh`. You will need concern to add this setting. Read more at: [Vagrant ssh authentication failure](https://stackoverflow.com/questions/22922891/vagrant-ssh-authentication-failure)
-
-```bash title="Vagrantfile"
-config.ssh.forward_agent = true
-```
-
 ## Pip3 & Python3
 
 ![[icon-python-pypi.svg|center|300]]

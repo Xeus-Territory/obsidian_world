@@ -38,26 +38,26 @@ Now, I'm having [Kind](https://kind.sigs.k8s.io/) but any bloom together, it mea
 
 - How can I monitor, debug and troubleshoot `pod` inside Kubernetes Sandbox ? I try to find solution, and it comes up some ideas. like
 
-	1. Using the pattern - [Sidecar](https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar) with [Fluentbit](https://github.com/leahnp/fluentbit-sidecar) to collect the log and expose it to `Kafka` or ElasticSearch for data sourcing, that's trust solution but coming with complex idea to operate them in Sandbox, I think that trade off is not deserve. If you want to explore more about FluentBit as Sidecar, You can try this [Medium - Run fluent-bit as a sidecar to stream logs to Loki in EKS Fargate](https://the-optimizer.medium.com/run-fluent-bit-as-a-sidecar-to-stream-logs-to-loki-in-eks-fargate-6d08424f6ed6) **(Skipped ❌)**
+	1. Using the pattern - [Sidecar](https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar) with [Fluentbit](https://github.com/leahnp/fluentbit-sidecar) to collect the log and expose it to `Kafka` or `ElasticSearch` for data sourcing, that's trust solution but coming with complex idea to operate them in Sandbox, I think that trade off is not deserve. If you want to explore more about FluentBit as Sidecar, You can try this [Medium - Run fluent-bit as a sidecar to stream logs to Loki in EKS Fargate](https://the-optimizer.medium.com/run-fluent-bit-as-a-sidecar-to-stream-logs-to-loki-in-eks-fargate-6d08424f6ed6) **(Skipped ❌)**
 	2. Second choice, I write backend server which interact with `Kubectl` to scrape log, metrics and event in sandbox to email for example to let's me know when are there failure in CI/CD pipelines. It great choice but one upon again it becomes complex and the workload spent for them will swallow much time to setup and implement. Hold on, you can try with MCP like [Kagent](https://kagent.dev/) and [BotKube](https://botkube.io/) to support you turn `kubectl` to tool of MCP server and Client can use it to debug, but you need concern to the complexity of this solution **(Skipped ❌)**
 	3. The last one, shout out to [Anh Phong - AI Engineer](https://www.linkedin.com/in/phongnt038/) to help me turn this debug progress integrated inside environment as tools to debug Kubernetes remotely via `websocket`, you know it comes from idea of [Portainer](https://www.portainer.io/) and it truly work to streaming log when it open websocket to scrape log, events inside Kubernetes **(Chosen 🌟)**
 
-- When the sandbox is already run, how can I access to them, e.g: API Docs or Interactive with application inside Kubernetes Sandbox. Technically, when i try to tradition environment, it will become easier for my hosted, because with GitLab CI, you dynamically run in many runner and it's impossible to NAT your pot network to handle randomly network of Kubernetes in Docker. But we have plan with [Kubernetes Tunnelling](https://openziti.io/docs/reference/tunnelers/kubernetes/), which can help resolve the accessible issue
+- When the sandbox is already run, how can I access to them, e.g: API Docs or Interactive with application inside Kubernetes Sandbox. Technically, when i try to tradition environment, it will become easier for my hosted, because with GitLab CI, you dynamically run in many runner and it's impossible to NAT your `pod` network to handle randomly network of Kubernetes in Docker. But we have plan with [Kubernetes Tunnelling](https://openziti.io/docs/reference/tunnelers/kubernetes/), which can help resolve the accessible issue
 
 	1. First option, I try to use controller of Kubernetes and it truly exist multiple popular candidates, such as [ngrok-operator](https://github.com/ngrok/ngrok-operator), [cloudflare-operator](https://github.com/adyanth/cloudflare-operator) or [inlets-operator](https://github.com/inlets/inlets-operator) which provide the great idea to control egress via ingress controller, like `ngrok` provide the tunnel to map your `pod` in Kubernetes with domain of them. Here is article [Ngrok - Introducing the ngrok Kubernetes Operator](https://ngrok.com/blog-post/ngrok-k8s) related more about that. But you know hard to say, when we have multiple application it doesn't work more, I don't try `inlets` or `cloudflare` but it required a couple pricing option, and know we hard to dynamically domain in CI/CD for couple of apps in same time **(Skipped ❌)**
 	2. But, `inlets` arch give me idea to use middleware server, act like bastion host to tunneling HTTP server via them, I can combine it with `kubectl` to `port-warding` application and open tunnel to bastion host server to tell it expose this local-port via them. I try and find couple of candidates actual great, e.g [Bore](https://github.com/ekzhang/bore) or [Chisel](https://github.com/jpillora/chisel) with `Client` and `Server` to expose network that entire resolve my concerning with secure expose 
 
 We've resolved two significant questions, confirming that a dynamic Kubernetes environment can serve as a CI/CD sandbox for temporary use, releasing resources after testing to push to staging.
 
-While I cannot disclose proprietary company tools, with permission from [Anh Phong - AI Engineer](https://www.linkedin.com/in/phongnt038/), I can outline the use case capabilities of our 'sandbox-cli'. You can develop a similar tool independently before his official publication.
+While I cannot disclose proprietary company tools, with permission from [Anh Phong - AI Engineer](https://www.linkedin.com/in/phongnt038/), I can outline the use case capabilities of our **sandbox-cli**. You can develop a similar tool independently before his official publication.
 
 Its features include:
 
-- Built on Python, it uses WebSockets to stream logs and metrics from the client (sandbox) to a server.
+- Built on Python, it uses **WebSockets** to stream logs and metrics from the client (sandbox) to a server.
 - It interacts with `bore` and `kubectl` to retrieve logs, manage port-forwarding, and expose sandbox events to the server.
-- It visualizes data in a user-friendly WebUI for effective monitoring, debugging, and interactive testing, enabling the release of the Kind cluster
+- It visualizes data in **a user-friendly WebUI** for effective monitoring, debugging, and interactive testing, enabling the release of the Kind cluster
 
-## CPU and GPU option for Kind
+## GPU Option for Kind
 
 ![[meme-k8s-me.png|center]]
 
@@ -78,20 +78,19 @@ For resolve and cut of the complex when we put a lot of command in CI/CD to setu
 
 - Build Base Docker Image for Kind CPU and Kind GPU
 - Deploy Bore Service for Tunneling HTTP
-- Deploy Sandbox Tools as CLI with Server and WebUI
+- Deploy Sandbox Tools as CLI with Server and WebUI **(Not more information)**
 - Implement and operate GitLab CI/CD with Kind Image
-
 ## Build The Base Docker Image
 
 First of all, we need to build the docker image for reducing the complex when we operate them in GitLab CI, including
 
-- Setup requirement package like `curl`, `wget`, `jq`, `git`
-- Setup binaries tools like `kubectl`, `helm`, `kind` and `nvkind (GPU)`
+- Setup requirement package like `curl`, `wget`, `jq`, `git` and [`libnvidia-ml-dev`](https://packages.debian.org/sid/libnvidia-ml-dev) (GPU Only)
+- Setup binaries tools like `kubectl`, `helm`, `kind` and `nvkind` (GPU Only)
 - Setup Golang language and Docker for GPU Sandbox
 - Script as tool for `get-secrets` and `get-metrics`
 - Setup `bore-cli` and `sandbox-cli` for monitoring and tunneling
 
-You can pull these image from my dockerhub
+You can pull these image from my [dockerhub](https://hub.docker.com/u/xeusnguyen)
 
 - CPU Kind Sandbox: [Link](https://hub.docker.com/r/xeusnguyen/cpu-kind-sandbox)
 - GPU Kind Sandbox: [Link](https://hub.docker.com/r/xeusnguyen/gpu-kind-sandbox)
@@ -99,10 +98,15 @@ You can pull these image from my dockerhub
 ```bash
 # CPU
 docker pull xeusnguyen/cpu-kind-sandbox:v0.1.0
+docker pull xeusnguyen/cpu-kind-sandbox # same but latest tag
 
 # GPU
 docker pull xeusnguyen/gpu-kind-sandbox:v0.1.0
+docker pull xeusnguyen/gpu-kind-sandbox # same but latest tag
 ```
+
+>[!warning]
+>When I try to test with GPU Image in GPU Server (A4000), I figure out you should use a new driver for make NVKind and your GPU can able to interact with other, e.g: 535, 555, 575 (NOTE: I try to use P40 with 525 and it doesn't work) 
 
 You can try to modify the resource below to get your own Docker Image with structure like this
 
@@ -148,7 +152,8 @@ COPY ./scripts/get-secrets /usr/local/bin/get-secrets
 # Setup the bore-cli for tunneling
 RUN wget -O /tmp/bore.tar.gz \
     https://github.com/ekzhang/bore/releases/download/v0.6.0/bore-v0.6.0-x86_64-unknown-linux-musl.tar.gz && \
-    tar -xzf /tmp/bore.tar.gz -C /usr/local/bin
+    tar -xzf /tmp/bore.tar.gz -C /usr/local/bin && \
+    rm -rf /tmp/bore.tar.gz
 ```
 
 ```Dockerfile title="gpu.Dockerfile"
@@ -206,7 +211,8 @@ COPY ./scripts/get-secrets /usr/local/bin/get-secrets
 # Setup the bore-cli for tunneling
 RUN wget -O /tmp/bore.tar.gz \
     https://github.com/ekzhang/bore/releases/download/v0.6.0/bore-v0.6.0-x86_64-unknown-linux-musl.tar.gz && \
-    tar -xzf /tmp/bore.tar.gz -C /usr/local/bin
+    tar -xzf /tmp/bore.tar.gz -C /usr/local/bin && \
+    rm -rf /tmp/bore.tar.gz
 ```
 
 ```bash title="./scripts/get-secrets"
@@ -540,6 +546,8 @@ docker buildx build -t gpu-kind-sandbox \
 
 ## Setup Bore Server
 
+![[thumbnail-bore-cli.png]]
+
 To enable tunneling, we will adapt the [Bore](https://github.com/ekzhang/bore) tool, leveraging its self-hosted client-server capabilities. For simplified setup, Docker images are preferred for self-hosting at this time.
 
 You will need a server configured to open specific ports for tunneling and management:
@@ -569,12 +577,11 @@ sudo docker run -it --rm \
 ```
 
 Access the browser with result tunnel command, and you can see your application exposed in that IP address
-
 ## Implement and operate GitLab CI/CD with Kind Image
 
 ![[meme-hero.png|center]]
 
-For license reasons, I cannot display the actual appearance of the Sandbox CLI, Server, and WebUI. However, based on the features described, it is an excellent tool that allows developers to debug directly within the Kubernetes Sandbox in CI.
+For license reasons, I cannot display the actual appearance of the Sandbox CLI, Server, and WebUI. However, based on the features described, it is an excellent tool that allows developers to debug directly within the Kubernetes Sandbox in CI, you can imagine `portainer` does things and SandboxCLI does same way.
 
 ![[design-pipeline-sandbox.png]]
 
@@ -614,7 +621,6 @@ services:
 
 stages:
   - sandbox
-  - error
 
 sandbox:
   stage: sandbox
@@ -677,22 +683,533 @@ sandbox:
   after_script:
     - echo "Signal ending from websocket, you are testing sandbox successfully, now we can release the cluster of this CI"
     - kind delete cluster --name=sandbox-$CI_COMMIT_SHORT_SHA
-
-failure:
-  stage: error
-  when: on_failure
-  dependencies:
-    - sandbox
-  script:
-    - echo "error when deploy your application"
-  after_script:
-    - kind delete cluster --name=sandbox-$CI_COMMIT_SHORT_SHA
 ```
 
 A couple result of pipeline and when we operate successfully
 
 ![[Pasted image 20250817220529.png]]
 ![[Pasted image 20250817220941.png]]
+## More advanced with GitLab CI (Updated 09/2025)
+
+![[meme-great-power-great-responsibility.png|center|500]]
+
+As usual, I use `sandbox` for testing lowest environment in CI before pushing them into higher environment, e.g: **staging or prod**. So why for more dynamically, you can turn this CI into the template and let's define all of them into one and inherit by another with overwrite via environment variables or CI/CD variables
+
+First, we go to define the template in remote repository
+
+```yaml title="sandbox.yaml"
+# Template 1: Using for build/push sandbox image
+# NOTE: You can build only and pass them via artifact, it will be flexible
+# to let you define what logical you actual want 
+.build-sandbox-image:
+  stage: build
+  image: docker:20.10.22
+  services:
+    - name: docker:20.10.22-dind
+      alias: docker
+  
+  variables:
+    # Define what environment in tagging (option) image, but it's up to you
+    # to choose whatever you want
+    ENV_NAME: sandbox
+    # Disable the TLS Certificate in the situation you won't have it
+    # Documentation: https://docs.gitlab.com/ci/docker/using_docker_build/#docker-in-docker-with-tls-disabled-in-the-docker-executor
+    DOCKER_TLS_CERTDIR: ""
+
+  # The condition to trigger the pipeline, it actual imporant, if not, this template won't trigger
+  rules:
+    - if: $SANDBOX_ENABLED == "true" && $CI_COMMIT_REF_NAME == "$TARGET_BRANCH_TESTING_SANDBOX"
+
+  # There are before script to check your lint passed, failed or canceled
+  # because sometimes you want try to bypass `lint` so I prefer to handle in this template
+  # use with `after_script` technique with pre-define environment $CI_JOB_STATUS
+  before_script:
+    # Check the lint state for continue or break the pipeline
+    - echo "Checking lint status in before_script..."
+    - echo "LINT_STATE is $LINT_STATE"
+    - if [ "$LINT_STATE" = "canceled" ]; then 
+        echo "Lint job was canceled. Proceeding normally ....."; 
+      elif [ "$LINT_STATE" = "failed" ]; then 
+        echo "Lint job failed !!! ..... "; 
+        exit 1; 
+      else 
+        echo "Lint job completed successfully. Proceeding normally ....."; 
+      fi
+  
+  # Pass artifact when the job become successfully
+  artifacts:
+    when: on_success
+    reports:
+      dotenv: buildsandbox.env
+
+# Template 2: Using for running sandbox as CPU type
+.run-cpu-sandbox:
+  stage: sandbox
+  image: xeusnguyen/cpu-kind-sandbox:latest
+  services:
+    - name: docker:20.10.22-dind
+      alias: docker
+
+  before_script:
+    # Remove the cluster in timeout pipeline when they try again with same CI_COMMIT_SHORT_SHA
+    - kind delete cluster --name=nlp-sandbox-$CI_COMMIT_SHORT_SHA || echo "Non't exist any cluster with name nlp-sandbox-$CI_COMMIT_SHORT_SHA. Proceeding normally ....."
+
+  # These variables are what you should be cared to overwrite or keep default
+  # which define your sandbox information
+  variables:
+    # USE FOR RUNNER
+    DOCKER_TLS_CERTDIR: ""
+    # USE FOR SANDBOX CLUSTER
+    KIND_CLUSTER_NAME: "nlp-sandbox-$CI_COMMIT_SHORT_SHA"
+    SANDBOX_K8S_IMAGE: "kindest/node:v1.27.11"
+    # USE FOR SANDBOX APPLICATION
+    # About the helm-template, you can double check more option at
+    # https://wiki.xeusnguyen.xyz/Tech-Second-Brain/Containerization/Awesome-Kubernetes#operator--chart
+    # 1. Stakater Application Helm Chart: https://github.com/stakater/application
+    # 2. Bitami Helm Chart: https://github.com/bitnami/charts
+    # 3. Poly Helm Chart: https://github.com/haonguyen1915/helm-charts
+    SANDBOX_HELM_REPO: "kubewekend"
+    SANDBOX_HELM_REPO_URL: "https://kubewekend.xeusnguyen.xyz"
+    SANDBOX_HELM_CHART: "common"
+    SANDBOX_CHART_VERSION: "0.1.3"
+    SANDBOX_APP_NAME: "sandbox-kubewekend-todoapp"
+    SANDBOX_SERVICE_NAME: "$SANDBOX_APP_NAME"
+    SANDBOX_APP_PORT: "3000"
+    SANDBOX_APP_HEALTH_CHECK_PATH: "/"
+    SANDBOX_RUNTIME_ARG: "yarn run dev"
+    SANDBOX_FULLNAME_OVERRIDE: "kubewekend-todoapp"
+    SANDBOX_IMAGE_REGISTRY: "xeusnguyen/application"
+    # USE FOR VAULT SANDBOX APPLICATION
+    # Set up these configuration if you want to use and retrieve secret vault as dotenv file
+    # NOTE: (Only supported) Hashicorp Vault: https://www.hashicorp.com/en/products/vault
+    USE_VAULT: false
+    VAULT_ADDRESS: "http://127.0.0.1:8200"
+    SECRET_PATH: "secret/data/sandbox/config"
+
+  rules:
+    - if: $SANDBOX_ENABLED == "true" && $CI_COMMIT_REF_NAME == "$TARGET_BRANCH_TESTING_SANDBOX" && $SANDBOX_TYPE == "CPU"
+  
+  script:
+    #--- Setup Environment ---
+
+    # Login to Private Container Registry
+    - docker login -u "$REGISTRY_USER" -p "$REGISTRY_PASSWORD" "$REGISTRY_LOCATION"
+
+    #--- Setup Kind Kubernetes Cluster ---
+
+    # Create and setup kind-config.yaml and kind cluster for sandbox
+    - mkdir -p ./kubernetes
+    - |
+      cat <<EOF | tee ./kubernetes/kind-config.yaml
+      apiVersion: kind.x-k8s.io/v1alpha4
+      kind: Cluster
+      networking:
+        apiServerAddress: "0.0.0.0"
+
+      kubeadmConfigPatchesJSON6902:
+      - group: kubeadm.k8s.io
+        version: v1beta3
+        kind: ClusterConfiguration
+        patch: |
+          - op: add
+            path: /apiServer/certSANs/-
+            value: docker
+
+      nodes:
+        - role: control-plane
+      EOF
+    - kind create cluster 
+        --name=$KIND_CLUSTER_NAME
+        --image=$SANDBOX_K8S_IMAGE
+        --config=./kubernetes/kind-config.yaml --wait=60s
+    - sed -i -E -e 's/localhost|0\.0\.0\.0/docker/g' "$HOME/.kube/config"
+    - kubectl wait --for=condition=Ready nodes/$KIND_CLUSTER_NAME-control-plane --timeout=120s
+    - kubectl get nodes -o wide
+    - kubectl get pods --all-namespaces -o wide
+    - kubectl get services --all-namespaces -o wide
+
+    #--- Install Common Services ---
+
+    # Setup secret registry-cred for private container registry
+    - kubectl create secret generic registry-cred 
+        --from-file=.dockerconfigjson=$HOME/.docker/config.json --type=kubernetes.io/dockerconfigjson
+
+    #--- Deploy the Application ---
+
+    # Check application used VAULT or not
+    - |
+      if [ "$USE_VAULT" == "true" ]; then
+        echo "USE_VAULT variable is true. Getting secrets ....."
+        get-secrets --vault-addr $VAULT_ADDRESS \
+          --secret-path $SECRET_PATH \
+          --username $USERNAME \
+          --password $PASSWORD \
+          --env-file /tmp/config.env
+        kubectl create configmap secret-vault --from-file=config.env=/tmp/config.env
+      else
+        echo "USE_VAULT variable is not set or not 'true'. Skipping secrets retrieval !!! ....."
+      fi
+    - mkdir -p ./kubernetes/helm
+    - |
+      cat <<EOF | tee ./kubernetes/helm/values.yaml
+      fullnameOverride: $SANDBOX_FULLNAME_OVERRIDE
+      image:
+        repository: "$SANDBOX_IMAGE_REGISTRY"
+        tag: "latest"
+      runtimeArgs: ["$SANDBOX_RUNTIME_ARG"]
+      service:
+        port: $SANDBOX_APP_PORT
+      $(if [ "$USE_VAULT" = "true" ]; then
+      cat <<'EOT'
+      volumeMounts:
+        - mountPath: /vault/secrets/
+          name: secret-vault
+          readOnly: true
+      volumes:
+        - name: secret-vault
+          configMap:
+            name: secret-vault
+            items:
+              - key: config.env
+                path: config.env
+      EOT
+      fi)
+      serviceAccount:
+        create: true
+        name: nlp-sandbox
+      probesOverride:
+        livenessProbe:
+          httpGet:
+            path: "$SANDBOX_APP_HEALTH_CHECK_PATH"
+            port: http
+        readinessProbe:
+          httpGet:
+            path: "$SANDBOX_APP_HEALTH_CHECK_PATH"
+            port: http
+      EOF
+
+    - helm repo add "$SANDBOX_HELM_REPO" "$SANDBOX_HELM_REPO_URL"
+    - helm install "$SANDBOX_APP_NAME" "$SANDBOX_HELM_REPO/$SANDBOX_HELM_CHART" 
+        --version "$SANDBOX_CHART_VERSION" 
+        -f ./kubernetes/helm/values.yaml --set image.tag="$APP_VERSION"
+        --wait
+      
+    #--- Run Monitoring ---
+    - |
+      podName=$(kubectl get pods -l "app.kubernetes.io/instance=$SANDBOX_APP_NAME" -o jsonpath="{.items[0].metadata.name}")
+      sandbox-cli
+  
+  # Clean the sandbox, return the resource for failure or successful sandbox job
+  after_script:
+    - echo "SIGTERM received from the websocket or failure. Now releasing cluster nlp-sandbox-$CI_COMMIT_SHORT_SHA ....."
+    - kind delete cluster --name=nlp-sandbox-$CI_COMMIT_SHORT_SHA
+
+.run-gpu-sandbox:
+  stage: sandbox
+  image: xeusnguyen/gpu-kind-sandbox:latest
+  services:
+    - name: docker:20.10.22-dind
+      alias: docker
+
+  before_script:
+    # Remove the cluster in timeout pipeline when they try again with same CI_COMMIT_SHORT_SHA
+    - kind delete cluster --name=nlp-sandbox-$CI_COMMIT_SHORT_SHA || echo "Non't exist any cluster with name nlp-sandbox-$CI_COMMIT_SHORT_SHA. Proceeding normally ....."
+
+  variables:
+    # USE FOR RUNNER
+    DOCKER_TLS_CERTDIR: ""
+    # USE FOR SANDBOX CLUSTER
+    KIND_CLUSTER_NAME: "nlp-sandbox-$CI_COMMIT_SHORT_SHA"
+    SANDBOX_K8S_IMAGE: "kindest/node:v1.27.11"
+    # USE FOR SANDBOX APPLICATION
+    # About the helm-template, you can double check more option at
+    # https://wiki.xeusnguyen.xyz/Tech-Second-Brain/Containerization/Awesome-Kubernetes#operator--chart
+    # 1. Stakater Application Helm Chart: https://github.com/stakater/application
+    # 2. Bitami Helm Chart: https://github.com/bitnami/charts
+    # 3. Poly Helm Chart: https://github.com/haonguyen1915/helm-charts
+    SANDBOX_HELM_REPO: "kubewekend"
+    SANDBOX_HELM_REPO_URL: "https://kubewekend.xeusnguyen.xyz"
+    SANDBOX_HELM_CHART: "common"
+    SANDBOX_CHART_VERSION: "0.1.3"
+    SANDBOX_APP_NAME: "sandbox-kubewekend-todoapp"
+    SANDBOX_SERVICE_NAME: "$SANDBOX_APP_NAME"
+    SANDBOX_APP_PORT: "3000"
+    SANDBOX_APP_HEALTH_CHECK_PATH: "/"
+    SANDBOX_RUNTIME_ARG: "yarn run dev"
+    SANDBOX_FULLNAME_OVERRIDE: "kubewekend-todoapp"
+    SANDBOX_IMAGE_REGISTRY: "xeusnguyen/application"
+    # USE FOR VAULT SANDBOX APPLICATION
+    # Set up these configuration if you want to use and retrieve secret vault as dotenv file
+    # NOTE: (Only supported) Hashicorp Vault: https://www.hashicorp.com/en/products/vault
+    USE_VAULT: false
+    VAULT_ADDRESS: "http://127.0.0.1:8200"
+    SECRET_PATH: "secret/data/sandbox/config"
+
+  rules:
+    - if: $SANDBOX_ENABLED == "true" && $CI_COMMIT_REF_NAME == "develop" && $SANDBOX_TYPE == "GPU"
+  
+  script:
+    #--- Setup Environment ---
+
+    # Login to Private Container Registry
+    - docker login -u "$REGISTRY_PUSH_USER" -p "$REGISTRY_PUSH_PASSWORD" "$CI_REGISTRY"
+
+    #--- Setup Kind Kubernetes Cluster ---
+
+    # Create and setup kind-config.yaml and kind cluster for sandbox
+    - mkdir -p ./kubernetes
+    - |
+      cat <<EOF | tee ./kubernetes/kind-config.yaml
+      apiVersion: kind.x-k8s.io/v1alpha4
+      kind: Cluster
+      networking:
+        apiServerAddress: "0.0.0.0"
+
+      kubeadmConfigPatchesJSON6902:
+      - group: kubeadm.k8s.io
+        version: v1beta3
+        kind: ClusterConfiguration
+        patch: |
+          - op: add
+            path: /apiServer/certSANs/-
+            value: docker
+
+      nodes:
+        - role: control-plane
+      EOF
+    - nvkind cluster create 
+        --name=$KIND_CLUSTER_NAME
+        --image=$SANDBOX_K8S_IMAGE
+        --config-template=./kubernetes/kind-config.yaml --wait=60s
+    - sed -i -E -e 's/localhost|0\.0\.0\.0/docker/g' "$HOME/.kube/config"
+    - kubectl wait --for=condition=Ready nodes/$KIND_CLUSTER_NAME-control-plane --timeout=120s
+    - kubectl get nodes -o wide
+    - kubectl get pods --all-namespaces -o wide
+    - kubectl get services --all-namespaces -o wide
+
+    #--- Install Common Services ---
+
+    # Setup secret registry-cred for private container registry
+    - kubectl create secret generic registry-cred 
+        --from-file=.dockerconfigjson=$HOME/.docker/config.json --type=kubernetes.io/dockerconfigjson
+    
+    # Setup GPU Operator
+    - helm repo add nvidia https://helm.ngc.nvidia.com/nvidia
+    - helm install --wait --generate-name 
+        -n gpu-operator --create-namespace 
+        nvidia/gpu-operator --set driver.enabled=false
+        --wait
+
+    #--- Deploy the Application ---
+
+    # Check application used VAULT or not
+    - |
+      if [ "$USE_VAULT" == "true" ]; then
+        echo "USE_VAULT variable is true. Getting secrets ....."
+        get-secrets --vault-addr $VAULT_ADDRESS \
+          --secret-path $SECRET_PATH \
+          --username $USERNAME \
+          --password $PASSWORD \
+          --env-file /tmp/config.env
+        kubectl create configmap secret-vault --from-file=config.env=/tmp/config.env
+      else
+        echo "USE_VAULT variable is not set or not 'true'. Skipping secrets retrieval !!! ....."
+      fi
+    - mkdir -p ./kubernetes/helm
+    - |
+      cat <<EOF | tee ./kubernetes/helm/values.yaml
+      fullnameOverride: $SANDBOX_FULLNAME_OVERRIDE
+      image:
+        repository: "$SANDBOX_IMAGE_REGISTRY"
+        tag: "latest"
+      runtimeArgs: ["$SANDBOX_RUNTIME_ARG"]
+      service:
+        port: $SANDBOX_APP_PORT
+      resources:
+        limits:
+          nvidia.com/gpu: 1
+      $(if [ "$USE_VAULT" = "true" ]; then
+      cat <<'EOT'
+      volumeMounts:
+        - mountPath: /vault/secrets/
+          name: secret-vault
+          readOnly: true
+      volumes:
+        - name: secret-vault
+          configMap:
+            name: secret-vault
+            items:
+              - key: config.env
+                path: config.env
+      EOT
+      fi)
+      serviceAccount:
+        create: true
+        name: nlp-sandbox
+      probesOverride:
+        livenessProbe:
+          httpGet:
+            path: "$SANDBOX_APP_HEALTH_CHECK_PATH"
+            port: http
+        readinessProbe:
+          httpGet:
+            path: "$SANDBOX_APP_HEALTH_CHECK_PATH"
+            port: http
+      EOF
+
+    - helm repo add "$SANDBOX_HELM_REPO" "$SANDBOX_HELM_REPO_URL"
+    - helm install "$SANDBOX_APP_NAME" "$SANDBOX_HELM_REPO/$SANDBOX_HELM_CHART" 
+        --version "$SANDBOX_CHART_VERSION" 
+        -f ./kubernetes/helm/values.yaml --set image.tag="$APP_VERSION"
+        --wait
+      
+    #--- Run Monitoring ---
+    - |
+      podName=$(kubectl get pods -l "app.kubernetes.io/instance=$SANDBOX_APP_NAME" -o jsonpath="{.items[0].metadata.name}")
+      sandbox-cli
+
+  # Clean the sandbox, return the resource for failure or successful sandbox job
+  after_script:
+    - echo "SIGTERM received from the websocket or failure. Now releasing cluster nlp-sandbox-$CI_COMMIT_SHORT_SHA ....."
+    - kind delete cluster --name=nlp-sandbox-$CI_COMMIT_SHORT_SHA
+```
+
+All of things, set it up, you need to inherit from another CI and set a couple of variables to make it work
+
+**CI/CD variables (Secure with masked)**
+
+- `REGISTRY_USER`: User for authenticate container registry
+- `REGISTRY_PASSWORD`: Password for authenticate container registry
+- `USERNAME` (Option): User for authenticate VAULT hashicorp
+- `PASSWORD` (Option): Password for authenticate VAULT hashicorp
+
+**Global Variables**
+
+- `REGISTRY_LOCATION`: The location of your container registry. Default: `""` (DOCKER HUB)
+- `TARGET_BRANCH_TESTING_SANDBOX`: The branch apply this sandbox jobs, e.g: `develop`
+- `SANDBOX_ENABLED`: The condition trigger sandbox worked, or not. Default: `false`
+- `SANDBOX_TYPE`: The type of template should be run, this one will let your sandbox application belong to CPU or GPU
+
+**Specific Variables**
+
+1. **USE FOR RUNNER (Optional 🔦)****
+
+	- DOCKER_TLS_CERTDIR: Set the runner run docker-dind without TLS Certificate. Default: `""`
+
+2. **USE FOR SANDBOX CLUSTER (Optional 🔦)**
+
+	- KIND_CLUSTER_NAME: Name of your sandbox Kind cluster. Default: `nlp-sandbox-$CI_COMMIT_SHORT_SHA`
+	- SANDBOX_K8S_IMAGE: Version of your K8s cluster. Default: `kindest/node:v1.27.11`
+
+3. **USE FOR SANDBOX APPLICATION (Important 🚨)**
+
+	- SANDBOX_HELM_REPO: Name definition for helm-chart repository. Default: `kubewekend`
+	- SANDBOX_HELM_REPO_URL: Location of your helm-chart repository. Default: `https://kubewekend.xeusnguyen.xyz`
+	- SANDBOX_HELM_CHART: Chart application in helm repository. Default: `common`
+	- SANDBOX_CHART_VERSION: Chart version of picked helm-chart. Default:  `0.1.3`
+	- SANDBOX_APP_NAME: Name of your application when deployed. Default: `sandbox-kubewekend-todoapp`
+	- Service name of your application when deployed. Default: `$SANDBOX_APP_NAME` **(Same as SANDBOX_APP_NAME)**
+	- SANDBOX_APP_PORT: Port of your application when deployed for health-check and mapping. Default: `3000`
+	- SANDBOX_APP_HEALTH_CHECK_PATH: PATH for health check your application when deployed. Default: `/`
+	- SANDBOX_RUNTIME_ARG: Runtime argument for starting your application when deployed. Default: `yarn run dev`
+	- SANDBOX_FULLNAME_OVERRIDE: Override whole of your application name in Sandbox cluster. Default: `kubewekend-todoapp`
+	- SANDBOX_IMAGE_REGISTRY: Registry of your application when deployed. Default: `xeusnguyen/application`
+
+4. **USE FOR VAULT SANDBOX APPLICATION (Optional 🔦)**
+
+	- USE_VAULT: The condition for enabling used vault or not when deployed. Default: `false`
+	- VAULT_ADDRESS: The location address of vault to retrieve the secrets. Default: `http://127.0.0.1:8200`
+	- SECRET_PATH: PATH of application secret in VAULT. Default: `secret/data/sandbox/config`
+
+Now you can define the downstream pipeline to get the template like this one
+
+```yaml title=".gitlab-ci.yml"
+include:
+  - project: 'gitlab/where/your/store/template'
+    file:
+      - sandbox.yaml
+
+# Global variables for CI
+variables:
+  ...
+  ...
+  SANDBOX_ENABLED: "true" # Set for your aplication use sandbox, or not
+  SANDBOX_TYPE: "CPU"
+  TARGET_BRANCH_TESTING_SANDBOX: "develop"
+# Define list stages for CI
+stages:
+  - build
+  - sandbox
+
+.build-template: &build
+  image: docker:20.10.22
+  # Build/Push image sandbox
+  script:
+    - docker login -u "$REGISTRY_USER" -p "$REGISTRY_PASSWORD" "$REGISTRY_LOCATION"
+    - export APP_VERSION=$ENV_NAME-$(date +'%Y-%m-%d_%H-%M-%S')-`[ -n "$CI_COMMIT_TAG" ] && echo $CI_COMMIT_TAG || echo $CI_COMMIT_SHORT_SHA` && echo $APP_VERSION
+    - docker build -t "$CI_REGISTRY_IMAGE:$APP_VERSION" .
+    - docker push "$CI_REGISTRY_IMAGE:$APP_VERSION"
+    - echo "APP_VERSION=$APP_VERSION" >> buildsandbox.env
+
+build sandbox:
+  extends: .build-sandbox-image
+  stage: build
+  variables:
+    ENV_NAME: sandbox
+  # # Get the artifact from lint jobs to keep work on this pipelines, or
+  # # break it because lint failure
+  # dependencies:
+  #   - lint
+
+  <<: *build
+
+run-sandbox:
+  extends: .run-cpu-sandbox
+  # Get the artifact from build sandbox for image tagging
+  dependencies:
+    - build sandbox ui
+  variables:
+    SANDBOX_APP_PORT: "3000"
+    SANDBOX_APP_HEALTH_CHECK_PATH: "/"
+    SANDBOX_RUNTIME_ARG: "yarn dev run"
+    SANDBOX_IMAGE_REGISTRY: "xeusnguyen/application"
+    SANDBOX_FULLNAME_OVERRIDE: "kubewekend-todoapp"
+    USE_VAULT: false
+```
+
+Now you are finish your `.gitlab-ci.yml` with sandbox Kubernetes. Enjoy and have fun with it by yourself
+## Troubleshoots
+
+During the progress setup Kind Sandbox, if you encounter couple of issues, here is what action you need to execute. BTW, you should double-check [Kind - Known Issues](https://kind.sigs.k8s.io/docs/user/known-issues/) to get the detail troubleshoot guideline
+### Failed to create cluster: could not find a log line
+
+![[Pasted image 20250909151118.png]]
+
+In my situation, I sometimes encounter error [GitHub - ERROR: failed to create cluster: could not find a log line that matches "Reached target .*Multi-User System.*|detected cgroup v1"](https://github.com/kubernetes-sigs/kind/issues/3423) and it's pretty hard for debug and guess what error behind
+
+The error usually come with reason many node creating inside machine, and the [inotify](https://linux.die.net/man/7/inotify) resources may runout. By default, Ubuntu and other distro will set the limit for both configuration `fs.inotify.max_user_watches` and `fs.inotify.max_user_instances` system variables, that why in some case you will not enough resources to create a new node.
+
+Therefore, you can resolve the problem by two ways
+
+1. **(Recommended)** Remove another cluster or clean all clusters inside your machine, it will help clean and release resources to continue create new one, especially run `sandbox` inside your pipeline
+
+```yaml
+...
+# Handle it with script, you will remove entire cluster inside your machine
+before_script:
+  - kind delete clusters -A
+```
+
+2. **(Consideration)** Modify the system resource limits for `fs`, it will help your temporarily or persistent your configuration, so you can keep the cluster the old clusters but continue turn on another one
+
+```bash
+temporarily in only current shell
+sudo sysctl fs.inotify.max_user_watches=524288
+sudo sysctl fs.inotify.max_user_instances=512
+```
+
+>[!info]
+>You can add both configuration above into `/etc/sysctl.conf` for keeping persistent in your system
 # Conclusion
 
 ![[meme-waiting.png|center|500]]

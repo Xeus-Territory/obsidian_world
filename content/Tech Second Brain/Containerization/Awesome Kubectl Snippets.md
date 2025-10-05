@@ -232,6 +232,19 @@ kubectl get events -n <namespace> --sort-by=.metadata.creationTimestamp
 ```bash
 kubectl get nodes -o='custom-columns=NodeName:.metadata.name,TaintKey:.spec.taints[*].key,TaintValue:.spec.taints[*].value,TaintEffect:.spec.taints[*].effect'
 ```
+
+## List All Container Images Running in a Cluster
+
+If you want to double-check more about this topic, you can read more at [Kubernetes - List All Container Images Running in a Cluster](https://kubernetes.io/docs/tasks/access-application-cluster/list-all-running-container-images/)
+
+BTW, I prefer to list all container image, include init and runtime container for any pods in all namespaces with command with count number of image used in system
+
+```bash
+kubectl get pods --all-namespaces -o jsonpath="{.items[*].spec['initContainers', 'containers'][*].image}" |\
+tr -s '[[:space:]]' '\n' |\
+sort |\
+uniq -c
+```
 # Patch Command
 
 ## Change default storage class for your node

@@ -412,7 +412,7 @@ Just for sure you have connection, you can use `ping` - basic module that `ansib
 ansible -i ./ansible/inventories/hosts all -m ping
 ```
 
-![[Pasted image 20240712101119.png]]
+![[Pasted image 20240712101119.png|center]]
 
 and result if return `success`, you are done for connecting to machine with `ssh`, and failure occur so you need to re-check again
 

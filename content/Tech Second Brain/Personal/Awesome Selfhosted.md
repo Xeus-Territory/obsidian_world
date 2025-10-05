@@ -58,10 +58,9 @@ tags:
 ## Storage Platforms
 
 - [Ceph](https://docs.ceph.com/en/reef/start/): Ceph can be used to provide [Ceph Object Storage](https://docs.ceph.com/en/reef/glossary/#term-Ceph-Object-Storage) to [Cloud Platforms](https://docs.ceph.com/en/reef/glossary/#term-Cloud-Platforms) and Ceph can be used to provide [Ceph Block Device](https://docs.ceph.com/en/reef/glossary/#term-Ceph-Block-Device) services to [Cloud Platforms](https://docs.ceph.com/en/reef/glossary/#term-Cloud-Platforms). Ceph can be used to deploy a [Ceph File System](https://docs.ceph.com/en/reef/glossary/#term-Ceph-File-System). All [Ceph Storage Cluster](https://docs.ceph.com/en/reef/glossary/#term-Ceph-Storage-Cluster) deployments begin with setting up each [Ceph Node](https://docs.ceph.com/en/reef/glossary/#term-Ceph-Node) and then setting up the network. 🌟 **(Recommended)**
-- [CubeFS](https://cubefs.io/docs/master/overview/introduction.html) : A next-generation cloud-native storage product that is currently an incubating open-source project hosted by the [Cloud Native Computing Foundationopen in new window](https://www.cncf.io/projects/cubefs/) (CNCF).
+- [CubeFS](https://cubefs.io/docs/master/overview/introduction.html) : A next-generation cloud-native storage product that is currently an incubating open-source project hosted by the [Cloud Native Computing Foundation](https://www.cncf.io/projects/cubefs/) (CNCF).
 - [MinIO](https://min.io/docs/minio/linux/index.html): MinIO is an object storage solution that provides an Amazon Web Services S3-compatible API and supports all core S3 features. 🌟 **(Recommended)**
 - [Zenko Cloudserver](https://github.com/scality/cloudserver): an open-source Node.js implementation of the Amazon S3 protocol.
-
 ## Tunneling Server
 
 - [chisel](https://github.com/jpillora/chisel) : A fast TCP/UDP tunnel over HTTP

@@ -13,7 +13,6 @@ tags:
 ## Download
 
 - [GitZip](https://kinolien.github.io/gitzip): It can make sub-folder/sub-directory of github repository as zip and download it. 🌟 **(Recommended)**
-
 ## Driver
 
 - [Nvidia Graphic Card Driver](https://www.nvidia.com/en-in/drivers/): Search and download driver for NVIDIA

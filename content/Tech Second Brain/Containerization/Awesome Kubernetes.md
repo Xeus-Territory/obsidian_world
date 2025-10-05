@@ -174,17 +174,18 @@ tags:
 - [Matthew Mattox Personal Tech Blog](https://support.tools/): Really Cool guys write about Kubernetes, especially RKE2 with deeply debug and configuration 🌟 **(Recommended)**
 - [Medium - Artem Lajko](https://medium.com/@artem_lajko): Write about GitOps, Kubernetes and stuff around this architecture 🌟 **(Recommended)**
 - [Medium - HungWei Chiu](https://medium.com/@hwchiu): Guy with super dope contents around system and kubernetes 🌟 **(Recommended)**
+- [Medium - Salwan Mohamed](https://medium.com/@salwan.mohamed): Super dope contents for Kubernetes, especially about scaling and high availability
 ## Certificate & Practice
 
-- [certified-kubernetes-administrator-course](https://github.com/kodekloudhub/certified-kubernetes-administrator-course) : Kodecloud Certified Kubernetes Administrator - CKA Course
-- [certified-kubernetes-security-specialist-cks-course](https://github.com/kodekloudhub/certified-kubernetes-security-specialist-cks-course) : Kodecloud Notes from the Certified Kubernetes Security Specialist Course on KodeKloud
+- [Certified Kubernetes Administrator (CKA) Course](https://github.com/kodekloudhub/certified-kubernetes-administrator-course) : Kodecloud Certified Kubernetes Administrator - CKA Course
+- [Certified Kubernetes Security Specialist (CKS) Course](https://github.com/kodekloudhub/certified-kubernetes-security-specialist-cks-course) : Kodecloud Notes from the Certified Kubernetes Security Specialist Course on KodeKloud
 - [killer.sh - Linux Foundation Exam Simulators](https://killer.sh/) 🌟 **(Recommended)**
 - [kube4sure - The Kubernetes Exam Simulator](https://www.kube4sure.com/)
 - [learnk8s - Kubernetes training for engineer](https://learnk8s.io/) 🌟 **(Recommended)**
 ## Operator & Chart
 
 - [Artifacthub](https://artifacthub.io/) : Find, install and publish Cloud Native packages for Kubernetes 🌟 **(Recommended)**
-- [Bitami Hem Chart](https://github.com/bitnami/charts): Popular applications, provided by [Bitnami](https://bitnami.com/), ready to launch on Kubernetes 🌟 **(Recommended)**
+- [Bitami Helm Chart](https://github.com/bitnami/charts): Popular applications, provided by [Bitnami](https://bitnami.com/), ready to launch on Kubernetes 🌟 **(Recommended)**
 - [BJW Helm Chart](https://github.com/bjw-s-labs/helm-charts): Helm template for common application
 - [Knative](https://github.com/knative/docs):  An Open-Source Enterprise-level solution to build Serverless and Event Driven Applications. [Documentation](https://knative.dev/docs/concepts/)
 - [Kubeblocks](https://kubeblocks.io/docs/release-0.9/user_docs/overview/introduction):  an open-source Kubernetes operator for databases (more specifically, for stateful applications, including databases and middleware like message queues), enabling users to run and manage multiple types of databases on Kubernetes.
@@ -225,13 +226,12 @@ tags:
 ## Network Device Plugins
 
 - [k8s-rdma-shared-dev-plugin](https://github.com/Mellanox/k8s-rdma-shared-dev-plugin): A simple rdma device plugin that support IB and RoCE HCA
-
 ## K8s Custom Scheduler
 
 - [volcano](https://github.com/volcano-sh/volcano): a Kubernetes-native batch scheduling system, extending and enhancing the capabilities of the standard kube-scheduler **for AI workloads**
 # Kubernetes Tools
 
-![[k8s-general.png]]
+![[thumbnail-k8s-tools.png]]
 ## API Gateway / Ingress Controller / LB
 
 - [AGIC - Application Gateway Ingress Controller](https://azure.github.io/application-gateway-kubernetes-ingress/): Possible for Azure Kubernetes Service (AKS) customers to leverage Azure's native Application Gateway L7 load-balancer to expose cloud software to the Internet. [Azure Article](https://learn.microsoft.com/en-us/azure/application-gateway/ingress-controller-overview)
@@ -323,6 +323,7 @@ tags:
 
 - [vCluster](https://github.com/loft-sh/vcluster): Create fully functional virtual Kubernetes clusters - Each vcluster runs inside a namespace of the underlying k8s cluster
 - [k3k](https://github.com/rancher/k3k): Kubernetes in Kubernetes by Rancher
+- [k0smotron](https://github.com/k0sproject/k0smotron): Kubernetes in Kubernetes by [k0s](https://k0sproject.io/)
 ## Monitoring
 
 - [kube-state-metrics](https://github.com/kubernetes/kube-state-metrics): Add-on agent to generate and expose cluster-level metrics 🌟 **(Recommended)**
@@ -330,6 +331,12 @@ tags:
 - [OpenSLO](https://github.com/OpenSLO/OpenSLO): Open specification for defining and expressing service level objectives (SLO)
 - [prometheus-operator](https://prometheus-operator.dev/docs/getting-started/introduction/): A [Kubernetes Operator](https://github.com/cncf/tag-app-delivery/blob/main/operator-wg/whitepaper/Operator-WhitePaper_v1-0.md#foundation) that provides Kubernetes native deployment and management of [Prometheus](https://prometheus.io/) and related monitoring components.
 - [x509-certificate-exporter](https://github.com/enix/x509-certificate-exporter): A Prometheus exporter to monitor x509 certificates expiration in Kubernetes clusters or standalone 🌟 **(Recommended)**
+
+## Multi-Cluster Orchestration
+
+- [Karmada](https://karmada.io/): a Kubernetes management system that enables you to run your cloud-native applications across multiple Kubernetes clusters and clouds, with no changes to your applications.
+- [Open Cluster Management (OCM)](https://open-cluster-management.io/): a powerful, modular, extensible platform for Kubernetes multi-cluster orchestration
+- [multicluster-runtime](https://github.com/kubernetes-sigs/multicluster-runtime): a Go library to write Kubernetes controllers that reconcile across a dynamic fleet of Kubernetes (or Kubernetes-like) clusters.
 ## Policy Controller
 
 - [Kyverno](https://kyverno.io/) : Kubernetes Native Policy Management
@@ -368,7 +375,6 @@ tags:
 - [sysdig](https://github.com/draios/sysdig): Linux system exploration and troubleshooting tool with first class support for containers
 - [teleport](https://github.com/gravitational/teleport): The easiest, and most secure way to access and protect all of your infrastructure.
 - [Tetragon](https://tetragon.io/docs/) : Cilium Tetragon component enables powerful realtime, eBPF-based Security Observability and Runtime Enforcement. 🌟 **(Recommended)**
-
 ## Tunneling
 
 - [inlets-operator](https://github.com/inlets/inlets-operator): Get public TCP LoadBalancers for local Kubernetes clusters
