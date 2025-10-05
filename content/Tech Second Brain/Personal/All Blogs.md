@@ -67,6 +67,7 @@ tags:
 - [[Awesome Monitoring & Observability]]
 - [[Awesome Terraform]]
 - [[Awesome Ansible]]
+- [[Awesome Vagrant]]
 ## InfoSec & Hacking
 
 - [[Awesome Hacking and Infosec]]
@@ -192,6 +193,8 @@ tags:
 - [[GitLab Runner and Features of this platform]]
 - [[Build Helm Repository for yourself]]
 - [[The First Data Lakehouse and Challenge]]
+- [[High Availability for Database - The enormous stories]]
+- [[Setup HA Database for PostgreSQL]]
 # DueWeekly Tech
 
 >[!info]
@@ -217,6 +220,7 @@ tags:
 - [[14-07-2025 to 27-07-2025|Session 15: 14-07-2025 to 27-07-2025]]
 - [[28-07-2025 to 10-08-2025|Session 16: 28-07-2025 to 10-08-2025]]
 - [[11-08-2025 to 17-08-2025|Session 17: 11-08-2025 to 17-08-2025]]
+- [[18-08-2025 to 05-10-2025|Session 18: 18-08-2025 to 05-10-2025]]
 # InfoSec & Security
 
 ## CTF

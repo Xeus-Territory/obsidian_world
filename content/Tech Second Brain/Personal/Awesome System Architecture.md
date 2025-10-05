@@ -13,11 +13,13 @@ tags:
 
 ## Articles
 
-- [AWS - What’s the Difference Between Kafka and RabbitMQ?](https://aws.amazon.com/compare/the-difference-between-rabbitmq-and-kafka/?nc1=h_ls)
+- [AWS - What’s the Difference Between Kafka and RabbitMQ?](https://aws.amazon.com/compare/the-difference-between-rabbitmq-and-kafka/?nc1=h_ls) 🌟 **(Recommended)**
 - [Viblo - RabbitMQ vs Kafka - Hai Cách Truyền Tải Khác Nhau](https://viblo.asia/p/rabbitmq-vs-kafka-hai-cach-truyen-tai-khac-nhau-pgjLNdYE432)
 - [Confluent - A Comparison of RabbitMQ vs Apache Kafka and When to Use Each](https://www.confluent.io/learn/rabbitmq-vs-apache-kafka/)
-- [Medium - Why ectd is better than zookeeper and database for HA system](https://medium.com/@lbq999/why-ectd-is-better-than-zookeeper-and-database-for-ha-system-227a45750720)
+- [Medium - Why ectd is better than zookeeper and database for HA system](https://medium.com/@lbq999/why-ectd-is-better-than-zookeeper-and-database-for-ha-system-227a45750720) 🌟 **(Recommended)**
 - [Medium - MQTT Market Trends for 2024: Cloud, Unified Namespace, Sparkplug, Kafka Integration](https://medium.com/@kai-waehner/mqtt-market-trends-for-2024-cloud-unified-namespace-sparkplug-kafka-integration-1428d0c3c773) 🌟 **(Recommended)**
+- [Medium - How To Choose Between Etcd, ZooKeeper, and Consul](https://blog.devops.dev/how-to-choose-between-etcd-zookeeper-and-consul-2c0e6a3c48da) 🌟 **(Recommended)**
+- [Blog - Service Discovery – Consul vs ZooKeeper vs etcd](https://bizety.com/2019/01/17/service-discovery-consul-vs-zookeeper-vs-etcd/)
 ## Blogs
 
 - [ByteByteGo Blog](https://blog.bytebytego.com): About the system design, and moreover technologies
@@ -29,7 +31,7 @@ tags:
 - [Noted](https://noted.lol/): Self Hosted App and Product Reviews
 - [Platform Engineer Blog](https://platformengineering.org/blog): The discipline of designing and building toolchains and workflows that enable self-service capabilities for software engineering organizations in the cloud-native era.
 - [Medium - ScalaBrix](https://scalabrix.medium.com/): System Design & Architecture | Distributed Systems | Tech Blog with clearly explanation and beauty diagram 🌟 **(Recommended)**
-## Developer
+## Developer Pattern & Architecture
 
 - [Medium - Most Common Software Architecture Styles](https://medium.com/@techworldwithmilan/most-common-software-architecture-styles-86881d779683)
 - [Medium - Top 10 Microservice Anti-Patterns](https://blog.bitsrc.io/10-microservice-anti-patterns-278bcb7f385d)
@@ -56,6 +58,10 @@ tags:
 - [Ably - Event-driven architecture patterns and when to use them](https://ably.com/topic/event-driven-architecture-patterns)
 - [Medium - System design concepts: Distributed Task Queue System 🎯](https://levelup.gitconnected.com/system-design-concepts-distributed-task-queue-system-8bc99647a093)
 - [Dev.to - The Software Design /System Design Interview Preparation RoadMap (with Resources)](https://dev.to/somadevtoo/the-software-design-system-design-interview-preparation-roadmap-with-resources-1no0)
+
+## LoadBalancers Architecture
+
+- [Medium - Load Balancing 100,000 WebSocket Connections: HAProxy vs. Nginx vs. Custom](https://medium.com/@yashbatra11111/load-balancing-100-000-websocket-connections-haproxy-vs-nginx-vs-custom-4fe78f68c1ce)
 ## Repositories
 
 - [awesome-scalability](https://github.com/binhnguyennus/awesome-scalability) : The Patterns of Scalable, Reliable, and Performant Large-Scale Systems

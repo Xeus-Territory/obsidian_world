@@ -8,21 +8,35 @@ tags:
   - awesome
 ---
 
-# General
+# General Repositories and Articles
 
 ![[meme-documentation.png]]
-## Articles
+## General
 
 - [Medium - 15 Databases, 15 Use Cases — The Ultimate Guide That No One Asked For (But Everyone Needs)](https://medium.com/gitconnected/15-databases-15-use-cases-the-ultimate-guide-that-no-one-asked-for-but-everyone-needs-47ca4009be78) 🌟 **(Recommended)**
 - [Medium - 11 Data Structures Powering Database](https://medium.com/gitconnected/11-data-structures-powering-database-51fc4691fcf7) 🌟 **(Recommended)**
-- [dev.to - What is RocksDB (and its role in streaming)?](https://dev.to/mrkandreev/what-is-rocksdb-and-its-role-in-streaming-3bla)
-- [What is Valkey?](https://redis.io/blog/what-is-valkey/)
-- [SQLShack - Configuring a SQL Server AlwaysOn High Availability Group](https://www.sqlshack.com/configuring-a-sql-server-alwayson-high-availability-group/)
-- [Azure - Analyze and prevent deadlocks in Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/analyze-prevent-deadlocks?view=azuresql&tabs=ring-buffer)
-- [How to find and fix SQL Server deadlocks](https://www.site24x7.com/learn/resolve-sql-server-deadlocks.html#:~:text=A%20Microsoft%20SQL%20Server%20deadlock,cancel%20one%20of%20the%20processes.)
-- [Performance Troubleshooting | Azure SQL](https://www.youtube.com/playlist?list=PLlrxD0HtieHgDkZ84FfCSDLBcJmUn8ktU)
-- [Azure - Deadlocks guide](https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-deadlocks-guide?view=sql-server-ver16)
+- [Dev.to - What is RocksDB (and its role in streaming)?](https://dev.to/mrkandreev/what-is-rocksdb-and-its-role-in-streaming-3bla)
+- [Redis - What is Valkey?](https://redis.io/blog/what-is-valkey/)
+## Configurations & Strategies
+
 - [Datacamp - Database Sharding: Examples, Strategies, Tools, and More](https://www.datacamp.com/blog/database-sharding) 🌟 **(Recommended)**
+- [Azure - Analyze and prevent deadlocks in Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/analyze-prevent-deadlocks?view=azuresql&tabs=ring-buffer)
+- [SQLShack - Configuring a SQL Server AlwaysOn High Availability Group](https://www.sqlshack.com/configuring-a-sql-server-alwayson-high-availability-group/)
+
+## High Availability
+
+- [Percona - InnoDB Cluster Setup: Building a 3-Node High Availability Architecture (MySQL)](https://www.percona.com/blog/innodb-cluster-setup-building-a-3-node-high-availability-architecture/)
+
+## Troubleshoot
+
+- [Youtube - Performance Troubleshooting | Azure SQL](https://www.youtube.com/playlist?list=PLlrxD0HtieHgDkZ84FfCSDLBcJmUn8ktU)
+- [Azure - Deadlocks guide](https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-deadlocks-guide?view=sql-server-ver16)
+## Migrations
+
+- [Medium - How We Migrated 1 Billion Records from DB1 to DB2 Without Downtime](https://medium.com/@himanshusingour7/how-we-migrated-db-1-to-db-2-1-billion-records-without-downtime-c034ce85d889) 🌟 **(Recommended)**
+- [AWS - Strategies and best practices for very large database migrations into Amazon RDS for Oracle](https://aws.amazon.com/blogs/database/strategies-and-best-practices-for-very-large-database-migrations-into-amazon-rds-for-oracle/)
+- [Dev.to - Zero-Downtime Database Migration: The Complete Engineering Guide](https://dev.to/ari-ghosh/zero-downtime-database-migration-the-definitive-guide-5672) 🌟 **(Recommended)**
+- [Medium - Zero-Downtime Migration: How to Re-Platform Without Losing Customers](https://altersquare.medium.com/zero-downtime-migration-how-to-re-platform-without-losing-customers-21534f0f8fd5)
 ## Pages
 
 - [DB-Engines](https://db-engines.com/en/): Knowledge Base of Relational and NoSQL Database Management Systems 🌟 **(Recommended)**
@@ -84,10 +98,10 @@ tags:
 
 - [influxdb](https://github.com/influxdata/influxdb): Scalable datastore for metrics, events, and real-time analytics
 # Database Tools
-## Configuration
 
-- [pgbouncer](https://github.com/pgbouncer/pgbouncer): lightweight connection pooler for PostgreSQL
-- [mongobetween](https://github.com/coinbase/mongobetween): a proxying connections for mongodb. It is developed by coinbase.
+![[meme-technology.png|center]]
+## Driver & Connector
+
 - [GatewayD](https://docs.gatewayd.io/getting-started/welcome): a free and open-source cloud-native database gateway and framework for building data-driven applications
 ## Database IDE
 
@@ -101,8 +115,5 @@ tags:
 ## Migration Tools
 
 - [goose](https://github.com/pressly/goose): A database migration tool. Supports SQL migrations and Go functions.
-## Self-hosted
-
-- [pigsty](https://github.com/Vonng/pigsty): Battery-Included PostgreSQL Distro as a Free & Better RDS Alternative —— Pigsty
-- [postgresql_cluster](https://github.com/vitabaks/postgresql_cluster): PostgreSQL High-Availability Cluster (based on Patroni). Automating with Ansible.
+- [migrate](https://github.com/golang-migrate/migrate): Database migrations. CLI and Golang library.
 

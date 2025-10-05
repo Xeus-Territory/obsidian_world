@@ -65,7 +65,7 @@ To achieve this, I'll follow these steps to create my first Helm template and re
 - **Define my first Helm template version.**
 - **Set up the repositories** to host your Helm templates, leveraging options like [GitHub Pages](https://helm.sh/docs/topics/chart_repository/), [OCI](https://helm.sh/docs/topics/registries/), or [ChartMuseum](https://chartmuseum.com/).
 - **Create a workflow** to release and maintain our versions, allowing Helm to access the repository and pull my Helm charts.
-- **Integrate [helm-docs](https://github.com/norwoodj/helm-docs) to enhance reliability and establish trust in your Helm charts.
+- **Integrate [helm-docs](https://github.com/norwoodj/helm-docs)** to enhance reliability and establish trust in your Helm charts.
 
 # 🏗️ Build your first helm chart template
 
