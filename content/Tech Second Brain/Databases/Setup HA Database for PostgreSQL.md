@@ -1,5 +1,5 @@
 ---
-title: Setup HA Database for PostgreSQL
+title: Setup HA Database for PostgreSQL with Patroni
 tags:
   - database
   - devops
@@ -64,8 +64,8 @@ Typically, you will have two node types
 - **Primary Node (Crucial & Only)(Read & Write)**
 - **Secondary Node (Replicated & Multiple)(Read Only)**
 
->[!caution]
-To ensure your High Availability (HA) architecture works as expected, you must follow these key configurations.
+>[!warning]
+>To ensure your High Availability (HA) architecture works as expected, you must follow these key configurations.
 >- **Deploy on Separate Hardware:** You must deploy these instances on separate physical hardware and use different storage to prevent a single point of failure. This is a critical step for a resilient architecture.
 >- **Minimum Node Count:** An HA PostgreSQL cluster should include at least two nodes (one primary and one replica). However, it is **highly recommended** that you set up a minimum of three nodes for any production-ready environment. A three-node cluster is essential for ensuring the integrity of the **Etcd** cluster's **Raft** consensus, which guarantees reliable failover.
 
@@ -589,14 +589,14 @@ By alternative the UI, we can approach `autobase` with script written in `Ansibl
 >[!warning]
 >You need to ensure your ansible installed and already in version 2.17 because autobase requires at least version 2.17 or higher
 
-I prefer to use `pip` to install `ansible` and `ansible-core`
+I prefer and recommend you to use `pip` to install `ansible` and `ansible-core`
 
 ```bash
 pip install ansible==12.0.0
 pip install ansible-core==2.19.2
 ```
 
-To start, you need setup ansible and install the collection via galaxy for `vitabaks.autobase`
+After confirming `ansible` and `ansible-core` installed in your host, you need to setup collection via galaxy for `vitabaks.autobase`
 
 ```bash
 ansible-galaxy collection install vitabaks.autobase:2.4.1
@@ -608,18 +608,34 @@ Next define the the directory `ansible` in your host, for my specific, it will l
 ./ansible
 ├── inventories
 │   ├── group_vars
-│   │   └── default.yaml
+│   │   └── all.yml # should be all for use group_vars of ansible
 │   └── hosts
 └── setup-patroni-postgres.yml
 
 3 directories, 3 files
 ```
 
-For inventories, you can double-check the example for [variables](https://github.com/vitabaks/autobase/blob/master/automation/roles/common/defaults/main.yml) and [hosts](https://github.com/vitabaks/autobase/blob/master/automation/inventory.example) from official documentation which provide a great point for starting
+ First of all, you can double-check the example from official documentation which provide a great point for starting, about
 
-By default, if you setup the inventories base on the default, you will encounter the problems with vagrant with not provide single interface, and it will cause trouble when you start `etcd` and serve the certificates. Check more about the [template of etcd](https://github.com/vitabaks/autobase/blob/master/automation/roles/etcd/templates/etcd.conf.j2)
+1. [Hosts or Inventories](https://github.com/vitabaks/autobase/blob/master/automation/inventory.example) - Information of your Patroni Member
+2. [Variables](https://github.com/vitabaks/autobase/blob/master/automation/roles/common/defaults/main.yml) - Values provided for playbook task
 
-Therefore, if you notice, you will see the `etcd_bind_address` will map into the couple of configuration, like `ETCD_LISTEN_CLIENT_URLS`, `ETCD_LISTEN_PEER_URLS`, `ETCD_INITIAL_CLUSTER`, ... via [`bind_address`](https://github.com/vitabaks/autobase/blob/master/automation/roles/etcd/tasks/main.yml#L27). Here is my `hosts`
+Because you need to follow the structure of `ansible` to set variables for host, therefore you should keep your folder same as my mine. Check more about these configurations at
+
+- [Ansible - Tips on where to set variables](https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_variables.html#tips-on-where-to-set-variables)
+- [Ansible - Organizing host and group variables](https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html#organizing-host-and-group-variables)
+
+>[!warning]
+>By default, if you setup the inventories base on the default, you will encounter the problems with vagrant with not provide single interface, and it will cause trouble when you start `etcd` and serve the certificates. 
+
+>[!tip]
+>The issue you've identified stems from the **`etcd.conf.j2` template** and how the **`etcd_bind_address`** variable is utilized within it.
+>
+>Specifically, the core configuration variables for `etcd`, such such as **`ETCD_LISTEN_CLIENT_URLS`**, **`ETCD_LISTEN_PEER_URLS`**, and **`ETCD_INITIAL_CLUSTER`**, are correctly designed to reference the **`bind_address`** (as seen in the `main.yml` task).
+>
+>However, the default template file is insufficiently explicit: it only provides descriptions and does not clearly show how these critical parameters are rendered using the `etcd_bind_address` variable.
+>
+>Your solution to explicitly define and control the correct IP addresses via your **Ansible `hosts` file** is a necessary and effective workaround to ensure `etcd` binds to the routable IP rather than the incorrect default or detected NAT IP.
 
 ```bash title="hosts" {9}
 # This is an example inventory file for Ansible to deploy a PostgreSQL HA cluster.
@@ -665,7 +681,12 @@ ansible_ssh_private_key_file='~/.ssh/vmbox'
 #ansible_python_interpreter='/usr/bin/python3'
 ```
 
-This configuration will completely resolve the problems when you work with Vagrant, Next you go to modify a couple of settings in variables, first copy the default to the `group_vars/default.yaml`
+>[!info]
+>Following this configuration will completely resolve problems when you work with Vagrant.
+
+Next, you should go to modify a couple of settings in variables for compatible with your Patroni Cluster
+
+Firstly, copying the [default](https://github.com/vitabaks/autobase/blob/master/automation/roles/common/defaults/main.yml) version to the `./inventories/group_vars/all.yaml` file
 
 1. Set the `postgres` username and password for root
 
@@ -674,7 +695,7 @@ patroni_superuser_username: "postgres"
 patroni_superuser_password: "postgres" # Please specify a password. If not defined, will be generated automatically during deployment.
 ```
 
- 2. Enable `haproxy`
+ 2. Enable `haproxy` for load balancer layer
 
 ```bash {1}
 with_haproxy_load_balancing: true # or 'true' if you want to install and configure the HAProxy load balancers
@@ -685,7 +706,7 @@ haproxy_listen_port:
   replicas_async: 5003
 ```
 
-3. Set the VIP and interface for vagrant host, default interface `enp0s8`  if you use Ubuntu 22.04
+3. Set the VIP (Virtual IP) and interface for `vagrant` host **(NOTE: By default, the host-only interface will be `enp0s8`  if you provision Ubuntu 22.04 on Vagrant, but to ensure you need to `ssh` and double-check them with `ip addr` command)**
 
 ```bash {1,2}
 cluster_vip: "192.168.56.69" # IP address for client access to the databases in the cluster (optional).
@@ -693,7 +714,7 @@ vip_interface: "enp0s8" # interface name (e.g., "ens32").
 # Note: VIP-based solutions such as keepalived or vip-manager may not function correctly in cloud environments.
 ```
 
-4. Disable `pg_bouncer` (Optional) (NOTE: you can enable if you want to use this feature)
+4. Disable `pg_bouncer` **(Optional) (NOTE: you can enable if you want to use this feature)**
 
 ```bash {1}
 pgbouncer_install: false # or 'false' if you do not want to install and configure the pgbouncer service
@@ -701,21 +722,82 @@ pgbouncer_processes: 1 # Number of pgbouncer processes to be used. Multiple proc
 pgbouncer_conf_dir: "/etc/pgbouncer"
 ```
 
-That all for configuration, the last one you need define the `deploy_pgcluster` task from `autobase` inside your local playbook at `setup-patroni-postgres.yml` with specific about the `vars_files` and import remote playbook (actually, it pull and save them in the collections of Ansible)
+5. Disable `timescaledb` and `citus` for reducing the error from them. Although it sets the `false` by default, but to ensure you should define them
 
-```yaml title="setup-patroni-postgres"
+```bash
+# TimeScaleDB
+enable_timescale: false
+enable_timescaledb: false
+
+# Citus
+enable_citus: false
+```
+
+>[!warning]
+>When I use `ansible` at the latest version, when you run to task define `timescaledb` and `citus`, you will hit to the wall with error from the `autobase` definition. More about the issue at [Ansible - Iterating over a simple list](https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_loops.html#iterating-over-a-simple-list)
+
+![[Pasted image 20251006142506.png]]
+
+You can double-check this configuration in your collection, or web version at [GitHub - autobase/automation/roles/packages/tasks/extensions.yml](https://github.com/vitabaks/autobase/blob/master/automation/roles/packages/tasks/extensions.yml#L12) and try disable the `loop` and instead pass the package into `name` parameter of `ansible.builtin.package` task. Here is what i editing
+
+```yaml title="roles/packages/tasks/extensions.yml"
+# TimescaleDB (if 'enable_timescale' is 'true')
+- name: Install TimescaleDB package
+  ansible.builtin.package:
+    name: "{{ timescaledb_package }}"
+    state: present
+  # loop: "{{ timescaledb_package }}" # Cause error when define loop but the variable not return `list` but return `str`
+  vars:
+    timescaledb_package: >-
+      [{% if pg_version | default(postgresql_version) | int >= 11 %}
+      "timescaledb-2-postgresql-{{ pg_version | default(postgresql_version) }}"
+      {% else %}
+      "timescaledb-postgresql-{{ pg_version | default(postgresql_version) }}"
+      {% endif %}]
+...
+...
+# Citus (if 'enable_citus' is 'true')
+- name: Install Citus package
+  ansible.builtin.package:
+    name: "{{ citus_package }}"
+    state: present
+  # loop: "{{ citus_package }}" # Cause error when define loop but the variable not return `list` but return `str`
+  vars:
+    citus_package: >-
+      [{% if ansible_os_family == 'Debian' and pg_version | default(postgresql_version) | int >= 15 %}
+      "postgresql-{{ pg_version | default(postgresql_version) }}-citus-{{ citus_version | default('13.1') }}"
+      {% elif ansible_os_family == 'Debian' and pg_version | default(postgresql_version) | int == 14 %}
+      "postgresql-{{ pg_version | default(postgresql_version) }}-citus-12.1"
+      {% elif ansible_os_family == 'Debian' and pg_version | default(postgresql_version) | int == 13 %}
+      "postgresql-{{ pg_version | default(postgresql_version) }}-citus-11.3"
+      {% elif ansible_os_family == 'Debian' and pg_version | default(postgresql_version) | int == 12 %}
+      "postgresql-{{ pg_version | default(postgresql_version) }}-citus-10.2"
+      {% elif ansible_os_family == 'Debian' and pg_version | default(postgresql_version) | int == 11 %}
+      "postgresql-{{ pg_version | default(postgresql_version) }}-citus-10.0"
+      {% else %}
+      "citus_{{ pg_v
+```
+
+That all for configuration, the last one you need define the `deploy_pgcluster` and another task from `autobase` inside your local playbook at `setup-patroni-postgres.yml`, more playbooks to work with at [GitHub -  autobase/automation/playbooks](https://github.com/vitabaks/autobase/tree/master/automation/playbooks) or [GitHub - README autobase automation](https://github.com/vitabaks/autobase/blob/master/automation/README.md)
+
+```yaml title="setup-patroni-postgres.yml"
 - name: Autobase
   hosts: all
   become: true
   become_user: root
   gather_facts: true
   any_errors_fatal: true
-  vars_files:
-    - "./inventories/group_vars/default.yaml"
 
-- name: Run Autobase playbook
+- name: Run Autobase deploy playbook
   ansible.builtin.import_playbook: vitabaks.autobase.deploy_pgcluster
-  
+  tags: deploy
+
+- name: Run Autobase remove playbook
+  ansible.builtin.import_playbook: vitabaks.autobase.remove_cluster
+  vars:
+    "remove_postgres": true
+    "remove_etcd": true
+  tags: remove
 ```
 
 Now run the command and trigger the provision stuff, but first you need use the ping to check your host are able to connect 
@@ -724,11 +806,17 @@ Now run the command and trigger the provision stuff, but first you need use the 
 ansible -i inventories/hosts all -m ping
 ```
 
-If it doesn't log any error, you can trigger the playbook
+If it doesn't log any error, you can trigger the playbook with `tag=deploy` for deploy patroni-cluster
 
 ```bash
-ansible-playbook -i inventories/hosts setup-patroni-postgres.yml
+ansible-playbook --tags deploy -i inventories/hosts setup-patroni-postgres.yml
 ```
+
+>[!note]
+>If any error cause in during the progress run deploy progress, you need to run `tag=remove` for uninstall each components in cluster to rerun again with no conflict. But you need to ensure what you gonna do, especially with production enviroment
+>```bash
+>ansible-playbook --tags remove -i inventories/hosts setup-patroni-postgres.yml
+>```
 
 Wait in the minutes to let it setup and take the result at the end.
 
@@ -739,9 +827,71 @@ Wait in the minutes to let it setup and take the result at the end.
 >
 >Further solutions and discussions can be found on the main project page: [GitHub Issue Tracker for Autobase](https://github.com/vitabaks/autobase/issues)
 
+**BONUS**: After rerun in the different network with couple take note about structure project, disable error from the `autobase` collections and embrace wrong functionality, you will get the result deploy successfully at the end
+
+```bash
+TASK [vitabaks.autobase.deploy_finish : Postgres list of users] ***********************************************************************************************************************
+ok: [192.168.56.10] => {
+    "msg": [
+        "                              List of roles",
+        " Role name  |                         Attributes                         ",
+        "------------+------------------------------------------------------------",
+        " pgbouncer  | ",
+        " postgres   | Superuser, Create role, Create DB, Replication, Bypass RLS",
+        " replicator | Replication"
+    ]
+}
+
+TASK [vitabaks.autobase.deploy_finish : Postgres list of databases] *******************************************************************************************************************
+ok: [192.168.56.10] => {
+    "msg": [
+        "                                                     List of databases",
+        "   Name    |  Owner   | Encoding | Locale Provider |   Collate   |    Ctype    | Locale | ICU Rules |   Access privileges   ",
+        "-----------+----------+----------+-----------------+-------------+-------------+--------+-----------+-----------------------",
+        " postgres  | postgres | UTF8     | libc            | en_US.UTF-8 | en_US.UTF-8 |        |           | ",
+        " template0 | postgres | UTF8     | libc            | en_US.UTF-8 | en_US.UTF-8 |        |           | =c/postgres          +",
+        "           |          |          |                 |             |             |        |           | postgres=CTc/postgres",
+        " template1 | postgres | UTF8     | libc            | en_US.UTF-8 | en_US.UTF-8 |        |           | =c/postgres          +",
+        "           |          |          |                 |             |             |        |           | postgres=CTc/postgres",
+        "(3 rows)"
+    ]
+}
+
+TASK [vitabaks.autobase.deploy_finish : Postgres Cluster info] ************************************************************************************************************************
+ok: [192.168.56.10] => {
+    "msg": [
+        "+ Cluster: postgres-cluster (7557963431648579358) ---+----+-----------+",
+        "| Member       | Host          | Role    | State     | TL | Lag in MB |",
+        "+--------------+---------------+---------+-----------+----+-----------+",
+        "| postgresql-1 | 192.168.56.10 | Leader  | running   |  1 |           |",
+        "| postgresql-2 | 192.168.56.11 | Replica | streaming |  1 |         0 |",
+        "| postgresql-3 | 192.168.56.12 | Replica | streaming |  1 |         0 |",
+        "+--------------+---------------+---------+-----------+----+-----------+"
+    ]
+}
+
+TASK [vitabaks.autobase.deploy_finish : Connection info] ******************************************************************************************************************************
+ok: [192.168.56.10] => {
+    "msg": {
+        "address": "192.168.56.69",
+        "password": "postgres",
+        "port": {
+            "primary": 5000,
+            "replica": 5001
+        },
+        "superuser": "postgres"
+    }
+}
+```
 ## Post-process and testing
 
-There are couple things you can work around with `Patroni` and `etcd`, but you should take note these commands for workaround with this cluster
+There are couple things you can work around with `Patroni` and `etcd`, but you should take note these commands for workaround with this cluster and there are several check-list, below
+
+- [Patroni - Patronictl Manual](https://patroni.readthedocs.io/en/latest/patronictl.html#patronictl)
+- [Autobase - Basic Commands](https://autobase.tech/docs/management/basic-commands)
+- [Percona - Testing the Patroni PostgreSQL Cluster](https://docs.percona.com/postgresql/17/solutions/ha-test.html)
+
+This is couple of commands I usually to workaround with HA PostgreSQL Cluster
 
 ```bash
 # Health check endpoint etcd
@@ -769,55 +919,53 @@ sudo etcdctl \
   endpoint status --write-out=table
 ```
 
-With `patroni`, almost workaround via `patronictl`, you need point to config file and use this one for queries cluster, state and anything action in Patroni cluster **(NOTE : Because I take a note via the manual way, but with autobase does same but maybe in different name)**
+With `patroni`, almost workaround via `patronictl`, you need point to config file and use this one for queries cluster, state and anything action in Patroni cluster. Afterward, you can access any patroni configuration and information with config-file at `/etc/patroni/patroni.yml`
 
 ```bash
-sudo patronictl -c /etc/patroni/config.yml list
+sudo patronictl -c /etc/patroni/patroni.yml list
 ```
 
 ```bash
-+ Cluster: postgresql-cluster (7552759822094768518) ---+----+-----------+
-| Member        | Host           | Role    | State     | TL | Lag in MB |
-+---------------+----------------+---------+-----------+----+-----------+
-| postgresql-01 | 192.168.56.10  | Leader  | running   |  1 |           |
-| postgresql-02 | 192.168.56.11  | Replica | streaming |  1 |         0 |
-| postgresql-03 | 192.168.56.12  | Replica | streaming |  1 |         0 |
-+---------------+----------------+---------+-----------+----+-----------+
++ Cluster: postgres-cluster (7557963431648579358) ---+----+-----------+
+| Member       | Host          | Role    | State     | TL | Lag in MB |
++--------------+---------------+---------+-----------+----+-----------+
+| postgresql-1 | 192.168.56.10 | Leader  | running   |  1 |           |
+| postgresql-2 | 192.168.56.11 | Replica | streaming |  1 |         0 |
+| postgresql-3 | 192.168.56.12 | Replica | streaming |  1 |         0 |
++--------------+---------------+---------+-----------+----+-----------+
 ```
 
-When you use `patroni`, you should upgrade parameter via `patronictl` instead manually upgrade. you can run them with command
+>[!warning]
+>When you use `patroni`, you should upgrade parameter via `patronictl` instead manually upgrade. you can run them with command. I will talk more about this feature of next part, but you can imagine whole things in same place.
 
 ```bash
 # List configuration of cluster 
-sudo patronictl -c /etc/patroni/config.yml show-config
+sudo patronictl -c /etc/patroni/patroni.yml show-config
 
 # Edit the configuration of cluster
-sudo patronictl -c /etc/patroni/config.yml edit-config
+sudo patronictl -c /etc/patroni/patroni.yml edit-config
 ```
-
-I will talk more about this feature of next part, but you can imagine whole things in same place.
 
 When you double-check the configuration, you will imagine the next way we can connect PostgreSQL via `HAProxy` through port 5000 and 5001. There are couple of things should be remembered when work with
 
 - To distribute the connection to PostgreSQL, you have multiple way to connect but simply, for
     
-    - 1. **Read Write Request**, you should connect to **Port 5000**
-    - 2. **Read Only,** you should connect to **Port 5001**
+    1. **Read Write Request**, you should connect to **Port 5000**
+    2. **Read Only,** you should connect to **Port 5001**
 
-- HAProxy will open at least 100 connection when you connect via them    
+- `HAProxy` will open at least 1000 connection when you connect via them    
 - There are **Port 7000** of HAProxy to let you see them via dashboard when it works and provide a good visualization for what endpoint or node able to readwrite or readonly
 
-![[Pasted image 20251005220112.png]]
+![[thumbnail-haproxy-patroni-autobase.png]]
 <div align="center">
 	<p style="text-align: center;">HAProxy Dashboard about Patroni Cluster State</p>
 </div>
 
-But before go to usage when you bootstrap successfully your Patroni cluster, you should exchange the configuration of `etcd` from state `new` to `existing`. (NOTE: if you use `autobase`, it can help you upgrade this value when provision successfully)
+For completely, before go to usage when you bootstrap successfully your Patroni cluster, you should change the configuration of `etcd` from state `new` to `existing`. This one can help you prevent error when your node reboot or rerun the `etcd` one more time
 
 ```bash
 ETCD_INITIAL_CLUSTER_STATE="existing" # new
 ```
-
 ## Usage
 
 In my perspective, I usually use `psql` command to connect PostgreSQL Database and run query, so let try via VIP
@@ -833,6 +981,27 @@ psql -h 192.168.56.69 -U postgres -d postgres -p 5001
 You can test the read/write permission by permission of each type of PostgreSQL DB like this
 
 Login to port 5000 via VIP and run
+
+```sql
+-- Create a table for Nintendo characters
+CREATE TABLE nintendo_characters (
+    character_id SERIAL PRIMARY KEY, -- Unique identifier for each character
+    name VARCHAR(50) NOT NULL,       -- Name of the character
+    game_series VARCHAR(50),         -- Game series the character belongs to
+    debut_year INT,                  -- Year the character debuted
+    description TEXT,                -- Brief description of the character
+    is_playable BOOLEAN DEFAULT TRUE -- Whether the character is playable
+);
+
+-- Insert some example characters
+INSERT INTO nintendo_characters (name, game_series, debut_year, description, is_playable)
+VALUES
+    ('Mario', 'Super Mario', 1981, 'The iconic plumber and hero of the Mushroom Kingdom.', TRUE),
+    ('Link', 'The Legend of Zelda', 1986, 'A courageous hero tasked with saving Hyrule.', TRUE);
+
+-- Select all rows to verify the table creation and data insertion
+SELECT * FROM nintendo_characters;
+```
 
 ```sql
 postgres=# -- Create a table for Nintendo characters
@@ -872,6 +1041,13 @@ postgres=# \dt
 Next, you try to login for Port 5001 and try insert a little bit more
 
 ```sql
+INSERT INTO nintendo_characters (name, game_series, debut_year, description, is_playable)
+VALUES
+    ('Yoshi', 'Super Mario', 1990, 'A friendly green dinosaur and Marios trusted companion.', TRUE),
+    ('Luigi', 'Super Mario', 1983, 'Marios younger brother and a skilled ghost hunter.', TRUE);
+```
+
+```sql
 postgres=# INSERT INTO nintendo_characters (name, game_series, debut_year, description, is_playable)
 VALUES
     ('Yoshi', 'Super Mario', 1990, 'A friendly green dinosaur and Marios trusted companion.', TRUE),
@@ -897,7 +1073,6 @@ postgresql://<user>:<password>@192.168.56.69:5001/<db-name> # RO
 ```
 
 If you want to specific some parameters, please double-check your configuration carefully or read documentation for more information at [32.1. Database Connection Control Functions](https://www.postgresql.org/docs/current/libpq-connect.html)
-
 ## Troubleshoot
 
 There are couple of troubleshoots to aware when you try to setup the Patroni Cluster, especially relating to Patroni Configuration. Read more at [Patroni configuration — Patroni 4.1.0 documentation](https://patroni.readthedocs.io/en/latest/patroni_configuration.html)
@@ -912,7 +1087,7 @@ To run update `pg_hba`, you should connect to primary node and try edit with `pa
 
 ```bash
 # Show configuration
-patronictl --config-file /etc/patroni/config.yaml show-config
+patronictl --config-file /etc/patroni/patroni.yml show-config
 ```
 
 ```yaml
@@ -937,7 +1112,7 @@ Now, you need to update the config, you should be
 
 ```bash
 # edit configuration
-patronictl --config-file /etc/patroni/config.yaml edit-config
+patronictl --config-file /etc/patroni/patroni.yaml edit-config
 ```
 
 Edit and add more host into Patroni Cluster with another replicator user. For example, I will add other node `192.168.56.12` to Patroni, and the configuration should be liked this
@@ -965,10 +1140,9 @@ Now, save and approve for edit configuration. For `pg_hba`, you can skip the rel
 
 >[!note]
 >Please edit the configuration for another one in cluster, especially for both `config.yaml` and via `patronictl`
-
 ### Update the PostgreSQL Configuration
 
-There are few configuration related PostgreSQL parameters, so you need edit them via `patronictl` and follow the rule to reload the configuration because if you restart `patroni` service, it will cause failover in your host
+There are few configuration related PostgreSQL parameters, so you need edit them via `patronictl` and follow the rule to reload the configuration because if you restart `patroni` service, it will cause failover in your host. For more information, please double-check at [Patroni - Patroni configuration](https://patroni.readthedocs.io/en/latest/patroni_configuration.html)
 
 The list parameter need to be aware
 
@@ -981,7 +1155,7 @@ The list parameter need to be aware
 >[!warning]
 >Changing these parameters require a PostgreSQL restart to take effect, and their shared memory structures cannot be smaller on the standby nodes than on the primary node.
 
-Therefore, once upon again, please edit them via `patronictl` and don’t edit directly postgresql configuration at `/var/lib/postgresql/data`
+Therefore, once upon again, please edit them via `patronictl` and don’t edit directly postgresql configuration at `/var/lib/postgresql/$VERSION/main`
 
 However, as those settings manage shared memory, some extra care should be taken when restarting the nodes:
 
@@ -994,6 +1168,43 @@ However, as those settings manage shared memory, some extra care should be taken
     
     1. Restart the primary first
     2. Restart all standbys after that
+
+For example, you want to increase `max_connection` to higher value, by default it will set `1000` but you want to `1010`, you can perform command `edit-config`
+
+```bash
+patronictl --config-file /etc/patroni/patroni.yml edit-config
+```
+
+Now you need to modify `max_connections: 1000` --> `max_connections: 1010` and save with prompt yes to edit
+
+![[Pasted image 20251006164148.png]]
+
+Now check the `patronictl` with `list` command and you can see the change will set on `pending`
+
+```bash
+patronictl --config-file /etc/patroni/patroni.yml list
+```
+
+![[Pasted image 20251006164517.png]]
+
+Now following the rule, you need restart the stand by first and after that you need to restart primary, with `patronictl` we have `restart` command to handle this action 
+
+```bash
+# restart standbys cluster first
+patronictl --config-file /etc/patroni/patroni.yml restart -r standby postgres-cluster
+
+# restart primary cluster after
+patronictl --config-file /etc/patroni/patroni.yml restart -r primary postgres-cluster
+```
+
+Now double-check again and you can see your change successfully
+
+>[!info]
+>In the problems with `patronictl`, you can use directly command with `curl` to API of patroni at port `8008` of any member in cluster. Check more of them in [Patroni - Patroni REST API](https://patroni.readthedocs.io/en/latest/rest_api.html)
+>
+>```bash
+>curl -X POST -k https://192.168.56.12:8008/restart
+>```
 
 # Conclusion
 
