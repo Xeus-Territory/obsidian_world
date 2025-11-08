@@ -7,6 +7,7 @@ tags:
   - awesome
   - helpful
 ---
+
 ![[icon-powershell.svg|center|400x400]]
 
 >[!info]

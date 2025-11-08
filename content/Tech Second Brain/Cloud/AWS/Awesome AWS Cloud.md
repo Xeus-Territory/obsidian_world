@@ -119,7 +119,7 @@ Externally, In `AWS` , I will share about some others topic, such as
 >- AWS_SECRET_ACCESS_KEY (Obligatory)
 >- AWS_SESSION_TOKEN (If you have)
 >- AWS_DEFAULT_REGION (Obligatory)
-## S3
+## `S3`
 
 >[!warning]
 >With `s3` some situation i set it up `--endpoint-url` it mean i use `localstack` for virtualization `aws` cloud on my machine, so keep mind and skip the flag if you want to applied to your `aws` cloud
@@ -136,7 +136,9 @@ aws --endpoint-url=http://localhost:4566 s3api create-bucket --bucket sample-buc
 aws --endpoint-url=http://localhost:4566 s3 ls s3://sample-bucket/
 ```
 
-### Upload the object from directory to bucket, with single file or multiple files
+### Upload the object
+
+You can available upload your object from directory to bucket even if single file or multiple files
 
 ```bash
 # Upload only one file or dir
@@ -191,168 +193,6 @@ if [[ "$NB_OBJECTS" != "0" ]]; then
   done
 fi
 ```
-## STS
-
-### Get caller identity to detect `whoami` or `role`
-
-```bash
-aws sts get-caller-identity
-```
-
-### Assume role with web-identity
-
-```bash
-aws sts assume-role-with-web-identity \
---role-arn arn:aws:iam::xxxxx:role/rolename \
---role-session-name <what-ever-you-want> \
---web-identity-token $TOKEN # mostly token is JWT Format
-```
-
-### Assume role with one-command
-
-Documentation: [StackOverFlow - AWS sts assume role in one command](https://stackoverflow.com/questions/63241009/aws-sts-assume-role-in-one-command)
-
-```bash
-export $(printf "AWS_ACCESS_KEY_ID=%s AWS_SECRET_ACCESS_KEY=%s AWS_SESSION_TOKEN=%s" \
-$(aws sts assume-role \
---role-arn arn:aws:iam::123456789012:role/MyAssumedRole \
---role-session-name MySessionName \
---query "Credentials.[AccessKeyId,SecretAccessKey,SessionToken]" \
---output text))
-```
-## ECS
-
-### List task inside ECS Cluster
-
-```bash
-aws ecs list-tasks --cluster <name-cluster>
-```
-
-### Execution command
-
->[!warning]
->In this part you need to confirm two thing to install inside cluster and your machine
-
-In your machine, need to install `session-manager-plugin`. Use `curl` command to download
-
-```bash
-curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/ubuntu_64bit/session-manager-plugin.deb" -o "session-manager-plugin.deb"
-```
-
- In your task, you need enable feature execute-command if not
-
-```bash
-aws ecs update-service \
---cluster <cluster-name> --service <service-name> \
---enable-execute-command --force-new-deployment
-```
-
-And now if you confirm two thing about you can use execution to inject something inside container
-
-```bash
-# Exam: task-arn-specific = d274e386xxxxxxxxxxx2fd28b5ac
-aws ecs execute-command --cluster <cluster-name> \
---container <name-container> --interactive --task <task-arn-specific> \
---command <your/command>
-```
-
-## ECR
-
-### Get login password of your ECR
-
-```bash
-aws ecr get-login-password
-```
-
-### Login to your ECR
-
-```bash
-aws ecr get-login-password | crane auth login -u AWS --password-stdin <url-ecr>
-```
-
-## EKS
-
-### Get token of cluster
-
-```bash
-aws eks get-token --cluster-name <name>
-```
-
-### Create kubeconfig file automatically
-
-```bash
-aws eks update-kubeconfig --region region-code --name my-cluster
-```
-## SQS
-
-###  Retrieve message from queue
-
-```bash
-aws sqs receive-message \
---queue-url <sqs-url> \
---attribute-names All --message-attribute-names All \
---max-number-of-messages 10
-```
-
-## SNS
-
-### Subscribe `webhook` with SNS
-
-Use can use two platform to generate endpoint
-
-- [Beeceptor](https://beeceptor.com/) : API Mocking
-- [Webhook.site](https://webhook.site/) : Generates free, unique URLs and e-mail addresses and lets you see everything that’s sent there instantly. (Usage: Steal cookies, bypass authorized, …)
-
-```bash
-aws sns subscribe \
-    --topic-arn <topic-arn> \
-    --protocol https \
-    --notification-endpoint <endpoint>
-```
-
-## Cognito-identity
-
-### Get Identity
-
-```bash
-aws cognito-identity get-id --identity-pool-id <identity-pool-id>
-```
-
-### Get Credential
-
-```bash
-aws cognito-identity get-credentials-for-identity --identity-id <identity-from-get-identity>
-```
-
-### Get Open ID Token
-
->[!note]
->Use when you receive `open-id` token to retrieve the credential to access AWS
-
-```bash
-aws cognito-identity get-open-id-token --identity-id <identity-from-get-identity>
-```
-
-## Configure
-
-### Set credential for profile
-
-```bash
-aws configure --profile <profile-name>
-```
-
-And easily you can temporarily switch profiles with export to environment variable
-
-```bash
-# V1
-export AWS_DEFAULT_PROFILE=<profile-name>
-# V2
-export AWS_PROFILE=<profile-name>
-```
-
-# Cheatsheet and Script
-
-## S3
 
 ### Retrieve file data from S3
 
@@ -420,4 +260,163 @@ curl -L -X PUT -T "${file}" -H "Host: ${bucket}.s3.amazonaws.com" -H "Date: ${da
 echo ">>>>>>>>>>>>>> A new file was uploaded successfully!"
 ```
 
+## `STS`
+
+### Get caller identity to detect `whoami` or `role`
+
+```bash
+aws sts get-caller-identity
+```
+
+### Assume role with web-identity
+
+```bash
+aws sts assume-role-with-web-identity \
+--role-arn arn:aws:iam::xxxxx:role/rolename \
+--role-session-name <what-ever-you-want> \
+--web-identity-token $TOKEN # mostly token is JWT Format
+```
+
+### Assume role with one-command
+
+Documentation: [StackOverFlow - AWS sts assume role in one command](https://stackoverflow.com/questions/63241009/aws-sts-assume-role-in-one-command)
+
+```bash
+export $(printf "AWS_ACCESS_KEY_ID=%s AWS_SECRET_ACCESS_KEY=%s AWS_SESSION_TOKEN=%s" \
+$(aws sts assume-role \
+--role-arn arn:aws:iam::123456789012:role/MyAssumedRole \
+--role-session-name MySessionName \
+--query "Credentials.[AccessKeyId,SecretAccessKey,SessionToken]" \
+--output text))
+```
+## `ECS`
+
+### List task inside ECS Cluster
+
+```bash
+aws ecs list-tasks --cluster <name-cluster>
+```
+
+### Execution command
+
+>[!warning]
+>In this part you need to confirm two thing to install inside cluster and your machine
+
+In your machine, need to install `session-manager-plugin`. Use `curl` command to download
+
+```bash
+curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/ubuntu_64bit/session-manager-plugin.deb" -o "session-manager-plugin.deb"
+```
+
+ In your task, you need enable feature execute-command if not
+
+```bash
+aws ecs update-service \
+--cluster <cluster-name> --service <service-name> \
+--enable-execute-command --force-new-deployment
+```
+
+And now if you confirm two thing about you can use execution to inject something inside container
+
+```bash
+# Exam: task-arn-specific = d274e386xxxxxxxxxxx2fd28b5ac
+aws ecs execute-command --cluster <cluster-name> \
+--container <name-container> --interactive --task <task-arn-specific> \
+--command <your/command>
+```
+
+## `ECR`
+
+### Get login password of your ECR
+
+```bash
+aws ecr get-login-password
+```
+
+### Login to your ECR
+
+```bash
+aws ecr get-login-password | crane auth login -u AWS --password-stdin <url-ecr>
+```
+## `EKS`
+
+### Get token of cluster
+
+```bash
+aws eks get-token --cluster-name <name>
+```
+
+### Create kubeconfig file automatically
+
+```bash
+aws eks update-kubeconfig --region region-code --name my-cluster
+```
+## `SQS`
+
+###  Retrieve message from queue
+
+```bash
+aws sqs receive-message \
+--queue-url <sqs-url> \
+--attribute-names All --message-attribute-names All \
+--max-number-of-messages 10
+```
+
+## `SNS`
+
+### Subscribe `webhook` with SNS
+
+Use can use two platform to generate endpoint
+
+- [Beeceptor](https://beeceptor.com/) : API Mocking
+- [Webhook.site](https://webhook.site/) : Generates free, unique URLs and e-mail addresses and lets you see everything that’s sent there instantly. (Usage: Steal cookies, bypass authorized, …)
+
+```bash
+aws sns subscribe \
+    --topic-arn <topic-arn> \
+    --protocol https \
+    --notification-endpoint <endpoint>
+```
+
+## `Cognito-identity`
+
+### Get Identity
+
+```bash
+aws cognito-identity get-id --identity-pool-id <identity-pool-id>
+```
+
+### Get Credential
+
+```bash
+aws cognito-identity get-credentials-for-identity --identity-id <identity-from-get-identity>
+```
+
+### Get Open ID Token
+
+>[!note]
+>Use when you receive `open-id` token to retrieve the credential to access AWS
+
+```bash
+aws cognito-identity get-open-id-token --identity-id <identity-from-get-identity>
+```
+
+## `Configure`
+
+### Set credential
+
+You can set aws configuration with your profile
+
+```bash
+aws configure --profile <profile-name>
+```
+
+And easily you can temporarily switch profiles with export to environment variable
+
+```bash
+# V1
+export AWS_DEFAULT_PROFILE=<profile-name>
+# V2
+export AWS_PROFILE=<profile-name>
+```
 

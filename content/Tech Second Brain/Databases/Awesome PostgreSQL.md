@@ -29,7 +29,6 @@ tags:
 - [Youtube - Techno Tim - PostgreSQL Clustering the Hard Way... High Availability, Scalable, Production Ready Postgres](https://www.youtube.com/watch?v=RHwglGf_z40&t=1529s&ab_channel=TechnoTim) 🌟 **(Recommended)**
 - [DevOps.vn - Triển khai PostgreSQL high availability với Patroni trên Ubuntu (Cực kỳ chi tiết)](https://devops.vn/posts/cai-dat-postgresql-high-availability-tren-ubuntu/) 🌟 **(Recommended)**
 - [Portworx - Kubernetes Operator for PostgreSQL: How to Choose and Set Up One](https://portworx.com/blog/choosing-a-kubernetes-operator-for-postgresql/)
-
 ## Tips & Configuration
 
 - [Medium - Postgres is eating the database world](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4) 🌟 **(Recommended)**
@@ -40,6 +39,21 @@ tags:
 - [Github Gist - PSQL Cheatsheet](https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546)
 - [Medium - Running SpiceDB with Postgresql using docker-compose](https://akoserwal.medium.com/running-spicedb-with-postgresql-using-docker-compose-cc7ee999da73)
 - [Citus - Citus 12: Schema-based sharding for PostgreSQL](https://www.citusdata.com/blog/2023/07/18/citus-12-schema-based-sharding-for-postgres/) 🌟 **(Recommended)**
+## Optimization
+
+- [PostgreSQL - Chapter 14. Performance Tips](https://www.postgresql.org/docs/current/performance-tips.html) 🌟 **(Recommended)**
+- [Viblo - Performance optimization với PostgreSQL (Vietnamese)](https://viblo.asia/s/performance-optimization-voi-postgresql-OVlYq8oal8W)
+- [Percona - PostgreSQL Performance Tuning Guide: Settings That Make a Difference](https://www.percona.com/blog/tuning-postgresql-database-parameters-to-optimize-performance/) 🌟 **(Recommended)**
+## Monitoring and Observability
+
+- [PostgreSQL - Chapter 27. Monitoring Database Activity](https://www.postgresql.org/docs/current/monitoring.html) 🌟 **(Recommended)**
+- [Percona - Effective PostgreSQL Monitoring: Key Metrics and Tools](https://www.percona.com/blog/key-metrics-and-tools-for-effective-postgresql-monitoring/) 🌟 **(Recommended)**
+- [Cybertec - Tracking changes in PostgreSQL](https://www.cybertec-postgresql.com/en/tracking-changes-in-postgresql/)
+## Security
+
+- [Percona - PostgreSQL Security: A Comprehensive Guide to Hardening Your Database](https://www.percona.com/blog/postgresql-database-security-what-you-need-to-know/)
+- [Medium - Everyting About Postgres Security](https://ozwizard.medium.com/everyting-about-postgres-security-026a8b617bf8) 🌟 **(Recommended)**
+
 # PostgreSQL Tools
 
 ![[meme-technology.png|center]]
@@ -47,6 +61,7 @@ tags:
 ## Backup
 
 - [pgBackRest](https://pgbackrest.org/): a reliable backup and restore solution for PostgreSQL that seamlessly scales up to the largest databases and workloads.
+- [postgresus](https://github.com/RostislavDugin/postgresus): PostgreSQL monitoring and backups (with UI and self hosted)
 ## Driver & Connector
 
 - [pgbouncer](https://github.com/pgbouncer/pgbouncer): lightweight connection pooler for PostgreSQL
@@ -62,7 +77,13 @@ tags:
 ## Migration
 
 - [pgcopydb](https://github.com/dimitri/pgcopydb): a tool that automates running `pg_dump | pg_restore` between two running Postgres servers
+## Configuration Tuning
 
+- [pgtune](https://github.com/le0pard/pgtune): Tuning PostgreSQL config by your hardware
+- [postgresqltuner](https://github.com/jfcoz/postgresqltuner): Simple script to analyse your PostgreSQL database configuration, and give tuning advice
+## Security
+
+- [pgdsat](https://github.com/HexaCluster/pgdsat): PostgreSQL Database Security Assessment Tool
 # PostgreSQL Installation
 
 By default, you only download and setup the PostgreSQL following your OS repository, but somehow you need the lower or higher version of current version, you need add the key to let your apt find what version you want to download
@@ -334,6 +355,19 @@ postgres=# \du
 # List schema in PostgreSQL
 postgres=# \dn
 postgres=# \dn+ # more information
+
+# List all function
+postgres=# \df
+postgres=# \df+
+
+# View function
+postgres=# \sf function_name
+
+# edit function
+postgres=# \ef function_name
+
+# List trigger on specific table
+postgres=# \dS your_table_name
 ```
 
 # Helpful SQL Queries
@@ -404,7 +438,7 @@ SELECT schema_name FROM information_schema.schemata;
 ```sql
 SELECT pg_terminate_backend(pid)
 FROM pg_stat_activity
-WHERE datname = '<TARGET_DB_NAME>' AND pid != pg_backend_pid();
+WHERE datname = '<TARGET_DB_NAME>' AND pid != pg_backend_pid()
 AND leader_pid IS NULL;
 ```
 

@@ -158,3 +158,4 @@ Articles for references
 **Check about the series of high-availability database of mine below 👇**
 
 - [[Setup HA Database for PostgreSQL]]
+- [[Setup HA Database for MongoDB]]

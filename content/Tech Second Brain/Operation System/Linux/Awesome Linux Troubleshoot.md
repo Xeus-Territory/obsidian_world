@@ -865,7 +865,6 @@ This network is probably weird than any I ever intercept, this comes from featur
 Following Reddit Thread, This issue come from `i255` network device and it's really tough things which I don't wonder to touch anytime but it occur frequently in machine, especially with high workload, it's truly disturb and nightmare. So these articles and discussion come from by solution to exchange `kernel` params
 
 In particular, we need to *"**disable power management on the PCIe** entirely with `pcie_port_pm=off`. In the file `/etc/default/grub`, line` GRUB_CMDLINE_LINUX_DEFAULT` we can add `pcie_port_pm=off` and then run `update-grub` to rebuild the boot config"*
-
 # About disk, partition, storage and volume in Linux
 
 >[!note]
@@ -1100,6 +1099,59 @@ mount: /run: mount point not mounted or bad option.
        dmesg(1) may have more information after failed mount system call.
 ```
 
+## Auto mount addition disk when rebooting
+
+>[!warning]
+>If you have an additional disk that has been successfully **formatted and mounted** to a directory on your host, you will find that after a **reboot or turning the machine on/off**, the disk will **not mount automatically**. This means you'll have to manually remount it every time.
+
+This behavior is quite annoying and poses a risk to data availability. To ensure the disk mounts automatically upon startup, you need to modify the **`/etc/fstab`** file
+
+Read more at
+
+- [Bitzflu - Tạo file system và cấu hình mount volume trong /etc/fstab (Vietnamese Version)](https://docs.bizflycloud.vn/cloud_server/resources/file_system_linux/)
+- [StackExchange - How to mount a new drive on startup](https://askubuntu.com/questions/154180/how-to-mount-a-new-drive-on-startup)
+- [ArchLinux - Fstab manual](https://wiki.archlinux.org/title/Fstab)
+
+Following these articles, we can walk in progress through
+
+>[!info]
+>**(RECOMMEND)** You should to use `uuid` of disk instead of the name partition, that will let you map exactly what disk you own into machine and not cause any error in using progress
+
+To check the `uuid`, you can use `blkid` command
+
+```bash
+blkid
+```
+
+When you know about your `uuid` of targeting, you can edit the `/etc/fstab` to set it up
+
+```bash
+sudo nano /etc/fstab
+```
+
+```bash
+# <device>                                <dir> <type> <options>                                        <dump> <fsck>
+UUID=0a3407de-014b-458b-b5c1-848e92a327a3 /data     ext4 defaults                                           0      0
+```
+
+>[!info]
+>- `<dump>` is checked by the [dump(8)](https://linux.die.net/man/8/dump) utility. This field is usually set to `0`, which disables the check.
+>- `<fsck>` sets the order for file system checks at boot time; see [fsck(8)](https://man.archlinux.org/man/fsck.8). For the root device it should be `1`. For other partitions it should be `2`, or `0` to disable checking.
+
+Now save and on the next reboot, it will automatically mount your disk to machine. If you wan to trigger mount in the current boot, you can safely run
+
+```bash
+# Reload whole your daemon, require when you update the /etc/fstab
+# More about at: https://www.reddit.com/r/linuxquestions/comments/1eic1d8/fstabsystemd/  
+systemctl daemon-reload
+
+# Run mount all base on fstab configuration
+mount -a
+```
+
+>[!warning]
+>Error can be occur if you make anything wrong, therefore if you encounter the error, please review your `/etc/fstab` and try again with command above
+
 # Linux Memory
 
 ## Clean Swap memory
@@ -1204,4 +1256,114 @@ Now you can use `free -h` of `vmstat -s -SM` to double-check again your memory
 
 >[!note]
 >One more time to say again, you should read these articles above for knowledge, it's truly useful and provide more information to deal in tuning your memory performance
+
+# GPU In Linux
+
+## Deprecated `udevadm` --> `systemd-hwdb`
+
+Following this articles [StackOverFlow - Ubuntu 24.04 Nvidia drivers](https://askubuntu.com/questions/1511919/ubuntu-24-04-nvidia-drivers) for understanding why and next action for you to exchange the legacy to another version when you find nvidia-drivers in Ubuntu 24.04 at `/usr/lib/python3/dist-packages/UbuntuDrivers/detect.py`
+
+```bash
+sudo nano /usr/lib/python3/dist-packages/UbuntuDrivers/detect.py 
+```
+
+Find the keyword `udevadm`
+
+**Old version**
+
+```bash
+try:
+        out = subprocess.check_output(['udevadm', 'hwdb', '--test=' + alias],
+                                      universal_newlines=True)
+    except (OSError, subprocess.CalledProcessError) as e:
+        logging.debug('_get_db_name(%s, %s): udevadm hwdb failed: %s', syspath, alias, str(e))
+        return (None, None)
+```
+
+**New version**
+
+```bash
+try:
+    out = subprocess.check_output(['systemd-hwdb', 'query', alias],
+                                  universal_newlines=True)
+except (OSError, subprocess.CalledProcessError) as e:
+    logging.debug('_get_db_name(%s, %s): systemd-hwdb failed: %s', syspath, alias, str(e))
+    return (None, None)
+```
+
+Saving and try again
+
+```bash
+ubuntu-drivers devices
+```
+
+## BIOS Resizable BAR and Secure Boot
+
+This error relate about Ubuntu not able to see any GPU graphic card even it already inject and work because of BIOS/UEFI Configuration, especially a new series like RTX 5090, including [Resizable BAR](https://www.nvidia.com/en-us/geforce/news/geforce-rtx-30-series-resizable-bar-support/) & [Secure Boot](https://docs.nvidia.com/networking/display/ufmenterpriseapplianceswv160/appendix+-+secure+boot+activation+and+deactivation) 
+
+Following this discusstion from [Nvidia Forum - NVIDIA RTX 5090 Not Detected by nvidia-smi on Ubuntu Server 24.04](https://forums.developer.nvidia.com/t/nvidia-rtx-5090-not-detected-by-nvidia-smi-on-ubuntu-server-24-04/327409/43), you next action to remediation this freaky bug, including
+
+![[Pasted image 20251021095257.png]]
+
+![[Pasted image 20251021095320.png]]
+
+## Unable to determine the device handle for GPU
+
+I encounter this issue when I try to run `nvidia-smi` in the machine after running for long-term but the another card in this machine still alive, it continuous being charge. There are several ways to resolving this case. Therefore, you can try to
+
+Reboot your machine, because i figure out it can be overheat or error in PCI Error when I try to debug with `journalctl` (Working)
+
+```bash
+journalctl -xek
+```
+
+```bash
+Oct 15 11:36:00 4090-machine kernel: i40e 0000:03:00.0: PCIe Bus Error: severity=Correctable, type=Data Link Layer, (Transmitter ID)
+Oct 15 11:36:00 4090-machine kernel: i40e 0000:03:00.0:   device [8086:15ff] error status/mask=00001000/00000000
+Oct 15 11:36:00 4090-machine kernel: i40e 0000:03:00.0:    [12] Timeout               
+Oct 15 11:36:05 4090-machine kernel: nvidia 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+Oct 15 11:36:05 4090-machine kernel: nvidia 0000:02:00.0:   device [10de:2684] error status/mask=00000001/00000000
+Oct 15 11:36:05 4090-machine kernel: nvidia 0000:02:00.0:    [ 0] RxErr                  (First)
+Oct 15 11:36:06 4090-machine kernel: nvidia 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+Oct 15 11:36:06 4090-machine kernel: nvidia 0000:02:00.0:   device [10de:2684] error status/mask=00000001/00000000
+Oct 15 11:36:06 4090-machine kernel: nvidia 0000:02:00.0:    [ 0] RxErr                  (First)
+Oct 15 11:36:07 4090-machine kernel: nvidia 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+Oct 15 11:36:07 4090-machine kernel: nvidia 0000:02:00.0:   device [10de:2684] error status/mask=00000001/00000000
+Oct 15 11:36:07 4090-machine kernel: nvidia 0000:02:00.0:    [ 0] RxErr                  (First)
+Oct 15 11:36:07 4090-machine kernel: nvidia 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+Oct 15 11:36:07 4090-machine kernel: nvidia 0000:02:00.0:   device [10de:2684] error status/mask=00000001/00000000
+Oct 15 11:36:07 4090-machine kernel: nvidia 0000:02:00.0:    [ 0] RxErr                  (First)
+Oct 15 11:36:08 4090-machine kernel: nvidia 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+Oct 15 11:36:08 4090-machine kernel: nvidia 0000:02:00.0:   device [10de:2684] error status/mask=00000001/00000000
+Oct 15 11:36:08 4090-machine kernel: nvidia 0000:02:00.0:    [ 0] RxErr                  (First)
+Oct 15 11:36:11 4090-machine kernel: nvidia 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+Oct 15 11:36:11 4090-machine kernel: nvidia 0000:02:00.0:   device [10de:2684] error status/mask=00000001/00000000
+Oct 15 11:36:11 4090-machine kernel: nvidia 0000:02:00.0:    [ 0] RxErr                  (First)
+Oct 15 11:36:11 4090-machine kernel: nvidia 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+Oct 15 11:36:11 4090-machine kernel: nvidia 0000:02:00.0:   device [10de:2684] error status/mask=00000001/00000000
+Oct 15 11:36:11 4090-machine kernel: nvidia 0000:02:00.0:    [ 0] RxErr                  (First)
+Oct 15 11:36:12 4090-machine kernel: nvidia 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+Oct 15 11:36:12 4090-machine kernel: nvidia 0000:02:00.0:   device [10de:2684] error status/mask=00000001/00000000
+Oct 15 11:36:12 4090-machine kernel: nvidia 0000:02:00.0:    [ 0] RxErr                  (First)
+Oct 15 11:36:13 4090-machine kernel: nvidia 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+Oct 15 11:36:13 4090-machine kernel: nvidia 0000:02:00.0:   device [10de:2684] error status/mask=00000001/00000000
+Oct 15 11:36:13 4090-machine kernel: nvidia 0000:02:00.0:    [ 0] RxErr                  (First)
+```
+
+You can try another way to update the boot for your kernel loading with add more parameter to grub. Read here: [StackOverFlow - PCIe Bus error severity=Corrected](https://askubuntu.com/questions/771899/pcie-bus-error-severity-corrected) (WARNING: It can make your machine coming with another problem, please aware to use this)
+
+```bash
+# Use editor to edit grub
+sudo nano /etc/default/grub
+
+# Add 'pci=nomsi' to this value
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash pci=nomsi"
+
+# Update configuration of grub
+sudo update-grub
+```
+
+And in another post of [Nvidia Forum - Unable to determine the device handle for GPU 0000:01:00.0: Not Found](https://forums.developer.nvidia.com/t/unable-to-determine-the-device-handle-for-gpu-000000-0-not-found/231710), there are something tell about it can come from your driver, so reinstall with `open-kernel` version and it can tackle this problem
+
+![[Pasted image 20251024152253.png]]
 

@@ -1,5 +1,5 @@
 ---
-title: Art & Journals Publication Published
+title: Awesome Journals Publication Published
 tags:
   - music
   - movie

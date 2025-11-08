@@ -115,6 +115,7 @@ tags:
 - [3os Project](https://3os.org/) - Collocation of technical documentation and guides for devops, developers, pentesters, systems administrators and other IT professionals.
 - [Alibaba Cloud](https://www.alibabacloud.com/blog/): The blog page of Alibaba that provides a great insightful, diverse topics and great articles to approach 🌟 **(Recommended)**
 - [Digital Ocean Community](https://www.digitalocean.com/community) - Community offers thousands of tutorials, videos, and answers to questions on a wide range of topics
+- [DZone](https://dzone.com/) - one of the world's largest online communities and leading publisher of knowledge resources for software engineering professionals
 - [Hackaday](https://hackaday.com/) - Fresh Hacks Every Day
 - [Hackaday.io](https://hackaday.io/) - The world's largest collaborative hardware development community.
 - [HelloGitHub](https://hellogithub.com/en) : Share interesting, entry-level open source projects on GitHub.
@@ -129,6 +130,7 @@ tags:
 - [StackExchange](https://stackexchange.com/sites) - StackOverFlow Ecosystem
 - [Trang chủ » AnonyViet](https://anonyviet.com/) - Vietnamese Community who teaching multiple techniques on Computer
 - [XDA Forums](https://forum.xda-developers.com/) - Valuable resource for people who want to make the most of their mobile devices, from customizing the look and feel to adding new functionality.
+- [TheNewStack](https://thenewstack.io/) - A great blog with new update articles about tech, system-architecture, ai and moreover stuff
 ## Youtube Channel
 
 ![[youtube.png]]
@@ -165,9 +167,7 @@ tags:
 - [Leapwork - DevOps Test Automation: Strategy Guide](https://www.leapwork.com/blog/devops-test-automation)
 ## Techniques
 
-- [Internet - How to build and deploy React Native applications with Fastlane](https://tech.sparkfabrik.com/en/blog/fastlane_build/)
-- [Dev.io - Automating mobile application deployments using Fastlane and CI/CD tools](https://dev.to/jei/automating-mobile-application-deployments-using-fastlane-and-ci-cd-tools-2iae)
-- [Medium - Step by Step guide on generating an IOS certificate, preparing for Test Flight, and releasing ios app on the App Store](https://medium.com/readytowork-org/step-by-step-guide-on-generating-an-ios-certificate-preparing-for-test-flight-and-releasing-ios-99cd2eb11067)
+- [Dev.to - CPU Cache Basics](https://dev.to/larapulse/cpu-cache-basics-57ej)
 ## Technologies
 
 - [Medium - Infrastructure as Code Landscape Overview 2024](https://medium.com/itnext/infrastructure-as-code-landscape-overview-2024-a066124e5989)
@@ -245,25 +245,4 @@ tags:
 ## Secret Managements
 
 - [sops](https://getsops.io/) : Simple and flexible tool for managing secrets 🌟 **(Recommended)**
-- [trufflehog](https://github.com/trufflesecurity/trufflehog): Find, verify, and analyze leaked credentials.
-## Terminal Tools
-
-- [auto-unlocker](https://github.com/paolo-projects/auto-unlocker): Unlocker for VMWare macOS
-- [bat](https://github.com/sharkdp/bat): A cat(1) clone with wings.
-- [bcal](https://github.com/jarun/bcal): 🔢 Bits, bytes and address calculator
-- [bpytop](https://github.com/aristocratos/bpytop): Linux/OSX/FreeBSD resource monitor 🌟 **(Recommended)**
-- [darling](https://github.com/darlinghq/darling): Darwin/macOS emulation layer for Linux
-- [duf](https://github.com/muesli/duf): Disk Usage/Free Utility - a better 'df' alternative 🌟 **(Recommended)**
-- [dust](https://github.com/bootandy/dust) : A more intuitive version of du in rust
-- [entr](https://github.com/eradman/entr): Run arbitrary commands when files change
-- [exa](https://github.com/ogham/exa): A modern replacement for ‘ls’.
-- [fd](https://github.com/sharkdp/fd) : A simple, fast and user-friendly alternative to 'find'
-- [fzf](https://github.com/junegunn/fzf): 🌸 A command-line fuzzy finder
-- [httpie](https://github.com/httpie/cli): modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions, downloads, plugins & more
-- [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh): Framework for managing your zsh configuration 🌟 **(Recommended)**
-- [pet](https://github.com/knqyf263/pet): Simple command-line snippet manager
-- [rclone](https://github.com/rclone/rclone): "rsync for cloud storage" - Google Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Wasabi, Google Cloud Storage, Azure Blob, Azure Files, Yandex Files 🌟 **(Recommended)**
-- [ripgrep](https://github.com/BurntSushi/ripgrep) : ripgrep recursively searches directories for a regex pattern while respecting your gitignore
-- [thefuck](https://github.com/nvbn/thefuck) : Magnificent app which corrects your previous console command.
-- [tldr](https://github.com/tldr-pages/tldr): 📚 Collaborative cheatsheets for console commands 🌟 **(Recommended)**
-- [warp](https://www.warp.dev/): The terminal reimagined with AI and collaborative tools for better productivity
+- [trufflehog](https://github.com/trufflesecurity/trufflehog): Find, verify, and analyze leaked credentials.w

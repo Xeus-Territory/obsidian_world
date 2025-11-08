@@ -6,7 +6,8 @@
 
 ---
 
-> Archive my knowledge, make more efficient and share to others one
+>[!NOTE]
+>To archive my knowledge, make them become more efficient and share to others one
 
 *"Give an applause for [him - jackyzha0](https://github.com/jackyzha0), this template is used from his project. I feel appriciate with your contribution, help me to cut off effort for implement UI/UX, and can make something cool stuff like Obsidian World"*
 

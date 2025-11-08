@@ -70,10 +70,16 @@ Check some things in my world down below
 
 	*Yeah, I might as well bless all the people I love (Ayy, ayy)"*
 
-<div align="center"><h3>🙌 Song of the week 🙌</h3></div>
+<div align="center"><h3>🙌 Songs of these weeks 🙌</h3></div>
 
 <div align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Gs60t6I5CHc?si=Qdo8AO0Obw3F2khw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pqwSIOrMq7w?si=3RvXVbbhOU4bshG3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
+
+<div align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KWqUaC-bJj8?si=4JAQq8cQsPUgCZME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
 
 

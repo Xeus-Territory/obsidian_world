@@ -16,10 +16,11 @@ tags:
 - [awesome-nginx](https://github.com/agile6v/awesome-nginx) : A curated list of awesome Nginx distributions, 3rd party modules, Active developers, etc.
 # Articles
 
-- [Medium - Nginx Configuration File Explanation and Common Feature Configurations (90% Practical Use Rate)](https://medium.com/@cstoppgmr/nginx-configuration-file-explanation-and-common-feature-configurations-90-practical-use-rate-bc49271f3766)
+- [Medium - Nginx Configuration File Explanation and Common Feature Configurations (90% Practical Use Rate)](https://medium.com/@cstoppgmr/nginx-configuration-file-explanation-and-common-feature-configurations-90-practical-use-rate-bc49271f3766) 🌟 **(Recommended)**
 - [[Create Free SSL with Let's Encrypt and Certbot|Myself - Create Free SSL with Let's Encrypt and Certbot]]
 - [Blog - Nginx high availability through Keepalived – Virtual IP](https://www.chakray.com/nginx-high-availability-through-keepalived-virtual-ip/)
-- [Nginx Docs - High Availability Support for NGINX Plus in On-Premises Deployments](https://docs.nginx.com/nginx/admin-guide/high-availability/ha-keepalived/)
+- [Nginx Docs - High Availability Support for NGINX Plus in On-Premises Deployments](https://docs.nginx.com/nginx/admin-guide/high-availability/ha-keepalived/) 🌟 **(Recommended)**
+- [Medium - Linux Load Balancing: Advanced Techniques](https://medium.com/@erencuysal/linux-load-balancing-advanced-techniques-f8266b67d177) 🌟 **(Recommended)**
 # Nginx Configuration
 ## Default
 

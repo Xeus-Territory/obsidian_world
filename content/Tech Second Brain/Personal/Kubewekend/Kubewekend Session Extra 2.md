@@ -716,6 +716,8 @@ To prevent the sudden upgrade (NOTE: I met issue and dunno the reason why 😰),
 1.  Use the `apt-hold` function to keep not update related
 
 	```bash
+	# version_number is your nvidia version
+	# e.g: 535 or 555
 	sudo apt-mark hold nvidia-dkms-version_number
 	sudo apt-mark hold nvidia-driver-version_number
 	sudo apt-mark hold nvidia-utils-version_number

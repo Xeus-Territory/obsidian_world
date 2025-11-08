@@ -22,11 +22,9 @@ tags:
 - [Datacamp - Database Sharding: Examples, Strategies, Tools, and More](https://www.datacamp.com/blog/database-sharding) 🌟 **(Recommended)**
 - [Azure - Analyze and prevent deadlocks in Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/analyze-prevent-deadlocks?view=azuresql&tabs=ring-buffer)
 - [SQLShack - Configuring a SQL Server AlwaysOn High Availability Group](https://www.sqlshack.com/configuring-a-sql-server-alwayson-high-availability-group/)
-
 ## High Availability
 
 - [Percona - InnoDB Cluster Setup: Building a 3-Node High Availability Architecture (MySQL)](https://www.percona.com/blog/innodb-cluster-setup-building-a-3-node-high-availability-architecture/)
-
 ## Troubleshoot
 
 - [Youtube - Performance Troubleshooting | Azure SQL](https://www.youtube.com/playlist?list=PLlrxD0HtieHgDkZ84FfCSDLBcJmUn8ktU)

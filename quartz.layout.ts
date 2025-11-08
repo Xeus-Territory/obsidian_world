@@ -8,7 +8,7 @@ export const sharedPageComponents: SharedLayout = {
   header: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/Xeus-Territory",
+      "GitHub": "https://github.com/Xeus-Territory",
       "Spiderum": "https://spiderum.com/nguoi-dung/Xeus0810",
       "HackMD": "https://hackmd.io/@xeusnguyen",
       "Viblo": "https://viblo.asia/u/Xeus-Territory",
@@ -55,7 +55,7 @@ export const defaultContentPageLayout: PageLayout = {
     ),
     Component.DesktopOnly(
       Component.RecentNotes({
-        limit: 2,
+        limit: 3,
         linkToMore: "/tags" as SimpleSlug,
       })
     )

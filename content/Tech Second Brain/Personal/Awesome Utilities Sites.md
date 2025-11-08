@@ -64,5 +64,8 @@ tags:
 
 - [Awesome Job VietNam](https://github.com/awesome-jobs/vietnam): Find Dev job in VietNam
 - [Awesome Remote Job](https://github.com/lukasz-madon/awesome-remote-job?tab=readme-ov-file): A curated list of awesome [remote working](https://en.wikipedia.org/wiki/Telecommuting) resources.
+- [Remote.co](https://remote.co/): Browse thousands of remote and hybrid jobs tailored for you.
 - [Remote In Tech](https://remoteintech.company/): A list of semi to fully remote-friendly companies in tech
+- [Wellfound](https://wellfound.com/jobs): Over 130k remote & local startup jobs
+- [We work remotely](https://weworkremotely.com/): WWR has been the #1 site for remote jobs, with 6M monthly visitors and the world's largest remote work community
 - [Y Combinator](https://www.ycombinator.com/jobs): Community for funding and finding job for the startup company

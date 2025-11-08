@@ -13,19 +13,34 @@ tags:
 ## Repositories
 
 - [awesome-mongodb](https://github.com/ramnes/awesome-mongodb): 🍃 A curated list of awesome MongoDB resources, libraries, tools and applications
-## High-Availability
+## High-Availability &  Scaling
 
 - [Medium - High-availability MongoDB Cluster Configuration Solutions](https://alibaba-cloud.medium.com/high-availability-mongodb-cluster-configuration-solutions-465cc82cd0bc) 🌟 **(Recommended)**
 - [Medium - Configure 3 nodes replica set of MongoDB on AWS EC2](https://medium.com/@pnle/configure-3-nodes-replica-set-of-mongodb-on-aws-ec2-be778281ee9a)
 - [MongoDB - Deploy a Self-Managed Replica Set](https://www.mongodb.com/docs/manual/tutorial/deploy-replica-set/) 🌟 **(Recommended)**
 - [Medium - Setting Up MongoDB Cluster: Replication, Sharding, and High Availability](https://harsh05.medium.com/setting-up-mongodb-cluster-replication-sharding-and-high-availability-1c95290156ad)
+- [Medium - The only local MongoDB replica set with Docker Compose guide you’ll ever need!](https://medium.com/workleap/the-only-local-mongodb-replica-set-with-docker-compose-guide-youll-ever-need-2f0b74dd8384) 🌟 **(Recommended)**
 ## Tips & Configuration
 
 - [Medium - Solving curious case of excess memory consumption by MongoDB](https://tech.oyorooms.com/mongodb-out-of-memory-kill-process-mongodb-using-too-much-memory-solved-44e9ae577bed)
 - [Medium - MongoDB primary failover with Keepalived (with MongoDB cluster)](https://medium.com/@azsecured/mongodb-primary-failover-with-keepalived-with-mongodb-cluster-3462469a9730)
+## Optimization
+
+- [MongoDB - Best Practices Guide for MongoDB Performance](https://www.mongodb.com/resources/products/capabilities/performance-best-practices)
+## Monitoring and Observability
+
+- [MongoDB - Monitoring a Self-Managed MongoDB Deployment](https://www.mongodb.com/docs/manual/administration/monitoring/#replication-and-monitoring) 🌟 **(Recommended)**
+- [DrDroid - MongoDB Monitoring & Alerting: Best Practices](https://drdroid.io/engineering-tools/mongodb-monitoring-alerting-best-practices)
+## Security
+
+- [MongoDB - Authentication on Self-Managed Deployments](https://www.mongodb.com/docs/manual/core/authentication/) 🌟 **(Recommended)**
+- [MongoDB - Built-In Roles](https://www.mongodb.com/docs/manual/reference/built-in-roles/) 🌟 **(Recommended)**
+- [MongoDB - Deploy Self-Managed Replica Set With Keyfile Authentication](https://www.mongodb.com/docs/manual/tutorial/deploy-replica-set-with-keyfile-access-control/) 🌟 **(Recommended)**
+- [Digital Ocean - How To Configure Keyfile Authentication for MongoDB Replica Sets on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-configure-keyfile-authentication-for-mongodb-replica-sets-on-ubuntu-20-04)
 ## General
 
-- [Medium - Everything You Need to Know About MongoDB Oplogs](https://medium.com/data-platform-engineering/everything-you-need-to-know-about-mongodb-oplogs-feebae3bd257)
+- [Medium - Everything You Need to Know About MongoDB Oplogs](https://medium.com/data-platform-engineering/everything-you-need-to-know-about-mongodb-oplogs-feebae3bd257) 🌟 **(Recommended)**
+- [Percona - MongoDB Best Practices: Security, Data Modeling, & Schema Design](https://www.percona.com/blog/mongodb-best-practices) 🌟 **(Recommended)**
 # MongoDB Tools
 
 ![[meme-technology.png|center]]
@@ -182,6 +197,61 @@ mongosh 'mongodb://username:password@server-uri/db?directConnection=true'
 >- The connection string contains a seed list with multiple hosts.
 >- The connection string already contains a `directConnection` parameter.
 
+## Backup and Restore
+
+By default, MongoDB provide built-in tools for dump and restore database and serve them for backup and restore progress. It's simple way to execute these actions and in-directly, explore more at [MongoDB - Back Up and Restore a Self-Managed Deployment with MongoDB Tools](https://www.mongodb.com/docs/manual/tutorial/backup-and-restore-tools/)
+
+However, you have alternative solutions for handling this stuff and you can choose them, it depends on you
+
+- [MongoDB - Back Up and Restore a Self-Managed Deployment with Filesystem Snapshots](https://www.mongodb.com/docs/manual/tutorial/backup-with-filesystem-snapshots/)
+- [Percona - Percona Backup for MongoDB documentation](https://docs.percona.com/percona-backup-mongodb/index.html)
+- [Percona - Essential MongoDB Backup Best Practices for Data Protection](https://www.percona.com/blog/mongodb-backup-best-practices/)
+- [Geeksforgeeks - Backup Strategies for MongoDB Systems](https://www.geeksforgeeks.org/mongodb/backup-strategies-for-mongodb-systems/)
+### Backup
+
+For `backup`, I usually and almost use `mongodump` to handle backup (logical), it lets you combine with multiple optional, compress and sent them via flexible output
+
+>[!warning]
+>When you backup for huge database or collection, you need to consider to choose this `mongodump` solution which load a huge data to memory and cause crash your hosting, especially with `mongodb` core [wiredtiger](https://www.mongodb.com/docs/manual/core/wiredtiger/) and [Medium - Solving curious case of excess memory consumption by MongoDB](https://tech.oyorooms.com/mongodb-out-of-memory-kill-process-mongodb-using-too-much-memory-solved-44e9ae577bed)
+
+```bash
+# basic mongodump command
+mongodump <options> <connection-string>
+
+# usecase: backup specific database/ w collection
+mongodump --host $MONGO_HOST --port $MONGO_PORT -u $MONGO_USER -p $MONGO_PASSWORD --authenticationDatabase admin --db $DB_NAME [--collection name] --out $BACKUP_DIR
+
+# usecase: gzip compress
+mongodump --host $MONGO_HOST --port $MONGO_PORT -u $MONGO_USER -p $MONGO_PASSWORD --authenticationDatabase admin --db $DB_NAME --out $BACKUP_DIR --gzip
+
+# usecase: for point-in-time recovery, you should add --oplog when backup whole database
+mongodump --host $MONGO_HOST --port $MONGO_PORT -u $MONGO_USER -p $MONGO_PASSWORD --authenticationDatabase admin --db $DB_NAME --out $BACKUP_DIR --oplog
+
+# usecase: optimize backup with read node in replicaSet
+# preference: https://www.mongodb.com/docs/manual/core/read-preference/#read-preference-modes
+mongodump --uri 'mongodb://user:pass@host1:port1,host2:port2,.../admin?replicaSet=replicaset_name'--readPreference 'secondary'
+
+# usecase: optimize backup with --numParallelCollections or -j for reducing the pressure memory for backup
+mongodump --uri 'mongodb://user:pass@host1:port1,host2:port2,.../admin?replicaSet=replicaset_name' --numParallelCollections num-threads
+```
+
+### Restore
+
+For `restore`, I recommend to use `mongorestore` to get the compatible with your backup version by `mongodump`
+
+```bash
+# basic mongorestore command
+mongorestore <options> <connection-string> <directory or file to restore>
+
+# usecase: basic usage
+mongorestore --host $MONGO_HOST --port $MONGO_PORT -u $MONGO_USER -p $MONGO_PASSWORD --authenticationDatabase admin --db $DB_NAME /path/to/backup
+
+# usecase: drop database and skip create index before restore
+mongorestore --host $MONGO_HOST --port $MONGO_PORT -u $MONGO_USER -p $MONGO_PASSWORD --authenticationDatabase admin --db $DB_NAME --drop --noIndexRestore /path/to/backup
+
+# usecase: restore with gzip decompress
+mongorestore --host $MONGO_HOST --port $MONGO_PORT -u $MONGO_USER -p $MONGO_PASSWORD --authenticationDatabase admin --db $DB_NAME --drop --noIndexRestore --gzip /path/to/backup
+```
 ## Backup Script for MongoDB Cluster
 
 ```bash
@@ -198,7 +268,7 @@ MINIO_ALIAS="MINIO_ALIAS"
 MINIO_BUCKET="MINIO_BUCKET"
 
 # Get a list of all databases
-DATABASES=$(mongo --host $MONGO_HOST --port $MONGO_PORT -u $MONGO_USER -p $MONGO_PASSWORD --authenticationDatabase admin --quiet --eval "db.adminCommand('listDatabases').databases.map(db => db.name).join(' ')")
+DATABASES=$(mongosh --host $MONGO_HOST --port $MONGO_PORT -u $MONGO_USER -p $MONGO_PASSWORD --authenticationDatabase admin --quiet --eval "db.adminCommand('listDatabases').databases.map(db => db.name).join(' ')")
 
 # Backup each database
 for DB_NAME in $DATABASES; do
@@ -220,6 +290,58 @@ for DB_NAME in $DATABASES; do
 done
 
 echo "All databases backed up and uploaded to MinIO."
+```
+
+## Roles in MongoDB
+
+When you enable **authentication** in MongoDB, any client connection will be required to submit a valid **username and password** corresponding to a defined **role**.
+
+The following is a list of small, but important, built-in roles you can define in MongoDB:
+
+* **`read`**: Grants permissions to perform read-only operations on a specified database.
+* **`readWrite`**: Grants permissions for both read and write operations on a specified database.
+* **`dbAdmin`**: Grants administrative privileges over a specified database, including actions like managing indexes, running database commands, and managing database statistics.
+* **`userAdmin`**: Grants privileges to create and manage users and roles on a specified database.
+* **`dbOwner`**: A high-level role that grants all administrative, read, and write access on a specified database.
+
+To explore the full range of roles and permissions, refer to the official documentation: [MongoDB - Built-In Roles](https://www.mongodb.com/docs/manual/reference/built-in-roles/) 🌟 **(Recommended)**
+
+```bash
+# change your account into admin
+use admin
+
+# create a userAdmin, who carry on about setting user/passwd and authentication in any database
+db.createUser(
+   {
+     user: "mongo-useradmin",
+     pwd: passwordPrompt(),
+     roles: [
+        { role: "userAdminAnyDatabase", db: "admin" }
+     ]
+   }
+)
+
+# create a root, who carry on about whole configuration, useradmin, readwrite and authentication in any database
+db.createUser(
+   {
+     user: "mongo-root",
+     pwd: passwordPrompt(),
+     roles: [
+        { role: "root", db: "admin" }
+     ]
+   }
+)
+
+# create a readwrite, who carry on about whole readwrite in any database
+db.createUser(
+   {
+     user: "mongo-readwrite",
+     pwd: passwordPrompt(),
+     roles: [
+        { role: "readwrite", db: "admin" }
+     ]
+   }
+)
 ```
 
 # Common Query Configuration of MongoDB
