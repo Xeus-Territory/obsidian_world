@@ -41,6 +41,12 @@ tags:
 
 - [Medium - Why Rust Emerges as the Premier Choice for System Programming](https://medium.com/python-in-plain-english/why-rust-emerges-as-the-premier-choice-for-system-programming-d63cd7c920c8)
 - [Medium - Blazing fast Python Docker builds with Poetry 🏃](https://medium.com/@albertazzir/blazing-fast-python-docker-builds-with-poetry-a78a66f5aed0) 🌟 **(Recommended)**
+
+## React Native for IOS/Android
+
+- [Internet - How to build and deploy React Native applications with Fastlane](https://tech.sparkfabrik.com/en/blog/fastlane_build/)
+- [Dev.io - Automating mobile application deployments using Fastlane and CI/CD tools](https://dev.to/jei/automating-mobile-application-deployments-using-fastlane-and-ci-cd-tools-2iae)
+- [Medium - Step by Step guide on generating an IOS certificate, preparing for Test Flight, and releasing ios app on the App Store](https://medium.com/readytowork-org/step-by-step-guide-on-generating-an-ios-certificate-preparing-for-test-flight-and-releasing-ios-99cd2eb11067)
 ## Youtube Channel
 
 ![[youtube.png]]

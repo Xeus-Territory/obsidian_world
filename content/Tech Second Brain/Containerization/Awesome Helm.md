@@ -51,6 +51,9 @@ If you use Helm for managing and deploying Kubernetes applications, you can try 
 
 - [awesome-helm](https://github.com/cdwv/awesome-helm): Collaborative list of awesome helm charts and resources. PRs are welcome!
 - [helm-cheatsheet](https://helm.sh/docs/intro/cheatsheet/): Featuring all the necessary commands required to manage an application through Helm.
+## Troubleshoot
+
+- [StackOverFlow - How an helm chart have an attribute with value contain {{ }}](https://stackoverflow.com/questions/47195593/how-an-helm-chart-have-an-attribute-with-value-contain)
 # Installation
 
 Helm already able to install and use on CI/CD, If you want to learn and work with `helm`, feel free to installing on [Installing Guide](https://helm.sh/docs/intro/install/#helm)
@@ -124,7 +127,7 @@ mychart
 ![[helm-workflow.png]]
 ## CI (Continuous Integration)
 
-<h2>helm dependency</h2>
+### helm dependency
 
 *Documentation: [doc](https://helm.sh/docs/helm/helm_dependency/#helm)*
 
@@ -186,7 +189,7 @@ If you can see with `Chart.yaml`, you could understand what meaning of Chart wit
 On CI progress, pipeline will trigger the action
 
 ```bash
-helm dependency update ../xxxxx/charts/xxxx/
+helm dependency update /path/to/chart
 ```
 
 >[!done]
@@ -197,7 +200,7 @@ helm dependency update ../xxxxx/charts/xxxx/
 
 ## CD (Continuous Delivery)
 
-<h2>helm upgrade</h2>
+### helm upgrade
 
 *Documentation: [doc](https://helm.sh/docs/helm/helm_upgrade/)*
 
@@ -212,7 +215,7 @@ Apply `--install` for purpose running both update and install if not exist `Char
 
 >[!question]
 >You need to understand concept of `value-file` work with `helm update` to make sure not mistake occur when defining. 
->***NOTICE: The value will be set base on priority. Read [[Note about Helm#Priority of Value in Helm|Priority of Value in Helm]] to explain more***
+>***NOTICE: The value will be set base on priority. Read [[Awesome Helm#Priority of Value in Helm|Priority of Value in Helm]] to explain more***
 
 1. All **environment with sensitive** need to be **masking** like *connection strings, password database, secret key, ...* by force to using `--set` flag to set this part on the pipeline.
 2. Base on environment, you need to upgrading the specify value for each them like `production-values.yaml uat-values.yaml systemtest-values.yaml`
@@ -221,7 +224,7 @@ Apply `--install` for purpose running both update and install if not exist `Char
 On CD progress, pipeline will trigger the action
 
 ```bash
-helm upgrade --install xxxx -f ../xxxxx/environments/systemtest-values.yaml  --set mongodb.password=$(MONGODB_PWD) ../xxxxx/charts/xxxx 
+helm upgrade --install name-release -f /path/to/value/file --set mongodb.password=$(MONGODB_PWD) /path/to/chart 
 ```
 
 >[!done]
@@ -229,7 +232,18 @@ helm upgrade --install xxxx -f ../xxxxx/environments/systemtest-values.yaml  --s
 
 ## Another command
 
-<h2>helm search</h2>
+### helm show
+
+To show the information of Chart like the definitions, values or crd for example, you just need to use `show` command to look that in terminal
+
+```bash
+# show values of chart-path
+helm show values chart-path
+
+# Specific version to find exactly
+helm show values chart-path --version <version>
+```
+### helm search
 
 To search the version of chart from your repo which one you add into cluster, or from hub e.g [ArtifactHub](https://artifacthub.io/) or selfhosted
 
@@ -245,7 +259,7 @@ helm search repo chart-path --versions # Get list
 helm search hub
 ```
 
-<h2>helm install</h2>
+### helm install
 
 To install helm chart from self-define or community from [ArtifactHub](https://artifacthub.io/)
 
@@ -258,14 +272,16 @@ If you wanna specific version, you can add additional option flag `--version`
 ```bash
 helm install <name-release> --version <version> <chart-url>
 ```
-<h2>helm list</h2>
+
+### helm list
+
 To list releases on namespace
 
 ```bash
 helm list -n <namespace>
 ```
 
-<h2>helm repo</h2>
+### helm repo
 To add, list, remove, update, and index chart repositories
 
 ```bash
@@ -275,17 +291,17 @@ helm repo add [NAME] [URL] [flags]
 # Update information of available charts locally from chart repositories
 helm repo update [REPO1 [REPO2 ...]] [flags]
 ```
-
-<h2>helm uninstall</h2>
+### helm uninstall
 
 To uninstall a release
 
 ```bash
 helm uninstall RELEASE_NAME [...] [flags]
 ```
+
 # Debug Template
 
-*Documentation: [Doc](https://helm.sh/docs/chart_template_guide/debugging/)*
+Explore more at [Helm - Debugging Templates](https://helm.sh/docs/chart_template_guide/debugging/)
 
 >[!info]
 >Debugging templates can be tricky because the rendered templates are sent to the Kubernetes API server, which may reject the YAML files for reasons other than formatting.
@@ -294,7 +310,7 @@ helm uninstall RELEASE_NAME [...] [flags]
 >
 >- `helm lint` is your go-to tool for verifying that your chart follows best practices
 >- `helm template --debug` will test rendering chart templates locally.
->- `helm install --dry-run --debug` will also render your chart locally without installing it, but will also check if conflicting resources are already running on the cluster. Setting --dry-run=server will additionally execute any lookup in your chart towards the server.
+>- `helm install --dry-run --debug` will also render your chart locally without installing it, but will also check if conflicting resources are already running on the cluster. Setting` --dry-run=server` will additionally execute any lookup in your chart towards the server.
 >- `helm get manifest`: This is a good way to see what templates are installed on the server.
 
 

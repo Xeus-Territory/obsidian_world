@@ -11,13 +11,13 @@ tags:
 
 To find more information and example, you can double-check a some manifest collection at
 
+- [Kubernetes API Reference (1.34)](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.34/#): Retrieve the api for double-check the manifest definition 🌟 **(Recommended)**
 - [Kubernetes Examples](https://k8s-examples.container-solutions.com/): About whole manifest of any types in Kubernetes 🌟 **(Recommended)**
 - [Kubernetes Lab of Collabnix](https://collabnix.github.io/kubelabs/):  Ultimate Hands-on Labs and Tutorials 🌟 **(Recommended)**
 - [Kubernetes Manifests](https://github.com/maximemoreillon/kubernetes-manifests): A collection of K8s manifests to deploy common applications
 - [K8s Deployment Strategies](https://github.com/ContainerSolutions/k8s-deployment-strategies): About setup deployment strategies of Kubernetes 
 - [Medium - 24 Kubernetes Masters’ Configurations](https://overcast.blog/24-kubernetes-mastersconfigurations-29235c65b337)
 - [Medium - Zero-Downtime Deployments with Kubernetes](https://blog.devgenius.io/zero-downtime-deployments-with-kubernetes-a2d3200d207f)
-
 # Kubernetes Q/A Collection 
 ## Can use volume with cronjobs?
 
@@ -60,6 +60,68 @@ Pods are **not directly evicted due to high CPU pressure or usage alone**. Inste
 
 While high CPU usage by a pod can indirectly contribute to resource pressure and potentially lead to eviction due to memory or other resource shortages, CPU throttling is the primary mechanism used to manage CPU-intensive workloads
 
+## How can I distribute a deployment across nodes?
+
+Reference Issue and Question at: [StackOverFlow - How can I distribute a deployment across nodes?](https://stackoverflow.com/questions/39092090/how-can-i-distribute-a-deployment-across-nodes)
+
+The answer is yes, absolutely because we can approach `topologySpreadConstraints` for tackle this feature in Kubernetes, from version 1.19, it's pretty coolest. Explore more at [Kubernetes - Pod Topology Spread Constraints](https://kubernetes.io/docs/concepts/scheduling-eviction/topology-spread-constraints/)
+
+>[!info]
+>"You can use topology spread constraints to control how Pods are spread across your cluster among failure-domains such as regions, zones, nodes, and other user-defined topology domains. This can help to achieve high availability as well as efficient resource utilization."
+>
+>*From Kubernetes*
+
+Example:
+
+```yaml
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: example-pod
+spec:
+  # Configure a topology spread constraint
+  topologySpreadConstraints:
+    - maxSkew: <integer>
+      minDomains: <integer> # optional
+      topologyKey: <string>
+      whenUnsatisfiable: <string>
+      labelSelector: <object>
+      matchLabelKeys: <list> # optional; beta since v1.27
+      nodeAffinityPolicy: [Honor|Ignore] # optional; beta since v1.26
+      nodeTaintsPolicy: [Honor|Ignore] # optional; beta since v1.26
+  ### other Pod fields go here
+
+```
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-service
+  labels:
+    app: my-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-service
+  template:
+    metadata:
+      labels:
+        app: my-service
+    spec:
+      topologySpreadConstraints:
+      - maxSkew: 1
+        topologyKey: kubernetes.io/hostname
+        whenUnsatisfiable: DoNotSchedule
+        labelSelector:
+          matchLabels:
+            app: my-service
+      containers:
+      - name: pause
+        image: k8s.gcr.io/pause:3.1
+```
 # Hand-on `kubectl` with Kubernetes
 
 ## Configuration the Private Registry

@@ -86,11 +86,12 @@ Website: [kubewekend.xeusnguyen.xyz](https://kubewekend.xeusnguyen.xyz/)
 - Session Extra 1: Longhorn and the story about NFS in Kubernetes ✅
 - Session Extra 2: Rebuild Cluster with Rancher or K3S ✅
 - Session Extra 3: Networking Issue in Kubernetes with CNI, CoreDNS ✅
-- Session Extra 4: Combination GitOps with ArgoCD into Kubewekend Cluster ✍
-- Session Extra 5: Learn and use security, network context for Kubernetes ⌛
-- Session Extra 6: Customize default scheduled in `kubernetes` cluster with `kube-scheduler` ⌛
-- Session Extra 7: Service mesh inside Kubewekend Cluster ⌛
-- Session Extra 8: Learn about virtualization inside Kubewekend with `kubevirt` ⌛
+- Session Extra 4: Kind and Sandbox environment for GitLab CI ✅
+- Session Extra 5: Combination GitOps with ArgoCD into Kubewekend Cluster ✍
+- Session Extra 6: Learn and use security, network context for Kubernetes ⌛
+- Session Extra 7: Customize default scheduled in `kubernetes` cluster with `kube-scheduler` ⌛
+- Session Extra 8: Service mesh inside Kubewekend Cluster ⌛
+- Session Extra 9: Learn about virtualization inside Kubewekend with `kubevirt` ⌛
 ## The major session ✍
 
 - Session 1: Use `Vargrant` to configuration the VM with provider in `VirtualBox` ✅

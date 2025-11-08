@@ -22,21 +22,21 @@ tags:
 - [[Awesome CDC]]
 ## Architecture
 
-- [[Awesome System Architecture]]
 - [[Awesome API Gateway and Web Server]]
+- [[Awesome Caddy]]
 - [[Awesome Kafka]]
 - [[Awesome NGINX]]
-- [[Awesome Caddy]]
 - [[Awesome Selfhosted]]
+- [[Awesome System Architecture]]
 ## Certificates
 
 - [[AZ104|Azure AZ104]]
 ## CI/CD
 
-- [[Awesome Github Action|Awesome GitHub Action]]
 - [[Awesome Azure Pipelines|Awesome Azure Pipelines]]
-- [[Awesome GitLabCI|Awesome GitLab CI]]
 - [[Awesome BitBucket|Awesome BitBucket Pipelines]]
+- [[Awesome Github Action|Awesome GitHub Action]]
+- [[Awesome GitLabCI|Awesome GitLab CI]]
 ## Cloud
 
 - [[Awesome AWS Cloud|Awesome AWS Cloud]]
@@ -58,6 +58,7 @@ tags:
 - [[Awesome MongoDB]]
 ## Developer & DevOps
 
+- [[Awesome Ansible]]
 - [[Awesome Developer]]
 - [[Awesome DevOps & System & Tech]]
 - [[Awesome eBPF]]
@@ -65,8 +66,8 @@ tags:
 - [[Awesome GitOps]]
 - [[Awesome HTML & CSS]]
 - [[Awesome Monitoring & Observability]]
+- [[Awesome Packer]]
 - [[Awesome Terraform]]
-- [[Awesome Ansible]]
 - [[Awesome Vagrant]]
 ## InfoSec & Hacking
 
@@ -77,17 +78,17 @@ tags:
 - [[Awesome Linux profile|Awesome Linux Profile]]
 - [[Awesome Linux Shell commands]]
 - [[Awesome Linux Shell scripts]]
-- [[Awesome OS|Awesome OS Linux and Window]]
+- [[Awesome OS|Awesome OS]]
 - [[Awesome Powershell commands]]
 - [[Awesome Windows profile|Awesome Windows Profile]]
 ## Others
 
-- [[Awesome Utilities Sites]]
 - [[Awesome Quantum Computing]]
-# Azure Clouds Services
+- [[Awesome Science]]
+- [[Awesome Utilities Sites]]
+# Azure Cloud Services
 
->[!info]
->Couple blogs and note is taken note when dive inside this cloud, learn and practice with these services. Azure is great thing and cool cloud that really impressive anyway.
+![[icon-azure.png|center]]
 
 **Timeline: 2024 - Current**
 ## 2024
@@ -114,6 +115,23 @@ tags:
 - [[Virtual Machine|Azure Virtual Machine]]:  The basis of the Azure infrastructure as a service (IaaS) model
 - [[Virtual Machine Availability|Azure Machine Availability]]: Methodology to enhance the availability for Azure Machine
 - [[Virtual network|Azure Virtual Network]]: An essential component for creating private networks in Azure
+
+# AWS Cloud Services
+
+![[thumbnail-aws.png|center]]
+
+**Timeline: 2024 - Current**
+
+## 2024
+
+- [[Atlantis with ECS for automatic provisioning]]
+- [[Create SSL Cert with ACM and Route53 for AWS Services]]
+- [[AWS SSO from Self Gitlab Terraform Module Registry]]
+- [[Switch Role between AWS Accounts]]
+- [[First EKS Cluster with Milvus DB]]
+- [[Digging into AWS Monitoring Stack]]
+- [[Work with EKS and How to monitoring your Cluster]]
+
 # DevOps - Tutorials from zero to hero
 
 >[!info]
@@ -157,7 +175,6 @@ tags:
 - [Deploy your alert with Grafana by Terraform and some common error with K8s](https://hackmd.io/@XeusNguyen/BJfNdXFWp)
 - [[0-downtime with Blue-Green Deployment]]
 - [[Monitoring with Portainer]]
-- [[Setup PostgreSQL with Ansible]]
 - [[NTMA for anomalies detection and autoscaling]]
 - [[Create Free SSL with Let's Encrypt and Certbot]]
 ## 2024
@@ -172,55 +189,52 @@ tags:
 - [[Play with Makefile for 1st time]]
 - [[Compile gRPC for 1st time]]
 - [[Build your wiki for 1st time]]
-- [[Atlantis with ECS for automatic provisioning]]
-- [[Create SSL Cert with ACM and Route53 for AWS Services]]
 - [[Build mobile with Expo (Part 1)]]
 - [[Build mobile with Expo (Part 2)]]
-- [[AWS SSO from Self Gitlab Terraform Module Registry]]
-- [[Switch Role between AWS Accounts]]
 - [[Protect sensitive data and secret files with sops]]
-- [[First EKS Cluster with Milvus DB]]
 - [[Integration automation test with GitLab CI]]
-- [[Digging into AWS Monitoring Stack]]
-- [[Work with EKS and How to monitoring your Cluster]]
 ## 2025
 
 - [[How to serve Java API with Maven and Tomcat]]
 - [[How can I build my homelab with Docker Swarm]]
 - [[DevOps and A Couple of things I learned|DevOps and A Couple of things I learned (Vietnamese Version)]]
-- [[Why you should use dependencies cache for your work]]
+- [[Caching and AI Delivery Boosting by Packaging and Model Caches]]
 - [[Vault and Keycloak - The combination for rotation Vault Token]]
 - [[GitLab Runner and Features of this platform]]
 - [[Build Helm Repository for yourself]]
 - [[The First Data Lakehouse and Challenge]]
 - [[High Availability for Database - The enormous stories]]
 - [[Setup HA Database for PostgreSQL]]
+- [[Setup HA Database for MongoDB]]
+- [[Monitoring Databases with Prometheus & Grafana in Kubernetes]]
+- [[From GitLab to Data LakeHouse Pipeline for Orchestration]]
 # DueWeekly Tech
 
 >[!info]
->The series is the collection of mine about news, tools and articles technologies during two weeks around the world 🌈
+>This series is my collection of news, tools, and technology articles gathered from around the world over a two-week period 🌈
 
 **Timeline: 2025 - Current**
 ## 2025
 
-- [[30-12-2024 to 12-01-2025|Session 1: 30-12-2024 to 12-01-2025]]
-- [[13-01-2025 to 26-01-2025|Session 2: 13-01-2025 to 26-01-2025]]
-- [[27-01-2025 to 09-02-2025|Session 3: 27-01-2025 to 09-02-2025]]
-- [[10-02-2025 to 23-02-2025|Session 4: 10-02-2025 to 23-02-2025]]
-- [[24-02-2025 to 09-03-2025|Session 5: 24-02-2025 to 09-03-2025]]
-- [[10-03-2025 to 23-03-2025|Session 6: 10-03-2025 to 23-03-2025]]
-- [[24-03-2025 to 06-04-2025|Session 7: 24-03-2025 to 06-04-2025]]
-- [[07-04-2025 to 20-04-2025|Session 8: 07-04-2025 to 20-04-2025]]
-- [[21-04-2025 to 04-05-2025|Session 9: 21-04-2025 to 04-05-2025]]
-- [[05-05-2025 to 18-05-2025|Session 10: 05-05-2025 to 18-05-2025]]
-- [[19-05-2025 to 01-06-2025|Session 11: 19-05-2025 to 01-06-2025]]
-- [[02-06-2025 to 15-06-2025|Session 12: 02-06-2025 to 15-06-2025]]
-- [[16-06-2025 to 29-06-2025|Session 13: 16-06-2025 to 29-06-2025]]
-- [[30-06-2025 to 13-07-2025|Session 14: 30-06-2025 to 13-07-2025]]
-- [[14-07-2025 to 27-07-2025|Session 15: 14-07-2025 to 27-07-2025]]
-- [[28-07-2025 to 10-08-2025|Session 16: 28-07-2025 to 10-08-2025]]
-- [[11-08-2025 to 17-08-2025|Session 17: 11-08-2025 to 17-08-2025]]
-- [[18-08-2025 to 05-10-2025|Session 18: 18-08-2025 to 05-10-2025]]
+- [[30-12-2024 to 12-01-2025|Session 1: 30-12-2024 to 12-01-2025]] - *"My focus areas include **architecture**, **cloud computing**, **data engineering**, **Kubernetes**, **MLOps (Machine Learning Operations)**, and general technologies. My plan emphasizes integrating new tools, analyzing architectural patterns employed by major companies, and reinforcing foundational concepts within these domains."*
+- [[13-01-2025 to 26-01-2025|Session 2: 13-01-2025 to 26-01-2025]] - *"My primary focus involves deep dives into several key technical domains: **AI/ML**, **Cloud Computing**, **Data Engineering**, and **Kubernetes**"*
+- [[27-01-2025 to 09-02-2025|Session 3: 27-01-2025 to 09-02-2025]] - *"My focus areas include **high-performance system design**, **cloud architecture trade-offs**, **advanced database concepts**, and achieving **Kubernetes/Linux mastery**"*
+- [[10-02-2025 to 23-02-2025|Session 4: 10-02-2025 to 23-02-2025]] - *"My focus areas include optimizing **Docker** practices, mastering **MLOps** workflows using **Airflow** and **MLflow**, and exploring modern alternatives to **ZooKeeper** in distributed systems"*
+- [[24-02-2025 to 09-03-2025|Session 5: 24-02-2025 to 09-03-2025]] - *"Focuses on mastering system design concepts, optimizing data pipelines with Airflow and Kubernetes, and handling secrets in a GitOps environment."*
+- [[10-03-2025 to 23-03-2025|Session 6: 10-03-2025 to 23-03-2025]] - *"Focuses on managing architectural complexity, ensuring secure secrets management with HashiCorp Vault, and optimizing data pipelines with Apache Beam and Airflow."*
+- [[24-03-2025 to 06-04-2025|Session 7: 24-03-2025 to 06-04-2025]] - *"Focuses on implementing GitOps best practices, deploying AI/ML workloads with Ray and Kubernetes, and diving into the changes brought by Apache Kafka 4.0 (specifically the migration to KRaft)."*
+- [[07-04-2025 to 20-04-2025|Session 8: 07-04-2025 to 20-04-2025]] - *"Focuses on modern LLMOps, High Availability database setup, and exploring next-generation DevOps and Kubernetes tooling."*
+- [[21-04-2025 to 04-05-2025|Session 9: 21-04-2025 to 04-05-2025]] - *"Focuses on architectural foundations for startups, modern data warehousing, Kubernetes troubleshooting, and the future of Apache Airflow."*
+- [[05-05-2025 to 18-05-2025|Session 10: 05-05-2025 to 18-05-2025]] - *"Centers on securing Kubernetes with OWASP strategies, implementing an end-to-end streaming data architecture using Apache Flink and Kafka, and exploring new Kubernetes features like in-place Pod resizing."*
+- [[19-05-2025 to 01-06-2025|Session 11: 19-05-2025 to 01-06-2025]] - *"Focuses on **AI/ML systems, advanced Kubernetes management, and disaster recovery**."*
+- [[02-06-2025 to 15-06-2025|Session 12: 02-06-2025 to 15-06-2025]] - *"Focuses on advanced **GitOps** deployment strategies, **Data Engineering** tools, **Kafka** patterns, and the evolution of **Observability** and **Security** within Kubernetes."*
+- [[16-06-2025 to 29-06-2025|Session 13: 16-06-2025 to 29-06-2025]] - *"Focuses on advanced database architecture, robust AI Agent development, event-driven data processing, and securing Kubernetes with advanced encryption methods."*
+- [[30-06-2025 to 13-07-2025|Session 14: 30-06-2025 to 13-07-2025]] - *"Focuses primarily on advanced **Data Engineering** architecture and strategies, with supplementary topics on **AI infrastructure** and **Kubernetes expertise**"*
+- [[14-07-2025 to 27-07-2025|Session 15: 14-07-2025 to 27-07-2025]] - *"Centers on developing the skills needed to design and scale large-scale AI systems, alongside deep dives into Kubernetes monitoring and optimization."*
+- [[28-07-2025 to 10-08-2025|Session 16: 28-07-2025 to 10-08-2025]] - *"Focuses on multiple categories on this session, which adapt data lakehouse with modern techstack, dive deeper to LLMOps and MLOps with great point to start. At the end, learn more about Lightweight Kubernetes for testing, and more information about linux network security."*
+- [[11-08-2025 to 17-08-2025|Session 17: 11-08-2025 to 17-08-2025]] - *"Focuses on essential Data Engineering system design concepts."*
+- [[18-08-2025 to 05-10-2025|Session 18: 18-08-2025 to 05-10-2025]] - *"Focuses on four main areas: **AI/ML/LLM**, **Architecture**, **Career/Story**, and **Kubernetes**."*
+- [[06-10-2025 to 08-11-2025|Session 19: 06-10-2025 to 08-11-2025]] - *"This article list covers several **challenging topics**, including **Kubernetes** adoption methods like **Virtual Kubelet** and custom implementations (**CRD** and **Operator**). I also aim to learn and share articles on **MLOps**, **Multi-Region/Multi-Zone Scaling Architecture** with Kubernetes, **monitoring**, and **GPU Virtualization Techniques** (with EKS examples)"*
 # InfoSec & Security
 
 ## CTF
@@ -298,7 +312,7 @@ tags:
 - [[Kubewekend Session Extra 2|Kubewekend Session Extra 2: Rebuild Cluster with RKE2 or K3S]] - This article aims to provide you with insights into alternatives for self-hosting a full Kubernetes cluster. Both `K3s` and `RKE2` are strong contenders worth considering to guide your decision. Focusing on the self-hosted approach with `RKE2`, I want to share more about my experiences working with it over the past four months.
 - [[Kubewekend Session Extra 3|Kubewekend Session Extra 3: RKE2 and The Nightmare with Network and CoreDNS]] - This article is my story about wrestling with networking in Kubernetes. I'll cover the frustrating problems that arise when your pods can't communicate with services, CoreDNS fails to resolve domains, and the tough issues involving **CNI** and the **ChecksumTX** of network interfaces in Kubernetes.
 - [[Kubewekend Session Extra 4|Kubewekend Session Extra 4: Kind and Sandbox environment for GitLab CI]] - This article shares my experience setting up a sandbox environment with Kind to adapt new Kubernetes environments within CI/CD pipelines. I'll provide several ideas for running both CPU and GPU applications, demonstrating their behavior specifically within GitLab CI.
-# Tech Research (What is)
+# Technology Researching
 
 >[!info]
 >In this session, About the shared  research for community which i make and find out how to play with it, setup and make usage or tutorial for doing something
@@ -312,6 +326,5 @@ tags:
 ## 2024
 
 - [[What is Wrapper Pattern|What is Wrapper Pattern ?]]
-- [[Awesome Helm|What is Helm?]]
 - [[What is Milvus|What is Milvus?]]
 - [[Increase Quota and Limit of Cloud Services]]

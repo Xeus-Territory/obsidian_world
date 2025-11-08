@@ -58,3 +58,5 @@ tags:
 - [KubeVela](https://kubevela.io/): a modern software delivery platform that makes deploying and operating applications across today's hybrid, multi-cloud environments _easier, faster and more reliable._
 - [Kusion](https://www.kusionstack.io/docs/) : An intent-driven **Platform Orchestrator**, which sits at the core of an **Internal Developer Platform (IDP)**
 - [Qovery](https://hub.qovery.com/docs/getting-started/what-is-qovery/) : the **Internal Developer Platform (IDP)** that cuts noise for developers with paved paths to production
+- [openchoreo](https://github.com/openchoreo/openchoreo): OpenChoreo is an open-source internal developer platform (IDP)
+- [kubriX](https://github.com/suxess-it/kubriX): a **curated**, **opinionated**, and **highly flexible** Internal Developer Platform (IDP) for Kubernetes

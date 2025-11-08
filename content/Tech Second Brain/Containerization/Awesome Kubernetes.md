@@ -6,7 +6,8 @@ tags:
   - collections
   - devops
 ---
->[!purpose]
+
+>[!quote]
 >This page is created for purpose store relation to helpful articles, make a some reference link when you can check and understand more about K8s (Kubernetes) and awesome things with this orchestration, but also learning and exploring more about worldwide containerization 🔥
 
 # Kubernetes
@@ -167,6 +168,7 @@ tags:
 - [Kubetools](https://collabnix.github.io/kubetools/): A Curated List of Kubernetes Tools 🌟 **(Recommended)**
 - [kubernetes-homelab](https://github.com/lisenet/kubernetes-homelab): Building a multi-master multi-node Kubernetes homelab with kubeadm, Ansible, Helm and Terraform
 - [kubelabs](https://github.com/collabnix/kubelabs): Get Started with Kubernetes 🌟 **(Recommended)**
+- [kubernetes-engine-samples](https://github.com/GoogleCloudPlatform/kubernetes-engine-samples): Sample applications for Google Kubernetes Engine (GKE) 🌟 **(Recommended)**
 ## Blogs
 
 - [Kubernetes - Blog](https://kubernetes.io/blog/) 🌟 **(Recommended)**
@@ -213,6 +215,7 @@ tags:
 - [Polyaxon](https://github.com/polyaxon): A platform for reproducible and scalable machine learning and deep learning
 - [The Helm Project](https://github.com/helm): The package manager for Kubernetes 🌟 **(Recommended)**
 - [VMware Tanzu](https://github.com/vmware-tanzu): Cloud native open source from VMware, almost for Kubernetes, Author of [velero](https://github.com/vmware-tanzu/velero)
+- [Labring](https://github.com/labring): A platform for building the operation system as cloud by Kubernetes, know them via [Sealos](https://sealos.io/)
 ## Topics
 
 - [Helm](https://github.com/topics/helm)
@@ -223,12 +226,24 @@ tags:
 
 ![[meme-confuse-but-curious.png|center]]
 
+## AI Gateway
+
+- [Kgateway](https://kgateway.dev/): The most widely deployed gateway in Kubernetes for microservices and AI agents
+- [gateway-api-inference-extension](https://github.com/kubernetes-sigs/gateway-api-inference-extension): optimizes self-hosting Generative Models on Kubernetes
+- [llm-d](https://github.com/llm-d/llm-d): a Kubernetes-native distributed inference serving stack providing well-lit paths for anyone to serve large generative AI models at scale
+## Architecture
+
+- [virtual-kubelet](https://github.com/virtual-kubelet/virtual-kubelet): Virtual Kubelet is an open source Kubernetes kubelet implementation.
+- [interLink](https://github.com/interlink-hq/interLink): an abstraction layer for executing Kubernetes pods on remote resources capable of managing container execution lifecycles.
+## Container Runtime
+
+- [Sealos Runtime](https://github.com/labring-actions/runtime): Kubernetes cluster-image for sealos
+## Custom Scheduler
+
+- [volcano](https://github.com/volcano-sh/volcano): a Kubernetes-native batch scheduling system, extending and enhancing the capabilities of the standard kube-scheduler **for AI workloads**
 ## Network Device Plugins
 
 - [k8s-rdma-shared-dev-plugin](https://github.com/Mellanox/k8s-rdma-shared-dev-plugin): A simple rdma device plugin that support IB and RoCE HCA
-## K8s Custom Scheduler
-
-- [volcano](https://github.com/volcano-sh/volcano): a Kubernetes-native batch scheduling system, extending and enhancing the capabilities of the standard kube-scheduler **for AI workloads**
 # Kubernetes Tools
 
 ![[thumbnail-k8s-tools.png]]
@@ -285,6 +300,7 @@ tags:
 
 - [kooper](https://github.com/spotahome/kooper): A simple Go library to create Kubernetes operators and controllers.
 - [kubebuilder](https://github.com/kubernetes-sigs/kubebuilder): SDK for building Kubernetes APIs using CRDs
+- [Operator SDK]([Unlocking the Power of Kubernetes: Create your own Resources with CRDs](https://www.youtube.com/watch?v=B4EF52zY6EM)): component of the [Operator Framework](https://github.com/operator-framework), an open source toolkit to manage Kubernetes native applications, called Operators, in an effective, automated, and scalable way.
 ## DNS and SSL
 
 - [cert-manager](https://github.com/cert-manager/cert-manager): Automatically provision and manage TLS certificates in Kubernetes 🌟 **(Recommended)**
@@ -318,7 +334,7 @@ tags:
 - [Talos Linux](https://www.talos.dev/) : The Kubernetes Operating System
 	- [cluster-template](https://github.com/onedr0p/cluster-template): A template for deploying a Talos Kubernetes cluster including Flux for GitOps
 - [kubevirt](https://kubevirt.io/): Provides a unified development platform where developers can build, modify, and deploy applications residing in both Application Containers as well as Virtual Machines in a common, shared environment.
-
+- [sealos](https://github.com/labring/sealos):  cloud operating system distribution based on the Kubernetes kernel, designed for a seamless development lifecycle
 ## Kubernetes in Kubernetes
 
 - [vCluster](https://github.com/loft-sh/vcluster): Create fully functional virtual Kubernetes clusters - Each vcluster runs inside a namespace of the underlying k8s cluster
