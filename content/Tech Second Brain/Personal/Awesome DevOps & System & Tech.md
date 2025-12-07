@@ -118,7 +118,7 @@ tags:
 - [DZone](https://dzone.com/) - one of the world's largest online communities and leading publisher of knowledge resources for software engineering professionals
 - [Hackaday](https://hackaday.com/) - Fresh Hacks Every Day
 - [Hackaday.io](https://hackaday.io/) - The world's largest collaborative hardware development community.
-- [HelloGitHub](https://hellogithub.com/en) : Share interesting, entry-level open source projects on GitHub.
+- [HelloGitHub](https://hellogithub.com/en) - Share interesting, entry-level open source projects on GitHub.
 - [How-To Geek](https://www.howtogeek.com/) - Community who explain Technologies
 - [Medium - ITNext](https://itnext.io/) - Community in Medium where talk about lots of technological thing 🌟 **(Recommended)**
 - [Medium - Jake Page](https://medium.com/@jake.page91) - Kubernetes Deployment Specialist @ Glasskube
@@ -131,6 +131,7 @@ tags:
 - [Trang chủ » AnonyViet](https://anonyviet.com/) - Vietnamese Community who teaching multiple techniques on Computer
 - [XDA Forums](https://forum.xda-developers.com/) - Valuable resource for people who want to make the most of their mobile devices, from customizing the look and feel to adding new functionality.
 - [TheNewStack](https://thenewstack.io/) - A great blog with new update articles about tech, system-architecture, ai and moreover stuff
+- [Cloud Native Deep Dive](https://www.cloudnativedeepdive.com/) - Blog of Michael Levan, an independent DevOps and Cloud consultant 🌟 **(Recommended)**
 ## Youtube Channel
 
 ![[youtube.png]]
@@ -179,6 +180,7 @@ tags:
 - [Spacelift - How Spacelift Can Improve Your Infrastructure Orchestration](https://spacelift.io/blog/how-specialized-solution-can-improve-your-iac)
 - [Blog - Obsidian: the Good, the Bad, & the Ugly](https://www.originalmacguy.com/obsidian-the-good-the-bad-the-ugly/)
 - [Pinggy - Top 10 Ngrok alternatives in 2025](https://pinggy.io/blog/best_ngrok_alternatives/)
+- [Inifisical - Top-10 Secrets Management Tools in 2025](https://infisical.com/blog/best-secret-management-tools)
 # Tech Research Sheet
 
 ## Articles
@@ -202,13 +204,12 @@ tags:
 ## Papers
 
 - [MDPI - An Overview of WebAssembly for IoT: Background, Tools, State-of-the-Art, Challenges, and Future Directions](https://www.mdpi.com/1999-5903/15/8/275)
-## Research pages
+## Research and Paper Pages
 
 >[!note]
 >Place where you can find multiple documentation and papers about technologies in multiple topics from DevOps, Tech and AI
 
 - [arXiv.org](https://arxiv.org/): e-Print archive 🌟 **(Recommended)**
-- [IT eBooks](https://it-ebooks.info/): Download IT ebooks for free
 - [MDPI](https://www.mdpi.com/): A pioneer in scholarly, open access publishing, MDPI has supported academic communities
 - [ResearchGate](https://www.researchgate.net/search): Papers about researching around the world
 - [RFC Editor](https://www.rfc-editor.org/) : The RFC Series (ISSN 2070-1721) contains technical and organizational documents about the Internet

@@ -114,4 +114,8 @@ tags:
 
 - [goose](https://github.com/pressly/goose): A database migration tool. Supports SQL migrations and Go functions.
 - [migrate](https://github.com/golang-migrate/migrate): Database migrations. CLI and Golang library.
+## Kubernetes Operator
 
+- [clickhouse-operator](https://github.com/Altinity/clickhouse-operator): Altinity Kubernetes Operator for ClickHouse creates, configures and manages ClickHouse® clusters running on Kubernetes
+- [mysql-operator](https://github.com/mysql/mysql-operator): MySQL Operator for Kubernetes
+- [percona-xtradb-cluster-operator](https://github.com/percona/percona-xtradb-cluster-operator): Percona Operator for MySQL based on Percona XtraDB Cluster

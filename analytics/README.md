@@ -1,20 +1,31 @@
-# Manual to configuration `umami` analytics components
+# `Umami` - The Analytics Components of Obsidiant World
 
-1. Change `env` variables for your application and database
-2. Point your domain type `A/AAAA` to your public `IPv4/IPv6` of VPS
-3. Install `docker` and `docker-compose` for your host
+>[!NOTE]
+>This compose file is already work as the stack in Docker Swarm, you can self-hosted this stack instead with `docker-swarm`.
+>To continuous using with `docker-compose`, please double-check this file in the oldest version
 
-    ```bash
-    sudo apt update && sudo apt install -y docker.io docker-compose
-    sudo usermod -aG docker $USER
-    sudo systemctl enable docker
-    sudo chmod 666 /var/run/docker.sock
-    ```
+1. Point your domain type `A/AAAA` to your public `IPv4/IPv6` of VPS
+2. Install `docker` and `compose` for your host
 
-4. Run `docker-compose` with compose file
+```bash
+# Install docker (official way)
+curl -fsSL https://get.docker.com | sudo bash -
 
-    ```bash
-    docker-compose -p analytics -f docker-compose.yaml up -d
-    ```
+# Install compose plugin
+DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
+mkdir -p $DOCKER_CONFIG/cli-plugins
+curl -SL https://github.com/docker/compose/releases/download/v2.29.1/docker-compose-linux-x86_64 -o $DOCKER_CONFIG/cli-plugins/docker-compose
+chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
+```
 
-**Notice: CaddyServer need 443 enabled on your VPS, If not it will not work (Firewall Rule)**
+3. Run stack in `docker swarm`
+
+>[!NOTE]
+>Required: Enabling the `swarm` mode
+
+```bash
+docker stack deploy -c webanalytics.yml webanalytics
+```
+
+>[!IMPORTANT]
+>Please remind, The Caddy Server need port 443 enabled on your VPS. If not, it won't work to challenge the acme for serving TLS automatically**

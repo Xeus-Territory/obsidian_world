@@ -8,37 +8,53 @@ tags:
 
 ![[meme-blind-choice.png|center]]
 
-# Utilities site
+# Utilities 🧰
 
-## Download
+## Books
 
+- [Data Engineers Books & Papers Collection - Xeus Nguyen](https://drive.google.com/drive/folders/1PmIc4fibMzcLCVgTFKbr4bo8gwbgP38J?usp=sharing)
+- [IT eBooks](https://it-ebooks.info/): The ecosystem downloading the IT Book for free 🌟 **(Recommended)**
+	- [IT Ebooks Search](https://it-ebooks-search.info/): IT eBooks Info Search Engine
+	- [IT Ebooks Dev](https://it-ebooks.dev/): Free & Open IT Books Library
+- [Libgen](https://libgen.li/): For finding and downloading the technology book 🌟 **(Recommended)**
+- [MLOps Books & Papers Collection - Xeus Nguyen](https://drive.google.com/drive/folders/1IbGRg4bhNyQ9UUL-ILVeBY4CylQxL-C3?usp=sharing)
+- [System Architecture Books & Papers Collection - Xeus Nguyen](https://drive.google.com/drive/folders/1y0pzGQg-HvQa6U1QnvtZyZnnWW2KYKPJ?usp=drive_link)
+- [DevSecOps Books & Papers Collection - Xeus Nguyen](https://drive.google.com/drive/folders/1nsdQ1cGeDCjp4aOFx2aMb2hEb2cAqUJc?usp=sharing)
+- [Kubernetes Books & Papers Collections - Xeus Nguyen](https://drive.google.com/drive/folders/14U0cIlVzqt051en6CSknlqyIdqqeL8C4?usp=sharing)
+## Converter & Downloader
+
+- [1001 Fonts](https://www.1001fonts.com/) - Free Fonts
+- [Convertio](https://convertio.co/) - File Converter 🌟 **(Recommended)**
+- [En - Savefrom](https://en1.savefrom.net/2ol/) or [Vi - Savefrom](https://vi.savefrom.net/243/) - Free Online Video Downloader 🌟 **(Recommended)**
 - [GitZip](https://kinolien.github.io/gitzip): It can make sub-folder/sub-directory of github repository as zip and download it. 🌟 **(Recommended)**
+- [Slidesgo](https://slidesgo.com/) - Free Google Slides themes and Powerpoint templates
 ## Driver
 
-- [Nvidia Graphic Card Driver](https://www.nvidia.com/en-in/drivers/): Search and download driver for NVIDIA
+- [Nvidia Graphic Card Driver](https://www.nvidia.com/en-in/drivers/): Search and download driver for NVIDIA 🌟 **(Recommended)**
 - [AMD Driver](https://www.amd.com/en/support/download/drivers.html): Search and download driver for AMD
+## Icons
+
+- [IconDucks](https://iconduck.com/): Open source icons & illustrations
+- [Emojipedia](https://emojipedia.org/): Find and get your emoji in unicode 🌟 **(Recommended)**
+- [TechIcons](https://techicons.dev/): Download, copy and paste tech icons in SVG and PNG format for your projects. 🌟 **(Recommended)**
+- [SVGRepo](https://www.svgrepo.com/):  Search, explore and edit the best-fitting free icons or vectors for your projects using a wide variety vector library. 🌟 **(Recommended)**
+- [Simple Icons](https://simpleicons.org/):  Free SVG icons for popular brands
 ## Images
 
 - [Pinterest](https://www.pinterest.com/) - Free Image HD
 - [Unsplash](https://unsplash.com/) - Free Image Download Page
-## Templates
+## Torrent
 
-- [Slidesgo](https://slidesgo.com/) - Free Google Slides themes and Powerpoint templates
-## Fonts
+- [The Pirate Bay](https://thepiratebay.org/index.html) - The galaxy's most resilient BitTorrent site
+- [isoHunt](https://isohunts.to/) - BitTorrent & P2P torrent search engine
+- [Internet Archive](https://archive.org/) - Digital Library of Free & Borrowable Books, Movies, Music & Wayback Machine
+- [KAT - Kickass Torrents](https://kick4ss.com/) - The torrent site
 
-- [1001 Fonts](https://www.1001fonts.com/) - Free Fonts
-## Icons
+## FinOps & Comparison Pricing
 
-- [IconDucks](https://iconduck.com/): Open source icons & illustrations
-- [Emojipedia](https://emojipedia.org/): Find and get your emoji in unicode
-- [TechIcons](https://techicons.dev/): Download, copy and paste tech icons in SVG and PNG format for your projects.
-- [SVGRepo](https://www.svgrepo.com/):  Search, explore and edit the best-fitting free icons or vectors for your projects using a wide variety vector library.
-- [Simple Icons](https://simpleicons.org/):  Free SVG icons for popular brands
-## File Converter & Downloader
-
-- [Convertio](https://convertio.co/) - File Converter
-- [En - Savefrom](https://en1.savefrom.net/2ol/) or [Vi - Savefrom](https://vi.savefrom.net/243/) - Free Online Video Downloader
-# Fun Websites
+- [GetDeploying](https://getdeploying.com/): Compare cloud providers for your next project.
+- [UserBenchmark](https://gpu.userbenchmark.com/): Benchmark many types of hardware
+# Entertainment 💃
 
 >[!info]
 >Fun Websites To Waste Time on When You're Bored
@@ -47,17 +63,7 @@ tags:
 - [Nealfun](https://neal.fun/): a tiny website by neal
 - [SuperCook](https://www.supercook.com/): Find the recipes depend on ingredient
 - [Patatap](https://www.patatap.com/): Patatap will reward you with an explosion of fun sounds and animations
-# Torrent site
-
->[!note]
->Collections of torrent site where can finding the entertainment, software and anything in internet
-
-- [The Pirate Bay](https://thepiratebay.org/index.html) - The galaxy's most resilient BitTorrent site
-- [isoHunt](https://isohunts.to/) - BitTorrent & P2P torrent search engine
-- [Internet Archive](https://archive.org/) - Digital Library of Free & Borrowable Books, Movies, Music & Wayback Machine
-- [KAT - Kickass Torrents](https://kick4ss.com/) - The torrent site
-
-# Job Hunting site
+# Job Hunting 🧑‍💼
 
 >[!note]
 >A couple pages with cool stuff and opportunity to finding job with awesome company about technology

@@ -1,0 +1,77 @@
+---
+services:
+  umami:
+    image: ghcr.io/umami-software/umami:3.0.1
+    environment:
+      DATABASE_URL: postgresql://changeuser:changepass@tasks.db:5432/umami
+      DATABASE_TYPE: postgresql
+      APP_SECRET: replace-me-with-a-random-string
+    depends_on:
+      - db
+    healthcheck:
+      test: ["CMD-SHELL", "curl http://localhost:3000/api/heartbeat"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - proxy_app
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints: [node.role == manager]
+  db:
+    image: postgres:14-alpine
+    environment:
+      POSTGRES_DB: umami
+      POSTGRES_USER: changeuser
+      POSTGRES_PASSWORD: changepass
+    volumes:
+      - umami-db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - proxy_app
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints: [node.role == manager]
+  proxy:
+    image: caddy:2.10.2
+    # Set port with mode: host, for helping Caddy server can sent X-Forward-ID to application behind the scene with RealIP
+    # Instead of using the normal way (80:80)
+    # Issue: https://community.traefik.io/t/how-to-obtain-the-real-ip-in-docker-swarm/27443
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+        mode: host
+      - target: 443
+        published: 443
+        protocol: tcp
+        mode: host
+    volumes:
+      - caddy-data:/data
+      - ./Caddyfile:/etc/caddy/Caddyfile
+    depends_on:
+      - umami
+    networks:
+      - proxy_app
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints: [node.role == manager]
+
+volumes:
+  umami-db-data:
+  caddy-data:
+
+networks:
+  proxy_app:
+    driver: overlay
+    attachable: true

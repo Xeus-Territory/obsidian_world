@@ -7,6 +7,7 @@ tags:
   - self-hosted
   - usage
 ---
+
 >[!quote]
 >Hi there, happy to see you there, I just start the holiday in my country, so spend a bit time in weekend to chill out and learn couple things. I figure out one problem in Kubewekend Cluster, we use `kind` and it's tricky a bit when we do more stuff to handout with CSI, I don't deny any thing `kind` do for community, it's truly crazy but sometime we need to consider another to hangout with good potentials and easier to setup, `RKE` and `K3S` maybe save us some points today. Let's digest
 
@@ -131,26 +132,26 @@ As you can see, `K3s` is pretty clear but cover a bunch of concepts of Kubernete
 
 Here's a table highlighting the key differences between K3s and RKE2:
 
-|   |   |   |
-|---|---|---|
-|Feature|K3s|RKE2 (Rancher Kubernetes Engine 2)|
-|Primary Goal|Lightweight, easy to use, ideal for edge, IoT, and development.|Security and compliance focused, enterprise-ready, suitable for government and regulated industries.|
-|Security Focus|Secure by default with reasonable defaults. Smaller attack surface.|Strong focus on security: CIS Benchmark hardening, FIPS 140-2 compliance, regular CVE scanning.|
-|Upstream Alignment|May deviate slightly from upstream to achieve its lightweight goals.|Aims for closer alignment with upstream Kubernetes.|
-|Default Datastore|SQLite (embedded), with options for etcd, MySQL, and PostgreSQL.|etcd (embedded).|
-|Container Runtime|containerd (default), can be configured with Docker.|containerd (default), Docker is not a dependency. Control plane components run as static pods managed by kubelet.|
-|Binary Size|Very small (< 100MB).|Larger than K3s due to added security features and components.|
-|Resource Footprint|Minimal, designed for resource-constrained environments.|Higher than K3s due to added security and enterprise features, but still relatively lightweight compared to full Kubernetes.|
-|Use Cases|Edge computing, IoT devices, single-node development, homelabs, CI.|Enterprise environments, government sectors, regulated industries with strict security and compliance requirements, multi-cloud, edge, and on-premises deployments.|
-|Complexity|Simpler to install and manage, fewer moving parts by default.|More configuration options for security and advanced features, might have a slightly steeper learning curve than basic K3s setup.|
-|Cloud Provider Integration|Strips out in-tree cloud providers, relies on out-of-tree (CCM).|Includes support for cloud provider integrations.|
-|Storage Provisioning|Local Path Provisioner included by default. Relies on CSI for more advanced storage.|Supports in-tree storage providers and CSI.|
-|Target Audience|Developers, hobbyists, users with resource-limited environments.|Enterprises, government agencies, security-conscious organizations.|
+| **Feature**                | **K3s**                                                                              | **RKE2 (Rancher Kubernetes Engine 2)**                                                                                                                              |
+| -------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Primary Goal               | Lightweight, easy to use, ideal for edge, IoT, and development.                      | Security and compliance focused, enterprise-ready, suitable for government and regulated industries.                                                                |
+| Security Focus             | Secure by default with reasonable defaults. Smaller attack surface.                  | Strong focus on security: CIS Benchmark hardening, FIPS 140-2 compliance, regular CVE scanning.                                                                     |
+| Upstream Alignment         | May deviate slightly from upstream to achieve its lightweight goals.                 | Aims for closer alignment with upstream Kubernetes.                                                                                                                 |
+| Default Datastore          | SQLite (embedded), with options for etcd, MySQL, and PostgreSQL.                     | etcd (embedded).                                                                                                                                                    |
+| Container Runtime          | containerd (default), can be configured with Docker.                                 | containerd (default), Docker is not a dependency. Control plane components run as static pods managed by kubelet.                                                   |
+| Binary Size                | Very small (< 100MB).                                                                | Larger than K3s due to added security features and components.                                                                                                      |
+| Resource Footprint         | Minimal, designed for resource-constrained environments.                             | Higher than K3s due to added security and enterprise features, but still relatively lightweight compared to full Kubernetes.                                        |
+| Use Cases                  | Edge computing, IoT devices, single-node development, homelabs, CI.                  | Enterprise environments, government sectors, regulated industries with strict security and compliance requirements, multi-cloud, edge, and on-premises deployments. |
+| Complexity                 | Simpler to install and manage, fewer moving parts by default.                        | More configuration options for security and advanced features, might have a slightly steeper learning curve than basic K3s setup.                                   |
+| Cloud Provider Integration | Strips out in-tree cloud providers, relies on out-of-tree (CCM).                     | Includes support for cloud provider integrations.                                                                                                                   |
+| Storage Provisioning       | Local Path Provisioner included by default. Relies on CSI for more advanced storage. | Supports in-tree storage providers and CSI.                                                                                                                         |
+| Target Audience            | Developers, hobbyists, users with resource-limited environments.                     | Enterprises, government agencies, security-conscious organizations.                                                                                                 |
+
+
 You can choose what ever you want, but need to consider a bit things to make a good decision
 
 - Choose **K3s** when you need a lightweight and easy-to-use Kubernetes distribution, especially for edge computing, IoT, or local development. It prioritizes simplicity and low resource consumption.
 - Choose **RKE2** when security and compliance are paramount, and you need an enterprise-ready distribution that aligns closely with upstream Kubernetes. It's designed for more regulated and mission-critical environments.
-
 ## The alternative version
 
 If you wanna find to setup fully compliant Kubernetes Cluster, there are few options for choosing, include
@@ -329,7 +330,14 @@ BTW, I will share more about `etcd` in another blogs, but lemme focus on RKE2 HA
 
 To set up an RKE2 worker node with a GPU, you'll need to establish the necessary bridge or driver for the RKE2 Agent to interact with the graphics card via the Kubernetes layer. For this, you should double-check the following resources
 
-- [RKE2 - Deploy NVIDIA operator](https://docs.rke2.io/advanced#deploy-nvidia-operator)
+- [Nvidia - Installing the NVIDIA GPU Operator](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/getting-started.html)
+- [Nvidia - GPU Operator with MIG](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/gpu-operator-mig.html)
+- [Nvidia - Time-Slicing GPUs in Kubernetes](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/gpu-sharing.html)
+- [Nvidia - Using NVIDIA vGPU](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/install-gpu-operator-vgpu.html)
+- [Youtube - Timeslicing, MPS, MIG？HAMi！K8s GPU 虚拟化中缺失的一块拼图](https://www.youtube.com/watch?v=ffKTAsm0AzA)
+- [Linkedin - A Deep Dive into NVIDIA GPU Virtualization: Passthrough, MIG, vGPU, and Time-Slicing](https://www.linkedin.com/pulse/deep-dive-nvidia-gpu-virtualization-passthrough-mig-vgpu-markevich-xt2ze/)
+- [GitHub - gpu-operator - NVIDIA GPU Operator creates, configures, and manages GPUs in Kubernetes](https://github.com/NVIDIA/gpu-operator)
+- [RKE2 - Deploy NVIDIA operator](https://docs.rke2.io/add-ons/gpu_operators?_highlight=nvidia#deploy-nvidia-operator)
 - [HAMI - Installation with Helm](https://project-hami.io/docs/installation/online-installation)
 - [GitHub - KAI-Scheduler - An open source Kubernetes Native scheduler for AI workloads](https://github.com/NVIDIA/KAI-Scheduler)
 
@@ -370,7 +378,9 @@ There are several ways to manage GPUs with RKE2 or Kubernetes in general, but fr
 
 ### Use NVIDIA Operator
 
-Setup only [NVIDIA Operator](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/index.html), it's totally contain all what you need to kubernetes work with your GPU via [device-plugin](https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/device-plugins/). You can install that via multiple ways
+![[thumbnail-nvidia-operator.png]]
+
+Setup only [NVIDIA Operator](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/index.html), it's totally contain all what you need for kubernetes work with your GPU via [device-plugin](https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/device-plugins/). You can install that via multiple ways
 
 - [ArtifactHub](https://artifacthub.io/packages/helm/gpu-operator/gpu-operator) and [Helm Chart](https://github.com/NVIDIA/gpu-operator/tree/main/deployments/gpu-operator) --> [Installation Guide](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/getting-started.html)
 - [Manifest](https://docs.rke2.io/advanced#operator-installation) - Defined by `RKE2`
@@ -393,6 +403,33 @@ You might encounter the [Issue - Failed to initialize NVML: Unknown Error](https
           value: "true"
 ```
 
+BTW, At last to operate GPU Operator successfully, you will have fullstack of Nvidia ecosystem in Kubernetes, including these pods with several purpose
+
+```bash
+NAME                                                              READY   STATUS      RESTARTS   AGE
+gpu-feature-discovery-2vrtr                                       1/1     Running     0          21h
+gpu-operator-1763710819-node-feature-discovery-gc-547cdf99sbw5j   1/1     Running     0          21h
+gpu-operator-1763710819-node-feature-discovery-master-866fhnsvt   1/1     Running     0          21h
+gpu-operator-1763710819-node-feature-discovery-worker-qsrtl       1/1     Running     0          21h
+gpu-operator-84cfb55f6f-snllj                                     1/1     Running     0          21h
+hami-device-plugin-2hjr2                                          2/2     Running     0          20h
+hami-scheduler-66b9bbf544-ghbbh                                   2/2     Running     0          20h
+nvidia-container-toolkit-daemonset-79qpg                          1/1     Running     0          20h
+nvidia-cuda-validator-jb77w                                       0/1     Completed   0          21h
+nvidia-dcgm-exporter-8vvcm                                        1/1     Running     0          21h
+nvidia-device-plugin-daemonset-b264b                              1/1     Running     0          20h
+nvidia-driver-daemonset-69grb                                     1/1     Running     0          21h
+nvidia-operator-validator-x4mcw                                   1/1     Running     0          21h
+```
+
+-  [gpu-feature-discovery](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/gpu-feature-discovery?version=v0.8.2-ubi8): A software component that allows you to automatically generate labels for the set of GPUs available on a node. It leverages the [Node Feature Discovery](https://github.com/kubernetes-sigs/node-feature-discovery) to perform this labeling.
+- [gpu-operator](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/gpu-operator?version=v25.10.0): the operator framework within Kubernetes to automate the management of all NVIDIA software components needed to provision GPUs. These components include the NVIDIA drivers (to enable CUDA), Kubernetes device plugin for GPUs, the NVIDIA Container Toolkit, automatic node labeling using GFD, DCGM based monitoring and others
+- [nvidia-container-toolkit](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/k8s/containers/container-toolkit?version=v1.18.0-packaging): Allows users to build and run GPU accelerated Docker containers. The toolkit includes a container runtime library and utilities to automatically configure containers to leverage NVIDIA GPUs.
+- `nvidia-cuda-validator`:  Run init container for double-check the cuda inside GPU Node
+- [nvidia-dcgm-exporter](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/k8s/containers/dcgm-exporter?version=4.4.2-4.7.0-ubuntu22.04):  a set of tools for managing and monitoring NVIDIA GPUs in large scale linux based cluster environments
+- [nvidia-device-plugin](https://catalog.ngc.nvidia.com/orgs/nvidia/helm-charts/nvidia-device-plugin?version=0.9.0): Allows you to automatically **Expose the number of GPUs on each nodes of your cluster**, **Keep track of the health of your GPUs** and **Run GPU enabled containers in your Kubernetes cluster**.
+- [nvidia-driver](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/cloud-native/containers/k8s-driver-manager?version=v0.9.0): a Kubernetes component which assists in seamless upgrades of the NVIDIA Driver on each node of the cluster. This component ensures that all pre-requisites are met before driver upgrades can be performed using NVIDIA GPU Driver.
+- [nvidia-operator-validator](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/cloud-native/containers/gpu-operator-validator?version=v25.3.4): The Validator for NVIDIA GPU Operator runs as a Daemonset and ensures that all components are working as expected on all GPU nodes.
 ### HAMI for vGPU
 
 ![[thumnail-k8s-hami.png]]
@@ -515,9 +552,9 @@ Read more about couple of things to successfully setup HAMI
 >[!warning]
 >I don't recommend this installation because manything will conflict each others when setup both platform in your Kubernetes Cluster
 
-Both of this platform will use annotation to give signal for `device-plugin` talk with GPU for assign the task, and coincidence it have same annotation `nvidia.com/gpu` by default, it means two `device-plugin` of HAMI and Nvidia will randomly handle scheduling GPU for your workloads
+Both of this platform will use annotation to give signal for `device-plugin` talk with GPU for assign the task, and coincidence it have same annotation `nvidia.com/gpu` by default, it means two `device-plugin` of HAMI and NVIDIA will randomly handle scheduling GPU for your workloads
 
-Like I told, Nvidia Operator is such a good friend for setup all things related Nvidia, it will cut off the time to manual install each package but it will try to modify directly `containerd` and in somehow there will become conflict between of them, that's tough and you need to consider to trade off
+Like I told, NVIDIA Operator is such a good friend for setup all things related Nvidia, it will cut off the time to manual install each package but it will try to modify directly `containerd` and in somehow there will become conflict between of them, that's tough and you need to consider to trade off
 
 However, With confirm of [limengxuan](https://github.com/archlitchi) - Maintainer of HAMI in currently, he confirm we can try to modify or ignore `device-plugin` of NVIDIA, Read more at [Issue - Mismatch vGPU Memory actual allocate for K8s Pods](https://github.com/Project-HAMi/HAMi/issues/1093). Therefore, you should modify the values of HAMI and deploy again `device-plugin` if you want to use both of them. Follow modification below
 
@@ -560,14 +597,182 @@ resources:
 	limits:
 	  memory: 2Gi
 	  hami.nvidia.com/gpu: '1'
-	  haminvidia.com/gpumem: '3500'
+	  hami.nvidia.com/gpumem: '3500'
 	requests:
 	  cpu: 200m
 	  memory: 2Gi
 ```
 
 >[!note]
->If you're encountering issues after rebooting a GPU node, particularly when using HAMI and GPU Operator, refer to the [[Kubewekend Session Extra 2#Reboot GPU Machine with HAMi 🌟|"Reboot GPU Machine with HAMi"]] section for solutions. It's highly recommended to perform a **[[Awesome Kubernetes Walkthrough#Maintain Node in Kubernetes|Node Maintenance]]** operation in Kubernetes before rebooting to minimize errors when operating with both HAMI and GPU Operator.
+>If you're encountering issues after rebooting a GPU node, particularly when using HAMI and GPU Operator, refer to the **[[Kubewekend Session Extra 2#Reboot GPU Machine with HAMi 🌟|"Reboot GPU Machine with HAMi"]]** section for solutions. It's highly recommended to perform a **[[Awesome Kubernetes Walkthrough#Maintain Node in Kubernetes|Node Maintenance]]** operation in Kubernetes before rebooting to minimize errors when operating with both HAMI and GPU Operator.
+
+### Use both NVIDIA Operator and HAMI (New Updated 12/2025)
+
+![[meme-long-time-no-see.png|center]]
+
+This update come from my new provisioning for Kubernetes, I need to be confirm it doesn't focus on RKE2 but I use several hosting with managed Kubernetes, and let's say I try to reproduce and figure out how can we combine these one but doesn't need separate them into two different `containerd` like I told
+
+In this experiment, I will use latest version of both HAMi and Nvidia GPU Operator
+
+- HAMi: [Version 2.7.1](https://github.com/Project-HAMi/HAMi/tree/master/charts/hami)
+- GPu Operator: [Version v25.10.0](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/25.10/release-notes.html#v25-10-0)
+
+Why I figure out that thing, because when I look up into `nvidia-container-tookit` and I see that mount the `/etc/containerd` configuration directory into pods, and try managing them. In the situation, RKE2  is mainly different but if you use managed Kubernetes of Cloud Provider, maybe I confirm that will use **containerd** in host with `/etc/containerd`.  When I reach to deeply in configuration directory, I found it will save in `/etc/containerd/conf.d/99-nvidia.toml` with pretty multiple definition about runtime instead of `runc`, including `nvidia`, `nvidia-cdi` and `nvidia-legacy`, so I can say that provide great option to run with `HAMi`, but most of us missing the stuff related around `runtimeclass` in Kubernetes
+
+When you deploy the `GPU Operator`, you will have couple of runtime class to definition, you can double-check them with command
+
+```bash
+kubectl get runtimeclasses.node.k8s.io
+```
+
+With this runtime, it will attach to cluster-policy and let them have enough permission and information to pick runtime to setup GPU application, you can double-check with command
+
+```bash
+kubectl get clusterpolicies.nvidia.com cluster-policy -o yaml
+```
+
+But for different a bit, when I host the HAMi, I see you usually miss set the define `runtimeclass` is empty and it lead to multiple error, especially `prehookcalledfail`. So why I edit them from `""` to `nvidia` for let it default run by the **nvidia runtime class** instead of normal one, because I believe that will let the `device-plugin` pods of HAMi see the GPU in application instead of the normal version `("")`. Explore this configuration at [GitHub - HAMi Values](https://github.com/Project-HAMi/HAMi/blob/master/charts/hami/values.yaml#L290) with keyword `runtimeClassName`
+
+>[!note]
+>You also need to exchange the annotation `nvidia.com` of HAMi to new one for example `hami.nvidia.com` for prevent the wrong reservation between HAMi and GPU Operator, which same as old operation.
+
+Apply and now you will encounter the HAMi actually run but you need to take any change into `containerd` in host layer. You can double-check with command `nvidia-smi` in `device-plugin` and see it will have GPU inside for managing
+
+```bash
+kubectl exec --tty --stdin hami-device-plugin-xxxxx -c device-plugin -- nvidia-smi
+```
+
+But it doesn't stop right there. In this feature of **GPU Operator version 25.10**,  you can see the CDI is enable by default and it lead some problems when you testing the schedule with HAMi, check more about the [Issue - CDI Injection: error modifying OCI spec: failed to inject CDI devices: unresolvable CDI devices](https://github.com/NVIDIA/nvidia-container-toolkit/issues/434). Before it become more stable or you find the compatible reason why to enable `CDI`, therefore recommend you disable them for preventing the error. Explore with couple of action in article --> [Container Device Interface (CDI) Support in the GPU Operator](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/cdi.html?highlight=cdi#)
+
+```bash
+kubectl patch clusterpolicies.nvidia.com/cluster-policy --type='json' \
+    -p='[{"op": "replace", "path": "/spec/cdi/enabled", "value":false}]'
+```
+
+>[!note]
+>You can disable this option inside your `values.yaml` of GPU operator before your deploy them, it will prevent the misconception and allow you to schedule application with GPU
+### Testing GPU Scheduling (New Updated 12/2025)
+
+BTW, you need do several experiment when you self-hosted any stuff in K8s and GPU is one of sophisticated one. However, I forgot to write a little bit more about this one, so here what I tested and you can take the experiment with them by these articles
+
+- [Nvidia - Verification: Running Sample GPU Applications](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/getting-started.html#verification-running-sample-gpu-applications)
+- [GitHub - HAMi Nvidia Examples](https://github.com/Project-HAMi/HAMi/tree/master/examples/nvidia)
+
+For my circumstance, I will host these manifest for testing GPU Scheduling, including
+
+1. Testing the functionality of GPU (Quick Test) (Focus on: **GPU Operator**)
+
+```bash title="cuda-vectoradd.yaml"
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cuda-vectoradd
+spec:
+  restartPolicy: OnFailure
+  containers:
+  - name: vectoradd
+    image: vcr.vngcloud.vn/81-vks-public/samples:vectoradd-cuda11.2.1
+    resources:
+      requests:
+        memory: "64Mi"
+        cpu: 100m
+        nvidia.com/gpu: 1
+      limits:
+        memory: "128Mi"
+        cpu: 200m
+        nvidia.com/gpu: 1
+  # Chose the node base on the label of Graphic Card, e.g: NVIDIA-A40
+  nodeSelector:
+    nvidia.com/gpu.product: NVIDIA-A40
+```
+
+2. Testing schedule and hosting something for run in long time (Focus on: **HAMi**)
+
+```bash title="test-gpu.yaml"
+apiVersion: v1
+kind: Pod
+metadata:
+  name: gpu-pod
+#  annotations:
+#    nvidia.com/use-gputype: "NVIDIA-A40"
+spec:
+  # Set another scheduler for HAMi, by default it will use `default-scheduler`
+  schedulerName: "hami-scheduler" # hami-scheduler : default-scheduler
+  # Setup the runtime `nvidia`, by default it doesn't set to help your pod can use lib of Nvidia, e.g: Cuda
+  runtimeClassName: "nvidia"
+  containers:
+    - name: ubuntu-container
+      image: ubuntu:18.04
+      command: ["bash", "-c", "sleep 86400"]
+      resources:
+        limits:
+          hami.nvidia.com/gpu: 1 # requesting 1 vGPUs
+          hami.nvidia.com/gpumem: 8000 # Each vGPU contains 10240m device memory （Optional,Integer）
+```
+
+3. Testing schedule and inference (Focus on: **HAMi**)
+
+For inference task, I usually use [Kokoro FastAPI - TTS Model](https://github.com/remsky/Kokoro-FastAPI) to implement the deployment for testing with Kubernetes with great API, UI and using the new Pytorch Framework. You can apply this with manifest below
+
+	```bash title="gpu-deployment.yaml"
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: kokoro-fastapi
+  name: kokoro-fastapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kokoro-fastapi
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: kokoro-fastapi
+      # Set the PodAnnotation for specific GPU Type, e.g: A40
+      annotations:
+        nvidia.com/use-gputype: "A40"
+    spec:
+      # Setup with HAMI Scheduler
+      schedulerName: "hami-scheduler"
+      # Use the nvidia runtime
+      runtimeClassName: "nvidia"
+      containers:
+      - image: ghcr.io/remsky/kokoro-fastapi-gpu:v0.2.4
+        name: kokoro-fastapi-gpu
+        resources:
+          requests:
+            cpu: 100m
+            memory: 1Gi
+          limits:
+            # Give it 1 GPU with 5GB vRAM
+            hami.nvidia.com/gpu: 1 # requesting 1 vGPUs
+            hami.nvidia.com/gpumem: 5000 # Each vGPU contains 10240m device memory （Optional,Integer)
+            memory: 5Gi
+```
+
+You can test the UI or API version by port forwarding the port of application by command
+
+```bash
+kubectl port-forward -n default deployments/kokoro-fastapi 8880:8880
+```
+
+![[Pasted image 20251122190412.png]]
+
+![[Pasted image 20251122190445.png]]
+
+For view the resource reservation by HAMi, you can double-check them via `nvidia-smi` command in this deployment
+
+```bash
+k exec --tty --stdin deployments/kokoro-fastapi -c kokoro-fastapi-gpu -- nvidia-smi
+```
+
+![[Pasted image 20251122190652.png]]
+
+>[!done]
+>Now, you can inference to testing your application successfully work with graphic card, and also HAMi give the AI Application GPU resource with right pre-define configuration, e.g: 5GB
 ## Note of RKE2
 
 ![[meme-awesome.png|center]]

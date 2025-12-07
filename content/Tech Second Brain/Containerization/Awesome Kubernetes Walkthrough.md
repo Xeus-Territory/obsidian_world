@@ -557,6 +557,13 @@ livenessProbe:
     port: liveness-port
   failureThreshold: 1
   periodSeconds: 10
+
+startupProbe:
+  httpGet:
+    path: /healthz
+    port: liveness-port
+  failureThreshold: 30
+  periodSeconds: 10
 ```
 
 And mostly startup for helping Kubernetes to [protect slow starting containers](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#define-startup-probes)

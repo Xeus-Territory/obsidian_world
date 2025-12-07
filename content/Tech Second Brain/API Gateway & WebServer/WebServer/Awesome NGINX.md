@@ -305,6 +305,48 @@ server {
 }
 ```
 
+## Enable Basic Authentication
+
+If your application doesn't implement authentication method for accessing your platform, you can use `basic_auth` method of Nginx for instead to secure connection temporarily. Explore at: [Nginx - Restricting Access with HTTP Basic Authentication](https://docs.nginx.com/nginx/admin-guide/security-controls/configuring-http-basic-authentication/)
+
+First of all, to enable basic_auth, you need define the user/pass file for let nginx can decrypt and understand your access. Following the documentation and several, you can use couple tools to create `.htpasswd`, such as
+
+- `apache2-utils` and `httpd-tools`  🌟 **(Recommended)**
+- `openssl`
+
+What option is your own decision, so I will take `apache2-utils` for easier approach but not instant on your host or you can use `openssl` for built-in in Ubuntu. By usual, I choose docker to run `htpasswd` command
+
+```bash
+docker run -it --name httpd --rm --workdir /root httpd:2.4 -d /bin/bash
+```
+
+Generate the password
+
+```bash
+htpasswd -c .htpasswd <user-name>
+```
+
+Prompting password and you will have `.htpasswd` file in current directory. Now copy the file to where you setup `nginx`, e.g: I have `nginx` at `/etc/nginx`
+
+```bash
+docker cp httpd:/root/.htpasswd ./etc/nginx/
+```
+
+Alright, you can end `httpd` container and configure nginx with configuration like
+
+```bash title="/etc/nginx/conf.d/default.conf"
+...
+...
+location /api {
+    auth_basic           "Administrator’s Area";
+    auth_basic_user_file /etc/nginx/.htpasswd;
+}
+...
+...
+```
+
+>[!done]
+>Now when you access to `nginx` at route `/api`, you will ask for `basic-auth`
 # Dockerfile
 
 ## Nginx with `ModSecurity`, and `Lua` module

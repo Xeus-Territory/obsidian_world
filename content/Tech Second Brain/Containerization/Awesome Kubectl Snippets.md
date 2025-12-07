@@ -31,6 +31,14 @@ alias krcp="k resource-capacity -p --util"
 alias krca="k resource-capacity -a"
 ```
 
+To directly use any profile not including in `kubeconfig`, you can use this with environment vars like this
+
+```bash
+export KUBECONFIG=/path/to/profile
+```
+
+>[!note]
+>In the circumstance, you want merge this external configuration to `kubeconfig`, you can use [kconfig](https://github.com/corneliusweig/konfig) to help you reduce the manual step by automatically install into the default at `~/.kube/config` or double-check [StackOverFlow - How to merge kubectl config file with ~/.kube/config?](https://stackoverflow.com/questions/46184125/how-to-merge-kubectl-config-file-with-kube-config) for more approaching
 # Combination
 ## Force terminate the stuck namespace
 

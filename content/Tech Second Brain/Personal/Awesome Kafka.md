@@ -110,3 +110,8 @@ kafka-consumer-groups.sh --bootstrap-server <host-kafka>:<port-kafka> --command-
 
 - [akhq](https://github.com/tchiotludo/akhq): Kafka GUI for Apache Kafka to manage topics, topics data, consumers group, schema registry, connect and more...
 - [kafka-ui](https://github.com/provectus/kafka-ui): Open-Source Web UI for Apache Kafka Management 🌟 **(Recommended)**
+
+## Broker
+
+- [tansu](https://github.com/tansu-io/tansu): Apache Kafka® compatible broker with S3, PostgreSQL, SQLite, Apache Iceberg and Delta Lake
+- [hermes](https://github.com/allegro/hermes): Fast and reliable message broker built on top of Kafka.
