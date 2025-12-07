@@ -1,3 +1,14 @@
-https://$DOMAIN:9999 {
-        reverse_proxy umami:3000
+https://analytics.example.domain {
+        handle_path /api/collect {
+                reverse_proxy tasks.umami:3000/api/collect
+                header {
+                        X-Forwarded-Proto https
+                        X-Real-IP $remote_addr
+                        X-Forwarded-For $proxy_add_x_forwarded_for
+                        X-Forwarded-Host $host
+                }
+        }
+        handle {
+                reverse_proxy tasks.umami:3000
+        }
 }

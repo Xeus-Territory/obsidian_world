@@ -19,6 +19,7 @@ tags:
 
 - [Dev.to - 5 ways for GitLab CI runners to get AWS credentials](https://dev.to/edmundkwok/5-ways-for-gitlab-ci-runners-to-get-aws-credentials-11hp)
 - [Dev.to - Authenticating your GitLab CI runner to an AWS ECR registry using Amazon ECR Docker Credential Helper 🔑](https://dev.to/aws-builders/authenticating-your-gitlab-ci-runner-to-an-aws-ecr-registry-using-amazon-ecr-docker-credential-helper-3ba)
+- [Medium - Seven tips for writing better GitLab pipelines](https://blog.devops.dev/seven-tips-for-writing-better-gitlab-pipelines-c94f348ad0b9)
 ## General
 
 - [GitLab CI/CD examples](https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html) - GitLab CI/CD Collections

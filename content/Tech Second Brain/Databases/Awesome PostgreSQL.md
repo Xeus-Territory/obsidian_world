@@ -455,6 +455,34 @@ ORDER BY query_start desc;
 SELECT S.pid, age(clock_timestamp(), query_start), usename, query, L.mode, L.locktype, L.granted FROM pg_stat_activity S inner join pg_locks L on S.pid = L.pid order by L.granted, L.pid DESC;
 ```
 
+## Show the query of application reservation
+
+```sql
+SELECT application_name, client_addr, count(*) 
+FROM pg_stat_activity 
+GROUP BY application_name, client_addr 
+ORDER BY count DESC;
+```
+
+## Show Idle query information of application reservation
+
+```sql
+SELECT
+    pid,
+    datname,
+    usename,
+    application_name,
+    client_addr,
+    state,
+    now() - state_change AS idle_duration,
+    query
+FROM
+    pg_stat_activity
+WHERE
+    state = 'idle'
+ORDER BY
+    idle_duration DESC;
+```
 ## Kill query
 
 ```sql

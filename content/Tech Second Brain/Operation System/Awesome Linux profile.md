@@ -89,7 +89,8 @@ sudo apt install -y jq \
 	terminator \
 	tmux \
 	nvtop \
-	flameshot
+	flameshot \
+	inetutils-ping
 
 # Flameshot configuration
 # Step 1: Go to custom keyboards > add new with command `flameshot gui`

@@ -1035,12 +1035,62 @@ Prints the config volume definition for deployments and jobs.
 ```
 
 By passing the root context (`.`) as the third element in the list and using it explicitly for the `tpl` function, you ensure that `tpl` receives the expected `chartutil.Values` map, resolving the `wrong type for value` error
+## Polaris in Production Ready (Updated 12/2025)
+
+![[Pasted image 20251207141300.png]]
+
+>[!quote]
+>After the great time of Polaris when run as development mode, it means I only use Docker and Docker Compose to host and workaround with these techstack lakehouse. I decide to bring it to production, and also shift to use Kubernetes to make the [[From GitLab to Data LakeHouse Pipeline for Orchestration]] work their missions
+
+>[!error]
+>The issue comes up and it leads to issue about [STS - Security Token Service](https://spacelift.io/blog/aws-sts) which doesn't exist in MinIO, so that reason why when I call the polaris via external endpoint and use HTTPS , e.g: `https://polaris.xeusnguyen.xyz`. It don't work as expectation and raise several bug above, and I lost 1 days to find this fix by delving deeper into the **issues and source code** of Polaris
+
+But first, I have find something about [MInIO STS](https://docs.min.io/enterprise/aistor-object-store/developers/security-token-service/) with coming up from version **RELEASE.2025-03-27T23-09-45Z or later**, this endpoint can generate over HTTPS from version **RELEASE.2025-02-06T18-14-59Z**. Totally, it doesn't work with my situation because i have old version of MinIO at  **RELEASE.2024-10-13T13-34-11Z** and not'easy for upgrading to new version
+
+When I think that won't gonna work, I find the issue to support S3 Storage not support or have STS, Read more at: [Polaris - Support S3 storage that does not have STS](https://github.com/apache/polaris/pull/2672) and give me some insight about another storage already support bypass STS and [Apache Ozone](https://ozone.apache.org/) already lead to resolve this issue and we can see it detail more at
+
+- [Polaris Docker Compose Example](https://github.com/apache/polaris/blob/release/1.3.x/getting-started/ozone/docker-compose.yml#L121)
+- [Polaris - AWS Storage Config Info](https://github.com/apache/polaris/blob/release/1.2.x/spec/polaris-management-service.yml#L1088-L1141)
+
+As you can see, Polaris introduce the another properties when you define S3 Storage Information in Catalog API with key `stsUnavailable` and when you define this one, your error will be gone, and it will work as your expectation and bypass STS verification. You can double-check the API Create Catalog with MinIO as S3 Storage, or you can check at [GitHub - Playaround Data LakeHouse](https://github.com/Xeus-Territory/playaround-data-lakehouse/blob/main/scripts/setup-catalog.sh)
+
+```bash {20}
+curl -s -X POST \
+  -H "Polaris-Realm: $REALM" \
+  -H "Authorization: Bearer $ACCESS_TOKEN" \
+  http://localhost:8181/api/management/v1/catalogs \
+  --json '{
+    "name": "'"$CATALOG_NAME"'",
+    "type": "INTERNAL",
+    "properties": {
+      "default-base-location": "s3://warehouse",
+      "s3.region": "us-east-1",
+      "s3.path-style-access": true,
+      "s3.endpoint": "'"$S3_ENDPOINT"'",
+      "s3.access-key-id": "'"$S3_ACCESS_KEY_ID"'",
+      "s3.secret-access-key": "'"$S3_ACCESS_KEY_SECRET"'"
+    },
+    "storageConfigInfo": {
+      "storageType": "S3",
+      "endpoint":"http://localhost:9000",
+      "endpointInternal":"http://minio:9000",
+      "stsUnavailable": "true",
+      "pathStyleAccess":true,
+      "roleArn": "arn:aws:iam::000000000000:role/minio-polaris-role",
+      "allowedLocations": [
+        "s3://warehouse/*"
+      ]
+    }
+  }'
+```
+
 # Conclusion
 
 ![[meme-technology.png|center]]
 
 >[!done]
 >This marks the conclusion of the article. I hope you found it informative and had a good time reading my publication. It's been a while since I've delved back into learning so much and shared my knowledge on Data Lakehouse, a topic that has always held a curious and mysterious appeal for me in the Data Engineering field.
-    
+
 >[!quote]
 >I hope you all stay in touch with me, remain safe and well. I'll have another blog coming out this week, which I hope you'll also enjoy
+

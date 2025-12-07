@@ -30,6 +30,7 @@ You can figure what you need to do for start with `aws` via some website and art
 
 - [AWS Blog](https://aws.amazon.com/blogs)
 - [AWS Training](https://www.aws.training/)
+- [AWS Builder Center](https://builder.aws.com/)
 ## General
 
 - [AWS Create Account Guide](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html)
@@ -62,48 +63,60 @@ Externally, In `AWS` , I will share about some others topic, such as
 - [Github - AWS Labs](https://github.com/awslabs) - AWS Labs 🌟 **(Recommended)**
 - [Github - AWS Observability](https://github.com/aws-observability) - AWS Observability Setup
 - [Github - AWS Samples](https://github.com/aws-samples) - AWS Samples Community
-## Pages
-
-- [Compose-X Labs](https://labs.compose-x.io/#): Aims to show-case Compose-X projects to deploy on AWS ECS
+- [GitHub - AWS Solutions](https://github.com/aws-solutions) - AWS services into pre-configured deployable code, architecture diagrams, and implementation guides.
 ## Repository
 
 - [all_aws_managed_policies](https://gist.github.com/gene1wood/55b358748be3c314f956): A list of all AWS managed policies and they're policy documents as well as a short script to generate the list
 - [awesome-aws](https://github.com/donnemartin/awesome-aws) - A curated list of awesome Amazon Web Services (AWS) libraries, open source repos, guides, blogs, and other resources. 🌟 **(Recommended)**
 - [grafana-aws-cloudwatch-dashboards](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards): 40+ Grafana dashboards for AWS CloudWatch metrics
 - [my-arsenal-of-aws-security-tools](https://github.com/toniblyx/my-arsenal-of-aws-security-tools): List of open source tools for AWS security: defensive, offensive, auditing, DFIR, etc.
+- [Compose-X Labs](https://labs.compose-x.io/#): Aims to show-case Compose-X projects to deploy on AWS ECS
 ## Tools
 
 - [Serverless Better Credentials](https://www.serverless.com/plugins/serverless-better-credentials#serverless-better-credentials): Plugin replaces the existing AWS credential resolution mechanism, support SSO (Single Sign On)
 # Blogs, Articles and Videos
 
-## Articles
+## Services
 
-- [CloudZero - AWS NAT Gateway Pricing: Simple Strategies To Limit Costs](https://www.cloudzero.com/blog/reduce-nat-gateway-costs/)
-- [PacketFabric - A Deep Dive into NAT Gateway Alternatives](https://packetfabric.com/blog/a-deep-dive-into-nat-gateway-alternatives)
 - [Medium - 18 AWS Lambda Microstacks](https://awstip.com/18-aws-lambda-microstacks-bb20776601c0)
 - [Medium - 14 AWS Security Microstacks](https://medium.com/@csjcode/14-aws-security-microstacks-95d120d57089)
-- [Medium - 7 Effective Ways to Automate Cloud Infrastructure Auditing with AWS CloudTrail and AWS Config](https://aws.plainenglish.io/7-effective-ways-to-automate-cloud-infrastructure-auditing-with-aws-cloudtrail-and-aws-config-39d983f43d30)
-- [AWS Docs - Configuring IAM Identity Center authentication with the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html)
 - [Medium - 10 Little-Known AWS Services That Could Supercharge Your Cloud Strategy in 2025](https://medium.com/aws-in-plain-english/10-little-known-aws-services-that-could-supercharge-your-cloud-strategy-in-2025-7293912ee28d)
 - [Medium - AWS Console-to-Code Now Generally Available](https://medium.com/@TechStoryLines/aws-console-to-code-now-generally-available-f0f63490ac9b)
 - [AWS Docs - Understanding Lambda function scaling](https://docs.aws.amazon.com/lambda/latest/dg/lambda-concurrency.html)
-- [AWS Blogs - 7 AWSome ways to use AWS Chatbot](https://aws.amazon.com/blogs/mt/7-awsome-ways-to-use-aws-chatbot/)
-- [Medium - Full-stack Observability and Monitoring on AWS](https://kevinkiruri.medium.com/observability-and-monitoring-on-aws-42628f13b569)
+- [AWS Blogs - 7 Awesome ways to use AWS Chatbot](https://aws.amazon.com/blogs/mt/7-awsome-ways-to-use-aws-chatbot/)
 - [Linkedin - ISO 27001 Compliance in AWS](https://www.linkedin.com/pulse/iso-27001-compliance-aws-valentin-komarovskiy-mba-ketke)
 ## Blogs
 
 - [Medium - AWS in Plain English](https://aws.plainenglish.io/): New AWS, Cloud, and DevOps content every day. 🌟 **(Recommended)**
 - [Medium - AWStip](https://awstip.com/): Community of passionate AWS builders. 🌟 **(Recommended)**
-- [Medium - Chris St. John](https://medium.com/@csjcode)
+- [Medium - Chris St. John](https://medium.com/@csjcode): Cloud Architect who talk more about AWS and Architecture
+
+## Cloud Architecture
+
+- [CloudZero - AWS NAT Gateway Pricing: Simple Strategies To Limit Costs](https://www.cloudzero.com/blog/reduce-nat-gateway-costs/) 🌟 **(Recommended)**
+- [PacketFabric - A Deep Dive into NAT Gateway Alternatives](https://packetfabric.com/blog/a-deep-dive-into-nat-gateway-alternatives)
+- [AWS Blog - Manual Failover and Failback Strategy with Amazon Route53](https://aws.amazon.com/blogs/networking-and-content-delivery/manual-failover-and-failback-strategy-with-amazon-route53/)
+- [AWS Docs - Configuring and managing a Multi-AZ deployment for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)
+
+## Networking
+
+- [AWS Docs - Choosing an AWS networking and content delivery service](https://docs.aws.amazon.com/decision-guides/latest/networking-on-aws-how-to-choose/choosing-networking-and-content-delivery-service.html) 🌟 **(Recommended)**
 ## Development & Implementation
 
 - [Medium - ECS (Fargate) with ALB Deployment Using Terraform — Part 3](https://medium.com/the-cloud-journal/ecs-fargate-with-alb-deployment-using-terraform-part-3-eb52309fdd8f) 🌟 **(Recommended)**
 - [Medium - Creating SSL Certificates using AWS Certificate Manager (ACM)](https://medium.com/@sonynwoye/creating-ssl-certificates-using-aws-certificate-manager-acm-1c359e70ce4d)
-- [AWS Blogs - AWS Multi-Account Security Reference Architecture](https://medium.com/squareops/aws-multi-account-security-reference-architecture-ac3c31f5e1f9)
-- [AWS Docs - Configuring and managing a Multi-AZ deployment for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)
-- [AWS Docs - Profiling Amazon DocumentDB operations](https://docs.aws.amazon.com/documentdb/latest/developerguide/profiling.html)
+- [Medium - 7 Effective Ways to Automate Cloud Infrastructure Auditing with AWS CloudTrail and AWS Config](https://aws.plainenglish.io/7-effective-ways-to-automate-cloud-infrastructure-auditing-with-aws-cloudtrail-and-aws-config-39d983f43d30)
+## Security
+
+- [Medium - AWS Multi-Account Security Reference Architecture](https://medium.com/squareops/aws-multi-account-security-reference-architecture-ac3c31f5e1f9)
+- [AWS Docs - Configuring IAM Identity Center authentication with the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html)
+
+## Monitoring & Observability
+
+- [Medium - Full-stack Observability and Monitoring on AWS](https://kevinkiruri.medium.com/observability-and-monitoring-on-aws-42628f13b569) 🌟 **(Recommended)**
 - [AWS Blogs - Viewing Amazon CloudWatch metrics with Amazon Managed Service for Prometheus and Amazon Managed Grafana](https://aws.amazon.com/blogs/mt/viewing-amazon-cloudwatch-metrics-with-amazon-managed-service-for-prometheus-and-amazon-managed-grafana/)
 - [AWS Blogs - Monitoring metrics and setting up alarms on your Amazon DocumentDB (with MongoDB compatibility) clusters](https://aws.amazon.com/blogs/database/monitoring-metrics-and-setting-up-alarms-on-your-amazon-documentdb-with-mongodb-compatibility-clusters/)
+- [AWS Docs - Profiling Amazon DocumentDB operations](https://docs.aws.amazon.com/documentdb/latest/developerguide/profiling.html)
 ## Troubleshoot
 
 - [AWS re:Post - Getting an Access Denied error message when I upload files to my Amazon S3 bucket](https://repost.aws/knowledge-center/s3-access-denied-error-kms)
@@ -111,6 +124,7 @@ Externally, In `AWS` , I will share about some others topic, such as
 ## Videos
 
 - [Youtube  - Amazon S3 - Static Website Hosting with Custom Domain and TLS](https://www.youtube.com/watch?v=X9cdkqBgLbs&ab_channel=BryanKrausen)
+- [Youtube - AWS Explained: The Most Important AWS Services To Know](https://www.youtube.com/watch?v=OGYEXGy8ca4) 🌟 **(Recommended)**
 # AWS CLI
 
 >[!question]

@@ -235,6 +235,7 @@ tags:
 - [[11-08-2025 to 17-08-2025|Session 17: 11-08-2025 to 17-08-2025]] - *"Focuses on essential Data Engineering system design concepts."*
 - [[18-08-2025 to 05-10-2025|Session 18: 18-08-2025 to 05-10-2025]] - *"Focuses on four main areas: **AI/ML/LLM**, **Architecture**, **Career/Story**, and **Kubernetes**."*
 - [[06-10-2025 to 08-11-2025|Session 19: 06-10-2025 to 08-11-2025]] - *"This article list covers several **challenging topics**, including **Kubernetes** adoption methods like **Virtual Kubelet** and custom implementations (**CRD** and **Operator**). I also aim to learn and share articles on **MLOps**, **Multi-Region/Multi-Zone Scaling Architecture** with Kubernetes, **monitoring**, and **GPU Virtualization Techniques** (with EKS examples)"*
+- [[09-11-2025 to 07-12-2025|Session 20: 09-11-2025 to 07-12-2025]] - *"This session will cover a wide range of articles focusing on **multi-cluster topics** for scaling, building, and serving the **largest Kubernetes clusters**. It explores the necessary **architectures**, the **challenges** that need to be tackled, and the available **solutions** that can be approached ranging from **enterprise offerings** and **cloud provider services** to **open-source tools**, or a combination of all three."*
 # InfoSec & Security
 
 ## CTF

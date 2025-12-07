@@ -84,7 +84,7 @@ Following the [documentation](https://kubernetes-csi.github.io/docs/#minimum-req
 >[!note]
 >Because these requirements are minimally prescriptive, CSI driver developers are free to implement and deploy their drivers as they see fit.
 
-And you can do that with some [recommended mechanism](https://kubernetes-csi.github.io/docs/#recommended-mechanism-for-developing-and-deploying-a-csi-driver-for-kubernetes), like\
+And you can do that with some [recommended mechanism](https://kubernetes-csi.github.io/docs/#recommended-mechanism-for-developing-and-deploying-a-csi-driver-for-kubernetes), like
 
 - Kubernetes CSI [Sidecar Containers](https://kubernetes-csi.github.io/docs/sidecar-containers.html)
 - Kubernetes CSI [objects](https://kubernetes-csi.github.io/docs/csi-objects.html)
@@ -224,8 +224,6 @@ Check it out when you want to learn more about PVC, PV and Storage Class, I thin
 - [Official Kubernetes about Storage](https://kubernetes.io/docs/concepts/storage/)
 - [Azure Blob Storage CSI driver for Kubernetes](https://github.com/kubernetes-sigs/blob-csi-driver/tree/master)
 - [Create and use a volume with Azure Blob storage in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/azure-csi-blob-storage-provision?tabs=mount-nfs%2Csecret)
-
-
 # Practice with Volume in `kubewekend`
 
 >[!question]

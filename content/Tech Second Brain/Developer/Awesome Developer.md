@@ -70,9 +70,11 @@ tags:
 
 - [DevDocs](https://devdocs.io/): DevDocs combines multiple API documentations in a fast, organized, and searchable interface 🌟 **(Recommended)**
 - [devhints.io](https://devhints.io/) : Rico's cheatsheets
-- [Refactoring.Guru](https://refactoring.guru/) : Making it easy for you to discover everything you need to know about refactoring, design patterns, SOLID principles, and other smart programming topics.
+- [Refactoring.Guru](https://refactoring.guru/) : Making it easy for you to discover everything you need to know about refactoring, design patterns, SOLID principles, and other smart programming topics. 🌟 **(Recommended)**
 - [Webflow University](https://university.webflow.com/) : Learn how to design & build pro websites — visually.
 # Tools and Utilities
+
+![[meme-blind-choice.png|center]]
 
 ## API Testing
 
@@ -127,7 +129,9 @@ tags:
 - [selenium](https://github.com/SeleniumHQ/selenium): A browser automation framework and ecosystem
 # Tools base on Language
 
-## C\#
+![[meme-great-power-great-responsibility.png|center|500]]
+
+## C\# (.NET)
 
 - [Avalonia](https://github.com/AvaloniaUI/Avalonia): Develop Desktop, Embedded, Mobile and WebAssembly apps with C# and XAML. The most popular .NET UI client technology. [Documentation](https://docs.avaloniaui.net/)
 - [awesome-dotnet-core](https://github.com/thangchung/awesome-dotnet-core): 🐝 A collection of awesome .NET core libraries, tools, frameworks and software

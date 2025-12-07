@@ -15,6 +15,10 @@ tags:
 
 # General
 
+## Blogs
+
+- [Grafana Labs blog](https://grafana.com/blog/): News, releases, technical articles, cool stories, and more about Grafana
+- [Is it Observable?](https://isitobservable.io/): Educates and supports the dev community on getting started with observability tools and concepts.
 ## Repositories
 
 - [awesome-monitoring](https://github.com/Enapiuz/awesome-monitoring): List of tools for monitoring and analyze everything
@@ -22,11 +26,12 @@ tags:
 - [Awesome Prometheus alerts](https://samber.github.io/awesome-prometheus-alerts/): Collection of alerting rules 🌟 **(Recommended)**
 - [Prometheus Helm Charts](https://github.com/prometheus-community/helm-charts): Prometheus community Helm charts, mostly for database (PostgreSQL, MongoDB, ...) 🌟 **(Recommended)**
 - [Grafana dashboards](https://grafana.com/grafana/dashboards/): Find the dashboard for your observability 🌟 **(Recommended)**
+- [Elastic Content Share](https://elastic-content-share.eu/): Prebuilt content to use it in your Elastic environment like [Kibana](https://elastic-content-share.eu/downloads/category/kibana/) [dashboards](https://elastic-content-share.eu/downloads/category/kibana/kibana-dashboards/), [Watcher](https://elastic-content-share.eu/downloads/category/elasticsearch/watcher/) alerting rules or extensions to your [observability](https://elastic-content-share.eu/downloads/category/elastic-solutions/elastic-observability/)
 ## Technique Articles
 
 - [Medium - Observability Series: A Step-by-Step Guide to Logs, Traces, and Metrics](https://medium.com/gitconnected/observability-series-a-step-by-step-guide-to-logs-traces-and-metrics-9860d7c46220)
 - [Grafana - Private data source connect (PDC)](https://grafana.com/docs/grafana-cloud/connect-externally-hosted/private-data-source-connect/)
-- [VictoriaMetrics - Prometheus Alerting 101: Rules, Recording Rules, and Alertmanager](https://victoriametrics.com/blog/alerting-recording-rules-alertmanager/)
+- [VictoriaMetrics - Prometheus Alerting 101: Rules, Recording Rules, and Alertmanager](https://victoriametrics.com/blog/alerting-recording-rules-alertmanager/) 🌟 **(Recommended)**
 ## Technology Articles
 
 - [Medium - Grafana Alloy & OpenTelemetry](https://medium.com/@magstherdev/grafana-alloy-opentelemetry-59c171d2ebfc)
@@ -35,6 +40,12 @@ tags:
 - [DevOps Cube - Prometheus Architecture: Complete Breakdown of Key Components](https://devopscube.com/prometheus-architecture/)
 - [Medium - 6 Best Free OnCall Software in 2024, Open-Source and SaaS](https://medium.com/statuspal/6-best-free-oncall-software-in-2024-open-source-and-saas-36f82595e539)
 - [Medium - 11 Automation Scripts for Prometheus Configurations.](https://medium.com/@obaff/11-automation-scripts-for-prometheus-configurations-fde7b3bf4198)
+- [Signoz - Top 11 Loki alternatives in 2025](https://signoz.io/blog/loki-alternatives/) 🌟 **(Recommended)**
+- [Dev.to - Top 5 Open-Source Log Shippers in 2022](https://dev.to/max_kray/top-5-open-source-log-shippers-alternatives-to-logstash-in-2022-5f24)
+## Tips for configuration
+
+- [KodeCloud - Configuring Fluent Bit to Collect Python Application Logs](https://notes.kodekloud.com/docs/EFK-Stack-Enterprise-Grade-Logging-and-Monitoring/Instrumenting-a-Simple-Python-App-for-Logging/Configuring-Fluent-Bit-to-Collect-Python-Application-Logs)
+- [Chronosphere - How to collect Kubernetes component logs using Fluent Bit](https://chronosphere.io/learn/kubernetes-component-logs-fluent-bit/)
 # Tools
 
 ## Alert / On Call
@@ -75,10 +86,13 @@ tags:
 
 - [VictoriaMetrics Stack](https://github.com/VictoriaMetrics/VictoriaMetrics): New monitoring solution for both metrics and logs
 
-	- VictoriaMetrics is a fast, cost-effective and scalable monitoring solution and time series database
-	- VictoriaLogs is [open source](https://github.com/VictoriaMetrics/VictoriaMetrics/tree/master/app/victoria-logs) user-friendly database for logs from [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics/).
+	- [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics/) is a fast, cost-effective and scalable monitoring solution and time series database
+	- [VictoriaLogs](https://github.com/VictoriaMetrics/VictoriaLogs/) is [open source](https://github.com/VictoriaMetrics/VictoriaMetrics/tree/master/app/victoria-logs) user-friendly database for logs
+	- [VictoriaTraces](https://github.com/VictoriaMetrics/VictoriaTraces): Fast and easy to use database for traces, which can efficiently handle terabytes of trace spans.
 
 - [zabbix](https://github.com/zabbix/zabbix): Real-time monitoring of IT components and services, such as networks, servers, VMs, applications and the cloud.
+- [perses](https://github.com/perses/perses): The CNCF sandbox for observability visualisation. Already supports Prometheus, Tempo, Loki and Pyroscope
+
 ## Uptime Monitoring
 
 - [uptime-kuma](https://github.com/louislam/uptime-kuma): A fancy self-hosted monitoring tool 🌟 **(Recommended)**

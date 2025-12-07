@@ -124,9 +124,6 @@ tags:
 - [data-engineer-handbook](https://github.com/DataExpert-io/data-engineer-handbook): a repo with links to everything you'd ever want to learn about data engineering
 - [data-engineering-roadmap](https://github.com/data-burst/data-engineering-roadmap): A comprehensive roadmap tailored for data engineering professionals at all levels
 - [HelloDATA BE](https://kanton-bern.github.io/hellodata-be/): an **enterprise data platform** built on top of open-source tools based on the modern data stack
-## Books
-
-- [Data Engineers Book Collections - Xeus Nguyen](https://drive.google.com/drive/folders/1PmIc4fibMzcLCVgTFKbr4bo8gwbgP38J?usp=sharing)
 ## Blogs
 
 - [Medium - Vu Trinh](https://medium.com/@vutrinh274): Tech blogger who cover a lot information about databases and data engineers 🌟 **(Recommended)**
@@ -176,6 +173,9 @@ tags:
 ## Awesome Repositories
 
 - [awesome-mlops](https://github.com/visenger/awesome-mlops): A curated list of references for MLOps
+- [AI-Infra](https://github.com/pacoxu/AI-Infra): init to record my learning path of AI Infra, especially on inference.
+- [AI-Infra-from-Zero-to-Hero](https://github.com/HuaizhengZhang/AI-Infra-from-Zero-to-Hero): 🚀 Awesome System for Machine Learning ⚡️ AI System Papers and Industry Practice
+- [Awesome-LLMOps](https://github.com/tensorchord/Awesome-LLMOps): An awesome & curated list of best LLMOps tools for developers
 ## Blogs
 
 - [Machine Learning Operations](https://ml-ops.org/): Provide an end-to-end machine learning development process to design, build and manage reproducible, testable, and evolvable ML-powered software
@@ -185,6 +185,10 @@ tags:
 
 - [MLflow Model Registry Webhooks REST API Example](https://docs.databricks.com/en/_extras/notebooks/source/mlflow/mlflow-model-registry-webhooks-rest-api-example.html): Define webhook `MLflow` and trigger `MLflow` engine used Restful API to handle request
 - [MLOpsVN Courses](https://courses.mlops.vn/index.html): The Course about MLOps was written in Vietnamese
+
+## Landscape
+
+- [Awesome LLMOps](https://awesome-llmops.inftyai.com/)
 ## Topics
 
 - [AutoML](https://github.com/topics/automl)
@@ -225,7 +229,6 @@ tags:
 ## LLM
 
 - [langfuse](https://github.com/langfuse/langfuse): Open source LLM engineering platform: LLM Observability, metrics, evals, prompt management, playground, datasets 🌟 **(Recommended)**
-- [litellm](https://github.com/BerriAI/litellm): Proxy Server (LLM Gateway) to call 100+ LLM APIs in OpenAI format 🌟 **(Recommended)**
 - [TaskingAI](https://github.com/TaskingAI/TaskingAI): A BaaS (Backend as a Service) platform for **LLM-based Agent Development and Deployment**
 ## MLOps
 

@@ -36,6 +36,11 @@ tags:
 - [Nginx](https://nginx.org/en/docs/): nginx is an HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server. 🌟 **(Recommended - Most powerful)** 
 - [traefik proxy](https://doc.traefik.io/traefik/) : Traefik is an [open-source](https://github.com/traefik/traefik) _Edge Router_ that makes publishing your services a fun and easy experience
 - [uvicorn](https://www.uvicorn.org/): An ASGI web server implementation for Python
+## AI Gateway
+
+- [litellm](https://github.com/BerriAI/litellm): Proxy Server (LLM Gateway) to call 100+ LLM APIs in OpenAI format 🌟 **(Recommended)**
+- [PortKey](https://github.com/Portkey-AI/gateway): A blazing fast AI Gateway with integrated guardrails
+- [higress](https://github.com/alibaba/higress): 🤖 AI Gateway | AI Native API Gateway
 # Documentations and Articles
 
 ![[meme-documentation.png]]
