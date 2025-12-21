@@ -16,10 +16,11 @@ tags:
 
 **Timeline: 2024 - Current**
 
-## AI/ML/Data
+## AI & Machine Learning & Data Engineer
 
-- [[Awesome AI & ML & Data Engineer]]
-- [[Awesome CDC]]
+- [[Awesome AI & ML]]
+- [[Awesome Data Engineer]]
+- [[Awesome MLOps]]
 ## Architecture
 
 - [[Awesome API Gateway and Web Server]]
@@ -28,9 +29,6 @@ tags:
 - [[Awesome NGINX]]
 - [[Awesome Selfhosted]]
 - [[Awesome System Architecture]]
-## Certificates
-
-- [[AZ104|Azure AZ104]]
 ## CI/CD
 
 - [[Awesome Azure Pipelines|Awesome Azure Pipelines]]
@@ -131,8 +129,9 @@ tags:
 - [[First EKS Cluster with Milvus DB]]
 - [[Digging into AWS Monitoring Stack]]
 - [[Work with EKS and How to monitoring your Cluster]]
+- [[Increase Quota and Limit of Cloud Services]]
 
-# DevOps - Tutorials from zero to hero
+# DevOps 101 - The Zero to Hero Tutorials
 
 >[!info]
 >This session which talk about my growth up from zero to hero in DevOps career path when I took a position from intern to official in company. About tutorial and some technologies which need to learn and control to become DevOps
@@ -166,6 +165,8 @@ tags:
 **Timeline: 2023 - Current**
 ## 2023
 
+- [NGINX vs Apache ? How does it work? Why is NGINX compared to Apache –> How is it stronger and weaker?](https://hackmd.io/@XeusNguyen/rkp5AL5Fo)
+- [Different btw CMD vs Entrypoint vs RUN in Docker](https://hackmd.io/@XeusNguyen/HJKlF7-qs)
 - [Selfhosted NAS with Raspberry Pi 4](https://hackmd.io/@XeusNguyen/SkRNNRiBi)
 - [Setup the virtual machine Linux and Windows for Agents and Azure-Pipelines](https://hackmd.io/@XeusNguyen/S1BrSRPW6)
 - [Integration Performance Query for MySQL or PostgreSQL](https://hackmd.io/@XeusNguyen/ry_nbYBxh)
@@ -179,6 +180,7 @@ tags:
 - [[Create Free SSL with Let's Encrypt and Certbot]]
 ## 2024
 
+- [[What is Wrapper Pattern|What is Wrapper Pattern ?]]
 - [[Profiling applications with Pyroscope]]
 - [[Caddy Server and Umami analytics platform|Do self-hosted analytics platforms for you website with automatically SSL domain]]
 - [[How can protect React secrets|How can protect React secrets?]]
@@ -193,6 +195,7 @@ tags:
 - [[Build mobile with Expo (Part 2)]]
 - [[Protect sensitive data and secret files with sops]]
 - [[Integration automation test with GitLab CI]]
+- [[What is Milvus|What is Milvus?]]
 ## 2025
 
 - [[How to serve Java API with Maven and Tomcat]]
@@ -208,6 +211,8 @@ tags:
 - [[Setup HA Database for MongoDB]]
 - [[Monitoring Databases with Prometheus & Grafana in Kubernetes]]
 - [[From GitLab to Data LakeHouse Pipeline for Orchestration]]
+- [[The Story of Mine about Multi-Region Architecture]]
+- [[To Cloud Native Multi-Cluster with ExternalDNS]]
 # DueWeekly Tech
 
 >[!info]
@@ -236,6 +241,7 @@ tags:
 - [[18-08-2025 to 05-10-2025|Session 18: 18-08-2025 to 05-10-2025]] - *"Focuses on four main areas: **AI/ML/LLM**, **Architecture**, **Career/Story**, and **Kubernetes**."*
 - [[06-10-2025 to 08-11-2025|Session 19: 06-10-2025 to 08-11-2025]] - *"This article list covers several **challenging topics**, including **Kubernetes** adoption methods like **Virtual Kubelet** and custom implementations (**CRD** and **Operator**). I also aim to learn and share articles on **MLOps**, **Multi-Region/Multi-Zone Scaling Architecture** with Kubernetes, **monitoring**, and **GPU Virtualization Techniques** (with EKS examples)"*
 - [[09-11-2025 to 07-12-2025|Session 20: 09-11-2025 to 07-12-2025]] - *"This session will cover a wide range of articles focusing on **multi-cluster topics** for scaling, building, and serving the **largest Kubernetes clusters**. It explores the necessary **architectures**, the **challenges** that need to be tackled, and the available **solutions** that can be approached ranging from **enterprise offerings** and **cloud provider services** to **open-source tools**, or a combination of all three."*
+- [[08-12-2025 to 21-12-2025|Session 21: 08-12-2025 to 21-01-2025]] - *"The session highlights several solutions for DNS management, focusing on strategies to ensure high availability. You will explore practical implementations of **ExternalDNS** and **K8GB**, which enable dynamic DNS management in Cloud-Native environments. Additionally, the session branches into Data Engineering topics, covering the integration of **Kafka** and **Apache Iceberg**, alongside end-to-end observability for Cloud-Native stacks. Finally, you may find inspiration in the story of a startup navigating the operational advantages of **AWS** while tackling the significant cost-optimization challenges that come with scaling."*
 # InfoSec & Security
 
 ## CTF
@@ -250,8 +256,6 @@ tags:
 - [Hack The Boo (Hackthebox-Forensic-2022)](https://hackmd.io/@XeusNguyen/BkwkN8bHi)
 - [ICTF August 2022](https://hackmd.io/@XeusNguyen/BJqXug1gs)
 - [Image Editing - CTFLearn (Crypto/Hard)](https://hackmd.io/@XeusNguyen/HJ_kKdNGi)
-- [[IDOR|Write up about IDOR]]
-- [[SSTI|Write up about SSTI]]
 ## Hackwekend Series
 
 >[!info]
@@ -259,13 +263,26 @@ tags:
 
 **Timeline: 2022 - Current**
 
-- [Hackwekend Session 0 - QRCode Vulnerabilities (Malicious QRCode gain access to reverse shell level)](https://hackmd.io/@XeusNguyen/BJJvZHOMj) - *About the vulnerable with QRCode, How we can gain access to victim machine and bypass QRCode*
-- [Hackwekend - Session 1 (Pentester web - Security Lab)](https://hackmd.io/@XeusNguyen/S1udpmwro) - *About the vulnerable machine is take a look and gain access to collecting flag (CTF)*
-- [Hackwekend Session 2 - Information Security, Team and Phishing Attack](https://hackmd.io/@XeusNguyen/ryHkhL-e2) - *The session talk about what and why we have InfoSec and work like a team. Additional, Talk about Phishing Attack, Questions and how to reproduce*
-- [Hackwekend - Session 3 Attack and Exploit GraphQL ?](https://hackmd.io/@XeusNguyen/rJ0j0WR-p) - *Session is about GraphQL, Dangerous with technologies and some challenge to find flag with CTF style*
-- [Hackwekend Session 4 - Cloud Security (AWS EKS)](https://hackmd.io/@XeusNguyen/H1sUc3CB6) *- Session is about AWS EKS Security, Vulnerable in K8s Cluster and Play CTF to figuring out what should need protected (EKS Cluster Game prod by Wiz.io)*
-- [Hackwekend Session 5 - Cloud Security (AWS IAM Policy)](https://hackmd.io/@XeusNguyen/HkjGUFw-C) - *Session is about AWS IAM, How to authentication or bypass methodology to read and list contents inside the S3 bucket, learn more about `sns`, `sqs`, `cognito` services of AWS Cloud (Big IAM prod by Wiz.io)*
-- [Hackwekend Session 6 - Cloud Security (Network and Red Team)](https://hackmd.io/@XeusNguyen/ByLqkK1zC) *- Session is about more than cloud security, but more approach to networking and red team methodology to recon, attack the target with unique way like `lateral movement`, `nfs`, `tcpdump`, `dnscan` and `istio`, `kyverno` on `kubernetes` ( K8slan prod by Wiz.io)*
+- [Hackwekend Session 0 - QRCode Vulnerabilities (Malicious QRCode gain access to reverse shell level)](https://hackmd.io/@XeusNguyen/BJJvZHOMj) - About the vulnerable with QRCode, How we can gain access to victim machine and bypass QRCode
+- [Hackwekend - Session 1 (Pentester web - Security Lab)](https://hackmd.io/@XeusNguyen/S1udpmwro) - About the vulnerable machine is take a look and gain access to collecting flag (CTF)
+- [Hackwekend Session 2 - Information Security, Team and Phishing Attack](https://hackmd.io/@XeusNguyen/ryHkhL-e2) - The session talk about what and why we have InfoSec and work like a team. Additional, Talk about Phishing Attack, Questions and how to reproduce
+- [Hackwekend - Session 3 Attack and Exploit GraphQL ?](https://hackmd.io/@XeusNguyen/rJ0j0WR-p) - Session is about GraphQL, Dangerous with technologies and some challenge to find flag with CTF style
+- [Hackwekend Session 4 - Cloud Security (AWS EKS)](https://hackmd.io/@XeusNguyen/H1sUc3CB6) - Session is about AWS EKS Security, Vulnerable in K8s Cluster and Play CTF to figuring out what should need protected (EKS Cluster Game prod by Wiz.io)
+- [Hackwekend Session 5 - Cloud Security (AWS IAM Policy)](https://hackmd.io/@XeusNguyen/HkjGUFw-C) - Session is about AWS IAM, How to authentication or bypass methodology to read and list contents inside the S3 bucket, learn more about `sns`, `sqs`, `cognito` services of AWS Cloud (Big IAM prod by Wiz.io)
+- [Hackwekend Session 6 - Cloud Security (Network and Red Team)](https://hackmd.io/@XeusNguyen/ByLqkK1zC) - Session is about more than cloud security, but more approach to networking and red team methodology to recon, attack the target with unique way like `lateral movement`, `nfs`, `tcpdump`, `dnscan` and `istio`, `kyverno` on `kubernetes` ( K8slan prod by Wiz.io)
+## Cyber 101
+
+>[!info]
+>Learn the fundamental knowledge about the internet, web-browser to get start into Information Security and also Cyber Security
+
+**Timeline: 2023 - Current**
+
+- [[Web fundamentals|Cyber 101 Session 1 - Web Fundamentals]]: Explores the foundational technologies of the World Wide Web, including HTTP/S, request/response lifecycles, and core web components.
+- [[Walking An Application|Cyber 101 Session 2 - Walking An Application]]: Covers methodologies for manually exploring a target application using built-in browser developer tools (Chrome, Firefox, or Brave) to analyze client-side logic.
+- [[Authentication Bypass|Cyber 101 Session 3 - Authentication Bypass]]: Focuses on identifying and exploiting flaws in authentication mechanisms to gain unauthorized access to protected resources.
+- [[Content Discovery|Cyber 101 Session 4 - Content Discovery]]: Introduces techniques and tools for uncovering hidden files, directories, and assets within a target web application.
+- [[Subdomain Enumeration|Cyber 101 Session 5 - Subdomain Enumeration]]: Details the process of identifying valid subdomains to map out a target's full attack surface through OSINT, DNS analysis, and VHost fuzzing.
+- [[Top 10 OWASP|Cyber 101 Session 6 - Top 10 OWASP]]: An in-depth look at the OWASP Top 10, the industry-standard framework for the most critical web application security risks.
 ## Vulnerable Research
 
 >[!info]
@@ -282,16 +299,6 @@ tags:
 - [Snyk vs Sonarqube - Securing your code](https://hackmd.io/@XeusNguyen/B1SujNlgh)
 - [[Insecure Direct Object Reference (IDOR)]]
 - [[Server Site Template Injection (SSTI)]]
-- [[Authentication Bypass]]
-- [[Content Discovery]]
-- [[Subdomain Enumeration]]
-- [[Walking An Application]]
-- [[Top 10 OWASP]]
-- [[Web fundamentals]]
-- [[Cross Site Scripting ( XSS )]]
-- [[SQL Injections]]
-- [[GraphQL]]
-- [[Command injection]]
 - [[CVE-2023-34092 - Path Equivalence in Vite]]
 # Kubewekend Series
 
@@ -301,10 +308,10 @@ tags:
 **Timeline: July 2024 - Current**
 ## 2024
 
-- [[Kubewekend Session 1|Kubewekend Session 1: Build up your host with Vagrant]] - *This lab is take the topic around play and practice with `vagrant` - the software can help you provide the virtual machine in your host. First step way to setup `kubernetes` cluster inside your machine, and play with on next session*
-- [[Kubewekend Session 2|Kubewekend Session 2: Setup Kind cluster with Ansible]] - *This lab is practice with `ansible` the configuration for setup `kind` cluster inside machine on the previous session*
-- [[Kubewekend Session 3|Kubewekend Session 3: Basically about Kubernetes architecture]] - *This session talk about basically architecture and learn more fundamental components inside `kubernetes`, and what the structure of them inside clusters.*
-- [[Kubewekend Session 4|Kubewekend Session 4: Learn about ebpf with hubble and cilium]] - *This session will talk and learn about `eBPF` and the especially representation of `eBPF` are `cilium` and `hubble` to become main CNI of Kubewekend and talk about Observability of them*
+- [[Kubewekend Session 1|Kubewekend Session 1: Build up your host with Vagrant]] - This lab is take the topic around play and practice with `vagrant` - the software can help you provide the virtual machine in your host. First step way to setup `kubernetes` cluster inside your machine, and play with on next session
+- [[Kubewekend Session 2|Kubewekend Session 2: Setup Kind cluster with Ansible]] - This lab is practice with `ansible` the configuration for setup `kind` cluster inside machine on the previous session
+- [[Kubewekend Session 3|Kubewekend Session 3: Basically about Kubernetes architecture]] - This session talk about basically architecture and learn more fundamental components inside `kubernetes`, and what the structure of them inside clusters.
+- [[Kubewekend Session 4|Kubewekend Session 4: Learn about ebpf with hubble and cilium]] - This session will talk and learn about `eBPF` and the especially representation of `eBPF` are `cilium` and `hubble` to become main CNI of Kubewekend and talk about Observability of them
 - [[Kubewekend Session 5|Kubewekend Session 5: Build HA Cluster]] - This session is really pleasant when we talk about how can create HA cluster with `kubewekend`, learn more the components inside `kubernetes` and try figure out about `network`, `security`, `configuration`, `container runtime` and `system` via this session
 - [[Kubewekend Session 6|Kubewekend Session 6: CSI and Ceph with Kubewekend]] - This session is covered about topic storage inside `Kubernetes` cluster, how can they work with `CSI` Architecture and why we need to `CSI Driver` for handle this stuff. Furthermore, I try to practice with `Ceph` - one of popular storage opensource for `Kubewekend` cluster
 ## 2025
@@ -313,19 +320,3 @@ tags:
 - [[Kubewekend Session Extra 2|Kubewekend Session Extra 2: Rebuild Cluster with RKE2 or K3S]] - This article aims to provide you with insights into alternatives for self-hosting a full Kubernetes cluster. Both `K3s` and `RKE2` are strong contenders worth considering to guide your decision. Focusing on the self-hosted approach with `RKE2`, I want to share more about my experiences working with it over the past four months.
 - [[Kubewekend Session Extra 3|Kubewekend Session Extra 3: RKE2 and The Nightmare with Network and CoreDNS]] - This article is my story about wrestling with networking in Kubernetes. I'll cover the frustrating problems that arise when your pods can't communicate with services, CoreDNS fails to resolve domains, and the tough issues involving **CNI** and the **ChecksumTX** of network interfaces in Kubernetes.
 - [[Kubewekend Session Extra 4|Kubewekend Session Extra 4: Kind and Sandbox environment for GitLab CI]] - This article shares my experience setting up a sandbox environment with Kind to adapt new Kubernetes environments within CI/CD pipelines. I'll provide several ideas for running both CPU and GPU applications, demonstrating their behavior specifically within GitLab CI.
-# Technology Researching
-
->[!info]
->In this session, About the shared  research for community which i make and find out how to play with it, setup and make usage or tutorial for doing something
->
-
-**Timeline: 2023 - Current**
-## 2023
-
-- [NGINX vs Apache ? How does it work? Why is NGINX compared to Apache –> How is it stronger and weaker?](https://hackmd.io/@XeusNguyen/rkp5AL5Fo)
-- [Different btw CMD vs Entrypoint vs RUN in Docker](https://hackmd.io/@XeusNguyen/HJKlF7-qs)
-## 2024
-
-- [[What is Wrapper Pattern|What is Wrapper Pattern ?]]
-- [[What is Milvus|What is Milvus?]]
-- [[Increase Quota and Limit of Cloud Services]]

@@ -1,5 +1,5 @@
 ---
-title: Authentication Bypass
+title: Cyber 101 Session 3 - Authentication Bypass
 tags:
   - infosec
   - fundamentals

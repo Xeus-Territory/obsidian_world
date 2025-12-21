@@ -1,44 +1,43 @@
 ---
-title: Subdomain Enumeration
+title: Cyber 101 Session 5  - Subdomain Enumeration
 tags:
   - fundamentals
   - infosec
 ---
-# About the subdomain
 
-- Subdomain enumeration is the process of dinding valid subdomain for a domain ==> Do this because it expand our attack surface to try and discover more potential points of vulnerability
-- 3 method to subdomain enumeration such as Bruteforce, OSINT and Virtual Host. [This link](https://0xffsec.com/handbook/information-gathering/subdomain-enumeration/) and [this link](https://zweilosec.gitbook.io/hackers-rest/web/web-notes/subdomain-virtual-host-enumeration) contain lots of cool stuff about the subdomain enumeration. Yeah try the best ☕ ☕ 
+![[Pasted image 20240219142429 1.png]]
+# Subdomain Enumeration
+
+- **Definition:** Subdomain enumeration is the process of identifying valid subdomains for a target domain. This is a critical phase of reconnaissance because it expands the **attack surface**, revealing hidden assets or legacy systems that may contain vulnerabilities.
+- **Methodologies:** Common techniques include **Bruteforcing**, **OSINT**, and **Virtual Host discovery**. For comprehensive technical resources, refer to the [0xffsec Handbook](https://0xffsec.com/handbook/information-gathering/subdomain-enumeration/) and [Zweilosec’s Web Notes](https://zweilosec.gitbook.io/hackers-rest/web/web-notes/subdomain-virtual-host-enumeration).
 
 # OSINT - SSL/TLS Certificates
 
-- SSL/TLS (Secure Sockets Layer/Transport Layer Security) Certificates is created for a domain by a CA (Certificate Authority), CA's take part in what's called "Certificate Transparency (CT) logs".
-- These are publicly accessible logs of every SSL/TLS certificate created for a domain name. The purpose of Certificate Transparency logs is to stop malicious and accidentally made certificates from being used.
-- Use some services to exploit about the certificate with subdomains belonging to a domain, with [https://crt.sh](https://crt.sh) and [https://ui.ctsearch.entrust.com/ui/ctsearchui](https://ui.ctsearch.entrust.com/ui/ctsearchui), so i recommended use the first option, yeah idk but it looks great for me :smile: <br>
-About the quiz u can do yourself with crt.sh take a look and u will get result :smiley: and a bunch something u can find like this :rocket:
+- **Mechanism:** When a Certificate Authority (CA) issues an SSL/TLS certificate for a domain, the certificate is recorded in **Certificate Transparency (CT) logs**. 
+- **Purpose:** These logs are publicly accessible databases designed to prevent the use of fraudulent or accidentally issued certificates.
+- **Extraction:** Pentesters can query these logs to discover subdomains that were previously unknown. Tools like [crt.sh](https://crt.sh) and the [Entrust CT Search](https://ui.ctsearch.entrust.com/ui/ctsearchui) are excellent for this purpose, with `crt.sh` being a community favorite for its simplicity and depth.
 
-# OSINT - Search Engines
+# OSINT - Search Engines (Google Dorking)
 
-- About one times again i need to reference to the google dorking or dorking engine on every browser, Search engines contain trillions of links to more than a billion websites, which can be an excellent resource for finding new subdomains.
-- For example, "-site:www.domain.com site:*.domain.com" would only contain results leading to the domain name domain.com but exclude any links to www.domain.com; therefore, it shows us only subdomain names belonging to domain.com.
+- **Strategy:** Search engines index trillions of pages, making them an invaluable resource for finding subdomains through advanced search operators, often called **Google Dorks**.
+- **Example:** Using the query `-site:www.domain.com site:*.domain.com` instructs the search engine to display all indexed subdomains for `domain.com` while explicitly excluding the main `www` host. This isolates unique subdomains that may have been indexed by web crawlers.
 
-# DNS Bruteforce
+# DNS Bruteforcing
 
-- This common method to say the domain **"ey, give me the subdomain "** :cool:, Bruteforce DNS is method of trying tens, hundreds, thousands or even millions of different possible subdomains from a pre-defined list of commonly used subdomains.
-- Because this method requires many requests, we automate it with tools to make the process quicker.
-- So let find so tool cooling to do this and i sure about the [dnsrecon](https://www.kali.org/tools/dnsrecon/) or the website [https://dnsdumpster.com/](https://dnsdumpster.com/) look great for your BruteforceDNS, so there are many tools so idk much but this thing is enough for do this things. Therefore, Let't try
+- **Concept:** This method involves systematically querying a DNS server with a wordlist of common subdomain names (e.g., `dev`, `staging`, `api`, `vpn`) to see which ones resolve to an IP address.
+- **Automation:** Because of the high volume of requests, automation is essential. Professional tools like [dnsrecon](https://www.kali.org/tools/dnsrecon/) or web-based services like [DNSDumpster](https://dnsdumpster.com/) are industry standards for executing these queries efficiently.
 
-# OSINT - Sublist3r
+# OSINT - Automated Tools (Sublist3r & Subfinder)
 
-- And yeah we do passive thing above and now we try some different things about tools for discover subdomain with automated with their wordlists. The cool tool like [Sublist3r](https://github.com/aboul3la/Sublist3r) and [subfinder](https://github.com/projectdiscovery/subfinder), they are Fast and powerful resolution and wildcard elimination module, Optimized for speed, very fast and lightweight on resources, ...
-- And this tools do the job like go to the searchtool in internet such as google, bing, ... and find the subdomain for u and yeah it tool and need to wait for a little bit second or minute :BoBxsWinkSmile: to get result.
+- **Tooling:** For faster, automated reconnaissance, tools like [Sublist3r](https://github.com/aboul3la/Sublist3r) and [Subfinder](https://github.com/projectdiscovery/subfinder) are highly recommended.
+- **Capabilities:** These tools aggregate results from multiple passive sources (search engines, CT logs, and DNS aggregators) and include modules for wildcard elimination. They are optimized for speed and low resource consumption, providing a consolidated list of subdomains in seconds or minutes.
 
-# Virtual Hosts
+# Virtual Hosts (VHosts)
 
-- Some subdomains aren't always hosted in publically accessible DNS results, such as development versions of a web application or administration portals. Instead, the DNS record could be kept on a private DNS server or recorded on the developer's machines in their /etc/hosts file (or c:\windows\system32\drivers\etc\hosts file for Windows users) which maps domain names to IP addresses. 
-- Because web servers can host multiple websites from one server when a website is requested from a client, the server knows which website the client wants from the Host header. We can utilise this host header by making changes to it and monitoring the response to see if we've discovered a new website.
-- Like with DNS Bruteforce, we can automate this process by using a wordlist of commonly used subdomains.
-- Idk about this techniques much, reality this first time i try this. i see tool used for this session is [ffuf](https://github.com/ffuf/ffuf), i don;t have experience for this tool so i try do with step in tryhackme, i get something with tool like lines: 01 so i choose this with AlphaBet and i get 2 result is delta and yellow ==> Check lab tryhackme to get something cool stuff.<br>
-![[Pasted image 20240219142429 1.png]]
+- **Hidden Subdomains:** Some subdomains are not listed in public DNS records (e.g., internal development environments or admin panels). These may only exist in a private DNS or a local `hosts` file (`/etc/hosts` on Linux or `C:\Windows\System32\drivers\etc\hosts` on Windows).
+- **VHost Routing:** Modern web servers often host multiple websites on a single IP address. The server uses the **HTTP Host Header** to determine which site to serve to the client.
+- **Fuzzing:** By manipulating the `Host` header in an HTTP request and analyzing the server's response (looking for differences in status codes or page length), we can discover "hidden" virtual hosts.
+- **Tooling:** A popular tool for this technique is [ffuf](https://github.com/ffuf/ffuf) (Fuzz Faster U Fool). By fuzzing the Host header against a wordlist, you can identify valid internal subdomains that don't appear in public DNS lookups.
 
 
 

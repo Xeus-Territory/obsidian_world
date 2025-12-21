@@ -41,7 +41,6 @@ tags:
 
 - [Medium - Why Rust Emerges as the Premier Choice for System Programming](https://medium.com/python-in-plain-english/why-rust-emerges-as-the-premier-choice-for-system-programming-d63cd7c920c8)
 - [Medium - Blazing fast Python Docker builds with Poetry 🏃](https://medium.com/@albertazzir/blazing-fast-python-docker-builds-with-poetry-a78a66f5aed0) 🌟 **(Recommended)**
-
 ## React Native for IOS/Android
 
 - [Internet - How to build and deploy React Native applications with Fastlane](https://tech.sparkfabrik.com/en/blog/fastlane_build/)
@@ -158,9 +157,11 @@ tags:
 - [dotenv-vault](https://www.dotenv.org/docs) : Library for store and securing .env file with encrypt version, and help us build secrets version 🌟 **(Recommended)**
 - [dotenvx](https://dotenvx.com/) : Loads environment variables from .env for nodejs projects.
 - [HTML Code Snippet](https://www.w3schools.com/howto/default_page6.asp) : HTML Snippet from W3school
+- [husky](https://github.com/typicode/husky): Git hooks made easy 🐶 woof!
 - [istanbuljs](https://github.com/istanbuljs/istanbuljs): monorepo containing the various nuts and bolts that facilitate istanbul.js test instrumentation
 - [jerryscript](https://github.com/jerryscript-project/jerryscript): Ultra-lightweight JavaScript engine for the Internet of Things.
 - [npm](https://www.npmjs.com/): Package management of Javascript
+- [TanStack](https://github.com/tanstack): Open source software for web developers
 ## Python
 
 - [awesome-python](https://github.com/vinta/awesome-python) : An opinionated list of awesome Python frameworks, libraries, software and resources.

@@ -35,7 +35,7 @@ Wrapper, is one most of things can make your time when programing to become shor
 >[!example]
 >Imagine that you’re working on a notification library which lets other programs notify their users about important events.
 
-![[Pasted image 20240630103230.png]]
+![[Pasted image 20240630103230.png|center]]
 
 When you want to open or add a new provider to your notification class, it make you hard to change logical of your service, such as if your client want `facebook` and `slack` notification but your service just provide only `sms`, that will make you hard to control or changing big deals when you want. You can handle that to add more `subclasses` to handle that, but accidentally, you make the code bloated and difficult to control. That is reason why you need `Decorator` or `Wrapper` Pattern
 ## Why and what useful `wrapper` can bring back ?
@@ -61,7 +61,7 @@ Additional, you can have another solution which fix problem inheritance meet wit
 
 And that means, you have superb stand behind as components to make `Decorator` or `Wrapper` pattern
 
-![[Pasted image 20240630134226.png]]
+![[Pasted image 20240630134226.png|center]]
 
 
 
@@ -75,7 +75,7 @@ To make wrapper become helpful, It comes from property of wrapper to make the wr
 >For example, You can dynamic and give safety when you want to upgrade version from 1.x --> 2.x like me DevOps will work `Gradle`, Wrapper of `Gradle` will take responsibility to handle when you want to use between 6.x --> 8.x and it will install new things and make functionality base on original function but on different version
 >
 
-![[Pasted image 20240630135429.png]]
+![[Pasted image 20240630135429.png|center]]
 
 Like notification, you can see it will make different between multiple method base `decorator` which have original function from `notifier` class, you can make big deals when create multiple version just base on `decorator` instead of `root`. On the client side, just use specific `decorator` and do not care about `root` or `decorator` one. That make `wrapper` is such helpful when you design a pattern for your application
 
@@ -104,13 +104,13 @@ With `wrapper`, base on DevOps culture, it submits a role for
 
 That has different between them, just release to do with specify purpose and just one thing, users can have the simple way to reach goals when use original tools but dynamic way through `wrapper`
 
-![[meme-not-simply-gradle.png]]
+![[meme-not-simply-gradle.png|center]]
 
 So go with me to specific to give perspective different between of them 🤭
 
 ## Gradlew
 
-![[Pasted image 20240630144535.png]]
+![[Pasted image 20240630144535.png|center]]
 
 So like from above, Gradlew is called wrapper of Gradle, which can bring up you some features
 
@@ -128,7 +128,7 @@ gradle wrapper
 
  that will create `gradle` directory, and put wrapper inside like these
  
-![[Pasted image 20240630144406.png]]
+![[Pasted image 20240630144406.png|center]]
 
 But when you work with Android project, It will auto generate when you create project base on your selection configuration when you create project.
 
@@ -245,7 +245,7 @@ On my position, I work command regularly so that trick and wrapper can help me r
 
 # Conclusion
 
-![[meme-learn-new-daily.png]]
+![[meme-learn-new-daily.png|center]]
 
 >[!done]
 >That all for today, Not long and but I have time to learning around new thing, I hope you can do same thing. Wrapper can make a graceful thing, and help a lot for perspective to do great pattern to design your application, API or such as a build or IaC tool, that actually make the game become to interesting and shorten time to handle lots of job to do different purpose in same construction, just dynamic that one 

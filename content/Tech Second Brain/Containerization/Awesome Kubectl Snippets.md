@@ -29,6 +29,7 @@ alias kaf="kubectl apply -f "
 alias kr="kubectl run --dry-run=client -o yaml "
 alias krcp="k resource-capacity -p --util"
 alias krca="k resource-capacity -a"
+alias kgsecret="k get secret -o go-template='{{range \$k,\$v := .data}}{{\"### \"}}{{\$k}}{{\"\n\"}}{{\$v|base64decode}}{{\"\n\n\"}}{{end}}'"
 ```
 
 To directly use any profile not including in `kubeconfig`, you can use this with environment vars like this
@@ -46,7 +47,7 @@ export KUBECONFIG=/path/to/profile
 NS=`kubectl get ns |grep Terminating | awk 'NR==1 {print $1}'` && kubectl get namespace "$NS" -o json   | tr -d "\n" | sed "s/\"finalizers\": \[[^]]\+\]/\"finalizers\": []/"   | kubectl replace --raw /api/v1/namespaces/$NS/finalize -f - 
 ```
 # Config Command
-## Check currently config context 
+## Check currently config context
 
 ```bash
 kubectl config view --minify
@@ -61,6 +62,16 @@ For example `binary` file with auto convert to `base64` format
 kubectl create secret generic accounts-identityserver-certificate --from-file=certificate.pfx --dry-run=client -o yaml > certificate_sec.yaml 
 ```
 
+## Create the ingress with multiple rule
+
+For example, I want to build the ingress with two rule, one for health-check path which configure for platform team, and also domain for user-traffic routing
+
+```bash
+k create ingress <name-ingress> \
+--rule=/health=<service>:<port> \ # First rule (Exact)
+--rule=<domain>/\*=<service>:<port> \ # Second rule (Prefix)
+--class nginx --dry-run=client --output yaml > ingress.yaml
+```
 # Debug Command
 ## Debug your node via kubectl
 
@@ -295,3 +306,22 @@ kubectl patch statefulsets <stateful-set-name> -p '{"spec":{"replicas":<new-repl
 
 >[!note]
 >You need to consider when apply scaling down can not working because *"cannot scale down a StatefulSet when any of the stateful Pods it manages is unhealthy. Scaling down only takes place after those stateful Pods become running and ready."* . Read more in: [Scale a StatefulSet](https://kubernetes.io/docs/tasks/run-application/scale-stateful-set/#troubleshooting)
+
+# Explain Comamand
+
+## Check the full requirement of CRD or API Resources
+
+For double-check the template configuration for CRD and API Resources, e.g: `pod`, `endpoint` or `cert-manager`, honestly to say, documentation of them will great prototype for following, but sometime, you don't have more information about the documentation, that how `explain` become useful or you can use with [doc.crds.dev](https://doc.crds.dev/)
+
+```bash
+# common, Get the documentation of the resource and its fields
+kubectl explain <api-resources>
+# e.g:
+kubectl explain pods
+
+# advantage, Get all the fields in the resource
+kubectl explain pods --recursive
+
+# more specific, if you have multiple-version of your resources
+kubectl explain deployments --api-version=apps/v1
+```

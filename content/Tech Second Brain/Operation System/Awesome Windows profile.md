@@ -5,6 +5,7 @@ tags:
   - terminal-profile
   - helpful
 ---
+
 >[!summary]
 >This is about some configuration to make your effective when work with powershell. This will collection from multiple source, check it out and let's create your favorite shell
 >- [Autocomplete in PowerShell](https://techcommunity.microsoft.com/t5/itops-talk-blog/autocomplete-in-powershell/ba-p/2604524)
@@ -108,7 +109,6 @@ To understand more about `powershell`, come and take a look on
 
 - [[Awesome Powershell commands]]
 - [[Awesome OS#Window|Windows Helpful Pages & Articles]]
-
 # Install VMware Workstation
 
 Usually, In windows I use `vmware_workstation` instead of `vmbox`. If you prefer any version, link down below
@@ -201,5 +201,6 @@ Get-Service -Name ssh-agent | Set-Service -StartupType Manual
 
 ![[Pasted image 20240902124924.png|center]]
 
-And now you can use OpenSSH Agent to add your key inside your windows machine
+>[!done]
+>Now, you can use OpenSSH Agent to add your key inside your windows machine
 

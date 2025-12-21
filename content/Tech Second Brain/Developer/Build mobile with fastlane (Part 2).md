@@ -7,6 +7,7 @@ tags:
   - devops
   - azure-devops
 ---
+
 >[!quote]
 >Hi @all, If you know you know, I am doing the full completely progress when you want to build mobile application. Therefore on part 2, I will guide you to understand how you can sign your application with keystone, beta release to Google Play 👍👍👍
 >

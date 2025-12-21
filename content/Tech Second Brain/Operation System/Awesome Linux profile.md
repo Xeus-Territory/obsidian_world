@@ -6,6 +6,7 @@ tags:
   - linux
   - zsh
 ---
+
 >[!sumarry]
 >This is about some configuration to make your effective when work with linux shell, `Oh-My-Zsh`. It will collection from multiple source, and process will describe on the following page, check it 😄
 
@@ -49,16 +50,6 @@ git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZS
 # Intall zsh-syntax-highlighting
 # Github: https://github.com/zsh-users/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-
-# Install az completion (config if you want)
-# echo -n "source /etc/bash_completion.d/azure-cli" >> ~/.zshrc
-
-# Install Fira Code Font
-wget https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip
-unzip Fira_Code_v6.2.zip -d firacode
-mkdir -p ~/.local/share/fonts
-cp -r firacode/ttf/* ~/.local/share/fonts
-rm -rf firacode Fira_Code_v6.2.zip
 ```
 
 # Install helpful tools for ZSH
@@ -154,9 +145,6 @@ unzip ./terraform.zip -d terraform
 sudo mv ./terraform/terraform /usr/local/bin 
 rm -rf terraform terraform.zip
 
-# Install NVM
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-
 # Install krew (Kubectl plugin)
 (
   set -x; cd "$(mktemp -d)" &&
@@ -243,6 +231,13 @@ wget https://github.com/muesli/duf/releases/download/v0.8.1/duf_0.8.1_linux_amd6
 # If you have golang, install via go
 go install github.com/minio/mc@latest
 # If you download via linux package, double-check at https://min.io/docs/minio/linux/reference/minio-mc.html#install-mc
+
+# Install Fira Code Font
+wget https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip
+unzip Fira_Code_v6.2.zip -d firacode
+mkdir -p ~/.local/share/fonts
+cp -r firacode/ttf/* ~/.local/share/fonts
+rm -rf firacode Fira_Code_v6.2.zip
 ```
 
 # Install programming language for ZSH
@@ -283,14 +278,14 @@ sudo apt install build-essential -y
 # Install java
 sudo apt install openjdk-11-jdk –y 
 
-# Install nodejs
+# Install NVM + Nodejs
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 nvm install 18.20
 
 # Install .NET
 wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
 chmod +x ./dotnet-install.sh
 ./dotnet-install.sh --version latest
-
 echo "export DOTNET_ROOT=$HOME/.dotnet" >> ~/.zshrc
 echo "export PATH=\"\$PATH:\$DOTNET_ROOT:\$DOTNET_ROOT/tools\"" >> /.zshrc
 ```
@@ -423,6 +418,7 @@ alias kaf="kubectl apply -f "
 alias kr="kubectl run --dry-run=client -o yaml "
 alias krcp="k resource-capacity -p --util"
 alias krca="k resource-capacity -a"
+alias kgsecret="k get secret -o go-template='{{range \$k,\$v := .data}}{{\"### \"}}{{\$k}}{{\"\n\"}}{{\$v|base64decode}}{{\"\n\n\"}}{{end}}'"
 
 # krew and kubectl pluggins
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
@@ -447,10 +443,6 @@ export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:/usr/local/lib64/pkgconfig:$HOM
 
 # Alias command to get Public IP
 alias pubip="curl -4 icanhazip.com"
-
-# Terragrunt bash complete 
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/bin/terragrunt terragrunt
 
 # Check the cpu-temp in your machine
 alias cputemp="paste <(cat /sys/class/thermal/thermal_zone*/type) <(cat /sys/class/thermal/thermal_zone*/temp) | column -s $'\t' -t | sed 's/\(.\)..$/.\1°C/'"

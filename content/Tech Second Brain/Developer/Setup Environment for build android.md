@@ -8,6 +8,7 @@ tags:
   - helpful
   - usage
 ---
+
 >[!quote]
 >For purpose when meet the problems when we setup and provide the environment for build android with no need to use or install `android studio`. That reason why i write about this, let's digest
 

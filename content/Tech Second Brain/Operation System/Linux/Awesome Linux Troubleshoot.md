@@ -1152,6 +1152,51 @@ mount -a
 >[!warning]
 >Error can be occur if you make anything wrong, therefore if you encounter the error, please review your `/etc/fstab` and try again with command above
 
+## Check and Fix filesystems with fsck
+
+If you want to automatically fix file-system, preview the error of them or simply check state, Linux offer for use `fsck` (File System Consistency Check) to handle these stuff. Read more at
+
+- [fsck(8) - Linux man page](https://linux.die.net/man/8/fsck)
+- [Phoenixnap - How to Use fsck Command to Check and Repair Filesystem](https://phoenixnap.com/kb/fsck-command-linux)
+
+To run and check the specific disk, you can run `fsck` command
+
+```bash
+sudo fsck /path/to/file/system
+```
+
+The exit code returned by **fsck** is the sum of the following conditions: 
+
+```bash
+0 - No errors  
+1 - File system errors corrected  
+2 - System should be rebooted  
+4 - File system errors left uncorrected  
+8 - Operational error  
+16 - Usage or syntax error  
+32 - Fsck canceled by user request  
+128 - Shared library error  
+```
+
+>[!note]
+>The exit code returned when multiple file systems are checked is the bit-wise OR of the exit codes for each file system that is checked.
+
+You can do multiple stuff with fsck for automatically repair and run dry-run in the file-system which encounter error
+
+```bash
+# Run the dry-run mode
+sudo fsck -N /path/to/file/system
+
+# Fix detection error automatically
+sudo fsck -y /path/to/file/system
+
+# Skip fix but show the error
+sudo fsck -n /path/to/file/system
+
+# Force to do a filesystem check
+sudo fsck -f /path/to/file/system
+```
+
 # Linux Memory
 
 ## Clean Swap memory

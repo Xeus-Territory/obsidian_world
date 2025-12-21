@@ -102,6 +102,7 @@ kafka-consumer-groups.sh --bootstrap-server <host-kafka>:<port-kafka> --command-
 - Docker Images:
 	- [apache/kafka](https://hub.docker.com/r/apache/kafka)
 	- [bitami/kafka](https://hub.docker.com/r/bitnami/kafka)
+	- [landoop/fast-data-dev](https://hub.docker.com/r/landoop/fast-data-dev)
 ## Kafka Alternative
 
 - [AutoMQ](https://docs.automq.com/automq/what-is-automq/overview) : AutoMQ re-engineers Kafka for the cloud by decoupling storage to object storage. While maintaining **100% compatibility** with Apache Kafka®, it offers users up to **10 times cost efficiency** and **100 times elasticity**.

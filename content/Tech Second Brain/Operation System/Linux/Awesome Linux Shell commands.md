@@ -1150,6 +1150,10 @@ To generate a completely Client CA for connecting to OpenVPN Server, you can use
 - [fzf](https://github.com/junegunn/fzf): 🌸 A command-line fuzzy finder
 - [httpie](https://github.com/httpie/cli): modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions, downloads, plugins & more
 - [ripgrep](https://github.com/BurntSushi/ripgrep) : ripgrep recursively searches directories for a regex pattern while respecting your gitignore
+## Developer
+
+- [pre-commit](https://github.com/pre-commit/pre-commit): A framework for managing and maintaining multi-language pre-commit hooks. 🌟 **(Recommended)**
+- [pre-commit-hooks](https://github.com/pre-commit/pre-commit-hooks): Some out-of-the-box hooks for pre-commit 🌟 **(Recommended)**
 ## Monitoring
 
 - [bpytop](https://github.com/aristocratos/bpytop): Linux/OSX/FreeBSD resource monitor 🌟 **(Recommended)**
@@ -1171,3 +1175,7 @@ To generate a completely Client CA for connecting to OpenVPN Server, you can use
 
 - [auto-unlocker](https://github.com/paolo-projects/auto-unlocker): Unlocker for VMWare macOS
 - [darling](https://github.com/darlinghq/darling): Darwin/macOS emulation layer for Linux
+## Secrets Management
+
+- [sops](https://getsops.io/) : Simple and flexible tool for managing secrets 🌟 **(Recommended)**
+- [trufflehog](https://github.com/trufflesecurity/trufflehog): Find, verify, and analyze leaked credentials.w

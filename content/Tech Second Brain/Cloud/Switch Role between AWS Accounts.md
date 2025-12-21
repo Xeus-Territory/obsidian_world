@@ -7,6 +7,7 @@ tags:
   - usage
   - terraform
 ---
+
 >[!quote]
 >Hi @all, a second article for this week 🙌 and I think write about `Terraform` to control over AWS Accounts is not bad, sometime this can be one of solution to handle a big organization with `Assume Role` and apply it for `Terraform`. Let's digest and get more experience.
 
