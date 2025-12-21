@@ -17,6 +17,7 @@ tags:
 - [self-hosting-guide](https://github.com/mikeroyal/Self-Hosting-Guide) : Learn all about locally hosting
 # Self-hosted by Categories
 
+![[thumbnil-cncf-tools-landscape.png]]
 ## Expense Management
 
 - [ExpenseOwl](https://github.com/Tanq16/ExpenseOwl): Extremely simple, self-hosted expense tracker with a beautiful UI 🌟 **(Recommended)**
@@ -40,8 +41,6 @@ tags:
 	- [LocalStack Web Application](https://app.localstack.cloud/sign-in): Web UI for managing your LocalStack
 - [openstack](https://github.com/openstack/openstack): Repository tracking all OpenStack repositories as submodules. Mirror of code maintained at opendev.org -->  [documentation](https://docs.openstack.org/2024.1/), and minor version [devstack](https://github.com/openstack/devstack) - System for quickly installing an OpenStack cloud
 - [OpenNebula](https://docs.opennebula.io/6.10/overview/opennebula_concepts/opennebula_overview.html): Open source **Cloud & Edge Computing Platform** bringing real freedom to your Enterprise Cloud 🚀
-## Managed Cloud
-
 - [ubicloud](https://github.com/ubicloud/ubicloud): an open source cloud that can run anywhere
 ## Secrets management
 

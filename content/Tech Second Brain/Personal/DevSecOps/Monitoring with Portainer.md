@@ -10,11 +10,8 @@ tags:
   - ansible
 ---
 
-<div align="center">
-    <img src="https://content.gitbook.com/content/tLcRoAdw9BYwwpba4ZAD/blobs/lpaZLqkbhSEZgNgumgN7/portainer-architecture-detailed.png">
-    <strong><em><p style="text-align: center;">Portainer - Monitoring tools for K8s and Docker</p></em></strong>
-</div>
 
+![[thumbnail-portainer-stack.png]]
 # Config Portainer with Shell Scripting
 
 - So for easily managing and reading logs, metrics, and exec console of containers, you will need monitoring tools, and `portainer` is exactly what you want, go to [documentation](https://www.portainer.io/) for more detail.

@@ -38,7 +38,6 @@ tags:
 ## SAST
 
 - [Sonarqube](https://docs.sonarsource.com/sonarqube-server/latest/): An on-premise analysis tool designed to detect coding issues 🌟 **(Recommended)**
-
-	-  [Sonar Rule - The collections of rule integrate into Sonarqube Server](https://rules.sonarsource.com/)
+- [Sonar Rule](https://rules.sonarsource.com/): The collections of rule integrate into Sonarqube Server
 - [trivy](https://github.com/aquasecurity/trivy): Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more 🌟 **(Recommended)**
 - [GitGuardian ggshield](https://www.gitguardian.com/ggshield): a CLI application that runs in your local environment or in a CI environment to help you detect more than 500+ types of secrets. 🌟 **(Recommended)**

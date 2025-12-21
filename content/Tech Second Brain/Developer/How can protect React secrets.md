@@ -6,6 +6,7 @@ tags:
   - helpful
   - cheatsheet
 ---
+
 >[!quote]
 >Hi @all, very new one from me about `React` content LOL 😄. Today, I will talk about the problems occur when i try to build container for `React` project and release application to Production, your environments secrets actually expose on bundle code 😱, so how the heck way to protect these ? Sorry if my knowledge about `React` does actually that mean or not. Let's try and digest !
 

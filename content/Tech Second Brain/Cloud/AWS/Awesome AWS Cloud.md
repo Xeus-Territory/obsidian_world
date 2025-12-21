@@ -7,14 +7,14 @@ tags:
   - aws
   - awesome
 ---
-# Which reason do you concern AWS ?
 
 ![[thumbnail-aws.png]]
+# Which reason do you concern about AWS ?
 
->[!quote]
->The big reason why i choose AWS about unique idea of maintainer and developer from AWS company put inside their services. They give me other perspective to create, control and manage service, and that is creating the difference between `aws` and `azure`. Especially, this cloud have some strange service and practice with it help me have more knowledge, and that why I concern to choose `AWS` and one more thing huge community stand behind will help you resolve any problems, for sure.
+> [!quote]
+> The primary reason I choose AWS is the unique philosophy that AWS maintainers and developers embed within their services. They offer a distinct perspective on creating, controlling, and managing infrastructure, which sets AWS apart from Azure. AWS features specialized services and architectural patterns that have significantly expanded my technical knowledge. Additionally, the massive community support ensures that almost any challenge can be resolved efficiently.
 >
->If I concern about `aws` and `azure`, I will choose one of them depend on what I need to do. About trying to operate service like web dynamic - static, DB and container app, I will choose `azure`, and in another task, if I want to practice with secrets management, simple storage as S3, Queue message, ... I will choose `aws` for alternative
+> When deciding between AWS and Azure, my choice depends on the specific requirements of the task. For operating standard services like dynamic or static web applications, databases, and containerized apps, I prefer Azure. Conversely, for tasks involving advanced secret management, object storage (S3), and message queuing, I choose AWS as the preferred alternative.
 
 You can figure what you need to do for start with `aws` via some website and article
 

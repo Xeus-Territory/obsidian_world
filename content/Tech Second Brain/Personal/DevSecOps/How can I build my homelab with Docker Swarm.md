@@ -428,7 +428,7 @@ docker stack deploy -c proxy.yml proxy
 
 Go to your browser and typing your domain (e.g: `https://portainer.example.com`)
 
-![[thumbnail-portainer.png]]
+![[Tech Second Brain/Assets/Images/thumbnail-portainer.png]]
 
 # Conclusion
 

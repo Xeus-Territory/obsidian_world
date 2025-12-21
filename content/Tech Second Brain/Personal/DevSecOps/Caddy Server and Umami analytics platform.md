@@ -221,7 +221,7 @@ When you book your `VPS`, most of cloud will return your `Public IP` with IPv4 o
 - With `IPv6`, you need match that domain type `AAAA`
 - With `VPS - DNS` like `AWS` cloud, You need match that domain type `CNAME`
 
-For example, If I have a `Public IPv4` 69.96.69.96 and subdomain `havefun.fun4fun.io`, just choose type `A` domain and point that for `IPv4`. You can read them in [[Web fundamentals |Basic things about internet and networking]]
+For example, If I have a `Public IPv4` 69.96.69.96 and subdomain `havefun.fun4fun.io`, just choose type `A` domain and point that for `IPv4`. You can read them in [[Web fundamentals|Basic things about internet and networking]]
 
 ## Run the compose and get the result
 

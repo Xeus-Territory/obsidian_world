@@ -1,160 +1,169 @@
 ---
-title: Web fundamentals
+title: Cyber 101 Session 01 - Web Fundamentals
 tags:
   - basic-knowledge
   - fundamentals
   - infosec
 ---
->[!info]
->*This is about what should we need to getting before go to security. Find out it on some topic below and grasp for yourself something news*
 
-## Website basic things
+> [!info]
+> This article serves as a foundational guide to the essential knowledge required before transitioning into security. Explore the topics below to gain new insights and strengthen your technical baseline.
+
 <img src = "https://assets.tryhackme.com/additional/how-websites-work/client%20server.png">
-There are two major components that make up a website:
-- Front End (Client-Side) - the way your browser renders a website.
-- Back End (Server-Side) - a server that processes your request and returns a response.
-### Contain in HTML
 
-Websites are primarily created using:
-- HTML, to build websites and define their structure
-- CSS, to make websites look pretty by adding styling options
-- JavaScript, implement complex features on pages using interactivity
-### JavaScript
+There are two major components that make up a website:
+- **Front End (Client-Side):** The interface and logic rendered within the browser.
+- **Back End (Server-Side):** The server-side infrastructure that processes requests and returns responses.
+# Core Web Technologies
+
+Websites are primarily built using:
+- **HTML:** To structure the content and define the layout of the website.
+- **CSS:** To style and format the website, ensuring a visually appealing user interface.
+- **JavaScript:** To implement complex features and interactive functionality.
 
 ![[thumbnail-javascript.png]]
-This part of website will make some cool stuff, with `javascript`, you can handle more thing ever like 
-- Server route
-- Request and Response handler
-- Make animation, logic
-- More than ever with complicated things
-P/S: `Javascript` is up to the beast but use it not carefully will make you have reverse results, kind of
-- Security and vulnerable
-- Sensitive Data Exposure
-- ...
-### Sensitive Data Exposure
 
-- Sensitive Data Exposure occurs when a website doesn't properly protect (or remove) sensitive clear-text information to the end-user; usually found in a site's frontend source code.
-- Sensitive information can be potentially leveraged to further an attacker's access within different parts of a web application. For example, there could be HTML comments with temporary login credentials, and if you viewed the page's source code and found this, you could use these credentials to log in elsewhere on the application (or worse, used to access other backend components of the site)
+This part of the website enables powerful functionality; with `JavaScript`, you can handle more complex operations than ever before, such as:
+- **Client-side routing** and navigation logic.
+- **Request and Response handling** via Fetch or Axios APIs.
+- **Dynamic animations** and complex business logic.
+- **Advanced state management** for sophisticated applications.
 
-![[Pasted image 20240219090216.png]]
-### HTML Injection
+> [!caution]
+> While `JavaScript` is incredibly powerful, improper implementation can lead to adverse results, including:
+> - **Security Vulnerabilities:** Such as Cross-Site Scripting (XSS).
+> - **Sensitive Data Exposure:** Accidental leaking of keys or PII in client-side code.
+> - **Performance Bottlenecks:** Memory leaks or blocking the main thread.
 
-- HTML Injection is a vulnerability that occurs when unfiltered user input is displayed on the page. If a website fails to sanatise user input (filter any "malicious" text that a user inputs into a website), and that input is used on the page, an attacker can inject HTML code into a vulnerable website.
+**Sensitive Data Exposure**
 
-- Input sanitisation is very important in keeping a website secure, as information a user inputs into a website is often used in other front-end and back-end functionality. A vulnerability you'll explore in another lab is database injection, where you can manipulate a database lookup query to log in as another user by controlling the input that's directly used in the query - but for now, let's focus on HTML injection (which is client-side).
+- **Sensitive Data Exposure** occurs when a web application fails to properly protect or sanitize sensitive information in clear-text, making it accessible to the end-user. This is frequently discovered within the application's frontend source code.
+- **Exploitation:** Attackers can leverage this sensitive information to escalate their access across different layers of the web application. For instance, developers might leave temporary credentials within HTML comments; if discovered in the page source, these credentials could be used to compromise user accounts or, in more severe cases, gain unauthorized access to backend infrastructure and internal components.
 
-- When a user has control of how their input is displayed, they can submit HTML (or JavaScript) code, and the browser will use it on the page, allowing the user to control the page's appearance and functionality.
+![[Pasted image 20240219090216.png|center]]
 
-<img src = "https://assets.tryhackme.com/additional/how-websites-work/html_injection.png">
+**HTML Injection**
 
-## The real website in the internet
-### Putting It All Together
+- **HTML Injection** is a vulnerability that occurs when unsanitized user input is rendered directly on a web page. If a website fails to perform input sanitization—the process of filtering or encoding potentially malicious characters—an attacker can inject arbitrary HTML code into the application's document structure.
+- **Input Sanitization** is a critical security control, as user-provided data is frequently utilized in both frontend logic and backend processing. While other vulnerabilities like **Database Injection (SQLi)** involve manipulating server-side queries to bypass authentication, HTML Injection is primarily a client-side vulnerability focused on the presentation layer.
+- **Impact:** When a user gains control over how their input is rendered, they can inject HTML or JavaScript. The browser executes this code as if it were part of the original source, allowing an attacker to alter the page's appearance, capture user data, or hijack session functionality.
+# The real website in the internet
 
-To summarise, when you request a website, your computer needs to know the server's IP address it needs to talk to; for this, it uses `DNS`. Your computer then talks to the web server using a special set of commands called the HTTP protocol; the `web-server` then returns HTML, JavaScript, CSS, Images, etc., which your browser then uses to correctly format and display the website to you.
+> [!summary]
+> In summary, when you request a website, your computer must first resolve the server's IP address through the **DNS** (Domain Name System). Once identified, your computer establishes a connection with the **web server** using the **HTTP/HTTPS** protocol. The server then transmits the necessary assets—such as HTML, JavaScript, CSS, and images—which your browser parses and renders to display the website correctly.
   
-<div align="center">
-	<img src = "https://static-labs.tryhackme.cloud/sites/puttingittogether/puttingitalltogether.png">
-</div>
+![[thumbnail-real-website-internet-source-thm.png|center]]
 
-### Other Components
 
-**Load Balancers**
+## Load Balancers
 
 ![[thumbnail-reverse-proxy.png]]
-- Easily know to that provide 2 main features to ensure high traffic can handle the load and providing a fail-over if a server becomes unresponsive
-- When you request a website with a `load balancer`, which will receive your request first and then forward it to one of the multiple servers behind it
-- The `load balancer` uses different algorithms to help it decide which server is best to deal with the request. A couple of examples of these algorithms are ***round-robin***, which sends it to each server in turn, or ***weighted***, which checks how many requests a server is currently dealing with and sends it to the least busy server.
-- `Load balancers` also perform periodic checks with each server to ensure they are running correctly; this is called a ***health check***. If a server doesn't respond appropriately or doesn't respond, the `load balancer` will stop sending traffic until it responds appropriately again.
 
-**CDN (Content Delivery Networks)**
+- Load balancers provide two primary features: **scalability**, ensuring high traffic volumes are handled by distributing the load, and **high availability**, providing automated failover if a server becomes unresponsive.
+- When requesting a website configured with a **load balancer**, the balancer acts as the entry point, receiving the incoming request first before forwarding it to one of the backend servers in the pool.
+- The load balancer utilizes specific **scheduling algorithms** to determine the optimal server for each request. Common examples include ***Round Robin***, which distributes requests sequentially across all servers, and ***Least Connections (Weighted)***, which directs traffic to the server currently handling the fewest active requests.
+- To maintain reliability, load balancers perform periodic **health checks** on each backend instance. If a server fails to respond correctly, the load balancer marks it as unhealthy and redirects traffic to functional nodes until the failing server passes its health checks again.
 
-![[Pasted image 20240219091032.png]]
+## CDN (Content Delivery Networks)
 
-- A `CDN` can be an excellent resource for cutting down traffic to a busy website. It allows you to host static files from your website, such a JavaScript, CSS, Images, Videos, and host them across thousands of servers all over the world.
-- When a user requests one of the hosted files, the `CDN` works out where the nearest server is physically located and sends the request there instead of potentially the other side of the world.
+![[thumbnail-cdn.png]]
 
-**Databases**
+- A **CDN (Content Delivery Network)** is a highly effective resource for reducing origin server load and mitigating high traffic. It enables the distribution of static assets—such as JavaScript, CSS, images, and video—across a global network of thousands of edge servers.
+- When a client requests a cached file, the CDN utilizes **geographic routing** to direct the request to the nearest **Point of Presence (PoP)**. This minimizes latency by serving content from a physically closer location rather than routing traffic to an origin server that may be on the other side of the world.
+
+## Databases
 
 ![[thumbnail-databases.png]]
-- Often websites will need a way of storing information for their users. Web-servers can communicate with databases to store and recall data from them. 
-- Databases can range from just a simple plain text file up to complex clusters of multiple servers providing speed and resilience. You'll come across some common databases: MySQL, MSSQL, MongoDB, SQLite, Postgres, and more; each has its specific features.
 
-**WAF (Web Application Firewall)**
+- Websites frequently require a persistent storage layer to manage user data. **Web servers** interact with **databases** to perform CRUD (Create, Read, Update, Delete) operations, allowing data to be stored and retrieved dynamically.
+- Database solutions scale from simple flat-text files to complex, distributed **clusters** designed for high performance and fault tolerance. Common database management systems (DBMS) include **MySQL, MSSQL, PostgreSQL, MongoDB, and SQLite**; each is optimized for specific use cases, such as relational data integrity or NoSQL flexibility.
+
+## WAF (Web Application Firewall)
 
 ![[thumbnail-waf.png]]
-- A WAF sits between your web request and the web server; its primary purpose is to protect the web-servers from hacking or denial of service attacks.
-- It analyses the web requests for common attack techniques, whether the request is from a real browser rather than a bot.
-- It also checks if an excessive amount of web requests are being sent by utilising something called rate limiting, which will only allow a certain amount of requests from an IP per second. If a request is deemed a potential attack, it will be dropped and never sent to the web-servers.
-## How Web servers work
 
-**What is a Web Server?**
+- A **WAF (Web Application Firewall)** sits inline between incoming web requests and the origin web server; its primary function is to shield the infrastructure from application-layer exploits and Distributed Denial of Service (DDoS) attacks.
+- It inspects incoming traffic for common attack vectors—such as SQL Injection (SQLi) and Cross-Site Scripting (XSS)—and employs **bot mitigation** techniques to distinguish between legitimate browser traffic and automated malicious scripts.
+- The WAF also enforces **rate limiting** to prevent resource exhaustion, restricting the number of requests allowed from a single IP address within a specific timeframe. If a request matches a known attack signature or exceeds defined thresholds, it is dropped at the edge, ensuring malicious traffic never reaches the web server.
+## Web Servers
 
 ![[thumbnail-web-server.png]]
-- A web server is a software that listens for incoming connections and then utilises the HTTP protocol to deliver web content to its clients. The most common web server software you'll come across is Apache, Nginx, IIS and NodeJS.
-- A Web server delivers files from what's called its root directory, which is defined in the software settings. For example, Nginx and Apache share the same default location of /var/www/html in Linux operating systems, and IIS uses C:\inetpub\wwwroot for the Windows operating systems.
 
-**Virtual Hosts**
+- A **web server** is a software application that listens for incoming network connections and utilizes the **HTTP/HTTPS** protocols to deliver web content to clients. Popular web server implementations include **Nginx, Apache, IIS**, and runtime environments like **Node.js**.
+- Web servers serve assets from a designated **document root**, defined within the server configuration. On Linux-based systems, both Nginx and Apache typically default to `/var/www/html`, whereas **IIS** on Windows systems defaults to `C:\inetpub\wwwroot`.
+
+## Virtual Hosts
+
 ![[thumbnail-vm.png]]
-- Web servers can host multiple websites with different domain names; to achieve this, they use virtual hosts.
-- The web server software checks the hostname being requested from the HTTP headers and matches that against its virtual hosts (virtual hosts are just text-based configuration files). If it finds a match, the correct website will be provided. If no match is found, the default website will be provided instead.
-- Virtual Hosts can have their root directory mapped to different locations on the hard drive.
-- There's no limit to the number of different websites you can host on a web server.
 
-**Static vs Dynamic Content**
-- You can know the view what you see in your browser is called the front-end
-- Static is target to Static Content and content never change and Dynamic Opposite
-- These Changes to what you end up seeing are done in what is called the Backend with the use of Programing and Script language. Backend done behind the scene (Not view this)
+- Web servers can host multiple independent websites with distinct domain names on a single instance by utilizing **Virtual Hosts** (often referred to as **Server Blocks** in Nginx).
+- When a request arrives, the web server inspects the `Host` header within the **HTTP request**. It matches this hostname against its configuration files—which are standard text-based directives—to determine which site to serve. If no specific match is found, the server routes the request to a designated **default server** or catch-all block.
+- Each Virtual Host can be mapped to a unique **document root** on the file system, allowing separate websites to maintain isolated directory structures on the same disk.
+- There is no hard architectural limit to the number of websites a single web server can host; the capacity is primarily governed by the available hardware resources (CPU, RAM, and I/O).
 
-**Scripting and Backend Languages**
+## Static vs Dynamic Content
 
-![[Pasted image 20240219092435.png]]
+- The visual interface and elements you interact with directly in your browser are referred to as the **Front-end**.
+- Content is categorized into two types: **Static Content**, which remains constant for every user, and **Dynamic Content**, which changes based on user interaction or data processing.
+- These dynamic changes are processed on the **Back-end**, where programming and scripting languages execute logic "behind the scenes." This processing is invisible to the end user but determines the final output rendered in the browser.
+## Backend
 
+![[Pasted image 20240219092435.png|center]]
+
+- The **Server** acts as the delivery hub, receiving requests from the browser and sending back the necessary files and data to display the website.
+- Information like user profiles, posts, and settings are kept in the **Database**, a structured storage system that the backend "queries" to retrieve or save data.
+- Connecting these parts is the **API (Application Programming Interface)**, which serves as a messenger, allowing the frontend and backend to communicate and share data securely.
+- **Authentication and Security** protocols run on the backend to verify user identities and protect sensitive information before it ever reaches the user's screen.
 ## Web Protocol (HTTP/HTTPS)
-*This kind is important things in the internet, the critical part which cause the fail or succeed of website, performance, dns, caching and more thing which essential did it *
+
+>[!info]
+>This kind is important things in the internet, the critical part which cause the fail or succeed of website, performance, dns, caching and more thing which essential did it
   
 ### What is HTTP(S)?
-<div align="center">
-	<img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/HTTP_logo.svg/220px-HTTP_logo.svg.png">
-</div>
 
-- `HTTP` is what's used whenever you view a website, developed by **Tim Berners-Lee** and his team between 1989-1991. HTTP is the set of rules used for communicating with web servers for the transmitting of web-page data, whether that is HTML, Images, Videos, etc.
-- `HTTPS` is the secure version of `HTTP`. `HTTPS` data is encrypted so it not only stops people from seeing the data you are receiving and sending, but it also gives you assurances that you're talking to the correct web server and not something impersonating it. You can find the keywords to register `HTTPS` for your website with SSL Certificate or CRT, you can know this the method to create the key and verify it on your website
+![[thumbnail-http-https.png]]
+
+- **HTTP (Hypertext Transfer Protocol)** is the foundational protocol for viewing websites, developed by **Tim Berners-Lee** and his team between 1989 and 1991. It defines the standard set of rules for transmitting web data—including HTML, images, and videos—between a client and a web server.
+- **HTTPS (Hypertext Transfer Protocol Secure)** is the encrypted version of HTTP. It utilizes **TLS/SSL certificates** to encrypt data in transit, protecting it from eavesdropping and tampering. Furthermore, HTTPS provides **identity verification**, ensuring that the client is communicating with the legitimate web server rather than an impersonator. 
+- To implement HTTPS, a website requires an **SSL/TLS Certificate** issued by a Certificate Authority (CA). This certificate facilitates the cryptographic handshake used to generate session keys and verify the site's authenticity.
 ### Request and Response
 
-**What is a URL? (Uniform Resource Locator)**
+>[!question]
+>**What is a URL? (Uniform Resource Locator)**
 
+>[!note]
 >If you’ve used the internet, you’ve used a URL before. A URL is predominantly an instruction on how to access a resource on the internet. The below image shows what a URL looks like with all of its features (it does not use all features in every request).
 
-<img src = "https://static-labs.tryhackme.cloud/sites/howhttpworks/newurl.png"><br>
-- **Scheme**: This instructs on what protocol to use for accessing the resource such as HTTP, HTTPS, FTP (File Transfer Protocol).
-- **User:Password**: Some services require authentication to log in, you can put a username and password into the URL to log in.
-- **Host**: The domain name or IP address of the server you wish to access.
-- **Port**: The Port that you are going to connect to, usually 80 for HTTP and 443 for HTTPS, but this can be hosted on any port between 1 - 65535.
-- **Path**: The file name or location of the resource you are trying to access.
-- **Query String**: Extra bits of information that can be sent to the requested path. For example, /blog?id=1 would tell the blog path that you wish to receive the blog article with the id of 1.
-- **Fragment**: This is a reference to a location on the actual page requested. This is commonly used for pages with long content and can have a certain part of the page directly linked to it, so it is viewable to the user as soon as they access the page.
+![[thumbnail-url-scheme.png]]
+
+
+- **Scheme**: Specifies the protocol used to access the resource, such as HTTP, HTTPS, or FTP (File Transfer Protocol).
+- **User:Password**: Optional credentials for services requiring authentication; the username and password can be embedded directly within the URL.
+- **Host**: The domain name (FQDN) or IP address of the server hosting the resource.
+- **Port**: The specific communication endpoint on the server. While commonly 80 for HTTP and 443 for HTTPS, it can be any value within the range of 1–65535.
+- **Path**: The specific location or file path on the server where the resource resides.
+- **Query String**: A set of key-value pairs providing additional parameters to the requested path (e.g., `/blog?id=1` requests a specific resource identified by the ID).
+- **Fragment**: An internal page reference (anchor) that points to a specific section within the resource. This allows the browser to scroll directly to a designated location upon loading.
 ### Making a request
-<div align="center">
-	<img src = "https://static-labs.tryhackme.cloud/sites/howhttpworks/line.png">
-</div>
+
+![[Pasted image 20251219152753.png|center]]
+
 Example Request:
 
-    GET / HTTP/1.1
-    Host: tryhackme.com
-    User-Agent: Mozilla/5.0 Firefox/87.0
-    Referer: https://tryhackme.com/
+```bash
+GET / HTTP/1.1
+Host: tryhackme.com
+User-Agent: Mozilla/5.0 Firefox/87.0
+Referer: https://tryhackme.com/
+```
 
-Line 1: This request is sending the GET method ( more on this in the HTTP Methods task ), request the home page with / and telling the web server we are using HTTP protocol version 1.1.
+- **Line 1:** Specifies the `GET` method (covered in the HTTP Methods section), requests the root directory (`/`), and indicates the use of the `HTTP/1.1` protocol.
+- **Line 2:** The `Host` header specifies the target domain as `tryhackme.com`.
+- **Line 3:** The `User-Agent` header identifies the client browser as `Firefox version 87`.
+- **Line 4:** The `Referer` header indicates that the previous page directing us here was `https://tryhackme.com`.
+- **Line 5:** An HTTP request concludes with an empty line (CLRF), signaling to the web server that the transmission is complete.
 
-Line 2: We tell the web server we want the website tryhackme.com
-
-Line 3: We tell the web server we are using the Firefox version 87 Browser
-
-Line 4: We are telling the web server that the web page that referred us to this one is https://tryhackme.com
-
-Line 5: HTTP requests always end with a blank line to inform the web server that the request has finished.
-
-U can find more the anything else about the request in [HTTP Header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)
+For a deeper dive into request parameters, refer to the official documentation on [HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers).
 
 Example Response:
 
@@ -175,31 +184,28 @@ Content-Length: 98
 </html>
 ```
 
-To breakdown each line of the response:
+To break down each line of the HTTP response:
 
-Line 1: HTTP 1.1 is the version of the HTTP protocol the server is using and then followed by the HTTP Status Code in this case "200 Ok" which tells us the request has completed successfully.
-
-Line 2: This tells us the web server software and version number.
-
-Line 3: The current date, time and timezone of the web server.
-
-Line 4: The Content-Type header tells the client what sort of information is going to be sent, such as HTML, images, videos, pdf, XML.
-
-Line 5: Content-Length tells the client how long the response is, this way we can confirm no data is missing.
-
-Line 6: HTTP response contains a blank line to confirm the end of the HTTP response.
-
-Lines 7-14: The information that has been requested, in this instance the homepage.
- 
+- **Line 1:** Indicates the protocol version (`HTTP/1.1`) followed by the **HTTP Status Code** (in this case, `200 OK`), which confirms the request was processed successfully.
+- **Line 2:** The `Server` header identifies the software and version number powering the web server.
+- **Line 3:** The `Date` header provides the current timestamp and timezone of the server at the time of the response.
+- **Line 4:** The `Content-Type` header informs the client of the media type of the resource (e.g., `text/html`, `image/png`, `application/json`), ensuring the browser renders the data correctly.
+- **Line 5:** The `Content-Length` header specifies the size of the response body in bytes, allowing the client to verify that the entire payload was received.
+- **Line 6:** Similar to the request, the HTTP response includes a blank line (CRLF) to separate the headers from the message body.
+- **Lines 7–14:** The **Response Body**, containing the actual data requested (e.g., the HTML source code for the homepage). 
 ### HTTP Method
-4 Most Request to create API (REST-CRUD): GET - POST - PUT - DELETE
 
-- GET Request: This is used for getting information from a web server.
-- POST Request: This is used for submitting data to the web server and potentially creating new records
-- PUT Request: This is used for submitting data to a web server to update information
-- DELETE Request: This is used for deleting information/records from a web server.
-P/S: HTTP is not stopped with 4 methods above, it will include some other type. You can check it on the [documentation](https://en.wikipedia.org/wiki/HTTP)
+The four primary HTTP methods used to build RESTful APIs (CRUD operations) are:
+
+- **GET (Read):** Used to retrieve information or resources from a web server without modifying state.
+- **POST (Create):** Used to submit data to the server, typically resulting in the creation of a new record or resource.
+- **PUT (Update):** Used to send data to the server to update or replace an existing resource entirely.
+- **DELETE (Delete):** Used to remove specific information or records from the web server.
+
+> [!note]
+> HTTP extends beyond these four methods to include others such as `PATCH` (for partial updates), `HEAD`, and `OPTIONS`. For a comprehensive list, refer to the official [HTTP documentation](https://en.wikipedia.org/wiki/HTTP).
 ### HTTP Status Codes
+
 The first image is about range of a status code informing the client of the outcome of their request and also potentially how to handle it. These status codes can be broken down into 5 different ranges
 
 ![[Pasted image 20240219093157.png]]
@@ -207,65 +213,64 @@ The first image is about range of a status code informing the client of the outc
 Common HTTP Response Codes
 ![[Pasted image 20240219093310.png]]
 
-## What is DNS ?
+## DNS (Domain Name Server)
+
 *This below resource are refer with [THM (TryHackMe)](https://tryhackme.com)*
 
 ![[thumbnail-dns-resolver.png]]
-- DNS (Domain Name System) provides a simple way for us to communicate with devices on the internet without remembering complex numbers.
-- Every computer on the internet has its own unique address to communicate with it called an IP address.
-- An IP address looks like the following 104.26.10.229, 4 sets of digits ranging from 0 - 255 separated by a period.
-- DNS can help you go into website without remembering complex IP
 
+- **DNS (Domain Name System):** Acts as the internet's phonebook, providing a human-readable way to communicate with devices without needing to memorize complex numerical addresses.
+- **IP Address:** Every device connected to the internet is assigned a unique identifier known as an IP address. 
+- **Structure:** A standard IPv4 address (e.g., `104.26.10.229`) consists of four octets, with each set of digits ranging from `0` to `255`, separated by periods.
+- **Functionality:** DNS translates domain names (like `google.com`) into their corresponding IP addresses, allowing users to access websites using easy-to-remember names instead of raw numerical data.
 ### Domain Hierarchy
 
-<div align="center">
-	 <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--b9G6DenD--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.imgur.com/xOdVIPZ.png">
-    <strong><em><p style="text-align: center;"><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fdev.to%2Fblake%2Fdns-explained-hierarchy-and-architecture-18pj&psig=AOvVaw1djiJyDgb531mhnJU8-Z6Y&ust=1708398415738000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCKjqr5e2toQDFQAAAAAdAAAAABAR">DNS Explained. Hierarchy and Architecture - DEV Community</a></p></em></strong>
-</div>
+![[thumbnail-dns-hierarchy.png|center]]
 
-- **TLD (Top-Level Domain)**: A TLD is the most righthand part of a domain name (.com .vn .net). There are two types of TLD, gTLD (Generic Top Level) and ccTLD (Country Code Top Level Domain). And the TLD considerate about the purpose of each domain (.com: commercial, .org: organisation, etc or ccTLD .vn: vietnam). You can get a list of domains in [link](https://data.iana.org/TLD/tlds-alpha-by-domain.txt)
-- **Second-Level Domain**: Taking tryhackme.com as an example, the .com part is the TLD, and tryhackme is the Second Level Domain. When registering a domain name, the second-level domain is limited to 63 characters + the TLD and can only use a-z 0-9 and hyphens (cannot start or end with hyphens or have consecutive hyphens)
-- **Subdomain**:  A subdomain sits on the left-hand side of the Second-Level Domain using a period to separate it. Example you can see in lab [dnsindetail](https://tryhackme.com/room/dnsindetail)
+- **TLD (Top-Level Domain):** The TLD is the rightmost segment of a domain name (e.g., `.com`, `.vn`, `.net`). TLDs are categorized into two primary types:
+    - **gTLD (Generic Top-Level Domain):** Indicates the purpose of the domain, such as `.com` for commercial or `.org` for organizations.
+    - **ccTLD (Country Code Top-Level Domain):** Represents a specific geographical location or country, such as `.vn` for Vietnam.
+    - You can view the full authoritative list of TLDs at the [IANA database](https://data.iana.org/TLD/tlds-alpha-by-domain.txt).
+- **Second-Level Domain (SLD):** Using `tryhackme.com` as an example, `.com` is the TLD, and `tryhackme` is the SLD. When registering a domain, the SLD is limited to 63 characters (excluding the TLD) and may only contain alphanumeric characters (`a-z`, `0-9`) and hyphens. Hyphens cannot be placed at the beginning or end of the SLD, nor can they appear consecutively.
+- **Subdomain:** A subdomain is positioned to the left of the Second-Level Domain, separated by a period. For example, in `blog.tryhackme.com`, `blog` acts as the subdomain. You can explore this further in the [DNS in Detail](https://tryhackme.com/room/dnsindetail) lab.
 
-▶️ ▶️  **You can knowing the construct is `https:// subdomain.Second-Level Domain .TLD`**
+>[!note]
+>You can knowing the construct is `https://subdomain.second-level.TLD`
 ### Record Types 
 
-<div align="center">
-	 <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/All_active_dns_record_types.png">
-    <strong><em><p style="text-align: center;"><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FList_of_DNS_record_types&psig=AOvVaw0ZzFXHDlMVmlxRy2e2hFtA&ust=1708398715064000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCJi8mKa3toQDFQAAAAAdAAAAABAR">List of DNS record types - Wikipedia</a></p></em></strong>
-</div>
+![[thumbnail-dns-record.png]]
 
-- DNS isn't just for websites though, and multiple types of DNS record exist. We'll go over some of the most common ones that you're likely to come across.
-- **A Record**: These records resolve to IPv4 addresses, for example 104.26.10.229
-- **AAAA Record**: These records resolve to IPv6 addresses, for example 2606:4700:20::681a:be5
-- **CNAME Record**: These records resolve to another domain name, for example, TryHackMe's online shop has the subdomain name store.tryhackme.com which returns a CNAME record shops.shopify.com. Another DNS request would then be made to shops.shopify.com to work out the IP address.
-- **MX Record**: These records resolve to the address of the servers that handle the email for the domain you are querying, for example an MX record response for tryhackme.com would look something like alt1.aspmx.l.google.com. These records also come with a priority flag. This tells the client in which order to try the servers, this is perfect for if the main server goes down and email needs to be sent to a backup server.
-- **TXT Record**: TXT records are free text fields where any text-based data can be stored. TXT records have multiple uses, but some common ones can be to list servers that have the authority to send an email on behalf of the domain (this can help in the battle against spam and spoofed email). They can also be used to verify ownership of the domain name when signing up for third party services.
-
+- DNS serves more than just websites; it utilizes various record types to handle different networking tasks. Below are the most common DNS records encountered in DevOps and Systems Administration:
+- **A Record**: Maps a domain name directly to an **IPv4** address (e.g., `104.26.10.229`).
+- **AAAA Record**: Maps a domain name to an **IPv6** address (e.g., `2606:4700:20::681a:be5`).
+- **CNAME Record**: (Canonical Name) Forwards a domain or subdomain to another domain name rather than an IP. For instance, `store.tryhackme.com` might resolve to `shops.shopify.com`, triggering a subsequent lookup to find the final IP address.
+- **MX Record**: (Mail Exchanger) Directs email to the specific servers responsible for the domain's mail delivery (e.g., `alt1.aspmx.l.google.com`). These records include a **priority value**, instructing mail servers on the preference order for delivery, which is essential for failover and redundancy.
+- **TXT Record**: A flexible text field used to store machine-readable data. Common use cases include **SPF (Sender Policy Framework)** to prevent email spoofing and domain ownership verification for third-party SaaS integrations.
 ### Making A Request
-**What happens when you make a DNS request**
 
-<div align="center">
-	 <img src="https://miro.medium.com/v2/resize:fit:1400/1*u_AlfgDpaYdJvwoJvdGnvQ.png">
-    <strong><em><p style="text-align: center;"><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcclements3150.medium.com%2Fwhat-happens-when-you-visit-a-web-page-e407a38db95f&psig=AOvVaw3r85usutoXRLQjihNRi4hP&ust=1708399094981000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCMizvtu4toQDFQAAAAAdAAAAABAa">What happens when you visit a web page. | by Carter C | Medium</a></p></em></strong>
-</div>
+![[thumbnail-what-happen-visit-website.png]]
 
-- When you request a domain name, your computer first checks its local cache to see if you've previously looked up the address recently; if not, a request to your Recursive DNS Server will be made.
-- A Recursive DNS Server is usually provided by your ISP, but you can also choose your own. This server also has a local cache of recently looked up domain names. If a result is found locally, this is sent back to your computer, and your request ends here (this is common for popular and heavily requested services such as Google, Facebook, Twitter). If the request cannot be found locally, a journey begins to find the correct answer, starting with the internet's root DNS servers.
-- The root servers act as the DNS backbone of the internet; their job is to redirect you to the correct Top Level Domain Server, depending on your request. If, for example, you request www.tryhackme.com, the root server will recognise the Top Level Domain of .com and refer you to the correct TLD server that deals with .com addresses.
-- The TLD server holds records for where to find the authoritative server to answer the DNS request. The authoritative server is often also known as the nameserver for the domain. For example, the name server for tryhackme.com is kip.ns.cloudflare.com and uma.ns.cloudflare.com. You'll often find multiple nameservers for a domain name to act as a backup in case one goes down.
-- An authoritative DNS server is the server that is responsible for storing the DNS records for a particular domain name and where any updates to your domain name DNS records would be made. Depending on the record type, the DNS record is then sent back to the Recursive DNS Server, where a local copy will be cached for future requests and then relayed back to the original client that made the request. DNS records all come with a TTL (Time To Live) value. This value is a number represented in seconds that the response should be saved for locally until you have to look it up again. Caching saves on having to make a DNS request every time you communicate with a server.
+- **Local Cache**: When you request a domain, your operating system first inspects its local DNS cache for a recent entry. If no valid record is found, the request is forwarded to a **Recursive DNS Resolver**.
+- **Recursive DNS Resolver**: Typically managed by your ISP or a public provider (like Cloudflare or Google), this server also maintains a cache. If the record exists there—common for high-traffic sites like Google or GitHub—it is returned immediately. If not, the resolver initiates a hierarchical lookup starting at the **Root Nameservers**.
+- **Root Nameservers**: These serve as the internet's DNS backbone. They do not hold specific IP addresses but instead direct the resolver to the appropriate **Top-Level Domain (TLD) Server** based on the extension (e.g., `.com`, `.io`, `.net`).
+- **TLD Nameservers**: The TLD server manages registry information for its specific suffix. It points the resolver toward the **Authoritative Nameserver** (often managed by a DNS provider like Route 53 or Cloudflare) responsible for the specific domain.
+- **Authoritative Nameserver**: This is the final authority that holds the actual DNS records (A, CNAME, etc.). It provides the requested data back to the Recursive Resolver.
+- **TTL and Caching**: Once the Recursive Resolver receives the record, it caches the result for a duration defined by the **TTL (Time To Live)**—a value in seconds. It then delivers the final answer to the client. This caching mechanism significantly reduces latency and network overhead for subsequent requests.
+## Cookies 
 
-## What cookies 
+- **Data Storage**: Cookies are small fragments of data stored locally on the client's machine (the web browser).
+- **Initialization**: A cookie is established when the web server includes a `Set-Cookie` header in its HTTP response.
+- **State Management**: Since HTTP is a **stateless** protocol—meaning it does not natively retain data between different request-response cycles—cookies serve as a persistence mechanism.
+- **Session Continuity**: For every subsequent request, the browser automatically attaches the stored cookie data back to the server. This allows the server to recognize the user, maintain session states, persist personalized settings, or track user activity across the site.
 
-- They're just a small piece of data that is stored on your computer.
-- Cookies are saved when you receive a "Set-Cookie" header from a web server.
-- Then every further request you make, you'll send the cookie data back to the web server. Because HTTP is stateless (doesn't keep track of your previous requests), cookies can be used to remind the web server who you are, some personal settings for the website or whether you've been to the website before.
 ![[Pasted image 20240219102512.png]]
 
-**Cookies can be used for many purposes but are most commonly used for website authentication. The cookie value won't usually be a clear-text string where you can see the password, but a token (unique secret code that isn't easily humanly guessable).**
+> [!note]
+> While cookies serve various functions, their primary use case is **Web Authentication**. Instead of storing sensitive credentials like passwords in plaintext, cookies typically store a **Session Token**—a unique, cryptographically secure identifier that is difficult to guess or forge.
 
-### Viewing Your Cookies
+You can easily inspect the cookies your browser transmits to a website using built-in **Browser Developer Tools**. 
 
-- You can easily view what cookies your browser is sending to a website by using the developer tools, in your browser. If you're not sure how to get to the developer tools in your browser, click on the "View Site" button at the top of this task for a how-to guide.
-- Once you have developer tools open, click on the "Network" tab. This tab will show you a list of all the resources your browser has requested. You can click on each one to receive a detailed breakdown of the request and response. If your browser sent a cookie, you will see these on the "Cookies" tab of the request.
+1.  **Open Developer Tools**: Open the tools and navigate to the **Network** tab. 
+2.  **Capture Traffic**: This tab logs every resource requested by your browser. Refresh the page to see the activity.
+3.  **Inspect Headers**: Select a specific network request to view its detailed breakdown.
+4.  **View Cookies**: If a cookie was included in the transaction, you can find the specific data under the **Cookies** sub-tab or within the **Request Headers** section.

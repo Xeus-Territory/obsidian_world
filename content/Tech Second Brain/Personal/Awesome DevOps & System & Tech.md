@@ -6,6 +6,7 @@ tags:
   - cloud-services
   - awesome
 ---
+
 # Awesome Tech Repository
 
 ![[meme-great-power-great-responsibility.png|center]]
@@ -17,6 +18,7 @@ tags:
 - [DevOps Bash Tools](https://gitlab.com/HariSekhon/DevOps-Bash-tools):  DevOps Bash Scripts Collection 🌟 **(Recommended)**
 - [Devops Exercises](https://github.com/bregman-arie/devops-exercises): For who want to start with DevOps journey
 - [DevOps-Roadmap](https://github.com/milanm/DevOps-Roadmap): DevOps Roadmap with learning resources. contents by Milan **(Legit Recommend)**
+- [Google SRE](https://sre.google/): Resource of Google for let you learn to become SRE with free resources, video, books and moreover stuff like that 🌟 **(Recommended)**
 ## General
 
 - [awesome-for-beginners](https://github.com/MunGell/awesome-for-beginners) : A list of awesome beginners-friendly projects.
@@ -114,6 +116,7 @@ tags:
 
 - [3os Project](https://3os.org/) - Collocation of technical documentation and guides for devops, developers, pentesters, systems administrators and other IT professionals.
 - [Alibaba Cloud](https://www.alibabacloud.com/blog/): The blog page of Alibaba that provides a great insightful, diverse topics and great articles to approach 🌟 **(Recommended)**
+- [Cloud Native Deep Dive](https://www.cloudnativedeepdive.com/) - Blog of Michael Levan, an independent DevOps and Cloud consultant 🌟 **(Recommended)**
 - [Digital Ocean Community](https://www.digitalocean.com/community) - Community offers thousands of tutorials, videos, and answers to questions on a wide range of topics
 - [DZone](https://dzone.com/) - one of the world's largest online communities and leading publisher of knowledge resources for software engineering professionals
 - [Hackaday](https://hackaday.com/) - Fresh Hacks Every Day
@@ -124,14 +127,12 @@ tags:
 - [Medium - Jake Page](https://medium.com/@jake.page91) - Kubernetes Deployment Specialist @ Glasskube
 - [Medium - Mr.PlanB](https://medium.com/@PlanB.) - Write about Kubernetes, Promox, Homelab topics 🌟 **(Recommended)**
 - [Medium - Romaric Philogène](https://medium.com/@rphilogene) - Write about IDP, Kubernetes and techs
-- [News Ycombinator](https://news.ycombinator.com/news) - Multiple discussion around tech articles in the internet
-- [NVIDIA Documentation Hub](https://docs.nvidia.com/): Get started by exploring the latest technical information and product documentation
-- [Opensource.com](https://opensource.com/) - Community talk about Opensource - powered by Red Hat
-- [StackExchange](https://stackexchange.com/sites) - StackOverFlow Ecosystem
-- [Trang chủ » AnonyViet](https://anonyviet.com/) - Vietnamese Community who teaching multiple techniques on Computer
+- [News Ycombinator](https://news.ycombinator.com/news) - Multiple discussion around tech articles in the internet 🌟 **(Recommended)**
+- [NVIDIA Developer Blog](https://developer.nvidia.com/blog/): Get started by exploring the latest technical information and product documentation of Nvidia
+- [Red Hat Developer Blog](https://developers.redhat.com/blog) - Blog Platform of RedHat for publishing new and articles about technologies 🌟 **(Recommended)**
+- [TheNewStack](https://thenewstack.io/) - A great blog with new update articles about tech, system-architecture, ai and moreover stuff 🌟 **(Recommended)**
+- [AnonyViet](https://anonyviet.com/) - Vietnamese Community who teaching multiple techniques on Computer 🌟 **(Recommended)**
 - [XDA Forums](https://forum.xda-developers.com/) - Valuable resource for people who want to make the most of their mobile devices, from customizing the look and feel to adding new functionality.
-- [TheNewStack](https://thenewstack.io/) - A great blog with new update articles about tech, system-architecture, ai and moreover stuff
-- [Cloud Native Deep Dive](https://www.cloudnativedeepdive.com/) - Blog of Michael Levan, an independent DevOps and Cloud consultant 🌟 **(Recommended)**
 ## Youtube Channel
 
 ![[youtube.png]]
@@ -156,7 +157,7 @@ tags:
 - [Tony Teaches Tech ](https://www.youtube.com/c/TonyTeachesTech/featured): Guy teach everything technical
 - [Travis Media](https://www.youtube.com/@TravisMedia/videos): Guy involve multiple topics around technologies
 - [Viet Tran](https://www.youtube.com/@Viet100/videos): Certificate guiding and software engineer for basic knowledge (Vietnamese) 🌟 **(Recommended)**
-# Tech Articles
+# Technologies Articles
 
 >[!note]
 >Collections articles about DevOps, System Design and moreover about technologies and opensource 
@@ -181,33 +182,34 @@ tags:
 - [Blog - Obsidian: the Good, the Bad, & the Ugly](https://www.originalmacguy.com/obsidian-the-good-the-bad-the-ugly/)
 - [Pinggy - Top 10 Ngrok alternatives in 2025](https://pinggy.io/blog/best_ngrok_alternatives/)
 - [Inifisical - Top-10 Secrets Management Tools in 2025](https://infisical.com/blog/best-secret-management-tools)
-# Tech Research Sheet
+# Research Articles & Resources
 
-## Articles
+> [!note]
+> These are the topics I am currently focused on, conducting deep-dive research and inspections to build the foundational knowledge required for future implementation and architectural design.
 
->[!note]
->Topics which I concern about and do more inspect and research about them to provide knowledge for doing something around them in future
+## Network Protocols
 
 - [Visualizing Network Topologies: Zero to Hero in Two Days](https://habr.com/en/articles/534716/)
 - [HTTP/3 From A To Z: Core Concepts — Smashing Magazine](https://www.smashingmagazine.com/2021/08/http3-core-concepts-part1/)
 - [Using HTTP/3 in gRPC – Unnie Ayilliath](https://unnieayilliath.com/2023/02/19/using-http-3-in-grpc/)
+- [Medium - The Past and Present of Browser Architecture](https://levelup.gitconnected.com/the-past-and-present-of-browser-architecture-522c65d1c2cd)
+## Programming Language
+
 - [C++ An Entity-Component-System From Scratch — Coding With Thomas](https://www.codingwiththomas.com/blog/an-entity-component-system-from-scratch)
 - [TCMalloc : Thread-Caching Malloc](https://gperftools.github.io/gperftools/tcmalloc.html#runtime)
 - [A Simple Entity Component System (ECS) C++ - Austin Morlan](https://austinmorlan.com/posts/entity_component_system/?fbclid=IwAR26jehCQUQEzVmm_shLMhtG1dePD7AYoPQQBtm4GJoUqaNcFrW8JGYDCiY)
-- [Medium - The Past and Present of Browser Architecture](https://levelup.gitconnected.com/the-past-and-present-of-browser-architecture-522c65d1c2cd)
 - [Medium - Embedding Python in Go](https://poweruser.blog/embedding-python-in-go-338c0399f3d5F)
-## Documentation
+- [YAML Ain’t Markup Language (YAML™) version 1.2](https://yaml.org/spec/1.2.2/)
+## Internet Standard
 
 - [Wikipedia - Worldwide exchange and communication of date and time-related data - ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)
-- [YAML Ain’t Markup Language (YAML™) version 1.2](https://yaml.org/spec/1.2.2/)
-- [Enable CORS](https://enable-cors.org/index.html)
-## Papers
+## WebAssembly
 
 - [MDPI - An Overview of WebAssembly for IoT: Background, Tools, State-of-the-Art, Challenges, and Future Directions](https://www.mdpi.com/1999-5903/15/8/275)
-## Research and Paper Pages
+## Research & Paper Pages
 
->[!note]
->Place where you can find multiple documentation and papers about technologies in multiple topics from DevOps, Tech and AI
+> [!note]
+> A comprehensive repository containing documentation and white papers covering a broad spectrum of technologies, ranging from DevOps and Infrastructure to Emerging Tech and AI.
 
 - [arXiv.org](https://arxiv.org/): e-Print archive 🌟 **(Recommended)**
 - [MDPI](https://www.mdpi.com/): A pioneer in scholarly, open access publishing, MDPI has supported academic communities
@@ -217,8 +219,7 @@ tags:
 - [The Pattern Languages of Programs archives](https://hillside.net/index.php/past-plop-conferences): Hundreds of patterns are generated yearly in conferences alone, not to mention books and software engineering websites.
 # DevOps & Useful Tools
 
->[!note]
->Collections a supper cool and powerful tools for multiple purpose attaching with DevOps
+![[thumbnail-devops.png]]
 ## Generated / Validate Configuration
 
 - [checkov](https://github.com/bridgecrewio/checkov): Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as code, container images and open source packages
@@ -231,19 +232,9 @@ tags:
 - [Pulumi](https://github.com/pulumi/pulumi): Infrastructure as Code in any programming language 🚀 🌟 **(Recommended)**
 - [Packer](https://developer.hashicorp.com/packer/docs?product_intent=packer): Create identical machine images for multiple platforms from a single source configuration 🌟 **(Recommended)**
 - [Vagrant](https://developer.hashicorp.com/vagrant/docs) : Vagrant is the command line utility for managing the lifecycle of virtual machines 🌟 **(Recommended)**
-## Pre-commit
-
-- [pre-commit](https://github.com/pre-commit/pre-commit): A framework for managing and maintaining multi-language pre-commit hooks. 🌟 **(Recommended)**
-- [pre-commit-hooks](https://github.com/pre-commit/pre-commit-hooks): Some out-of-the-box hooks for pre-commit
-- [husky](https://github.com/typicode/husky): Git hooks made easy 🐶 woof!
 ## SSL / DNS
 
-- [acme.sh](https://github.com/acmesh-official/acme.sh): A pure Unix shell script implementing ACME client protocol
+- [acme.sh](https://github.com/acmesh-official/acme.sh): A pure Unix shell script implementing ACME client protocol 🌟 **(Recommended)**
 - [certbot](https://github.com/certbot/certbot): Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server. 🌟 **(Recommended)**
 - [cloudflare-ddns](https://github.com/timothymiller/cloudflare-ddns): 🎉🌩️ Dynamic DNS (DDNS) service based on Cloudflare! Access your home network remotely via a custom domain name without a static IP!
 - [ddns-updater](https://github.com/qdm12/ddns-updater): Container to update DNS records periodically with WebUI for many DNS providers
-- [moz://a SSL Configuration Generator](https://ssl-config.mozilla.org/) : SSL Generation for multiple webserver
-## Secret Managements
-
-- [sops](https://getsops.io/) : Simple and flexible tool for managing secrets 🌟 **(Recommended)**
-- [trufflehog](https://github.com/trufflesecurity/trufflehog): Find, verify, and analyze leaked credentials.w

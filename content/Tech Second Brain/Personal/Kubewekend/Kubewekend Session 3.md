@@ -514,7 +514,6 @@ So with [container runtime](https://kubernetes.io/docs/setup/production-environm
 - [Mirantis Container Runtime](https://kubernetes.io/docs/setup/production-environment/container-runtimes/#mcr)
 
 With `kind`, we actually use `docker` runtime because to operating `kubernetes` with `kind` you need docker to bring up, and this is reason why `kind` use this one for runtime
-
 ### Another components
 
 ![[Pasted image 20240715092952.png]]
@@ -607,7 +606,7 @@ You can explore more about how the workflow inside `kubernetes` via some cool ar
 
 # Conclusion
 
-![[meme-run-k8s.png|500]]
+![[meme-run-k8s.png|center|400]]
 
 >[!done]
 >That all for this session, I know that is a lot but not enough, i probably for sure 100%. But I am completely the walkthrough about general `kubernetes`, and know about how of each component submit a role and operate. To more understand, you need actually practice and play with `kubernetes` to gain experience and knowledge, that shorten way for learning about `kubernetes`

@@ -7,6 +7,7 @@ tags:
   - azure
   - azure-devops
 ---
+
 >[!quote]
 >Hello @all, It me again probably 😄. Today I want to continue contribute the way to bundle and build completely application mobile which can ready to delivery to another platform, such as **Google Play (Android)** or **App Store (IOS)**
 

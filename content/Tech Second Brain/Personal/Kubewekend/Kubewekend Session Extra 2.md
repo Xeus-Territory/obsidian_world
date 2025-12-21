@@ -383,7 +383,78 @@ There are several ways to manage GPUs with RKE2 or Kubernetes in general, but fr
 Setup only [NVIDIA Operator](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/index.html), it's totally contain all what you need for kubernetes work with your GPU via [device-plugin](https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/device-plugins/). You can install that via multiple ways
 
 - [ArtifactHub](https://artifacthub.io/packages/helm/gpu-operator/gpu-operator) and [Helm Chart](https://github.com/NVIDIA/gpu-operator/tree/main/deployments/gpu-operator) --> [Installation Guide](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/getting-started.html)
-- [Manifest](https://docs.rke2.io/advanced#operator-installation) - Defined by `RKE2`
+- [GPU Operators Installation](https://docs.rke2.io/add-ons/gpu_operators) - Defined by `RKE2`
+
+To installation as `helm` method, you can follow these steps
+
+1. Add `helm` repo and update new one
+
+```bash
+helm repo add nvidia https://helm.ngc.nvidia.com/nvidia \
+    && helm repo update
+```
+
+2. Install GPU Operator
+
+>[!note]
+>You can choose what ever version you want, but if you don't set anyone, it will try to install the newest
+
+For my experience, I will install GPU Operator at version [Version v25.10.0](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/25.10/release-notes.html#v25-10-0) with couple new features. The step below will be installed GPU Operator in `gpu-operator` namespace with default configuration
+
+```bash
+helm install --wait --generate-name \
+    -n gpu-operator --create-namespace \
+    nvidia/gpu-operator \
+    --version=v25.10.0
+```
+
+But if you want to delve more into the advantage configuration, I will recommend you to read more options at 
+
+- [Common Chart Customization Options](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/getting-started.html#common-chart-customization-options)
+- [Running a Custom Driver Image](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/getting-started.html#running-a-custom-driver-image)
+- [Specifying Configuration Options for containerd](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/getting-started.html#specifying-configuration-options-for-containerd)
+
+With RKE2 Kubernetes, you need to change the some containerd location because this type of cluster have own stuff `containerd` at PATH `/var/lib/rancher/rke2` so why you can modify the `toolkit.env` for compatible
+
+- `CONTAINERD_CONFIG`: The path on the host to the top-level `containerd` config file. Default at `/etc/containerd/containerd.toml`
+- `CONTAINERD_SOCKET`: The path on the host to the socket file used to communicate with `containerd`. Default at `/run/containerd/containerd.sock`
+
+Others options, you will also have
+
+- `RUNTIME_CONFIG_SOURCE`: Container-toolkit uses when fetching the current containerd configuration
+- `RUNTIME_DROP_IN_CONFIG`: The path on the host where the NVIDIA-specific drop-in config file will be created. Default at `/etc/containerd/conf.d/99-nvidia.toml`
+
+```bash
+helm install gpu-operator -n gpu-operator --create-namespace \
+  nvidia/gpu-operator $HELM_OPTIONS \
+    --version=v25.10.0 \
+    --set toolkit.env[0].name=CONTAINERD_CONFIG \
+    --set toolkit.env[0].value=/etc/containerd/containerd.toml \
+    --set toolkit.env[1].name=CONTAINERD_SOCKET \
+    --set toolkit.env[1].value=/run/containerd/containerd.sock \
+    --set toolkit.env[2].name=RUNTIME_CONFIG_SOURCE \
+    --set toolkit.env[2].value="command, file"
+```
+
+>[!note]
+>So why with RKE2, you need to set up with
+>- `CONTAINERD_CONFIG`: `/var/lib/rancher/rke2/agent/etc/containerd/config.toml`
+>- `CONTAINERD_SOCKET`: `/run/k3s/containerd/containerd.sock`
+>```bash
+>helm install --wait gpu-operator
+-n gpu-operator --create-namespace
+--set toolkit.env[0].name=CONTAINERD_CONFIG
+--set toolkit.env[0].value=/var/lib/rancher/k3s/agent/etc/containerd/config.toml
+--set toolkit.env[1].name=CONTAINERD_SOCKET
+--set toolkit.env[1].value=/run/k3s/containerd/containerd.sock
+--set toolkit.env[2].name=CONTAINERD_RUNTIME_CLASS
+--set toolkit.env[2].value=nvidia
+--set toolkit.env[3].name=CONTAINERD_SET_AS_DEFAULT
+--set-string toolkit.env[3].value=true
+nvidia/gpu-operator
+>```
+
+Read more about this issue and configuration at [GitHub - Problem installing gpu-operator on rke2](https://github.com/NVIDIA/gpu-operator/issues/522)
 
 >[!warning]
 >This version is including multiple things in there, so read configuration carefully and install because your Kubernetes can break out by this one with that contain so stuff to change your `Containerd` configure of RKE2
@@ -403,9 +474,9 @@ You might encounter the [Issue - Failed to initialize NVML: Unknown Error](https
           value: "true"
 ```
 
-BTW, At last to operate GPU Operator successfully, you will have fullstack of Nvidia ecosystem in Kubernetes, including these pods with several purpose
+BTW, lasty you will operate **GPU Operator** successfully, and have fullstack of **NVIDIA Ecosystem in Kubernetes**, including these pods with several purpose
 
-```bash
+```bash {2-6,9-14}
 NAME                                                              READY   STATUS      RESTARTS   AGE
 gpu-feature-discovery-2vrtr                                       1/1     Running     0          21h
 gpu-operator-1763710819-node-feature-discovery-gc-547cdf99sbw5j   1/1     Running     0          21h
@@ -436,7 +507,7 @@ nvidia-operator-validator-x4mcw                                   1/1     Runnin
 
 You can Install [HAMI Helm Chart](https://project-hami.io/docs/installation/online-installation) for support virtualization GPU inside Kubernetes environment **(NOTE: If you want to use GPU efficiency, you need to think about HAMI in your techstack)**, HAMI will create own concept to work as `device-plugin` and `scheduler` for Kubernetes communicate with GPU
 
-Before starting installation HAMI with `helm`, you should install some prerequisites of HAMI, such as `nvidia-container-toolkit`
+Before starting installation HAMI with `helm`, you should install some prerequisites of HAMI, such as `nvidia-container-toolkit`. Check more about installation at [Installing the NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
 
 ```bash
 distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
@@ -610,16 +681,17 @@ resources:
 
 ![[meme-long-time-no-see.png|center]]
 
-This update come from my new provisioning for Kubernetes, I need to be confirm it doesn't focus on RKE2 but I use several hosting with managed Kubernetes, and let's say I try to reproduce and figure out how can we combine these one but doesn't need separate them into two different `containerd` like I told
+>[!note]
+>This update stems from new provisioning work for Kubernetes. The focus is not on RKE2, as I am using various **managed Kubernetes offerings** from cloud providers. The goal is to successfully combine the functionality of HAMi and the NVIDIA GPU Operator without needing to separate them into distinct `containerd` setups, unlike what might be required with RKE2.
 
-In this experiment, I will use latest version of both HAMi and Nvidia GPU Operator
+In this experiment, I am utilizing the latest versions of both HAMi and the NVIDIA GPU Operator:
 
-- HAMi: [Version 2.7.1](https://github.com/Project-HAMi/HAMi/tree/master/charts/hami)
-- GPu Operator: [Version v25.10.0](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/25.10/release-notes.html#v25-10-0)
+* **HAMi:** [Version 2.7.1](https://github.com/Project-HAMi/HAMi/tree/master/charts/hami)
+* **GPU Operator:** [Version v25.10.0](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/25.10/release-notes.html#v25-10-0)
 
-Why I figure out that thing, because when I look up into `nvidia-container-tookit` and I see that mount the `/etc/containerd` configuration directory into pods, and try managing them. In the situation, RKE2  is mainly different but if you use managed Kubernetes of Cloud Provider, maybe I confirm that will use **containerd** in host with `/etc/containerd`.  When I reach to deeply in configuration directory, I found it will save in `/etc/containerd/conf.d/99-nvidia.toml` with pretty multiple definition about runtime instead of `runc`, including `nvidia`, `nvidia-cdi` and `nvidia-legacy`, so I can say that provide great option to run with `HAMi`, but most of us missing the stuff related around `runtimeclass` in Kubernetes
+I identified the potential for shared configuration because the `nvidia-container-toolkit` mounts and manages the `/etc/containerd` configuration directory within its pods. In a managed Kubernetes environment, it is highly likely that the host uses **containerd** and the configuration directory is indeed `/etc/containerd`. Upon deeper inspection of the configuration directory, I found that the settings are saved in `/etc/containerd/conf.d/99-nvidia.toml`. This file defines multiple runtimes beyond the default `runc`, including `nvidia`, `nvidia-cdi`, and `nvidia-legacy`. This variety of runtimes suggests a high degree of compatibility with solutions like **HAMi**. However, a critical piece often overlooked is the corresponding **`RuntimeClass`** definition in Kubernetes.
 
-When you deploy the `GPU Operator`, you will have couple of runtime class to definition, you can double-check them with command
+When you deploy the `GPU Operator`, it defines several `RuntimeClass` objects. You can verify these definitions using the following command:
 
 ```bash
 kubectl get runtimeclasses.node.k8s.io
@@ -714,7 +786,7 @@ spec:
 
 For inference task, I usually use [Kokoro FastAPI - TTS Model](https://github.com/remsky/Kokoro-FastAPI) to implement the deployment for testing with Kubernetes with great API, UI and using the new Pytorch Framework. You can apply this with manifest below
 
-	```bash title="gpu-deployment.yaml"
+```bash title="gpu-deployment.yaml"
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -749,7 +821,7 @@ spec:
           limits:
             # Give it 1 GPU with 5GB vRAM
             hami.nvidia.com/gpu: 1 # requesting 1 vGPUs
-            hami.nvidia.com/gpumem: 5000 # Each vGPU contains 10240m device memory （Optional,Integer)
+            hami.nvidia.com/gpumem: 5000 # Each vGPU contains 49152m device memory （Optional,Integer)
             memory: 5Gi
 ```
 

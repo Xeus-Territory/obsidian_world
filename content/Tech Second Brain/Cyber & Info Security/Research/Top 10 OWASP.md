@@ -1,9 +1,10 @@
 ---
-title: Top 10 OWASP
+title: Cyber 101 Session 6 - Top 10 OWASP
 tags:
   - fundamentals
   - infosec
 ---
+
 ## OSWAP Top 10 
 
 ![[icon-owasp.png]]
@@ -27,7 +28,8 @@ tags:
 8. Insecure Deserialization
 9. Components with Known Vulnerabilities
 10. Insufficent Logging & Monitoring
-## INJECTION
+## Injection
+
 ![](https://cdn.acunetix.com/wp_content/uploads/2020/01/html-injection-910x478.png)
 ### Define: 
 - Injection flaws are very common in applications today. These flaws occur because user controlled input is interpreted as actual commands or parameters by the application. Injection attacks depend on what technologies are being used and how exactly the input is interpreted by these technologies.

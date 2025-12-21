@@ -1,5 +1,5 @@
 ---
-title: Content Discovery
+title: Cyber 101 Session 4 - Content Discovery
 tags:
   - fundamentals
   - infosec
@@ -21,7 +21,7 @@ QUIZ: Access the website via IP address and get disallow result: /staff-portal
 
 - Favicon: The favicon is a small icon displayed in the browser's address bar or tab used for branding a website.
 - Sometimes when frameworks are used to build a website, a favicon that is part of the installation gets leftover, and if the website developer doesn't replace this with a custom one, this can give us a clue on what framework is in use.
-- OWASP host a database of common framework icons [icon_framework](https://wiki.owasp.org/index.php/OWASP_favicon_database)
+- OWASP host a database of common framework icons
 
 **Once we know the framework stack, we can use external resources to discover more about it**
 
