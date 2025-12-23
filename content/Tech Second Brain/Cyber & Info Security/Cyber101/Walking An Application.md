@@ -2,7 +2,7 @@
 tags:
   - fundamentals
   - infosec
-title: Cyber 101 Session 2 - Walking An Application
+title: Cyber101 Session 2 - Walking An Application
 ---
 
 > [!quote]

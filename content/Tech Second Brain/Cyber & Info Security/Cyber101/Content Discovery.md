@@ -1,5 +1,5 @@
 ---
-title: Cyber 101 Session 4 - Content Discovery
+title: Cyber101 Session 4 - Content Discovery
 tags:
   - fundamentals
   - infosec

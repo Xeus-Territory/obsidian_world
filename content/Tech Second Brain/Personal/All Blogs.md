@@ -270,19 +270,19 @@ tags:
 - [Hackwekend Session 4 - Cloud Security (AWS EKS)](https://hackmd.io/@XeusNguyen/H1sUc3CB6) - Session is about AWS EKS Security, Vulnerable in K8s Cluster and Play CTF to figuring out what should need protected (EKS Cluster Game prod by Wiz.io)
 - [Hackwekend Session 5 - Cloud Security (AWS IAM Policy)](https://hackmd.io/@XeusNguyen/HkjGUFw-C) - Session is about AWS IAM, How to authentication or bypass methodology to read and list contents inside the S3 bucket, learn more about `sns`, `sqs`, `cognito` services of AWS Cloud (Big IAM prod by Wiz.io)
 - [Hackwekend Session 6 - Cloud Security (Network and Red Team)](https://hackmd.io/@XeusNguyen/ByLqkK1zC) - Session is about more than cloud security, but more approach to networking and red team methodology to recon, attack the target with unique way like `lateral movement`, `nfs`, `tcpdump`, `dnscan` and `istio`, `kyverno` on `kubernetes` ( K8slan prod by Wiz.io)
-## Cyber 101
+## Cyber101
 
 >[!info]
 >Learn the fundamental knowledge about the internet, web-browser to get start into Information Security and also Cyber Security
 
 **Timeline: 2023 - Current**
 
-- [[Web fundamentals|Cyber 101 Session 1 - Web Fundamentals]]: Explores the foundational technologies of the World Wide Web, including HTTP/S, request/response lifecycles, and core web components.
-- [[Walking An Application|Cyber 101 Session 2 - Walking An Application]]: Covers methodologies for manually exploring a target application using built-in browser developer tools (Chrome, Firefox, or Brave) to analyze client-side logic.
-- [[Authentication Bypass|Cyber 101 Session 3 - Authentication Bypass]]: Focuses on identifying and exploiting flaws in authentication mechanisms to gain unauthorized access to protected resources.
-- [[Content Discovery|Cyber 101 Session 4 - Content Discovery]]: Introduces techniques and tools for uncovering hidden files, directories, and assets within a target web application.
-- [[Subdomain Enumeration|Cyber 101 Session 5 - Subdomain Enumeration]]: Details the process of identifying valid subdomains to map out a target's full attack surface through OSINT, DNS analysis, and VHost fuzzing.
-- [[Top 10 OWASP|Cyber 101 Session 6 - Top 10 OWASP]]: An in-depth look at the OWASP Top 10, the industry-standard framework for the most critical web application security risks.
+- [[Web fundamentals|Cyber101 Session 1 - Web Fundamentals]]: Explores the foundational technologies of the World Wide Web, including HTTP/S, request/response lifecycles, and core web components.
+- [[Walking An Application|Cyber101 Session 2 - Walking An Application]]: Covers methodologies for manually exploring a target application using built-in browser developer tools (Chrome, Firefox, or Brave) to analyze client-side logic.
+- [[Authentication Bypass|Cyber101 Session 3 - Authentication Bypass]]: Focuses on identifying and exploiting flaws in authentication mechanisms to gain unauthorized access to protected resources.
+- [[Content Discovery|Cyber101 Session 4 - Content Discovery]]: Introduces techniques and tools for uncovering hidden files, directories, and assets within a target web application.
+- [[Subdomain Enumeration|Cyber101 Session 5 - Subdomain Enumeration]]: Details the process of identifying valid subdomains to map out a target's full attack surface through OSINT, DNS analysis, and VHost fuzzing.
+- [[Top 10 OWASP|Cyber101 Session 6 - Top 10 OWASP]]: An in-depth look at the OWASP Top 10, the industry-standard framework for the most critical web application security risks.
 ## Vulnerable Research
 
 >[!info]

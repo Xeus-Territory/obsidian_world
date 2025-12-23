@@ -1,13 +1,12 @@
 ---
-title: Cyber 101 Session 3 - Authentication Bypass
+title: Cyber101 Session 3 - Authentication Bypass
 tags:
   - infosec
   - fundamentals
 ---
 
 >[!info]
-*Website authentication methods can be bypassed, defeated or broken. These vulnerabilities can be some of the most critical as it often ends in leaks of customers personal data.*
-==> Do some research on this session 🚄🚄🚄
+>Website authentication methods can be bypassed, defeated or broken. These vulnerabilities can be some of the most critical as it often ends in leaks of customers personal data. Let's do some research on this session 🚄🚄🚄
 
 # Username Enumeration
 

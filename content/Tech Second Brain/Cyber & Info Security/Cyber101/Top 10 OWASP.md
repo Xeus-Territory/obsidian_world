@@ -1,5 +1,5 @@
 ---
-title: Cyber 101 Session 6 - Top 10 OWASP
+title: Cyber101 Session 6 - Top 10 OWASP
 tags:
   - fundamentals
   - infosec

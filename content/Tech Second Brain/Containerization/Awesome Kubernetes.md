@@ -179,6 +179,7 @@ tags:
 - [Kubernetes Schedule Plugins](https://scheduler-plugins.sigs.k8s.io/): Repository for out-of-tree scheduler plugins based on the [scheduler framework](https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/) 🌟 **(Recommended)**
 - [KubeSec Diagram](https://kubesec-diagram.github.io/): a diagram made to better understand and get an overview of kubernetes security 🌟 **(Recommended)**
 - [Kubetools](https://collabnix.github.io/kubetools/): A Curated List of Kubernetes Tools 🌟 **(Recommended)**
+- [Deploy to Kuberenetes](https://deploy-to-kubernetes.readthedocs.io/en/latest/): Deploy a distributed AI stack to a multi-host or single-host Kubernetes cluster on CentOS 7 🌟 **(Recommended)**
 ## Blogs
 
 - [Kubernetes - Blog](https://kubernetes.io/blog/) 🌟 **(Recommended)**
