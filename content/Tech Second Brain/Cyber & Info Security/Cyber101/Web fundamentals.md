@@ -1,5 +1,5 @@
 ---
-title: Cyber 101 Session 01 - Web Fundamentals
+title: Cyber101 Session 01 - Web Fundamentals
 tags:
   - basic-knowledge
   - fundamentals

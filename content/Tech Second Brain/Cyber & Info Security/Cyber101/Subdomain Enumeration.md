@@ -1,5 +1,5 @@
 ---
-title: Cyber 101 Session 5  - Subdomain Enumeration
+title: Cyber101 Session 5  - Subdomain Enumeration
 tags:
   - fundamentals
   - infosec
