@@ -44,7 +44,6 @@ tags:
 - [Platform Engineer Blog](https://platformengineering.org/blog): The discipline of designing and building toolchains and workflows that enable self-service capabilities for software engineering organizations in the cloud-native era.
 - [Medium - ScalaBrix](https://scalabrix.medium.com/): System Design & Architecture | Distributed Systems | Tech Blog with clearly explanation and beauty diagram 🌟 **(Recommended)**
 - [Blog - Web Scale](https://shivangsnewsletter.com/): The blogger show us fantastic approach for building scalability system 🌟 **(Recommended)**
-- [Youtube - Be A Better Dev](https://www.youtube.com/@BeABetterDev/videos): Great channel to show you insane resources to become great cloud-native developer, or maybe architecture if you delve deeper into his videos, and focus on AWS 🌟 **(Recommended)**
 ## Architecture Design Pattern
 
 - [Azure - Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/) 🌟 **(Recommended)**
@@ -92,3 +91,11 @@ tags:
 - [Blog - Service Discovery – Consul vs ZooKeeper vs etcd](https://bizety.com/2019/01/17/service-discovery-consul-vs-zookeeper-vs-etcd/)
 - [Blog - Secure Microservices in AKS with APIM and Application Gateway](https://codemongers.wordpress.com/2022/01/28/secure-microservices-in-aks-with-apim-and-application-gateway/comment-page-1/)
 - [Medium - Load Balancing 100,000 WebSocket Connections: HAProxy vs. Nginx vs. Custom](https://medium.com/@yashbatra11111/load-balancing-100-000-websocket-connections-haproxy-vs-nginx-vs-custom-4fe78f68c1ce)
+## Youtube Channel
+
+![[youtube.png]]
+
+- [Hayk Simonyan](https://www.youtube.com/@hayk.simonyan/videos): Breakdown a lot of system architecture of multiple big techs, and try to discussion to build them from scratch for interview
+- [ByteMonk](https://www.youtube.com/@ByteMonk/featured): Featuring for more video about system architecture, explain them for adapting them and moreover stuff to prepare the system architecture interview
+- [Be A Better Dev](https://www.youtube.com/@BeABetterDev/videos): Great channel to show you insane resources to become great cloud-native developer, or maybe architecture if you delve deeper into his videos, and focus on AWS 🌟 **(Recommended)**
+- [ByteByteGo](https://www.youtube.com/@ByteByteGo/featured): The bunch of great videos about system design and large-scale system
