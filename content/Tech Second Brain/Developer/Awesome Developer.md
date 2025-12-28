@@ -16,6 +16,7 @@ tags:
 
 - [30-seconds-of-code](https://github.com/Chalarangelo/30-seconds-of-code): Short code snippets for all your development needs
 - [project-based-learning](https://github.com/practical-tutorials/project-based-learning): Curated list of project-based tutorials 🌟 **(Recommended)**
+- [API-mega-list](https://github.com/cporter202/API-mega-list):  A powerhouse collection of APIs you can start using immediately to build everything from simple automations to full-scale applications
 ## Blog Pages
 
 - [Dev](https://dev.to/): DEV Community is a community of 2,027,354 amazing developers 🌟 **(Recommended)**

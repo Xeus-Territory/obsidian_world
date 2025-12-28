@@ -14,12 +14,12 @@ tags:
 ## Articles
 
 - [Nanonets - Tesseract OCR in Python with Pytesseract & OpenCV](https://nanonets.com/blog/ocr-with-tesseract/)
-- [Milvus - Deploy a Milvus Cluster on EKS](https://milvus.io/docs/eks.md) 🌟 **(Recommended)**
 - [Medium - Understanding Milvus: Key Concepts and Potential Applications](https://medium.com/n11-tech/understanding-milvus-key-concepts-and-potential-applications-1fe4dedd7412)
 - [Medium - Why You Shouldn’t Invest In Vector Databases?](https://medium.com/data-engineer-things/why-you-shouldnt-invest-in-vector-databases-c0cd3f59d23c)
 - [Datacamp - The Top 7 Vector Databases in 2025](https://www.datacamp.com/blog/the-top-5-vector-databases)
 - [Medium - 30+ MCP Ideas with Complete Source Code](https://medium.com/devdotcom/30-mcp-ideas-with-complete-source-code-4c8f7eacf3ec)
 - [Medium - The Open-Source Stack for AI Agents](https://medium.com/data-science-collective/the-open-source-stack-for-ai-agents-8ab900e33676)
+- [Ngrok - Prompt caching: 10x cheaper LLM tokens, but how?](https://ngrok.com/blog/prompt-caching)
 ## Awesome Repositories
 
 - [applied-ml](https://github.com/eugeneyan/applied-ml): 📚 Papers & tech blogs by companies sharing their work on data science & machine learning in production
