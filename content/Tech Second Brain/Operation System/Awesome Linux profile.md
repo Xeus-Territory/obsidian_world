@@ -215,7 +215,7 @@ sudo install -m 555 argocd-linux-amd64 /usr/local/bin/argocd
 rm argocd-linux-amd64
 
 # Install vault
-wget https://releases.hashicorp.com/vault/1.18.5/vault_1.18.5_linux_amd64.zip && unzip vault_1.18.5_linux_amd64.zip && sudo mv vault /usr/local/bin && rm -rf vault_1.18.5_linux_amd64.zip LICENSE.txt
+wget https://releases.hashicorp.com/vault/1.18.5/vault_1.18.5_linux_amd64.zip && unzip -p vault_1.18.5_linux_amd64.zip vault > vault && chmod +x vault && sudo mv vault /usr/local/bin && rm -rf vault_1.18.5_linux_amd64.zip
 
 # Install kafka CLI
 mkdir -p ~/.kafka
@@ -238,6 +238,22 @@ unzip Fira_Code_v6.2.zip -d firacode
 mkdir -p ~/.local/share/fonts
 cp -r firacode/ttf/* ~/.local/share/fonts
 rm -rf firacode Fira_Code_v6.2.zip
+
+# Install Vagrant
+wget https://releases.hashicorp.com/vagrant/2.4.9/vagrant_2.4.9_linux_amd64.zip
+unzip -p vagrant_2.4.9_linux_amd64.zip vagrant > vagrant
+chmod +x vagrant
+sudo mv vagrant /usr/local/bin
+rm -rf vagrant_2.4.9_linux_amd64.zip
+
+# Install virtualbox - virtualization
+# Version: 7.0.18 (Stable), 7.2 (Latest)
+# Check more troubleshoot at: https://wiki.xeusnguyen.xyz/Tech-Second-Brain/Operation-System/Linux/Awesome-Linux-Troubleshoot
+# Download Link: https://www.virtualbox.org/wiki/Download_Old_Builds 
+wget https://download.virtualbox.org/virtualbox/7.0.18/virtualbox-7.0_7.0.18-162988~Ubuntu~noble_amd64.deb
+sudo apt install ./virtualbox-7.0_7.0.18-162988~Ubuntu~noble_amd64.deb
+# If you first initialize virtualbox, you should enroll mok to use Virtualbox featuring in Ubuntu
+# After that, reboot and proceed enroll. Do disable couple of kernel module when you use AMD CPU chipset
 ```
 
 # Install programming language for ZSH

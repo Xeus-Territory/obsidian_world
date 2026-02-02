@@ -40,6 +40,14 @@ export KUBECONFIG=/path/to/profile
 
 >[!note]
 >In the circumstance, you want merge this external configuration to `kubeconfig`, you can use [kconfig](https://github.com/corneliusweig/konfig) to help you reduce the manual step by automatically install into the default at `~/.kube/config` or double-check [StackOverFlow - How to merge kubectl config file with ~/.kube/config?](https://stackoverflow.com/questions/46184125/how-to-merge-kubectl-config-file-with-kube-config) for more approaching
+
+Setup the toolkit via `krew` which pretty useful for debug, troubleshoot and have boost performance when you work with `kubectl`
+
+```bash
+kubectl krew install resource-capacity
+kubectl krew install node-shell
+kubectl krew install view-allocations
+```
 # Combination
 ## Force terminate the stuck namespace
 
@@ -272,6 +280,23 @@ uniq -c
 kubectl patch storageclass <sc-specific> -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
 ```
 
+## Suspend the Job and Cronjob
+
+If you encounter a bit noise from **job/cronjob** which not enough condition to execute, so that why if you want to suspend it, you can available to deal with `suspend` parameter via `patch` command. Read more at [Kubernetes - Introducing Suspended Jobs](https://kubernetes.io/blog/2021/04/12/introducing-suspended-jobs/)
+
+```bash
+# Suspend the job
+kubectl patch job/myjob --type=strategic --patch '{"spec":{"suspend":true}}'
+
+# Resuming the job
+kubectl patch job/myjob --type=strategic --patch '{"spec":{"suspend":false}}'
+```
+
+You can available to do it with `cronjob` also with command
+
+```bash
+kubectl patch cronjob/mycronjob --type=strategic --patch '{"spec":{"suspend":true}}'
+```
 # Rollout Command
 
 Read more about rollout at: [How do you rollback deployments in Kubernetes?](https://learnk8s.io/kubernetes-rollbacks)

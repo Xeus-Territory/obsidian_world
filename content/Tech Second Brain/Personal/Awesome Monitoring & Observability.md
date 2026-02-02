@@ -56,6 +56,7 @@ tags:
 - [karma](https://github.com/prymitive/karma): Alert dashboard for Prometheus Alertmanager
 ## Application Performance Monitoring (APM)
 
+- [coroot](https://github.com/coroot/coroot): an open-source observability and APM tool with AI-powered Root Cause Analysis
 - [openreplay](https://github.com/openreplay/openreplay): Session replay and analytics tool you can self-host. Ideal for reproducing issues, co-browsing with users and optimizing your product.
 - [Sentry](https://github.com/getsentry/sentry): Developer-first error tracking and performance monitoring 🌟 **(Recommended)**
 - [signoz](https://github.com/SigNoz/signoz): an open-source observability platform native to OpenTelemetry with logs, traces and metrics in a single application

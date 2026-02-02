@@ -126,8 +126,8 @@ sudo rmmod vboxdrv
 sudo rmmod vboxnetflt
 
 #remove kvm (obligatory) - Fixed
-sudo rmmod kvm
 sudo rmmod kvm_amd
+sudo rmmod kvm
 ```
 
 After applying this change, you can use Virtualbox with Vagrant for setup a new virtual machine. But after reboot, it can load into your kernel one again and you can fix it with 100% by adding blacklist into your `grub`, explore more at [StackOverFlow - How to blacklist kernel modules?](https://askubuntu.com/questions/110341/how-to-blacklist-kernel-modules)
@@ -865,6 +865,73 @@ This network is probably weird than any I ever intercept, this comes from featur
 Following Reddit Thread, This issue come from `i255` network device and it's really tough things which I don't wonder to touch anytime but it occur frequently in machine, especially with high workload, it's truly disturb and nightmare. So these articles and discussion come from by solution to exchange `kernel` params
 
 In particular, we need to *"**disable power management on the PCIe** entirely with `pcie_port_pm=off`. In the file `/etc/default/grub`, line` GRUB_CMDLINE_LINUX_DEFAULT` we can add `pcie_port_pm=off` and then run `update-grub` to rebuild the boot config"*
+
+## Fix DNS Issues
+
+![[thumbnail-network-nxdomain-error.png]]
+
+If you encounter several fail when your DNS on local machine doesn't resolve the domain, and it response `DNS_PROBE_FINISHED_NXDOMAIN`, it means you have some problem with your DNS, the action are able to used here, including
+
+- Flush the DNS Cache to clean the cache DNS with error response
+- Change DNS Servers
+
+The action usually perform when encounter this type error, by flush the cache on your linux machine to make it become standard state. Check more at [StackOverFlow - How do I clear the DNS cache?](https://askubuntu.com/questions/2219/how-do-i-clear-the-dns-cache)
+
+```bash
+# Flush the cache
+sudo resolvectl flush-caches
+
+# Check the statistic cache
+sudo resolvectl statistics
+```
+
+If you want to validate the DNS Server for Ubuntu machine, you can change, edit or simple add more DNS Server for your machine at `/etc/resolv.conf` or `/etc/systemd/resolved.conf` Check more at 
+
+- [StackOverFlow - How do I configure my DNS settings in Ubuntu server?](https://askubuntu.com/questions/346838/how-do-i-configure-my-dns-settings-in-ubuntu-server)
+- [PhoenixNAP - How to Set DNS Nameserver on Ubuntu](https://phoenixnap.com/kb/ubuntu-dns-nameservers)
+
+>[!warning]
+>Modern Linux distros use systemd-resolved. Therefore, the /etc/resolv.conf file is a symbolic link managed by systemd-resolved. This means the file is dynamically generated and should not be edited manually. You can still edit them manually, but the changes are not permanent.
+
+Instead you can edit with `resolved.conf` of systemd to change with `systemd-resolved` and enable `DNS` and `FallbackDNS` options and add the custom nameserver
+
+```bash
+sudo nano /etc/systemd/resolved.conf
+```
+
+```bash {6-7}
+[Resolve]
+# Some examples of DNS servers which may be used for DNS= and FallbackDNS=:
+# Cloudflare: 1.1.1.1#cloudflare-dns.com 1.0.0.1#cloudflare-dns.com 2606:4700:4700::1111#cloudflare-dns.com 2606:4700:4700::1001#cloudflare-dns.com
+# Google:     8.8.8.8#dns.google 8.8.4.4#dns.google 2001:4860:4860::8888#dns.google 2001:4860:4860::8844#dns.google
+# Quad9:      9.9.9.9#dns.quad9.net 149.112.112.112#dns.quad9.net 2620:fe::fe#dns.quad9.net 2620:fe::9#dns.quad9.net
+DNS=1.1.1.1 1.0.0.1
+FallbackDNS=8.8.8.8 8.8.4.4
+#Domains=
+#DNSSEC=no
+#DNSOverTLS=no
+#MulticastDNS=no
+#LLMNR=no
+#Cache=no-negative
+#CacheFromLocalhost=no
+#DNSStubListener=yes
+#DNSStubListenerExtra=
+#ReadEtcHosts=yes
+#ResolveUnicastSingleLabel=no
+```
+
+Save and restart with `systemctl` command
+
+```bash
+sudo systemctl restart systemd-resolved
+```
+
+You can also change it via `netplan` and `network settings`, it's up to you but truly recommend to use `systemd-resolved` for permanent applying
+
+You can double check more error about DNS and Issue about this one, and try to find the best option to fix it
+
+- [Hostinger - DNS_PROBE_FINISHED_NXDOMAIN: what it is and 9 ways to fix it](https://www.hostinger.com/tutorials/fix-dns_probe_finished_nxdomain)
+- [CloudFlare - Common DNS issues and how to fix them](https://www.cloudflare.com/learning/dns/common-dns-issues/)
 # About disk, partition, storage and volume in Linux
 
 >[!note]
@@ -1412,3 +1479,32 @@ And in another post of [Nvidia Forum - Unable to determine the device handle for
 
 ![[Pasted image 20251024152253.png]]
 
+# Monitoring Resources in Linux
+
+## Calculate Percentage CPU
+
+If you are user of Linux, sometime the tools `top`, `htop` or `bpytop` don't show you the need requirement about CPU, because it's hard to figure out how much you CPU already reserve by process in machine in full core, not usage. So that why, you need to combine with several command and I think that pretty good to see what percentage of your CPU with `/proc/stat`. You can read more about these command below at [StackOverFlow - How to get overall CPU usage (e.g. 57%) on Linux](https://stackoverflow.com/questions/9229333/how-to-get-overall-cpu-usage-e-g-57-on-linux)
+
+Following the answer in this post, I found some qualify command to help you get the result
+
+**Overall CPU Usage in all the cores**
+
+```bash
+grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print usage "%"}'
+```
+
+**Current CPU usage**
+
+```bash
+awk '{u=$2+$4; t=$2+$4+$5; if (NR==1){u1=u; t1=t;} else print ($2+$4-u1) * 100 / (t-t1) "%"; }' \
+<(grep 'cpu ' /proc/stat) <(sleep 1;grep 'cpu ' /proc/stat)
+
+```
+
+**If you want to use `top` command, you can calculate CPU usage**
+
+```bash
+top -bn1 | grep "Cpu(s)" | \
+           sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | \
+           awk '{print 100 - $1"%"}'
+```

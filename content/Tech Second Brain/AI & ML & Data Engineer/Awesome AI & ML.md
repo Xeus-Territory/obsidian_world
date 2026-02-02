@@ -20,6 +20,7 @@ tags:
 - [Medium - 30+ MCP Ideas with Complete Source Code](https://medium.com/devdotcom/30-mcp-ideas-with-complete-source-code-4c8f7eacf3ec)
 - [Medium - The Open-Source Stack for AI Agents](https://medium.com/data-science-collective/the-open-source-stack-for-ai-agents-8ab900e33676)
 - [Ngrok - Prompt caching: 10x cheaper LLM tokens, but how?](https://ngrok.com/blog/prompt-caching)
+- [AIME - PyTorch 2 GPU Performance Benchmarks (Update)](https://www.aime.info/blog/en/pytorch-2-gpu-performace-benchmark-comparison/)
 ## Awesome Repositories
 
 - [applied-ml](https://github.com/eugeneyan/applied-ml): 📚 Papers & tech blogs by companies sharing their work on data science & machine learning in production
@@ -33,6 +34,7 @@ tags:
 - [awesome-production-machine-learning](https://github.com/EthicalML/awesome-production-machine-learning): A curated list of awesome open source libraries to deploy, monitor, version and scale your machine learning 🌟 **(Recommended)**
 - [best-of-ml-python](https://github.com/ml-tooling/best-of-ml-python): 🏆 A ranked list of awesome machine learning Python libraries. Updated weekly
 - [system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks): Collection of extracted System Prompts from popular chatbots like ChatGPT, Claude & Gemini 🌟 **(Recommended)**
+- [GPU-Benchmarks-on-LLM-Inference](https://github.com/XiongjieDai/GPU-Benchmarks-on-LLM-Inference): Multiple NVIDIA GPUs or Apple Silicon for Large Language Model Inference?
 ## Blogs
 
 - [DigitalOcean - AI/ML Topics](https://www.digitalocean.com/community/tags/ai-ml): Articles and Community about AI/ML 🌟 **(Recommended)**

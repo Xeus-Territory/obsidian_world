@@ -37,6 +37,7 @@ tags:
 - [awesome-datascience](https://github.com/academic/awesome-datascience): 📝 An awesome Data Science repository to learn and apply for real world problems.
 - [awesome-etl](https://github.com/pawl/awesome-etl): A curated list of awesome ETL frameworks, libraries, and software.
 - [awesome-open-source-data-engineering](https://github.com/pracdata/awesome-open-source-data-engineering): A curated list of open source tools used in analytics platforms and data engineering ecosystem
+- [awesome-workflow-engines](https://github.com/meirwah/awesome-workflow-engines): A curated list of awesome open source workflow engines
 - [data-engineer-handbook](https://github.com/DataExpert-io/data-engineer-handbook): a repo with links to everything you'd ever want to learn about data engineering
 - [data-engineering-roadmap](https://github.com/data-burst/data-engineering-roadmap): A comprehensive roadmap tailored for data engineering professionals at all levels
 - [HelloDATA BE](https://kanton-bern.github.io/hellodata-be/): an **enterprise data platform** built on top of open-source tools based on the modern data stack

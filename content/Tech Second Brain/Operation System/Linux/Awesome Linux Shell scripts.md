@@ -556,3 +556,123 @@ if [[ $arg == "--deploy-agent-portainer" ]]; then
     portainer/agent:2.19.1
 fi
 ```
+
+# DNS Probe
+
+```bash title="dns-probe.sh"
+#!/bin/bash
+
+# --- Configuration ---
+DOMAIN=$1
+ITERATIONS=3
+TIMEOUT=2
+
+# Colors
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+NC='\033[0m'
+
+# --- Helper Function ---
+function show_help() {
+    echo -e "${BLUE}DNS PROBE CLI HELPER${NC}"
+    echo -e "Usage: ./dns-probe [domain] [options]"
+    echo ""
+    echo -e "${YELLOW}Description:${NC}"
+    echo "  This tool benchmarks DNS resolution across four critical layers:"
+    echo "  1. K8s Internal (CoreDNS)  2. Public Resolvers (Google/Cloudflare)"
+    echo "  3. Local ISP Gateway       4. Authoritative Domain Pool"
+    echo ""
+    echo -e "${YELLOW}Common Issues Debugged:${NC}"
+    echo "  --help          Show this manual"
+    echo "  [domain]        The URL you want to test (e.g., google.com)"
+    echo ""
+    echo -e "${YELLOW}Interpreting Results:${NC}"
+    echo -e "  - ${RED}FAILED${NC}: Packet loss. Check firewall rules or CoreDNS pod status."
+    echo -e "  - ${YELLOW}SLOW (>150ms)${NC}: Potential 'ndots' overhead in K8s or ISP throttling."
+    echo -e "  - ${GREEN}HEALTHY${NC}: Network path is clear; issue may be at the App/Ingress layer."
+    echo ""
+    exit 0
+}
+
+# --- Dependency Check ---
+function check_deps() {
+    for cmd in dig nslookup; do
+        if ! command -v $cmd &> /dev/null; then
+            echo -e "${RED}Error:${NC} $cmd is not installed. Please install 'dnsutils' or 'bind9-host'."
+            exit 1
+        fi
+    done
+}
+
+# --- Diagnosis Logic ---
+function diagnose() {
+    local target=$1
+    echo -e "\n${BLUE}🔍 Deep Dive Recommendation for $target:${NC}"
+    case $target in
+        "K8s-CoreDNS")
+            echo "   - Cause: Possible 'Conntrack' exhaustion or CoreDNS CPU limits."
+            echo "   - Fix: Run 'kubectl top pods -n kube-system' to check for throttling."
+            ;;
+        "Google-Public"|"Cloudflare-Public")
+            echo "   - Cause: DNS Propagation lag or 'Negative Caching'."
+            echo "   - Fix: Check your TTL settings. A high TTL (>3600) keeps stale/failed records alive longer."
+            ;;
+        "Local-Gateway")
+            echo "   - Cause: ISP-level UDP rate limiting (anti-DDoS measure)."
+            echo "   - Fix: Try switching the Uptime service to 'TCP' or 'HTTP' health checks."
+            ;;
+    esac
+}
+
+# --- Main Execution ---
+if [[ "$1" == "--help" ]] || [[ -z "$1" ]]; then
+    show_help
+fi
+
+check_deps
+
+echo -e "${YELLOW}Starting DNS Probe for: $DOMAIN${NC}"
+echo "----------------------------------------------------------"
+
+declare -A SERVERS=(
+    ["K8s-CoreDNS"]="10.96.0.10"
+    ["Google-Public"]="8.8.8.8"
+    ["Cloudflare-Public"]="1.1.1.1"
+    ["Local-Gateway"]="system"
+)
+
+for label in "K8s-CoreDNS" "Google-Public" "Cloudflare-Public" "Local-Gateway"; do
+    server=${SERVERS[$label]}
+    total_ms=0
+    fails=0
+
+    echo -en "Testing [$label] ($server)... "
+
+    for ((i=1; i<=ITERATIONS; i++)); do
+        if [ "$server" == "system" ]; then
+            start=$(date +%s%N)
+            nslookup -timeout=$TIMEOUT $DOMAIN > /dev/null 2>&1
+            exit_code=$?
+            end=$(date +%s%N)
+            elapsed=$(( (end - start) / 1000000 ))
+        else
+            query=$(dig @$server $DOMAIN +time=$TIMEOUT +tries=1 +stats)
+            elapsed=$(echo "$query" | grep "Query time" | awk '{print $4}')
+            echo "$query" | grep -q "status: NOERROR"
+            exit_code=$?
+        fi
+
+        if [ $exit_code -ne 0 ] || [ -z "$elapsed" ]; then ((fails++)); else total_ms=$((total_ms + elapsed)); fi
+    done
+
+    if [ $fails -eq $ITERATIONS ]; then
+        echo -e "${RED}FAILED${NC}"
+        diagnose "$label"
+    else
+        avg=$((total_ms / (ITERATIONS - fails)))
+        [[ $avg -gt 150 ]] && echo -e "${YELLOW}SLOW (${avg}ms)${NC}" || echo -e "${GREEN}HEALTHY (${avg}ms)${NC}"
+    fi
+done
+```

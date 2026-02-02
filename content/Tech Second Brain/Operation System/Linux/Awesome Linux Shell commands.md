@@ -316,6 +316,9 @@ When you want to extract or compress file into `tar.gz` format, you can use `tar
 First of all, when you want to extract, you can use command
 
 ```bash
+# List the path in tars, use -t flag
+tar -ztf /file/example.tar.gz
+
 # Use when it have gz (gunzip)
 tar -xzf /file/example.tar.gz
 
@@ -328,6 +331,9 @@ tar -xzf /file/example.tar.gz --strip-components <level-number>
 # If you want to output your extract to output
 mkdir -p /folder/to/output # make sure folder exist
 tar -xzf /file/example.tar.gz -C /folder/to/output
+
+# If you want to extract only specific file in compress
+tar -zxvf <tar filename> <file you want to extract>
 ```
 
 Next, when you want to compress, you can use
@@ -344,6 +350,22 @@ At the end, when you want to see what inside the compress, you can use
 
 ```bash
 tar -tvf /file/to/compress.tar.gz
+```
+
+### `unzip`
+
+Same with `tar` command, `unzip` is one of popular command used to decompress zip format file, and sometime, you can use `unzip` instead `tar` to get more useful functionality, such as
+
+```bash
+# unzip only file inside zip file
+# more information: https://unix.stackexchange.com/questions/14120/extract-only-a-specific-file-from-a-zipped-archive-to-a-given-directory
+unzip -p archive.zip /path/to/zipped/file > /path/to/save/file
+
+# unzip file to specific directory
+unzip -d /path/to/destination archive.zip
+
+# list files in zip file
+unzip -l archive.zip
 ```
 
 ### `set` & `unset`
@@ -1164,6 +1186,7 @@ To generate a completely Client CA for connecting to OpenVPN Server, you can use
 - [nethogs](https://github.com/raboof/nethogs): Linux 'net top' tool
 - [nload](https://github.com/rolandriegel/nload): Real-time network traffic monitor
 - [iftop](https://github.com/soarpenguin/iftop): display bandwidth usage on an interface 🌟 **(Recommended)**
+- [mkcert](https://github.com/FiloSottile/mkcert): A simple zero-config tool to make locally trusted development certificates with any names you'd like. 🌟 **(Recommended)**
 ## Shell
 
 - [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh): Framework for managing your zsh configuration 🌟 **(Recommended)**
