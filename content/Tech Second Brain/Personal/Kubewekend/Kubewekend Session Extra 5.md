@@ -1,5 +1,5 @@
 ---
-title: "Kubewekend Session Extra 5: Combination GitOps with ArgoCD into Kubewekend Cluster"
+title: "Kubewekend Session Extra 5: Combination GitOps with ArgoCD into new Kubewekend Cluster (K3s)"
 tags:
   - kubewekend
   - k8s
@@ -9,12 +9,10 @@ draft: "true"
 ---
 
 >[!quote]
->Hello again! It has been a while since we last connected. I'm excited to bring back the **Kubeweekend** series with a brand new session. Today, I will comprehensively share my journey to **rebuild my homelab using K3s** and implement a **full GitOps strategy** to prepare for application deployments. I hope you find this content valuable—grab your seat, as we're about to begin!
-# Kubewekend with K3s
+>Hello again! It has been a while since we last connected, happy new year 2026 🚀. I'm excited to bring back the **Kubeweekend** series with a brand new session. Today, I will comprehensively share my journey to **rebuild my homelab using K3s** and implement a **full GitOps strategy** to prepare for application deployments. I hope you find this content valuable—grab your seat, as we're about to begin!
+# Exchange Kubewekend from Kind to K3s
 
 ![[thumbnail-k3s.png|center]]
-
-
 
 Kubewekend with
 
@@ -23,10 +21,16 @@ Kubewekend with
 - ArgoCD / App of app / Image updater
 - Cert Manager
 
-Command setup
+Command K3s Server Setup
 
 ```bash
 curl -sfL https://get.k3s.io | INSTALL_K3S_VERSION="v1.34.1+k3s1" sh -
+```
+
+Command K3s Agent Setup
+
+```bash
+curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="agent" INSTALL_K3S_VERSION="v1.34.1+k3s1" K3S_TOKEN="mypassword" sh -s - --server https://k3s.example.com
 ```
 
 Reference

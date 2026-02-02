@@ -18,6 +18,8 @@ tags:
 - [Neptune.ai - MLOps Principles and How to Implement Them](https://neptune.ai/blog/mlops-principles) 🌟 **(Recommended)**
 - [Google Cloud - MLOps: Continuous delivery and automation pipelines in machine learning](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning)
 - [Datacamp - 25 Top MLOps Tools You Need to Know in 2025](https://www.datacamp.com/blog/top-mlops-tools)
+- [Youtube -  GPU Instance Selection: AI & LLM Inference Benchmarking](https://www.youtube.com/watch?v=V38mZ9Jehsk) 🌟 **(Recommended)**
+- [Blog - LLM Inference Speed Benchmarks](https://sparecores.com/article/llm-inference-speed)
 ## Awesome Repositories
 
 - [awesome-mlops](https://github.com/visenger/awesome-mlops): A curated list of references for MLOps

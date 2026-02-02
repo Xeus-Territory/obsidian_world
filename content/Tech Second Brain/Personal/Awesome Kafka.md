@@ -56,7 +56,10 @@ kafka-consumer-groups.sh --version
 
 For help you connect into remote cluster with username and password, you need to create file
 
-In the situations, your `kafka` cluster use truststore key for validate login, you should configure `ssl-user-config.properties` like
+In the situations, your `kafka` cluster use **truststore** key for validate login, you should configure `ssl-user-config.properties` like
+
+>[!warning]
+>Remembering, you must keep the `sasl.jaas.config` on same line, if you have to break, you must be add the space and symbol `/` to present your line breaking
 
 ```toml title="ssl-user-config.properties"
 ssl.enabled.protocols=TLSv1.2,TLSv1.1,TLSv1
@@ -65,8 +68,8 @@ ssl.truststore.password = "truststore-password"
 ssl.protocol=TLS
 security.protocol=SASL_SSL
 sasl.mechanism=SCRAM-SHA-256
-sasl.jaas.config=org.apache.kafka.common.security.scram.ScramLoginModule required 
-  username="your-username" 
+sasl.jaas.config=org.apache.kafka.common.security.scram.ScramLoginModule required \
+  username="your-username" \
   password="your-password";
 ```
 
@@ -74,9 +77,9 @@ But in some situations, you just use `ssl` for connection, your configuration fi
 
 ```toml title="ssl-user-config.properties"
 security.protocol=SASL_PLAINTEXT
-sasl.mechanism=SCRAM-SHA-256
-sasl.jaas.config=org.apache.kafka.common.security.scram.ScramLoginModule required 
-  username="your-username" 
+sasl.mechanism=SCRAM-SHA-256 # Change the machanism for your cluster
+sasl.jaas.config=org.apache.kafka.common.security.scram.ScramLoginModule required \
+  username="your-username" \
   password="your-password";
 ```
 

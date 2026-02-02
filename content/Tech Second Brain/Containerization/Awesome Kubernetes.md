@@ -161,6 +161,8 @@ tags:
 - [Medium - Tracking Down “Invisible” OOM Kills in Kubernetes](https://medium.com/@reefland/tracking-down-invisible-oom-kills-in-kubernetes-192a3de33a60) 🌟 **(Recommended)**
 - [GitHub - Fluentd in_tail plugin randomly fails with "too many open files"](https://github.com/fluent/fluent-bit/issues/1777#issuecomment-1494952647) 🌟 **(Recommended)**
 - [Blog - Pod DNS Problems](https://blog.differentpla.net/blog/2022/02/25/pod-dns-problems/) 🌟 **(Recommended)**
+- [GroundCover - Kubernetes Troubleshooting: Guide For Fixing Common Issues](https://www.groundcover.com/kubernetes-troubleshooting)
+- [Learnkube - A visual guide on troubleshooting Kubernetes deployments](https://learnkube.com/troubleshooting-deployments)
 ## Awesome repositories
 
 - [awesome-k8s-resources](https://github.com/tomhuang12/awesome-k8s-resources) : A curated list of awesome Kubernetes tools and resources 🌟 **(Recommended)**
@@ -287,15 +289,13 @@ tags:
 - [kubewall](https://github.com/kubewall/kubewall): Single-Binary Kubernetes Dashboard with Multi-Cluster Management & AI Integration
 - [headlamp](https://github.com/kubernetes-sigs/headlamp): A Kubernetes web UI that is fully-featured, user-friendly and extensible
 - [dashboard](https://github.com/kubernetes/dashboard): General-purpose web UI for Kubernetes clusters
-- [Crossplane](https://docs.crossplane.io/latest/): An open source Kubernetes extension that transforms your Kubernetes cluster into a **universal control plane**.
-- [GlassKube](https://glasskube.dev/docs/) : An open-source Kubernetes package manager that simplifies package management for Kubernetes
-- [kubeapps](https://github.com/vmware-tanzu/kubeapps): A web-based UI for deploying and managing applications in Kubernetes clusters
-- [kubeshark](https://github.com/kubeshark/kubeshark): The API traffic analyzer for Kubernetes providing real-time K8s 🌟 **(Recommended)**
 - [lens](https://github.com/lensapp/lens): Lens - The way the world runs Kubernetes 🌟 **(Recommended)**
-## Networking Controller (DNS / VPN/ SSL / Service Discovery)
+- [Rancher](https://ranchermanager.docs.rancher.com/): a Kubernetes management tool to deploy and run clusters anywhere and on any provider. 🌟 **(Recommended)**
+## Networking Controller (Monitoring/DNS / VPN/ SSL / Service Discovery)
 
 - [bindy](https://github.com/firestoned/bindy): Bind9 Kubernetes Controller
 - [kubevpn](https://github.com/kubenetworks/kubevpn): Offers a Cloud Native Dev Environment that connects to kubernetes cluster network.
+- [kubeshark](https://github.com/kubeshark/kubeshark): The API traffic analyzer for Kubernetes providing real-time K8s 🌟 **(Recommended)**
 ## Global Server Load Balancer (GSLB)
 
 - [k8gb](https://github.com/k8gb-io/k8gb): A cloud native Kubernetes Global Balancer 
@@ -306,6 +306,7 @@ tags:
 - [kooper](https://github.com/spotahome/kooper): A simple Go library to create Kubernetes operators and controllers.
 - [kubebuilder](https://github.com/kubernetes-sigs/kubebuilder): SDK for building Kubernetes APIs using CRDs
 - [Operator SDK](https://github.com/operator-framework/operator-sdk): component of the [Operator Framework](https://github.com/operator-framework), an open source toolkit to manage Kubernetes native applications, called Operators, in an effective, automated, and scalable way.
+- [Crossplane](https://docs.crossplane.io/latest/): An open source Kubernetes extension that transforms your Kubernetes cluster into a **universal control plane**.
 ## Kubernetes Hosted
 
 - [K0s](https://docs.k0sproject.io/stable/): k0s is an open source, all-inclusive Kubernetes distribution, which is configured with all of the features needed to build a Kubernetes cluster.
@@ -322,6 +323,9 @@ tags:
 - [vCluster](https://github.com/loft-sh/vcluster): Create fully functional virtual Kubernetes clusters - Each vcluster runs inside a namespace of the underlying k8s cluster
 - [k3k](https://github.com/rancher/k3k): Kubernetes in Kubernetes by Rancher
 - [k0smotron](https://github.com/k0sproject/k0smotron): Kubernetes in Kubernetes by [k0s](https://k0sproject.io/)
+## Kubernetes Toolkits
+
+- [ingress2gateway](https://github.com/kubernetes-sigs/ingress2gateway): Convert Ingress resources to Gateway API resources 🌟 **(Recommended)**
 ## Storage Platform
 
 - [openebs](https://github.com/openebs/openebs):  an open-source Container Native Storage solution that provides persistent storage for Kubernetes workloads

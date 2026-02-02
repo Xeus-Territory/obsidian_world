@@ -1095,6 +1095,7 @@ While the resources are few, they provide critical focal points for analyzing an
 | **Kubernetes Pod**   | **`terminationGracePeriodSeconds`** | 5 - 10 seconds                                                                                         | The default is $30 \text{ seconds}$. This is the time Kubernetes waits after sending a `SIGTERM` before force-killing the Pod (`SIGKILL`). Lowering this speeds up the Pod's removal. |
 | **Application**      | **SIGTERM Handling**                | Implement a graceful shutdown that **immediately fails the readiness check** upon receiving `SIGTERM`. | This is critical. It instantly tells the ALB/Ingress Controller that the target is unavailable, _before_ the Pod fully dies.                                                          |
 | **ALB Target Group** | **Unhealthy Threshold/Interval**    | Low Interval (e.g., 5 seconds), Low Unhealthy Threshold (e.g., 2).                                     | The ALB must detect the Pod's failure (via the failed readiness probe) and remove the IP from its target group list as quickly as possible.                                           |
+
 **Optimize Alibaba GTM & DNS TTL (The External Layer)**
 
 - **Aggressively Low DNS TTL:**

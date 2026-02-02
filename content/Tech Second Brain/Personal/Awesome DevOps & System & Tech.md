@@ -220,6 +220,10 @@ tags:
 # DevOps & Useful Tools
 
 ![[thumbnail-devops.png]]
+
+## Cloud Calculator
+
+- [Spare Cores](https://sparecores.com/): A Python-based open-source framework and managed service offering the most detailed and transparent dataset on cloud servers. 🌟 **(Recommended)**
 ## Generated / Validate Configuration
 
 - [checkov](https://github.com/bridgecrewio/checkov): Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as code, container images and open source packages

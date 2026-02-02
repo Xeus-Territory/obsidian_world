@@ -1,5 +1,5 @@
 ---
-title: Awesome GitOps
+title: Awesome Cloud Native
 tags:
   - awesome
   - collections
@@ -31,6 +31,8 @@ tags:
 - [awesome-flux-infra](https://github.com/brainfair/awesome-flux-infra): This repository contains infrastructure applications and add-ons installed in Kubernetes via FluxCD v2.
 # Tools
 
+![[thumbnail-cncf-landscape.png]]
+
 ## Automatic Deployment (Kubernetes)
 
 - [argo-cd](https://argo-cd.readthedocs.io/en/stable/) :  A declarative, GitOps continuous delivery tool for Kubernetes 🌟 **(Recommended)**
@@ -52,6 +54,7 @@ tags:
 - [kustomize](https://github.com/kubernetes-sigs/kustomize): Customization of kubernetes YAML configurations 🌟 **(Recommended)**
 - [operator-lifecycle-manager](https://github.com/operator-framework/operator-lifecycle-manager): A management framework for extending Kubernetes with Operators
 - [werf](https://github.com/werf/werf): A solution for implementing efficient and consistent software delivery to Kubernetes facilitating best practices.
+- [GlassKube](https://glasskube.dev/docs/) : An open-source Kubernetes package manager that simplifies package management for Kubernetes
 ## Internal Developer Platform (IDP)
 
 - [backstage](https://github.com/backstage/backstage): An open framework for building developer portals
@@ -60,3 +63,4 @@ tags:
 - [Qovery](https://hub.qovery.com/docs/getting-started/what-is-qovery/) : the **Internal Developer Platform (IDP)** that cuts noise for developers with paved paths to production
 - [openchoreo](https://github.com/openchoreo/openchoreo): OpenChoreo is an open-source internal developer platform (IDP)
 - [kubriX](https://github.com/suxess-it/kubriX): a **curated**, **opinionated**, and **highly flexible** Internal Developer Platform (IDP) for Kubernetes
+- [crossplane](https://github.com/crossplane/crossplane): a framework for building cloud native control planes without needing to write code

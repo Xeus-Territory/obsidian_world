@@ -261,7 +261,7 @@ generated: "2025-06-25T15:31:03.453727327+07:00"
 Now you can have enough condition to build your own repositories, and you should decide what platform to publish your chart. Some options are considered, like
 
 - [ChartMuseum](https://chartmuseum.com/): an open-source [Helm Chart Repository](https://helm.sh/docs/topics/chart_repository) server written in Go (Golang), with support for cloud storage backends
-- [GitHub Page](https://helm.sh/docs/topics/chart_repository/#github-pages-example) or [Own Webpage](https://helm.sh/docs/topics/chart_repository/#ordinary-web-servers)
+- [GitHub Page](https://helm.sh/docs/topics/chart_repository/#github-pages-example) or [Ordinary web servers](https://helm.sh/docs/topics/chart_repository/#ordinary-web-servers)
 - [OCI Registry](https://helm.sh/docs/topics/registries/)
 
 To easier workaround and approach, I think most of us familiar with GitHub and GitHub Page are such wonderful option to start because it's totally free and have large storage to help you publish your chart

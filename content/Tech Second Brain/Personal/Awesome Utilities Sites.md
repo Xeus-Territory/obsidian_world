@@ -16,7 +16,7 @@ tags:
 - [IT eBooks](https://it-ebooks.info/): The ecosystem downloading the IT Book for free 🌟 **(Recommended)**
 	- [IT Ebooks Search](https://it-ebooks-search.info/): IT eBooks Info Search Engine
 	- [IT Ebooks Dev](https://it-ebooks.dev/): Free & Open IT Books Library
-- [Libgen](https://libgen.li/): For finding and downloading the technology book 🌟 **(Recommended)**
+- [Libgen](https://libgen.li/): For finding and downloading the technology book 🌟 **(Recommended)**s
 - [MLOps Books & Papers Collection - Xeus Nguyen](https://drive.google.com/drive/folders/1IbGRg4bhNyQ9UUL-ILVeBY4CylQxL-C3?usp=sharing)
 - [System Architecture Books & Papers Collection - Xeus Nguyen](https://drive.google.com/drive/folders/1y0pzGQg-HvQa6U1QnvtZyZnnWW2KYKPJ?usp=drive_link)
 - [DevSecOps Books & Papers Collection - Xeus Nguyen](https://drive.google.com/drive/folders/1nsdQ1cGeDCjp4aOFx2aMb2hEb2cAqUJc?usp=sharing)

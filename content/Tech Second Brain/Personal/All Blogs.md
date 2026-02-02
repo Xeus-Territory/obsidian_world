@@ -61,7 +61,7 @@ tags:
 - [[Awesome DevOps & System & Tech]]
 - [[Awesome eBPF]]
 - [[Awesome Git]]
-- [[Awesome GitOps]]
+- [[Awesome Cloud Native]]
 - [[Awesome HTML & CSS]]
 - [[Awesome Monitoring & Observability]]
 - [[Awesome Packer]]
@@ -242,6 +242,10 @@ tags:
 - [[06-10-2025 to 08-11-2025|Session 19: 06-10-2025 to 08-11-2025]] - *"This article list covers several **challenging topics**, including **Kubernetes** adoption methods like **Virtual Kubelet** and custom implementations (**CRD** and **Operator**). I also aim to learn and share articles on **MLOps**, **Multi-Region/Multi-Zone Scaling Architecture** with Kubernetes, **monitoring**, and **GPU Virtualization Techniques** (with EKS examples)"*
 - [[09-11-2025 to 07-12-2025|Session 20: 09-11-2025 to 07-12-2025]] - *"This session will cover a wide range of articles focusing on **multi-cluster topics** for scaling, building, and serving the **largest Kubernetes clusters**. It explores the necessary **architectures**, the **challenges** that need to be tackled, and the available **solutions** that can be approached ranging from **enterprise offerings** and **cloud provider services** to **open-source tools**, or a combination of all three."*
 - [[08-12-2025 to 21-12-2025|Session 21: 08-12-2025 to 21-01-2025]] - *"The session highlights several solutions for DNS management, focusing on strategies to ensure high availability. You will explore practical implementations of **ExternalDNS** and **K8GB**, which enable dynamic DNS management in Cloud-Native environments. Additionally, the session branches into Data Engineering topics, covering the integration of **Kafka** and **Apache Iceberg**, alongside end-to-end observability for Cloud-Native stacks. Finally, you may find inspiration in the story of a startup navigating the operational advantages of **AWS** while tackling the significant cost-optimization challenges that come with scaling."*
+
+## 2026
+
+- [[05-01-2026 to 01-02-2026|Session 01: 05-01-2026 to 01-02-2026]] - *"The new session for 2026, this cover couple of new learning interest of mine about Platform Engineer, Security Pattern, New trend of DevOps and AI in 2026, Bastion Hosts and story about managing the product with some documentations to get people aligned one"*
 # InfoSec & Security
 
 ## CTF
@@ -314,6 +318,7 @@ tags:
 - [[Kubewekend Session 4|Kubewekend Session 4: Learn about ebpf with hubble and cilium]] - This session will talk and learn about `eBPF` and the especially representation of `eBPF` are `cilium` and `hubble` to become main CNI of Kubewekend and talk about Observability of them
 - [[Kubewekend Session 5|Kubewekend Session 5: Build HA Cluster]] - This session is really pleasant when we talk about how can create HA cluster with `kubewekend`, learn more the components inside `kubernetes` and try figure out about `network`, `security`, `configuration`, `container runtime` and `system` via this session
 - [[Kubewekend Session 6|Kubewekend Session 6: CSI and Ceph with Kubewekend]] - This session is covered about topic storage inside `Kubernetes` cluster, how can they work with `CSI` Architecture and why we need to `CSI Driver` for handle this stuff. Furthermore, I try to practice with `Ceph` - one of popular storage opensource for `Kubewekend` cluster
+- [[Kubewekend Session 7|Kubewekend Session 7: Setup new deployment and route traffic to kubewekend cluster]] - This session explores core networking concepts in Kubernetes, guiding you through the setup of new deployments and demonstrating how to expose services for external access using **Ingress** and the **Gateway API**. We also delve into **External LoadBalancer** concepts and the operational nuances of managing them via **Cilium NodeIPAM**. By the end of this session, you will understand how to bridge the gap between cluster-internal services and external clients using modern, eBPF-powered networking strategies.
 ## 2025
 
 - [[Kubewekend Session Extra 1|Kubewekend Session Extra 1: Longhorn and the story about NFS in Kubernetes]] - This lab is try to take you to journey to learn about new CSI for Kubernetes, `Longhorn` and deliver you to new method to handle transfer large file via network by NFS protocol. I also provide more information about `iSCSI`, `nfs-ganesha` and technique `rdma`
