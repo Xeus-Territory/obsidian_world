@@ -254,6 +254,22 @@ wget https://download.virtualbox.org/virtualbox/7.0.18/virtualbox-7.0_7.0.18-162
 sudo apt install ./virtualbox-7.0_7.0.18-162988~Ubuntu~noble_amd64.deb
 # If you first initialize virtualbox, you should enroll mok to use Virtualbox featuring in Ubuntu
 # After that, reboot and proceed enroll. Do disable couple of kernel module when you use AMD CPU chipset
+
+# Install pre-commit
+# Docs:https://pre-commit.com/#install
+pip install pre-commit
+
+# Install helm-docs
+# Docs: https://github.com/norwoodj/helm-docs?tab=readme-ov-file#installation
+go install github.com/norwoodj/helm-docs/cmd/helm-docs@latest
+
+# Install openvpn3-client
+# Docs: https://community.openvpn.net/Pages/OpenVPN3Linux
+sudo mkdir -p /etc/apt/keyrings    ### This might not exist in all distributions
+curl -sSfL https://packages.openvpn.net/packages-repo.gpg | sudo tee /etc/apt/keyrings/openvpn.asc > /dev/null
+. /etc/os-release
+echo "deb [signed-by=/etc/apt/keyrings/openvpn.asc] https://packages.openvpn.net/openvpn3/debian $VERSION_CODENAME main" | sudo tee -a /etc/apt/sources.list.d/openvpn3.list
+sudo apt update && sudo apt install openvpn3-client -y
 ```
 
 # Install programming language for ZSH
@@ -277,6 +293,10 @@ mkdir -p ~/.go # Create for GOHOME, easily download go into that one
 
 # Install ruby (https://www.ruby-lang.org/en/documentation/installation/#apt
 sudo apt install -y ruby-full
+# If you want to install ruby with version manager like nvm
+# Consider to use rvm: https://rvm.io/
+gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+curl -sSL https://get.rvm.io | bash -s stable
 
 # Install rust (https://www.rust-lang.org/tools/install)
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh # Press enter

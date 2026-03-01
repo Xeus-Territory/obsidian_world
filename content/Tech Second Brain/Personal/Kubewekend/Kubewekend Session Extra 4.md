@@ -1061,7 +1061,36 @@ First, we go to define the template in remote repository
     - helm install "$SANDBOX_APP_NAME" "$SANDBOX_HELM_REPO/$SANDBOX_HELM_CHART" 
         --version "$SANDBOX_CHART_VERSION" 
         -f ./kubernetes/helm/values.yaml --set image.tag="$APP_VERSION"
-        --wait
+    - |
+      # Stream events from the pod to detect when it is ready (with kubectl get pods --watch) and double-check the state of pod
+      # Running and Healthy: Exit and continue the script to run releaser log command
+      # Error: Show events, description and logs of the pod, then exit with error to stop the pipeline
+      while true; do
+        POD_STATUS=$(kubectl get pods -l "app.kubernetes.io/instance=$SANDBOX_APP_NAME" -o jsonpath="{.items[0].status.phase}")
+        POD_READY=$(kubectl get pods -l "app.kubernetes.io/instance=$SANDBOX_APP_NAME" -o jsonpath="{.items[0].status.containerStatuses[0].ready}")
+        if [ "$POD_STATUS" = "Running" ] && [ "$POD_READY" = "true" ]; then
+          echo "Pod is Running and Healthy ✅✅✅"
+          break
+        elif [ "$POD_STATUS" = "Failed" ] || [ "$POD_STATUS" = "Unknown" ] || [ "$POD_STATUS" = "CrashLoopBackOff" ]; then
+          echo "Pod is in $POD_STATUS state ⚠️⚠️⚠️"
+          echo "📝📝📝 Showing pod events"
+          kubectl get events --field-selector involvedObject.name=$(kubectl get pods -l "app.kubernetes.io/instance=$SANDBOX_APP_NAME" -o jsonpath="{.items[0].metadata.name}") || echo "No events available"
+          echo "📝📝📝 Describing the pod"
+          kubectl describe pod $(kubectl get pods -l "app.kubernetes.io/instance=$SANDBOX_APP_NAME" -o jsonpath="{.items[0].metadata.name}") || echo "No description available"
+          echo "📝📝📝 Showing pod logs"
+          kubectl logs $(kubectl get pods -l "app.kubernetes.io/instance=$SANDBOX_APP_NAME" -o jsonpath="{.items[0].metadata.name}") || echo "No logs available"
+          if [ "$POD_STATUS" = "CrashLoopBackOff" ]; then
+            kubectl logs --previous $(kubectl get pods -l "app.kubernetes.io/instance=$SANDBOX_APP_NAME" -o jsonpath="{.items[0].metadata.name}") || echo "No previous logs available"
+          fi
+          exit 1
+        else
+          echo "Pod is in $POD_STATUS state, waiting for it to be Running and Healthy... ⏳⏳⏳"
+          echo "📝📝📝 Showing current pod events"
+          kubectl get events --field-selector involvedObject.name=$(kubectl get pods -l "app.kubernetes.io/instance=$SANDBOX_APP_NAME" -o jsonpath="{.items[0].metadata.name}") || echo "No events available"
+          kubectl logs $(kubectl get pods -l "app.kubernetes.io/instance=$SANDBOX_APP_NAME" -o jsonpath="{.items[0].metadata.name}") || echo "No logs available"
+          sleep 5
+        fi
+      done
       
     #--- Run Monitoring ---
     - |

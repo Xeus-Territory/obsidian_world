@@ -1085,59 +1085,9 @@ iptables -D INPUT <specific-line-number>
 
 # External Commands
 
-## `Pip3` & `Python3`
-
-![[icon-python.png]]
-
-### Break system for installing
-
-With `Python3` from version 3.12, there isn't gonna easy for us to install package, so if you want to force install with `python3-pip`, you can add the optional `--break-system-packages` after the pip command
-
-```bash
-pip3 install numpy --break-system-packages
-```
-
-With read from file, we can do same way
-
-```bash
-pip3 install -r requirements.txt --break-system-packages
-```
-
-### Specific Torch version
-
-In some situations, your environment have higher version CUDA or driver of NVIDIA compare with Torch, you can use this version to bypass and migrate your torch to compatible version with your graphic card. Read more at [Reddit - RTX 5090 Training Issues - PyTorch Doesn't Support Blackwell Architecture Yet?](https://www.reddit.com/r/LocalLLaMA/comments/1law1go/rtx_5090_training_issues_pytorch_doesnt_support/)
-
-```bash
-pip install -U torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
-```
-
-### Create virtual environment with `venv`
-
-With `Python3` from **version 3.12**, it require `venv` or use `--break-system-packages` for global environment. But in some situation, you need find out to `conda` or `venv` to make your environment become more convenience to install external package
-
-To setup `venv`, Read more in official documentation [venv — Creation of virtual environments](https://docs.python.org/3/library/venv.html)
-
-First of all, create new environment with command
-
-```bash
-python3 -m venv /path/to/new/venv
-```
-
-Active the environment
-
-```bash
-source /path/to/new/venv/bin/active
-```
-
-When you finish and want to comeback to global environment, in the `venv` shell, you can use command
-
-```bash
-deactivate
-```
 ## `keytool` (Java)
 
 Explore more about `keytool` through [Common Java Keytool Commands](https://knowledge.digicert.com/de/de/quovadis/ssl-certificates/ssl-general-topics/common-java-keytool-commands)
-### Get keystroke information
 
 To view and check information which store inside keystroke, which generate from `keytool` - key generator integrate into Java
 
@@ -1145,9 +1095,7 @@ To view and check information which store inside keystroke, which generate from 
 keytool -list -v -keystore /path/to/your/keystore-file.keystore -alias your-key-alias -storepass your-keystore-password -keypass your-key-password
 ```
 
-## `OpenVPN`
-
-### Generate Client CA
+## `openvpn`
 
 To generate a completely Client CA for connecting to OpenVPN Server, you can use command
 
@@ -1159,7 +1107,171 @@ To generate a completely Client CA for connecting to OpenVPN Server, you can use
 ./etc/openvpn/server/easy-rsa/easyrsa build-client-full xeusnguyen nopass
 ```
 
+If you want to deal with other easier solution, you can take a look into some contribute versions as script to help you do that work, e.g:
+
+- [openvpn-install.sh](https://github.com/Nyr/openvpn-install/blob/master/openvpn-install.sh): Setting up `openvpn` for your host (Author: [Nyr](https://github.com/Nyr)) 🌟 *(Recommended)* 
+- [openvpn-install](https://github.com/angristan/openvpn-install): Setting up `openvpn` for your host (Author: [angristan](https://github.com/angristan))
+
+```bash
+bash openvpn-install.sh
+```
+
+For situation, you have subscription and aware to use OpenVPN with WedAdmin UI, I truly recommend you to read these documentations from official and also absorb more knowledge from scratch for OpenVPN Setup
+
+- [OpenVPN - Tutorial: Adding Users to Access Server](https://openvpn.net/as-docs/tutorials/tutorial--adding-users.html#tutorial--adding-users-to-access-server)
+- [DigitalOcean - How to set up and configure an OpenVPN Server on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-set-up-and-configure-an-openvpn-server-on-ubuntu-20-04)
+
+For client side, you can choose multiple options for connecting OpenVPN Server with each OS
+
+- OpenVPN Client Application: MacOS, Windows, Android, ...
+- OpenVPN Client CLI: Linux Only
+
+If you are using Ubuntu Gnome Distribution, you can use command below to install `openvpn` client application via `network-manager`. Read more at [OpenVPN NetworkManager setup guide](https://www.ivpn.net/setup/linux-netman/)
+
+```bash
+sudo apt install -y openvpn \
+	network-manager-openvpn network-manager-openvpn-gnome
+```
+
+After install, you can use `network-manager` to import the ovpn profile and easier to use them via the utilities box of Ubuntu at homepage
+
+>[!note]
+>If you want to only use that VPN network for private connection only (via Private network), you can turn on the options network plan for changing your public IP Address
+
+![[Pasted image 20260223105008.png]]
+
+For situation, you want to use CLI Only, it requires you install `openvpn3-client` with command below. Read more these documentations and configuration for more information
+
+- [OpenVPN - OpenVPN 3 Linux Client](https://openvpn.net/community-docs/openvpn-client-for-linux.html)
+- [OpenVPN - OpenVPN 3 Linux](https://community.openvpn.net/Pages/OpenVPN3Linux?_gl=1*lkngse*_gcl_au*OTc0ODQ1MjQ2LjE3NzE4MTU4ODE.*_ga*MTE5OTk1MDU2OC4xNzcxODE1ODgx*_ga_SPGM8Y8Y79*czE3NzE4MTU4ODAkbzEkZzEkdDE3NzE4MTU5MDMkajM3JGwwJGgw*_fplc*QTk3JTJCb0pNMUpjY3A0azNBSG9KOEdvZkRYMGlreGVaRHB3bEM2TE50REE2OVhQRXh3bzdDbzhuRmpuYXlxbmlOMGRtWDNQQ3kxb25XaDJndDdHbE5VVk5HMiUyQlQlMkJ1VFYzTlh2SzdrNUFuMXJYdWRJTXBlWERra0ZGOVM2WHJnJTNEJTNE*_ga_E45Z33NTV7*czE3NzE4MTU4OTgkbzEkZzEkdDE3NzE4MTU5MDMkajU1JGwwJGg0NDA3OTkxMTU.)
+- [OpenVPN - Tutorial: Learn to Install and Control the OpenVPN 3 Client](https://openvpn.net/cloud-docs/tutorials/configuration-tutorials/connectors/operating-systems/linux/tutorial--learn-to-install-and-control-the-openvpn-3-client.html)
+
+```bash
+sudo mkdir -p /etc/apt/keyrings && curl -fsSL https://packages.openvpn.net/packages-repo.gpg | sudo tee /etc/apt/keyrings/openvpn.asc
+DISTRO=$(lsb_release -c -s)
+echo "deb [signed-by=/etc/apt/keyrings/openvpn.asc] https://packages.openvpn.net/openvpn3/debian $DISTRO main" | sudo tee /etc/apt/sources.list.d/openvpn-packages.list
+sudo apt update
+sudo apt install -y openvpn3-client
+```
+
+To import config, you can use command `config-import` to import new ovpn profile and you can use them as **persistently via service of systemd**, or **run it manually** by several commands below
+
+>[!info]
+>If you don't set any `name` for your profile, it will set the config-path of your `ovpn` file.
+
+```bash
+# Import the profile
+openvpn3 config-import --config /path/to/vpn/config --name config-name
+
+# List of profile
+openvpn3 configs-list
+
+# Now start the session with command
+openvpn3 session-start --dco true --background --persist-tun --config config-name
+
+# Check the status of sessions
+openvpn3 sessions-list
+
+# End the specific session
+# session-manage can do clean, restart, resume, pause with config
+# End the session with specific config-name
+openvpn3 session-manage --disconnect --config config-name
+# Or you can end endsession with path via sessions-list
+openvpn3 session-manage --disconnect --path /path/session
+```
+
+If you encounter the error when setup with profile not support compression, you can use command below to change the compression mode. Read more at [OpenVPN versus Compression](https://community.openvpn.net/Pages/Compression)
+
+![[Pasted image 20260223135955.png]]
+With this change, you can use `openvpn3` to setup the compression mode
+
+```bash
+openvpn3 config-manage --config config-name --allow-compression asym
+
+# Show the configuration
+openvpn3 config-manage --config config-name --show
+```
+
+Same as the `network-manager`, if you don't want change your public IP address for ingress/egress, you can use command or manually add config into profile as split tunnel to change what following concept you want. Read more at
+
+- [OpenVPN - Ignoring redirect-gateway](https://community.openvpn.net/Pages/IgnoreRedirectGateway#ignoring-redirect-gateway)
+- [StackOverFlow - How to disable routing all network traffic through OpenVPN?](https://askubuntu.com/questions/945978/how-to-disable-routing-all-network-traffic-through-openvpn)
+- [Starfront - Guide to OpenVPN Split Tunneling](https://support.starfront.space/knowledge-base/article/guide-to-openvpn-split-tunneling)
+
+For my situation, I choose to add `route-nopull` into client profile for split this tunnel and only use them for private only. You can following step below
+
+1. Edit your `.ovpn` profile (NOTE: remember copy another version for backup)
+2. Add `route-nopull` at the end of client file before the certificate part
+3. Import profile into `openvpn3` and start them for normal. Now are already split the tunnel as you want
+## `pritunl`
+
+![[thumbnail-pritunl-client.png]]
+
+With **Pritunl**, you will have great platforms for creating and managing VPN connection supported both OpenVPN and Wireguard Protocols. Because Pritunl creates the standard configuration profile, so that why it's require you to install Client version. Find more download options at [Pritunl Client Installation](https://client.pritunl.com/#install)
+
+```bash
+sudo tee /etc/apt/sources.list.d/pritunl.list << EOF
+deb https://repo.pritunl.com/stable/apt noble main
+EOF
+
+sudo apt --assume-yes install gnupg
+gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys 7568D9BB55FF9E5287D586017AE645C0CF8E292A
+gpg --armor --export 7568D9BB55FF9E5287D586017AE645C0CF8E292A | sudo tee /etc/apt/trusted.gpg.d/pritunl.asc
+sudo apt update
+sudo apt install pritunl-client-electron -y
+```
+
+Now you can double-check the UI version of Pritunl Client or command line if you use the server version with only terminal
+
+```bash
+pritunl-client version
+```
+
+To add the profile pritunl to the client, you can copy temporary link in Pritunl Server, and add it into client
+
+```bash
+pritunl-client add pritunl://url/profile
+```
+
+After that you can see the profile added via `list` command and you can grab the ID for start session for VPN Connection with supported mode `ovpn` or `wg`
+
+>[!info]
+>Remember install client of `ovpn` and `wg` to support them via `pritunl-client` command
+>```bash
+># Install openvpn
+>sudo apt install openvpn -y
+>
+># Install wireguard
+>sudo apt install wireguard -y
+>```
+
+```bash
+# List the client
+pritunl-client list
+
+# Start the session
+# --mode wg (wireguard) or --mode ovpn (openvpn)
+pritunl-client start profile-id --mode wg
+```
+
+For monitoring the VPN connection, you can get the logs and watch the state of VPN connection via command
+
+```bash
+# Get the logs
+pritunl-client logs profile-id
+
+# Watch the connection
+pritunl-client watch
+```
+
+To remove the profile, you can use `remove` command to handle them
+
+```bash
+pritunl-client remove profile-id
+```
 # Terminal Tools
+
+![[meme-awesome.png|center]]
 
 ## Common
 

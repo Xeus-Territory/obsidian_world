@@ -339,7 +339,6 @@ You can become participant of Bounty program via
 
 - [openvpn-install.sh](https://github.com/Nyr/openvpn-install/blob/master/openvpn-install.sh): *Setting up `openvpn` for your host (Author: [Nyr](https://github.com/Nyr))* 🌟 **(Recommended)**
 - [wireguard-install.sh](https://github.com/Nyr/wireguard-install/blob/master/wireguard-install.sh): *Setting up `wireguardvpn` for your host (Author: [Nyr](https://github.com/Nyr))*
-
 ### DDNS
 
 - [DDNS Cloudflare](https://gist.githubusercontent.com/thecrazybob/2ddd932b8f9f6ba1b450c3161d0d1355/raw/16421e95eaa5103ccc0945f5ac65df3a784c403e/lwp-cloudflare-dyndns.sh): Setting Cloudflare DDNS for dynamically change your domain record with new IP base on the concept DNS. (Note: Use this one with `crontab` for more efficiency)
