@@ -460,6 +460,13 @@ If you want to learn about configuration, use [this documentation](https://kuber
 
 >[!tip]
 >[Probes](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.30/#probe-v1-core) have a number of fields that you can use to more precisely control the behavior of startup, liveness and readiness checks
+
+- `initialDelaySeconds`: Number of seconds after the container has started before startup, liveness or readiness probes are initiated. **Defaults to 0 seconds. Minimum value is 0.**
+- `periodSeconds`: How often (in seconds) to perform the probe. **Default to 10 seconds. The minimum value is 1**
+- `timeoutSeconds`: Number of seconds after which the probe times out. **Defaults to 1 second. Minimum value is 1**
+- `successThreshold`: Minimum consecutive successes for the probe to be considered successful after having failed. **Defaults to 1. Minimum value is 1.**
+- `failureThreshold`: After a probe fails `failureThreshold` times in a row, Kubernetes considers that the overall check has failed: the container is _not_ ready/healthy/live. **Defaults to 3. Minimum value is 1.**
+- `terminationGracePeriodSeconds`: configure a grace period for the kubelet to wait between triggering a shut down of the failed container, and then forcing the container runtime to stop that container. **Default is to inherit the Pod-level value for `terminationGracePeriodSeconds` (30 seconds if not specified), and the minimum value is 1.**
 ## Liveness
 
 >[!info]

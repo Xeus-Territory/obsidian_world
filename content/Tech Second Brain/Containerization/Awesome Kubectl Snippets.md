@@ -75,10 +75,16 @@ kubectl create secret generic accounts-identityserver-certificate --from-file=c
 For example, I want to build the ingress with two rule, one for health-check path which configure for platform team, and also domain for user-traffic routing
 
 ```bash
-k create ingress <name-ingress> \
+kubectl create ingress <name-ingress> \
 --rule=/health=<service>:<port> \ # First rule (Exact)
 --rule=<domain>/\*=<service>:<port> \ # Second rule (Prefix)
 --class nginx --dry-run=client --output yaml > ingress.yaml
+```
+
+## Create jobs from cronjobs template
+
+```bash
+kubectl create job <name-jobs> --from=cronjob/[cronjob_name]
 ```
 # Debug Command
 ## Debug your node via kubectl

@@ -62,11 +62,13 @@ tags:
 - [[Awesome eBPF]]
 - [[Awesome Git]]
 - [[Awesome Cloud Native]]
-- [[Awesome HTML & CSS]]
+- [[Awesome HTML & CSS & Javascript]]
 - [[Awesome Monitoring & Observability]]
 - [[Awesome Packer]]
 - [[Awesome Terraform]]
 - [[Awesome Vagrant]]
+- [[Awesome Python]]
+- [[Awesome Golang]]
 ## InfoSec & Hacking
 
 - [[Awesome Hacking and Infosec]]
@@ -246,6 +248,7 @@ tags:
 ## 2026
 
 - [[05-01-2026 to 01-02-2026|Session 01: 05-01-2026 to 01-02-2026]] - *"The new session for 2026, this cover couple of new learning interest of mine about Platform Engineer, Security Pattern, New trend of DevOps and AI in 2026, Bastion Hosts and story about managing the product with some documentations to get people aligned one"*
+- [[02-02-2026 to 01-03-2026|Session 02: 02-02-2026 to 01-03-2026]] - *"Couple of article read during Feb 2026 about IDP (Internal Develop Portal) and story around these setup, see how the downtime can produce by High Availability, new update about deprecated of Nginx Ingress and alternative, security in Kubernetes easily leak from usual behavior and more about setup e2e k8s in 2026"*
 # InfoSec & Security
 
 ## CTF

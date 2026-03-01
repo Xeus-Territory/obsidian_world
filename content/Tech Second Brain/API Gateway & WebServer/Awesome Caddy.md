@@ -104,4 +104,7 @@ https://your-domain.needto.ssl {
 }
 ```
 
-More interesting example at [Single Sign-on in Caddy Server Using only the Caddyfile and Basic Authentication](https://josheli.com/knob/2021/02/24/single-sign-on-in-caddy-server-using-only-the-caddyfile-and-basic-authentication/)
+More interesting example about Secure Connection with Caddy and SSO
+
+- [Blog - Single Sign-on in Caddy Server Using only the Caddyfile and Basic Authentication](https://joshstrange.com/2020/01/13/securing-your-self-hosted-apps-with-single-signon/)
+- [Blog - Single Sign On (SSO) with subdomains using Caddy v2](https://blog.sjain.dev/caddy-sso/)
