@@ -1,5 +1,5 @@
 ---
-title: API Gateway with KeyCloak OAuth2 in Kubernetes
+title: "Chapter XX: API Gateway with OAuth2 in Kubernetes"
 tags:
   - kubernetes
   - k8s
@@ -8,7 +8,6 @@ tags:
   - usage
 draft: "true"
 ---
-
 # Resources
 
 - [Medium - Secure your Kubernetes Cluster with Kong OIDC and Keycloak](https://medium.com/@armeldemarsac/secure-your-kubernetes-cluster-with-kong-and-keycloak-e8aa90f4f4bd)

@@ -28,6 +28,8 @@ tags:
 ## Repositories
 
 - [awesome-argo](https://github.com/akuity/awesome-argo): A curated list of awesome projects and resources related to Argo (a CNCF graduated project)
+- [awesome-cloud-native](https://github.com/rootsongjc/awesome-cloud-native): A curated list for awesome cloud native tools, software and tutorials.
+- [awesome-cloudnative-trainings](https://github.com/joseadanof/awesome-cloudnative-trainings): Awesome Trainings from Cloud Native Computing Foundation Projects and Kubernetes related software
 - [awesome-flux-infra](https://github.com/brainfair/awesome-flux-infra): This repository contains infrastructure applications and add-ons installed in Kubernetes via FluxCD v2.
 # Tools
 

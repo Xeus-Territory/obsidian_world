@@ -25,10 +25,6 @@ tags:
 >- ✅ : Already hand on and release as blog, find all of them at [[All Blogs]]
 >- ⌛ : On my way, just wait for couple weeks
 
-# External Blogs
-
-- API Gateway with KeyCloak OAuth2 in Kubernetes ⌛
-
 # Kubewekend
 
 Github: **[kubewekend](https://github.com/Xeus-Territory/kubewekend)** - Website: **[kubewekend.xeusnguyen.xyz](https://kubewekend.xeusnguyen.xyz/)**
@@ -47,13 +43,20 @@ Github: **[kubewekend](https://github.com/Xeus-Territory/kubewekend)** - Website
 - Session 7: Setup new deployment and route traffic to kubewekend cluster ✅
 - Session 8: Setup the monitoring cluster inside the `kubernetes` with `node-exporter`, `prometheus` and `grafana` ✍
 - Session 9: Setup tracing, logging, profiling components in `kubewekend` cluster ✍
-# WouOps
+
+# W'xOps Book ⌛
 
 >[!quote]
->About the WouOps Community and Project Contribution, Let's make them more efficiency and available to adapt new technologies
-## Robbr ⌛
+>During the time when I develop W'xOps Ecosystem of mine, I will try to recap the process to brainstorm, embrace the challenge and find the golden path to build your platform.
 
-GitHub: **[Robbr](https://github.com/wouops/Robbr)**
+....
+# W'xOps ⌛
+
+>[!quote]
+>About the W'xOps and build in public for what I actually want to does. Let's make it more efficiency and available to leverage for building successes
+## Guardian ⌛
+
+GitHub: **[Guardian](https://github.com/wxops/guardian)**
 
 ![[design-robbr-v1.png]]
 
@@ -65,8 +68,8 @@ GitHub: **[Robbr](https://github.com/wouops/Robbr)**
 
 ## HArchDB ⌛
 
-GitHub: **[HArchiDB](https://github.com/wouops/HArchiDB)**
+GitHub: **[HArchiDB](https://github.com/wxops/harchidb)**
 
-## WouOps IDP ⌛
+## W'xOps IDP ⌛
 
-GitHub: **[wouops-idp](https://github.com/wouops/wouops-idp)**
+GitHub: **[wouops-idp](https://github.com/wxops/wxops-idp)**

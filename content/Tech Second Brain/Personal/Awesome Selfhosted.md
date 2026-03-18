@@ -15,6 +15,9 @@ tags:
 - [awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) : About A list of Free Software network services and web applications which can be hosted on your own servers 🌟 **(Recommended)**
 - [awesome-sysadmin](https://github.com/awesome-foss/awesome-sysadmin): A curated list of amazingly awesome open-source sysadmin resources
 - [self-hosting-guide](https://github.com/mikeroyal/Self-Hosting-Guide) : Learn all about locally hosting
+- [awesome-opensource-email](https://github.com/Mindbaz/awesome-opensource-email): Awesome Opensource Email Resources
+- [awesome-virtualization](https://github.com/Wenzel/awesome-virtualization): Collection of resources about Virtualization
+- [deploy-your-own-saas](https://github.com/Atarity/deploy-your-own-saas): List of "only yours" cloud services for everyday needs 🏴
 # Self-hosted by Categories
 
 ![[thumbnil-cncf-tools-landscape.png]]
@@ -54,6 +57,9 @@ tags:
 
 - [docker-mailserver](https://github.com/docker-mailserver/docker-mailserver): Production-ready fullstack but simple mail server (SMTP, IMAP, LDAP, Antispam, Antivirus, etc.) running inside a container
 - [Mailu](https://github.com/Mailu/Mailu): Insular email distribution - mail server as Docker images
+- [stalwart](https://github.com/stalwartlabs/stalwart): All-in-one Mail & Collaboration server. Secure, scalable and fluent in every protocol (IMAP, JMAP, SMTP, CalDAV, CardDAV, WebDAV) 🌟 **(Recommended)**
+- [postal](https://github.com/postalserver/postal): 📮 A fully featured open source mail delivery platform for incoming & outgoing e-mail
+- [postfix](https://www.postfix.org/): It is mail server that started life at [IBM research](https://www.research.ibm.com/) as an alternative to the widely-used [Sendmail](https://www.sendmail.org/) program
 ## Storage Platforms
 
 - [Ceph](https://docs.ceph.com/en/reef/start/): Ceph can be used to provide [Ceph Object Storage](https://docs.ceph.com/en/reef/glossary/#term-Ceph-Object-Storage) to [Cloud Platforms](https://docs.ceph.com/en/reef/glossary/#term-Cloud-Platforms) and Ceph can be used to provide [Ceph Block Device](https://docs.ceph.com/en/reef/glossary/#term-Ceph-Block-Device) services to [Cloud Platforms](https://docs.ceph.com/en/reef/glossary/#term-Cloud-Platforms). Ceph can be used to deploy a [Ceph File System](https://docs.ceph.com/en/reef/glossary/#term-Ceph-File-System). All [Ceph Storage Cluster](https://docs.ceph.com/en/reef/glossary/#term-Ceph-Storage-Cluster) deployments begin with setting up each [Ceph Node](https://docs.ceph.com/en/reef/glossary/#term-Ceph-Node) and then setting up the network. 🌟 **(Recommended)**
@@ -64,7 +70,7 @@ tags:
 
 - [chisel](https://github.com/jpillora/chisel) : A fast TCP/UDP tunnel over HTTP
 - [bore](https://github.com/ekzhang/bore): A simple CLI tool for making tunnels to localhost
-## Virtual Machine / Virtualization
+## Virtual Machine / Virtualization / Hypervisor
 
 - [firecracker](https://github.com/firecracker-microvm/firecracker): Secure and fast microVMs for serverless computing.
 - [KVM](https://linux-kvm.org/page/Main_Page): a full virtualization solution for Linux on x86 hardware containing virtualization extensions
