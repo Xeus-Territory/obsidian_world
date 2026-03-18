@@ -215,6 +215,9 @@ tags:
 - [[From GitLab to Data LakeHouse Pipeline for Orchestration]]
 - [[The Story of Mine about Multi-Region Architecture]]
 - [[To Cloud Native Multi-Cluster with ExternalDNS]]
+## 2026
+
+- [[Advantage Networking Fundamental - Routing, VPN and Peering]]
 # DueWeekly Tech
 
 >[!info]
@@ -321,10 +324,14 @@ tags:
 - [[Kubewekend Session 4|Kubewekend Session 4: Learn about ebpf with hubble and cilium]] - This session will talk and learn about `eBPF` and the especially representation of `eBPF` are `cilium` and `hubble` to become main CNI of Kubewekend and talk about Observability of them
 - [[Kubewekend Session 5|Kubewekend Session 5: Build HA Cluster]] - This session is really pleasant when we talk about how can create HA cluster with `kubewekend`, learn more the components inside `kubernetes` and try figure out about `network`, `security`, `configuration`, `container runtime` and `system` via this session
 - [[Kubewekend Session 6|Kubewekend Session 6: CSI and Ceph with Kubewekend]] - This session is covered about topic storage inside `Kubernetes` cluster, how can they work with `CSI` Architecture and why we need to `CSI Driver` for handle this stuff. Furthermore, I try to practice with `Ceph` - one of popular storage opensource for `Kubewekend` cluster
-- [[Kubewekend Session 7|Kubewekend Session 7: Setup new deployment and route traffic to kubewekend cluster]] - This session explores core networking concepts in Kubernetes, guiding you through the setup of new deployments and demonstrating how to expose services for external access using **Ingress** and the **Gateway API**. We also delve into **External LoadBalancer** concepts and the operational nuances of managing them via **Cilium NodeIPAM**. By the end of this session, you will understand how to bridge the gap between cluster-internal services and external clients using modern, eBPF-powered networking strategies.
+
 ## 2025
 
 - [[Kubewekend Session Extra 1|Kubewekend Session Extra 1: Longhorn and the story about NFS in Kubernetes]] - This lab is try to take you to journey to learn about new CSI for Kubernetes, `Longhorn` and deliver you to new method to handle transfer large file via network by NFS protocol. I also provide more information about `iSCSI`, `nfs-ganesha` and technique `rdma`
 - [[Kubewekend Session Extra 2|Kubewekend Session Extra 2: Rebuild Cluster with RKE2 or K3S]] - This article aims to provide you with insights into alternatives for self-hosting a full Kubernetes cluster. Both `K3s` and `RKE2` are strong contenders worth considering to guide your decision. Focusing on the self-hosted approach with `RKE2`, I want to share more about my experiences working with it over the past four months.
 - [[Kubewekend Session Extra 3|Kubewekend Session Extra 3: RKE2 and The Nightmare with Network and CoreDNS]] - This article is my story about wrestling with networking in Kubernetes. I'll cover the frustrating problems that arise when your pods can't communicate with services, CoreDNS fails to resolve domains, and the tough issues involving **CNI** and the **ChecksumTX** of network interfaces in Kubernetes.
 - [[Kubewekend Session Extra 4|Kubewekend Session Extra 4: Kind and Sandbox environment for GitLab CI]] - This article shares my experience setting up a sandbox environment with Kind to adapt new Kubernetes environments within CI/CD pipelines. I'll provide several ideas for running both CPU and GPU applications, demonstrating their behavior specifically within GitLab CI.
+
+## 2026
+
+- [[Kubewekend Session 7|Kubewekend Session 7: Setup new deployment and route traffic to kubewekend cluster]] - This session explores core networking concepts in Kubernetes, guiding you through the setup of new deployments and demonstrating how to expose services for external access using **Ingress** and the **Gateway API**. We also delve into **External LoadBalancer** concepts and the operational nuances of managing them via **Cilium NodeIPAM**. By the end of this session, you will understand how to bridge the gap between cluster-internal services and external clients using modern, eBPF-powered networking strategies.

@@ -437,9 +437,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Alias tools
-alias stegsolve="java -jar $HOME/.stego_tools/stegsolve/stegsolve.jar"
-
 # Python Path/GCC PATH (Use tool of Python with command)
 export PATH="$PATH:~/.local/bin"
 
@@ -456,7 +453,7 @@ alias krcp="k resource-capacity -p --util"
 alias krca="k resource-capacity -a"
 alias kgsecret="k get secret -o go-template='{{range \$k,\$v := .data}}{{\"### \"}}{{\$k}}{{\"\n\"}}{{\$v|base64decode}}{{\"\n\n\"}}{{end}}'"
 
-# krew and kubectl pluggins
+# krew and kubectl plugins
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 # Example for used completion with kubectl source <(kubectl resource-capacity completion zsh)
 
@@ -478,7 +475,7 @@ export LD_LIBRARY_PATH="/usr/local/lib:/usr/local/lib64:$LD_LIBRARY_PATH"
 export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:/usr/local/lib64/pkgconfig:$HOME/.local/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # Alias command to get Public IP
-alias pubip="curl -4 icanhazip.com"
+alias pubip="curl -4 ifconfig.io"
 
 # Check the cpu-temp in your machine
 alias cputemp="paste <(cat /sys/class/thermal/thermal_zone*/type) <(cat /sys/class/thermal/thermal_zone*/temp) | column -s $'\t' -t | sed 's/\(.\)..$/.\1°C/'"

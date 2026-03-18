@@ -1,36 +1,29 @@
 ---
-title: HomePage 🏡
+title: The World of Xeus Nguyen
 tags:
   - myself
   - xeusnguyen
 ---
 
 <div align="center">
-	<h1>Welcome to wiki of xeusnguyen</h1><br>
-	<img src="https://avatars.githubusercontent.com/u/74602538?s=400&v=4">
+	<h1>Welcome to the World of Xeus Nguyen</h1>
     <em><p style="text-align: center;">"Still living young, wild and free !!!"</p></em>
 </div>
 
+![[icon-legacy-figure-xeusnguyen.png|center|800]]
+
 > [!quote] 
-> *Yo wassup, hi y'all, I am Xeus Nguyen and I work on, learn and growth up myself with technologies field. Therefore, I always keep my mindset and make a good and create more new things. Be stay humble and enthusiastic that is shortest way to reaching legacy*
+>Yo wassup y'all guys, I am Xeus Nguyen and I am on my journey to find myself to spark new idea, create new value and live the best moments for my youth, as DevOps Engineer, as Contributor for Technologies
 > 
-> **Having some experience about** 
-> 1. Capture The Flag
-> 2. Web Penetration Tester 
-> 3. Technologies Researcher
-> 4. Have passion about Forensic
-> 5. Currently, work as DevOps Engineer
-> 6. In love with Quantum Computing.
->
->*"In another way, I am currently work as Tech Blogger in [Medium](https://medium.com/@XeusNguyen) and [HackMD](https://hackmd.io/@xeusnguyen), hope this can bring more efficiently for community, at least for people who reach to my wiki page, from my bottom of heart I want to give huge respect for y'all guys"*
+>"In another way, I am also work as Tech Blogger, hope my work can bring more efficiently for who visited and attracted by my contribution. From my bottom of heart I want to give huge respect for y'all guys ♥️"
 
-Check some things in my world down below
+Find more information about my work below
 
-1. 🏢 [[All Projects]] - All projects currently work on or archives
-2. 🎆 [[All Blogs]]  - All blog which I have and share to community
-3. ⚔️ [[Personal Projects Management|Idea and Projects]] - All project and idea are in progress or contribute on next time
-4. 🔱 [DevSecOps - XeusNguyen's CV](https://drive.google.com/file/d/1dSkLmrDepgf03kG0KNW-cumIOB-dJ6tF/view?usp=sharing)
-5. 📨 kobikiu810@gmail.com or xeusnguyen@gmail.com - For contacting with me
+1. 🏢 [[All Projects|Awesome My Projects]]
+2. 🎆 [[All Blogs|Awesome My Blogs]]
+3. ⚔️ [[Personal Projects Management|Personal DIY Projects Management]]
+4. 🔱 [DevSecOps - XeusNguyen's CV](https://drive.google.com/file/d/1xO580Y9r1XVGbE7QlMfk49nTQE-BXpDD/view?usp=sharing)
+5. 📨 Contact for work: xeusnguyen@gmail.com
 
 
 ![[thumbnail-young-wild-free.png| center | 400]]
