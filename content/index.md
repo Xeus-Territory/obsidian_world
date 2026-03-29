@@ -23,7 +23,7 @@ Find more information about my work below
 2. 🎆 [[All Blogs|Awesome My Blogs]]
 3. ⚔️ [[Personal Projects Management|Personal DIY Projects Management]]
 4. 🔱 [DevSecOps - XeusNguyen's CV](https://drive.google.com/file/d/1xO580Y9r1XVGbE7QlMfk49nTQE-BXpDD/view?usp=sharing)
-5. 📨 Contact for work: xeusnguyen@gmail.com
+5. 📨 Contact for work: [xeusnguyen@gmail.com](mailto:xeusnguyen@gmail.com) or [xeusnguyen@wxops.cloud](mailto:xeusnguyen@wxops.cloud) 
 
 
 ![[thumbnail-young-wild-free.png| center | 400]]

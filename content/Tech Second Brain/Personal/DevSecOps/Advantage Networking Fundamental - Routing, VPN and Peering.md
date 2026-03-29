@@ -35,8 +35,6 @@ On this articles, I want to focus on
 - Learning the methodology for Routing Networking, and Which protocols are handle that action?
 - Learning VPN and more solution for ensure data transition
 - Learning about modern network tech-stack for routing, peering
-- Learn couple of Linux Fundamental for Networking
-- Learning Kubernetes Networking with BGP
 ## Network Terminologies
 
 | **Term**                                       | **Full Name**                       | **Simple Definition**                                                                                         | **Think of it like...**                                                                                      |

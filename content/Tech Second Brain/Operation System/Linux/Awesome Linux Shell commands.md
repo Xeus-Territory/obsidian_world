@@ -1013,7 +1013,7 @@ dig +noall +answer +comment example.com
 >- **MX (Mail Exchange) Record**: Specifies the **mail servers** responsible for accepting email on behalf of a domain name.
 ### `nc`
 
-To check port open or not, you can use `nc` with some options to retrieve information. Explore more at:
+**To check port open or not (Inbound)**, you can use `nc` with some options to retrieve information. Explore more at:
 
 - [StackOverFlow - Testing UDP port connectivity](https://serverfault.com/questions/416205/testing-udp-port-connectivity)
 - [StackOverFlow - Test if remote TCP port is open from a shell script](https://stackoverflow.com/questions/4922943/test-if-remote-tcp-port-is-open-from-a-shell-script)
@@ -1026,6 +1026,19 @@ nc -z -v -w5 <host> <portX>-<portY>
 # Check port UDP or not
 nc -z -u -v <host> <port>
 ```
+
+**How about port open but outbound**, you can reuse `nc` for testing via remote host called [portquiz.net](http://portquiz.net/)
+
+```bash
+ nc -v portquiz.net <port-outbound-test>
+```
+
+>[!note]
+>You can also take another tools for check the outbound connection with `curl`, `wget` or `telnet` to `portquiz.net`
+>```bash
+>curl portquiz.net:<port-outbound> 
+>wget -qO- portquiz.net:<port-outbound> 
+>```
 ### `ufw`
 
 Documentations and articles

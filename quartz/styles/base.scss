@@ -449,12 +449,6 @@ img {
   margin: 1rem 0;
 }
 
-img:hover {
-  transform: scale(1.2);
-  z-index: 99;
-  position: relative;
-}
-
 p > img + em {
   display: block;
   transform: translateY(-1rem);
