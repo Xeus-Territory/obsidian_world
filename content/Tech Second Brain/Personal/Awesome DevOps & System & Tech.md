@@ -20,6 +20,7 @@ tags:
 - [DevOps-Roadmap](https://github.com/milanm/DevOps-Roadmap): DevOps Roadmap with learning resources. contents by Milan **(Legit Recommend)**
 - [Google SRE](https://sre.google/): Resource of Google for let you learn to become SRE with free resources, video, books and moreover stuff like that 🌟 **(Recommended)**
 - [DevOps & SRE interview questions](https://ewry.net/devops-sre-interview-questions/): Find the most important information about key DevOps & SRE technologies. 🌟 **(Recommended)**
+- [awesome-platform-engineering-tools](https://github.com/seifrajhi/awesome-platform-engineering-tools): A curated list of Platform Engineering Tools 🌟 **(Recommended)**
 ## General
 
 - [awesome-for-beginners](https://github.com/MunGell/awesome-for-beginners) : A list of awesome beginners-friendly projects.

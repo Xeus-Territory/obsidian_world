@@ -115,7 +115,6 @@ tags:
 - [[Virtual Machine|Azure Virtual Machine]]:  The basis of the Azure infrastructure as a service (IaaS) model
 - [[Virtual Machine Availability|Azure Machine Availability]]: Methodology to enhance the availability for Azure Machine
 - [[Virtual network|Azure Virtual Network]]: An essential component for creating private networks in Azure
-
 # AWS Cloud Services
 
 ![[thumbnail-aws.png|center]]

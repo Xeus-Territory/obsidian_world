@@ -80,6 +80,83 @@ In additional, SOPS uses [MAC (Message Authentication Code)](https://getsops.io/
 >[!quote]
 >Honestly, With to knowing how the work of SOPS, It does tough choice as hit a wall, because SOPS stands below the method to encrypt and key exchange, that totally make SOPS to become potential candidate when you think about secret distributing
 
+Let's take couple of examples about SOPS supported us. For example, If we have **dangerous version** below, you can see the different between before and after with SOPS
+
+```yaml
+# Before Version
+connector:
+  # !!! secret exposing
+  mongodb_conn: mongodb://example:example@localhost:27017
+```
+
+```yaml
+# After version
+connector:
+    # !!! Encrypt verion with AES256
+    mongodb_conn: ENC[AES256_GCM,data:ZuqZMecT7BlMOy+kXaFH/xS+nzVNC9iYGRi0xSC6hW9yvJ8wGw==,iv:cr8xSq7RAHIb1CpKpu21b+Ha16NFPAVSnFf7dpGiUnU=,tag:rwuGIPCAfAOxStzLWPXQtQ==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2025-02-26T04:16:09Z"
+    mac: ENC[AES256_GCM,data:jDCQz8wUSL7qTkPnh9WP8Dm4m7DJBpgiucnsSsIFVkcc0fk4VCZbuA5GqZuBKyGoJ1VDUvX1xOJvQXbE6Rtw/dAB7IguWKJp5pb/OVTUiOvqrqv2I9gbjmPv9JVrg9cicYjH6x25YcbDVknbUHeQLcazE0ocyXIkv60b5SDxPMM=,iv:t1jssSq1GzASJPfvvAOjbk2VlRDmQm3PnIx4XaakkrY=,tag:dIVWK7ywJqXsL/yX9IKE9w==,type:str]
+    pgp:
+        - created_at: "2025-02-26T04:16:09Z"
+          enc: |-
+            -----BEGIN PGP MESSAGE-----
+
+            hQEMA3YC1xmJD1LiAQf+NJsEMemXJ957sUcW0md+YRgOaHi8yZaIuY0X6aq0mkD7
+            UrlKMxbqKJ3P9mwwm6cRilAJpwPlILUR8PNUsAJ0WzkH0b857ueN3IwVrtGqONQT
+            ylnN+BNDLYkKKMNNYofRx06oO8LhTxorRjp9quLSVqhHeHpytsu5Vsc8Kkta4w35
+            qrRyhjFmwCYBSB9eVgEpfDaSgTNslFBdoFdi9brEeITcPrAHkyE1Vm9dIXC+bp8M
+            Q3LBbcViluExtIiWEHwTOzngXNCG4MS264zxZ8Od7o4myvuFBAVDuL/rLiP7DV+p
+            0UZ3Co0sRFPoIo6wqt805o9fyC7vmLN1yH6Zz1BblNRoAQkCEHDNidDo/27q0wSQ
+            g38pld+yJGU2DzS608SilGkf2r0DsWAhdkrFR2qEGeaUeycsVvfYhfIJ+BlUL9Ia
+            h+CydaKKYyYt+D5159R6ESDVbHRBC9n2C6UzDOSnqxaGYnl/oQ8aVqA=
+            =1fG4
+            -----END PGP MESSAGE-----
+          fp: BF466DA364A606FA85515301D5FDD09B1D05DBB3
+    unencrypted_suffix: _unencrypted
+    version: 3.9.1
+```
+
+To build the encryption, you can playground with GPG and PGP Key for encrypt and decrypt your file because they usually integrate into Linux Distro, with simply opts before you can apply SOPS with 3rd party, e.g: Vault, KMS
+
+**Create GPG encryption key**
+
+```bash
+gpg --full-generate-key --rfc4880
+```
+
+>[!note]
+>When you are asked to enter a password, you need to omit it.
+
+**Encrypt your secret file with SOPS**
+
+```bash
+# Use gpg for list your key generation
+gpg --list-keys                    
+/home/xxxxxxx/.gnupg/pubring.kbx
+-----------------------------------
+pub   rsa2048 2025-02-26 [SC]
+      BF466DA364A606FA85515301D5FDD09B1D05DBB3
+uid           [ultimate] gpg-key
+sub   rsa2048 2025-02-26 [E]
+```
+
+Now we get the ID of key, e.g: `BF466DA364A606FA85515301D5FDD09B1D05DBB3` and you can use sops with `--pgp` specific
+
+```bash
+sops encrypt --pgp BF466DA364A606FA85515301D5FDD09B1D05DBB3 values-secrets-raw.yaml | tee values-secrets.yaml
+```
+
+With output file, you can keep that secret published in any public, e.g: GitHub or GitLab because that's totally encrypted. If you want to integrate for any agent, deployment able to decrypt your file via **Generated decryption key**
+
+```bash
+gpg --armor --export BF466DA364A606FA85515301D5FDD09B1D05DBB3 key.asc > key.asc
+```
 ## The SOPS threaten
 
 >[!quote]
