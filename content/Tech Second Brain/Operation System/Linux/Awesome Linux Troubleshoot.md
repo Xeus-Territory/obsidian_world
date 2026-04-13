@@ -463,7 +463,8 @@ To easily modify these features, Linux provides the **`sysctl`** command. In som
 By default, the configuration will update temporary with `sysctl` command
 
 ```bash
-sudo sysctl fs.inotify.max_user_watches=524288
+sudo sysctl -w fs.inotify.max_user_instances=1024
+sudo sysctl -w fs.inotify.max_user_watches=524288
 ```
 
 However, you want to apply the persistent configuration, you can add your configuration into file `/etc/sysctl.conf`
@@ -472,7 +473,12 @@ However, you want to apply the persistent configuration, you can add your config
 nano /etc/sysctl.conf
 ```
 
-Explore more about these configurations at [StackOverFlow - sysctl vs writing directly to /proc/\*](https://serverfault.com/questions/946665/sysctl-vs-writing-directly-to-proc)
+Explore more about these configurations at
+
+- [StackOverFlow - sysctl vs writing directly to /proc/\*](https://serverfault.com/questions/946665/sysctl-vs-writing-directly-to-proc)
+- [Kubernetes - Using sysctls in a Kubernetes Cluster](https://kubernetes.io/docs/tasks/administer-cluster/sysctl-cluster/)
+- [PhoenixNAP - sysctl Command in Linux with Examples](https://phoenixnap.com/kb/sysctl)
+
 # Comment note in Shell Bash
 
 >[!info]

@@ -15,6 +15,11 @@ tags:
 
 - [[Atlantis with ECS for automatic provisioning|Blog - Atlantis with ECS for automatic provisioning]]
 - [Medium - GitOps: How to Manage Dynamic Network Policy Changes at Scale Across 25 Clusters?](https://itnext.io/gitops-how-to-manage-dynamic-network-policy-changes-at-scale-across-25-clusters-0727ce1145e5) 🌟 **(Recommended)**
+## Blogs
+
+- [Operate First](https://www.operate-first.cloud/apps/content/README.html): Serve as a main resource for all Operate First GitHub Org contributors.
+- [Platform Engineering](https://platformengineering.org/blog): The blog about Platform Engineer and PlatformCon 
+- [Internal Developer Platform](https://internaldeveloperplatform.org/): The general and blog about IDP and Development Strategies
 ## Bootstrap Articles
 
 - [Medium - Configure CI/CD pipeline: GitlabCI, ArgoCD, HelmCharts & SOPS](https://medium.com/@golaneduard1/configure-ci-cd-pipeline-gitlabci-argocd-helmcharts-sops-3cbf94f300ed) 🌟 **(Recommended)**
@@ -22,9 +27,19 @@ tags:
 - [Medium - GitOps with Kubernetes, Terraform, Gitlab and FluxCD](https://medium.com/@prag-matic/gitops-with-kubernetes-terraform-gitlab-and-fluxcd-2875d1010dac)
 - [Digital Ocean - Implementing GitOps using Flux CD](https://www.digitalocean.com/community/developer-center/implementing-gitops-using-flux-cd)
 - [Codefresh - Understanding Argo CD: Kubernetes GitOps Made Simple](https://codefresh.io/learn/argo-cd/) 🌟 **(Recommended)**
-## Blogs
+## Landscape
 
-- [Operate First](https://www.operate-first.cloud/apps/content/README.html): Serve as a main resource for all Operate First GitHub Org contributors.
+- [CD Foundation Landscape](https://landscape.cd.foundation/): Collection about CI/CD Projects
+- [CNCF Landscape](https://landscape.cncf.io/): Collection by category tools and technologies of CNCF 🌟 **(Recommended)**
+- [CNCF Projects](https://contribute.cncf.io/contributors/projects/): All projects of the Cloud Native Computing Foundation
+- [Linux Foundation Project](https://www.linuxfoundation.org/projects) : Opensource Ambassador for projects from multiple users
+- [Platform Engineer landscape](https://platformengineering.org/platform-tooling): Distills the best practices in designing IDP
+## Platform Engineer Articles
+
+- [Platform Engineer - Internal Developer Platform (IDP) Reference Architectures](https://devops.com/internal-developer-platform-idp-reference-architectures/)
+- [Platform Engineer - Top 10 platform engineering tools to use in 2025](https://platformengineering.org/blog/top-10-platform-engineering-tools-to-use-in-2025)
+- [Platform Engineer - 10 Platform engineering predictions for 2026](https://platformengineering.org/blog/10-platform-engineering-predictions-for-2026)
+- [Humanitec - Self-hosted Platform Orchestrator](https://humanitec.com/blog/running-the-platform-orchestrator-self-hosted)
 ## Repositories
 
 - [awesome-argo](https://github.com/akuity/awesome-argo): A curated list of awesome projects and resources related to Argo (a CNCF graduated project)

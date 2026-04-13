@@ -19,7 +19,6 @@ tags:
 - [OWASP - Free for Open Source Application Security Tools](https://owasp.org/www-community/Free_for_Open_Source_Application_Security_Tools): the following lists of **automated vulnerability detection tools** that are **free for open source** projects have been gathered together here to raise awareness of their availability. 🌟 **(Recommended)**
 - [Blog - The DevSec Blueprint](https://devsecblueprint.com/):  a comprehensive, free, and open-source learning _guide_ designed to equip you with the essential skills and knowledge needed to transition into or grow your Cloud Security Development & DevSecOps career.
 - [OWASP - Source Code Analysis Tools](https://owasp.org/www-community/Source_Code_Analysis_Tools): The collections of SAST which organized by OWASP and community contribution
-
 ## Landscape
 
 - [SonarType - DevSecOps Reference Architecture](https://www.sonatype.com/hubfs/DevSecOps%20Reference%20Architecture.pdf) 🌟 **(Recommended)**

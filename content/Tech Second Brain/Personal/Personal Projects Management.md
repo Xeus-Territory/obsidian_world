@@ -31,19 +31,14 @@ Github: **[kubewekend](https://github.com/Xeus-Territory/kubewekend)** - Website
 
 >[!summary]
 >Sharing about the interesting and couple of technology candidates for setting up Kubernetes cluster in locally, for learning and doing experiment purpose. This is a adventure of mine and you to work, and adapt together for everything around Kubernetes at the weekend
-## The extra session ✍
+## The extra session 🚧
 
-- Session Extra 5: Combination GitOps with ArgoCD into Kubewekend Cluster ⌛
-- Session Extra 6: Learn how to enhance security with network context, RBAC in Kubernetes ⌛
-- Session Extra 7: Customize default scheduled in `kubernetes` cluster with `kube-scheduler` ⌛
-- Session Extra 8: Learn how to operate Service Mesh inside Kubewekend Cluster ⌛
-- Session Extra 9: Learn about virtualization inside Kubewekend with `kubevirt` ⌛
-## The major session ✍
+- Session Extra 5: Combination GitOps with ArgoCD into Kubewekend Cluster 🚧
+- Session Extra 6: Learn how to enhance security with network context, RBAC in Kubernetes 🚧
+- Session Extra 7: Learn how to operate Service Mesh with Istio inside Kubewekend Cluster 🚧
+## The major session ✅
 
-- Session 7: Setup new deployment and route traffic to kubewekend cluster ✅
-- Session 8: Setup the monitoring cluster inside the `kubernetes` with `node-exporter`, `prometheus` and `grafana` ✍
-- Session 9: Setup tracing, logging, profiling components in `kubewekend` cluster ✍
-
+- Session 8: Setup the cluster monitoring stack with LGTM and Grafana Alloy ✅
 # W'xOps Book ⌛
 
 >[!quote]

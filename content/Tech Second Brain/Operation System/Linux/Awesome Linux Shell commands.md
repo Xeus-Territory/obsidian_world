@@ -896,6 +896,43 @@ lspci -s [[[[<domain>]:]<bus>]:][<slot>][.[<func>]]	# Show only devices in selec
 # see the verbose version
 lspci --vv -s [[[[<domain>]:]<bus>]:][<slot>][.[<func>]]	# Show only devices in selected slots
 ```
+
+### `sysctl`
+
+By default, Linux will setup couple of kernel param and in some case you need to modify to prevent error appearance. Explore more about `sysctl` command at [[Awesome Linux Troubleshoot#Control Kernel Parameter|Control Kernel Parameter with `sysctl`]]
+
+To see the default kernel param, you can double-check with command
+
+```bash
+# To view all
+sudo sysctl --all
+# To have couple of filters
+sudo sysctl --all | grep -e "net" # for network
+sudo sysctl --all | grep -e "fs" # for filesystem
+# To specific value
+sudo sysctl fs.inotify.max_user_watches
+```
+
+To modify the value, you can use `system` with specific param
+
+```bash
+# Specific with different number compare with default (temporary)
+sudo sysctl -w fs.inotify.max_user_watches=524288
+```
+
+To reload the sysctl configuration file from `/etc/sysctl.conf` and `/etc/sysctl.d/` files
+
+```bash
+sudo sysctl -p
+# To specific file
+sudo sysctl -p /path/to/custom
+# Load all file
+sudo sysctl -f
+```
+
+>[!info]
+>The system loads settings from the following configuration files: `/run/sysctl.d/*.conf`, `/etc/sysctl.d/*.conf`, `/usr/local/lib/sysctl.d/*.conf`, `/usr/lib/sysctl.d/*.conf`, `/lib/sysctl.d/*.conf`, and `/etc/sysctl.conf`.
+
 ## Networking
 
 ### `netstat`
