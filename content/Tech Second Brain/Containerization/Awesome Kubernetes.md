@@ -180,7 +180,7 @@ tags:
 - [kubernetes-homelab](https://github.com/lisenet/kubernetes-homelab): Building a multi-master multi-node Kubernetes homelab with kubeadm, Ansible, Helm and Terraform
 - [Kubernetes Schedule Plugins](https://scheduler-plugins.sigs.k8s.io/): Repository for out-of-tree scheduler plugins based on the [scheduler framework](https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/) 🌟 **(Recommended)**
 - [KubeSec Diagram](https://kubesec-diagram.github.io/): a diagram made to better understand and get an overview of kubernetes security 🌟 **(Recommended)**
-- [Kubetools](https://collabnix.github.io/kubetools/): A Curated List of Kubernetes Tools 🌟 **(Recommended)**
+- [Kubetools](https://collabnix.github.io/kubetools/): A Curated List of Kubernetes Tools 🌟 **(Recommended)**. New UI at: https://kubetools.collabnix.com/#/
 - [Deploy to Kuberenetes](https://deploy-to-kubernetes.readthedocs.io/en/latest/): Deploy a distributed AI stack to a multi-host or single-host Kubernetes cluster on CentOS 7 🌟 **(Recommended)**
 ## Blogs
 

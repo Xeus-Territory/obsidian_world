@@ -21,20 +21,12 @@ tags:
 - [Google SRE](https://sre.google/): Resource of Google for let you learn to become SRE with free resources, video, books and moreover stuff like that 🌟 **(Recommended)**
 - [DevOps & SRE interview questions](https://ewry.net/devops-sre-interview-questions/): Find the most important information about key DevOps & SRE technologies. 🌟 **(Recommended)**
 - [awesome-platform-engineering-tools](https://github.com/seifrajhi/awesome-platform-engineering-tools): A curated list of Platform Engineering Tools 🌟 **(Recommended)**
+- [Apache Project Directory](https://projects.apache.org/projects.html) : List all of product of Apache 🌟 **(Recommended)**
+- [Cloud Native Glossary](https://glossary.cncf.io/): The Cloud Native Glossary aims to make the cloud native space
 ## General
 
 - [awesome-for-beginners](https://github.com/MunGell/awesome-for-beginners) : A list of awesome beginners-friendly projects.
 - [awesome](https://github.com/sindresorhus/awesome): 😎 Awesome lists about all kinds of interesting topics. [Website](https://project-awesome.org/)
-## Landscape
-
-- [Apache Project Directory](https://projects.apache.org/projects.html) : List all of product of Apache 🌟 **(Recommended)**
-- [CD Foundation Landscape](https://landscape.cd.foundation/): Collection about CI/CD Projects
-- [Cloud Native Glossary](https://glossary.cncf.io/): The Cloud Native Glossary aims to make the cloud native space
-- [CNCF Landscape](https://landscape.cncf.io/): Collection by category tools and technologies of CNCF 🌟 **(Recommended)**
-- [CNCF Projects](https://contribute.cncf.io/contributors/projects/): All projects of the Cloud Native Computing Foundation
-- [LFX](https://lfx.linuxfoundation.org/): a hub for collaboration and sustainability in open source
-- [Linux Foundation Project](https://www.linuxfoundation.org/projects) : Opensource Ambassador for projects from multiple users
-- [Platform Engineer landscape](https://platformengineering.org/platform-tooling): Distills the best practices in designing IDP
 ## Organization
 
 - [Airbnb](https://github.com/airbnb): Airbnb Open Source Community 🌟 **(Recommended)**
@@ -71,6 +63,7 @@ tags:
 - [VMware](https://github.com/vmware): Open Source Project from VMware
 - [Vox Pupuli](https://github.com/voxpupuli): Modules and tooling maintained by and for the [Puppet](https://www.puppet.com/) community
 - [Yandex](https://github.com/yandex): Yandex open source projects and technologies
+- [LFX](https://lfx.linuxfoundation.org/): a hub for collaboration and sustainability in open source
 ## Technology
 
 - [awesome-compilers](https://github.com/aalhour/awesome-compilers): Curated list of awesome resources on Compilers, Interpreters and Runtimes 🌟 **(Recommended)**
