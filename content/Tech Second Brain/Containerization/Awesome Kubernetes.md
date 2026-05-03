@@ -307,6 +307,8 @@ tags:
 - [kubebuilder](https://github.com/kubernetes-sigs/kubebuilder): SDK for building Kubernetes APIs using CRDs
 - [Operator SDK](https://github.com/operator-framework/operator-sdk): component of the [Operator Framework](https://github.com/operator-framework), an open source toolkit to manage Kubernetes native applications, called Operators, in an effective, automated, and scalable way.
 - [Crossplane](https://docs.crossplane.io/latest/): An open source Kubernetes extension that transforms your Kubernetes cluster into a **universal control plane**.
+- [kopf](https://github.com/nolar/kopf): A Python framework to write Kubernetes operators in just a few lines of code
+- [metacontroller](https://github.com/metacontroller/metacontroller): Writing kubernetes controllers can be simple
 ## Kubernetes Hosted
 
 - [K0s](https://docs.k0sproject.io/stable/): k0s is an open source, all-inclusive Kubernetes distribution, which is configured with all of the features needed to build a Kubernetes cluster.
