@@ -62,9 +62,10 @@ tags:
 
 - [pgBackRest](https://pgbackrest.org/): a reliable backup and restore solution for PostgreSQL that seamlessly scales up to the largest databases and workloads.
 - [postgresus](https://github.com/RostislavDugin/postgresus): PostgreSQL monitoring and backups (with UI and self hosted)
-## Driver & Connector
+## Driver & Connector & Extension
 
 - [pgbouncer](https://github.com/pgbouncer/pgbouncer): lightweight connection pooler for PostgreSQL
+- [citus](https://github.com/citusdata/citus): Distributed PostgreSQL as an extension
 ## High Availability
 
 - [Patroni](https://github.com/patroni/patroni): A template for PostgreSQL High Availability with Etcd, Consul, ZooKeeper, or Kubernetes 🌟 **(Recommended)**

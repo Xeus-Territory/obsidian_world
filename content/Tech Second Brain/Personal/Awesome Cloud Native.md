@@ -80,4 +80,5 @@ tags:
 - [Qovery](https://hub.qovery.com/docs/getting-started/what-is-qovery/) : the **Internal Developer Platform (IDP)** that cuts noise for developers with paved paths to production
 - [openchoreo](https://github.com/openchoreo/openchoreo): OpenChoreo is an open-source internal developer platform (IDP)
 - [kubriX](https://github.com/suxess-it/kubriX): a **curated**, **opinionated**, and **highly flexible** Internal Developer Platform (IDP) for Kubernetes
-- [crossplane](https://github.com/crossplane/crossplane): a framework for building cloud native control planes without needing to write code
+- [crossplane](https://github.com/crossplane/crossplane): a framework for building cloud native control planes without needing to write code. Explore more about [Crossplane Providers](https://github.com/crossplane-contrib)
+- [kratix](https://github.com/syntasso/kratix): Kratix is an open-source framework for building platforms

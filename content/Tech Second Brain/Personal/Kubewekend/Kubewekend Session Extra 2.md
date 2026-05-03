@@ -440,8 +440,9 @@ helm install gpu-operator -n gpu-operator --create-namespace \
 >So why with RKE2, you need to set up with
 >- `CONTAINERD_CONFIG`: `/var/lib/rancher/rke2/agent/etc/containerd/config.toml`
 >- `CONTAINERD_SOCKET`: `/run/k3s/containerd/containerd.sock`
->```bash
->helm install --wait gpu-operator
+
+```bash
+helm install --wait gpu-operator 
 -n gpu-operator --create-namespace
 --set toolkit.env[0].name=CONTAINERD_CONFIG
 --set toolkit.env[0].value=/var/lib/rancher/k3s/agent/etc/containerd/config.toml
@@ -452,7 +453,7 @@ helm install gpu-operator -n gpu-operator --create-namespace \
 --set toolkit.env[3].name=CONTAINERD_SET_AS_DEFAULT
 --set-string toolkit.env[3].value=true
 nvidia/gpu-operator
->```
+```
 
 Read more about this issue and configuration at [GitHub - Problem installing gpu-operator on rke2](https://github.com/NVIDIA/gpu-operator/issues/522)
 
