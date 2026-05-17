@@ -1514,3 +1514,91 @@ top -bn1 | grep "Cpu(s)" | \
            sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | \
            awk '{print 100 - $1"%"}'
 ```
+
+# Self-signed Certificate
+
+## Create
+
+In some situation, you want to create the self-certificate fore SSL and trusted by CA. You can use `openssl` to generate the own one and signed it by yourself. Explore detail at 
+
+- [DigitalOcean - OpenSSL Essentials: Working with SSL Certificates, Private Keys and CSRs](https://www.digitalocean.com/community/tutorials/openssl-essentials-working-with-ssl-certificates-private-keys-and-csrs)
+- [FreeCodeCamp - OpenSSL Cheatsheet](https://www.freecodecamp.org/news/openssl-command-cheatsheet-b441be1e8c4a/)
+- [GitHub GIST - OpenSSL Cheat Sheet 🔐](https://gist.github.com/Hakky54/b30418b25215ad7d18f978bc0b448d81)
+
+Generate your key and cert to create cert authority (CA)
+
+```bash
+# Gen key with RSA Algo, or DSA with specific bits
+openssl genrsa -out ca.key 2048
+
+# Gen crt with key created above
+openssl req -x509 -new -nodes -key ca.key -sha256 -days 3650 -out ca.crt \
+-subj "/CN=Local-Testing-CA"
+```
+
+Signed with CA created before to output a certificate signing request (CSR)
+
+```bash
+openssl x509 -in ca.crt -signkey ca.key -x509toreq -out ca.csr -sha256 -days 3650
+```
+
+Generate a new private key and certificate signing request
+
+```bash
+openssl req -new -newkey rsa:2048 -nodes -out ca.csr -keyout ca.key
+```
+
+(Options) You can do more stuff configuration like configure **SANS IP**. For example, I configure etcd-node required signed from CA. Explore more at [GitHub Gist - Creating a CSR and SSL Certificate with SAN Extensions](https://gist.github.com/GangGreenTemperTatum/38aafed258feb1e048575db5a6e7130b)
+
+```bash
+openssl genrsa -out etcd-node1.key 2048
+
+cat > temp.cnf <<EOF
+[ req ]
+distinguished_name = req_distinguished_name
+req_extensions = v3_req
+[ req_distinguished_name ]
+[ v3_req ]
+subjectAltName = @alt_names
+[ alt_names ]
+IP.1 = 192.168.60.103
+IP.2 = 127.0.0.1
+EOF
+
+# Generate csr for
+openssl req -new -key ca.key -out etcd-node1.csr \
+  -subj "/C=US/ST=YourState/L=YourCity/O=YourOrganization/OU=YourUnit/CN=etcd-node1" \
+  -config temp.cnf
+
+# Sign the cert
+openssl x509 -req -in etcd-node1.csr -CA ca.crt -CAkey ca.key -CAcreateserial \
+  -out etcd-node1.crt -days 7300 -sha256 -extensions v3_req -extfile temp.cnf
+
+# Verify the cert and be sure you see Subject Name Alternative
+openssl x509 -in etcd-node1.crt -text -noout | grep -A1 "Subject Alternative Name"
+```
+## View and Check
+
+To check and validate your key and certificate, you can use command to convert readable of your certificate
+
+```bash
+# check key
+openssl rsa -check -in ca.key
+
+# check crt
+openssl x509 -text -noout -in ca.crt
+
+# check csr
+openssl req -text -noout -verify -in ca.csr
+```
+
+## Set Trusted for Certificate
+
+As usual, your certificate will be work only for serving SSL but it will continue warning you about the privacy error, because your browser is not recognize your CA as valid authority. To help these application trust your certificate
+
+- Linux: Install `ca-certificates` and copy your `ca.crt` to directory `/usr/share/ca-certificates` as root after that update your `ca-ceriticates`. Explore more at [Unix&Linux - Adding a self-signed certificate to the "trusted list"](https://unix.stackexchange.com/questions/90450/adding-a-self-signed-certificate-to-the-trusted-list)
+- Chrome: **Settings** > **Privacy and security** > **Security** > **Manage certificates** and import your certificate file into **Authorities** or **Trusted Root Certification Authorities** Tab. Explore more at [Set up an HTTPS certificate authority](https://support.google.com/chrome/a/answer/6342302?hl=en)
+
+>[!note]
+>In some situation, you need to close your browser to make your certificate to trusting, or simply open anonymous web for new request
+

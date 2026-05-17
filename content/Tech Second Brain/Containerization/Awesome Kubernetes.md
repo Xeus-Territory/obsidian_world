@@ -89,6 +89,7 @@ tags:
 - [Medium - Top 10 Kubernetes Pod Concepts That Confuse Beginners](https://medium.com/frontend-canteen/top-10-kubernetes-pod-concepts-that-confuse-beginners-8c0954021f3f)
 - [Redhat - Top 10 must-know Kubernetes design patterns](https://developers.redhat.com/blog/2020/05/11/top-10-must-know-kubernetes-design-patterns) 🌟 **(Recommended)**
 - [Kubernetes - Container Runtime Interface (CRI)](https://kubernetes.io/docs/concepts/architecture/cri/)
+- [FreeCodeCamp - How to Authenticate Users in Kubernetes: x509 Certificates, OIDC, and Cloud Identity](https://www.freecodecamp.org/news/how-to-authenticate-users-in-kubernetes-x509-certificates-oidc-and-cloud-identity/)
 ### General
 
 - [Medium - 7 Underrated Kubernetes Projects: Elevate Your Lab Playground!](https://medium.com/@ebenamor/7-underrated-kubernetes-projects-elevate-your-lab-playground-ac7f47cba347)
@@ -182,6 +183,7 @@ tags:
 - [KubeSec Diagram](https://kubesec-diagram.github.io/): a diagram made to better understand and get an overview of kubernetes security 🌟 **(Recommended)**
 - [Kubetools](https://collabnix.github.io/kubetools/): A Curated List of Kubernetes Tools 🌟 **(Recommended)**. New UI at: https://kubetools.collabnix.com/#/
 - [Deploy to Kuberenetes](https://deploy-to-kubernetes.readthedocs.io/en/latest/): Deploy a distributed AI stack to a multi-host or single-host Kubernetes cluster on CentOS 7 🌟 **(Recommended)**
+- [rbac.dev](https://rbac.dev/): Advocacy site for Kubernetes RBAC
 ## Blogs
 
 - [Kubernetes - Blog](https://kubernetes.io/blog/) 🌟 **(Recommended)**
@@ -262,6 +264,14 @@ tags:
 
 - [virtual-kubelet](https://github.com/virtual-kubelet/virtual-kubelet): Virtual Kubelet is an open source Kubernetes kubelet implementation.
 - [interLink](https://github.com/interlink-hq/interLink): an abstraction layer for executing Kubernetes pods on remote resources capable of managing container execution lifecycles.
+
+## Authentication
+
+- [OpenUnison](https://openunison.github.io/): OpenUnison provides SSO and authentication for your Kubernetes clusters, no matter where they run or how your users need to authenticate.
+- [pinniped](https://github.com/vmware/pinniped): Pinniped is the easy, secure way to log in to your Kubernetes clusters.
+- [kube-oidc-proxy](https://github.com/jetstack/kube-oidc-proxy): Reverse proxy to authenticate to managed Kubernetes API servers via OIDC.
+- [gangway](https://github.com/vmware-archive/gangway): An application that can be used to easily enable authentication flows via OIDC for a kubernetes cluster.
+- [paralus](https://github.com/paralus/paralus): All-in-one Kubernetes access manager. User-level credentials, RBAC, SSO, audit logs.
 ## Backup
 
 - [velero](https://github.com/vmware-tanzu/velero): Backup and migrate Kubernetes applications and their persistent volumes
@@ -328,6 +338,7 @@ tags:
 ## Kubernetes Toolkits
 
 - [ingress2gateway](https://github.com/kubernetes-sigs/ingress2gateway): Convert Ingress resources to Gateway API resources 🌟 **(Recommended)**
+- [Kubelogin](https://github.com/int128/kubelogin): kubectl plugin for Kubernetes OpenID Connect authentication (kubectl oidc-login)
 ## Storage Platform
 
 - [openebs](https://github.com/openebs/openebs):  an open-source Container Native Storage solution that provides persistent storage for Kubernetes workloads

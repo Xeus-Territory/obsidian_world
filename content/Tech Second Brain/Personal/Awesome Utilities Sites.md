@@ -16,7 +16,7 @@ tags:
 - [IT eBooks](https://it-ebooks.info/): The ecosystem downloading the IT Book for free 🌟 **(Recommended)**
 	- [IT Ebooks Search](https://it-ebooks-search.info/): IT eBooks Info Search Engine
 	- [IT Ebooks Dev](https://it-ebooks.dev/): Free & Open IT Books Library
-- [Libgen](https://libgen.li/): For finding and downloading the technology book 🌟 **(Recommended)**s
+- [Libgen](https://libgen.li/): For finding and downloading the technology book 🌟 **(Recommended)**
 - [MLOps Books & Papers Collection - Xeus Nguyen](https://drive.google.com/drive/folders/1IbGRg4bhNyQ9UUL-ILVeBY4CylQxL-C3?usp=sharing)
 - [System Architecture Books & Papers Collection - Xeus Nguyen](https://drive.google.com/drive/folders/1y0pzGQg-HvQa6U1QnvtZyZnnWW2KYKPJ?usp=drive_link)
 - [DevSecOps Books & Papers Collection - Xeus Nguyen](https://drive.google.com/drive/folders/1nsdQ1cGeDCjp4aOFx2aMb2hEb2cAqUJc?usp=sharing)
@@ -26,7 +26,6 @@ tags:
 - [1001 Fonts](https://www.1001fonts.com/) - Free Fonts
 - [Convertio](https://convertio.co/) - File Converter 🌟 **(Recommended)**
 - [En - Savefrom](https://en1.savefrom.net/2ol/) or [Vi - Savefrom](https://vi.savefrom.net/243/) - Free Online Video Downloader 🌟 **(Recommended)**
-- [GitZip](https://kinolien.github.io/gitzip): It can make sub-folder/sub-directory of github repository as zip and download it. 🌟 **(Recommended)**
 - [Slidesgo](https://slidesgo.com/) - Free Google Slides themes and Powerpoint templates
 ## Driver
 
@@ -72,6 +71,8 @@ tags:
 - [Awesome Remote Job](https://github.com/lukasz-madon/awesome-remote-job?tab=readme-ov-file): A curated list of awesome [remote working](https://en.wikipedia.org/wiki/Telecommuting) resources.
 - [Remote.co](https://remote.co/): Browse thousands of remote and hybrid jobs tailored for you.
 - [Remote In Tech](https://remoteintech.company/): A list of semi to fully remote-friendly companies in tech
+- [RemoteRocketShip](https://www.remoterocketship.com/): Search 100,000+ work from home jobs at top remote companies
 - [Wellfound](https://wellfound.com/jobs): Over 130k remote & local startup jobs
 - [We work remotely](https://weworkremotely.com/): WWR has been the #1 site for remote jobs, with 6M monthly visitors and the world's largest remote work community
+- [Working Nomads](https://www.workingnomads.com/jobs): Discover the 100% fully remote jobs worldwide for digital working nomads and remote workers.
 - [Y Combinator](https://www.ycombinator.com/jobs): Community for funding and finding job for the startup company

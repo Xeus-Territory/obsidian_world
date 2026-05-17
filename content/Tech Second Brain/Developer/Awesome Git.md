@@ -70,6 +70,13 @@ You can use `-d` with command push
 git push origin -d release-v1
 ```
 
+# Download Git repository sub-folder
+
+Following [Stackoverflow - Download a single folder or directory from a GitHub repository](https://stackoverflow.com/questions/7106012/download-a-single-folder-or-directory-from-a-github-repository), you will have couple of tools to download subfolder in situation which you want to specific download from remote repository and **package them into ZIP format**
+
+- [Download Directory](https://download-directory.github.io/)
+- [GitZip](http://kinolien.github.io/gitzip)
+- [DownGit](https://downgit.github.io/)
 # Change commit contents
 
 >[!info]
