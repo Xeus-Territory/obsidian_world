@@ -18,6 +18,7 @@ tags:
 - [awesome-opensource-email](https://github.com/Mindbaz/awesome-opensource-email): Awesome Opensource Email Resources
 - [awesome-virtualization](https://github.com/Wenzel/awesome-virtualization): Collection of resources about Virtualization
 - [deploy-your-own-saas](https://github.com/Atarity/deploy-your-own-saas): List of "only yours" cloud services for everyday needs 🏴
+- [awesome-openid-connect](https://github.com/cerberauth/awesome-openid-connect): Find this curated list of providers, services, libraries, and resources to adopt OIDC
 # Self-hosted by Categories
 
 ![[thumbnil-cncf-tools-landscape.png]]

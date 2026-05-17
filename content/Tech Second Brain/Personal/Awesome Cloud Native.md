@@ -65,6 +65,12 @@ tags:
 - [flipt](https://github.com/flipt-io/flipt): Enterprise-ready, GitOps enabled, CloudNative feature management solution
 - [fleet](https://github.com/rancher/fleet): Deploy workloads from Git to large fleets of Kubernetes clusters
 - [cyclops](https://github.com/cyclops-ui/cyclops): an open-source dev tool that simplifies Kubernetes with an easy-to-use UI, making it less intimidating
+
+## Authentication
+
+- [dex](https://github.com/dexidp/dex): OpenID Connect (OIDC) identity and OAuth 2.0 provider with pluggable connectors 🌟 **(Recommended)**
+- [oauth2-proxy](https://github.com/oauth2-proxy/oauth2-proxy): A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers.
+
 ## State Management (Kubernetes)
 
 - [helm](https://helm.sh/): The package manager for Kubernetes 🌟 **(Recommended)**
