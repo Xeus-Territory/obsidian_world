@@ -231,6 +231,7 @@ tags:
 - [Pulumi](https://github.com/pulumi/pulumi): Infrastructure as Code in any programming language 🚀 🌟 **(Recommended)**
 - [Packer](https://developer.hashicorp.com/packer/docs?product_intent=packer): Create identical machine images for multiple platforms from a single source configuration 🌟 **(Recommended)**
 - [Vagrant](https://developer.hashicorp.com/vagrant/docs) : Vagrant is the command line utility for managing the lifecycle of virtual machines 🌟 **(Recommended)**
+- [OpenTofu](https://github.com/opentofu/opentofu): an OSS tool for building, changing, and versioning infrastructure safely and efficiently. Find more OpenTofu Providers at [OpenTofu Registry](https://search.opentofu.org/)
 ## SSL / DNS
 
 - [acme.sh](https://github.com/acmesh-official/acme.sh): A pure Unix shell script implementing ACME client protocol 🌟 **(Recommended)**
