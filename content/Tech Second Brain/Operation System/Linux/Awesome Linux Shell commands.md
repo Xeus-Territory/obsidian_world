@@ -194,6 +194,15 @@ jq 'walk(if type == "object" then with_entries( if .key == "KEY_WANT_UPDATE" the
         && mv "/path/json/file.tmp" "/path/json/file"
 ```
 
+If you want to get pretty json in one line, you can use compact mode with `jq` like this one
+
+```bash
+# To print a JSON file into one line
+jq -c . file.json
+
+# To convert a multi-line string variable into one line
+echo "$my_json_variable" | jq -c .
+```
 ### `scp`
 
 Documentation: [SCP Command in Linux {13 Examples}](https://phoenixnap.com/kb/linux-scp-command)

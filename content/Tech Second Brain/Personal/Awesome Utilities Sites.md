@@ -33,11 +33,11 @@ tags:
 - [AMD Driver](https://www.amd.com/en/support/download/drivers.html): Search and download driver for AMD
 ## Icons
 
-- [IconDucks](https://iconduck.com/): Open source icons & illustrations
+- [Dashboard Icon](https://dashboardicons.com/): A collection of 5976 curated icons & logos for services, applications and tools, designed specifically for dashboards and app directories.
 - [Emojipedia](https://emojipedia.org/): Find and get your emoji in unicode 🌟 **(Recommended)**
-- [TechIcons](https://techicons.dev/): Download, copy and paste tech icons in SVG and PNG format for your projects. 🌟 **(Recommended)**
-- [SVGRepo](https://www.svgrepo.com/):  Search, explore and edit the best-fitting free icons or vectors for your projects using a wide variety vector library. 🌟 **(Recommended)**
 - [Simple Icons](https://simpleicons.org/):  Free SVG icons for popular brands
+- [SVGRepo](https://www.svgrepo.com/):  Search, explore and edit the best-fitting free icons or vectors for your projects using a wide variety vector library. 🌟 **(Recommended)**
+- [TechIcons](https://techicons.dev/): Download, copy and paste tech icons in SVG and PNG format for your projects. 🌟 **(Recommended)**
 ## Images
 
 - [Pinterest](https://www.pinterest.com/) - Free Image HD
@@ -48,7 +48,6 @@ tags:
 - [isoHunt](https://isohunts.to/) - BitTorrent & P2P torrent search engine
 - [Internet Archive](https://archive.org/) - Digital Library of Free & Borrowable Books, Movies, Music & Wayback Machine
 - [KAT - Kickass Torrents](https://kick4ss.com/) - The torrent site
-
 ## FinOps & Comparison Pricing
 
 - [GetDeploying](https://getdeploying.com/): Compare cloud providers for your next project.

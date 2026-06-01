@@ -12,13 +12,14 @@ tags:
 
 ## Repositories
 
+- [awesome-gitea](https://gitea.com/gitea/awesome-gitea): A curated list of awesome projects related to Gitea and its soft-fork instances
+- [awesome-openid-connect](https://github.com/cerberauth/awesome-openid-connect): Find this curated list of providers, services, libraries, and resources to adopt OIDC
+- [awesome-opensource-email](https://github.com/Mindbaz/awesome-opensource-email): Awesome Opensource Email Resources
 - [awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) : About A list of Free Software network services and web applications which can be hosted on your own servers 🌟 **(Recommended)**
 - [awesome-sysadmin](https://github.com/awesome-foss/awesome-sysadmin): A curated list of amazingly awesome open-source sysadmin resources
-- [self-hosting-guide](https://github.com/mikeroyal/Self-Hosting-Guide) : Learn all about locally hosting
-- [awesome-opensource-email](https://github.com/Mindbaz/awesome-opensource-email): Awesome Opensource Email Resources
 - [awesome-virtualization](https://github.com/Wenzel/awesome-virtualization): Collection of resources about Virtualization
 - [deploy-your-own-saas](https://github.com/Atarity/deploy-your-own-saas): List of "only yours" cloud services for everyday needs 🏴
-- [awesome-openid-connect](https://github.com/cerberauth/awesome-openid-connect): Find this curated list of providers, services, libraries, and resources to adopt OIDC
+- [self-hosting-guide](https://github.com/mikeroyal/Self-Hosting-Guide) : Learn all about locally hosting
 # Self-hosted by Categories
 
 ![[thumbnil-cncf-tools-landscape.png]]
@@ -30,7 +31,7 @@ tags:
 ## Git Hosting
 
 - [act](https://github.com/nektos/act): Run your GitHub Actions locally 🚀
-- [gitea](https://github.com/go-gitea/gitea): Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD. [Doc](https://docs.gitea.com/)
+- [gitea](https://github.com/go-gitea/gitea): Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD. [Doc](https://docs.gitea.com/) 🌟 **(Recommended)**
 - [gitlab](https://about.gitlab.com/install/) : Download, install and maintain your own GitLab instance 🌟 **(Recommended)**
 ## Identity Provider
 
@@ -70,7 +71,7 @@ tags:
 ## Tunneling Server
 
 - [chisel](https://github.com/jpillora/chisel) : A fast TCP/UDP tunnel over HTTP
-- [bore](https://github.com/ekzhang/bore): A simple CLI tool for making tunnels to localhost
+- [bore](https://github.com/ekzhang/bore): A simple CLI tool for making tunnels to localhost 🌟 **(Recommended)**
 ## Virtual Machine / Virtualization / Hypervisor
 
 - [firecracker](https://github.com/firecracker-microvm/firecracker): Secure and fast microVMs for serverless computing.

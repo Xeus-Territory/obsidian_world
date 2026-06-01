@@ -140,7 +140,9 @@ sudo ./aws/install
 rm -rf aws awscliv2.zip
 
 # Install terraform
-wget https://releases.hashicorp.com/terraform/1.8.3/terraform_1.8.3_linux_amd64.zip -O terraform.zip
+# Ref: https://developer.hashicorp.com/terraform/install
+# Ver: https://releases.hashicorp.com/terraform/
+wget https://releases.hashicorp.com/terraform/1.15.3/terraform_1.15.3_linux_amd64.zip -O terraform.zip
 unzip ./terraform.zip -d terraform
 sudo mv ./terraform/terraform /usr/local/bin 
 rm -rf terraform terraform.zip

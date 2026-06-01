@@ -127,22 +127,23 @@ pip install -U torch torchvision torchaudio --index-url https://download.pytorch
 ## Awesome Repositories
 
 - [awesome-python](https://github.com/vinta/awesome-python) : An opinionated list of awesome Python frameworks, libraries, software and resources.
+- [best-of-python](https://github.com/lukasmasuch/best-of-python): 🏆 A ranked list of awesome Python open-source libraries and tools. Updated weekly.
+- [TheAlgorithms Python](https://thealgorithms.github.io/Python/): All Algorithms implemented in Python
 ## Organizations
 
 - [pypa](https://github.com/pypa): Python Packaging Authority
 - [pallets](https://github.com/pallets): The Community stands behind [Flask](https://github.com/pallets/flask), [Jinja](https://github.com/pallets/jinja)
-## Library and Package Repositories
-
-- [pypi](https://pypi.org/): Find, install and publish Python packages with the Python Package Index
-# Tools
+# Python Tools, Packages and Libraries
 
 ![[icon-python-pypi.svg|center|350]]
 
+## Library and Package Repositories
+
+- [pypi](https://pypi.org/): Find, install and publish Python packages with the Python Package Index
 ## Package Management
 
 - [poetry](https://github.com/python-poetry/poetry): Python packaging and dependency management made easy 🌟 **(Recommended)**
 - [uv](https://github.com/astral-sh/uv): An extremely fast Python package and project manager, written in Rust
-
 ## Toolbox
 
 - [Pythonium](https://pythonium.net/): Tools for Python Developers

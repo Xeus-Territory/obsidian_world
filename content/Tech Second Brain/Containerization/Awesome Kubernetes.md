@@ -136,6 +136,7 @@ tags:
 - [Medium - 24 Kubernetes Masters’ Configurations](https://overcast.blog/24-kubernetes-mastersconfigurations-29235c65b337)
 - [Spot - 8 Kubernetes Deployment Strategies: Roll Out Like the Pros](https://spot.io/resources/kubernetes-autoscaling/5-kubernetes-deployment-strategies-roll-out-like-the-pros/) 🌟 **(Recommended)**
 - [Medium - Zero-Downtime Deployments with Kubernetes](https://blog.devgenius.io/zero-downtime-deployments-with-kubernetes-a2d3200d207f)
+- [DevOps VN - Thiết kế Multi-Cluster / Multi-Environment Strategy: dev~staging~prod như thế nào để vừa an toàn vừa nhanh?](https://devops.vn/posts/thiet-ke-multi-cluster-multi-environment-strategy-devstagingprod-nhu-the-nao-de-vua-an-toan-vua-nhanh/) 🌟 **(Recommended)**
 ### Tools
 
 - [Medium - 10 Essential Kubernetes Tools You Didn’t Know You Needed](https://medium.com/itnext/10-essential-kubernetes-tools-you-didnt-know-you-needed-06954251d845)
@@ -170,8 +171,8 @@ tags:
 - [awesome-k8s-tools](https://github.com/vilaca/awesome-k8s-tools): List of container/k8s tools.
 - [awesome-krew-plugin](https://krew.sigs.k8s.io/plugins/): A list of Plugin which used by kubectl
 - [awesome-kubernetes](https://ramitsurana.github.io/awesome-kubernetes/) : A curated list for awesome kubernetes sources 🚢🎉
+- [Deploy to Kuberenetes](https://deploy-to-kubernetes.readthedocs.io/en/latest/): Deploy a distributed AI stack to a multi-host or single-host Kubernetes cluster on CentOS 7 🌟 **(Recommended)**
 - [enhancements](https://github.com/kubernetes/enhancements): Enhancements tracking repo for Kubernetes 🌟 **(Recommended)**
-- [kubebuilder](https://book.kubebuilder.io/introduction): Kubebuilder - SDK for building Kubernetes APIs using CRDs
 - [kubelabs](https://github.com/collabnix/kubelabs): Get Started with Kubernetes 🌟 **(Recommended)**
 - [Kubernetes Cluster API](https://cluster-api.sigs.k8s.io/) : About cluster API 🌟 **(Recommended)**
 - [Kubernetes/community](https://github.com/kubernetes/community) : Kubernetes community content
@@ -182,8 +183,7 @@ tags:
 - [Kubernetes Schedule Plugins](https://scheduler-plugins.sigs.k8s.io/): Repository for out-of-tree scheduler plugins based on the [scheduler framework](https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/) 🌟 **(Recommended)**
 - [KubeSec Diagram](https://kubesec-diagram.github.io/): a diagram made to better understand and get an overview of kubernetes security 🌟 **(Recommended)**
 - [Kubetools](https://collabnix.github.io/kubetools/): A Curated List of Kubernetes Tools 🌟 **(Recommended)**. New UI at: https://kubetools.collabnix.com/#/
-- [Deploy to Kuberenetes](https://deploy-to-kubernetes.readthedocs.io/en/latest/): Deploy a distributed AI stack to a multi-host or single-host Kubernetes cluster on CentOS 7 🌟 **(Recommended)**
-- [rbac.dev](https://rbac.dev/): Advocacy site for Kubernetes RBAC
+- [rbac.dev](https://rbac.dev/): Advocacy site for Kubernetes RBAC 🌟 **(Recommended)**
 ## Blogs
 
 - [Kubernetes - Blog](https://kubernetes.io/blog/) 🌟 **(Recommended)**
@@ -346,10 +346,11 @@ tags:
 ## Multi-Cluster Orchestration
 
 - [Karmada](https://karmada.io/): a Kubernetes management system that enables you to run your cloud-native applications across multiple Kubernetes clusters and clouds, with no changes to your applications.
-- [Open Cluster Management (OCM)](https://open-cluster-management.io/): a powerful, modular, extensible platform for Kubernetes multi-cluster orchestration
-- [multicluster-runtime](https://github.com/kubernetes-sigs/multicluster-runtime): a Go library to write Kubernetes controllers that reconcile across a dynamic fleet of Kubernetes (or Kubernetes-like) clusters.
-- [kubesphere](https://github.com/kubesphere/kubesphere): The container platform tailored for Kubernetes multi-cloud, datacenter, and edge management ⎈ 🖥 ☁️
 - [kubefleet](https://github.com/kubefleet-dev/kubefleet): an open-source Kubernetes multi-cluster application management solution.
+- [kubesphere](https://github.com/kubesphere/kubesphere): The container platform tailored for Kubernetes multi-cloud, datacenter, and edge management ⎈ 🖥 ☁️
+- [multicluster-runtime](https://github.com/kubernetes-sigs/multicluster-runtime): a Go library to write Kubernetes controllers that reconcile across a dynamic fleet of Kubernetes (or Kubernetes-like) clusters.
+- [Open Cluster Management (OCM)](https://open-cluster-management.io/): a powerful, modular, extensible platform for Kubernetes multi-cluster orchestration
+- [Sveltos](https://github.com/projectsveltos/addon-controller): a Kubernetes add-on controller that simplifies the deployment and management of add-ons and applications across multiple clusters.
 ## Resources Orchestrator
 
 - [kro](https://github.com/awslabs/kro): Kube Resource Orchestrator

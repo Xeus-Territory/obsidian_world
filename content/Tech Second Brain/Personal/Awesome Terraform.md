@@ -53,8 +53,14 @@ tags:
 
 - [atlantis](https://www.runatlantis.io/): Running Terraform Workflows with Ease 🌟 **(Recommended)**
 - [inframap](https://github.com/cycloidio/inframap): Read your tfstate or HCL to generate a graph specific for each provider, showing only the resources that are most important/relevant.
-- [terraform-docs](https://terraform-docs.io/user-guide/introduction/) : A utility to generate documentation from Terraform modules in various output formats.
+- [terraform-docs](https://terraform-docs.io/user-guide/introduction/) : A utility to generate documentation from Terraform modules in various output formats. 🌟 **(Recommended)**
 - [terraformer](https://github.com/GoogleCloudPlatform/terraformer): CLI tool to generate terraform files from existing infrastructure (reverse Terraform). Infrastructure to Code
+
+## Self-hosted Registry
+
+- [terrareg](https://github.com/MatthewJohn/terrareg): Open source Terraform module registry with UI, optional Git integration and deep analysis.
+- [boring-registry](https://github.com/boring-registry/boring-registry): A Simple Terraform Provider and Module Registry
+- [terralist](https://github.com/terralist/terralist): Terraform Private Registry for modules and providers manageable from a REST API
 # Install and setup environment for Terraform
 
 >[!info]
