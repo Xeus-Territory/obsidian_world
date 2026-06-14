@@ -18,6 +18,8 @@ To find more information and example, you can double-check a some manifest colle
 - [K8s Deployment Strategies](https://github.com/ContainerSolutions/k8s-deployment-strategies): About setup deployment strategies of Kubernetes 
 - [Medium - 24 Kubernetes Masters’ Configurations](https://overcast.blog/24-kubernetes-mastersconfigurations-29235c65b337)
 - [Medium - Zero-Downtime Deployments with Kubernetes](https://blog.devgenius.io/zero-downtime-deployments-with-kubernetes-a2d3200d207f)
+- [CRDs-catalog](https://github.com/datreeio/CRDs-catalog): CRDs-catalog - used with [`kubeconform`](https://github.com/yannh/kubeconform)
+- [doc.crds.dev](https://doc.crds.dev/): Find and Parse API Scheme of specific URL CRDs repository
 # Kubernetes Q/A Collection 
 ## Can use volume with cronjobs?
 
@@ -1508,6 +1510,7 @@ When controlling global traffic ingress across regions, the architectural decisi
 | **Cross-Region Inter-Pod Traffic** | Traffic must exit Cluster A via Ingress, traverse the cloud load balancer, and re-enter Cluster B through its public entry points.                                                                                                             | **Direct Overlays.** Pods in Region A speak natively to Pods in Region B over encrypted wireguard/VXLAN tunnels using eBPF (_Cilium ClusterMesh_).                                                                                          |
 | **Pros**                           | • Blazing fast edge execution with minimal client-side latency.<br><br>• Native, high-scale DDoS protection at the cloud boundary.<br><br>• Extremely low maintenance for the Platform Team.                                                   | • Total multi-cloud portability (runs identically on AWS, bare-metal, or hybrid clusters).<br><br>• Highly cost-effective; skips expensive cloud GLB data processing fees.<br><br>• Managed declaratively entirely inside GitOps pipelines. |
 | **Cons**                           | • High cloud data processing and cross-zone egress costs.<br><br>• Hard constraint: Requires you to stay within that specific cloud provider's ecosystem.                                                                                      | • Higher initial setup complexity for the Platform Team.<br><br>• DNS TTL propagation delays can sometimes lead to transient traffic drops during sudden failures.                                                                          |
+
 To successfully link this into your platform's core code, your team needs to focus its research on two core choices:
 
 #### 1. Anycast Layer-7 Routing vs. Geo-DNS
@@ -1547,3 +1550,22 @@ Explore more for ClusterMesh at
 - [Isovalent Blog - Topology Aware Routing and Service Mesh across Clusters with Cluster Mesh](https://isovalent.com/blog/post/topology-aware-routing-and-service-mesh-across-clusters-with-cluster-mesh/)
 - [Blog - Cluster Mesh with Cilium Overview](https://mitchmurphy.io/cilium-cluster-mesh-overview/)
 
+# Mutating and Validation Webhook with Admission Controller
+
+Reference for exploring more
+
+- [Kubenetes - Admission Control in Kubernetes](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)
+- [Kubernetes - Dynamic Admission Control](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/)
+
+>[!infomation]
+>An admission controller is a piece of code that intercepts requests to the Kubernetes API server prior to persistence of the resource, but after the request is authenticated and authorized.
+>
+>Several important features of Kubernetes require an admission controller to be enabled in order to properly support the feature. As a result, a Kubernetes API server that is not properly configured with the right set of admission controllers is an incomplete server that will not support all the features you expect.
+
+
+# Finalizers - Pre-hook deletion
+
+Reference for more information
+
+- [Kubernetes - Finalizers](https://kubernetes.io/docs/concepts/overview/working-with-objects/finalizers/)
+- [Kubernetes - Using Finalizers to Control Deletion](https://kubernetes.io/blog/2021/05/14/using-finalizers-to-control-deletion/)

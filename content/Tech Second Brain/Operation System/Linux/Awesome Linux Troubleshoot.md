@@ -459,6 +459,8 @@ To easily modify these features, Linux provides the **`sysctl`** command. In som
 
 - [GitHub - Fluentd in_tail plugin randomly fails with "too many open files"](https://github.com/fluent/fluent-bit/issues/1777#issuecomment-1494952647) 🌟 **(Recommended)**
 - [Kind - Pod errors due to “too many open files”](https://kind.sigs.k8s.io/docs/user/known-issues#pod-errors-due-to-too-many-open-files)
+- [Stackoverflow - ENOSPC: System limit for number of file watchers reached](https://askubuntu.com/questions/1260067/error-enospc-system-limit-for-number-of-file-watchers-reached-watch-ubuntu)
+- [Unix&Linux - Who's consuming my inotify resources?](https://unix.stackexchange.com/questions/15509/whos-consuming-my-inotify-resources)
 
 By default, the configuration will update temporary with `sysctl` command
 
@@ -470,7 +472,25 @@ sudo sysctl -w fs.inotify.max_user_watches=524288
 However, you want to apply the persistent configuration, you can add your configuration into file `/etc/sysctl.conf`
 
 ```bash
-nano /etc/sysctl.conf
+# Modify on the file
+sudo nano /etc/sysctl.conf
+# Add the line
+fs.inotify.max_user_watches=524288
+
+# Or can use directly
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf
+```
+
+After that, you need remember to reload for apply the change
+
+```bash
+# reload
+sudo sysctl -p
+
+# view the value
+sudo sysctl fs.inotify.max_user_watches
+# or
+cat /proc/sys/fs/inotify/max_user_watches
 ```
 
 Explore more about these configurations at

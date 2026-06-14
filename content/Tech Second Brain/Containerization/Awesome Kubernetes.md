@@ -339,6 +339,7 @@ tags:
 
 - [ingress2gateway](https://github.com/kubernetes-sigs/ingress2gateway): Convert Ingress resources to Gateway API resources 🌟 **(Recommended)**
 - [Kubelogin](https://github.com/int128/kubelogin): kubectl plugin for Kubernetes OpenID Connect authentication (kubectl oidc-login)
+- [hanoi-cli](https://github.com/k-krew/hanoi-cli): Interactive rebalance advisor for Kubernetes
 ## Storage Platform
 
 - [openebs](https://github.com/openebs/openebs):  an open-source Container Native Storage solution that provides persistent storage for Kubernetes workloads
