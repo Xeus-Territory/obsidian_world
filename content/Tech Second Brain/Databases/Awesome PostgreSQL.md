@@ -397,6 +397,40 @@ GRANT ALL ON SCHEMA public TO your_new_username;
 ALTER DATABASE your_database_name OWNER TO your_new_username;
 ```
 
+## Common query for CRUD
+
+```sql
+-- Create a table for Nintendo characters
+CREATE TABLE nintendo_characters (
+    character_id SERIAL PRIMARY KEY, -- Unique identifier for each character
+    name VARCHAR(50) NOT NULL,       -- Name of the character
+    game_series VARCHAR(50),         -- Game series the character belongs to
+    debut_year INT,                  -- Year the character debuted
+    description TEXT,                -- Brief description of the character
+    is_playable BOOLEAN DEFAULT TRUE -- Whether the character is playable
+);
+
+-- Insert some example characters
+INSERT INTO nintendo_characters (name, game_series, debut_year, description, is_playable)
+VALUES
+    ('Mario', 'Super Mario', 1981, 'The iconic plumber and hero of the Mushroom Kingdom.', TRUE),
+    ('Link', 'The Legend of Zelda', 1986, 'A courageous hero tasked with saving Hyrule.', TRUE);
+
+INSERT INTO nintendo_characters (name, game_series, debut_year, description, is_playable)
+VALUES ('Bowser', 'Super Mario', 1985, 'The King of the Koopas and Mario\'s arch-nemesis.', FALSE);
+
+-- Select all rows to verify the table creation and data insertion
+SELECT * FROM nintendo_characters;
+
+-- Update the row
+UPDATE nintendo_characters
+SET description = 'The legendary hero of Hyrule wielding the Master Sword.'
+WHERE character_id = 2; -- Targets Link
+
+--- Delete the row
+DELETE FROM nintendo_characters
+WHERE name = 'Bowser';
+```
 
 ## Show all configuration of runtime
 
@@ -446,14 +480,29 @@ AND leader_pid IS NULL;
 ## Show running query
 
 ```sql
+# See Active Connections and Running Queries
 SELECT pid, age(clock_timestamp(), query_start), usename, query 
 FROM pg_stat_activity 
 WHERE query != '<IDLE>' AND query NOT ILIKE '%pg_stat_activity%' 
 ORDER BY query_start desc;
 
-## Get Running Queries (And Lock statuses) in PostgreSQL
+SELECT pid, age(clock_timestamp(), query_start), usename, query, state
+FROM pg_stat_activity
+WHERE state != 'idle' AND query NOT LIKE '%pg_stat_activity%';
 
+# Get Running Queries (And Lock statuses) in PostgreSQL
 SELECT S.pid, age(clock_timestamp(), query_start), usename, query, L.mode, L.locktype, L.granted FROM pg_stat_activity S inner join pg_locks L on S.pid = L.pid order by L.granted, L.pid DESC;
+```
+
+## Check Size of your Table
+
+```sql
+SELECT relname AS table_name,
+       pg_size_pretty(pg_total_relation_size(c.oid)) AS total_size
+FROM pg_class c
+LEFT JOIN pg_namespace n ON n.oid = c.relnamespace
+WHERE n.nspname = 'public' AND c.relkind = 'r'
+ORDER BY pg_total_relation_size(c.oid) DESC;
 ```
 
 ## Show the query of application reservation
