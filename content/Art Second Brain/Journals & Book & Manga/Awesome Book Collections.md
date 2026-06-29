@@ -14,8 +14,9 @@ tags:
 >[!info]
 >The location is providing information book and free to downloading by Vietnamese Language
 
-- [DTV eBook](https://www.dtv-ebook.com/):  Thư Viện Sách Truyện Tiểu Thuyết Văn Học Miễn Phí Tải PRC/PDF/EPUB/AZW3
+- [DTV eBook](https://dtv-ebook.com.vn/)
 - [THƯ VIỆN EBOOK (TVE-4U)](http://tve-4u.org/)
+- [DocTruyenFull - Ebook](https://doctruyenfull.io.vn/ebook)
 # Foreign
 
 >[!info]
