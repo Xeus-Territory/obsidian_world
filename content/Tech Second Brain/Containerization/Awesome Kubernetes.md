@@ -352,6 +352,9 @@ tags:
 - [multicluster-runtime](https://github.com/kubernetes-sigs/multicluster-runtime): a Go library to write Kubernetes controllers that reconcile across a dynamic fleet of Kubernetes (or Kubernetes-like) clusters.
 - [Open Cluster Management (OCM)](https://open-cluster-management.io/): a powerful, modular, extensible platform for Kubernetes multi-cluster orchestration
 - [Sveltos](https://github.com/projectsveltos/addon-controller): a Kubernetes add-on controller that simplifies the deployment and management of add-ons and applications across multiple clusters.
+## Monitoring and Observability
+
+- [Canary Checker](https://canarychecker.io/): Kubernetes Native Health Check Platform
 ## Resources Orchestrator
 
 - [kro](https://github.com/awslabs/kro): Kube Resource Orchestrator

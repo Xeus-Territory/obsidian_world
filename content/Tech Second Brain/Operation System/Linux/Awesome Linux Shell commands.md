@@ -53,6 +53,86 @@ Explore more about `cat` command and utilities
 - [StackOverFlow - How to read from a file or standard input in Bash](https://stackoverflow.com/questions/6980090/how-to-read-from-a-file-or-standard-input-in-bash)
 - [Unix & Linux Stack Exchange - Format output of xargs](https://unix.stackexchange.com/questions/89130/format-output-of-xargs)
 
+### `curl` and `wget`
+
+This is one of most useful command when you work with HTTP request for testing, download or handle manything in pipe command. Explore via cheatsheet
+
+- [Linuxize - curl cheatsheet](https://linuxize.com/cheatsheet/curl/)
+- [DevHint - curl cheatsheet](https://devhints.io/curl)
+- [DigitalOcean - How to Download Files with cURL](https://www.digitalocean.com/community/tutorials/workflow-downloading-files-curl)
+
+You can use `curl` with simple behavior with single flag option like
+
+```bash
+# Request to show the header with request
+curl -i url
+# Request to show the header only
+curl -I url
+# Request with Method
+curl -X GET/POST/OPTION/PUT/DELETE url
+# Request with verbose
+curl -v url
+# Request with output (Download) as customfile
+curl -o file-name url
+# Request with output (Download) as original file
+curl -O url
+# Request with redirect to follow
+curl -L url
+# Request with silent
+curl -s url
+# Request with spefic header (Header, Authorization, Content-Type, ...)
+curl -H "Header: Value" url
+# Request with cookies (key_value, or file )
+curl -b "name=value" url
+curl -b cookie.txt url
+# Request to save cookies
+curl -c cookie.txt url
+# Request to insecure (Not https check)
+curl -k url
+# curl for baic auth
+curl -u auth:pass url
+# Request with Cert
+curl --cacert cacert.crt --cert client.crt --key client.key
+```
+
+But the think make `curl` become powerful because it can combine these flag to each others and here some useful command
+
+```bash
+# Use to read and output the content file to shell (combine them with anything use can use like bash, sh, tar, pbcopy, ...), it will show error and support redirect in silent mode
+curl -sSLf url | bash
+
+# Download and decompress file on the fly
+curl -L https://example.com/archive.tar.gz | tar xzf -
+
+# Download file for file (GitHub Packages or any repository)
+curl -sSLO https://example.com/archive.tar.gz
+curl -sSLo archive.tar.gz https://example.com/archive_x84_x64.tar.gz
+```
+
+Others `curl`, you can use `wget` to download file with same behavior because in some situation both of them are not available, you can use others one. Explore more about `wget` here
+
+- [GistHub - wget.sh](https://gist.github.com/Dammmien/4af98e05f9c51c2da007cc70d62bf562)
+- [Linuxize - wget cheatsheet](https://linuxize.com/cheatsheet/wget/)
+
+```bash
+# Download a file in silent mode (quiet)
+wget -q url
+
+# Download a file and output to custom name
+wget -O file-download url
+
+# Download recursive
+wget -r URL
+
+# Run on the verbose option
+wget -v url
+
+# The common pattern usually apply (tar, bash)
+wget -qO file-download url | tar -xzf file-download
+# On the fly download and decompress
+wget -qO- url | bash
+wget -q -O - URL | tar -xzf - -C /path
+```
 ### `du` 
 
 You can use `du` command for list all size inside your directory
