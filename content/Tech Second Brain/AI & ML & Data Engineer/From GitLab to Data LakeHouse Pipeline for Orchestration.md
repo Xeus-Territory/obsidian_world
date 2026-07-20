@@ -151,7 +151,10 @@ base/
 For more example and solution, you can reference to these articles
 
 - [Kubernetes - Declarative Management of Kubernetes Objects Using Kustomize](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/)
+- [Kustomize - Reference Docs for Kustomize](https://kubectl.docs.kubernetes.io/references/kustomize/)
 - [Kustomize - Inline Patch](https://kubectl.docs.kubernetes.io/guides/example/inline_patch/)
+- [Kustomize - Patches](https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/patches/)
+- [Blog - Kubernetes Kustomize - JsonPatches6902 overview](https://skryvets.com/blog/2019/05/15/kubernetes-kustomize-json-patches-6902/)
 ## DevOps in the action
 
 ![[meme-hero.png|center]]

@@ -24,6 +24,8 @@ tags:
 ## Awesome Repositories
 
 - [applied-ml](https://github.com/eugeneyan/applied-ml): 📚 Papers & tech blogs by companies sharing their work on data science & machine learning in production
+- [awesome-agentic-ai](https://github.com/mfornos/awesome-agentic-ai): A curated list of principles and technologies related to Agentic AI systems.
+- [awesome-agentic-ai-zh](https://github.com/WenyuChiou/awesome-agentic-ai-zh/blob/main/README.en.md): **Learning roadmap + 240+ curated resources + simple illustrative cases** — three pillars helping you go from "I don't know where to start" to "I can design multi-agent systems"
 - [awesome-deep-learning](https://github.com/ChristosChristofidis/awesome-deep-learning) : A curated list of awesome Deep Learning tutorials, projects and communities
 - [Awesome-Efficient-LLM](https://github.com/horseee/Awesome-Efficient-LLM): A curated list for Efficient Large Language Models
 - [awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps): Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini and opensource models
@@ -33,8 +35,8 @@ tags:
 - [awesome-model-quantization](https://github.com/Efficient-ML/Awesome-Model-Quantization): A list of papers, docs, codes about model quantization
 - [awesome-production-machine-learning](https://github.com/EthicalML/awesome-production-machine-learning): A curated list of awesome open source libraries to deploy, monitor, version and scale your machine learning 🌟 **(Recommended)**
 - [best-of-ml-python](https://github.com/ml-tooling/best-of-ml-python): 🏆 A ranked list of awesome machine learning Python libraries. Updated weekly
-- [system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks): Collection of extracted System Prompts from popular chatbots like ChatGPT, Claude & Gemini 🌟 **(Recommended)**
 - [GPU-Benchmarks-on-LLM-Inference](https://github.com/XiongjieDai/GPU-Benchmarks-on-LLM-Inference): Multiple NVIDIA GPUs or Apple Silicon for Large Language Model Inference?
+- [system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks): Collection of extracted System Prompts from popular chatbots like ChatGPT, Claude & Gemini 🌟 **(Recommended)**
 ## Blogs
 
 - [DigitalOcean - AI/ML Topics](https://www.digitalocean.com/community/tags/ai-ml): Articles and Community about AI/ML 🌟 **(Recommended)**
@@ -61,6 +63,7 @@ tags:
 - [Qwen](https://github.com/QwenLM): Alibaba Cloud's general-purpose AI models
 - [Seldon](https://github.com/SeldonIO): Machine Learning Deployment for Kubernetes
 - [Triton Inference Server](https://github.com/triton-inference-server): provides a cloud and edge inferencing solution optimized for both CPUs and GPUs.
+- [Agentic AI Foundation](https://aaif.io/): The AAIF provides a neutral, open foundation to ensure this critical capability evolves transparently, collaboratively, and in ways that advance the adoption of leading open source AI projects
 ## Page
 
 - [AI Agents Directory](https://aiagentslist.com/): Browse our AI agents list and build your digital workforce in minutes, not months 🌟 **(Recommended)**
@@ -99,6 +102,12 @@ tags:
 
 ![[thumbnail-ml-framework-source-gg.png]]
 
+## Agentics
+
+- [agent-control](https://github.com/agentcontrol/agent-control): Centralized agent control plane for governing runtime agent behavior at scale. Configurable, extensible, and production-ready.
+- [agentgateway](https://github.com/agentgateway/agentgateway): Next Generation Agentic Proxy for AI Agents and MCP servers
+- [agentcontrolplane](https://github.com/humanlayer/agentcontrolplane): ACP is the Agent Control Plane - a distributed agent scheduler optimized for simplicity, clarity, and control.
+- [superplane](https://github.com/superplanehq/superplane): The open source control plane for agentic engineering.
 ## Labeling and Annotation
 
 - [Argilla](https://github.com/argilla-io/argilla/): a collaboration tool for AI engineers and domain experts to build high-quality datasets 🌟 **(Recommended)**

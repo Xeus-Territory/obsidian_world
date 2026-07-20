@@ -99,7 +99,7 @@ Cloud Native usually relate with Kubernetes and Architecture topics, so you can 
 - [upjet](https://github.com/crossplane/upjet): A code generation framework and runtime for Crossplane providers
 - [kratix](https://github.com/syntasso/kratix): Kratix is an open-source framework for building platforms
 - [Kro](https://kro.run/):  Build declarative, secure, and verifiable Kubernetes abstractions. 
-
+- [terraform-kubestack](https://github.com/kbst/terraform-kubestack): Kubestack is a framework for Kubernetes platform engineering teams to define the entire cloud native stack in one Terraform code base and continuously evolve the platform safely through GitOps.
 ## Cloud Native Languages and Frameworks
 
 - [cel-spec](https://github.com/google/cel-spec): Common Expression Language -- specification and binary representation
@@ -110,3 +110,16 @@ Cloud Native usually relate with Kubernetes and Architecture topics, so you can 
 - [operator-lifecycle-manager](https://github.com/operator-framework/operator-lifecycle-manager): A management framework for extending Kubernetes with Operators
 - [werf](https://github.com/werf/werf): A solution for implementing efficient and consistent software delivery to Kubernetes facilitating best practices.
 - [ytt](https://github.com/carvel-dev/ytt): YAML templating tool that works on YAML structure instead of text. Powered by [Carvel](https://carvel.dev/)
+## Cloud Native Tools and Utilities
+
+- [okteto](https://github.com/okteto/okteto): Develop your applications directly in your Kubernetes Cluster
+- [mutagen](https://github.com/mutagen-io/mutagen): Fast file synchronization and network forwarding for remote development 🌟 **(Recommended)**
+- [mirrord](https://github.com/metalbear-co/mirrord):  Run any process, on your machine or in an AI agent's environment, as if it were a pod in your Kubernetes cluster: real env vars, DNS, network, traffic. 🌟 **(Recommended)**
+- [telepresence](https://github.com/telepresenceio/telepresence): Local development against a remote Kubernetes or OpenShift cluster
+## Feature Flags
+
+- [flagd](https://github.com/open-feature/flagd): A feature flag daemon with a Unix philosophy
+- [flipt](https://github.com/flipt-io/flipt): Enterprise-ready, Git native feature management solution
+- [go-feature-flag](https://github.com/thomaspoignant/go-feature-flag): GO Feature Flag is a simple, complete and lightweight self-hosted cloud native feature flag solution 100% Open Source — built on OpenFeature 🎛️
+- [OpenFeature](https://openfeature.dev/): Standardizing Feature Flagging for Everyone
+- [unleash](https://github.com/Unleash/unleash): Open-source feature management platform

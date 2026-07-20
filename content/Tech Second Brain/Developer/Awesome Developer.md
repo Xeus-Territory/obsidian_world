@@ -107,7 +107,7 @@ tags:
 - [doks](https://github.com/thuliteio/doks): Everything you need to build a stellar documentation website. Fast, accessible, and easy to use.
 ## Feature Flag
 
-- [flagsmith](https://github.com/Flagsmith/flagsmith): Open Source Feature Flagging and Remote Config Service. Host on-prem or use our hosted version at [https://flagsmith.com/](https://flagsmith.com/)
+- [flagsmith](https://github.com/Flagsmith/flagsmith): Open Source Feature Flagging and Remote Config Service.
 ## Online Compiler
 
 - [replit](https://replit.com/) : Python, NodeJS, ... 🌟 **(Recommended)**

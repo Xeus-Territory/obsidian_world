@@ -1619,6 +1619,35 @@ As usual, your certificate will be work only for serving SSL but it will continu
 - Linux: Install `ca-certificates` and copy your `ca.crt` to directory `/usr/share/ca-certificates` as root after that update your `ca-ceriticates`. Explore more at [Unix&Linux - Adding a self-signed certificate to the "trusted list"](https://unix.stackexchange.com/questions/90450/adding-a-self-signed-certificate-to-the-trusted-list)
 - Chrome: **Settings** > **Privacy and security** > **Security** > **Manage certificates** and import your certificate file into **Authorities** or **Trusted Root Certification Authorities** Tab. Explore more at [Set up an HTTPS certificate authority](https://support.google.com/chrome/a/answer/6342302?hl=en)
 
+With `ca-certificate`, you can follow these step
+
+1. Install `ca-certificate` with `apt`
+
+```bash
+sudo apt install ca-certificates -y
+```
+
+2. Copy your certificate into location `/usr/share/ca-cetificates` or `/usr/local/share/ca-certificates`
+
+```bash
+sudo cp self-ca.crt /usr/share/ca-certificates
+```
+
+3. Rebuild the directory with certificates include
+
+```bash
+# This one will be interaction option
+sudo dpkg-reconfigure ca-certificates
+
+# Or non interact by
+sudo update-ca-certificates
+```
+
+>[!note]
+>With interaction mode, you need to use space for tick new certificate, by prompt **Yes > Scroll and find your new CA > Space to tick > Ok**
+
+![[Pasted image 20260717083855.png]]
+
 >[!note]
 >In some situation, you need to close your browser to make your certificate to trusting, or simply open anonymous web for new request
 
