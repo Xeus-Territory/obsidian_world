@@ -45,6 +45,20 @@ Get the last param when seperate by `/` or any symbol, you can use `F` and `$NF`
 awk -F/ '{print $NF}'
 ```
 
+For complex example, you can parse your certificate format into string with command below
+
+```bash
+awk '{printf "%s%s", (NR==1 ? "" : "\\n"), $0}' certificate.crt
+
+---
+# output: -----BEGIN CERTIFICATE-----\nMIIFdzCCBF+gAwIBAgIQE...\nMIIFdzCCBF+gAwIBAgIQE...\n-----END CERTIFICATE-----
+```
+
+Or you can combine `awk` in your pipe command like
+
+```bash
+echo -n "base64_cert" | base64 -d | awk '{printf "%s%s", (NR==1 ? "" : "\\n"), $0}' | tr -d '\r'
+```
 ### `cat`
 
 Explore more about `cat` command and utilities
@@ -474,15 +488,23 @@ set
 unset <environment_variables>
 ```
 
-To on-off history
+To on-off history (only active action)
 
 ```bash
+# commands here won't be saved (active session)
 set +o history # temporarily turn off history
-
-# commands here won't be saved
-
 set -o history # turn it back on
+
+# Or use can use unset
+unset HISTFILE
+
+# Or use can set
+HISTSIZE=0
 ```
+
+More about this one at
+
+- [StackOverFlow - Disable history in Linux](https://stackoverflow.com/questions/18663078/disable-history-in-linux)
 
 To handle-error stuff, usually stay as `trap` function in linux, it's alternative version of `||` command. Explore more at [StackOverFlow](https://stackoverflow.com/questions/62387402/reuse-bash-error-handling-trap-logic-with-set-e-command-cannot-invoke-error)
 
@@ -1412,6 +1434,9 @@ pritunl-client remove profile-id
 
 ![[meme-awesome.png|center]]
 
+## Benchmark
+
+- [yet-another-bench-script](https://github.com/masonr/yet-another-bench-script): a simple bash script to estimate Linux server performance using fio, iperf3, & Geekbench
 ## Common
 
 - [bat](https://github.com/sharkdp/bat): A cat(1) clone with wings.
@@ -1438,6 +1463,7 @@ pritunl-client remove profile-id
 - [nload](https://github.com/rolandriegel/nload): Real-time network traffic monitor
 - [iftop](https://github.com/soarpenguin/iftop): display bandwidth usage on an interface 🌟 **(Recommended)**
 - [mkcert](https://github.com/FiloSottile/mkcert): A simple zero-config tool to make locally trusted development certificates with any names you'd like. 🌟 **(Recommended)**
+- [syncthing](https://github.com/syncthing/syncthing): Open Source Continuous File Synchronization
 ## Shell
 
 - [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh): Framework for managing your zsh configuration 🌟 **(Recommended)**
