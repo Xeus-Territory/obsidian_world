@@ -25,11 +25,11 @@ Find more information about my work below
 4. 🔱 [DevSecOps - XeusNguyen's CV](https://drive.google.com/file/d/1xO580Y9r1XVGbE7QlMfk49nTQE-BXpDD/view?usp=sharing)
 5. 📨 Contact for work: [xeusnguyen@gmail.com](mailto:xeusnguyen@gmail.com) or [xeusnguyen@wxops.cloud](mailto:xeusnguyen@wxops.cloud)
 
-Right now,  you can ask me for more question and hand-on in my product with submission **Demo Request** with **W'xOps IDP** at here [W'xOps Enterprise](https://www.wxops.cloud/enterprise/). You can find out more information about project via these links below
+Right now,  you can ask me for more question and hand-on my product with submission **Demo Request** for **W'xOps IDP** at here [W'xOps - Talk to the Maintainer](https://www.wxops.cloud/demo/). Or you can find out more information about project via these links below
 
 1. [W'xOps Documentation](https://docs.wxops.cloud/): Find out more about how usage with W'xOps via technical hand-on, several blogs and case-studies, and always get information about new releases.
-2. [Why W'xOps](https://docs.wxops.cloud/docs/concepts/why-wxops): Find out more reason why I develop W'xOps and introduce them like solution instead PaaS for end-users, especially enterprise who will want to have the compatible IDP for you one in this AI Era.
-3. [W'xOps ROADMAP](https://docs.wxops.cloud/docs/roadmap/): Here is the roadmap for the information about what already gonna serve and which one coming next release. Get a seat for right adoption.
+2. [Why W'xOps](https://docs.wxops.cloud/blog/why-wxops): Find out more reason why I develop to W'xOps and introduce them like solution instead PaaS for end-users.
+3. [W'xOps ROADMAP](https://docs.wxops.cloud/docs/roadmap/): Here is about the roadmap of product, which help you know about the status of feature delivery and which one coming next. Hoping you got well with us.
 
 ![[wxops-banner.jpg]]
 
