@@ -29,7 +29,7 @@ You can figure what you need to do for start with `aws` via some website and art
 ## Community
 
 - [AWS Blog](https://aws.amazon.com/blogs)
-- [AWS Training](https://www.aws.training/)
+- [AWS Training](https://skillbuilder.aws/)
 - [AWS Builder Center](https://builder.aws.com/)
 ## General
 
@@ -64,6 +64,7 @@ Externally, In `AWS` , I will share about some others topic, such as
 - [Github - AWS Observability](https://github.com/aws-observability) - AWS Observability Setup
 - [Github - AWS Samples](https://github.com/aws-samples) - AWS Samples Community
 - [GitHub - AWS Solutions](https://github.com/aws-solutions) - AWS services into pre-configured deployable code, architecture diagrams, and implementation guides.
+- [aws-interview-questions](https://github.com/Devinterview-io/aws-interview-questions): 🟣 AWS interview questions and answers to help you prepare for your next technical interview in 2026.
 ## Repository
 
 - [all_aws_managed_policies](https://gist.github.com/gene1wood/55b358748be3c314f956): A list of all AWS managed policies and they're policy documents as well as a short script to generate the list
@@ -73,8 +74,13 @@ Externally, In `AWS` , I will share about some others topic, such as
 - [Compose-X Labs](https://labs.compose-x.io/#): Aims to show-case Compose-X projects to deploy on AWS ECS
 ## Tools
 
+- [aws-cdk](https://github.com/aws/aws-cdk): The AWS Cloud Development Kit is a framework for defining cloud infrastructure in code
+- [aws-cli](https://github.com/aws/aws-cli): Universal Command Line Interface for Amazon Web Services
+- [boto3](https://github.com/boto/boto3): Boto3, an AWS SDK for Python
 - [Serverless Better Credentials](https://www.serverless.com/plugins/serverless-better-credentials#serverless-better-credentials): Plugin replaces the existing AWS credential resolution mechanism, support SSO (Single Sign On)
 # Blogs, Articles and Videos
+
+![[youtube.png]]
 
 ## Services
 
@@ -90,7 +96,7 @@ Externally, In `AWS` , I will share about some others topic, such as
 - [Medium - AWS in Plain English](https://aws.plainenglish.io/): New AWS, Cloud, and DevOps content every day. 🌟 **(Recommended)**
 - [Medium - AWStip](https://awstip.com/): Community of passionate AWS builders. 🌟 **(Recommended)**
 - [Medium - Chris St. John](https://medium.com/@csjcode): Cloud Architect who talk more about AWS and Architecture
-
+- [Blog - AWS Fundamentals Blog](https://awsfundamentals.com/blog):  Learn AWS concepts, best practices, and real-world implementations. 🌟 **(Recommended)**
 ## Cloud Architecture
 
 - [CloudZero - AWS NAT Gateway Pricing: Simple Strategies To Limit Costs](https://www.cloudzero.com/blog/reduce-nat-gateway-costs/) 🌟 **(Recommended)**

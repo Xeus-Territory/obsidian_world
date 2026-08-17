@@ -22,19 +22,20 @@ Find more information about my work below
 1. 🏢 [[All Projects|Awesome My Projects]]
 2. 🎆 [[All Blogs|Awesome My Blogs]]
 3. ⚔️ [[Personal Projects Management|Personal DIY Projects Management]]
-4. 🔱 [DevSecOps - XeusNguyen's CV](https://drive.google.com/file/d/1xO580Y9r1XVGbE7QlMfk49nTQE-BXpDD/view?usp=sharing)
+4. 🔱 [DevOps/MLOps/DevSecOps - XeusNguyen's CV](https://drive.google.com/file/d/1zPTU8YO8Mj1if7PMwAOb1CkzfH8Ss1KA/view?usp=sharing)
 5. 📨 Contact for work: [xeusnguyen@gmail.com](mailto:xeusnguyen@gmail.com) or [xeusnguyen@wxops.cloud](mailto:xeusnguyen@wxops.cloud)
 
-Right now,  you can ask me for more question and hand-on my product with submission **Demo Request** for **W'xOps IDP** at here [W'xOps - Talk to the Maintainer](https://www.wxops.cloud/demo/). Or you can find out more information about project via these links below
+>[!quote]
+>After KubeCon 2026, I think the great oppourtunity for me to figure out what next and publish the concept and gather idea from the community to continuous convey with my passionate. Therefore, I will made the decision for publish W'xOps IDP all, let this production has own path to keep development spirit. Source Code will be available next couple of days and if any question to made, or demo (will be available soon) to hand-on, please don't hesitage and connect with me via social channel in footer, or talk to me at here [W'xOps - Talk to the Maintainer](https://www.wxops.cloud/demo/)
 
-1. [W'xOps Documentation](https://docs.wxops.cloud/): Find out more about how usage with W'xOps via technical hand-on, several blogs and case-studies, and always get information about new releases.
-2. [Why W'xOps](https://docs.wxops.cloud/blog/why-wxops): Find out more reason why I develop to W'xOps and introduce them like solution instead PaaS for end-users.
-3. [W'xOps ROADMAP](https://docs.wxops.cloud/docs/roadmap/): Here is about the roadmap of product, which help you know about the status of feature delivery and which one coming next. Hoping you got well with us.
+You can find out more information about project via these links below
+
+1. [W'xOps GitHub](https://github.com/wxops): Official GitHub Org of W'xOps IDP - Source code will be available for next couple days.
+2. [W'xOps Documentation](https://docs.wxops.cloud/): Find out more about how usage with W'xOps via technical hand-on, several blogs and case-studies, and always get information about new releases.
+3. [Why W'xOps](https://docs.wxops.cloud/blog/why-wxops): Find out more reason why I develop to W'xOps and introduce them like solution instead PaaS for end-users.
+4. [W'xOps ROADMAP](https://docs.wxops.cloud/docs/roadmap/): Here is about the roadmap of product, which help you know about the status of feature delivery and which one coming next. Hoping you got well with us.
 
 ![[wxops-banner.jpg]]
-
->[!info]
->See you in Kubernetes and Cloud Native Conference 2026 at Yokohama, for more connection and about W'xOps IDP Story.
 
 <div align="center"><h3>🖖Favorite Quotes🖖</h3></div>
 
