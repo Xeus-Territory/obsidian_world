@@ -65,6 +65,7 @@ What you can find out and figure out about Azure, Cloud Computing, Documentation
 
 - [Awesome Microsoft Azure Architecture](https://github.com/lukemurraynz/awesome-azure-architecture) - A curated list of AWESOME blogs, videos, tutorials, code, tools, and scripts related to the design and implementation of solutions in Microsoft Azure. 🌟 **(Recommended)**
 - [Azure Resource Manager QuickStart Templates](https://github.com/Azure/azure-quickstart-templates) - Azure Quickstart Templates about `azure-arm` or `bicep` 🌟 **(Recommended)**
+- [azure-interview-questions](https://github.com/Devinterview-io/azure-interview-questions): 🟣 Azure interview questions and answers to help you prepare for your next technical interview in 2026.
 ## Page
 
 - [Azure Verified Modules](https://azure.github.io/Azure-Verified-Modules/) - An initiative to consolidate and set the standards for what a good Infrastructure-as-Code module looks like.

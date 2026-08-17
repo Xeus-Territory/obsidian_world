@@ -17,13 +17,19 @@ tags:
 - [awesome](https://github.com/sindresorhus/awesome): 😎 Awesome lists about all kinds of interesting topics. [Website](https://project-awesome.org/) 🌟 **(Recommended)**
 ## SysAdmin / DevOps / Platform / Site Reliability / Cloud Engineering
 
+- [awesome-cloud-security-interview](https://github.com/peachycloudsecurity/awesome-cloud-security-interview): a carefully chosen collection of cloud security-related interview questions and scenarios.
 - [awesome-devops](https://github.com/wmariuss/awesome-devops) : A curated list of awesome DevOps platforms, tools, practices and resources 🌟 **(Recommended)**
 - [awesome-platform-engineering-tools](https://github.com/seifrajhi/awesome-platform-engineering-tools): A curated list of Platform Engineering Tools 🌟 **(Recommended)**
 - [awesome-sre](https://github.com/dastergon/awesome-sre): A curated list of Site Reliability and Production Engineering resources. 🌟 **(Recommended)**
 - [awesome-sysadmin](https://github.com/awesome-foss/awesome-sysadmin): A curated list of amazingly awesome open-source sysadmin resources. 🌟 **(Recommended)**
+- [aws-interview-questions](https://github.com/Devinterview-io/aws-interview-questions): 🟣 AWS interview questions and answers to help you prepare for your next technical interview in 2026.
+- [azure-interview-questions](https://github.com/Devinterview-io/azure-interview-questions): 🟣 Azure interview questions and answers to help you prepare for your next technical interview in 2026.
+- [cloud-engineer-interview-questions](https://github.com/sv222/cloud-engineer-interview-questions): A Comprehensive Collection of Interview Questions for Cloud Engineers.
 - [cloud-projects](https://github.com/mzazon/cloud-projects): Over 1100 cloud recipes, projects, tutorials, and real-world solutions to gain hands-on experience across Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP).
 - [DevOps Bash Tools](https://gitlab.com/HariSekhon/DevOps-Bash-tools):  DevOps Bash Scripts Collection 🌟 **(Recommended)**
 - [Devops Exercises](https://github.com/bregman-arie/devops-exercises): For who want to start with DevOps journey
+- [DevOps-Interview-Questions](https://github.com/NotHarshhaa/DevOps-Interview-Questions): Collection of 1100+ DevOps interview questions with detailed answers covering CI/CD, Cloud (AWS, Azure, GCP), Kubernetes, Terraform, Ansible, Git, Jenkins, Docker, Monitoring, and more.
+- [devops-interview-questions](https://github.com/rohitg00/devops-interview-questions): Creating this repository as a central hub for all DevOps interview questions to help you land your next job. 🌟 **(Recommended)**
 - [DevOps-Roadmap](https://github.com/milanm/DevOps-Roadmap): DevOps Roadmap with learning resources. contents by Milan **(Legit Recommend)**
 - [DevOps & SRE interview questions](https://ewry.net/devops-sre-interview-questions/): Find the most important information about key DevOps & SRE technologies. 🌟 **(Recommended)**
 - [Google SRE](https://sre.google/): Resource of Google for let you learn to become SRE with free resources, video, books and moreover stuff like that 🌟 **(Recommended)**
@@ -32,8 +38,7 @@ tags:
 
 - [Airbnb](https://github.com/airbnb): Airbnb Open Source Community 🌟 **(Recommended)**
 - [Alibaba](https://github.com/alibaba): Alibaba Open Source 🌟 **(Recommended)**
-- [Apache](https://github.com/apache): The Apache Software Foundation 🌟 **(Recommended)**
-- [Apache Project Directory](https://projects.apache.org/projects.html) : List all of product of Apache 🌟 **(Recommended)**
+- [Apache](https://github.com/apache): The Apache Software Foundation - [Apache Project Directory](https://projects.apache.org/projects.html) : List all of product of Apache  🌟 **(Recommended)**
 - [Authzed](https://github.com/authzed): Creators of SpiceDB, the open source fine-grained permissions database. YC W21.
 - [Bytedance Inc](https://github.com/bytedance): ByteDance's open source projects hub for innovation. [Website](https://opensource.bytedance.com/), Who stand behind [KubeWharf](https://github.com/kubewharf) 🌟 **(Recommended)**
 - [Cloudflare](https://github.com/cloudflare): CloudFlare Open Source Community
@@ -65,7 +70,6 @@ tags:
 - [VMware](https://github.com/vmware): Open Source Project from VMware
 - [Vox Pupuli](https://github.com/voxpupuli): Modules and tooling maintained by and for the [Puppet](https://www.puppet.com/) community
 - [Yandex](https://github.com/yandex): Yandex open source projects and technologies
-- [LFX](https://lfx.linuxfoundation.org/): a hub for collaboration and sustainability in open source
 ## Technology
 
 - [awesome-compilers](https://github.com/aalhour/awesome-compilers): Curated list of awesome resources on Compilers, Interpreters and Runtimes 🌟 **(Recommended)**
@@ -76,6 +80,7 @@ tags:
 - [awesome-test-automation](https://github.com/atinfo/awesome-test-automation): A curated list of awesome test automation frameworks, tools, libraries, and software for different programming languages
 - [awesome-webhooks](https://github.com/realadeel/awesome-webhooks): A curated list about real-time webhooks. 🌟 **(Recommended)**
 - [Collection about kind of YAML](https://yaml.org/) : Collection about yaml in wide technologies
+- [API Landscape](https://apilandscape.apiscene.io/): A comprehensive view of all stakeholders creating the programmable economy 🌟 **(Recommended)**
 ## Opensource Finder
 
 - [AlternativeTo](https://alternativeto.net/): Opensource Compare Alternatives
@@ -84,12 +89,13 @@ tags:
 - [G2](https://www.g2.com/): Find the right software and services
 - [Gitstar Ranking](https://gitstar-ranking.com/): Unofficial GitHub star ranking for users, organizations and repositories 🌟 **(Recommended)**
 - [Hosted Software](https://hostedsoftware.org/): Self-Hosted Software List
+- [LibHunt](https://www.libhunt.com/): Discover awesome open-source projects and their alternatives 🌟 **(Recommended)**
 - [OpenAlternative](https://openalternative.co/): Discover Open Source Alternatives to Popular Software
 - [Osssoftware](https://osssoftware.org/open-source-alternatives/): Best New Open Source Alternatives
 - [ProductHunt](https://www.producthunt.com/): The best new products in tech 🌟 **(Recommended)**
 - [SourceForge](https://sourceforge.net/): Compare, Download & Develop Open Source & Business Software
 - [StackShare](https://stackshare.io/): See what tech stacks your peers are using 🌟 **(Recommended)**
-- [LibHunt](https://www.libhunt.com/): Discover awesome open-source projects and their alternatives 🌟 **(Recommended)**
+- [Trendshift](https://trendshift.io/): Live Trending GitHub Repositories 🌟 **(Recommended)**
 # Blog DevOps and Tech
 
 >[!note]

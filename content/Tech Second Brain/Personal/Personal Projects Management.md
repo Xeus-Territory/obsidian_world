@@ -36,19 +36,25 @@ Github: **[kubewekend](https://github.com/Xeus-Territory/kubewekend)** - Website
 - Session Extra 5: Combination GitOps with ArgoCD into Kubewekend Cluster 🚧
 - Session Extra 6: Learn how to enhance security with network context, RBAC in Kubernetes 🚧
 - Session Extra 7: Learn how to operate Service Mesh with Istio inside Kubewekend Cluster 🚧
-## The major session ✅
-
-- Session 8: Setup the cluster monitoring stack with LGTM and Grafana Alloy ✅
 # W'xOps Book ⌛
 
 >[!quote]
 >During the time when I develop W'xOps Ecosystem of mine, I will try to recap the process to brainstorm, embrace the challenge and find the golden path to build your platform.
 
-....
+TBD
 # W'xOps ⌛
 
->[!quote]
->About the W'xOps and build in public for what I actually want to does. Let's make it more efficiency and available to leverage for building successes
+>[!summary]
+>W'xOps IDP is a Internal Developer Platform solution for helping your team fasten control your infrastructure with GitOps Strategy and provide the flatten view for monitoring system acvivity, through it help you to enhance the Developer Experience (DevEx).
+
+Right now,  you can ask me for more question and hand-on my product with submission **Demo Request** for **W'xOps IDP** at here [W'xOps - Talk to the Maintainer](https://www.wxops.cloud/demo/). Or you can find out more information about project via these links below
+
+1. 
+2. [W'xOps Documentation](https://docs.wxops.cloud/): Find out more about how usage with W'xOps via technical hand-on, several blogs and case-studies, and always get information about new releases.
+3. [Why W'xOps](https://docs.wxops.cloud/blog/why-wxops): Find out more reason why I develop to W'xOps and introduce them like solution instead PaaS for end-users.
+4. [W'xOps ROADMAP](https://docs.wxops.cloud/docs/roadmap/): Here is about the roadmap of product, which help you know about the status of feature delivery and which one coming next. Hoping you got well with us.
+
+![[wxops-banner.jpg]]
 ## Guardian ⌛
 
 GitHub: **[Guardian](https://github.com/wxops/guardian)**
@@ -67,4 +73,4 @@ GitHub: **[HArchiDB](https://github.com/wxops/harchidb)**
 
 ## W'xOps IDP ⌛
 
-GitHub: **[wouops-idp](https://github.com/wxops/wxops-idp)**
+GitHub: **[wxops-idp](https://github.com/wxops)**
