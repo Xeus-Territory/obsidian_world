@@ -25,7 +25,7 @@ tags:
 
 - [[Awesome API Gateway and Web Server]]
 - [[Awesome Caddy]]
-- [[Awesome Kafka]]
+- [[Awesome Kafka & MQTT]]
 - [[Awesome NGINX]]
 - [[Awesome Selfhosted]]
 - [[Awesome System Architecture]]
@@ -217,6 +217,7 @@ tags:
 ## 2026
 
 - [[Advantage Networking Fundamental - Routing, VPN and Peering]]
+- [[About Serverless Discovery - DIY Chatbot Serverless with Cloudflare Worker + D1]]
 # DueWeekly Tech
 
 >[!info]
