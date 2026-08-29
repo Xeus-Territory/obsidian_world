@@ -42,17 +42,16 @@ Cloud Native usually relate with Kubernetes and Architecture topics, so you can 
 - [Codefresh - Understanding Argo CD: Kubernetes GitOps Made Simple](https://codefresh.io/learn/argo-cd/) 🌟 **(Recommended)**
 ## Landscape
 
-- [CD Foundation Landscape](https://landscape.cd.foundation/): Collection about CI/CD Projects
+- [CD Foundation Landscape](https://landscape.cd.foundation/): Collection about CI/CD Projects 🌟 **(Recommended)**
 - [CNCF Landscape](https://landscape.cncf.io/): Collection by category tools and technologies of CNCF 🌟 **(Recommended)**
-- [CNCF Projects](https://contribute.cncf.io/contributors/projects/): All projects of the Cloud Native Computing Foundation
-- [Linux Foundation Project](https://www.linuxfoundation.org/projects) : Opensource Ambassador for projects from multiple users
-- [Platform Engineer landscape](https://platformengineering.org/platform-tooling): Distills the best practices in designing IDP
+- [Platform Engineer landscape](https://platformengineering.org/platform-tooling): Distills the best practices in designing IDP 🌟 **(Recommended)**
 ## Platform Engineer Articles
 
 - [Platform Engineer - Internal Developer Platform (IDP) Reference Architectures](https://devops.com/internal-developer-platform-idp-reference-architectures/)
 - [Platform Engineer - Top 10 platform engineering tools to use in 2025](https://platformengineering.org/blog/top-10-platform-engineering-tools-to-use-in-2025)
 - [Platform Engineer - 10 Platform engineering predictions for 2026](https://platformengineering.org/blog/10-platform-engineering-predictions-for-2026)
 - [Humanitec - Self-hosted Platform Orchestrator](https://humanitec.com/blog/running-the-platform-orchestrator-self-hosted)
+- [Blog - Platform Engineering in 2026: Why DIY Is Dead](https://roadie.io/blog/platform-engineering-in-2026-why-diy-is-dead/)
 ## Awesome Repositories
 
 - [awesome-argo](https://github.com/akuity/awesome-argo): A curated list of awesome projects and resources related to Argo (a CNCF graduated project)
@@ -61,7 +60,9 @@ Cloud Native usually relate with Kubernetes and Architecture topics, so you can 
 - [awesome-flux-infra](https://github.com/brainfair/awesome-flux-infra): This repository contains infrastructure applications and add-ons installed in Kubernetes via FluxCD v2.
 ## Organization and Community
 
+- [CNCF Projects](https://contribute.cncf.io/contributors/projects/): All projects of the Cloud Native Computing Foundation
 - [LFX](https://lfx.linuxfoundation.org/): a hub for collaboration and sustainability in open source
+- [Linux Foundation Project](https://www.linuxfoundation.org/projects) : Opensource Ambassador for projects from multiple users
 # Cloud-Native Tools and Frameworks
 
 ![[thumbnail-cncf-landscape.png]]

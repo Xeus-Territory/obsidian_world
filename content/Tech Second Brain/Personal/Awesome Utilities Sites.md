@@ -69,12 +69,19 @@ tags:
 - [awesome-job-boards](https://github.com/emredurukn/awesome-job-boards): A curated list of awesome job boards 
 - [Awesome Job VietNam](https://github.com/awesome-jobs/vietnam): Find Dev job in VietNam 🌟 **(Recommended)**
 - [Awesome Remote Job](https://github.com/lukasz-madon/awesome-remote-job?tab=readme-ov-file): A curated list of awesome [remote working](https://en.wikipedia.org/wiki/Telecommuting) resources.
+- [awesome-RemoteWork](https://github.com/hugo53/awesome-RemoteWork): Resources for remote workers: approaches, hiring page, remote life and more.
+- [Built In - startup & tech jobs](https://builtin.com/)
+- [DevOpsProjectsHQ](https://devopsprojectshq.com/): DevOps, SRE, Cloud and Platform engineering jobs 🌟 **(Recommended)**
+- [Japan Dev - English-friendly tech jobs in Japan](https://japan-dev.com/)
+- [Kube Careers](https://kube.careers/): Hand-picked Kubernetes jobs
 - [OpenSourceJobs](https://open-source-jobs.com/): List of Open Source projects offering jobs
 - [Remote.co](https://remote.co/): Browse thousands of remote and hybrid jobs tailored for you.
 - [Remote In Tech](https://remoteintech.company/): A list of semi to fully remote-friendly companies in tech 🌟 **(Recommended)**
 - [RemoteRocketShip](https://www.remoterocketship.com/): Search 100,000+ work from home jobs at top remote companies 🌟 **(Recommended)**
 - [StartupJobs](https://startup.jobs/): Find the startup jobs globally 🌟 **(Recommended)**
+- [TopCV](https://www.topcv.vn/): Vietnamese Jobs board
 - [Wellfound](https://wellfound.com/jobs): Over 130k remote & local startup jobs
 - [We work remotely](https://weworkremotely.com/): WWR has been the #1 site for remote jobs, with 6M monthly visitors and the world's largest remote work community
 - [Working Nomads](https://www.workingnomads.com/jobs): Discover the 100% fully remote jobs worldwide for digital working nomads and remote workers.
 - [Y Combinator](https://www.ycombinator.com/jobs): Community for funding and finding job for the startup company 🌟 **(Recommended)**
+

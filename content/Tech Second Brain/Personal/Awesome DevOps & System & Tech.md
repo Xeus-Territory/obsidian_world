@@ -160,6 +160,7 @@ tags:
 - [Tony Teaches Tech ](https://www.youtube.com/c/TonyTeachesTech/featured): Guy teach everything technical
 - [Travis Media](https://www.youtube.com/@TravisMedia/videos): Guy involve multiple topics around technologies
 - [Viet Tran](https://www.youtube.com/@Viet100/videos): Certificate guiding and software engineer for basic knowledge (Vietnamese) 🌟 **(Recommended)**
+- [Vietnam Open Infrastructure](https://www.youtube.com/@vietnamopeninfrastructure2288): Vietnam Org hosted conference about Infrastructure, AI and more over and operated the KCD Vietnam 🌟 **(Recommended)**
 # Technologies Articles
 
 >[!note]

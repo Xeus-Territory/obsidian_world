@@ -447,7 +447,7 @@ Có một vài ứng cử viên tiềm năng được nhắc đến ở đây v�
 >[!note]
 >Công nghệ này liên quan đến chủ đề sạc năng lượng tại các trạm sạc EV dạng edge daemon trên khắp Nhật Bản với khả năng chạy K8s trên hệ thống ARMv7.
 
-Về chủ đề **VPP (Virtual Power Plant - Nhà máy điện ảo)**, thực sự rất thú vị khi chúng ta thiết lập một tập hợp thiết bị (fleet) để điều phối nguồn năng lượng phân tán từ tấm pin mặt trời, pin lưu trữ hoặc trạm sạc EV kết hợp với các tài nguyên Cloud-Native. Đối với tôi, đây là một trải nghiệm hoàn toàn mới, nhưng nếu bạn muốn khám phá thêm về cách Kubernetes, KubeEdge, Dapr và nhiều công nghệ khác giải quyết các bài toán cho VPP, hãy tham bài chỉa sẽ tại [KubeCon Europe 2026 - Virtual Power Plants (VPP): How They Work and What They Are - LeRenzo Malcom & Mario Flores, Enpal](https://www.youtube.com/watch?v=95cFjYJS4ek). Hoặc tìm hiểu thêm tại trang web của diễn giả [What is a VPP?](https://whatisavpp.com/)
+Về chủ đề **VPP (Virtual Power Plant - Nhà máy điện ảo)**, thực sự rất thú vị khi chúng ta thiết lập một tập hợp thiết bị (fleet) để điều phối nguồn năng lượng phân tán từ tấm pin mặt trời, pin lưu trữ hoặc trạm sạc EV kết hợp với các tài nguyên Cloud-Native. Đối với tôi, đây là một trải nghiệm hoàn toàn mới, nhưng nếu bạn muốn khám phá thêm về cách Kubernetes, KubeEdge, Dapr và nhiều công nghệ khác giải quyết các bài toán cho VPP, hãy tham khảo bài chia sẻ tại [KubeCon Europe 2026 - Virtual Power Plants (VPP): How They Work and What They Are - LeRenzo Malcom & Mario Flores, Enpal](https://www.youtube.com/watch?v=95cFjYJS4ek). Hoặc tìm hiểu thêm tại trang web của diễn giả [What is a VPP?](https://whatisavpp.com/)
 
 Một lần nữa hãy ghé qua và xem lại các Video của KubeCon nếu mong muốn nghiên cứu
 

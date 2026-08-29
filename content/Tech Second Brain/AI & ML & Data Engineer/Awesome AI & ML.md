@@ -21,6 +21,10 @@ tags:
 - [Medium - The Open-Source Stack for AI Agents](https://medium.com/data-science-collective/the-open-source-stack-for-ai-agents-8ab900e33676)
 - [Ngrok - Prompt caching: 10x cheaper LLM tokens, but how?](https://ngrok.com/blog/prompt-caching)
 - [AIME - PyTorch 2 GPU Performance Benchmarks (Update)](https://www.aime.info/blog/en/pytorch-2-gpu-performace-benchmark-comparison/)
+## General
+
+- [Medium - Agentic AI Knowledge Hub: Everything You Need to Know in One Place](https://medium.com/vedcraft/agentic-ai-knowledge-hub-everything-you-need-to-know-in-one-place-bfa4d8b4b2bf) 🌟 **(Recommended)**
+- [Azure - AI agent orchestration patterns](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns)
 ## Awesome Repositories
 
 - [applied-ml](https://github.com/eugeneyan/applied-ml): 📚 Papers & tech blogs by companies sharing their work on data science & machine learning in production
@@ -37,6 +41,8 @@ tags:
 - [best-of-ml-python](https://github.com/ml-tooling/best-of-ml-python): 🏆 A ranked list of awesome machine learning Python libraries. Updated weekly
 - [GPU-Benchmarks-on-LLM-Inference](https://github.com/XiongjieDai/GPU-Benchmarks-on-LLM-Inference): Multiple NVIDIA GPUs or Apple Silicon for Large Language Model Inference?
 - [system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks): Collection of extracted System Prompts from popular chatbots like ChatGPT, Claude & Gemini 🌟 **(Recommended)**
+- [agentic-ai-landscape](https://github.com/antgroup/agentic-ai-landscape): Data driven agentic landscapes and insights. Produced by Ant Open Source and inclusionAI. 🌟 **(Recommended)**
+- [Agentic AI Knowledge Base](https://agentic-ai.readthedocs.io/en/latest/): A comprehensive, structured knowledge repository consolidating cutting-edge research, patterns, frameworks, and best practices for building, deploying, and operating agentic AI systems at scale. 🌟 **(Recommended)**
 ## Blogs
 
 - [DigitalOcean - AI/ML Topics](https://www.digitalocean.com/community/tags/ai-ml): Articles and Community about AI/ML 🌟 **(Recommended)**
@@ -54,6 +60,7 @@ tags:
 
 - [LF AI & Data Foundation Interactive Landscape](https://landscape.lfai.foundation/) 🌟 **(Recommended)**
 - [The MAD (Machine Learning, AI and Data) Landscape](https://mad.firstmark.com/ ) 🌟 **(Recommended)**
+- [Agentic AI Landscape](https://insights.inclusion-ai.org/) 🌟 **(Recommended)**
 ## Organization
 
 - [DeepSeek](https://github.com/deepseek-ai): LLM Model for Prompting

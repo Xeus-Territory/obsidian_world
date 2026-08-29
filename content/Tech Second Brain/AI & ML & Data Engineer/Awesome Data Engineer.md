@@ -37,10 +37,12 @@ tags:
 - [awesome-datascience](https://github.com/academic/awesome-datascience): 📝 An awesome Data Science repository to learn and apply for real world problems.
 - [awesome-etl](https://github.com/pawl/awesome-etl): A curated list of awesome ETL frameworks, libraries, and software.
 - [awesome-open-source-data-engineering](https://github.com/pracdata/awesome-open-source-data-engineering): A curated list of open source tools used in analytics platforms and data engineering ecosystem
+- [awesome-streaming](https://github.com/manuzhang/awesome-streaming): a curated list of awesome streaming frameworks, applications, etc
 - [awesome-workflow-engines](https://github.com/meirwah/awesome-workflow-engines): A curated list of awesome open source workflow engines
 - [data-engineer-handbook](https://github.com/DataExpert-io/data-engineer-handbook): a repo with links to everything you'd ever want to learn about data engineering
 - [data-engineering-roadmap](https://github.com/data-burst/data-engineering-roadmap): A comprehensive roadmap tailored for data engineering professionals at all levels
 - [HelloDATA BE](https://kanton-bern.github.io/hellodata-be/): an **enterprise data platform** built on top of open-source tools based on the modern data stack
+- [awesome-lakehouse](https://github.com/manuzhang/awesome-lakehouse): a curated list of awesome lakehouse frameworks, applications, etc
 ## Blogs
 
 - [Medium - Vu Trinh](https://medium.com/@vutrinh274): Tech blogger who cover a lot information about databases and data engineers 🌟 **(Recommended)**
@@ -51,6 +53,11 @@ tags:
 - [Medium - Kai Waehner](https://kai-waehner.medium.com/): echnology Evangelist — [www.kai-waehner.de](http://www.kai-waehner.de/) → Big Data Analytics, Data Streaming, Apache Kafka, Middleware, Microservices
 - [r/dataengineering](https://www.reddit.com/r/dataengineering/)
 - [Medium - Alex Merced](https://medium.alexmerced.blog/): A Tech Blogger for involving the great article with datalake, especially with Iceberg and techstack attachment
+## Demo Collections
+
+- [Stackable - Demos Page](https://docs.stackable.tech/home/stable/demos/)
+- [MinIO - Data Lakehouse Examples in Action](https://www.min.io/learn/data-lakehouse-examples)
+
 ## Organization
 
 - [Big Data Europe](https://github.com/big-data-europe): Integrating Big Data, software & communicaties for addressing Europe's societal challenge
@@ -102,9 +109,17 @@ tags:
 ## DataLake / Lakehouse
 
 - [openhouse](https://github.com/linkedin/openhouse): An open source control plane designed for efficient management of tables within open data lakehouse deployments
-## Streaming Process
+- [Delta Lake](https://delta.io/): Highly popular, open-source storage layer championed by Databricks.
+- [Apache Hudi](https://hudi.apache.org/): Stream-oriented format optimized for incremental upserts and low-latency analytics.
+- [lakeFS](https://github.com/treeverse/lakeFS): Data version control for your data lake | Git for data
+## Stream Processing
 
 - [bytewax](https://github.com/bytewax/bytewax): Python Stream Processing
+- [materialize](https://github.com/MaterializeInc/materialize): The live data layer for apps and AI agents. Create up-to-the-second views into your business, just using SQL
+- [risingwave](https://github.com/risingwavelabs/risingwave): Event streaming platform for agentic AI. Continuously ingest, transform, and serve event streams in real time, at scale.
+- [quix-streams](https://github.com/quixio/quix-streams): Python Streaming DataFrames for Kafka
+- [pathway](https://github.com/pathwaycom/pathway): Python ETL framework for stream processing, real-time analytics, LLM pipelines, and RAG.
+- [faust](https://github.com/faust-streaming/faust): Python Stream Processing. A Faust fork
 # Data Engineer Tools
 
 ![[meme-data-lakehouse.png|center]]

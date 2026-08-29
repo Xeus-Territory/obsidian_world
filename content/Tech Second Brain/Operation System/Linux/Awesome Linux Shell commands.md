@@ -517,6 +517,57 @@ set -e
 cat nonexistingfile
 echo "The end"
 ```
+
+### `openssl`
+
+If you want to find the tools for generated certificate, or secrets randomly, you can reach out `openssl` which easier to lend you a hand. Explore more at [OpenSSL](https://openssl-library.org/)
+
+To easier installation, you can use with package manager of Linux like `apt` or `yum`
+
+```bash
+# For Debian / Ubuntu
+sudo apt update && sudo apt install openssl -y
+
+# For RHEL / CentOS
+sudo yum install openssl
+```
+
+Explore more about Cheatsheet of `openssl` at
+
+- [Linuxize - OpenSSL Cheatsheet](https://linuxize.com/cheatsheet/openssl/)
+- [Gist - OpenSSL Cheatsheet](https://gist.github.com/davewongillies/7050080)
+
+With me, I usually use this command for
+
+**Generate random string**
+
+```bash
+# Generate HEX string (token) with 32 bytes
+openssl rand -hex 32
+
+# Generate BASE64 string (token) with 32 bytes
+openssl rand -base64 32
+```
+
+**Generate certificates and sign them**
+
+```bash
+# Gen key with RSA Algo, or DSA with specific bits
+openssl genrsa -out ca.key 2048
+
+# Gen crt with key created above
+openssl req -x509 -new -nodes -key ca.key -sha256 -days 3650 -out ca.crt \
+-subj "/CN=Local-Testing-CA"
+
+# Signed them with certificate
+openssl x509 -in ca.crt -signkey ca.key -x509toreq -out ca.csr -sha256 -days 3650
+```
+
+**Show full certificate detail**
+
+```bash
+openssl x509 -in cert.crt -noout -text
+```
 ## System Administrator
 
 ### `chmod`
