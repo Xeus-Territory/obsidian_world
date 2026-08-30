@@ -10,7 +10,7 @@ tags:
 >[!quote]
 >Hi @all, Turn back to work in provisioning Infrastructure. You know about Infrastructure as Code is truly insane, in currently situation, DevOps must be known about once of tools for doing stuff, with me, I totally repeat time to time about Terraform. But todays, I will expose what actual think when I try to work Terraform in daily. Let's digest
 
-![[terraform.png]]
+![[thumbnail-terraform.png]]
 
 >[!info]
 ><h2>What is Terraform?</h2>

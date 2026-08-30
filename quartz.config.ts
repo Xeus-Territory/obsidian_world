@@ -1,5 +1,7 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
+import FolderCards from "./quartz/components/pages/FolderCards"
+import TagCards from "./quartz/components/pages/TagCards"
 
 const config: QuartzConfig = {
   configuration: {
@@ -67,8 +69,8 @@ const config: QuartzConfig = {
       Plugin.AliasRedirects(),
       Plugin.ComponentResources({ fontOrigin: "googleFonts" }),
       Plugin.ContentPage(),
-      Plugin.FolderPage(),
-      Plugin.TagPage(),
+      Plugin.FolderPage({ pageBody: FolderCards() }),
+      Plugin.TagPage({ pageBody: TagCards() }),
       Plugin.ContentIndex({
         enableSiteMap: true,
         enableRSS: true,

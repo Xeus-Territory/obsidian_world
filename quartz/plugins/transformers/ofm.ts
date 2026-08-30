@@ -225,6 +225,8 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options> 
                           width,
                           height,
                           alt,
+                          loading: "lazy",
+                          decoding: "async",
                         },
                       },
                     }

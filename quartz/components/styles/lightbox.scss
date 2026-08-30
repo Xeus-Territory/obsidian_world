@@ -1,0 +1,184 @@
+@use "../../styles/variables.scss" as *;
+
+.lightbox-figure {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  line-height: 0;
+
+  & > img {
+    cursor: zoom-in;
+  }
+
+  // the trigger only appears on hover/focus so it never covers the content
+  &:hover > .lightbox-trigger,
+  & > .lightbox-trigger:focus-visible {
+    opacity: 1;
+  }
+
+  // the wrapper is now the layout box, so `img[alt*="center"]` in custom.scss
+  // (Obsidian's `![[img|center]]`) can no longer centre itself against the
+  // paragraph — carry that centring onto the wrapper instead
+  &:has(> img[alt*="center"]) {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// base.scss styles image captions with `p > img + em`; the wrapper breaks that
+// adjacency, so restore it for wrapped images
+p > .lightbox-figure + em {
+  display: block;
+  transform: translateY(-1rem);
+}
+
+.lightbox-trigger {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem;
+  margin: 0;
+  border: 1px solid var(--lightgray);
+  border-radius: 5px;
+  background-color: var(--light);
+  color: var(--darkgray);
+  opacity: 0;
+  cursor: pointer;
+  transition:
+    opacity 0.2s ease,
+    color 0.2s ease;
+
+  &:hover {
+    color: var(--secondary);
+  }
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(2px);
+
+  &.is-open {
+    display: flex;
+  }
+}
+
+.lightbox-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.4rem;
+  padding: 0.6rem 0.8rem;
+  color: #fff;
+
+  & > .lightbox-counter {
+    margin-right: auto;
+    font-family: var(--bodyFont);
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+
+  & button,
+  & a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.45rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+  }
+}
+
+.lightbox-stage {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  padding: 0 0.5rem 0.5rem;
+  overflow: auto;
+}
+
+.lightbox-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+  cursor: zoom-in;
+
+  &.is-zoomed {
+    max-width: none;
+    max-height: none;
+    cursor: zoom-out;
+  }
+}
+
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.lightbox-prev {
+  left: 1rem;
+}
+
+.lightbox-next {
+  right: 1rem;
+}
+
+.lightbox-caption {
+  margin: 0;
+  padding: 0 1rem 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: var(--bodyFont);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+@media all and (max-width: $mobileBreakpoint) {
+  // no hover on touch, so the trigger is always visible there
+  .lightbox-trigger {
+    opacity: 1;
+  }
+
+  .lightbox-prev {
+    left: 0.25rem;
+  }
+
+  .lightbox-next {
+    right: 0.25rem;
+  }
+}

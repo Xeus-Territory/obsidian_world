@@ -1,0 +1,220 @@
+@use "../../styles/variables.scss" as *;
+
+.page-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  gap: 1.25rem;
+  margin: 2em 0;
+
+  @media all and (max-width: $mobileBreakpoint) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.page-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--lightgray);
+  border-radius: 8px;
+  background-color: var(--light);
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+
+  // No `overflow: hidden` and no `transform` here on purpose. The hover popover
+  // is appended *inside* this card (it is a child of the title link), so
+  // `overflow` would clip it and `transform` would make the card a containing
+  // block and stacking context for it. The thumbnail clips itself instead.
+  &:hover {
+    border-color: var(--secondary);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.09);
+  }
+
+  @media (hover: none) {
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  // floating-ui sets the popover's inline left/top, so nudge it with margins
+  // rather than overriding those: lift it clear of the card and push it right
+  // so it does not sit over the card it came from. Tune these two values.
+  & .popover {
+    margin-top: -2rem;
+    margin-left: 1.5rem;
+  }
+}
+
+.page-card-thumb {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  // rounded to sit just inside the card's 8px border
+  border-radius: 7px 7px 0 0;
+  overflow: hidden;
+  background-color: var(--lightgray);
+
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 0;
+    transition: transform 0.25s ease;
+  }
+
+  .page-card:hover & > img {
+    transform: scale(1.04);
+  }
+}
+
+.page-card-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-family: var(--headerFont);
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1;
+  opacity: 0.92;
+}
+
+.page-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 0.85rem 1rem 1rem;
+}
+
+.page-card-meta {
+  margin: 0;
+  color: var(--gray);
+  font-size: 0.78rem;
+
+  & > .page-card-dot {
+    margin: 0 0.35em;
+  }
+}
+
+.page-card-title {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.35;
+
+  // outrank `a.internal`, which would otherwise draw its highlight box here
+  & > a.internal {
+    background-color: transparent;
+    padding: 0;
+
+    // stretch the title link over the whole card so anywhere is clickable,
+    // without nesting the tag links inside another anchor
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+    }
+  }
+}
+
+.page-card-desc {
+  margin: 0;
+  color: var(--darkgray);
+  font-size: 0.85rem;
+  line-height: 1.5;
+
+  // `flex: 1` here would let the box grow past the clamp and show a 4th line,
+  // so leave it unflexed and let the tag row take up the slack instead
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.page-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin: 0.15rem 0 0;
+  padding: 0;
+  list-style: none;
+
+  // sit above the stretched title link so tags stay independently clickable
+  position: relative;
+  z-index: 1;
+
+  // pin to the card bottom so cards in a row line up
+  margin-top: auto;
+
+  & > li {
+    margin: 0;
+    font-size: 0.7rem;
+  }
+
+  & > .page-card-tag-more {
+    align-self: center;
+    color: var(--gray);
+  }
+}
+
+// A hover preview drops the whole page into a 30rem x 20rem box, where a full
+// card (16/9 cover + body) is taller than the popover itself — so only one
+// would show, half cut off. Collapse to compact rows there so several entries
+// are previewable, mirroring what listPage.scss does for `.section`.
+.popover {
+  & .page-card-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    margin: 1em 0;
+  }
+
+  & .page-card {
+    flex-direction: row;
+
+    // no highlight or zoom inside a scrolling preview
+    &:hover {
+      box-shadow: none;
+
+      & .page-card-thumb > img {
+        transform: none;
+      }
+    }
+  }
+
+  & .page-card-thumb {
+    flex: 0 0 4rem;
+    width: 4rem;
+    aspect-ratio: auto;
+    align-self: stretch;
+    // thumbnail moves to the left edge in the row layout
+    border-radius: 7px 0 0 7px;
+  }
+
+  & .page-card-fallback {
+    font-size: 1.25rem;
+  }
+
+  & .page-card-body {
+    gap: 0.1rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  & .page-card-title {
+    font-size: 0.9rem;
+  }
+
+  // at preview size, three scannable titles beat one title plus a summary
+  & .page-card-desc {
+    display: none;
+  }
+
+  // same call listPage.scss makes: tags are noise at preview size
+  & .page-card-tags {
+    display: none;
+  }
+}
