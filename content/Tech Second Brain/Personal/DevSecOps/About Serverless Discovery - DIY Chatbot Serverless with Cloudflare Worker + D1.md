@@ -4,6 +4,7 @@ tags:
   - tech
   - DIY
   - developer
+  - architecture
 ---
 
 ![[meme-long-time-no-see.png|center]]
@@ -443,12 +444,13 @@ There are few key-patterns design for Serverless GPU Inference
 - **Dynamic GGUF & Adapter Hot-Swapping**: A single quantized base model (e.g., INT4 GGUF or ONNX runtime) remains resident in memory. Incoming serverless event triggers dynamically load tiny task-specific adapters (LoRA) or vision heads for OCR, anomaly detection, or voice commands without reloading the base engine.
 - **Cascading Confidence Offload (Edge-to-Cloud Fallback)**: Edge serverless functions execute local inference for sub-10ms response times. If the local model's confidence score falls below a set threshold, the function asynchronously offloads the raw frame or query to a Cloud Serverless GPU cluster (like vLLM on EKS/GKE) for high-precision validation.
 
-|**Architectural Layer**|**Tools & Runtimes**|**Role in Edge Inference**|
-|---|---|---|
-|**Serverless Runtime**|WasmEdge (WASI-NN), Spin, OpenFaaS Edge, K3s + Knative|Sub-10ms event triggers with a <10MB memory footprint|
-|**Edge Inference Engine**|llama.cpp (GGUF), ONNX Runtime, TensorRT-Edge, ExecuTorch|Low-precision (INT4/FP16) execution on embedded silicon|
-|**Hardware Abstraction**|Akri, NVIDIA JetPack, NXP eIQ|Discovers and exposes heterogeneous NPUs/GPUs to serverless workloads|
-|**Sync & Telemetry**|MQTT (Mosquitto/EMQX), Apache Kafka, NATS|Handles async event triggers, edge telemetry, and OTA model adapter updates|
+| **Architectural Layer**   | **Tools & Runtimes**                                      | **Role in Edge Inference**                                                  |
+| ------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------- |
+| **Serverless Runtime**    | WasmEdge (WASI-NN), Spin, OpenFaaS Edge, K3s + Knative    | Sub-10ms event triggers with a <10MB memory footprint                       |
+| **Edge Inference Engine** | llama.cpp (GGUF), ONNX Runtime, TensorRT-Edge, ExecuTorch | Low-precision (INT4/FP16) execution on embedded silicon                     |
+| **Hardware Abstraction**  | Akri, NVIDIA JetPack, NXP eIQ                             | Discovers and exposes heterogeneous NPUs/GPUs to serverless workloads       |
+| **Sync & Telemetry**      | MQTT (Mosquitto/EMQX), Apache Kafka, NATS                 | Handles async event triggers, edge telemetry, and OTA model adapter updates |
+
 With [LF Edge (Linux Foundation)](https://lfedge.org/) , unifies the fragmented Operational Technology (OT) hardware landscape. It provides open frameworks to discover, virtualize, and orchestrate edge nodes and IoT protocols.
 
 | **LF Edge Project**                            | **Architectural Layer**            | **Primary Function in the Edge AI Pipeline**                                                                      |

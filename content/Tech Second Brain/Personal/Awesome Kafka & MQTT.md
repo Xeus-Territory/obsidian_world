@@ -7,7 +7,7 @@ tags:
   - collections
 ---
 
-![[thumbnail-kafka.png]]
+![[thumbnail-kafka-arch.png]]
 # Documentations and Articles
 
 ## Awesome Repositories

@@ -6,7 +6,7 @@ tags:
 ---
 
 <div align="center">
-	<h1>Welcome to the World of Xeus Nguyen</h1>
+	<h2>Welcome to the World of Xeus Nguyen</h2>
     <em><p style="text-align: center;">"Still living young, wild and free !!!"</p></em>
 </div>
 
