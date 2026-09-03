@@ -2,3 +2,5 @@ public
 node_modules
 .quartz-cache
 **/.obsidian/workspace.json
+.claude/
+.vscode/
