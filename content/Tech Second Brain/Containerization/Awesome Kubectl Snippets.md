@@ -8,7 +8,7 @@ tags:
   - awesome
 ---
 
-![[icon-kubernetes.png|center]]
+![[thumbnail-kubectl-command.png]]
 
 >[!info]
 >Small script and take a note to interact between `kubectl` and your kubernetes cluster.

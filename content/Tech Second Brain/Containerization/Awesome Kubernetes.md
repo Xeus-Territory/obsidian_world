@@ -94,6 +94,7 @@ tags:
 
 - [Medium - 7 Underrated Kubernetes Projects: Elevate Your Lab Playground!](https://medium.com/@ebenamor/7-underrated-kubernetes-projects-elevate-your-lab-playground-ac7f47cba347)
 - [Kubernetes -  Documentation](https://kubernetes.io/docs/home/)
+- [Medium - Kubernetes All-in-One](https://medium.com/@Vellai-Chamy/kubernetes-all-in-one-c8b8231095a5)
 ### Hardware and Resources
 
 - [Medium - Why does my 2vCPU application run faster in a VM than in a container? (Content of the year 2024)](https://hwchiu.medium.com/why-does-my-2vcpu-application-run-faster-in-a-vm-than-in-a-container-6438ffaba245) 🌟 **(Recommended)**
@@ -242,6 +243,10 @@ tags:
 
 ![[meme-confuse-but-curious.png|center]]
 
+## AI Operator
+
+- [Kaito](https://kaito-project.github.io/kaito/docs/): an operator suite that automates LLM model inference, fine-tuning, and RAG (Retrieval Augmented Generation) engine deployment in a Kubernetes cluster.
+- [airunway](https://github.com/ai-runway/airunway): ✈️ Kubernetes-native platform for deploying and managing AI inference across multiple providers
 ## Agents
 
 - [botkube](https://github.com/kubeshop/botkube): An app that helps you monitor your Kubernetes cluster, debug critical deployments & gives recommendations for standard practices 🌟 **(Recommended)**

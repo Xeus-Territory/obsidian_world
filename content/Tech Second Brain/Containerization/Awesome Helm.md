@@ -11,7 +11,7 @@ tags:
 >[!quote]
 >Hi @all, as you can see Kubernetes is becoming the potential technology in the world in couple recently year. The knowledge about Kubernetes honestly to say It's really huge, so today we can learn a bit about once of tools to maintain and deploy the workload inside Kubernetes Cluster, Helm. Let's digest
 
-![[helm.png]]
+![[thumbnail-helm.png]]
 
 >[!info]
 ><h2>What is Helm ? </h2>

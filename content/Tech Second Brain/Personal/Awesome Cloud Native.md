@@ -58,6 +58,7 @@ Cloud Native usually relate with Kubernetes and Architecture topics, so you can 
 - [awesome-cloud-native](https://github.com/rootsongjc/awesome-cloud-native): A curated list for awesome cloud native tools, software and tutorials.
 - [awesome-cloudnative-trainings](https://github.com/joseadanof/awesome-cloudnative-trainings): Awesome Trainings from Cloud Native Computing Foundation Projects and Kubernetes related software
 - [awesome-flux-infra](https://github.com/brainfair/awesome-flux-infra): This repository contains infrastructure applications and add-ons installed in Kubernetes via FluxCD v2.
+- [awesome-microservices](https://github.com/mfornos/awesome-microservices): A curated list of Microservice Architecture related principles and technologies.
 ## Organization and Community
 
 - [CNCF Projects](https://contribute.cncf.io/contributors/projects/): All projects of the Cloud Native Computing Foundation
