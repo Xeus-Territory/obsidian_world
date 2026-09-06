@@ -22,9 +22,11 @@ draft: "true"
 
 # Developer
 
+# Kubernetes
+
 # Linux
 
-# Kubernetes
+# Platform Engineering
 
 # Security
 

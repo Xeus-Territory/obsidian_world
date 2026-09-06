@@ -218,6 +218,7 @@ tags:
 
 - [[Advantage Networking Fundamental - Routing, VPN and Peering]]
 - [[About Serverless Discovery - DIY Chatbot Serverless with Cloudflare Worker + D1]]
+- [[Why Internal Developer Platforms (IDPs) Matter in 2026 -  OpenChoreo and the Journey of Innovation]]
 # DueWeekly Tech
 
 >[!info]
@@ -252,6 +253,7 @@ tags:
 
 - [[05-01-2026 to 01-02-2026|Session 01: 05-01-2026 to 01-02-2026]] - *"The new session for 2026, this cover couple of new learning interest of mine about Platform Engineer, Security Pattern, New trend of DevOps and AI in 2026, Bastion Hosts and story about managing the product with some documentations to get people aligned one"*
 - [[02-02-2026 to 01-03-2026|Session 02: 02-02-2026 to 01-03-2026]] - *"Couple of article read during Feb 2026 about IDP (Internal Develop Portal) and story around these setup, see how the downtime can produce by High Availability, new update about deprecated of Nginx Ingress and alternative, security in Kubernetes easily leak from usual behavior and more about setup e2e k8s in 2026"*
+- [[01-09-2026 to 06-09-2026|Session 02: 01-09-2026 to 06-09-2026]] - *Exploring the GPU landscape in Vietnam, alongside the challenges and opportunities for AI factories and ecosystems. This session also covers leveraging enterprise tools for cost optimization in Virtual Private Assistants (VPA) through various options, with a forward-looking focus on Platform Engineering and Internal Developer Platforms (IDP) in 2026.*
 # InfoSec & Security
 
 ## CTF

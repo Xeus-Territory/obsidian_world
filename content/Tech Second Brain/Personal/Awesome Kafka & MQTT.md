@@ -108,25 +108,25 @@ kafka-consumer-groups.sh --bootstrap-server <host-kafka>:<port-kafka> --command-
 
 ![[thumbnail-message-queue.png]]
 
-## Installation
-
-- [Strimzi](https://strimzi.io/docs/operators/latest/overview): Strimzi simplifies the process of running [Apache Kafka](https://kafka.apache.org/) within a Kubernetes cluster 🌟 **(Recommended)**
-- [apache/kafka](https://hub.docker.com/r/apache/kafka): Official Apache Kafka Docker Image
-- [landoop/fast-data-dev](https://hub.docker.com/r/landoop/fast-data-dev): For 'Kafka developers' with Kafka, Schema Registry, Connect, Lenses.io StreamReactor Connectors
-## Broker
-
-- [Apache ActiveMQ](https://github.com/apache/activemq): a high performance Message Broker
-- [tansu](https://github.com/tansu-io/tansu): Apache Kafka® compatible broker with S3, PostgreSQL, SQLite, Apache Iceberg and Delta Lake
-- [hermes](https://github.com/allegro/hermes): Fast and reliable message broker built on top of Kafka.
-- [mosquitto](https://github.com/eclipse-mosquitto/mosquitto): an open source implementation of a server for version 5.0, 3.1.1, and 3.1 of the MQTT protocol.
-- [emqx](https://github.com/emqx/emqx): The most scalable and reliable MQTT broker for AI, IoT, IIoT and connected vehicles
 ## Kafka Alternative
 
 - [AutoMQ](https://docs.automq.com/automq/what-is-automq/overview) : AutoMQ re-engineers Kafka for the cloud by decoupling storage to object storage. While maintaining **100% compatibility** with Apache Kafka®, it offers users up to **10 times cost efficiency** and **100 times elasticity**.
 - [RabbitMQ](https://www.rabbitmq.com/): An open-source message broker for asynchronous messaging, queueing and delivery acknowledgement.
 - [NATS](https://github.com/nats-io/nats-server): High-Performance server for NATS.io, the cloud and edge native messaging system.
 - [Apache Pulsar](https://github.com/apache/pulsar): Apache Pulsar - distributed pub-sub messaging system
-## UI
+## Kafka Installation
+
+- [Strimzi](https://strimzi.io/docs/operators/latest/overview): Strimzi simplifies the process of running [Apache Kafka](https://kafka.apache.org/) within a Kubernetes cluster 🌟 **(Recommended)**
+- [apache/kafka](https://hub.docker.com/r/apache/kafka): Official Apache Kafka Docker Image
+- [landoop/fast-data-dev](https://hub.docker.com/r/landoop/fast-data-dev): For 'Kafka developers' with Kafka, Schema Registry, Connect, Lenses.io StreamReactor Connectors
+## Kafka UI
 
 - [akhq](https://github.com/tchiotludo/akhq): Kafka GUI for Apache Kafka to manage topics, topics data, consumers group, schema registry, connect and more...
 - [kafka-ui](https://github.com/provectus/kafka-ui): Open-Source Web UI for Apache Kafka Management 🌟 **(Recommended)**
+## Message Broker
+
+- [Apache ActiveMQ](https://github.com/apache/activemq): a high performance Message Broker
+- [tansu](https://github.com/tansu-io/tansu): Apache Kafka® compatible broker with S3, PostgreSQL, SQLite, Apache Iceberg and Delta Lake
+- [hermes](https://github.com/allegro/hermes): Fast and reliable message broker built on top of Kafka.
+- [mosquitto](https://github.com/eclipse-mosquitto/mosquitto): an open source implementation of a server for version 5.0, 3.1.1, and 3.1 of the MQTT protocol.
+- [emqx](https://github.com/emqx/emqx): The most scalable and reliable MQTT broker for AI, IoT, IIoT and connected vehicles

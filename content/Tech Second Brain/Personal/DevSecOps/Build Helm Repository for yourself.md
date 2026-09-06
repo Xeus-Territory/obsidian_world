@@ -69,7 +69,7 @@ To achieve this, I'll follow these steps to create my first Helm template and re
 
 # 🏗️ Build your first helm chart template
 
-![[Helm.png]]
+![[thumbnail-helm.png]]
 
 Coming to hot topic, you wonder how to create a helm template, it looks pretty hard because you required to have knowledge about
 

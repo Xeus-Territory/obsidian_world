@@ -38,7 +38,7 @@ This combination offers key strategic advantages:
 
 ## Why Serverless
 
-As usual, I will try to explore what technologies hand-on and which options are available on the marketplace for free and commercial. You can explore more about these articles blow about Serverless and the decision making when choose Serverless.
+As usual, I will try to explore what technologies hand-on and which options are available on the marketplace for free and commercial. You can explore more about these articles below about Serverless and the decision making when choose Serverless.
 
 - [AWS - What is Serverless Computing?](https://aws.amazon.com/what-is/serverless-computing/)
 - [Serverless - What is Serverless and What Makes it Great?](https://www.serverless.com/guides/what-is-serverless)
