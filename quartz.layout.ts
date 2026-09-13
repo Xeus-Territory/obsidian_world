@@ -53,12 +53,6 @@ export const defaultContentPageLayout: PageLayout = {
             }
         }
       })
-    ),
-    Component.DesktopOnly(
-      Component.RecentNotes({
-        limit: 3,
-        linkToMore: "/tags" as SimpleSlug,
-      })
     )
   ],
   right: [
