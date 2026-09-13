@@ -22,12 +22,17 @@ draft: "true"
 
 # Developer
 
+# DevOps
+
 # Kubernetes
 
 # Linux
+
+# Networking
 
 # Platform Engineering
 
 # Security
 
 # Technology
+

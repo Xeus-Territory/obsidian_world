@@ -55,7 +55,7 @@ tags:
 - [inframap](https://github.com/cycloidio/inframap): Read your tfstate or HCL to generate a graph specific for each provider, showing only the resources that are most important/relevant.
 - [terraform-docs](https://terraform-docs.io/user-guide/introduction/) : A utility to generate documentation from Terraform modules in various output formats. 🌟 **(Recommended)**
 - [terraformer](https://github.com/GoogleCloudPlatform/terraformer): CLI tool to generate terraform files from existing infrastructure (reverse Terraform). Infrastructure to Code
-
+- [tofu-controller](https://github.com/flux-iac/tofu-controller): A GitOps OpenTofu and Terraform controller for Flux
 ## Self-hosted Registry
 
 - [terrareg](https://github.com/MatthewJohn/terrareg): Open source Terraform module registry with UI, optional Git integration and deep analysis.

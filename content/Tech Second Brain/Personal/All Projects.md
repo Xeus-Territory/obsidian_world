@@ -5,6 +5,8 @@ tags:
   - myself
   - community
 ---
+
+![[meme-technology.png|center]]
 # BookShop Website
 
 >[!info]
@@ -67,7 +69,7 @@ tags:
 >
 >🔗🔗🔗 [GitHub - Source](https://github.com/Xeus-Territory/robust_scanner)
 >
->🔗🔗🔗 [Article](https://hackmd.io/BflJwJ4WR56HptJBgJCo-g)
+>🔗🔗🔗 [HackMD - Robust Scanner - Vulnerable Scanning](https://hackmd.io/BflJwJ4WR56HptJBgJCo-g)
 
 # NTMA Anomaly
 
@@ -86,7 +88,7 @@ tags:
 > 
 > 🔗🔗🔗 [GitHub - Source](https://github.com/Xeus-Territory/ntma_anomaly)
 > 
-> 🔗🔗🔗 [[NTMA for anomalies detection and autoscaling|Article]]
+> 🔗🔗🔗 [[NTMA for anomalies detection and autoscaling]]
 
 # AWS Infrastructure with Ansible and Terraform
 
@@ -105,7 +107,7 @@ tags:
 >
 >🔗🔗🔗 [GitHub - Source](https://github.com/Xeus-Territory/aws-ansible-infrastructure)
 >
->🔗🔗🔗 [Article](https://hackmd.io/2_tUc4W7S3K8s3aOiwgGyg)
+>🔗🔗🔗 [HackMD - Ansible, Terraform and your first infrastructure](https://hackmd.io/2_tUc4W7S3K8s3aOiwgGyg)
 
 # DevOps Tutorial - Zero to Hero
 
@@ -120,11 +122,11 @@ tags:
 >
 >**Technologies: Azure, Terraform, Nginx, DevOps Tools, Packer, K8s, Docker, ...**
 >
->*Jan 2023 - Current*
+>*Jan 2023 - March 2026*
 >
 >🔗🔗🔗 [GitHub - Source](https://github.com/Xeus-Territory/devops-tutorials)
 >
->🔗🔗🔗 [[All Blogs#DevOps - Tutorials from zero to hero]]
+>🔗🔗🔗 [[All Blogs#DevOps 101 - The Zero to Hero Tutorials]]
 
 # Zero Downtime Deployment with NGINX
 
@@ -143,7 +145,7 @@ tags:
 >
 >🔗🔗🔗 [[Awesome Linux Shell scripts#Blue Green Deployment Docker for Zero Downtime|Source]]
 >
->🔗🔗🔗 [[0-downtime with Blue-Green Deployment|Article]]
+>🔗🔗🔗 [[0-downtime with Blue-Green Deployment|0-downtime with Blue-Green Deployment with Nginx]]
 
 # Kubewekend
 

@@ -290,8 +290,9 @@ You can become participant of Bounty program via
 ### Vulnerability Scanner
 
 - [Nettacker](https://github.com/OWASP/Nettacker) : Automated Penetration Testing Framework - Open-Source Vulnerability Scanner - Vulnerability Management
-- [nuclei](https://github.com/projectdiscovery/nuclei) : Fast and customizable vulnerability scanner based on simple YAML based DSL. [Doc](https://docs.projectdiscovery.io/tools/nuclei/overview) and [Cloud Platform](https://cloud.projectdiscovery.io/) 🌟 **(Recommended)**
+- [nuclei](https://github.com/projectdiscovery/nuclei) : Fast and customizable vulnerability scanner based on simple YAML based DSL 🌟 **(Recommended)**
 - [zaproxy](https://github.com/zaproxy/zaproxy) : The ZAP core project 🌟 **(Recommended)**
+- [burp-suite](https://portswigger.net/burp/documentation): a comprehensive suite of tools for web application security testing. 🌟 **(Recommended)**
 ### Vulnerables Search Engine
 
 - [💀 Sploitus](https://sploitus.com/) : Exploit & Hacktool Search Engine
@@ -335,7 +336,8 @@ You can become participant of Bounty program via
 - [VLSM Calculator](https://subnettingpractice.com/vlsm.html): Calculator VLSM concept of subnet 🌟 **(Recommended)**
 ### VPN
 
->[!info] *Give applause for Nyr for contributing a wonderful setup, with those script, you just need 1 minutes for creating your own VPN and safely connected remotely with your network*
+>[!info]
+>*Give applause for Nyr for contributing a wonderful setup, with those script, you just need 1 minutes for creating your own VPN and safely connected remotely with your network*
 
 - [openvpn-install.sh](https://github.com/Nyr/openvpn-install/blob/master/openvpn-install.sh): *Setting up `openvpn` for your host (Author: [Nyr](https://github.com/Nyr))* 🌟 **(Recommended)**
 - [wireguard-install.sh](https://github.com/Nyr/wireguard-install/blob/master/wireguard-install.sh): *Setting up `wireguardvpn` for your host (Author: [Nyr](https://github.com/Nyr))*
@@ -430,9 +432,6 @@ You can become participant of Bounty program via
 - [Roadmap to OSCP 2023. Crack OSCP in 6 months, starting from… | by Usman Shah | Medium](https://medium.com/@ushah.789012/roadmap-to-oscp-2023-c38c5b4e713a)
 - [@TJ_Null’s OSCP Prep - YouTube](https://www.youtube.com/playlist?list=PLidcsTyj9JXK-fnabFLVEvHinQ14Jy5tf) 🌟 **(Recommended)**
 # Youtube Channel
-
->[!info]
->Hacking/InfoSec Youtube Channel
 
 ![[youtube.png]]
 

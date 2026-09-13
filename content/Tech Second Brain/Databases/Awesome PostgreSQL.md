@@ -61,7 +61,8 @@ tags:
 ## Backup
 
 - [pgBackRest](https://pgbackrest.org/): a reliable backup and restore solution for PostgreSQL that seamlessly scales up to the largest databases and workloads.
-- [postgresus](https://github.com/RostislavDugin/postgresus): PostgreSQL monitoring and backups (with UI and self hosted)
+- [databasus](https://github.com/databasus/databasus): PostgreSQL backup tool with Point-In-Time-Recovery and restore verification
+- [onedump](https://github.com/liweiyi88/onedump): a database administration tool that streamlines backup and restore tasks across multiple databases and storage destinations.
 ## Driver & Connector & Extension
 
 - [pgbouncer](https://github.com/pgbouncer/pgbouncer): lightweight connection pooler for PostgreSQL
@@ -128,13 +129,28 @@ export POSTGRESQL_VERSION=17 && sudo apt install postgresql-$POSTGRESQL_VERSION 
 
 >[!info]
 >PostgreSQL offer for us to using multiple way backup database inside, manipulate the output backup, moreover
+>
+>**Core Backup Method**
+>- **Logical Backups (`pg_dump` / `pg_dumpall`):** Exports database objects or clusters as SQL statements or custom compressed archives. Best for small-to-medium databases, selective table restores, and version upgrades.
+>- **Physical Backups (`pg_basebackup`):** Copies binary cluster files directly. Best for large production databases and fast disaster recovery.
+>-  Archives WAL files continuously using archive_command. Enables Point-In-Time Recovery to restore the database to any exact second before a failure.
+>  
+>**Essential Best Practices**
+>- **Follow the 3-2-1 Rule:** Keep **3 copies** of your data on **2 different media types** with **1 copy stored offsite** (such as cloud object storage like Amazon S3).
+>- **Schedule During Low-Traffic Hours:** Run heavy full backups during off-peak times (e.g., 2 AM to 5 AM) to reduce performance strain on production systems.
+>- **Automate and Test Restores:** Validate backup files weekly by performing test restores on separate staging servers.
+>- **Use Enterprise Tools:** Consider robust management tools like pgBackRest or Barman for parallelization, incremental backups, and encryption.  
 
 Explore more at
 
-- [PostgreSQL official - Chapter 26. Backup and Restore](https://www.postgresql.org/docs/current/backup.html)
+- [PostgreSQL official - Chapter 26. Backup and Restore](https://www.postgresql.org/docs/current/backup.html) 🌟 **(Recommended)**
 - [Blog - A better backup with PostgreSQL using pg_dump](https://www.commandprompt.com/blog/a_better_backup_with_postgresql_using_pg_dump/)
 - [Reddit - pg_database_size is much much bigger than pg_dump](https://www.reddit.com/r/PostgreSQL/comments/80yzt1/pg_database_size_is_much_much_bigger_than_pg_dump/)
 - [StackOverFlow - Improve pg dump&restore](https://stackoverflow.com/a/41402728)
+- [Percona - PostgreSQL Backup Strategies for Enterprise-Grade Environments](https://www.percona.com/blog/postgresql-backup-strategy-enterprise-grade-environment/) 🌟 **(Recommended)**
+- [Medium - PostgreSQL backup best practices — 15 essential PostgreSQL backup strategies for production systems](https://medium.com/@ngza5tqf/postgresql-backup-best-practices-15-essential-postgresql-backup-strategies-for-production-systems-dd230fb3f161) 🌟 **(Recommended)**
+- [Wiki PostgreSQL - Automated Backup on Linux](https://wiki.postgresql.org/wiki/Automated_Backup_on_Linux) 🌟 **(Recommended)**
+- [Medium - PostgreSQL Backup Showdown: pgBackRest vs Barman in Real-World HA Clusters](https://medium.com/@ukhore/postgresql-backup-showdown-pgbackrest-vs-barman-in-real-world-ha-clusters-e5c827f724a7)
 ### Use `pg_dump` for backup the database
 
 1. Basic usage for dumping data with command
@@ -194,7 +210,6 @@ tar -cf backup.tar /usr/local/pgsql/data
 Related documentation:
 
 - [File System Level Backup](https://www.postgresql.org/docs/current/backup-file.html#BACKUP-FILE)
-
 ### Backup Script for PostgreSQL Cluster
 
 ```bash

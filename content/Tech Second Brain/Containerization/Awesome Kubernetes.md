@@ -138,6 +138,7 @@ tags:
 - [Spot - 8 Kubernetes Deployment Strategies: Roll Out Like the Pros](https://spot.io/resources/kubernetes-autoscaling/5-kubernetes-deployment-strategies-roll-out-like-the-pros/) 🌟 **(Recommended)**
 - [Medium - Zero-Downtime Deployments with Kubernetes](https://blog.devgenius.io/zero-downtime-deployments-with-kubernetes-a2d3200d207f)
 - [DevOps VN - Thiết kế Multi-Cluster / Multi-Environment Strategy: dev~staging~prod như thế nào để vừa an toàn vừa nhanh?](https://devops.vn/posts/thiet-ke-multi-cluster-multi-environment-strategy-devstagingprod-nhu-the-nao-de-vua-an-toan-vua-nhanh/) 🌟 **(Recommended)**
+- [Blog - How to Monitor Kubernetes Multi-Cluster Workloads](https://hokstadconsulting.com/blog/how-to-monitor-kubernetes-multi-cluster-workloads)
 ### Tools
 
 - [Medium - 10 Essential Kubernetes Tools You Didn’t Know You Needed](https://medium.com/itnext/10-essential-kubernetes-tools-you-didnt-know-you-needed-06954251d845)
@@ -269,7 +270,6 @@ tags:
 
 - [virtual-kubelet](https://github.com/virtual-kubelet/virtual-kubelet): Virtual Kubelet is an open source Kubernetes kubelet implementation.
 - [interLink](https://github.com/interlink-hq/interLink): an abstraction layer for executing Kubernetes pods on remote resources capable of managing container execution lifecycles.
-
 ## Authentication
 
 - [OpenUnison](https://openunison.github.io/): OpenUnison provides SSO and authentication for your Kubernetes clusters, no matter where they run or how your users need to authenticate.
@@ -288,6 +288,7 @@ tags:
 - [Instance calculator](https://learnk8s.io/kubernetes-instance-calculator) : Estimate and find the number of max workload can apply for instance
 - [silver-surfer](https://github.com/devtron-labs/silver-surfer): Kubernetes objects api-version compatibility checker and provides migration path for K8s objects and prepare it for cluster upgrades
 - [doc.crds.dev](https://doc.crds.dev/): View and explore the documentation about CRD of specific repository 🌟 **(Recommended)**
+- [pii-shield](https://github.com/pii-shield/pii-shield): Zero-code K8s sidecar for log sanitization. Detects secrets via Entropy Analysis, preserves JSON integrity, and redacts PII deterministically. 🛡️
 ## Chaos
 
 - [chaos-mesh](https://github.com/chaos-mesh/chaos-mesh): A Chaos Engineering Platform for Kubernetes.

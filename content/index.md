@@ -1,12 +1,12 @@
 ---
-title: The World of Xeus Nguyen
+title: The XeusNguyen's World
 tags:
   - myself
   - xeusnguyen
 ---
 
 <div align="center">
-	<h2>Welcome to the World of Xeus Nguyen</h2>
+	<h2>Welcome to The World of Xeus Nguyen</h2>
     <em><p style="text-align: center;">"Still living young, wild and free !!!"</p></em>
 </div>
 

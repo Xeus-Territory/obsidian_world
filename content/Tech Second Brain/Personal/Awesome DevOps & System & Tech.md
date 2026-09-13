@@ -171,6 +171,7 @@ tags:
 - [Medium - Top 20 Network Protocols You Must Know in System Design](https://medium.com/interviewnoodle/top-20-network-protocols-you-must-know-in-system-design-81eaab4b0c36)
 - [Katalon - What is Automation Testing? Ultimate Guide & Best Practices](https://katalon.com/resources-center/blog/what-is-automation-testing)
 - [Leapwork - DevOps Test Automation: Strategy Guide](https://www.leapwork.com/blog/devops-test-automation)
+- [Sapphire - The Future of DevOps: A Spotlight on European Players in the DevOps Ecosystem](https://sapphireventures.com/blog/future-of-devops-ecosystem-european-players/)
 ## Techniques
 
 - [Dev.to - CPU Cache Basics](https://dev.to/larapulse/cpu-cache-basics-57ej)

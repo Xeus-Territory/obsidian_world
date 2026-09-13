@@ -27,11 +27,14 @@ tags:
 - [Prometheus Helm Charts](https://github.com/prometheus-community/helm-charts): Prometheus community Helm charts, mostly for database (PostgreSQL, MongoDB, ...) 🌟 **(Recommended)**
 - [Grafana dashboards](https://grafana.com/grafana/dashboards/): Find the dashboard for your observability 🌟 **(Recommended)**
 - [Elastic Content Share](https://elastic-content-share.eu/): Prebuilt content to use it in your Elastic environment like [Kibana](https://elastic-content-share.eu/downloads/category/kibana/) [dashboards](https://elastic-content-share.eu/downloads/category/kibana/kibana-dashboards/), [Watcher](https://elastic-content-share.eu/downloads/category/elasticsearch/watcher/) alerting rules or extensions to your [observability](https://elastic-content-share.eu/downloads/category/elastic-solutions/elastic-observability/)
+- [grafana-dashboards-kubernetes](https://github.com/dotdc/grafana-dashboards-kubernetes): A set of modern Grafana dashboards for Kubernetes.
 ## Technique Articles
 
 - [Medium - Observability Series: A Step-by-Step Guide to Logs, Traces, and Metrics](https://medium.com/gitconnected/observability-series-a-step-by-step-guide-to-logs-traces-and-metrics-9860d7c46220)
 - [Grafana - Private data source connect (PDC)](https://grafana.com/docs/grafana-cloud/connect-externally-hosted/private-data-source-connect/)
 - [VictoriaMetrics - Prometheus Alerting 101: Rules, Recording Rules, and Alertmanager](https://victoriametrics.com/blog/alerting-recording-rules-alertmanager/) 🌟 **(Recommended)**
+- [pagertree - USE and RED Method](https://pagertree.com/learn/devops/what-is-observability/use-and-red-method) 🌟 **(Recommended)**
+- [Youtube - CNCF - The RED Method: How To Instrument Your Services](https://www.youtube.com/watch?v=TJLpYXbnfQ4) - [PDF](https://grafana.com/files/grafanacon_eu_2018/Tom_Wilkie_GrafanaCon_EU_2018.pdf) 🌟 **(Recommended)**
 ## Technology Articles
 
 - [Medium - Grafana Alloy & OpenTelemetry](https://medium.com/@magstherdev/grafana-alloy-opentelemetry-59c171d2ebfc)
