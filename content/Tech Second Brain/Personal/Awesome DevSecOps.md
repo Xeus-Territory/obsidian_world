@@ -8,6 +8,8 @@ tags:
 ---
 
 ![[thumbnail-devsecops.png]]
+
+![[thumbnail-devsecops-progress-from-git.png]]
 # General
 
 ## Repositories
@@ -19,6 +21,8 @@ tags:
 - [OWASP - Free for Open Source Application Security Tools](https://owasp.org/www-community/Free_for_Open_Source_Application_Security_Tools): the following lists of **automated vulnerability detection tools** that are **free for open source** projects have been gathered together here to raise awareness of their availability. 🌟 **(Recommended)**
 - [Blog - The DevSec Blueprint](https://devsecblueprint.com/):  a comprehensive, free, and open-source learning _guide_ designed to equip you with the essential skills and knowledge needed to transition into or grow your Cloud Security Development & DevSecOps career.
 - [OWASP - Source Code Analysis Tools](https://owasp.org/www-community/Source_Code_Analysis_Tools): The collections of SAST which organized by OWASP and community contribution
+- [GitHub - DevSecOps-MaturityModel](https://github.com/devsecopsmaturitymodel/DevSecOps-MaturityModel): Provides opportunities to harden DevOps strategies and shows how these can be prioritized. Go to [https://dsomm.owasp.org](https://dsomm.owasp.org/).
+- [OWASP - Projects](https://owasp.org/projects/): The OWASP Foundation gives aspiring open source projects a platform to improve the security of software
 ## Landscape
 
 - [SonarType - DevSecOps Reference Architecture](https://www.sonatype.com/hubfs/DevSecOps%20Reference%20Architecture.pdf) 🌟 **(Recommended)**
@@ -27,6 +31,8 @@ tags:
 - [Outpost24 - What is best for application security testing: SAST, DAST, or SCA](https://outpost24.com/blog/application-security-testing-sast-dast-sca/)
 - [Microsoft - Zero Trust DevSecOps](https://learn.microsoft.com/en-us/security/zero-trust/develop/secure-devops-environments-zero-trust)
 - [DoD - DoD Enterprise DevSecOps Source Diagrams](https://dodcio.defense.gov/Portals/0/Documents/Library/DoDEnterpriseDevSecOps-SourceDiagrams.pdf) - Diagram to visual the DevSevOps Enterprise Architecture of DoD CIO 🌟 **(Recommended)**
+- [OWASP - OWASP DevSecOps Verification Standard](https://owasp.org/www-project-devsecops-verification-standard/) 🌟 **(Recommended)**
+- [Dev.to - WireGuard DoV (DNS-over-VPN)](https://dev.to/xeptore/wireguard-dov-dns-over-vpn-ell)
 ## Technology
 
 - [OWASP - DevSecOps Guideline](https://owasp.org/www-project-devsecops-guideline/latest/) 🌟 **(Recommended)**
@@ -37,6 +43,10 @@ tags:
 
 - [PlatformEngineering - Applying DevSecOps to Kubernetes](https://platformengineering.org/talks-library/applying-devsecops-to-kubernetes)
 - [Wiz Security - Kubernetes DevSecOps](https://www.wiz.io/academy/devsecops-for-kubernetes)
+## Papers and Researching
+
+- [Arxiv - AI for DevSecOps: A Landscape and Future Opportunities](https://arxiv.org/abs/2404.04839)
+- [MDPI - Evolution of DevSecOps and Its Influence on Application Security: A Systematic Literature Review](https://www.mdpi.com/2227-7080/13/12/548)
 # DevSecOps Tools
 
 ![[thumbnail-devsecops-workflows.png]]
