@@ -296,7 +296,7 @@ Benefits of peering
 
 Reference resource
 
-- [Create virtual network peering]()
+- [Create virtual network peering](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-manage-peering?tabs=peering-portal#create-a-virtual-network-peering)
 
 You need to follow some points yo create the peering
 
@@ -307,6 +307,7 @@ You need to follow some points yo create the peering
 ## More about Peering
 
 - [Extend peering with user-defined routes and service chaining](https://learn.microsoft.com/en-us/training/modules/configure-vnet-peering/5-determine-service-chaining-uses)
+
 ![[Pasted image 20240509125843.png]]
 
 >[!question]
