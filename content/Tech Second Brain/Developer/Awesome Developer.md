@@ -38,6 +38,11 @@ tags:
 - [Medium - 8 Golang Performance Tips I Discovered After Years of Coding](https://medium.com/deep-golang/8-python-performance-tips-i-discovered-after-years-of-coding-in-golang-764375658d90)
 - [Codilime - The importance and benefits of unit testing](https://codilime.com/blog/unit-testing/)
 - [Katalon - 9 Core Benefits of Automation Testing](https://katalon.com/resources-center/blog/benefits-of-automation-testing)
+## GDPR
+
+- [Dev.to - GDPR-Compliant Hosting: Best Practices for Developers in 2025](https://dev.to/dev_tips/gdpr-compliant-hosting-best-practices-for-developers-in-2025-jl5) 🌟 **(Recommended)**
+- [GDPR - GDPR checklist for data controllers](https://gdpr.eu/checklist/)
+- [Sciencedirect - GDPR compliance via software evolution: Weaving security controls in software design](https://www.sciencedirect.com/science/article/pii/S0164121224001894#sec2)
 ## Language
 
 - [Medium - Why Rust Emerges as the Premier Choice for System Programming](https://medium.com/python-in-plain-english/why-rust-emerges-as-the-premier-choice-for-system-programming-d63cd7c920c8)

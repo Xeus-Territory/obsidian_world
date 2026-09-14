@@ -248,3 +248,5 @@ tags:
 - [certbot](https://github.com/certbot/certbot): Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server. 🌟 **(Recommended)**
 - [cloudflare-ddns](https://github.com/timothymiller/cloudflare-ddns): 🎉🌩️ Dynamic DNS (DDNS) service based on Cloudflare! Access your home network remotely via a custom domain name without a static IP!
 - [ddns-updater](https://github.com/qdm12/ddns-updater): Container to update DNS records periodically with WebUI for many DNS providers
+- [nip.io & sslip.io](https://nip.io/): a DNS (Domain Name System) service that, when queried with a hostname with an embedded IP address, returns that IP address. 🌟 **(Recommended)**
+- [traefik.me](http://traefik.me/): Just like nip.io or xip.io, traefik.me is a magic domain name that provides wildcard DNS for any IP address. 🌟 **(Recommended)**

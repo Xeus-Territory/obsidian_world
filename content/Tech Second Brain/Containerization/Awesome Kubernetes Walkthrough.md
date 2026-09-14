@@ -944,7 +944,7 @@ When you inspect `kubectl` command and `kubernetes` concept, you will know about
 ![[thumbnail-kubernetes-network.png]]
 
 - [Service](https://kubernetes.io/docs/concepts/services-networking/service/)
-- [Ingress]()
+- [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
 - [Endpoint](https://kubernetes.io/docs/concepts/services-networking/service/)
 - [EndpointSlieces](https://kubernetes.io/docs/concepts/services-networking/service/#endpointslices)
 
