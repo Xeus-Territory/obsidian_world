@@ -93,8 +93,6 @@ tags:
 - [Medium - Load Balancing 100,000 WebSocket Connections: HAProxy vs. Nginx vs. Custom](https://medium.com/@yashbatra11111/load-balancing-100-000-websocket-connections-haproxy-vs-nginx-vs-custom-4fe78f68c1ce)
 ## Youtube Channel
 
-![[youtube.png]]
-
 - [Hayk Simonyan](https://www.youtube.com/@hayk.simonyan/videos): Breakdown a lot of system architecture of multiple big techs, and try to discussion to build them from scratch for interview
 - [ByteMonk](https://www.youtube.com/@ByteMonk/featured): Featuring for more video about system architecture, explain them for adapting them and moreover stuff to prepare the system architecture interview
 - [Be A Better Dev](https://www.youtube.com/@BeABetterDev/videos): Great channel to show you insane resources to become great cloud-native developer, or maybe architecture if you delve deeper into his videos, and focus on AWS 🌟 **(Recommended)**

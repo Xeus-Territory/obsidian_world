@@ -27,7 +27,7 @@ tags:
 - [[Awesome Caddy]]
 - [[Awesome Kafka & MQTT]]
 - [[Awesome NGINX]]
-- [[Awesome Selfhosted]]
+- [[Awesome Self-Hosted]]
 - [[Awesome System Architecture]]
 ## CI/CD
 
@@ -58,8 +58,7 @@ tags:
 
 - [[Awesome Ansible]]
 - [[Awesome Developer]]
-- [[Awesome DevOps & System & Tech]]
-- [[Awesome eBPF]]
+- [[Awesome DevOps & SRE & System & Tech]]
 - [[Awesome Git]]
 - [[Awesome Cloud Native]]
 - [[Awesome HTML & CSS & Javascript]]

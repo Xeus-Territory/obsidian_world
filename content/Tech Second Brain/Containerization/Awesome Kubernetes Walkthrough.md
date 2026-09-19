@@ -7,6 +7,8 @@ tags:
   - awesome
 ---
 
+![[thumbnail-kubernetes-architecture.png]]
+
 ![[thumbnail-kubernetes-interfaces.png]]
 
 To find more information and example, you can double-check a some manifest collection at
@@ -18,8 +20,9 @@ To find more information and example, you can double-check a some manifest colle
 - [K8s Deployment Strategies](https://github.com/ContainerSolutions/k8s-deployment-strategies): About setup deployment strategies of Kubernetes 
 - [Medium - 24 Kubernetes Masters’ Configurations](https://overcast.blog/24-kubernetes-mastersconfigurations-29235c65b337)
 - [Medium - Zero-Downtime Deployments with Kubernetes](https://blog.devgenius.io/zero-downtime-deployments-with-kubernetes-a2d3200d207f)
-- [CRDs-catalog](https://github.com/datreeio/CRDs-catalog): CRDs-catalog - used with [`kubeconform`](https://github.com/yannh/kubeconform)
-- [doc.crds.dev](https://doc.crds.dev/): Find and Parse API Scheme of specific URL CRDs repository
+- [CRDs-catalog](https://github.com/datreeio/CRDs-catalog): CRDs-catalog - used with [`kubeconform`](https://github.com/yannh/kubeconform) 🌟 **(Recommended)**
+- [doc.crds.dev](https://doc.crds.dev/): Find and Parse API Scheme of specific URL CRDs repository 🌟 **(Recommended)**
+- [Medium - Kubernetes All-in-One](https://medium.com/@Vellai-Chamy/kubernetes-all-in-one-c8b8231095a5) 🌟 **(Recommended)**
 # Kubernetes Q/A Collection 
 ## Can use volume with cronjobs?
 

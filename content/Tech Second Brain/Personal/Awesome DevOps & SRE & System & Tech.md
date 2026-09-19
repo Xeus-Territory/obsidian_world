@@ -1,5 +1,5 @@
 ---
-title: Awesome DevOps, System and Tech collections
+title: Awesome DevOps, SRE, System and Tech collections
 tags:
   - collections
   - devops
@@ -96,11 +96,12 @@ tags:
 - [SourceForge](https://sourceforge.net/): Compare, Download & Develop Open Source & Business Software
 - [StackShare](https://stackshare.io/): See what tech stacks your peers are using 🌟 **(Recommended)**
 - [Trendshift](https://trendshift.io/): Live Trending GitHub Repositories 🌟 **(Recommended)**
+- [YCGlobe](https://dashboard.vclense.ch/ycglobe): Find and filter startup companies sponsored by YCombinator
 # Blog DevOps and Tech
 
 >[!note]
 >Useful page for finding the target and gain more experience in DevOps, Tech and moreover in technology field
-## DevOps Blog
+## DevOps & SRE Blog
 
 - [4sysops](https://4sysops.com/) -  The online community for SysAdmins and DevOps
 - [DevOpsCube](https://devopscube.com/) - Learn DevOps | Software & Platform Reviews 🌟 **(Recommended)**
@@ -115,6 +116,8 @@ tags:
 - [Spacelift Blog](https://spacelift.io/blog) - Blog tech about infrastructure as code, and cloud services 🌟 **(Recommended)**
 - [The Cloud Native Wiki | Aqua](https://www.aquasec.com/cloud-native-academy/) - The resource center for everything cloud native
 - [DevOps.com](https://devops.com/) - DevOps.com has established itself as an indispensable resource for DevOps education and community building
+- [Sre.news](https://sre.news/) - The daily collection about DevOps, SRE, System, Cloud & Platform Engineering topics 🌟 **(Recommended)**
+- [Sre Weekly](https://sreweekly.com/) - a newsletter devoted to everything related to keeping a site or service available as consistently as possible.
 ## Tech Blog
 
 - [3os Project](https://3os.org/) - Collocation of technical documentation and guides for devops, developers, pentesters, systems administrators and other IT professionals.

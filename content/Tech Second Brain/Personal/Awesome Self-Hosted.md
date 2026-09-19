@@ -23,6 +23,12 @@ tags:
 # Self-hosted by Categories
 
 ![[thumbnil-cncf-tools-landscape.png]]
+
+## Container Registry
+
+- [Docker Registry](https://hub.docker.com/_/registry): Distribution implementation for storing and distributing of container images and artifacts 🌟 **(Recommended)**
+- [harbor](https://github.com/goharbor/harbor): An open source trusted cloud native registry project that stores, signs, and scans content 🌟 **(Recommended)**
+- [quay](https://github.com/quay/quay): Build, Store, and Distribute your Applications and Containers. Maintained by RedHat
 ## Expense Management
 
 - [ExpenseOwl](https://github.com/Tanq16/ExpenseOwl): Extremely simple, self-hosted expense tracker with a beautiful UI 🌟 **(Recommended)**

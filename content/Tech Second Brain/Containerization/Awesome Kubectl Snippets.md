@@ -10,15 +10,30 @@ tags:
 
 ![[thumbnail-kubectl-command.png]]
 
->[!info]
->Small script and take a note to interact between `kubectl` and your kubernetes cluster.
-
 You can explore command with `kubectl` in some place, including
 
 - [kubectl Quick Reference](https://kubernetes.io/docs/reference/kubectl/quick-reference/)
 - [kubectl reference](https://kubernetes.io/docs/reference/kubectl/generated/)
 
-A couple of aliases for `kubectl` profile
+Quick installation Kubectl latest version, or specific. Explore at [Kubernetes - Install and Set Up kubectl on Linux](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/) and [Kubernetes - Release History](https://kubernetes.io/releases/)
+
+```bash
+# AMD64
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+
+# To pick specific version, e.g: v1.37.0
+# Check available release at: https://kubernetes.io/releases/
+curl -LO https://dl.k8s.io/release/v1.37.0/bin/linux/amd64/kubectl
+
+# Change mode and move to bin folder
+chmod +x kubectl && sudo mv kubectl /usr/local/bin
+
+# Check version
+kubectl version
+kubectl cluster-info
+```
+
+A couple of aliases for `kubectl` profile 🌟 **(Recommended)**
 
 ```bash
 export KUBE_EDITOR="nano" # Kube edit will use nano for default editor
@@ -41,11 +56,16 @@ export KUBECONFIG=/path/to/profile
 >[!note]
 >In the circumstance, you want merge this external configuration to `kubeconfig`, you can use [kconfig](https://github.com/corneliusweig/konfig) to help you reduce the manual step by automatically install into the default at `~/.kube/config` or double-check [StackOverFlow - How to merge kubectl config file with ~/.kube/config?](https://stackoverflow.com/questions/46184125/how-to-merge-kubectl-config-file-with-kube-config) for more approaching
 
-Setup the toolkit via `krew` which pretty useful for debug, troubleshoot and have boost performance when you work with `kubectl`
+Setup the toolkit via [`krew`](https://krew.sigs.k8s.io/) which pretty useful for debug, troubleshoot and have boost performance when you work with `kubectl`. Explore more about plugin available at [krew - Kubectl plugins available](https://krew.sigs.k8s.io/plugins/)
 
 ```bash
+# https://github.com/robscott/kube-capacity
 kubectl krew install resource-capacity
+
+# https://github.com/kvaps/kubectl-node-shell
 kubectl krew install node-shell
+
+# https://github.com/davidB/kubectl-view-allocations
 kubectl krew install view-allocations
 ```
 # Combination

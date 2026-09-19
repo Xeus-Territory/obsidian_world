@@ -9,13 +9,12 @@ export const sharedPageComponents: SharedLayout = {
   footer: Component.Footer({
     links: {
       "GitHub": "https://github.com/Xeus-Territory",
-      "Spiderum": "https://spiderum.com/nguoi-dung/Xeus0810",
-      "HackMD": "https://hackmd.io/@xeusnguyen",
-      "Viblo": "https://viblo.asia/u/Xeus-Territory",
+      "Linkedin": "https://www.linkedin.com/in/xeusnguyen/",
       "Medium": "https://medium.com/@XeusNguyen",
       "Youtube": "https://www.youtube.com/@xeusnguyen",
+      "HackMD": "https://hackmd.io/@xeusnguyen",
       "Twitter": "https://twitter.com/XeusNguyen",
-      "Linkedin": "https://www.linkedin.com/in/xeusnguyen/"
+      "Viblo": "https://viblo.asia/u/Xeus-Territory",
     },
   }),
 }

@@ -94,7 +94,6 @@ tags:
 
 - [Medium - 7 Underrated Kubernetes Projects: Elevate Your Lab Playground!](https://medium.com/@ebenamor/7-underrated-kubernetes-projects-elevate-your-lab-playground-ac7f47cba347)
 - [Kubernetes -  Documentation](https://kubernetes.io/docs/home/)
-- [Medium - Kubernetes All-in-One](https://medium.com/@Vellai-Chamy/kubernetes-all-in-one-c8b8231095a5)
 ### Hardware and Resources
 
 - [Medium - Why does my 2vCPU application run faster in a VM than in a container? (Content of the year 2024)](https://hwchiu.medium.com/why-does-my-2vcpu-application-run-faster-in-a-vm-than-in-a-container-6438ffaba245) 🌟 **(Recommended)**
@@ -374,7 +373,6 @@ tags:
 - [openappsec](https://github.com/openappsec/openappsec): A machine learning security engine that preemptively and automatically prevents threats against Web Application & APIs.
 - [sysdig](https://github.com/draios/sysdig): Linux system exploration and troubleshooting tool with first class support for containers
 - [teleport](https://github.com/gravitational/teleport): The easiest, and most secure way to access and protect all of your infrastructure.
-- [Tetragon](https://tetragon.io/docs/) : Cilium Tetragon component enables powerful realtime, eBPF-based Security Observability and Runtime Enforcement. 🌟 **(Recommended)**
 # Kubernetes Tools
 
 ![[thumbnail-k8s-tools.png]]
