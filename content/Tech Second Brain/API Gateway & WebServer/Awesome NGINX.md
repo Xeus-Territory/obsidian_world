@@ -14,6 +14,7 @@ tags:
 # Awesome Repository
 
 - [awesome-nginx](https://github.com/agile6v/awesome-nginx) : A curated list of awesome Nginx distributions, 3rd party modules, Active developers, etc.
+- [nginx-proxy](https://github.com/nginx-proxy/nginx-proxy): Automated nginx proxy for Docker containers using docker-gen
 # Articles
 
 - [Medium - Nginx Configuration File Explanation and Common Feature Configurations (90% Practical Use Rate)](https://medium.com/@cstoppgmr/nginx-configuration-file-explanation-and-common-feature-configurations-90-practical-use-rate-bc49271f3766) 🌟 **(Recommended)**

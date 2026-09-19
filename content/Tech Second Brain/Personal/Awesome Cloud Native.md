@@ -5,6 +5,7 @@ tags:
   - collections
   - gitops
   - devops
+  - cloud-native
 ---
 
 ![[thumbnail-gitops.png|center]]
@@ -16,11 +17,12 @@ tags:
 
 Cloud Native usually relate with Kubernetes and Architecture topics, so you can double-check more them at reference below
 
-- [[Awesome DevOps & System & Tech]]
+- [[Awesome Containerization]]
+- [[Awesome DevOps & SRE & System & Tech]]
 - [[Awesome DevSecOps]]
 - [[Awesome Kubernetes]]
 - [[Awesome Kubernetes Walkthrough]]
-- [[Awesome Selfhosted]]
+- [[Awesome Self-Hosted]]
 - [[Awesome System Architecture]]
 # General
 
@@ -33,6 +35,8 @@ Cloud Native usually relate with Kubernetes and Architecture topics, so you can 
 - [Operate First](https://www.operate-first.cloud/apps/content/README.html): Serve as a main resource for all Operate First GitHub Org contributors.
 - [Platform Engineering](https://platformengineering.org/blog): The blog about Platform Engineer and PlatformCon 
 - [Internal Developer Platform](https://internaldeveloperplatform.org/): The general and blog about IDP and Development Strategies
+- [Brendan Gregg](https://www.brendangregg.com/index.html): Cool guy with pleasant contents about ebpf and kernel technologies 🌟 **(Recommended)**
+- [Isovalent Blog](https://isovalent.com/blog/): More about ebpf and kernel technologies, especially cilium and sub-projects of **cilium** 🌟 **(Recommended)**
 ## Bootstrap Articles
 
 - [Medium - Configure CI/CD pipeline: GitlabCI, ArgoCD, HelmCharts & SOPS](https://medium.com/@golaneduard1/configure-ci-cd-pipeline-gitlabci-argocd-helmcharts-sops-3cbf94f300ed) 🌟 **(Recommended)**
@@ -52,6 +56,17 @@ Cloud Native usually relate with Kubernetes and Architecture topics, so you can 
 - [Platform Engineer - 10 Platform engineering predictions for 2026](https://platformengineering.org/blog/10-platform-engineering-predictions-for-2026)
 - [Humanitec - Self-hosted Platform Orchestrator](https://humanitec.com/blog/running-the-platform-orchestrator-self-hosted)
 - [Blog - Platform Engineering in 2026: Why DIY Is Dead](https://roadie.io/blog/platform-engineering-in-2026-why-diy-is-dead/)
+## eBPF Articles
+
+![[thumbnail-ebpf-general.png]]
+
+>[!info] eBPF
+>**[eBPF](https://ebpf.io/what-is-ebpf/)** is a revolutionary technology with origins in the Linux kernel that can run sandboxed programs in a privileged context such as the operating system kernel. It is used to safely and efficiently extend the capabilities of the kernel without requiring to change kernel source code or load kernel modules.
+
+- [[Profiling applications with Pyroscope]]
+- [[Kubewekend Session 4|Kubewekend Session 4: Learn about ebpf with hubble and cilium]]
+- [Medium - Noisy Neighbor Detection with eBPF](https://netflixtechblog.com/noisy-neighbor-detection-with-ebpf-64b1f4b3bbdd)
+- [KodeKloud - eBPF Essentials for DevOps Professionals](https://kodekloud.com/blog/ebpf-essentials-devops/) 🌟 **(Recommended)**
 ## Awesome Repositories
 
 - [awesome-argo](https://github.com/akuity/awesome-argo): A curated list of awesome projects and resources related to Argo (a CNCF graduated project)
@@ -59,6 +74,7 @@ Cloud Native usually relate with Kubernetes and Architecture topics, so you can 
 - [awesome-cloudnative-trainings](https://github.com/joseadanof/awesome-cloudnative-trainings): Awesome Trainings from Cloud Native Computing Foundation Projects and Kubernetes related software
 - [awesome-flux-infra](https://github.com/brainfair/awesome-flux-infra): This repository contains infrastructure applications and add-ons installed in Kubernetes via FluxCD v2.
 - [awesome-microservices](https://github.com/mfornos/awesome-microservices): A curated list of Microservice Architecture related principles and technologies.
+- [awesome-ebpf](https://github.com/zoidyzoidzoid/awesome-ebpf) : A curated list of awesome projects related to eBPF
 ## Organization and Community
 
 - [CNCF Projects](https://contribute.cncf.io/contributors/projects/): All projects of the Cloud Native Computing Foundation
@@ -66,8 +82,13 @@ Cloud Native usually relate with Kubernetes and Architecture topics, so you can 
 - [Linux Foundation Project](https://www.linuxfoundation.org/projects) : Opensource Ambassador for projects from multiple users
 # Cloud-Native Tools and Frameworks
 
-![[thumbnail-cncf-landscape.png]]
+![[thumbnail-cncf-landscape-v2.png]]
 
+## Authentication
+
+- [dex](https://github.com/dexidp/dex): OpenID Connect (OIDC) identity and OAuth 2.0 provider with pluggable connectors 🌟 **(Recommended)**
+- [oauth2-proxy](https://github.com/oauth2-proxy/oauth2-proxy): A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers.
+- [Keycloak](https://github.com/keycloak/keycloak): an open-source identity and access management solution for modern applications and services, built on top of industry security standard protocols. 🌟 **(Recommended)**
 ## Automatic Deployment (Kubernetes)
 
 - [argo-cd](https://argo-cd.readthedocs.io/en/stable/) :  A declarative, GitOps continuous delivery tool for Kubernetes 🌟 **(Recommended)**
@@ -84,10 +105,34 @@ Cloud Native usually relate with Kubernetes and Architecture topics, so you can 
 - [fleet](https://github.com/rancher/fleet): Deploy workloads from Git to large fleets of Kubernetes clusters
 - [cyclops](https://github.com/cyclops-ui/cyclops): an open-source dev tool that simplifies Kubernetes with an easy-to-use UI, making it less intimidating
 - [GlassKube](https://glasskube.dev/docs/) : An open-source Kubernetes package manager that simplifies package management for Kubernetes
-## Authentication
+## Cloud Native Languages and Frameworks
 
-- [dex](https://github.com/dexidp/dex): OpenID Connect (OIDC) identity and OAuth 2.0 provider with pluggable connectors 🌟 **(Recommended)**
-- [oauth2-proxy](https://github.com/oauth2-proxy/oauth2-proxy): A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers.
+- [cel-spec](https://github.com/google/cel-spec): Common Expression Language -- specification and binary representation
+- [cue](https://github.com/cue-lang/cue): Validate and define text-based and dynamic configuration
+- [helm](https://helm.sh/): The package manager for Kubernetes 🌟 **(Recommended)**
+- [kcl](https://github.com/kcl-lang/kcl): KCL Programming Language Core and API (CNCF Sandbox Project).
+- [kustomize](https://github.com/kubernetes-sigs/kustomize): Customization of kubernetes YAML configurations 🌟 **(Recommended)**
+- [operator-lifecycle-manager](https://github.com/operator-framework/operator-lifecycle-manager): A management framework for extending Kubernetes with Operators
+- [werf](https://github.com/werf/werf): A solution for implementing efficient and consistent software delivery to Kubernetes facilitating best practices.
+- [ytt](https://github.com/carvel-dev/ytt): YAML templating tool that works on YAML structure instead of text. Powered by [Carvel](https://carvel.dev/)
+## Cloud Native Tools and Utilities
+
+- [okteto](https://github.com/okteto/okteto): Develop your applications directly in your Kubernetes Cluster
+- [mutagen](https://github.com/mutagen-io/mutagen): Fast file synchronization and network forwarding for remote development 🌟 **(Recommended)**
+- [mirrord](https://github.com/metalbear-co/mirrord):  Run any process, on your machine or in an AI agent's environment, as if it were a pod in your Kubernetes cluster: real env vars, DNS, network, traffic. 🌟 **(Recommended)**
+- [telepresence](https://github.com/telepresenceio/telepresence): Local development against a remote Kubernetes or OpenShift cluster
+## eBPF
+
+- [Cilium](https://cilium.io/): eBPF-based Networking, Observability, Security 🌟 **(Recommended)**
+- [Pyroscope](https://github.com/grafana/pyroscope): Continuous Profiling Platform. Debug performance issues down to a single line of code 🌟 **(Recommended)**
+- [Tetragon](https://tetragon.io/docs/) : Cilium Tetragon component enables powerful realtime, eBPF-based Security Observability and Runtime Enforcement. 🌟 **(Recommended)**
+## Feature Flags
+
+- [flagd](https://github.com/open-feature/flagd): A feature flag daemon with a Unix philosophy
+- [flipt](https://github.com/flipt-io/flipt): Enterprise-ready, Git native feature management solution
+- [go-feature-flag](https://github.com/thomaspoignant/go-feature-flag): GO Feature Flag is a simple, complete and lightweight self-hosted cloud native feature flag solution 100% Open Source — built on OpenFeature 🎛️
+- [OpenFeature](https://openfeature.dev/): Standardizing Feature Flagging for Everyone
+- [unleash](https://github.com/Unleash/unleash): Open-source feature management platform
 ## Internal Developer Platform (IDP)
 
 - [KubeVela](https://kubevela.io/): a modern software delivery platform that makes deploying and operating applications across today's hybrid, multi-cloud environments _easier, faster and more reliable._
@@ -105,26 +150,3 @@ Cloud Native usually relate with Kubernetes and Architecture topics, so you can 
 - [kratix](https://github.com/syntasso/kratix): Kratix is an open-source framework for building platforms
 - [Kro](https://kro.run/):  Build declarative, secure, and verifiable Kubernetes abstractions. 
 - [terraform-kubestack](https://github.com/kbst/terraform-kubestack): Kubestack is a framework for Kubernetes platform engineering teams to define the entire cloud native stack in one Terraform code base and continuously evolve the platform safely through GitOps.
-## Cloud Native Languages and Frameworks
-
-- [cel-spec](https://github.com/google/cel-spec): Common Expression Language -- specification and binary representation
-- [cue](https://github.com/cue-lang/cue): Validate and define text-based and dynamic configuration
-- [helm](https://helm.sh/): The package manager for Kubernetes 🌟 **(Recommended)**
-- [kcl](https://github.com/kcl-lang/kcl): KCL Programming Language Core and API (CNCF Sandbox Project).
-- [kustomize](https://github.com/kubernetes-sigs/kustomize): Customization of kubernetes YAML configurations 🌟 **(Recommended)**
-- [operator-lifecycle-manager](https://github.com/operator-framework/operator-lifecycle-manager): A management framework for extending Kubernetes with Operators
-- [werf](https://github.com/werf/werf): A solution for implementing efficient and consistent software delivery to Kubernetes facilitating best practices.
-- [ytt](https://github.com/carvel-dev/ytt): YAML templating tool that works on YAML structure instead of text. Powered by [Carvel](https://carvel.dev/)
-## Cloud Native Tools and Utilities
-
-- [okteto](https://github.com/okteto/okteto): Develop your applications directly in your Kubernetes Cluster
-- [mutagen](https://github.com/mutagen-io/mutagen): Fast file synchronization and network forwarding for remote development 🌟 **(Recommended)**
-- [mirrord](https://github.com/metalbear-co/mirrord):  Run any process, on your machine or in an AI agent's environment, as if it were a pod in your Kubernetes cluster: real env vars, DNS, network, traffic. 🌟 **(Recommended)**
-- [telepresence](https://github.com/telepresenceio/telepresence): Local development against a remote Kubernetes or OpenShift cluster
-## Feature Flags
-
-- [flagd](https://github.com/open-feature/flagd): A feature flag daemon with a Unix philosophy
-- [flipt](https://github.com/flipt-io/flipt): Enterprise-ready, Git native feature management solution
-- [go-feature-flag](https://github.com/thomaspoignant/go-feature-flag): GO Feature Flag is a simple, complete and lightweight self-hosted cloud native feature flag solution 100% Open Source — built on OpenFeature 🎛️
-- [OpenFeature](https://openfeature.dev/): Standardizing Feature Flagging for Everyone
-- [unleash](https://github.com/Unleash/unleash): Open-source feature management platform

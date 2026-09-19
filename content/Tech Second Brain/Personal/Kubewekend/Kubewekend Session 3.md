@@ -185,7 +185,7 @@ You will see lot of things huh, if you work with `kubernetes` on first time, It'
 
 Base on [official documentation](https://kubernetes.io/docs/concepts/overview/components/), you will see the image about cluster with including something inside cluster
 
-![[Pasted image 20240714164544.png]]
+![[thumbnail-kubernetes-architecture.png]]
 
 >[!note]
 >When you deploy Kubernetes, you get a cluster.
@@ -256,7 +256,7 @@ If you want to understand about structure, you can follow some step inside blog 
 
 You can take a look around full manual of `kube-apiserver` at [kube-apiserver manual](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/)
 
-![[Pasted image 20240714170729.png]]
+![[thumbnail-kubernetes-architecture-v2.png]]
 
 >[!info]
 >The API server is a component of the Kubernetes [control plane](https://kubernetes.io/docs/reference/glossary/?all=true#term-control-plane) that exposes the Kubernetes API. The API server is the front end for the Kubernetes control plane.
@@ -376,7 +376,7 @@ So controller will wait call from `kube-apiserver` about event which one will ch
 
 You can have more information from manual of kube-scheduler at [kube-scheduler manual](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-scheduler/)
 
-![[Pasted image 20240714192527.png]]
+![[thumbnail-kube-scheduler.png]]
 You can image `kube-scheduler` will wait announcement from `kube-apiserver` about which pod saved into `etcd`, if not have any node, `kube-scheduler` will mask your pod to node where can deploy into base on rating the quality of node
 
 But it doesn't easily than you think, I have terrify experience when try to manipulate deploy on Azure Kubernetes Cluster because this one has unique algorithm to deploy application, and it's not separating with same number pods for node in cluster, and that cause problems about some node have pressure resources, and some one have not. Not kind to fun 😄, but `kubernetes` actually listen comunity, they give us multiple way to customize scheduler, and something make this become pleasant me, we will inspect about that on another session in this series
@@ -420,7 +420,7 @@ This is huge topic, if we talk, it will cost us a day to list 😄. So skip them
 
 ## Worker Node
 
-![[Pasted image 20240714195349.png]]
+![[thumbnail-kubernetes-architecture-v3.png]]
 
 >[!info]
 >Kubernetes runs your [workload](https://kubernetes.io/docs/concepts/workloads/) by placing containers into Pods to run on [Nodes](https://kubernetes.io/docs/concepts/architecture/nodes/). A node may be a virtual or physical machine, depending on the cluster. Each node is managed by the [control plane](https://kubernetes.io/docs/reference/glossary/?all=true#term-control-plane) and contains the services necessary to run [Pods](https://kubernetes.io/docs/concepts/workloads/pods/).
@@ -440,7 +440,7 @@ When you create a nodes, that will including some characteristic with you will i
 
 Nodes is big target on `kubernetes`, It has more concept and pattern, therefore, if you want to read more about, just follow the link: [Nodes](https://kubernetes.io/docs/concepts/architecture/nodes/)
 
-![[Pasted image 20240714202920.png]]
+![[thumbnail-kubernetes-architecture-components.png]]
 
 >[!info]
 >Node components run on every node, maintaining running pods and providing the Kubernetes runtime environment.
@@ -516,7 +516,7 @@ So with [container runtime](https://kubernetes.io/docs/setup/production-environm
 With `kind`, we actually use `docker` runtime because to operating `kubernetes` with `kind` you need docker to bring up, and this is reason why `kind` use this one for runtime
 ### Another components
 
-![[Pasted image 20240715092952.png]]
+![[thumbnail-kubernetes-cni-v2.png]]
 
 So with `kind` configuration of mine, we don't setup any container network interface, so on next session we will talk around this one, spoil to you about `cilium` will be the target `cni` of mine on this series
 
@@ -579,13 +579,12 @@ The config is quite new for me, but that kind of clearly to understanding what t
 
 So with that configuration, you can image about the operation of `coredns` like
 
-![[Pasted image 20240715093334.png]]
+![[thumbnail-coredns-arch.png]]
 
 But as soon as, we will refer to `cilium` that can help you have more tool to apply `dns` inside `kubernetes` cluster
 ## How are actually Kubernetes workflow
 
-
-![[Pasted image 20240714172320.png]]
+![[thumbnail-kubernetes-components-workflow.png]]
 
 Base on [Kubernetes API Performance Metrics: Examples and Best Practices](https://www.redhat.com/en/blog/kubernetes-api-performance-metrics-examples-and-best-practices), we can image the how `kubernetes` actually work
 
