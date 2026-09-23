@@ -10,7 +10,7 @@ tags:
 
 # General
 
-![[thumbnail-ai-ml.png]]
+![[thumbnail-ml-framework-source-gg.png]]
 ## Articles
 
 - [Nanonets - Tesseract OCR in Python with Pytesseract & OpenCV](https://nanonets.com/blog/ocr-with-tesseract/)
@@ -43,6 +43,7 @@ tags:
 - [system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks): Collection of extracted System Prompts from popular chatbots like ChatGPT, Claude & Gemini 🌟 **(Recommended)**
 - [agentic-ai-landscape](https://github.com/antgroup/agentic-ai-landscape): Data driven agentic landscapes and insights. Produced by Ant Open Source and inclusionAI. 🌟 **(Recommended)**
 - [Agentic AI Knowledge Base](https://agentic-ai.readthedocs.io/en/latest/): A comprehensive, structured knowledge repository consolidating cutting-edge research, patterns, frameworks, and best practices for building, deploying, and operating agentic AI systems at scale. 🌟 **(Recommended)**
+- [awesome-ai-security](https://github.com/brinhosa/awesome-ai-security): A collection of awesome AI Security, LLM Security, and Prompt Injection tools and resources.
 ## Blogs
 
 - [DigitalOcean - AI/ML Topics](https://www.digitalocean.com/community/tags/ai-ml): Articles and Community about AI/ML 🌟 **(Recommended)**
@@ -61,6 +62,7 @@ tags:
 - [LF AI & Data Foundation Interactive Landscape](https://landscape.lfai.foundation/) 🌟 **(Recommended)**
 - [The MAD (Machine Learning, AI and Data) Landscape](https://mad.firstmark.com/ ) 🌟 **(Recommended)**
 - [Agentic AI Landscape](https://insights.inclusion-ai.org/) 🌟 **(Recommended)**
+- [OWASP - AI Security Landscape – Solutions Directory](https://genai.owasp.org/ai-security-solutions-landscape/)
 ## Organization
 
 - [DeepSeek](https://github.com/deepseek-ai): LLM Model for Prompting
@@ -87,9 +89,12 @@ tags:
 - [There's An AI For That](https://theresanaiforthat.com/): Update the new about tools and technologies about AI
 ## Papers
 
-- [Advances and Challenges in Foundation Agents](https://arxiv.org/pdf/2504.01990)
+- [Arxiv - Advances and Challenges in Foundation Agents](https://arxiv.org/pdf/2504.01990)
 - [CNCF - CNCF Cloud Native AI White Paper](https://tag-runtime.cncf.io/wgs/cnaiwg/whitepapers/cloudnativeai/)
 - [SmartQuant: CXL-based AI Model Store in Support of Runtime Configurable Weight Quantization](https://arxiv.org/pdf/2407.15866)
+## Security
+
+- [Linkedin - OWASP Releases: AI Security Solutions Landscape For Agentic AI 2025](https://www.linkedin.com/pulse/owasp-releases-ai-security-solutions-landscape-qyavf/)
 ## Topic
 
 - [Artificial Intelligence](https://github.com/topics/artificial-intelligence)
@@ -107,7 +112,7 @@ tags:
 - [MLOps.community](https://www.youtube.com/@MLOps/videos) : The MLOps Community fills the swiftly growing need to share real-world Machine Learning Operations best practices from engineers in the field 🌟 **(Recommended)**
 # AI & ML Tools
 
-![[thumbnail-ml-framework-source-gg.png]]
+![[thumbnail-ml-framework-2-source-gg.png]]
 
 ## Agentics
 

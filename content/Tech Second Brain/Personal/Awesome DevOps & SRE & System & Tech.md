@@ -7,25 +7,34 @@ tags:
   - awesome
 ---
 
-# Awesome Tech Repository
 
-![[meme-great-power-great-responsibility.png|center]]
+![[thumbnail-devops.png]]
 
-## General
+# General
 
+## Awesome DevOps & SRE & Sytem & Tech
+
+- [API Landscape](https://apilandscape.apiscene.io/): A comprehensive view of all stakeholders creating the programmable economy 🌟 **(Recommended)**
+- [awesome-cloud-security-interview](https://github.com/peachycloudsecurity/awesome-cloud-security-interview): a carefully chosen collection of cloud security-related interview questions and scenarios.
+- [awesome-compilers](https://github.com/aalhour/awesome-compilers): Curated list of awesome resources on Compilers, Interpreters and Runtimes 🌟 **(Recommended)**
+- [awesome-console-services](https://github.com/chubin/awesome-console-services): A curated list of awesome console services (reachable via HTTP, HTTPS and other network protocols)
+- [awesome-design](https://github.com/gztchan/awesome-design): Curated design resources from all over the world.
+- [awesome-devops](https://github.com/wmariuss/awesome-devops) : A curated list of awesome DevOps platforms, tools, practices and resources 🌟 **(Recommended)**
+- [awesome-embedded](https://github.com/nhivp/Awesome-Embedded): A curated list of awesome embedded programming.
 - [awesome-for-beginners](https://github.com/MunGell/awesome-for-beginners) : A list of awesome beginners-friendly projects.
 - [awesome](https://github.com/sindresorhus/awesome): 😎 Awesome lists about all kinds of interesting topics. [Website](https://project-awesome.org/) 🌟 **(Recommended)**
-## SysAdmin / DevOps / Platform / Site Reliability / Cloud Engineering
-
-- [awesome-cloud-security-interview](https://github.com/peachycloudsecurity/awesome-cloud-security-interview): a carefully chosen collection of cloud security-related interview questions and scenarios.
-- [awesome-devops](https://github.com/wmariuss/awesome-devops) : A curated list of awesome DevOps platforms, tools, practices and resources 🌟 **(Recommended)**
+- [awesome-iam](https://github.com/kdeldycke/awesome-iam): 👤 Identity and Access Management knowledge for cloud platforms 🌟 **(Recommended)**
+- [awesome-networking](https://github.com/nyquist/awesome-networking): Curated list of awesome computer networking resources
 - [awesome-platform-engineering-tools](https://github.com/seifrajhi/awesome-platform-engineering-tools): A curated list of Platform Engineering Tools 🌟 **(Recommended)**
 - [awesome-sre](https://github.com/dastergon/awesome-sre): A curated list of Site Reliability and Production Engineering resources. 🌟 **(Recommended)**
 - [awesome-sysadmin](https://github.com/awesome-foss/awesome-sysadmin): A curated list of amazingly awesome open-source sysadmin resources. 🌟 **(Recommended)**
+- [awesome-test-automation](https://github.com/atinfo/awesome-test-automation): A curated list of awesome test automation frameworks, tools, libraries, and software for different programming languages
+- [awesome-webhooks](https://github.com/realadeel/awesome-webhooks): A curated list about real-time webhooks. 🌟 **(Recommended)**
 - [aws-interview-questions](https://github.com/Devinterview-io/aws-interview-questions): 🟣 AWS interview questions and answers to help you prepare for your next technical interview in 2026.
 - [azure-interview-questions](https://github.com/Devinterview-io/azure-interview-questions): 🟣 Azure interview questions and answers to help you prepare for your next technical interview in 2026.
 - [cloud-engineer-interview-questions](https://github.com/sv222/cloud-engineer-interview-questions): A Comprehensive Collection of Interview Questions for Cloud Engineers.
 - [cloud-projects](https://github.com/mzazon/cloud-projects): Over 1100 cloud recipes, projects, tutorials, and real-world solutions to gain hands-on experience across Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP).
+- [Collection about kind of YAML](https://yaml.org/) : Collection about yaml in wide technologies
 - [DevOps Bash Tools](https://gitlab.com/HariSekhon/DevOps-Bash-tools):  DevOps Bash Scripts Collection 🌟 **(Recommended)**
 - [Devops Exercises](https://github.com/bregman-arie/devops-exercises): For who want to start with DevOps journey
 - [DevOps-Interview-Questions](https://github.com/NotHarshhaa/DevOps-Interview-Questions): Collection of 1100+ DevOps interview questions with detailed answers covering CI/CD, Cloud (AWS, Azure, GCP), Kubernetes, Terraform, Ansible, Git, Jenkins, Docker, Monitoring, and more.
@@ -34,6 +43,45 @@ tags:
 - [DevOps & SRE interview questions](https://ewry.net/devops-sre-interview-questions/): Find the most important information about key DevOps & SRE technologies. 🌟 **(Recommended)**
 - [Google SRE](https://sre.google/): Resource of Google for let you learn to become SRE with free resources, video, books and moreover stuff like that 🌟 **(Recommended)**
 - [howtheysre](https://github.com/upgundecha/howtheysre): A curated collection of publicly available resources on how technology and tech-savvy organizations around the world practice Site Reliability Engineering (SRE) 🌟 **(Recommended)**
+## DevOps & SRE Blog
+
+- [4sysops](https://4sysops.com/) -  The online community for SysAdmins and DevOps
+- [DevOpsCube](https://devopscube.com/) - Learn DevOps | Software & Platform Reviews 🌟 **(Recommended)**
+- [DevOps Việt Nam - DevOpsify](https://devopsify.co/) - Vietnamese Community about DevOps
+- [DevOps VN](https://devopsvn.tech/) - Vietnamese Community and Blog page about DevOps and Technologies
+- [Medium - ByteCook](https://medium.com/@cstoppgmr) - Unique contents cover multi-range in technical fields
+- [Medium - David Mosyan](https://medium.com/@dmosyan) - Systems Architecture / Cloud / DevOps / Cybersecurity
+- [Medium - DevOps.dev](https://blog.devops.dev/) - The community about DevOps Article, Cloud and more over things 🌟 **(Recommended)**
+- [Medium - Puru Tuladhar](https://ptuladhar3.medium.com/) - The guy who write about Solution took around Kubernetes
+- [Medium - Sagar](https://sagarkpanda.medium.com/) - DevOps Engineer
+- [Medium - The kube guy](https://thekubeguy.com/) - About Kubernetes with resolve multiple problems around and minimal efforts
+- [Spacelift Blog](https://spacelift.io/blog) - Blog tech about infrastructure as code, and cloud services 🌟 **(Recommended)**
+- [The Cloud Native Wiki | Aqua](https://www.aquasec.com/cloud-native-academy/) - The resource center for everything cloud native
+- [DevOps.com](https://devops.com/) - DevOps.com has established itself as an indispensable resource for DevOps education and community building
+- [Sre.news](https://sre.news/) - The daily collection about DevOps, SRE, System, Cloud & Platform Engineering topics 🌟 **(Recommended)**
+- [Sre Weekly](https://sreweekly.com/) - a newsletter devoted to everything related to keeping a site or service available as consistently as possible.
+## Network Protocol Articles
+
+- [Blog - Visualizing Network Topologies: Zero to Hero in Two Days](https://habr.com/en/articles/534716/)
+- [Smashing Magazine - HTTP/3 From A To Z: Core Concepts](https://www.smashingmagazine.com/2021/08/http3-core-concepts-part1/)
+- [Blog - Using HTTP/3 in gRPC](https://unnieayilliath.com/2023/02/19/using-http-3-in-grpc/)
+- [Medium - The Past and Present of Browser Architecture](https://levelup.gitconnected.com/the-past-and-present-of-browser-architecture-522c65d1c2cd)
+## Opensource Finder
+
+- [AlternativeTo](https://alternativeto.net/): Opensource Compare Alternatives
+- [Console.dev](https://console.dev/): Discover the best tools for developers
+- [Free for Dev](https://free-for.dev/): A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev.
+- [G2](https://www.g2.com/): Find the right software and services
+- [Gitstar Ranking](https://gitstar-ranking.com/): Unofficial GitHub star ranking for users, organizations and repositories 🌟 **(Recommended)**
+- [Hosted Software](https://hostedsoftware.org/): Self-Hosted Software List
+- [LibHunt](https://www.libhunt.com/): Discover awesome open-source projects and their alternatives 🌟 **(Recommended)**
+- [OpenAlternative](https://openalternative.co/): Discover Open Source Alternatives to Popular Software
+- [Osssoftware](https://osssoftware.org/open-source-alternatives/): Best New Open Source Alternatives
+- [ProductHunt](https://www.producthunt.com/): The best new products in tech 🌟 **(Recommended)**
+- [SourceForge](https://sourceforge.net/): Compare, Download & Develop Open Source & Business Software
+- [StackShare](https://stackshare.io/): See what tech stacks your peers are using 🌟 **(Recommended)**
+- [Trendshift](https://trendshift.io/): Live Trending GitHub Repositories 🌟 **(Recommended)**
+- [YCGlobe](https://dashboard.vclense.ch/ycglobe): Find and filter startup companies sponsored by YCombinator
 ## Organization
 
 - [Airbnb](https://github.com/airbnb): Airbnb Open Source Community 🌟 **(Recommended)**
@@ -70,54 +118,25 @@ tags:
 - [VMware](https://github.com/vmware): Open Source Project from VMware
 - [Vox Pupuli](https://github.com/voxpupuli): Modules and tooling maintained by and for the [Puppet](https://www.puppet.com/) community
 - [Yandex](https://github.com/yandex): Yandex open source projects and technologies
-## Technology
+## Programming Language Articles
 
-- [awesome-compilers](https://github.com/aalhour/awesome-compilers): Curated list of awesome resources on Compilers, Interpreters and Runtimes 🌟 **(Recommended)**
-- [awesome-console-services](https://github.com/chubin/awesome-console-services): A curated list of awesome console services (reachable via HTTP, HTTPS and other network protocols)
-- [awesome-design](https://github.com/gztchan/awesome-design): Curated design resources from all over the world.
-- [awesome-embedded](https://github.com/nhivp/Awesome-Embedded): A curated list of awesome embedded programming.
-- [awesome-iam](https://github.com/kdeldycke/awesome-iam): 👤 Identity and Access Management knowledge for cloud platforms 🌟 **(Recommended)**
-- [awesome-test-automation](https://github.com/atinfo/awesome-test-automation): A curated list of awesome test automation frameworks, tools, libraries, and software for different programming languages
-- [awesome-webhooks](https://github.com/realadeel/awesome-webhooks): A curated list about real-time webhooks. 🌟 **(Recommended)**
-- [Collection about kind of YAML](https://yaml.org/) : Collection about yaml in wide technologies
-- [API Landscape](https://apilandscape.apiscene.io/): A comprehensive view of all stakeholders creating the programmable economy 🌟 **(Recommended)**
-## Opensource Finder
+- [C++ An Entity-Component-System From Scratch — Coding With Thomas](https://www.codingwiththomas.com/blog/an-entity-component-system-from-scratch)
+- [TCMalloc : Thread-Caching Malloc](https://gperftools.github.io/gperftools/tcmalloc.html#runtime)
+- [A Simple Entity Component System (ECS) C++ - Austin Morlan](https://austinmorlan.com/posts/entity_component_system/?fbclid=IwAR26jehCQUQEzVmm_shLMhtG1dePD7AYoPQQBtm4GJoUqaNcFrW8JGYDCiY)
+- [Medium - Embedding Python in Go](https://poweruser.blog/embedding-python-in-go-338c0399f3d5F)
+- [YAML Ain’t Markup Language (YAML™) version 1.2](https://yaml.org/spec/1.2.2/)
+## Research
 
-- [AlternativeTo](https://alternativeto.net/): Opensource Compare Alternatives
-- [Console.dev](https://console.dev/): Discover the best tools for developers
-- [Free for Dev](https://free-for.dev/): A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev.
-- [G2](https://www.g2.com/): Find the right software and services
-- [Gitstar Ranking](https://gitstar-ranking.com/): Unofficial GitHub star ranking for users, organizations and repositories 🌟 **(Recommended)**
-- [Hosted Software](https://hostedsoftware.org/): Self-Hosted Software List
-- [LibHunt](https://www.libhunt.com/): Discover awesome open-source projects and their alternatives 🌟 **(Recommended)**
-- [OpenAlternative](https://openalternative.co/): Discover Open Source Alternatives to Popular Software
-- [Osssoftware](https://osssoftware.org/open-source-alternatives/): Best New Open Source Alternatives
-- [ProductHunt](https://www.producthunt.com/): The best new products in tech 🌟 **(Recommended)**
-- [SourceForge](https://sourceforge.net/): Compare, Download & Develop Open Source & Business Software
-- [StackShare](https://stackshare.io/): See what tech stacks your peers are using 🌟 **(Recommended)**
-- [Trendshift](https://trendshift.io/): Live Trending GitHub Repositories 🌟 **(Recommended)**
-- [YCGlobe](https://dashboard.vclense.ch/ycglobe): Find and filter startup companies sponsored by YCombinator
-# Blog DevOps and Tech
+- [Wikipedia - Worldwide exchange and communication of date and time-related data - ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)
+- [MDPI - An Overview of WebAssembly for IoT: Background, Tools, State-of-the-Art, Challenges, and Future Directions](https://www.mdpi.com/1999-5903/15/8/275)
+## Research Pages
 
->[!note]
->Useful page for finding the target and gain more experience in DevOps, Tech and moreover in technology field
-## DevOps & SRE Blog
-
-- [4sysops](https://4sysops.com/) -  The online community for SysAdmins and DevOps
-- [DevOpsCube](https://devopscube.com/) - Learn DevOps | Software & Platform Reviews 🌟 **(Recommended)**
-- [DevOps Việt Nam - DevOpsify](https://devopsify.co/) - Vietnamese Community about DevOps
-- [DevOps VN](https://devopsvn.tech/) - Vietnamese Community and Blog page about DevOps and Technologies
-- [Medium - ByteCook](https://medium.com/@cstoppgmr) - Unique contents cover multi-range in technical fields
-- [Medium - David Mosyan](https://medium.com/@dmosyan) - Systems Architecture / Cloud / DevOps / Cybersecurity
-- [Medium - DevOps.dev](https://blog.devops.dev/) - The community about DevOps Article, Cloud and more over things 🌟 **(Recommended)**
-- [Medium - Puru Tuladhar](https://ptuladhar3.medium.com/) - The guy who write about Solution took around Kubernetes
-- [Medium - Sagar](https://sagarkpanda.medium.com/) - DevOps Engineer
-- [Medium - The kube guy](https://thekubeguy.com/) - About Kubernetes with resolve multiple problems around and minimal efforts
-- [Spacelift Blog](https://spacelift.io/blog) - Blog tech about infrastructure as code, and cloud services 🌟 **(Recommended)**
-- [The Cloud Native Wiki | Aqua](https://www.aquasec.com/cloud-native-academy/) - The resource center for everything cloud native
-- [DevOps.com](https://devops.com/) - DevOps.com has established itself as an indispensable resource for DevOps education and community building
-- [Sre.news](https://sre.news/) - The daily collection about DevOps, SRE, System, Cloud & Platform Engineering topics 🌟 **(Recommended)**
-- [Sre Weekly](https://sreweekly.com/) - a newsletter devoted to everything related to keeping a site or service available as consistently as possible.
+- [arXiv.org](https://arxiv.org/): e-Print archive 🌟 **(Recommended)**
+- [MDPI](https://www.mdpi.com/): A pioneer in scholarly, open access publishing, MDPI has supported academic communities
+- [ResearchGate](https://www.researchgate.net/search): Papers about researching around the world
+- [RFC Editor](https://www.rfc-editor.org/) : The RFC Series (ISSN 2070-1721) contains technical and organizational documents about the Internet
+- [Springer](https://link.springer.com/): Search for research articles, academic books and more
+- [The Pattern Languages of Programs archives](https://hillside.net/index.php/past-plop-conferences): Hundreds of patterns are generated yearly in conferences alone, not to mention books and software engineering websites.
 ## Tech Blog
 
 - [3os Project](https://3os.org/) - Collocation of technical documentation and guides for devops, developers, pentesters, systems administrators and other IT professionals.
@@ -139,10 +158,25 @@ tags:
 - [TheNewStack](https://thenewstack.io/) - A great blog with new update articles about tech, system-architecture, ai and moreover stuff 🌟 **(Recommended)**
 - [AnonyViet](https://anonyviet.com/) - Vietnamese Community who teaching multiple techniques on Computer 🌟 **(Recommended)**
 - [XDA Forums](https://forum.xda-developers.com/) - Valuable resource for people who want to make the most of their mobile devices, from customizing the look and feel to adding new functionality.
+## Tech General Articles 
+
+- [Vietnix - Vietnamese - Stateless là gì? Sự khác biệt giữa Stateless và Stateful](https://vietnix.vn/stateless-la-gi/)
+- [Medium - Top 20 Network Protocols You Must Know in System Design](https://medium.com/interviewnoodle/top-20-network-protocols-you-must-know-in-system-design-81eaab4b0c36)
+- [Katalon - What is Automation Testing? Ultimate Guide & Best Practices](https://katalon.com/resources-center/blog/what-is-automation-testing)
+- [Leapwork - DevOps Test Automation: Strategy Guide](https://www.leapwork.com/blog/devops-test-automation)
+- [Sapphire - The Future of DevOps: A Spotlight on European Players in the DevOps Ecosystem](https://sapphireventures.com/blog/future-of-devops-ecosystem-european-players/)
+## Technological Articles
+
+- [Medium - Infrastructure as Code Landscape Overview 2024](https://medium.com/itnext/infrastructure-as-code-landscape-overview-2024-a066124e5989)
+- [Medium - Master Command Orchestration](https://medium.com/itnext/master-command-orchestration-16f4a117ce05)
+- [Medium - Pulumi: The Real Infrastructure as Code](https://8grams.medium.com/pulumi-the-real-infrastructure-as-code-f8cf5a5f3071)
+- [Katalon - Top 10 Best End-to-End Testing Tools and Frameworks](https://katalon.com/resources-center/blog/end-to-end-e2e-testing-tools-frameworks)
+- [Leapwork - The Top 20 Test Automation Tools of 2024](https://www.leapwork.com/blog/top-20-test-automation-tools)
+- [Spacelift - How Spacelift Can Improve Your Infrastructure Orchestration](https://spacelift.io/blog/how-specialized-solution-can-improve-your-iac)
+- [Blog - Obsidian: the Good, the Bad, & the Ugly](https://www.originalmacguy.com/obsidian-the-good-the-bad-the-ugly/)
+- [Pinggy - Top 10 Ngrok alternatives in 2025](https://pinggy.io/blog/best_ngrok_alternatives/)
+- [Dev.to - CPU Cache Basics](https://dev.to/larapulse/cpu-cache-basics-57ej)
 ## Youtube Channel
-
-![[youtube.png]]
-
 
 - [Anton Putra](https://www.youtube.com/@AntonPutra/featured): Sharing detailing about DevOps concept with multiple popular tools and platforms 🌟 **(Recommended)**
 - [ByteByteGo](https://www.youtube.com/@ByteByteGo/featured): Covering topics and trends in large-scale system design, from the authors of the best-selling System Design Interview book series 🌟 **(Recommended)**
@@ -164,88 +198,39 @@ tags:
 - [Travis Media](https://www.youtube.com/@TravisMedia/videos): Guy involve multiple topics around technologies
 - [Viet Tran](https://www.youtube.com/@Viet100/videos): Certificate guiding and software engineer for basic knowledge (Vietnamese) 🌟 **(Recommended)**
 - [Vietnam Open Infrastructure](https://www.youtube.com/@vietnamopeninfrastructure2288): Vietnam Org hosted conference about Infrastructure, AI and more over and operated the KCD Vietnam 🌟 **(Recommended)**
-# Technologies Articles
+# Ops & System & Tech Tools 
 
->[!note]
->Collections articles about DevOps, System Design and moreover about technologies and opensource 
-## General
-
-- [Vietnix - Vietnamese - Stateless là gì? Sự khác biệt giữa Stateless và Stateful](https://vietnix.vn/stateless-la-gi/)
-- [Medium - Top 20 Network Protocols You Must Know in System Design](https://medium.com/interviewnoodle/top-20-network-protocols-you-must-know-in-system-design-81eaab4b0c36)
-- [Katalon - What is Automation Testing? Ultimate Guide & Best Practices](https://katalon.com/resources-center/blog/what-is-automation-testing)
-- [Leapwork - DevOps Test Automation: Strategy Guide](https://www.leapwork.com/blog/devops-test-automation)
-- [Sapphire - The Future of DevOps: A Spotlight on European Players in the DevOps Ecosystem](https://sapphireventures.com/blog/future-of-devops-ecosystem-european-players/)
-## Techniques
-
-- [Dev.to - CPU Cache Basics](https://dev.to/larapulse/cpu-cache-basics-57ej)
-## Technologies
-
-- [Medium - Infrastructure as Code Landscape Overview 2024](https://medium.com/itnext/infrastructure-as-code-landscape-overview-2024-a066124e5989)
-- [Medium - Master Command Orchestration](https://medium.com/itnext/master-command-orchestration-16f4a117ce05)
-- [Medium - Pulumi: The Real Infrastructure as Code](https://8grams.medium.com/pulumi-the-real-infrastructure-as-code-f8cf5a5f3071)
-- [Katalon - Top 10 Best End-to-End Testing Tools and Frameworks](https://katalon.com/resources-center/blog/end-to-end-e2e-testing-tools-frameworks)
-- [Leapwork - The Top 20 Test Automation Tools of 2024](https://www.leapwork.com/blog/top-20-test-automation-tools)
-- [Medium - Top 20 Platform Engineering Tools](https://medium.com/spacelift/top-20-platform-engineering-tools-7e9c7289fb94)
-- [Spacelift - How Spacelift Can Improve Your Infrastructure Orchestration](https://spacelift.io/blog/how-specialized-solution-can-improve-your-iac)
-- [Blog - Obsidian: the Good, the Bad, & the Ugly](https://www.originalmacguy.com/obsidian-the-good-the-bad-the-ugly/)
-- [Pinggy - Top 10 Ngrok alternatives in 2025](https://pinggy.io/blog/best_ngrok_alternatives/)
-- [Inifisical - Top-10 Secrets Management Tools in 2025](https://infisical.com/blog/best-secret-management-tools)
-# Research Articles & Resources
-
-> [!note]
-> These are the topics I am currently focused on, conducting deep-dive research and inspections to build the foundational knowledge required for future implementation and architectural design.
-
-## Network Protocols
-
-- [Visualizing Network Topologies: Zero to Hero in Two Days](https://habr.com/en/articles/534716/)
-- [HTTP/3 From A To Z: Core Concepts — Smashing Magazine](https://www.smashingmagazine.com/2021/08/http3-core-concepts-part1/)
-- [Using HTTP/3 in gRPC – Unnie Ayilliath](https://unnieayilliath.com/2023/02/19/using-http-3-in-grpc/)
-- [Medium - The Past and Present of Browser Architecture](https://levelup.gitconnected.com/the-past-and-present-of-browser-architecture-522c65d1c2cd)
-## Programming Language
-
-- [C++ An Entity-Component-System From Scratch — Coding With Thomas](https://www.codingwiththomas.com/blog/an-entity-component-system-from-scratch)
-- [TCMalloc : Thread-Caching Malloc](https://gperftools.github.io/gperftools/tcmalloc.html#runtime)
-- [A Simple Entity Component System (ECS) C++ - Austin Morlan](https://austinmorlan.com/posts/entity_component_system/?fbclid=IwAR26jehCQUQEzVmm_shLMhtG1dePD7AYoPQQBtm4GJoUqaNcFrW8JGYDCiY)
-- [Medium - Embedding Python in Go](https://poweruser.blog/embedding-python-in-go-338c0399f3d5F)
-- [YAML Ain’t Markup Language (YAML™) version 1.2](https://yaml.org/spec/1.2.2/)
-## Internet Standard
-
-- [Wikipedia - Worldwide exchange and communication of date and time-related data - ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)
-## WebAssembly
-
-- [MDPI - An Overview of WebAssembly for IoT: Background, Tools, State-of-the-Art, Challenges, and Future Directions](https://www.mdpi.com/1999-5903/15/8/275)
-## Research & Paper Pages
-
-> [!note]
-> A comprehensive repository containing documentation and white papers covering a broad spectrum of technologies, ranging from DevOps and Infrastructure to Emerging Tech and AI.
-
-- [arXiv.org](https://arxiv.org/): e-Print archive 🌟 **(Recommended)**
-- [MDPI](https://www.mdpi.com/): A pioneer in scholarly, open access publishing, MDPI has supported academic communities
-- [ResearchGate](https://www.researchgate.net/search): Papers about researching around the world
-- [RFC Editor](https://www.rfc-editor.org/) : The RFC Series (ISSN 2070-1721) contains technical and organizational documents about the Internet
-- [Springer](https://link.springer.com/): Search for research articles, academic books and more
-- [The Pattern Languages of Programs archives](https://hillside.net/index.php/past-plop-conferences): Hundreds of patterns are generated yearly in conferences alone, not to mention books and software engineering websites.
-# DevOps & Useful Tools
-
-![[thumbnail-devops.png]]
+![[thumbnail-cncf-landscape.png]]
 
 ## Cloud Calculator
 
 - [Spare Cores](https://sparecores.com/): A Python-based open-source framework and managed service offering the most detailed and transparent dataset on cloud servers. 🌟 **(Recommended)**
-## Generated / Validate Configuration
+## Configuration Generated & Validation 
 
 - [checkov](https://github.com/bridgecrewio/checkov): Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as code, container images and open source packages
 - [Configu](https://github.com/configu/configu): Open-source ConfigOps infrastructure ⚙️
 - [crontab guru](https://crontab.guru/): The quick and simple editor for cron schedule expressions by Cronitor (SHELL/Pipeline)
 - [.gitignore.io](https://www.toptal.com/developers/gitignore): Create useful `.gitignore` files for your project
 - [YAML Multiline Strings](https://yaml-multiline.info/) : Find the right syntax for YAML file
+## Automation Pipeline (CI/CD)
+
+- [GitHub Actions](https://docs.github.com/en/actions/get-started/quickstart): a continuous integration and continuous delivery (CI/CD) platform that allows you to automate your build, test, and deployment pipeline. Explore more at [[Awesome Github Action]] 🌟 **(Recommended)**
+- [GitLab CI](https://docs.gitlab.com/ci/): a continuous method of software development, where you continuously build, test, deploy, and monitor iterative code changes. Explore more at [[Awesome GitLabCI]] 🌟 **(Recommended)**
+- [Gitea Actions](https://docs.gitea.com/usage/actions/overview/): It is similar and mostly compatible to GitHub Actions 🌟 **(Recommended)**
+- [Azure Pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops): the part of Azure DevOps that combines continuous integration, continuous testing, and continuous delivery to automatically build, test, and deploy code projects to any destination. Explore more at [[Awesome Azure Pipelines]]
+- [BitBucket Pipeline](https://support.atlassian.com/bitbucket-cloud/docs/get-started-with-bitbucket-pipelines/): an integrated CI/CD service built into Bitbucket Cloud. Explore more at [[Awesome BitBucket]]
+- [Jenkin](https://github.com/jenkinsci/jenkins): Jenkins is the leading open-source automation server.
+- [Harness](https://github.com/harness/harness): an end-to-end developer platform with Source Control Management, CI/CD Pipelines, Hosted Developer Environments, and Artifact Registries.
 ## Infrastructure as Code (IaC)
 
-- [Pulumi](https://github.com/pulumi/pulumi): Infrastructure as Code in any programming language 🚀 🌟 **(Recommended)**
-- [Packer](https://developer.hashicorp.com/packer/docs?product_intent=packer): Create identical machine images for multiple platforms from a single source configuration 🌟 **(Recommended)**
-- [Vagrant](https://developer.hashicorp.com/vagrant/docs) : Vagrant is the command line utility for managing the lifecycle of virtual machines 🌟 **(Recommended)**
-- [OpenTofu](https://github.com/opentofu/opentofu): an OSS tool for building, changing, and versioning infrastructure safely and efficiently. Find more OpenTofu Providers at [OpenTofu Registry](https://search.opentofu.org/)
-## SSL / DNS
+- [Ansible](https://github.com/ansible/ansible): a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Explore more at [[Awesome Ansible]] 🌟 **(Recommended)**
+- [Chef](https://github.com/chef/chef): a powerful automation platform that transforms infrastructure into code automating how infrastructure is configured, deployed and managed across any environment, at any scale
+- [OpenTofu](https://github.com/opentofu/opentofu): an OSS tool for building, changing, and versioning infrastructure safely and efficiently. Find more OpenTofu Providers at [OpenTofu Registry](https://search.opentofu.org/) 🌟 **(Recommended)**
+- [Packer](https://developer.hashicorp.com/packer/docs?product_intent=packer): Create identical machine images for multiple platforms from a single source configuration. Explore more at [[Awesome Packer]] 🌟 **(Recommended)**
+- [Pulumi](https://github.com/pulumi/pulumi): Infrastructure as Code in any programming language 🚀
+- [Terraform](https://developer.hashicorp.com/terraform): an infrastructure as code tool that lets you build, change, and version infrastructure safely and efficiently. Explore more at [[Awesome Terraform]] 🌟 **(Recommended)**
+- [Vagrant](https://developer.hashicorp.com/vagrant/docs) : Vagrant is the command line utility for managing the lifecycle of virtual machines. Explore more at [[Awesome Vagrant]] 🌟 **(Recommended)**
+## SSL & DNS
 
 - [acme.sh](https://github.com/acmesh-official/acme.sh): A pure Unix shell script implementing ACME client protocol 🌟 **(Recommended)**
 - [certbot](https://github.com/certbot/certbot): Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server. 🌟 **(Recommended)**
@@ -253,3 +238,4 @@ tags:
 - [ddns-updater](https://github.com/qdm12/ddns-updater): Container to update DNS records periodically with WebUI for many DNS providers
 - [nip.io & sslip.io](https://nip.io/): a DNS (Domain Name System) service that, when queried with a hostname with an embedded IP address, returns that IP address. 🌟 **(Recommended)**
 - [traefik.me](http://traefik.me/): Just like nip.io or xip.io, traefik.me is a magic domain name that provides wildcard DNS for any IP address. 🌟 **(Recommended)**
+- [GoodTLS - Recommended TLS/SSL Settings](https://goodtls.com/): Secure your infrastructure with modern, expert-recommended TLS/SSL configurations. 🌟 **(Recommended)**

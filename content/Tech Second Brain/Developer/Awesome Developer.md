@@ -9,14 +9,16 @@ tags:
 ---
 
 
-![[meme-feeling-good.png|center]]
+![[thumbnail-awesome-programming-languages.png]]
 # General
 
 ## Awesome Repository
 
 - [30-seconds-of-code](https://github.com/Chalarangelo/30-seconds-of-code): Short code snippets for all your development needs
-- [project-based-learning](https://github.com/practical-tutorials/project-based-learning): Curated list of project-based tutorials 🌟 **(Recommended)**
 - [API-mega-list](https://github.com/cporter202/API-mega-list):  A powerhouse collection of APIs you can start using immediately to build everything from simple automations to full-scale applications
+- [awesome-compilers](https://github.com/aalhour/awesome-compilers): 😎 Curated list of awesome resources on Compilers, Interpreters and Runtimes
+- [awesome-regex](https://github.com/aloisdg/awesome-regex): A curated collection of awesome Regex libraries, tools, frameworks and software
+- [project-based-learning](https://github.com/practical-tutorials/project-based-learning): Curated list of project-based tutorials 🌟 **(Recommended)**
 ## Blog Pages
 
 - [Dev](https://dev.to/): DEV Community is a community of 2,027,354 amazing developers 🌟 **(Recommended)**
@@ -54,8 +56,6 @@ tags:
 - [Medium - Step by Step guide on generating an IOS certificate, preparing for Test Flight, and releasing ios app on the App Store](https://medium.com/readytowork-org/step-by-step-guide-on-generating-an-ios-certificate-preparing-for-test-flight-and-releasing-ios-99cd2eb11067)
 ## Youtube Channel
 
-![[youtube.png]]
-
 - [Code Bullet](https://www.youtube.com/c/CodeBullet/featured): A computer science degree trying his best.
 - [developedbyed](https://www.youtube.com/@developedbyed/videos):  Programming tutorials, guy will help you motivate and make more creative
 - [Eli the Computer Guy](https://www.youtube.com/c/Elithecomputerguypage/featured) : Talk about programing, computer and moreover
@@ -80,11 +80,7 @@ tags:
 # Tools and Utilities
 
 ![[meme-blind-choice.png|center]]
-
-## API Testing
-
-- [httpbin.org](https://httpbin.org/): A simple HTTP Request & Response Service.
-## Automation Build Platforms
+## Build & Compliers
 
 - [CMake](https://github.com/Kitware/CMake): Mirror of CMake upstream repository. Plus on [Make](https://www.gnu.org/software/make/) 🌟 **(Recommended)**
 - [Expo](https://docs.expo.dev/): Expo is a framework that makes developing Android and iOS apps easier. Our framework provides file-based routing, a standard library of native modules, and much more 🌟 **(Recommended)**
@@ -96,23 +92,25 @@ tags:
 
 - [dapr](https://github.com/dapr/dapr): Dapr is a portable, event-driven, runtime for building distributed applications across cloud and edge. [Website](https://dapr.io/)
 - [gitpod](https://github.com/gitpod-io/gitpod): The developer platform for on-demand cloud development environments to create software faster and more securely.
-## Data Converter
-
-- [GBMB](https://www.gbmb.org/): Online extended **data storage unit conversion calculator** 🌟 **(Recommended)**
 ## DevTools
 
 - [10015.io](https://10015.io/) : A “free all-in-one toolbox” solution created to ease your life by preventing bookmark mess.
 - [AppDevTools](https://appdevtools.com/): A web app providing a number of free online developer tools.
-- [TrueDevTools](https://truedevtools.com/): True Devtools is a free collection of 45+ carefully crafted tools useful for development
-- [IT - Tools](https://it-tools.tech/) : Handy tools for developers 🌟 **(Recommended)**
 - [Devtoys.app](https://devtoys.app/): A Swiss Army knife for developers.
+- [GBMB](https://www.gbmb.org/): Online extended **data storage unit conversion calculator** 🌟 **(Recommended)**
+- [httpbin.org](https://httpbin.org/): A simple HTTP Request & Response Service.
+- [IT - Tools](https://it-tools.tech/) : Handy tools for developers 🌟 **(Recommended)**
+- [Pythonium](https://pythonium.net/): Tools for Python Developers
+- [TrueDevTools](https://truedevtools.com/): True Devtools is a free collection of 45+ carefully crafted tools useful for development
 ## Documentation Template
 
-- [mintlify](https://github.com/mintlify/starter): The modern standard for documentation 🌟 **(Recommended)**
+- [docusaurus](https://github.com/facebook/docusaurus): a project for building, deploying, and maintaining open source project websites easily. 🌟 **(Recommended)**
 - [doks](https://github.com/thuliteio/doks): Everything you need to build a stellar documentation website. Fast, accessible, and easy to use.
+- [mintlify](https://github.com/mintlify/starter): The modern standard for documentation 🌟 **(Recommended)**
 ## Feature Flag
 
 - [flagsmith](https://github.com/Flagsmith/flagsmith): Open Source Feature Flagging and Remote Config Service.
+- [unleash](https://github.com/Unleash/unleash): Open-source feature management platform
 ## Online Compiler
 
 - [replit](https://replit.com/) : Python, NodeJS, ... 🌟 **(Recommended)**
@@ -121,6 +119,7 @@ tags:
 ## Regex
 
 - [regex101](https://regex101.com/): build, test, and debug regex 🌟 **(Recommended)**
+- [regexr](https://regexr.com/): an online tool to **learn**, **build**, & **test** Regular Expressions (RegEx / RegExp).
 ## Static Site Generator
 
 - [gatsby](https://github.com/gatsbyjs/gatsby): The best React-based framework with performance, scalability and security built in.
@@ -132,10 +131,15 @@ tags:
 - [jest](https://jestjs.io/docs/getting-started): A delightful JavaScript Testing Framework with a focus on simplicity 🌟 **(Recommended)**
 - [playwright](https://github.com/microsoft/playwright): Playwright is a framework for Web Testing and Automation 🌟 **(Recommended)**
 - [selenium](https://github.com/SeleniumHQ/selenium): A browser automation framework and ecosystem
-# Tools base on Language
+# Tools based on Languages
 
 ![[meme-great-power-great-responsibility.png|center|500]]
 
+Explore more about specific languages
+
+- [[Awesome Golang]]
+- [[Awesome HTML & CSS & Javascript]]
+- [[Awesome Python]]
 ## C\# (.NET)
 
 - [Avalonia](https://github.com/AvaloniaUI/Avalonia): Develop Desktop, Embedded, Mobile and WebAssembly apps with C# and XAML. The most popular .NET UI client technology. [Documentation](https://docs.avaloniaui.net/)

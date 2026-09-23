@@ -12,7 +12,7 @@ tags:
 
 # Data Engineer
 
-![[Tech Second Brain/Assets/Images/meme-data-engineer.png|center]]
+![[thumbnail-awesome-data-engineering.png]]
 
 ## Articles
 
@@ -69,6 +69,7 @@ tags:
 - [Practicle Data Engineering - Open Source Data Engineering Landscape 2025](https://www.pracdata.io/p/open-source-data-engineering-landscape-2025) 🌟 **(Recommended)**
 - [Blog - The Ultimate Data Engineering Roadmap (2025) – Built by a Data Engineer](https://datawithbaraa.substack.com/p/the-ultimate-data-engineering-roadmap)
 - [Portable - 100+ Best ETL Tools List & Software (As Of February 2025)](https://portable.io/learn/best-etl-tools)
+- [Data Landscape](https://www.data-landscape.com/)
 ## Topic
 
 - [Data](https://github.com/topics/data)

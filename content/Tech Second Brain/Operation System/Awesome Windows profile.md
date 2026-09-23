@@ -6,6 +6,8 @@ tags:
   - helpful
 ---
 
+![[icon-powershell.svg|center|400x400]]
+
 >[!summary]
 >This is about some configuration to make your effective when work with powershell. This will collection from multiple source, check it out and let's create your favorite shell
 >- [Autocomplete in PowerShell](https://techcommunity.microsoft.com/t5/itops-talk-blog/autocomplete-in-powershell/ba-p/2604524)

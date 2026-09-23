@@ -9,11 +9,11 @@
 >[!NOTE]
 >To archive my knowledge, make them become more efficient and share to others one
 
-*"Give an applause for [him - jackyzha0](https://github.com/jackyzha0), this template is used from his project. I feel appriciate with your contribution, help me to cut off effort for implement UI/UX, and can make something cool stuff like Obsidian World"*
+*"Big Shoutout for [him - jackyzha0](https://github.com/jackyzha0), this template is used from his project. I feel appriciate with your contribution, help me to cut off effort for implement UI/UX, and can make something cool stuff like Obsidian World"*
 
 With the assets used by excalidraw of Obsidian world, I want to shout out for those communities which share legally icon to public archiecture design, get one for you
 
-- [AWS Archiecture and Resource Icons](https://aws.amazon.com/architecture/icons/)
+- [AWS Architecture and Resource Icons](https://aws.amazon.com/architecture/icons/)
 - [Azure Architecture and Resource Icons](https://learn.microsoft.com/en-us/azure/architecture/icons/)
 - [Kubernetes Icons](https://github.com/kubernetes/community/tree/master/icons)
 - [Excalidraw Icon](https://libraries.excalidraw.com/?theme=light&sort=default)

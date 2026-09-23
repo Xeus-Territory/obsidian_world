@@ -10,13 +10,14 @@ tags:
 
 # General Repositories and Articles
 
-![[meme-documentation.png]]
+![[thumbnail-awesome-database-landscape.png]]
 ## General
 
 - [Medium - 15 Databases, 15 Use Cases — The Ultimate Guide That No One Asked For (But Everyone Needs)](https://medium.com/gitconnected/15-databases-15-use-cases-the-ultimate-guide-that-no-one-asked-for-but-everyone-needs-47ca4009be78) 🌟 **(Recommended)**
 - [Medium - 11 Data Structures Powering Database](https://medium.com/gitconnected/11-data-structures-powering-database-51fc4691fcf7) 🌟 **(Recommended)**
 - [Dev.to - What is RocksDB (and its role in streaming)?](https://dev.to/mrkandreev/what-is-rocksdb-and-its-role-in-streaming-3bla)
 - [Redis - What is Valkey?](https://redis.io/blog/what-is-valkey/)
+- [Blog - A Primer on Databases](https://blog.publiccomps.com/a-primer-on-databases/)
 ## Configurations & Strategies
 
 - [Datacamp - Database Sharding: Examples, Strategies, Tools, and More](https://www.datacamp.com/blog/database-sharding) 🌟 **(Recommended)**
@@ -98,6 +99,12 @@ tags:
 # Database Tools
 
 ![[meme-technology.png|center]]
+
+Explore more at specific databases with these links below
+
+- [[Awesome Elasticsearch & OpenSearch]]
+- [[Awesome MongoDB]]
+- [[Awesome PostgreSQL]]
 ## Driver & Connector
 
 - [GatewayD](https://docs.gatewayd.io/getting-started/welcome): a free and open-source cloud-native database gateway and framework for building data-driven applications
@@ -106,10 +113,11 @@ tags:
 - [beekeeper-studio](https://github.com/beekeeper-studio/beekeeper-studio): Modern and easy to use SQL client for MySQL, Postgres, SQLite, SQL Server, and more. Linux, MacOS, and Windows
 - [Chat2DB](https://github.com/CodePhiliaX/Chat2DB): 🔥🔥🔥AI-driven database tool and SQL client, The hottest GUI client, supporting MySQL, Oracle, PostgreSQL, DB2, SQL Server, DB2, SQLite, H2, ClickHouse, and more.
 - [dbeaver](https://github.com/dbeaver/dbeaver): Free universal database tool and SQL client
+- [FlexTable](https://flextable.dev/): a fast, native desktop client for PostgreSQL, MySQL, SQL Server, MongoDB, Redis, and more.
 ## Database Management
 
 - [bytebase](https://github.com/bytebase/bytebase) : The GitHub/GitLab for database DevOps.
-- [limbo](https://github.com/tursodatabase/limbo): A work-in-progress, in-process OLTP database management system, compatible with SQLite.
+- [turso](https://github.com/tursodatabase/turso): A work-in-progress, in-process OLTP database management system, compatible with SQLite.
 ## Migration Tools
 
 - [goose](https://github.com/pressly/goose): A database migration tool. Supports SQL migrations and Go functions.

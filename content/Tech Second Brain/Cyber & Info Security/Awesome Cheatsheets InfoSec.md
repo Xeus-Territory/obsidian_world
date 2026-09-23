@@ -7,10 +7,8 @@ tags:
   - usage
 ---
 
-![[meme-blind-choice.png|center]]
+![[thumbnail-awesome-cheatsheet-infosec.png]]
 
->[!info]
->This page is place where I store command, configuration and moreover around information security.
 # Nuclei
 
 >[!info]

@@ -7,10 +7,10 @@ tags:
   - collections
 ---
 
-![[meme-technology.png|center]]
+![[thumbnail-awesome-self-hosted.png]]
 # General
 
-## Repositories
+## Awesome Repositories
 
 - [awesome-gitea](https://gitea.com/gitea/awesome-gitea): A curated list of awesome projects related to Gitea and its soft-fork instances
 - [awesome-openid-connect](https://github.com/cerberauth/awesome-openid-connect): Find this curated list of providers, services, libraries, and resources to adopt OIDC
@@ -20,7 +20,11 @@ tags:
 - [awesome-virtualization](https://github.com/Wenzel/awesome-virtualization): Collection of resources about Virtualization
 - [deploy-your-own-saas](https://github.com/Atarity/deploy-your-own-saas): List of "only yours" cloud services for everyday needs 🏴
 - [self-hosting-guide](https://github.com/mikeroyal/Self-Hosting-Guide) : Learn all about locally hosting
-# Self-hosted by Categories
+- [awesome-vmware](https://github.com/alexgoesgit/awesome-vmware): A list of virtualization software with focus on VMware alternatives.
+## Technological Articles
+
+- [Inifisical - Top-10 Secrets Management Tools in 2025](https://infisical.com/blog/best-secret-management-tools)
+# Self-hosted Tools by Categories
 
 ![[thumbnil-cncf-tools-landscape.png]]
 
@@ -47,16 +51,18 @@ tags:
 ## Local Cloud
 
 - [CloudStack](https://cloudstack.apache.org/): An open-source software system designed to deploy and manage large networks of virtual machines, as a highly available, highly scalable Infrastructure as a Service (IaaS) cloud computing platform.
-- [LocalStack - AWS local](https://hub.docker.com/r/localstack/localstack) : A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline 🌟 **(Recommended)**
-	- [Documentation](https://docs.localstack.cloud/getting-started/)
-	- [LocalStack Web Application](https://app.localstack.cloud/sign-in): Web UI for managing your LocalStack
+- [LocalStack - AWS local](https://github.com/localstack/localstack): A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline 🌟 **(Recommended)**
 - [openstack](https://github.com/openstack/openstack): Repository tracking all OpenStack repositories as submodules. Mirror of code maintained at opendev.org -->  [documentation](https://docs.openstack.org/2024.1/), and minor version [devstack](https://github.com/openstack/devstack) - System for quickly installing an OpenStack cloud
 - [OpenNebula](https://docs.opennebula.io/6.10/overview/opennebula_concepts/opennebula_overview.html): Open source **Cloud & Edge Computing Platform** bringing real freedom to your Enterprise Cloud 🚀
 - [ubicloud](https://github.com/ubicloud/ubicloud): an open source cloud that can run anywhere
+- [floci](https://github.com/floci-io/floci): Light, fluffy, and always free - The AWS Local Emulator alternative
 ## Secrets management
 
 - [Hashicorp Vault](https://developer.hashicorp.com/vault/docs?product_intent=vault): An identity-based secret and encryption management system 🌟 **(Recommended)**
 - [infisical](https://github.com/Infisical/infisical): the open-source secret management platform
+- [OpenBao](https://openbao.org/): a software solution to manage, store, and distribute sensitive data including secrets, certificates, and keys. 🌟 **(Recommended)**
+- [BitWarden](https://github.com/bitwarden/server): Bitwarden infrastructure/backend (API, database, Docker, etc). 🌟 **(Recommended)**
+- [Passbolt](https://github.com/passbolt/passbolt_api): Passbolt Community Edition (CE) API. The JSON API for the open source password manager for teams! 🌟 **(Recommended)**
 ## Serverless
 
 - [faas](https://github.com/openfaas/faas): OpenFaaS - Serverless Functions Made Simple
@@ -78,7 +84,7 @@ tags:
 
 - [chisel](https://github.com/jpillora/chisel) : A fast TCP/UDP tunnel over HTTP
 - [bore](https://github.com/ekzhang/bore): A simple CLI tool for making tunnels to localhost 🌟 **(Recommended)**
-## Virtual Machine / Virtualization / Hypervisor
+## Virtual Machine & Virtualization & Hypervisor
 
 - [firecracker](https://github.com/firecracker-microvm/firecracker): Secure and fast microVMs for serverless computing.
 - [KVM](https://linux-kvm.org/page/Main_Page): a full virtualization solution for Linux on x86 hardware containing virtualization extensions

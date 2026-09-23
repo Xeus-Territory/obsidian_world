@@ -9,7 +9,7 @@ tags:
 # Python3, Pip and Common usage
 
 
-![[meme-awesome.png|center|500]]
+![[icon-python.png]]
 
 ## Install Python3 and Pip
 
@@ -120,30 +120,30 @@ In some situations, your environment have higher version CUDA or driver of NVIDI
 pip install -U torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
 ```
 
-# Python General
+# General
 
-![[icon-python.png|center]]
+![[thumbnail-python-landscape.png]]
 
+## Articles
+
+- [InventiveHQ - Private Python Package Repositories: PyPI Alternatives for Enterprise](https://inventivehq.com/blog/private-python-package-repositories-guide)
+- [IBM - A landscape diagram for Python data](https://community.ibm.com/community/user/blogs/paco-nathan/2019/03/12/a-landscape-diagram-for-python-data)
 ## Awesome Repositories
 
 - [awesome-python](https://github.com/vinta/awesome-python) : An opinionated list of awesome Python frameworks, libraries, software and resources.
 - [best-of-python](https://github.com/lukasmasuch/best-of-python): 🏆 A ranked list of awesome Python open-source libraries and tools. Updated weekly.
 - [TheAlgorithms Python](https://thealgorithms.github.io/Python/): All Algorithms implemented in Python
+## Library & Package
+
+- [pypi](https://pypi.org/): Find, install and publish Python packages with the Python Package Index 🌟 **(Recommended)**
+- [pypiserver](https://github.com/pypiserver/pypiserver): Minimal PyPI server for uploading & downloading packages with pip/easy_install
+- [devpi](https://github.com/devpi/devpi): Python PyPi staging server and packaging, testing, release tool
 ## Organizations
 
 - [pypa](https://github.com/pypa): Python Packaging Authority
 - [pallets](https://github.com/pallets): The Community stands behind [Flask](https://github.com/pallets/flask), [Jinja](https://github.com/pallets/jinja)
-# Python Tools, Packages and Libraries
-
-![[icon-python-pypi.svg|center|350]]
-
-## Library and Package Repositories
-
-- [pypi](https://pypi.org/): Find, install and publish Python packages with the Python Package Index
 ## Package Management
 
+- [pip](https://pip.pypa.io/en/stable/): the [package installer for Python](https://packaging.python.org/guides/tool-recommendations/). 🌟 **(Recommended)**
 - [poetry](https://github.com/python-poetry/poetry): Python packaging and dependency management made easy 🌟 **(Recommended)**
 - [uv](https://github.com/astral-sh/uv): An extremely fast Python package and project manager, written in Rust
-## Toolbox
-
-- [Pythonium](https://pythonium.net/): Tools for Python Developers
