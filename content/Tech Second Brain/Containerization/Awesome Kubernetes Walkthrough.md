@@ -7,9 +7,9 @@ tags:
   - awesome
 ---
 
-![[thumbnail-kubernetes-architecture.png]]
-
 ![[thumbnail-kubernetes-interfaces.png]]
+
+![[thumbnail-kubernetes-architecture.png]]
 
 To find more information and example, you can double-check a some manifest collection at
 
@@ -1405,13 +1405,14 @@ That's why you should make the checklist about DNS for your RKE2 or any selfhost
 - [Medium - Multi-Cluster & Disaster Recovery: Building a Global Kubernetes Architecture That Never Sleeps](https://blog.devops.dev/multi-cluster-disaster-recovery-building-a-global-kubernetes-architecture-that-never-sleeps-fcaf5b0e352a)
 - [Medium - Kubernetes multi-cluster implementation in under 10 minutes](https://medium.com/itnext/kubernetes-multi-cluster-implementation-in-under-10-minutes-2927952fb84c)
 - [DevOps VN - Thiết kế Multi-Cluster / Multi-Environment Strategy: dev~staging~prod như thế nào để vừa an toàn vừa nhanh?](https://devops.vn/posts/thiet-ke-multi-cluster-multi-environment-strategy-devstagingprod-nhu-the-nao-de-vua-an-toan-vua-nhanh/) 🌟 **(Recommended)**
-- [Plural - Simplifying Kubernetes Multi-Region Management: Challenges & Solutions](https://www.plural.sh/blog/managing-multi-region-kubernetes-deployments-with-plural/)
+- [Plural - Simplifying Kubernetes Multi-Region Management: Challenges & Solutions](https://www.plural.sh/blog/managing-multi-region-kubernetes-deployments-with-plural/) 🌟 **(Recommended)**
 - [Youtube - Pods Everywhere! InterLink: A Virtual Kubelet Abstraction Streamlining HPC… - Diego Ciangottini](https://www.youtube.com/watch?v=M3uLQiekqo8)
 - [AWS - Hybrid and Multi-Region Kubernetes Orchestration Using Kublr](https://aws.amazon.com/blogs/apn/hybrid-and-multi-region-kubernetes-orchestration-using-kublr/)
 - [AWS - Running AWS Fargate with virtual-kubelet](https://aws.amazon.com/blogs/opensource/aws-fargate-virtual-kubelet/)
 - [Blog - Scheduling simulations and ghosts in the cluster 🪄](https://vibhavstechdiary.substack.com/p/scheduling-simulations-and-ghosts)
 - [Medium - Multi-Cluster & Disaster Recovery: Building a Global Kubernetes Architecture That Never Sleeps](https://blog.devops.dev/multi-cluster-disaster-recovery-building-a-global-kubernetes-architecture-that-never-sleeps-fcaf5b0e352a)
 - [Tigera - Secure and Scalable Kubernetes for Multi-Cluster Management](https://www.tigera.io/blog/secure-and-scalable-kubernetes-for-multi-cluster-management/)
+- [Cilium - Multi-Cluster Kubernetes Explained](https://cilium.io/blog/2026/06/13/multi-cluster-kubernetes-explained/) 🌟 **(Recommended)**
 ## Multi-Cluster "Centric" Decision Matrix
 
 | **Architectural Centric**                       | **Core Philosophy**                                                                                                                                                                                                                               | **When to Choose This Strategy (Triggers)**                                                                                                                                                                            | **Key Open-Source & Enterprise Tools**                                                                                                                                         | **The Reality Check (Trade-offs)**                                                                                                                                                                         |
@@ -1426,52 +1427,42 @@ That's why you should make the checklist about DNS for your RKE2 or any selfhost
 
 Here is the evolutionary matrix of multi-cluster strategies, moving from the earliest approaches to modern production-grade standards.
 
-| **Generation / Strategy**                                          | **The Core Concept & Visual Metaphor**                                                                                                                                                                                                                                                       | **Evolution Period**                            | **Key Open-Source Tools**                                                                                                                                                                                                                             | **Pros**                                                                                                                                                                                                                                                  | **Cons**                                                                                                                                                                                                       |
-| ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **1. The Island Model** _(Siloed / Independent)_                   | **"Every Cluster is an Isolated Kingdom"**<br><br>Each cluster is built, upgraded, and managed completely independently. Engineers manually switch contexts to deploy apps.                                                                                                                  | 2015 – 2018 _(Early K8s Days)_                  | • `kubectl` (context switching)<br><br>• Bash / Python automation scripts<br><br>• Ansible / Terraform                                                                                                                                                | • Total isolation; a failure in one cluster cannot affect another.<br><br>• Simplest conceptual model to understand.                                                                                                                                      | • Severe configuration drift across environments.<br><br>• Massive operational fatigue as the number of clusters grows.<br><br>• No native cross-cluster communication.                                        |
-| **2. Kubernetes Federation** _(KubeFed v1 / v2)_                   | **"The Single Emperor Control Plane"**<br><br>An umbrella "Federation Control Plane" sits above all clusters. You submit a single configuration to the master API, and it attempts to duplicate or split resources across downstream clusters.                                               | 2017 – 2021 _(The Experimental Era)_            | • **KubeFed** _(v1 & v2 - now archived/deprecated)_<br><br>• Early prototype frameworks                                                                                                                                                               | • Single API endpoint to manage workloads globally.<br><br>  <br><br>• Native cross-cluster replica scheduling.                                                                                                                                           | • **Extremely high architectural complexity.**<br><br>• Custom Resource Definitions (CRDs) broke easily across federated boundaries.<br><br>• If the federation master crashed, downstream cluster sync froze. |
-| **3. GitOps Hub-and-Spoke** _(Modern Standard)_                    | **"Git is the Source of Truth; The Hub is the Operator"**<br><br>Instead of unifying the Kubernetes APIs, this approach unifies the **State** via Git. A central management cluster (Hub) reads Git manifests and uses push/pull mechanics to deploy to target downstream clusters (Spokes). | 2020 – Present _(The Production Baseline)_      | • **Argo CD** _(utilizing ApplicationSets & Cluster Generators)_<br><br>• **Flux CD**<br><br>• **Crossplane** _(for provisioning the clusters via GitOps)_                                                                                            | • Highly scalable; easily manages dozens of clusters.<br><br>• Zero configuration drift (Git matches live state).<br><br>• Loose coupling: if the Hub fails, downstream apps keep running normally.                                                       | • Spoke clusters still lack network connectivity with each other out-of-the-box.<br><br>• The central GitOps controller needs administrative access credentials to all spoke clusters.                         |
-| **4. Advanced Fleet Orchestration & Mesh** _(Cutting-Edge Modern)_ | **"The Connected Living Ecosystem"**<br><br>  <br>  <br><br>Combines declarative cluster lifecycle management (treating clusters as programmatic objects) with high-performance eBPF networking to create a flat cross-cluster network overlay.                                              | 2022 – Present _(The Platform Engineering Era)_ | • **Cluster API (CAPI)** _(Lifecycle)_<br><br>  <br><br>• **Cilium ClusterMesh** _(Networking)_<br><br>  <br><br>• **Rancher / Open Cluster Management (OCM)** _(Fleet Management)_<br><br>  <br><br>• **Karmada** _(Modern Cloud-Native Federation)_ | • **True multi-cluster service discovery** (Pods in Cluster A can talk directly to Pods in Cluster B securely via eBPF).<br><br>  <br><br>• Dynamic, programmatic scale-out of infrastructure.<br><br>  <br><br>• High Availability & localized failover. | • Requires deep networking expertise (eBPF, BGP, routing).<br><br>  <br><br>• High initial design and setup overhead.<br><br>  <br><br>• Significant cognitive load to maintain day-2 operations.              |
+| **Generation / Strategy**                                          | **The Core Concept & Visual Metaphor**                                                                                                                                                                                                                                                       | **Evolution Period**                            | **Key Open-Source Tools**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | **Pros**                                                                                                                                                                                                                                                  | **Cons**                                                                                                                                                                                                       |
+| ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1. The Island Model** _(Siloed / Independent)_                   | **"Every Cluster is an Isolated Kingdom"**<br><br>Each cluster is built, upgraded, and managed completely independently. Engineers manually switch contexts to deploy apps.                                                                                                                  | 2015 – 2018 _(Early K8s Days)_                  | • `kubectl` (context switching)<br><br>• Bash / Python automation scripts<br><br>• Ansible / Terraform                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | • Total isolation; a failure in one cluster cannot affect another.<br><br>• Simplest conceptual model to understand.                                                                                                                                      | • Severe configuration drift across environments.<br><br>• Massive operational fatigue as the number of clusters grows.<br><br>• No native cross-cluster communication.                                        |
+| **2. Kubernetes Federation** _(KubeFed v1 / v2)_                   | **"The Single Emperor Control Plane"**<br><br>An umbrella "Federation Control Plane" sits above all clusters. You submit a single configuration to the master API, and it attempts to duplicate or split resources across downstream clusters.                                               | 2017 – 2021 _(The Experimental Era)_            | • **[KubeFed](https://github.com/kubernetes-retired/kubefed)** _(v1 & v2 - now archived/deprecated)_, e.g: **[mck8s](https://github.com/moule3053/mck8s)**<br><br>• Early prototype frameworks                                                                                                                                                                                                                                                                                                                                                                                                         | • Single API endpoint to manage workloads globally.<br><br>  <br><br>• Native cross-cluster replica scheduling.                                                                                                                                           | • **Extremely high architectural complexity.**<br><br>• Custom Resource Definitions (CRDs) broke easily across federated boundaries.<br><br>• If the federation master crashed, downstream cluster sync froze. |
+| **3. GitOps Hub-and-Spoke** _(Modern Standard)_                    | **"Git is the Source of Truth; The Hub is the Operator"**<br><br>Instead of unifying the Kubernetes APIs, this approach unifies the **State** via Git. A central management cluster (Hub) reads Git manifests and uses push/pull mechanics to deploy to target downstream clusters (Spokes). | 2020 – Present _(The Production Baseline)_      | • **[Argo CD](https://argo-cd.readthedocs.io/en/stable/)** _(utilizing ApplicationSets & Cluster Generators)_<br><br>• **[Flux CD](https://fluxcd.io/)**<br><br>• **[Crossplane](https://www.crossplane.io/)** _(for provisioning the clusters via GitOps)_                                                                                                                                                                                                                                                                                                                                            | • Highly scalable; easily manages dozens of clusters.<br><br>• Zero configuration drift (Git matches live state).<br><br>• Loose coupling: if the Hub fails, downstream apps keep running normally.                                                       | • Spoke clusters still lack network connectivity with each other out-of-the-box.<br><br>• The central GitOps controller needs administrative access credentials to all spoke clusters.                         |
+| **4. Advanced Fleet Orchestration & Mesh** _(Cutting-Edge Modern)_ | **"The Connected Living Ecosystem"**<br><br>  <br>  <br><br>Combines declarative cluster lifecycle management (treating clusters as programmatic objects) with high-performance eBPF networking to create a flat cross-cluster network overlay.                                              | 2022 – Present _(The Platform Engineering Era)_ | • **[Cluster API (CAPI)](https://cluster-api.sigs.k8s.io/)** _(Lifecycle)_<br><br>  <br><br>• **[Cilium ClusterMesh](https://cilium.io/use-cases/cluster-mesh/)** _(Networking)_<br><br>  <br><br>• **[Rancher Fleet](https://fleet.rancher.io/) / [Open Cluster Management (OCM)](https://open-cluster-management.io/) / [KubeFleet](https://github.com/kubefleet-dev/kubefleet) / [Sveltos](https://github.com/projectsveltos/sveltos) / [AKS Fleet](https://github.com/Azure/fleet)** _(Fleet Management)_<br><br>  <br><br>• **[Karmada](https://karmada.io/)** _(Modern Cloud-Native Federation)_ | • **True multi-cluster service discovery** (Pods in Cluster A can talk directly to Pods in Cluster B securely via eBPF).<br><br>  <br><br>• Dynamic, programmatic scale-out of infrastructure.<br><br>  <br><br>• High Availability & localized failover. | • Requires deep networking expertise (eBPF, BGP, routing).<br><br>  <br><br>• High initial design and setup overhead.<br><br>  <br><br>• Significant cognitive load to maintain day-2 operations.              |
 
-#### 1. The Island Model (Manual)
+**The Island Model (Manual)**
 
 Imagine you have three servers in three different regions. To deploy an update, your script must sequentially connect to Server 1, execute a command, switch tokens, connect to Server 2, execute a command, and so on. If Server 2 fails halfway through, your environment is left in a broken, half-updated state.
 
-#### 2. The Federation Model (Centralized API)
+**The Federation Model (Centralized API)**
 
 Imagine a giant proxy. You tell the proxy: _"I want 10 replicas of my application spread across the world."_ The proxy handles the math, talking to the individual clusters for you. However, if one cluster runs a slightly different Kubernetes version or lacks a specific storage class, the proxy configuration breaks, blocking the entire system.
 
-#### 3. GitOps Hub-and-Spoke (State Synchronization)
+Explore more about Federation with Kubernetes at
+
+- [Tigera - Kubernetes Federation (KubeFed): Mastering Multi-Cluster Management](https://www.tigera.io/learn/guides/kubernetes-security/kubernetes-federation/)
+- [Trilio - KubeFed Explained: Kubernetes Federation Guide](https://trilio.io/resources/kubefed/)
+
+**GitOps Hub-and-Spoke (State Synchronization)**
 
 Think of this like a television broadcast network. You don't configure individual TVs. Instead, you update the video file at the central studio (your Git repository).
 
-- The **Argo CD Hub** reads the repository and uses an `ApplicationSet`.
+- The **[Argo CD ](https://argo-cd.readthedocs.io/en/stable/)Hub** reads the repository and uses an `ApplicationSet`.
 - It looks at a list of cluster targets and broadcasts the specific configuration overlay to Cluster-Dev, Cluster-Staging, and Cluster-Prod simultaneously.
 - If a cluster loses connection to the hub, it safely continues broadcasting its last known state until connection is restored.
 
-```acsii
-                        ┌───────────┐
-                        │  Git Repo │
-                        └─────┬─────┘
-                              │
-                    ┌─────────▼─────────┐
-                    │ Argo CD (Hub Inst)│
-                    └─┬───────┬───────┬─┘
-                      │       │       │ (Push/Pull State)
-         ┌────────────┘       │       └────────────┐
-         ▼                    ▼                    ▼
-┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐
-│ Spoke Cluster 1 │  │ Spoke Cluster 2 │  │ Spoke Cluster 3 │
-│      (Dev)      │  │    (Staging)    │  │     (Prod)      │
-└─────────────────┘  └─────────────────┘  └─────────────────┘
-```
+![[thumbnail-argocd-hub-and-spoke-arch.png]]
 
-#### 4. Advanced Fleet Orchestration & Mesh (Unified Ecosystem)
+**Advanced Fleet Orchestration & Mesh (Unified Ecosystem)**
 
 In this model, the boundaries between clusters become transparent to the software layer.
 
-- You use **Cluster API (CAPI)** to define your clusters in code. If you need a new environment, you commit a manifest, and a new downstream cluster automatically spins up (e.g., an RKE2 or K3s cluster on bare-metal or cloud infrastructure).
-- Simultaneously, **Cilium ClusterMesh** connects their control planes at the network layer. If a service running in your Staging cluster needs to query a global shared database service in a management cluster, it can call `database.shared.svc.cluster.local` natively. Cilium routes that traffic safely across cluster borders using encrypted eBPF tunnels without needing public ingresses or complex reverse proxies.
+- You use **[Cluster API (CAPI)](https://cluster-api.sigs.k8s.io/)** to define your clusters in code. If you need a new environment, you commit a manifest, and a new downstream cluster automatically spins up (e.g., an RKE2 or K3s cluster on bare-metal or cloud infrastructure).
+- Simultaneously, **[Cilium ClusterMesh](https://cilium.io/use-cases/cluster-mesh/)** connects their control planes at the network layer. If a service running in your Staging cluster needs to query a global shared database service in a management cluster, it can call `database.shared.svc.cluster.local` natively. Cilium routes that traffic safely across cluster borders using encrypted eBPF tunnels without needing public ingresses or complex reverse proxies.
 
 ![[thumbnail-fleet-orchestration-k8s.png]]
 ## Multi-Cluster "Team Size" Matrix
@@ -1516,11 +1507,12 @@ When controlling global traffic ingress across regions, the architectural decisi
 
 To successfully link this into your platform's core code, your team needs to focus its research on two core choices:
 
-#### 1. Anycast Layer-7 Routing vs. Geo-DNS
+**Anycast Layer-7 Routing vs. Geo-DNS**
 
 - **If you choose Cloud GLB (Layer-7 Anycast):** External users query a single IP address worldwide. The cloud network automatically steers packets to the optimal region at the fiber layer. This is excellent for high-performance internet applications, but it requires deep integration with specific cloud objects (like Google's Network Endpoint Groups).
 - **If you choose Open-Source (`k8gb`):** Each cluster runs a lightweight CoreDNS instance acting as a top-level authority for your application's domain. When a client requests `app.company.com`, the clusters dynamically negotiate who is healthiest and return the exact regional IP. It mimics expensive hardware GSLBs using pure cloud-native open source.
-#### 2. The Ingress Boundary vs. The Flat Network Mesh
+
+**The Ingress Boundary vs. The Flat Network Mesh**
 
 The true power move for an internal developer platform comes from combining **Edge Ingress** with an **Internal Mesh**:
 
@@ -1552,6 +1544,154 @@ Explore more for ClusterMesh at
 - [Cilium Blog - Multi Cluster Networking with Cilium and Friends](https://cilium.io/blog/2022/04/12/cilium-multi-cluster-networking/)
 - [Isovalent Blog - Topology Aware Routing and Service Mesh across Clusters with Cluster Mesh](https://isovalent.com/blog/post/topology-aware-routing-and-service-mesh-across-clusters-with-cluster-mesh/)
 - [Blog - Cluster Mesh with Cilium Overview](https://mitchmurphy.io/cilium-cluster-mesh-overview/)
+## Multi-Cluster "Network-Centric" Topologies
+
+From my perspective with **Flannel CNI** setup, this one usually stick with K3s or RKE2, you can get adopt with replacing the CNI with eBPF-driven Cilium to using Cluster-Mesh. But to expand more ability you can get another alternative solution down from Application Layer (L7) control down to Infrastructure Layer (L3) with Open Source for routing traffic.
+
+**Part 1: Application-Layer & K8s-Native Connectivity (L7 / Control Plane)**
+
+![[thumbnail-k8s-multi-cluster-network-l7.png]]
+
+>[!info]
+>These solutions bypass low-level infrastructure network changes by managing connectivity inside Kubernetes or at the application layer.
+
+- **Multi-Cluster Service Mesh (L7 Sidecar/Ambient Routing)**
+    - **How it works:** Connects clusters via secure Application Gateways using proxies (mTLS). Pods do not need to know each other's actual IP addresses; they resolve remote locations via internal DNS.
+    - **Open-Source Tools:** **[Istio](https://github.com/istio/istio)** (Multi-Primary or Primary-Remote architecture), **[Linkerd](https://github.com/linkerd/linkerd2)** (utilizes a lightweight `mirrored services` mechanism to replicate Service endpoints across clusters).
+
+| **Solution**                                                                                                | **Federation Architecture**                                                                                                                         | **Strengths**                                                                                      | **Use Case**                                                     |
+| ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| **[Istio Multi-Cluster](https://istio.io/)** _(Primary-Remote / Multi-Primary)_                             | Uses dedicated **East-West Ingress Gateways** (Envoy) on public ports or internal LBs. Traffic routes via SNI (Server Name Indication) passthrough. | Deep observability, fine-grained canary rollouts across clouds, zero flat L3 requirement.          | Enterprise microservices across public and private clouds.       |
+| **[Kuma](https://github.com/kumahq/kuma) / [Kong Mesh](https://developer.konghq.com/mesh/)** _(Multi-Zone)_ | A central **Global Control Plane** manages lightweight **Zone Control Planes** on each cluster. Uses Zone Ingress & Egress proxies.                 | Extremely lightweight compared to Istio. Native support for both K8s and non-K8s (VMs/bare metal). | Hybrid cloud deployments with mixed K8s and legacy VM workloads. |
+| **[Consul WAN Federation](https://developer.hashicorp.com/consul/docs/east-west/wan-federation)**           | Connects clusters via **Mesh Gateways**. Services in Cluster A discover services in Cluster B through Consul datacenter federation.                 | Native integration with HashiCorp Vault for mTLS CA authority.                                     | Environments heavily standardized on HashiCorp tooling.          |
+
+- **Kubernetes Multi-Cluster Services API (MCS-API)**
+    - **How it works:** A unified Kubernetes standard. You export a service using `ServiceExport` in Cluster A, and a controller auto-generates a `ServiceImport` in Cluster B.
+    - **Open-Source Tools:** **[KubeSlice](https://github.com/kubeslice/kubeslice)**, **[MCS-API](https://github.com/kubernetes-sigs/mcs-api)**
+
+- **eBPF Mesh-Only Hybrid Layer**
+    - **How it works:** You keep your simple Flannel CNI intact for local, intra-cluster Pod communications but install an eBPF controller solely dedicated to cross-cluster identity syncing and routing.
+    - **Open-Source Tools:** **[Cilium](https://github.com/cilium/cilium)** (deployed in a specific _Mesh-Only_ mode over an existing CNI baseline).
+
+- **Virtual Application Networks**
+	- **How is works**: - Uses an AMQP message-broker topology at Layer 7 instead of a VPN. One cluster exposes a public port; other clusters establish outbound links. Traffic shifts to layer 7 application sockets.
+	- **Open-Source Tools**: **[Skupper](https://github.com/skupperproject/skupper)**
+
+**Part 2: Pure Infrastructure-Layer & Open-Source Network Routing (L3 Underlay)**
+
+![[thumbnail-k8s-multi-cluster-network-l3.png]]
+
+>[!info]
+>These solutions offload cross-cluster communication to bare-metal routing topologies, open networking, or modern overlay fabrics, avoiding traditional point-to-point VPN configurations.
+
+| Solution Strategy                                           | Operating Mechanism                                                                                                                                                                                       | Key Advantages                                                                                                                                           | Trade-offs & Prerequisites                                                                                                                      | Recommended Open-Source Tooling                                                                                                                                                                                                                                                                      |
+| ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1. Direct Node-Level BGP Peering** _(Flat L3 Topology)_   | Runs a lightweight routing daemon directly on the K8s Nodes. Nodes advertise local Pod CIDR blocks natively to the network's Core Switch or upstream Router via **eBGP/iBGP**.                            | • Native hardware speeds (Line-rate).  <br>• No encapsulation overhead.  <br>• Pod IPs are fully visible and traceable natively on the physical network. | • Requires administrative access to the network's physical infrastructure.  <br>• Massive clusters can bloat upstream hardware routing tables.  | • **[FRRouting (FRR)](https://github.com/frrouting/frr):** Industry-standard routing engine.  <br>• **[BIRD](https://github.com/CZ-NIC/bird):** High-performance Internet routing daemon.  <br>• **[MetalLB](https://github.com/metallb/metallb) (BGP Mode):** Native K8s load balancer serving BGP. |
+| **2. Upstream EVPN / VXLAN Gateway** _(Hardware-Offloaded)_ | Shifts cross-cluster packet manipulation entirely onto the network switches (Spine-Leaf). Upstream switches exchange Pod IP locations via **BGP EVPN** and encapsulate/decapsulate packets automatically. | • Zero resource overhead on K8s Nodes.  <br>• The local Flannel setup remains completely untouched and isolated.                                         | • Strictly bound to custom, open-source or proprietary bare-metal hardware topologies.  <br>• Switches must support advanced BGP EVPN profiles. | • **[SONiC](https://github.com/sonic-net/SONiC) (Software for Open Networking in the Cloud):** Open-source Linux-based network OS backed by Microsoft/Open Compute Project.                                                                                                                          |
+| **3. Native BGP CNI Migration** _(Flannel Replacement)_     | Replaces the Flannel VXLAN layer entirely with a CNI that treats K8s Nodes as architectural L3 Edge Routers, allowing automated orchestration out to the network core.                                    | • Unified network lifecycle management natively inside K8s using Custom Resource Definitions (CRDs).                                                     | • Requires migrating away from Flannel, which induces temporary cluster network downtime during rollout.                                        | • **[Calico CNI](https://github.com/projectcalico/calico):** (Configured with VXLAN/IP-in-IP disabled and BGP Native Peering enabled).  <br>• **[Kube-router](https://github.com/cloudnativelabs/kube-router):** Lean GoBGP-centric option.                                                          |
+| **4. P2P Mesh SD-WAN Overlay** _(Cross-Location Fabric)_    | Creates an automated, encrypted, peer-to-peer Full-Mesh overlay between all cluster nodes utilizing WireGuard. Automatically calculates paths and pierces firewalls.                                      | • Seamlessly bridges Hybrid-Cloud environments (On-Premises to AWS/GCP).  <br>• Easy NAT/Firewall traversal via STUN/DERP.                               | • Minor performance impact caused by kernel/CPU crypto operations over WireGuard tunnels.                                                       | • **[Headscale](https://github.com/juanfont/headscale):** Self-hosted, open-source coordination server for Tailscale.  <br>• **[Netmaker](https://github.com/gravitl/netmaker):** Tailor-made, high-speed virtual networking engine optimized for K8s.                                               |
+
+>[!info]
+>Others solutions with keyword to explore **Open-Source Peer-to-Peer Software-Defined Networks (SDNs)**
+
+- **[Nebula](https://github.com/slackhq/nebula) (Slack Open Source):** A mutually-authenticated peer-to-peer mesh network. Uses "Lighthouse" nodes (similar to Headscale) for discovery, but nodes form direct encrypted P2P tunnels using Noise protocol primitives. _Advantage:_ High performance, built-in security groups (ACLs) enforced at the individual node level, and zero dependency on Kubernetes CRDs.
+
+**Part 3: Mesh-VPN & Automated Overlay Fabrics (Layer 3/4)**
+
+![[thumbnail-k8s-multi-cluster-network-vpn-mesh.png]]
+
+>[!info]
+>These solutions are the best for Direct Pod-to-Pod L3 routing over untrusted networks (e.g., Internet, Hybrid-Cloud) without changing the local Flannel setup.
+
+- **Kernel-Space WireGuard Mesh ([Kilo](https://github.com/squat/kilo)):** An open-source mesh-VPN that runs as a lightweight add-on over Flannel. It utilizes Linux kernel-space WireGuard for ultra-fast, encrypted P2P connections. It automatically manages encryption key-pairs and endpoints via K8s CRDs.
+- **CNF-Compliant Multi-Cluster Fabric ([Submariner](https://github.com/submariner-io/submariner)):** A CNCF project that deploys dedicated "Gateway Nodes" to establish secure IPsec or WireGuard tunnels between clusters. It includes a cross-cluster DNS engine called **[Lighthouse](https://submariner.io/getting-started/architecture/service-discovery/)** to resolve cross-cluster workloads.
+- **Virtual K8s Mesh-VPN ([Liqo](https://github.com/liqotech/liqo))**: an open-source decentralized multi-cluster fabric that merges automated Layer 3/4 WireGuard/VXLAN tunnels with resource-sharing virtualization. Instead of managing complex individual routes, it transforms remote clusters into local **Virtual Nodes**.
+
+At the end, I think their are tons of options to choose, it depends on your decision, your techstack, and situation. Here what I got from research
+
+| Solution & Paradigm                             | Primary Tooling                    | Core Mechanics                                                                              | Pros (Strengths)                                                                                                                 | Cons (Trade-offs)                                                                                                             | Ideal Use Case                                                                                   |
+| ----------------------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| **Paradigm 1: Layer 7 Service Overlays**        | **Skupper**, Linkerd Multi-cluster | Connects applications via L7 proxy tunnels (AMQP/HTTPS/gRPC) instead of routing IP packets. | • **100% immune** to overlapping Pod CIDRs.  <br>• Extremely firewall/NAT friendly.  <br>• No changes to cluster infrastructure. | • High performance overhead for non-HTTP traffic.  <br>• Pods cannot directly ping each other via IP.                         | Multi-cloud or multi-region applications with duplicate/overlapping IP ranges.                   |
+| **Paradigm 2a: Mesh-VPN (Point-to-Point)**      | **Kilo**                           | Creates an automated, kernel-space **WireGuard** full-mesh VPN over Flannel.                | • Fast kernel-space encryption.  <br>• Direct Pod-to-Pod L3 visibility.  <br>• Lightweight footprint.                            | • Double encapsulation (VXLAN + WireGuard) drops MTU.  <br>• Breaks if Pod CIDRs overlap.                                     | Geographically dispersed clusters over the public internet with unique IP pools.                 |
+| **Paradigm 2b: CNCF Multi-Cluster Fabric**      | **Submariner**                     | Deploys specialized Gateway Nodes using IPsec/WireGuard tunnels and cross-cluster DNS.      | • Standardized CNCF project.  <br>• **GlobalNAT** feature resolves overlapping IPs.  <br>• Multi-cluster DNS (Lighthouse).       | • Requires dedicated Gateway Nodes.  <br>• Complex configuration compared to Kilo.                                            | Large-scale enterprise production multi-clusters requiring native Pod-to-Pod L3 paths.           |
+| **Paradigm 2c: Virtualized Decentralized Mesh** | **Liqo**                           | Virtualizes the remote cluster into a local **Virtual Node** using automated WireGuard.     | • **Dynamic NAT** resolves IP overlaps automatically.  <br>• Automatic firewall/NAT traversal.  <br>• Seamless Pod offloading.   | • Cross-cluster latency risks if stateful Pods split.  <br>• Requires Flannel MTU manual tuning.                              | Hybrid-cloud bursting where Cluster A needs to borrow CPU/RAM from Cluster B seamlessly.         |
+| **Paradigm 3: Underlay BGP Peering**            | **FRRouting (FRR)**, BIRD          | Node hosts run BGP daemons to peer directly with physical core switches.                    | • **Zero encapsulation overhead** (Native line-rate speed).  <br>• Pod IPs are visible on physical network devices.              | • Requires complete administrative access to physical routers/switches.  <br>• Switches can bloat if clusters scale too fast. | On-premises Bare-Metal datacenters where raw network throughput and lowest latency are critical. |
+
+
+| **Solution**           | **Native CNI Requirement**            | **Pod-to-Pod L3 Speed**             | **Overlapping IP Handling**   | **Inbound Firewall Rules Required on Private Cloud?** |
+| ---------------------- | ------------------------------------- | ----------------------------------- | ----------------------------- | ----------------------------------------------------- |
+| **Cilium ClusterMesh** | **Cilium Only**                       | **Maximum** (eBPF Kernel Bypass)    | ❌ Requires unique Pod CIDRs   | Yes (ClusterMesh API / WireGuard ports)               |
+| **Submariner**         | **Any CNI** (Flannel, Calico, Cilium) | **High** (Kernel WireGuard / IPsec) | ✅ Supported via Globalnet NAT | Yes (Gateway Node IPsec/WireGuard port)               |
+| **Kilo**               | **Flannel / K3s Native**              | **High** (Kernel WireGuard)         | ❌ Requires unique Pod CIDRs   | Yes (WireGuard UDP port)                              |
+| **Skupper**            | **Any CNI** (Flannel, Cilium, etc.)   | **Moderate** (L7 AMQP Proxy)        | ✅ 100% Immune to IP overlaps  | **NO** (Outbound-only mTLS link to public cloud)      |
+
+**Part 4. Edge-Native Control Plane Decoupling**
+
+>[!info]
+>If your spoke clusters include resource-constrained edge devices (e.g., Raspberry Pi, NVIDIA Jetson, industrial PCs) connected over high-latency or intermittent cellular connections
+
+- **[KubeEdge](https://github.com/kubeedge/kubeedge) (CNCF Incubating):** Replaces `kubelet` on edge nodes with `edged` and uses **MQTT / WebSockets** over a single outbound TCP connection (`CloudCore` on Hub $\leftrightarrow$ `EdgeCore` on Edge). Edge nodes continue running local workloads natively even during WAN outages lasting days.
+- **[OpenYurt](https://github.com/openyurtio/openyurt) (CNCF Incubating):** Converts standard Kubernetes clusters into edge-aware clusters by introducing an edge proxy (`YurtHub`) that caches APIServer responses locally.
+- **[clusternet](https://github.com/clusternet/clusternet) (CNCF SandBox)**: an open source _**add-on**_ that helps you manage thousands of millions of Kubernetes clusters as easily as visiting the Internet. No matter the clusters are running on public cloud, private cloud, hybrid cloud, or at the edge, Clusternet helps setup network tunnels in a configurable way and lets you manage/visit them all as if they were running locally. This also helps eliminate the need to juggle different management tools for each cluster.
+
+---
+Explore more couple of great articles and solution about this topics
+
+- [Cisco - Cloud-Native SD-WAN (CN-WAN) Project](https://developer.cisco.com/docs/cloud-native-sdwan/cloud-native-sd-wan-cn-wan-project/)
+- [RedHat - Multicluster Service Discovery in OpenShift (Part 1)](https://www.redhat.com/en/blog/multicluster-service-discovery-in-openshift)
+- [RedHat - Multicluster Service Discovery in OpenShift (Part 2)](https://www.redhat.com/en/blog/multicluster-service-discovery-in-openshift-part-2)
+- [Youtube - Building a Multi-Cloud Service Mesh from the Ground Up with Kilo](https://www.youtube.com/watch?v=IDJhQ7vHisE)
+- [Blog - WireGuard article series (eight): An introduction to the K8S CNI Kilo based on WireGuard](https://e-whisper.com/posts/3375/)
+- [Dev.to - Hybrid k8s cluster | Talos & Kubespan | Kilo wireguard](https://dev.to/bnovickovs/hybrid-k8s-cluster-talos-kubespan-kilo-wireguard-1f45)
+- [CNCF - Connecting distributed Kubernetes with Cilium and SD-WAN: Building an intelligent network fabric ](https://www.cncf.io/blog/2025/10/25/connecting-distributed-kubernetes-with-cilium-and-sd-wan-building-an-intelligent-network-fabric/)
+- [Youtube - CoreDNS for Hybrid and Multi-cloud](https://www.youtube.com/watch?v=7ZQgIECUEwg) - [Slide](https://static.sched.com/hosted_files/kccnceu20/6b/KubeCon%20-%20Amsterdam%20-%20CoreDNS.pdf)
+- [Medium - Kubernetes Multi-Clustering the Easy Way!](https://itnext.io/kubernetes-multi-clustering-the-easy-way-f0d9ce78160d)
+- [Networkers Home - Multi-Cluster Kubernetes Networking — Federation, Submariner & Skupper](https://www.networkershome.com/fundamentals/kubernetes-networking/kubernetes-multi-cluster/)
+- [GroundCover - eBPF and Service Mesh: Performance and Observability](https://www.groundcover.com/blog/ebpf-and-service-mesh)
+- [Dev.to - Polyglot Microservices Communication in Kubernetes with DNS, CoreDNS, and Istio (Java & Python)](https://dev.to/gokul_gk/polyglot-microservices-communication-in-kubernetes-with-dns-coredns-and-istio-java-python-4gb9)
+
+## Multi-Cluster worth with "Multi-Cloud"
+
+Bridging a **Managed Cloud Cluster** (e.g., AWS EKS, GCP GKE, Azure AKS) with a **Private / On-Premises Cluster** (e.g., Bare-Metal, VMware, K3s/K0s) is one of the hardest networking challenges in Kubernetes platform engineering.
+
+The friction stems from three fundamental architectural mismatches:
+
+1. **CNI IPAM Clash:** Cloud providers use VPC-native CNIs (AWS VPC CNI, Azure CNI) that assign real cloud subnets to pods. Private clusters typically use overlay CNIs (Flannel, Calico) with private `10.244.0.0/16` CIDRs.
+2. **Asymmetric Network Boundaries:** Managed cloud instances have public subnets or Transit Gateways. Private data centers and edge nodes usually sit behind strict corporate firewalls, NATs, or cellular CGNATs with zero inbound public access.
+3. **CIDR Collisions:** On-prem networks and cloud VPCs frequently share overlapping private IP pools (e.g., both use `10.0.0.0/16`), causing standard IP routing to fail without Network Address Translation (NAT).
+
+Below are the 5 definitive architectural patterns to solve this bridge, categorized by network depth and operational trade-offs.
+
+|**Evaluation Metric**|**Pattern 1: L7 Mesh (Skupper)**|**Pattern 2: L3 Fabric (Submariner)**|**Pattern 3: eBPF (Cilium ClusterMesh)**|**Pattern 4: Virtual Node (Liqo)**|**Pattern 5: Control Plane Only (argocd-agent)**|
+|---|---|---|---|---|---|
+|**Inbound Ports Needed On-Prem?**|**NO** (Outbound only)|**YES** (1 UDP WireGuard port)|**YES** (Direct Node reachability)|**NO** (Outbound WireGuard)|**NO** (Outbound gRPC)|
+|**IP Overlap Tolerance**|**100% Immune**|Supported via Globalnet NAT|**Requires Unique CIDRs**|Supported via 1:1 NAT|**100% Immune**|
+|**Managed Cloud CNI Compatibility**|Compatible with ALL (AWS/GCP/Azure)|Compatible with ALL|Requires Cilium Chaining or replacement|Compatible with ALL|Compatible with ALL|
+|**Performance / Throughput**|Moderate (L7 Proxy)|High (Kernel WireGuard)|**Maximum** (eBPF Kernel Bypass)|High (Dynamic P2P)|N/A (Control Plane Only)|
+|**Best Brainstorming Use Case**|Strict corporate firewalls, overlapping subnets, rapid app-level interconnect.|Full Pod-to-Pod L3 routing across EKS and on-prem Flannel/K3s.|High-performance, low-latency, unified security policies across hybrid cloud.|Dynamic cloud bursting & capacity offloading.|Pure GitOps IDP fleet delivery with zero shared data plane.|
+
+Otherwise, here is the pure Network-Layer Solution (OS / Host Level)
+
+| **Evaluation Dimension**    | **Pure Network-Layer (NetBird, Nebula, ZeroTier, WireGuard)**                                                            | **Kubernetes-Native Layer (Submariner, Cilium ClusterMesh, Kilo)**                                  |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
+| **Lifecycle & Coupling**    | **100% Decoupled.** Network operates independently at the OS layer; survives K8s control plane outages or upgrades.      | **Tightly Coupled.** Network is managed via K8s CRDs/Operators; depends on API server availability. |
+| **Non-K8s Workload Access** | **Native & Seamless.** Bare-metal databases, legacy VMs, developer laptops, and IoT devices join the same mesh natively. | **Restricted.** Designed strictly for Kubernetes Pods, Services, and Nodes.                         |
+| **Service Discovery**       | Requires standard CoreDNS static forwarding or external OS-level DNS entries.                                            | **Native K8s MCS-API.** Automatically syncs services via `ServiceExport` / `.clusterset.local`.     |
+| **NAT & CGNAT Traversal**   | **Superior.** Built-in STUN, WebRTC, or relay fallback mechanisms punch through strict cellular/corporate NATs.          | **Moderate.** Generally requires at least one gateway node per cluster with a static public IP.     |
+| **Policy Enforcement**      | Enforced via OS IP rules, eBPF host firewalls, or Nebula PKI groups.                                                     | Enforced via Kubernetes NetworkPolicies using K8s labels (`app=frontend`).                          |
+| **GitOps Management Tool**  | Managed via OS provisioning tools (Ansible, Terraform, Packer, Cloud-Init).                                              | Managed via K8s GitOps engines (Argo CD, Crossplane, Kustomize).                                    |
+
+>[!question] Multi-Cluster Network Selection Model
+>**Choose Pure Network-Layer (OS)**
+>- K8s nodes must talk directly to non-K8s bare-mdetal DBs/VMs
+>- Edge Nodes operate behind strict 4G/CGNAT cellular NATs
+>- Network must remain active even if K8s APIServer crashes
+>  
+>**Choose K8s-Native Layer (CRDs)**
+>- 100% of workloads are in K8s
+>- You want ArgoCD to reconcile all network rules & tunnels
+>- You need dynamic K8s Service discovery (`.clusterset.local`)
+>- You enforece label-based K8s NetworkPolicies across clouds.
 
 # Mutating and Validation Webhook with Admission Controller
 
@@ -1565,10 +1705,12 @@ Reference for exploring more
 >
 >Several important features of Kubernetes require an admission controller to be enabled in order to properly support the feature. As a result, a Kubernetes API server that is not properly configured with the right set of admission controllers is an incomplete server that will not support all the features you expect.
 
-
 # Finalizers - Pre-hook deletion
 
 Reference for more information
 
 - [Kubernetes - Finalizers](https://kubernetes.io/docs/concepts/overview/working-with-objects/finalizers/)
 - [Kubernetes - Using Finalizers to Control Deletion](https://kubernetes.io/blog/2021/05/14/using-finalizers-to-control-deletion/)
+
+>[!info]
+>Finalizers are keys on resources that signal pre-delete operations. They control the garbage collection on resources, and are designed to alert controllers what cleanup operations to perform prior to removing a resource. However, they don’t necessarily name code that should be executed; finalizers on resources are basically just lists of keys much like annotations. Like annotations, they can be manipulated.

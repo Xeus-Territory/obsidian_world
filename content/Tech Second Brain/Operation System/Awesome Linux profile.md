@@ -7,6 +7,10 @@ tags:
   - zsh
 ---
 
+
+![[icon-linux.svg|center|400x400]]
+
+
 >[!sumarry]
 >This is about some configuration to make your effective when work with linux shell, `Oh-My-Zsh`. It will collection from multiple source, and process will describe on the following page, check it 😄
 

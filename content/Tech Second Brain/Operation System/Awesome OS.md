@@ -11,10 +11,8 @@ tags:
   - packer
 ---
 
->[!info]
->All eyes for OS with Linux, Windows and moreover. Practice and learn new thing 🤭🤭🤭
+![[thumbnail-awesome-os.png]]
 
-![[meme-winner-everywhere.png]]
 # Handheld notebook
 
 ## Cheatsheet

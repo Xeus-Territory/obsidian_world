@@ -13,9 +13,26 @@ tags:
 # Kubernetes
 ![[icon-kubernetes.png|center]]
 
-## Articles / Documentation / Practicing
+## Awesome repositories
 
-### Azure Kubernetes Service (AKS)
+- [awesome-k8s-resources](https://github.com/tomhuang12/awesome-k8s-resources): A curated list of awesome Kubernetes tools and resources 🌟 **(Recommended)**
+- [awesome-k8s-tools](https://github.com/vilaca/awesome-k8s-tools): List of container/k8s tools.
+- [awesome-krew-plugin](https://krew.sigs.k8s.io/plugins/): A list of Plugin which used by kubectl
+- [awesome-kubernetes](https://ramitsurana.github.io/awesome-kubernetes/): A curated list for awesome kubernetes sources 🚢🎉
+- [Deploy to Kuberenetes](https://deploy-to-kubernetes.readthedocs.io/en/latest/): Deploy a distributed AI stack to a multi-host or single-host Kubernetes cluster on CentOS 7 🌟 **(Recommended)**
+- [enhancements](https://github.com/kubernetes/enhancements): Enhancements tracking repo for Kubernetes 🌟 **(Recommended)**
+- [kubelabs](https://github.com/collabnix/kubelabs): Get Started with Kubernetes 🌟 **(Recommended)**
+- [Kubernetes Cluster API](https://cluster-api.sigs.k8s.io/) : About cluster API 🌟 **(Recommended)**
+- [Kubernetes/community](https://github.com/kubernetes/community) : Kubernetes community content
+- [Kubernetes CSI Drivers](https://kubernetes-csi.github.io/docs/drivers.html): The following are a set of CSI driver which can be used with Kubernetes 🌟 **(Recommended)**
+- [kubernetes-engine-samples](https://github.com/GoogleCloudPlatform/kubernetes-engine-samples): Sample applications for Google Kubernetes Engine (GKE) 🌟 **(Recommended)**
+- [Kubernetes/enhancements](https://github.com/kubernetes/enhancements): Enhancements tracking repo for Kubernetes
+- [kubernetes-homelab](https://github.com/lisenet/kubernetes-homelab): Building a multi-master multi-node Kubernetes homelab with kubeadm, Ansible, Helm and Terraform
+- [Kubernetes Schedule Plugins](https://scheduler-plugins.sigs.k8s.io/): Repository for out-of-tree scheduler plugins based on the [scheduler framework](https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/) 🌟 **(Recommended)**
+- [KubeSec Diagram](https://kubesec-diagram.github.io/): a diagram made to better understand and get an overview of kubernetes security 🌟 **(Recommended)**
+- [Kubetools](https://collabnix.github.io/kubetools/): A Curated List of Kubernetes Tools 🌟 **(Recommended)**. New UI at: https://kubetools.collabnix.com/#/
+- [rbac.dev](https://rbac.dev/): Advocacy site for Kubernetes RBAC 🌟 **(Recommended)**
+## Azure Kubernetes Service (AKS)
 
 - [Azure - Scaling options for applications in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/concepts-scale)
 - [Azure - Core Kubernetes concepts for Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/aks/concepts-clusters-workloads)
@@ -23,12 +40,26 @@ tags:
 - [AKS DevSecOps Workshop](https://azure.github.io/AKS-DevSecOps-Workshop/) 🌟 **(Recommended)**
 - [Azure - Best practices for basic scheduler features in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/operator-best-practices-scheduler)
 - [Medium - Optimize Your Kubernetes Resources with Azure IAM: Managed vs. Workload Identity](https://itnext.io/simplify-secure-your-azure-resources-managed-identity-vs-workload-identity-fe49d133fc03)
-### Advantage Kubernetes Components / Techniques
+## Blogs
 
-- [Medium - eBPF Maps State Synchronization across Multi-Node Kubernetes Cluster](https://medium.com/gitconnected/ebpf-maps-state-synchronization-across-multi-node-kubernetes-cluster-d0c075810fa7)
+- [Kubernetes - Blog](https://kubernetes.io/blog/) 🌟 **(Recommended)**
+- [Nubenetes](https://nubenetes.com/) : Awesome Kubernetes & Cloud 🌟 **(Recommended)**
+- [Matthew Mattox Personal Tech Blog](https://support.tools/): Really Cool guys write about Kubernetes, especially RKE2 with deeply debug and configuration 🌟 **(Recommended)**
+- [Medium - Artem Lajko](https://medium.com/@artem_lajko): Write about GitOps, Kubernetes and stuff around this architecture 🌟 **(Recommended)**
+- [Medium - HungWei Chiu](https://medium.com/@hwchiu): Guy with super dope contents around system and kubernetes 🌟 **(Recommended)**
+- [Medium - Salwan Mohamed](https://medium.com/@salwan.mohamed): Super dope contents for Kubernetes, especially about scaling and high availability
+## Certificate & Practice
+
+- [Certified Kubernetes Administrator (CKA) Course](https://github.com/kodekloudhub/certified-kubernetes-administrator-course) : Kodecloud Certified Kubernetes Administrator - CKA Course
+- [Certified Kubernetes Security Specialist (CKS) Course](https://github.com/kodekloudhub/certified-kubernetes-security-specialist-cks-course) : Kodecloud Notes from the Certified Kubernetes Security Specialist Course on KodeKloud
+- [killer.sh - Linux Foundation Exam Simulators](https://killer.sh/) 🌟 **(Recommended)**
+- [kube4sure - The Kubernetes Exam Simulator](https://www.kube4sure.com/)
+- [learnk8s - Kubernetes training for engineer](https://learnk8s.io/) 🌟 **(Recommended)**
+## Development
+
 - [Youtube - Unlocking the Power of Kubernetes: Create your own Resources with CRDs](https://www.youtube.com/watch?v=B4EF52zY6EM) 🌟 **(Recommended)**
 - [TheStackNew - How To Build a Kubernetes Operator From Scratch](https://thenewstack.io/how-to-build-a-kubernetes-operator-from-scratch/)
-### Do It Yourself (DIYs)
+## Do It Yourself (DIYs)
 
 - [Medium - Creating a Custom Scheduler in Kubernetes: A Practical Guide](https://overcast.blog/creating-a-custom-scheduler-in-kubernetes-a-practical-guide-2d9f9254f3b5) 🌟 **(Recommended)**
 - [Medium - HomeLab Kubernetes Cluster Setup](https://cavecafe.medium.com/setup-homelab-kubernetes-cluster-cfc3acd4dca5)
@@ -43,7 +74,8 @@ tags:
 - [DigitalOcean - How To Set Up an Elasticsearch, Fluentd and Kibana (EFK) Logging Stack on Kubernetes](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-elasticsearch-fluentd-and-kibana-efk-logging-stack-on-kubernetes) 🌟 **(Recommended)**
 - [Medium - Self Managed Argo CD — App Of Everything](https://medium.com/devopsturkiye/self-managed-argo-cd-app-of-everything-a226eb100cf0) 🌟 **(Recommended)**
 - [ExportFlow - RKE2 High Availability Pre-Deployment & Installation Guide](https://docs.expertflow.com/cx/4.3/rke2-high-availability-pre-deployment-installati-1) 🌟 **(Recommended)**
-### Elastic Kubernetes Service (EKS)
+- [Dev.to - Polyglot Microservices Communication in Kubernetes with DNS, CoreDNS, and Istio (Java & Python)](https://dev.to/gokul_gk/polyglot-microservices-communication-in-kubernetes-with-dns-coredns-and-istio-java-python-4gb9)
+## Elastic Kubernetes Service (EKS)
 
 - [Medium - Kubernetes — EKS — Upgrade process best practices (on AWS)](https://medium.com/atmosly/kubernetes-eks-upgrade-process-best-practices-on-aws-aed30e16bac1)
 - [Medium - EKS Cluster Network Architecture for Worker Nodes](https://keetmalin.medium.com/eks-cluster-network-architecture-for-worker-nodes-635e067c8c2a)
@@ -66,7 +98,7 @@ tags:
 - [AWS Blogs - Proactive autoscaling of Kubernetes workloads with KEDA using metrics ingested into Amazon Managed Service for Prometheus](https://aws.amazon.com/blogs/mt/proactive-autoscaling-kubernetes-workloads-keda-metrics-ingested-into-aws-amp/)
 - [AWS Blogs - A deep dive into simplified Amazon EKS access management controls](https://aws.amazon.com/vi/blogs/containers/a-deep-dive-into-simplified-amazon-eks-access-management-controls/)
 - [Medium - Mastering Ingress Strategies for AWS EKS: ALB vs. Istio vs. NGINX](https://ramchandra-vadranam.medium.com/mastering-ingress-strategies-for-aws-eks-alb-vs-istio-vs-nginx-34a7bd4ce152) 🌟 **(Recommended)**
-### Fundamental
+## Fundamental (General)
 
 - [Medium - Kubernetes Scheduling: Understanding the Math Behind the Magic](https://romanglushach.medium.com/kubernetes-scheduling-understanding-the-math-behind-the-magic-2305b57d45b1) 🌟 **(Recommended)**
 - [Medium - Kubernetes Networking: Load Balancing Techniques and Algorithms](https://romanglushach.medium.com/kubernetes-networking-load-balancing-techniques-and-algorithms-5da85c5c7253) 🌟 **(Recommended)**
@@ -90,15 +122,14 @@ tags:
 - [Redhat - Top 10 must-know Kubernetes design patterns](https://developers.redhat.com/blog/2020/05/11/top-10-must-know-kubernetes-design-patterns) 🌟 **(Recommended)**
 - [Kubernetes - Container Runtime Interface (CRI)](https://kubernetes.io/docs/concepts/architecture/cri/)
 - [FreeCodeCamp - How to Authenticate Users in Kubernetes: x509 Certificates, OIDC, and Cloud Identity](https://www.freecodecamp.org/news/how-to-authenticate-users-in-kubernetes-x509-certificates-oidc-and-cloud-identity/)
-### General
-
 - [Medium - 7 Underrated Kubernetes Projects: Elevate Your Lab Playground!](https://medium.com/@ebenamor/7-underrated-kubernetes-projects-elevate-your-lab-playground-ac7f47cba347)
 - [Kubernetes -  Documentation](https://kubernetes.io/docs/home/)
-### Hardware and Resources
+- [Kubernetes - Configure a Security Context for a Pod or Container](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/) 🌟 **(Recommended)**
+## Hardware and Resources
 
 - [Medium - Why does my 2vCPU application run faster in a VM than in a container? (Content of the year 2024)](https://hwchiu.medium.com/why-does-my-2vcpu-application-run-faster-in-a-vm-than-in-a-container-6438ffaba245) 🌟 **(Recommended)**
 - [Medium - Why and Why Not of Enabling Swap in Kubernetes](https://hwchiu.medium.com/why-and-why-not-of-enabling-swap-in-kubernetes-08c094a8d427)
-### Networking (CNI / DNS)
+## Networking (CNI / DNS)
 
 - [Blog - A Deep Dive into Kubernetes Networking](https://www.ivinco.com/blog/a-deep-dive-into-kubernetes-networking) 🌟 **(Recommended)**
 - [Dev.to - Kubernetes Networking Deep Dive - Services, Ingress, and Gateway API](https://dev.to/sre_panchanan/kubernetes-networking-deep-dive-services-ingress-and-gateway-api-1g6k) 🌟 **(Recommended)**
@@ -111,95 +142,6 @@ tags:
 - [Medium - Solving Kubernetes DNS Performance Issues with CoreDNS Autopath Plugin](https://medium.com/@rk90229/solving-kubernetes-dns-performance-issues-with-coredns-autopath-plugin-3650eb0c477a) 🌟 **(Recommended)**
 - [Reddit - Best on-prem authoritative DNS server for Kubernetes + external-dns?](https://www.reddit.com/r/kubernetes/comments/1nfh149/best_onprem_authoritative_dns_server_for/)
 - [Youtube - Kubernetes Multi Cluster DNS with External DNS, CoreDNS and Etcd](https://www.youtube.com/watch?v=AQtv2C4wKEA)
-### Storage (CSI)
-
-- [Medium - 7 Best Open Source Storage Solutions for Kubernetes](https://blog.devops.dev/7-best-open-source-storage-solutions-for-kubernetes-0da8b51efe8d)
-- [Blog - Installing the NFS CSI Driver on a Kubernetes cluster to allow for dynamic provisioning of Persistent Volumes](https://rudimartinsen.com/2024/01/09/nfs-csi-driver-kubernetes/)
-- [Medium - Implementing ROOK Ceph Storage solution on Virtual kubernetes clusters](https://purushothamkdr453.medium.com/implementing-rook-ceph-storage-solution-on-virtual-kubernetes-clusters-f9b7abfbcb56) 🌟 **(Recommended)**
-- [Medium - Kubernetes Storage Performance Comparison Rook Ceph and Piraeus Datastore (LINSTOR)](https://medium.com/@gjanders03/kubernetes-storage-performance-comparison-rook-ceph-and-piraeus-datastore-linstor-e9bc2859a8f0)
-- [Kubernetes - Kubernetes CSI Documentation](https://kubernetes-csi.github.io/docs/)
-- [Medium - How to Setup Dynamic NFS Provisioning in a Kubernetes Cluster](https://hbayraktar.medium.com/how-to-setup-dynamic-nfs-provisioning-in-a-kubernetes-cluster-cbf433b7de29)
-- [GitHub - Deploying NFS Server in Kubernetes](https://github.com/appscode/third-party-tools/blob/master/storage/nfs/README.md)
-### Story and Question
-
-- [Medium - Database in Kubernetes: Is that a good idea?](https://medium.com/@fengruohang/database-in-kubernetes-is-that-a-good-idea-daf5775b5c1f)
-- [Medium - Why NGINX IngressController Isn’t the Best Choice for Production Workloads](https://medium.com/@talhakhalid101/why-nginx-ingresscontroller-isnt-the-best-choice-for-production-workloads-dfc641da3e2c) 🌟 **(Recommended)**
-- [Internet - Pain(less?) NGINX Ingress](https://danielfm.me/post/painless-nginx-ingress/) 🌟 **(Recommended)**
-- [Medium - Why Some Companies are Moving Away from Kubernetes for Development Environments in 2025](https://medium.com/@PlanB./why-some-companies-are-moving-away-from-kubernetes-for-development-environments-in-2025-1f44b4fd4f3f)
-- [Medium - My Top 50 Kubernetes Notes for DevOps Engineers — Detailed Q&A](https://medium.com/@thecloudarchitect/my-top-50-kubernetes-notes-for-devops-engineers-detailed-q-a-9d9c375c0076)
-### Tips for Configuration
-
-- [Medium - 11 Kubernetes Deployment Configs You Should Know in 2024](https://medium.com/overcast-blog/11-kubernetes-deployment-configs-you-should-know-in-2024-1126740926f0)
-- [Medium - 15 Best Kubernetes Cost Optimization Tools for 2024](https://overcast.blog/15-best-kubernetes-cost-optimization-tools-for-2024-2e131a7cbe7a)
-- [Medium - 10 Ways for Kubernetes Declarative Configuration Management](https://medium.com/stackademic/10-ways-for-kubernetes-declarative-configuration-management-3538673fd0b5)
-- [Cast.ai - Custom Kube-Scheduler: Why And How to Set it Up in Kubernetes](https://cast.ai/blog/custom-kube-scheduler-why-and-how-to-set-it-up-in-kubernetes/) 🌟 **(Recommended)**
-- [Medium - 24 Kubernetes Masters’ Configurations](https://overcast.blog/24-kubernetes-mastersconfigurations-29235c65b337)
-- [Spot - 8 Kubernetes Deployment Strategies: Roll Out Like the Pros](https://spot.io/resources/kubernetes-autoscaling/5-kubernetes-deployment-strategies-roll-out-like-the-pros/) 🌟 **(Recommended)**
-- [Medium - Zero-Downtime Deployments with Kubernetes](https://blog.devgenius.io/zero-downtime-deployments-with-kubernetes-a2d3200d207f)
-- [DevOps VN - Thiết kế Multi-Cluster / Multi-Environment Strategy: dev~staging~prod như thế nào để vừa an toàn vừa nhanh?](https://devops.vn/posts/thiet-ke-multi-cluster-multi-environment-strategy-devstagingprod-nhu-the-nao-de-vua-an-toan-vua-nhanh/) 🌟 **(Recommended)**
-- [Blog - How to Monitor Kubernetes Multi-Cluster Workloads](https://hokstadconsulting.com/blog/how-to-monitor-kubernetes-multi-cluster-workloads)
-### Tools
-
-- [Medium - 10 Essential Kubernetes Tools You Didn’t Know You Needed](https://medium.com/itnext/10-essential-kubernetes-tools-you-didnt-know-you-needed-06954251d845)
-- [Medium - Lightweight CI/CD Solutions for Kubernetes: Going Beyond Keel, Flux, and ArgoCD](https://medium.com/@PlanB./lightweight-ci-cd-solutions-for-kubernetes-going-beyond-keel-flux-and-argocd-8b0b923e644c) 🌟 **(Recommended)**
-- [Medium - 12 Tools that will make Kubernetes management easier in 2024](https://medium.com/faun/12-tools-that-will-make-kubernetes-management-easier-in-2024-b7c349dc0eaa) 🌟 **(Recommended)**
-- [Medium - 2 Powerful AI and Database Operators to Extend your K8s Cluster](https://onairotich.medium.com/2-powerful-ai-and-database-operators-to-extend-your-k8s-cluster-9c517e83b368)
-- [Medium - VictoriaLogs: an overview, run in Kubernetes, LogsQL, and Grafana](https://itnext.io/victorialogs-an-overview-run-in-kubernetes-logsql-and-grafana-88e0934a5ccd)
-- [Medium - The guide to kubectl I never had](https://medium.com/@jake.page91/the-guide-to-kubectl-i-never-had-3874cc6074ff)
-- [Vault - Kubernetes auth method](https://developer.hashicorp.com/vault/docs/auth/kubernetes#kubernetes-auth-method)
-- [ArgoCD - High Availability](https://argo-cd.readthedocs.io/en/stable/operator-manual/high_availability/) 🌟 **(Recommended)**
-### Troubleshoot
-
-- [StackOverFlow - How can I keep a container running on Kubernetes?](https://stackoverflow.com/questions/31870222/how-can-i-keep-a-container-running-on-kubernetes) 🌟 **(Recommended)**
-- [Kubernetes - Debugging Kubernetes nodes with crictl](https://kubernetes.io/docs/tasks/debug/debug-cluster/crictl/#before-you-begin)
-- [Medium - Do Kubernetes Pods Really Get Evicted Due to CPU Pressure?](https://medium.com/overcast-blog/do-pods-really-get-evicted-due-to-cpu-pressure-2b27274a670c)
-- [StackOverFlow - Why AKS nodes shows less amount of memory as allocatable where its actual memory is still available](https://stackoverflow.com/questions/68521392/why-aks-nodes-shows-less-amount-of-memory-as-allocatable-where-its-actual-memory) 🌟 **(Recommended)**
-- [StackOverFlow - Constantly getting Crashloopbackoff error in Kubernetes PODS generally in MongoDB pods](https://stackoverflow.com/questions/63142792/constantly-getting-crashloopbackoff-error-in-kubernetes-pods-generally-in-mongod)
-- [Suneeta Mall - WTH! Who killed my pod - Whodunit?](https://suneeta-mall.github.io/2021/03/14/wth-who-killed-my-pod.html)
-- [Kubernetes - Validate node setup](https://kubernetes.io/docs/setup/best-practices/node-conformance/)
-- [Komodor - Resolving OOMkilled on Kubernetes](https://komodor.com/learn/how-to-fix-oomkilled-exit-code-137/)
-- [Komodor - Exit Codes in Docker and Kubernetes: The Complete Guide](https://komodor.com/learn/exit-codes-in-containers-and-kubernetes-the-complete-guide/) 🌟 **(Recommended)**
-- [Helm - Debugging Helm Templates](https://helm.sh/docs/chart_template_guide/debugging/)
-- [GitHub - WARNING: Kubernetes configuration file is group/world-readable](https://github.com/helm/helm/issues/9115)
-- [Medium - Tracking Down “Invisible” OOM Kills in Kubernetes](https://medium.com/@reefland/tracking-down-invisible-oom-kills-in-kubernetes-192a3de33a60) 🌟 **(Recommended)**
-- [GitHub - Fluentd in_tail plugin randomly fails with "too many open files"](https://github.com/fluent/fluent-bit/issues/1777#issuecomment-1494952647) 🌟 **(Recommended)**
-- [Blog - Pod DNS Problems](https://blog.differentpla.net/blog/2022/02/25/pod-dns-problems/) 🌟 **(Recommended)**
-- [GroundCover - Kubernetes Troubleshooting: Guide For Fixing Common Issues](https://www.groundcover.com/kubernetes-troubleshooting)
-- [Learnkube - A visual guide on troubleshooting Kubernetes deployments](https://learnkube.com/troubleshooting-deployments)
-## Awesome repositories
-
-- [awesome-k8s-resources](https://github.com/tomhuang12/awesome-k8s-resources) : A curated list of awesome Kubernetes tools and resources 🌟 **(Recommended)**
-- [awesome-k8s-tools](https://github.com/vilaca/awesome-k8s-tools): List of container/k8s tools.
-- [awesome-krew-plugin](https://krew.sigs.k8s.io/plugins/): A list of Plugin which used by kubectl
-- [awesome-kubernetes](https://ramitsurana.github.io/awesome-kubernetes/) : A curated list for awesome kubernetes sources 🚢🎉
-- [Deploy to Kuberenetes](https://deploy-to-kubernetes.readthedocs.io/en/latest/): Deploy a distributed AI stack to a multi-host or single-host Kubernetes cluster on CentOS 7 🌟 **(Recommended)**
-- [enhancements](https://github.com/kubernetes/enhancements): Enhancements tracking repo for Kubernetes 🌟 **(Recommended)**
-- [kubelabs](https://github.com/collabnix/kubelabs): Get Started with Kubernetes 🌟 **(Recommended)**
-- [Kubernetes Cluster API](https://cluster-api.sigs.k8s.io/) : About cluster API 🌟 **(Recommended)**
-- [Kubernetes/community](https://github.com/kubernetes/community) : Kubernetes community content
-- [Kubernetes CSI Drivers](https://kubernetes-csi.github.io/docs/drivers.html): The following are a set of CSI driver which can be used with Kubernetes 🌟 **(Recommended)**
-- [kubernetes-engine-samples](https://github.com/GoogleCloudPlatform/kubernetes-engine-samples): Sample applications for Google Kubernetes Engine (GKE) 🌟 **(Recommended)**
-- [Kubernetes/enhancements](https://github.com/kubernetes/enhancements): Enhancements tracking repo for Kubernetes
-- [kubernetes-homelab](https://github.com/lisenet/kubernetes-homelab): Building a multi-master multi-node Kubernetes homelab with kubeadm, Ansible, Helm and Terraform
-- [Kubernetes Schedule Plugins](https://scheduler-plugins.sigs.k8s.io/): Repository for out-of-tree scheduler plugins based on the [scheduler framework](https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/) 🌟 **(Recommended)**
-- [KubeSec Diagram](https://kubesec-diagram.github.io/): a diagram made to better understand and get an overview of kubernetes security 🌟 **(Recommended)**
-- [Kubetools](https://collabnix.github.io/kubetools/): A Curated List of Kubernetes Tools 🌟 **(Recommended)**. New UI at: https://kubetools.collabnix.com/#/
-- [rbac.dev](https://rbac.dev/): Advocacy site for Kubernetes RBAC 🌟 **(Recommended)**
-## Blogs
-
-- [Kubernetes - Blog](https://kubernetes.io/blog/) 🌟 **(Recommended)**
-- [Nubenetes](https://nubenetes.com/) : Awesome Kubernetes & Cloud 🌟 **(Recommended)**
-- [Matthew Mattox Personal Tech Blog](https://support.tools/): Really Cool guys write about Kubernetes, especially RKE2 with deeply debug and configuration 🌟 **(Recommended)**
-- [Medium - Artem Lajko](https://medium.com/@artem_lajko): Write about GitOps, Kubernetes and stuff around this architecture 🌟 **(Recommended)**
-- [Medium - HungWei Chiu](https://medium.com/@hwchiu): Guy with super dope contents around system and kubernetes 🌟 **(Recommended)**
-- [Medium - Salwan Mohamed](https://medium.com/@salwan.mohamed): Super dope contents for Kubernetes, especially about scaling and high availability
-## Certificate & Practice
-
-- [Certified Kubernetes Administrator (CKA) Course](https://github.com/kodekloudhub/certified-kubernetes-administrator-course) : Kodecloud Certified Kubernetes Administrator - CKA Course
-- [Certified Kubernetes Security Specialist (CKS) Course](https://github.com/kodekloudhub/certified-kubernetes-security-specialist-cks-course) : Kodecloud Notes from the Certified Kubernetes Security Specialist Course on KodeKloud
-- [killer.sh - Linux Foundation Exam Simulators](https://killer.sh/) 🌟 **(Recommended)**
-- [kube4sure - The Kubernetes Exam Simulator](https://www.kube4sure.com/)
-- [learnk8s - Kubernetes training for engineer](https://learnk8s.io/) 🌟 **(Recommended)**
 ## Operator & Chart
 
 - [Artifacthub](https://artifacthub.io/) : Find, install and publish Cloud Native packages for Kubernetes 🌟 **(Recommended)**
@@ -233,38 +175,95 @@ tags:
 - [The Helm Project](https://github.com/helm): The package manager for Kubernetes 🌟 **(Recommended)**
 - [VMware Tanzu](https://github.com/vmware-tanzu): Cloud native open source from VMware, almost for Kubernetes, Author of [velero](https://github.com/vmware-tanzu/velero)
 - [Labring](https://github.com/labring): A platform for building the operation system as cloud by Kubernetes, know them via [Sealos](https://sealos.io/)
-## Topics
+## Security
 
-- [Helm](https://github.com/topics/helm)
-- [K8s](https://github.com/topics/k8s)
-- [Kubernetes](https://github.com/topics/kubernetes)
+- [Medium - Securing Kubernetes Layer by Layer: An OSI Approach (Part 1: L2 & L3)](https://itnext.io/securing-kubernetes-layer-by-layer-an-osi-approach-part-1-l2-l3-6e78e6c3fbed)
+- [Medium - Securing Kubernetes Layer by Layer: An OSI Approach (Part 2 : L4)](https://itnext.io/securing-kubernetes-layer-by-layer-an-osi-approach-part-2-l4-498c69f951fc)
+- [Medium - Securing Kubernetes Layer by Layer: An OSI Approach (Part 3: L5 & L6)](https://itnext.io/securing-kubernetes-layer-by-layer-an-osi-approach-part-3-l5-l6-58dbe00c1fd9)
+- [Medium - Securing Kubernetes Layer by Layer: An OSI Approach (Part 4: L7)](https://itnext.io/securing-kubernetes-layer-by-layer-an-osi-approach-part-4-l7-14b0f51055a3)
+## Storage (CSI)
 
-# Kubernetes Tools (Cloud Native) (Curious  🔭)
+- [Medium - 7 Best Open Source Storage Solutions for Kubernetes](https://blog.devops.dev/7-best-open-source-storage-solutions-for-kubernetes-0da8b51efe8d)
+- [Blog - Installing the NFS CSI Driver on a Kubernetes cluster to allow for dynamic provisioning of Persistent Volumes](https://rudimartinsen.com/2024/01/09/nfs-csi-driver-kubernetes/)
+- [Medium - Implementing ROOK Ceph Storage solution on Virtual kubernetes clusters](https://purushothamkdr453.medium.com/implementing-rook-ceph-storage-solution-on-virtual-kubernetes-clusters-f9b7abfbcb56) 🌟 **(Recommended)**
+- [Medium - Kubernetes Storage Performance Comparison Rook Ceph and Piraeus Datastore (LINSTOR)](https://medium.com/@gjanders03/kubernetes-storage-performance-comparison-rook-ceph-and-piraeus-datastore-linstor-e9bc2859a8f0)
+- [Kubernetes - Kubernetes CSI Documentation](https://kubernetes-csi.github.io/docs/)
+- [Medium - How to Setup Dynamic NFS Provisioning in a Kubernetes Cluster](https://hbayraktar.medium.com/how-to-setup-dynamic-nfs-provisioning-in-a-kubernetes-cluster-cbf433b7de29)
+- [GitHub - Deploying NFS Server in Kubernetes](https://github.com/appscode/third-party-tools/blob/master/storage/nfs/README.md)
+## Story and Question
 
-![[meme-confuse-but-curious.png|center]]
+- [Medium - Database in Kubernetes: Is that a good idea?](https://medium.com/@fengruohang/database-in-kubernetes-is-that-a-good-idea-daf5775b5c1f)
+- [Medium - Why NGINX IngressController Isn’t the Best Choice for Production Workloads](https://medium.com/@talhakhalid101/why-nginx-ingresscontroller-isnt-the-best-choice-for-production-workloads-dfc641da3e2c) 🌟 **(Recommended)**
+- [Internet - Pain(less?) NGINX Ingress](https://danielfm.me/post/painless-nginx-ingress/) 🌟 **(Recommended)**
+- [Medium - Why Some Companies are Moving Away from Kubernetes for Development Environments in 2025](https://medium.com/@PlanB./why-some-companies-are-moving-away-from-kubernetes-for-development-environments-in-2025-1f44b4fd4f3f)
+- [Medium - My Top 50 Kubernetes Notes for DevOps Engineers — Detailed Q&A](https://medium.com/@thecloudarchitect/my-top-50-kubernetes-notes-for-devops-engineers-detailed-q-a-9d9c375c0076)
+## Tips for Configuration
 
-## AI Operator
+- [Medium - 11 Kubernetes Deployment Configs You Should Know in 2024](https://medium.com/overcast-blog/11-kubernetes-deployment-configs-you-should-know-in-2024-1126740926f0)
+- [Medium - 15 Best Kubernetes Cost Optimization Tools for 2024](https://overcast.blog/15-best-kubernetes-cost-optimization-tools-for-2024-2e131a7cbe7a)
+- [Medium - 10 Ways for Kubernetes Declarative Configuration Management](https://medium.com/stackademic/10-ways-for-kubernetes-declarative-configuration-management-3538673fd0b5)
+- [Cast.ai - Custom Kube-Scheduler: Why And How to Set it Up in Kubernetes](https://cast.ai/blog/custom-kube-scheduler-why-and-how-to-set-it-up-in-kubernetes/) 🌟 **(Recommended)**
+- [Medium - 24 Kubernetes Masters’ Configurations](https://overcast.blog/24-kubernetes-mastersconfigurations-29235c65b337)
+- [Spot - 8 Kubernetes Deployment Strategies: Roll Out Like the Pros](https://spot.io/resources/kubernetes-autoscaling/5-kubernetes-deployment-strategies-roll-out-like-the-pros/) 🌟 **(Recommended)**
+- [Medium - Zero-Downtime Deployments with Kubernetes](https://blog.devgenius.io/zero-downtime-deployments-with-kubernetes-a2d3200d207f)
+- [DevOps VN - Thiết kế Multi-Cluster / Multi-Environment Strategy: dev~staging~prod như thế nào để vừa an toàn vừa nhanh?](https://devops.vn/posts/thiet-ke-multi-cluster-multi-environment-strategy-devstagingprod-nhu-the-nao-de-vua-an-toan-vua-nhanh/) 🌟 **(Recommended)**
+- [Blog - How to Monitor Kubernetes Multi-Cluster Workloads](https://hokstadconsulting.com/blog/how-to-monitor-kubernetes-multi-cluster-workloads)
+## Tools
 
-- [Kaito](https://kaito-project.github.io/kaito/docs/): an operator suite that automates LLM model inference, fine-tuning, and RAG (Retrieval Augmented Generation) engine deployment in a Kubernetes cluster.
-- [airunway](https://github.com/ai-runway/airunway): ✈️ Kubernetes-native platform for deploying and managing AI inference across multiple providers
+- [Medium - 10 Essential Kubernetes Tools You Didn’t Know You Needed](https://medium.com/itnext/10-essential-kubernetes-tools-you-didnt-know-you-needed-06954251d845)
+- [Medium - Lightweight CI/CD Solutions for Kubernetes: Going Beyond Keel, Flux, and ArgoCD](https://medium.com/@PlanB./lightweight-ci-cd-solutions-for-kubernetes-going-beyond-keel-flux-and-argocd-8b0b923e644c) 🌟 **(Recommended)**
+- [Medium - 12 Tools that will make Kubernetes management easier in 2024](https://medium.com/faun/12-tools-that-will-make-kubernetes-management-easier-in-2024-b7c349dc0eaa) 🌟 **(Recommended)**
+- [Medium - 2 Powerful AI and Database Operators to Extend your K8s Cluster](https://onairotich.medium.com/2-powerful-ai-and-database-operators-to-extend-your-k8s-cluster-9c517e83b368)
+- [Medium - VictoriaLogs: an overview, run in Kubernetes, LogsQL, and Grafana](https://itnext.io/victorialogs-an-overview-run-in-kubernetes-logsql-and-grafana-88e0934a5ccd)
+- [Medium - The guide to kubectl I never had](https://medium.com/@jake.page91/the-guide-to-kubectl-i-never-had-3874cc6074ff)
+- [Vault - Kubernetes auth method](https://developer.hashicorp.com/vault/docs/auth/kubernetes#kubernetes-auth-method)
+- [ArgoCD - High Availability](https://argo-cd.readthedocs.io/en/stable/operator-manual/high_availability/) 🌟 **(Recommended)**
+## Troubleshoot
+
+- [StackOverFlow - How can I keep a container running on Kubernetes?](https://stackoverflow.com/questions/31870222/how-can-i-keep-a-container-running-on-kubernetes) 🌟 **(Recommended)**
+- [Kubernetes - Debugging Kubernetes nodes with crictl](https://kubernetes.io/docs/tasks/debug/debug-cluster/crictl/#before-you-begin)
+- [Medium - Do Kubernetes Pods Really Get Evicted Due to CPU Pressure?](https://medium.com/overcast-blog/do-pods-really-get-evicted-due-to-cpu-pressure-2b27274a670c)
+- [StackOverFlow - Why AKS nodes shows less amount of memory as allocatable where its actual memory is still available](https://stackoverflow.com/questions/68521392/why-aks-nodes-shows-less-amount-of-memory-as-allocatable-where-its-actual-memory) 🌟 **(Recommended)**
+- [StackOverFlow - Constantly getting Crashloopbackoff error in Kubernetes PODS generally in MongoDB pods](https://stackoverflow.com/questions/63142792/constantly-getting-crashloopbackoff-error-in-kubernetes-pods-generally-in-mongod)
+- [Suneeta Mall - WTH! Who killed my pod - Whodunit?](https://suneeta-mall.github.io/2021/03/14/wth-who-killed-my-pod.html)
+- [Kubernetes - Validate node setup](https://kubernetes.io/docs/setup/best-practices/node-conformance/)
+- [Komodor - Resolving OOMkilled on Kubernetes](https://komodor.com/learn/how-to-fix-oomkilled-exit-code-137/)
+- [Komodor - Exit Codes in Docker and Kubernetes: The Complete Guide](https://komodor.com/learn/exit-codes-in-containers-and-kubernetes-the-complete-guide/) 🌟 **(Recommended)**
+- [Helm - Debugging Helm Templates](https://helm.sh/docs/chart_template_guide/debugging/)
+- [GitHub - WARNING: Kubernetes configuration file is group/world-readable](https://github.com/helm/helm/issues/9115)
+- [Medium - Tracking Down “Invisible” OOM Kills in Kubernetes](https://medium.com/@reefland/tracking-down-invisible-oom-kills-in-kubernetes-192a3de33a60) 🌟 **(Recommended)**
+- [GitHub - Fluentd in_tail plugin randomly fails with "too many open files"](https://github.com/fluent/fluent-bit/issues/1777#issuecomment-1494952647) 🌟 **(Recommended)**
+- [Blog - Pod DNS Problems](https://blog.differentpla.net/blog/2022/02/25/pod-dns-problems/) 🌟 **(Recommended)**
+- [GroundCover - Kubernetes Troubleshooting: Guide For Fixing Common Issues](https://www.groundcover.com/kubernetes-troubleshooting)
+- [Learnkube - A visual guide on troubleshooting Kubernetes deployments](https://learnkube.com/troubleshooting-deployments)
+
+# Kubernetes Tools (Curiosity  🔭)
+
+![[thumbnail-cncf-landscape.png]]
 ## Agents
 
 - [botkube](https://github.com/kubeshop/botkube): An app that helps you monitor your Kubernetes cluster, debug critical deployments & gives recommendations for standard practices 🌟 **(Recommended)**
 - [kagent](https://github.com/kagent-dev/kagent): A Kubernetes native framework for building AI agents 🌟 **(Recommended)**
-## AI Gateway / API Gateway / Ingress / Load Balalancer
+## API Gateway & Ingress & LoadBalancer
 
 - [AGIC - Application Gateway Ingress Controller](https://azure.github.io/application-gateway-kubernetes-ingress/): Possible for Azure Kubernetes Service (AKS) customers to leverage Azure's native Application Gateway L7 load-balancer to expose cloud software to the Internet. [Azure Article](https://learn.microsoft.com/en-us/azure/application-gateway/ingress-controller-overview)
+- [cloudflare-operator](https://github.com/adyanth/cloudflare-operator): A Kubernetes Operator to create and manage Cloudflare Tunnels and DNS records for (HTTP/TCP/UDP) Service Resources
 - [gateway-api-inference-extension](https://github.com/kubernetes-sigs/gateway-api-inference-extension): optimizes self-hosting Generative Models on Kubernetes
 - [gloo](https://github.com/solo-io/gloo): The Cloud-Native API Gateway and AI Gateway
 - [inlets-operator](https://github.com/inlets/inlets-operator): Get public TCP LoadBalancers for local Kubernetes clusters
-- [Kgateway](https://kgateway.dev/): The most widely deployed gateway in Kubernetes for microservices and AI agents
+- [k8gb](https://github.com/k8gb-io/k8gb): A cloud native Kubernetes Global Balancer 🌟 **(Recommended)**
+- [k8s-bigip-ctlr](https://github.com/F5Networks/k8s-bigip-ctlr): Repository for F5 Container Ingress Services for Kubernetes & OpenShift. Explore more at [F5 Container Ingress Services User Guides](https://github.com/mdditt2000/k8s-bigip-ctlr/blob/main/user_guides/README.md)
+- [Kgateway](https://kgateway.dev/): The most widely deployed gateway in Kubernetes for microservices and AI agents 🌟 **(Recommended)**
 - [Kong Ingress Controller](https://docs.konghq.com/kubernetes-ingress-controller/latest/):  Allows you to run Kong Gateway as a Kubernetes Ingress to handle inbound requests for a Kubernetes cluster
-- [kube-vip](https://kube-vip.io/): Provides Kubernetes clusters with a virtual IP and load balancer for both the control plane (for building a highly-available cluster) and Kubernetes Services of type `LoadBalancer` without relying on any external hardware or software.
-- [llm-d](https://github.com/llm-d/llm-d): a Kubernetes-native distributed inference serving stack providing well-lit paths for anyone to serve large generative AI models at scale
-- [MetalLB](https://metallb.io/): A load-balancer implementation for bare metal [Kubernetes](https://kubernetes.io/) clusters, using standard routing protocols.
+- [kube-vip](https://kube-vip.io/): Provides Kubernetes clusters with a virtual IP and load balancer for both the control plane (for building a highly-available cluster) and Kubernetes Services of type `LoadBalancer` without relying on any external hardware or software. 🌟 **(Recommended)**
 - [Nginx Gateway Fabric](https://github.com/nginx/nginx-gateway-fabric): Provides an implementation for the Gateway API using NGINX as the data plane.
 - [Traefik - ApiGateway](https://doc.traefik.io/traefik-hub/api-gateway/intro): A drop-in replacement for Traefik Proxy, it can do everything Traefik Proxy does, with additional capabilities and support out of the box.
 - [wiredoor](https://github.com/wiredoor/wiredoor): Self hosted ingress-as-a-service platform that allows you to expose applications and services running in private or local networks to the internet
+## AI Operator
+
+- [Kaito](https://kaito-project.github.io/kaito/docs/): an operator suite that automates LLM model inference, fine-tuning, and RAG (Retrieval Augmented Generation) engine deployment in a Kubernetes cluster.
+- [airunway](https://github.com/ai-runway/airunway): ✈️ Kubernetes-native platform for deploying and managing AI inference across multiple providers
+- [llm-d](https://github.com/llm-d/llm-d): a Kubernetes-native distributed inference serving stack providing well-lit paths for anyone to serve large generative AI models at scale
 ## Architecture
 
 - [virtual-kubelet](https://github.com/virtual-kubelet/virtual-kubelet): Virtual Kubelet is an open source Kubernetes kubelet implementation.
@@ -272,15 +271,18 @@ tags:
 ## Authentication
 
 - [OpenUnison](https://openunison.github.io/): OpenUnison provides SSO and authentication for your Kubernetes clusters, no matter where they run or how your users need to authenticate.
-- [pinniped](https://github.com/vmware/pinniped): Pinniped is the easy, secure way to log in to your Kubernetes clusters.
-- [kube-oidc-proxy](https://github.com/jetstack/kube-oidc-proxy): Reverse proxy to authenticate to managed Kubernetes API servers via OIDC.
+- [kube-oidc-proxy](https://github.com/jetstack/kube-oidc-proxy): Reverse proxy to authenticate to managed Kubernetes API servers via OIDC. 🌟 **(Recommended)**
 - [gangway](https://github.com/vmware-archive/gangway): An application that can be used to easily enable authentication flows via OIDC for a kubernetes cluster.
 - [paralus](https://github.com/paralus/paralus): All-in-one Kubernetes access manager. User-level credentials, RBAC, SSO, audit logs.
+## Auto Scaling
+
+- [Keda](https://keda.sh/docs/2.16/): Kubernetes Event-driven Autoscaling 🌟 **(Recommended)**
+- [karpenter](https://github.com/kubernetes-sigs/karpenter): a Kubernetes Node Autoscaler built for flexibility, performance, and simplicity.
 ## Backup
 
 - [velero](https://github.com/vmware-tanzu/velero): Backup and migrate Kubernetes applications and their persistent volumes
 - [trilio](https://docs.trilio.io/kubernetes): A data protection and backup solution specifically designed for Kubernetes environments
-## Benchmark / Validation /  Utilities Tools
+## Benchmark & Validation
 
 - [kube-bench](https://github.com/aquasecurity/kube-bench): Checks whether Kubernetes is deployed according to security best practices as defined in the CIS Kubernetes Benchmark
 - [kubeconform](https://github.com/yannh/kubeconform): A FAST Kubernetes manifests validator, with support for Custom Resources!
@@ -288,17 +290,14 @@ tags:
 - [silver-surfer](https://github.com/devtron-labs/silver-surfer): Kubernetes objects api-version compatibility checker and provides migration path for K8s objects and prepare it for cluster upgrades
 - [doc.crds.dev](https://doc.crds.dev/): View and explore the documentation about CRD of specific repository 🌟 **(Recommended)**
 - [pii-shield](https://github.com/pii-shield/pii-shield): Zero-code K8s sidecar for log sanitization. Detects secrets via Entropy Analysis, preserves JSON integrity, and redacts PII deterministically. 🛡️
+- [pluto](https://github.com/FairwindsOps/pluto): A cli tool to help discover deprecated apiVersions in Kubernetes
 ## Chaos
 
 - [chaos-mesh](https://github.com/chaos-mesh/chaos-mesh): A Chaos Engineering Platform for Kubernetes.
 - [litmus](https://github.com/litmuschaos/litmus): Chaos Engineering Framework with cross-cloud support.
-## Custom Scheduler
+## Configuration
 
-- [volcano](https://github.com/volcano-sh/volcano): a Kubernetes-native batch scheduling system, extending and enhancing the capabilities of the standard kube-scheduler **for AI workloads**
-- [koordinator](https://github.com/koordinator-sh/koordinator): A QoS-based scheduling system brings optimal layout and status to workloads such as microservices, web services, big data jobs, AI jobs, etc.
-## Device Plugins
-
-- [k8s-rdma-shared-dev-plugin](https://github.com/Mellanox/k8s-rdma-shared-dev-plugin): A simple rdma device plugin that support IB and RoCE HCA
+- [vals](https://github.com/helmfile/vals): Helm-like configuration values loader with support for various sources
 ## Dashboard & Cluster Management
 
 - [kubewall](https://github.com/kubewall/kubewall): Single-Binary Kubernetes Dashboard with Multi-Cluster Management & AI Integration
@@ -306,16 +305,10 @@ tags:
 - [dashboard](https://github.com/kubernetes/dashboard): General-purpose web UI for Kubernetes clusters
 - [lens](https://github.com/lensapp/lens): Lens - The way the world runs Kubernetes 🌟 **(Recommended)**
 - [Rancher](https://ranchermanager.docs.rancher.com/): a Kubernetes management tool to deploy and run clusters anywhere and on any provider. 🌟 **(Recommended)**
-## Networking Controller (Monitoring/DNS / VPN/ SSL / Service Discovery)
+## Device Plugins
 
-- [bindy](https://github.com/firestoned/bindy): Bind9 Kubernetes Controller
-- [kubevpn](https://github.com/kubenetworks/kubevpn): Offers a Cloud Native Dev Environment that connects to kubernetes cluster network.
-- [kubeshark](https://github.com/kubeshark/kubeshark): The API traffic analyzer for Kubernetes providing real-time K8s 🌟 **(Recommended)**
-## Global Server Load Balancer (GSLB)
-
-- [k8gb](https://github.com/k8gb-io/k8gb): A cloud native Kubernetes Global Balancer 
-- [k8s-bigip-ctlr](https://github.com/F5Networks/k8s-bigip-ctlr): Repository for F5 Container Ingress Services for Kubernetes & OpenShift. Explore more at [F5 Container Ingress Services User Guides](https://github.com/mdditt2000/k8s-bigip-ctlr/blob/main/user_guides/README.md)
-## Kubernetes Development Library / Tools
+- [k8s-rdma-shared-dev-plugin](https://github.com/Mellanox/k8s-rdma-shared-dev-plugin): A simple rdma device plugin that support IB and RoCE HCA
+## Kubernetes Development
 
 - [devspace](https://github.com/devspace-sh/devspace): Client-Only Developer Tool for Cloud-Native Development with Kubernetes
 - [kooper](https://github.com/spotahome/kooper): A simple Go library to create Kubernetes operators and controllers.
@@ -336,6 +329,10 @@ tags:
 - [kubevirt](https://kubevirt.io/): Provides a unified development platform where developers can build, modify, and deploy applications residing in both Application Containers as well as Virtual Machines in a common, shared environment.
 - [Sealos](https://github.com/labring/sealos):  cloud operating system distribution based on the Kubernetes kernel, designed for a seamless development lifecycle
 	- [Sealos Runtime](https://github.com/labring-actions/runtime): Kubernetes cluster-image for sealos
+- [Kubernetes Official solution](https://kubernetes.io/docs/setup/production-environment/tools/) : Installing Kubernetes with deployment tools.
+	- [kubespray](https://github.com/kubernetes-sigs/kubespray): Deploy a Production Ready Kubernetes Cluster
+	- [kubeadm](https://github.com/kubernetes/kubeadm): Aggregator for issues filed against kubeadm 🌟 **(Recommended)**
+	- [kubeadm-ha](https://github.com/TimeBye/kubeadm-ha): Deploy HA Kubernetes with Kubeadm using ansible
 ## Kubernetes in Kubernetes
 
 - [vCluster](https://github.com/loft-sh/vcluster): Create fully functional virtual Kubernetes clusters - Each vcluster runs inside a namespace of the underlying k8s cluster
@@ -346,10 +343,16 @@ tags:
 - [ingress2gateway](https://github.com/kubernetes-sigs/ingress2gateway): Convert Ingress resources to Gateway API resources 🌟 **(Recommended)**
 - [Kubelogin](https://github.com/int128/kubelogin): kubectl plugin for Kubernetes OpenID Connect authentication (kubectl oidc-login)
 - [hanoi-cli](https://github.com/k-krew/hanoi-cli): Interactive rebalance advisor for Kubernetes
-## Storage Platform
+## Monitoring & Observability
 
-- [openebs](https://github.com/openebs/openebs):  an open-source Container Native Storage solution that provides persistent storage for Kubernetes workloads
-- [cubefs](https://github.com/cubefs/cubefs): an open-source cloud-native distributed file & object storage system
+- [Canary Checker](https://canarychecker.io/): Kubernetes Native Health Check Platform
+- [OpenSLO](https://github.com/OpenSLO/OpenSLO): Open specification for defining and expressing service level objectives (SLO)
+## Multi-Cluster Network Topologies
+
+- [liqo](https://github.com/liqotech/liqo): Enable dynamic and seamless Kubernetes multi-cluster topologies
+- [submariner](https://github.com/submariner-io/submariner): Networking component for interconnecting Pods and Services across Kubernetes clusters.
+- [mcs-api](https://github.com/kubernetes-sigs/mcs-api): This repository hosts the Multi-Cluster Service APIs. Providers can import packages in this repo to ensure their multi-cluster service controller implementations will be compatible with MCS data planes.
+- [kube-ovn](https://github.com/kubeovn/kube-ovn): A Bridge between SDN and Cloud Native (Project under CNCF)
 ## Multi-Cluster Orchestration
 
 - [Karmada](https://karmada.io/): a Kubernetes management system that enables you to run your cloud-native applications across multiple Kubernetes clusters and clouds, with no changes to your applications.
@@ -358,14 +361,52 @@ tags:
 - [multicluster-runtime](https://github.com/kubernetes-sigs/multicluster-runtime): a Go library to write Kubernetes controllers that reconcile across a dynamic fleet of Kubernetes (or Kubernetes-like) clusters.
 - [Open Cluster Management (OCM)](https://open-cluster-management.io/): a powerful, modular, extensible platform for Kubernetes multi-cluster orchestration
 - [Sveltos](https://github.com/projectsveltos/addon-controller): a Kubernetes add-on controller that simplifies the deployment and management of add-ons and applications across multiple clusters.
-## Monitoring and Observability
+## Networking
 
-- [Canary Checker](https://canarychecker.io/): Kubernetes Native Health Check Platform
+- [bindy](https://github.com/firestoned/bindy): Bind9 Kubernetes Controller
+- [envoy](https://www.envoyproxy.io/docs/envoy/v1.31.0/) : Envoy is an L7 proxy and communication bus designed for large modern service oriented architectures 🌟 **(Recommended)**
+- [kube-router](https://github.com/cloudnativelabs/kube-router): a turnkey solution for Kubernetes networking with aim to provide operational simplicity and high performance.
+- [kubeshark](https://github.com/kubeshark/kubeshark): The API traffic analyzer for Kubernetes providing real-time K8s 🌟 **(Recommended)**
+- [kubevpn](https://github.com/kubenetworks/kubevpn): Offers a Cloud Native Dev Environment that connects to kubernetes cluster network.
+## Policy & Security
+
+- [Kubewarden](https://www.kubewarden.io/): an open source security platform for Kubernetes.
+- [kubescape](https://github.com/kubescape/kubescape): an open-source Kubernetes security platform for your IDE, CI/CD pipelines, and clusters.
+- [OPA Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/) : A customizable cloud native policy controller that helps enforce policies and strengthen governance 🌟 **(Recommended)**
+- [cel-admission-library](https://github.com/kubescape/cel-admission-library): This projects contains pre-made policies for Kubernetes Validating Admission Policies.
 ## Resources Orchestrator
 
 - [kro](https://github.com/awslabs/kro): Kube Resource Orchestrator
 - [Kueue](https://kueue.sigs.k8s.io/docs/overview/): a kubernetes-native system that manages quotas and how jobs consume them.
-## Threat Intelligence / Security
+## Scheduler (Custom)
+
+- [volcano](https://github.com/volcano-sh/volcano): a Kubernetes-native batch scheduling system, extending and enhancing the capabilities of the standard kube-scheduler **for AI workloads**
+- [koordinator](https://github.com/koordinator-sh/koordinator): A QoS-based scheduling system brings optimal layout and status to workloads such as microservices, web services, big data jobs, AI jobs, etc.
+## Scheduler (GPU)
+
+- [AMD GPU Operator](https://github.com/ROCm/gpu-operator): Simplifies the deployment and management of AMD Instinct GPU accelerators within Kubernetes clusters. [Documentation](https://instinct.docs.amd.com/projects/gpu-operator/en/latest/)
+- [Intel GPU Operator](https://github.com/intel/intel-device-plugins-for-kubernetes): Intel GPU plugin facilitates Kubernetes workload. [Documentation](https://intel.github.io/intel-device-plugins-for-kubernetes/cmd/gpu_plugin/README.html)
+- [k8s-dra-driver-gpu](https://github.com/NVIDIA/k8s-dra-driver-gpu): Dynamic Resource Allocation (DRA) for NVIDIA GPUs in Kubernetes
+- [KAI-Scheduler](https://github.com/NVIDIA/KAI-Scheduler): an open source Kubernetes Native scheduler for AI workloads at large scale
+- [gpushare-scheduler-extender](https://github.com/AliyunContainerService/gpushare-scheduler-extender): GPU Sharing Scheduler for Kubernetes Cluster powered by Alibaba
+## Secret Management
+
+- [vault-secrets-operator](https://github.com/ricoberger/vault-secrets-operator): Create Kubernetes secrets from Vault for a secure GitOps based workflow 🌟 **(Recommended)**
+- [sealed-secrets](https://github.com/bitnami-labs/sealed-secrets): A Kubernetes controller and tool for one-way encrypted Secrets
+## Service Mesh
+
+- [consul](https://developer.hashicorp.com/consul/docs?product_intent=consul):  A multi-networking tool that offers a fully-featured service mesh solution
+- [Istio](https://istio.io/): Service Mesh. Simplified. Easily build cloud native workloads securely and reliably with `Istio`, with or without sidecars. 🌟 **(Recommended)**
+- [linkerd](https://linkerd.io/2.15/overview/):  A _service mesh_ for Kubernetes. It makes running services easier and safer by giving you runtime debugging, observability, reliability, and security—all without requiring any changes to your code.
+## Storage Platforms
+
+- [NFS CSI driver](https://github.com/kubernetes-csi/csi-driver-nfs): This driver allows Kubernetes to access NFS server on Linux node
+- [MinIO](https://min.io/docs/minio/kubernetes/upstream/index.html): MinIO Object Storage for Kubernetes 🌟 **(Recommended)**
+- [Rook](https://rook.io/docs/rook/latest-release/Getting-Started/intro/): An open source cloud-native storage orchestrator, providing the platform, framework, and support for Ceph storage to natively integrate with cloud-native environments 🌟 **(Recommended)**
+- [openebs](https://github.com/openebs/openebs):  an open-source Container Native Storage solution that provides persistent storage for Kubernetes workloads
+- [cubefs](https://github.com/cubefs/cubefs): an open-source cloud-native distributed file & object storage system
+- [seaweedfs](https://github.com/seaweedfs/seaweedfs): a distributed storage system for object storage (S3), file systems, and Iceberg tables, designed to handle billions of files with O(1) disk access and effortless horizontal scaling.
+## Threat Intelligence & Security
 
 - [Falco](https://falco.org/): Detect security threats in real time 🌟 **(Recommended)**
 - [Kubernetes Goat](https://madhuakula.com/kubernetes-goat/docs): An interactive Kubernetes security learning playground
@@ -376,37 +417,30 @@ tags:
 # Kubernetes Tools
 
 ![[thumbnail-k8s-tools.png]]
-## API Gateway / Ingress Controller / LB / Tunneling
+## API Gateway & Ingress & LoadBalancer
 
 - [AWS Load Balancer Controller](https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.10/): AWS Load Balancer Controller is a controller to help manage Elastic Load Balancers for a Kubernetes cluster 🌟 **(Recommended)**
 - [Gateway API](https://gateway-api.sigs.k8s.io/): Gateway API is an official Kubernetes project focused on L4 and L7 routing in Kubernetes 🌟 **(Recommended)**
 - [Ingress-Nginx Controller](https://kubernetes.github.io/ingress-nginx/) : Documentation about Nginx ingress which use for delivery IN/OUT traffic for Kubernetes Cluster 🌟 **(Recommended)**
-- [Traefik - Ingress Controller](https://doc.traefik.io/traefik/providers/kubernetes-ingress/): A Kubernetes Ingress controller; that is to say, it manages access to cluster services by supporting the [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) specification.
+- [MetalLB](https://metallb.io/): A load-balancer implementation for bare metal [Kubernetes](https://kubernetes.io/) clusters, using standard routing protocols. 🌟 **(Recommended)**
 - [ngrok-operator](https://github.com/ngrok/ngrok-operator): Leverage [ngrok](https://ngrok.com/) for your ingress in your Kubernetes cluster 🌟 **(Recommended)**
-- [cloudflare-operator](https://github.com/adyanth/cloudflare-operator): A Kubernetes Operator to create and manage Cloudflare Tunnels and DNS records for (HTTP/TCP/UDP) Service Resources
+- [Traefik - Ingress Controller](https://doc.traefik.io/traefik/providers/kubernetes-ingress/): A Kubernetes Ingress controller; that is to say, it manages access to cluster services by supporting the [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) specification. 🌟 **(Recommended)**
+- [klipper-lb](https://github.com/k3s-io/klipper-lb): Runtime image for the integrated service load balancer (aka [ServiceLB](https://github.com/k3s-io/k3s/blob/main/pkg/cloudprovider/servicelb.go)) in K3s and RKE2 🌟 **(Recommended)**
 ## Autoscaling
 
-- [Keda](https://keda.sh/docs/2.16/): Kubernetes Event-driven Autoscaling
-- [Kubernetes Autoscaler](https://github.com/kubernetes/autoscaler): Autoscaling components for Kubernetes 🌟 **(Recommended)**
-## Configuration Management & Utilities
+- [Kubernetes Autoscaler](https://github.com/kubernetes/autoscaler): Autoscaling components for Kubernetes
+## Authentication
+
+- [pinniped](https://github.com/vmware/pinniped): Pinniped is the easy, secure way to log in to your Kubernetes clusters. 🌟 **(Recommended)**
+## Configuration
 
 - [Reloader](https://github.com/stakater/Reloader): A Kubernetes controller to watch changes in ConfigMap and Secrets and do rolling upgrades on Pods with their associated Deployment, StatefulSet, DaemonSet and DeploymentConfig 🌟 **(Recommended)**
-- [vals](https://github.com/helmfile/vals): Helm-like configuration values loader with support for various sources 🌟 **(Recommended)**
 - [kubernetes-reflector](https://github.com/emberstack/kubernetes-reflector): Custom Kubernetes controller that can be used to replicate secrets, configmaps and certificates 🌟 **(Recommended)**
-## DNS / SSL / Service Discovery
-
 - [cert-manager](https://github.com/cert-manager/cert-manager): Automatically provision and manage TLS certificates in Kubernetes 🌟 **(Recommended)**
-- [external-dns](https://github.com/kubernetes-sigs/external-dns): Configure external DNS servers 🌟 **(Recommended)**
-- [coredns](https://github.com/coredns/coredns): CoreDNS is a DNS server that chains plugin 🌟 **(Recommended)**
-## GPU Scheduler
+## Scheduler (GPU)
 
-- [AMD GPU Operator](https://github.com/ROCm/gpu-operator): Simplifies the deployment and management of AMD Instinct GPU accelerators within Kubernetes clusters. [Documentation](https://instinct.docs.amd.com/projects/gpu-operator/en/latest/)
 - [HAMi](https://github.com/Project-HAMi/HAMi): Heterogeneous AI Computing Virtualization Middleware 🌟 **(Recommended)**
-- [Intel GPU Operator](https://github.com/intel/intel-device-plugins-for-kubernetes): Intel GPU plugin facilitates Kubernetes workload. [Documentation](https://intel.github.io/intel-device-plugins-for-kubernetes/cmd/gpu_plugin/README.html)
-- [k8s-dra-driver-gpu](https://github.com/NVIDIA/k8s-dra-driver-gpu): Dynamic Resource Allocation (DRA) for NVIDIA GPUs in Kubernetes
-- [KAI-Scheduler](https://github.com/NVIDIA/KAI-Scheduler): an open source Kubernetes Native scheduler for AI workloads at large scale
 - [NVIDIA GPU Operator](https://github.com/NVIDIA/gpu-operator): NVIDIA GPU Operator creates, configures, and manages GPUs in Kubernetes. [Documentation](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/overview.html) 🌟 **(Recommended)**
-- [gpushare-scheduler-extender](https://github.com/AliyunContainerService/gpushare-scheduler-extender): GPU Sharing Scheduler for Kubernetes Cluster powered by Alibaba
 ## Kubectl Tools Kit
 
 - [krew](https://github.com/kubernetes-sigs/krew): 📦 Find and install kubectl plugins 🌟 **(Recommended)**
@@ -421,39 +455,28 @@ tags:
 - [K3s](https://docs.k3s.io/): Lightweight Kubernetes. Easy to install, half the memory, all in a binary of less than 100 MB 🌟 **(Recommended)**
 - [RKE2](https://docs.rke2.io/): Rancher's enterprise-ready next-generation Kubernetes distribution. It has also been known as RKE Government. 🌟 **(Recommended)**
 - [Kind](https://kind.sigs.k8s.io/) : [kind](https://sigs.k8s.io/kind) is a tool for running local Kubernetes clusters using Docker container “nodes” 🌟 **(Recommended)**
-- [Kubernetes Official solution](https://kubernetes.io/docs/setup/production-environment/tools/) : Installing Kubernetes with deployment tools.
-	- [kubespray](https://github.com/kubernetes-sigs/kubespray): Deploy a Production Ready Kubernetes Cluster
-	- [kubeadm](https://github.com/kubernetes/kubeadm): Aggregator for issues filed against kubeadm 🌟 **(Recommended)**
-	- [kubeadm-ha](https://github.com/TimeBye/kubeadm-ha): Deploy HA Kubernetes with Kubeadm using ansible
-## Monitoring
+## Monitoring & Observability
 
-- [kube-state-metrics](https://github.com/kubernetes/kube-state-metrics): Add-on agent to generate and expose cluster-level metrics 🌟 **(Recommended)**
+- [kube-state-metrics](https://github.com/kubernetes/kube-state-metrics): Add-on agent to generate and expose cluster-level metrics
 - [metrics-server](https://github.com/kubernetes-sigs/metrics-server): Scalable and efficient source of container resource metrics for Kubernetes built-in autoscaling pipelines 🌟 **(Recommended)**
-- [OpenSLO](https://github.com/OpenSLO/OpenSLO): Open specification for defining and expressing service level objectives (SLO)
-- [prometheus-operator](https://prometheus-operator.dev/docs/getting-started/introduction/): A [Kubernetes Operator](https://github.com/cncf/tag-app-delivery/blob/main/operator-wg/whitepaper/Operator-WhitePaper_v1-0.md#foundation) that provides Kubernetes native deployment and management of [Prometheus](https://prometheus.io/) and related monitoring components.
-- [x509-certificate-exporter](https://github.com/enix/x509-certificate-exporter): A Prometheus exporter to monitor x509 certificates expiration in Kubernetes clusters or standalone 🌟 **(Recommended)**
-## Networking (Proxy, Routing and Polices)
+- [prometheus-operator](https://prometheus-operator.dev/docs/getting-started/introduction/): A [Kubernetes Operator](https://github.com/cncf/tag-app-delivery/blob/main/operator-wg/whitepaper/Operator-WhitePaper_v1-0.md#foundation) that provides Kubernetes native deployment and management of [Prometheus](https://prometheus.io/) and related monitoring components. 🌟 **(Recommended)**
+- [x509-certificate-exporter](https://github.com/enix/x509-certificate-exporter): A Prometheus exporter to monitor x509 certificates expiration in Kubernetes clusters or standalone
+## Networking
 
-- [kube-router](https://github.com/cloudnativelabs/kube-router): a turnkey solution for Kubernetes networking with aim to provide operational simplicity and high performance.
-- [kube-proxy](https://github.com/kubernetes/kube-proxy): component is responsible for implementing a _virtual IP_ mechanism for [Services](https://kubernetes.io/docs/concepts/services-networking/service/) of `type` other than [`ExternalName`](https://kubernetes.io/docs/concepts/services-networking/service/#externalname) 🌟 **(Recommended)**
-- [envoy](https://www.envoyproxy.io/docs/envoy/v1.31.0/) : Envoy is an L7 proxy and communication bus designed for large modern service oriented architectures
-## Policy Controller
+- [external-dns](https://github.com/kubernetes-sigs/external-dns): Configure external DNS servers 🌟 **(Recommended)**
+- [coredns](https://github.com/coredns/coredns): CoreDNS is a DNS server that chains plugin 🌟 **(Recommended)**
+- [kube-proxy](https://github.com/kubernetes/kube-proxy): component is responsible for implementing a _virtual IP_ mechanism for [Services](https://kubernetes.io/docs/concepts/services-networking/service/) of `type` other than [`ExternalName`](https://kubernetes.io/docs/concepts/services-networking/service/#externalname)
+## Policy & Security
 
-- [Kyverno](https://kyverno.io/) : Kubernetes Native Policy Management
-- [OPA Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/) : A customizable cloud native policy controller that helps enforce policies and strengthen governance 🌟 **(Recommended)**
+- [Kyverno](https://kyverno.io/) : Kubernetes Native Policy Management 🌟 **(Recommended)**
 ## Secret Management
 
+- [openbao](https://github.com/openbao/openbao): a software solution to manage, store, and distribute sensitive data including secrets, certificates, and keys. 🌟 **(Recommended)**
+- [vault](https://github.com/hashicorp/vault): A tool for secrets management, encryption as a service, and privileged access management 🌟 **(Recommended)**
 - [external-secrets](https://github.com/external-secrets/external-secrets): External Secrets Operator reads information from a third-party service like AWS Secrets Manager and automatically injects the values as Kubernetes Secrets 🌟 **(Recommended)**
-- [vault-secrets-operator](https://github.com/ricoberger/vault-secrets-operator): Create Kubernetes secrets from Vault for a secure GitOps based workflow 🌟 **(Recommended)**
-- [sealed-secrets](https://github.com/bitnami-labs/sealed-secrets): A Kubernetes controller and tool for one-way encrypted Secrets
-## Service Mesh
-
-- [consul](https://developer.hashicorp.com/consul/docs?product_intent=consul):  A multi-networking tool that offers a fully-featured service mesh solution
-- [Istio](https://istio.io/): Service Mesh. Simplified. Easily build cloud native workloads securely and reliably with `Istio`, with or without sidecars. 🌟 **(Recommended)**
-- [linkerd](https://linkerd.io/2.15/overview/):  A _service mesh_ for Kubernetes. It makes running services easier and safer by giving you runtime debugging, observability, reliability, and security—all without requiring any changes to your code.
+- [vault-agent-injector](https://developer.hashicorp.com/vault/docs/deploy/kubernetes/injector): Alters pod specifications to include Vault Agent containers that render Vault secrets to a shared memory volume using [Vault Agent Templates](https://developer.hashicorp.com/vault/docs/agent-and-proxy/agent/template). 🌟 **(Recommended)**
+- [provider-vault](https://github.com/upbound/provider-vault): A Crossplane provider for HashiCorp Vault 🌟 **(Recommended)**
 ## Storage Platforms
 
-- [NFS CSI driver](https://github.com/kubernetes-csi/csi-driver-nfs): This driver allows Kubernetes to access NFS server on Linux node
+- [local-path-provisioner](https://github.com/rancher/local-path-provisioner): Dynamically provisioning persistent local storage with Kubernetes 🌟 **(Recommended)**
 - [Longhorn](https://longhorn.io/): Cloud native distributed block storage for Kubernetes 🌟 **(Recommended)**
-- [MinIO](https://min.io/docs/minio/kubernetes/upstream/index.html): MinIO Object Storage for Kubernetes 🌟 **(Recommended)**
-- [Rook](https://rook.io/docs/rook/latest-release/Getting-Started/intro/): An open source cloud-native storage orchestrator, providing the platform, framework, and support for Ceph storage to natively integrate with cloud-native environments 🌟 **(Recommended)**

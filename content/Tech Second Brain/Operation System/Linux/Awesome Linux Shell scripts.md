@@ -11,7 +11,6 @@ tags:
   - automation
 ---
 
-![[meme-bash-script.png]]
 
 >[!info]
 >This place store script of mine to solve couple of problems, fun stuff and be able to reuse for multiple reason. Double-check if you concern

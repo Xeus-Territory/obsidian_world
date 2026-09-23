@@ -9,11 +9,8 @@ tags:
   - hacking
 ---
 
->[!info]
->This page for purpose share the idea, community, skillset, technical about Cyber Security and Information Security. How we can improve the skillset via LAB and CTF contest
-
-![[meme-decision.png|center|500x600]]
-# Awesome Articles / Blogs / Collections InfoSec
+![[icon-owasp.png]]
+# Awesome InfoSec Articles & Blogs
 
 ## Articles
 

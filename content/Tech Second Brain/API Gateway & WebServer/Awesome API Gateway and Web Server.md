@@ -31,7 +31,7 @@ tags:
 
 - [awesome-webservers](https://github.com/imgarylai/awesome-webservers): a collection of one-liner server
 - [web-servers.md](https://gist.github.com/willurd/5720255) : Each of these commands will run an ad hoc http static server in your current (or specified) directory
-- [moz://a SSL Configuration Generator](https://ssl-config.mozilla.org/) : SSL Generation for multiple webserver 🌟 **(Recommended)**
+- [TLS Configurator](https://configurator.tlsref.org/): SSL Generation for multiple webserver 🌟 **(Recommended)**
 ## Documentations
 
 - [ASGI](https://asgi.readthedocs.io/en/latest/): *Asynchronous Server Gateway Interface* is a spiritual successor to WSGI, intended to provide a standard interface between async-capable Python web servers, frameworks, and applications.
