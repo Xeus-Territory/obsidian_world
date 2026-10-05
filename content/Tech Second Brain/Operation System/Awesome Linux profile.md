@@ -220,8 +220,11 @@ curl -sSL -o argocd-linux-amd64 https://github.com/argoproj/argo-cd/releases/dow
 sudo install -m 555 argocd-linux-amd64 /usr/local/bin/argocd
 rm argocd-linux-amd64
 
-# Install vault
-wget https://releases.hashicorp.com/vault/1.18.5/vault_1.18.5_linux_amd64.zip && unzip -p vault_1.18.5_linux_amd64.zip vault > vault && chmod +x vault && sudo mv vault /usr/local/bin && rm -rf vault_1.18.5_linux_amd64.zip
+# Install vault CLI (latest version updated Mar 2026)
+wget https://releases.hashicorp.com/vault/1.21.4/vault_1.21.4_linux_amd64.zip && \
+unzip -p vault_1.21.4_linux_amd64.zip vault > vault && \
+chmod +x vault && sudo mv vault /usr/local/bin && \
+rm -rf vault_1.21.4_linux_amd64.zip
 
 # Install kafka CLI
 mkdir -p ~/.kafka
@@ -276,6 +279,24 @@ curl -sSfL https://packages.openvpn.net/packages-repo.gpg | sudo tee /etc/apt/ke
 . /etc/os-release
 echo "deb [signed-by=/etc/apt/keyrings/openvpn.asc] https://packages.openvpn.net/openvpn3/debian $VERSION_CODENAME main" | sudo tee -a /etc/apt/sources.list.d/openvpn3.list
 sudo apt update && sudo apt install openvpn3-client -y
+
+
+# Install GH (GitHub command)
+(type -p wget >/dev/null || (sudo apt update && sudo apt install wget -y)) \
+	&& sudo mkdir -p -m 755 /etc/apt/keyrings \
+	&& out=$(mktemp) && wget -nv -O$out https://cli.github.com/packages/githubcli-archive-keyring.gpg \
+	&& cat $out | sudo tee /etc/apt/keyrings/githubcli-archive-keyring.gpg > /dev/null \
+	&& sudo chmod go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg \
+	&& sudo mkdir -p -m 755 /etc/apt/sources.list.d \
+	&& echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
+	&& sudo apt update \
+	&& sudo apt install gh -y
+
+# Install bao CLI
+wget https://github.com/openbao/openbao/releases/download/v2.7.0/openbao_2.7.0_linux_amd64.tar.gz && \
+tar -xzf openbao_2.7.0_linux_amd64.tar.gz bao && \
+chmod +x bao && sudo mv bao /usr/local/bin && \
+rm -rf openbao_2.7.0_linux_amd64.tar.gz
 ```
 
 # Install programming language for ZSH

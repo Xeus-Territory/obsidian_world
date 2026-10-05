@@ -36,6 +36,11 @@ If you use Helm for managing and deploying Kubernetes applications, you can try 
 
 - [Helm - Tools You Can Use To Manage Your Helm Releases Declaratively](https://helm.sh/blog/tools-to-manage-helm-declaratively/)
 - [Robusta - Five Helm Tools for Improving Kubernetes Quality of Life](https://home.robusta.dev/blog/top-five-helm-addon-tools-for-kubernetes)
+## Helm Compatible
+
+- [helm-docs](https://github.com/norwoodj/helm-docs): A tool for automatically generating markdown documentation for helm charts 🌟 **(Recommended)**
+- [helmfile](https://github.com/helmfile/helmfile): Declaratively deploy your Kubernetes manifests, Kustomize configs, and Charts as Helm releases. Generate all-in-one manifests for use with ArgoCD.
+- [vals](https://github.com/helmfile/vals): Helm-like configuration values loader with support for various sources
 ## Helm Extension
 
 - [helm-compose](https://github.com/seacrew/helm-compose): A helm plugin for managing multiple releases of one or many charts within a single configuration file.
@@ -46,7 +51,7 @@ If you use Helm for managing and deploying Kubernetes applications, you can try 
 
 - [Terraform: Helm Release](https://registry.terraform.io/providers/hashicorp/helm/latest/docs/resources/release): A Release is an instance of a chart running in a Kubernetes cluster 🌟 **(Recommended)**
 - [ArgoCD](https://argo-cd.readthedocs.io/en/stable/):  A declarative, GitOps continuous delivery tool for Kubernetes 🌟 **(Recommended)**
-- [FluxCD](https://fluxcd.io/flux/) : Tool for keeping Kubernetes clusters in sync with sources of configuration (like Git repositories), and automating updates to configuration when there is new code to deploy 🌟 **(Recommended)**
+- [FluxCD](https://fluxcd.io/flux/) : Tool for keeping Kubernetes clusters in sync with sources of configuration (like Git repositories), and automating updates to configuration when there is new code to deploy
 ## Repositories
 
 - [awesome-helm](https://github.com/cdwv/awesome-helm): Collaborative list of awesome helm charts and resources. PRs are welcome!

@@ -23,6 +23,7 @@ To find more information and example, you can double-check a some manifest colle
 - [CRDs-catalog](https://github.com/datreeio/CRDs-catalog): CRDs-catalog - used with [`kubeconform`](https://github.com/yannh/kubeconform) 🌟 **(Recommended)**
 - [doc.crds.dev](https://doc.crds.dev/): Find and Parse API Scheme of specific URL CRDs repository 🌟 **(Recommended)**
 - [Medium - Kubernetes All-in-One](https://medium.com/@Vellai-Chamy/kubernetes-all-in-one-c8b8231095a5) 🌟 **(Recommended)**
+- [GitHub - Fast-Kubernetes](https://github.com/omerbsezer/Fast-Kubernetes): This repo covers Kubernetes objects' and components' details and possible example usage scenarios in a nutshell 🌟 **(Recommended)**
 # Kubernetes Q/A Collection 
 ## Can use volume with cronjobs?
 
