@@ -125,6 +125,7 @@ tags:
 - [Medium - 7 Underrated Kubernetes Projects: Elevate Your Lab Playground!](https://medium.com/@ebenamor/7-underrated-kubernetes-projects-elevate-your-lab-playground-ac7f47cba347)
 - [Kubernetes -  Documentation](https://kubernetes.io/docs/home/)
 - [Kubernetes - Configure a Security Context for a Pod or Container](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/) 🌟 **(Recommended)**
+- [Kubernetes - Well-Known Labels, Annotations and Taints](https://kubernetes.io/docs/reference/labels-annotations-taints/) 🌟 **(Recommended)**
 ## Hardware and Resources
 
 - [Medium - Why does my 2vCPU application run faster in a VM than in a container? (Content of the year 2024)](https://hwchiu.medium.com/why-does-my-2vcpu-application-run-faster-in-a-vm-than-in-a-container-6438ffaba245) 🌟 **(Recommended)**
@@ -259,6 +260,8 @@ tags:
 - [Nginx Gateway Fabric](https://github.com/nginx/nginx-gateway-fabric): Provides an implementation for the Gateway API using NGINX as the data plane.
 - [Traefik - ApiGateway](https://doc.traefik.io/traefik-hub/api-gateway/intro): A drop-in replacement for Traefik Proxy, it can do everything Traefik Proxy does, with additional capabilities and support out of the box.
 - [wiredoor](https://github.com/wiredoor/wiredoor): Self hosted ingress-as-a-service platform that allows you to expose applications and services running in private or local networks to the internet
+- [loxilb](https://github.com/loxilb-io/loxilb): eBPF based cloud-native load-balancer for Kubernetes|Edge|Telco|IoT|XaaS.
+- [openelb](https://github.com/openelb/openelb): Load Balancer Implementation for Kubernetes in Bare-Metal, Edge, and Virtualization
 ## AI Operator
 
 - [Kaito](https://kaito-project.github.io/kaito/docs/): an operator suite that automates LLM model inference, fine-tuning, and RAG (Retrieval Augmented Generation) engine deployment in a Kubernetes cluster.
@@ -295,9 +298,7 @@ tags:
 
 - [chaos-mesh](https://github.com/chaos-mesh/chaos-mesh): A Chaos Engineering Platform for Kubernetes.
 - [litmus](https://github.com/litmuschaos/litmus): Chaos Engineering Framework with cross-cloud support.
-## Configuration
-
-- [vals](https://github.com/helmfile/vals): Helm-like configuration values loader with support for various sources
+- [krkn](https://github.com/krkn-chaos/krkn): Chaos and resiliency testing tool for Kubernetes with a focus on improving performance under failure conditions.
 ## Dashboard & Cluster Management
 
 - [kubewall](https://github.com/kubewall/kubewall): Single-Binary Kubernetes Dashboard with Multi-Cluster Management & AI Integration
@@ -374,6 +375,7 @@ tags:
 - [kubescape](https://github.com/kubescape/kubescape): an open-source Kubernetes security platform for your IDE, CI/CD pipelines, and clusters.
 - [OPA Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/) : A customizable cloud native policy controller that helps enforce policies and strengthen governance 🌟 **(Recommended)**
 - [cel-admission-library](https://github.com/kubescape/cel-admission-library): This projects contains pre-made policies for Kubernetes Validating Admission Policies.
+- [cerbos](https://github.com/cerbos/cerbos): an open-core authorization management platform for authorizing every identity and governing every action across applications, gateways, workloads, and AI agents.
 ## Resources Orchestrator
 
 - [kro](https://github.com/awslabs/kro): Kube Resource Orchestrator

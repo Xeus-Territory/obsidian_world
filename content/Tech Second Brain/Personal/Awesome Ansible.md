@@ -20,6 +20,9 @@ tags:
 
 - [Ansible](https://docs.ansible.com/ansible/latest/index.html) : Ansible provides open-source automation that reduces complexity and runs everywhere, especially **virtual machine**
 - [Ansible Vault](https://docs.ansible.com/ansible/2.9/user_guide/vault.html): A feature of ansible that allows you to keep sensitive data such as passwords or keys in encrypted files, rather than as plaintext in playbooks or roles.
+## Features
+
+- [Ansible - Templating (Jinja2)](https://docs.ansible.com/projects/ansible-core/2.13/user_guide/playbooks_templating.html): Ansible uses Jinja2 templating to enable dynamic expressions and access to [variables](https://docs.ansible.com/projects/ansible-core/2.13/user_guide/playbooks_variables.html#playbooks-variables) and [facts](https://docs.ansible.com/projects/ansible-core/2.13/user_guide/playbooks_vars_facts.html#vars-and-facts), and It uses templating with the [template module](https://docs.ansible.com/projects/ansible/latest/collections/ansible/builtin/template_module.html). Explore more about [Jinja - Template Designer Documentation](https://jinja.palletsprojects.com/en/stable/templates/) 🌟 **(Recommended)**
 ## Organization
 
 - [Ansible Community](https://github.com/ansible-community): Collection of community-driven Ansible repositories

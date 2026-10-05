@@ -26,6 +26,7 @@ tags:
 - [AI-Infra](https://github.com/pacoxu/AI-Infra): init to record my learning path of AI Infra, especially on inference.
 - [AI-Infra-from-Zero-to-Hero](https://github.com/HuaizhengZhang/AI-Infra-from-Zero-to-Hero): 🚀 Awesome System for Machine Learning ⚡️ AI System Papers and Industry Practice
 - [Awesome-LLMOps](https://github.com/tensorchord/Awesome-LLMOps): An awesome & curated list of best LLMOps tools for developers
+- [Awesome-LLM-Inference](https://github.com/xlite-dev/Awesome-LLM-Inference): 📚A curated list of Awesome LLM/VLM Inference Papers with Codes: Flash-Attention, Paged-Attention, WINT8/4, Parallelism, etc.🎉
 ## Blogs
 
 - [Machine Learning Operations](https://ml-ops.org/): Provide an end-to-end machine learning development process to design, build and manage reproducible, testable, and evolvable ML-powered software
@@ -38,6 +39,7 @@ tags:
 ## Landscape
 
 - [Awesome LLMOps](https://awesome-llmops.inftyai.com/)
+- [LF AI & Data Foundation Interactive Landscape](https://landscape.lfai.foundation/) 🌟 **(Recommended)**
 ## Topics
 
 - [AutoML](https://github.com/topics/automl)
@@ -70,12 +72,24 @@ tags:
 - [Ray](https://github.com/ray-project/ray): an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads. 🌟 **(Recommended)**
 - [vllm](https://github.com/vllm-project/vllm): A high-throughput and memory-efficient inference and serving engine for LLMs
 - [onnxruntime](https://github.com/microsoft/onnxruntime): cross-platform, high performance ML inferencing and training accelerator
+- [dynamo](https://github.com/ai-dynamo/dynamo): A Datacenter Scale Distributed Inference Serving Framework, By Nvidia
+- [OpenLLM](https://github.com/bentoml/OpenLLM): Run any open-source LLMs, such as DeepSeek and Llama, as OpenAI compatible API endpoint in the cloud.
+- [BentoML](https://github.com/bentoml/BentoML): The easiest way to serve AI apps and models - Build Model Inference APIs, Job queues, LLM apps, Multi-model pipelines, and more!
+- [kserve](https://github.com/kserve/kserve): Standardized Distributed Generative and Predictive AI Inference Platform for Scalable, Multi-Framework Deployment on Kubernetes
+- [gpustack](https://github.com/gpustack/gpustack): A GPU cluster manager for high-performance AI model serving (vLLM, SGLang) and on-demand SSH-accessible GPU instances.
+- [ollama](https://github.com/ollama/ollama): Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.
+- [llama.cpp](https://github.com/ggml-org/llama.cpp): LLM inference in C/C++
+- [sglang](https://github.com/sgl-project/sglang): SGLang is a high-performance serving framework for large language models and multimodal models.
 ## Model Management & Deployment
 
 - [MLFlow](https://github.com/mlflow/mlflow): Open source platform for the machine learning lifecycle 🌟 **(Recommended)**
+- [Kubeflow Pipelines](https://github.com/kubeflow/pipelines): a platform for building and deploying portable and scalable machine learning (ML) workflows using containers on Kubernetes-based systems.
+- [metaflow](https://github.com/Netflix/metaflow): Build, Manage and Deploy AI/ML Systems
 ## LLM Gateway
 
 - [litellm](https://github.com/BerriAI/litellm): Proxy Server (LLM Gateway) to call 100+ LLM APIs in OpenAI format 🌟 **(Recommended)**
+- [Kong AI Gateway](https://developer.konghq.com/ai-gateway/): Connectivity and governance layer for modern AI-native applications
+- [WSO2 AI Gateway](https://github.com/wso2/api-platform): AI-ready, GitOps-driven API platform for full lifecycle management across cloud, hybrid, and on-prem.
 ## VectorDB
 
 - [Chroma](https://docs.trychroma.com/):  The AI-native open-source vector database (Opensource) 🌟 **(Recommended)**

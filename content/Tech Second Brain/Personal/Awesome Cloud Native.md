@@ -20,6 +20,7 @@ Cloud Native usually relate with Containerization, Kubernetes, and Architecture 
 - [[Awesome Containerization]]
 - [[Awesome DevOps & SRE & System & Tech]]
 - [[Awesome DevSecOps]]
+- [[Awesome Helm]]
 - [[Awesome Kubernetes]]
 - [[Awesome Kubernetes Walkthrough]]
 - [[Awesome Self-Hosted]]
@@ -71,6 +72,14 @@ Cloud Native usually relate with Containerization, Kubernetes, and Architecture 
 - [CD Foundation Landscape](https://landscape.cd.foundation/): Collection about CI/CD Projects 🌟 **(Recommended)**
 - [CNCF Landscape](https://landscape.cncf.io/): Collection by category tools and technologies of CNCF 🌟 **(Recommended)**
 - [Platform Engineer landscape](https://platformengineering.org/platform-tooling): Distills the best practices in designing IDP 🌟 **(Recommended)**
+- [The Linux Foundation - Projects](https://www.linuxfoundation.org/projects): Browse all projects hosted by The Linux Foundation 🌟 **(Recommended)**
+## Linux Foundation Ecosystem
+
+- [LFX - Mentor Dashboard](https://mentorship.lfx.linuxfoundation.org/#projects_all): Mentorship Leaderboard
+- [LFX - Insights](https://insights.linuxfoundation.org/): Discover the world's most critical open source projects
+- [LFX - Crowfunding](https://crowdfunding.linuxfoundation.org/): Fund the open source software that powers the world
+- [LFX - Events](https://events.linuxfoundation.org/): Collection events hosted by The Linux Foundation
+- [CNCF - Events](https://www.cncf.io/events): CNCF hosts and supports various events throughout the year
 ## Organization and Community
 
 - [CNCF Projects](https://contribute.cncf.io/contributors/projects/): All projects of the Cloud Native Computing Foundation
@@ -91,6 +100,9 @@ Cloud Native usually relate with Containerization, Kubernetes, and Architecture 
 ## Authentication
 
 - [dex](https://github.com/dexidp/dex): OpenID Connect (OIDC) identity and OAuth 2.0 provider with pluggable connectors 🌟 **(Recommended)**
+	- [Stakater DCO (Dex Config Operator)](https://docs.stakater.com/dco/main/): a Kubernetes operator that manages [Dex](https://dexidp.io/) OIDC configurations declaratively through Custom Resource Definitions (CRDs).
+	- [GiantSwarm - dex-operator](https://github.com/giantswarm/dex-operator): Operator to automate the configuration of Dex
+
 - [oauth2-proxy](https://github.com/oauth2-proxy/oauth2-proxy): A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers.
 - [Keycloak](https://github.com/keycloak/keycloak): an open-source identity and access management solution for modern applications and services, built on top of industry security standard protocols. 🌟 **(Recommended)**
 ## Automatic Deployment & GitOps
