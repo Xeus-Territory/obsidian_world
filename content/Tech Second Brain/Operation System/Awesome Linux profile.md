@@ -479,6 +479,21 @@ alias kr="kubectl run --dry-run=client -o yaml "
 alias krcp="k resource-capacity -p --util"
 alias krca="k resource-capacity -a"
 alias kgsecret="k get secret -o go-template='{{range \$k,\$v := .data}}{{\"### \"}}{{\$k}}{{\"\n\"}}{{\$v|base64decode}}{{\"\n\n\"}}{{end}}'"
+alias kgcp='kubectl get composite -o="custom-columns=NAME:.metadata.name,SYNCED:.status.conditions[?(@.type==\"Synced\")].status,READY:.status.conditions[?(@.type==\"Ready\")].status,REVISION:.spec.crossplane.compositionRevisionRef.name,POLICY:.spec.crossplane.compositionUpdatePolicy,MATCHLABEL:.spec.crossplane.compositionRevisionSelector.matchLabels,ERROR:.status.conditions[?(@.status==\"False\")].message"'
+alias kgxrerr='kubectl get managed -o json | jq -r '\''.items[] | select(any(.status.conditions[]?; .status=="False")) | .kind + "/" + .metadata.name + "  [" + (.metadata.labels["crossplane.io/composite"] // "-") + "]  " + ([.status.conditions[] | select(.status=="False") | .type + ": " + (.message // .reason)] | join(" | "))'\'''
+alias kgxr="kubectl get managed"
+alias kgxrmessage='kubectl get managed -o json | jq -r '\''.items[] | .kind + "/" + .metadata.name,(.status.conditions[]? | "    " + .type + "=" + .status + "  " + (.reason // "") + "  " + (.message // ""))'\'''
+
+xrprune() {
+    local keep=${1:-3} refs
+    refs=$(kubectl get composite -o json | jq -r '[.items[].spec.crossplane.compositionRevisionRef.name // empty] | unique | .[]')
+    kubectl get compositionrevisions -o json | jq -r --argjson keep "$keep" --arg refs "$refs" '
+      ($refs | split("\n") | map(select(length>0))) as $used
+      | .items | group_by(.metadata.labels["crossplane.io/composition-name"])
+      | .[] | sort_by(-.spec.revision) | .[$keep:] | .[]
+      | select(.metadata.name as $n | ($used | index($n)) == null)
+      | .metadata.name'
+}
 
 # krew and kubectl plugins
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"

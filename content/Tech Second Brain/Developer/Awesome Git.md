@@ -241,3 +241,80 @@ Now with each of directory, it will use `git` profile corresponding, you can dou
 ```bash
 git config --list
 ```
+
+# Add a changed file to older (not last) commit in Git
+
+In some situation, you have file changing and want to add to older commit, not last one, therefore, you can use `rebase` for solving this task. Explore more at [StackOverFlow - How to add a changed file to an older (not last) commit in Git](https://stackoverflow.com/a/2719636)
+
+First of all, you need to decide which commit you want to commit the new file change, and you rebase your current git-tree to previous (n-1) compare with your commit, e.g: 
+
+```bash
+f4c79e7 (HEAD -> main, origin/main, origin/HEAD) Merge pull request #61 from Xeus-Territory/chore/correct-error-typing-in-setup-script
+de64171 chore: correct error typing in setup script
+4d2bb79 Merge pull request #60 from Xeus-Territory/chore/add-comment-for-setup-scripts
+1827d5b chore: add comments for setup scripts
+e110bdc Merge pull request #58 from Xeus-Territory/feat/fix-error-provision-k3s-and-provide-rke2
+```
+
+Your are in `f4c79e7` and you need commit to `1827d5b`, it means you need to rebase to commit `e110bdc`, so following the the concept above you can handle add new file, e.g: README.md
+
+```bash
+# stash your changing, if this file currently modify not new one, if the one you can skip this step
+git stash
+
+# rebase to n-1 commit
+git rebase -i e110bdc
+```
+
+>[!info]
+>Here what you need to modify in your terminal, with changing your state of commit from pick to edit, or what ever you want
+
+```bash
+edit 1827d5b chore: add comments for setup scripts
+pick de64171 chore: correct error typing in setup script
+
+# Commands:
+# p, pick <commit> = use commit
+# r, reword <commit> = use commit, but edit the commit message
+# e, edit <commit> = use commit, but stop for amending
+# s, squash <commit> = use commit, but meld into previous commit
+# f, fixup [-C | -c] <commit> = like "squash" but keep only the previous
+#                    commit's log message, unless -C is used, in which case
+#                    keep only this commit's message; -c is same as -C but
+#                    opens the editor
+# x, exec <command> = run command (the rest of the line) using shell
+# b, break = stop here (continue rebase later with 'git rebase --continue')
+# d, drop <commit> = remove commit
+# l, label <label> = label current HEAD with a name
+# t, reset <label> = reset HEAD to a label
+# m, merge [-C <commit> | -c <commit>] <label> [# <oneline>]
+#         create a merge commit using the original merge commit's
+#         message (or the oneline, if no original merge commit was
+#         specified); use -c <commit> to reword the commit message
+# u, update-ref <ref> = track a placeholder for the <ref> to be updated
+#                       to this position in the new commits. The <ref> is
+#                       updated at the end of the rebase
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+```
+
+>[!note]
+>This kind is the same way when you want to squash commit above. After changing, saving it and you will currently on the commit you want to edit
+
+```bash
+# pop your fine you want to add to this commit
+git stash pop
+
+# add into this commit
+git add README.md
+
+# commit ammend with no-edit the message
+git commit --amend --no-edit
+
+# now rebase continue to back to the lastest commit
+git rebase --continue
+
+# push force if you already write the commit tree into remote repository
+# git push -u origin <branch> --force
+```
+

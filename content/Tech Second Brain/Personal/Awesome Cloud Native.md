@@ -166,3 +166,7 @@ Cloud Native usually relate with Containerization, Kubernetes, and Architecture 
 - [kratix](https://github.com/syntasso/kratix): Kratix is an open-source framework for building platforms
 - [Kro](https://kro.run/):  Build declarative, secure, and verifiable Kubernetes abstractions. 
 - [terraform-kubestack](https://github.com/kbst/terraform-kubestack): Kubestack is a framework for Kubernetes platform engineering teams to define the entire cloud native stack in one Terraform code base and continuously evolve the platform safely through GitOps.
+## Cloud-Native Software Supply Chain
+
+- [cosign](https://github.com/sigstore/cosign): Code signing and transparency for containers and binaries
+- [notation](https://github.com/notaryproject/notation): A CLI tool to sign and verify artifacts
