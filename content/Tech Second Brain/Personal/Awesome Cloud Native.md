@@ -82,9 +82,9 @@ Cloud Native usually relate with Containerization, Kubernetes, and Architecture 
 - [CNCF - Events](https://www.cncf.io/events): CNCF hosts and supports various events throughout the year
 ## Organization and Community
 
-- [CNCF Projects](https://contribute.cncf.io/contributors/projects/): All projects of the Cloud Native Computing Foundation
-- [LFX](https://lfx.linuxfoundation.org/): a hub for collaboration and sustainability in open source
-- [Linux Foundation Project](https://www.linuxfoundation.org/projects) : Opensource Ambassador for projects from multiple users
+- [CNCF Platform Engineering Technical Community Group](https://cloudnativeplatforms.com/): A community of practitioners, vendors, and end-users who are interested in the practice of building and operating cloud native platforms. 
+- [CNCF Community Group](https://ocgroups.dev/cncf): The Place to find CNCF Community, Organization, and Events around the world
+- [Cloud Native Hanoi](https://ocgroups.dev/cncf/group/es73hsz): The Vietnamese Group in Ha Noi for Cloud Native and Open Infrastructure
 ## Platform Engineer Articles
 
 - [Blog - Platform Engineering in 2026: Why DIY Is Dead](https://roadie.io/blog/platform-engineering-in-2026-why-diy-is-dead/)
@@ -93,6 +93,12 @@ Cloud Native usually relate with Containerization, Kubernetes, and Architecture 
 - [Platform Engineer - 10 Platform engineering predictions for 2026](https://platformengineering.org/blog/10-platform-engineering-predictions-for-2026)
 - [Platform Engineer - Internal Developer Platform (IDP) Reference Architectures](https://devops.com/internal-developer-platform-idp-reference-architectures/)
 - [Platform Engineer - Top 10 platform engineering tools to use in 2025](https://platformengineering.org/blog/top-10-platform-engineering-tools-to-use-in-2025)
+## Policies & AuthN/AuthZ Articles
+
+- [Medium - Boring but Correct: How OpenChoreo Handles Authorization](https://binoyperies.medium.com/boring-but-correct-how-openchoreo-handles-authorization-4407599d5d59)
+- [CNCF - Policy-as-Code: Flexible Kubernetes governance with Kyverno](https://www.cncf.io/blog/2026/03/19/policy-as-code-flexible-kubernetes-governance-with-kyverno/)
+- [CNCF - GitOps policy-as-code: Securing Kubernetes with Argo CD and Kyverno](https://www.cncf.io/blog/2026/04/02/gitops-policy-as-code-securing-kubernetes-with-argo-cd-and-kyverno/)
+- [Medium - Governing Multi-Tenant Kubernetes Clusters with Kyverno](https://medium.com/compass-true-north/governing-multi-tenant-kubernetes-clusters-with-kyverno-3e11ba4a64ad)
 # Cloud-Native Tools and Frameworks
 
 ![[thumbnail-cncf-landscape.png]]

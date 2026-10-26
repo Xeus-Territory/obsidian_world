@@ -38,6 +38,8 @@ tags:
 - [DoD - DoD Enterprise DevSecOps Source Diagrams](https://dodcio.defense.gov/Portals/0/Documents/Library/DoDEnterpriseDevSecOps-SourceDiagrams.pdf) - Diagram to visual the DevSevOps Enterprise Architecture of DoD CIO 🌟 **(Recommended)**
 - [OWASP - OWASP DevSecOps Verification Standard](https://owasp.org/www-project-devsecops-verification-standard/) 🌟 **(Recommended)**
 - [Dev.to - WireGuard DoV (DNS-over-VPN)](https://dev.to/xeptore/wireguard-dov-dns-over-vpn-ell)
+- [OSOHQ - RBAC vs ABAC vs ReBAC: What is the best access policy paradigm?](https://www.osohq.com/learn/rbac-vs-abac-vs-rebac-what-is-the-best-access-policy-paradigm)
+- [Medium - The Four Horsemen of Authorization: The P\*Ps (PEP, PDP, PAP, and PIP)](https://medium.com/identity-beyond-borders/the-four-horsemen-of-authorization-the-p-ps-pep-pdp-pap-and-pip-42717e445ce7)
 ## Technology
 
 - [Medium - Building end-to-end DevSecOps for AWS Migration: Security at Entry Level with open source SCA, SAST and DAST tools](https://medium.com/@akhilmittal510/building-end-to-end-devsecops-for-aws-migration-security-at-entry-level-with-open-source-sca-sast-919480423fc1)

@@ -74,6 +74,35 @@ kubectl krew install view-allocations
 ```bash
 NS=`kubectl get ns |grep Terminating | awk 'NR==1 {print $1}'` && kubectl get namespace "$NS" -o json   | tr -d "\n" | sed "s/\"finalizers\": \[[^]]\+\]/\"finalizers\": []/"   | kubectl replace --raw /api/v1/namespaces/$NS/finalize -f - 
 ```
+
+# Annotation Command
+
+## Common behavior
+
+To work with annotation, sometime you can edit them via `kubectl edit`, but instead, `kubectl` provide for you native way to make these annotation worked with `kubectl annotate` command. 
+
+```bash
+# write and it can be same, but will reuse the last applied values
+kubectl annotate resource-type resource-name key-annotation-value
+
+# write the annotation into specific target, but overwrite any exist
+kubectl annotate resource-type resource-name key-annotation=value --overwrite
+
+# if you want to remove it in specific target
+kubectl annotate type -n namespace name-resource key-annotation-
+
+# you can annotate multi resource in one time
+kubectl label resource-type --all environment=development
+kubectl label type1,type2 resource-name owner=platform-team
+```
+
+>[!info]
+>With label, you can reuse the command above but instead `annotate`, kubectl provide `label` instead to write the append or overwrite them with your command.
+
+Explore more at
+
+- [`kubectl annotate`](https://kubernetes.io/docs/reference/kubectl/generated/kubectl_annotate/)
+- [How to use kubectl annotate effectively](https://labex.io/tutorials/kubernetes-how-to-use-kubectl-annotate-effectively-418742)
 # Config Command
 ## Check currently config context
 

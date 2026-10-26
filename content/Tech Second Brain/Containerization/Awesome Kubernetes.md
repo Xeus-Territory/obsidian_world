@@ -43,6 +43,7 @@ tags:
 ## Blogs
 
 - [Kubernetes - Blog](https://kubernetes.io/blog/) 🌟 **(Recommended)**
+- [Dev.to - Kubernetes Topics](https://dev.to/t/kubernetes)
 - [Nubenetes](https://nubenetes.com/) : Awesome Kubernetes & Cloud 🌟 **(Recommended)**
 - [Matthew Mattox Personal Tech Blog](https://support.tools/): Really Cool guys write about Kubernetes, especially RKE2 with deeply debug and configuration 🌟 **(Recommended)**
 - [Medium - Artem Lajko](https://medium.com/@artem_lajko): Write about GitOps, Kubernetes and stuff around this architecture 🌟 **(Recommended)**
@@ -376,6 +377,7 @@ tags:
 - [OPA Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/) : A customizable cloud native policy controller that helps enforce policies and strengthen governance 🌟 **(Recommended)**
 - [cel-admission-library](https://github.com/kubescape/cel-admission-library): This projects contains pre-made policies for Kubernetes Validating Admission Policies.
 - [cerbos](https://github.com/cerbos/cerbos): an open-core authorization management platform for authorizing every identity and governing every action across applications, gateways, workloads, and AI agents.
+- [Capsule](https://github.com/projectcapsule/capsule): Multi-tenancy and policy-based framework for Kubernetes.
 ## Resources Orchestrator
 
 - [kro](https://github.com/awslabs/kro): Kube Resource Orchestrator
@@ -470,7 +472,7 @@ tags:
 - [kube-proxy](https://github.com/kubernetes/kube-proxy): component is responsible for implementing a _virtual IP_ mechanism for [Services](https://kubernetes.io/docs/concepts/services-networking/service/) of `type` other than [`ExternalName`](https://kubernetes.io/docs/concepts/services-networking/service/#externalname)
 ## Policy & Security
 
-- [Kyverno](https://kyverno.io/) : Kubernetes Native Policy Management 🌟 **(Recommended)**
+- [Kyverno](https://kyverno.io/): Kubernetes Native Policy Management 🌟 **(Recommended)**
 ## Secret Management
 
 - [openbao](https://github.com/openbao/openbao): a software solution to manage, store, and distribute sensitive data including secrets, certificates, and keys. 🌟 **(Recommended)**

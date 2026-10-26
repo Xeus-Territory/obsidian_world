@@ -14,6 +14,7 @@ tags:
 
 ## Awesome DevOps & SRE & Sytem & Tech
 
+- [3os Project](https://3os.org/) - Collocation of technical documentation and guides for devops, developers, pentesters, systems administrators and other IT professionals.
 - [API Landscape](https://apilandscape.apiscene.io/): A comprehensive view of all stakeholders creating the programmable economy 🌟 **(Recommended)**
 - [awesome-cloud-security-interview](https://github.com/peachycloudsecurity/awesome-cloud-security-interview): a carefully chosen collection of cloud security-related interview questions and scenarios.
 - [awesome-compilers](https://github.com/aalhour/awesome-compilers): Curated list of awesome resources on Compilers, Interpreters and Runtimes 🌟 **(Recommended)**
@@ -46,6 +47,7 @@ tags:
 ## DevOps & SRE Blog
 
 - [4sysops](https://4sysops.com/) -  The online community for SysAdmins and DevOps
+- [Dev.to - DevOps Topics](https://dev.to/t/devops) - The DevOps of Topics in Dev.to
 - [DevOpsCube](https://devopscube.com/) - Learn DevOps | Software & Platform Reviews 🌟 **(Recommended)**
 - [DevOps Việt Nam - DevOpsify](https://devopsify.co/) - Vietnamese Community about DevOps
 - [DevOps VN](https://devopsvn.tech/) - Vietnamese Community and Blog page about DevOps and Technologies
@@ -72,7 +74,9 @@ tags:
 - [Console.dev](https://console.dev/): Discover the best tools for developers
 - [Free for Dev](https://free-for.dev/): A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev.
 - [G2](https://www.g2.com/): Find the right software and services
+- [GitHub Trending](https://github.com/trending): Find and explore what the GitHub community is most excited about today 🌟 **(Recommended)**
 - [Gitstar Ranking](https://gitstar-ranking.com/): Unofficial GitHub star ranking for users, organizations and repositories 🌟 **(Recommended)**
+- [HelloGitHub](https://hellogithub.com/en) - Share interesting, entry-level open source projects on GitHub.
 - [Hosted Software](https://hostedsoftware.org/): Self-Hosted Software List
 - [LibHunt](https://www.libhunt.com/): Discover awesome open-source projects and their alternatives 🌟 **(Recommended)**
 - [OpenAlternative](https://openalternative.co/): Discover Open Source Alternatives to Popular Software
@@ -139,24 +143,35 @@ tags:
 - [The Pattern Languages of Programs archives](https://hillside.net/index.php/past-plop-conferences): Hundreds of patterns are generated yearly in conferences alone, not to mention books and software engineering websites.
 ## Tech Blog
 
-- [3os Project](https://3os.org/) - Collocation of technical documentation and guides for devops, developers, pentesters, systems administrators and other IT professionals.
 - [Alibaba Cloud](https://www.alibabacloud.com/blog/): The blog page of Alibaba that provides a great insightful, diverse topics and great articles to approach 🌟 **(Recommended)**
+- [AnonyViet](https://anonyviet.com/) - Vietnamese Community who teaching multiple techniques on Computer 🌟 **(Recommended)**
+- [Cloudflare Blog](https://blog.cloudflare.com/): Technical deep dives, product updates, and insights from the teams that are helping to build a better Internet by CloudFlare 🌟 **(Recommended)**
 - [Cloud Native Deep Dive](https://www.cloudnativedeepdive.com/) - Blog of Michael Levan, an independent DevOps and Cloud consultant 🌟 **(Recommended)**
 - [Digital Ocean Community](https://www.digitalocean.com/community) - Community offers thousands of tutorials, videos, and answers to questions on a wide range of topics
 - [DZone](https://dzone.com/) - one of the world's largest online communities and leading publisher of knowledge resources for software engineering professionals
+- [GitHub Blog](https://github.blog/): The GitHub Blog & Article Page 🌟 **(Recommended)**
+- [Google For Developers](https://developers.googleblog.com/): The Blog & Articles Page powered by Google 🌟 **(Recommended)**
 - [Hackaday](https://hackaday.com/) - Fresh Hacks Every Day
 - [Hackaday.io](https://hackaday.io/) - The world's largest collaborative hardware development community.
-- [HelloGitHub](https://hellogithub.com/en) - Share interesting, entry-level open source projects on GitHub.
 - [How-To Geek](https://www.howtogeek.com/) - Community who explain Technologies
+- [InfoQ](https://www.infoq.com/): The Blogs & Articles Pages for several topics about Engineering & Technoligies 🌟 **(Recommended)**
+- [Linkedin - Engineering Blog](https://www.linkedin.com/blog/engineering): The blog collections hosted by Linkedin 🌟 **(Recommended)**
+- [Medium - Agoda Engineering & Design](https://medium.com/agoda-engineering): The Agoda techblog edition in Medium 🌟 **(Recommended)**
 - [Medium - ITNext](https://itnext.io/) - Community in Medium where talk about lots of technological thing 🌟 **(Recommended)**
 - [Medium - Jake Page](https://medium.com/@jake.page91) - Kubernetes Deployment Specialist @ Glasskube
 - [Medium - Mr.PlanB](https://medium.com/@PlanB.) - Write about Kubernetes, Promox, Homelab topics 🌟 **(Recommended)**
+- [Medium - Netflix TechBlog](https://netflixtechblog.com/): The netflix techblog edition in Medium 🌟 **(Recommended)**
 - [Medium - Romaric Philogène](https://medium.com/@rphilogene) - Write about IDP, Kubernetes and techs
 - [News Ycombinator](https://news.ycombinator.com/news) - Multiple discussion around tech articles in the internet 🌟 **(Recommended)**
 - [NVIDIA Developer Blog](https://developer.nvidia.com/blog/): Get started by exploring the latest technical information and product documentation of Nvidia
 - [Red Hat Developer Blog](https://developers.redhat.com/blog) - Blog Platform of RedHat for publishing new and articles about technologies 🌟 **(Recommended)**
+- [The ASF Blog](https://news.apache.org/): The Official Blog of The Apache® Software Foundation 🌟 **(Recommended)**
+- [The CNCF Blog](https://www.cncf.io/blog/): The collections blog of CNCF project about Opensource and Cloud Native project 🌟 **(Recommended)**
+- [The Infra Blog (Apache)](https://infra.apache.org/blog/): Find all kinds of wonderful information about Apache Infra projects and infrastructure updates. [Archive one](https://blogsarchive.apache.org/#)
+- [The Linux Foundation Blog](https://www.linuxfoundation.org/blog): OpenSource Community and Organization Blog about Cloud Native, Linux, and more 🌟 **(Recommended)**
+- [The Linux Foundation Press](https://www.linuxfoundation.org/press): The Information, update, and annotation about OpenSource, Organization belong The Linux Foundation 🌟 **(Recommended)**
 - [TheNewStack](https://thenewstack.io/) - A great blog with new update articles about tech, system-architecture, ai and moreover stuff 🌟 **(Recommended)**
-- [AnonyViet](https://anonyviet.com/) - Vietnamese Community who teaching multiple techniques on Computer 🌟 **(Recommended)**
+- [The OpenInfra Foundation Blog](https://openinfra.org/blog/): OpenInfra Foundation news, announcements, best practices, use cases and more 🌟 **(Recommended)**
 - [XDA Forums](https://forum.xda-developers.com/) - Valuable resource for people who want to make the most of their mobile devices, from customizing the look and feel to adding new functionality.
 ## Tech General Articles 
 
