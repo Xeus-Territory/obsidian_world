@@ -41,6 +41,7 @@ Cloud Native usually relate with Containerization, Kubernetes, and Architecture 
 - [awesome-flux-infra](https://github.com/brainfair/awesome-flux-infra): This repository contains infrastructure applications and add-ons installed in Kubernetes via FluxCD v2.
 - [awesome-microservices](https://github.com/mfornos/awesome-microservices): A curated list of Microservice Architecture related principles and technologies.
 - [awesome-ebpf](https://github.com/zoidyzoidzoid/awesome-ebpf) : A curated list of awesome projects related to eBPF
+- [Cloud Native Glossary](https://glossary.cncf.io/): A Definition Collections about System Architecture, Cloud Native, Security Terminology
 ## Blogs
 
 - [Operate First](https://www.operate-first.cloud/apps/content/README.html): Serve as a main resource for all Operate First GitHub Org contributors.
@@ -85,6 +86,7 @@ Cloud Native usually relate with Containerization, Kubernetes, and Architecture 
 - [CNCF Platform Engineering Technical Community Group](https://cloudnativeplatforms.com/): A community of practitioners, vendors, and end-users who are interested in the practice of building and operating cloud native platforms. 
 - [CNCF Community Group](https://ocgroups.dev/cncf): The Place to find CNCF Community, Organization, and Events around the world
 - [Cloud Native Hanoi](https://ocgroups.dev/cncf/group/es73hsz): The Vietnamese Group in Ha Noi for Cloud Native and Open Infrastructure
+- [Cloud Native Rejekts (Youtube)](https://www.youtube.com/@CloudNativeRejekts/featured): The EU Cloud Native Conference (the b-side conference) hosted CPF rejected in KubeCON
 ## Platform Engineer Articles
 
 - [Blog - Platform Engineering in 2026: Why DIY Is Dead](https://roadie.io/blog/platform-engineering-in-2026-why-diy-is-dead/)
@@ -176,3 +178,7 @@ Cloud Native usually relate with Containerization, Kubernetes, and Architecture 
 
 - [cosign](https://github.com/sigstore/cosign): Code signing and transparency for containers and binaries
 - [notation](https://github.com/notaryproject/notation): A CLI tool to sign and verify artifacts
+
+## Policies & Security
+
+- [cerbos](https://github.com/cerbos/cerbos): an open-core authorization management platform for authorizing every identity and governing every action across applications, gateways, workloads, and AI agents.
