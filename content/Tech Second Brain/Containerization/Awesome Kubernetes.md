@@ -127,6 +127,7 @@ tags:
 - [Kubernetes -  Documentation](https://kubernetes.io/docs/home/)
 - [Kubernetes - Configure a Security Context for a Pod or Container](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/) 🌟 **(Recommended)**
 - [Kubernetes - Well-Known Labels, Annotations and Taints](https://kubernetes.io/docs/reference/labels-annotations-taints/) 🌟 **(Recommended)**
+- [Medium - Kubernetes Cluster Architecture, Installation, and Configuration](https://medium.com/@h.stoychev87/kubernetes-cluster-architecture-installation-and-configuration-77b9306db158)
 ## Hardware and Resources
 
 - [Medium - Why does my 2vCPU application run faster in a VM than in a container? (Content of the year 2024)](https://hwchiu.medium.com/why-does-my-2vcpu-application-run-faster-in-a-vm-than-in-a-container-6438ffaba245) 🌟 **(Recommended)**
@@ -144,6 +145,7 @@ tags:
 - [Medium - Solving Kubernetes DNS Performance Issues with CoreDNS Autopath Plugin](https://medium.com/@rk90229/solving-kubernetes-dns-performance-issues-with-coredns-autopath-plugin-3650eb0c477a) 🌟 **(Recommended)**
 - [Reddit - Best on-prem authoritative DNS server for Kubernetes + external-dns?](https://www.reddit.com/r/kubernetes/comments/1nfh149/best_onprem_authoritative_dns_server_for/)
 - [Youtube - Kubernetes Multi Cluster DNS with External DNS, CoreDNS and Etcd](https://www.youtube.com/watch?v=AQtv2C4wKEA)
+- [Medium - Kubernetes Networking: A Deep Dive](https://medium.com/@h.stoychev87/kubernetes-networking-a-deep-dive-6081d794e97c) 🌟 **(Recommended)**
 ## Operator & Chart
 
 - [Artifacthub](https://artifacthub.io/) : Find, install and publish Cloud Native packages for Kubernetes 🌟 **(Recommended)**
@@ -183,6 +185,7 @@ tags:
 - [Medium - Securing Kubernetes Layer by Layer: An OSI Approach (Part 2 : L4)](https://itnext.io/securing-kubernetes-layer-by-layer-an-osi-approach-part-2-l4-498c69f951fc)
 - [Medium - Securing Kubernetes Layer by Layer: An OSI Approach (Part 3: L5 & L6)](https://itnext.io/securing-kubernetes-layer-by-layer-an-osi-approach-part-3-l5-l6-58dbe00c1fd9)
 - [Medium - Securing Kubernetes Layer by Layer: An OSI Approach (Part 4: L7)](https://itnext.io/securing-kubernetes-layer-by-layer-an-osi-approach-part-4-l7-14b0f51055a3)
+- [Medium - Kubernetes Security & Access: A Deep Dive](https://medium.com/@h.stoychev87/kubernetes-security-access-a-deep-dive-d85cc1525b3b#a6f5)
 ## Storage (CSI)
 
 - [Medium - 7 Best Open Source Storage Solutions for Kubernetes](https://blog.devops.dev/7-best-open-source-storage-solutions-for-kubernetes-0da8b51efe8d)
@@ -376,7 +379,6 @@ tags:
 - [kubescape](https://github.com/kubescape/kubescape): an open-source Kubernetes security platform for your IDE, CI/CD pipelines, and clusters.
 - [OPA Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/) : A customizable cloud native policy controller that helps enforce policies and strengthen governance 🌟 **(Recommended)**
 - [cel-admission-library](https://github.com/kubescape/cel-admission-library): This projects contains pre-made policies for Kubernetes Validating Admission Policies.
-- [cerbos](https://github.com/cerbos/cerbos): an open-core authorization management platform for authorizing every identity and governing every action across applications, gateways, workloads, and AI agents.
 - [Capsule](https://github.com/projectcapsule/capsule): Multi-tenancy and policy-based framework for Kubernetes.
 ## Resources Orchestrator
 

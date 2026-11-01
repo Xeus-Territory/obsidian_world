@@ -30,7 +30,7 @@ Find more information about my work below
 
 You can find out more information about project via these links below
 
-1. [W'xOps GitHub](https://github.com/wxops): Official GitHub Org of W'xOps IDP - Source code will be available for next couple days.
+1. [W'xOps GitHub](https://github.com/wxops-idp): Official GitHub Org of W'xOps IDP - Source code will be available for next couple days.
 2. [W'xOps Documentation](https://docs.wxops.cloud/): Find out more about how usage with W'xOps via technical hand-on, several blogs and case-studies, and always get information about new releases.
 3. [Why W'xOps](https://docs.wxops.cloud/blog/why-wxops): Find out more reason why I develop to W'xOps and introduce them like solution instead PaaS for end-users.
 4. [W'xOps ROADMAP](https://docs.wxops.cloud/docs/roadmap/): Here is about the roadmap of product, which help you know about the status of feature delivery and which one coming next. Hoping you got well with us.
