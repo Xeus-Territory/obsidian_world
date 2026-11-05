@@ -374,14 +374,14 @@ Before diving into details, take a moment to review these foundational authoriza
 
 I can't cover whole of concept Authorization (AuthZ) of Kubernetes, and I just focus on to the RBAC and highlighted usage, e.g: Node, Webhook, and ABAC. But you can use one or enable serveral authorization mode in Kubernetes with `--authorization-mode=...,Node,ABAC,`
 
-| **Authorization Mode**                    | **`--authorization-mode` Flag** | **Mechanism / How It Works**                                                                                                                    | **Primary Use Case**                                                                     | **Pros & Cons**                                                                                                                                                     |
-| ----------------------------------------- | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **RBAC** (Role-Based Access Control)      | `RBAC`                          | Matches incoming users/groups against dynamic `Role` or `ClusterRole` API objects mapped via `RoleBinding` or `ClusterRoleBinding`.             | Standard user & service account permission management in production clusters.            | **Pros:** Dynamic, manageable via `kubectl`, fine-grained control.<br><br>  <br><br>**Cons:** Role sprawl if not properly managed.                                  |
-| **Node**                                  | `Node`                          | Authorizes API requests specifically originating from `kubelet` agents based on the resources assigned to their specific node.                  | Securing kubelet-to-APIServer communication.                                             | **Pros:** Automated isolation between nodes.<br><br>  <br><br>**Cons:** Only applicable to kubelet traffic; usually paired with `NodeRestriction` admission plugin. |
-| **ABAC** (Attribute-Based Access Control) | `ABAC`                          | Evaluates requests against static JSON policy files stored locally on the API server disk based on user, verb, resource, and namespace.         | Legacy static permission definitions.                                                    | **Pros:** Simple declarative file format.<br><br>  <br><br>**Cons:** Requires API server restarts to update policies; hard to audit/scale.                          |
-| **Webhook**                               | `Webhook`                       | Serializes request attributes into a `SubjectAccessReview` object and POSTs it to an external HTTP REST endpoint for an authorization decision. | Integration with external IAM services (e.g., OPA/Gatekeeper, AWS IAM, HashiCorp Vault). | **Pros:** Highly extensible, centralizes security rules.<br><br>  <br><br>**Cons:** Adds network latency and introduces external dependency risk.                   |
-| **AlwaysAllow**                           | `AlwaysAllow`                   | Approves all incoming API requests without checking permissions.                                                                                | Local single-node development (e.g., Minikube testing).                                  | **Pros:** Zero configuration required.<br><br>  <br><br>**Cons:** **Insecure**; bypasses all cluster security.                                                      |
-| **AlwaysDeny**                            | `AlwaysDeny`                    | Rejects all incoming API requests regardless of identity or permissions.                                                                        | Security testing and debugging authorization fallback behavior.                          | **Pros:** Useful for verification tests.<br><br>  <br><br>**Cons:** Completely locks down the cluster.                                                              |
+| **Authorization Mode**                    | **`--authorization-mode` Flag** | **Mechanism / How It Works**                                                                                                                    | **Primary Use Case**                                                          | **Pros & Cons**                                                                                                                                                     |
+| ----------------------------------------- | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **RBAC** (Role-Based Access Control)      | `RBAC`                          | Matches incoming users/groups against dynamic `Role` or `ClusterRole` API objects mapped via `RoleBinding` or `ClusterRoleBinding`.             | Standard user & service account permission management in production clusters. | **Pros:** Dynamic, manageable via `kubectl`, fine-grained control.<br><br>  <br><br>**Cons:** Role sprawl if not properly managed.                                  |
+| **Node**                                  | `Node`                          | Authorizes API requests specifically originating from `kubelet` agents based on the resources assigned to their specific node.                  | Securing kubelet-to-APIServer communication.                                  | **Pros:** Automated isolation between nodes.<br><br>  <br><br>**Cons:** Only applicable to kubelet traffic; usually paired with `NodeRestriction` admission plugin. |
+| **ABAC** (Attribute-Based Access Control) | `ABAC`                          | Evaluates requests against static JSON policy files stored locally on the API server disk based on user, verb, resource, and namespace.         | Legacy static permission definitions.                                         | **Pros:** Simple declarative file format.<br><br>  <br><br>**Cons:** Requires API server restarts to update policies; hard to audit/scale.                          |
+| **Webhook**                               | `Webhook`                       | Serializes request attributes into a `SubjectAccessReview` object and POSTs it to an external HTTP REST endpoint for an authorization decision. | Integration with external IAM services (e.g., AWS IAM, HashiCorp Vault).      | **Pros:** Highly extensible, centralizes security rules.<br><br>  <br><br>**Cons:** Adds network latency and introduces external dependency risk.                   |
+| **AlwaysAllow**                           | `AlwaysAllow`                   | Approves all incoming API requests without checking permissions.                                                                                | Local single-node development (e.g., Minikube testing).                       | **Pros:** Zero configuration required.<br><br>  <br><br>**Cons:** **Insecure**; bypasses all cluster security.                                                      |
+| **AlwaysDeny**                            | `AlwaysDeny`                    | Rejects all incoming API requests regardless of identity or permissions.                                                                        | Security testing and debugging authorization fallback behavior.               | **Pros:** Useful for verification tests.<br><br>  <br><br>**Cons:** Completely locks down the cluster.                                                              |
 
 >[!info] Recommend For Production
 >In almost situation, I think use should consider use only RBAC and Node in Kubernetes for easier scale, and ensure reliable for Kubernetes Authozation model
@@ -505,12 +505,12 @@ Let's took it back to Node permission, from v1.8, `system:node` role is introduc
 >[!infor] Recommendation from Kubernetes
 >User should use the [Node authorizer](https://kubernetes.io/docs/reference/access-authn-authz/node/) and [NodeRestriction admission plugin](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#noderestriction) instead of the `system:node` role, and allow granting API access to kubelets based on the Pods scheduled to run on them.
 
-|Feature / Attribute|Before Node Authorization (Pre-v1.7)|With Node Authorization & `NodeRestriction` (Modern K8s)|
-|---|---|---|
-|**Authorization Mode**|Broad RBAC (`ClusterRoleBinding` to `system:nodes`)|Specialized `Node` authorization engine|
-|**Secret/ConfigMap Scope**|**Cluster-wide.** A node could read any secret anywhere.|**Graph-isolated.** A node can only read secrets mounted by pods explicitly scheduled to it.|
-|**Object Modification**|Could modify, delete, or fake status updates for any pod.|Bound strictly to pods where `.spec.nodeName` matches that specific node.|
-|**Identity Enforcement**|Verified the credential belonged to a node.|Enforces that the username matches exactly: `system:node:<nodeName>`.|
+| Feature / Attribute        | Before Node Authorization (v1.8)                          | With Node Authorization & `NodeRestriction` (Modern K8s)                                     |
+| -------------------------- | --------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| **Authorization Mode**     | Broad RBAC (`ClusterRoleBinding` to `system:nodes`)       | Specialized `Node` authorization engine                                                      |
+| **Secret/ConfigMap Scope** | **Cluster-wide.** A node could read any secret anywhere.  | **Graph-isolated.** A node can only read secrets mounted by pods explicitly scheduled to it. |
+| **Object Modification**    | Could modify, delete, or fake status updates for any pod. | Bound strictly to pods where `.spec.nodeName` matches that specific node.                    |
+| **Identity Enforcement**   | Verified the credential belonged to a node.               | Enforces that the username matches exactly: `system:node:<nodeName>`.                        |
 
 In order to be authorized by the Node authorizer, kubelets must use a credential that identifies them as being in the `system:nodes` group, with a username of `system:node:<nodeName>`. This group and user name format match the identity created for each kubelet as part of [kubelet TLS bootstrapping](https://kubernetes.io/docs/reference/access-authn-authz/kubelet-tls-bootstrapping/).
 
@@ -625,6 +625,7 @@ Before deep diving into Admission, you should read these articles for more infor
 - [CHKK - Kubernetes Admission Controllers and Webhooks Deep Dive](https://www.chkk.io/blog/kubernetes-admission-controllers)
 - [Fairwinds - Kubernetes Policy as Code: The Foundation of Modern Cluster Governance](https://www.fairwinds.com/blog/kubernetes-policy-as-code-governance)
 - [Nirmata - Level Up Your Kubernetes Security and Automation with Policy as Code](https://nirmata.com/2025/04/28/level-up-your-kubernetes-security-automation-with-policy-as-code/)
+- [Sysdig - Kubernetes admission controllers in 5 minutes](https://www.sysdig.com/blog/kubernetes-admission-controllers)
 ### Admission Control
 
 ![[thumbnail-k8s-admission-control-phases.svg|center|600]]
@@ -634,9 +635,18 @@ After AuthN and AuthZ in Kubernetes, you have one more layer (phase) to protect 
 >[!info] Admission Control
 >[An admission controller](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/) is a piece of code that intercepts requests to the Kubernetes API server prior to persistence of the resource, but after the request is authenticated and authorized.
 >
->Admission controllers apply to requests that create, delete, or modify objects. Admission controllers can also block custom verbs, such as a request to connect to a pod via an API server proxy. Admission controllers do _not_ (and cannot) block requests to read (**get**, **watch** or **list**) objects, because reads bypass the admission control layer.
+>Admission controllers apply to requests that create, delete, or modify objects. Admission controllers can also block custom verbs, such as a request to connect to a pod via an API server proxy.
 >
 >Admission control mechanisms may be _validating_, _mutating_, or both. Mutating controllers may modify the data for the resource being modified; validating controllers may not.
+
+>[!warning] Attention
+>Admission controllers do _not_ (and cannot) block requests to read (**get**, **watch** or **list**) objects, because reads bypass the admission control layer.
+
+>[!info]
+>By default, `admission` feature will be setup default by almost Kubernetes Cluster Distribution, e.g: RKE2, K3s, EKS, AKS, ... You can double-check with command
+>```bash
+>kubectl api-resources --api-group=admissionregistration.k8s.io
+>```
 
 Kubernetes provides [a list admission over 20 controllers](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#what-does-each-admission-controller-do), but Kubernetes will have 4 special controller to focus on, including
 
@@ -659,6 +669,216 @@ kube-apiserver --enable-admission-plugins=plugin,want,to,enable
 # Disable
 kube-apiserver --disable-admission-plugins=plugin,want,to,disable
 ```
+
+### (Updated) Dynamic Admission Control
+
+![[thumbnail-k8s-dynamical-admission-webhook.png]]
+
+>[!info] Dynamic Admission Control
+>To run admission in Kubernetes, it usually run as webhooks configured at Runtime.
+>
+>[Admission WebHooks](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#what-are-admission-webhooks) are HTTP callbacks that receive admission requests and do something with them. There are two type webhook to define, [validating admission webhook](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#validatingadmissionwebhook) and [mutating admission webhook](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#mutatingadmissionwebhook). Following the Kubernetes accessible workflow, Mutation admission webhook will invoke first, and modify objects sent to Kubernetes Server enforce custom default, after that will continue to invoke by validation admission webhook, that can reject request to enforce custom policies.
+
+>[!info]
+>This mechanism is applied widely by many opensource projects in Kubernetes, such as [CertManager](https://cert-manager.io/docs/concepts/webhook/), [External Secrets Operator](https://external-secrets.io/latest/api/components/), [Kyverno](https://kyverno.io/docs/introduction/how-kyverno-works/), [Vault Injector](https://developer.hashicorp.com/vault/docs/deploy/kubernetes/injector), ...
+
+You can dynamically configure what resources are subject to what admission webhooks via [ValidatingWebhookConfiguration](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.37/#validatingwebhookconfiguration-v1-admissionregistration-k8s-io) or [MutatingWebhookConfiguration](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.37/#mutatingwebhookconfiguration-v1-admissionregistration-k8s-io).
+
+[**To Request**,](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#request) Webhook will sent POST request s with `content-type: json` and `AdmissionReview` API Object in the `admission.k8s.io` API Group.
+
+```yaml
+apiVersion: admissionregistration.k8s.io/v1
+kind: ValidatingWebhookConfiguration
+webhooks:
+- name: my-webhook.example.com
+  admissionReviewVersions: ["v1", "v1beta1"] # Require
+```
+
+>[!warning] Attention
+>`admissionReviewVersions` is required when creating ValidationWebhookConfiguration, and at least one version unserstood by Kubernetes API Server. If none in the list supported, your configuration will not be allowed to be created.
+>
+>If an API server encounters a webhook configuration that was previously created and does not support any of the `AdmissionReview` versions the API server knows how to send, attempts to call to the webhook will fail and be subject to the [failure policy](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#failure-policy).
+
+[**To Response**](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#response), Webhook will response with 200 HTTP status code, with `Content-type: json` and `AdmissionReview` API objects, but add the `response` with at least `respond.uid` and `reponse.allowed` (true or false). When got rejected, that will response customize HTTP status code (e.g: 403) with one more field `status`, include `status.code` and `status.message`.
+
+>[!warning]
+>Admission webhooks can optionally return warning messages that are returned to the requesting client in HTTP `Warning` headers with a warning code of 299. Warnings can be sent with allowed or rejected admission responses. Use `warnings` message to reponse, instead of message.
+
+For confguration, you must define them as valid [DNS subdomain name](https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#dns-subdomain-names). You can define one or more webhook with each configuration, but should be define unique name for each one to get easier read audit logs and metrics for active configuration.
+
+You can define webhook following these configuration, explore entire of them at [ValidatingWebhookConfiguration Kubernetes API v1.37](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.37/#validatingwebhook-v1-admissionregistration-k8s-io)
+
+- [Matching requests: rules](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#matching-requests-rules): An incoming request matches one of the specified `operations`, `groups`, `versions`, `resources`, and `scope` for any of a webhook's `rules`, the request is sent to the webhook.
+
+```yaml {7-11}
+apiVersion: admissionregistration.k8s.io/v1
+kind: ValidatingWebhookConfiguration
+...
+webhooks:
+- name: my-webhook.example.com
+  rules:
+  - operations: ["CREATE", "UPDATE"]
+    apiGroups: ["apps"]
+    apiVersions: ["v1", "v1beta1"]
+    resources: ["deployments", "replicasets"]
+    scope: "Namespaced"
+  ...
+```
+
+- [Excluded virtual resources](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#excluded-virtual-resources): Beta in v1.37, Admission webhooks are not called for the following non-persisted (virtual) authentication and authorization resources, even if a webhook's `rules` match them, [TokenReviews](https://kubernetes.io/docs/reference/kubernetes-api/definitions/token-review-v1-authentication/), [SelfSubjectReviews](https://kubernetes.io/docs/reference/kubernetes-api/definitions/self-subject-review-v1-authentication/), [LocalSubjectAccessReviews](https://kubernetes.io/docs/reference/kubernetes-api/definitions/local-subject-access-review-v1-authorization/), [SelfSubjectAccessReviews](https://kubernetes.io/docs/reference/kubernetes-api/definitions/self-subject-access-review-v1-authorization/), [SelfSubjectRulesReviews](https://kubernetes.io/docs/reference/kubernetes-api/definitions/self-subject-rules-review-v1-authorization/), [SubjectAccessReviews](https://kubernetes.io/docs/reference/kubernetes-api/definitions/subject-access-review-v1-authorization/)
+- [Matching requests: objectSelector](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#matching-requests-objectselector): Webhooks may optionally limit which requests are intercepted based on the labels of the objects they would be sent, by specifying an `objectSelector`
+
+```yaml {4-7}
+apiVersion: admissionregistration.k8s.io/v1
+kind: MutatingWebhookConfiguration
+webhooks:
+- name: my-webhook.example.com
+  objectSelector:
+    matchLabels:
+      foo: bar
+  rules:
+  - operations: ["CREATE"]
+    apiGroups: ["*"]
+    apiVersions: ["*"]
+    resources: ["*"]
+    scope: "*"
+```
+
+- [Matching requests: namespaceSelector](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#matching-requests-namespaceselector): Webhooks may optionally limit which requests for namespaced resources are intercepted, based on the labels of the containing namespace, by specifying a `namespaceSelector`.
+
+```yaml {5-9}
+apiVersion: admissionregistration.k8s.io/v1
+kind: MutatingWebhookConfiguration
+webhooks:
+  - name: my-webhook.example.com
+    namespaceSelector:
+      matchExpressions:
+        - key: runlevel
+          operator: NotIn
+          values: ["0","1"]
+    rules:
+      - operations: ["CREATE"]
+        apiGroups: ["*"]
+        apiVersions: ["*"]
+        resources: ["*"]
+        scope: "Namespaced"
+```
+
+- [Matching requests: matchPolicy](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#matching-requests-matchpolicy): The `matchPolicy` lets a webhook define how its `rules` are used to match incoming requests. Allowed values are `Exact` or `Equivalent`.
+
+	- `Exact` means a request should be intercepted only if it exactly matches a specified rule.
+	- `Equivalent` means a request should be intercepted if it modifies a resource listed in `rules`, even via another API group or version.
+
+```yaml
+apiVersion: admissionregistration.k8s.io/v1
+kind: ValidatingWebhookConfiguration
+webhooks:
+- name: my-webhook.example.com
+  matchPolicy: Equivalent
+  rules:
+  - operations: ["CREATE","UPDATE","DELETE"]
+    apiGroups: ["apps"]
+    apiVersions: ["v1"]
+    resources: ["deployments"]
+    scope: "Namespaced"
+```
+
+>[!info]
+>The `matchPolicy` for an admission webhooks defaults to `Equivalent`.
+
+- [Matching requests: matchConditions](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#matching-requests-matchconditions): You can define _match conditions_ for webhooks if you need fine-grained request filtering. These conditions are useful if you find that match rules, `objectSelectors` and `namespaceSelectors` still doesn't provide the filtering you want over when to call out over HTTP. Match conditions are [CEL expressions](https://kubernetes.io/docs/reference/using-api/cel/). All match conditions must evaluate to true for the webhook to be called.
+
+```yaml {12-18}
+apiVersion: admissionregistration.k8s.io/v1
+kind: ValidatingWebhookConfiguration
+webhooks:
+  - name: my-webhook.example.com
+    matchPolicy: Equivalent
+    rules:
+      - operations: ['CREATE','UPDATE']
+        apiGroups: ['*']
+        apiVersions: ['*']
+        resources: ['*']
+    # You can have up to 64 matchConditions per webhook
+    matchConditions:
+      - name: 'exclude-leases' # Each match condition must have a unique name
+        expression: '!(request.resource.group == "coordination.k8s.io" && request.resource.resource == "leases")' # Match non-lease resources.
+      - name: 'exclude-kubelet-requests'
+        expression: '!("system:nodes" in request.userInfo.groups)' # Match requests made by non-node users.
+      - name: 'rbac' # Skip RBAC requests, which are handled by the second webhook.
+        expression: 'request.resource.group != "rbac.authorization.k8s.io"'
+```
+
+>[!info]
+>There are a maximum of 64 match conditions allowed.
+>The exact matching logic is (in order):
+>1. If ANY matchCondition evaluates to FALSE, the webhook is skipped.
+>2. If ALL matchConditions evaluate to TRUE, the webhook is called.
+>3. If any matchCondition evaluates to an error (but none are FALSE):
+>	- If failurePolicy=Fail, reject the request
+>	- If failurePolicy=Ignore, the error is ignored and the webhook is skipped
+
+>[!info] Match conditions have access to the following CEL variables
+>- `object` - The object from the incoming request. The value is null for DELETE requests. The object version may be converted based on the [matchPolicy](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#matching-requests-matchpolicy).
+>- `oldObject` - The existing object. The value is null for CREATE requests.
+>- `request` - The request portion of the [AdmissionReview](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#request), excluding `object` and `oldObject`.
+>- `authorizer` - A CEL Authorizer. May be used to perform authorization checks for the principal (authenticated user) of the request. See [Authz](https://pkg.go.dev/k8s.io/apiserver/pkg/cel/library#Authz) in the Kubernetes CEL library documentation for more details.
+>- `authorizer.requestResource` - A shortcut for an authorization check configured with the request resource (group, resource, (subresource), namespace, name).
+
+For more information on CEL expressions, refer to the [Common Expression Language in Kubernetes reference](https://kubernetes.io/docs/reference/using-api/cel/).
+
+To contact the webhook, you can define the contact information inside `clientConfig`. Webhooks can either be called via a URL or a service reference, and can optionally include a custom CA bundle to use to verify the TLS connection.
+
+- [URL](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#url): Gives the location of the webhook, in standard URL form (`scheme://host:port/path`). The scheme must be "https"; the URL must begin with "https://".
+
+```yaml {5-6}
+apiVersion: admissionregistration.k8s.io/v1
+kind: MutatingWebhookConfiguration
+webhooks:
+- name: my-webhook.example.com
+  clientConfig:
+    url: "https://my-webhook.example.com:9443/my-webhook-path"
+```
+
+- [Service reference](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#service-reference): The `service` stanza inside `clientConfig` is a reference to the service for this webhook. If the webhook is running within the cluster, then you should use `service` instead of `url`. The service namespace and name are required. The port is optional and defaults to 443. The path is optional and defaults to "/".
+
+```yaml {5-11}
+apiVersion: admissionregistration.k8s.io/v1
+kind: MutatingWebhookConfiguration
+webhooks:
+- name: my-webhook.example.com
+  clientConfig:
+    caBundle: <CA_BUNDLE>
+    service:
+      namespace: my-service-namespace
+      name: my-service-name
+      path: /my-path
+      port: 1234
+```
+
+Webhook allow you to define more opts for
+
+- [Side effect](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#side-effects): Webhooks that make out-of-band changes ("side effects") must also have a reconciliation mechanism (like a controller) that periodically determines the actual state of the world, and adjusts the out-of-band data modified by the admission webhook to reflect reality. Webhooks indicate whether they have side effects using the `sideEffects` field in the webhook configuration: `None` or `NoneOnDryRun`
+- [Timeouts](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#timeouts): `timeoutSeconds` allows configuring how long the API server should wait for a webhook to respond before treating the call as a failure. **The timeout value must be between 1 and 30 seconds.**
+- [Reinvocation policy](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#reinvocation-policy): built-in mutating admission plugins are re-run if a mutating webhook modifies an object, and mutating webhooks can specify a `reinvocationPolicy` to control whether they are reinvoked as well. `reinvocationPolicy` may be set to `Never` or `IfNeeded`. It defaults to `Never`.
+- [Failure policy](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#failure-policy): defines how errors encountered while _calling_ the admission webhook are handled. Allowed values are `Ignore` or `Fail`. The default `failurePolicy` for an admission webhooks is `Fail`.
+
+	- `Ignore` means that an error calling the webhook is ignored and the API request is allowed to continue.
+	- `Fail` means that an error calling the webhook causes the admission to fail and the API request to be rejected.
+
+	The failure policy applies to the following types of errors:
+	
+	- Network errors, timeouts, or connection failures when contacting the webhook.
+	- The webhook returns a non-2xx HTTP response or a malformed response.
+	- The API server fails to serialize the admission request or create an internal HTTP client for the webhook.
+	- (Only for mutating webhooks) the response contains an undecodable or unsupported patch type.
+
+Admission Webhook provide you two ways to observe the action activitity
+
+- [Mutating webhook auditing annotations](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#mutating-webhook-auditing-annotations): The Kubernetes API server performs [auditing](https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/) on each mutating webhook invocation. Each invocation generates an auditing annotation capturing if a request object is mutated by the invocation, and optionally generates an annotation capturing the applied patch from the webhook admission response. The annotations are set in the audit event for given request on given stage of its execution, which is then pre-processed according to a certain policy and written to a backend.
+- [Admission webhook metrics](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#admission-webhook-metrics): The API server exposes Prometheus metrics from the `/metrics` endpoint, which can be used for monitoring and diagnosing API server status. The following metrics record status related to admission webhooks.
+
+Double-check for recommendation and consideration when write the Admission Webhook at [Kubernetes - Admission Webhook Good Practices](https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/)
 ### Mutating Admission Policy (MAP)
 
 >[!info] Mutating Admission Policy (MAP)
@@ -1019,8 +1239,8 @@ You can easily install Kyverno policies into your cluster using the following `h
 ```bash
 helm repo add kyverno https://kyverno.github.io/kyverno/
 helm repo update
-helm upgrade --install kyverno kyverno/kyverno --namespace kyverno --create-namespace --version 3.9.2 \
- --reuse-values \
+helm upgrade --install kyverno kyverno/kyverno --namespace kyverno \
+ --create-namespace --version 3.9.2 \
  --set reportsController.resources.limits.memory=256Mi
 ```
 
@@ -1083,9 +1303,27 @@ To explore more about Kyverno and resources, you can double-check these links be
 - [Kyverno Policy Types Overview](https://kyverno.io/docs/policy-types/overview/)
 - [Kyverno Sample Policies](https://kyverno.io/policies/)
 - [Kyverno Blog](https://kyverno.io/blog/)
+
+## Kyverno VS VAP & MAP
+
+| Feature                            | VAP & MAP  | ValidatingPolicy                           | **MutatingPolicy**                         |
+| ---------------------------------- | ---------- | ------------------------------------------ | ------------------------------------------ |
+| Enforcement                        | Admission  | Admission, Background, Pipelines, …        | Admission, Background, Pipelines, …        |
+| Payloads                           | Kubernetes | Kubernetes, Any JSON or YAML               | Kubernetes                                 |
+| Distribution                       | Kubernetes | Helm, CLI, Web Service, API, SDK           | Helm, CLI, Web Service, API, SDK           |
+| CEL Library                        | Basic      | Extended                                   | Extended                                   |
+| Bindings                           | Manual     | Automatic                                  | Automatic                                  |
+| Auto-generation                    | -          | Pod Controllers, ValidatingAdmissionPolicy | Pod Controllers, MutatingAdmissionPolicy   |
+| External Data                      | -          | Kubernetes resources or API calls          | Kubernetes resources or API calls          |
+| Caching                            | -          | Global Context, image verification results | Global Context, image verification results |
+| Background scans                   | -          | Periodic, On policy creation or change     | Periodic, On policy creation or change     |
+| Exceptions                         | -          | Fine-grained exceptions                    | Fine-grained exceptions                    |
+| Reporting                          | -          | Policy WG Reports API                      | Policy WG Reports API                      |
+| Testing                            | -          | Kyverno CLI (unit), Chainsaw (e2e)         | Kyverno CLI (unit), Chainsaw (e2e)         |
+| (Mutating Only) Existing Resources | -          | -                                          | Background mutation support                |
 ## Kyverno Playground with YAML and CEL
 
-### YAML (JMESPath) (Deprecated v1.20.X)
+### YAML (JMESPath) (Removed v1.20.X)
 
 For the day old. Kyverno use YAML to define Kubernetes CRDs and these policies types, including `ClusterPolicy`, `Policy`, and `CleanupPolicy`. It defined depend on [JMESPath](https://kyverno.io/docs/policy-types/cluster-policy/jmespath/) as a fast and effecient JSON processing language.
 
@@ -1271,7 +1509,7 @@ spec:
       # that manages secrets in the source Namespace. Otherwise, the policy will not work as expected.
       clone:
         namespace: external-secrets
-        icon-kyverno.pngname: regcred
+        name: regcred
       # generateExisting is required to ensure that the policy will update existing Secrets if the source Secret changes.
       # If this field is not set, the policy will only create new Secrets for new Namespaces, but will not update existing Secrets in already created Namespaces.
       generateExisting: true
@@ -1285,9 +1523,12 @@ Now from Kyverno v1.19.X, you can use YAML ([CEL](https://kyverno.io/docs/policy
 >
 >CEL expressions are evaluated directly in the [API server](https://kubernetes.io/docs/concepts/architecture/#kube-apiserver), making CEL a convenient alternative to out-of-process mechanisms, such as webhooks, for many extensibility use cases 
 
-Recently, CEL already integrate and support widely in the core of Kubernetes from **v1.29+**. Beside, Kyverno catchup and evolve with same of mechanism Kubernetes, it also create how to Kyverno connect with feature **Validation Admission Policy** and **Mutating Admission Policy** via binding method via Container Flag `generateValidatingAdmissionPolicy` (`false` by default), explore more at [Kyverno - Generating Kubernetes ValidatingAdmissionPolicies from Kyverno Policies](https://kyverno.io/blog/2024/02/26/generate-vaps/)
+Recently, CEL already integrate and support widely in the core of Kubernetes from **v1.29+**. Beside, Kyverno catchup and evolve with same mechanism of Kubernetes, it also create the method to let Kyverno generate Kubernetes Native by `spec.auto` feature of [**Validation Admission Policy**](https://kyverno.io/docs/policy-types/validating-policy/#autogen) and [**Mutating Admission Policy**](https://kyverno.io/docs/policy-types/mutating-policy/#autogen).
 
-Now take back and try to implement the [GeneratingPolicy](https://kyverno.io/docs/policy-types/generating-policy/) with same concepts above
+Now trying to implement the [GeneratingPolicy](https://kyverno.io/docs/policy-types/generating-policy/) with same idea above about `regcred` secrets generated by `external-secrets`
+
+>[!question] Attention
+>Remembering applying the RBAC aggregation for Kyverno controller to be able to create the Kubernetes resources.
 
 ```yaml
 apiVersion: policies.kyverno.io/v1
@@ -1329,6 +1570,14 @@ spec:
     - expression: generator.Apply(variables.targetNs, [variables.regcred])
 ```
 
+Explore more resources to learn how create these new policies
+
+- [Kyverno - ValidatingPolicy](https://kyverno.io/docs/policy-types/validating-policy/)
+- [Kyverno - MutatingPolicy](https://kyverno.io/docs/policy-types/mutating-policy/)
+- [Kyverno - GeneratingPolicy](https://kyverno.io/docs/policy-types/generating-policy/)
+- [Kyverno - DeletingPolicy](https://kyverno.io/docs/policy-types/deleting-policy/)
+- [Kyverno - ImageValidatingPolicy](https://kyverno.io/docs/policy-types/image-validating-policy/)
+- [GitHub (Nirmata) - kyverno-policies](https://github.com/nirmata/kyverno-policies)
 # Conclusion
 
 ![[meme-k8s-me.png]]

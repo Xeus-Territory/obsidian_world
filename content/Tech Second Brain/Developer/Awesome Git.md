@@ -244,7 +244,10 @@ git config --list
 
 # Add a changed file to older (not last) commit in Git
 
-In some situation, you have file changing and want to add to older commit, not last one, therefore, you can use `rebase` for solving this task. Explore more at [StackOverFlow - How to add a changed file to an older (not last) commit in Git](https://stackoverflow.com/a/2719636)
+In some situation, you have file changing and want to add to older commit, not last one, therefore, you can use `rebase` for solving this task. Explore more at 
+
+- [StackOverFlow - How to add a changed file to an older (not last) commit in Git](https://stackoverflow.com/a/2719636)
+- [StackOverFlow - git rebase - what's the difference between 'edit' and 'reword'](https://stackoverflow.com/questions/30194796/git-rebase-whats-the-difference-between-edit-and-reword)
 
 First of all, you need to decide which commit you want to commit the new file change, and you rebase your current git-tree to previous (n-1) compare with your commit, e.g: 
 
@@ -266,7 +269,7 @@ git stash
 git rebase -i e110bdc
 ```
 
->[!info]
+>[!info] Git Rebase Opts
 >Here what you need to modify in your terminal, with changing your state of commit from pick to edit, or what ever you want
 
 ```bash
@@ -299,7 +302,7 @@ pick de64171 chore: correct error typing in setup script
 ```
 
 >[!note]
->This kind is the same way when you want to squash commit above. After changing, saving it and you will currently on the commit you want to edit
+>This method is taking same way when you want to squash commit, [[Awesome Git#Squash commit]]. After changing, saving it and you will currently on the commit you want to edit
 
 ```bash
 # pop your fine you want to add to this commit

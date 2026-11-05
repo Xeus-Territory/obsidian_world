@@ -102,7 +102,21 @@ kubectl label type1,type2 resource-name owner=platform-team
 Explore more at
 
 - [`kubectl annotate`](https://kubernetes.io/docs/reference/kubectl/generated/kubectl_annotate/)
+- [Kubernetes - Well-Known Labels, Annotations and Taints](https://kubernetes.io/docs/reference/labels-annotations-taints/#storageclass-kubernetes-io-is-default-class)
+- [Kubernetes - Audit Annotation](https://kubernetes.io/docs/reference/labels-annotations-taints/audit-annotations/)
 - [How to use kubectl annotate effectively](https://labex.io/tutorials/kubernetes-how-to-use-kubectl-annotate-effectively-418742)
+## Annotate Kubernetes Default
+
+```bash
+# setup default storage class
+# ref: https://kubernetes.io/docs/reference/labels-annotations-taints/#storageclass-kubernetes-io-is-default-class
+kubectl annotate storageclasses.storage.k8s.io name-of-storage-class storageclass.kubernetes.io/is-default-class=true
+
+# setup default ingressclass
+# ref: https://kubernetes.io/docs/reference/labels-annotations-taints/#ingressclass-kubernetes-io-is-default-class
+kubectl annotate ingressclasses.networking.k8s.io name-of-ingress-class ingressclass.kubernetes.io/is-default-class=true
+```
+
 # Config Command
 ## Check currently config context
 
