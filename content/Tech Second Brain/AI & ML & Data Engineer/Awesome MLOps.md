@@ -20,6 +20,7 @@ tags:
 - [Datacamp - 25 Top MLOps Tools You Need to Know in 2025](https://www.datacamp.com/blog/top-mlops-tools)
 - [Youtube -  GPU Instance Selection: AI & LLM Inference Benchmarking](https://www.youtube.com/watch?v=V38mZ9Jehsk) 🌟 **(Recommended)**
 - [Blog - LLM Inference Speed Benchmarks](https://sparecores.com/article/llm-inference-speed)
+- [Google - The open AI-native stack on Kubernetes: From open models to distributed inference and agents](https://cloud.google.com/blog/topics/developers-practitioners/the-open-ai-native-stack-on-kubernetes-from-open-models-to-distributed-inference-and-agents)
 ## Awesome Repositories
 
 - [awesome-mlops](https://github.com/visenger/awesome-mlops): A curated list of references for MLOps

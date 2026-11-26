@@ -15,7 +15,7 @@ tags:
 > [!quote] 
 >Yo wassup y'all guys, I am Xeus Nguyen and I am on my journey to find myself to spark new idea, create new value and live the best moments for my youth, as DevOps Engineer, as Contributor for Technologies
 > 
->"In another way, I am also work as Tech Blogger, hope my work can bring more efficiently for who visited and attracted by my contribution. From my bottom of heart I want to give huge respect for y'all guys ♥️"
+>"In another way, I am also work as Tech Blogger, author of `@kubewekend` series, hope my work can bring more efficiently for who visited and attracted by my contribution. From my bottom of heart I want to give huge respect for y'all guys ♥️"
 
 Find more information about my work below
 
@@ -30,12 +30,25 @@ Find more information about my work below
 
 You can find out more information about project via these links below
 
-1. [W'xOps GitHub](https://github.com/wxops-idp): Official GitHub Org of W'xOps IDP - Source code will be available for next couple days.
-2. [W'xOps Documentation](https://docs.wxops.cloud/): Find out more about how usage with W'xOps via technical hand-on, several blogs and case-studies, and always get information about new releases.
-3. [Why W'xOps](https://docs.wxops.cloud/blog/why-wxops): Find out more reason why I develop to W'xOps and introduce them like solution instead PaaS for end-users.
-4. [W'xOps ROADMAP](https://docs.wxops.cloud/docs/roadmap/): Here is about the roadmap of product, which help you know about the status of feature delivery and which one coming next. Hoping you got well with us.
+1. [W'xOps IDP GitHub](https://github.com/wxops-idp): Official GitHub Org of W'xOps IDP - Source code will be available for next couple days.
+2. [W'xOps IDP Documentation](https://docs.wxops.cloud/): Find out more about how usage with W'xOps via technical hand-on, several blogs and case-studies, and always get information about new releases.
+3. [Why W'xOps IDP](https://docs.wxops.cloud/blog/why-wxops): Find out more reason why I develop to W'xOps and introduce them like solution instead PaaS for end-users.
+4. [W'xOps IDP ROADMAP](https://docs.wxops.cloud/docs/roadmap/): Here is about the roadmap of product, which help you know about the status of feature delivery and which one coming next. Hoping you got well with us.
 
 ![[wxops-banner.jpg]]
+
+>[!quote] Kubewekend Has a New Look
+>While refactoring and expanding **Kubewekend**, I focused on streamlining the codebase and building intuitive, user-friendly CLI scripts for anyone who wants to spin up their own Kubernetes cluster and experiment with cloud-native tools. If you want to explore installation steps, quickstart guides, and hands-on labs, or contribute improvements and open Pull Requests, head over to [Kubewekend Documentation](https://kubewekend.xeusnguyen.xyz/) and the [GitHub Repository](https://github.com/Xeus-Territory/kubewekend).
+
+![[icon-kubewekend.png|center|200]]
+
+
+You can explore the complete **Kubewekend** ecosystem through the resources below:
+
+- **[Kubewekend GitHub](https://github.com/Xeus-Territory/kubewekend):** A fast, straightforward framework for bootstrapping full Kubernetes clusters locally (via Vagrant/VirtualBox or KinD) or on cloud VPS instances over a weekend.
+- **[Kubewekend Documentation](https://kubewekend.xeusnguyen.xyz/):** A redesigned documentation portal featuring searchable guides, quickstarts, and step-by-step weekend lab walkthroughs.
+- **[Kubewekend Helm Chart](https://github.com/Xeus-Territory/kubewekend/tree/gh-pages/kubernetes/charts/common):** A reusable `common` Helm chart (`v0.4.0` latest) for standardizing application `Deployment` manifests across Kubewekend labs.
+- **[Kubewekend Examples](https://github.com/Xeus-Territory/kubewekend/tree/gh-pages/examples):** Hands-on lab manifests and configurations to build, test, and practice across the Kubernetes and CNCF ecosystem.
 
 <div align="center"><h3>🖖Favorite Quotes🖖</h3></div>
 

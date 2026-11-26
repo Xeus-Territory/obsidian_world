@@ -11,19 +11,13 @@ tags:
 ![[book-garden.jpeg]]
 # Vietnamese
 
->[!info]
->The location is providing information book and free to downloading by Vietnamese Language
-
 - [DTV eBook](https://dtv-ebook.com.vn/)
 - [THƯ VIỆN EBOOK (TVE-4U)](http://tve-4u.org/)
-- [DocTruyenFull - Ebook](https://doctruyenfull.io.vn/ebook)
 # Foreign
-
->[!info]
->The location is providing information book and free to downloading by English Language
 
 - [Goodread](https://www.goodreads.com/): Community for who love read book and stick together
 - [D-PDF](https://d-pdf.com/): Download Free Books
 - [Kobo.com](https://www.kobo.com/us/en):  United States bookstore
 - [Manybooks](https://manybooks.net/): Download Free Books
 - [PDF Drive](http://www.pdfdrive.com):  Search and download PDF files for free.
+- [BDEBook](https://bdebooks.com/en/ebooks/): Read and Download Ebook
