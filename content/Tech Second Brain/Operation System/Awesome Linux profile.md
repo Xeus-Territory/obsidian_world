@@ -307,23 +307,20 @@ Install `language` compiler for your shell
 #!/bin/bash
 
 # With zsh profile will .zshrc but with bash you have .bashrc (just replace)
-
 # Install golang (https://go.dev/doc/install)
-wget "https://go.dev/dl/go1.23.1.linux-amd64.tar.gz"
-tar -xzf go1.23.1.linux-amd64.tar.gz
-sudo mv go /usr/local/
+# ref: all release (https://go.dev/dl/)
+# ref: release history (https://go.dev/doc/devel/release)
+wget "https://go.dev/dl/go1.26.10.linux-amd64.tar.gz"
+sudo tar -xzf go1.26.10.linux-amd64.tar.gz -C /usr/local
 echo "export PATH=\"\$PATH:/usr/local/go/bin\"" >> ~/.zshrc
 source ~/.zshrc
 go version
-rm -rf go1.23.1.linux-amd64.tar.gz
+rm -rf go1.26.10.linux-amd64.tar.gz
 mkdir -p ~/.go # Create for GOHOME, easily download go into that one
 
 # Install ruby (https://www.ruby-lang.org/en/documentation/installation/#apt
+# ref: all release (https://www.ruby-lang.org/en/downloads/releases/)
 sudo apt install -y ruby-full
-# If you want to install ruby with version manager like nvm
-# Consider to use rvm: https://rvm.io/
-gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-curl -sSL https://get.rvm.io | bash -s stable
 
 # Install rust (https://www.rust-lang.org/tools/install)
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh # Press enter
