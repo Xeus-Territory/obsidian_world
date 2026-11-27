@@ -132,7 +132,7 @@ tags:
 
 - [Medium - Why does my 2vCPU application run faster in a VM than in a container? (Content of the year 2024)](https://hwchiu.medium.com/why-does-my-2vcpu-application-run-faster-in-a-vm-than-in-a-container-6438ffaba245) 🌟 **(Recommended)**
 - [Medium - Why and Why Not of Enabling Swap in Kubernetes](https://hwchiu.medium.com/why-and-why-not-of-enabling-swap-in-kubernetes-08c094a8d427)
-## Networking (CNI / DNS)
+## Networking (CNI / DNS / Routing / Fundamental)
 
 - [Blog - A Deep Dive into Kubernetes Networking](https://www.ivinco.com/blog/a-deep-dive-into-kubernetes-networking) 🌟 **(Recommended)**
 - [Dev.to - Kubernetes Networking Deep Dive - Services, Ingress, and Gateway API](https://dev.to/sre_panchanan/kubernetes-networking-deep-dive-services-ingress-and-gateway-api-1g6k) 🌟 **(Recommended)**
@@ -146,6 +146,11 @@ tags:
 - [Reddit - Best on-prem authoritative DNS server for Kubernetes + external-dns?](https://www.reddit.com/r/kubernetes/comments/1nfh149/best_onprem_authoritative_dns_server_for/)
 - [Youtube - Kubernetes Multi Cluster DNS with External DNS, CoreDNS and Etcd](https://www.youtube.com/watch?v=AQtv2C4wKEA)
 - [Medium - Kubernetes Networking: A Deep Dive](https://medium.com/@h.stoychev87/kubernetes-networking-a-deep-dive-6081d794e97c) 🌟 **(Recommended)**
+- [Ivinco - Kubernetes Networking Explained: A Deep Dive](https://www.ivinco.com/blog/a-deep-dive-into-kubernetes-networking)
+- [Network-Insight - Kubernetes Network Namespace](https://network-insight.net/2016/03/19/kubernetes-network-namespace/)
+- [MetalLB - MetalLB in BGP mode](https://metallb.universe.tf/concepts/bgp/)
+- [Cilium - BGP](https://docs.cilium.io/en/stable/network/bgp-toc/)
+- [Calico - Configure BGP Peering](https://docs.tigera.io/calico/latest/networking/configuring/bgp)
 ## Operator & Chart
 
 - [Artifacthub](https://artifacthub.io/) : Find, install and publish Cloud Native packages for Kubernetes 🌟 **(Recommended)**

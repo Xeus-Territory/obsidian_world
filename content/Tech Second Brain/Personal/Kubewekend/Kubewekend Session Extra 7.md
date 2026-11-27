@@ -14,6 +14,14 @@ tags:
 
 Before diving into GitOps for Kubernetes, I already dedicated a previous session to exploring the core GitOps methodology with hands-on examples focused on Infrastructure as Code (IaC) outside of a Kubernetes environment. If you are curious about how to apply GitOps to IaC tools like Terraform, check out [[Atlantis with ECS for automatic provisioning]].
 
+According to [Medium - GitOps Was Never Just About Kubernetes:Here’s What It Looks Like Everywhere Else](https://medium.com/@krishnafattepurkar/gitops-was-never-just-about-kubernetes-heres-what-it-looks-like-everywhere-else-5c009ab6cfda), Author show for us GitOps isn't limited to Kubernetes clusters; it transforms operational configurations across the entire software industry into version-controlled declarative code that is automatically pulled and reconciled. Key applications include:
+
+- **Database Schema Declarations:** Managing schema migrations declaratively using tools like [Atlas](https://github.com/ariga/atlas).
+- **Infrastructure Provisioning:** Automating infrastructure state across major IaC frameworks via [Atlantis](https://github.com/runatlantis/atlantis), [TF-Controller](https://github.com/AppsFlyer/tf-controller), or enterprise engines like [Spacelift](https://github.com/spacelift-io).
+- **SaaS and Cloud Management:** Driving configuration for GitHub branch protection rules, Datadog/Grafana monitoring dashboards, and DNS records directly from Git.
+
+**Reconciliation Beyond K8s Native Tooling** - This pattern establishes continuous reconciliation loops connecting Git version control to third-party APIs beyond standard Kubernetes objects. However, blindly applying GitOps everywhere can lead to architectural pitfalls, which the author highlights as critical anti-patterns to avoid.
+
 # GitOps Today and in Cloud Native
 
 ## GitOps Glossary and Cloud Native with GitOps

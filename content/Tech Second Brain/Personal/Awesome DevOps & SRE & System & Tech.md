@@ -25,7 +25,6 @@ tags:
 - [awesome-for-beginners](https://github.com/MunGell/awesome-for-beginners) : A list of awesome beginners-friendly projects.
 - [awesome](https://github.com/sindresorhus/awesome): 😎 Awesome lists about all kinds of interesting topics. [Website](https://project-awesome.org/) 🌟 **(Recommended)**
 - [awesome-iam](https://github.com/kdeldycke/awesome-iam): 👤 Identity and Access Management knowledge for cloud platforms 🌟 **(Recommended)**
-- [awesome-networking](https://github.com/nyquist/awesome-networking): Curated list of awesome computer networking resources
 - [awesome-platform-engineering-tools](https://github.com/seifrajhi/awesome-platform-engineering-tools): A curated list of Platform Engineering Tools 🌟 **(Recommended)**
 - [awesome-sre](https://github.com/dastergon/awesome-sre): A curated list of Site Reliability and Production Engineering resources. 🌟 **(Recommended)**
 - [awesome-sysadmin](https://github.com/awesome-foss/awesome-sysadmin): A curated list of amazingly awesome open-source sysadmin resources. 🌟 **(Recommended)**
@@ -62,12 +61,6 @@ tags:
 - [DevOps.com](https://devops.com/) - DevOps.com has established itself as an indispensable resource for DevOps education and community building
 - [Sre.news](https://sre.news/) - The daily collection about DevOps, SRE, System, Cloud & Platform Engineering topics 🌟 **(Recommended)**
 - [Sre Weekly](https://sreweekly.com/) - a newsletter devoted to everything related to keeping a site or service available as consistently as possible.
-## Network Protocol Articles
-
-- [Blog - Visualizing Network Topologies: Zero to Hero in Two Days](https://habr.com/en/articles/534716/)
-- [Smashing Magazine - HTTP/3 From A To Z: Core Concepts](https://www.smashingmagazine.com/2021/08/http3-core-concepts-part1/)
-- [Blog - Using HTTP/3 in gRPC](https://unnieayilliath.com/2023/02/19/using-http-3-in-grpc/)
-- [Medium - The Past and Present of Browser Architecture](https://levelup.gitconnected.com/the-past-and-present-of-browser-architecture-522c65d1c2cd)
 ## Opensource Finder
 
 - [AlternativeTo](https://alternativeto.net/): Opensource Compare Alternatives

@@ -29,6 +29,7 @@ tags:
 - [[Awesome NGINX]]
 - [[Awesome Self-Hosted]]
 - [[Awesome System Architecture]]
+- [[Awesome Networking]]
 ## CI/CD
 
 - [[Awesome Azure Pipelines|Awesome Azure Pipelines]]
